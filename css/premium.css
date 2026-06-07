@@ -227,20 +227,35 @@ button:focus-visible {
 }
 
 .skip-link {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+    z-index: 40;
+    border: 0;
+    border-radius: var(--radius);
+    background: rgba(5, 10, 16, 0.94);
+    color: var(--ink);
+}
+
+.skip-link:focus-visible {
     position: fixed;
     left: 1rem;
     top: 1rem;
-    z-index: 40;
-    transform: translateY(-150%);
-    border: 1px solid rgba(251, 247, 239, 0.18);
-    border-radius: var(--radius);
-    background: var(--ivory-strong);
-    color: var(--ivory-ink);
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    clip-path: none;
+    white-space: normal;
+    border: 1px solid rgba(140, 234, 255, 0.36);
     padding: 0.7rem 1rem;
-}
-
-.skip-link:focus {
-    transform: translateY(0);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.36);
 }
 
 .scroll-progress {
