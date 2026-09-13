@@ -1888,3 +1888,7 @@ button:focus-visible {
         animation: none !important;
     }
 }
+
+.contact-context { max-width: 39rem; color: var(--ink-soft); font-size: 1rem; line-height: 1.75; margin: 1.3rem 0; }
+.contact-resources { display: flex; flex-wrap: wrap; gap: .75rem 1.4rem; margin: 1rem 0 0; }
+.contact-resources a { color: var(--champagne); text-decoration: underline; text-underline-offset: 4px; }
