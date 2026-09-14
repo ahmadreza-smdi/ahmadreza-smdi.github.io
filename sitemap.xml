@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>https://a-samadi.com/</loc>
-        <lastmod>2026-09-14T10:13:02+00:00</lastmod>
+        <lastmod>2026-09-14T10:31:23+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         <image:image>
@@ -17,18 +17,18 @@
     </url>
     <url>
         <loc>https://a-samadi.com/about.html</loc>
-        <lastmod>2026-09-14T10:13:02+00:00</lastmod>
+        <lastmod>2026-09-14T10:31:23+00:00</lastmod>
     </url>
     <url>
         <loc>https://a-samadi.com/work/appraiva.html</loc>
-        <lastmod>2026-09-13T10:06:07+00:00</lastmod>
+        <lastmod>2026-09-14T10:31:23+00:00</lastmod>
     </url>
     <url>
         <loc>https://a-samadi.com/work/oxfam-novib.html</loc>
-        <lastmod>2026-09-13T10:06:07+00:00</lastmod>
+        <lastmod>2026-09-14T10:31:23+00:00</lastmod>
     </url>
     <url>
         <loc>https://a-samadi.com/writing/start-with-the-decision.html</loc>
-        <lastmod>2026-09-13T10:06:07+00:00</lastmod>
+        <lastmod>2026-09-14T10:31:23+00:00</lastmod>
     </url>
 </urlset>
