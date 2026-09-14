@@ -61,3 +61,10 @@
   .localized-main .lead { font-size: 1.2rem; }
   .localized-main .editorial-footer { align-items: flex-start; flex-direction: column; }
 }
+
+.inline-icon { display: inline-flex; align-items: center; justify-content: center; font-style: normal; }
+.inline-icon svg { display: block; width: 1.2em; height: 1.2em; flex-shrink: 0; }
+.biography-portrait { float: right; width: min(34%, 240px); margin: .4rem 0 1.5rem 2rem; }
+.biography-portrait img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: var(--radius); }
+.biography-portrait figcaption { margin-top: .65rem; color: var(--muted); font-size: .8rem; line-height: 1.6; }
+@media(max-width:600px) { .biography-portrait { float: none; width: min(65%, 240px); margin: 1.5rem auto 2rem; } }

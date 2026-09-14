@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>https://a-samadi.com/</loc>
-        <lastmod>2026-09-14T16:15:58+00:00</lastmod>
+        <lastmod>2026-09-14T16:29:34+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         <image:image>
@@ -17,7 +17,10 @@
     </url>
     <url>
         <loc>https://a-samadi.com/about.html</loc>
-        <lastmod>2026-09-14T16:15:58+00:00</lastmod>
+        <lastmod>2026-09-14T16:29:34+00:00</lastmod>
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/img/ahmadreza-samadi-hero.jpg</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://a-samadi.com/work/appraiva.html</loc>
