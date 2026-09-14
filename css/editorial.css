@@ -8,3 +8,12 @@
 
 .editorial-header a { display: inline-flex; align-items: center; gap: .75rem; }
 .editorial-header a img { display: block; width: 44px; height: 28px; object-fit: contain; }
+
+/* Public profile directory and Persian biography. */
+.official-profiles li + li { margin-top: 1rem; }
+.persian-page { font-family: Tahoma, Arial, sans-serif; }
+.persian-page .editorial { text-align: right; }
+.persian-page .editorial h1, .persian-page .editorial h2, .persian-page .eyebrow { letter-spacing: normal; }
+.persian-page .editorial p, .persian-page .editorial li { line-height: 2.1; }
+.persian-page .editorial ul { padding-left: 0; padding-right: 1.3rem; }
+.persian-page .editorial-header { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
