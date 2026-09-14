@@ -17,7 +17,7 @@
         <link rel="me" href="https://github.com/ahmadreza-smdi" />
         <link rel="me" href="https://www.crunchbase.com/person/ahmadreza-samadi" />
         <link rel="me" href="https://www.youtube.com/@ahmadreza-samadi" />
-        <link rel="preload" as="image" href="assets/img/ahmadreza-samadi-portrait-900.webp" imagesrcset="assets/img/ahmadreza-samadi-portrait-450.webp 450w, assets/img/ahmadreza-samadi-portrait-900.webp 900w" imagesizes="(max-width: 680px) calc(100vw - 28px), (max-width: 980px) 90vw, 440px" fetchpriority="high" />
+        <link rel="preload" as="image" href="assets/img/ahmadreza-samadi-portrait-900.webp" imagesrcset="assets/img/ahmadreza-samadi-portrait-450.webp 450w, assets/img/ahmadreza-samadi-portrait-900.webp 900w" imagesizes="(max-width: 760px) calc(100vw - 40px), (max-width: 980px) 40vw, 440px" fetchpriority="high" />
         <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg?v=20260914-personal-mark" />
         <link rel="icon" type="image/png" sizes="512x512" href="assets/brand/favicon.png?v=20260914-personal-mark" />
         <link rel="alternate icon" type="image/x-icon" href="assets/brand/favicon.ico?v=20260914-personal-mark" />
@@ -174,6 +174,7 @@
   ]
 }</script>
     <link rel="stylesheet" href="css/editorial.css?v=20260914-image-seo" />
+    <link rel="stylesheet" href="css/refinement.css?v=20260915" />
 </head>
     <body>
         <a class="skip-link" href="#main">Skip to content</a>
@@ -187,12 +188,11 @@
                 </span>
                 <span class="brand-text">Ahmadreza Samadi</span>
             </a>
-            <nav class="site-nav" aria-label="Main menu">
-                <a href="#top">Home</a>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
+            <nav class="site-nav" id="site-menu" aria-label="Main menu">
                 <a href="#work">Work</a>
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
-                <a href="#skills">Skills</a>
                 <a href="#writing">Writing</a>
                 <a href="#contact">Contact</a>
             </nav>
@@ -200,20 +200,15 @@
 
         <main id="main">
             <section class="hero section-band" id="top">
-                <div class="hero-cinema" aria-hidden="true">
-                    <video autoplay muted loop playsinline preload="metadata" poster="assets/video/hero-luxury-motion-poster.jpg" width="1280" height="720" data-motion-video>
-                        <source src="assets/video/hero-luxury-motion.mp4" type="video/mp4" />
-                    </video>
-                </div>
                 <div class="hero-content reveal">
                     <p class="eyebrow">Technology Entrepreneur · Dubai, UAE</p>
                     <h1><span>Ahmadreza</span> <span>Samadi</span></h1>
                     <p class="hero-statement">I build AI products and turn business problems into practical technology.</p>
-                    <p class="hero-context">Co-Founder &amp; Technical Lead at Appraiva, based in Cleveland, Ohio, United States. Working remotely across product strategy, data, AI, and engineering.</p>
+                    <p class="hero-context">Co-Founder &amp; Technical Lead at Appraiva, a US-based company in Cleveland, Ohio. Working remotely across product strategy, data, AI, and engineering.</p>
                     <div class="hero-actions" aria-label="Primary links">
                         <a class="button button-primary" href="mailto:ahmadreza.smdi@gmail.com">
                             <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></i>
-                            <span>Contact</span>
+                            <span>Get in touch</span>
                         </a>
                         <a class="button button-secondary" href="#work">
                             <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 3v18m-7-7 7 7 7-7"/></svg></i>
@@ -224,8 +219,9 @@
 
                 <div class="hero-visual reveal" aria-label="Portrait">
                     <figure class="portrait-frame">
-                        <img src="assets/img/ahmadreza-samadi-hero.jpg" srcset="assets/img/ahmadreza-samadi-portrait-450.webp 450w, assets/img/ahmadreza-samadi-portrait-900.webp 900w" sizes="(max-width: 680px) calc(100vw - 28px), (max-width: 980px) 90vw, 440px" alt="Portrait of Ahmadreza Samadi" width="900" height="1200" fetchpriority="high" decoding="async" />
+                        <img src="assets/img/ahmadreza-samadi-hero.jpg" srcset="assets/img/ahmadreza-samadi-portrait-450.webp 450w, assets/img/ahmadreza-samadi-portrait-900.webp 900w" sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 980px) 40vw, 440px" alt="Portrait of Ahmadreza Samadi" width="900" height="1200" fetchpriority="high" decoding="async" />
                     </figure>
+                    <p class="portrait-caption"><span>Ahmadreza Samadi</span><span>Technology entrepreneur</span></p>
                 </div>
             </section>
 
@@ -415,7 +411,7 @@
                     <p class="contact-context">I welcome conversations about AI products, data businesses, and real estate technology. Share the problem you’re working on and where you see a fit.</p>
                     <p class="contact-resources"><a href="about.html#profile-resources">Biography and profile kit</a> <a href="assets/profile/ahmadreza-samadi.vcf" download>Save contact details</a> <a href="about.html#official-profiles">Official profiles</a></p>
                 </div>
-                <div class="contact-links" aria-label="Contact links">
+                <div><a class="contact-email" href="mailto:ahmadreza.smdi@gmail.com">ahmadreza.smdi@gmail.com</a><div class="contact-links" aria-label="Contact links">
                     <a href="mailto:ahmadreza.smdi@gmail.com">
                         <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></i>
                         <span>Email</span>
@@ -436,16 +432,22 @@
                         <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3Z"/></svg></i>
                         <span>YouTube</span>
                     </a>
-                </div>
+                </div></div>
             </section>
         </main>
 
         <footer class="site-footer">
             <span>Ahmadreza Samadi</span>
-            <span>Dubai, United Arab Emirates · Technology entrepreneurship · AI products · Business execution</span>
+            <span>Dubai, UAE · Building across the US and Dubai</span><a href="#top">Back to top ↑</a>
         </footer>
         <script>
             (() => {
+                const menuButton = document.querySelector('.menu-toggle');
+                const menu = document.querySelector('.site-nav');
+                const closeMenu = () => { menu.classList.remove('is-open'); menuButton.setAttribute('aria-expanded', 'false'); };
+                menuButton.addEventListener('click', () => { const open = menu.classList.toggle('is-open'); menuButton.setAttribute('aria-expanded', String(open)); });
+                menu.addEventListener('click', (event) => { if(event.target.closest('a')) closeMenu(); });
+                document.addEventListener('keydown', (event) => { if(event.key === 'Escape' && menu.classList.contains('is-open')) { closeMenu(); menuButton.focus(); } });
                 const progress = document.querySelector(".scroll-progress span");
                 const header = document.querySelector(".site-header");
                 const navLinks = Array.from(document.querySelectorAll(".site-nav a"))
@@ -488,9 +490,14 @@
                         }
                     }
 
+                    if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 4) {
+                        current = document.getElementById("contact");
+                    }
+
                     navLinks.forEach((link) => {
                         const isActive = Boolean(current && link.getAttribute("href") === `#${current.id}`);
                         link.classList.toggle("is-active", isActive);
+                        if(isActive) link.setAttribute("aria-current", "location"); else link.removeAttribute("aria-current");
                     });
                 };
 
