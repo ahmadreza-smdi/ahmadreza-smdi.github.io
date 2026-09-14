@@ -2,6 +2,7 @@ BEGIN:VCARD
 VERSION:3.0
 N:Samadi;Ahmadreza;;;
 FN:Ahmadreza Samadi
+NICKNAME:Ahmad Samadi
 ORG:Appraiva / Royal Abraj Group
 TITLE:Co-Founder & Technical Lead / Co-Founder & CEO
 EMAIL;TYPE=INTERNET:ahmadreza.smdi@gmail.com
@@ -9,4 +10,5 @@ URL:https://a-samadi.com/
 URL:https://www.linkedin.com/in/ahmadreza-samadi/
 URL:https://www.crunchbase.com/person/ahmadreza-samadi
 URL:https://github.com/ahmadreza-smdi
+URL:https://www.youtube.com/@ahmadreza-samadi
 END:VCARD
