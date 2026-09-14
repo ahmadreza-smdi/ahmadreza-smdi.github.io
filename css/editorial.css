@@ -9,11 +9,55 @@
 .editorial-header a { display: inline-flex; align-items: center; gap: .75rem; }
 .editorial-header a img { display: block; width: 44px; height: 28px; object-fit: contain; }
 
-/* Public profile directory and Persian biography. */
+/* Public profile directory and localized biographies. */
 .official-profiles li + li { margin-top: 1rem; }
-.persian-page { font-family: Tahoma, Arial, sans-serif; }
-.persian-page .editorial { text-align: right; }
-.persian-page .editorial h1, .persian-page .editorial h2, .persian-page .eyebrow { letter-spacing: normal; }
-.persian-page .editorial p, .persian-page .editorial li { line-height: 2.1; }
-.persian-page .editorial ul { padding-left: 0; padding-right: 1.3rem; }
-.persian-page .editorial-header { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+:is(.persian-page, .arabic-page) { font-family: Tahoma, Arial, sans-serif; }
+:is(.persian-page, .arabic-page) .editorial { text-align: right; }
+:is(.persian-page, .arabic-page) .editorial h1, :is(.persian-page, .arabic-page) .editorial h2, :is(.persian-page, .arabic-page) .eyebrow { letter-spacing: normal; }
+:is(.persian-page, .arabic-page) .editorial p, :is(.persian-page, .arabic-page) .editorial li { line-height: 2.1; }
+:is(.persian-page, .arabic-page) .editorial ul { padding-left: 0; padding-right: 1.3rem; }
+:is(.persian-page, .arabic-page) .editorial-header { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+
+/* Localized pages share the English site's portrait, palette and panel treatment. */
+:is(.persian-page, .arabic-page) { font-family: "Geeza Pro", Tahoma, Arial, sans-serif; }
+:is(.persian-page, .arabic-page) .editorial-header {
+  width: min(100% - 56px, var(--max)); margin-inline: auto; padding: 1.35rem 0;
+  align-items: center; border-color: var(--line);
+}
+:is(.persian-page, .arabic-page) .editorial-header a { min-height: 44px; }
+:is(.persian-page, .arabic-page) .editorial-header a[lang="en"] { font-family: var(--sans); font-size: .9rem; color: var(--ink-soft); }
+.localized-main { max-width: 1180px; padding: 3.5rem 0 3rem; width: calc(100% - 56px); }
+.localized-hero { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, .7fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; padding-bottom: 4rem; border-bottom: 1px solid var(--line); }
+.localized-intro { min-width: 0; }
+.localized-main .eyebrow { font-family: inherit; font-size: .88rem; color: var(--champagne); line-height: 1.9; }
+.localized-main h1 { font-size: clamp(2.6rem, 5vw, 4.5rem); line-height: 1.5; margin: .5rem 0 1.2rem; color: var(--champagne-soft); text-wrap: balance; }
+.localized-main .lead { font-size: clamp(1.15rem, 2vw, 1.45rem); line-height: 1.95; margin: 0; }
+.localized-main .localized-name { margin: 1.5rem 0 0; font-family: var(--sans); font-size: .9rem; letter-spacing: .08em; text-align: right; color: var(--muted); }
+.localized-portrait { margin: 0; padding: .5rem; border: 1px solid rgba(140,234,255,.22); border-radius: var(--radius); background: linear-gradient(145deg, rgba(140,234,255,.08), rgba(47,125,255,.03)); box-shadow: var(--shadow-soft); }
+.localized-portrait img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 4px; }
+.localized-content { max-width: 850px; margin-inline: auto; padding-top: 2.5rem; }
+.localized-content h2 { font-family: inherit; font-size: 1.6rem; margin-top: 3rem; line-height: 1.65; }
+.localized-content p { margin-block: 1rem 1.5rem; }
+.localized-main .localized-work, .localized-main .official-profiles { list-style: none; padding: 0; display: grid; gap: .8rem; }
+.localized-work li, .official-profiles li { min-width: 0; }
+.localized-main .localized-work li { padding: 1.1rem 1.3rem; border: 1px solid var(--line); border-radius: var(--radius); background: linear-gradient(180deg, rgba(216,251,255,.045), rgba(216,251,255,.016)); }
+.localized-work small { display: block; color: var(--muted); font-size: .8rem; }
+.localized-main .official-profiles { grid-template-columns: repeat(2, minmax(0,1fr)); }
+.localized-main .official-profiles li { margin: 0; padding-block: .75rem; border-bottom: 1px solid var(--line); font-size: .95rem; }
+.localized-main .official-profiles a { display: inline-block; padding-block: .25rem; }
+.localized-main .profile-downloads a { background: rgba(140,234,255,.055); }
+.localized-main .profile-downloads a:first-child { background: var(--champagne); color: var(--black); border-color: var(--champagne); font-weight: 700; }
+.localized-main .editorial-footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding-top: 1.5rem; margin-top: 4rem; }
+.localized-main .editorial-footer p, .localized-main .editorial-footer a { font-size: .85rem; color: var(--muted); }
+.localized-main [dir="ltr"] { unicode-bidi: isolate; }
+@media (max-width: 760px) {
+  :is(.persian-page, .arabic-page) .editorial-header { width: calc(100% - 36px); padding-block: .8rem; }
+  .localized-main { width: calc(100% - 36px); padding-top: 2rem; }
+  .localized-hero { grid-template-columns: 1fr; gap: 2rem; padding-bottom: 2.5rem; }
+  .localized-portrait { width: min(100%, 360px); margin-inline: auto; }
+  .localized-content { padding-top: 1.5rem; }
+  .localized-main .official-profiles { grid-template-columns: 1fr; }
+  .localized-main .editorial p, .localized-main p { font-size: 1rem; }
+  .localized-main .lead { font-size: 1.2rem; }
+  .localized-main .editorial-footer { align-items: flex-start; flex-direction: column; }
+}
