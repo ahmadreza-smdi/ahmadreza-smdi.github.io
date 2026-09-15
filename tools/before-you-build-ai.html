@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Before You Build the AI | Ahmadreza Samadi</title>
+<meta name="author" content="Ahmadreza Samadi">
+<meta name="description" content="Turn an AI idea into a decision, an evidence plan and a small first experiment. A free interactive field guide by Ahmadreza Samadi.">
+<link rel="canonical" href="https://a-samadi.com/tools/before-you-build-ai.html">
+<meta property="og:title" content="Before You Build the AI — Ahmadreza Samadi">
+<meta property="og:description" content="One decision. The evidence behind it. A useful first experiment.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://a-samadi.com/tools/before-you-build-ai.html">
+<meta property="og:image" content="https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../css/site.css?v=20260915-motion"><link rel="stylesheet" href="../css/decision-guide.css?v=1">
+<script src="../js/decision-guide.js?v=1" defer></script>
+</head>
+<body class="editorial-body decision-guide">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="editorial-header"><a href="/"><img src="../assets/brand/ahmadreza-samadi-mark-azure.svg" width="44" height="28" alt="">Ahmadreza Samadi / Home</a><span class="edition">FIELD GUIDE / 01</span></header>
+<main id="main" class="guide-shell">
+<section class="guide-intro"><p class="eyebrow">An interactive tool by Ahmadreza Samadi</p><h1>Before you<br>build the <em>AI.</em></h1><p class="guide-lead">Make one decision worth helping with.</p><p class="intro-copy">Work backward from a real action to the evidence it needs. Leave with a focused brief and a first experiment you can run before committing to a full product.</p><div class="method" aria-label="The method"><span>01 / Decision</span><span>02 / Evidence</span><span>03 / Experiment</span></div></section>
+<noscript><p class="notice">This worksheet needs JavaScript. You can still <a href="../writing/start-with-the-decision.html">read the complete method in the essay</a>.</p></noscript>
+<div id="interactive" hidden>
+<section class="example-bar" aria-label="Worked examples"><div><strong>Start with a worked example</strong><p>Illustrative scenarios, not customer results. Edit any detail.</p></div><div class="example-actions"><button type="button" data-example="property" aria-pressed="true">Property research</button><button type="button" data-example="support" aria-pressed="false">Support triage</button><button type="button" data-example="blank" aria-pressed="false">Start empty</button></div></section>
+<div class="guide-grid">
+<form id="decision-form" class="input-panel">
+<fieldset><legend><span>01</span> Define the decision</legend><label for="user">Who needs to decide?</label><input id="user" name="user" maxlength="180" placeholder="e.g. A property researcher" required>
+<label for="decision">What must they decide?</label><textarea id="decision" name="decision" rows="2" maxlength="500" placeholder="A specific choice, at a specific point in the work" required></textarea>
+<label for="action">What happens after the answer?</label><input id="action" name="action" maxlength="300" placeholder="e.g. Request a manual inspection" required></fieldset>
+<fieldset><legend><span>02</span> Examine the evidence</legend><label for="evidence">What evidence would support that choice?</label><textarea id="evidence" name="evidence" rows="3" maxlength="700" placeholder="Name the sources and what you need to know about them" required></textarea>
+<label for="availability">How ready is that evidence?</label><select id="availability" name="availability"><option value="unknown">We have not checked the sources</option><option value="partial">Some is available; gaps remain</option><option value="ready">Available, with permission and freshness checked</option></select>
+<label for="stakes">If the answer is wrong…</label><select id="stakes" name="stakes"><option value="low">Someone can easily undo the next step</option><option value="medium">It creates meaningful rework or cost</option><option value="high">It may have serious or hard-to-reverse consequences</option></select>
+<label for="review">Who reviews before action?</label><select id="review" name="review"><option value="always">A person reviews every result</option><option value="exceptions">A person reviews flagged exceptions</option><option value="none">No review is planned</option></select></fieldset>
+<fieldset><legend><span>03</span> Set the first test</legend><label for="baseline">How is this done today?</label><input id="baseline" name="baseline" maxlength="300" placeholder="The current process your experiment must beat" required>
+<label for="success">What would make the test useful?</label><textarea id="success" name="success" rows="2" maxlength="500" placeholder="An observable improvement, including review effort" required></textarea></fieldset>
+<button class="primary-button" type="submit">Build my decision brief <span aria-hidden="true">↗</span></button><p class="privacy">Your entries stay in this page. They are not saved or sent to a server. Export your brief before leaving.</p>
+</form>
+<section class="brief-panel" aria-labelledby="brief-heading"><div class="brief-top"><p class="eyebrow">Your decision brief</p><span>01—03</span></div><h2 id="brief-heading" tabindex="-1">A smaller promise.<br>A clearer test.</h2><p id="status" class="status" role="status"></p><div id="brief-content"></div><div class="brief-actions"><button id="download" type="button">Export .txt ↓</button><button id="print" type="button">Print / save PDF</button></div><p class="brief-note">A structured thinking aid, not an AI assessment or a readiness score. Guidance follows your selections; it does not validate the evidence.</p></section>
+</div></div>
+<section class="guide-outro"><p class="eyebrow">The thinking behind the tool</p><h2>The output is only part of the product.</h2><p>The supporting evidence, the next action and the cost of review determine whether an answer is useful. This worksheet puts those choices on one page.</p><a href="../writing/start-with-the-decision.html">Read “Start with the decision, then build the AI” →</a></section>
+<footer class="guide-footer"><div><strong>Ahmadreza Samadi</strong><p>Technology Entrepreneur · Dubai</p></div><a href="../about.html">About the author →</a><a href="mailto:ahmadreza.smdi@gmail.com">Discuss a product decision →</a></footer>
+</main></body></html>
