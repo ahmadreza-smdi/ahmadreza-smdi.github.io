@@ -278,3 +278,33 @@ body::before { background:radial-gradient(ellipse at 82% 8%,#18376755,transparen
  .brand { gap:.45rem; }.brand-text { font-size:.75rem; }.brand-mark,.brand-mark img { width:1.8rem; }
  .hero-actions .inline-icon { display:none; }.hero-actions .button { padding-inline:.5rem; font-size:.8rem; }
 }
+
+/* Motion restored with a single accessible pause control. */
+.hero-cinema { display:block; top:-3rem; bottom:-4rem; z-index:-1; opacity:.9; }
+.hero-cinema video { opacity:.7; filter:brightness(.65) saturate(.9); animation:none; }
+.hero-cinema::before { background:linear-gradient(90deg,#080e18e8,#080e18b8 50%,#080e1880); animation:none; }
+.hero-cinema::after { animation:none; opacity:.6; }
+.motion-toggle { display:none; }
+.motion-enabled .motion-toggle { display:inline-flex; position:absolute; right:0; bottom:.6rem; align-items:center; min-height:44px; padding:.55rem .85rem; border:1px solid #55749c; border-radius:6px; color:#cce0ff; background:#0b1525; font:inherit; font-size:.75rem; z-index:2; cursor:pointer; }
+.motion-toggle[hidden] { display:none; }
+.motion-enabled .hero-cinema video { animation:cinematic-pan 20s ease-in-out infinite alternate; }
+.motion-enabled .hero-cinema::after { animation:luxury-sheen 8s ease-in-out infinite alternate; }
+.motion-enabled .hero::before { animation:grid-drift 18s ease-in-out infinite alternate; }
+.motion-enabled .hero-content { animation:hero-enter .85s cubic-bezier(.2,.65,.3,1) both; }
+.motion-enabled .hero-visual { animation:portrait-enter 1.1s cubic-bezier(.2,.65,.3,1) both; }
+.motion-enabled .hero-visual::before { animation:frame-breathe 6s ease-in-out infinite alternate; }
+.motion-enabled .hero h1 span:last-child { animation:blue-shift 7s ease-in-out infinite alternate; }
+.motion-enabled .reveal.is-visible:not(.hero-content):not(.hero-visual) { animation:section-enter .8s cubic-bezier(.2,.65,.3,1) both; animation-delay:var(--reveal-delay,0ms); }
+.motion-enabled .venture-strip>a { transition:background .25s,transform .25s; }
+.motion-enabled .venture-strip>a:hover { transform:translateY(-4px); }
+.motion-enabled .case-system div:hover { background:#203b5b; transition:background .25s; }
+@keyframes hero-enter { from { transform:translateY(24px); } to { transform:translateY(0); } }
+@keyframes portrait-enter { from { transform:translateY(30px) scale(.97); } to { transform:translateY(0) scale(1); } }
+@keyframes section-enter { from { transform:translateY(28px); } to { transform:translateY(0); } }
+@keyframes frame-breathe { from { border-color:#6393d344; } to { border-color:#88c7ffc0; } }
+@keyframes grid-drift { from { transform:translateY(-8px); } to { transform:translateY(8px); } }
+@keyframes blue-shift { from { color:#a6caff; } to { color:#bdefff; } }
+html:not(.motion-enabled) .hero-content,html:not(.motion-enabled) .hero-visual,html:not(.motion-enabled) body::before { animation:none; }
+.motion-paused *,.motion-paused *::before,.motion-paused *::after { animation-play-state:paused!important; }
+@media(max-width:760px) { .hero-cinema { top:0; bottom:0; }.hero { padding-bottom:4.5rem; }.motion-enabled .motion-toggle { bottom:.3rem; }.motion-enabled .hero-cinema::after { opacity:.35; } }
+@media(prefers-reduced-motion:reduce) { .hero-cinema video { display:none; }.hero-cinema::after,.motion-toggle { display:none!important; } }

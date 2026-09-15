@@ -173,7 +173,7 @@
   ]
 }</script>
 
-    <link rel="stylesheet" href="css/site.css?v=20260915-future" />
+    <link rel="stylesheet" href="css/site.css?v=20260915-motion" />
 </head>
     <body>
         <a class="skip-link" href="#main">Skip to content</a>
@@ -199,6 +199,10 @@
 
         <main id="main">
             <section class="hero section-band" id="top">
+                <div class="hero-cinema" aria-hidden="true">
+                    <video muted loop playsinline preload="none" poster="assets/video/hero-luxury-motion-poster.jpg" width="1280" height="720" data-motion-video data-src="assets/video/hero-luxury-motion.mp4"></video>
+                </div>
+                <button class="motion-toggle" type="button" aria-pressed="false">Pause motion</button>
                 <div class="hero-content reveal">
                     <p class="eyebrow">Technology Entrepreneur · Dubai, UAE</p>
                     <h1><span>Ahmadreza</span> <span>Samadi</span></h1>
@@ -449,7 +453,33 @@
                 const sections = navLinks
                     .map((link) => document.querySelector(link.getAttribute("href")))
                     .filter(Boolean);
-                const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+                const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+                const reducedMotion = motionPreference.matches;
+                const motionButton = document.querySelector('.motion-toggle');
+                const motionVideo = document.querySelector('[data-motion-video]');
+                let motionPaused = false;
+                let heroInView = true;
+                let pageLoaded = document.readyState === 'complete';
+                const syncMotion = () => {
+                    const enabled = !motionPreference.matches;
+                    const paused = motionPaused || !enabled || document.hidden;
+                    document.documentElement.classList.toggle('motion-enabled', enabled);
+                    document.documentElement.classList.toggle('motion-paused', paused);
+                    motionButton.hidden = !enabled;
+                    motionButton.setAttribute('aria-pressed', String(motionPaused));
+                    motionButton.textContent = motionPaused ? 'Resume motion' : 'Pause motion';
+                    if (paused || !heroInView || !pageLoaded) { motionVideo.pause(); return; }
+                    if (!motionVideo.getAttribute('src')) motionVideo.src = motionVideo.dataset.src;
+                    motionVideo.play().catch(() => {});
+                };
+                motionButton.addEventListener('click', () => { motionPaused = !motionPaused; syncMotion(); });
+                motionPreference.addEventListener('change', syncMotion);
+                document.addEventListener('visibilitychange', syncMotion);
+                window.addEventListener('load', () => { pageLoaded = true; syncMotion(); }, { once: true });
+                if ('IntersectionObserver' in window) new IntersectionObserver(entries => {
+                    heroInView = entries[0].isIntersecting; syncMotion();
+                }).observe(document.getElementById('top'));
+                syncMotion();
 
 
                 const updateProgress = () => {
