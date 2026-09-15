@@ -22,7 +22,6 @@
         <link rel="icon" type="image/png" sizes="512x512" href="assets/brand/favicon.png?v=20260914-personal-mark" />
         <link rel="alternate icon" type="image/x-icon" href="assets/brand/favicon.ico?v=20260914-personal-mark" />
         <link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon.png?v=20260914-personal-mark" />
-        <link rel="preload" as="image" href="assets/video/hero-luxury-motion-poster.jpg" fetchpriority="high" />
         <link rel="manifest" href="site.webmanifest" />
 
         <meta property="og:type" content="profile" />
@@ -46,7 +45,7 @@
         <meta name="twitter:image" content="https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg" />
         <meta name="twitter:image:alt" content="Ahmadreza Samadi, Dubai-based founder and technical executive" />
         <meta name="theme-color" content="#071018" />
-        <link rel="stylesheet" href="css/premium.css?v=20260914-personal-mark" />
+
         <script>
             document.documentElement.classList.add("has-js");
         </script>
@@ -173,8 +172,8 @@
     }
   ]
 }</script>
-    <link rel="stylesheet" href="css/editorial.css?v=20260914-image-seo" />
-    <link rel="stylesheet" href="css/refinement.css?v=20260915" />
+
+    <link rel="stylesheet" href="css/site.css?v=20260915-future" />
 </head>
     <body>
         <a class="skip-link" href="#main">Skip to content</a>
@@ -205,7 +204,7 @@
                     <h1><span>Ahmadreza</span> <span>Samadi</span></h1>
                     <p class="hero-statement">I build AI products and turn business problems into practical technology.</p>
                     <p class="hero-context">Co-Founder &amp; Technical Lead at Appraiva, a US-based company in Cleveland, Ohio. Working remotely across product strategy, data, AI, and engineering.</p>
-                    <div class="hero-actions" aria-label="Primary links">
+                    <div class="hero-actions" role="group" aria-label="Primary links">
                         <a class="button button-primary" href="mailto:ahmadreza.smdi@gmail.com">
                             <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></i>
                             <span>Get in touch</span>
@@ -217,7 +216,8 @@
                     </div>
                 </div>
 
-                <div class="hero-visual reveal" aria-label="Portrait">
+                <div class="hero-visual reveal" role="group" aria-label="Portrait">
+                    <div class="portrait-index" aria-hidden="true">AS / TECHNOLOGY &amp; BUSINESS</div>
                     <figure class="portrait-frame">
                         <img src="assets/img/ahmadreza-samadi-hero.jpg" srcset="assets/img/ahmadreza-samadi-portrait-450.webp 450w, assets/img/ahmadreza-samadi-portrait-900.webp 900w" sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 980px) 40vw, 440px" alt="Portrait of Ahmadreza Samadi" width="900" height="1200" fetchpriority="high" decoding="async" />
                     </figure>
@@ -227,20 +227,11 @@
 
             <div class="background-bridge" aria-hidden="true"></div>
 
-            <section class="credential-band" aria-label="Professional focus and technical themes">
-                <div class="proof-strip" aria-label="Professional focus">
-                    <div>
-                        <span>01</span>
-                        <strong>Entrepreneurship grounded in customer needs.</strong>
-                    </div>
-                    <div>
-                        <span>02</span>
-                        <strong>Technical leadership across AI, data, and product.</strong>
-                    </div>
-                    <div>
-                        <span>03</span>
-                        <strong>Business execution connected to engineering.</strong>
-                    </div>
+            <section class="credential-band" aria-label="Current companies and focus">
+                <div class="venture-strip">
+                    <a href="work/appraiva.html"><span class="venture-label">01 / United States · Remote</span><strong>Appraiva <span aria-hidden="true">↗</span></strong><span>Co-Founder &amp; Technical Lead</span></a>
+                    <a href="work/royal-abraj.html"><span class="venture-label">02 / Dubai, UAE</span><strong>Royal Abraj Group <span aria-hidden="true">↗</span></strong><span>Co-Founder &amp; CEO</span></a>
+                    <a href="#skills"><span class="venture-label">03 / My focus</span><strong>Ideas into systems <span aria-hidden="true">↓</span></strong><span>AI · Product · Business</span></a>
                 </div>
             </section>
 
@@ -267,7 +258,7 @@
                             <li>Cloud Infrastructure</li>
                         </ul>
                     </div>
-                    <div class="case-system" aria-label="Appraiva system layers">
+                    <div class="case-system" role="group" aria-label="Appraiva system layers">
                         <div>
                             <span>01</span>
                             <strong>Property discovery</strong>
@@ -321,7 +312,10 @@
                 </div>
             </section>
 
-            <section class="section" id="about"><div class="section-heading"><p class="eyebrow">About</p><h2>Technology, product, and business.</h2></div><div class="bio-copy"><p>I’m Ahmadreza Samadi, a technology entrepreneur based in Dubai. My work brings together product strategy, engineering, and business execution, from understanding a market problem to building the systems that address it.</p><p>I’m the Co-Founder &amp; Technical Lead at Appraiva, a US-based company in Cleveland, Ohio, where I work remotely and lead the technical foundation of an AI-driven real estate intelligence platform. My responsibilities span product architecture, data systems, AI workflows, and cloud infrastructure, alongside customer discovery and go-to-market strategy. The platform helps investors and developers discover and assess property opportunities through imagery analysis and enriched property data.</p><p>I’m also the Co-Founder &amp; CEO of Royal Abraj Group, a Dubai-based business spanning property brokerage and documents-clearing services. I lead digital strategy and technology across the group’s websites, CRM workflows, customer portal, and internal team tools, connecting business priorities with the client experience and day-to-day operations.</p><a class="story-link" href="about.html">About Ahmadreza Samadi →</a></div></section>
+            <section class="section" id="about">
+                <div class="section-heading"><p class="eyebrow">About</p><h2>Technical depth.<br>Business perspective.</h2></div>
+                <div class="bio-copy"><p>I’m Ahmadreza Samadi, a technology entrepreneur based in Dubai. I connect product strategy, engineering, and the practical work of building a business.</p><p>At <a href="work/appraiva.html">Appraiva</a>, a US-based company in Cleveland, Ohio, I work remotely as Co-Founder &amp; Technical Lead, building AI-driven real estate intelligence. At <a href="work/royal-abraj.html">Royal Abraj Group</a>, I serve as Co-Founder &amp; CEO and lead digital strategy for the Dubai business.</p><p>My work starts with a customer problem and follows through to the data, product, and systems needed to solve it.</p><a class="story-link" href="about.html">More about my background →</a></div>
+            </section>
 <section class="section section-muted" id="experience">
                 <div class="section-heading reveal">
                     <p class="eyebrow">Selected Experience</p>
@@ -411,7 +405,7 @@
                     <p class="contact-context">I welcome conversations about AI products, data businesses, and real estate technology. Share the problem you’re working on and where you see a fit.</p>
                     <p class="contact-resources"><a href="about.html#profile-resources">Biography and profile kit</a> <a href="assets/profile/ahmadreza-samadi.vcf" download>Save contact details</a> <a href="about.html#official-profiles">Official profiles</a></p>
                 </div>
-                <div><a class="contact-email" href="mailto:ahmadreza.smdi@gmail.com">ahmadreza.smdi@gmail.com</a><div class="contact-links" aria-label="Contact links">
+                <div><a class="contact-email" href="mailto:ahmadreza.smdi@gmail.com">ahmadreza.smdi@gmail.com</a><div class="contact-links" role="group" aria-label="Contact links">
                     <a href="mailto:ahmadreza.smdi@gmail.com">
                         <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></i>
                         <span>Email</span>
@@ -452,18 +446,11 @@
                 const header = document.querySelector(".site-header");
                 const navLinks = Array.from(document.querySelectorAll(".site-nav a"))
                     .filter((link) => link.getAttribute("href").startsWith("#"));
-                const motionVideos = document.querySelectorAll("[data-motion-video]");
                 const sections = navLinks
                     .map((link) => document.querySelector(link.getAttribute("href")))
                     .filter(Boolean);
                 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-                if (reducedMotion) {
-                    motionVideos.forEach((video) => {
-                        video.pause();
-                        video.removeAttribute("autoplay");
-                    });
-                }
 
                 const updateProgress = () => {
                     const max = document.documentElement.scrollHeight - window.innerHeight;
@@ -508,11 +495,19 @@
                 updateProgress();
                 updateActiveNav();
                 updateHeader();
-                window.addEventListener("scroll", () => {
-                    updateProgress();
-                    updateActiveNav();
-                    updateHeader();
-                }, { passive: true });
+                let scrollScheduled = false;
+                const scheduleScrollUpdate = () => {
+                    if (scrollScheduled) return;
+                    scrollScheduled = true;
+                    window.requestAnimationFrame(() => {
+                        updateProgress();
+                        updateActiveNav();
+                        updateHeader();
+                        scrollScheduled = false;
+                    });
+                };
+                window.addEventListener("scroll", scheduleScrollUpdate, { passive: true });
+                window.addEventListener("resize", scheduleScrollUpdate, { passive: true });
 
                 const revealItems = document.querySelectorAll(".reveal");
                 if (reducedMotion || !("IntersectionObserver" in window)) {
