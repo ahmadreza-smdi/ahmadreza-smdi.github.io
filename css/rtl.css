@@ -1,0 +1,19 @@
+/* Only typography and writing-direction adaptations. Layout, media and behavior
+   are inherited from the same site.css and homepage template as English. */
+html[dir="rtl"] body { font-family:Tahoma,Arial,sans-serif; }
+html[dir="rtl"] h1,html[dir="rtl"] h2,html[dir="rtl"] h3,
+html[dir="rtl"] .eyebrow,html[dir="rtl"] .brand-text,
+html[dir="rtl"] .venture-label,html[dir="rtl"] .timeline-date,
+html[dir="rtl"] .portrait-index,html[dir="rtl"] .portrait-caption {
+ font-family:inherit; letter-spacing:0; text-transform:none;
+}
+html[dir="rtl"] .hero h1 { line-height:1.3; }
+html[dir="rtl"] h2,html[dir="rtl"] h3 { line-height:1.5; }
+html[dir="rtl"] .hero-statement,html[dir="rtl"] .hero-context { line-height:1.9; }
+html[dir="rtl"] .portrait-index { left:auto; right:1px; }
+html[dir="rtl"] .motion-toggle { right:auto; left:0; }
+html[dir="rtl"] .contact-section::before { left:auto; right:0; }
+html[dir="rtl"] .scroll-progress span { transform-origin:right; }
+html[dir="rtl"] .contact-email { direction:ltr; unicode-bidi:isolate; text-align:right; }
+html[dir="rtl"] .case-system { border-left:0; border-right:1px solid var(--line); }
+@media(max-width:760px) { html[dir="rtl"] .case-system { border-right:0; } }
