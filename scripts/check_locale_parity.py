@@ -27,8 +27,9 @@ for lang in ['fa','ar']:
  normalized=[]
  for tag,attrs in p.items:
   attrs=attrs.copy()
-  if attrs.get('href','').startswith(f'https://a-samadi.com/{lang}/about.html'):
-   attrs['href']=attrs['href'].replace(f'https://a-samadi.com/{lang}/about.html','https://a-samadi.com/about.html',1)
+  for local_page in ('about.html','work/appraiva.html'):
+   if attrs.get('href','').startswith(f'https://a-samadi.com/{lang}/{local_page}'):
+    attrs['href']=attrs['href'].replace(f'https://a-samadi.com/{lang}/{local_page}',f'https://a-samadi.com/{local_page}',1)
   normalized.append((tag,attrs))
  assert normalized==base.items, f'{lang}: element or asset mismatch'
  assert p.ids==base.ids and len(p.ids)==len(set(p.ids)), f'{lang}: missing/duplicate section IDs'
