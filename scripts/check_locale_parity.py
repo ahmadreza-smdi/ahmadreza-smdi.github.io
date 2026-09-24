@@ -24,7 +24,13 @@ def parse(path,url):
 base=parse(ROOT/'index.html','https://a-samadi.com/')
 for lang in ['fa','ar']:
  p=parse(ROOT/lang/'index.html',f'https://a-samadi.com/{lang}/')
- assert p.items==base.items, f'{lang}: element or asset mismatch'
+ normalized=[]
+ for tag,attrs in p.items:
+  attrs=attrs.copy()
+  if attrs.get('href','').startswith(f'https://a-samadi.com/{lang}/about.html'):
+   attrs['href']=attrs['href'].replace(f'https://a-samadi.com/{lang}/about.html','https://a-samadi.com/about.html',1)
+  normalized.append((tag,attrs))
+ assert normalized==base.items, f'{lang}: element or asset mismatch'
  assert p.ids==base.ids and len(p.ids)==len(set(p.ids)), f'{lang}: missing/duplicate section IDs'
  s=(ROOT/lang/'index.html').read_text()
  assert f'<html lang="{lang}" dir="rtl">' in s

@@ -22,7 +22,9 @@ class Translator(HTMLParser):
             translated=value
             if self.body and key in ('aria-label','alt') and value:
                 translated=self.translations[value]
-            if key in ('href','src','poster','data-src') and not re.match(r'^(?:[a-z]+:|/|#)',value):translated='../'+value
+            if key=='href' and value.startswith('about.html'):
+                translated=value
+            elif key in ('href','src','poster','data-src') and not re.match(r'^(?:[a-z]+:|/|#)',value):translated='../'+value
             if key in ('srcset','imagesrcset'):
                 translated=', '.join('../'+v.strip() for v in value.split(','))
             if translated!=value:
