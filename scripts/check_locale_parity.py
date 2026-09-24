@@ -1,8 +1,10 @@
 """Verify localized homepage parity and SEO metadata across published pages."""
 from html.parser import HTMLParser
+from datetime import datetime
 from pathlib import Path
 from urllib.parse import urljoin
 from xml.etree import ElementTree
+import json
 import re
 ROOT=Path(__file__).resolve().parent.parent
 BASE='https://a-samadi.com/'
@@ -40,7 +42,6 @@ for lang in ['fa','ar']:
  assert f'rel="canonical" href="https://a-samadi.com/{lang}/"' in s
  scripts=re.findall(r'<script>(.*?)</script>',s,re.S)
  english=re.findall(r'<script>(.*?)</script>',(ROOT/'index.html').read_text(),re.S)
- import json
  tr=json.loads((ROOT/'locales'/f'{lang}.json').read_text())
  expected=english[-1].replace("'Resume motion'",json.dumps(tr['Resume motion'],ensure_ascii=False)).replace("'Pause motion'",json.dumps(tr['Pause motion'],ensure_ascii=False))
  assert scripts[-1]==expected, f'{lang}: behavior differs'
@@ -86,4 +87,13 @@ for cluster in (
   assert len(metadata.alternates)==4 and dict(metadata.alternates)==expected, f'{name}: incomplete or non-reciprocal hreflang'
   assert expected[language] in listed, f'{name}: missing from sitemap'
   assert not any('noindex' in directive.lower() for directive in metadata.robots), f'{name}: noindex directive'
+  if name.endswith(('index.html','about.html')):
+   source=(ROOT/name).read_text()
+   schemas=[json.loads(raw) for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>',source,re.S)]
+   profiles=[item for schema in schemas for item in schema.get('@graph',[schema]) if item.get('@type')=='ProfilePage']
+   assert len(profiles)==1, f'{name}: expected one ProfilePage'
+   modified=profiles[0].get('dateModified')
+   if modified:
+    parsed=datetime.fromisoformat(modified)
+    assert 'T' in modified and parsed.tzinfo is not None, f'{name}: dateModified needs time and timezone'
 print(f'PASS SEO: {len(listed)} self-canonical sitemap URLs and 5 reciprocal language clusters')
