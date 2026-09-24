@@ -29,7 +29,7 @@ for lang in ['fa','ar']:
  normalized=[]
  for tag,attrs in p.items:
   attrs=attrs.copy()
-  for local_page in ('about.html','work/appraiva.html'):
+  for local_page in ('about.html','work/appraiva.html','writing/ai-cost-per-verified-result.html'):
    if attrs.get('href','').startswith(f'https://a-samadi.com/{lang}/{local_page}'):
     attrs['href']=attrs['href'].replace(f'https://a-samadi.com/{lang}/{local_page}',f'https://a-samadi.com/{local_page}',1)
   normalized.append((tag,attrs))
@@ -74,6 +74,7 @@ for cluster in (
  ('index.html','fa/index.html','ar/index.html'),
  ('about.html','fa/about.html','ar/about.html'),
  ('work/appraiva.html','fa/work/appraiva.html','ar/work/appraiva.html'),
+ ('writing/ai-cost-per-verified-result.html','fa/writing/ai-cost-per-verified-result.html','ar/writing/ai-cost-per-verified-result.html'),
 ):
  urls=[BASE+(name[:-10] if name.endswith('index.html') else name) for name in cluster]
  expected=dict(zip(('en','fa','ar'),urls));expected['x-default']=urls[0]
@@ -84,4 +85,4 @@ for cluster in (
   assert len(metadata.alternates)==4 and dict(metadata.alternates)==expected, f'{name}: incomplete or non-reciprocal hreflang'
   assert expected[language] in listed, f'{name}: missing from sitemap'
   assert not any('noindex' in directive.lower() for directive in metadata.robots), f'{name}: noindex directive'
-print(f'PASS SEO: {len(listed)} self-canonical sitemap URLs and 3 reciprocal language clusters')
+print(f'PASS SEO: {len(listed)} self-canonical sitemap URLs and 4 reciprocal language clusters')
