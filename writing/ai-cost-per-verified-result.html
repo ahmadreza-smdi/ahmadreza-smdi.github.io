@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Ahmadreza Samadi">
+<title>AI Cost per Verified Result: Beyond Token Prices | Ahmadreza Samadi</title>
+<meta name="description" content="A practical framework for measuring AI workflow cost: include tokens, tools, retries and human review, then divide by results that pass verification.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://a-samadi.com/writing/ai-cost-per-verified-result.html">
+<link rel="icon" type="image/svg+xml" href="../assets/brand/favicon.svg">
+<link rel="stylesheet" href="../css/site.css?v=20260915-motion">
+<meta property="og:type" content="article"><meta property="og:title" content="AI Cost per Verified Result | Ahmadreza Samadi">
+<meta property="og:description" content="Lower model prices help. The useful measure is the full cost of results that pass review.">
+<meta property="og:url" content="https://a-samadi.com/writing/ai-cost-per-verified-result.html">
+<meta property="og:image" content="https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://a-samadi.com/writing/ai-cost-per-verified-result.html#article",
+  "headline": "AI Cost per Verified Result: Beyond Token Prices",
+  "description": "A practical framework for measuring the full cost of verified AI workflow results.",
+  "url": "https://a-samadi.com/writing/ai-cost-per-verified-result.html",
+  "mainEntityOfPage": "https://a-samadi.com/writing/ai-cost-per-verified-result.html",
+  "datePublished": "2026-09-24",
+  "dateModified": "2026-09-24",
+  "inLanguage": "en",
+  "image": "https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg",
+  "author": {"@type": "Person", "@id": "https://a-samadi.com/#person", "name": "Ahmadreza Samadi", "url": "https://a-samadi.com/about.html"},
+  "isPartOf": {"@id": "https://a-samadi.com/#website"}
+}</script>
+</head>
+<body class="editorial-body">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="editorial-header"><a href="/"><img src="../assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">Ahmadreza Samadi / Home</a></header>
+<main id="main" class="editorial">
+<p class="eyebrow">Analysis · AI product economics</p>
+<h1>AI cost per verified result</h1>
+<p class="lead">The price of a model call matters. The cost of getting a useful result through a complete workflow matters more.</p>
+<p class="byline">By <a href="/about.html" rel="author">Ahmadreza Samadi</a> · 24 September 2026</p>
+<p>When an AI provider lowers its price, a team can afford to test more ideas. But a cheaper call does not automatically make a product cheaper to operate. The workflow may still need repeated calls, other tools, and a person to check the output.</p>
+<h2>What changed in September 2026?</h2>
+<p>On 22 September, <a href="https://openai.com/index/introducing-gpt-6-sol-and-luna/">OpenAI announced</a> that GPT-6 Sol and Luna API prices were 50% lower than their GPT-5.6 promotional prices. <a href="https://www.anthropic.com/claude-opus-5-5">Anthropic announced</a> lower prices for Claude Opus 5.5 and estimated about 40% lower cost for typical token-billed work than Opus 5. The providers use different baselines, so these percentages do not compare their models with each other.</p>
+<p>For a business, the opportunity is to retest tasks that were too expensive before. The decision still depends on quality, the amount of review required, and the cost of the whole process.</p>
+<h2>Measure the work, not just the tokens</h2>
+<p>I would start with a simple measure:</p>
+<p><strong>Cost per verified result = total workflow cost ÷ results that pass review.</strong></p>
+<p>The numerator includes model input and output, cached context, tool calls, retries, failed runs, and human review time. The denominator counts outputs that meet a defined standard for the task. A low price per request can still produce an expensive result when many requests fail or need extensive correction.</p>
+<p>This is a measurement framework, not a universal benchmark. Teams need to define what “verified” means for their own workflow and record the assumptions behind any cost comparison.</p>
+<h2>A property research example</h2>
+<p>Imagine testing a tool that flags property records for further investigation. Start with a human-labeled set of records. Ask the system to surface candidates with supporting evidence. Have a reviewer accept or reject each suggestion, then measure precision, recall, total cost, and time to a decision.</p>
+<p>That is a proposed experiment, not a description of an Appraiva feature or a reported company result. It illustrates why a model that is cheaper to call might still cost more per accepted candidate if it sends too many false leads to a reviewer.</p>
+<h2>What I would test first</h2>
+<ul>
+<li>Choose one repetitive task and write down the current human process.</li>
+<li>Define a clear acceptance rule before running the AI test.</li>
+<li>Track model, tool, retry and review costs for every attempt.</li>
+<li>Compare accepted results and time to decision against the current process.</li>
+</ul>
+<p>The useful question is whether the workflow helps someone reach a reliable decision at a cost that makes sense. Lower model prices make that test easier to run; they do not answer it by themselves.</p>
+<h2>Continue the discussion</h2>
+<p>I covered the same idea in an <a href="https://www.linkedin.com/feed/update/urn:li:activity:7508805808802086912/">eight-page LinkedIn document</a> for product and engineering teams and a <a href="https://www.instagram.com/p/Ddqbo0civsp/">plain-language Instagram carousel</a>. For the broader product approach, read <a href="start-with-the-decision.html">Start with the decision, then build the AI</a> or use the <a href="../tools/before-you-build-ai.html">interactive decision brief</a>.</p>
+<footer class="editorial-footer"><nav aria-label="Related pages"><a href="/about.html">About Ahmadreza Samadi</a> · <a href="/">Selected work</a></nav><p>Ahmadreza Samadi · Technology Entrepreneur</p><a href="/#contact">Get in touch →</a></footer>
+</main>
+</body>
+</html>

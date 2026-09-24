@@ -49,8 +49,8 @@ for lang in ('fa','ar'):
         return '>'+leading+html.escape(tr[key],quote=False)+trailing+'<'
     visible=re.sub(r'>([^<>]+)<',translate,'<body>'+visible)
     script=script.replace("'Resume motion'",json.dumps(tr['Resume motion'],ensure_ascii=False)).replace("'Pause motion'",json.dumps(tr['Pause motion'],ensure_ascii=False))
-    name=tr['Ahmadreza Samadi'];title=name+' | '+tr['Technology entrepreneur']
-    description=tr['I’m Ahmadreza Samadi, a technology entrepreneur based in Dubai. I connect product strategy, engineering, and the practical work of building a business.']
+    title=tr['Search title']
+    description=tr['Search description']
     head=head.replace('<html lang="en">',f'<html lang="{lang}" dir="rtl">')
     head=head.replace('<title>Ahmadreza Samadi | Technology Entrepreneur</title>','<title>'+title+'</title>')
     head=head.replace('content="Ahmadreza Samadi | Technology Entrepreneur"','content="'+title+'"')
@@ -61,7 +61,7 @@ for lang in ('fa','ar'):
     head=head.replace('content="Ahmadreza Samadi, Dubai-based founder and technical executive"','content="'+tr['Portrait of Ahmadreza Samadi']+'"')
     def schema(m):
         d=json.loads(m[1]);profile=next(x for x in d['@graph'] if x['@type']=='ProfilePage')
-        profile.update({'@id':f'https://a-samadi.com/{lang}/#profile','url':f'https://a-samadi.com/{lang}/','name':title,'description':description,'inLanguage':lang,'dateModified':'2026-09-21'})
+        profile.update({'@id':f'https://a-samadi.com/{lang}/#profile','url':f'https://a-samadi.com/{lang}/','name':title,'description':description,'inLanguage':lang,'dateModified':'2026-09-24'})
         return '<script type="application/ld+json">'+json.dumps(d,ensure_ascii=False,indent=2)+'</script>'
     head=re.sub(r'<script type="application/ld\+json">(.*?)</script>',schema,head,flags=re.S)
     head=head.replace('</head>','    <link rel="stylesheet" href="../css/rtl.css?v=20260921" />\n</head>')
