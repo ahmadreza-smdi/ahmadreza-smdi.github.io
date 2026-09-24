@@ -1,9 +1,11 @@
-"""Verify localized homepages retain every English element, destination and asset."""
+"""Verify localized homepage parity and SEO metadata across published pages."""
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urljoin
+from xml.etree import ElementTree
 import re
 ROOT=Path(__file__).resolve().parent.parent
+BASE='https://a-samadi.com/'
 class Structure(HTMLParser):
  def __init__(self,url):super().__init__();self.url=url;self.body=False;self.items=[];self.ids=[]
  def handle_starttag(self,t,a):
@@ -43,3 +45,43 @@ for lang in ['fa','ar']:
  expected=english[-1].replace("'Resume motion'",json.dumps(tr['Resume motion'],ensure_ascii=False)).replace("'Pause motion'",json.dumps(tr['Pause motion'],ensure_ascii=False))
  assert scripts[-1]==expected, f'{lang}: behavior differs'
  print(f'PASS {lang}: {len(p.items)} matching body elements, all section IDs, assets, links and interaction code')
+
+class HeadSEO(HTMLParser):
+ def __init__(self):super().__init__();self.language=None;self.canonicals=[];self.alternates=[];self.robots=[]
+ def handle_starttag(self,tag,attributes):
+  attrs=dict(attributes)
+  if tag=='html':self.language=attrs.get('lang')
+  if tag=='link' and attrs.get('rel')=='canonical':self.canonicals.append(attrs.get('href'))
+  if tag=='link' and attrs.get('rel')=='alternate' and attrs.get('hreflang'):
+   self.alternates.append((attrs['hreflang'],attrs.get('href')))
+  if tag=='meta' and attrs.get('name')=='robots':self.robots.append(attrs.get('content',''))
+
+def seo(path):
+ metadata=HeadSEO();metadata.feed((ROOT/path).read_text());return metadata
+
+namespace='{http://www.sitemaps.org/schemas/sitemap/0.9}'
+sitemap=ElementTree.parse(ROOT/'sitemap.xml').getroot()
+listed=[item.text for item in sitemap.findall(f'{namespace}url/{namespace}loc')]
+assert len(listed)==len(set(listed)), 'duplicate sitemap URL'
+for url in listed:
+ assert url.startswith(BASE), f'unexpected sitemap URL: {url}'
+ relative=url.removeprefix(BASE)
+ source=Path(relative+('index.html' if not relative or relative.endswith('/') else ''))
+ assert (ROOT/source).is_file(), f'missing sitemap page: {url}'
+ assert seo(source).canonicals==[url], f'non-self-canonical sitemap page: {url}'
+
+for cluster in (
+ ('index.html','fa/index.html','ar/index.html'),
+ ('about.html','fa/about.html','ar/about.html'),
+ ('work/appraiva.html','fa/work/appraiva.html','ar/work/appraiva.html'),
+):
+ urls=[BASE+(name[:-10] if name.endswith('index.html') else name) for name in cluster]
+ expected=dict(zip(('en','fa','ar'),urls));expected['x-default']=urls[0]
+ for language,name in zip(('en','fa','ar'),cluster):
+  metadata=seo(Path(name))
+  assert metadata.language==language, f'{name}: language mismatch'
+  assert metadata.canonicals==[expected[language]], f'{name}: canonical mismatch'
+  assert len(metadata.alternates)==4 and dict(metadata.alternates)==expected, f'{name}: incomplete or non-reciprocal hreflang'
+  assert expected[language] in listed, f'{name}: missing from sitemap'
+  assert not any('noindex' in directive.lower() for directive in metadata.robots), f'{name}: noindex directive'
+print(f'PASS SEO: {len(listed)} self-canonical sitemap URLs and 3 reciprocal language clusters')
