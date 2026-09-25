@@ -80,6 +80,7 @@ for cluster in (
  ('writing/connected-ai-apps.html','fa/writing/connected-ai-apps.html','ar/writing/connected-ai-apps.html'),
  ('writing/jev-ai-decision-model.html','fa/writing/jev-ai-decision-model.html','ar/writing/jev-ai-decision-model.html'),
  ('writing/index.html','fa/writing/index.html','ar/writing/index.html'),
+ ('writing/start-with-the-decision.html','fa/writing/start-with-the-decision.html','ar/writing/start-with-the-decision.html'),
 ):
  urls=[BASE+(name[:-10] if name.endswith('index.html') else name) for name in cluster]
  expected=dict(zip(('en','fa','ar'),urls));expected['x-default']=urls[0]
@@ -99,4 +100,4 @@ for cluster in (
    if modified:
     parsed=datetime.fromisoformat(modified)
     assert 'T' in modified and parsed.tzinfo is not None, f'{name}: dateModified needs time and timezone'
-print(f'PASS SEO: {len(listed)} self-canonical sitemap URLs and 8 reciprocal language clusters')
+print(f'PASS SEO: {len(listed)} self-canonical sitemap URLs and 9 reciprocal language clusters')
