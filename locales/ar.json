@@ -142,5 +142,15 @@
   "ETL": "ETL",
   "PySpark": "PySpark",
   "ahmadreza.smdi@gmail.com": "ahmadreza.smdi@gmail.com",
-  "Resume motion": "استئناف الحركة"
+  "Resume motion": "استئناف الحركة",
+  "Connected AI apps: access, scope and approval": "ربط التطبيقات بالذكاء الاصطناعي: الوصول والصلاحيات والموافقة",
+  "What changes when an AI assistant can use your calendar, files or email, and what to check before you connect.": "ما الذي يتغير عندما يستطيع مساعد الذكاء الاصطناعي استخدام تقويمك أو ملفاتك أو بريدك، وما الذي ينبغي التحقق منه قبل الربط.",
+  "Read: Connected AI apps →": "اقرأ: ربط التطبيقات بالذكاء الاصطناعي ←",
+  "Jev: an AI decision model, not another chatbot": "Jev: نموذج قرار بالذكاء الاصطناعي وليس روبوت محادثة آخر",
+  "Why a model that chooses the next step is different from one that writes the answer.": "لماذا يختلف النموذج الذي يختار الخطوة التالية عن النموذج الذي يكتب الإجابة.",
+  "Read: Jev, the AI decision model →": "اقرأ: Jev، نموذج القرار بالذكاء الاصطناعي ←",
+  "Archive": "الأرشيف",
+  "All writing": "كل المقالات",
+  "Every article, explainer and field guide in one place.": "كل المقالات والشروحات والأدلة في مكان واحد.",
+  "Browse all writing →": "تصفح كل المقالات ←"
 }

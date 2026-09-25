@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Ahmadreza Samadi">
+<title>Jev چیست؟ مدل تصمیم‌گیر هوش مصنوعی، نه یک چت‌بات دیگر | احمدرضا صمدی</title>
+<meta name="description" content="Jev از TypeSafe AI چیست؟ تفاوت یک مدل تصمیم‌گیر با GPT و Claude، نتیجه آزمون اولیه Banking77 و روش آزمودن آن به‌عنوان لایه مسیریابی.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://a-samadi.com/fa/writing/jev-ai-decision-model.html">
+<link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/jev-ai-decision-model.html">
+<link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/jev-ai-decision-model.html">
+<link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/jev-ai-decision-model.html">
+<link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/jev-ai-decision-model.html">
+<link rel="icon" type="image/svg+xml" href="../../assets/brand/favicon.svg">
+<link rel="stylesheet" href="../../css/site.css?v=20260915-motion">
+<link rel="stylesheet" href="../../css/rtl.css?v=20260921">
+<meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
+<meta property="og:title" content="Jev: مدل تصمیم‌گیر هوش مصنوعی، نه یک چت‌بات دیگر | احمدرضا صمدی">
+<meta property="og:description" content="Jev برای انتخاب قدم بعدی ساخته شده، نه برای نوشتن پاسخ. معنای این تفاوت، شواهد اولیه و روش آزمودن آن.">
+<meta property="og:url" content="https://a-samadi.com/fa/writing/jev-ai-decision-model.html"><meta property="og:locale" content="fa_IR">
+<meta property="og:image" content="https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg"><meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://a-samadi.com/fa/writing/jev-ai-decision-model.html#article",
+      "headline": "Jev: مدل تصمیم‌گیر هوش مصنوعی، نه یک چت‌بات دیگر",
+      "description": "Jev از TypeSafe AI چیست؟ تفاوت یک مدل تصمیم‌گیر با GPT و Claude، نتیجه آزمون اولیه Banking77 و روش آزمودن آن به‌عنوان لایه مسیریابی.",
+      "url": "https://a-samadi.com/fa/writing/jev-ai-decision-model.html",
+      "mainEntityOfPage": "https://a-samadi.com/fa/writing/jev-ai-decision-model.html",
+      "datePublished": "2026-09-25",
+      "dateModified": "2026-09-25",
+      "inLanguage": "fa",
+      "image": "https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg",
+      "keywords": [
+        "Jev",
+        "TypeSafe AI",
+        "AI decision model",
+        "System One models",
+        "intent classification",
+        "AI routing",
+        "Banking77"
+      ],
+      "citation": [
+        "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+        "https://docs.typesafe.ai/introduction",
+        "https://openrouter.ai/blog/insights/jev-vs-claude-opus-5-classification/"
+      ],
+      "author": {
+        "@type": "Person",
+        "@id": "https://a-samadi.com/#person",
+        "name": "Ahmadreza Samadi",
+        "url": "https://a-samadi.com/fa/about.html"
+      },
+      "publisher": {
+        "@id": "https://a-samadi.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://a-samadi.com/#website"
+      },
+      "translationOfWork": {
+        "@id": "https://a-samadi.com/writing/jev-ai-decision-model.html#article"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "صفحه اصلی",
+          "item": "https://a-samadi.com/fa/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "نوشته‌ها",
+          "item": "https://a-samadi.com/fa/writing/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Jev: مدل تصمیم‌گیر هوش مصنوعی، نه یک چت‌بات دیگر"
+        }
+      ]
+    }
+  ]
+}</script>
+</head>
+<body class="editorial-body persian-page">
+<a class="skip-link" href="#main">رفتن به محتوا</a>
+<header class="editorial-header"><a href="/fa/"><img src="../../assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">احمدرضا صمدی / صفحه اصلی</a></header>
+<main id="main" class="editorial">
+<nav class="byline" aria-label="مسیر صفحه"><a href="/fa/">صفحه اصلی</a> / <a href="/fa/writing/">نوشته‌ها</a> / <span aria-current="page">Jev: مدل تصمیم‌گیر هوش مصنوعی، نه یک چت‌بات دیگر</span></nav>
+<p class="eyebrow">تحلیل · مدل‌های تصمیم‌گیر هوش مصنوعی</p>
+<h1>Jev: مدل تصمیم‌گیر هوش مصنوعی، نه یک چت‌بات دیگر</h1>
+<p class="lead">بیشتر مردم هوش مصنوعی را سیستمی می‌شناسند که می‌نویسد. Jev از این جهت جالب است که برای انتخاب کردن ساخته شده: گرفتن تصمیمی محدود که نرم‌افزار بتواند بر اساس آن عمل کند.</p>
+<p class="byline">نوشته <a href="/fa/about.html" rel="author">احمدرضا صمدی</a> · <time datetime="2026-09-25">۲۵ سپتامبر ۲۰۲۶</time></p>
+<p>در ۱۵ سپتامبر ۲۰۲۶، <a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">TypeSafe AI مدل Jev را معرفی کرد</a> و آن را در دسته‌ای به نام System One قرار داد. هدف، ساختن هم‌صحبتی بهتر نیست؛ مدلی است که درون یک نرم‌افزار و درست در لحظه‌ای که نرم‌افزار به قضاوت نیاز دارد قرار می‌گیرد، مثلاً برای تعیین اینکه یک پیام ورودی باید به کجا برود.</p>
+<h2>Jev چیست؟</h2>
+<p>طبق <a href="https://docs.typesafe.ai/introduction">مستندات TypeSafe</a>، Jev وضعیت نرم‌افزار و پرسش‌های ساختاریافته را دریافت می‌کند و گزینه‌ها، امتیازها یا مقادیری شبیه احتمال برمی‌گرداند که کد می‌تواند مستقیماً از آن‌ها استفاده کند. به‌جای نوشتن یک پاراگراف آزاد، در چارچوب گزینه‌هایی که شما تعریف کرده‌اید پاسخ می‌دهد.</p>
+<p>TypeSafe نمونه‌برداری Jev را موازی توصیف می‌کند، نه خودبازگشتی؛ یعنی پاسخ را مانند یک چت‌بات کلمه به کلمه تولید نمی‌کند. این توصیف خود شرکت از معماری‌اش است و تا زمانی که بررسی مستقلی انجام نشده، آن را ادعای سازنده می‌دانم.</p>
+<h2>تصمیم گرفتن در برابر تولید کردن</h2>
+<p>پیامی را تصور کنید که به یک کسب‌وکار می‌رسد: «برای حسابم کمک لازم دارم.» این پیام باید به فروش برود، به پشتیبانی یا به یک نفر برای بازبینی؟ یک مدل تصمیم‌گیر می‌تواند پیام را بررسی کند و از میان گزینه‌های مجاز «پشتیبانی» را انتخاب کند. سپس یک مدل مولد مانند GPT یا Claude می‌تواند پاسخی مفید بنویسد.</p>
+<p>یک مدل کمک می‌کند تصمیم بگیریم قدم بعدی چیست؛ مدل دیگر کمک می‌کند توضیح دهیم یا چیزی بسازیم. این دو می‌توانند با هم کار کنند. GPT و Claude هم می‌توانند خروجی ساختاریافته بدهند؛ بنابراین تفاوت در تخصص و طراحی فرایند است، نه در این ادعا که فقط Jev می‌تواند پاسخ ساختاریافته برگرداند.</p>
+<h2>شواهد اولیه چه می‌گویند؟</h2>
+<p>در ۲۲ سپتامبر ۲۰۲۶، <a href="https://openrouter.ai/blog/insights/jev-vs-claude-opus-5-classification/">OpenRouter مدل Jev 1.13 را با Claude Opus 5</a> روی بخش آزمون مجموعه‌داده دسته‌بندی قصد Banking77 مقایسه کرد:</p>
+<ul>
+<li><strong>دقت:</strong> ۸۱٫۰٪ برای Jev 1.13 در برابر ۸۴٫۴٪ برای Claude Opus 5.</li>
+<li><strong>میانه زمان رفت‌وبرگشت:</strong> ۱۷۵ میلی‌ثانیه برای Jev در برابر ۲٬۲۶۶ میلی‌ثانیه.</li>
+<li><strong>هزینه صورتحساب برای هر ۱٬۰۰۰ درخواست:</strong> ۰٫۱۱ دلار برای Jev در برابر ۲٫۴۲ دلار.</li>
+</ul>
+<p>این یک بده‌بستان معنادار است: اختلاف اندکی در دقت در ازای تأخیر و هزینه بسیار کمتر. اما دامنه آزمون محدود است: یک حوزه، یک طراحی پرامپت، و قابلیت استدلال Opus غیرفعال بوده است. این آزمون رتبه‌بندی کلی مدل‌ها نیست.</p>
+<p>OpenRouter همچنین دریافت که امتیاز اطمینان Jev در این مجموعه‌داده به‌عنوان احتمال تنظیم نشده است. تا وقتی آن را با داده‌های خودتان نسنجیده‌اید، امتیاز بالا را به معنای احتمال برابرِ درست بودن نخوانید.</p>
+<h2>من Jev را چگونه می‌آزمایم</h2>
+<p>من Jev را به‌عنوان یک لایه مسیریابی می‌آزمایم، نه جایگزین کل فرایند:</p>
+<ol>
+<li>هر مورد را در مجموعه‌ای از گزینه‌های تعریف‌شده دسته‌بندی کن.</li>
+<li>آستانه اطمینانی را به کار ببر که روی داده‌های کنارگذاشته از فرایند واقعی اعتبارسنجی شده است.</li>
+<li>موارد نامطمئن را به مدلی بزرگ‌تر یا بازبین انسانی بسپار.</li>
+<li>قواعد دقیق، مجوزها و اقدام‌های نهایی را در کد نرم‌افزار نگه دار.</li>
+</ol>
+<p>سپس آنچه در کل فرایند اهمیت دارد را بسنج: دقت، نرخ بازبینی، تأخیر و هزینه هر تصمیم پذیرفته‌شده. این معیار آخر همان چارچوبی است که برای هر فرایند هوش مصنوعی به کار می‌برم و در مقاله <a href="/fa/writing/ai-cost-per-verified-result.html">هزینه هوش مصنوعی به‌ازای هر نتیجه تأییدشده</a> توضیح داده‌ام.</p>
+<h2>محدودیتی که باید به خاطر سپرد</h2>
+<p>پاسخ ساختاریافته نمی‌تواند از قالب مجازش بیرون برود، اما همچنان می‌تواند تصمیم اشتباهی باشد. ساختار، استفاده از خروجی را آسان‌تر می‌کند؛ آن را درست نمی‌کند. با نمونه‌های واقعی آزمایش کنید و موارد نامطمئن را برای بازبینی باز نگه دارید.</p>
+<h2>ادامه بحث</h2>
+<p>درباره Jev یک <a href="https://www.linkedin.com/feed/update/urn:li:activity:7509183536575176704/">سند فنی هشت‌صفحه‌ای در LinkedIn</a> برای خوانندگان مهندسی و یک <a href="https://www.instagram.com/p/DdtJkPbCjAl/">توضیح ساده در Instagram</a> برای مخاطب عمومی منتشر کرده‌ام. مطالب مرتبط: <a href="/fa/writing/connected-ai-apps.html">اتصال اپ‌ها به هوش مصنوعی</a> و <a href="/writing/start-with-the-decision.html" hreflang="en">مقاله انگلیسی «از تصمیم شروع کنید»</a>.</p>
+<h2>منابع</h2>
+<ul>
+<li>TypeSafe AI، <a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">«Introducing System One Models &amp; Jev»</a>، ۱۵ سپتامبر ۲۰۲۶.</li>
+<li>TypeSafe AI، <a href="https://docs.typesafe.ai/introduction">مستندات: مقدمه</a>، بررسی‌شده در ۲۵ سپتامبر ۲۰۲۶.</li>
+<li>OpenRouter، <a href="https://openrouter.ai/blog/insights/jev-vs-claude-opus-5-classification/">«Is Jev as Accurate as Frontier Models at Classification?»</a>، ۲۲ سپتامبر ۲۰۲۶.</li>
+</ul>
+<footer class="editorial-footer"><nav aria-label="صفحه‌های مرتبط"><a href="/fa/writing/">همه نوشته‌ها</a> · <a href="/fa/about.html">درباره احمدرضا صمدی</a> · <a href="/fa/about.html#official-profiles">صفحه‌های رسمی</a> · <a href="/fa/">نوشته‌ها و پروژه‌ها</a></nav><p>احمدرضا صمدی · کارآفرین فناوری</p><a href="/fa/#contact">تماس ←</a></footer>
+</main>
+</body>
+</html>

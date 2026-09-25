@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Ahmadreza Samadi">
+<title>Connected AI Apps: Access, Scope and Approval | Ahmadreza Samadi</title>
+<meta name="description" content="What happens when you connect an app to ChatGPT or Gemini? A practical guide to accounts, permissions, reading versus acting, and approval before you connect.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://a-samadi.com/writing/connected-ai-apps.html">
+<link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/connected-ai-apps.html">
+<link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/connected-ai-apps.html">
+<link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/connected-ai-apps.html">
+<link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/connected-ai-apps.html">
+<link rel="icon" type="image/svg+xml" href="../assets/brand/favicon.svg">
+<link rel="stylesheet" href="../css/site.css?v=20260915-motion">
+<meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
+<meta property="og:title" content="Connected AI apps: access, scope and approval | Ahmadreza Samadi">
+<meta property="og:description" content="Connecting an app to an AI assistant decides what it can see and what it can change. Four boundaries to check first.">
+<meta property="og:url" content="https://a-samadi.com/writing/connected-ai-apps.html"><meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg"><meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://a-samadi.com/writing/connected-ai-apps.html#article",
+      "headline": "Connected AI apps: access, scope and approval",
+      "description": "What happens when you connect an app to ChatGPT or Gemini? A practical guide to accounts, permissions, reading versus acting, and approval before you connect.",
+      "url": "https://a-samadi.com/writing/connected-ai-apps.html",
+      "mainEntityOfPage": "https://a-samadi.com/writing/connected-ai-apps.html",
+      "datePublished": "2026-09-25",
+      "dateModified": "2026-09-25",
+      "inLanguage": "en",
+      "image": "https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg",
+      "keywords": [
+        "connected apps",
+        "AI assistants",
+        "Gemini Connected Apps",
+        "ChatGPT connected apps",
+        "AI permissions",
+        "OAuth scope",
+        "product architecture"
+      ],
+      "citation": [
+        "https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/",
+        "https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt"
+      ],
+      "author": {
+        "@type": "Person",
+        "@id": "https://a-samadi.com/#person",
+        "name": "Ahmadreza Samadi",
+        "url": "https://a-samadi.com/about.html"
+      },
+      "publisher": {
+        "@id": "https://a-samadi.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://a-samadi.com/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://a-samadi.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Writing",
+          "item": "https://a-samadi.com/writing/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Connected AI apps: access, scope and approval"
+        }
+      ]
+    }
+  ]
+}</script>
+</head>
+<body class="editorial-body">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="editorial-header"><a href="/"><img src="../assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">Ahmadreza Samadi / Home</a></header>
+<main id="main" class="editorial">
+<nav class="byline" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/writing/">Writing</a> / <span aria-current="page">Connected AI apps: access, scope and approval</span></nav>
+<p class="eyebrow">Explainer · AI assistants and permissions</p>
+<h1>Connected AI apps: access, scope and approval</h1>
+<p class="lead">When an AI assistant asks you to connect an app, you are deciding what it can see and what it can change. That decision deserves a minute of attention.</p>
+<p class="byline">By <a href="/about.html" rel="author">Ahmadreza Samadi</a> · <time datetime="2026-09-25">25 September 2026</time></p>
+<p>AI assistants are connecting to more of the tools people use every day: calendars, email, files, notes and task lists. On 23 September 2026, <a href="https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/">Google announced a new wave of Connected Apps for Gemini</a>, and <a href="https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt">OpenAI documents a similar capability in ChatGPT</a>. The feature is useful, but the single word “connect” hides several separate decisions.</p>
+<h2>What is a connected app?</h2>
+<p>A connected app is an authorized path between an AI assistant and another service. Instead of copying your meetings into a chat, you let the assistant look them up through the account and access you approve. Ask “what is on my calendar tomorrow?” and a supported calendar connection can answer without you pasting every event.</p>
+<p>Without that connection, the assistant only knows what you type. With it, the assistant can use the app within the limits of that particular integration.</p>
+<h2>Reading is not the same as acting</h2>
+<p>The most useful distinction is between reading and acting. Finding a meeting is different from creating one. Summarizing a document is different from editing it. Some integrations only read; others can also take supported actions, and many ask for confirmation first.</p>
+<p>A connector’s existence does not mean an assistant can do everything in that app. OpenAI’s documentation says the available data and actions depend on the app, the access granted when you connect, and any workspace controls. No announcement promises that every app can both read and write.</p>
+<h2>Four boundaries that decide what an assistant can do</h2>
+<ol>
+<li><strong>The account.</strong> Which account did you connect, personal or work? The assistant can only reach what that account can reach.</li>
+<li><strong>The scope.</strong> What access did you grant at connection time? Read-only access and permission to make changes are different grants.</li>
+<li><strong>The integration.</strong> What does this specific connector support? Two apps in the same category can offer very different capabilities.</li>
+<li><strong>The approval rules.</strong> When does the assistant ask before acting? A clear confirmation step matters most for anything that sends, deletes or changes records.</li>
+</ol>
+<h2>How a request moves through a connected app</h2>
+<p>From a product architecture point of view, I think about four checkpoints:</p>
+<ol>
+<li>Understand the user’s request.</li>
+<li>Select the connected tool only if it is needed.</li>
+<li>Check the account, scope and supported capability.</li>
+<li>Return information, or follow the approval rules for a supported action.</li>
+</ol>
+<p>Each checkpoint is a place where a well-designed system can stop, ask or explain. That is what makes an integration trustworthy enough for real work.</p>
+<h2>Three questions to ask before you connect any app</h2>
+<ul>
+<li><strong>Which account?</strong> Make sure it is the one you intend to use for this task.</li>
+<li><strong>What can it read?</strong> Know which records, files or messages become available.</li>
+<li><strong>What can it change?</strong> Find out whether it can create, edit, send or delete, and when it asks first.</li>
+</ul>
+<p>Also check how to revoke access. Connect for a clear purpose, review access from time to time, and confirm before anything changes. These habits keep the benefit without the surprise.</p>
+<h2>What this means for teams building AI products</h2>
+<p>For product and engineering teams, the same boundaries are design decisions. Request the narrowest access the use case needs, make the difference between reading and acting visible to the user, and treat the approval step as part of the product rather than an afterthought. Clear use cases and clear boundaries make integrations more useful, not less.</p>
+<h2>Continue the discussion</h2>
+<p>I covered this topic in a <a href="https://www.linkedin.com/feed/update/urn:li:activity:7509187433587085312/">seven-page technical LinkedIn document</a> for product and engineering readers and a <a href="https://www.instagram.com/p/DdtLTQyiusi/">plain-language Instagram carousel</a>. For a related question about the economics of AI work, read <a href="/writing/ai-cost-per-verified-result.html">AI cost per verified result</a>, or see how a <a href="/writing/jev-ai-decision-model.html">dedicated AI decision model</a> fits into a workflow.</p>
+<h2>Sources</h2>
+<ul>
+<li>Google, <a href="https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/">“A new wave of Connected Apps is rolling out to Gemini”</a>, 23 September 2026.</li>
+<li>OpenAI Help Center, <a href="https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt">“Connected apps in ChatGPT”</a>, checked 25 September 2026.</li>
+</ul>
+<footer class="editorial-footer"><nav aria-label="Related pages"><a href="/writing/">All writing</a> · <a href="/about.html">About Ahmadreza Samadi</a> · <a href="/about.html#official-profiles">Official profiles</a> · <a href="/">Selected work</a></nav><p>Ahmadreza Samadi · Technology Entrepreneur</p><a href="/#contact">Get in touch →</a></footer>
+</main>
+</body>
+</html>

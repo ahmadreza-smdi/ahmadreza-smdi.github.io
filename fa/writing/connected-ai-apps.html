@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Ahmadreza Samadi">
+<title>اتصال اپ‌ها به هوش مصنوعی: دسترسی، محدوده و تأیید | احمدرضا صمدی</title>
+<meta name="description" content="وقتی اپی را به ChatGPT یا Gemini وصل می‌کنید چه اتفاقی می‌افتد؟ راهنمایی کاربردی درباره حساب کاربری، مجوزها، تفاوت «خواندن» و «انجام دادن» و تأیید پیش از اتصال.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://a-samadi.com/fa/writing/connected-ai-apps.html">
+<link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/connected-ai-apps.html">
+<link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/connected-ai-apps.html">
+<link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/connected-ai-apps.html">
+<link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/connected-ai-apps.html">
+<link rel="icon" type="image/svg+xml" href="../../assets/brand/favicon.svg">
+<link rel="stylesheet" href="../../css/site.css?v=20260915-motion">
+<link rel="stylesheet" href="../../css/rtl.css?v=20260921">
+<meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
+<meta property="og:title" content="اتصال اپ‌ها به هوش مصنوعی: دسترسی، محدوده و تأیید | احمدرضا صمدی">
+<meta property="og:description" content="اتصال یک اپ به دستیار هوش مصنوعی تعیین می‌کند چه چیزی را ببیند و چه چیزی را تغییر دهد. چهار مرزی که پیش از اتصال باید بررسی کرد.">
+<meta property="og:url" content="https://a-samadi.com/fa/writing/connected-ai-apps.html"><meta property="og:locale" content="fa_IR">
+<meta property="og:image" content="https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg"><meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://a-samadi.com/fa/writing/connected-ai-apps.html#article",
+      "headline": "اتصال اپ‌ها به هوش مصنوعی: دسترسی، محدوده و تأیید",
+      "description": "وقتی اپی را به ChatGPT یا Gemini وصل می‌کنید چه اتفاقی می‌افتد؟ راهنمایی کاربردی درباره حساب کاربری، مجوزها، تفاوت «خواندن» و «انجام دادن» و تأیید پیش از اتصال.",
+      "url": "https://a-samadi.com/fa/writing/connected-ai-apps.html",
+      "mainEntityOfPage": "https://a-samadi.com/fa/writing/connected-ai-apps.html",
+      "datePublished": "2026-09-25",
+      "dateModified": "2026-09-25",
+      "inLanguage": "fa",
+      "image": "https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg",
+      "keywords": [
+        "connected apps",
+        "AI assistants",
+        "Gemini Connected Apps",
+        "ChatGPT connected apps",
+        "AI permissions",
+        "OAuth scope",
+        "product architecture"
+      ],
+      "citation": [
+        "https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/",
+        "https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt"
+      ],
+      "author": {
+        "@type": "Person",
+        "@id": "https://a-samadi.com/#person",
+        "name": "Ahmadreza Samadi",
+        "url": "https://a-samadi.com/fa/about.html"
+      },
+      "publisher": {
+        "@id": "https://a-samadi.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://a-samadi.com/#website"
+      },
+      "translationOfWork": {
+        "@id": "https://a-samadi.com/writing/connected-ai-apps.html#article"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "صفحه اصلی",
+          "item": "https://a-samadi.com/fa/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "نوشته‌ها",
+          "item": "https://a-samadi.com/fa/writing/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "اتصال اپ‌ها به هوش مصنوعی: دسترسی، محدوده و تأیید"
+        }
+      ]
+    }
+  ]
+}</script>
+</head>
+<body class="editorial-body persian-page">
+<a class="skip-link" href="#main">رفتن به محتوا</a>
+<header class="editorial-header"><a href="/fa/"><img src="../../assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">احمدرضا صمدی / صفحه اصلی</a></header>
+<main id="main" class="editorial">
+<nav class="byline" aria-label="مسیر صفحه"><a href="/fa/">صفحه اصلی</a> / <a href="/fa/writing/">نوشته‌ها</a> / <span aria-current="page">اتصال اپ‌ها به هوش مصنوعی: دسترسی، محدوده و تأیید</span></nav>
+<p class="eyebrow">توضیح · دستیارهای هوش مصنوعی و مجوزها</p>
+<h1>اتصال اپ‌ها به هوش مصنوعی: دسترسی، محدوده و تأیید</h1>
+<p class="lead">وقتی دستیار هوش مصنوعی از شما می‌خواهد اپی را متصل کنید، در واقع تصمیم می‌گیرید چه چیزی را ببیند و چه چیزی را تغییر دهد. این تصمیم یک دقیقه توجه می‌خواهد.</p>
+<p class="byline">نوشته <a href="/fa/about.html" rel="author">احمدرضا صمدی</a> · <time datetime="2026-09-25">۲۵ سپتامبر ۲۰۲۶</time></p>
+<p>دستیارهای هوش مصنوعی به ابزارهای روزمره بیشتری وصل می‌شوند: تقویم، ایمیل، فایل‌ها، یادداشت‌ها و فهرست کارها. در ۲۳ سپتامبر ۲۰۲۶، <a href="https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/">Google موج تازه‌ای از Connected Apps را برای Gemini معرفی کرد</a> و <a href="https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt">OpenAI نیز قابلیت مشابهی را در ChatGPT مستند کرده است</a>. این قابلیت مفید است، اما پشت کلمه ساده «اتصال» چند تصمیم جداگانه پنهان است.</p>
+<h2>اپ متصل چیست؟</h2>
+<p>اپ متصل مسیری مجاز میان دستیار هوش مصنوعی و یک سرویس دیگر است. به‌جای اینکه جلسه‌هایتان را در گفت‌وگو کپی کنید، اجازه می‌دهید دستیار از طریق حساب و دسترسی‌ای که تأیید کرده‌اید آن‌ها را پیدا کند. بپرسید «فردا چه برنامه‌ای دارم؟» و یک اتصال تقویم پشتیبانی‌شده می‌تواند بدون اینکه همه رویدادها را وارد کنید پاسخ دهد.</p>
+<p>بدون این اتصال، دستیار فقط چیزی را می‌داند که شما می‌نویسید. با آن، دستیار می‌تواند در محدوده همان یکپارچه‌سازی مشخص از اپ استفاده کند.</p>
+<h2>خواندن با انجام دادن یکی نیست</h2>
+<p>مهم‌ترین تمایز، تفاوت میان خواندن و انجام دادن است. پیدا کردن یک جلسه با ساختن آن فرق دارد. خلاصه کردن یک سند با ویرایش آن فرق دارد. برخی اتصال‌ها فقط می‌خوانند؛ برخی دیگر می‌توانند کارهای پشتیبانی‌شده‌ای هم انجام دهند و بسیاری از آن‌ها پیش از اقدام تأیید می‌گیرند.</p>
+<p>وجود یک اتصال به این معنا نیست که دستیار می‌تواند هر کاری را در آن اپ انجام دهد. طبق مستندات OpenAI، داده‌ها و اقدام‌های در دسترس به خود اپ، دسترسی داده‌شده هنگام اتصال و تنظیمات فضای کاری بستگی دارد. هیچ اعلامیه‌ای وعده نمی‌دهد که هر اپ هم بخواند و هم بنویسد.</p>
+<h2>چهار مرزی که توان دستیار را تعیین می‌کند</h2>
+<ol>
+<li><strong>حساب کاربری.</strong> کدام حساب را وصل کرده‌اید، شخصی یا کاری؟ دستیار فقط به چیزی دسترسی دارد که همان حساب به آن دسترسی دارد.</li>
+<li><strong>محدوده دسترسی.</strong> هنگام اتصال چه اجازه‌ای داده‌اید؟ دسترسی فقط‌خواندنی و اجازه ایجاد تغییر دو مجوز متفاوت‌اند.</li>
+<li><strong>یکپارچه‌سازی.</strong> این اتصال مشخص از چه چیزی پشتیبانی می‌کند؟ دو اپ در یک دسته می‌توانند قابلیت‌های بسیار متفاوتی داشته باشند.</li>
+<li><strong>قواعد تأیید.</strong> دستیار چه زمانی پیش از اقدام سؤال می‌کند؟ مرحله تأیید روشن برای هر کاری که چیزی را ارسال، حذف یا تغییر می‌دهد اهمیت بیشتری دارد.</li>
+</ol>
+<h2>مسیر یک درخواست در اپ متصل</h2>
+<p>از نگاه معماری محصول، من به چهار نقطه کنترل فکر می‌کنم:</p>
+<ol>
+<li>درخواست کاربر را بفهم.</li>
+<li>ابزار متصل را فقط در صورت نیاز انتخاب کن.</li>
+<li>حساب، محدوده دسترسی و قابلیت پشتیبانی‌شده را بررسی کن.</li>
+<li>اطلاعات را برگردان یا برای اقدام پشتیبانی‌شده از قواعد تأیید پیروی کن.</li>
+</ol>
+<p>هر نقطه کنترل جایی است که یک سیستم خوب طراحی‌شده می‌تواند متوقف شود، سؤال کند یا توضیح دهد. همین است که یک یکپارچه‌سازی را برای کار واقعی قابل اعتماد می‌کند.</p>
+<h2>سه پرسش پیش از اتصال هر اپ</h2>
+<ul>
+<li><strong>کدام حساب؟</strong> مطمئن شوید همان حسابی است که برای این کار در نظر دارید.</li>
+<li><strong>چه چیزی را می‌تواند بخواند؟</strong> بدانید کدام سوابق، فایل‌ها یا پیام‌ها در دسترس قرار می‌گیرند.</li>
+<li><strong>چه چیزی را می‌تواند تغییر دهد؟</strong> ببینید آیا می‌تواند چیزی بسازد، ویرایش کند، ارسال یا حذف کند و چه زمانی پیش از آن سؤال می‌کند.</li>
+</ul>
+<p>راه لغو دسترسی را هم بررسی کنید. برای هدفی روشن وصل شوید، هر از گاهی دسترسی‌ها را مرور کنید و پیش از هر تغییری تأیید کنید. این عادت‌ها فایده اتصال را بدون غافلگیری حفظ می‌کنند.</p>
+<h2>معنای این موضوع برای تیم‌های سازنده محصولات هوش مصنوعی</h2>
+<p>برای تیم‌های محصول و مهندسی، همین مرزها تصمیم‌های طراحی‌اند. کمترین دسترسی لازم برای کاربرد را درخواست کنید، تفاوت خواندن و انجام دادن را برای کاربر آشکار کنید و مرحله تأیید را بخشی از محصول بدانید، نه یک افزوده بعدی. کاربرد روشن و مرزهای روشن، یکپارچه‌سازی را مفیدتر می‌کند، نه محدودتر.</p>
+<h2>ادامه بحث</h2>
+<p>این موضوع را در یک <a href="https://www.linkedin.com/feed/update/urn:li:activity:7509187433587085312/">سند فنی هفت‌صفحه‌ای در LinkedIn</a> برای خوانندگان محصول و مهندسی و یک <a href="https://www.instagram.com/p/DdtLTQyiusi/">پست چنداسلایدی ساده در Instagram</a> توضیح داده‌ام. برای پرسشی مرتبط درباره اقتصاد کار با هوش مصنوعی، مقاله <a href="/fa/writing/ai-cost-per-verified-result.html">هزینه هوش مصنوعی به‌ازای هر نتیجه تأییدشده</a> را بخوانید یا ببینید <a href="/fa/writing/jev-ai-decision-model.html">یک مدل تصمیم‌گیر هوش مصنوعی</a> چگونه در فرایند کار جای می‌گیرد.</p>
+<h2>منابع</h2>
+<ul>
+<li>Google، <a href="https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/">«A new wave of Connected Apps is rolling out to Gemini»</a>، ۲۳ سپتامبر ۲۰۲۶.</li>
+<li>مرکز راهنمای OpenAI، <a href="https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt">«Connected apps in ChatGPT»</a>، بررسی‌شده در ۲۵ سپتامبر ۲۰۲۶.</li>
+</ul>
+<footer class="editorial-footer"><nav aria-label="صفحه‌های مرتبط"><a href="/fa/writing/">همه نوشته‌ها</a> · <a href="/fa/about.html">درباره احمدرضا صمدی</a> · <a href="/fa/about.html#official-profiles">صفحه‌های رسمی</a> · <a href="/fa/">نوشته‌ها و پروژه‌ها</a></nav><p>احمدرضا صمدی · کارآفرین فناوری</p><a href="/fa/#contact">تماس ←</a></footer>
+</main>
+</body>
+</html>

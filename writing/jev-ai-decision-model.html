@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Ahmadreza Samadi">
+<title>Jev Explained: An AI Decision Model, Not a Chatbot | Ahmadreza Samadi</title>
+<meta name="description" content="What is Jev from TypeSafe AI? How a decision model differs from GPT and Claude, what the early Banking77 test shows, and how to test it as a routing layer.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://a-samadi.com/writing/jev-ai-decision-model.html">
+<link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/jev-ai-decision-model.html">
+<link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/jev-ai-decision-model.html">
+<link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/jev-ai-decision-model.html">
+<link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/jev-ai-decision-model.html">
+<link rel="icon" type="image/svg+xml" href="../assets/brand/favicon.svg">
+<link rel="stylesheet" href="../css/site.css?v=20260915-motion">
+<meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
+<meta property="og:title" content="Jev: an AI decision model, not another chatbot | Ahmadreza Samadi">
+<meta property="og:description" content="Jev is built to choose the next step, not to write the answer. What that means, what the early evidence shows, and how to test it.">
+<meta property="og:url" content="https://a-samadi.com/writing/jev-ai-decision-model.html"><meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg"><meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://a-samadi.com/writing/jev-ai-decision-model.html#article",
+      "headline": "Jev: an AI decision model, not another chatbot",
+      "description": "What is Jev from TypeSafe AI? How a decision model differs from GPT and Claude, what the early Banking77 test shows, and how to test it as a routing layer.",
+      "url": "https://a-samadi.com/writing/jev-ai-decision-model.html",
+      "mainEntityOfPage": "https://a-samadi.com/writing/jev-ai-decision-model.html",
+      "datePublished": "2026-09-25",
+      "dateModified": "2026-09-25",
+      "inLanguage": "en",
+      "image": "https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg",
+      "keywords": [
+        "Jev",
+        "TypeSafe AI",
+        "AI decision model",
+        "System One models",
+        "intent classification",
+        "AI routing",
+        "Banking77"
+      ],
+      "citation": [
+        "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+        "https://docs.typesafe.ai/introduction",
+        "https://openrouter.ai/blog/insights/jev-vs-claude-opus-5-classification/"
+      ],
+      "author": {
+        "@type": "Person",
+        "@id": "https://a-samadi.com/#person",
+        "name": "Ahmadreza Samadi",
+        "url": "https://a-samadi.com/about.html"
+      },
+      "publisher": {
+        "@id": "https://a-samadi.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://a-samadi.com/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://a-samadi.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Writing",
+          "item": "https://a-samadi.com/writing/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Jev: an AI decision model, not another chatbot"
+        }
+      ]
+    }
+  ]
+}</script>
+</head>
+<body class="editorial-body">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="editorial-header"><a href="/"><img src="../assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">Ahmadreza Samadi / Home</a></header>
+<main id="main" class="editorial">
+<nav class="byline" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/writing/">Writing</a> / <span aria-current="page">Jev: an AI decision model, not another chatbot</span></nav>
+<p class="eyebrow">Analysis · AI decision models</p>
+<h1>Jev: an AI decision model, not another chatbot</h1>
+<p class="lead">Most people meet AI as a system that writes. Jev is interesting because it is built to choose: to make a bounded decision that software can act on.</p>
+<p class="byline">By <a href="/about.html" rel="author">Ahmadreza Samadi</a> · <time datetime="2026-09-25">25 September 2026</time></p>
+<p>On 15 September 2026, <a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">TypeSafe AI introduced Jev</a> and what it calls System One models. The pitch is not a better conversation partner. It is a model designed to sit inside an application at the moment software needs a judgment, such as deciding where an incoming message should go next.</p>
+<h2>What is Jev?</h2>
+<p>According to <a href="https://docs.typesafe.ai/introduction">TypeSafe’s documentation</a>, Jev takes application state and typed questions, then returns choices, scores or probability-like values that code can use directly. Instead of producing an open-ended paragraph, it answers within the options you define.</p>
+<p>TypeSafe describes Jev’s sampling as parallel rather than autoregressive: it does not generate its answer token by token the way a chatbot writes text. That is the company’s description of its own architecture, and I treat it as a vendor claim until independent work examines it.</p>
+<h2>Deciding versus generating</h2>
+<p>Imagine a message arriving at a business: “I need help with my account.” Should it go to sales, to support, or to a person for review? A decision model can look at the message and pick support from the allowed options. A generative model such as GPT or Claude can then draft a helpful reply.</p>
+<p>One model helps decide what happens next; another helps explain or create. They can work together. GPT and Claude can also produce structured outputs, so the distinction is specialization and workflow design, not a claim that only Jev can return a structured answer.</p>
+<h2>What the early evidence shows</h2>
+<p>On 22 September 2026, <a href="https://openrouter.ai/blog/insights/jev-vs-claude-opus-5-classification/">OpenRouter compared Jev 1.13 with Claude Opus 5</a> on the Banking77 intent-classification test split:</p>
+<ul>
+<li><strong>Accuracy:</strong> 81.0% for Jev 1.13, compared with 84.4% for Claude Opus 5.</li>
+<li><strong>Median round-trip latency:</strong> 175 ms for Jev, compared with 2,266 ms.</li>
+<li><strong>Billed cost per 1,000 requests:</strong> $0.11 for Jev, compared with $2.42.</li>
+</ul>
+<p>That is a meaningful trade-off: a modest accuracy gap in exchange for much lower latency and cost. The scope, however, is narrow: one domain, one prompt design, and Opus was run with reasoning disabled. It is not a general model ranking.</p>
+<p>OpenRouter also found that Jev’s confidence was not calibrated as a probability on this dataset. A high score should not be read as a matching chance of being right until you have checked it against your own data.</p>
+<h2>How I would test Jev</h2>
+<p>I would test Jev as a routing layer rather than as a replacement for a whole workflow:</p>
+<ol>
+<li>Classify each case into a defined set of options.</li>
+<li>Apply a confidence threshold validated on held-out data from the real workflow.</li>
+<li>Escalate uncertain cases to a larger model or a human reviewer.</li>
+<li>Keep exact rules, permissions and final actions in application code.</li>
+</ol>
+<p>Then measure what matters end to end: accuracy, review rate, latency and cost per accepted decision. That last measure applies a framework I use for any AI workflow, described in <a href="/writing/ai-cost-per-verified-result.html">AI cost per verified result</a>.</p>
+<h2>The limit to remember</h2>
+<p>A typed answer cannot drift outside its allowed format, but it can still be the wrong decision. Structure makes an output easier to use; it does not make it correct. Test with real examples, and keep uncertain cases open for review.</p>
+<h2>Continue the discussion</h2>
+<p>I wrote an <a href="https://www.linkedin.com/feed/update/urn:li:activity:7509183536575176704/">eight-page technical LinkedIn document</a> on Jev for engineering readers and a <a href="https://www.instagram.com/p/DdtJkPbCjAl/">simple Instagram explainer</a> for a general audience. Related reading: <a href="/writing/connected-ai-apps.html">Connected AI apps: access, scope and approval</a> and <a href="/writing/start-with-the-decision.html">Start with the decision, then build the AI</a>.</p>
+<h2>Sources</h2>
+<ul>
+<li>TypeSafe AI, <a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">“Introducing System One Models &amp; Jev”</a>, 15 September 2026.</li>
+<li>TypeSafe AI, <a href="https://docs.typesafe.ai/introduction">documentation: introduction</a>, checked 25 September 2026.</li>
+<li>OpenRouter, <a href="https://openrouter.ai/blog/insights/jev-vs-claude-opus-5-classification/">“Is Jev as Accurate as Frontier Models at Classification?”</a>, 22 September 2026.</li>
+</ul>
+<footer class="editorial-footer"><nav aria-label="Related pages"><a href="/writing/">All writing</a> · <a href="/about.html">About Ahmadreza Samadi</a> · <a href="/about.html#official-profiles">Official profiles</a> · <a href="/">Selected work</a></nav><p>Ahmadreza Samadi · Technology Entrepreneur</p><a href="/#contact">Get in touch →</a></footer>
+</main>
+</body>
+</html>

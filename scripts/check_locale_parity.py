@@ -31,7 +31,7 @@ for lang in ['fa','ar']:
  normalized=[]
  for tag,attrs in p.items:
   attrs=attrs.copy()
-  for local_page in ('about.html','work/appraiva.html','work/royal-abraj.html','writing/ai-cost-per-verified-result.html'):
+  for local_page in ('about.html','work/appraiva.html','work/royal-abraj.html','writing/'):
    if attrs.get('href','').startswith(f'https://a-samadi.com/{lang}/{local_page}'):
     attrs['href']=attrs['href'].replace(f'https://a-samadi.com/{lang}/{local_page}',f'https://a-samadi.com/{local_page}',1)
   normalized.append((tag,attrs))
@@ -77,6 +77,9 @@ for cluster in (
  ('work/appraiva.html','fa/work/appraiva.html','ar/work/appraiva.html'),
  ('work/royal-abraj.html','fa/work/royal-abraj.html','ar/work/royal-abraj.html'),
  ('writing/ai-cost-per-verified-result.html','fa/writing/ai-cost-per-verified-result.html','ar/writing/ai-cost-per-verified-result.html'),
+ ('writing/connected-ai-apps.html','fa/writing/connected-ai-apps.html','ar/writing/connected-ai-apps.html'),
+ ('writing/jev-ai-decision-model.html','fa/writing/jev-ai-decision-model.html','ar/writing/jev-ai-decision-model.html'),
+ ('writing/index.html','fa/writing/index.html','ar/writing/index.html'),
 ):
  urls=[BASE+(name[:-10] if name.endswith('index.html') else name) for name in cluster]
  expected=dict(zip(('en','fa','ar'),urls));expected['x-default']=urls[0]
@@ -87,7 +90,7 @@ for cluster in (
   assert len(metadata.alternates)==4 and dict(metadata.alternates)==expected, f'{name}: incomplete or non-reciprocal hreflang'
   assert expected[language] in listed, f'{name}: missing from sitemap'
   assert not any('noindex' in directive.lower() for directive in metadata.robots), f'{name}: noindex directive'
-  if name.endswith(('index.html','about.html')):
+  if name in ('index.html','fa/index.html','ar/index.html') or name.endswith('about.html'):
    source=(ROOT/name).read_text()
    schemas=[json.loads(raw) for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>',source,re.S)]
    profiles=[item for schema in schemas for item in schema.get('@graph',[schema]) if item.get('@type')=='ProfilePage']
@@ -96,4 +99,4 @@ for cluster in (
    if modified:
     parsed=datetime.fromisoformat(modified)
     assert 'T' in modified and parsed.tzinfo is not None, f'{name}: dateModified needs time and timezone'
-print(f'PASS SEO: {len(listed)} self-canonical sitemap URLs and 5 reciprocal language clusters')
+print(f'PASS SEO: {len(listed)} self-canonical sitemap URLs and 8 reciprocal language clusters')

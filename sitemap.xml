@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>https://a-samadi.com/</loc>
-        <lastmod>2026-09-24</lastmod>
+        <lastmod>2026-09-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         <image:image>
@@ -64,11 +64,11 @@
     </url>
     <url>
         <loc>https://a-samadi.com/fa/</loc>
-        <lastmod>2026-09-24</lastmod>
+        <lastmod>2026-09-25</lastmod>
     </url>
     <url>
         <loc>https://a-samadi.com/ar/</loc>
-        <lastmod>2026-09-24</lastmod>
+        <lastmod>2026-09-25</lastmod>
     </url>
     <url>
         <loc>https://a-samadi.com/work/royal-abraj.html</loc>
@@ -85,5 +85,41 @@
     <url>
         <loc>https://a-samadi.com/tools/before-you-build-ai.html</loc>
         <lastmod>2026-09-16</lastmod>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/</loc>
+        <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/connected-ai-apps.html</loc>
+        <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/jev-ai-decision-model.html</loc>
+        <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/</loc>
+        <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/connected-ai-apps.html</loc>
+        <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/jev-ai-decision-model.html</loc>
+        <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/</loc>
+        <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/connected-ai-apps.html</loc>
+        <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/jev-ai-decision-model.html</loc>
+        <lastmod>2026-09-25</lastmod>
     </url>
 </urlset>
