@@ -32,8 +32,8 @@ def listed_urls():
 def public_url(path):
     if path == "index.html":
         return BASE + "/"
-    if path in {"fa/index.html", "ar/index.html"}:
-        return BASE + "/" + path.split("/")[0] + "/"
+    if path.endswith("/index.html"):
+        return BASE + "/" + path.removesuffix("index.html")
     return BASE + "/" + path
 
 
