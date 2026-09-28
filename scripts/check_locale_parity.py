@@ -128,4 +128,8 @@ for cluster in clusters:
    if name in ('index.html','fa/index.html','ar/index.html'):
     updated=re.search(r'<meta property="og:updated_time" content="([^"]+)"',source)
     assert updated and modified==updated[1], f'{name}: ProfilePage and Open Graph update times differ'
+    if name in ('fa/index.html','ar/index.html'):
+     locale=name[:2]
+     expected_modified=json.loads((ROOT/'locales'/f'{locale}.json').read_text())['Homepage modified']
+     assert modified==expected_modified, f'{name}: localized homepage modification time differs from source'
 print(f'PASS SEO: {len(listed)} self-canonical sitemap URLs and {len(clusters)} reciprocal language clusters')

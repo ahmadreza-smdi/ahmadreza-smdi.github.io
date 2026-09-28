@@ -56,6 +56,7 @@ for lang in ('fa','ar'):
     script=script.replace("'Resume motion'",json.dumps(tr['Resume motion'],ensure_ascii=False)).replace("'Pause motion'",json.dumps(tr['Pause motion'],ensure_ascii=False))
     title=tr['Search title']
     description=tr['Search description']
+    modified=tr['Homepage modified']
     source_title=re.search(r'<title>([^<]+)</title>',head)
     if not source_title:raise ValueError('Missing English homepage title')
     source_title=source_title[1]
@@ -63,13 +64,14 @@ for lang in ('fa','ar'):
     head=head.replace('<title>'+source_title+'</title>','<title>'+title+'</title>')
     head=head.replace('content="'+source_title+'"','content="'+title+'"')
     head=re.sub(r'(<meta (?:name="(?:description|twitter:description)"|property="og:description") content=")[^"]*',lambda m:m[1]+description,head)
+    head=re.sub(r'(<meta property="og:updated_time" content=")[^"]*',lambda m:m[1]+modified,head)
     head=head.replace('<link rel="canonical" href="https://a-samadi.com/"',f'<link rel="canonical" href="https://a-samadi.com/{lang}/"')
     head=head.replace('property="og:url" content="https://a-samadi.com/"',f'property="og:url" content="https://a-samadi.com/{lang}/"')
     head=head.replace('content="en_US"','content="'+('fa_IR' if lang=='fa' else 'ar_AE')+'"')
     head=head.replace('content="Ahmadreza Samadi, Dubai-based founder and technical executive"','content="'+tr['Portrait of Ahmadreza Samadi']+'"')
     def schema(m):
         d=json.loads(m[1]);profile=next(x for x in d['@graph'] if x['@type']=='ProfilePage')
-        profile.update({'@id':f'https://a-samadi.com/{lang}/#profile','url':f'https://a-samadi.com/{lang}/','name':title,'description':description,'inLanguage':lang})
+        profile.update({'@id':f'https://a-samadi.com/{lang}/#profile','url':f'https://a-samadi.com/{lang}/','name':title,'description':description,'inLanguage':lang,'dateModified':modified})
         return '<script type="application/ld+json">'+json.dumps(d,ensure_ascii=False,indent=2)+'</script>'
     head=re.sub(r'<script type="application/ld\+json">(.*?)</script>',schema,head,flags=re.S)
     head=head.replace('</head>','    <link rel="stylesheet" href="../css/rtl.css?v=20260921" />\n</head>')
