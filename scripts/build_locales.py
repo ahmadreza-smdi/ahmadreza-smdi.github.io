@@ -56,9 +56,12 @@ for lang in ('fa','ar'):
     script=script.replace("'Resume motion'",json.dumps(tr['Resume motion'],ensure_ascii=False)).replace("'Pause motion'",json.dumps(tr['Pause motion'],ensure_ascii=False))
     title=tr['Search title']
     description=tr['Search description']
+    source_title=re.search(r'<title>([^<]+)</title>',head)
+    if not source_title:raise ValueError('Missing English homepage title')
+    source_title=source_title[1]
     head=head.replace('<html lang="en">',f'<html lang="{lang}" dir="rtl">')
-    head=head.replace('<title>Ahmadreza Samadi | Technology Entrepreneur</title>','<title>'+title+'</title>')
-    head=head.replace('content="Ahmadreza Samadi | Technology Entrepreneur"','content="'+title+'"')
+    head=head.replace('<title>'+source_title+'</title>','<title>'+title+'</title>')
+    head=head.replace('content="'+source_title+'"','content="'+title+'"')
     head=re.sub(r'(<meta (?:name="(?:description|twitter:description)"|property="og:description") content=")[^"]*',lambda m:m[1]+description,head)
     head=head.replace('<link rel="canonical" href="https://a-samadi.com/"',f'<link rel="canonical" href="https://a-samadi.com/{lang}/"')
     head=head.replace('property="og:url" content="https://a-samadi.com/"',f'property="og:url" content="https://a-samadi.com/{lang}/"')
