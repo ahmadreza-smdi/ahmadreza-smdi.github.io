@@ -31,7 +31,7 @@ for lang in ['fa','ar']:
  normalized=[]
  for tag,attrs in p.items:
   attrs=attrs.copy()
-  for local_page in ('about.html','work/appraiva.html','work/royal-abraj.html','writing/'):
+  for local_page in ('tools/before-you-build-ai.html','about.html','work/appraiva.html','work/royal-abraj.html','writing/'):
    if attrs.get('href','').startswith(f'https://a-samadi.com/{lang}/{local_page}'):
     attrs['href']=attrs['href'].replace(f'https://a-samadi.com/{lang}/{local_page}',f'https://a-samadi.com/{local_page}',1)
   normalized.append((tag,attrs))
@@ -72,6 +72,7 @@ for url in listed:
  assert seo(source).canonicals==[url], f'non-self-canonical sitemap page: {url}'
 
 clusters = (
+ ('tools/before-you-build-ai.html','fa/tools/before-you-build-ai.html','ar/tools/before-you-build-ai.html'),
  ('index.html','fa/index.html','ar/index.html'),
  ('about.html','fa/about.html','ar/about.html'),
  ('work/appraiva.html','fa/work/appraiva.html','ar/work/appraiva.html'),
