@@ -106,4 +106,7 @@ for cluster in clusters:
    if modified:
     parsed=datetime.fromisoformat(modified)
     assert 'T' in modified and parsed.tzinfo is not None, f'{name}: dateModified needs time and timezone'
+   if name in ('index.html','fa/index.html','ar/index.html'):
+    updated=re.search(r'<meta property="og:updated_time" content="([^"]+)"',source)
+    assert updated and modified==updated[1], f'{name}: ProfilePage and Open Graph update times differ'
 print(f'PASS SEO: {len(listed)} self-canonical sitemap URLs and {len(clusters)} reciprocal language clusters')
