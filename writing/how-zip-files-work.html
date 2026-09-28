@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Ahmadreza Samadi">
+<title>How ZIP files work: compression without losing data | Ahmadreza Samadi</title>
+<meta name="description" content="How does a ZIP restore every byte? Ahmadreza Samadi explains the ZIP container, DEFLATE, repeated data, Huffman coding, and why videos may barely shrink.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://a-samadi.com/writing/how-zip-files-work.html">
+<link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/how-zip-files-work.html">
+<link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/how-zip-files-work.html">
+<link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/how-zip-files-work.html">
+<link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/how-zip-files-work.html">
+<link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg">
+<link rel="stylesheet" href="/css/site.css?v=20260915-motion">
+
+<meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
+<meta property="og:title" content="How ZIP files work: compression without losing data | Ahmadreza Samadi">
+<meta property="og:description" content="How does a ZIP restore every byte? Ahmadreza Samadi explains the ZIP container, DEFLATE, repeated data, Huffman coding, and why videos may barely shrink."><meta property="og:url" content="https://a-samadi.com/writing/how-zip-files-work.html">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg"><meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://a-samadi.com/writing/how-zip-files-work.html#article",
+      "headline": "How ZIP files work: compression without losing data",
+      "description": "How does a ZIP restore every byte? Ahmadreza Samadi explains the ZIP container, DEFLATE, repeated data, Huffman coding, and why videos may barely shrink.",
+      "url": "https://a-samadi.com/writing/how-zip-files-work.html",
+      "mainEntityOfPage": "https://a-samadi.com/writing/how-zip-files-work.html",
+      "datePublished": "2026-09-28",
+      "dateModified": "2026-09-28",
+      "inLanguage": "en",
+      "image": "https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg",
+      "author": {
+        "@type": "Person",
+        "@id": "https://a-samadi.com/#person",
+        "name": "Ahmadreza Samadi",
+        "url": "https://a-samadi.com/about.html"
+      },
+      "publisher": {
+        "@id": "https://a-samadi.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://a-samadi.com/#website"
+      },
+      "citation": [
+        "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT",
+        "https://www.rfc-editor.org/rfc/rfc1951"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://a-samadi.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Writing",
+          "item": "https://a-samadi.com/writing/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How ZIP files work: compression without losing data"
+        }
+      ]
+    }
+  ]
+}</script>
+</head>
+<body class="editorial-body">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="editorial-header"><a href="/"><img src="/assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">Ahmadreza Samadi / Home</a></header>
+<main id="main" class="editorial">
+<nav class="byline" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/writing/">Writing</a> / <span aria-current="page">How ZIP files work: compression without losing data</span></nav>
+<article>
+<p class="eyebrow">Wait, That’s Tech? · Everyday technology</p>
+<h1>How ZIP files work: compression without losing data</h1>
+<p class="lead">A ZIP can bundle files, compress their contents, or do both. A smaller archive is useful only if extraction can reconstruct the original bytes exactly.</p>
+<p class="byline">By <a href="/about.html" rel="author">Ahmadreza Samadi</a> · <time datetime="2026-09-28">28 September 2026</time></p>
+<h2>A container and a compression method</h2>
+<p>ZIP stores individual file entries and a central directory that helps an extractor locate them. Entries can be stored without compression or use a supported compression method. DEFLATE is a common choice, but ZIP and DEFLATE are not interchangeable names.</p>
+<h2>How repeated bytes become instructions</h2>
+<p>In my animated example, the bytes ABCDABCD repeat a four-byte sequence. After the first ABCD, a compressor could represent the next part as “go back four bytes and copy four.” This illustrates an LZ77 length-distance match. It is not a promise about the exact output of a real compressor for such a short input.</p>
+<h2>Where Huffman coding fits</h2>
+<p>DEFLATE can encode literals and match information using Huffman codes. A suitable code gives common symbols shorter representations. Fixed-code and uncompressed blocks also exist; a compressor chooses how to represent its data. Extraction decodes the instructions and rebuilds the bytes in order.</p>
+<h2>Why does a JPG or MP4 barely shrink?</h2>
+<p>Many photos and videos are already compressed. Another compression pass often finds little useful redundancy, and the archive's headers can even make the result larger. Bundling several files can still make a ZIP useful when it saves no space.</p>
+<h2>Is ZIP encryption?</h2>
+<p>Compression and encryption are separate. A ZIP is not confidential merely because it is compressed. Its CRC-32 check helps detect accidental corruption, but does not establish authenticity. In the film, I keep these jobs separate: package the files, represent their bytes compactly, then reconstruct them exactly.</p>
+<h2>Watch the original explainer</h2>
+<p>This article accompanies my published visual explainer. The social posts are in English.</p>
+<p><a href="https://www.instagram.com/reel/DdzRuDVsqro/" hreflang="en">Watch on Instagram · <bdi>@ahmadreza_smdi</bdi></a> · <a href="https://www.linkedin.com/feed/update/urn:li:activity:7510049595847118850/" hreflang="en">Read the LinkedIn post</a></p>
+<h2>Sources</h2>
+<ul><li><a href="https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT" hreflang="en"><bdi>PKWARE: ZIP File Format Specification</bdi></a></li><li><a href="https://www.rfc-editor.org/rfc/rfc1951" hreflang="en"><bdi>RFC 1951: DEFLATE</bdi></a></li></ul>
+</article>
+<footer class="editorial-footer"><nav aria-label="Related reading"><a href="/writing/passkeys-face-id.html">How passkeys work: why Face ID is not your password</a> · <a href="/writing/">Writing</a> · <a href="/about.html">About Ahmadreza Samadi</a></nav><p>Ahmadreza Samadi</p></footer>
+</main>
+</body>
+</html>
+

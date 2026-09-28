@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Ahmadreza Samadi">
+<title>كيف تعمل ملفات ZIP؟ ضغط البيانات دون فقدانها | أحمدرضا صمدي</title>
+<meta name="description" content="يشرح أحمدرضا صمدي بنية ZIP وضغط DEFLATE والتكرار وترميز هوفمان، ولماذا قد لا يصغر حجم الصور والفيديو كثيراً بعد الضغط.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://a-samadi.com/ar/writing/how-zip-files-work.html">
+<link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/how-zip-files-work.html">
+<link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/how-zip-files-work.html">
+<link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/how-zip-files-work.html">
+<link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/how-zip-files-work.html">
+<link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg">
+<link rel="stylesheet" href="/css/site.css?v=20260915-motion">
+<link rel="stylesheet" href="/css/rtl.css?v=20260921">
+<meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
+<meta property="og:title" content="كيف تعمل ملفات ZIP؟ ضغط البيانات دون فقدانها | أحمدرضا صمدي">
+<meta property="og:description" content="يشرح أحمدرضا صمدي بنية ZIP وضغط DEFLATE والتكرار وترميز هوفمان، ولماذا قد لا يصغر حجم الصور والفيديو كثيراً بعد الضغط."><meta property="og:url" content="https://a-samadi.com/ar/writing/how-zip-files-work.html">
+<meta property="og:locale" content="ar_AE">
+<meta property="og:image" content="https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg"><meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://a-samadi.com/ar/writing/how-zip-files-work.html#article",
+      "headline": "كيف تعمل ملفات ZIP؟ ضغط البيانات دون فقدانها",
+      "description": "يشرح أحمدرضا صمدي بنية ZIP وضغط DEFLATE والتكرار وترميز هوفمان، ولماذا قد لا يصغر حجم الصور والفيديو كثيراً بعد الضغط.",
+      "url": "https://a-samadi.com/ar/writing/how-zip-files-work.html",
+      "mainEntityOfPage": "https://a-samadi.com/ar/writing/how-zip-files-work.html",
+      "datePublished": "2026-09-28",
+      "dateModified": "2026-09-28",
+      "inLanguage": "ar",
+      "image": "https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg",
+      "author": {
+        "@type": "Person",
+        "@id": "https://a-samadi.com/#person",
+        "name": "أحمدرضا صمدي",
+        "url": "https://a-samadi.com/ar/about.html"
+      },
+      "publisher": {
+        "@id": "https://a-samadi.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://a-samadi.com/#website"
+      },
+      "citation": [
+        "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT",
+        "https://www.rfc-editor.org/rfc/rfc1951"
+      ],
+      "translationOfWork": {
+        "@id": "https://a-samadi.com/writing/how-zip-files-work.html#article"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://a-samadi.com/ar/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "المقالات",
+          "item": "https://a-samadi.com/ar/writing/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "كيف تعمل ملفات ZIP؟ ضغط البيانات دون فقدانها"
+        }
+      ]
+    }
+  ]
+}</script>
+</head>
+<body class="editorial-body arabic-page">
+<a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+<header class="editorial-header"><a href="/ar/"><img src="/assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">أحمدرضا صمدي / الرئيسية</a></header>
+<main id="main" class="editorial">
+<nav class="byline" aria-label="مسار التنقل"><a href="/ar/">الرئيسية</a> / <a href="/ar/writing/">المقالات</a> / <span aria-current="page">كيف تعمل ملفات ZIP؟ ضغط البيانات دون فقدانها</span></nav>
+<article>
+<p class="eyebrow">Wait, That’s Tech? · التقنية اليومية</p>
+<h1>كيف تعمل ملفات ZIP؟ ضغط البيانات دون فقدانها</h1>
+<p class="lead">يمكن لملف ZIP جمع ملفات متعددة أو ضغط محتوياتها أو القيام بالأمرين. فائدة الأرشيف الأصغر تعتمد على استعادة البايتات الأصلية بدقة عند فك الضغط.</p>
+<p class="byline">بقلم <a href="/ar/about.html" rel="author">أحمدرضا صمدي</a> · <time datetime="2026-09-28">٢٨ سبتمبر ٢٠٢٦</time></p>
+<h2>حاوية ملفات وطريقة ضغط</h2>
+<p>يحتفظ ZIP بإدخالات منفصلة للملفات ودليل مركزي يساعد أداة الاستخراج على العثور عليها. يمكن تخزين كل إدخال دون ضغط أو باستخدام طريقة ضغط مدعومة. DEFLATE خيار شائع، لكن ZIP وDEFLATE ليسا اسمين للشيء نفسه.</p>
+<h2>كيف تتحول البايتات المتكررة إلى تعليمات؟</h2>
+<p>في مثالي المتحرك، يتكرر تسلسل من أربعة بايتات داخل ABCDABCD. بعد ABCD الأولى، يمكن تمثيل الجزء التالي بتعليمة: «ارجع أربعة بايتات وانسخ أربعة». يوضح ذلك مطابقة الطول والمسافة في LZ77، ولا يضمن الناتج الفعلي لضاغط حقيقي مع مدخل قصير كهذا.</p>
+<h2>أين يأتي ترميز هوفمان؟</h2>
+<p>يمكن لـ DEFLATE تمثيل البايتات المباشرة ومعلومات المطابقة باستخدام رموز هوفمان. يمنح الترميز المناسب تمثيلات أقصر للرموز الشائعة. توجد أيضاً كتل بترميز ثابت وأخرى غير مضغوطة؛ ويختار الضاغط طريقة تمثيل البيانات. يفك الاستخراج التعليمات ويعيد بناء البايتات بالترتيب.</p>
+<h2>لماذا لا يصغر JPG أو MP4 كثيراً؟</h2>
+<p>العديد من الصور والفيديوهات مضغوط بالفعل. غالباً لا يجد الضغط الإضافي تكراراً مفيداً كثيراً، وقد تجعل ترويسات الأرشيف حجمه أكبر. ومع ذلك، يبقى جمع الملفات في حزمة واحدة مفيداً حتى دون توفير مساحة.</p>
+<h2>هل يعني ZIP التشفير؟</h2>
+<p>الضغط والتشفير عمليتان منفصلتان. لا يصبح الأرشيف سرياً لمجرد ضغطه. يساعد فحص CRC-32 على كشف التلف العرضي، لكنه لا يثبت أصالة البيانات. أفصل هذه الوظائف في الفيلم: تجميع الملفات، وتمثيل بايتاتها بحجم أقل، ثم إعادة بنائها بدقة.</p>
+<h2>شاهد الشرح المرئي الأصلي</h2>
+<p>يرافق هذا المقال شرحي المرئي المنشور. منشورات التواصل الاجتماعي باللغة الإنجليزية.</p>
+<p><a href="https://www.instagram.com/reel/DdzRuDVsqro/" hreflang="en">شاهد على إنستغرام · <bdi>@ahmadreza_smdi</bdi></a> · <a href="https://www.linkedin.com/feed/update/urn:li:activity:7510049595847118850/" hreflang="en">اقرأ منشور لينكدإن</a></p>
+<h2>المصادر</h2>
+<ul><li><a href="https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT" hreflang="en"><bdi>PKWARE: ZIP File Format Specification</bdi></a></li><li><a href="https://www.rfc-editor.org/rfc/rfc1951" hreflang="en"><bdi>RFC 1951: DEFLATE</bdi></a></li></ul>
+</article>
+<footer class="editorial-footer"><nav aria-label="اقرأ أيضاً"><a href="/ar/writing/passkeys-face-id.html">ما هو مفتاح المرور، ولماذا لا يُعد Face ID كلمة مرورك؟</a> · <a href="/ar/writing/">المقالات</a> · <a href="/ar/about.html">عن أحمدرضا صمدي</a></nav><p>أحمدرضا صمدي</p></footer>
+</main>
+</body>
+</html>
+

@@ -71,7 +71,7 @@ for url in listed:
  assert (ROOT/source).is_file(), f'missing sitemap page: {url}'
  assert seo(source).canonicals==[url], f'non-self-canonical sitemap page: {url}'
 
-for cluster in (
+clusters = (
  ('index.html','fa/index.html','ar/index.html'),
  ('about.html','fa/about.html','ar/about.html'),
  ('work/appraiva.html','fa/work/appraiva.html','ar/work/appraiva.html'),
@@ -81,7 +81,10 @@ for cluster in (
  ('writing/jev-ai-decision-model.html','fa/writing/jev-ai-decision-model.html','ar/writing/jev-ai-decision-model.html'),
  ('writing/index.html','fa/writing/index.html','ar/writing/index.html'),
  ('writing/start-with-the-decision.html','fa/writing/start-with-the-decision.html','ar/writing/start-with-the-decision.html'),
-):
+ ('writing/passkeys-face-id.html','fa/writing/passkeys-face-id.html','ar/writing/passkeys-face-id.html'),
+ ('writing/how-zip-files-work.html','fa/writing/how-zip-files-work.html','ar/writing/how-zip-files-work.html'),
+)
+for cluster in clusters:
  urls=[BASE+(name[:-10] if name.endswith('index.html') else name) for name in cluster]
  expected=dict(zip(('en','fa','ar'),urls));expected['x-default']=urls[0]
  for language,name in zip(('en','fa','ar'),cluster):
@@ -100,4 +103,4 @@ for cluster in (
    if modified:
     parsed=datetime.fromisoformat(modified)
     assert 'T' in modified and parsed.tzinfo is not None, f'{name}: dateModified needs time and timezone'
-print(f'PASS SEO: {len(listed)} self-canonical sitemap URLs and 9 reciprocal language clusters')
+print(f'PASS SEO: {len(listed)} self-canonical sitemap URLs and {len(clusters)} reciprocal language clusters')

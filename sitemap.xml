@@ -88,7 +88,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/writing/</loc>
-        <lastmod>2026-09-25</lastmod>
+        <lastmod>2026-09-28</lastmod>
     </url>
     <url>
         <loc>https://a-samadi.com/writing/connected-ai-apps.html</loc>
@@ -100,7 +100,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/</loc>
-        <lastmod>2026-09-25</lastmod>
+        <lastmod>2026-09-28</lastmod>
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/connected-ai-apps.html</loc>
@@ -112,7 +112,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/</loc>
-        <lastmod>2026-09-25</lastmod>
+        <lastmod>2026-09-28</lastmod>
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/connected-ai-apps.html</loc>
@@ -129,5 +129,29 @@
     <url>
         <loc>https://a-samadi.com/ar/writing/start-with-the-decision.html</loc>
         <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/passkeys-face-id.html</loc>
+        <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/passkeys-face-id.html</loc>
+        <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/passkeys-face-id.html</loc>
+        <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/how-zip-files-work.html</loc>
+        <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/how-zip-files-work.html</loc>
+        <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/how-zip-files-work.html</loc>
+        <lastmod>2026-09-28</lastmod>
     </url>
 </urlset>

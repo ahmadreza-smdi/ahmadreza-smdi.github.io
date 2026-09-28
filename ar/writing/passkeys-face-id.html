@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Ahmadreza Samadi">
+<title>ما هو مفتاح المرور، ولماذا لا يُعد Face ID كلمة مرورك؟ | أحمدرضا صمدي</title>
+<meta name="description" content="يشرح أحمدرضا صمدي مفاتيح المرور ودور Face ID والمفتاحين العام والخاص ومقاومة التصيد، وما الذي يحدد استعادة الوصول عند فقدان الجهاز.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://a-samadi.com/ar/writing/passkeys-face-id.html">
+<link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/passkeys-face-id.html">
+<link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/passkeys-face-id.html">
+<link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/passkeys-face-id.html">
+<link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/passkeys-face-id.html">
+<link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg">
+<link rel="stylesheet" href="/css/site.css?v=20260915-motion">
+<link rel="stylesheet" href="/css/rtl.css?v=20260921">
+<meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
+<meta property="og:title" content="ما هو مفتاح المرور، ولماذا لا يُعد Face ID كلمة مرورك؟ | أحمدرضا صمدي">
+<meta property="og:description" content="يشرح أحمدرضا صمدي مفاتيح المرور ودور Face ID والمفتاحين العام والخاص ومقاومة التصيد، وما الذي يحدد استعادة الوصول عند فقدان الجهاز."><meta property="og:url" content="https://a-samadi.com/ar/writing/passkeys-face-id.html">
+<meta property="og:locale" content="ar_AE">
+<meta property="og:image" content="https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg"><meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://a-samadi.com/ar/writing/passkeys-face-id.html#article",
+      "headline": "ما هو مفتاح المرور، ولماذا لا يُعد Face ID كلمة مرورك؟",
+      "description": "يشرح أحمدرضا صمدي مفاتيح المرور ودور Face ID والمفتاحين العام والخاص ومقاومة التصيد، وما الذي يحدد استعادة الوصول عند فقدان الجهاز.",
+      "url": "https://a-samadi.com/ar/writing/passkeys-face-id.html",
+      "mainEntityOfPage": "https://a-samadi.com/ar/writing/passkeys-face-id.html",
+      "datePublished": "2026-09-28",
+      "dateModified": "2026-09-28",
+      "inLanguage": "ar",
+      "image": "https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg",
+      "author": {
+        "@type": "Person",
+        "@id": "https://a-samadi.com/#person",
+        "name": "أحمدرضا صمدي",
+        "url": "https://a-samadi.com/ar/about.html"
+      },
+      "publisher": {
+        "@id": "https://a-samadi.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://a-samadi.com/#website"
+      },
+      "citation": [
+        "https://fidoalliance.org/passkeys/",
+        "https://support.apple.com/en-us/102195",
+        "https://www.w3.org/TR/webauthn-3/"
+      ],
+      "translationOfWork": {
+        "@id": "https://a-samadi.com/writing/passkeys-face-id.html#article"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://a-samadi.com/ar/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "المقالات",
+          "item": "https://a-samadi.com/ar/writing/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "ما هو مفتاح المرور، ولماذا لا يُعد Face ID كلمة مرورك؟"
+        }
+      ]
+    }
+  ]
+}</script>
+</head>
+<body class="editorial-body arabic-page">
+<a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+<header class="editorial-header"><a href="/ar/"><img src="/assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">أحمدرضا صمدي / الرئيسية</a></header>
+<main id="main" class="editorial">
+<nav class="byline" aria-label="مسار التنقل"><a href="/ar/">الرئيسية</a> / <a href="/ar/writing/">المقالات</a> / <span aria-current="page">ما هو مفتاح المرور، ولماذا لا يُعد Face ID كلمة مرورك؟</span></nav>
+<article>
+<p class="eyebrow">Wait, That’s Tech? · التقنية اليومية</p>
+<h1>ما هو مفتاح المرور، ولماذا لا يُعد Face ID كلمة مرورك؟</h1>
+<p class="lead">يمكن أن يوافق Face ID على تسجيل الدخول بمفتاح مرور، لكن صورة وجهك ليست ما يتحقق منه الموقع. يثبت جهازك أنه يستطيع استخدام مفتاح خاص.</p>
+<p class="byline">بقلم <a href="/ar/about.html" rel="author">أحمدرضا صمدي</a> · <time datetime="2026-09-28">٢٨ سبتمبر ٢٠٢٦</time></p>
+<h2>ماذا يستقبل الموقع؟</h2>
+<p>عند إنشاء مفتاح مرور، يرتبط مفتاح عام بحسابك. وعند تسجيل الدخول، ترسل الخدمة تحدياً جديداً. يوقّعه جهاز المصادقة بالمفتاح الخاص المقابل، ثم تتحقق الخدمة من التوقيع بالمفتاح العام. لا يتلقى الموقع صورة وجهك أو المفتاح الخاص.</p>
+<h2>ما دور Face ID؟</h2>
+<p>يمكن للتعرف على الوجه أو بصمة الإصبع أو رمز الجهاز أن يسمح باستخدام بيانات الاعتماد محلياً. حركة فتح القفل المألوفة هي خطوة موافقتك، أما تبادل الإثبات المشفّر فهو ما ينجز تسجيل الدخول. تختلف طريقة الموافقة بحسب الجهاز ومزوّد مفاتيح المرور.</p>
+<h2>كيف يساعد ذلك في مقاومة التصيد؟</h2>
+<p>ترتبط بيانات اعتماد WebAuthn بخدمة محددة. يتحقق المتصفح وجهاز المصادقة من هوية الموقع المعني، فلا تستطيع صفحة مقلدة أن تطلب منك ببساطة كتابة السر نفسه القابل لإعادة الاستخدام. يحمي ذلك مسار الدخول، لكنه لا يجعل كل رسالة أو وسيلة استرداد أو جهاز مخترق آمناً.</p>
+<h2>ماذا لو فقدت هاتفي؟</h2>
+<p>تُزامَن بعض مفاتيح المرور عبر مزوّد، بينما تبقى أخرى على جهاز أو مفتاح أمان. لذلك تعتمد الاستعادة على طريقة إنشاء مفتاح المرور وتخزينه. راجع خيارات الاسترداد لدى المزوّد قبل الاعتماد على جهاز واحد.</p>
+<h2>درس في تصميم المنتج</h2>
+<p>ينبغي أن يوضح شرح تسجيل الدخول الفرق بين حركة الموافقة والإثبات التقني. في شرحي المرئي، اللحظة الأساسية هي انتقال توقيع يستطيع الموقع التحقق منه. هذا أوضح من تقديم صورة الوجه كما لو كانت كلمة مرور.</p>
+<h2>شاهد الشرح المرئي الأصلي</h2>
+<p>يرافق هذا المقال شرحي المرئي المنشور. منشورات التواصل الاجتماعي باللغة الإنجليزية.</p>
+<p><a href="https://www.instagram.com/reel/DdwUJcKsG4T/" hreflang="en">شاهد على إنستغرام · <bdi>@ahmadreza_smdi</bdi></a> · <a href="https://www.linkedin.com/feed/update/urn:li:activity:7509630598253084672/" hreflang="en">اقرأ منشور لينكدإن</a></p>
+<h2>المصادر</h2>
+<ul><li><a href="https://fidoalliance.org/passkeys/" hreflang="en"><bdi>FIDO Alliance: passkeys</bdi></a></li><li><a href="https://support.apple.com/en-us/102195" hreflang="en"><bdi>Apple: security of passkeys</bdi></a></li><li><a href="https://www.w3.org/TR/webauthn-3/" hreflang="en"><bdi>W3C: Web Authentication</bdi></a></li></ul>
+</article>
+<footer class="editorial-footer"><nav aria-label="اقرأ أيضاً"><a href="/ar/writing/how-zip-files-work.html">كيف تعمل ملفات ZIP؟ ضغط البيانات دون فقدانها</a> · <a href="/ar/writing/">المقالات</a> · <a href="/ar/about.html">عن أحمدرضا صمدي</a></nav><p>أحمدرضا صمدي</p></footer>
+</main>
+</body>
+</html>
+

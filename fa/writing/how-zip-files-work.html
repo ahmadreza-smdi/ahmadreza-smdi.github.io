@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Ahmadreza Samadi">
+<title>فایل ZIP چگونه کار می‌کند؟ فشرده‌سازی بدون از دست‌دادن داده | احمدرضا صمدی</title>
+<meta name="description" content="احمدرضا صمدی ساختار ZIP، فشرده‌سازی DEFLATE، داده‌های تکراری و کدگذاری هافمن را توضیح می‌دهد؛ چرا عکس و ویدئو گاهی کوچک‌تر نمی‌شوند؟">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://a-samadi.com/fa/writing/how-zip-files-work.html">
+<link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/how-zip-files-work.html">
+<link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/how-zip-files-work.html">
+<link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/how-zip-files-work.html">
+<link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/how-zip-files-work.html">
+<link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg">
+<link rel="stylesheet" href="/css/site.css?v=20260915-motion">
+<link rel="stylesheet" href="/css/rtl.css?v=20260921">
+<meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
+<meta property="og:title" content="فایل ZIP چگونه کار می‌کند؟ فشرده‌سازی بدون از دست‌دادن داده | احمدرضا صمدی">
+<meta property="og:description" content="احمدرضا صمدی ساختار ZIP، فشرده‌سازی DEFLATE، داده‌های تکراری و کدگذاری هافمن را توضیح می‌دهد؛ چرا عکس و ویدئو گاهی کوچک‌تر نمی‌شوند؟"><meta property="og:url" content="https://a-samadi.com/fa/writing/how-zip-files-work.html">
+<meta property="og:locale" content="fa_IR">
+<meta property="og:image" content="https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg"><meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://a-samadi.com/fa/writing/how-zip-files-work.html#article",
+      "headline": "فایل ZIP چگونه کار می‌کند؟ فشرده‌سازی بدون از دست‌دادن داده",
+      "description": "احمدرضا صمدی ساختار ZIP، فشرده‌سازی DEFLATE، داده‌های تکراری و کدگذاری هافمن را توضیح می‌دهد؛ چرا عکس و ویدئو گاهی کوچک‌تر نمی‌شوند؟",
+      "url": "https://a-samadi.com/fa/writing/how-zip-files-work.html",
+      "mainEntityOfPage": "https://a-samadi.com/fa/writing/how-zip-files-work.html",
+      "datePublished": "2026-09-28",
+      "dateModified": "2026-09-28",
+      "inLanguage": "fa",
+      "image": "https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg",
+      "author": {
+        "@type": "Person",
+        "@id": "https://a-samadi.com/#person",
+        "name": "احمدرضا صمدی",
+        "url": "https://a-samadi.com/fa/about.html"
+      },
+      "publisher": {
+        "@id": "https://a-samadi.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://a-samadi.com/#website"
+      },
+      "citation": [
+        "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT",
+        "https://www.rfc-editor.org/rfc/rfc1951"
+      ],
+      "translationOfWork": {
+        "@id": "https://a-samadi.com/writing/how-zip-files-work.html#article"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "خانه",
+          "item": "https://a-samadi.com/fa/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "نوشته‌ها",
+          "item": "https://a-samadi.com/fa/writing/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "فایل ZIP چگونه کار می‌کند؟ فشرده‌سازی بدون از دست‌دادن داده"
+        }
+      ]
+    }
+  ]
+}</script>
+</head>
+<body class="editorial-body persian-page">
+<a class="skip-link" href="#main">رفتن به محتوا</a>
+<header class="editorial-header"><a href="/fa/"><img src="/assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">احمدرضا صمدی / خانه</a></header>
+<main id="main" class="editorial">
+<nav class="byline" aria-label="مسیر صفحه"><a href="/fa/">خانه</a> / <a href="/fa/writing/">نوشته‌ها</a> / <span aria-current="page">فایل ZIP چگونه کار می‌کند؟ فشرده‌سازی بدون از دست‌دادن داده</span></nav>
+<article>
+<p class="eyebrow">Wait, That’s Tech? · فناوری روزمره</p>
+<h1>فایل ZIP چگونه کار می‌کند؟ فشرده‌سازی بدون از دست‌دادن داده</h1>
+<p class="lead">ZIP می‌تواند چند فایل را در یک بسته جمع کند، محتوای آن‌ها را فشرده کند یا هر دو کار را انجام دهد. ارزش فایل کوچک‌تر در این است که هنگام استخراج، بایت‌های اصلی دقیقاً بازسازی شوند.</p>
+<p class="byline">نویسنده: <a href="/fa/about.html" rel="author">احمدرضا صمدی</a> · <time datetime="2026-09-28">۲۸ سپتامبر ۲۰۲۶</time></p>
+<h2>قالب بسته‌بندی و روش فشرده‌سازی</h2>
+<p>ZIP برای فایل‌ها ورودی‌های جداگانه و یک فهرست مرکزی نگه می‌دارد تا ابزار استخراج بتواند آن‌ها را پیدا کند. هر ورودی ممکن است بدون فشرده‌سازی ذخیره شود یا از یک روش پشتیبانی‌شده استفاده کند. DEFLATE روش رایجی است، اما نام دیگر ZIP نیست.</p>
+<h2>چگونه بایت‌های تکراری به دستور تبدیل می‌شوند؟</h2>
+<p>در مثال انیمیشنی من، دنباله ABCDABCD شامل یک بخش چهاربایتی تکراری است. پس از ABCD اول، فشرده‌ساز می‌تواند بخش بعدی را با دستور «چهار بایت عقب برو و چهار بایت کپی کن» نمایش دهد. این نمونه، تطبیق طول و فاصله در LZ77 را توضیح می‌دهد؛ خروجی دقیق یک فشرده‌ساز واقعی برای چنین ورودی کوتاهی را تضمین نمی‌کند.</p>
+<h2>کدگذاری هافمن چه نقشی دارد؟</h2>
+<p>DEFLATE می‌تواند بایت‌های مستقیم و اطلاعات تطبیق را با کدهای هافمن نمایش دهد. کد مناسب برای نمادهای پرتکرار نمایش کوتاه‌تری می‌سازد. بلوک‌های با کد ثابت و بلوک‌های فشرده‌نشده هم وجود دارند؛ فشرده‌ساز روش نمایش را انتخاب می‌کند. استخراج، دستورها را رمزگشایی و بایت‌ها را به‌ترتیب بازسازی می‌کند.</p>
+<h2>چرا JPG و MP4 چندان کوچک نمی‌شوند؟</h2>
+<p>بسیاری از عکس‌ها و ویدئوها از قبل فشرده شده‌اند. مرحله فشرده‌سازی بعدی معمولاً تکرار مفید کمی پیدا می‌کند و سربار فایل آرشیو حتی می‌تواند حجم را بیشتر کند. بااین‌حال، جمع‌کردن چند فایل در یک بسته هنوز کاربرد دارد.</p>
+<h2>آیا ZIP همان رمزنگاری است؟</h2>
+<p>فشرده‌سازی و رمزنگاری دو کار جدا هستند. فشرده‌بودن ZIP به‌معنای محرمانه‌بودن آن نیست. بررسی CRC-32 به شناسایی خرابی تصادفی کمک می‌کند، اما اصالت داده را ثابت نمی‌کند. در فیلم این کارها جدا نمایش داده می‌شوند: بسته‌بندی فایل‌ها، نمایش فشرده بایت‌ها و بازسازی دقیق آن‌ها.</p>
+<h2>توضیح تصویری اصلی</h2>
+<p>این مقاله همراه توضیح تصویری منتشرشده من است. پست‌های شبکه‌های اجتماعی به زبان انگلیسی هستند.</p>
+<p><a href="https://www.instagram.com/reel/DdzRuDVsqro/" hreflang="en">تماشا در اینستاگرام · <bdi>@ahmadreza_smdi</bdi></a> · <a href="https://www.linkedin.com/feed/update/urn:li:activity:7510049595847118850/" hreflang="en">خواندن پست لینکدین</a></p>
+<h2>منابع</h2>
+<ul><li><a href="https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT" hreflang="en"><bdi>PKWARE: ZIP File Format Specification</bdi></a></li><li><a href="https://www.rfc-editor.org/rfc/rfc1951" hreflang="en"><bdi>RFC 1951: DEFLATE</bdi></a></li></ul>
+</article>
+<footer class="editorial-footer"><nav aria-label="مطالعه بیشتر"><a href="/fa/writing/passkeys-face-id.html">پاس‌کی چیست و چرا Face ID رمز عبور شما نیست؟</a> · <a href="/fa/writing/">نوشته‌ها</a> · <a href="/fa/about.html">درباره احمدرضا صمدی</a></nav><p>احمدرضا صمدی</p></footer>
+</main>
+</body>
+</html>
+

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Ahmadreza Samadi">
+<title>How passkeys work: why Face ID is not your password | Ahmadreza Samadi</title>
+<meta name="description" content="What is a passkey? Ahmadreza Samadi explains Face ID, public and private keys, phishing resistance, and what happens if you lose your device.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://a-samadi.com/writing/passkeys-face-id.html">
+<link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/passkeys-face-id.html">
+<link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/passkeys-face-id.html">
+<link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/passkeys-face-id.html">
+<link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/passkeys-face-id.html">
+<link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg">
+<link rel="stylesheet" href="/css/site.css?v=20260915-motion">
+
+<meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
+<meta property="og:title" content="How passkeys work: why Face ID is not your password | Ahmadreza Samadi">
+<meta property="og:description" content="What is a passkey? Ahmadreza Samadi explains Face ID, public and private keys, phishing resistance, and what happens if you lose your device."><meta property="og:url" content="https://a-samadi.com/writing/passkeys-face-id.html">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg"><meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://a-samadi.com/writing/passkeys-face-id.html#article",
+      "headline": "How passkeys work: why Face ID is not your password",
+      "description": "What is a passkey? Ahmadreza Samadi explains Face ID, public and private keys, phishing resistance, and what happens if you lose your device.",
+      "url": "https://a-samadi.com/writing/passkeys-face-id.html",
+      "mainEntityOfPage": "https://a-samadi.com/writing/passkeys-face-id.html",
+      "datePublished": "2026-09-28",
+      "dateModified": "2026-09-28",
+      "inLanguage": "en",
+      "image": "https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg",
+      "author": {
+        "@type": "Person",
+        "@id": "https://a-samadi.com/#person",
+        "name": "Ahmadreza Samadi",
+        "url": "https://a-samadi.com/about.html"
+      },
+      "publisher": {
+        "@id": "https://a-samadi.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://a-samadi.com/#website"
+      },
+      "citation": [
+        "https://fidoalliance.org/passkeys/",
+        "https://support.apple.com/en-us/102195",
+        "https://www.w3.org/TR/webauthn-3/"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://a-samadi.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Writing",
+          "item": "https://a-samadi.com/writing/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How passkeys work: why Face ID is not your password"
+        }
+      ]
+    }
+  ]
+}</script>
+</head>
+<body class="editorial-body">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="editorial-header"><a href="/"><img src="/assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">Ahmadreza Samadi / Home</a></header>
+<main id="main" class="editorial">
+<nav class="byline" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/writing/">Writing</a> / <span aria-current="page">How passkeys work: why Face ID is not your password</span></nav>
+<article>
+<p class="eyebrow">Wait, That’s Tech? · Everyday technology</p>
+<h1>How passkeys work: why Face ID is not your password</h1>
+<p class="lead">Face ID can approve a passkey sign-in, but your face is not the credential that the website checks. Your device proves that it can use a private key.</p>
+<p class="byline">By <a href="/about.html" rel="author">Ahmadreza Samadi</a> · <time datetime="2026-09-28">28 September 2026</time></p>
+<h2>What does the website receive?</h2>
+<p>When you register a passkey, a public key is associated with your account. During sign-in, the service sends a fresh challenge. Your authenticator signs it with the corresponding private key, and the service checks the signature using the public key. The website does not receive your face scan or the private key.</p>
+<h2>What does Face ID do?</h2>
+<p>Face ID, a fingerprint, or a device PIN can authorize local use of the credential. The familiar unlock gesture is the approval step; the cryptographic exchange is the sign-in. Which method appears depends on your device and passkey provider.</p>
+<h2>Why does this help against phishing?</h2>
+<p>WebAuthn credentials are scoped to a relying party. The browser and authenticator enforce the relevant website identity, so a lookalike login page cannot simply ask you to type the same reusable secret. This protects the sign-in path; it does not make every message, recovery process, or compromised device safe.</p>
+<h2>What if I lose my phone?</h2>
+<p>Some passkeys sync through a provider; others stay on a device or security key. Recovery therefore depends on how your passkey was created and stored. Check your provider's recovery options before relying on a single device.</p>
+<h2>The product lesson</h2>
+<p>A useful sign-in explanation should distinguish the gesture from the proof. In my visual explainer, the key moment is the handoff: the website gets a signature it can verify. That is easier to understand than treating a face scan as a password.</p>
+<h2>Watch the original explainer</h2>
+<p>This article accompanies my published visual explainer. The social posts are in English.</p>
+<p><a href="https://www.instagram.com/reel/DdwUJcKsG4T/" hreflang="en">Watch on Instagram · <bdi>@ahmadreza_smdi</bdi></a> · <a href="https://www.linkedin.com/feed/update/urn:li:activity:7509630598253084672/" hreflang="en">Read the LinkedIn post</a></p>
+<h2>Sources</h2>
+<ul><li><a href="https://fidoalliance.org/passkeys/" hreflang="en"><bdi>FIDO Alliance: passkeys</bdi></a></li><li><a href="https://support.apple.com/en-us/102195" hreflang="en"><bdi>Apple: security of passkeys</bdi></a></li><li><a href="https://www.w3.org/TR/webauthn-3/" hreflang="en"><bdi>W3C: Web Authentication</bdi></a></li></ul>
+</article>
+<footer class="editorial-footer"><nav aria-label="Related reading"><a href="/writing/how-zip-files-work.html">How ZIP files work: compression without losing data</a> · <a href="/writing/">Writing</a> · <a href="/about.html">About Ahmadreza Samadi</a></nav><p>Ahmadreza Samadi</p></footer>
+</main>
+</body>
+</html>
+
