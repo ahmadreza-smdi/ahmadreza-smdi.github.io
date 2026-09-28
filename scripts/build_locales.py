@@ -50,6 +50,9 @@ for lang in ('fa','ar'):
         leading=raw[:len(raw)-len(raw.lstrip())];trailing=raw[len(raw.rstrip()):]
         return '>'+leading+html.escape(tr[key],quote=False)+trailing+'<'
     visible=re.sub(r'>([^<>]+)<',translate,'<body>'+visible)
+    english_link=f' <a class="story-link" href="/" hreflang="en" data-locale-primary="en">{html.escape(tr["Primary English site link"])}</a>'
+    visible,link_count=re.subn(r'(<a class="story-link" href="about.html">[^<]+</a>)(</div>)',lambda m:m[1]+english_link+m[2],visible,count=1)
+    if link_count!=1:raise ValueError(f'Missing {lang} biography link insertion point')
     script=script.replace("'Resume motion'",json.dumps(tr['Resume motion'],ensure_ascii=False)).replace("'Pause motion'",json.dumps(tr['Pause motion'],ensure_ascii=False))
     title=tr['Search title']
     description=tr['Search description']

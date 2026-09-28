@@ -28,13 +28,24 @@ def parse(path,url):
 base=parse(ROOT/'index.html','https://a-samadi.com/')
 for lang in ['fa','ar']:
  p=parse(ROOT/lang/'index.html',f'https://a-samadi.com/{lang}/')
+ primary_links=[attrs for tag,attrs in p.items if tag=='a' and attrs.get('data-locale-primary')=='en']
+ assert len(primary_links)==1 and primary_links[0].get('href')==BASE and primary_links[0].get('hreflang')=='en', f'{lang}: missing primary English homepage link'
  normalized=[]
+ skip_primary=False
  for tag,attrs in p.items:
+  if tag=='a' and attrs.get('data-locale-primary')=='en':
+   skip_primary=True
+   continue
+  if skip_primary:
+   assert tag=='/a', f'{lang}: unexpected markup inside primary English link'
+   skip_primary=False
+   continue
   attrs=attrs.copy()
   for local_page in ('tools/before-you-build-ai.html','about.html','work/appraiva.html','work/royal-abraj.html','writing/'):
    if attrs.get('href','').startswith(f'https://a-samadi.com/{lang}/{local_page}'):
     attrs['href']=attrs['href'].replace(f'https://a-samadi.com/{lang}/{local_page}',f'https://a-samadi.com/{local_page}',1)
   normalized.append((tag,attrs))
+ assert not skip_primary, f'{lang}: unclosed primary English link'
  assert normalized==base.items, f'{lang}: element or asset mismatch'
  assert p.ids==base.ids and len(p.ids)==len(set(p.ids)), f'{lang}: missing/duplicate section IDs'
  s=(ROOT/lang/'index.html').read_text()
