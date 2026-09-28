@@ -1,0 +1,22 @@
+name: Notify IndexNow after Pages deployment
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  deployments: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Notify changed canonical pages after successful Pages deployment
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/notify_indexnow.py --before "$BEFORE_SHA" --after "$GITHUB_SHA" --wait-for-pages
