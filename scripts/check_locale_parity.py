@@ -111,6 +111,9 @@ for cluster in clusters:
   if language!='en' and name.startswith(f'{language}/writing/'):
    body=parse(ROOT/name,expected[language])
    assert any(tag=='a' and attrs.get('href')==expected['en'] and attrs.get('hreflang')=='en' for tag,attrs in body.items), f'{name}: missing visible English writing route'
+  if language!='en' and (name.startswith(f'{language}/work/') or name.startswith(f'{language}/tools/')):
+   body=parse(ROOT/name,expected[language])
+   assert sum(tag=='a' and attrs.get('href')==expected['en'] and attrs.get('hreflang')=='en' and attrs.get('data-locale-primary')=='en' for tag,attrs in body.items)==1, f'{name}: missing primary English work or guide route'
   if name in ('index.html','fa/index.html','ar/index.html') or name.endswith('about.html'):
    source=(ROOT/name).read_text()
    schemas=[json.loads(raw) for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>',source,re.S)]

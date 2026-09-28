@@ -42,6 +42,10 @@ for lang in ('fa', 'ar'):
     for i, tag in enumerate(alternates):
         page = page.replace(f'__ALTERNATE_{i}__', tag)
     page = page.replace('</head>', '<link rel="stylesheet" href="../../css/rtl.css?v=20260921"><link rel="stylesheet" href="../../css/decision-guide-rtl.css?v=1"></head>')
+    english_label = {'fa': 'مطالعه راهنما به انگلیسی ←', 'ar': 'اقرأ الدليل بالإنجليزية ←'}[lang]
+    english_link = f'<p class="byline"><a href="/tools/before-you-build-ai.html" hreflang="en" data-locale-primary="en">{english_label}</a></p>'
+    assert page.count('</section>\n<noscript>') == 1, f'{lang}: missing guide intro insertion point'
+    page = page.replace('</section>\n<noscript>', '</section>\n' + english_link + '\n<noscript>', 1)
     js = js.replace('decision-brief-ahmadreza-samadi.txt', f'decision-brief-ahmadreza-samadi-{lang}.txt')
     destination = ROOT / lang / 'tools/before-you-build-ai.html'
     destination.parent.mkdir(parents=True, exist_ok=True)
