@@ -76,6 +76,7 @@ clusters = (
  ('about.html','fa/about.html','ar/about.html'),
  ('work/appraiva.html','fa/work/appraiva.html','ar/work/appraiva.html'),
  ('work/royal-abraj.html','fa/work/royal-abraj.html','ar/work/royal-abraj.html'),
+ ('work/oxfam-novib.html','fa/work/oxfam-novib.html','ar/work/oxfam-novib.html'),
  ('writing/ai-cost-per-verified-result.html','fa/writing/ai-cost-per-verified-result.html','ar/writing/ai-cost-per-verified-result.html'),
  ('writing/connected-ai-apps.html','fa/writing/connected-ai-apps.html','ar/writing/connected-ai-apps.html'),
  ('writing/jev-ai-decision-model.html','fa/writing/jev-ai-decision-model.html','ar/writing/jev-ai-decision-model.html'),
