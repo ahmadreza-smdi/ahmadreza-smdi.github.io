@@ -30,6 +30,8 @@ for lang in ['fa','ar']:
  p=parse(ROOT/lang/'index.html',f'https://a-samadi.com/{lang}/')
  primary_links=[attrs for tag,attrs in p.items if tag=='a' and attrs.get('data-locale-primary')=='en']
  assert len(primary_links)==1 and primary_links[0].get('href')==BASE and primary_links[0].get('hreflang')=='en', f'{lang}: missing primary English homepage link'
+ oxfam_links=[attrs for tag,attrs in p.items if tag=='a' and attrs.get('href','').endswith('/work/oxfam-novib.html')]
+ assert len(oxfam_links)==1 and oxfam_links[0]['href']==f'{BASE}{lang}/work/oxfam-novib.html', f'{lang}: Oxfam card must link to the localized case study'
  normalized=[]
  skip_primary=False
  for tag,attrs in p.items:
