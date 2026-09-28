@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Ahmadreza Samadi">
+<title>AI Agent Safety: Boundaries Before Actions | Ahmadreza Samadi</title>
+<meta name="description" content="What changes when AI assistants can act? Ahmadreza Samadi explains agent permissions, NVIDIA OpenShell, the proposed Sentry watchdog, and practical safety questions.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://a-samadi.com/writing/ai-agent-safety-boundaries.html">
+<link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-agent-safety-boundaries.html">
+<link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-agent-safety-boundaries.html">
+<link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-agent-safety-boundaries.html">
+<link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-agent-safety-boundaries.html">
+<link rel="icon" type="image/svg+xml" href="../assets/brand/favicon.svg">
+<link rel="stylesheet" href="../css/site.css?v=20260915-motion">
+<meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
+<meta property="og:title" content="AI agent safety: boundaries before actions | Ahmadreza Samadi">
+<meta property="og:description" content="A practical look at permissions for AI agents, NVIDIA OpenShell and the Sentry reference design.">
+<meta property="og:url" content="https://a-samadi.com/writing/ai-agent-safety-boundaries.html"><meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg"><meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://a-samadi.com/writing/ai-agent-safety-boundaries.html#article",
+      "headline": "AI agent safety: boundaries before actions",
+      "description": "What changes when AI assistants can act? A practical guide to agent permissions, NVIDIA OpenShell and the Sentry reference design.",
+      "url": "https://a-samadi.com/writing/ai-agent-safety-boundaries.html",
+      "mainEntityOfPage": "https://a-samadi.com/writing/ai-agent-safety-boundaries.html",
+      "datePublished": "2026-09-29",
+      "dateModified": "2026-09-29",
+      "inLanguage": "en",
+      "image": "https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg",
+      "keywords": ["AI agent safety", "AI agent permissions", "NVIDIA OpenShell", "NVIDIA Sentry", "agent security"],
+      "citation": ["https://nvidianews.nvidia.com/news/open-agent-safety-platform"],
+      "author": {"@type": "Person", "@id": "https://a-samadi.com/#person", "name": "Ahmadreza Samadi", "url": "https://a-samadi.com/about.html"},
+      "publisher": {"@id": "https://a-samadi.com/#person"},
+      "isPartOf": {"@id": "https://a-samadi.com/#website"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://a-samadi.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Writing", "item": "https://a-samadi.com/writing/"},
+        {"@type": "ListItem", "position": 3, "name": "AI agent safety: boundaries before actions"}
+      ]
+    }
+  ]
+}</script>
+</head>
+<body class="editorial-body">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="editorial-header"><a href="/"><img src="../assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">Ahmadreza Samadi / Home</a></header>
+<main id="main" class="editorial">
+<nav class="byline" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/writing/">Writing</a> / <span aria-current="page">AI agent safety: boundaries before actions</span></nav>
+<p class="eyebrow">Explainer · AI agents and permissions</p>
+<h1>AI agent safety: boundaries before actions</h1>
+<p class="lead">An AI assistant that only answers a question and an agent that can use tools need different safeguards. The moment software can act, permissions become part of the product design.</p>
+<p class="byline">By <a href="/about.html" rel="author">Ahmadreza Samadi</a> · <time datetime="2026-09-29">29 September 2026</time></p>
+<p>On 28 September, <a href="https://nvidianews.nvidia.com/news/open-agent-safety-platform">NVIDIA announced its Open Agent Safety Platform</a>. The announcement combines OpenShell software with a separate Sentry reference system design. It is a useful prompt to ask where an AI agent’s limits should live—and what happens if it tries to cross them.</p>
+<h2>Why agents need more than a careful prompt</h2>
+<p>A chatbot may explain how to organize an inbox. An agent with email access might actually send, move or delete messages. The second system needs explicit limits on which account it uses, which data it can reach, which tools it may call and which actions require a person’s approval. Instructions inside a prompt are not a substitute for enforceable permissions outside the model.</p>
+<h2>What OpenShell and Sentry do</h2>
+<p>According to NVIDIA, <strong>OpenShell</strong> is an open-source secure runtime that traces agent actions and enforces policy while the agent runs. NVIDIA says OpenShell is now broadly available. Its software boundary is intended to restrict what the agent can do even if the model asks for more.</p>
+<p><strong>Sentry</strong> is different: NVIDIA describes it as an out-of-band watchdog in a reference system design using BlueField-4 DPUs. It is designed to monitor agent behavior and quarantine an agent that moves outside its boundary. The announcement does not mean Sentry is installed in every AI assistant, or that every system using OpenShell also has this hardware layer.</p>
+<h2>Four boundaries I would check</h2>
+<ol>
+<li><strong>Identity:</strong> Which user or service account is the agent acting as?</li>
+<li><strong>Scope:</strong> Which files, messages, records and tools can it reach?</li>
+<li><strong>Action:</strong> Can it only read, or can it also send, change and delete?</li>
+<li><strong>Oversight:</strong> Which actions require approval, and how are attempts and failures logged?</li>
+</ol>
+<p>The room-and-guard analogy is helpful: grant access to one room, then independently watch the door. But no single boundary proves an agent is safe. Teams still need task-specific tests, review paths and a way to revoke access.</p>
+<h2>Before allowing an agent to send email</h2>
+<p>I would start with a narrow use case: let it draft a message, but require a person to approve the recipient and contents before sending. Next, test what happens when the agent reads misleading instructions inside an email, asks for a tool outside its allowed scope or retries after a denial. Only then should the team consider broader autonomy, with a measurable benefit and a clear rollback path.</p>
+<h2>Continue the discussion</h2>
+<p>The <a href="https://www.instagram.com/p/Dd2G3aRCgIF/">seven-slide Instagram carousel</a> explains these ideas visually. For the related question of what a connected assistant can read or change, see <a href="/writing/connected-ai-apps.html">Connected AI apps: access, scope and approval</a>.</p>
+<h2>Source</h2>
+<ul><li>NVIDIA Newsroom, <a href="https://nvidianews.nvidia.com/news/open-agent-safety-platform">“NVIDIA Launches Open Agent Safety Platform to Secure Agents From Testing to Deployment”</a>, 28 September 2026. Product capabilities above are NVIDIA’s descriptions, not an independent security evaluation.</li></ul>
+<footer class="editorial-footer"><nav aria-label="Related pages"><a href="/writing/">All writing</a> · <a href="/about.html">About Ahmadreza Samadi</a> · <a href="/about.html#official-profiles">Official profiles</a> · <a href="/">Selected work</a></nav><p>Ahmadreza Samadi · Technology Entrepreneur</p><a href="/#contact">Get in touch →</a></footer>
+</main>
+</body>
+</html>
