@@ -108,6 +108,9 @@ for cluster in clusters:
   assert len(metadata.alternates)==4 and dict(metadata.alternates)==expected, f'{name}: incomplete or non-reciprocal hreflang'
   assert expected[language] in listed, f'{name}: missing from sitemap'
   assert not any('noindex' in directive.lower() for directive in metadata.robots), f'{name}: noindex directive'
+  if language!='en' and name.startswith(f'{language}/writing/'):
+   body=parse(ROOT/name,expected[language])
+   assert any(tag=='a' and attrs.get('href')==expected['en'] and attrs.get('hreflang')=='en' for tag,attrs in body.items), f'{name}: missing visible English writing route'
   if name in ('index.html','fa/index.html','ar/index.html') or name.endswith('about.html'):
    source=(ROOT/name).read_text()
    schemas=[json.loads(raw) for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>',source,re.S)]
