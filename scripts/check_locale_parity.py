@@ -41,7 +41,7 @@ for lang in ['fa','ar']:
    skip_primary=False
    continue
   attrs=attrs.copy()
-  for local_page in ('tools/before-you-build-ai.html','about.html','work/appraiva.html','work/royal-abraj.html','writing/'):
+  for local_page in ('tools/before-you-build-ai.html','about.html','work/appraiva.html','work/royal-abraj.html','work/oxfam-novib.html','writing/'):
    if attrs.get('href','').startswith(f'https://a-samadi.com/{lang}/{local_page}'):
     attrs['href']=attrs['href'].replace(f'https://a-samadi.com/{lang}/{local_page}',f'https://a-samadi.com/{local_page}',1)
   normalized.append((tag,attrs))
