@@ -148,5 +148,16 @@ for path in article_pages:
  schemas=[json.loads(raw) for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>',source,re.S)]
  articles=[item for schema in schemas for item in schema.get('@graph',[schema]) if item.get('@type')=='Article']
  assert len(articles)==1 and articles[0].get('description','').strip(), f'{path.relative_to(ROOT)}: missing Article description'
-print(f'PASS article metadata: {len(article_pages)} articles have descriptions')
+ relative=path.relative_to(ROOT)
+ language=relative.parts[0] if relative.parts[0] in ('fa','ar') else 'en'
+ biography=BASE+(f'{language}/' if language!='en' else '')+'about.html'
+ author=articles[0].get('author',{})
+ assert author.get('@type')=='Person' and author.get('@id')==BASE+'#person', f'{relative}: inconsistent author entity'
+ expected_names={'en':{'Ahmadreza Samadi'},'fa':{'Ahmadreza Samadi','احمدرضا صمدی'},'ar':{'Ahmadreza Samadi','أحمدرضا صمدي'}}
+ assert author.get('name') in expected_names[language] and author.get('url')==biography, f'{relative}: inconsistent author biography'
+ article_url=articles[0].get('url')
+ assert article_url in listed, f'{relative}: article URL missing from sitemap'
+ body=parse(path,article_url)
+ assert any(tag=='a' and attrs.get('href')==biography and 'author' in attrs.get('rel','').split() for tag,attrs in body.items), f'{relative}: missing visible author link'
+print(f'PASS article metadata: {len(article_pages)} articles have descriptions and one shared, visibly linked author')
 print(f'PASS SEO: {len(listed)} self-canonical sitemap URLs and {len(clusters)} reciprocal language clusters')
