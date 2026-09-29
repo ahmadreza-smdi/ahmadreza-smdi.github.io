@@ -142,4 +142,11 @@ for lang in ('fa','ar'):
   assert links.count(BASE+local_target)==1, f'{source}: expected one link to translated {local_target}'
   assert BASE+old_english_target not in links, f'{source}: stale English-only link to {old_english_target}'
 print('PASS localized links: Oxfam hubs and AI-cost guides use translated destinations')
+article_pages=sorted(path for path in ROOT.glob('**/writing/*.html') if path.name!='index.html')
+for path in article_pages:
+ source=path.read_text()
+ schemas=[json.loads(raw) for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>',source,re.S)]
+ articles=[item for schema in schemas for item in schema.get('@graph',[schema]) if item.get('@type')=='Article']
+ assert len(articles)==1 and articles[0].get('description','').strip(), f'{path.relative_to(ROOT)}: missing Article description'
+print(f'PASS article metadata: {len(article_pages)} articles have descriptions')
 print(f'PASS SEO: {len(listed)} self-canonical sitemap URLs and {len(clusters)} reciprocal language clusters')
