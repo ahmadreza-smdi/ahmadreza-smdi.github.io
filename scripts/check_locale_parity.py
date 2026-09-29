@@ -132,4 +132,14 @@ for cluster in clusters:
      locale=name[:2]
      expected_modified=json.loads((ROOT/'locales'/f'{locale}.json').read_text())['Homepage modified']
      assert modified==expected_modified, f'{name}: localized homepage modification time differs from source'
+for lang in ('fa','ar'):
+ for source,local_target,old_english_target in (
+  (f'{lang}/writing/index.html',f'{lang}/work/oxfam-novib.html','work/oxfam-novib.html'),
+  (f'{lang}/writing/ai-cost-per-verified-result.html',f'{lang}/tools/before-you-build-ai.html','tools/before-you-build-ai.html'),
+ ):
+  url=BASE+(source[:-10] if source.endswith('index.html') else source)
+  links=[attrs.get('href') for tag,attrs in parse(ROOT/source,url).items if tag=='a']
+  assert links.count(BASE+local_target)==1, f'{source}: expected one link to translated {local_target}'
+  assert BASE+old_english_target not in links, f'{source}: stale English-only link to {old_english_target}'
+print('PASS localized links: Oxfam hubs and AI-cost guides use translated destinations')
 print(f'PASS SEO: {len(listed)} self-canonical sitemap URLs and {len(clusters)} reciprocal language clusters')
