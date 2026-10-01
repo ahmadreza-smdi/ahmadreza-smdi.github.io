@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Writing on AI Products, Data and PropTech | Ahmadreza Samadi</title>
+    <link>https://a-samadi.com/writing/</link>
+    <description>Articles and explainers by Ahmadreza Samadi on building AI products, AI costs and decision models, connected apps, and real estate technology.</description>
+    <language>en</language>
+    <dc:creator>Ahmadreza Samadi</dc:creator>
+    <atom:link href="https://a-samadi.com/writing/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI agent safety: boundaries before actions</title>
+      <link>https://a-samadi.com/writing/ai-agent-safety-boundaries.html</link>
+      <description>What changes when AI assistants can act? A practical guide to agent permissions, NVIDIA OpenShell and the Sentry reference design.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/ai-agent-safety-boundaries.html</guid>
+    </item>
+    <item>
+      <title>How ZIP files work: compression without losing data</title>
+      <link>https://a-samadi.com/writing/how-zip-files-work.html</link>
+      <description>How does a ZIP restore every byte? Ahmadreza Samadi explains the ZIP container, DEFLATE, repeated data, Huffman coding, and why videos may barely shrink.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/how-zip-files-work.html</guid>
+    </item>
+    <item>
+      <title>How passkeys work: why Face ID is not your password</title>
+      <link>https://a-samadi.com/writing/passkeys-face-id.html</link>
+      <description>What is a passkey? Ahmadreza Samadi explains Face ID, public and private keys, phishing resistance, and what happens if you lose your device.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/passkeys-face-id.html</guid>
+    </item>
+    <item>
+      <title>Connected AI apps: access, scope and approval</title>
+      <link>https://a-samadi.com/writing/connected-ai-apps.html</link>
+      <description>What happens when you connect an app to ChatGPT or Gemini? A practical guide to accounts, permissions, reading versus acting, and approval before you connect.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/connected-ai-apps.html</guid>
+    </item>
+    <item>
+      <title>Jev: an AI decision model, not another chatbot</title>
+      <link>https://a-samadi.com/writing/jev-ai-decision-model.html</link>
+      <description>What is Jev from TypeSafe AI? How a decision model differs from GPT and Claude, what the early Banking77 test shows, and how to test it as a routing layer.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/jev-ai-decision-model.html</guid>
+    </item>
+    <item>
+      <title>AI Cost per Verified Result: Beyond Token Prices</title>
+      <link>https://a-samadi.com/writing/ai-cost-per-verified-result.html</link>
+      <description>A practical framework for measuring the full cost of verified AI workflow results.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/ai-cost-per-verified-result.html</guid>
+    </item>
+    <item>
+      <title>Start with the decision, then build the AI</title>
+      <link>https://a-samadi.com/writing/start-with-the-decision.html</link>
+      <description>A practical approach to AI product decisions: start with the customer’s decision, assess the evidence, and evaluate the whole workflow.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Sun, 13 Sep 2026 10:06:07 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/start-with-the-decision.html</guid>
+    </item>
+  </channel>
+</rss>
