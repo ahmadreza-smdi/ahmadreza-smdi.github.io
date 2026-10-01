@@ -17,6 +17,8 @@ jobs:
           fetch-depth: 0
       - name: Verify canonical URL mapping
         run: PYTHONDONTWRITEBYTECODE=1 python3 scripts/test_notify_indexnow.py
+      - name: Verify SEO language, canonical and author metadata
+        run: PYTHONDONTWRITEBYTECODE=1 python3 scripts/check_locale_parity.py
       - name: Notify changed canonical pages after successful Pages deployment
         env:
           BEFORE_SHA: ${{ github.event.before }}
