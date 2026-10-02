@@ -179,6 +179,10 @@ for path in article_pages:
  assert author.get('name') in expected_names[language] and author.get('url')==biography, f'{relative}: inconsistent author biography'
  article_url=articles[0].get('url')
  assert article_url in listed, f'{relative}: article URL missing from sitemap'
+ if language in ('fa','ar'):
+  english_url=BASE+'writing/'+path.name
+  expected_translation={'@id': english_url+'#article'}
+  assert articles[0].get('translationOfWork')==expected_translation, f'{relative}: missing or incorrect English original in Article schema'
  body=parse(path,article_url)
  assert any(tag=='a' and attrs.get('href')==biography and 'author' in attrs.get('rel','').split() for tag,attrs in body.items), f'{relative}: missing visible author link'
 print(f'PASS article metadata: {len(article_pages)} articles have descriptions and one shared, visibly linked author')
