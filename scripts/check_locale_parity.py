@@ -99,6 +99,8 @@ clusters = (
  ('writing/passkeys-face-id.html','fa/writing/passkeys-face-id.html','ar/writing/passkeys-face-id.html'),
  ('writing/how-zip-files-work.html','fa/writing/how-zip-files-work.html','ar/writing/how-zip-files-work.html'),
  ('writing/ai-agent-safety-boundaries.html','fa/writing/ai-agent-safety-boundaries.html','ar/writing/ai-agent-safety-boundaries.html'),
+ ('writing/ai-human-review-real-estate.html','fa/writing/ai-human-review-real-estate.html','ar/writing/ai-human-review-real-estate.html'),
+ ('writing/verify-ai-image-claims.html','fa/writing/verify-ai-image-claims.html','ar/writing/verify-ai-image-claims.html'),
 )
 for cluster in clusters:
  urls=[BASE+(name[:-10] if name.endswith('index.html') else name) for name in cluster]

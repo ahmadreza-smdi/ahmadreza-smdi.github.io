@@ -88,7 +88,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/writing/</loc>
-        <lastmod>2026-10-01</lastmod>
+        <lastmod>2026-10-03</lastmod>
     </url>
     <url>
         <loc>https://a-samadi.com/writing/connected-ai-apps.html</loc>
@@ -100,7 +100,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/</loc>
-        <lastmod>2026-09-29</lastmod>
+        <lastmod>2026-10-03</lastmod>
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/connected-ai-apps.html</loc>
@@ -112,7 +112,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/</loc>
-        <lastmod>2026-09-29</lastmod>
+        <lastmod>2026-10-03</lastmod>
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/connected-ai-apps.html</loc>
@@ -181,5 +181,29 @@
     <url>
         <loc>https://a-samadi.com/ar/writing/ai-agent-safety-boundaries.html</loc>
         <lastmod>2026-09-29</lastmod>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/ai-human-review-real-estate.html</loc>
+        <lastmod>2026-10-03</lastmod>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/ai-human-review-real-estate.html</loc>
+        <lastmod>2026-10-03</lastmod>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/ai-human-review-real-estate.html</loc>
+        <lastmod>2026-10-03</lastmod>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/verify-ai-image-claims.html</loc>
+        <lastmod>2026-10-03</lastmod>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/verify-ai-image-claims.html</loc>
+        <lastmod>2026-10-03</lastmod>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/verify-ai-image-claims.html</loc>
+        <lastmod>2026-10-03</lastmod>
     </url>
 </urlset>

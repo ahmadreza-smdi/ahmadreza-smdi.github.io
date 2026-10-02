@@ -8,6 +8,22 @@
     <dc:creator>Ahmadreza Samadi</dc:creator>
     <atom:link href="https://a-samadi.com/writing/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Where AI should stop in real estate</title>
+      <link>https://a-samadi.com/writing/ai-human-review-real-estate.html</link>
+      <description>AI can draft listings and organize property information, but a professional must verify the facts and guide the decision. Ahmadreza Samadi explains the handoff.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/ai-human-review-real-estate.html</guid>
+    </item>
+    <item>
+      <title>How to check an image claim, AI-made or not</title>
+      <link>https://a-samadi.com/writing/verify-ai-image-claims.html</link>
+      <description>A practical checklist for checking an image and its claim: find the source, reverse-search it, inspect provenance signals and seek independent corroboration.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/verify-ai-image-claims.html</guid>
+    </item>
+    <item>
       <title>AI agent safety: boundaries before actions</title>
       <link>https://a-samadi.com/writing/ai-agent-safety-boundaries.html</link>
       <description>What changes when AI assistants can act? A practical guide to agent permissions, NVIDIA OpenShell and the Sentry reference design.</description>
