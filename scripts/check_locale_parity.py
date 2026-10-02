@@ -1,4 +1,5 @@
 """Verify localized homepage parity and SEO metadata across published pages."""
+from html import unescape
 from html.parser import HTMLParser
 from datetime import datetime
 from pathlib import Path
@@ -136,6 +137,23 @@ for cluster in clusters:
      locale=name[:2]
      expected_modified=json.loads((ROOT/'locales'/f'{locale}.json').read_text())['Homepage modified']
      assert modified==expected_modified, f'{name}: localized homepage modification time differs from source'
+for name in ('writing/index.html','fa/writing/index.html','ar/writing/index.html'):
+ source=(ROOT/name).read_text()
+ schemas=[json.loads(raw) for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>',source,re.S)]
+ collections=[item for schema in schemas for item in schema.get('@graph',[schema]) if item.get('@type')=='CollectionPage']
+ assert len(collections)==1, f'{name}: expected one CollectionPage'
+ collection=collections[0]
+ item_list=collection.get('mainEntity',{})
+ assert item_list.get('@type')=='ItemList', f'{name}: missing ItemList'
+ cards=[(urljoin(BASE,href),unescape(title.strip())) for href,title in re.findall(r'<article>\s*<h2><a href="([^"]+)"[^>]*>(.*?)</a></h2>',source,re.S)]
+ assert len(cards)==source.count('<article>'), f'{name}: an article card has no matching heading link'
+ assert cards and len(cards)==len(set(url for url,_ in cards)), f'{name}: missing or duplicate visible cards'
+ assert all(url in listed for url,_ in cards), f'{name}: visible card URL missing from sitemap'
+ items=item_list.get('itemListElement',[])
+ assert item_list.get('numberOfItems')==len(cards)==len(items), f'{name}: ItemList count differs from visible cards'
+ for position,((url,title),item) in enumerate(zip(cards,items),1):
+  assert (item.get('@type'),item.get('position'),item.get('url'),item.get('name'))==('ListItem',position,url,title), f'{name}: ItemList differs from visible card {position}'
+ print(f'PASS {name}: {len(cards)} visible writing cards match ItemList')
 for lang in ('fa','ar'):
  for source,local_target,old_english_target in (
   (f'{lang}/writing/index.html',f'{lang}/work/oxfam-novib.html','work/oxfam-novib.html'),
