@@ -19,6 +19,10 @@ jobs:
         run: PYTHONDONTWRITEBYTECODE=1 python3 scripts/test_notify_indexnow.py
       - name: Verify SEO language, canonical and author metadata
         run: PYTHONDONTWRITEBYTECODE=1 python3 scripts/check_locale_parity.py
+      - name: Verify internal page and fragment links
+        run: |
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/test_check_internal_links.py
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/check_internal_links.py
       - name: Notify changed canonical pages after successful Pages deployment
         env:
           BEFORE_SHA: ${{ github.event.before }}

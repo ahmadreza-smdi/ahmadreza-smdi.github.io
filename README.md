@@ -35,11 +35,12 @@ Run these existing checks from the repository root with Python 3 and Node.js:
 
 ```sh
 python3 scripts/check_locale_parity.py
+python3 scripts/check_internal_links.py
 node scripts/check_guide_locales.mjs
 python3 scripts/build_feed.py --check
 ```
 
-The checks cover language and canonical metadata, author identity, localized guide behavior and exports, and RSS consistency.
+The checks cover language and canonical metadata, author identity, same-site page and fragment links, localized guide behavior and exports, and RSS consistency.
 
 | When changing | Source and regeneration command |
 | --- | --- |
