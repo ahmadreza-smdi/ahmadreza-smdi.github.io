@@ -8,6 +8,14 @@
     <dc:creator>Ahmadreza Samadi</dc:creator>
     <atom:link href="https://a-samadi.com/writing/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>How satellite messaging works without cell towers</title>
+      <link>https://a-samadi.com/writing/how-satellite-messaging-works.html</link>
+      <description>How a supported phone sends texts through satellites, how the message returns to Earth, and what to check before going off-grid. By Ahmadreza Samadi.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/how-satellite-messaging-works.html</guid>
+    </item>
+    <item>
       <title>What AI home-value estimates miss</title>
       <link>https://a-samadi.com/writing/ai-home-value-estimates.html</link>
       <description>Ahmadreza Samadi explains what automated home-value estimates can miss: incomplete property facts, weak comparables, uncertainty and uneven error.</description>
