@@ -107,6 +107,7 @@ clusters = (
  ('writing/humanoid-robots-at-home.html','fa/writing/humanoid-robots-at-home.html','ar/writing/humanoid-robots-at-home.html'),
  ('writing/how-satellite-messaging-works.html','fa/writing/how-satellite-messaging-works.html','ar/writing/how-satellite-messaging-works.html'),
  ('writing/incognito-private-browsing.html','fa/writing/incognito-private-browsing.html','ar/writing/incognito-private-browsing.html'),
+ ('writing/why-ai-sounds-confident.html','fa/writing/why-ai-sounds-confident.html','ar/writing/why-ai-sounds-confident.html'),
 )
 for cluster in clusters:
  urls=[BASE+(name[:-10] if name.endswith('index.html') else name) for name in cluster]

@@ -1,0 +1,115 @@
+WEBVTT
+
+00:00:00.640 --> 00:00:03.006
+You ask an AI a simple question.
+
+00:00:03.006 --> 00:00:04.638
+The answer comes back polished,
+
+00:00:04.638 --> 00:00:06.617
+friendly, and completely sure.
+
+00:00:06.757 --> 00:00:08.443
+Here’s a made-up example.
+
+00:00:08.443 --> 00:00:11.315
+Is the Willowmere Museum
+open on Mondays?
+
+00:00:11.315 --> 00:00:13.626
+“Yes! It’s open daily, nine to five.
+
+00:00:13.626 --> 00:00:15.479
+And entry is free on Mondays.”
+
+00:00:15.659 --> 00:00:17.135
+Now let’s check each claim
+
+00:00:17.135 --> 00:00:19.291
+against the museum’s own website.
+
+00:00:19.291 --> 00:00:21.362
+Nine to five. That matches.
+
+00:00:21.362 --> 00:00:22.426
+Open daily? No.
+
+00:00:22.426 --> 00:00:24.456
+It’s closed on Mondays.
+
+00:00:24.456 --> 00:00:25.301
+Free on Mondays?
+
+00:00:25.301 --> 00:00:27.708
+The website doesn’t say that anywhere.
+
+00:00:27.928 --> 00:00:29.870
+So why did it sound so sure?
+
+00:00:29.870 --> 00:00:32.221
+Behind the answer
+is a language model.
+
+00:00:32.221 --> 00:00:34.662
+It writes by predicting
+likely next words,
+
+00:00:34.662 --> 00:00:37.231
+from patterns in
+huge amounts of text.
+
+00:00:37.231 --> 00:00:41.251
+Phrases like “open daily” appear
+on countless opening-hours pages,
+
+00:00:41.251 --> 00:00:42.646
+so the words fit.
+
+00:00:42.646 --> 00:00:44.632
+The same process got the hours right,
+
+00:00:44.632 --> 00:00:45.839
+and the day wrong.
+
+00:00:45.839 --> 00:00:48.852
+Sounding right and being checked
+are different jobs.
+
+00:00:49.032 --> 00:00:51.882
+And the way models are often
+trained and tested
+
+00:00:51.882 --> 00:00:53.544
+can reward a confident guess
+
+00:00:53.544 --> 00:00:55.606
+over saying, “I’m not sure.”
+
+00:00:55.786 --> 00:00:57.080
+Search and links can help,
+
+00:00:57.080 --> 00:00:58.900
+but they aren’t proof on their own.
+
+00:00:58.900 --> 00:01:02.091
+A cited page may not say
+what the answer claimed.
+
+00:01:02.271 --> 00:01:03.772
+So here’s the habit.
+
+00:01:03.772 --> 00:01:05.070
+Ask for the source.
+
+00:01:05.070 --> 00:01:05.980
+Open it.
+
+00:01:05.980 --> 00:01:08.968
+Find the sentence that
+actually supports the claim.
+
+00:01:09.148 --> 00:01:11.145
+Confidence is a tone of voice.
+
+00:01:11.145 --> 00:01:13.300
+Evidence is something you can check.
