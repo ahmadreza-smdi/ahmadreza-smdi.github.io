@@ -8,6 +8,14 @@
     <dc:creator>Ahmadreza Samadi</dc:creator>
     <atom:link href="https://a-samadi.com/writing/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Does Incognito actually make you invisible?</title>
+      <link>https://a-samadi.com/writing/incognito-private-browsing.html</link>
+      <description>A simple gift-shopping story explains Incognito, cookies, website records, saved files and what private browsing actually hides. By Ahmadreza Samadi.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/incognito-private-browsing.html</guid>
+    </item>
+    <item>
       <title>How satellite messaging works without cell towers</title>
       <link>https://a-samadi.com/writing/how-satellite-messaging-works.html</link>
       <description>How a supported phone sends texts through satellites, how the message returns to Earth, and what to check before going off-grid. By Ahmadreza Samadi.</description>
