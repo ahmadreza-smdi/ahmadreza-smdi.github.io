@@ -126,3 +126,12 @@ html[dir="rtl"] .case-system::before{left:auto;right:47px}
 .axis-horizontal{left:0;right:0}
 .label-data{bottom:24px}
 @media(max-width:760px){.future-art{inset:0}.label-data{bottom:0}.scene-note{bottom:20px;right:0}}
+
+/* Keep transformed orbital boxes inside their decorative scene at every width. */
+.future-art{overflow:clip}
+/* Without JavaScript the scene is static, since the motion control cannot run. */
+html:not(.has-js) .motion-toggle{display:none}
+html:not(.has-js) .hero *,html:not(.has-js) .hero *::before,html:not(.has-js) .hero *::after,html:not(.has-js) .guide-orbit *,html:not(.has-js) .mini-system *::after,html:not(.has-js) .case-system::before{animation:none}
+
+html:not(.has-js) .menu-toggle{display:none}
+@media(max-width:760px){html:not(.has-js) .site-header{position:relative;flex-wrap:wrap}html:not(.has-js) .site-nav{display:flex;position:static;flex-basis:100%;flex-direction:row;flex-wrap:wrap;padding:0;background:transparent;border:0;box-shadow:none}html:not(.has-js) .site-nav a:last-child{margin:0}}
