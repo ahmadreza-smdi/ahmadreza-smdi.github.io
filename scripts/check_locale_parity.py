@@ -3,7 +3,7 @@ from html import unescape
 from html.parser import HTMLParser
 from datetime import datetime
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import unquote, urljoin, urlparse
 from xml.etree import ElementTree
 import json
 import re
@@ -62,28 +62,81 @@ for lang in ['fa','ar']:
  print(f'PASS {lang}: {len(p.items)} matching body elements, all section IDs, assets, links and interaction code')
 
 class HeadSEO(HTMLParser):
- def __init__(self):super().__init__();self.language=None;self.canonicals=[];self.alternates=[];self.robots=[]
+ def __init__(self):super().__init__();self.language=None;self.canonicals=[];self.alternates=[];self.robots=[];self.open_graph={};self.twitter_cards=[];self.titles=[];self.descriptions=[];self.headings=[];self._title=False;self._heading=False
  def handle_starttag(self,tag,attributes):
   attrs=dict(attributes)
   if tag=='html':self.language=attrs.get('lang')
+  if tag=='title':self.titles.append('');self._title=True
+  if tag=='h1':self.headings.append('');self._heading=True
   if tag=='link' and attrs.get('rel')=='canonical':self.canonicals.append(attrs.get('href'))
   if tag=='link' and attrs.get('rel')=='alternate' and attrs.get('hreflang'):
    self.alternates.append((attrs['hreflang'],attrs.get('href')))
   if tag=='meta' and attrs.get('name')=='robots':self.robots.append(attrs.get('content',''))
+  if tag=='meta' and attrs.get('name')=='description':self.descriptions.append(attrs.get('content',''))
+  if tag=='meta' and attrs.get('property','').startswith('og:'):
+   self.open_graph.setdefault(attrs['property'],[]).append(attrs.get('content',''))
+  if tag=='meta' and attrs.get('name')=='twitter:card':self.twitter_cards.append(attrs.get('content',''))
+ def handle_endtag(self,tag):
+  if tag=='title':self._title=False
+  if tag=='h1':self._heading=False
+ def handle_data(self,data):
+  if self._title:self.titles[-1]+=data
+  if self._heading:self.headings[-1]+=data
 
 def seo(path):
  metadata=HeadSEO();metadata.feed((ROOT/path).read_text());return metadata
+
+class AssetRefs(HTMLParser):
+ def __init__(self):super().__init__();self.refs=[]
+ def handle_starttag(self,tag,attributes):
+  attrs=dict(attributes)
+  for key in ('src','poster','data-src'):
+   if attrs.get(key):self.refs.append(attrs[key])
+  for key in ('srcset','imagesrcset'):
+   if attrs.get(key):
+    self.refs.extend(candidate.strip().split(' ')[0] for candidate in attrs[key].split(','))
+  if tag=='link' and attrs.get('href') and {'stylesheet','icon','preload','manifest','apple-touch-icon'} & set((attrs.get('rel') or '').split()):
+   self.refs.append(attrs['href'])
+  if tag=='meta' and (attrs.get('property')=='og:image' or attrs.get('name')=='twitter:image'):
+   self.refs.append(attrs.get('content',''))
+
+def check_local_asset(source,ref):
+ if not ref or ref.startswith(('data:','#','blob:')):return
+ parsed=urlparse(urljoin(urljoin(BASE,str(source)),ref))
+ if parsed.netloc not in ('a-samadi.com','www.a-samadi.com'):return
+ target=ROOT/unquote(parsed.path).lstrip('/')
+ assert target.is_file(), f'{source}: missing local asset {ref}'
 
 namespace='{http://www.sitemaps.org/schemas/sitemap/0.9}'
 sitemap=ElementTree.parse(ROOT/'sitemap.xml').getroot()
 listed=[item.text for item in sitemap.findall(f'{namespace}url/{namespace}loc')]
 assert len(listed)==len(set(listed)), 'duplicate sitemap URL'
+seen_titles={};seen_descriptions={}
 for url in listed:
  assert url.startswith(BASE), f'unexpected sitemap URL: {url}'
  relative=url.removeprefix(BASE)
  source=Path(relative+('index.html' if not relative or relative.endswith('/') else ''))
  assert (ROOT/source).is_file(), f'missing sitemap page: {url}'
- assert seo(source).canonicals==[url], f'non-self-canonical sitemap page: {url}'
+ metadata=seo(source)
+ assert len(metadata.titles)==1 and metadata.titles[0].strip(), f'{source}: missing or duplicate title'
+ assert len(metadata.descriptions)==1 and metadata.descriptions[0].strip(), f'{source}: missing or duplicate meta description'
+ assert len(metadata.headings)==1 and metadata.headings[0].strip(), f'{source}: missing or duplicate h1'
+ for value,seen,label in ((metadata.titles[0].strip(),seen_titles,'title'),(metadata.descriptions[0].strip(),seen_descriptions,'description')):
+  assert value not in seen, f'{source}: duplicate {label} also used by {seen.get(value)}'
+  seen[value]=source
+ assert metadata.canonicals==[url], f'non-self-canonical sitemap page: {url}'
+ assert metadata.open_graph.get('og:url')==[url], f'{source}: Open Graph URL differs from canonical'
+ for property in ('og:title','og:type','og:image'):
+  values=metadata.open_graph.get(property,[])
+  assert len(values)==1 and values[0], f'{source}: missing or duplicate {property}'
+ assert len(metadata.twitter_cards)==1 and metadata.twitter_cards[0], f'{source}: missing or duplicate Twitter card'
+ assets=AssetRefs();assets.feed((ROOT/source).read_text())
+ for ref in assets.refs:check_local_asset(source,ref)
+
+for css in ROOT.rglob('*.css'):
+ source=css.relative_to(ROOT)
+ for ref in re.findall(r'url\(\s*[\'\"]?([^\)\'\"]+)',css.read_text()):
+  check_local_asset(source,ref)
 
 clusters = (
  ('tools/before-you-build-ai.html','fa/tools/before-you-build-ai.html','ar/tools/before-you-build-ai.html'),
@@ -131,9 +184,17 @@ for cluster in clusters:
   if name in ('index.html','fa/index.html','ar/index.html') or name.endswith('about.html'):
    source=(ROOT/name).read_text()
    schemas=[json.loads(raw) for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>',source,re.S)]
-   profiles=[item for schema in schemas for item in schema.get('@graph',[schema]) if item.get('@type')=='ProfilePage']
+   graph=[item for schema in schemas for item in schema.get('@graph',[schema])]
+   profiles=[item for item in graph if item.get('@type')=='ProfilePage']
    assert len(profiles)==1, f'{name}: expected one ProfilePage'
-   modified=profiles[0].get('dateModified')
+   profile=profiles[0]
+   assert profile.get('url')==expected[language], f'{name}: ProfilePage URL differs from canonical'
+   entity=profile.get('mainEntity',{})
+   person=entity if entity.get('@type')=='Person' else next((item for item in graph if item.get('@type')=='Person' and item.get('@id')==entity.get('@id')),None)
+   assert person and person.get('@id')==BASE+'#person' and person.get('name')=='Ahmadreza Samadi', f'{name}: inconsistent person identity'
+   assert {'احمدرضا صمدی','أحمدرضا صمدي','Ahmad Samadi'} <= set(person.get('alternateName',[])), f'{name}: missing established name variation'
+   assert {'https://www.instagram.com/ahmadreza_smdi/','https://www.linkedin.com/in/ahmadreza-samadi/'} <= set(person.get('sameAs',[])), f'{name}: missing official social identity link'
+   modified=profile.get('dateModified')
    if modified:
     parsed=datetime.fromisoformat(modified)
     assert 'T' in modified and parsed.tzinfo is not None, f'{name}: dateModified needs time and timezone'
