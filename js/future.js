@@ -536,6 +536,15 @@ void main(){
     function heroName() {
         const heading = $('.hero-name[data-split]');
         if (!heading || reduceQuery.matches) return;
+        // A page opened out of sight (a background tab, a preview renderer) shows the finished name.
+        if (document.hidden) {
+            $$(':scope > span', heading).forEach((span) => {
+                span.classList.add('name-line');
+                span.dataset.text = span.textContent.trim();
+            });
+            heading.classList.add('is-settled');
+            return;
+        }
         const words = $$(':scope > span', heading).map((span) => span.textContent.trim()).filter(Boolean);
         if (!words.length) return;
         const original = Array.from(heading.childNodes, (node) => node.cloneNode(true));
