@@ -133,6 +133,31 @@ for url in listed:
  assets=AssetRefs();assets.feed((ROOT/source).read_text())
  for ref in assets.refs:check_local_asset(source,ref)
 
+video_ns='{http://www.google.com/schemas/sitemap-video/1.1}'
+watch_pages={BASE+path.relative_to(ROOT).as_posix() for path in (ROOT/'watch').glob('*.html')}
+assert watch_pages <= set(listed), 'watch page missing from sitemap'
+for entry in sitemap.findall(f'{namespace}url'):
+ url=entry.find(f'{namespace}loc').text
+ videos=entry.findall(f'{video_ns}video')
+ if url not in watch_pages:
+  assert not videos, f'{url}: video entry belongs on a watch page'
+  continue
+ assert len(videos)==1, f'{url}: expected one sitemap video'
+ source=ROOT/url.removeprefix(BASE)
+ html=(source).read_text()
+ schemas=[json.loads(raw) for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>',html,re.S)]
+ films=[schema for schema in schemas if schema.get('@type')=='VideoObject']
+ assert len(films)==1, f'{source}: expected one VideoObject'
+ film=films[0]
+ fields={'thumbnail_loc':'thumbnailUrl','title':'name','content_loc':'contentUrl'}
+ for tag,property in fields.items():
+  value=videos[0].findtext(f'{video_ns}{tag}')
+  assert value==film[property], f'{source}: video sitemap {tag} differs from VideoObject'
+  if tag!='title':check_local_asset(source,value)
+ assert film['name']==seo(source).headings[0].strip(), f'{source}: video name differs from visible heading'
+ description=videos[0].findtext(f'{video_ns}description')
+ assert description and description in html, f'{source}: video description is not visible'
+
 for css in ROOT.rglob('*.css'):
  source=css.relative_to(ROOT)
  for ref in re.findall(r'url\(\s*[\'\"]?([^\)\'\"]+)',css.read_text()):

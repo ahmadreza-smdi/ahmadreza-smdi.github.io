@@ -165,6 +165,7 @@ def sitemap(check):
     xhtml = 'http://www.w3.org/1999/xhtml'
     ElementTree.register_namespace('', namespace)
     ElementTree.register_namespace('image', 'http://www.google.com/schemas/sitemap-image/1.1')
+    ElementTree.register_namespace('video', 'http://www.google.com/schemas/sitemap-video/1.1')
     ElementTree.register_namespace('xhtml', xhtml)
     tree = ElementTree.parse(path)
     order = {'en': 0, 'fa': 1, 'ar': 2, 'x-default': 3}
