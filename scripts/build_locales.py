@@ -74,6 +74,9 @@ for lang in ('fa','ar'):
         profile.update({'@id':f'https://a-samadi.com/{lang}/#profile','url':f'https://a-samadi.com/{lang}/','name':title,'description':description,'inLanguage':lang,'dateModified':modified})
         return '<script type="application/ld+json">'+json.dumps(d,ensure_ascii=False,indent=2)+'</script>'
     head=re.sub(r'<script type="application/ld\+json">(.*?)</script>',schema,head,flags=re.S)
-    head=head.replace('</head>','    <link rel="stylesheet" href="../css/rtl.css?v=20260921" />\n</head>')
+    # Persian and Arabic pages render their headings in Vazirmatn, so preload it instead of the Latin faces.
+    head=head.replace('        <link rel="preload" as="font" type="font/woff2" href="../assets/fonts/manrope-latin-wght.woff2" crossorigin />\n','')
+    head=head.replace('href="../assets/fonts/unbounded-latin-wght.woff2"','href="../assets/fonts/vazirmatn-arabic-wght.woff2"')
+    head=head.replace('</head>','    <link rel="stylesheet" href="../css/rtl.css?v=20261008-holo" />\n</head>')
     (ROOT/lang/'index.html').write_text(head+visible+'        <script>'+script)
     print('Built',lang)

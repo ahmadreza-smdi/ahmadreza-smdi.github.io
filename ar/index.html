@@ -22,7 +22,8 @@
         <link rel="me" href="https://peerlist.io/ahmadrezasmdi" />
         <link rel="me" href="https://dev.to/ahmadreza_smdi" />
         <link rel="me" href="https://wellfound.com/u/ahmadreza-samadi" />
-        <link rel="preload" as="image" href="../assets/img/ahmadreza-samadi-portrait-900.webp" imagesrcset="../assets/img/ahmadreza-samadi-portrait-450.webp 450w, ../assets/img/ahmadreza-samadi-portrait-900.webp 900w" imagesizes="(max-width: 760px) calc(100vw - 40px), (max-width: 980px) 40vw, 440px" fetchpriority="high" />
+        <link rel="preload" as="image" href="../assets/img/ahmadreza-samadi-portrait-900.webp" imagesrcset="../assets/img/ahmadreza-samadi-portrait-450.webp 450w, ../assets/img/ahmadreza-samadi-portrait-900.webp 900w" imagesizes="(max-width: 760px) 240px, 310px" fetchpriority="high" />
+        <link rel="preload" as="font" type="font/woff2" href="../assets/fonts/vazirmatn-arabic-wght.woff2" crossorigin />
         <link rel="icon" type="image/svg+xml" href="../assets/brand/favicon.svg?v=20260914-personal-mark" />
         <link rel="icon" type="image/png" sizes="512x512" href="../assets/brand/favicon.png?v=20260914-personal-mark" />
         <link rel="alternate icon" type="image/x-icon" href="../assets/brand/favicon.ico?v=20260914-personal-mark" />
@@ -40,7 +41,7 @@
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="صورة أحمدرضا صمدي" />
-        <meta property="og:updated_time" content="2026-10-08T10:16:28+03:30" />
+        <meta property="og:updated_time" content="2026-10-08T21:52:38+03:30" />
         <meta property="profile:first_name" content="Ahmadreza" />
         <meta property="profile:last_name" content="Samadi" />
         <meta property="profile:username" content="ahmadreza-samadi" />
@@ -49,7 +50,7 @@
         <meta name="twitter:description" content="تعرّف على أحمدرضا صمدي، رائد أعمال تقني في دبي، شريك مؤسس وقائد تقني في Appraiva وشريك مؤسس ورئيس تنفيذي لمجموعة رويال أبراج. خبراته ومشاريعه المختارة." />
         <meta name="twitter:image" content="https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg" />
         <meta name="twitter:image:alt" content="صورة أحمدرضا صمدي" />
-        <meta name="theme-color" content="#f7faff" />
+        <meta name="theme-color" content="#f6f6fd" />
 
         <script>
             document.documentElement.classList.add("has-js");
@@ -77,7 +78,7 @@
       "isPartOf": {
         "@id": "https://a-samadi.com/#website"
       },
-      "dateModified": "2026-10-08T10:16:28+03:30",
+      "dateModified": "2026-10-08T21:52:38+03:30",
       "primaryImageOfPage": {
         "@id": "https://a-samadi.com/#portrait"
       },
@@ -190,13 +191,14 @@
   ]
 }</script>
 
-    <link rel="stylesheet" href="../css/site.css?v=20261006-future2" />
-    <link rel="stylesheet" href="../css/rtl.css?v=20260921" />
+    <link rel="stylesheet" href="../css/site.css?v=20261008-holo" />
+    <link rel="stylesheet" href="../css/rtl.css?v=20261008-holo" />
 </head>
     <body>
         <a class="skip-link" href="#main">انتقل إلى المحتوى</a>
         <div class="scroll-progress" aria-hidden="true"><span></span></div>
-        <div class="ambient-field" aria-hidden="true"></div>
+        <canvas class="aurora" width="16" height="9" aria-hidden="true"></canvas>
+        <div class="ambient-grid" aria-hidden="true"></div>
 
         <header class="site-header" aria-label="التنقل الرئيسي">
             <a class="brand" href="#top" aria-label="الصفحة الرئيسية لأحمدرضا صمدي">
@@ -205,86 +207,122 @@
                 </span>
                 <span class="brand-text">أحمدرضا صمدي</span>
             </a>
-            <button class="menu-toggle" aria-expanded="false" aria-controls="site-menu">القائمة</button>
             <nav class="site-nav" id="site-menu" aria-label="القائمة الرئيسية">
+                <span class="nav-glow" aria-hidden="true"></span>
                 <a href="#work">المشاريع</a>
                 <a href="#about">نبذة عني</a>
                 <a href="#experience">الخبرة</a>
                 <a href="#writing">المقالات</a>
                 <a href="#contact">تواصل</a>
             </nav>
+            <div class="header-tools">
+                <p class="clock"><span class="live-dot" aria-hidden="true"></span><span>دبي</span> <time class="clock-time" data-clock></time></p>
+                <button class="command-trigger" type="button" aria-haspopup="dialog" aria-keyshortcuts="Meta+K Control+K"><span class="command-label">بحث</span><kbd class="command-key" data-command-key aria-hidden="true"></kbd></button>
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">القائمة</button>
+            </div>
         </header>
 
         <main id="main">
-            <section class="hero section-band" id="top">
-                <div class="hero-coordinate" aria-hidden="true">٠١ / AS</div>
-                <button class="motion-toggle" type="button" aria-pressed="false">إيقاف الحركة</button>
-                <div class="hero-content reveal">
-                    <p class="eyebrow">رائد أعمال تقني · دبي، الإمارات</p>
-                    <h1><span>أحمدرضا</span> <span>صمدي<span class="name-dot" aria-hidden="true">.</span></span></h1>
-                    <p class="hero-statement">أبني منتجات ذكاء اصطناعي وأحوّل تحديات الأعمال إلى حلول تقنية عملية.</p>
-                    <p class="hero-context">شريك مؤسس وقائد تقني في Appraiva، وهي شركة أمريكية في كليفلاند، أوهايو. أعمل عن بُعد في استراتيجية المنتج والبيانات والذكاء الاصطناعي والهندسة.</p>
-                    <div class="hero-actions" role="group" aria-label="الروابط الرئيسية">
-                        <a class="button button-primary" href="mailto:ahmadreza.smdi@gmail.com">
+            <section class="hero" id="top">
+                <div class="hero-copy">
+                    <p class="status-chip intro-step"><span class="live-dot" aria-hidden="true"></span><span>رائد أعمال تقني · دبي، الإمارات</span></p>
+                    <h1 class="hero-name" data-split><span>أحمدرضا</span> <span>صمدي</span></h1>
+                    <p class="hero-statement intro-step">أبني منتجات ذكاء اصطناعي وأحوّل تحديات الأعمال إلى حلول تقنية عملية.</p>
+                    <p class="hero-context intro-step">شريك مؤسس وقائد تقني في Appraiva، وهي شركة أمريكية في كليفلاند، أوهايو. أعمل عن بُعد في استراتيجية المنتج والبيانات والذكاء الاصطناعي والهندسة.</p>
+                    <div class="hero-actions intro-step" role="group" aria-label="الروابط الرئيسية">
+                        <a class="button button-primary" href="mailto:ahmadreza.smdi@gmail.com" data-magnetic>
                             <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></i>
                             <span>تواصل معي</span>
                         </a>
-                        <a class="button button-secondary" href="#work">
-                            <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 3v18m-7-7 7 7 7-7"/></svg></i>
+                        <a class="button button-glass" href="#work" data-magnetic>
+                            <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></i>
                             <span>مشاريع مختارة</span>
                         </a>
                     </div>
                 </div>
 
-                <div class="hero-visual reveal" role="group" aria-label="الصورة الشخصية">
-                    <div class="future-art" aria-hidden="true">
-                        <div class="scene-halo"></div>
-                        <canvas class="orbital-canvas" width="600" height="600"></canvas>
-                        <div class="orbit orbit-one"><span></span></div>
-                        <div class="orbit orbit-two"><span></span></div>
-                        <div class="scene-axis axis-horizontal"></div>
-                        <div class="scene-axis axis-vertical"></div>
-                        <div class="hero-cinema">
-                            <video muted loop playsinline preload="none" poster="../assets/video/hero-luxury-motion-poster.jpg" width="1280" height="720" data-motion-video data-src="../assets/video/hero-luxury-motion.mp4"></video>
+                <div class="hero-visual intro-visual" role="group" aria-label="الصورة الشخصية">
+                    <svg class="beams" aria-hidden="true" focusable="false">
+                        <defs>
+                            <linearGradient id="beam-gradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="100%" y2="100%">
+                                <stop offset="0" stop-color="#7b61ff" />
+                                <stop offset="0.5" stop-color="#36aee0" />
+                                <stop offset="1" stop-color="#22b886" />
+                            </linearGradient>
+                        </defs>
+                        <g class="beam-paths"></g>
+                    </svg>
+                    <div class="holo-card" data-tilt>
+                        <div class="holo-inner">
+                            <span class="holo-foil" aria-hidden="true"></span>
+                            <div class="holo-top">
+                                <img class="holo-mark" src="../assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="1060" height="670" />
+                                <span>رائد أعمال تقني</span>
+                            </div>
+                            <figure class="holo-portrait">
+                                <img src="../assets/img/ahmadreza-samadi-hero.jpg" srcset="../assets/img/ahmadreza-samadi-portrait-450.webp 450w, ../assets/img/ahmadreza-samadi-portrait-900.webp 900w" sizes="(max-width: 760px) 240px, 310px" alt="صورة أحمدرضا صمدي" width="900" height="1200" fetchpriority="high" decoding="async" />
+                                <span class="holo-scan" aria-hidden="true"></span>
+                            </figure>
+                            <div class="holo-meta">
+                                <strong>أحمدرضا صمدي</strong>
+                                <span>دبي، الإمارات العربية المتحدة</span>
+                            </div>
+                            <div class="holo-signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                            <span class="holo-glare" aria-hidden="true"></span>
                         </div>
                     </div>
-                    <div class="floating-label label-product"><span class="label-symbol" aria-hidden="true">⌘</span><span>معمارية المنتج</span></div>
-                    <div class="floating-label label-data"><span class="label-symbol" aria-hidden="true">◈</span><span>أنظمة البيانات</span></div>
-                    <div class="portrait-index" aria-hidden="true">AS / التقنية والأعمال</div>
-                    <figure class="portrait-frame">
-                        <img src="../assets/img/ahmadreza-samadi-hero.jpg" srcset="../assets/img/ahmadreza-samadi-portrait-450.webp 450w, ../assets/img/ahmadreza-samadi-portrait-900.webp 900w" sizes="(max-width: 760px) 230px, 300px" alt="صورة أحمدرضا صمدي" width="900" height="1200" fetchpriority="high" decoding="async" />
-                        <figcaption class="portrait-caption"><span>أحمدرضا صمدي</span><span>رائد أعمال تقني</span></figcaption>
-                    </figure>
-                    <div class="scene-note"><span class="status-dot" aria-hidden="true"></span><span>الذكاء الاصطناعي · المنتج · الأعمال</span></div>
+                    <ul class="orbit-nodes" aria-hidden="true">
+                        <li class="orbit-node node-one">معمارية المنتج</li>
+                        <li class="orbit-node node-two">سير عمل الذكاء الاصطناعي</li>
+                        <li class="orbit-node node-three">أنظمة البيانات</li>
+                        <li class="orbit-node node-four">البنية التحتية السحابية</li>
+                    </ul>
                 </div>
-                <a class="hero-scroll" href="#work"><span>استكشف أعمالي</span><span aria-hidden="true">↓</span></a>
+
+                <div class="hero-foot intro-step">
+                    <a class="hero-scroll" href="#work"><span class="scroll-line" aria-hidden="true"></span><span>استكشف أعمالي</span></a>
+                    <button class="motion-toggle" type="button">إيقاف الحركة</button>
+                </div>
             </section>
 
-            <div class="background-bridge" aria-hidden="true"><span></span><span></span><span></span></div>
-
-            <section class="credential-band" aria-label="الشركات الحالية ومجالات التركيز">
-                <div class="venture-strip">
-                    <a href="work/appraiva.html"><span class="venture-label">٠١ / الولايات المتحدة · عن بُعد</span><strong>Appraiva <span aria-hidden="true">↗</span></strong><span>شريك مؤسس وقائد تقني</span></a>
-                    <a href="work/royal-abraj.html"><span class="venture-label">٠٢ / دبي، الإمارات</span><strong>مجموعة رويال أبراج <span aria-hidden="true">↗</span></strong><span>شريك مؤسس ورئيس تنفيذي</span></a>
-                    <a href="#skills"><span class="venture-label">٠٣ / مجال تركيزي</span><strong>من الأفكار إلى الأنظمة <span aria-hidden="true">↓</span></strong><span>الذكاء الاصطناعي · المنتج · الأعمال</span></a>
-                </div>
+            <section class="ventures" aria-label="الشركات الحالية ومجالات التركيز">
+                <a class="venture venture-sky reveal" href="work/appraiva.html">
+                    <span class="venture-orb" aria-hidden="true"></span>
+                    <span class="venture-label">الولايات المتحدة · عن بُعد</span>
+                    <strong>Appraiva</strong>
+                    <span class="venture-role">شريك مؤسس وقائد تقني</span>
+                    <span class="venture-arrow" aria-hidden="true"></span>
+                </a>
+                <a class="venture venture-peach reveal" href="work/royal-abraj.html">
+                    <span class="venture-orb" aria-hidden="true"></span>
+                    <span class="venture-label">دبي، الإمارات</span>
+                    <strong>مجموعة رويال أبراج</strong>
+                    <span class="venture-role">شريك مؤسس ورئيس تنفيذي</span>
+                    <span class="venture-arrow" aria-hidden="true"></span>
+                </a>
+                <a class="venture venture-lilac reveal" href="#skills">
+                    <span class="venture-orb" aria-hidden="true"></span>
+                    <span class="venture-label">مجال تركيزي</span>
+                    <strong>من الأفكار إلى الأنظمة</strong>
+                    <span class="venture-role">الذكاء الاصطناعي · المنتج · الأعمال</span>
+                    <span class="venture-arrow venture-arrow-down" aria-hidden="true"></span>
+                </a>
             </section>
 
             <section class="section" id="work">
                 <div class="section-heading reveal">
-                    <p class="eyebrow">مشاريع مختارة</p>
+                    <p class="section-label">مشاريع مختارة</p>
                     <h2>من تحديات الأعمال إلى منتجات تعمل.</h2>
                     <p>أعمال مختارة في ذكاء البيانات العقارية والبيانات المؤسسية والتحليلات التنبؤية.</p>
                 </div>
 
-                <article class="case-feature reveal">
-                    <div class="case-copy">
+                <article class="feature reveal">
+                    <div class="feature-copy">
                         <div class="card-topline">
-                            <span>الشركة الرئيسية</span>
-                            <a href="https://appraiva.com/" aria-label="زيارة Appraiva">appraiva.com</a>
+                            <span class="chip">الشركة الرئيسية</span>
+                            <a href="https://appraiva.com/">appraiva.com</a>
                         </div>
                         <h3>Appraiva، منصة الذكاء العقاري</h3>
-                        <a class="story-link" href="work/appraiva.html">دراسة حالة Appraiva ←</a>
                         <p>تطوير أدوات ذكاء اصطناعي تساعد المستثمرين والمطورين العقاريين على العثور على العقارات التي تعاني من مشكلات مالية أو تدهور في حالتها، والعقارات غير المُدرجة للبيع علنًا، باستخدام تحليل الصور والبيانات العقارية المُثرَاة.</p>
                         <ul class="tag-list" aria-label="مجالات العمل في Appraiva">
                             <li>معمارية المنتج</li>
@@ -292,66 +330,132 @@
                             <li>أنظمة البيانات</li>
                             <li>البنية التحتية السحابية</li>
                         </ul>
+                        <a class="story-link" href="work/appraiva.html">دراسة حالة Appraiva</a>
                     </div>
-                    <div class="case-system" role="group" aria-label="طبقات نظام Appraiva">
-                        <div>
-                            <span>01</span>
-                            <strong>اكتشاف العقارات</strong>
+                    <div class="agent-run" role="group" aria-label="طبقات نظام Appraiva">
+                        <div class="run-head"><span class="run-lights" aria-hidden="true"><i></i><i></i><i></i></span><span>طبقات نظام Appraiva</span></div>
+                        <div class="run-scan" aria-hidden="true">
+                            <svg viewBox="0 0 320 168" focusable="false">
+                                <defs>
+                                    <pattern id="scan-grid" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#4b3fd0" stroke-opacity="0.08" /></pattern>
+                                    <linearGradient id="scan-beam" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0" stop-color="#7fe6c6" stop-opacity="0" />
+                                        <stop offset="0.6" stop-color="#7fe6c6" stop-opacity="0.55" />
+                                        <stop offset="1" stop-color="#ffffff" stop-opacity="0.95" />
+                                    </linearGradient>
+                                    <linearGradient id="roof-fill" x1="0" y1="0" x2="1" y2="1">
+                                        <stop offset="0" stop-color="#cdbeff" />
+                                        <stop offset="1" stop-color="#b5deff" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="320" height="168" fill="url(#scan-grid)" />
+                                <g class="scene">
+                                    <circle cx="44" cy="118" r="18" fill="#a6eed8" opacity="0.7" />
+                                    <circle cx="282" cy="122" r="14" fill="#ffcdb9" opacity="0.75" />
+                                    <path d="M62 88 130 42l68 46" fill="url(#roof-fill)" opacity="0.55" />
+                                    <g fill="none" stroke="#1d1b42" stroke-opacity="0.55" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round">
+                                        <path d="M74 148V86l56-38 56 38v62" />
+                                        <path d="M62 94 130 46l68 48" />
+                                        <path d="M186 148v-42h72v42" />
+                                        <path d="M182 108l38-24 42 24" />
+                                        <rect x="90" y="98" width="24" height="20" rx="2" />
+                                        <rect x="146" y="98" width="24" height="20" rx="2" />
+                                        <path d="M119 148v-26h22v26" />
+                                        <rect x="202" y="116" width="40" height="32" rx="2" />
+                                        <path d="M20 148h280" />
+                                    </g>
+                                </g>
+                                <g class="scan-boxes" fill="none" stroke-width="1.6">
+                                    <rect class="scan-box box-roof" x="56" y="38" width="148" height="60" rx="6" />
+                                    <rect class="scan-box box-window" x="84" y="92" width="36" height="32" rx="5" />
+                                    <rect class="scan-box box-garage" x="196" y="110" width="52" height="42" rx="5" />
+                                </g>
+                                <rect class="scan-beam" x="0" y="0" width="320" height="56" fill="url(#scan-beam)" />
+                            </svg>
                         </div>
-                        <div>
-                            <span>02</span>
-                            <strong>إثراء البيانات</strong>
-                        </div>
-                        <div>
-                            <span>03</span>
-                            <strong>تحليل الفرص</strong>
-                        </div>
-                        <div>
-                            <span>04</span>
-                            <strong>سير عمل البحث واتخاذ القرار</strong>
-                        </div>
+                        <ol class="run-steps">
+                            <li data-step><span class="step-index">01</span><strong>اكتشاف العقارات</strong><span class="step-state" aria-hidden="true"></span></li>
+                            <li data-step><span class="step-index">02</span><strong>إثراء البيانات</strong><span class="step-state" aria-hidden="true"></span></li>
+                            <li data-step><span class="step-index">03</span><strong>تحليل الفرص</strong><span class="step-state" aria-hidden="true"></span></li>
+                            <li data-step><span class="step-index">04</span><strong>سير عمل البحث واتخاذ القرار</strong><span class="step-state" aria-hidden="true"></span></li>
+                        </ol>
                     </div>
                 </article>
 
                 <div class="work-grid">
-                    <article class="work-card reveal royal-card">
+                    <article class="work-card work-peach reveal">
+                        <div class="work-visual" aria-hidden="true">
+                            <svg viewBox="0 0 320 120" focusable="false">
+                                <defs>
+                                    <linearGradient id="flow-gradient" x1="0" y1="0" x2="1" y2="0">
+                                        <stop offset="0" stop-color="#ff9f86" />
+                                        <stop offset="0.5" stop-color="#f3c74f" />
+                                        <stop offset="1" stop-color="#e98bc4" />
+                                    </linearGradient>
+                                </defs>
+                                <path class="flow-track" d="M58 62C104 18 126 106 160 62S220 18 262 62" fill="none" stroke="#1d1b42" stroke-opacity="0.18" stroke-width="1.5" stroke-dasharray="3 6" />
+                                <path class="flow-pulse" d="M58 62C104 18 126 106 160 62S220 18 262 62" fill="none" stroke="url(#flow-gradient)" stroke-width="3.5" stroke-linecap="round" pathLength="100" />
+                                <g class="flow-node">
+                                    <circle cx="58" cy="62" r="24" fill="#ffd9cb" />
+                                    <circle cx="58" cy="62" r="10" fill="none" stroke="#1d1b42" stroke-opacity="0.6" stroke-width="1.4" />
+                                    <path d="M48 62h20M58 52c-5 6-5 14 0 20m0-20c5 6 5 14 0 20" fill="none" stroke="#1d1b42" stroke-opacity="0.6" stroke-width="1.4" />
+                                </g>
+                                <g class="flow-node">
+                                    <circle cx="160" cy="62" r="24" fill="#fff1b8" />
+                                    <circle cx="160" cy="57" r="5" fill="none" stroke="#1d1b42" stroke-opacity="0.6" stroke-width="1.4" />
+                                    <path d="M150 72c2-6 18-6 20 0" fill="none" stroke="#1d1b42" stroke-opacity="0.6" stroke-width="1.4" stroke-linecap="round" />
+                                </g>
+                                <g class="flow-node">
+                                    <circle cx="262" cy="62" r="24" fill="#ffd2ea" />
+                                    <path d="M254 50h12l4 4v18h-16z" fill="none" stroke="#1d1b42" stroke-opacity="0.6" stroke-width="1.4" stroke-linejoin="round" />
+                                    <path d="m257 63 3 3 6-6" fill="none" stroke="#1d1b42" stroke-opacity="0.6" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </div>
                         <div class="card-topline"><span>٢٠٢٢ حتى الآن</span><span>مجموعة رويال أبراج</span></div>
-                        <div class="mini-system" aria-hidden="true"><span>⌁</span><i></i><span>◇</span><i></i><span>↗</span></div>
                         <h3>الاستراتيجية الرقمية وعمليات الأعمال</h3>
                         <p>ربط المواقع الإلكترونية وسير عمل إدارة علاقات العملاء وأدوات العملاء والعمليات الداخلية لشركة مقرها دبي.</p>
                         <ul class="tag-list" aria-label="مجالات عمل رويال أبراج"><li>الاستراتيجية الرقمية</li><li>سير عمل إدارة علاقات العملاء</li><li>أدوات العملاء</li></ul>
-                        <a class="story-link" href="work/royal-abraj.html">دراسة حالة مجموعة رويال أبراج ←</a>
+                        <a class="story-link" href="work/royal-abraj.html">دراسة حالة مجموعة رويال أبراج</a>
                     </article>
-                    <article class="work-card reveal">
-                        <div class="card-topline">
-                            <span>٢٠٢٢ إلى ٢٠٢٣</span>
-                            <span>Oxfam Novib</span>
+                    <article class="work-card work-lilac reveal">
+                        <div class="work-visual" aria-hidden="true">
+                            <svg viewBox="0 0 320 120" focusable="false">
+                                <g class="layer layer-gold"><path d="M160 20 236 42 160 64 84 42Z" fill="#fff1b8" stroke="#1d1b42" stroke-opacity="0.35" stroke-width="1.2" stroke-linejoin="round" /></g>
+                                <g class="layer layer-silver"><path d="M160 44 236 66 160 88 84 66Z" fill="#d9ccff" stroke="#1d1b42" stroke-opacity="0.35" stroke-width="1.2" stroke-linejoin="round" /></g>
+                                <g class="layer layer-bronze"><path d="M160 68 236 90 160 112 84 90Z" fill="#c4e6ff" stroke="#1d1b42" stroke-opacity="0.35" stroke-width="1.2" stroke-linejoin="round" /></g>
+                                <g class="data-dots" fill="#4b3fd0">
+                                    <circle cx="128" cy="92" r="2.6" />
+                                    <circle cx="160" cy="98" r="2.6" />
+                                    <circle cx="192" cy="92" r="2.6" />
+                                </g>
+                                <g fill="none" stroke="#1d1b42" stroke-opacity="0.25" stroke-width="1.2" stroke-dasharray="2 5">
+                                    <path d="M40 66h34M246 66h34" />
+                                </g>
+                            </svg>
                         </div>
-                        <div class="mini-system" aria-hidden="true"><span>▤</span><i></i><span>◈</span><i></i><span>▥</span></div>
+                        <div class="card-topline"><span>٢٠٢٢ إلى ٢٠٢٣</span><span>Oxfam Novib</span></div>
                         <h3>منصة بيانات لإدارة علاقات العملاء والتحليلات المؤسسية</h3>
-                        <a class="story-link" href="work/oxfam-novib.html">دراسة حالة Oxfam Novib ←</a>
                         <p>بنيت بنية هندسة بيانات على Azure لدعم ترحيل أنظمة إدارة علاقات العملاء وحوكمة البيانات وإعداد التقارير والجاهزية التحليلية، اعتماداً على مصادر SAP وSalesforce.</p>
-                        <ul class="tag-list" aria-label="مجالات العمل في Oxfam Novib">
-                            <li>Azure Databricks</li>
-                            <li>Data Factory</li>
-                            <li>ETL</li>
-                            <li>عمليات تراعي متطلبات GDPR</li>
-                        </ul>
+                        <ul class="tag-list" aria-label="مجالات العمل في Oxfam Novib"><li>Azure Databricks</li><li>Data Factory</li><li>ETL</li><li>عمليات تراعي متطلبات GDPR</li></ul>
+                        <a class="story-link" href="work/oxfam-novib.html">دراسة حالة Oxfam Novib</a>
                     </article>
                 </div>
             </section>
 
-            <section class="section" id="about">
-                <div class="section-heading"><p class="eyebrow">نبذة عني</p><h2>عمق تقني.<br>رؤية تجارية.</h2></div>
-                <div class="bio-copy"><p>أنا أحمدرضا صمدي، رائد أعمال تقني مقيم في دبي. أربط استراتيجية المنتج والهندسة بالعمل الفعلي لبناء الأعمال.</p><p>في <a href="work/appraiva.html">Appraiva</a>، وهي شركة أمريكية في كليفلاند، أوهايو، أعمل عن بُعد بصفتي شريكاً مؤسساً وقائداً تقنياً لبناء حلول الذكاء العقاري. وفي <a href="work/royal-abraj.html">مجموعة رويال أبراج</a>، أتولى دور الشريك المؤسس والرئيس التنفيذي وأقود الاستراتيجية الرقمية لهذا النشاط في دبي.</p><p>يبدأ عملي بمشكلة العميل، ثم يمتد إلى البيانات والمنتج والأنظمة اللازمة لحلها.</p><p>اسمي بالفارسية والعربية: <bdi lang="fa">احمدرضا صمدی</bdi> · <bdi lang="ar">أحمدرضا صمدي</bdi>.</p><a class="story-link" href="about.html">المزيد عن خلفيتي ←</a> <a class="story-link" href="/" hreflang="en" data-locale-primary="en" style="display:block;width:max-content;max-width:100%">الموقع الرئيسي لأحمدرضا صمدي بالإنجليزية ←</a></div>
+            <section class="section about" id="about">
+                <div class="section-heading reveal"><p class="section-label">نبذة عني</p><h2>عمق تقني.<br>رؤية تجارية.</h2></div>
+                <div class="bio-copy reveal"><p>أنا أحمدرضا صمدي، رائد أعمال تقني مقيم في دبي. أربط استراتيجية المنتج والهندسة بالعمل الفعلي لبناء الأعمال.</p><p>في <a href="work/appraiva.html">Appraiva</a>، وهي شركة أمريكية في كليفلاند، أوهايو، أعمل عن بُعد بصفتي شريكاً مؤسساً وقائداً تقنياً لبناء حلول الذكاء العقاري. وفي <a href="work/royal-abraj.html">مجموعة رويال أبراج</a>، أتولى دور الشريك المؤسس والرئيس التنفيذي وأقود الاستراتيجية الرقمية لهذا النشاط في دبي.</p><p>يبدأ عملي بمشكلة العميل، ثم يمتد إلى البيانات والمنتج والأنظمة اللازمة لحلها.</p><p class="name-scripts">اسمي بالفارسية والعربية: <bdi lang="fa">احمدرضا صمدی</bdi> · <bdi lang="ar">أحمدرضا صمدي</bdi>.</p><a class="story-link" href="about.html">المزيد عن خلفيتي</a> <a class="story-link" href="/" hreflang="en" data-locale-primary="en" style="display:block;width:max-content;max-width:100%">الموقع الرئيسي لأحمدرضا صمدي بالإنجليزية ←</a></div>
             </section>
-<section class="section section-muted" id="experience">
+
+            <section class="section experience" id="experience">
                 <div class="section-heading reveal">
-                    <p class="eyebrow">خبرات مختارة</p>
+                    <p class="section-label">خبرات مختارة</p>
                     <h2>مسار تقني يجمع المنتج والبيانات والذكاء الاصطناعي والعمليات.</h2>
                 </div>
 
-                <div class="timeline">
+                <div class="timeline" data-timeline>
+                    <span class="timeline-rail" aria-hidden="true"><span></span></span>
                     <article class="timeline-item reveal">
                         <div class="timeline-date">أكتوبر ٢٠٢٣ حتى الآن</div>
                         <div class="timeline-body">
@@ -367,7 +471,7 @@
                             <h3>شريك مؤسس ورئيس تنفيذي</h3>
                             <p class="company">مجموعة رويال أبراج · دبي، الإمارات</p>
                             <p>شاركت في تأسيس نشاط في دبي يشمل الوساطة العقارية وخدمات تخليص المعاملات. أقود الاستراتيجية الرقمية للمواقع وسير عمل CRM وأدوات العملاء والأنظمة الداخلية، من تسجيل الاستفسارات ومتابعة المبيعات إلى إدارة المستندات وتتبع المعاملات.</p>
-                            <a class="story-link" href="work/royal-abraj.html">عملي في مجموعة رويال أبراج ←</a>
+                            <a class="story-link" href="work/royal-abraj.html">عملي في مجموعة رويال أبراج</a>
                         </div>
                     </article>
 
@@ -402,204 +506,219 @@
 
             <section class="section capabilities" id="skills">
                 <div class="section-heading reveal">
-                    <p class="eyebrow">القدرات</p>
+                    <p class="section-label">القدرات</p>
                     <h2>حيث تلتقي الاستراتيجية بالتنفيذ.</h2>
                 </div>
 
-                <div class="capability-grid">
-                    <div class="capability reveal">
-                        <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="12" cy="5" r="2"/><path d="m11 7-7 14m9-14 7 14M7 14h10"/></svg></i>
+                <div class="capability-panel reveal">
+                    <div class="capability cap-lilac">
+                        <span class="cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="12" cy="5" r="2"/><path d="m11 7-7 14m9-14 7 14M7 14h10"/></svg></span>
                         <h3>قيادة المنتج والفرق التقنية</h3>
                         <p>القيادة التقنية ومعمارية المنتج والبرمجيات والاستراتيجية الرقمية وإدارة أصحاب المصلحة وفهم العملاء.</p>
                     </div>
-                    <div class="capability reveal">
-                        <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 5a3 3 0 0 0-6 0 4 4 0 0 0-2 7 4 4 0 0 0 3 7 3 3 0 0 0 5 1V5Zm0 0a3 3 0 0 1 6 0 4 4 0 0 1 2 7 4 4 0 0 1-3 7 3 3 0 0 1-5 1M8 8l4 3m4-3-4 3M7 15l5-2m5 2-5-2"/></svg></i>
+                    <div class="capability cap-mint">
+                        <span class="cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 5a3 3 0 0 0-6 0 4 4 0 0 0-2 7 4 4 0 0 0 3 7 3 3 0 0 0 5 1V5Zm0 0a3 3 0 0 1 6 0 4 4 0 0 1 2 7 4 4 0 0 1-3 7 3 3 0 0 1-5 1M8 8l4 3m4-3-4 3M7 15l5-2m5 2-5-2"/></svg></span>
                         <h3>الذكاء الاصطناعي وأنظمة البيانات</h3>
                         <p>سير عمل الذكاء الاصطناعي وهندسة البيانات وتعلم الآلة والنمذجة التنبؤية وحوكمة البيانات وETL والتحليلات وأنظمة دعم القرار.</p>
                     </div>
-                    <div class="capability reveal">
-                        <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M6 19a5 5 0 0 1-1-10 7 7 0 0 1 13-2 6 6 0 0 1 0 12Z"/></svg></i>
+                    <div class="capability cap-sky">
+                        <span class="cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M6 19a5 5 0 0 1-1-10 7 7 0 0 1 13-2 6 6 0 0 1 0 12Z"/></svg></span>
                         <h3>هندسة السحابة والمنصات</h3>
                         <p>معمارية سحابية على Azure وAWS، تشمل Databricks وData Factory وLambda وAPI Gateway وNode.js وPython وSQL وPySpark.</p>
                     </div>
                 </div>
             </section>
 
-            <section class="section" id="writing">
-                <div class="section-heading writing-heading"><div><p class="eyebrow">المقالات</p><h2>الأفكار وراء العمل.</h2></div><a class="story-link" href="writing/">تصفح كل المقالات ←</a></div>
-                <article class="guide-feature reveal">
-                    <div class="guide-orbit" aria-hidden="true"><span></span><span></span><span></span><i>↗</i></div>
-                    <div><p class="eyebrow">دليل تفاعلي</p><h3>قبل أن تبني منتج الذكاء الاصطناعي</h3><p>حوّل فكرة الذكاء الاصطناعي إلى قرار واضح وخطة للأدلة وتجربة أولية مفيدة.</p><a class="button button-primary" href="tools/before-you-build-ai.html">أنشئ موجز القرار ←</a></div>
-                </article>
-                <div class="writing-grid">
-                    <article class="work-card reveal"><p class="eyebrow">٠١ / وكلاء الذكاء الاصطناعي</p><h3>أمان وكلاء الذكاء الاصطناعي: حدود قبل التنفيذ</h3><p>أين نضع الأذونات والموافقة والمراقبة قبل أن يتمكن وكيل الذكاء الاصطناعي من اتخاذ إجراء؟</p><a class="story-link" href="writing/ai-agent-safety-boundaries.html">اقرأ: أمان وكلاء الذكاء الاصطناعي ←</a></article>
-                    <article class="work-card reveal"><p class="eyebrow">٠٢ / الأنظمة المتصلة</p><h3>ربط التطبيقات بالذكاء الاصطناعي: الوصول والصلاحيات والموافقة</h3><p>ما الذي يتغير عندما يستطيع مساعد الذكاء الاصطناعي استخدام تقويمك أو ملفاتك أو بريدك، وما الذي ينبغي التحقق منه قبل الربط.</p><a class="story-link" href="writing/connected-ai-apps.html">اقرأ: ربط التطبيقات بالذكاء الاصطناعي ←</a></article>
-                    <article class="work-card reveal"><p class="eyebrow">٠٣ / التفكير في المنتج</p><h3>تكلفة الذكاء الاصطناعي لكل نتيجة مُتحقَّق منها</h3><p>لماذا يُعد انخفاض سعر النموذج جزءاً واحداً فقط من تكلفة العمل المفيد بالذكاء الاصطناعي.</p><a class="story-link" href="writing/ai-cost-per-verified-result.html">اقرأ: تكلفة كل نتيجة مُتحقَّق منها ←</a></article>
+            <section class="section writing" id="writing">
+                <div class="section-heading writing-heading reveal"><div><p class="section-label">المقالات</p><h2>الأفكار وراء العمل.</h2></div><a class="story-link" href="writing/">تصفح كل المقالات</a></div>
+                <div class="writing-layout">
+                    <article class="guide-tile reveal">
+                        <div class="guide-orb" aria-hidden="true"><span></span><span></span><span></span></div>
+                        <p class="chip">دليل تفاعلي</p>
+                        <h3>قبل أن تبني منتج الذكاء الاصطناعي</h3>
+                        <p>حوّل فكرة الذكاء الاصطناعي إلى قرار واضح وخطة للأدلة وتجربة أولية مفيدة.</p>
+                        <a class="button button-primary" href="tools/before-you-build-ai.html" data-magnetic><span>أنشئ موجز القرار</span></a>
+                    </article>
+                    <div class="writing-list reveal">
+                        <article class="writing-item"><p class="topic">وكلاء الذكاء الاصطناعي</p><h3><a href="writing/ai-agent-safety-boundaries.html">أمان وكلاء الذكاء الاصطناعي: حدود قبل التنفيذ</a></h3><p>أين نضع الأذونات والموافقة والمراقبة قبل أن يتمكن وكيل الذكاء الاصطناعي من اتخاذ إجراء؟</p></article>
+                        <article class="writing-item"><p class="topic">الأنظمة المتصلة</p><h3><a href="writing/connected-ai-apps.html">ربط التطبيقات بالذكاء الاصطناعي: الوصول والصلاحيات والموافقة</a></h3><p>ما الذي يتغير عندما يستطيع مساعد الذكاء الاصطناعي استخدام تقويمك أو ملفاتك أو بريدك، وما الذي ينبغي التحقق منه قبل الربط.</p></article>
+                        <article class="writing-item"><p class="topic">التفكير في المنتج</p><h3><a href="writing/ai-cost-per-verified-result.html">تكلفة الذكاء الاصطناعي لكل نتيجة مُتحقَّق منها</a></h3><p>لماذا يُعد انخفاض سعر النموذج جزءاً واحداً فقط من تكلفة العمل المفيد بالذكاء الاصطناعي.</p></article>
+                    </div>
                 </div>
             </section>
-<section class="contact-section reveal" id="contact">
-                <div>
-                    <p class="eyebrow">تواصل</p>
-                    <p class="contact-location">دبي، الإمارات العربية المتحدة</p>
+
+            <section class="contact reveal" id="contact">
+                <div class="contact-copy">
+                    <p class="section-label">تواصل</p>
                     <h2>لنتحدث عن منتج أو سير عمل.</h2>
                     <p class="contact-context">أرحب بالحوار مع المؤسسين وخبراء القطاع الذين يعملون على منتجات الذكاء الاصطناعي أو البيانات العقارية أو الأنظمة التي تدعم عمليات الأعمال.</p>
                     <p class="contact-context">أخبرني بمن يستفيد من هذا العمل، وكيف يُنجز اليوم، وما القرار أو العملية التي تريد تحسينها. يكفي وصف موجز ورابط ذو صلة للبدء.</p>
+                    <p class="contact-location"><span class="live-dot" aria-hidden="true"></span><span>دبي، الإمارات العربية المتحدة</span></p>
+                </div>
+                <div class="contact-console">
+                    <div class="prompt"><a class="contact-email" href="mailto:ahmadreza.smdi@gmail.com">ahmadreza.smdi@<wbr>gmail.com</a></div>
+                    <div class="prompt-actions">
+                        <button class="button button-primary" type="button" data-copy-email data-magnetic><span>نسخ البريد</span></button>
+                        <a class="button button-glass" href="mailto:ahmadreza.smdi@gmail.com" data-magnetic><span>البريد الإلكتروني</span></a>
+                    </div>
+                    <p class="copy-status" role="status" aria-live="polite"></p>
+                    <div class="contact-links" role="group" aria-label="روابط التواصل">
+                        <a href="https://www.linkedin.com/in/ahmadreza-samadi/">
+                            <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 9v12M4 3v1m6 17V9m0 5c0-7 10-7 10 0v7"/></svg></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/ahmadreza-smdi">
+                            <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M9 21v-4c-4 1-5-2-6-3m12 7v-4c4-1 6-3 6-6 0-2-1-3-2-4l-1-4-4 2h-4L6 3 5 7c-1 1-2 2-2 4 0 3 2 5 6 6"/></svg></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.youtube.com/@ahmadreza-samadi" rel="me">
+                            <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3Z"/></svg></i>
+                            <span>YouTube</span>
+                        </a>
+                        <a href="https://www.instagram.com/ahmadreza_smdi/" rel="me">
+                            <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://www.crunchbase.com/person/ahmadreza-samadi">
+                            <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><circle cx="8" cy="10" r="2"/><path d="M4 17c0-4 8-4 8 0m3-8h4m-4 4h4m-4 4h3"/></svg></i>
+                            <span>Crunchbase</span>
+                        </a>
+                    </div>
                     <p class="contact-resources"><a href="about.html#profile-resources">السيرة وملف التعريف</a> <a href="../assets/profile/ahmadreza-samadi.vcf" download>حفظ معلومات الاتصال</a> <a href="about.html#official-profiles">الملفات الرسمية</a></p>
                 </div>
-                <div><a class="contact-email" href="mailto:ahmadreza.smdi@gmail.com">ahmadreza.smdi@gmail.com</a><div class="contact-links" role="group" aria-label="روابط التواصل">
-                    <a href="mailto:ahmadreza.smdi@gmail.com">
-                        <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></i>
-                        <span>البريد الإلكتروني</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/ahmadreza-samadi/">
-                        <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 9v12M4 3v1m6 17V9m0 5c0-7 10-7 10 0v7"/></svg></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/ahmadreza-smdi">
-                        <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M9 21v-4c-4 1-5-2-6-3m12 7v-4c4-1 6-3 6-6 0-2-1-3-2-4l-1-4-4 2h-4L6 3 5 7c-1 1-2 2-2 4 0 3 2 5 6 6"/></svg></i>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="https://www.crunchbase.com/person/ahmadreza-samadi">
-                        <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><circle cx="8" cy="10" r="2"/><path d="M4 17c0-4 8-4 8 0m3-8h4m-4 4h4m-4 4h3"/></svg></i>
-                        <span>Crunchbase</span>
-                    </a>
-                    <a href="https://www.youtube.com/@ahmadreza-samadi" rel="me">
-                        <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3Z"/></svg></i>
-                        <span>YouTube</span>
-                    </a>
-                    <a href="https://www.instagram.com/ahmadreza_smdi/" rel="me" style="width:100%"><i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></i><span>إنستغرام أحمدرضا صمدي · @ahmadreza_smdi</span></a>
-                </div></div>
             </section>
         </main>
 
         <footer class="site-footer">
             <span>أحمدرضا صمدي</span>
-            <span>دبي، الإمارات · بناء الأعمال في الولايات المتحدة ودبي</span><a href="#top">العودة إلى الأعلى ↑</a>
+            <span>دبي، الإمارات · بناء الأعمال في الولايات المتحدة ودبي</span>
+            <a href="#top">العودة إلى الأعلى ↑</a>
         </footer>
+
+        <dialog class="command" aria-label="قائمة الأوامر">
+            <div class="command-panel">
+                <div class="command-search">
+                    <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></i>
+                    <input class="command-input" type="text" aria-label="اكتب أمرًا أو ابحث" autocomplete="off" spellcheck="false" />
+                    <kbd>Esc</kbd>
+                </div>
+                <p class="command-hint">ابحث في هذه الصفحة، أو انتقل إلى قسم، أو انسخ بريدي الإلكتروني.</p>
+                <div class="command-list">
+                    <div class="command-answer" hidden>
+                        <p class="answer-label"><span>أفضل نتيجة في هذه الصفحة</span> <span class="answer-section"></span></p>
+                        <p class="answer-text"></p>
+                        <button class="command-item" type="button" data-answer-go data-icon="search">الانتقال إلى القسم</button>
+                    </div>
+                    <p class="command-group">تنقّل</p>
+                    <a class="command-item" href="#work" data-command data-icon="work">المشاريع</a>
+                    <a class="command-item" href="#about" data-command data-icon="about">نبذة عني</a>
+                    <a class="command-item" href="#experience" data-command data-icon="experience">الخبرة</a>
+                    <a class="command-item" href="#skills" data-command data-icon="skills">القدرات</a>
+                    <a class="command-item" href="#writing" data-command data-icon="writing">المقالات</a>
+                    <a class="command-item" href="#contact" data-command data-icon="contact">تواصل</a>
+                    <p class="command-group">الصفحات</p>
+                    <a class="command-item" href="tools/before-you-build-ai.html" data-command data-icon="guide">قبل أن تبني منتج الذكاء الاصطناعي</a>
+                    <a class="command-item" href="writing/" data-command data-icon="writing">كل المقالات</a>
+                    <a class="command-item" href="about.html#profile-resources" data-command data-icon="about">السيرة وملف التعريف</a>
+                    <p class="command-group">تواصل</p>
+                    <a class="command-item" href="mailto:ahmadreza.smdi@gmail.com" data-command data-icon="email">البريد الإلكتروني</a>
+                    <button class="command-item" type="button" data-command data-copy-email data-icon="copy">نسخ عنوان البريد الإلكتروني</button>
+                    <a class="command-item" href="https://www.linkedin.com/in/ahmadreza-samadi/" data-command data-icon="link">LinkedIn</a>
+                    <a class="command-item" href="https://github.com/ahmadreza-smdi" data-command data-icon="link">GitHub</a>
+                    <a class="command-item" href="https://www.youtube.com/@ahmadreza-samadi" data-command data-icon="link">YouTube</a>
+                    <a class="command-item" href="https://www.instagram.com/ahmadreza_smdi/" data-command data-icon="link">Instagram</a>
+                    <button class="command-item" type="button" data-command data-motion-command data-icon="motion">إيقاف الحركة</button>
+                </div>
+                <p class="command-empty" hidden>لا توجد نتائج. جرّب «المشاريع» أو «المقالات» أو «البريد الإلكتروني».</p>
+                <p class="command-foot">↑↓ تنقّل · Enter فتح · Esc إغلاق</p>
+            </div>
+        </dialog>
+
+        <div class="i18n" hidden>
+            <span data-i18n="copied">تم نسخ عنوان البريد الإلكتروني</span>
+            <span data-i18n="search">اكتب أمرًا أو ابحث</span>
+        </div>
         <script>
             (() => {
+                const root = document.documentElement;
                 const menuButton = document.querySelector('.menu-toggle');
                 const menu = document.querySelector('.site-nav');
-                const closeMenu = () => { menu.classList.remove('is-open'); menuButton.setAttribute('aria-expanded', 'false'); };
-                menuButton.addEventListener('click', () => { const open = menu.classList.toggle('is-open'); menuButton.setAttribute('aria-expanded', String(open)); });
-                menu.addEventListener('click', (event) => { if(event.target.closest('a')) closeMenu(); });
-                document.addEventListener('keydown', (event) => { if(event.key === 'Escape' && menu.classList.contains('is-open')) { closeMenu(); menuButton.focus(); } });
-                const progress = document.querySelector(".scroll-progress span");
-                const header = document.querySelector(".site-header");
-                const navLinks = Array.from(document.querySelectorAll(".site-nav a"))
-                    .filter((link) => link.getAttribute("href").startsWith("#"));
-                const sections = navLinks
-                    .map((link) => document.querySelector(link.getAttribute("href")))
-                    .filter(Boolean);
-                const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
-                const reducedMotion = motionPreference.matches;
+                const header = document.querySelector('.site-header');
+                const closeMenu = () => { menu.classList.remove('is-open'); header.classList.remove('menu-open'); menuButton.setAttribute('aria-expanded', 'false'); };
+                menuButton.addEventListener('click', () => {
+                    const open = menu.classList.toggle('is-open');
+                    header.classList.toggle('menu-open', open);
+                    menuButton.setAttribute('aria-expanded', String(open));
+                    if (open) { const first = menu.querySelector('a'); if (first) first.focus(); }
+                });
+                menu.addEventListener('click', (event) => { if (event.target.closest('a')) closeMenu(); });
+                header.addEventListener('focusout', (event) => { if (menu.classList.contains('is-open') && !header.contains(event.relatedTarget)) closeMenu(); });
+                document.addEventListener('click', (event) => { if (menu.classList.contains('is-open') && !header.contains(event.target)) closeMenu(); });
+                document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && menu.classList.contains('is-open')) { closeMenu(); menuButton.focus(); } });
+
+                const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
                 const motionButton = document.querySelector('.motion-toggle');
-                const motionVideo = document.querySelector('[data-motion-video]');
                 let motionPaused = false;
-                let heroInView = true;
-                let pageLoaded = document.readyState === 'complete';
                 const syncMotion = () => {
                     const enabled = !motionPreference.matches;
                     const paused = motionPaused || !enabled || document.hidden;
-                    document.documentElement.classList.toggle('motion-enabled', enabled);
-                    document.documentElement.classList.toggle('motion-paused', paused);
+                    root.classList.toggle('motion-enabled', enabled);
+                    root.classList.toggle('motion-paused', paused);
                     motionButton.hidden = !enabled;
-                    motionButton.setAttribute('aria-pressed', String(motionPaused));
+                    motionButton.dataset.paused = String(motionPaused);
                     motionButton.textContent = motionPaused ? "استئناف الحركة" : "إيقاف الحركة";
-                    window.dispatchEvent(new CustomEvent('site:motion', { detail: { paused } }));
-                    if (paused || !heroInView || !pageLoaded) { motionVideo.pause(); return; }
-                    if (!motionVideo.getAttribute('src')) motionVideo.src = motionVideo.dataset.src;
-                    motionVideo.play().catch(() => {});
+                    window.dispatchEvent(new CustomEvent('site:motion', { detail: { paused, user: motionPaused, label: motionButton.textContent } }));
                 };
                 motionButton.addEventListener('click', () => { motionPaused = !motionPaused; syncMotion(); });
                 motionPreference.addEventListener('change', syncMotion);
                 document.addEventListener('visibilitychange', syncMotion);
-                window.addEventListener('load', () => { pageLoaded = true; syncMotion(); }, { once: true });
-                if ('IntersectionObserver' in window) new IntersectionObserver(entries => {
-                    heroInView = entries[0].isIntersecting; syncMotion();
-                }).observe(document.getElementById('top'));
                 syncMotion();
 
+                const markLoaded = () => root.classList.add('is-loaded');
+                if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => requestAnimationFrame(markLoaded));
+                setTimeout(markLoaded, 1200);
 
-                const updateProgress = () => {
-                    const max = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = document.querySelector('.scroll-progress span');
+                const navLinks = Array.from(menu.querySelectorAll('a')).filter((link) => link.getAttribute('href').startsWith('#'));
+                const sections = navLinks.map((link) => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+                const update = () => {
+                    const max = root.scrollHeight - window.innerHeight;
                     const ratio = max > 0 ? window.scrollY / max : 0;
                     progress.style.transform = `scaleX(${Math.min(Math.max(ratio, 0), 1)})`;
-                };
-
-                const updateActiveNav = () => {
+                    header.classList.toggle('is-scrolled', window.scrollY > 40);
                     let current = null;
                     sections.forEach((section) => {
                         const rect = section.getBoundingClientRect();
-                        const hasEntered = rect.top <= window.innerHeight * 0.36;
-                        const hasNotPassed = rect.bottom >= window.innerHeight * 0.18;
-                        if (hasEntered && hasNotPassed) {
-                            current = section;
-                        }
+                        if (rect.top <= window.innerHeight * 0.38 && rect.bottom >= window.innerHeight * 0.2) current = section;
                     });
-
-                    if (!current) {
-                        const top = document.getElementById("top");
-                        const work = document.getElementById("work");
-                        if (top && work && window.scrollY < work.offsetTop - window.innerHeight * 0.22) {
-                            current = top;
-                        }
-                    }
-
-                    if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 4) {
-                        current = document.getElementById("contact");
-                    }
-
+                    if (window.scrollY + window.innerHeight >= root.scrollHeight - 4) current = document.getElementById('contact');
                     navLinks.forEach((link) => {
-                        const isActive = Boolean(current && link.getAttribute("href") === `#${current.id}`);
-                        link.classList.toggle("is-active", isActive);
-                        if(isActive) link.setAttribute("aria-current", "location"); else link.removeAttribute("aria-current");
+                        const active = Boolean(current && link.getAttribute('href') === `#${current.id}`);
+                        link.classList.toggle('is-active', active);
+                        if (active) link.setAttribute('aria-current', 'location'); else link.removeAttribute('aria-current');
                     });
                 };
+                let scheduled = false;
+                const schedule = () => { if (scheduled) return; scheduled = true; requestAnimationFrame(() => { scheduled = false; update(); }); };
+                window.addEventListener('scroll', schedule, { passive: true });
+                window.addEventListener('resize', schedule, { passive: true });
+                update();
 
-                const updateHeader = () => {
-                    header.classList.toggle("is-scrolled", window.scrollY > 56);
-                };
-
-                updateProgress();
-                updateActiveNav();
-                updateHeader();
-                let scrollScheduled = false;
-                const scheduleScrollUpdate = () => {
-                    if (scrollScheduled) return;
-                    scrollScheduled = true;
-                    window.requestAnimationFrame(() => {
-                        updateProgress();
-                        updateActiveNav();
-                        updateHeader();
-                        scrollScheduled = false;
-                    });
-                };
-                window.addEventListener("scroll", scheduleScrollUpdate, { passive: true });
-                window.addEventListener("resize", scheduleScrollUpdate, { passive: true });
-
-                const revealItems = document.querySelectorAll(".reveal");
-                if (reducedMotion || !("IntersectionObserver" in window)) {
-                    revealItems.forEach((item) => item.classList.add("is-visible"));
+                const revealItems = document.querySelectorAll('.reveal');
+                if (motionPreference.matches || !('IntersectionObserver' in window)) {
+                    revealItems.forEach((item) => item.classList.add('is-visible'));
                     return;
                 }
-
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach((entry) => {
-                        if (!entry.isIntersecting) {
-                            return;
-                        }
-                        entry.target.classList.add("is-visible");
+                        if (!entry.isIntersecting) return;
+                        entry.target.classList.add('is-visible');
                         observer.unobserve(entry.target);
                     });
-                }, { threshold: 0.16, rootMargin: "0px 0px -8% 0px" });
-
-                revealItems.forEach((item, index) => {
-                    item.style.setProperty("--reveal-delay", `${Math.min(index * 40, 220)}ms`);
-                    observer.observe(item);
-                });
+                }, { threshold: 0.14, rootMargin: '0px 0px -6% 0px' });
+                revealItems.forEach((item) => observer.observe(item));
             })();
         </script>
-        <script src="../js/future.js?v=20261006" defer></script>
+        <script src="../js/future.js?v=20261008-holo" defer></script>
     </body>
 </html>

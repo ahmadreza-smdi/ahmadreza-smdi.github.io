@@ -29,7 +29,9 @@ python3 -m http.server 8000 --bind 127.0.0.1
 
 Open [localhost:8000](http://localhost:8000/). No build step is required to preview the checked-in site.
 
-The light pastel interface keeps the established azure mark, portrait and cinematic media. The homepage adds projected orbital geometry in `js/future.js`; its animation shares the existing pause control and honors reduced-motion preferences. The canvas stops rendering when the hero is outside the viewport or the tab is hidden.
+The interface is a light pastel "personal OS": pearl paper, deep-ink type and one iris accent, with lilac, sky, mint, peach, butter and rose used only for light and fills. Unbounded sets display type, Manrope the reading text, JetBrains Mono the clock and console details, and Vazirmatn the Persian and Arabic pages. The fonts are self-hosted in `assets/fonts/` under the SIL Open Font License (`assets/fonts/OFL.txt`).
+
+`js/future.js` adds the homepage motion: a WebGL aurora drawn at reduced resolution (with a CSS gradient fallback), the Dubai clock, a ⌘K / Ctrl K command menu, the self-assembling name, the holographic portrait card and its connection beams, and the Appraiva console run. Every effect follows the page's pause control, stops when the tab is hidden and honors reduced-motion preferences; without JavaScript the page is complete and static. Reading pages share the same tokens through CSS only.
 
 ## Maintain the source
 

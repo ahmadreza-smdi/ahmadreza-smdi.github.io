@@ -22,7 +22,9 @@
         <link rel="me" href="https://peerlist.io/ahmadrezasmdi" />
         <link rel="me" href="https://dev.to/ahmadreza_smdi" />
         <link rel="me" href="https://wellfound.com/u/ahmadreza-samadi" />
-        <link rel="preload" as="image" href="assets/img/ahmadreza-samadi-portrait-900.webp" imagesrcset="assets/img/ahmadreza-samadi-portrait-450.webp 450w, assets/img/ahmadreza-samadi-portrait-900.webp 900w" imagesizes="(max-width: 760px) calc(100vw - 40px), (max-width: 980px) 40vw, 440px" fetchpriority="high" />
+        <link rel="preload" as="image" href="assets/img/ahmadreza-samadi-portrait-900.webp" imagesrcset="assets/img/ahmadreza-samadi-portrait-450.webp 450w, assets/img/ahmadreza-samadi-portrait-900.webp 900w" imagesizes="(max-width: 760px) 240px, 310px" fetchpriority="high" />
+        <link rel="preload" as="font" type="font/woff2" href="assets/fonts/unbounded-latin-wght.woff2" crossorigin />
+        <link rel="preload" as="font" type="font/woff2" href="assets/fonts/manrope-latin-wght.woff2" crossorigin />
         <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg?v=20260914-personal-mark" />
         <link rel="icon" type="image/png" sizes="512x512" href="assets/brand/favicon.png?v=20260914-personal-mark" />
         <link rel="alternate icon" type="image/x-icon" href="assets/brand/favicon.ico?v=20260914-personal-mark" />
@@ -40,7 +42,7 @@
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Ahmadreza Samadi, Dubai-based founder and technical executive" />
-        <meta property="og:updated_time" content="2026-10-08T10:16:28+03:30" />
+        <meta property="og:updated_time" content="2026-10-08T21:52:38+03:30" />
         <meta property="profile:first_name" content="Ahmadreza" />
         <meta property="profile:last_name" content="Samadi" />
         <meta property="profile:username" content="ahmadreza-samadi" />
@@ -49,7 +51,7 @@
         <meta name="twitter:description" content="Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder &amp; Technical Lead at Appraiva, and Co-Founder &amp; CEO of Royal Abraj Group." />
         <meta name="twitter:image" content="https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg" />
         <meta name="twitter:image:alt" content="Ahmadreza Samadi, Dubai-based founder and technical executive" />
-        <meta name="theme-color" content="#f7faff" />
+        <meta name="theme-color" content="#f6f6fd" />
 
         <script>
             document.documentElement.classList.add("has-js");
@@ -77,7 +79,7 @@
       "isPartOf": {
         "@id": "https://a-samadi.com/#website"
       },
-      "dateModified": "2026-10-08T10:16:28+03:30",
+      "dateModified": "2026-10-08T21:52:38+03:30",
       "primaryImageOfPage": {
         "@id": "https://a-samadi.com/#portrait"
       },
@@ -184,12 +186,13 @@
   ]
 }</script>
 
-    <link rel="stylesheet" href="css/site.css?v=20261006-future2" />
+    <link rel="stylesheet" href="css/site.css?v=20261008-holo" />
 </head>
     <body>
         <a class="skip-link" href="#main">Skip to content</a>
         <div class="scroll-progress" aria-hidden="true"><span></span></div>
-        <div class="ambient-field" aria-hidden="true"></div>
+        <canvas class="aurora" width="16" height="9" aria-hidden="true"></canvas>
+        <div class="ambient-grid" aria-hidden="true"></div>
 
         <header class="site-header" aria-label="Primary navigation">
             <a class="brand" href="#top" aria-label="Ahmadreza Samadi home">
@@ -198,86 +201,122 @@
                 </span>
                 <span class="brand-text">Ahmadreza Samadi</span>
             </a>
-            <button class="menu-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
             <nav class="site-nav" id="site-menu" aria-label="Main menu">
+                <span class="nav-glow" aria-hidden="true"></span>
                 <a href="#work">Work</a>
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
                 <a href="#writing">Writing</a>
                 <a href="#contact">Contact</a>
             </nav>
+            <div class="header-tools">
+                <p class="clock"><span class="live-dot" aria-hidden="true"></span><span>Dubai</span> <time class="clock-time" data-clock></time></p>
+                <button class="command-trigger" type="button" aria-haspopup="dialog" aria-keyshortcuts="Meta+K Control+K"><span class="command-label">Search</span><kbd class="command-key" data-command-key aria-hidden="true"></kbd></button>
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
+            </div>
         </header>
 
         <main id="main">
-            <section class="hero section-band" id="top">
-                <div class="hero-coordinate" aria-hidden="true">01 / AS</div>
-                <button class="motion-toggle" type="button" aria-pressed="false">Pause motion</button>
-                <div class="hero-content reveal">
-                    <p class="eyebrow">Technology Entrepreneur · Dubai, UAE</p>
-                    <h1><span>Ahmadreza</span> <span>Samadi<span class="name-dot" aria-hidden="true">.</span></span></h1>
-                    <p class="hero-statement">I build AI products and turn business problems into practical technology.</p>
-                    <p class="hero-context">Co-Founder &amp; Technical Lead at Appraiva, a US-based company in Cleveland, Ohio. Working remotely across product strategy, data, AI, and engineering.</p>
-                    <div class="hero-actions" role="group" aria-label="Primary links">
-                        <a class="button button-primary" href="mailto:ahmadreza.smdi@gmail.com">
+            <section class="hero" id="top">
+                <div class="hero-copy">
+                    <p class="status-chip intro-step"><span class="live-dot" aria-hidden="true"></span><span>Technology Entrepreneur · Dubai, UAE</span></p>
+                    <h1 class="hero-name" data-split><span>Ahmadreza</span> <span>Samadi</span></h1>
+                    <p class="hero-statement intro-step">I build AI products and turn business problems into practical technology.</p>
+                    <p class="hero-context intro-step">Co-Founder &amp; Technical Lead at Appraiva, a US-based company in Cleveland, Ohio. Working remotely across product strategy, data, AI, and engineering.</p>
+                    <div class="hero-actions intro-step" role="group" aria-label="Primary links">
+                        <a class="button button-primary" href="mailto:ahmadreza.smdi@gmail.com" data-magnetic>
                             <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></i>
                             <span>Get in touch</span>
                         </a>
-                        <a class="button button-secondary" href="#work">
-                            <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 3v18m-7-7 7 7 7-7"/></svg></i>
+                        <a class="button button-glass" href="#work" data-magnetic>
+                            <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></i>
                             <span>Selected Work</span>
                         </a>
                     </div>
                 </div>
 
-                <div class="hero-visual reveal" role="group" aria-label="Portrait">
-                    <div class="future-art" aria-hidden="true">
-                        <div class="scene-halo"></div>
-                        <canvas class="orbital-canvas" width="600" height="600"></canvas>
-                        <div class="orbit orbit-one"><span></span></div>
-                        <div class="orbit orbit-two"><span></span></div>
-                        <div class="scene-axis axis-horizontal"></div>
-                        <div class="scene-axis axis-vertical"></div>
-                        <div class="hero-cinema">
-                            <video muted loop playsinline preload="none" poster="assets/video/hero-luxury-motion-poster.jpg" width="1280" height="720" data-motion-video data-src="assets/video/hero-luxury-motion.mp4"></video>
+                <div class="hero-visual intro-visual" role="group" aria-label="Portrait">
+                    <svg class="beams" aria-hidden="true" focusable="false">
+                        <defs>
+                            <linearGradient id="beam-gradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="100%" y2="100%">
+                                <stop offset="0" stop-color="#7b61ff" />
+                                <stop offset="0.5" stop-color="#36aee0" />
+                                <stop offset="1" stop-color="#22b886" />
+                            </linearGradient>
+                        </defs>
+                        <g class="beam-paths"></g>
+                    </svg>
+                    <div class="holo-card" data-tilt>
+                        <div class="holo-inner">
+                            <span class="holo-foil" aria-hidden="true"></span>
+                            <div class="holo-top">
+                                <img class="holo-mark" src="assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="1060" height="670" />
+                                <span>Technology entrepreneur</span>
+                            </div>
+                            <figure class="holo-portrait">
+                                <img src="assets/img/ahmadreza-samadi-hero.jpg" srcset="assets/img/ahmadreza-samadi-portrait-450.webp 450w, assets/img/ahmadreza-samadi-portrait-900.webp 900w" sizes="(max-width: 760px) 240px, 310px" alt="Portrait of Ahmadreza Samadi" width="900" height="1200" fetchpriority="high" decoding="async" />
+                                <span class="holo-scan" aria-hidden="true"></span>
+                            </figure>
+                            <div class="holo-meta">
+                                <strong>Ahmadreza Samadi</strong>
+                                <span>Dubai, United Arab Emirates</span>
+                            </div>
+                            <div class="holo-signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                            <span class="holo-glare" aria-hidden="true"></span>
                         </div>
                     </div>
-                    <div class="floating-label label-product"><span class="label-symbol" aria-hidden="true">⌘</span><span>Product Architecture</span></div>
-                    <div class="floating-label label-data"><span class="label-symbol" aria-hidden="true">◈</span><span>Data Systems</span></div>
-                    <div class="portrait-index" aria-hidden="true">AS / TECHNOLOGY &amp; BUSINESS</div>
-                    <figure class="portrait-frame">
-                        <img src="assets/img/ahmadreza-samadi-hero.jpg" srcset="assets/img/ahmadreza-samadi-portrait-450.webp 450w, assets/img/ahmadreza-samadi-portrait-900.webp 900w" sizes="(max-width: 760px) 230px, 300px" alt="Portrait of Ahmadreza Samadi" width="900" height="1200" fetchpriority="high" decoding="async" />
-                        <figcaption class="portrait-caption"><span>Ahmadreza Samadi</span><span>Technology entrepreneur</span></figcaption>
-                    </figure>
-                    <div class="scene-note"><span class="status-dot" aria-hidden="true"></span><span>AI · Product · Business</span></div>
+                    <ul class="orbit-nodes" aria-hidden="true">
+                        <li class="orbit-node node-one">Product Architecture</li>
+                        <li class="orbit-node node-two">AI Workflows</li>
+                        <li class="orbit-node node-three">Data Systems</li>
+                        <li class="orbit-node node-four">Cloud Infrastructure</li>
+                    </ul>
                 </div>
-                <a class="hero-scroll" href="#work"><span>Explore my work</span><span aria-hidden="true">↓</span></a>
+
+                <div class="hero-foot intro-step">
+                    <a class="hero-scroll" href="#work"><span class="scroll-line" aria-hidden="true"></span><span>Explore my work</span></a>
+                    <button class="motion-toggle" type="button">Pause motion</button>
+                </div>
             </section>
 
-            <div class="background-bridge" aria-hidden="true"><span></span><span></span><span></span></div>
-
-            <section class="credential-band" aria-label="Current companies and focus">
-                <div class="venture-strip">
-                    <a href="work/appraiva.html"><span class="venture-label">01 / United States · Remote</span><strong>Appraiva <span aria-hidden="true">↗</span></strong><span>Co-Founder &amp; Technical Lead</span></a>
-                    <a href="work/royal-abraj.html"><span class="venture-label">02 / Dubai, UAE</span><strong>Royal Abraj Group <span aria-hidden="true">↗</span></strong><span>Co-Founder &amp; CEO</span></a>
-                    <a href="#skills"><span class="venture-label">03 / My focus</span><strong>Ideas into systems <span aria-hidden="true">↓</span></strong><span>AI · Product · Business</span></a>
-                </div>
+            <section class="ventures" aria-label="Current companies and focus">
+                <a class="venture venture-sky reveal" href="work/appraiva.html">
+                    <span class="venture-orb" aria-hidden="true"></span>
+                    <span class="venture-label">United States · Remote</span>
+                    <strong>Appraiva</strong>
+                    <span class="venture-role">Co-Founder &amp; Technical Lead</span>
+                    <span class="venture-arrow" aria-hidden="true"></span>
+                </a>
+                <a class="venture venture-peach reveal" href="work/royal-abraj.html">
+                    <span class="venture-orb" aria-hidden="true"></span>
+                    <span class="venture-label">Dubai, UAE</span>
+                    <strong>Royal Abraj Group</strong>
+                    <span class="venture-role">Co-Founder &amp; CEO</span>
+                    <span class="venture-arrow" aria-hidden="true"></span>
+                </a>
+                <a class="venture venture-lilac reveal" href="#skills">
+                    <span class="venture-orb" aria-hidden="true"></span>
+                    <span class="venture-label">My focus</span>
+                    <strong>Ideas into systems</strong>
+                    <span class="venture-role">AI · Product · Business</span>
+                    <span class="venture-arrow venture-arrow-down" aria-hidden="true"></span>
+                </a>
             </section>
 
             <section class="section" id="work">
                 <div class="section-heading reveal">
-                    <p class="eyebrow">Selected Work</p>
+                    <p class="section-label">Selected Work</p>
                     <h2>From business problems to working products.</h2>
                     <p>Selected work across AI real estate intelligence, enterprise data, and predictive analytics.</p>
                 </div>
 
-                <article class="case-feature reveal">
-                    <div class="case-copy">
+                <article class="feature reveal">
+                    <div class="feature-copy">
                         <div class="card-topline">
-                            <span>Flagship company</span>
-                            <a href="https://appraiva.com/" aria-label="Visit Appraiva">appraiva.com</a>
+                            <span class="chip">Flagship company</span>
+                            <a href="https://appraiva.com/">appraiva.com</a>
                         </div>
                         <h3>Appraiva AI Real Estate Intelligence Platform</h3>
-                        <a class="story-link" href="work/appraiva.html">Appraiva case study →</a>
                         <p>Building AI tools that help real estate investors and developers find distressed and off-market properties using imagery analysis and enriched property data.</p>
                         <ul class="tag-list" aria-label="Appraiva scope">
                             <li>Product Architecture</li>
@@ -285,70 +324,136 @@
                             <li>Data Systems</li>
                             <li>Cloud Infrastructure</li>
                         </ul>
+                        <a class="story-link" href="work/appraiva.html">Appraiva case study</a>
                     </div>
-                    <div class="case-system" role="group" aria-label="Appraiva system layers">
-                        <div>
-                            <span>01</span>
-                            <strong>Property discovery</strong>
+                    <div class="agent-run" role="group" aria-label="Appraiva system layers">
+                        <div class="run-head"><span class="run-lights" aria-hidden="true"><i></i><i></i><i></i></span><span>Appraiva system layers</span></div>
+                        <div class="run-scan" aria-hidden="true">
+                            <svg viewBox="0 0 320 168" focusable="false">
+                                <defs>
+                                    <pattern id="scan-grid" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#4b3fd0" stroke-opacity="0.08" /></pattern>
+                                    <linearGradient id="scan-beam" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0" stop-color="#7fe6c6" stop-opacity="0" />
+                                        <stop offset="0.6" stop-color="#7fe6c6" stop-opacity="0.55" />
+                                        <stop offset="1" stop-color="#ffffff" stop-opacity="0.95" />
+                                    </linearGradient>
+                                    <linearGradient id="roof-fill" x1="0" y1="0" x2="1" y2="1">
+                                        <stop offset="0" stop-color="#cdbeff" />
+                                        <stop offset="1" stop-color="#b5deff" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="320" height="168" fill="url(#scan-grid)" />
+                                <g class="scene">
+                                    <circle cx="44" cy="118" r="18" fill="#a6eed8" opacity="0.7" />
+                                    <circle cx="282" cy="122" r="14" fill="#ffcdb9" opacity="0.75" />
+                                    <path d="M62 88 130 42l68 46" fill="url(#roof-fill)" opacity="0.55" />
+                                    <g fill="none" stroke="#1d1b42" stroke-opacity="0.55" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round">
+                                        <path d="M74 148V86l56-38 56 38v62" />
+                                        <path d="M62 94 130 46l68 48" />
+                                        <path d="M186 148v-42h72v42" />
+                                        <path d="M182 108l38-24 42 24" />
+                                        <rect x="90" y="98" width="24" height="20" rx="2" />
+                                        <rect x="146" y="98" width="24" height="20" rx="2" />
+                                        <path d="M119 148v-26h22v26" />
+                                        <rect x="202" y="116" width="40" height="32" rx="2" />
+                                        <path d="M20 148h280" />
+                                    </g>
+                                </g>
+                                <g class="scan-boxes" fill="none" stroke-width="1.6">
+                                    <rect class="scan-box box-roof" x="56" y="38" width="148" height="60" rx="6" />
+                                    <rect class="scan-box box-window" x="84" y="92" width="36" height="32" rx="5" />
+                                    <rect class="scan-box box-garage" x="196" y="110" width="52" height="42" rx="5" />
+                                </g>
+                                <rect class="scan-beam" x="0" y="0" width="320" height="56" fill="url(#scan-beam)" />
+                            </svg>
                         </div>
-                        <div>
-                            <span>02</span>
-                            <strong>Data enrichment</strong>
-                        </div>
-                        <div>
-                            <span>03</span>
-                            <strong>Opportunity analysis</strong>
-                        </div>
-                        <div>
-                            <span>04</span>
-                            <strong>Search and decision workflows</strong>
-                        </div>
+                        <ol class="run-steps">
+                            <li data-step><span class="step-index">01</span><strong>Property discovery</strong><span class="step-state" aria-hidden="true"></span></li>
+                            <li data-step><span class="step-index">02</span><strong>Data enrichment</strong><span class="step-state" aria-hidden="true"></span></li>
+                            <li data-step><span class="step-index">03</span><strong>Opportunity analysis</strong><span class="step-state" aria-hidden="true"></span></li>
+                            <li data-step><span class="step-index">04</span><strong>Search and decision workflows</strong><span class="step-state" aria-hidden="true"></span></li>
+                        </ol>
                     </div>
                 </article>
 
                 <div class="work-grid">
-                    <article class="work-card reveal royal-card">
+                    <article class="work-card work-peach reveal">
+                        <div class="work-visual" aria-hidden="true">
+                            <svg viewBox="0 0 320 120" focusable="false">
+                                <defs>
+                                    <linearGradient id="flow-gradient" x1="0" y1="0" x2="1" y2="0">
+                                        <stop offset="0" stop-color="#ff9f86" />
+                                        <stop offset="0.5" stop-color="#f3c74f" />
+                                        <stop offset="1" stop-color="#e98bc4" />
+                                    </linearGradient>
+                                </defs>
+                                <path class="flow-track" d="M58 62C104 18 126 106 160 62S220 18 262 62" fill="none" stroke="#1d1b42" stroke-opacity="0.18" stroke-width="1.5" stroke-dasharray="3 6" />
+                                <path class="flow-pulse" d="M58 62C104 18 126 106 160 62S220 18 262 62" fill="none" stroke="url(#flow-gradient)" stroke-width="3.5" stroke-linecap="round" pathLength="100" />
+                                <g class="flow-node">
+                                    <circle cx="58" cy="62" r="24" fill="#ffd9cb" />
+                                    <circle cx="58" cy="62" r="10" fill="none" stroke="#1d1b42" stroke-opacity="0.6" stroke-width="1.4" />
+                                    <path d="M48 62h20M58 52c-5 6-5 14 0 20m0-20c5 6 5 14 0 20" fill="none" stroke="#1d1b42" stroke-opacity="0.6" stroke-width="1.4" />
+                                </g>
+                                <g class="flow-node">
+                                    <circle cx="160" cy="62" r="24" fill="#fff1b8" />
+                                    <circle cx="160" cy="57" r="5" fill="none" stroke="#1d1b42" stroke-opacity="0.6" stroke-width="1.4" />
+                                    <path d="M150 72c2-6 18-6 20 0" fill="none" stroke="#1d1b42" stroke-opacity="0.6" stroke-width="1.4" stroke-linecap="round" />
+                                </g>
+                                <g class="flow-node">
+                                    <circle cx="262" cy="62" r="24" fill="#ffd2ea" />
+                                    <path d="M254 50h12l4 4v18h-16z" fill="none" stroke="#1d1b42" stroke-opacity="0.6" stroke-width="1.4" stroke-linejoin="round" />
+                                    <path d="m257 63 3 3 6-6" fill="none" stroke="#1d1b42" stroke-opacity="0.6" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </div>
                         <div class="card-topline"><span>2022 - Present</span><span>Royal Abraj Group</span></div>
-                        <div class="mini-system" aria-hidden="true"><span>⌁</span><i></i><span>◇</span><i></i><span>↗</span></div>
                         <h3>Digital strategy &amp; business operations</h3>
                         <p>Connecting websites, CRM workflows, customer tools, and internal operations for a Dubai-based business.</p>
                         <ul class="tag-list" aria-label="Royal Abraj scope"><li>Digital Strategy</li><li>CRM Workflows</li><li>Customer Tools</li></ul>
-                        <a class="story-link" href="work/royal-abraj.html">Royal Abraj Group case study →</a>
+                        <a class="story-link" href="work/royal-abraj.html">Royal Abraj Group case study</a>
                     </article>
-                    <article class="work-card reveal">
-                        <div class="card-topline">
-                            <span>2022 - 2023</span>
-                            <span>Oxfam Novib</span>
+                    <article class="work-card work-lilac reveal">
+                        <div class="work-visual" aria-hidden="true">
+                            <svg viewBox="0 0 320 120" focusable="false">
+                                <g class="layer layer-gold"><path d="M160 20 236 42 160 64 84 42Z" fill="#fff1b8" stroke="#1d1b42" stroke-opacity="0.35" stroke-width="1.2" stroke-linejoin="round" /></g>
+                                <g class="layer layer-silver"><path d="M160 44 236 66 160 88 84 66Z" fill="#d9ccff" stroke="#1d1b42" stroke-opacity="0.35" stroke-width="1.2" stroke-linejoin="round" /></g>
+                                <g class="layer layer-bronze"><path d="M160 68 236 90 160 112 84 90Z" fill="#c4e6ff" stroke="#1d1b42" stroke-opacity="0.35" stroke-width="1.2" stroke-linejoin="round" /></g>
+                                <g class="data-dots" fill="#4b3fd0">
+                                    <circle cx="128" cy="92" r="2.6" />
+                                    <circle cx="160" cy="98" r="2.6" />
+                                    <circle cx="192" cy="92" r="2.6" />
+                                </g>
+                                <g fill="none" stroke="#1d1b42" stroke-opacity="0.25" stroke-width="1.2" stroke-dasharray="2 5">
+                                    <path d="M40 66h34M246 66h34" />
+                                </g>
+                            </svg>
                         </div>
-                        <div class="mini-system" aria-hidden="true"><span>▤</span><i></i><span>◈</span><i></i><span>▥</span></div>
-                        <h3>Enterprise CRM & Analytics Data Platform</h3>
-                        <a class="story-link" href="work/oxfam-novib.html">Oxfam Novib case study →</a>
+                        <div class="card-topline"><span>2022 - 2023</span><span>Oxfam Novib</span></div>
+                        <h3>Enterprise CRM &amp; Analytics Data Platform</h3>
                         <p>Built Azure-based data engineering infrastructure supporting CRM migration, governance, reporting, and analytics readiness across SAP and Salesforce sources.</p>
-                        <ul class="tag-list" aria-label="Oxfam Novib scope">
-                            <li>Azure Databricks</li>
-                            <li>Data Factory</li>
-                            <li>ETL</li>
-                            <li>GDPR-conscious Processes</li>
-                        </ul>
+                        <ul class="tag-list" aria-label="Oxfam Novib scope"><li>Azure Databricks</li><li>Data Factory</li><li>ETL</li><li>GDPR-conscious Processes</li></ul>
+                        <a class="story-link" href="work/oxfam-novib.html">Oxfam Novib case study</a>
                     </article>
                 </div>
             </section>
 
-            <section class="section" id="about">
-                <div class="section-heading"><p class="eyebrow">About</p><h2>Technical depth.<br>Business perspective.</h2></div>
-                <div class="bio-copy"><p>I’m Ahmadreza Samadi, a technology entrepreneur based in Dubai. I connect product strategy, engineering, and the practical work of building a business.</p><p>At <a href="work/appraiva.html">Appraiva</a>, a US-based company in Cleveland, Ohio, I work remotely as Co-Founder &amp; Technical Lead, building AI-driven real estate intelligence. At <a href="work/royal-abraj.html">Royal Abraj Group</a>, I serve as Co-Founder &amp; CEO and lead digital strategy for the Dubai business.</p><p>My work starts with a customer problem and follows through to the data, product, and systems needed to solve it.</p><p>My name in Persian and Arabic: <bdi lang="fa">احمدرضا صمدی</bdi> · <bdi lang="ar">أحمدرضا صمدي</bdi>.</p><a class="story-link" href="about.html">More about my background →</a></div>
+            <section class="section about" id="about">
+                <div class="section-heading reveal"><p class="section-label">About</p><h2>Technical depth.<br>Business perspective.</h2></div>
+                <div class="bio-copy reveal"><p>I’m Ahmadreza Samadi, a technology entrepreneur based in Dubai. I connect product strategy, engineering, and the practical work of building a business.</p><p>At <a href="work/appraiva.html">Appraiva</a>, a US-based company in Cleveland, Ohio, I work remotely as Co-Founder &amp; Technical Lead, building AI-driven real estate intelligence. At <a href="work/royal-abraj.html">Royal Abraj Group</a>, I serve as Co-Founder &amp; CEO and lead digital strategy for the Dubai business.</p><p>My work starts with a customer problem and follows through to the data, product, and systems needed to solve it.</p><p class="name-scripts">My name in Persian and Arabic: <bdi lang="fa">احمدرضا صمدی</bdi> · <bdi lang="ar">أحمدرضا صمدي</bdi>.</p><a class="story-link" href="about.html">More about my background</a></div>
             </section>
-<section class="section section-muted" id="experience">
+
+            <section class="section experience" id="experience">
                 <div class="section-heading reveal">
-                    <p class="eyebrow">Selected Experience</p>
+                    <p class="section-label">Selected Experience</p>
                     <h2>A technical path through product, data, AI, and operations.</h2>
                 </div>
 
-                <div class="timeline">
+                <div class="timeline" data-timeline>
+                    <span class="timeline-rail" aria-hidden="true"><span></span></span>
                     <article class="timeline-item reveal">
                         <div class="timeline-date">Oct 2023 - Present</div>
                         <div class="timeline-body">
-                            <h3>Co-Founder & Technical Lead</h3>
+                            <h3>Co-Founder &amp; Technical Lead</h3>
                             <p class="company">Appraiva · Cleveland, Ohio, United States · Remote</p>
                             <p>Lead technical direction across product architecture, data systems, AI workflows, cloud infrastructure, customer discovery, and go-to-market execution.</p>
                         </div>
@@ -360,7 +465,7 @@
                             <h3>Co-Founder &amp; CEO</h3>
                             <p class="company">Royal Abraj Group · Dubai, UAE</p>
                             <p>Co-founded a Dubai-based business spanning property brokerage and documents-clearing services. Lead digital strategy across websites, CRM workflows, customer tools, and internal operations, from enquiry capture and sales follow-up to document handling and case tracking.</p>
-                            <a class="story-link" href="work/royal-abraj.html">My work at Royal Abraj Group →</a>
+                            <a class="story-link" href="work/royal-abraj.html">My work at Royal Abraj Group</a>
                         </div>
                     </article>
 
@@ -395,204 +500,219 @@
 
             <section class="section capabilities" id="skills">
                 <div class="section-heading reveal">
-                    <p class="eyebrow">Capabilities</p>
+                    <p class="section-label">Capabilities</p>
                     <h2>Where strategy and implementation meet.</h2>
                 </div>
 
-                <div class="capability-grid">
-                    <div class="capability reveal">
-                        <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="12" cy="5" r="2"/><path d="m11 7-7 14m9-14 7 14M7 14h10"/></svg></i>
+                <div class="capability-panel reveal">
+                    <div class="capability cap-lilac">
+                        <span class="cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="12" cy="5" r="2"/><path d="m11 7-7 14m9-14 7 14M7 14h10"/></svg></span>
                         <h3>Product and Technical Leadership</h3>
                         <p>Technical leadership, product architecture, software architecture, digital strategy, stakeholder management, and customer discovery.</p>
                     </div>
-                    <div class="capability reveal">
-                        <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 5a3 3 0 0 0-6 0 4 4 0 0 0-2 7 4 4 0 0 0 3 7 3 3 0 0 0 5 1V5Zm0 0a3 3 0 0 1 6 0 4 4 0 0 1 2 7 4 4 0 0 1-3 7 3 3 0 0 1-5 1M8 8l4 3m4-3-4 3M7 15l5-2m5 2-5-2"/></svg></i>
+                    <div class="capability cap-mint">
+                        <span class="cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 5a3 3 0 0 0-6 0 4 4 0 0 0-2 7 4 4 0 0 0 3 7 3 3 0 0 0 5 1V5Zm0 0a3 3 0 0 1 6 0 4 4 0 0 1 2 7 4 4 0 0 1-3 7 3 3 0 0 1-5 1M8 8l4 3m4-3-4 3M7 15l5-2m5 2-5-2"/></svg></span>
                         <h3>AI and Data Systems</h3>
                         <p>AI workflows, data engineering, machine learning, predictive modeling, data governance, ETL, analytics, and decision-support systems.</p>
                     </div>
-                    <div class="capability reveal">
-                        <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M6 19a5 5 0 0 1-1-10 7 7 0 0 1 13-2 6 6 0 0 1 0 12Z"/></svg></i>
+                    <div class="capability cap-sky">
+                        <span class="cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M6 19a5 5 0 0 1-1-10 7 7 0 0 1 13-2 6 6 0 0 1 0 12Z"/></svg></span>
                         <h3>Cloud and Platform Engineering</h3>
                         <p>Cloud-native architecture across Azure and AWS, including Databricks, Data Factory, Lambda, API Gateway, Node.js, Python, SQL, and PySpark.</p>
                     </div>
                 </div>
             </section>
 
-            <section class="section" id="writing">
-                <div class="section-heading writing-heading"><div><p class="eyebrow">Writing</p><h2>Ideas behind the work.</h2></div><a class="story-link" href="writing/">Browse all writing →</a></div>
-                <article class="guide-feature reveal">
-                    <div class="guide-orbit" aria-hidden="true"><span></span><span></span><span></span><i>↗</i></div>
-                    <div><p class="eyebrow">Interactive field guide</p><h3>Before You Build the AI</h3><p>Turn an AI idea into one clear decision, an evidence plan and a useful first experiment.</p><a class="button button-primary" href="tools/before-you-build-ai.html">Build a decision brief →</a></div>
-                </article>
-                <div class="writing-grid">
-                    <article class="work-card reveal"><p class="eyebrow">01 / AI agents</p><h3>AI agent safety: boundaries before actions</h3><p>Where to put permissions, approval and monitoring before an AI agent can act.</p><a class="story-link" href="writing/ai-agent-safety-boundaries.html">Read: AI agent safety →</a></article>
-                    <article class="work-card reveal"><p class="eyebrow">02 / Connected systems</p><h3>Connected AI apps: access, scope and approval</h3><p>What changes when an AI assistant can use your calendar, files or email, and what to check before you connect.</p><a class="story-link" href="writing/connected-ai-apps.html">Read: Connected AI apps →</a></article>
-                    <article class="work-card reveal"><p class="eyebrow">03 / Product thinking</p><h3>AI cost per verified result</h3><p>Why lower model prices are only one part of the cost of useful AI work.</p><a class="story-link" href="writing/ai-cost-per-verified-result.html">Read: AI cost per verified result →</a></article>
+            <section class="section writing" id="writing">
+                <div class="section-heading writing-heading reveal"><div><p class="section-label">Writing</p><h2>Ideas behind the work.</h2></div><a class="story-link" href="writing/">Browse all writing</a></div>
+                <div class="writing-layout">
+                    <article class="guide-tile reveal">
+                        <div class="guide-orb" aria-hidden="true"><span></span><span></span><span></span></div>
+                        <p class="chip">Interactive field guide</p>
+                        <h3>Before You Build the AI</h3>
+                        <p>Turn an AI idea into one clear decision, an evidence plan and a useful first experiment.</p>
+                        <a class="button button-primary" href="tools/before-you-build-ai.html" data-magnetic><span>Build a decision brief</span></a>
+                    </article>
+                    <div class="writing-list reveal">
+                        <article class="writing-item"><p class="topic">AI agents</p><h3><a href="writing/ai-agent-safety-boundaries.html">AI agent safety: boundaries before actions</a></h3><p>Where to put permissions, approval and monitoring before an AI agent can act.</p></article>
+                        <article class="writing-item"><p class="topic">Connected systems</p><h3><a href="writing/connected-ai-apps.html">Connected AI apps: access, scope and approval</a></h3><p>What changes when an AI assistant can use your calendar, files or email, and what to check before you connect.</p></article>
+                        <article class="writing-item"><p class="topic">Product thinking</p><h3><a href="writing/ai-cost-per-verified-result.html">AI cost per verified result</a></h3><p>Why lower model prices are only one part of the cost of useful AI work.</p></article>
+                    </div>
                 </div>
             </section>
-<section class="contact-section reveal" id="contact">
-                <div>
-                    <p class="eyebrow">Contact</p>
-                    <p class="contact-location">Dubai, United Arab Emirates</p>
+
+            <section class="contact reveal" id="contact">
+                <div class="contact-copy">
+                    <p class="section-label">Contact</p>
                     <h2>Let’s talk about a product or business workflow.</h2>
                     <p class="contact-context">I welcome conversations with founders and industry experts working on AI products, property data, or the systems behind business operations.</p>
                     <p class="contact-context">Tell me who the work is for, how it is handled today, and what decision or process you want to improve. A short description and a relevant link are enough to start.</p>
+                    <p class="contact-location"><span class="live-dot" aria-hidden="true"></span><span>Dubai, United Arab Emirates</span></p>
+                </div>
+                <div class="contact-console">
+                    <div class="prompt"><a class="contact-email" href="mailto:ahmadreza.smdi@gmail.com">ahmadreza.smdi@<wbr>gmail.com</a></div>
+                    <div class="prompt-actions">
+                        <button class="button button-primary" type="button" data-copy-email data-magnetic><span>Copy email</span></button>
+                        <a class="button button-glass" href="mailto:ahmadreza.smdi@gmail.com" data-magnetic><span>Email</span></a>
+                    </div>
+                    <p class="copy-status" role="status" aria-live="polite"></p>
+                    <div class="contact-links" role="group" aria-label="Contact links">
+                        <a href="https://www.linkedin.com/in/ahmadreza-samadi/">
+                            <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 9v12M4 3v1m6 17V9m0 5c0-7 10-7 10 0v7"/></svg></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/ahmadreza-smdi">
+                            <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M9 21v-4c-4 1-5-2-6-3m12 7v-4c4-1 6-3 6-6 0-2-1-3-2-4l-1-4-4 2h-4L6 3 5 7c-1 1-2 2-2 4 0 3 2 5 6 6"/></svg></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.youtube.com/@ahmadreza-samadi" rel="me">
+                            <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3Z"/></svg></i>
+                            <span>YouTube</span>
+                        </a>
+                        <a href="https://www.instagram.com/ahmadreza_smdi/" rel="me">
+                            <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://www.crunchbase.com/person/ahmadreza-samadi">
+                            <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><circle cx="8" cy="10" r="2"/><path d="M4 17c0-4 8-4 8 0m3-8h4m-4 4h4m-4 4h3"/></svg></i>
+                            <span>Crunchbase</span>
+                        </a>
+                    </div>
                     <p class="contact-resources"><a href="about.html#profile-resources">Biography and profile kit</a> <a href="assets/profile/ahmadreza-samadi.vcf" download>Save contact details</a> <a href="about.html#official-profiles">Official profiles</a></p>
                 </div>
-                <div><a class="contact-email" href="mailto:ahmadreza.smdi@gmail.com">ahmadreza.smdi@gmail.com</a><div class="contact-links" role="group" aria-label="Contact links">
-                    <a href="mailto:ahmadreza.smdi@gmail.com">
-                        <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></i>
-                        <span>Email</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/ahmadreza-samadi/">
-                        <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 9v12M4 3v1m6 17V9m0 5c0-7 10-7 10 0v7"/></svg></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/ahmadreza-smdi">
-                        <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M9 21v-4c-4 1-5-2-6-3m12 7v-4c4-1 6-3 6-6 0-2-1-3-2-4l-1-4-4 2h-4L6 3 5 7c-1 1-2 2-2 4 0 3 2 5 6 6"/></svg></i>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="https://www.crunchbase.com/person/ahmadreza-samadi">
-                        <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><circle cx="8" cy="10" r="2"/><path d="M4 17c0-4 8-4 8 0m3-8h4m-4 4h4m-4 4h3"/></svg></i>
-                        <span>Crunchbase</span>
-                    </a>
-                    <a href="https://www.youtube.com/@ahmadreza-samadi" rel="me">
-                        <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3Z"/></svg></i>
-                        <span>YouTube</span>
-                    </a>
-                    <a href="https://www.instagram.com/ahmadreza_smdi/" rel="me" style="width:100%"><i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></i><span>Ahmadreza Samadi on Instagram · @ahmadreza_smdi</span></a>
-                </div></div>
             </section>
         </main>
 
         <footer class="site-footer">
             <span>Ahmadreza Samadi</span>
-            <span>Dubai, UAE · Building across the US and Dubai</span><a href="#top">Back to top ↑</a>
+            <span>Dubai, UAE · Building across the US and Dubai</span>
+            <a href="#top">Back to top ↑</a>
         </footer>
+
+        <dialog class="command" aria-label="Command menu">
+            <div class="command-panel">
+                <div class="command-search">
+                    <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></i>
+                    <input class="command-input" type="text" aria-label="Type a command or search" autocomplete="off" spellcheck="false" />
+                    <kbd>Esc</kbd>
+                </div>
+                <p class="command-hint">Search this page, jump to a section or copy my email.</p>
+                <div class="command-list">
+                    <div class="command-answer" hidden>
+                        <p class="answer-label"><span>Best match on this page</span> <span class="answer-section"></span></p>
+                        <p class="answer-text"></p>
+                        <button class="command-item" type="button" data-answer-go data-icon="search">Go to section</button>
+                    </div>
+                    <p class="command-group">Navigate</p>
+                    <a class="command-item" href="#work" data-command data-icon="work">Work</a>
+                    <a class="command-item" href="#about" data-command data-icon="about">About</a>
+                    <a class="command-item" href="#experience" data-command data-icon="experience">Experience</a>
+                    <a class="command-item" href="#skills" data-command data-icon="skills">Capabilities</a>
+                    <a class="command-item" href="#writing" data-command data-icon="writing">Writing</a>
+                    <a class="command-item" href="#contact" data-command data-icon="contact">Contact</a>
+                    <p class="command-group">Pages</p>
+                    <a class="command-item" href="tools/before-you-build-ai.html" data-command data-icon="guide">Before You Build the AI</a>
+                    <a class="command-item" href="writing/" data-command data-icon="writing">All writing</a>
+                    <a class="command-item" href="about.html#profile-resources" data-command data-icon="about">Biography and profile kit</a>
+                    <p class="command-group">Connect</p>
+                    <a class="command-item" href="mailto:ahmadreza.smdi@gmail.com" data-command data-icon="email">Email</a>
+                    <button class="command-item" type="button" data-command data-copy-email data-icon="copy">Copy email address</button>
+                    <a class="command-item" href="https://www.linkedin.com/in/ahmadreza-samadi/" data-command data-icon="link">LinkedIn</a>
+                    <a class="command-item" href="https://github.com/ahmadreza-smdi" data-command data-icon="link">GitHub</a>
+                    <a class="command-item" href="https://www.youtube.com/@ahmadreza-samadi" data-command data-icon="link">YouTube</a>
+                    <a class="command-item" href="https://www.instagram.com/ahmadreza_smdi/" data-command data-icon="link">Instagram</a>
+                    <button class="command-item" type="button" data-command data-motion-command data-icon="motion">Pause motion</button>
+                </div>
+                <p class="command-empty" hidden>No matches. Try “work”, “writing” or “email”.</p>
+                <p class="command-foot">↑↓ move · Enter open · Esc close</p>
+            </div>
+        </dialog>
+
+        <div class="i18n" hidden>
+            <span data-i18n="copied">Email address copied</span>
+            <span data-i18n="search">Type a command or search</span>
+        </div>
         <script>
             (() => {
+                const root = document.documentElement;
                 const menuButton = document.querySelector('.menu-toggle');
                 const menu = document.querySelector('.site-nav');
-                const closeMenu = () => { menu.classList.remove('is-open'); menuButton.setAttribute('aria-expanded', 'false'); };
-                menuButton.addEventListener('click', () => { const open = menu.classList.toggle('is-open'); menuButton.setAttribute('aria-expanded', String(open)); });
-                menu.addEventListener('click', (event) => { if(event.target.closest('a')) closeMenu(); });
-                document.addEventListener('keydown', (event) => { if(event.key === 'Escape' && menu.classList.contains('is-open')) { closeMenu(); menuButton.focus(); } });
-                const progress = document.querySelector(".scroll-progress span");
-                const header = document.querySelector(".site-header");
-                const navLinks = Array.from(document.querySelectorAll(".site-nav a"))
-                    .filter((link) => link.getAttribute("href").startsWith("#"));
-                const sections = navLinks
-                    .map((link) => document.querySelector(link.getAttribute("href")))
-                    .filter(Boolean);
-                const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
-                const reducedMotion = motionPreference.matches;
+                const header = document.querySelector('.site-header');
+                const closeMenu = () => { menu.classList.remove('is-open'); header.classList.remove('menu-open'); menuButton.setAttribute('aria-expanded', 'false'); };
+                menuButton.addEventListener('click', () => {
+                    const open = menu.classList.toggle('is-open');
+                    header.classList.toggle('menu-open', open);
+                    menuButton.setAttribute('aria-expanded', String(open));
+                    if (open) { const first = menu.querySelector('a'); if (first) first.focus(); }
+                });
+                menu.addEventListener('click', (event) => { if (event.target.closest('a')) closeMenu(); });
+                header.addEventListener('focusout', (event) => { if (menu.classList.contains('is-open') && !header.contains(event.relatedTarget)) closeMenu(); });
+                document.addEventListener('click', (event) => { if (menu.classList.contains('is-open') && !header.contains(event.target)) closeMenu(); });
+                document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && menu.classList.contains('is-open')) { closeMenu(); menuButton.focus(); } });
+
+                const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
                 const motionButton = document.querySelector('.motion-toggle');
-                const motionVideo = document.querySelector('[data-motion-video]');
                 let motionPaused = false;
-                let heroInView = true;
-                let pageLoaded = document.readyState === 'complete';
                 const syncMotion = () => {
                     const enabled = !motionPreference.matches;
                     const paused = motionPaused || !enabled || document.hidden;
-                    document.documentElement.classList.toggle('motion-enabled', enabled);
-                    document.documentElement.classList.toggle('motion-paused', paused);
+                    root.classList.toggle('motion-enabled', enabled);
+                    root.classList.toggle('motion-paused', paused);
                     motionButton.hidden = !enabled;
-                    motionButton.setAttribute('aria-pressed', String(motionPaused));
+                    motionButton.dataset.paused = String(motionPaused);
                     motionButton.textContent = motionPaused ? 'Resume motion' : 'Pause motion';
-                    window.dispatchEvent(new CustomEvent('site:motion', { detail: { paused } }));
-                    if (paused || !heroInView || !pageLoaded) { motionVideo.pause(); return; }
-                    if (!motionVideo.getAttribute('src')) motionVideo.src = motionVideo.dataset.src;
-                    motionVideo.play().catch(() => {});
+                    window.dispatchEvent(new CustomEvent('site:motion', { detail: { paused, user: motionPaused, label: motionButton.textContent } }));
                 };
                 motionButton.addEventListener('click', () => { motionPaused = !motionPaused; syncMotion(); });
                 motionPreference.addEventListener('change', syncMotion);
                 document.addEventListener('visibilitychange', syncMotion);
-                window.addEventListener('load', () => { pageLoaded = true; syncMotion(); }, { once: true });
-                if ('IntersectionObserver' in window) new IntersectionObserver(entries => {
-                    heroInView = entries[0].isIntersecting; syncMotion();
-                }).observe(document.getElementById('top'));
                 syncMotion();
 
+                const markLoaded = () => root.classList.add('is-loaded');
+                if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => requestAnimationFrame(markLoaded));
+                setTimeout(markLoaded, 1200);
 
-                const updateProgress = () => {
-                    const max = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = document.querySelector('.scroll-progress span');
+                const navLinks = Array.from(menu.querySelectorAll('a')).filter((link) => link.getAttribute('href').startsWith('#'));
+                const sections = navLinks.map((link) => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+                const update = () => {
+                    const max = root.scrollHeight - window.innerHeight;
                     const ratio = max > 0 ? window.scrollY / max : 0;
                     progress.style.transform = `scaleX(${Math.min(Math.max(ratio, 0), 1)})`;
-                };
-
-                const updateActiveNav = () => {
+                    header.classList.toggle('is-scrolled', window.scrollY > 40);
                     let current = null;
                     sections.forEach((section) => {
                         const rect = section.getBoundingClientRect();
-                        const hasEntered = rect.top <= window.innerHeight * 0.36;
-                        const hasNotPassed = rect.bottom >= window.innerHeight * 0.18;
-                        if (hasEntered && hasNotPassed) {
-                            current = section;
-                        }
+                        if (rect.top <= window.innerHeight * 0.38 && rect.bottom >= window.innerHeight * 0.2) current = section;
                     });
-
-                    if (!current) {
-                        const top = document.getElementById("top");
-                        const work = document.getElementById("work");
-                        if (top && work && window.scrollY < work.offsetTop - window.innerHeight * 0.22) {
-                            current = top;
-                        }
-                    }
-
-                    if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 4) {
-                        current = document.getElementById("contact");
-                    }
-
+                    if (window.scrollY + window.innerHeight >= root.scrollHeight - 4) current = document.getElementById('contact');
                     navLinks.forEach((link) => {
-                        const isActive = Boolean(current && link.getAttribute("href") === `#${current.id}`);
-                        link.classList.toggle("is-active", isActive);
-                        if(isActive) link.setAttribute("aria-current", "location"); else link.removeAttribute("aria-current");
+                        const active = Boolean(current && link.getAttribute('href') === `#${current.id}`);
+                        link.classList.toggle('is-active', active);
+                        if (active) link.setAttribute('aria-current', 'location'); else link.removeAttribute('aria-current');
                     });
                 };
+                let scheduled = false;
+                const schedule = () => { if (scheduled) return; scheduled = true; requestAnimationFrame(() => { scheduled = false; update(); }); };
+                window.addEventListener('scroll', schedule, { passive: true });
+                window.addEventListener('resize', schedule, { passive: true });
+                update();
 
-                const updateHeader = () => {
-                    header.classList.toggle("is-scrolled", window.scrollY > 56);
-                };
-
-                updateProgress();
-                updateActiveNav();
-                updateHeader();
-                let scrollScheduled = false;
-                const scheduleScrollUpdate = () => {
-                    if (scrollScheduled) return;
-                    scrollScheduled = true;
-                    window.requestAnimationFrame(() => {
-                        updateProgress();
-                        updateActiveNav();
-                        updateHeader();
-                        scrollScheduled = false;
-                    });
-                };
-                window.addEventListener("scroll", scheduleScrollUpdate, { passive: true });
-                window.addEventListener("resize", scheduleScrollUpdate, { passive: true });
-
-                const revealItems = document.querySelectorAll(".reveal");
-                if (reducedMotion || !("IntersectionObserver" in window)) {
-                    revealItems.forEach((item) => item.classList.add("is-visible"));
+                const revealItems = document.querySelectorAll('.reveal');
+                if (motionPreference.matches || !('IntersectionObserver' in window)) {
+                    revealItems.forEach((item) => item.classList.add('is-visible'));
                     return;
                 }
-
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach((entry) => {
-                        if (!entry.isIntersecting) {
-                            return;
-                        }
-                        entry.target.classList.add("is-visible");
+                        if (!entry.isIntersecting) return;
+                        entry.target.classList.add('is-visible');
                         observer.unobserve(entry.target);
                     });
-                }, { threshold: 0.16, rootMargin: "0px 0px -8% 0px" });
-
-                revealItems.forEach((item, index) => {
-                    item.style.setProperty("--reveal-delay", `${Math.min(index * 40, 220)}ms`);
-                    observer.observe(item);
-                });
+                }, { threshold: 0.14, rootMargin: '0px 0px -6% 0px' });
+                revealItems.forEach((item) => observer.observe(item));
             })();
         </script>
-        <script src="js/future.js?v=20261006" defer></script>
+        <script src="js/future.js?v=20261008-holo" defer></script>
     </body>
 </html>
