@@ -1,10 +1,11 @@
-/* Persian and Arabic pages. Layout mirrors through logical properties in site.css;
-   this layer only protects native shaping: Vazirmatn, no tracking, roomier leading. */
-html[dir="rtl"] body{font-family:var(--sans)}
+/* Persian and Arabic pages. Layout mirrors through logical properties in site.css; this layer sets
+   Vazirmatn for Arabic-script text (Latin keeps the system font), removes tracking and opens the leading. */
+html[dir="rtl"] body{font-family:"Vazirmatn",var(--sans)}
+html[dir="rtl"] :is(h1,h2,h3,h4,.hero-name,.venture strong,.section-label,.eyebrow){font-family:"Vazirmatn",var(--display)}
 html[dir="rtl"] *{letter-spacing:0!important}
-html[dir="rtl"] :is(.timeline-date,.clock,.holo-top,.step-index,.run-head,.command-foot,.card-topline a){font-family:var(--sans)}
+html[dir="rtl"] :is(.timeline-date,.clock,.step-index,.run-head,.command-foot,.card-topline a,.ask-key){font-family:"Vazirmatn",var(--sans)}
 html[dir="rtl"] .editorial h1{font-weight:800;line-height:1.45}
 html[dir="rtl"] .editorial :is(h2,h3){font-weight:750;line-height:1.6}
 html[dir="rtl"] .editorial :is(p,li){line-height:2.05}
-html[dir="rtl"] .editorial-header a[lang="en"],html[dir="rtl"] [data-locale-primary="en"]{font-family:"Manrope",ui-sans-serif,system-ui,sans-serif}
+html[dir="rtl"] .editorial-header a[lang="en"],html[dir="rtl"] [data-locale-primary="en"]{font-family:var(--sans)}
 html[dir="rtl"] .contact-email,html[dir="rtl"] .localized-name{font-family:var(--mono)}

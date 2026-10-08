@@ -67,16 +67,18 @@ for lang in ('fa','ar'):
     head=re.sub(r'(<meta property="og:updated_time" content=")[^"]*',lambda m:m[1]+modified,head)
     head=head.replace('<link rel="canonical" href="https://a-samadi.com/"',f'<link rel="canonical" href="https://a-samadi.com/{lang}/"')
     head=head.replace('property="og:url" content="https://a-samadi.com/"',f'property="og:url" content="https://a-samadi.com/{lang}/"')
-    head=head.replace('content="en_US"','content="'+('fa_IR' if lang=='fa' else 'ar_AE')+'"')
+    own='fa_IR' if lang=='fa' else 'ar_AE'
+    head=head.replace('<meta property="og:locale" content="en_US" />',f'<meta property="og:locale" content="{own}" />')
+    head=head.replace(f'<meta property="og:locale:alternate" content="{own}" />','<meta property="og:locale:alternate" content="en_US" />')
     head=head.replace('content="Ahmadreza Samadi, Dubai-based founder and technical executive"','content="'+tr['Portrait of Ahmadreza Samadi']+'"')
     def schema(m):
         d=json.loads(m[1]);profile=next(x for x in d['@graph'] if x['@type']=='ProfilePage')
         profile.update({'@id':f'https://a-samadi.com/{lang}/#profile','url':f'https://a-samadi.com/{lang}/','name':title,'description':description,'inLanguage':lang,'dateModified':modified})
         return '<script type="application/ld+json">'+json.dumps(d,ensure_ascii=False,indent=2)+'</script>'
     head=re.sub(r'<script type="application/ld\+json">(.*?)</script>',schema,head,flags=re.S)
-    # Persian and Arabic pages render their headings in Vazirmatn, so preload it instead of the Latin faces.
-    head=head.replace('        <link rel="preload" as="font" type="font/woff2" href="../assets/fonts/manrope-latin-wght.woff2" crossorigin />\n','')
-    head=head.replace('href="../assets/fonts/unbounded-latin-wght.woff2"','href="../assets/fonts/vazirmatn-arabic-wght.woff2"')
-    head=head.replace('</head>','    <link rel="stylesheet" href="../css/rtl.css?v=20261008-holo" />\n</head>')
+    # Persian and Arabic text is set in Vazirmatn (Latin keeps the system font), so preload it with the portrait.
+    head,font_count=re.subn(r'(\n(\s*)<link rel="preload" as="image"[^\n]*\n)',lambda m:m[1]+m[2]+'<link rel="preload" as="font" type="font/woff2" href="../assets/fonts/vazirmatn-arabic-wght.woff2" crossorigin />\n',head,count=1)
+    if font_count!=1:raise ValueError('Missing portrait preload insertion point')
+    head=head.replace('</head>','    <link rel="stylesheet" href="../css/rtl.css?v=20261008-intel" />\n</head>')
     (ROOT/lang/'index.html').write_text(head+visible+'        <script>'+script)
     print('Built',lang)

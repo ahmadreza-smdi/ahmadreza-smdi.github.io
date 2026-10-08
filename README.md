@@ -29,9 +29,9 @@ python3 -m http.server 8000 --bind 127.0.0.1
 
 Open [localhost:8000](http://localhost:8000/). No build step is required to preview the checked-in site.
 
-The interface is a light pastel "personal OS": pearl paper, deep-ink type and one iris accent, with lilac, sky, mint, peach, butter and rose used only for light and fills. Unbounded sets display type, Manrope the reading text, JetBrains Mono the clock and console details, and Vazirmatn the Persian and Arabic pages. The fonts are self-hosted in `assets/fonts/` under the SIL Open Font License (`assets/fonts/OFL.txt`).
+The interface is a quiet, Apple-style canvas where color only appears as light: near-white paper, ink type and one blue for actions, with a live blue-to-violet-to-orange spectrum reserved for glows, rings and status lights. Apple devices render text in the system's own San Francisco font; other devices get Inter, and Persian and Arabic text uses Vazirmatn. The web fonts are self-hosted in `assets/fonts/` under the SIL Open Font License (`assets/fonts/OFL.txt`).
 
-`js/future.js` adds the homepage motion: a WebGL aurora drawn at reduced resolution (with a CSS gradient fallback), the Dubai clock, a ⌘K / Ctrl K command menu, the self-assembling name, the holographic portrait card and its connection beams, and the Appraiva console run. Every effect follows the page's pause control, stops when the tab is hidden and honors reduced-motion preferences; without JavaScript the page is complete and static. Reading pages share the same tokens through CSS only.
+`js/future.js` adds the homepage behavior: the Dubai clock, the Ask panel (⌘K / Ctrl K, `/` or any Ask button) that searches the page and streams back the best passage while the screen edge glows, the capabilities orbiting the portrait lens, the floating Ask bar, and the Appraiva console run. Every effect follows the page's pause control, stops when its part of the page is off screen or the tab is hidden, and honors reduced-motion preferences; without JavaScript the page is complete and static. Reading pages share the same tokens through CSS only.
 
 ## Maintain the source
 
@@ -42,15 +42,17 @@ python3 scripts/check_locale_parity.py
 python3 scripts/check_internal_links.py
 node scripts/check_guide_locales.mjs
 python3 scripts/build_feed.py --check
+python3 scripts/enrich_metadata.py --check
 ```
 
-The checks cover language and canonical metadata, author identity, same-site page and fragment links, localized guide behavior and exports, and RSS consistency.
+The checks cover language and canonical metadata, author identity, same-site page and fragment links, localized guide behavior and exports, RSS consistency, and the social and search metadata every page carries in its own language.
 
 | When changing | Source and regeneration command |
 | --- | --- |
 | Shared styles | Edit `css/premium.css`, `css/editorial.css` and `css/refinement.css`; run `python3 scripts/build_styles.py`. |
 | Homepages | Edit `index.html` and translations in `locales/fa.json` and `locales/ar.json`; run `python3 scripts/build_locales.py`. |
 | Interactive guide | Edit the English guide and `js/decision-guide.js`, plus `locales/decision-guide-fa.json` and `locales/decision-guide-ar.json`; run `python3 scripts/build_guide_locales.py`. |
+| Page metadata and sitemap languages | Run `python3 scripts/enrich_metadata.py` after adding or translating a page. It fills in missing Open Graph, Twitter and robots tags in the page's language and the sitemap's hreflang links, then regenerate the homepages and guide. |
 | English writing feed | Edit the articles' metadata; run `python3 scripts/build_feed.py`. Keep original publication dates and include the existing RSS discovery link in new English articles. |
 
 Review generated changes and run the checks before publishing. Keep English as the primary entry point, preserve Persian and Arabic URLs, and retain the site's motion controls and reduced-motion support.

@@ -1,16 +1,17 @@
-/* Pastel Hologram engine for the homepage.
-   Aurora wallpaper, Dubai clock, command menu, hero choreography and small "agentic" details.
+/* Intelligence engine for the homepage.
+   Dubai clock, the Ask panel (it searches this page and streams back the best passage), the
+   capabilities orbiting the portrait lens, and a few small agentic details.
    Everything here is an enhancement: without this file the page is complete and readable. */
 (() => {
     'use strict';
     const root = document.documentElement;
-    const rtl = root.dir === 'rtl';
     const lang = root.lang || 'en';
     const reduceQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
     const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
     const $ = (selector, scope = document) => scope.querySelector(selector);
     const $$ = (selector, scope = document) => Array.from(scope.querySelectorAll(selector));
     const paused = () => reduceQuery.matches || root.classList.contains('motion-paused');
+    const asking = () => root.classList.contains('agent-active');
     const i18n = (key, fallback) => {
         const node = document.querySelector(`[data-i18n="${key}"]`);
         return node ? node.textContent.trim() : fallback;
@@ -18,142 +19,15 @@
     const motionListeners = [];
     const onMotion = (listener) => motionListeners.push(listener);
     window.addEventListener('site:motion', (event) => motionListeners.forEach((listener) => listener(event.detail || {})));
+    window.addEventListener('site:ask', () => motionListeners.forEach((listener) => listener({})));
 
-    /* Aurora: a slow, domain-warped pastel mesh rendered at reduced resolution. */
-    function aurora() {
-        const canvas = $('.aurora');
-        if (!canvas) return;
-        const setVeil = () => {
-            const amount = Math.min(1, Math.max(0, window.scrollY / (window.innerHeight * 0.9)));
-            canvas.style.opacity = String(1 - amount * 0.5);
-        };
-        let veilFrame = 0;
-        window.addEventListener('scroll', () => {
-            if (!veilFrame) veilFrame = requestAnimationFrame(() => { veilFrame = 0; setVeil(); });
-        }, { passive: true });
-        setVeil();
-
-        let gl = null;
-        try {
-            gl = canvas.getContext('webgl', { alpha: false, antialias: false, depth: false, stencil: false, preserveDrawingBuffer: false, powerPreference: 'low-power' });
-        } catch (error) { gl = null; }
-        if (!gl) return;
-
-        const vertexSource = 'attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}';
-        const fragmentSource = `
-#ifdef GL_FRAGMENT_PRECISION_HIGH
-precision highp float;
-#else
-precision mediump float;
-#endif
-uniform vec2 r;uniform float t;uniform vec2 m;uniform float k;
-float h(vec2 p){vec3 q=fract(vec3(p.xyx)*.1031);q+=dot(q,q.yzx+33.33);return fract((q.x+q.y)*q.z);}
-float n(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(h(i),h(i+vec2(1.,0.)),f.x),mix(h(i+vec2(0.,1.)),h(i+vec2(1.,1.)),f.x),f.y);}
-float fbm(vec2 p){float v=0.,a=.5;for(int i=0;i<4;i++){v+=a*n(p);p=p*2.03+vec2(1.7,9.2);a*=.5;}return v;}
-vec3 blob(vec2 p,vec2 c,vec3 col,float rad,inout float w){vec2 d=p-c;float g=exp(-dot(d,d)/(rad*rad));w+=g;return col*g;}
-void main(){
- vec2 uv=gl_FragCoord.xy/r;vec2 e=r/min(r.x,r.y);vec2 p=uv*e;float s=t*.05;
- vec2 warp=vec2(fbm(p*1.5+vec2(s,-s*.7)),fbm(p*1.5+vec2(-s*.8,s)+4.3))-.5;
- vec2 q=p+warp*.6;float w=0.;vec3 c=vec3(0.);
- c+=blob(q,vec2(.16,.80)*e+vec2(.07*sin(s*1.3),.06*cos(s)),vec3(.79,.73,1.),.44,w);
- c+=blob(q,vec2(.86,.86)*e+vec2(.06*cos(s*1.1),.05*sin(s*1.7)),vec3(.68,.86,1.),.42,w);
- c+=blob(q,vec2(.76,.14)*e+vec2(.07*sin(s*.9+1.),.06*cos(s*1.2)),vec3(.62,.93,.82),.46,w);
- c+=blob(q,vec2(.14,.10)*e+vec2(.07*cos(s*.8+2.),.05*sin(s)),vec3(1.,.79,.70),.42,w);
- c+=blob(q,vec2(.50,.48)*e+vec2(.12*sin(s*.7+3.),.10*cos(s*.6)),vec3(1.,.93,.64),.30,w);
- c+=blob(q,vec2(.44,.98)*e+vec2(.10*cos(s*.5+4.),0.),vec3(1.,.78,.90),.30,w);
- vec3 col=c/max(w,.001);float l=dot(col,vec3(.299,.587,.114));col=clamp(mix(vec3(l),col,1.3),0.,1.);
- float cover=clamp(w,0.,1.);
- vec2 d=p-m*e;float g=exp(-dot(d,d)*7.);
- col=mix(col,vec3(1.,.95,.74),g*.55);cover=max(cover,g*.7);
- vec3 o=mix(vec3(.965,.965,.992),col,cover*k);
- o+=(h(gl_FragCoord.xy+fract(t*.37)*91.)-.5)*.022;
- gl_FragColor=vec4(o,1.);
-}`;
-        const compile = (type, source) => {
-            const shader = gl.createShader(type);
-            gl.shaderSource(shader, source);
-            gl.compileShader(shader);
-            return gl.getShaderParameter(shader, gl.COMPILE_STATUS) ? shader : null;
-        };
-        const vertex = compile(gl.VERTEX_SHADER, vertexSource);
-        const fragment = compile(gl.FRAGMENT_SHADER, fragmentSource);
-        if (!vertex || !fragment) return;
-        const program = gl.createProgram();
-        gl.attachShader(program, vertex);
-        gl.attachShader(program, fragment);
-        gl.linkProgram(program);
-        if (!gl.getProgramParameter(program, gl.LINK_STATUS)) return;
-        gl.useProgram(program);
-        const buffer = gl.createBuffer();
-        gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
-        gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW);
-        const position = gl.getAttribLocation(program, 'p');
-        gl.enableVertexAttribArray(position);
-        gl.vertexAttribPointer(position, 2, gl.FLOAT, false, 0, 0);
-        const uniform = { r: gl.getUniformLocation(program, 'r'), t: gl.getUniformLocation(program, 't'), m: gl.getUniformLocation(program, 'm'), k: gl.getUniformLocation(program, 'k') };
-
-        const small = window.matchMedia('(max-width: 760px)');
-        const seed = Math.random() * 400;
-        const pointer = { x: 0.72, y: 0.7, tx: 0.72, ty: 0.7 };
-        let raf = 0;
-        let last = 0;
-        let lost = false;
-        const resize = () => {
-            const scale = small.matches ? 0.35 : 0.5;
-            const width = Math.max(2, Math.round(window.innerWidth * scale));
-            const height = Math.max(2, Math.round(window.innerHeight * scale));
-            if (canvas.width !== width || canvas.height !== height) {
-                canvas.width = width;
-                canvas.height = height;
-                gl.viewport(0, 0, width, height);
-            }
-        };
-        const render = (now) => {
-            pointer.x += (pointer.tx - pointer.x) * 0.06;
-            pointer.y += (pointer.ty - pointer.y) * 0.06;
-            gl.uniform2f(uniform.r, canvas.width, canvas.height);
-            gl.uniform1f(uniform.t, seed + now / 1000);
-            gl.uniform2f(uniform.m, pointer.x, pointer.y);
-            gl.uniform1f(uniform.k, 0.58);
-            gl.drawArrays(gl.TRIANGLES, 0, 3);
-        };
-        const loop = (now) => {
-            raf = 0;
-            if (lost) return;
-            if (now - last >= 33) {
-                last = now;
-                render(now);
-            }
-            if (!paused()) raf = requestAnimationFrame(loop);
-        };
-        const start = () => {
-            if (lost) return;
-            if (paused()) {
-                if (raf) cancelAnimationFrame(raf);
-                raf = 0;
-                render(performance.now());
-                return;
-            }
-            if (!raf) raf = requestAnimationFrame(loop);
-        };
-        let resizeFrame = 0;
-        window.addEventListener('resize', () => {
-            if (resizeFrame) return;
-            resizeFrame = requestAnimationFrame(() => { resizeFrame = 0; resize(); render(performance.now()); });
-        }, { passive: true });
-        if (finePointer.matches) {
-            window.addEventListener('pointermove', (event) => {
-                pointer.tx = event.clientX / window.innerWidth;
-                pointer.ty = 1 - event.clientY / window.innerHeight;
-            }, { passive: true });
-        }
-        canvas.addEventListener('webglcontextlost', (event) => { event.preventDefault(); lost = true; }, false);
-        onMotion(start);
-        resize();
-        render(performance.now());
-        canvas.classList.add('is-live');
-        start();
-    }
+    /* The edge of the screen lights up while the site is answering. */
+    let glowTimer = 0;
+    const glow = (duration) => {
+        window.clearTimeout(glowTimer);
+        root.classList.add('is-glowing');
+        glowTimer = window.setTimeout(() => root.classList.remove('is-glowing'), duration);
+    };
 
     /* Local time in Dubai, refreshed on the minute. */
     function clock() {
@@ -173,13 +47,14 @@ void main(){
         tick();
     }
 
-    /* Command menu: ⌘K, Ctrl K or "/" opens it. It filters the commands and searches the text of
-       this page, then can take you to the best match. Arrows move, Enter opens, Esc closes. */
-    function commandMenu() {
+    /* The Ask panel: any Ask button, ⌘K, Ctrl K or "/" opens it. It filters the shortcuts, searches the
+       text of this page, streams back the best passage and can take you to it. Arrows move, Enter
+       opens, Esc closes. */
+    function askPanel() {
         const dialog = $('dialog.command');
-        const trigger = $('.command-trigger');
+        const triggers = $$('[data-ask]');
         if (!dialog || typeof dialog.showModal !== 'function') {
-            if (trigger) trigger.hidden = true;
+            triggers.forEach((trigger) => { trigger.hidden = true; });
             return;
         }
         const input = $('.command-input', dialog);
@@ -191,13 +66,12 @@ void main(){
         const everything = answerGo ? [answerGo, ...commands] : commands;
         const groups = $$('.command-group', dialog);
         const empty = $('.command-empty', dialog);
-        const key = $('[data-command-key]');
         const apple = /Mac|iPhone|iPad|iPod/.test(navigator.platform || navigator.userAgent || '');
-        if (key) {
+        $$('[data-command-key]').forEach((key) => {
             if (finePointer.matches) key.textContent = apple ? '⌘K' : 'Ctrl K';
             else key.hidden = true;
-        }
-        if (input) input.placeholder = i18n('search', 'Type a command or search');
+        });
+        if (input) input.placeholder = i18n('search', 'Ask about my work or jump to a section');
 
         // Latin accents and Arabic diacritics are ignored; Arabic and Persian letter variants match each other.
         const normalize = (value) => value.toLocaleLowerCase(lang).normalize('NFKD')
@@ -342,22 +216,28 @@ void main(){
             answerTimer = window.setTimeout(() => { showAnswer(match); settleActive(); }, current ? 160 : 60);
             settleActive();
         };
+        let lastFocus = null;
+        let keepFocus = false;
+        const announce = (active) => {
+            root.classList.toggle('agent-active', active);
+            window.dispatchEvent(new CustomEvent('site:ask', { detail: { active } }));
+        };
         const open = () => {
             if (dialog.open) return;
             lastFocus = document.activeElement;
             input.value = '';
             filter();
             dialog.showModal();
+            announce(true);
             input.focus();
         };
         const close = () => { if (dialog.open) dialog.close(); };
-        let lastFocus = null;
-        let keepFocus = false;
         dialog.addEventListener('close', () => {
+            announce(false);
             if (!keepFocus && lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus({ preventScroll: true });
             keepFocus = false;
         });
-        if (trigger) trigger.addEventListener('click', open);
+        triggers.forEach((trigger) => trigger.addEventListener('click', open));
         const typing = (target) => Boolean(target && target.closest && target.closest('input, textarea, select, [contenteditable="true"]'));
         document.addEventListener('keydown', (event) => {
             if ((event.metaKey || event.ctrlKey) && !event.altKey && event.key.toLowerCase() === 'k') {
@@ -423,6 +303,7 @@ void main(){
             if (item.hasAttribute('data-answer-go')) {
                 const target = current && current.entry.element;
                 if (!target) return;
+                glow(1900);
                 reveal(target, 'center');
                 target.classList.remove('is-found');
                 void target.offsetWidth;
@@ -476,6 +357,7 @@ void main(){
             }
         };
         buttons.forEach((button) => button.addEventListener('click', async () => {
+            if (button.classList.contains('is-copied')) return;
             const copied = await write();
             if (!copied) {
                 if (link) window.getSelection().selectAllChildren(link);
@@ -490,7 +372,8 @@ void main(){
                 timer = window.setTimeout(() => { status.textContent = ''; }, 4500);
             }
             if (button.classList.contains('command-item')) {
-                const label = button.textContent;
+                if (!button.dataset.label) button.dataset.label = button.textContent;
+                const label = button.dataset.label;
                 button.textContent = message;
                 button.classList.add('is-copied');
                 window.setTimeout(() => {
@@ -503,16 +386,16 @@ void main(){
         }));
     }
 
-    /* The glass pill that follows the hovered or current section link. */
+    /* The soft pill that follows the hovered or current section link. */
     function navGlow() {
         const nav = $('.site-nav');
-        const glow = nav && $('.nav-glow', nav);
-        if (!glow) return;
+        const pill = nav && $('.nav-glow', nav);
+        if (!pill) return;
         const links = $$('a', nav);
         let hovered = null;
         const place = () => {
             const target = hovered || links.find((link) => link.classList.contains('is-active'));
-            if (!target || getComputedStyle(glow).display === 'none') {
+            if (!target || getComputedStyle(pill).display === 'none') {
                 nav.style.setProperty('--nav-o', '0');
                 return;
             }
@@ -532,198 +415,152 @@ void main(){
         place();
     }
 
-    /* The name assembles itself, then settles into crisp text with a light sheen. */
-    function heroName() {
-        const heading = $('.hero-name[data-split]');
-        if (!heading || reduceQuery.matches) return;
-        // A page opened out of sight (a background tab, a preview renderer) shows the finished name.
-        if (document.hidden) {
-            $$(':scope > span', heading).forEach((span) => {
-                span.classList.add('name-line');
-                span.dataset.text = span.textContent.trim();
-            });
-            heading.classList.add('is-settled');
-            return;
-        }
-        const words = $$(':scope > span', heading).map((span) => span.textContent.trim()).filter(Boolean);
-        if (!words.length) return;
-        const original = Array.from(heading.childNodes, (node) => node.cloneNode(true));
-        const label = document.createElement('span');
-        label.className = 'sr-only';
-        label.textContent = words.join(' ');
-        const segmenter = !rtl && window.Intl && Intl.Segmenter ? new Intl.Segmenter(lang, { granularity: 'grapheme' }) : null;
-        let index = 0;
-        const lines = words.map((word) => {
-            const line = document.createElement('span');
-            line.className = 'name-line';
-            line.setAttribute('aria-hidden', 'true');
-            line.dataset.text = word;
-            const parts = rtl ? [word] : segmenter ? Array.from(segmenter.segment(word), (part) => part.segment) : Array.from(word);
-            parts.forEach((part) => {
-                const char = document.createElement('span');
-                char.className = 'ch';
-                char.textContent = part;
-                char.style.setProperty('--i', String(index));
-                index += 1;
-                line.append(char);
-            });
-            return line;
-        });
-        heading.replaceChildren(label, ...lines);
-        heading.classList.add('is-split');
-        let settled = false;
-        // Once assembled, restore the original markup so the heading reads exactly as authored.
-        const settle = () => {
-            if (settled) return;
-            settled = true;
-            heading.replaceChildren(...original);
-            $$(':scope > span', heading).forEach((span) => {
-                span.classList.add('name-line');
-                span.dataset.text = span.textContent.trim();
-            });
-            heading.classList.remove('is-split');
-            heading.classList.add('is-settled');
-        };
-        const lastChar = lines[lines.length - 1].lastElementChild;
-        if (lastChar) lastChar.addEventListener('animationend', settle, { once: true });
-        reduceQuery.addEventListener('change', () => { if (reduceQuery.matches) settle(); });
-        onMotion((detail) => { if (detail.user) settle(); });
-        const safety = () => {
-            if (settled) return;
-            if (document.hidden || !root.classList.contains('is-loaded')) {
-                window.setTimeout(safety, 800);
-                return;
-            }
-            window.setTimeout(settle, 3600);
-        };
-        window.setTimeout(safety, 400);
-    }
-
-    /* Holographic ID card: tilt and foil follow the pointer. */
-    function holoCard() {
+    /* Four things I work on orbit the portrait. They pass behind the lens and in front of it, shrinking
+       and dimming with depth, and on narrow screens they keep inside the viewport. */
+    function orbit() {
         const visual = $('.hero-visual');
-        const card = visual && $('.holo-card', visual);
-        const inner = card && $('.holo-inner', card);
-        if (!inner || !finePointer.matches) return;
-        let frame = 0;
-        let x = 0.5;
-        let y = 0.5;
-        const apply = () => {
-            frame = 0;
-            card.style.setProperty('--ry', `${((x - 0.5) * 16).toFixed(2)}deg`);
-            card.style.setProperty('--rx', `${((0.5 - y) * 12).toFixed(2)}deg`);
-            inner.style.setProperty('--mx', `${(x * 100).toFixed(1)}%`);
-            inner.style.setProperty('--my', `${(y * 100).toFixed(1)}%`);
-        };
-        visual.addEventListener('pointermove', (event) => {
-            if (paused()) return;
-            const rect = card.getBoundingClientRect();
-            x = Math.min(1.3, Math.max(-0.3, (event.clientX - rect.left) / rect.width));
-            y = Math.min(1.3, Math.max(-0.3, (event.clientY - rect.top) / rect.height));
-            card.classList.add('is-tilting');
-            if (!frame) frame = requestAnimationFrame(apply);
-        });
-        visual.addEventListener('pointerleave', () => {
-            card.classList.remove('is-tilting');
-            card.style.setProperty('--rx', '0deg');
-            card.style.setProperty('--ry', '0deg');
-        });
-    }
-
-    /* Capability nodes drift around the card; light beams keep them wired to it. */
-    function beams() {
-        const visual = $('.hero-visual');
-        const group = visual && $('.beam-paths', visual);
-        const card = visual && $('.holo-card', visual);
-        const nodes = visual ? $$('.orbit-node', visual) : [];
-        if (!group || !card || !nodes.length) return;
-        const ns = 'http://www.w3.org/2000/svg';
-        const items = nodes.map((node, index) => {
-            const beam = document.createElementNS(ns, 'path');
-            beam.setAttribute('class', 'beam');
-            const pulse = document.createElementNS(ns, 'path');
-            pulse.setAttribute('class', 'beam-pulse');
-            pulse.setAttribute('pathLength', '100');
-            group.append(beam, pulse);
-            return { node, beam, pulse, phase: index * 1.9, ax: 6 + (index % 2) * 3, ay: 8 + ((index + 1) % 2) * 3, speed: 0.00042 + index * 0.00008, fx: 0, fy: 0, box: null };
-        });
-        let cardBox = null;
+        const lens = visual && $('.lens', visual);
+        const chips = visual ? $$('.orbit li', visual) : [];
+        if (!lens || !chips.length) return;
+        const start = [205, 335, 25, 155].map((degrees) => degrees * Math.PI / 180);
+        const period = 48000;
+        let geometry = null;
         let raf = 0;
-        let visible = true;
-        const measure = () => {
-            cardBox = { x: card.offsetLeft, y: card.offsetTop, w: card.offsetWidth, h: card.offsetHeight };
-            items.forEach((item) => {
-                const shown = item.node.offsetParent !== null && item.node.offsetWidth > 0;
-                item.box = shown ? { x: item.node.offsetLeft, y: item.node.offsetTop, w: item.node.offsetWidth, h: item.node.offsetHeight } : null;
-            });
-        };
-        const draw = () => {
-            const centre = cardBox.x + cardBox.w / 2;
-            items.forEach((item) => {
-                if (!item.box) {
-                    item.beam.setAttribute('d', '');
-                    item.pulse.setAttribute('d', '');
-                    return;
-                }
-                const sx = item.box.x + item.box.w / 2 + item.fx;
-                const sy = item.box.y + item.box.h / 2 + item.fy;
-                const top = cardBox.y;
-                const bottom = cardBox.y + cardBox.h;
-                const outside = sx < cardBox.x - 24 || sx > cardBox.x + cardBox.w + 24;
-                let path = '';
-                if (outside) {
-                    const left = sx < centre;
-                    const ex = left ? cardBox.x + 6 : cardBox.x + cardBox.w - 6;
-                    const ey = Math.min(Math.max(sy, top + 48), bottom - 48);
-                    const bend = (ex - sx) * 0.55;
-                    path = `M${sx.toFixed(1)} ${sy.toFixed(1)}C${(sx + bend).toFixed(1)} ${sy.toFixed(1)} ${(ex - bend).toFixed(1)} ${ey.toFixed(1)} ${ex.toFixed(1)} ${ey.toFixed(1)}`;
-                } else if (sy < top - 12 || sy > bottom + 12) {
-                    const above = sy < top;
-                    const ex = Math.min(Math.max(sx, cardBox.x + 36), cardBox.x + cardBox.w - 36);
-                    const ey = above ? top + 6 : bottom - 6;
-                    const bend = (ey - sy) * 0.55;
-                    path = `M${sx.toFixed(1)} ${sy.toFixed(1)}C${sx.toFixed(1)} ${(sy + bend).toFixed(1)} ${ex.toFixed(1)} ${(ey - bend).toFixed(1)} ${ex.toFixed(1)} ${ey.toFixed(1)}`;
-                }
-                item.beam.setAttribute('d', path);
-                item.pulse.setAttribute('d', path);
-            });
-        };
+        let onScreen = true;
+        let elapsed = 0;
         let last = 0;
+        const hero = visual.closest('.hero');
+        const measure = () => {
+            const style = getComputedStyle(visual);
+            const size = lens.offsetWidth;
+            const rect = visual.getBoundingClientRect();
+            const widths = chips.map((chip) => chip.offsetWidth);
+            // The ring may reach into the gap beside the copy, never past it.
+            const gap = hero ? parseFloat(getComputedStyle(hero).columnGap) || 0 : 0;
+            const natural = size * (parseFloat(style.getPropertyValue('--rx-k')) || 0.62);
+            const reach = visual.offsetWidth / 2 + gap - Math.max(...widths) / 2;
+            const rx = Math.min(natural, Math.max(size * 0.56, reach));
+            visual.style.setProperty('--rx', `${rx.toFixed(1)}px`);
+            geometry = {
+                rx,
+                ry: size * (parseFloat(style.getPropertyValue('--ry-k')) || 0.19),
+                cos: parseFloat(style.getPropertyValue('--tc')) || 1,
+                sin: parseFloat(style.getPropertyValue('--ts')) || 0,
+                centre: rect.left + rect.width / 2,
+                width: document.documentElement.clientWidth,
+                widths
+            };
+        };
+        const place = () => {
+            if (!geometry) measure();
+            const { rx, ry, cos, sin, centre, width, widths } = geometry;
+            const turn = (elapsed / period) * Math.PI * 2;
+            chips.forEach((chip, index) => {
+                const angle = start[index] - turn;
+                const depth = Math.sin(angle);
+                const scale = depth >= 0 ? 0.96 + 0.04 * depth : 0.96 + 0.1 * depth;
+                const half = (widths[index] * scale) / 2;
+                const min = 10 + half - centre;
+                const max = width - 10 - half - centre;
+                // A point on the ellipse, turned by the ring's tilt.
+                const ox = Math.cos(angle) * rx;
+                const oy = depth * ry;
+                let x = ox * cos - oy * sin;
+                const y = ox * sin + oy * cos;
+                if (min < max) x = Math.min(max, Math.max(min, x));
+                chip.style.transform = `translate(-50%, -50%) translate(${x.toFixed(2)}px, ${y.toFixed(2)}px) scale(${scale.toFixed(3)})`;
+                chip.style.opacity = (depth >= 0 ? 1 : 1 + depth * 0.55).toFixed(3);
+                chip.style.zIndex = depth >= 0 ? '4' : '1';
+            });
+        };
         const loop = (now) => {
             raf = 0;
-            if (!cardBox) measure();
-            const moving = !paused() && visible;
-            if (moving && now - last < 32) {
-                raf = requestAnimationFrame(loop);
+            if (!onScreen || paused() || asking()) {
+                last = 0;
                 return;
             }
+            if (last) elapsed += Math.min(now - last, 64);
             last = now;
-            if (moving) {
-                items.forEach((item) => {
-                    const t = now * item.speed + item.phase;
-                    item.fx = Math.sin(t) * item.ax;
-                    item.fy = Math.cos(t * 1.3) * item.ay;
-                    item.node.style.setProperty('--fx', `${item.fx.toFixed(2)}px`);
-                    item.node.style.setProperty('--fy', `${item.fy.toFixed(2)}px`);
-                });
-            }
-            draw();
-            if (moving) raf = requestAnimationFrame(loop);
+            place();
+            raf = requestAnimationFrame(loop);
         };
-        const kick = () => { if (!raf) raf = requestAnimationFrame(loop); };
+        const kick = () => {
+            if (!raf && onScreen && !paused() && !asking()) raf = requestAnimationFrame(loop);
+        };
+        const refresh = () => { measure(); place(); kick(); };
         if ('ResizeObserver' in window) {
-            const observer = new ResizeObserver(() => { measure(); kick(); });
+            const observer = new ResizeObserver(refresh);
             observer.observe(visual);
-            nodes.forEach((node) => observer.observe(node));
-        } else {
-            window.addEventListener('resize', () => { measure(); kick(); }, { passive: true });
+            chips.forEach((chip) => observer.observe(chip));
         }
+        window.addEventListener('resize', refresh, { passive: true });
+        if (document.fonts && document.fonts.ready) document.fonts.ready.then(refresh);
         if ('IntersectionObserver' in window) {
-            new IntersectionObserver((entries) => { visible = entries[0].isIntersecting; kick(); }).observe(visual);
+            new IntersectionObserver((entries) => { onScreen = entries[0].isIntersecting; kick(); }).observe(visual);
         }
         onMotion(kick);
         measure();
+        place();
         kick();
+    }
+
+    /* The lens leans a little toward the pointer. */
+    function lensTilt() {
+        const hero = $('.hero');
+        const lens = $('[data-lens]');
+        if (!hero || !lens || !finePointer.matches) return;
+        let frame = 0;
+        let tiltX = 0;
+        let tiltY = 0;
+        const apply = () => {
+            frame = 0;
+            lens.style.setProperty('--lx', `${tiltX.toFixed(2)}deg`);
+            lens.style.setProperty('--ly', `${tiltY.toFixed(2)}deg`);
+        };
+        hero.addEventListener('pointermove', (event) => {
+            if (paused()) return;
+            const rect = lens.getBoundingClientRect();
+            const dx = (event.clientX - (rect.left + rect.width / 2)) / window.innerWidth;
+            const dy = (event.clientY - (rect.top + rect.height / 2)) / window.innerHeight;
+            tiltY = Math.max(-1, Math.min(1, dx * 2)) * 9;
+            tiltX = Math.max(-1, Math.min(1, dy * 2)) * -7;
+            if (!frame) frame = requestAnimationFrame(apply);
+        });
+        hero.addEventListener('pointerleave', () => {
+            tiltX = 0;
+            tiltY = 0;
+            if (!frame) frame = requestAnimationFrame(apply);
+        });
+    }
+
+    /* Once the Ask bar in the hero scrolls away, a compact one waits at the bottom of the screen.
+       On touch screens it steps aside while you scroll down and returns when you scroll up. */
+    function floatingAsk() {
+        const inline = $('.ask-inline');
+        const floating = $('.ask-floating');
+        if (!inline || !floating || floating.hidden || !('IntersectionObserver' in window)) return;
+        let past = false;
+        let tucked = false;
+        const sync = () => floating.classList.toggle('is-visible', past && !tucked);
+        new IntersectionObserver((entries) => {
+            const entry = entries[0];
+            past = !entry.isIntersecting && entry.boundingClientRect.top < 0;
+            sync();
+        }).observe(inline);
+        if (finePointer.matches) return;
+        let lastY = window.scrollY;
+        let frame = 0;
+        window.addEventListener('scroll', () => {
+            if (frame) return;
+            frame = requestAnimationFrame(() => {
+                frame = 0;
+                const y = window.scrollY;
+                if (Math.abs(y - lastY) < 10) return;
+                tucked = y > lastY && y > 0;
+                lastY = y;
+                sync();
+            });
+        }, { passive: true });
     }
 
     /* Buttons lean toward the pointer. */
@@ -768,7 +605,7 @@ void main(){
         };
         let frame = 0;
         let timer = 0;
-        let visible = false;
+        let onScreen = false;
         const stop = () => { window.clearTimeout(timer); timer = 0; };
         const next = () => {
             timer = 0;
@@ -777,7 +614,7 @@ void main(){
             schedule();
         };
         const schedule = () => {
-            if (timer || !visible || paused()) return;
+            if (timer || !onScreen || paused()) return;
             timer = window.setTimeout(next, frame >= steps.length ? 3400 : 1400);
         };
         const sync = () => {
@@ -787,12 +624,12 @@ void main(){
                 show(frame);
                 return;
             }
-            if (!visible || paused()) stop(); else schedule();
+            if (!onScreen || paused()) stop(); else schedule();
         };
         if ('IntersectionObserver' in window) {
-            new IntersectionObserver((entries) => { visible = entries[0].isIntersecting; sync(); }, { threshold: 0.35 }).observe(run);
+            new IntersectionObserver((entries) => { onScreen = entries[0].isIntersecting; sync(); }, { threshold: 0.35 }).observe(run);
         } else {
-            visible = true;
+            onScreen = true;
         }
         onMotion(sync);
         show(reduceQuery.matches ? steps.length : 0);
@@ -819,26 +656,6 @@ void main(){
         update();
     }
 
-    /* A dot grid that brightens around the pointer. */
-    function ambientGrid() {
-        const grid = $('.ambient-grid');
-        if (!grid || !finePointer.matches) return;
-        let frame = 0;
-        let x = 0;
-        let y = 0;
-        window.addEventListener('pointermove', (event) => {
-            x = event.clientX;
-            y = event.clientY;
-            if (!frame) {
-                frame = requestAnimationFrame(() => {
-                    frame = 0;
-                    grid.style.setProperty('--gx', `${x}px`);
-                    grid.style.setProperty('--gy', `${y}px`);
-                });
-            }
-        }, { passive: true });
-    }
-
     /* Siblings that appear together arrive one after another. */
     function stagger() {
         ['.ventures', '.work-grid', '.writing-layout'].forEach((selector) => {
@@ -856,10 +673,10 @@ void main(){
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => entry.target.classList.toggle('is-offscreen', !entry.isIntersecting));
         }, { rootMargin: '120px 0px' });
-        $$('.hero-copy, .hero-visual, .ventures, .agent-run, .work-grid, .guide-tile, .contact').forEach((target) => observer.observe(target));
+        $$('.hero-copy, .hero-visual, .hero-foot, .ventures, .agent-run, .work-grid, .guide-tile, .contact').forEach((target) => observer.observe(target));
     }
 
-    /* Keep the command-menu motion item in step with the motion toggle. */
+    /* Keep the Ask panel's motion item in step with the motion toggle. */
     function motionCommand() {
         const item = $('[data-motion-command]');
         const toggle = $('.motion-toggle');
@@ -874,7 +691,7 @@ void main(){
         sync();
     }
 
-    [aurora, clock, commandMenu, copyEmail, navGlow, heroName, holoCard, beams, magnetic, agentRun, timeline, ambientGrid, stagger, offscreen, motionCommand].forEach((feature) => {
+    [clock, askPanel, copyEmail, navGlow, orbit, lensTilt, floatingAsk, magnetic, agentRun, timeline, stagger, offscreen, motionCommand].forEach((feature) => {
         try {
             feature();
         } catch (error) {

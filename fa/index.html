@@ -22,7 +22,7 @@
         <link rel="me" href="https://peerlist.io/ahmadrezasmdi" />
         <link rel="me" href="https://dev.to/ahmadreza_smdi" />
         <link rel="me" href="https://wellfound.com/u/ahmadreza-samadi" />
-        <link rel="preload" as="image" href="../assets/img/ahmadreza-samadi-portrait-900.webp" imagesrcset="../assets/img/ahmadreza-samadi-portrait-450.webp 450w, ../assets/img/ahmadreza-samadi-portrait-900.webp 900w" imagesizes="(max-width: 760px) 240px, 310px" fetchpriority="high" />
+        <link rel="preload" as="image" href="../assets/img/ahmadreza-samadi-portrait-900.webp" imagesrcset="../assets/img/ahmadreza-samadi-portrait-450.webp 450w, ../assets/img/ahmadreza-samadi-portrait-900.webp 900w" imagesizes="(max-width: 760px) 250px, 400px" fetchpriority="high" />
         <link rel="preload" as="font" type="font/woff2" href="../assets/fonts/vazirmatn-arabic-wght.woff2" crossorigin />
         <link rel="icon" type="image/svg+xml" href="../assets/brand/favicon.svg?v=20260914-personal-mark" />
         <link rel="icon" type="image/png" sizes="512x512" href="../assets/brand/favicon.png?v=20260914-personal-mark" />
@@ -36,12 +36,14 @@
         <meta property="og:url" content="https://a-samadi.com/fa/" />
         <meta property="og:site_name" content="Ahmadreza Samadi" />
         <meta property="og:locale" content="fa_IR" />
+        <meta property="og:locale:alternate" content="en_US" />
+        <meta property="og:locale:alternate" content="ar_AE" />
         <meta property="og:image" content="https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg" />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="تصویر احمدرضا صمدی" />
-        <meta property="og:updated_time" content="2026-10-08T21:52:38+03:30" />
+        <meta property="og:updated_time" content="2026-10-09T00:28:00+03:30" />
         <meta property="profile:first_name" content="Ahmadreza" />
         <meta property="profile:last_name" content="Samadi" />
         <meta property="profile:username" content="ahmadreza-samadi" />
@@ -50,10 +52,11 @@
         <meta name="twitter:description" content="بیوگرافی احمدرضا صمدی، کارآفرین فناوری ساکن دبی؛ هم‌بنیان‌گذار و راهبر فنی Appraiva و هم‌بنیان‌گذار و مدیرعامل گروه رویال ابراج. آشنایی با فعالیت‌ها و پروژه‌های او." />
         <meta name="twitter:image" content="https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg" />
         <meta name="twitter:image:alt" content="تصویر احمدرضا صمدی" />
-        <meta name="theme-color" content="#f6f6fd" />
+        <meta name="theme-color" content="#fbfbfd" />
 
         <script>
             document.documentElement.classList.add("has-js");
+            if (document.hidden) document.documentElement.classList.add("no-intro");
         </script>
 
         <script type="application/ld+json">{
@@ -64,7 +67,11 @@
       "@id": "https://a-samadi.com/#website",
       "url": "https://a-samadi.com/",
       "name": "Ahmadreza Samadi",
-      "inLanguage": "en",
+      "inLanguage": [
+        "en",
+        "fa",
+        "ar"
+      ],
       "publisher": {
         "@id": "https://a-samadi.com/#person"
       }
@@ -78,7 +85,7 @@
       "isPartOf": {
         "@id": "https://a-samadi.com/#website"
       },
-      "dateModified": "2026-10-08T21:52:38+03:30",
+      "dateModified": "2026-10-09T00:28:00+03:30",
       "primaryImageOfPage": {
         "@id": "https://a-samadi.com/#portrait"
       },
@@ -191,14 +198,13 @@
   ]
 }</script>
 
-    <link rel="stylesheet" href="../css/site.css?v=20261008-holo" />
-    <link rel="stylesheet" href="../css/rtl.css?v=20261008-holo" />
+    <link rel="stylesheet" href="../css/site.css?v=20261008-intel" />
+    <link rel="stylesheet" href="../css/rtl.css?v=20261008-intel" />
 </head>
     <body>
         <a class="skip-link" href="#main">رفتن به محتوا</a>
         <div class="scroll-progress" aria-hidden="true"><span></span></div>
-        <canvas class="aurora" width="16" height="9" aria-hidden="true"></canvas>
-        <div class="ambient-grid" aria-hidden="true"></div>
+        <div class="edge-glow" aria-hidden="true"></div>
 
         <header class="site-header" aria-label="ناوبری اصلی">
             <a class="brand" href="#top" aria-label="صفحه اصلی احمدرضا صمدی">
@@ -217,7 +223,6 @@
             </nav>
             <div class="header-tools">
                 <p class="clock"><span class="live-dot" aria-hidden="true"></span><span>دبی</span> <time class="clock-time" data-clock></time></p>
-                <button class="command-trigger" type="button" aria-haspopup="dialog" aria-keyshortcuts="Meta+K Control+K"><span class="command-label">جست‌وجو</span><kbd class="command-key" data-command-key aria-hidden="true"></kbd></button>
                 <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">منو</button>
             </div>
         </header>
@@ -226,7 +231,7 @@
             <section class="hero" id="top">
                 <div class="hero-copy">
                     <p class="status-chip intro-step"><span class="live-dot" aria-hidden="true"></span><span>کارآفرین فناوری · دبی، امارات</span></p>
-                    <h1 class="hero-name" data-split><span>احمدرضا</span> <span>صمدی</span></h1>
+                    <h1 class="hero-name"><span>احمدرضا</span> <span>صمدی</span></h1>
                     <p class="hero-statement intro-step">محصولات هوش مصنوعی می‌سازم و مسائل کسب‌وکار را به راهکارهای کاربردی فناوری تبدیل می‌کنم.</p>
                     <p class="hero-context intro-step">هم‌بنیان‌گذار و راهبر فنی Appraiva، شرکتی آمریکایی در کلیولند، اوهایو. به‌صورت دورکار در زمینه استراتژی محصول، داده، هوش مصنوعی و مهندسی فعالیت می‌کنم.</p>
                     <div class="hero-actions intro-step" role="group" aria-label="پیوندهای اصلی">
@@ -239,43 +244,38 @@
                             <span>پروژه‌های منتخب</span>
                         </a>
                     </div>
+                    <button class="ask ask-inline intro-step" type="button" data-ask aria-haspopup="dialog" aria-keyshortcuts="Meta+K Control+K">
+                        <span class="ask-orb" aria-hidden="true"><i></i><i></i><i></i></span>
+                        <span class="ask-label">درباره کارهایم بپرسید</span>
+                        <kbd class="ask-key" data-command-key aria-hidden="true"></kbd>
+                    </button>
                 </div>
 
                 <div class="hero-visual intro-visual" role="group" aria-label="تصویر چهره">
-                    <svg class="beams" aria-hidden="true" focusable="false">
+                    <svg class="orbit-path orbit-back" viewBox="0 0 600 200" preserveAspectRatio="none" aria-hidden="true" focusable="false">
                         <defs>
-                            <linearGradient id="beam-gradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="100%" y2="100%">
-                                <stop offset="0" stop-color="#7b61ff" />
-                                <stop offset="0.5" stop-color="#36aee0" />
-                                <stop offset="1" stop-color="#22b886" />
+                            <linearGradient id="orbit-gradient" x1="0" y1="0" x2="1" y2="0">
+                                <stop offset="0" stop-color="#0894ff" />
+                                <stop offset="0.35" stop-color="#6b5cff" />
+                                <stop offset="0.65" stop-color="#c959dd" />
+                                <stop offset="1" stop-color="#ff9004" />
                             </linearGradient>
                         </defs>
-                        <g class="beam-paths"></g>
+                        <ellipse cx="300" cy="100" rx="298" ry="98" />
                     </svg>
-                    <div class="holo-card" data-tilt>
-                        <div class="holo-inner">
-                            <span class="holo-foil" aria-hidden="true"></span>
-                            <div class="holo-top">
-                                <img class="holo-mark" src="../assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="1060" height="670" />
-                                <span>کارآفرین فناوری</span>
-                            </div>
-                            <figure class="holo-portrait">
-                                <img src="../assets/img/ahmadreza-samadi-hero.jpg" srcset="../assets/img/ahmadreza-samadi-portrait-450.webp 450w, ../assets/img/ahmadreza-samadi-portrait-900.webp 900w" sizes="(max-width: 760px) 240px, 310px" alt="تصویر احمدرضا صمدی" width="900" height="1200" fetchpriority="high" decoding="async" />
-                                <span class="holo-scan" aria-hidden="true"></span>
-                            </figure>
-                            <div class="holo-meta">
-                                <strong>احمدرضا صمدی</strong>
-                                <span>دبی، امارات متحده عربی</span>
-                            </div>
-                            <div class="holo-signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-                            <span class="holo-glare" aria-hidden="true"></span>
-                        </div>
+                    <div class="lens" data-lens>
+                        <span class="lens-glow" aria-hidden="true"></span>
+                        <span class="lens-ring" aria-hidden="true"></span>
+                        <figure class="lens-photo">
+                            <img src="../assets/img/ahmadreza-samadi-hero.jpg" srcset="../assets/img/ahmadreza-samadi-portrait-450.webp 450w, ../assets/img/ahmadreza-samadi-portrait-900.webp 900w" sizes="(max-width: 760px) 250px, 400px" alt="تصویر احمدرضا صمدی" width="900" height="1200" fetchpriority="high" decoding="async" />
+                        </figure>
                     </div>
-                    <ul class="orbit-nodes" aria-hidden="true">
-                        <li class="orbit-node node-one">معماری محصول</li>
-                        <li class="orbit-node node-two">فرایندهای هوش مصنوعی</li>
-                        <li class="orbit-node node-three">سیستم‌های داده</li>
-                        <li class="orbit-node node-four">زیرساخت ابری</li>
+                    <svg class="orbit-path orbit-front" viewBox="0 0 600 200" preserveAspectRatio="none" aria-hidden="true" focusable="false"><ellipse cx="300" cy="100" rx="298" ry="98" /></svg>
+                    <ul class="orbit" aria-hidden="true">
+                        <li><span>معماری محصول</span></li>
+                        <li><span>فرایندهای هوش مصنوعی</span></li>
+                        <li><span>سیستم‌های داده</span></li>
+                        <li><span>زیرساخت ابری</span></li>
                     </ul>
                 </div>
 
@@ -337,23 +337,28 @@
                         <div class="run-scan" aria-hidden="true">
                             <svg viewBox="0 0 320 168" focusable="false">
                                 <defs>
-                                    <pattern id="scan-grid" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#4b3fd0" stroke-opacity="0.08" /></pattern>
+                                    <pattern id="scan-grid" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#1d1d1f" stroke-opacity="0.05" /></pattern>
                                     <linearGradient id="scan-beam" x1="0" y1="0" x2="0" y2="1">
-                                        <stop offset="0" stop-color="#7fe6c6" stop-opacity="0" />
-                                        <stop offset="0.6" stop-color="#7fe6c6" stop-opacity="0.55" />
-                                        <stop offset="1" stop-color="#ffffff" stop-opacity="0.95" />
+                                        <stop offset="0" stop-color="#0894ff" stop-opacity="0" />
+                                        <stop offset="0.75" stop-color="#0894ff" stop-opacity="0.16" />
+                                        <stop offset="1" stop-color="#6b5cff" stop-opacity="0.75" />
+                                    </linearGradient>
+                                    <linearGradient id="scan-stroke" x1="0" y1="0" x2="1" y2="1">
+                                        <stop offset="0" stop-color="#0894ff" />
+                                        <stop offset="0.5" stop-color="#6b5cff" />
+                                        <stop offset="1" stop-color="#c959dd" />
                                     </linearGradient>
                                     <linearGradient id="roof-fill" x1="0" y1="0" x2="1" y2="1">
-                                        <stop offset="0" stop-color="#cdbeff" />
-                                        <stop offset="1" stop-color="#b5deff" />
+                                        <stop offset="0" stop-color="#0894ff" stop-opacity="0.16" />
+                                        <stop offset="1" stop-color="#c959dd" stop-opacity="0.12" />
                                     </linearGradient>
                                 </defs>
                                 <rect width="320" height="168" fill="url(#scan-grid)" />
                                 <g class="scene">
-                                    <circle cx="44" cy="118" r="18" fill="#a6eed8" opacity="0.7" />
-                                    <circle cx="282" cy="122" r="14" fill="#ffcdb9" opacity="0.75" />
-                                    <path d="M62 88 130 42l68 46" fill="url(#roof-fill)" opacity="0.55" />
-                                    <g fill="none" stroke="#1d1b42" stroke-opacity="0.55" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round">
+                                    <circle cx="44" cy="120" r="16" fill="#e8e8ed" />
+                                    <circle cx="282" cy="124" r="12" fill="#e8e8ed" />
+                                    <path d="M62 88 130 42l68 46" fill="url(#roof-fill)" />
+                                    <g fill="none" stroke="#1d1d1f" stroke-opacity="0.42" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round">
                                         <path d="M74 148V86l56-38 56 38v62" />
                                         <path d="M62 94 130 46l68 48" />
                                         <path d="M186 148v-42h72v42" />
@@ -388,27 +393,27 @@
                             <svg viewBox="0 0 320 120" focusable="false">
                                 <defs>
                                     <linearGradient id="flow-gradient" x1="0" y1="0" x2="1" y2="0">
-                                        <stop offset="0" stop-color="#ff9f86" />
-                                        <stop offset="0.5" stop-color="#f3c74f" />
-                                        <stop offset="1" stop-color="#e98bc4" />
+                                        <stop offset="0" stop-color="#0894ff" />
+                                        <stop offset="0.5" stop-color="#c959dd" />
+                                        <stop offset="1" stop-color="#ff9004" />
                                     </linearGradient>
                                 </defs>
-                                <path class="flow-track" d="M58 62C104 18 126 106 160 62S220 18 262 62" fill="none" stroke="#1d1b42" stroke-opacity="0.18" stroke-width="1.5" stroke-dasharray="3 6" />
-                                <path class="flow-pulse" d="M58 62C104 18 126 106 160 62S220 18 262 62" fill="none" stroke="url(#flow-gradient)" stroke-width="3.5" stroke-linecap="round" pathLength="100" />
+                                <path class="flow-track" d="M58 62C104 18 126 106 160 62S220 18 262 62" fill="none" stroke="#1d1d1f" stroke-opacity="0.14" stroke-width="1.4" stroke-dasharray="2 6" />
+                                <path class="flow-pulse" d="M58 62C104 18 126 106 160 62S220 18 262 62" fill="none" stroke="url(#flow-gradient)" stroke-width="3" stroke-linecap="round" pathLength="100" />
                                 <g class="flow-node">
-                                    <circle cx="58" cy="62" r="24" fill="#ffd9cb" />
-                                    <circle cx="58" cy="62" r="10" fill="none" stroke="#1d1b42" stroke-opacity="0.6" stroke-width="1.4" />
-                                    <path d="M48 62h20M58 52c-5 6-5 14 0 20m0-20c5 6 5 14 0 20" fill="none" stroke="#1d1b42" stroke-opacity="0.6" stroke-width="1.4" />
+                                    <circle cx="58" cy="62" r="24" fill="#fff" stroke="#1d1d1f" stroke-opacity="0.12" />
+                                    <circle cx="58" cy="62" r="10" fill="none" stroke="#1d1d1f" stroke-opacity="0.7" stroke-width="1.4" />
+                                    <path d="M48 62h20M58 52c-5 6-5 14 0 20m0-20c5 6 5 14 0 20" fill="none" stroke="#1d1d1f" stroke-opacity="0.7" stroke-width="1.4" />
                                 </g>
                                 <g class="flow-node">
-                                    <circle cx="160" cy="62" r="24" fill="#fff1b8" />
-                                    <circle cx="160" cy="57" r="5" fill="none" stroke="#1d1b42" stroke-opacity="0.6" stroke-width="1.4" />
-                                    <path d="M150 72c2-6 18-6 20 0" fill="none" stroke="#1d1b42" stroke-opacity="0.6" stroke-width="1.4" stroke-linecap="round" />
+                                    <circle cx="160" cy="62" r="24" fill="#fff" stroke="#1d1d1f" stroke-opacity="0.12" />
+                                    <circle cx="160" cy="57" r="5" fill="none" stroke="#1d1d1f" stroke-opacity="0.7" stroke-width="1.4" />
+                                    <path d="M150 72c2-6 18-6 20 0" fill="none" stroke="#1d1d1f" stroke-opacity="0.7" stroke-width="1.4" stroke-linecap="round" />
                                 </g>
                                 <g class="flow-node">
-                                    <circle cx="262" cy="62" r="24" fill="#ffd2ea" />
-                                    <path d="M254 50h12l4 4v18h-16z" fill="none" stroke="#1d1b42" stroke-opacity="0.6" stroke-width="1.4" stroke-linejoin="round" />
-                                    <path d="m257 63 3 3 6-6" fill="none" stroke="#1d1b42" stroke-opacity="0.6" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                                    <circle cx="262" cy="62" r="24" fill="#fff" stroke="#1d1d1f" stroke-opacity="0.12" />
+                                    <path d="M254 50h12l4 4v18h-16z" fill="none" stroke="#1d1d1f" stroke-opacity="0.7" stroke-width="1.4" stroke-linejoin="round" />
+                                    <path d="m257 63 3 3 6-6" fill="none" stroke="#1d1d1f" stroke-opacity="0.7" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
                                 </g>
                             </svg>
                         </div>
@@ -421,15 +426,21 @@
                     <article class="work-card work-lilac reveal">
                         <div class="work-visual" aria-hidden="true">
                             <svg viewBox="0 0 320 120" focusable="false">
-                                <g class="layer layer-gold"><path d="M160 20 236 42 160 64 84 42Z" fill="#fff1b8" stroke="#1d1b42" stroke-opacity="0.35" stroke-width="1.2" stroke-linejoin="round" /></g>
-                                <g class="layer layer-silver"><path d="M160 44 236 66 160 88 84 66Z" fill="#d9ccff" stroke="#1d1b42" stroke-opacity="0.35" stroke-width="1.2" stroke-linejoin="round" /></g>
-                                <g class="layer layer-bronze"><path d="M160 68 236 90 160 112 84 90Z" fill="#c4e6ff" stroke="#1d1b42" stroke-opacity="0.35" stroke-width="1.2" stroke-linejoin="round" /></g>
-                                <g class="data-dots" fill="#4b3fd0">
-                                    <circle cx="128" cy="92" r="2.6" />
-                                    <circle cx="160" cy="98" r="2.6" />
-                                    <circle cx="192" cy="92" r="2.6" />
+                                <defs>
+                                    <linearGradient id="layer-gradient" x1="0" y1="0" x2="1" y2="1">
+                                        <stop offset="0" stop-color="#0894ff" stop-opacity="0.14" />
+                                        <stop offset="1" stop-color="#c959dd" stop-opacity="0.14" />
+                                    </linearGradient>
+                                </defs>
+                                <g class="layer layer-gold"><path d="M160 20 236 42 160 64 84 42Z" fill="#fff" stroke="#1d1d1f" stroke-opacity="0.28" stroke-width="1.2" stroke-linejoin="round" /></g>
+                                <g class="layer layer-silver"><path d="M160 44 236 66 160 88 84 66Z" fill="url(#layer-gradient)" stroke="#1d1d1f" stroke-opacity="0.28" stroke-width="1.2" stroke-linejoin="round" /></g>
+                                <g class="layer layer-bronze"><path d="M160 68 236 90 160 112 84 90Z" fill="#f5f5f7" stroke="#1d1d1f" stroke-opacity="0.28" stroke-width="1.2" stroke-linejoin="round" /></g>
+                                <g class="data-dots">
+                                    <circle cx="128" cy="92" r="2.6" fill="#0894ff" />
+                                    <circle cx="160" cy="98" r="2.6" fill="#c959dd" />
+                                    <circle cx="192" cy="92" r="2.6" fill="#ff9004" />
                                 </g>
-                                <g fill="none" stroke="#1d1b42" stroke-opacity="0.25" stroke-width="1.2" stroke-dasharray="2 5">
+                                <g fill="none" stroke="#1d1d1f" stroke-opacity="0.2" stroke-width="1.2" stroke-dasharray="2 5">
                                     <path d="M40 66h34M246 66h34" />
                                 </g>
                             </svg>
@@ -595,7 +606,14 @@
             <a href="#top">بازگشت به بالا ↑</a>
         </footer>
 
-        <dialog class="command" aria-label="منوی فرمان">
+        <button class="ask ask-floating" type="button" data-ask aria-haspopup="dialog" aria-keyshortcuts="Meta+K Control+K">
+            <span class="ask-orb" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="ask-label">درباره کارهایم بپرسید</span>
+            <kbd class="ask-key" data-command-key aria-hidden="true"></kbd>
+        </button>
+
+        <dialog class="command" aria-label="درباره کارهایم بپرسید">
+            <span class="command-glow" aria-hidden="true"></span>
             <div class="command-panel">
                 <div class="command-search">
                     <i class="inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></i>
@@ -636,7 +654,7 @@
 
         <div class="i18n" hidden>
             <span data-i18n="copied">نشانی ایمیل کپی شد</span>
-            <span data-i18n="search">فرمانی بنویسید یا جست‌وجو کنید</span>
+            <span data-i18n="search">درباره کارهایم بپرسید یا به بخشی بروید</span>
         </div>
         <script>
             (() => {
@@ -719,6 +737,6 @@
                 revealItems.forEach((item) => observer.observe(item));
             })();
         </script>
-        <script src="../js/future.js?v=20261008-holo2" defer></script>
+        <script src="../js/future.js?v=20261008-intel" defer></script>
     </body>
 </html>

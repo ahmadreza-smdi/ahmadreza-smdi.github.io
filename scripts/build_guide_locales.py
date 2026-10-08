@@ -1,7 +1,12 @@
 """Generate complete RTL guide pages and behavior from the English originals."""
 import json
 import re
+import sys
 from pathlib import Path
+
+sys.dont_write_bytecode = True
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from enrich_metadata import enrich  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 html = (ROOT / 'tools/before-you-build-ai.html').read_text()
@@ -41,13 +46,17 @@ for lang in ('fa', 'ar'):
     page = page.replace('"item": "https://a-samadi.com/"', f'"item": "https://a-samadi.com/{lang}/"')
     for i, tag in enumerate(alternates):
         page = page.replace(f'__ALTERNATE_{i}__', tag)
-    page = page.replace('</head>', '<link rel="stylesheet" href="../../css/rtl.css?v=20261008-holo"><link rel="stylesheet" href="../../css/decision-guide-rtl.css?v=1"></head>')
+    page = page.replace('</head>', '<link rel="stylesheet" href="../../css/rtl.css?v=20261008-intel"><link rel="stylesheet" href="../../css/decision-guide-rtl.css?v=1"></head>')
     english_label = {'fa': 'مطالعه راهنما به انگلیسی ←', 'ar': 'اقرأ الدليل بالإنجليزية ←'}[lang]
     english_link = f'<p class="byline"><a href="/tools/before-you-build-ai.html" hreflang="en" data-locale-primary="en">{english_label}</a></p>'
     assert page.count('</section>\n<noscript>') == 1, f'{lang}: missing guide intro insertion point'
     page = page.replace('</section>\n<noscript>', '</section>\n' + english_link + '\n<noscript>', 1)
     js = js.replace('decision-brief-ahmadreza-samadi.txt', f'decision-brief-ahmadreza-samadi-{lang}.txt')
     destination = ROOT / lang / 'tools/before-you-build-ai.html'
+    # Social metadata copied from the English page is rebuilt in this page's language.
+    for key in ('og:site_name', 'og:locale:alternate', 'og:locale', 'og:image:alt', 'twitter:title', 'twitter:description', 'twitter:image:alt'):
+        page = re.sub(r'<meta\s+(?:property|name)="' + re.escape(key) + r'"\s+content="[^"]*"\s*/?>\n?', '', page)
+    page, _ = enrich(destination, page)
     destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_text(page)
     (ROOT / f'js/decision-guide-{lang}.js').write_text(js)

@@ -1,10 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://a-samadi.com/</loc>
-        <lastmod>2026-10-08</lastmod>
+        <lastmod>2026-10-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/" />
         <image:image>
             <image:loc>https://a-samadi.com/assets/img/ahmadreza-samadi-hero.jpg</image:loc>
             <image:title>Ahmadreza Samadi</image:title>
@@ -18,6 +22,10 @@
     <url>
         <loc>https://a-samadi.com/about.html</loc>
         <lastmod>2026-10-01</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/about.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/about.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/about.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/about.html" />
         <image:image>
             <image:loc>https://a-samadi.com/assets/img/ahmadreza-samadi-hero.jpg</image:loc>
         </image:image>
@@ -25,248 +33,585 @@
     <url>
         <loc>https://a-samadi.com/fa/about.html</loc>
         <lastmod>2026-10-03</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/about.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/about.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/about.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/about.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/ar/about.html</loc>
         <lastmod>2026-10-03</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/about.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/about.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/about.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/about.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/work/appraiva.html</loc>
         <lastmod>2026-10-01</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/work/appraiva.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/work/appraiva.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/work/appraiva.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/work/appraiva.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/fa/work/appraiva.html</loc>
         <lastmod>2026-09-29</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/work/appraiva.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/work/appraiva.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/work/appraiva.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/work/appraiva.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/ar/work/appraiva.html</loc>
         <lastmod>2026-09-29</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/work/appraiva.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/work/appraiva.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/work/appraiva.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/work/appraiva.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/work/oxfam-novib.html</loc>
         <lastmod>2026-10-01</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/work/oxfam-novib.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/work/oxfam-novib.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/work/oxfam-novib.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/work/oxfam-novib.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/writing/start-with-the-decision.html</loc>
         <lastmod>2026-10-01</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/start-with-the-decision.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/start-with-the-decision.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/start-with-the-decision.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/start-with-the-decision.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/writing/ai-cost-per-verified-result.html</loc>
         <lastmod>2026-09-25</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-cost-per-verified-result.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-cost-per-verified-result.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-cost-per-verified-result.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-cost-per-verified-result.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/ai-cost-per-verified-result.html</loc>
         <lastmod>2026-09-29</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-cost-per-verified-result.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-cost-per-verified-result.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-cost-per-verified-result.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-cost-per-verified-result.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/ai-cost-per-verified-result.html</loc>
         <lastmod>2026-09-29</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-cost-per-verified-result.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-cost-per-verified-result.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-cost-per-verified-result.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-cost-per-verified-result.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/fa/</loc>
-        <lastmod>2026-10-08</lastmod>
+        <lastmod>2026-10-09</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/" />
     </url>
     <url>
         <loc>https://a-samadi.com/ar/</loc>
-        <lastmod>2026-10-08</lastmod>
+        <lastmod>2026-10-09</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/" />
     </url>
     <url>
         <loc>https://a-samadi.com/work/royal-abraj.html</loc>
         <lastmod>2026-10-02</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/work/royal-abraj.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/work/royal-abraj.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/work/royal-abraj.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/work/royal-abraj.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/fa/work/royal-abraj.html</loc>
         <lastmod>2026-10-02</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/work/royal-abraj.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/work/royal-abraj.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/work/royal-abraj.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/work/royal-abraj.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/ar/work/royal-abraj.html</loc>
         <lastmod>2026-10-02</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/work/royal-abraj.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/work/royal-abraj.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/work/royal-abraj.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/work/royal-abraj.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/tools/before-you-build-ai.html</loc>
         <lastmod>2026-09-28</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/tools/before-you-build-ai.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/tools/before-you-build-ai.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/tools/before-you-build-ai.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/tools/before-you-build-ai.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/writing/</loc>
         <lastmod>2026-10-08</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/" />
     </url>
     <url>
         <loc>https://a-samadi.com/writing/connected-ai-apps.html</loc>
         <lastmod>2026-09-25</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/connected-ai-apps.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/connected-ai-apps.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/connected-ai-apps.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/connected-ai-apps.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/writing/jev-ai-decision-model.html</loc>
         <lastmod>2026-09-25</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/jev-ai-decision-model.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/jev-ai-decision-model.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/jev-ai-decision-model.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/jev-ai-decision-model.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/</loc>
         <lastmod>2026-10-08</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/" />
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/connected-ai-apps.html</loc>
         <lastmod>2026-09-29</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/connected-ai-apps.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/connected-ai-apps.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/connected-ai-apps.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/connected-ai-apps.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/jev-ai-decision-model.html</loc>
         <lastmod>2026-09-29</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/jev-ai-decision-model.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/jev-ai-decision-model.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/jev-ai-decision-model.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/jev-ai-decision-model.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/</loc>
         <lastmod>2026-10-08</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/" />
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/connected-ai-apps.html</loc>
         <lastmod>2026-09-29</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/connected-ai-apps.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/connected-ai-apps.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/connected-ai-apps.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/connected-ai-apps.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/jev-ai-decision-model.html</loc>
         <lastmod>2026-09-29</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/jev-ai-decision-model.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/jev-ai-decision-model.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/jev-ai-decision-model.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/jev-ai-decision-model.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/start-with-the-decision.html</loc>
         <lastmod>2026-09-28</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/start-with-the-decision.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/start-with-the-decision.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/start-with-the-decision.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/start-with-the-decision.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/start-with-the-decision.html</loc>
         <lastmod>2026-09-28</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/start-with-the-decision.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/start-with-the-decision.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/start-with-the-decision.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/start-with-the-decision.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/writing/passkeys-face-id.html</loc>
         <lastmod>2026-09-29</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/passkeys-face-id.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/passkeys-face-id.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/passkeys-face-id.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/passkeys-face-id.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/passkeys-face-id.html</loc>
         <lastmod>2026-09-29</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/passkeys-face-id.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/passkeys-face-id.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/passkeys-face-id.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/passkeys-face-id.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/passkeys-face-id.html</loc>
         <lastmod>2026-09-29</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/passkeys-face-id.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/passkeys-face-id.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/passkeys-face-id.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/passkeys-face-id.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/writing/how-zip-files-work.html</loc>
         <lastmod>2026-09-29</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/how-zip-files-work.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/how-zip-files-work.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/how-zip-files-work.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/how-zip-files-work.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/how-zip-files-work.html</loc>
         <lastmod>2026-09-29</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/how-zip-files-work.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/how-zip-files-work.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/how-zip-files-work.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/how-zip-files-work.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/how-zip-files-work.html</loc>
         <lastmod>2026-09-29</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/how-zip-files-work.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/how-zip-files-work.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/how-zip-files-work.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/how-zip-files-work.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/fa/work/oxfam-novib.html</loc>
         <lastmod>2026-09-29</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/work/oxfam-novib.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/work/oxfam-novib.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/work/oxfam-novib.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/work/oxfam-novib.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/ar/work/oxfam-novib.html</loc>
         <lastmod>2026-09-29</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/work/oxfam-novib.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/work/oxfam-novib.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/work/oxfam-novib.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/work/oxfam-novib.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/fa/tools/before-you-build-ai.html</loc>
         <lastmod>2026-09-29</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/tools/before-you-build-ai.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/tools/before-you-build-ai.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/tools/before-you-build-ai.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/tools/before-you-build-ai.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/ar/tools/before-you-build-ai.html</loc>
         <lastmod>2026-09-29</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/tools/before-you-build-ai.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/tools/before-you-build-ai.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/tools/before-you-build-ai.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/tools/before-you-build-ai.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/writing/ai-agent-safety-boundaries.html</loc>
         <lastmod>2026-09-29</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-agent-safety-boundaries.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-agent-safety-boundaries.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-agent-safety-boundaries.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-agent-safety-boundaries.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/ai-agent-safety-boundaries.html</loc>
         <lastmod>2026-09-29</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-agent-safety-boundaries.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-agent-safety-boundaries.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-agent-safety-boundaries.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-agent-safety-boundaries.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/ai-agent-safety-boundaries.html</loc>
         <lastmod>2026-09-29</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-agent-safety-boundaries.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-agent-safety-boundaries.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-agent-safety-boundaries.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-agent-safety-boundaries.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/writing/ai-human-review-real-estate.html</loc>
         <lastmod>2026-10-03</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-human-review-real-estate.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-human-review-real-estate.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-human-review-real-estate.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-human-review-real-estate.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/ai-human-review-real-estate.html</loc>
         <lastmod>2026-10-03</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-human-review-real-estate.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-human-review-real-estate.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-human-review-real-estate.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-human-review-real-estate.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/ai-human-review-real-estate.html</loc>
         <lastmod>2026-10-03</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-human-review-real-estate.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-human-review-real-estate.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-human-review-real-estate.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-human-review-real-estate.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/writing/verify-ai-image-claims.html</loc>
         <lastmod>2026-10-03</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/verify-ai-image-claims.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/verify-ai-image-claims.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/verify-ai-image-claims.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/verify-ai-image-claims.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/verify-ai-image-claims.html</loc>
         <lastmod>2026-10-03</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/verify-ai-image-claims.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/verify-ai-image-claims.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/verify-ai-image-claims.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/verify-ai-image-claims.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/verify-ai-image-claims.html</loc>
         <lastmod>2026-10-03</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/verify-ai-image-claims.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/verify-ai-image-claims.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/verify-ai-image-claims.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/verify-ai-image-claims.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/writing/foldable-two-batteries.html</loc>
         <lastmod>2026-10-03</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/foldable-two-batteries.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/foldable-two-batteries.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/foldable-two-batteries.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/foldable-two-batteries.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/foldable-two-batteries.html</loc>
         <lastmod>2026-10-03</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/foldable-two-batteries.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/foldable-two-batteries.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/foldable-two-batteries.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/foldable-two-batteries.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/foldable-two-batteries.html</loc>
         <lastmod>2026-10-03</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/foldable-two-batteries.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/foldable-two-batteries.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/foldable-two-batteries.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/foldable-two-batteries.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/writing/ai-home-value-estimates.html</loc>
         <lastmod>2026-10-03</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-home-value-estimates.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-home-value-estimates.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-home-value-estimates.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-home-value-estimates.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/ai-home-value-estimates.html</loc>
         <lastmod>2026-10-03</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-home-value-estimates.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-home-value-estimates.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-home-value-estimates.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-home-value-estimates.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/ai-home-value-estimates.html</loc>
         <lastmod>2026-10-03</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-home-value-estimates.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-home-value-estimates.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-home-value-estimates.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-home-value-estimates.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/writing/humanoid-robots-at-home.html</loc>
         <lastmod>2026-10-03</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/humanoid-robots-at-home.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/humanoid-robots-at-home.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/humanoid-robots-at-home.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/humanoid-robots-at-home.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/humanoid-robots-at-home.html</loc>
         <lastmod>2026-10-03</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/humanoid-robots-at-home.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/humanoid-robots-at-home.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/humanoid-robots-at-home.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/humanoid-robots-at-home.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/humanoid-robots-at-home.html</loc>
         <lastmod>2026-10-03</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/humanoid-robots-at-home.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/humanoid-robots-at-home.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/humanoid-robots-at-home.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/humanoid-robots-at-home.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/writing/how-satellite-messaging-works.html</loc>
         <lastmod>2026-10-04</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/how-satellite-messaging-works.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/how-satellite-messaging-works.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/how-satellite-messaging-works.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/how-satellite-messaging-works.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/how-satellite-messaging-works.html</loc>
         <lastmod>2026-10-04</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/how-satellite-messaging-works.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/how-satellite-messaging-works.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/how-satellite-messaging-works.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/how-satellite-messaging-works.html" />
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/how-satellite-messaging-works.html</loc>
         <lastmod>2026-10-04</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/how-satellite-messaging-works.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/how-satellite-messaging-works.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/how-satellite-messaging-works.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/how-satellite-messaging-works.html" />
     </url>
-<url><loc>https://a-samadi.com/writing/incognito-private-browsing.html</loc><lastmod>2026-10-05</lastmod></url>
-<url><loc>https://a-samadi.com/fa/writing/incognito-private-browsing.html</loc><lastmod>2026-10-05</lastmod></url>
-<url><loc>https://a-samadi.com/ar/writing/incognito-private-browsing.html</loc><lastmod>2026-10-05</lastmod></url>
-<url><loc>https://a-samadi.com/writing/why-ai-sounds-confident.html</loc><lastmod>2026-10-05</lastmod></url>
-<url><loc>https://a-samadi.com/fa/writing/why-ai-sounds-confident.html</loc><lastmod>2026-10-05</lastmod></url>
-<url><loc>https://a-samadi.com/ar/writing/why-ai-sounds-confident.html</loc><lastmod>2026-10-05</lastmod></url>
-<url><loc>https://a-samadi.com/writing/what-accept-cookies-means.html</loc><lastmod>2026-10-05</lastmod></url>
-<url><loc>https://a-samadi.com/fa/writing/what-accept-cookies-means.html</loc><lastmod>2026-10-05</lastmod></url>
-<url><loc>https://a-samadi.com/ar/writing/what-accept-cookies-means.html</loc><lastmod>2026-10-05</lastmod></url>
-<url><loc>https://a-samadi.com/writing/why-phone-stops-charging-at-80.html</loc><lastmod>2026-10-05</lastmod></url>
-<url><loc>https://a-samadi.com/fa/writing/why-phone-stops-charging-at-80.html</loc><lastmod>2026-10-05</lastmod></url>
-<url><loc>https://a-samadi.com/ar/writing/why-phone-stops-charging-at-80.html</loc><lastmod>2026-10-05</lastmod></url>
-<url><loc>https://a-samadi.com/writing/profitable-but-out-of-cash.html</loc><lastmod>2026-10-08</lastmod></url>
-<url><loc>https://a-samadi.com/fa/writing/profitable-but-out-of-cash.html</loc><lastmod>2026-10-08</lastmod></url>
-<url><loc>https://a-samadi.com/ar/writing/profitable-but-out-of-cash.html</loc><lastmod>2026-10-08</lastmod></url>
+    <url>
+        <loc>https://a-samadi.com/writing/incognito-private-browsing.html</loc>
+        <lastmod>2026-10-05</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/incognito-private-browsing.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/incognito-private-browsing.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/incognito-private-browsing.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/incognito-private-browsing.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/incognito-private-browsing.html</loc>
+        <lastmod>2026-10-05</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/incognito-private-browsing.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/incognito-private-browsing.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/incognito-private-browsing.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/incognito-private-browsing.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/incognito-private-browsing.html</loc>
+        <lastmod>2026-10-05</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/incognito-private-browsing.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/incognito-private-browsing.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/incognito-private-browsing.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/incognito-private-browsing.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/why-ai-sounds-confident.html</loc>
+        <lastmod>2026-10-05</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-ai-sounds-confident.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-ai-sounds-confident.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-ai-sounds-confident.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-ai-sounds-confident.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/why-ai-sounds-confident.html</loc>
+        <lastmod>2026-10-05</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-ai-sounds-confident.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-ai-sounds-confident.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-ai-sounds-confident.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-ai-sounds-confident.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/why-ai-sounds-confident.html</loc>
+        <lastmod>2026-10-05</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-ai-sounds-confident.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-ai-sounds-confident.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-ai-sounds-confident.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-ai-sounds-confident.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/what-accept-cookies-means.html</loc>
+        <lastmod>2026-10-05</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/what-accept-cookies-means.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/what-accept-cookies-means.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/what-accept-cookies-means.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/what-accept-cookies-means.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/what-accept-cookies-means.html</loc>
+        <lastmod>2026-10-05</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/what-accept-cookies-means.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/what-accept-cookies-means.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/what-accept-cookies-means.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/what-accept-cookies-means.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/what-accept-cookies-means.html</loc>
+        <lastmod>2026-10-05</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/what-accept-cookies-means.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/what-accept-cookies-means.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/what-accept-cookies-means.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/what-accept-cookies-means.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/why-phone-stops-charging-at-80.html</loc>
+        <lastmod>2026-10-05</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-phone-stops-charging-at-80.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-phone-stops-charging-at-80.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-phone-stops-charging-at-80.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-phone-stops-charging-at-80.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/why-phone-stops-charging-at-80.html</loc>
+        <lastmod>2026-10-05</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-phone-stops-charging-at-80.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-phone-stops-charging-at-80.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-phone-stops-charging-at-80.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-phone-stops-charging-at-80.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/why-phone-stops-charging-at-80.html</loc>
+        <lastmod>2026-10-05</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-phone-stops-charging-at-80.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-phone-stops-charging-at-80.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-phone-stops-charging-at-80.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-phone-stops-charging-at-80.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/profitable-but-out-of-cash.html</loc>
+        <lastmod>2026-10-08</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/profitable-but-out-of-cash.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/profitable-but-out-of-cash.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/profitable-but-out-of-cash.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/profitable-but-out-of-cash.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/profitable-but-out-of-cash.html</loc>
+        <lastmod>2026-10-08</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/profitable-but-out-of-cash.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/profitable-but-out-of-cash.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/profitable-but-out-of-cash.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/profitable-but-out-of-cash.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/profitable-but-out-of-cash.html</loc>
+        <lastmod>2026-10-08</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/profitable-but-out-of-cash.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/profitable-but-out-of-cash.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/profitable-but-out-of-cash.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/profitable-but-out-of-cash.html" />
+    </url>
 </urlset>
