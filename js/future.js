@@ -301,8 +301,10 @@
             const item = event.target.closest('.command-item');
             if (!item || item.hasAttribute('data-copy-email')) return;
             if (item.hasAttribute('data-answer-go')) {
-                const target = current && current.entry.element;
+                let target = current && current.entry.element;
                 if (!target) return;
+                // On one-column layouts the hero copy has no box of its own; take the reader to its section.
+                if (getComputedStyle(target).display === 'contents') target = target.closest('section') || target.firstElementChild;
                 glow(1900);
                 reveal(target, 'center');
                 target.classList.remove('is-found');
@@ -533,34 +535,31 @@
         });
     }
 
-    /* Once the Ask bar in the hero scrolls away, a compact one waits at the bottom of the screen.
-       On touch screens it steps aside while you scroll down and returns when you scroll up. */
+    /* Once the Ask bar in the hero has scrolled away, Ask waits in the corner. On touch screens it
+       steps aside while you scroll down and returns when you scroll up. Measured on scroll, so jumps
+       to a section (which skip past the hero) are handled too. */
     function floatingAsk() {
         const inline = $('.ask-inline');
         const floating = $('.ask-floating');
-        if (!inline || !floating || floating.hidden || !('IntersectionObserver' in window)) return;
-        let past = false;
+        if (!inline || !floating || floating.hidden) return;
+        const touch = !finePointer.matches;
         let tucked = false;
-        const sync = () => floating.classList.toggle('is-visible', past && !tucked);
-        new IntersectionObserver((entries) => {
-            const entry = entries[0];
-            past = !entry.isIntersecting && entry.boundingClientRect.top < 0;
-            sync();
-        }).observe(inline);
-        if (finePointer.matches) return;
         let lastY = window.scrollY;
         let frame = 0;
-        window.addEventListener('scroll', () => {
-            if (frame) return;
-            frame = requestAnimationFrame(() => {
-                frame = 0;
-                const y = window.scrollY;
-                if (Math.abs(y - lastY) < 10) return;
+        const update = () => {
+            frame = 0;
+            const y = window.scrollY;
+            if (touch && Math.abs(y - lastY) >= 10) {
                 tucked = y > lastY && y > 0;
                 lastY = y;
-                sync();
-            });
-        }, { passive: true });
+            }
+            const past = inline.getBoundingClientRect().bottom < 0;
+            floating.classList.toggle('is-visible', past && !tucked);
+        };
+        const schedule = () => { if (!frame) frame = requestAnimationFrame(update); };
+        window.addEventListener('scroll', schedule, { passive: true });
+        window.addEventListener('resize', schedule, { passive: true });
+        update();
     }
 
     /* Buttons lean toward the pointer. */
@@ -673,7 +672,7 @@
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => entry.target.classList.toggle('is-offscreen', !entry.isIntersecting));
         }, { rootMargin: '120px 0px' });
-        $$('.hero-copy, .hero-visual, .hero-foot, .ventures, .agent-run, .work-grid, .guide-tile, .contact').forEach((target) => observer.observe(target));
+        $$('.hero, .hero-visual, .ventures, .agent-run, .work-grid, .guide-tile, .contact').forEach((target) => observer.observe(target));
     }
 
     /* Keep the Ask panel's motion item in step with the motion toggle. */

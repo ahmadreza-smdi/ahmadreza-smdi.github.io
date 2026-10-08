@@ -694,7 +694,7 @@
 
                 const markLoaded = () => root.classList.add('is-loaded');
                 if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => requestAnimationFrame(markLoaded));
-                setTimeout(markLoaded, 1200);
+                setTimeout(markLoaded, 700);
 
                 const progress = document.querySelector('.scroll-progress span');
                 const navLinks = Array.from(menu.querySelectorAll('a')).filter((link) => link.getAttribute('href').startsWith('#'));

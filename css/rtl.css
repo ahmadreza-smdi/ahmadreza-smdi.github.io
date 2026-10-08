@@ -8,4 +8,4 @@ html[dir="rtl"] .editorial h1{font-weight:800;line-height:1.45}
 html[dir="rtl"] .editorial :is(h2,h3){font-weight:750;line-height:1.6}
 html[dir="rtl"] .editorial :is(p,li){line-height:2.05}
 html[dir="rtl"] .editorial-header a[lang="en"],html[dir="rtl"] [data-locale-primary="en"]{font-family:var(--sans)}
-html[dir="rtl"] .contact-email,html[dir="rtl"] .localized-name{font-family:var(--mono)}
+html[dir="rtl"] .contact-email{font-family:var(--mono)}

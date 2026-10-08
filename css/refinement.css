@@ -65,10 +65,16 @@ main{overflow-x:hidden;overflow-x:clip}
 .ask-key{flex:0 0 auto;padding:5px 9px;border-radius:9px;background:var(--tile);color:var(--muted);font:500 .75rem/1 var(--sans);letter-spacing:.02em}
 .ask-key:empty{display:none}
 .ask-key,.command kbd{direction:ltr;unicode-bidi:isolate}
-.ask-floating{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:110;width:auto;max-width:calc(100% - 32px);min-height:52px;padding-inline:8px 10px;visibility:hidden;opacity:0;pointer-events:none;transform:translate(-50%,170%);box-shadow:0 22px 50px -20px rgba(0,0,0,.45),0 0 0 1px rgba(0,0,0,.02);transition:transform .6s var(--ease-spring),opacity .4s var(--ease),box-shadow .35s var(--ease),visibility 0s .6s}
-.ask-floating .ask-label{flex:0 1 auto;padding-inline-end:4px}
-.ask-floating::after{opacity:.3}
-.ask-floating.is-visible{visibility:visible;opacity:1;pointer-events:auto;transform:translate(-50%,0);transition:transform .6s var(--ease-spring),opacity .4s var(--ease),box-shadow .35s var(--ease),visibility 0s}
+/* After the hero, Ask waits in the corner as a living orb that opens into its label on hover or focus */
+.ask-floating{position:fixed;left:auto;right:auto;inset-inline-end:max(20px,env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:110;gap:0;width:auto;max-width:calc(100% - 40px);min-height:56px;padding:7px;visibility:hidden;opacity:0;pointer-events:none;transform:translateY(18px) scale(.86);box-shadow:0 18px 44px -18px rgba(0,0,0,.45),0 0 0 1px rgba(0,0,0,.02);transition:transform .6s var(--ease-spring),opacity .4s var(--ease),box-shadow .35s var(--ease),visibility 0s .6s}
+.ask-floating .ask-orb{width:42px;height:42px}
+.ask-floating .ask-label{flex:0 1 auto;max-width:0;opacity:0;transition:max-width .55s var(--ease),opacity .3s var(--ease),padding .55s var(--ease)}
+.ask-floating .ask-key{display:none}
+.ask-floating:is(:hover,:focus-visible) .ask-label{max-width:15em;opacity:1;padding-inline:12px 6px}
+.ask-floating:is(:hover,:focus-visible) .ask-key:not(:empty){display:inline-block;margin-inline-end:3px}
+.ask-floating::after{inset:2px;border-radius:50%;filter:blur(14px);opacity:.35}
+.ask-floating.is-visible{visibility:visible;opacity:1;pointer-events:auto;transform:none;transition:transform .6s var(--ease-spring),opacity .4s var(--ease),box-shadow .35s var(--ease),visibility 0s}
+.ask-floating.is-visible::after{animation:breathe 4.5s ease-in-out infinite}
 html:not(.has-js) .ask{display:none}
 
 /* The lens: the portrait inside a living ring, with what I work on in orbit around it */
@@ -164,13 +170,14 @@ html:not(.has-js) .ask{display:none}
 /* Royal Abraj and Oxfam Novib */
 .work-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:16px}
 .work-card{position:relative;min-width:0;display:flex;flex-direction:column;padding:clamp(22px,3vw,30px);border-radius:28px;background:#fff;box-shadow:0 0 0 1px var(--line),0 1px 2px rgba(0,0,0,.03)}
-.work-visual{margin:0 0 24px;padding:8px 0;border-radius:18px;background:var(--tile)}
+.work-visual{position:relative;isolation:isolate;overflow:hidden;margin:0 0 24px;padding:8px 0;border-radius:18px;background:radial-gradient(circle at 1px 1px,rgba(29,29,31,.09) 1px,transparent 1.5px) 0 0/14px 14px,linear-gradient(180deg,#fbfbfd,#f1f1f5);box-shadow:inset 0 0 0 1px rgba(0,0,0,.05)}
+.work-visual::before{content:"";position:absolute;z-index:-1;left:-10%;right:-10%;bottom:-55%;height:85%;background:radial-gradient(closest-side,rgba(107,92,255,.14),rgba(8,148,255,.05) 55%,transparent);pointer-events:none}
 .work-visual svg{display:block;width:100%;height:auto}
 .work-card h3{margin:0 0 10px;font-size:clamp(1.3rem,1.9vw,1.55rem);font-weight:700;line-height:1.15;letter-spacing:-.026em}
 .work-card p{margin:0;color:var(--ink-soft);font-size:1.0625rem;line-height:1.5}
 .work-card .tag-list{margin-bottom:22px}
 .work-card .story-link{margin-top:auto}
-.flow-pulse{stroke-dasharray:16 84;stroke-dashoffset:16;animation:flow-dash 3.4s var(--ease) infinite}
+.flow-pulse{stroke-dasharray:26 74;stroke-dashoffset:26;animation:flow-dash 3.4s var(--ease) infinite}
 .flow-node{transform-box:fill-box;transform-origin:center;animation:node-pop 3.4s var(--ease) infinite}
 .flow-node:nth-of-type(2){animation-delay:1.1s}
 .flow-node:nth-of-type(3){animation-delay:2.2s}
@@ -267,7 +274,7 @@ html:not(.has-js) .ask{display:none}
 .contact-resources a{color:var(--blue)}
 
 /* Footer */
-.site-footer{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 24px;width:min(100% - 64px,var(--max));margin:clamp(56px,7vw,96px) auto 0;padding:24px 0 120px;border-top:1px solid var(--line);color:var(--muted);font-size:.875rem}
+.site-footer{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 24px;width:min(100% - 64px,var(--max));margin:clamp(56px,7vw,96px) auto 0;padding:24px 0 104px;border-top:1px solid var(--line);color:var(--muted);font-size:.875rem}
 .site-footer>span:first-child{color:var(--ink);font-weight:600}
 .site-footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--ink)}
 
@@ -325,17 +332,15 @@ html:not(.has-js) .ask{display:none}
 
 /* ---------- Motion ---------- */
 @media(prefers-reduced-motion:no-preference){
-  html.has-js:not(.no-intro) .site-header{animation:dock-in 1s var(--ease) .05s both}
-  .intro-step{transition:opacity .9s var(--ease) var(--d,0s),transform 1s var(--ease) var(--d,0s),box-shadow .35s var(--ease),color .35s}
-  .status-chip{--d:.05s}.hero-statement{--d:.5s}.hero-context{--d:.6s}.hero-actions{--d:.7s}.ask-inline{--d:.84s}.hero-foot{--d:1s}
-  .has-js:not(.is-loaded):not(.no-intro) .intro-step{opacity:0;transform:translate3d(0,18px,0)}
-  .intro-visual{transition:opacity 1.3s var(--ease) .2s,transform 1.6s var(--ease) .2s}
-  .has-js:not(.is-loaded):not(.no-intro) .intro-visual{opacity:0;transform:scale(.92)}
-  .hero-name>span{transition:opacity 1s var(--ease),transform 1.1s var(--ease),filter 1s var(--ease)}
-  .hero-name>span:nth-child(2){transition-delay:.12s}
-  .has-js:not(.is-loaded):not(.no-intro) .hero-name>span{opacity:0;filter:blur(14px);transform:translate3d(0,.22em,0)}
-  .is-loaded:not(.no-intro) .hero-name>span{animation:name-sweep 2.4s var(--ease) .5s both}
-  .is-loaded:not(.no-intro) .hero-name>span:nth-child(2){animation-delay:.66s}
+  html.has-js:not(.no-intro) .site-header{animation:dock-in .9s var(--ease) both}
+  /* The words are there from the first frame: light passes through the name once, the lens opens and Ask arrives */
+  :is(.ask-inline,.hero-foot){transition:opacity .7s var(--ease) var(--d,0s),transform .9s var(--ease) var(--d,0s),box-shadow .35s var(--ease),color .35s}
+  .ask-inline{--d:.35s}.hero-foot{--d:.55s}
+  .has-js:not(.is-loaded):not(.no-intro) :is(.ask-inline,.hero-foot){opacity:0;transform:translate3d(0,14px,0)}
+  .intro-visual{transition:opacity 1.1s var(--ease) .05s,transform 1.4s var(--ease) .05s}
+  .has-js:not(.is-loaded):not(.no-intro) .intro-visual{opacity:0;transform:scale(.94)}
+  .is-loaded:not(.no-intro) .hero-name>span{animation:name-sweep 2.4s var(--ease) .3s both}
+  .is-loaded:not(.no-intro) .hero-name>span:nth-child(2){animation-delay:.46s}
   html[dir="rtl"].is-loaded:not(.no-intro) .hero-name>span{animation-direction:reverse}
   .has-js:not(.no-intro) .reveal{opacity:0;transform:translate3d(0,22px,0);transition:opacity .9s var(--ease) var(--reveal-delay,0ms),transform 1s var(--ease) var(--reveal-delay,0ms),background-color .3s}
   .has-js:not(.no-intro) .reveal.is-visible{opacity:1;transform:none}
@@ -351,7 +356,7 @@ html:not(.has-js) .ask{display:none}
 @keyframes ants{to{stroke-dashoffset:-22}}
 @keyframes scan-beam{0%{transform:translateY(-60px)}70%,100%{transform:translateY(170px)}}
 @keyframes step-progress{from{transform:scaleX(0)}to{transform:scaleX(1)}}
-@keyframes flow-dash{0%{stroke-dashoffset:16}80%,100%{stroke-dashoffset:-84}}
+@keyframes flow-dash{0%{stroke-dashoffset:26}80%,100%{stroke-dashoffset:-74}}
 @keyframes node-pop{0%,20%,100%{transform:scale(1)}8%{transform:scale(1.1)}}
 @keyframes layer-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
 @keyframes dot-blink{0%,100%{opacity:.25}50%{opacity:1}}
@@ -359,6 +364,7 @@ html:not(.has-js) .ask{display:none}
 @keyframes toast-in{from{transform:translateY(6px) scale(.98)}to{transform:none}}
 @keyframes cmd-in{from{opacity:0;transform:translateY(-10px) scale(.97)}to{opacity:1;transform:none}}
 @keyframes glow-in{from{opacity:0}to{opacity:1}}
+@keyframes breathe{0%,100%{opacity:.22;transform:scale(.9)}50%{opacity:.5;transform:scale(1.12)}}
 @keyframes found{0%{box-shadow:0 0 0 0 rgba(107,92,255,0)}18%{box-shadow:0 0 0 6px rgba(107,92,255,.28),0 0 40px 6px rgba(8,148,255,.22)}100%{box-shadow:0 0 0 14px rgba(107,92,255,0),0 0 40px 6px rgba(8,148,255,0)}}
 
 /* ---------- Responsive ---------- */
@@ -371,9 +377,17 @@ html:not(.has-js) .ask{display:none}
   .about .section-heading{position:static}
 }
 @media(max-width:960px){
-  .hero{grid-template-columns:1fr;grid-template-rows:auto auto auto;row-gap:20px;min-height:0;padding-top:120px}
-  .hero-copy{max-width:720px}
-  .hero-visual{--lens:clamp(240px,42vw,300px);justify-self:center;width:min(100%,640px);min-height:480px}
+  /* One column: the portrait lens sits right under the name, so the face and the name arrive together */
+  .hero{grid-template-columns:1fr;grid-template-rows:none;row-gap:0;min-height:0;padding-top:120px}
+  .hero-copy{display:contents}
+  .status-chip{order:1;justify-self:start}
+  .hero-name{order:2}
+  .hero-visual{order:3;--lens:clamp(240px,42vw,300px);justify-self:center;width:min(100%,640px);min-height:420px;margin-bottom:12px}
+  .hero-statement{order:4}
+  .hero-context{order:5}
+  .hero-actions{order:6}
+  .ask-inline{order:7}
+  .hero-foot{order:8;padding-top:28px}
   .hero::before{top:auto;bottom:0;height:900px}
 }
 @media(max-width:900px){
@@ -400,16 +414,16 @@ html:not(.has-js) .ask{display:none}
   .site-header{top:8px;width:calc(100% - 20px);height:54px;padding-inline:6px 7px}
   .brand{gap:9px;padding-inline-end:6px;font-size:.875rem}
   .hero,.ventures,.section,.contact,.site-footer{width:calc(100% - 40px)}
-  .hero{padding-top:100px;row-gap:6px}
+  .hero{padding-top:100px}
   .hero-name{margin:18px 0 20px;font-size:clamp(3rem,15vw,4.4rem)}
   .hero-statement{font-size:1.3rem}
   .hero-context{margin-bottom:24px;font-size:1rem}
   .hero-actions .button{flex:1 1 180px}
   .ask-inline{width:100%;margin-top:22px}
-  .hero-visual{--lens:clamp(200px,56vw,240px);--rx-k:.66;--ry-k:.19;--tilt:-6deg;--tc:.995;--ts:-.105;width:100%;min-height:380px}
+  .hero-visual{--lens:clamp(200px,56vw,240px);--rx-k:.66;--ry-k:.19;--tilt:-6deg;--tc:.995;--ts:-.105;width:100%;min-height:330px;margin-bottom:6px}
   .orbit li{gap:6px;padding-block:6px;padding-inline:8px 11px;font-size:.6875rem}
   .orbit li::before{width:6px;height:6px}
-  .hero-foot{padding-top:0}
+  .hero-foot{padding-top:18px}
   .venture{padding:22px 22px 20px}
   .venture-orb{top:29px;inset-inline-start:22px}
   .venture+.venture::before{inset-inline:22px}
@@ -433,8 +447,8 @@ html:not(.has-js) .ask{display:none}
   .contact{padding:24px 18px;border-radius:28px}
   .contact-console{padding:12px;border-radius:20px}
   .prompt{min-height:56px;padding:12px 14px}
-  .site-footer{flex-direction:column;align-items:flex-start;gap:4px;padding-bottom:110px}
-  .ask-floating{bottom:calc(14px + env(safe-area-inset-bottom,0px))}
+  .site-footer{flex-direction:column;align-items:flex-start;gap:4px;padding-bottom:96px}
+  .ask-floating{inset-inline-end:max(14px,env(safe-area-inset-right,0px));bottom:calc(14px + env(safe-area-inset-bottom,0px))}
   .command{margin-top:7vh}
   .edge-glow,.command-glow{--glow-band:12px;--glow-fade:58px}
 }
@@ -447,6 +461,15 @@ html:not(.has-js) .ask{display:none}
   .brand-mark{width:36px;height:36px}
   .brand-text{font-size:.8125rem}
   .hero-name{font-size:2.9rem}
+}
+
+@media(min-width:1600px){
+  .hero,.ventures,.section,.contact,.site-footer{--max:1320px}
+  .site-header{width:min(100% - 32px,1180px)}
+  .hero-name{font-size:clamp(7rem,6.2vw,8.25rem)}
+  .hero-statement{font-size:1.875rem}
+  .hero-context{max-width:36rem;font-size:1.125rem}
+  .hero-visual{--lens:clamp(360px,22.5vw,440px);min-height:620px}
 }
 
 /* ---------- Without JavaScript the page is static and complete ---------- */

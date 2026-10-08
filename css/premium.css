@@ -43,6 +43,9 @@ body{margin:0;min-height:100vh;background:var(--canvas);color:var(--ink);font-fa
 :lang(fa),:lang(ar),[lang="fa"] *,[lang="ar"] *{letter-spacing:0}
 a{color:var(--blue);text-decoration:none}
 a:hover{text-decoration:underline;text-underline-offset:3px}
+/* Links inside running text carry a quiet underline, so they never depend on colour alone */
+main :where(p,li,dd,figcaption,blockquote,td) a:not([class]){text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em;text-decoration-color:rgba(0,113,227,.42);text-decoration-color:color-mix(in srgb,currentColor 42%,transparent);transition:text-decoration-color .2s}
+main :where(p,li,dd,figcaption,blockquote,td) a:not([class]):hover{text-decoration-color:currentColor}
 button,input,textarea,select{font:inherit;color:inherit;letter-spacing:inherit}
 button,a{-webkit-tap-highlight-color:transparent}
 button{cursor:pointer}
