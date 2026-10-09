@@ -9,7 +9,9 @@ Arabic translations (workTranslation) and each translation names the English ori
 Articles retain their image and identify it as the main image of their WebPage. Historical
 article dates are preserved; new articles and changed dates must record the real publication
 or update time as ISO 8601 with the publishing timezone (+03:30), never a guessed time.
-Run with --check to report missing metadata or invalid article dates without changing files.
+Video publication dates must also be real ISO 8601 datetimes with an explicit timezone,
+agree across pages showing the same film, and match the video sitemap publication date.
+Run with --check to report missing metadata or invalid article/video dates without changing files.
 """
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -272,6 +274,82 @@ def article_issues(path, text, now=None):
     return issues
 
 
+def video_nodes(text):
+    """Find VideoObjects in standalone, graph, list or nested JSON-LD structures."""
+    def walk(value):
+        if isinstance(value, dict):
+            kinds = value.get('@type')
+            if kinds == 'VideoObject' or (isinstance(kinds, list) and 'VideoObject' in kinds):
+                yield value
+            for child in value.values():
+                yield from walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                yield from walk(child)
+
+    for block in LD.finditer(text):
+        try:
+            data = json.loads(block[2])
+        except ValueError:
+            continue
+        yield from walk(data)
+
+
+def video_datetime_issues(value, label='VideoObject uploadDate', now=None):
+    """Reject incomplete, impossible, timezone-free and future video publication times."""
+    if not isinstance(value, str) or not re.fullmatch(
+            r'\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,6})?(?:Z|[+-]\d{2}:\d{2})', value):
+        return [f'{label} must use a real ISO 8601 datetime with an explicit timezone']
+    # fromisoformat normalizes overflowing offset minutes; reject them before parsing.
+    if not value.endswith('Z') and (int(value[-5:-3]) >= 24 or int(value[-2:]) >= 60):
+        return [f'{label} has an invalid timezone offset']
+    try:
+        instant = datetime.fromisoformat(value.replace('Z', '+00:00'))
+    except ValueError:
+        return [f'{label} is not a valid ISO 8601 datetime']
+    if instant > (now or datetime.now(timezone.utc)):
+        return [f'{label} cannot be in the future']
+    return []
+
+
+def video_issues(text, now=None):
+    return [issue for node in video_nodes(text)
+            for issue in video_datetime_issues(node.get('uploadDate'), now=now)]
+
+
+def video_collection_issues(records, sitemap_text):
+    """The same public film must retain one publication instant everywhere it appears."""
+    issues = []
+    instants = {}
+    for source, node in records:
+        content = node.get('contentUrl')
+        value = node.get('uploadDate')
+        if not content or video_datetime_issues(value):
+            continue
+        instant = datetime.fromisoformat(value.replace('Z', '+00:00'))
+        if content in instants and instant != instants[content][0]:
+            issues.append(f'{source}: VideoObject uploadDate differs from the same film in {instants[content][1]}')
+        else:
+            instants[content] = (instant, source)
+    namespace = '{http://www.sitemaps.org/schemas/sitemap/0.9}'
+    video_ns = '{http://www.google.com/schemas/sitemap-video/1.1}'
+    for entry in ElementTree.fromstring(sitemap_text).findall(f'{namespace}url'):
+        source = entry.findtext(f'{namespace}loc')
+        for video in entry.findall(f'{video_ns}video'):
+            content = video.findtext(f'{video_ns}content_loc')
+            value = video.findtext(f'{video_ns}publication_date')
+            invalid = video_datetime_issues(value, 'video sitemap publication_date')
+            issues.extend(f'{source}: {issue}' for issue in invalid)
+            if invalid:
+                continue
+            instant = datetime.fromisoformat(value.replace('Z', '+00:00'))
+            if content not in instants:
+                issues.append(f'{source}: video sitemap has no matching valid VideoObject publication date')
+            elif instant != instants[content][0]:
+                issues.append(f'{source}: video sitemap publication_date differs from VideoObject uploadDate')
+    return issues
+
+
 def translation_links(text):
     """English pages list their translations; Persian and Arabic pages point to the English original."""
     head = text[:text.find('</head>')]
@@ -410,6 +488,7 @@ def main():
     check = '--check' in sys.argv
     changed = 0
     invalid = 0
+    video_records = []
     for path in sorted(ROOT.rglob('*.html')):
         relative = path.relative_to(ROOT)
         if relative.parts[0] in ('.git', 'node_modules') or path.name.startswith('google'):
@@ -421,10 +500,15 @@ def main():
             print(('MISSING ' if check else 'Updated ') + relative.as_posix() + ': ' + ', '.join(added))
             if not check:
                 path.write_text(updated)
-        issues = article_issues(path, updated)
+        issues = article_issues(path, updated) + video_issues(updated)
+        video_records.extend((relative.as_posix(), node) for node in video_nodes(updated))
         if issues:
             invalid += 1
             print('INVALID ' + relative.as_posix() + ': ' + '; '.join(issues))
+    video_problems = video_collection_issues(video_records, (ROOT / 'sitemap.xml').read_text())
+    invalid += len(video_problems)
+    for issue in video_problems:
+        print('INVALID ' + issue)
     links = sitemap(check)
     if links:
         print(('MISSING ' if check else 'Added ') + f'{links} sitemap hreflang links')

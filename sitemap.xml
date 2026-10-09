@@ -622,6 +622,7 @@
             <video:title>Why does AI sound so confident when it is wrong?</video:title>
             <video:description>Watch the 75-second film, then read how to check each claim against its source.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/ai-confidence/ai-confidence.mp4</video:content_loc>
+            <video:publication_date>2026-10-05T18:47:15+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -632,6 +633,7 @@
             <video:title>What does Accept cookies actually mean?</video:title>
             <video:description>Watch the 64-second film, then read the sourced explanation of cookie choices.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/cookie-consent/film.mp4</video:content_loc>
+            <video:publication_date>2026-10-05T19:35:43+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -642,6 +644,7 @@
             <video:title>Why does your phone stop charging at 80%?</video:title>
             <video:description>Watch the 67-second film to see three different causes of a charging pause.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/charging-80/film.mp4</video:content_loc>
+            <video:publication_date>2026-10-05T19:41:49+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -652,6 +655,7 @@
             <video:title>Profitable. But out of cash: why payment timing matters</video:title>
             <video:description>Watch the 90-second film to see how profit and payment timing diverge.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/profit-cash/film.mp4</video:content_loc>
+            <video:publication_date>2026-10-08T09:44:46+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -678,7 +682,7 @@
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-rental-yield-cash-flow.html" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-rental-yield-cash-flow.html" />
     </url>
-    <url><loc>https://a-samadi.com/watch/rental-yield.html</loc><lastmod>2026-10-09</lastmod><video:video><video:thumbnail_loc>https://a-samadi.com/assets/writing/rental-yield/cover.png</video:thumbnail_loc><video:title>AI says 8% rental yield. Why is the owner still paying?</video:title><video:description>Watch the 99-second film to see why an 8% gross rental yield can coexist with a cash shortfall.</video:description><video:content_loc>https://a-samadi.com/assets/writing/rental-yield/film.mp4</video:content_loc></video:video></url>
+    <url><loc>https://a-samadi.com/watch/rental-yield.html</loc><lastmod>2026-10-09</lastmod><video:video><video:thumbnail_loc>https://a-samadi.com/assets/writing/rental-yield/cover.png</video:thumbnail_loc><video:title>AI says 8% rental yield. Why is the owner still paying?</video:title><video:description>Watch the 99-second film to see why an 8% gross rental yield can coexist with a cash shortfall.</video:description><video:content_loc>https://a-samadi.com/assets/writing/rental-yield/film.mp4</video:content_loc><video:publication_date>2026-10-09T03:57:44+03:30</video:publication_date></video:video></url>
     <url>
         <loc>https://a-samadi.com/writing/why-full-storage-slows-computer.html</loc>
         <lastmod>2026-10-09</lastmod>
