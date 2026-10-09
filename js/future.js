@@ -1,6 +1,6 @@
 /* Intelligence engine for the homepage.
    Dubai clock, the Ask panel (it searches this page and streams back the best passage), the
-   capabilities orbiting the portrait lens, and a few small agentic details.
+   portrait frame that leans toward the pointer, and a few small agentic details.
    Everything here is an enhancement: without this file the page is complete and readable. */
 (() => {
     'use strict';
@@ -20,14 +20,6 @@
     const onMotion = (listener) => motionListeners.push(listener);
     window.addEventListener('site:motion', (event) => motionListeners.forEach((listener) => listener(event.detail || {})));
     window.addEventListener('site:ask', () => motionListeners.forEach((listener) => listener({})));
-
-    /* The edge of the screen lights up while the site is answering. */
-    let glowTimer = 0;
-    const glow = (duration) => {
-        window.clearTimeout(glowTimer);
-        root.classList.add('is-glowing');
-        glowTimer = window.setTimeout(() => root.classList.remove('is-glowing'), duration);
-    };
 
     /* Local time in Dubai, refreshed on the minute. */
     function clock() {
@@ -305,7 +297,6 @@
                 if (!target) return;
                 // On one-column layouts the hero copy has no box of its own; take the reader to its section.
                 if (getComputedStyle(target).display === 'contents') target = target.closest('section') || target.firstElementChild;
-                glow(1900);
                 reveal(target, 'center');
                 target.classList.remove('is-found');
                 void target.offsetWidth;
@@ -388,7 +379,7 @@
         }));
     }
 
-    /* The soft pill that follows the hovered or current section link. */
+    /* The marker that follows the hovered or current section link. */
     function navGlow() {
         const nav = $('.site-nav');
         const pill = nav && $('.nav-glow', nav);
@@ -417,100 +408,35 @@
         place();
     }
 
-    /* Four things I work on orbit the portrait. They pass behind the lens and in front of it, shrinking
-       and dimming with depth, and on narrow screens they keep inside the viewport. */
-    function orbit() {
-        const visual = $('.hero-visual');
-        const lens = visual && $('.lens', visual);
-        const chips = visual ? $$('.orbit li', visual) : [];
-        if (!lens || !chips.length) return;
-        const start = [205, 335, 25, 155].map((degrees) => degrees * Math.PI / 180);
-        const period = 48000;
-        let geometry = null;
-        let raf = 0;
-        let onScreen = true;
-        let elapsed = 0;
-        let last = 0;
-        const hero = visual.closest('.hero');
-        const measure = () => {
-            const style = getComputedStyle(visual);
-            const size = lens.offsetWidth;
-            const rect = visual.getBoundingClientRect();
-            const widths = chips.map((chip) => chip.offsetWidth);
-            // The ring may reach into the gap beside the copy, never past it.
-            const gap = hero ? parseFloat(getComputedStyle(hero).columnGap) || 0 : 0;
-            const natural = size * (parseFloat(style.getPropertyValue('--rx-k')) || 0.62);
-            const reach = visual.offsetWidth / 2 + gap - Math.max(...widths) / 2;
-            const rx = Math.min(natural, Math.max(size * 0.56, reach));
-            visual.style.setProperty('--rx', `${rx.toFixed(1)}px`);
-            geometry = {
-                rx,
-                ry: size * (parseFloat(style.getPropertyValue('--ry-k')) || 0.19),
-                cos: parseFloat(style.getPropertyValue('--tc')) || 1,
-                sin: parseFloat(style.getPropertyValue('--ts')) || 0,
-                centre: rect.left + rect.width / 2,
-                width: document.documentElement.clientWidth,
-                widths
-            };
-        };
-        const place = () => {
-            if (!geometry) measure();
-            const { rx, ry, cos, sin, centre, width, widths } = geometry;
-            const turn = (elapsed / period) * Math.PI * 2;
-            chips.forEach((chip, index) => {
-                const angle = start[index] - turn;
-                const depth = Math.sin(angle);
-                const scale = depth >= 0 ? 0.96 + 0.04 * depth : 0.96 + 0.1 * depth;
-                const half = (widths[index] * scale) / 2;
-                const min = 10 + half - centre;
-                const max = width - 10 - half - centre;
-                // A point on the ellipse, turned by the ring's tilt.
-                const ox = Math.cos(angle) * rx;
-                const oy = depth * ry;
-                let x = ox * cos - oy * sin;
-                const y = ox * sin + oy * cos;
-                if (min < max) x = Math.min(max, Math.max(min, x));
-                chip.style.transform = `translate(-50%, -50%) translate(${x.toFixed(2)}px, ${y.toFixed(2)}px) scale(${scale.toFixed(3)})`;
-                chip.style.opacity = (depth >= 0 ? 1 : 1 + depth * 0.55).toFixed(3);
-                chip.style.zIndex = depth >= 0 ? '4' : '1';
-            });
-        };
-        const loop = (now) => {
-            raf = 0;
-            if (!onScreen || paused() || asking()) {
-                last = 0;
-                return;
-            }
-            if (last) elapsed += Math.min(now - last, 64);
-            last = now;
-            place();
-            raf = requestAnimationFrame(loop);
-        };
-        const kick = () => {
-            if (!raf && onScreen && !paused() && !asking()) raf = requestAnimationFrame(loop);
-        };
-        const refresh = () => { measure(); place(); kick(); };
-        if ('ResizeObserver' in window) {
-            const observer = new ResizeObserver(refresh);
-            observer.observe(visual);
-            chips.forEach((chip) => observer.observe(chip));
-        }
-        window.addEventListener('resize', refresh, { passive: true });
-        if (document.fonts && document.fonts.ready) document.fonts.ready.then(refresh);
-        if ('IntersectionObserver' in window) {
-            new IntersectionObserver((entries) => { onScreen = entries[0].isIntersecting; kick(); }).observe(visual);
-        }
-        onMotion(kick);
-        measure();
-        place();
-        kick();
-    }
-
-    /* The lens leans a little toward the pointer. */
+    /* A scan passes over the portrait once the page has opened, and again whenever the pointer
+       arrives on it; the frame leans a little toward the pointer. */
     function lensTilt() {
         const hero = $('.hero');
         const lens = $('[data-lens]');
-        if (!hero || !lens || !finePointer.matches) return;
+        if (!hero || !lens) return;
+        const scan = () => {
+            if (paused() || document.hidden) return;
+            lens.classList.remove('is-scanning');
+            void lens.offsetWidth;
+            lens.classList.add('is-scanning');
+        };
+        lens.addEventListener('animationend', (event) => {
+            if (event.animationName === 'frame-scan') lens.classList.remove('is-scanning');
+        });
+        const first = () => window.setTimeout(scan, 380);
+        if (!root.classList.contains('no-intro')) {
+            if (root.classList.contains('is-loaded')) first();
+            else {
+                const watcher = new MutationObserver(() => {
+                    if (!root.classList.contains('is-loaded')) return;
+                    watcher.disconnect();
+                    first();
+                });
+                watcher.observe(root, { attributes: true, attributeFilter: ['class'] });
+            }
+        }
+        if (!finePointer.matches) return;
+        lens.addEventListener('pointerenter', () => { if (!lens.classList.contains('is-scanning')) scan(); });
         let frame = 0;
         let tiltX = 0;
         let tiltY = 0;
@@ -524,8 +450,8 @@
             const rect = lens.getBoundingClientRect();
             const dx = (event.clientX - (rect.left + rect.width / 2)) / window.innerWidth;
             const dy = (event.clientY - (rect.top + rect.height / 2)) / window.innerHeight;
-            tiltY = Math.max(-1, Math.min(1, dx * 2)) * 9;
-            tiltX = Math.max(-1, Math.min(1, dy * 2)) * -7;
+            tiltY = Math.max(-1, Math.min(1, dx * 2)) * 5;
+            tiltX = Math.max(-1, Math.min(1, dy * 2)) * -4;
             if (!frame) frame = requestAnimationFrame(apply);
         });
         hero.addEventListener('pointerleave', () => {
@@ -690,7 +616,7 @@
         sync();
     }
 
-    [clock, askPanel, copyEmail, navGlow, orbit, lensTilt, floatingAsk, magnetic, agentRun, timeline, stagger, offscreen, motionCommand].forEach((feature) => {
+    [clock, askPanel, copyEmail, navGlow, lensTilt, floatingAsk, magnetic, agentRun, timeline, stagger, offscreen, motionCommand].forEach((feature) => {
         try {
             feature();
         } catch (error) {

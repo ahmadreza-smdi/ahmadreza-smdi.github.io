@@ -79,6 +79,9 @@ for lang in ('fa','ar'):
     # Persian and Arabic text is set in Vazirmatn (Latin keeps the system font), so preload it with the portrait.
     head,font_count=re.subn(r'(\n(\s*)<link rel="preload" as="image"[^\n]*\n)',lambda m:m[1]+m[2]+'<link rel="preload" as="font" type="font/woff2" href="../assets/fonts/vazirmatn-arabic-wght.woff2" crossorigin />\n',head,count=1)
     if font_count!=1:raise ValueError('Missing portrait preload insertion point')
-    head=head.replace('</head>','    <link rel="stylesheet" href="../css/rtl.css?v=20261008-intel" />\n</head>')
+    # Persian and Arabic names and headings are set in Vazirmatn, so these pages do not preload the Latin display face.
+    head,sora_count=re.subn(r'\n\s*<link rel="preload" as="font" type="font/woff2" href="[^"]*sora-latin-wght\.woff2" crossorigin />',"",head,count=1)
+    if sora_count!=1:raise ValueError('Missing Sora preload in the English homepage')
+    head=head.replace('</head>','    <link rel="stylesheet" href="../css/rtl.css?v=20261009-lagoon" />\n</head>')
     (ROOT/lang/'index.html').write_text(head+visible+'        <script>'+script)
     print('Built',lang)

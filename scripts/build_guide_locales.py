@@ -46,7 +46,7 @@ for lang in ('fa', 'ar'):
     page = page.replace('"item": "https://a-samadi.com/"', f'"item": "https://a-samadi.com/{lang}/"')
     for i, tag in enumerate(alternates):
         page = page.replace(f'__ALTERNATE_{i}__', tag)
-    page = page.replace('</head>', '<link rel="stylesheet" href="../../css/rtl.css?v=20261008-intel"><link rel="stylesheet" href="../../css/decision-guide-rtl.css?v=1"></head>')
+    page = page.replace('</head>', '<link rel="stylesheet" href="../../css/rtl.css?v=20261009-lagoon"><link rel="stylesheet" href="../../css/decision-guide-rtl.css?v=1"></head>')
     english_label = {'fa': 'مطالعه راهنما به انگلیسی ←', 'ar': 'اقرأ الدليل بالإنجليزية ←'}[lang]
     english_link = f'<p class="byline"><a href="/tools/before-you-build-ai.html" hreflang="en" data-locale-primary="en">{english_label}</a></p>'
     assert page.count('</section>\n<noscript>') == 1, f'{lang}: missing guide intro insertion point'

@@ -29,9 +29,9 @@ python3 -m http.server 8000 --bind 127.0.0.1
 
 Open [localhost:8000](http://localhost:8000/). No build step is required to preview the checked-in site.
 
-The interface is a quiet, Apple-style canvas where color only appears as light: near-white paper, ink type and one blue for actions, with a live blue-to-violet-to-orange spectrum reserved for glows, rings and status lights. Apple devices render text in the system's own San Francisco font; other devices get Inter, and Persian and Arabic text uses Vazirmatn. The web fonts are self-hosted in `assets/fonts/` under the SIL Open Font License (`assets/fonts/OFL.txt`).
+The interface uses its own system, Lagoon: a pale mist canvas, deep sea-ink type, pastel mint and sky for surfaces and light, and one lagoon teal for links and actions. Quiet land contours (`assets/img/contours.svg`) sit behind the homepage hero and the top of each reading page, a nod to property and land data. Sora sets names, headings and controls; running Latin text uses the reader's system font; Persian and Arabic text uses Vazirmatn. The web fonts are self-hosted in `assets/fonts/` under the SIL Open Font License (`assets/fonts/OFL.txt`).
 
-`js/future.js` adds the homepage behavior: the Dubai clock, the Ask panel (⌘K / Ctrl K, `/` or any Ask button) that searches the page and streams back the best passage while the screen edge glows, the capabilities orbiting the portrait lens, the floating Ask bar, and the Appraiva console run. Every effect follows the page's pause control, stops when its part of the page is off screen or the tab is hidden, and honors reduced-motion preferences; without JavaScript the page is complete and static. Reading pages share the same tokens through CSS only.
+`js/future.js` adds the homepage behavior: the Dubai clock, the Ask panel (⌘K / Ctrl K, `/` or any Ask button) that searches the page and streams back the best passage, the portrait frame (a scan passes over it when the page opens and when the pointer arrives, and it leans toward the pointer), the floating Ask button, and the Appraiva console run. Every effect follows the page's pause control, stops when its part of the page is off screen or the tab is hidden, and honors reduced-motion preferences; without JavaScript the page is complete and static. Reading pages share the same tokens through CSS only.
 
 ## Maintain the source
 

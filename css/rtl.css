@@ -1,5 +1,5 @@
 /* Persian and Arabic pages. Layout mirrors through logical properties in site.css; this layer sets
-   Vazirmatn for Arabic-script text (Latin keeps the system font), removes tracking and opens the leading. */
+   Vazirmatn for Arabic-script text (Latin keeps Sora or the system font), removes tracking and opens the leading. */
 html[dir="rtl"] body{font-family:"Vazirmatn",var(--sans)}
 html[dir="rtl"] :is(h1,h2,h3,h4,.hero-name,.venture strong,.section-label,.eyebrow){font-family:"Vazirmatn",var(--display)}
 html[dir="rtl"] *{letter-spacing:0!important}
