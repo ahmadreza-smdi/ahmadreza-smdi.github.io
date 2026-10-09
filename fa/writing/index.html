@@ -13,7 +13,7 @@
 <link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/">
 <link rel="icon" type="image/svg+xml" href="../../assets/brand/favicon.svg">
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/vazirmatn-arabic-wght.woff2" crossorigin>
-<link rel="stylesheet" href="../../css/site.css?v=20261009-lagoon4">
+<link rel="stylesheet" href="../../css/site.css?v=20261009-writing1">
 <link rel="stylesheet" href="../../css/rtl.css?v=20261009-lagoon4">
 <meta property="og:type" content="website"><meta property="og:site_name" content="Ahmadreza Samadi">
 <meta property="og:title" content="نوشته‌های احمدرضا صمدی | هوش مصنوعی، محصول و فناوری املاک">
@@ -204,6 +204,12 @@
 <h1>نوشته‌ها</h1>
 <p class="lead">مقاله‌ها و توضیح‌هایی درباره ساخت محصولات هوش مصنوعی، سنجش هزینه آن‌ها و پیوند دادن فناوری با تصمیم‌های واقعی کسب‌وکار.</p>
 <p class="byline"><a href="/writing/" hreflang="en">فهرست نوشته‌ها به انگلیسی</a></p>
+<form class="writing-filter" role="search" aria-label="جستجو در مقاله‌ها و راهنماها" hidden>
+<label for="writing-query">جستجو در مقاله‌ها و راهنماها</label>
+<div class="writing-filter-row"><input id="writing-query" type="search" placeholder="عنوان یا واژهٔ کلیدی" aria-describedby="writing-count" autocomplete="off" autocapitalize="off" spellcheck="false"><button type="reset">پاک کردن</button></div>
+<p id="writing-count" role="status" aria-live="polite" aria-atomic="true" data-count-template="نمایش {count} از {total}"></p>
+</form>
+<p class="writing-empty" hidden>نتیجه‌ای پیدا نشد. عبارت کوتاه‌تری بنویسید یا جستجو را پاک کنید.</p>
 <article><h2><a href="/fa/writing/why-full-storage-slows-computer.html">چرا وقتی فضای ذخیره‌سازی تقریباً پر است، کامپیوتر کند می‌شود؟</a></h2><p class="byline"><time datetime="2026-10-09">۹ اکتبر ۲۰۲۶</time></p><p>درایو عکس‌ها و اسناد را نگه می‌دارد، اما برای کار کردن کامپیوتر هم فضا فراهم می‌کند. سه فعالیت پشت صحنه توضیح می‌دهند چرا کمبود فضا می‌تواند مشکل‌ساز شود.</p><p><a href="/fa/writing/why-full-storage-slows-computer.html">توضیح و اسلایدها ←</a></p></article>
 <article><h2><a href="/fa/writing/ai-rental-yield-cash-flow.html">هوش مصنوعی بازده اجاره را ۸٪ می‌داند؛ چرا مالک هنوز پول می‌پردازد؟</a></h2><p class="byline"><time datetime="2026-10-09">۹ اکتبر ۲۰۲۶</time></p><p>محاسبه درست بازده اجاره هم می‌تواند با کسری نقدی مالک همراه باشد. یک خانه فرضی را از عدد اولیه تا پول باقی‌مانده پس از هزینه‌ها و اقساط دنبال کنید.</p><p><a href="/fa/writing/ai-rental-yield-cash-flow.html">فیلم و توضیح ←</a></p></article>
 <article><h2><a href="/fa/writing/profitable-but-out-of-cash.html">سودآور، اما بدون پول نقد: چرا زمان پرداخت مهم است؟</a></h2><p class="byline"><time datetime="2026-10-08">۸ اکتبر ۲۰۲۶</time></p><p>یک فروش سودآور هم می‌تواند کسب‌وکار را برای پرداخت به تأمین‌کننده با مشکل روبه‌رو کند. با دنبال کردن یک سفارش، تفاوت درآمد کسب‌شده و پول در دسترس را ببینید.</p><p><a href="/fa/writing/profitable-but-out-of-cash.html">فیلم و توضیح ←</a></p></article>
@@ -303,5 +309,6 @@
 </ul>
 <footer class="editorial-footer"><nav aria-label="صفحه‌های مرتبط"><a href="/fa/writing/">همه نوشته‌ها</a> · <a href="/fa/about.html">درباره احمدرضا صمدی</a> · <a href="/fa/about.html#official-profiles">صفحه‌های رسمی</a> · <a href="/fa/">نوشته‌ها و پروژه‌ها</a></nav><p>احمدرضا صمدی · کارآفرین فناوری</p><a href="/fa/#contact">تماس ←</a></footer>
 </main>
+<script src="../../js/writing-filter.js?v=20261009-writing1" defer></script>
 </body>
 </html>

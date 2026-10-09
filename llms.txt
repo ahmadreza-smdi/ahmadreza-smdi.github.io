@@ -39,6 +39,7 @@ Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and
 - [Why does your phone stop charging at 80%?](https://a-samadi.com/writing/why-phone-stops-charging-at-80.html): A chosen limit, a learned routine and a heat pause can look similar. They have different triggers and different ways to resume charging.
 - [Profitable. But out of cash: why payment timing matters](https://a-samadi.com/writing/profitable-but-out-of-cash.html): A profitable sale can leave a business unable to pay its supplier. Follow one order to see why earned money and available cash are different.
 - [AI says 8% rental yield. Why is the owner still paying?](https://a-samadi.com/writing/ai-rental-yield-cash-flow.html): A correct rental-yield calculation can still leave a property owner covering a cash shortfall. Follow one fictional home from the headline to the money left after costs and the loan.
+- [Why does your computer slow down when storage is almost full?](https://a-samadi.com/writing/why-full-storage-slows-computer.html): Storage is working room too. A ten-slide explainer on temporary files, RAM overflow and SSD housekeeping, with practical cleanup advice.
 
 ## Films
 

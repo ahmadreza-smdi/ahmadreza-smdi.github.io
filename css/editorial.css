@@ -86,6 +86,23 @@ html[dir="rtl"] .editorial details.watch-transcript[open]>summary::before{transf
 .editorial:has(> article + article)>article p:last-child{margin:auto 0 0;padding-top:.6rem}
 .editorial:has(> article + article)>article p:last-child a{position:relative;z-index:1;display:inline-flex;align-items:center;min-height:44px;font-weight:500}
 
+/* Filter the existing writing cards without changing their crawlable links or order. */
+.writing-filter{margin:.3rem 0 0;padding:1.25rem 1.5rem;border:1px solid var(--line-strong);border-radius:18px;background:var(--surface)}
+.writing-filter label{display:block;margin-bottom:.65rem;color:var(--ink);font-family:var(--display);font-size:1rem;font-weight:500}
+.writing-filter-row{display:flex;gap:.7rem;align-items:stretch}
+.writing-filter input{flex:1;min-width:0;width:100%;min-height:48px;padding:.65rem .85rem;border:1px solid var(--line-strong);border-radius:10px;background:var(--surface);color:var(--ink);font:inherit;font-size:1rem}
+.writing-filter input::placeholder{color:var(--muted);opacity:1}
+.writing-filter button{flex:0 0 auto;min-width:64px;min-height:48px;padding:.6rem .85rem;border:1px solid var(--line-strong);border-radius:10px;background:var(--mint-soft);color:var(--ink);font:inherit;font-size:1rem;cursor:pointer}
+.writing-filter button:hover:not(:disabled){background:var(--mint)}
+.writing-filter button:disabled{color:var(--muted);cursor:default}
+.writing-filter :is(input,button):focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.editorial .writing-filter p{margin:.65rem 0 0;color:var(--muted);font-size:.9375rem}
+.editorial .writing-empty{margin:.5rem 0 1rem;padding:1.5rem;border:1px solid var(--line-strong);border-radius:18px;background:var(--mint-soft)}
+.editorial .writing-filter[hidden],.editorial .writing-empty[hidden],.editorial > article[hidden],.editorial > nav[hidden]{display:none}
+@media(max-width:600px){.writing-filter{padding:1rem}.writing-filter-row{flex-wrap:wrap}.writing-filter input{flex-basis:160px}}
+@media(forced-colors:active){.writing-filter,.writing-filter input,.writing-filter button,.editorial .writing-empty{border-color:CanvasText}.writing-filter :is(input,button):focus-visible{outline-color:Highlight}.writing-filter button:disabled{color:GrayText}}
+@media print{.writing-filter,.editorial .writing-empty{display:none}.editorial > article[hidden]{display:flex!important}.editorial > nav[hidden]{display:block!important}}
+
 .profile-resources{clear:both;margin-top:3rem;padding-top:.5rem}
 /* At a glance: short answers to the questions people ask, one per row */
 .quick-facts-list{margin:1.2rem 0 0;padding:0;border-top:1px solid var(--line)}

@@ -13,7 +13,7 @@
 <link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/">
 <link rel="icon" type="image/svg+xml" href="../../assets/brand/favicon.svg">
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/vazirmatn-arabic-wght.woff2" crossorigin>
-<link rel="stylesheet" href="../../css/site.css?v=20261009-lagoon4">
+<link rel="stylesheet" href="../../css/site.css?v=20261009-writing1">
 <link rel="stylesheet" href="../../css/rtl.css?v=20261009-lagoon4">
 <meta property="og:type" content="website"><meta property="og:site_name" content="Ahmadreza Samadi">
 <meta property="og:title" content="مقالات أحمدرضا صمدي | الذكاء الاصطناعي والمنتجات وتقنيات العقارات">
@@ -204,6 +204,12 @@
 <h1>المقالات</h1>
 <p class="lead">مقالات وشروحات عن بناء منتجات الذكاء الاصطناعي، وقياس تكلفتها، وربط التقنية بقرارات الأعمال الحقيقية.</p>
 <p class="byline"><a href="/writing/" hreflang="en">قائمة المقالات بالإنجليزية</a></p>
+<form class="writing-filter" role="search" aria-label="ابحث في المقالات والأدلة" hidden>
+<label for="writing-query">ابحث في المقالات والأدلة</label>
+<div class="writing-filter-row"><input id="writing-query" type="search" placeholder="عنوان أو كلمة مفتاحية" aria-describedby="writing-count" autocomplete="off" autocapitalize="off" spellcheck="false"><button type="reset">مسح</button></div>
+<p id="writing-count" role="status" aria-live="polite" aria-atomic="true" data-count-template="عرض {count} من {total}"></p>
+</form>
+<p class="writing-empty" hidden>لا توجد نتائج. جرّب عبارة أقصر أو امسح البحث.</p>
 <article><h2><a href="/ar/writing/why-full-storage-slows-computer.html">لماذا يصبح الحاسوب بطيئًا عندما تكاد مساحة التخزين تمتلئ؟</a></h2><p class="byline"><time datetime="2026-10-09">٩ أكتوبر ٢٠٢٦</time></p><p>يحفظ القرص الصور والمستندات، لكنه يوفر للحاسوب مساحة للعمل أيضًا. ثلاثة أنواع من النشاط خلف الكواليس تفسر لماذا قد يسبب نفاد المساحة مشكلات.</p><p><a href="/ar/writing/why-full-storage-slows-computer.html">اقرأ وشاهد الشرائح ←</a></p></article>
 <article><h2><a href="/ar/writing/ai-rental-yield-cash-flow.html">الذكاء الاصطناعي يقول إن عائد الإيجار 8٪. لماذا لا يزال المالك يدفع؟</a></h2><p class="byline"><time datetime="2026-10-09">٩ أكتوبر ٢٠٢٦</time></p><p>قد يكون حساب عائد الإيجار صحيحًا، ومع ذلك يحتاج المالك إلى تغطية عجز نقدي. تابع منزلًا افتراضيًا من الرقم الأول إلى المال المتبقي بعد التكاليف والقرض.</p><p><a href="/ar/writing/ai-rental-yield-cash-flow.html">شاهد واقرأ ←</a></p></article>
 <article><h2><a href="/ar/writing/profitable-but-out-of-cash.html">مربح، لكن بلا نقد: لماذا يهم توقيت الدفع؟</a></h2><p class="byline"><time datetime="2026-10-08">٨ أكتوبر ٢٠٢٦</time></p><p>قد تترك صفقة مربحة الشركة عاجزة عن دفع مستحقات المورد. تابع طلبًا واحدًا لتفهم الفرق بين الإيراد المكتسب والنقد المتاح.</p><p><a href="/ar/writing/profitable-but-out-of-cash.html">شاهد واقرأ ←</a></p></article>
@@ -303,5 +309,6 @@
 </ul>
 <footer class="editorial-footer"><nav aria-label="صفحات ذات صلة"><a href="/ar/writing/">كل المقالات</a> · <a href="/ar/about.html">عن أحمدرضا صمدي</a> · <a href="/ar/about.html#official-profiles">الحسابات الرسمية</a> · <a href="/ar/">المقالات والأعمال</a></nav><p>أحمدرضا صمدي · رائد أعمال تقني</p><a href="/ar/#contact">تواصل ←</a></footer>
 </main>
+<script src="../../js/writing-filter.js?v=20261009-writing1" defer></script>
 </body>
 </html>
