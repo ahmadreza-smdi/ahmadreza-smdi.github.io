@@ -1,0 +1,1458 @@
+{
+  "version": 1,
+  "site_url": "https://a-samadi.com/",
+  "primary_language": "en",
+  "locales": [
+    {
+      "language": "en",
+      "source_url": "https://a-samadi.com/",
+      "passages": [
+        {
+          "position": 1,
+          "section": "",
+          "title": "Ahmadreza Samadi",
+          "text": "Technology Entrepreneur · Dubai, UAE Ahmadreza Samadi I build AI products and turn business problems into practical technology. Co-Founder & Technical Lead at Appraiva, a US-based company in Cleveland, Ohio. Working remotely across product strategy, data, AI, and engineering. Get in touch Selected Work Ask about my work",
+          "paragraphs": [
+            "Technology Entrepreneur · Dubai, UAE",
+            "I build AI products and turn business problems into practical technology.",
+            "Co-Founder & Technical Lead at Appraiva, a US-based company in Cleveland, Ohio. Working remotely across product strategy, data, AI, and engineering."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#top",
+          "links": [
+            {
+              "label": "Get in touch",
+              "url": "mailto:ahmadreza.smdi@gmail.com"
+            },
+            {
+              "label": "Selected Work",
+              "url": "https://a-samadi.com/#work"
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "section": "Current companies and focus",
+          "title": "Appraiva",
+          "text": "United States · Remote Appraiva Co-Founder & Technical Lead",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/",
+          "section_url": null,
+          "links": [
+            {
+              "label": "United States · Remote Appraiva Co-Founder & Technical Lead",
+              "url": "https://a-samadi.com/work/appraiva.html"
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "section": "Current companies and focus",
+          "title": "Royal Abraj Group",
+          "text": "Dubai, UAE Royal Abraj Group Co-Founder & CEO",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/",
+          "section_url": null,
+          "links": [
+            {
+              "label": "Dubai, UAE Royal Abraj Group Co-Founder & CEO",
+              "url": "https://a-samadi.com/work/royal-abraj.html"
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "section": "Current companies and focus",
+          "title": "Ideas into systems",
+          "text": "My focus Ideas into systems AI · Product · Business",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/",
+          "section_url": null,
+          "links": [
+            {
+              "label": "My focus Ideas into systems AI · Product · Business",
+              "url": "https://a-samadi.com/#skills"
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "section": "Selected Work",
+          "title": "From business problems to working products.",
+          "text": "Selected Work From business problems to working products. Selected work across AI real estate intelligence, enterprise data, and predictive analytics.",
+          "paragraphs": [
+            "Selected work across AI real estate intelligence, enterprise data, and predictive analytics."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#work",
+          "links": []
+        },
+        {
+          "position": 6,
+          "section": "Selected Work",
+          "title": "Appraiva AI Real Estate Intelligence Platform",
+          "text": "Flagship company appraiva.com Appraiva AI Real Estate Intelligence Platform Building AI tools that help real estate investors and developers find distressed and off-market properties using imagery analysis and enriched property data. Product Architecture AI Workflows Data Systems Cloud Infrastructure Appraiva case study Appraiva system layers 01Property discovery 02Data enrichment 03Opportunity analysis 04Search and decision workflows",
+          "paragraphs": [
+            "Building AI tools that help real estate investors and developers find distressed and off-market properties using imagery analysis and enriched property data."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#work",
+          "links": [
+            {
+              "label": "appraiva.com",
+              "url": "https://appraiva.com/"
+            },
+            {
+              "label": "Appraiva case study",
+              "url": "https://a-samadi.com/work/appraiva.html"
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "section": "Selected Work",
+          "title": "Digital strategy & business operations",
+          "text": "2022 - PresentRoyal Abraj Group Digital strategy & business operations Connecting websites, CRM workflows, customer tools, and internal operations for a Dubai-based business. Digital StrategyCRM WorkflowsCustomer Tools Royal Abraj Group case study",
+          "paragraphs": [
+            "Connecting websites, CRM workflows, customer tools, and internal operations for a Dubai-based business."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#work",
+          "links": [
+            {
+              "label": "Royal Abraj Group case study",
+              "url": "https://a-samadi.com/work/royal-abraj.html"
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "section": "Selected Work",
+          "title": "Enterprise CRM & Analytics Data Platform",
+          "text": "2022 - 2023Oxfam Novib Enterprise CRM & Analytics Data Platform Built Azure-based data engineering infrastructure supporting CRM migration, governance, reporting, and analytics readiness across SAP and Salesforce sources. Azure DatabricksData FactoryETLGDPR-conscious Processes Oxfam Novib case study",
+          "paragraphs": [
+            "Built Azure-based data engineering infrastructure supporting CRM migration, governance, reporting, and analytics readiness across SAP and Salesforce sources."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#work",
+          "links": [
+            {
+              "label": "Oxfam Novib case study",
+              "url": "https://a-samadi.com/work/oxfam-novib.html"
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "section": "About",
+          "title": "Technical depth.Business perspective.",
+          "text": "AboutTechnical depth.Business perspective.",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#about",
+          "links": []
+        },
+        {
+          "position": 10,
+          "section": "About",
+          "title": "",
+          "text": "I’m Ahmadreza Samadi, a technology entrepreneur based in Dubai. I connect product strategy, engineering, and the practical work of building a business.",
+          "paragraphs": [
+            "I’m Ahmadreza Samadi, a technology entrepreneur based in Dubai. I connect product strategy, engineering, and the practical work of building a business."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#about",
+          "links": []
+        },
+        {
+          "position": 11,
+          "section": "About",
+          "title": "",
+          "text": "At Appraiva, a US-based company in Cleveland, Ohio, I work remotely as Co-Founder & Technical Lead, building AI-driven real estate intelligence. At Royal Abraj Group, I serve as Co-Founder & CEO and lead digital strategy for the Dubai business.",
+          "paragraphs": [
+            "At Appraiva, a US-based company in Cleveland, Ohio, I work remotely as Co-Founder & Technical Lead, building AI-driven real estate intelligence. At Royal Abraj Group, I serve as Co-Founder & CEO and lead digital strategy for the Dubai business."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#about",
+          "links": [
+            {
+              "label": "Appraiva",
+              "url": "https://a-samadi.com/work/appraiva.html"
+            },
+            {
+              "label": "Royal Abraj Group",
+              "url": "https://a-samadi.com/work/royal-abraj.html"
+            }
+          ]
+        },
+        {
+          "position": 12,
+          "section": "About",
+          "title": "",
+          "text": "My work starts with a customer problem and follows through to the data, product, and systems needed to solve it.",
+          "paragraphs": [
+            "My work starts with a customer problem and follows through to the data, product, and systems needed to solve it."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#about",
+          "links": []
+        },
+        {
+          "position": 13,
+          "section": "About",
+          "title": "",
+          "text": "My name in Persian and Arabic: احمدرضا صمدی · أحمدرضا صمدي.",
+          "paragraphs": [
+            "My name in Persian and Arabic: احمدرضا صمدی · أحمدرضا صمدي."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#about",
+          "links": []
+        },
+        {
+          "position": 14,
+          "section": "Selected Experience",
+          "title": "A technical path through product, data, AI, and operations.",
+          "text": "Selected Experience A technical path through product, data, AI, and operations.",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#experience",
+          "links": []
+        },
+        {
+          "position": 15,
+          "section": "Selected Experience",
+          "title": "Co-Founder & Technical Lead",
+          "text": "Oct 2023 - Present Co-Founder & Technical Lead Appraiva · Cleveland, Ohio, United States · Remote Lead technical direction across product architecture, data systems, AI workflows, cloud infrastructure, customer discovery, and go-to-market execution.",
+          "paragraphs": [
+            "Lead technical direction across product architecture, data systems, AI workflows, cloud infrastructure, customer discovery, and go-to-market execution."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#experience",
+          "links": []
+        },
+        {
+          "position": 16,
+          "section": "Selected Experience",
+          "title": "Co-Founder & CEO",
+          "text": "2022 - Present Co-Founder & CEO Royal Abraj Group · Dubai, UAE Co-founded a Dubai-based business spanning property brokerage and documents-clearing services. Lead digital strategy across websites, CRM workflows, customer tools, and internal operations, from enquiry capture and sales follow-up to document handling and case tracking. My work at Royal Abraj Group",
+          "paragraphs": [
+            "Co-founded a Dubai-based business spanning property brokerage and documents-clearing services. Lead digital strategy across websites, CRM workflows, customer tools, and internal operations, from enquiry capture and sales follow-up to document handling and case tracking."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#experience",
+          "links": [
+            {
+              "label": "My work at Royal Abraj Group",
+              "url": "https://a-samadi.com/work/royal-abraj.html"
+            }
+          ]
+        },
+        {
+          "position": 17,
+          "section": "Selected Experience",
+          "title": "Business and Technology Consultant",
+          "text": "May 2023 - Oct 2023 Business and Technology Consultant Bayshire Realty · Toronto, Canada · Remote Advised on digital strategy, web presence, and AI-enabled client operations, including real-time call transcription and summarization workflows.",
+          "paragraphs": [
+            "Advised on digital strategy, web presence, and AI-enabled client operations, including real-time call transcription and summarization workflows."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#experience",
+          "links": []
+        },
+        {
+          "position": 18,
+          "section": "Selected Experience",
+          "title": "Data Engineer",
+          "text": "Sep 2022 - Jun 2023 Data Engineer Oxfam Novib · The Hague, Netherlands · Remote Built Azure-based CRM and analytics infrastructure using Databricks, Data Factory, SQL, Key Vault, Azure DevOps, and governed ETL workflows.",
+          "paragraphs": [
+            "Built Azure-based CRM and analytics infrastructure using Databricks, Data Factory, SQL, Key Vault, Azure DevOps, and governed ETL workflows."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#experience",
+          "links": []
+        },
+        {
+          "position": 19,
+          "section": "Selected Experience",
+          "title": "Data, Product, and Machine Learning Roles",
+          "text": "2020 - 2022 Data, Product, and Machine Learning Roles SchoolConex/Klassroom.io · MCI · Earlier research and product work Built ETL platforms, AWS-backed product infrastructure, predictive customer models, research data workflows, and enterprise software interfaces.",
+          "paragraphs": [
+            "Built ETL platforms, AWS-backed product infrastructure, predictive customer models, research data workflows, and enterprise software interfaces."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#experience",
+          "links": []
+        },
+        {
+          "position": 20,
+          "section": "Capabilities",
+          "title": "Where strategy and implementation meet.",
+          "text": "Capabilities Where strategy and implementation meet.",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#skills",
+          "links": []
+        },
+        {
+          "position": 21,
+          "section": "Capabilities",
+          "title": "Product and Technical Leadership",
+          "text": "Product and Technical Leadership Technical leadership, product architecture, software architecture, digital strategy, stakeholder management, and customer discovery.",
+          "paragraphs": [
+            "Technical leadership, product architecture, software architecture, digital strategy, stakeholder management, and customer discovery."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#skills",
+          "links": []
+        },
+        {
+          "position": 22,
+          "section": "Capabilities",
+          "title": "AI and Data Systems",
+          "text": "AI and Data Systems AI workflows, data engineering, machine learning, predictive modeling, data governance, ETL, analytics, and decision-support systems.",
+          "paragraphs": [
+            "AI workflows, data engineering, machine learning, predictive modeling, data governance, ETL, analytics, and decision-support systems."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#skills",
+          "links": []
+        },
+        {
+          "position": 23,
+          "section": "Capabilities",
+          "title": "Cloud and Platform Engineering",
+          "text": "Cloud and Platform Engineering Cloud-native architecture across Azure and AWS, including Databricks, Data Factory, Lambda, API Gateway, Node.js, Python, SQL, and PySpark.",
+          "paragraphs": [
+            "Cloud-native architecture across Azure and AWS, including Databricks, Data Factory, Lambda, API Gateway, Node.js, Python, SQL, and PySpark."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#skills",
+          "links": []
+        },
+        {
+          "position": 24,
+          "section": "Writing",
+          "title": "Ideas behind the work.",
+          "text": "WritingIdeas behind the work.Browse all writing",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#writing",
+          "links": [
+            {
+              "label": "Browse all writing",
+              "url": "https://a-samadi.com/writing/"
+            }
+          ]
+        },
+        {
+          "position": 25,
+          "section": "Writing",
+          "title": "Before You Build the AI",
+          "text": "Interactive field guide Before You Build the AI Turn an AI idea into one clear decision, an evidence plan and a useful first experiment. Build a decision brief",
+          "paragraphs": [
+            "Turn an AI idea into one clear decision, an evidence plan and a useful first experiment."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#writing",
+          "links": [
+            {
+              "label": "Build a decision brief",
+              "url": "https://a-samadi.com/tools/before-you-build-ai.html"
+            }
+          ]
+        },
+        {
+          "position": 26,
+          "section": "Writing",
+          "title": "AI agent safety: boundaries before actions",
+          "text": "AI agentsAI agent safety: boundaries before actionsWhere to put permissions, approval and monitoring before an AI agent can act.",
+          "paragraphs": [
+            "Where to put permissions, approval and monitoring before an AI agent can act."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#writing",
+          "links": [
+            {
+              "label": "AI agent safety: boundaries before actions",
+              "url": "https://a-samadi.com/writing/ai-agent-safety-boundaries.html"
+            }
+          ]
+        },
+        {
+          "position": 27,
+          "section": "Writing",
+          "title": "Connected AI apps: access, scope and approval",
+          "text": "Connected systemsConnected AI apps: access, scope and approvalWhat changes when an AI assistant can use your calendar, files or email, and what to check before you connect.",
+          "paragraphs": [
+            "What changes when an AI assistant can use your calendar, files or email, and what to check before you connect."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#writing",
+          "links": [
+            {
+              "label": "Connected AI apps: access, scope and approval",
+              "url": "https://a-samadi.com/writing/connected-ai-apps.html"
+            }
+          ]
+        },
+        {
+          "position": 28,
+          "section": "Writing",
+          "title": "AI cost per verified result",
+          "text": "Product thinkingAI cost per verified resultWhy lower model prices are only one part of the cost of useful AI work.",
+          "paragraphs": [
+            "Why lower model prices are only one part of the cost of useful AI work."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#writing",
+          "links": [
+            {
+              "label": "AI cost per verified result",
+              "url": "https://a-samadi.com/writing/ai-cost-per-verified-result.html"
+            }
+          ]
+        },
+        {
+          "position": 29,
+          "section": "Contact",
+          "title": "Let’s talk about a product or business workflow.",
+          "text": "Contact Let’s talk about a product or business workflow. I welcome conversations with founders and industry experts working on AI products, property data, or the systems behind business operations. Tell me who the work is for, how it is handled today, and what decision or process you want to improve. A short description and a relevant link are enough to start. Dubai, United Arab Emirates",
+          "paragraphs": [
+            "I welcome conversations with founders and industry experts working on AI products, property data, or the systems behind business operations.",
+            "Tell me who the work is for, how it is handled today, and what decision or process you want to improve. A short description and a relevant link are enough to start.",
+            "Dubai, United Arab Emirates"
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#contact",
+          "links": []
+        }
+      ],
+      "shortcuts": [
+        {
+          "label": "Work",
+          "url": "https://a-samadi.com/#work"
+        },
+        {
+          "label": "About",
+          "url": "https://a-samadi.com/#about"
+        },
+        {
+          "label": "Experience",
+          "url": "https://a-samadi.com/#experience"
+        },
+        {
+          "label": "Capabilities",
+          "url": "https://a-samadi.com/#skills"
+        },
+        {
+          "label": "Writing",
+          "url": "https://a-samadi.com/#writing"
+        },
+        {
+          "label": "Contact",
+          "url": "https://a-samadi.com/#contact"
+        },
+        {
+          "label": "Before You Build the AI",
+          "url": "https://a-samadi.com/tools/before-you-build-ai.html"
+        },
+        {
+          "label": "All writing",
+          "url": "https://a-samadi.com/writing/"
+        },
+        {
+          "label": "Biography and profile kit",
+          "url": "https://a-samadi.com/about.html#profile-resources"
+        },
+        {
+          "label": "Email",
+          "url": "mailto:ahmadreza.smdi@gmail.com"
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/ahmadreza-samadi/"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ahmadreza-smdi"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@ahmadreza-samadi"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/ahmadreza_smdi/"
+        }
+      ]
+    },
+    {
+      "language": "fa",
+      "source_url": "https://a-samadi.com/fa/",
+      "passages": [
+        {
+          "position": 1,
+          "section": "",
+          "title": "احمدرضا صمدی",
+          "text": "کارآفرین فناوری · دبی، امارات احمدرضا صمدی محصولات هوش مصنوعی می‌سازم و مسائل کسب‌وکار را به راهکارهای کاربردی فناوری تبدیل می‌کنم. هم‌بنیان‌گذار و راهبر فنی Appraiva، شرکتی آمریکایی در کلیولند، اوهایو. به‌صورت دورکار در زمینه استراتژی محصول، داده، هوش مصنوعی و مهندسی فعالیت می‌کنم. در تماس باشید پروژه‌های منتخب درباره کارهایم بپرسید",
+          "paragraphs": [
+            "کارآفرین فناوری · دبی، امارات",
+            "محصولات هوش مصنوعی می‌سازم و مسائل کسب‌وکار را به راهکارهای کاربردی فناوری تبدیل می‌کنم.",
+            "هم‌بنیان‌گذار و راهبر فنی Appraiva، شرکتی آمریکایی در کلیولند، اوهایو. به‌صورت دورکار در زمینه استراتژی محصول، داده، هوش مصنوعی و مهندسی فعالیت می‌کنم."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#top",
+          "links": [
+            {
+              "label": "در تماس باشید",
+              "url": "mailto:ahmadreza.smdi@gmail.com"
+            },
+            {
+              "label": "پروژه‌های منتخب",
+              "url": "https://a-samadi.com/fa/#work"
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "section": "شرکت‌ها و حوزه تمرکز فعلی",
+          "title": "Appraiva",
+          "text": "ایالات متحده · دورکار Appraiva هم‌بنیان‌گذار و راهبر فنی",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": null,
+          "links": [
+            {
+              "label": "ایالات متحده · دورکار Appraiva هم‌بنیان‌گذار و راهبر فنی",
+              "url": "https://a-samadi.com/fa/work/appraiva.html"
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "section": "شرکت‌ها و حوزه تمرکز فعلی",
+          "title": "گروه رویال ابراج",
+          "text": "دبی، امارات گروه رویال ابراج هم‌بنیان‌گذار و مدیرعامل",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": null,
+          "links": [
+            {
+              "label": "دبی، امارات گروه رویال ابراج هم‌بنیان‌گذار و مدیرعامل",
+              "url": "https://a-samadi.com/fa/work/royal-abraj.html"
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "section": "شرکت‌ها و حوزه تمرکز فعلی",
+          "title": "از ایده تا سیستم",
+          "text": "حوزه تمرکز من از ایده تا سیستم هوش مصنوعی · محصول · کسب‌وکار",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": null,
+          "links": [
+            {
+              "label": "حوزه تمرکز من از ایده تا سیستم هوش مصنوعی · محصول · کسب‌وکار",
+              "url": "https://a-samadi.com/fa/#skills"
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "section": "پروژه‌های منتخب",
+          "title": "از مسائل کسب‌وکار تا محصولاتی که کار می‌کنند.",
+          "text": "پروژه‌های منتخب از مسائل کسب‌وکار تا محصولاتی که کار می‌کنند. منتخبی از کارهایم در هوشمندسازی املاک، داده‌های سازمانی و تحلیل‌های پیش‌بینی‌کننده.",
+          "paragraphs": [
+            "منتخبی از کارهایم در هوشمندسازی املاک، داده‌های سازمانی و تحلیل‌های پیش‌بینی‌کننده."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#work",
+          "links": []
+        },
+        {
+          "position": 6,
+          "section": "پروژه‌های منتخب",
+          "title": "Appraiva، پلتفرم هوشمند تحلیل املاک",
+          "text": "شرکت محوری appraiva.com Appraiva، پلتفرم هوشمند تحلیل املاک ساخت ابزارهای هوش مصنوعی که به سرمایه‌گذاران و توسعه‌دهندگان املاک کمک می‌کنند با استفاده از تحلیل تصاویر و داده‌های غنی‌شده املاک، املاک دارای مشکلات مالی یا وضعیت فیزیکی نامناسب و املاک بدون آگهی عمومی را پیدا کنند. معماری محصول فرایندهای هوش مصنوعی سیستم‌های داده زیرساخت ابری مطالعه موردی Appraiva لایه‌های سیستم Appraiva ۰۱کشف املاک ۰۲غنی‌سازی داده ۰۳تحلیل فرصت‌ها ۰۴فرایندهای جست‌وجو و تصمیم‌گیری",
+          "paragraphs": [
+            "ساخت ابزارهای هوش مصنوعی که به سرمایه‌گذاران و توسعه‌دهندگان املاک کمک می‌کنند با استفاده از تحلیل تصاویر و داده‌های غنی‌شده املاک، املاک دارای مشکلات مالی یا وضعیت فیزیکی نامناسب و املاک بدون آگهی عمومی را پیدا کنند."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#work",
+          "links": [
+            {
+              "label": "appraiva.com",
+              "url": "https://appraiva.com/"
+            },
+            {
+              "label": "مطالعه موردی Appraiva",
+              "url": "https://a-samadi.com/fa/work/appraiva.html"
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "section": "پروژه‌های منتخب",
+          "title": "استراتژی دیجیتال و عملیات کسب‌وکار",
+          "text": "۲۰۲۲ تا امروزگروه رویال ابراج استراتژی دیجیتال و عملیات کسب‌وکار پیوند دادن وب‌سایت‌ها، فرایندهای مدیریت ارتباط با مشتری، ابزارهای مشتریان و عملیات داخلی برای کسب‌وکاری مستقر در دبی. استراتژی دیجیتالفرایندهای مدیریت ارتباط با مشتریابزارهای مشتریان مطالعه موردی گروه رویال ابراج",
+          "paragraphs": [
+            "پیوند دادن وب‌سایت‌ها، فرایندهای مدیریت ارتباط با مشتری، ابزارهای مشتریان و عملیات داخلی برای کسب‌وکاری مستقر در دبی."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#work",
+          "links": [
+            {
+              "label": "مطالعه موردی گروه رویال ابراج",
+              "url": "https://a-samadi.com/fa/work/royal-abraj.html"
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "section": "پروژه‌های منتخب",
+          "title": "پلتفرم داده برای CRM و تحلیل‌های سازمانی",
+          "text": "۲۰۲۲ تا ۲۰۲۳Oxfam Novib پلتفرم داده برای CRM و تحلیل‌های سازمانی زیرساخت مهندسی داده مبتنی بر Azure ساختم تا از مهاجرت CRM، حاکمیت داده، گزارش‌دهی و آمادگی تحلیلی با استفاده از منابع SAP و Salesforce پشتیبانی کند. Azure DatabricksData FactoryETLفرایندهای مبتنی بر ملاحظات GDPR مطالعه موردی Oxfam Novib",
+          "paragraphs": [
+            "زیرساخت مهندسی داده مبتنی بر Azure ساختم تا از مهاجرت CRM، حاکمیت داده، گزارش‌دهی و آمادگی تحلیلی با استفاده از منابع SAP و Salesforce پشتیبانی کند."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#work",
+          "links": [
+            {
+              "label": "مطالعه موردی Oxfam Novib",
+              "url": "https://a-samadi.com/fa/work/oxfam-novib.html"
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "section": "درباره من",
+          "title": "عمق فنی.نگاه کسب‌وکار.",
+          "text": "درباره منعمق فنی.نگاه کسب‌وکار.",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#about",
+          "links": []
+        },
+        {
+          "position": 10,
+          "section": "درباره من",
+          "title": "",
+          "text": "من احمدرضا صمدی، کارآفرین فناوری ساکن دبی هستم. استراتژی محصول و مهندسی را با الزامات عملی ساختن یک کسب‌وکار پیوند می‌دهم.",
+          "paragraphs": [
+            "من احمدرضا صمدی، کارآفرین فناوری ساکن دبی هستم. استراتژی محصول و مهندسی را با الزامات عملی ساختن یک کسب‌وکار پیوند می‌دهم."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#about",
+          "links": []
+        },
+        {
+          "position": 11,
+          "section": "درباره من",
+          "title": "",
+          "text": "در Appraiva، شرکتی آمریکایی در کلیولند، اوهایو، به‌صورت دورکار به‌عنوان هم‌بنیان‌گذار و راهبر فنی فعالیت می‌کنم و ابزارهای تحلیل هوشمند املاک می‌سازم. در گروه رویال ابراج، هم‌بنیان‌گذار و مدیرعامل هستم و استراتژی دیجیتال این کسب‌وکار مستقر در دبی را هدایت می‌کنم.",
+          "paragraphs": [
+            "در Appraiva، شرکتی آمریکایی در کلیولند، اوهایو، به‌صورت دورکار به‌عنوان هم‌بنیان‌گذار و راهبر فنی فعالیت می‌کنم و ابزارهای تحلیل هوشمند املاک می‌سازم. در گروه رویال ابراج، هم‌بنیان‌گذار و مدیرعامل هستم و استراتژی دیجیتال این کسب‌وکار مستقر در دبی را هدایت می‌کنم."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#about",
+          "links": [
+            {
+              "label": "Appraiva",
+              "url": "https://a-samadi.com/fa/work/appraiva.html"
+            },
+            {
+              "label": "گروه رویال ابراج",
+              "url": "https://a-samadi.com/fa/work/royal-abraj.html"
+            }
+          ]
+        },
+        {
+          "position": 12,
+          "section": "درباره من",
+          "title": "",
+          "text": "کارم از مسئله مشتری شروع می‌شود و تا ساخت داده‌ها، محصول و سیستم‌های لازم برای حل آن ادامه پیدا می‌کند.",
+          "paragraphs": [
+            "کارم از مسئله مشتری شروع می‌شود و تا ساخت داده‌ها، محصول و سیستم‌های لازم برای حل آن ادامه پیدا می‌کند."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#about",
+          "links": []
+        },
+        {
+          "position": 13,
+          "section": "درباره من",
+          "title": "",
+          "text": "نام من به فارسی و عربی: احمدرضا صمدی · أحمدرضا صمدي.",
+          "paragraphs": [
+            "نام من به فارسی و عربی: احمدرضا صمدی · أحمدرضا صمدي."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#about",
+          "links": []
+        },
+        {
+          "position": 14,
+          "section": "تجربه‌های منتخب",
+          "title": "مسیری فنی در محصول، داده، هوش مصنوعی و عملیات.",
+          "text": "تجربه‌های منتخب مسیری فنی در محصول، داده، هوش مصنوعی و عملیات.",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#experience",
+          "links": []
+        },
+        {
+          "position": 15,
+          "section": "تجربه‌های منتخب",
+          "title": "هم‌بنیان‌گذار و راهبر فنی",
+          "text": "اکتبر ۲۰۲۳ تا امروز هم‌بنیان‌گذار و راهبر فنی Appraiva · کلیولند، اوهایو، ایالات متحده · دورکار هدایت مسیر فنی در معماری محصول، سیستم‌های داده، فرایندهای هوش مصنوعی، زیرساخت ابری، شناخت مشتری و اجرای استراتژی ورود به بازار.",
+          "paragraphs": [
+            "هدایت مسیر فنی در معماری محصول، سیستم‌های داده، فرایندهای هوش مصنوعی، زیرساخت ابری، شناخت مشتری و اجرای استراتژی ورود به بازار."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#experience",
+          "links": []
+        },
+        {
+          "position": 16,
+          "section": "تجربه‌های منتخب",
+          "title": "هم‌بنیان‌گذار و مدیرعامل",
+          "text": "۲۰۲۲ تا امروز هم‌بنیان‌گذار و مدیرعامل گروه رویال ابراج · دبی، امارات هم‌بنیان‌گذار کسب‌وکاری در دبی در حوزه کارگزاری املاک و خدمات پیگیری امور اداری هستم. استراتژی دیجیتال وب‌سایت‌ها، فرایندهای CRM، ابزارهای مشتریان و سیستم‌های داخلی را از ثبت درخواست و پیگیری فروش تا مدیریت اسناد و پرونده‌ها هدایت می‌کنم. کار من در گروه رویال ابراج",
+          "paragraphs": [
+            "هم‌بنیان‌گذار کسب‌وکاری در دبی در حوزه کارگزاری املاک و خدمات پیگیری امور اداری هستم. استراتژی دیجیتال وب‌سایت‌ها، فرایندهای CRM، ابزارهای مشتریان و سیستم‌های داخلی را از ثبت درخواست و پیگیری فروش تا مدیریت اسناد و پرونده‌ها هدایت می‌کنم."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#experience",
+          "links": [
+            {
+              "label": "کار من در گروه رویال ابراج",
+              "url": "https://a-samadi.com/fa/work/royal-abraj.html"
+            }
+          ]
+        },
+        {
+          "position": 17,
+          "section": "تجربه‌های منتخب",
+          "title": "مشاور کسب‌وکار و فناوری",
+          "text": "مه ۲۰۲۳ تا اکتبر ۲۰۲۳ مشاور کسب‌وکار و فناوری Bayshire Realty · تورنتو، کانادا · دورکار در زمینه استراتژی دیجیتال، حضور آنلاین و عملیات مشتریان مبتنی بر هوش مصنوعی مشاوره دادم؛ از جمله فرایندهای تبدیل هم‌زمان مکالمات به متن و خلاصه‌سازی آن‌ها.",
+          "paragraphs": [
+            "در زمینه استراتژی دیجیتال، حضور آنلاین و عملیات مشتریان مبتنی بر هوش مصنوعی مشاوره دادم؛ از جمله فرایندهای تبدیل هم‌زمان مکالمات به متن و خلاصه‌سازی آن‌ها."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#experience",
+          "links": []
+        },
+        {
+          "position": 18,
+          "section": "تجربه‌های منتخب",
+          "title": "مهندس داده",
+          "text": "سپتامبر ۲۰۲۲ تا ژوئن ۲۰۲۳ مهندس داده Oxfam Novib · لاهه، هلند · دورکار زیرساخت CRM و تحلیل داده مبتنی بر Azure را با استفاده از Databricks، Data Factory، SQL، Key Vault، Azure DevOps و فرایندهای کنترل‌شده ETL ساختم.",
+          "paragraphs": [
+            "زیرساخت CRM و تحلیل داده مبتنی بر Azure را با استفاده از Databricks، Data Factory، SQL، Key Vault، Azure DevOps و فرایندهای کنترل‌شده ETL ساختم."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#experience",
+          "links": []
+        },
+        {
+          "position": 19,
+          "section": "تجربه‌های منتخب",
+          "title": "نقش‌های داده، محصول و یادگیری ماشین",
+          "text": "۲۰۲۰ تا ۲۰۲۲ نقش‌های داده، محصول و یادگیری ماشین SchoolConex/Klassroom.io · همراه اول · فعالیت‌های پیشین پژوهشی و محصول پلتفرم‌های ETL، زیرساخت محصولات مبتنی بر AWS، مدل‌های پیش‌بینی رفتار مشتری، فرایندهای داده پژوهشی و رابط‌های نرم‌افزار سازمانی ساختم.",
+          "paragraphs": [
+            "پلتفرم‌های ETL، زیرساخت محصولات مبتنی بر AWS، مدل‌های پیش‌بینی رفتار مشتری، فرایندهای داده پژوهشی و رابط‌های نرم‌افزار سازمانی ساختم."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#experience",
+          "links": []
+        },
+        {
+          "position": 20,
+          "section": "توانمندی‌ها",
+          "title": "جایی که استراتژی و اجرا به هم می‌رسند.",
+          "text": "توانمندی‌ها جایی که استراتژی و اجرا به هم می‌رسند.",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#skills",
+          "links": []
+        },
+        {
+          "position": 21,
+          "section": "توانمندی‌ها",
+          "title": "رهبری فنی و محصول",
+          "text": "رهبری فنی و محصول رهبری فنی، معماری محصول و نرم‌افزار، استراتژی دیجیتال، مدیریت ذی‌نفعان و شناخت مشتری.",
+          "paragraphs": [
+            "رهبری فنی، معماری محصول و نرم‌افزار، استراتژی دیجیتال، مدیریت ذی‌نفعان و شناخت مشتری."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#skills",
+          "links": []
+        },
+        {
+          "position": 22,
+          "section": "توانمندی‌ها",
+          "title": "هوش مصنوعی و سیستم‌های داده",
+          "text": "هوش مصنوعی و سیستم‌های داده فرایندهای هوش مصنوعی، مهندسی داده، یادگیری ماشین، مدل‌سازی پیش‌بینی‌کننده، حاکمیت داده، ETL، تحلیل و سیستم‌های پشتیبان تصمیم‌گیری.",
+          "paragraphs": [
+            "فرایندهای هوش مصنوعی، مهندسی داده، یادگیری ماشین، مدل‌سازی پیش‌بینی‌کننده، حاکمیت داده، ETL، تحلیل و سیستم‌های پشتیبان تصمیم‌گیری."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#skills",
+          "links": []
+        },
+        {
+          "position": 23,
+          "section": "توانمندی‌ها",
+          "title": "مهندسی ابر و پلتفرم",
+          "text": "مهندسی ابر و پلتفرم معماری بومی ابری در Azure و AWS، شامل Databricks، Data Factory، Lambda، API Gateway، Node.js، Python، SQL و PySpark.",
+          "paragraphs": [
+            "معماری بومی ابری در Azure و AWS، شامل Databricks، Data Factory، Lambda، API Gateway، Node.js، Python، SQL و PySpark."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#skills",
+          "links": []
+        },
+        {
+          "position": 24,
+          "section": "نوشته‌ها",
+          "title": "ایده‌های پشت کار.",
+          "text": "نوشته‌هاایده‌های پشت کار.مشاهده همه نوشته‌ها",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#writing",
+          "links": [
+            {
+              "label": "مشاهده همه نوشته‌ها",
+              "url": "https://a-samadi.com/fa/writing/"
+            }
+          ]
+        },
+        {
+          "position": 25,
+          "section": "نوشته‌ها",
+          "title": "پیش از ساخت محصول هوش مصنوعی",
+          "text": "راهنمای تعاملی پیش از ساخت محصول هوش مصنوعی ایده هوش مصنوعی را به یک تصمیم روشن، برنامه‌ای برای جمع‌آوری شواهد و یک آزمایش اولیه کاربردی تبدیل کنید. خلاصه تصمیم خود را بسازید",
+          "paragraphs": [
+            "ایده هوش مصنوعی را به یک تصمیم روشن، برنامه‌ای برای جمع‌آوری شواهد و یک آزمایش اولیه کاربردی تبدیل کنید."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#writing",
+          "links": [
+            {
+              "label": "خلاصه تصمیم خود را بسازید",
+              "url": "https://a-samadi.com/fa/tools/before-you-build-ai.html"
+            }
+          ]
+        },
+        {
+          "position": 26,
+          "section": "نوشته‌ها",
+          "title": "امنیت عامل‌های هوش مصنوعی: تعیین مرز پیش از اقدام",
+          "text": "عامل‌های هوش مصنوعیامنیت عامل‌های هوش مصنوعی: تعیین مرز پیش از اقدامپیش از آنکه عامل هوش مصنوعی دست به اقدام بزند، مجوزها، تأیید و نظارت را کجا قرار دهیم؟",
+          "paragraphs": [
+            "پیش از آنکه عامل هوش مصنوعی دست به اقدام بزند، مجوزها، تأیید و نظارت را کجا قرار دهیم؟"
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#writing",
+          "links": [
+            {
+              "label": "امنیت عامل‌های هوش مصنوعی: تعیین مرز پیش از اقدام",
+              "url": "https://a-samadi.com/fa/writing/ai-agent-safety-boundaries.html"
+            }
+          ]
+        },
+        {
+          "position": 27,
+          "section": "نوشته‌ها",
+          "title": "اتصال اپ‌ها به هوش مصنوعی: دسترسی، محدوده و تأیید",
+          "text": "سیستم‌های متصلاتصال اپ‌ها به هوش مصنوعی: دسترسی، محدوده و تأییدوقتی دستیار هوش مصنوعی به تقویم، فایل‌ها یا ایمیل شما دسترسی دارد چه چیزی تغییر می‌کند و پیش از اتصال چه چیزهایی را باید بررسی کرد.",
+          "paragraphs": [
+            "وقتی دستیار هوش مصنوعی به تقویم، فایل‌ها یا ایمیل شما دسترسی دارد چه چیزی تغییر می‌کند و پیش از اتصال چه چیزهایی را باید بررسی کرد."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#writing",
+          "links": [
+            {
+              "label": "اتصال اپ‌ها به هوش مصنوعی: دسترسی، محدوده و تأیید",
+              "url": "https://a-samadi.com/fa/writing/connected-ai-apps.html"
+            }
+          ]
+        },
+        {
+          "position": 28,
+          "section": "نوشته‌ها",
+          "title": "هزینه هوش مصنوعی به‌ازای هر نتیجه تأییدشده",
+          "text": "تفکر محصولهزینه هوش مصنوعی به‌ازای هر نتیجه تأییدشدهچرا کاهش قیمت مدل‌ها تنها بخشی از هزینه کار مفید با هوش مصنوعی است.",
+          "paragraphs": [
+            "چرا کاهش قیمت مدل‌ها تنها بخشی از هزینه کار مفید با هوش مصنوعی است."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#writing",
+          "links": [
+            {
+              "label": "هزینه هوش مصنوعی به‌ازای هر نتیجه تأییدشده",
+              "url": "https://a-samadi.com/fa/writing/ai-cost-per-verified-result.html"
+            }
+          ]
+        },
+        {
+          "position": 29,
+          "section": "تماس",
+          "title": "درباره یک محصول یا فرایند کسب‌وکار گفت‌وگو کنیم.",
+          "text": "تماس درباره یک محصول یا فرایند کسب‌وکار گفت‌وگو کنیم. از گفت‌وگو با بنیان‌گذاران و متخصصان صنعت که روی محصولات هوش مصنوعی، داده‌های املاک یا سیستم‌های پشتیبان عملیات کسب‌وکار کار می‌کنند، استقبال می‌کنم. بگویید این کار برای چه کسانی است، امروز چگونه انجام می‌شود و کدام تصمیم یا فرایند را می‌خواهید بهتر کنید. برای شروع، یک توضیح کوتاه و یک پیوند مرتبط کافی است. دبی، امارات متحده عربی",
+          "paragraphs": [
+            "از گفت‌وگو با بنیان‌گذاران و متخصصان صنعت که روی محصولات هوش مصنوعی، داده‌های املاک یا سیستم‌های پشتیبان عملیات کسب‌وکار کار می‌کنند، استقبال می‌کنم.",
+            "بگویید این کار برای چه کسانی است، امروز چگونه انجام می‌شود و کدام تصمیم یا فرایند را می‌خواهید بهتر کنید. برای شروع، یک توضیح کوتاه و یک پیوند مرتبط کافی است."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#contact",
+          "links": []
+        }
+      ],
+      "shortcuts": [
+        {
+          "label": "پروژه‌ها",
+          "url": "https://a-samadi.com/fa/#work"
+        },
+        {
+          "label": "درباره من",
+          "url": "https://a-samadi.com/fa/#about"
+        },
+        {
+          "label": "تجربه کاری",
+          "url": "https://a-samadi.com/fa/#experience"
+        },
+        {
+          "label": "توانمندی‌ها",
+          "url": "https://a-samadi.com/fa/#skills"
+        },
+        {
+          "label": "نوشته‌ها",
+          "url": "https://a-samadi.com/fa/#writing"
+        },
+        {
+          "label": "تماس",
+          "url": "https://a-samadi.com/fa/#contact"
+        },
+        {
+          "label": "پیش از ساخت محصول هوش مصنوعی",
+          "url": "https://a-samadi.com/fa/tools/before-you-build-ai.html"
+        },
+        {
+          "label": "همه نوشته‌ها",
+          "url": "https://a-samadi.com/fa/writing/"
+        },
+        {
+          "label": "زندگی‌نامه و بسته معرفی",
+          "url": "https://a-samadi.com/fa/about.html#profile-resources"
+        },
+        {
+          "label": "ایمیل",
+          "url": "mailto:ahmadreza.smdi@gmail.com"
+        },
+        {
+          "label": "لینکدین",
+          "url": "https://www.linkedin.com/in/ahmadreza-samadi/"
+        },
+        {
+          "label": "گیت‌هاب",
+          "url": "https://github.com/ahmadreza-smdi"
+        },
+        {
+          "label": "یوتیوب",
+          "url": "https://www.youtube.com/@ahmadreza-samadi"
+        },
+        {
+          "label": "اینستاگرام",
+          "url": "https://www.instagram.com/ahmadreza_smdi/"
+        }
+      ]
+    },
+    {
+      "language": "ar",
+      "source_url": "https://a-samadi.com/ar/",
+      "passages": [
+        {
+          "position": 1,
+          "section": "",
+          "title": "أحمدرضا صمدي",
+          "text": "رائد أعمال تقني · دبي، الإمارات أحمدرضا صمدي أبني منتجات ذكاء اصطناعي وأحوّل تحديات الأعمال إلى حلول تقنية عملية. شريك مؤسس وقائد تقني في Appraiva، وهي شركة أمريكية في كليفلاند، أوهايو. أعمل عن بُعد في استراتيجية المنتج والبيانات والذكاء الاصطناعي والهندسة. تواصل معي مشاريع مختارة اسأل عن أعمالي",
+          "paragraphs": [
+            "رائد أعمال تقني · دبي، الإمارات",
+            "أبني منتجات ذكاء اصطناعي وأحوّل تحديات الأعمال إلى حلول تقنية عملية.",
+            "شريك مؤسس وقائد تقني في Appraiva، وهي شركة أمريكية في كليفلاند، أوهايو. أعمل عن بُعد في استراتيجية المنتج والبيانات والذكاء الاصطناعي والهندسة."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#top",
+          "links": [
+            {
+              "label": "تواصل معي",
+              "url": "mailto:ahmadreza.smdi@gmail.com"
+            },
+            {
+              "label": "مشاريع مختارة",
+              "url": "https://a-samadi.com/ar/#work"
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "section": "الشركات الحالية ومجالات التركيز",
+          "title": "Appraiva",
+          "text": "الولايات المتحدة · عن بُعد Appraiva شريك مؤسس وقائد تقني",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": null,
+          "links": [
+            {
+              "label": "الولايات المتحدة · عن بُعد Appraiva شريك مؤسس وقائد تقني",
+              "url": "https://a-samadi.com/ar/work/appraiva.html"
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "section": "الشركات الحالية ومجالات التركيز",
+          "title": "مجموعة رويال أبراج",
+          "text": "دبي، الإمارات مجموعة رويال أبراج شريك مؤسس ورئيس تنفيذي",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": null,
+          "links": [
+            {
+              "label": "دبي، الإمارات مجموعة رويال أبراج شريك مؤسس ورئيس تنفيذي",
+              "url": "https://a-samadi.com/ar/work/royal-abraj.html"
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "section": "الشركات الحالية ومجالات التركيز",
+          "title": "من الأفكار إلى الأنظمة",
+          "text": "مجال تركيزي من الأفكار إلى الأنظمة الذكاء الاصطناعي · المنتج · الأعمال",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": null,
+          "links": [
+            {
+              "label": "مجال تركيزي من الأفكار إلى الأنظمة الذكاء الاصطناعي · المنتج · الأعمال",
+              "url": "https://a-samadi.com/ar/#skills"
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "section": "مشاريع مختارة",
+          "title": "من تحديات الأعمال إلى منتجات تعمل.",
+          "text": "مشاريع مختارة من تحديات الأعمال إلى منتجات تعمل. أعمال مختارة في ذكاء البيانات العقارية والبيانات المؤسسية والتحليلات التنبؤية.",
+          "paragraphs": [
+            "أعمال مختارة في ذكاء البيانات العقارية والبيانات المؤسسية والتحليلات التنبؤية."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#work",
+          "links": []
+        },
+        {
+          "position": 6,
+          "section": "مشاريع مختارة",
+          "title": "Appraiva، منصة الذكاء العقاري",
+          "text": "الشركة الرئيسية appraiva.com Appraiva، منصة الذكاء العقاري تطوير أدوات ذكاء اصطناعي تساعد المستثمرين والمطورين العقاريين على العثور على العقارات التي تعاني من مشكلات مالية أو تدهور في حالتها، والعقارات غير المُدرجة للبيع علنًا، باستخدام تحليل الصور والبيانات العقارية المُثرَاة. معمارية المنتج سير عمل الذكاء الاصطناعي أنظمة البيانات البنية التحتية السحابية دراسة حالة Appraiva طبقات نظام Appraiva ٠١اكتشاف العقارات ٠٢إثراء البيانات ٠٣تحليل الفرص ٠٤سير عمل البحث واتخاذ القرار",
+          "paragraphs": [
+            "تطوير أدوات ذكاء اصطناعي تساعد المستثمرين والمطورين العقاريين على العثور على العقارات التي تعاني من مشكلات مالية أو تدهور في حالتها، والعقارات غير المُدرجة للبيع علنًا، باستخدام تحليل الصور والبيانات العقارية المُثرَاة."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#work",
+          "links": [
+            {
+              "label": "appraiva.com",
+              "url": "https://appraiva.com/"
+            },
+            {
+              "label": "دراسة حالة Appraiva",
+              "url": "https://a-samadi.com/ar/work/appraiva.html"
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "section": "مشاريع مختارة",
+          "title": "الاستراتيجية الرقمية وعمليات الأعمال",
+          "text": "٢٠٢٢ حتى الآنمجموعة رويال أبراج الاستراتيجية الرقمية وعمليات الأعمال ربط المواقع الإلكترونية وسير عمل إدارة علاقات العملاء وأدوات العملاء والعمليات الداخلية لشركة مقرها دبي. الاستراتيجية الرقميةسير عمل إدارة علاقات العملاءأدوات العملاء دراسة حالة مجموعة رويال أبراج",
+          "paragraphs": [
+            "ربط المواقع الإلكترونية وسير عمل إدارة علاقات العملاء وأدوات العملاء والعمليات الداخلية لشركة مقرها دبي."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#work",
+          "links": [
+            {
+              "label": "دراسة حالة مجموعة رويال أبراج",
+              "url": "https://a-samadi.com/ar/work/royal-abraj.html"
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "section": "مشاريع مختارة",
+          "title": "منصة بيانات لإدارة علاقات العملاء والتحليلات المؤسسية",
+          "text": "٢٠٢٢ إلى ٢٠٢٣Oxfam Novib منصة بيانات لإدارة علاقات العملاء والتحليلات المؤسسية بنيت بنية هندسة بيانات على Azure لدعم ترحيل أنظمة إدارة علاقات العملاء وحوكمة البيانات وإعداد التقارير والجاهزية التحليلية، اعتماداً على مصادر SAP وSalesforce. Azure DatabricksData FactoryETLعمليات تراعي متطلبات GDPR دراسة حالة Oxfam Novib",
+          "paragraphs": [
+            "بنيت بنية هندسة بيانات على Azure لدعم ترحيل أنظمة إدارة علاقات العملاء وحوكمة البيانات وإعداد التقارير والجاهزية التحليلية، اعتماداً على مصادر SAP وSalesforce."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#work",
+          "links": [
+            {
+              "label": "دراسة حالة Oxfam Novib",
+              "url": "https://a-samadi.com/ar/work/oxfam-novib.html"
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "section": "نبذة عني",
+          "title": "عمق تقني.رؤية تجارية.",
+          "text": "نبذة عنيعمق تقني.رؤية تجارية.",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#about",
+          "links": []
+        },
+        {
+          "position": 10,
+          "section": "نبذة عني",
+          "title": "",
+          "text": "أنا أحمدرضا صمدي، رائد أعمال تقني مقيم في دبي. أربط استراتيجية المنتج والهندسة بالعمل الفعلي لبناء الأعمال.",
+          "paragraphs": [
+            "أنا أحمدرضا صمدي، رائد أعمال تقني مقيم في دبي. أربط استراتيجية المنتج والهندسة بالعمل الفعلي لبناء الأعمال."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#about",
+          "links": []
+        },
+        {
+          "position": 11,
+          "section": "نبذة عني",
+          "title": "",
+          "text": "في Appraiva، وهي شركة أمريكية في كليفلاند، أوهايو، أعمل عن بُعد بصفتي شريكاً مؤسساً وقائداً تقنياً لبناء حلول الذكاء العقاري. وفي مجموعة رويال أبراج، أتولى دور الشريك المؤسس والرئيس التنفيذي وأقود الاستراتيجية الرقمية لهذا النشاط في دبي.",
+          "paragraphs": [
+            "في Appraiva، وهي شركة أمريكية في كليفلاند، أوهايو، أعمل عن بُعد بصفتي شريكاً مؤسساً وقائداً تقنياً لبناء حلول الذكاء العقاري. وفي مجموعة رويال أبراج، أتولى دور الشريك المؤسس والرئيس التنفيذي وأقود الاستراتيجية الرقمية لهذا النشاط في دبي."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#about",
+          "links": [
+            {
+              "label": "Appraiva",
+              "url": "https://a-samadi.com/ar/work/appraiva.html"
+            },
+            {
+              "label": "مجموعة رويال أبراج",
+              "url": "https://a-samadi.com/ar/work/royal-abraj.html"
+            }
+          ]
+        },
+        {
+          "position": 12,
+          "section": "نبذة عني",
+          "title": "",
+          "text": "يبدأ عملي بمشكلة العميل، ثم يمتد إلى البيانات والمنتج والأنظمة اللازمة لحلها.",
+          "paragraphs": [
+            "يبدأ عملي بمشكلة العميل، ثم يمتد إلى البيانات والمنتج والأنظمة اللازمة لحلها."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#about",
+          "links": []
+        },
+        {
+          "position": 13,
+          "section": "نبذة عني",
+          "title": "",
+          "text": "اسمي بالفارسية والعربية: احمدرضا صمدی · أحمدرضا صمدي.",
+          "paragraphs": [
+            "اسمي بالفارسية والعربية: احمدرضا صمدی · أحمدرضا صمدي."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#about",
+          "links": []
+        },
+        {
+          "position": 14,
+          "section": "خبرات مختارة",
+          "title": "مسار تقني يجمع المنتج والبيانات والذكاء الاصطناعي والعمليات.",
+          "text": "خبرات مختارة مسار تقني يجمع المنتج والبيانات والذكاء الاصطناعي والعمليات.",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#experience",
+          "links": []
+        },
+        {
+          "position": 15,
+          "section": "خبرات مختارة",
+          "title": "شريك مؤسس وقائد تقني",
+          "text": "أكتوبر ٢٠٢٣ حتى الآن شريك مؤسس وقائد تقني Appraiva · كليفلاند، أوهايو، الولايات المتحدة · عن بُعد أقود التوجه التقني في معمارية المنتج وأنظمة البيانات وسير عمل الذكاء الاصطناعي والبنية السحابية وفهم العملاء وتنفيذ استراتيجية دخول السوق.",
+          "paragraphs": [
+            "أقود التوجه التقني في معمارية المنتج وأنظمة البيانات وسير عمل الذكاء الاصطناعي والبنية السحابية وفهم العملاء وتنفيذ استراتيجية دخول السوق."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#experience",
+          "links": []
+        },
+        {
+          "position": 16,
+          "section": "خبرات مختارة",
+          "title": "شريك مؤسس ورئيس تنفيذي",
+          "text": "٢٠٢٢ حتى الآن شريك مؤسس ورئيس تنفيذي مجموعة رويال أبراج · دبي، الإمارات شاركت في تأسيس نشاط في دبي يشمل الوساطة العقارية وخدمات تخليص المعاملات. أقود الاستراتيجية الرقمية للمواقع وسير عمل CRM وأدوات العملاء والأنظمة الداخلية، من تسجيل الاستفسارات ومتابعة المبيعات إلى إدارة المستندات وتتبع المعاملات. عملي في مجموعة رويال أبراج",
+          "paragraphs": [
+            "شاركت في تأسيس نشاط في دبي يشمل الوساطة العقارية وخدمات تخليص المعاملات. أقود الاستراتيجية الرقمية للمواقع وسير عمل CRM وأدوات العملاء والأنظمة الداخلية، من تسجيل الاستفسارات ومتابعة المبيعات إلى إدارة المستندات وتتبع المعاملات."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#experience",
+          "links": [
+            {
+              "label": "عملي في مجموعة رويال أبراج",
+              "url": "https://a-samadi.com/ar/work/royal-abraj.html"
+            }
+          ]
+        },
+        {
+          "position": 17,
+          "section": "خبرات مختارة",
+          "title": "مستشار أعمال وتقنية",
+          "text": "مايو ٢٠٢٣ إلى أكتوبر ٢٠٢٣ مستشار أعمال وتقنية Bayshire Realty · تورونتو، كندا · عن بُعد قدمت استشارات في الاستراتيجية الرقمية والحضور على الويب وعمليات خدمة العملاء المدعومة بالذكاء الاصطناعي، بما يشمل تحويل المكالمات إلى نصوص وتلخيصها في الوقت الفعلي.",
+          "paragraphs": [
+            "قدمت استشارات في الاستراتيجية الرقمية والحضور على الويب وعمليات خدمة العملاء المدعومة بالذكاء الاصطناعي، بما يشمل تحويل المكالمات إلى نصوص وتلخيصها في الوقت الفعلي."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#experience",
+          "links": []
+        },
+        {
+          "position": 18,
+          "section": "خبرات مختارة",
+          "title": "مهندس بيانات",
+          "text": "سبتمبر ٢٠٢٢ إلى يونيو ٢٠٢٣ مهندس بيانات Oxfam Novib · لاهاي، هولندا · عن بُعد بنيت بنية لإدارة علاقات العملاء والتحليلات على Azure باستخدام Databricks وData Factory وSQL وKey Vault وAzure DevOps وسير عمل ETL الخاضع للحوكمة.",
+          "paragraphs": [
+            "بنيت بنية لإدارة علاقات العملاء والتحليلات على Azure باستخدام Databricks وData Factory وSQL وKey Vault وAzure DevOps وسير عمل ETL الخاضع للحوكمة."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#experience",
+          "links": []
+        },
+        {
+          "position": 19,
+          "section": "خبرات مختارة",
+          "title": "أدوار في البيانات والمنتجات وتعلم الآلة",
+          "text": "٢٠٢٠ إلى ٢٠٢٢ أدوار في البيانات والمنتجات وتعلم الآلة SchoolConex/Klassroom.io · MCI · أعمال سابقة في البحث والمنتجات بنيت منصات ETL وبنية منتجات على AWS ونماذج تنبؤية للعملاء وسير عمل للبيانات البحثية وواجهات برمجيات مؤسسية.",
+          "paragraphs": [
+            "بنيت منصات ETL وبنية منتجات على AWS ونماذج تنبؤية للعملاء وسير عمل للبيانات البحثية وواجهات برمجيات مؤسسية."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#experience",
+          "links": []
+        },
+        {
+          "position": 20,
+          "section": "القدرات",
+          "title": "حيث تلتقي الاستراتيجية بالتنفيذ.",
+          "text": "القدرات حيث تلتقي الاستراتيجية بالتنفيذ.",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#skills",
+          "links": []
+        },
+        {
+          "position": 21,
+          "section": "القدرات",
+          "title": "قيادة المنتج والفرق التقنية",
+          "text": "قيادة المنتج والفرق التقنية القيادة التقنية ومعمارية المنتج والبرمجيات والاستراتيجية الرقمية وإدارة أصحاب المصلحة وفهم العملاء.",
+          "paragraphs": [
+            "القيادة التقنية ومعمارية المنتج والبرمجيات والاستراتيجية الرقمية وإدارة أصحاب المصلحة وفهم العملاء."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#skills",
+          "links": []
+        },
+        {
+          "position": 22,
+          "section": "القدرات",
+          "title": "الذكاء الاصطناعي وأنظمة البيانات",
+          "text": "الذكاء الاصطناعي وأنظمة البيانات سير عمل الذكاء الاصطناعي وهندسة البيانات وتعلم الآلة والنمذجة التنبؤية وحوكمة البيانات وETL والتحليلات وأنظمة دعم القرار.",
+          "paragraphs": [
+            "سير عمل الذكاء الاصطناعي وهندسة البيانات وتعلم الآلة والنمذجة التنبؤية وحوكمة البيانات وETL والتحليلات وأنظمة دعم القرار."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#skills",
+          "links": []
+        },
+        {
+          "position": 23,
+          "section": "القدرات",
+          "title": "هندسة السحابة والمنصات",
+          "text": "هندسة السحابة والمنصات معمارية سحابية على Azure وAWS، تشمل Databricks وData Factory وLambda وAPI Gateway وNode.js وPython وSQL وPySpark.",
+          "paragraphs": [
+            "معمارية سحابية على Azure وAWS، تشمل Databricks وData Factory وLambda وAPI Gateway وNode.js وPython وSQL وPySpark."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#skills",
+          "links": []
+        },
+        {
+          "position": 24,
+          "section": "المقالات",
+          "title": "الأفكار وراء العمل.",
+          "text": "المقالاتالأفكار وراء العمل.تصفح كل المقالات",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#writing",
+          "links": [
+            {
+              "label": "تصفح كل المقالات",
+              "url": "https://a-samadi.com/ar/writing/"
+            }
+          ]
+        },
+        {
+          "position": 25,
+          "section": "المقالات",
+          "title": "قبل أن تبني منتج الذكاء الاصطناعي",
+          "text": "دليل تفاعلي قبل أن تبني منتج الذكاء الاصطناعي حوّل فكرة الذكاء الاصطناعي إلى قرار واضح وخطة للأدلة وتجربة أولية مفيدة. أنشئ موجز القرار",
+          "paragraphs": [
+            "حوّل فكرة الذكاء الاصطناعي إلى قرار واضح وخطة للأدلة وتجربة أولية مفيدة."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#writing",
+          "links": [
+            {
+              "label": "أنشئ موجز القرار",
+              "url": "https://a-samadi.com/ar/tools/before-you-build-ai.html"
+            }
+          ]
+        },
+        {
+          "position": 26,
+          "section": "المقالات",
+          "title": "أمان وكلاء الذكاء الاصطناعي: حدود قبل التنفيذ",
+          "text": "وكلاء الذكاء الاصطناعيأمان وكلاء الذكاء الاصطناعي: حدود قبل التنفيذأين نضع الأذونات والموافقة والمراقبة قبل أن يتمكن وكيل الذكاء الاصطناعي من اتخاذ إجراء؟",
+          "paragraphs": [
+            "أين نضع الأذونات والموافقة والمراقبة قبل أن يتمكن وكيل الذكاء الاصطناعي من اتخاذ إجراء؟"
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#writing",
+          "links": [
+            {
+              "label": "أمان وكلاء الذكاء الاصطناعي: حدود قبل التنفيذ",
+              "url": "https://a-samadi.com/ar/writing/ai-agent-safety-boundaries.html"
+            }
+          ]
+        },
+        {
+          "position": 27,
+          "section": "المقالات",
+          "title": "ربط التطبيقات بالذكاء الاصطناعي: الوصول والصلاحيات والموافقة",
+          "text": "الأنظمة المتصلةربط التطبيقات بالذكاء الاصطناعي: الوصول والصلاحيات والموافقةما الذي يتغير عندما يستطيع مساعد الذكاء الاصطناعي استخدام تقويمك أو ملفاتك أو بريدك، وما الذي ينبغي التحقق منه قبل الربط.",
+          "paragraphs": [
+            "ما الذي يتغير عندما يستطيع مساعد الذكاء الاصطناعي استخدام تقويمك أو ملفاتك أو بريدك، وما الذي ينبغي التحقق منه قبل الربط."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#writing",
+          "links": [
+            {
+              "label": "ربط التطبيقات بالذكاء الاصطناعي: الوصول والصلاحيات والموافقة",
+              "url": "https://a-samadi.com/ar/writing/connected-ai-apps.html"
+            }
+          ]
+        },
+        {
+          "position": 28,
+          "section": "المقالات",
+          "title": "تكلفة الذكاء الاصطناعي لكل نتيجة مُتحقَّق منها",
+          "text": "التفكير في المنتجتكلفة الذكاء الاصطناعي لكل نتيجة مُتحقَّق منهالماذا يُعد انخفاض سعر النموذج جزءاً واحداً فقط من تكلفة العمل المفيد بالذكاء الاصطناعي.",
+          "paragraphs": [
+            "لماذا يُعد انخفاض سعر النموذج جزءاً واحداً فقط من تكلفة العمل المفيد بالذكاء الاصطناعي."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#writing",
+          "links": [
+            {
+              "label": "تكلفة الذكاء الاصطناعي لكل نتيجة مُتحقَّق منها",
+              "url": "https://a-samadi.com/ar/writing/ai-cost-per-verified-result.html"
+            }
+          ]
+        },
+        {
+          "position": 29,
+          "section": "تواصل",
+          "title": "لنتحدث عن منتج أو سير عمل.",
+          "text": "تواصل لنتحدث عن منتج أو سير عمل. أرحب بالحوار مع المؤسسين وخبراء القطاع الذين يعملون على منتجات الذكاء الاصطناعي أو البيانات العقارية أو الأنظمة التي تدعم عمليات الأعمال. أخبرني بمن يستفيد من هذا العمل، وكيف يُنجز اليوم، وما القرار أو العملية التي تريد تحسينها. يكفي وصف موجز ورابط ذو صلة للبدء. دبي، الإمارات العربية المتحدة",
+          "paragraphs": [
+            "أرحب بالحوار مع المؤسسين وخبراء القطاع الذين يعملون على منتجات الذكاء الاصطناعي أو البيانات العقارية أو الأنظمة التي تدعم عمليات الأعمال.",
+            "أخبرني بمن يستفيد من هذا العمل، وكيف يُنجز اليوم، وما القرار أو العملية التي تريد تحسينها. يكفي وصف موجز ورابط ذو صلة للبدء.",
+            "دبي، الإمارات العربية المتحدة"
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#contact",
+          "links": []
+        }
+      ],
+      "shortcuts": [
+        {
+          "label": "المشاريع",
+          "url": "https://a-samadi.com/ar/#work"
+        },
+        {
+          "label": "نبذة عني",
+          "url": "https://a-samadi.com/ar/#about"
+        },
+        {
+          "label": "الخبرة",
+          "url": "https://a-samadi.com/ar/#experience"
+        },
+        {
+          "label": "القدرات",
+          "url": "https://a-samadi.com/ar/#skills"
+        },
+        {
+          "label": "المقالات",
+          "url": "https://a-samadi.com/ar/#writing"
+        },
+        {
+          "label": "تواصل",
+          "url": "https://a-samadi.com/ar/#contact"
+        },
+        {
+          "label": "قبل أن تبني منتج الذكاء الاصطناعي",
+          "url": "https://a-samadi.com/ar/tools/before-you-build-ai.html"
+        },
+        {
+          "label": "كل المقالات",
+          "url": "https://a-samadi.com/ar/writing/"
+        },
+        {
+          "label": "السيرة وملف التعريف",
+          "url": "https://a-samadi.com/ar/about.html#profile-resources"
+        },
+        {
+          "label": "البريد الإلكتروني",
+          "url": "mailto:ahmadreza.smdi@gmail.com"
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/ahmadreza-samadi/"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ahmadreza-smdi"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@ahmadreza-samadi"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/ahmadreza_smdi/"
+        }
+      ]
+    }
+  ]
+}

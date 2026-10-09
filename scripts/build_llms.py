@@ -96,6 +96,7 @@ def build():
         f'- [Arabic homepage]({BASE}ar/): the site in Arabic',
         f'- [Persian writing]({BASE}fa/writing/): Persian translations of the articles',
         f'- [Arabic writing]({BASE}ar/writing/): Arabic translations of the articles',
+        f'- [Homepage work index (JSON)]({BASE}ask-index.json): existing homepage passages and destinations in English, Persian and Arabic.',
         f'- [RSS feed]({BASE}writing/feed.xml): new English articles',
         f'- [Sitemap]({BASE}sitemap.xml): every page with its language alternates',
         '',

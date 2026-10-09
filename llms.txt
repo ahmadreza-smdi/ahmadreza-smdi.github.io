@@ -73,5 +73,6 @@ Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and
 - [Arabic homepage](https://a-samadi.com/ar/): the site in Arabic
 - [Persian writing](https://a-samadi.com/fa/writing/): Persian translations of the articles
 - [Arabic writing](https://a-samadi.com/ar/writing/): Arabic translations of the articles
+- [Homepage work index (JSON)](https://a-samadi.com/ask-index.json): existing homepage passages and destinations in English, Persian and Arabic.
 - [RSS feed](https://a-samadi.com/writing/feed.xml): new English articles
 - [Sitemap](https://a-samadi.com/sitemap.xml): every page with its language alternates
