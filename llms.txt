@@ -47,6 +47,10 @@ Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and
 - [AI says 8% rental yield. Why is the owner still paying?](https://a-samadi.com/writing/ai-rental-yield-cash-flow.html): A correct rental-yield calculation can still leave a property owner covering a cash shortfall. Follow one fictional home from the headline to the money left after costs and the loan.
 - [Why does your computer slow down when storage is almost full?](https://a-samadi.com/writing/why-full-storage-slows-computer.html): Storage is working room too. A ten-slide explainer on temporary files, RAM overflow and SSD housekeeping, with practical cleanup advice.
 - [iPhone Duo: what does the extra $800 cost per day?](https://a-samadi.com/writing/iphone-duo-price-per-day.html): A 104-second film turns the $800 US launch-price gap between iPhone Duo and iPhone 18 Pro into a daily comparison, with the assumptions made clear.
+- [How does a contactless card work without a battery?](https://a-samadi.com/writing/how-contactless-cards-work.html): A payment terminal briefly powers the chip in a passive contactless card. Follow the energy and the payment data through a tap.
+- [How do headphones cancel noise by making more sound?](https://a-samadi.com/writing/how-noise-cancellation-works.html): Microphones measure outside noise and a speaker adds a carefully timed opposite wave. Why this reduces a hum better than every sudden voice.
+- [Why do identical-looking USB-C cables behave differently?](https://a-samadi.com/writing/why-usb-c-cables-differ.html): USB-C describes the connector. Power, file-transfer speed and video support are separate capabilities to check in the whole connection.
+- [How does your phone turn text in a photo into copyable words?](https://a-samadi.com/writing/how-photo-text-recognition-works.html): OCR finds text regions and recognises visual patterns as letters and words. The AI feature can save typing, but copied text still needs checking.
 
 ## Films
 

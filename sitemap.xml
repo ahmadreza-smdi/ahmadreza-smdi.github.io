@@ -160,7 +160,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/writing/</loc>
-        <lastmod>2026-10-10T02:10:47+03:30</lastmod>
+        <lastmod>2026-10-10T03:05:36+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -184,7 +184,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/</loc>
-        <lastmod>2026-10-10T02:10:47+03:30</lastmod>
+        <lastmod>2026-10-10T03:05:36+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -208,7 +208,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/</loc>
-        <lastmod>2026-10-10T02:10:47+03:30</lastmod>
+        <lastmod>2026-10-10T03:05:36+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -682,7 +682,17 @@
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-rental-yield-cash-flow.html" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-rental-yield-cash-flow.html" />
     </url>
-    <url><loc>https://a-samadi.com/watch/rental-yield.html</loc><lastmod>2026-10-09</lastmod><video:video><video:thumbnail_loc>https://a-samadi.com/assets/writing/rental-yield/cover.png</video:thumbnail_loc><video:title>AI says 8% rental yield. Why is the owner still paying?</video:title><video:description>Watch the 99-second film to see why an 8% gross rental yield can coexist with a cash shortfall.</video:description><video:content_loc>https://a-samadi.com/assets/writing/rental-yield/film.mp4</video:content_loc><video:publication_date>2026-10-09T03:57:44+03:30</video:publication_date></video:video></url>
+    <url>
+        <loc>https://a-samadi.com/watch/rental-yield.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <video:video>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/rental-yield/cover.png</video:thumbnail_loc>
+            <video:title>AI says 8% rental yield. Why is the owner still paying?</video:title>
+            <video:description>Watch the 99-second film to see why an 8% gross rental yield can coexist with a cash shortfall.</video:description>
+            <video:content_loc>https://a-samadi.com/assets/writing/rental-yield/film.mp4</video:content_loc>
+            <video:publication_date>2026-10-09T03:57:44+03:30</video:publication_date>
+        </video:video>
+    </url>
     <url>
         <loc>https://a-samadi.com/writing/why-full-storage-slows-computer.html</loc>
         <lastmod>2026-10-09</lastmod>
@@ -838,5 +848,149 @@
             <video:duration>104</video:duration>
             <video:publication_date>2026-10-10T02:10:47+03:30</video:publication_date>
         </video:video>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/how-contactless-cards-work.html</loc>
+        <lastmod>2026-10-10T03:05:36+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/how-contactless-cards-work.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/how-contactless-cards-work.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/how-contactless-cards-work.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/how-contactless-cards-work.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/how-contactless-cards-work/slide-01.png</image:loc>
+            <image:title>How does a contactless card work without a battery?</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/how-contactless-cards-work.html</loc>
+        <lastmod>2026-10-10T03:05:36+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/how-contactless-cards-work.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/how-contactless-cards-work.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/how-contactless-cards-work.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/how-contactless-cards-work.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/how-contactless-cards-work/slide-01.png</image:loc>
+            <image:title>کارت بدون تماس چطور بدون باتری کار می‌کند؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/how-contactless-cards-work.html</loc>
+        <lastmod>2026-10-10T03:05:36+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/how-contactless-cards-work.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/how-contactless-cards-work.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/how-contactless-cards-work.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/how-contactless-cards-work.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/how-contactless-cards-work/slide-01.png</image:loc>
+            <image:title>كيف تعمل البطاقة اللاتلامسية من دون بطارية؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/how-noise-cancellation-works.html</loc>
+        <lastmod>2026-10-10T03:05:36+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/how-noise-cancellation-works.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/how-noise-cancellation-works.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/how-noise-cancellation-works.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/how-noise-cancellation-works.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/how-noise-cancellation-works/slide-01.png</image:loc>
+            <image:title>How do headphones cancel noise by making more sound?</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/how-noise-cancellation-works.html</loc>
+        <lastmod>2026-10-10T03:05:36+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/how-noise-cancellation-works.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/how-noise-cancellation-works.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/how-noise-cancellation-works.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/how-noise-cancellation-works.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/how-noise-cancellation-works/slide-01.png</image:loc>
+            <image:title>هدفون چطور با ساختن صدای بیشتر، نویز را کم می‌کند؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/how-noise-cancellation-works.html</loc>
+        <lastmod>2026-10-10T03:05:36+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/how-noise-cancellation-works.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/how-noise-cancellation-works.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/how-noise-cancellation-works.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/how-noise-cancellation-works.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/how-noise-cancellation-works/slide-01.png</image:loc>
+            <image:title>كيف تقلّل السماعات الضوضاء بإضافة صوت آخر؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/why-usb-c-cables-differ.html</loc>
+        <lastmod>2026-10-10T03:05:36+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-usb-c-cables-differ.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-usb-c-cables-differ.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-usb-c-cables-differ.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-usb-c-cables-differ.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/why-usb-c-cables-differ/slide-01.png</image:loc>
+            <image:title>Why do identical-looking USB-C cables behave differently?</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/why-usb-c-cables-differ.html</loc>
+        <lastmod>2026-10-10T03:05:36+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-usb-c-cables-differ.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-usb-c-cables-differ.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-usb-c-cables-differ.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-usb-c-cables-differ.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/why-usb-c-cables-differ/slide-01.png</image:loc>
+            <image:title>چرا کابل‌های USB-C با ظاهر یکسان متفاوت کار می‌کنند؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/why-usb-c-cables-differ.html</loc>
+        <lastmod>2026-10-10T03:05:36+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-usb-c-cables-differ.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-usb-c-cables-differ.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-usb-c-cables-differ.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-usb-c-cables-differ.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/why-usb-c-cables-differ/slide-01.png</image:loc>
+            <image:title>لماذا تختلف كابلات USB-C رغم تشابه شكلها؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/how-photo-text-recognition-works.html</loc>
+        <lastmod>2026-10-10T03:05:36+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/how-photo-text-recognition-works.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/how-photo-text-recognition-works.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/how-photo-text-recognition-works.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/how-photo-text-recognition-works.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/how-photo-text-recognition-works/slide-01.png</image:loc>
+            <image:title>How does your phone turn text in a photo into copyable words?</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/how-photo-text-recognition-works.html</loc>
+        <lastmod>2026-10-10T03:05:36+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/how-photo-text-recognition-works.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/how-photo-text-recognition-works.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/how-photo-text-recognition-works.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/how-photo-text-recognition-works.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/how-photo-text-recognition-works/slide-01.png</image:loc>
+            <image:title>گوشی چطور نوشته عکس را به کلمات قابل کپی تبدیل می‌کند؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/how-photo-text-recognition-works.html</loc>
+        <lastmod>2026-10-10T03:05:36+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/how-photo-text-recognition-works.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/how-photo-text-recognition-works.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/how-photo-text-recognition-works.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/how-photo-text-recognition-works.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/how-photo-text-recognition-works/slide-01.png</image:loc>
+            <image:title>كيف يحوّل هاتفك النص في صورة إلى كلمات قابلة للنسخ؟</image:title>
+        </image:image>
     </url>
 </urlset>

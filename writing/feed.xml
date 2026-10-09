@@ -8,6 +8,38 @@
     <dc:creator>Ahmadreza Samadi</dc:creator>
     <atom:link href="https://a-samadi.com/writing/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>How does a contactless card work without a battery?</title>
+      <link>https://a-samadi.com/writing/how-contactless-cards-work.html</link>
+      <description>A payment terminal briefly powers the chip in a passive contactless card. Follow the energy and the payment data through a tap.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Fri, 09 Oct 2026 23:35:36 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/how-contactless-cards-work.html</guid>
+    </item>
+    <item>
+      <title>How do headphones cancel noise by making more sound?</title>
+      <link>https://a-samadi.com/writing/how-noise-cancellation-works.html</link>
+      <description>Microphones measure outside noise and a speaker adds a carefully timed opposite wave. Why this reduces a hum better than every sudden voice.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Fri, 09 Oct 2026 23:35:36 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/how-noise-cancellation-works.html</guid>
+    </item>
+    <item>
+      <title>How does your phone turn text in a photo into copyable words?</title>
+      <link>https://a-samadi.com/writing/how-photo-text-recognition-works.html</link>
+      <description>OCR finds text regions and recognises visual patterns as letters and words. The AI feature can save typing, but copied text still needs checking.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Fri, 09 Oct 2026 23:35:36 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/how-photo-text-recognition-works.html</guid>
+    </item>
+    <item>
+      <title>Why do identical-looking USB-C cables behave differently?</title>
+      <link>https://a-samadi.com/writing/why-usb-c-cables-differ.html</link>
+      <description>USB-C describes the connector. Power, file-transfer speed and video support are separate capabilities to check in the whole connection.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Fri, 09 Oct 2026 23:35:36 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/why-usb-c-cables-differ.html</guid>
+    </item>
+    <item>
       <title>iPhone Duo: what does the extra $800 cost per day?</title>
       <link>https://a-samadi.com/writing/iphone-duo-price-per-day.html</link>
       <description>A 104-second film turns the $800 US launch-price gap between iPhone Duo and iPhone 18 Pro into a daily comparison, with the assumptions made clear.</description>
