@@ -24,10 +24,16 @@
 
   const update = () => {
     const terms = normalize(input.value).split(' ').filter(Boolean);
+    // Latin keywords match word starts; short terms such as AI match whole words.
+    const matchers = terms.map(term => {
+      const word = /^[a-z0-9]+$/.test(term)
+        ? new RegExp('\\b' + term + (term.length <= 2 ? '\\b' : '')) : null;
+      return text => word ? word.test(text) : text.includes(term);
+    });
     if (topics) topics.hidden = terms.length > 0;
     let visible = 0;
     cards.forEach((card, index) => {
-      const matches = terms.every(term => searchable[index].includes(term));
+      const matches = matchers.every(matches => matches(searchable[index]));
       card.hidden = !matches;
       if (matches) visible += 1;
     });
