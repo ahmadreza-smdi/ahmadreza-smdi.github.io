@@ -6,7 +6,7 @@
 .edition{padding-inline:12px;color:var(--muted);font:500 12px/1.4 var(--sans);letter-spacing:.02em}
 .guide-intro{padding:72px 0 40px;max-width:960px}
 .guide-intro h1{margin:18px 0 24px;color:var(--ink);font-family:var(--display);font-size:clamp(44px,6.4vw,84px);font-weight:600;line-height:1.03;letter-spacing:-.05em}
-.guide-intro h1 em{color:var(--teal);font-style:normal}
+.guide-intro h1 em{color:var(--teal);font-style:normal;white-space:nowrap}
 .guide-lead{margin:0 0 14px;color:var(--ink);font-family:var(--display);font-size:clamp(20px,2.4vw,26px);font-weight:500;line-height:1.4;letter-spacing:-.025em}
 .intro-copy{max-width:640px;color:var(--ink-soft);font-size:1.0625rem;line-height:1.65}
 .method{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px;color:var(--ink-soft);font:500 13px/1.4 var(--sans)}
@@ -18,7 +18,7 @@
 .example-bar strong{font-size:1rem;font-weight:700}
 .example-bar p{margin:6px 0 0;color:var(--muted);font-size:.875rem;line-height:1.6}
 .example-actions,.brief-actions{display:flex;flex-wrap:wrap;gap:8px}
-.decision-guide button{min-height:44px;padding:11px 18px;border:0;border-radius:12px;background:#fff;box-shadow:inset 0 0 0 1px var(--line-strong);color:var(--ink);font:inherit;font-size:.875rem;font-weight:600;cursor:pointer;transition:background-color .2s,box-shadow .2s,color .2s,transform .35s var(--ease-spring)}
+.decision-guide button{min-height:44px;padding:11px 18px;border:0;border-radius:12px;background:#fff;box-shadow:inset 0 0 0 1px var(--line-strong);color:var(--ink);font:inherit;font-family:var(--display);font-size:.875rem;font-weight:500;cursor:pointer;transition:background-color .2s,box-shadow .2s,color .2s,transform .35s var(--ease-spring)}
 .decision-guide button:hover{background:var(--mint-soft);color:var(--ink)}
 .decision-guide button[aria-pressed=true]{background:var(--ink);color:#fff;box-shadow:none}
 .decision-guide button[aria-pressed=true]:hover{background:var(--teal);color:#fff}
@@ -31,7 +31,7 @@
 .input-panel label{display:block;margin:20px 0 10px;font-size:14px;font-weight:600;line-height:1.5}
 .input-panel input,.input-panel textarea,.input-panel select{display:block;box-sizing:border-box;width:100%;min-height:48px;padding:13px 15px;border:0;border-radius:12px;background:var(--canvas);box-shadow:inset 0 0 0 1px var(--line-strong);color:var(--ink);font:inherit;font-size:16px;line-height:1.5;transition:box-shadow .2s,background-color .2s}
 .input-panel input:focus,.input-panel textarea:focus,.input-panel select:focus{background:#fff;box-shadow:inset 0 0 0 2px var(--teal),0 0 0 4px rgba(143,214,180,.45);outline:0}
-.input-panel textarea{resize:vertical}
+.input-panel textarea{resize:vertical;field-sizing:content;min-height:5.2em}
 .input-panel input::placeholder,.input-panel textarea::placeholder{color:var(--muted);opacity:1}
 .decision-guide .primary-button{display:flex;justify-content:space-between;gap:16px;width:100%;padding:17px 20px;border-radius:14px;background:var(--ink);color:#fff;font-family:var(--display);font-size:1rem;font-weight:500;box-shadow:0 18px 34px -22px rgba(14,42,51,.8)}
 .decision-guide .primary-button:hover{background:var(--teal);color:#fff}

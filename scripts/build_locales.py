@@ -74,6 +74,8 @@ for lang in ('fa','ar'):
     def schema(m):
         d=json.loads(m[1]);profile=next(x for x in d['@graph'] if x['@type']=='ProfilePage')
         profile.update({'@id':f'https://a-samadi.com/{lang}/#profile','url':f'https://a-samadi.com/{lang}/','name':title,'description':description,'inLanguage':lang,'dateModified':modified})
+        # The English homepage is the original; this page is its translation.
+        profile.pop('workTranslation',None);profile['translationOfWork']={'@id':'https://a-samadi.com/#profile'}
         return '<script type="application/ld+json">'+json.dumps(d,ensure_ascii=False,indent=2)+'</script>'
     head=re.sub(r'<script type="application/ld\+json">(.*?)</script>',schema,head,flags=re.S)
     # Persian and Arabic text is set in Vazirmatn (Latin keeps the system font), so preload it with the portrait.
@@ -82,6 +84,6 @@ for lang in ('fa','ar'):
     # Persian and Arabic names and headings are set in Vazirmatn, so these pages do not preload the Latin display face.
     head,sora_count=re.subn(r'\n\s*<link rel="preload" as="font" type="font/woff2" href="[^"]*sora-latin-wght\.woff2" crossorigin />',"",head,count=1)
     if sora_count!=1:raise ValueError('Missing Sora preload in the English homepage')
-    head=head.replace('</head>','    <link rel="stylesheet" href="../css/rtl.css?v=20261009-lagoon2" />\n</head>')
+    head=head.replace('</head>','    <link rel="stylesheet" href="../css/rtl.css?v=20261009-lagoon3" />\n</head>')
     (ROOT/lang/'index.html').write_text(head+visible+'        <script>'+script)
     print('Built',lang)

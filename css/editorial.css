@@ -7,7 +7,7 @@
 .editorial-body::before,.editorial-body::after{content:"";position:absolute;top:0;left:0;right:0;z-index:-1;height:min(80vh,740px);pointer-events:none}
 .editorial-body::before{background:radial-gradient(40% 60% at 80% 8%,rgba(195,220,244,.75),transparent 72%),radial-gradient(38% 56% at 16% 0%,rgba(189,231,210,.68),transparent 72%)}
 .editorial-body::after{background:url("../assets/img/contours.svg") 50% 0/max(1400px,100%) auto no-repeat;opacity:.42;-webkit-mask:linear-gradient(180deg,#000 10%,rgba(0,0,0,.45) 45%,transparent 85%);mask:linear-gradient(180deg,#000 10%,rgba(0,0,0,.45) 45%,transparent 85%)}
-.editorial-header{position:sticky;top:12px;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:1rem;width:fit-content;max-width:calc(100% - 32px);min-height:58px;margin:12px auto 0;padding-block:.4rem;padding-inline:.45rem .55rem;border-radius:16px;background:rgba(255,255,255,.74);-webkit-backdrop-filter:saturate(150%) blur(18px);backdrop-filter:saturate(150%) blur(18px);box-shadow:0 0 0 1px var(--line),0 14px 32px -22px rgba(14,42,51,.4)}
+.editorial-header{position:sticky;top:12px;z-index:50;view-transition-name:site-header;display:flex;align-items:center;justify-content:space-between;gap:1rem;width:fit-content;max-width:calc(100% - 32px);min-height:58px;margin:12px auto 0;padding-block:.4rem;padding-inline:.45rem .55rem;border-radius:16px;background:rgba(255,255,255,.74);-webkit-backdrop-filter:saturate(150%) blur(18px);backdrop-filter:saturate(150%) blur(18px);box-shadow:0 0 0 1px var(--line),0 14px 32px -22px rgba(14,42,51,.4)}
 .editorial-header a{position:relative;isolation:isolate;display:inline-flex;align-items:center;gap:.8rem;min-height:44px;padding-inline:4px .7rem;border-radius:12px;color:var(--ink);font-family:var(--display);font-size:.9375rem;font-weight:600;letter-spacing:-.015em;text-decoration:none}
 /* The mark sits on the same mint-to-sky tile as on the homepage */
 .editorial-header a:has(img)::before{content:"";position:absolute;top:50%;inset-inline-start:0;z-index:-1;width:44px;height:44px;margin-top:-22px;border-radius:12px;background:var(--duo);box-shadow:inset 0 0 0 1px rgba(14,42,51,.06)}
@@ -21,6 +21,9 @@
 .editorial p,.editorial li{color:var(--ink-soft);font-size:1.125rem;line-height:1.65}
 .editorial p{margin-block:0 1.3rem}
 .editorial a{color:var(--teal);text-decoration:none}
+/* Larger touch targets for links without changing the line layout */
+.editorial :is(p,li,nav,figcaption,small) > a{padding-block:.32em}
+nav.byline a{padding-block:.6em}
 .editorial a:hover{text-decoration:underline;text-underline-offset:3px}
 .editorial strong{color:var(--ink);font-weight:600}
 .editorial .eyebrow,.editorial p.eyebrow{margin-bottom:.9rem;color:var(--teal);font-size:.9375rem;font-weight:600;line-height:1.4}
@@ -28,7 +31,7 @@
 .editorial .byline{display:block;font-size:.9375rem;line-height:1.6;color:var(--muted);margin-bottom:1.6rem}
 .editorial .byline a{font-weight:500}
 .editorial ul,.editorial ol{padding-inline-start:1.35rem;margin-block:1rem 1.8rem}
-.editorial li+li{margin-top:.5rem}
+.editorial :is(ul,ol):not([class]) li+li{margin-top:.5rem}
 .editorial li::marker{color:var(--muted)}
 .editorial blockquote{position:relative;margin:2.2rem 0;padding:1.4rem 1.6rem;border-radius:16px;background:linear-gradient(120deg,var(--mint-soft),#fff 60%);box-shadow:0 0 0 1px var(--line)}
 .editorial blockquote::before{content:"";position:absolute;inset-block:1.1rem;inset-inline-start:0;width:3px;border-radius:3px;background:linear-gradient(180deg,var(--mint-deep),var(--teal),var(--sky-deep))}
@@ -42,6 +45,17 @@
 .editorial tr:last-child td{border-bottom:0}
 .editorial :is(h1,h2,h3){scroll-margin-top:100px}
 .editorial details summary{cursor:pointer}
+/* Film transcripts open from a quiet row with a turning marker */
+.editorial details.watch-transcript{margin:1.6rem 0 1.8rem;border-radius:16px;background:var(--surface);box-shadow:0 0 0 1px var(--line)}
+.editorial details.watch-transcript>summary{display:flex;align-items:center;gap:.7rem;min-height:52px;padding:.7rem 1.1rem;border-radius:16px;color:var(--ink);font-family:var(--display);font-size:1rem;font-weight:500;letter-spacing:-.01em;list-style:none}
+.editorial details.watch-transcript>summary::-webkit-details-marker{display:none}
+.editorial details.watch-transcript>summary::before{content:"";flex:0 0 auto;width:.8em;height:.8em;background:var(--teal);-webkit-mask:var(--i-chevron) center/contain no-repeat;mask:var(--i-chevron) center/contain no-repeat;transition:transform .3s var(--ease)}
+.editorial details.watch-transcript[open]>summary::before{transform:rotate(90deg)}
+.editorial details.watch-transcript>summary:hover{background:var(--mint-soft)}
+.editorial details.watch-transcript>p{margin-inline:1.1rem}
+.editorial details.watch-transcript>p:last-child{margin-bottom:1.1rem}
+html[dir="rtl"] .editorial details.watch-transcript>summary::before{transform:scaleX(-1)}
+html[dir="rtl"] .editorial details.watch-transcript[open]>summary::before{transform:rotate(90deg)}
 .editorial video{box-shadow:var(--shadow-strong)}
 .editorial-footer{clear:both;margin-top:4rem;padding-top:1.4rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1.5rem;border-top:1px solid var(--line)}
 .editorial-footer p,.editorial-footer a{font-size:.9375rem;line-height:1.6}
@@ -73,6 +87,13 @@
 .editorial:has(> article + article)>article p:last-child a{position:relative;z-index:1;display:inline-flex;align-items:center;min-height:44px;font-weight:500}
 
 .profile-resources{clear:both;margin-top:3rem;padding-top:.5rem}
+/* At a glance: short answers to the questions people ask, one per row */
+.quick-facts-list{margin:1.2rem 0 0;padding:0;border-top:1px solid var(--line)}
+.quick-facts-list>div{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.6fr);gap:.35rem 1.6rem;padding:1.05rem 0;border-bottom:1px solid var(--line)}
+.quick-facts-list dt{color:var(--ink);font-family:var(--display);font-size:1rem;font-weight:600;letter-spacing:-.015em;line-height:1.45}
+.quick-facts-list dd{margin:0;color:var(--ink-soft);font-size:1.0625rem;line-height:1.6}
+:is(.persian-page,.arabic-page) .quick-facts-list dd{line-height:2}
+@media(max-width:600px){.quick-facts-list>div{grid-template-columns:1fr}}
 .profile-downloads{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.25rem}
 .profile-downloads a{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:.65rem 1.2rem;border-radius:12px;background:#fff;box-shadow:inset 0 0 0 1px var(--line-strong);color:var(--ink);font-family:var(--display);font-size:.9375rem;font-weight:500;text-decoration:none;transition:background-color .25s,color .25s}
 .profile-downloads a:first-child{color:#fff;background:var(--ink);box-shadow:none}
@@ -80,10 +101,10 @@
 .profile-downloads a:first-child:hover{background:var(--teal)}
 .official-profiles{list-style:none;padding:0!important;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem}
 .official-profiles li,.official-profiles li+li{min-width:0;margin:0;padding:1.15rem 1.25rem;border-radius:16px;background:var(--surface);box-shadow:0 0 0 1px var(--line);font-size:.95rem;line-height:1.6}
-.official-profiles a{display:inline-block;padding-block:.15rem;font-weight:600}
+.official-profiles a{display:inline-flex;align-items:center;min-height:44px;font-weight:600}
 .biography-portrait{float:right;width:min(34%,240px);margin:.4rem 0 1.5rem 2rem}
 .biography-portrait img{width:100%;height:auto;padding:7px;border-radius:22px;background:#fff;box-shadow:0 0 0 1px var(--line),var(--shadow-strong)}
-.biography-portrait figcaption{margin-top:.8rem;color:var(--muted);font-size:.85rem;line-height:1.5}
+.biography-portrait figcaption{margin-top:.8rem;color:var(--muted);font-size:.85rem;line-height:1.5;text-wrap:pretty}
 .editorial .film-habit{background:var(--surface)}
 
 /* Persian and Arabic pages keep native shaping: no tracking, roomier leading. */
@@ -141,6 +162,7 @@
 @media(prefers-reduced-motion:reduce){
   .editorial:has(> article + article)>article:hover{transform:none}
 }
+@media(forced-colors:active){.editorial-body::before,.editorial-body::after{display:none}}
 @media print{
   .editorial-body::before,.editorial-body::after{display:none}
   .editorial-header{position:static;box-shadow:none;background:none;-webkit-backdrop-filter:none;backdrop-filter:none}

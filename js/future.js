@@ -63,7 +63,15 @@
             if (finePointer.matches) key.textContent = apple ? '⌘K' : 'Ctrl K';
             else key.hidden = true;
         });
-        if (input) input.placeholder = i18n('search', 'Ask about my work or jump to a section');
+        // The full prompt names the field for assistive technology; narrow screens show the short form.
+        const fullPrompt = i18n('search', 'Ask about my work or jump to a section');
+        const shortPrompt = ($('.ask-label') || {}).textContent || fullPrompt;
+        const fitPrompt = () => { input.placeholder = input.offsetWidth && input.offsetWidth < 340 ? shortPrompt.trim() : fullPrompt; };
+        if (input) {
+            input.setAttribute('aria-label', fullPrompt);
+            input.placeholder = fullPrompt;
+            window.addEventListener('resize', fitPrompt, { passive: true });
+        }
 
         // Latin accents and Arabic diacritics are ignored; Arabic and Persian letter variants match each other.
         const normalize = (value) => value.toLocaleLowerCase(lang).normalize('NFKD')
@@ -86,7 +94,7 @@
                 const section = place.closest('section');
                 const label = section && section.querySelector('.section-label');
                 const title = place.matches('p') ? null : place.querySelector('h1, h2, h3, strong');
-                const paragraphs = place.matches('p') ? [place] : $$('p', place).filter((p) => !p.matches('.section-label, .card-topline, .topic, .copy-status') && clean(p).length > 24);
+                const paragraphs = place.matches('p') ? [place] : $$('p', place).filter((p) => !p.matches('.section-label, .card-topline, .topic, .copy-status, .company') && clean(p).length > 24);
                 return {
                     element: place,
                     weight: place.matches('.feature, .work-card, .timeline-item') ? 0.3 : 0,
@@ -144,11 +152,13 @@
                 const startAt = Math.max(0, excerpt.lastIndexOf(' ', Math.max(0, first - 80)));
                 excerpt = (startAt > 0 ? '… ' : '') + excerpt.slice(startAt, startAt + 220).trim() + '…';
             }
-            if (current && current.entry === entry && current.excerpt === excerpt) {
+            // Rebuild when the passage or the words being highlighted change.
+            const key = `${excerpt}\u0000${words.join(' ')}`;
+            if (current && current.entry === entry && current.key === key) {
                 answer.hidden = false;
                 return;
             }
-            current = { entry, excerpt };
+            current = { entry, excerpt, key };
             answerSection.textContent = entry.section;
             answerText.replaceChildren();
             window.clearTimeout(streamTimer);
@@ -220,6 +230,7 @@
             input.value = '';
             filter();
             dialog.showModal();
+            fitPrompt();
             announce(true);
             input.focus();
         };

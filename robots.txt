@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://a-samadi.com/sitemap.xml
+Sitemap: https://a-samadi.com/writing/feed.xml

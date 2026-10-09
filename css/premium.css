@@ -10,7 +10,7 @@
 :root{
   color-scheme:light;
   /* Canvas and type */
-  --canvas:#f2f7f5; --surface:#fff; --tile:#e9f2ef; --ink:#0e2a33; --ink-soft:#355361; --muted:#536f79;
+  --canvas:#f2f7f5; --surface:#fff; --tile:#e9f2ef; --ink:#0e2a33; --ink-soft:#355361; --muted:#4a6570;
   --line:rgba(14,42,51,.1); --line-strong:rgba(14,42,51,.17);
   /* Pastel lagoon: mint and sky for surfaces and light, deep tones for text that sits on them */
   --mint:#bde7d2; --mint-soft:#e3f4eb; --mint-deep:#1c7552; --mint-glow:#8fd6b4;
@@ -78,7 +78,7 @@ p{color:var(--ink-soft);text-wrap:pretty}
 .button-primary:hover{background:var(--teal);color:#fff;box-shadow:0 0 0 4px var(--mint-soft),0 12px 26px -14px rgba(11,106,122,.7)}
 .button-glass,.button-secondary{background:#fff;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line-strong)}
 .button-glass:hover,.button-secondary:hover{background:var(--mint-soft);color:var(--ink);box-shadow:inset 0 0 0 1px rgba(28,117,82,.32)}
-.story-link{display:inline-flex;align-items:center;gap:.25rem;width:fit-content;max-width:100%;color:var(--teal);font-size:1.0625rem;font-weight:500;text-decoration:none}
+.story-link{display:inline-flex;align-items:center;gap:.25rem;width:fit-content;max-width:100%;padding-block:.6em;margin-block:-.6em;color:var(--teal);font-family:var(--display);font-size:1rem;font-weight:500;letter-spacing:-.01em;text-decoration:none}
 .story-link::after{content:"";flex:0 0 auto;width:.8em;height:.8em;margin-top:.08em;background:currentColor;-webkit-mask:var(--i-chevron) center/contain no-repeat;mask:var(--i-chevron) center/contain no-repeat;transition:transform .35s var(--ease)}
 .story-link:hover{text-decoration:underline;text-underline-offset:3px}
 .story-link:hover::after{transform:translateX(3px)}
@@ -88,5 +88,5 @@ html[dir="rtl"] .story-link:hover::after{transform:scaleX(-1) translateX(3px)}
 .reveal{opacity:1;transform:none}
 @keyframes spin{to{transform:rotate(1turn)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;animation-delay:0s!important;transition-duration:.001ms!important;transition-delay:0s!important;scroll-behavior:auto!important}}
-@media(forced-colors:active){.eyebrow{color:CanvasText}.story-link::after{background:LinkText}}
+@media(forced-colors:active){.eyebrow{color:CanvasText}.story-link::after{background:LinkText}.brand-mark img,.editorial-header a img{forced-color-adjust:none;background:CanvasText}}
 @media print{body{background:#fff!important}.skip-link{display:none!important}}

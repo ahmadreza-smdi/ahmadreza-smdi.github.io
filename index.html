@@ -67,6 +67,7 @@
       "@id": "https://a-samadi.com/#website",
       "url": "https://a-samadi.com/",
       "name": "Ahmadreza Samadi",
+      "alternateName": ["Ahmad Samadi", "a-samadi.com"],
       "inLanguage": ["en", "fa", "ar"],
       "publisher": {
         "@id": "https://a-samadi.com/#person"
@@ -75,6 +76,7 @@
     {
       "@type": "ProfilePage",
       "@id": "https://a-samadi.com/#profile",
+      "workTranslation": [{"@id": "https://a-samadi.com/fa/#profile"}, {"@id": "https://a-samadi.com/ar/#profile"}],
       "url": "https://a-samadi.com/",
       "name": "Ahmadreza Samadi | Technology Entrepreneur, Dubai",
       "description": "Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead at Appraiva, and Co-Founder & CEO of Royal Abraj Group.",
@@ -113,7 +115,13 @@
         "url": "https://a-samadi.com/assets/img/ahmadreza-samadi-hero.jpg",
         "width": 900,
         "height": 1200,
-        "caption": "Ahmadreza Samadi"
+        "caption": "Ahmadreza Samadi",
+        "creator": {
+          "@id": "https://a-samadi.com/#person"
+        },
+        "creditText": "Ahmadreza Samadi",
+        "copyrightNotice": "© Ahmadreza Samadi",
+        "acquireLicensePage": "https://a-samadi.com/about.html#profile-resources"
       },
       "description": "Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead at Appraiva, and Co-Founder & CEO of Royal Abraj Group.",
       "jobTitle": "Co-Founder & Technical Lead",
@@ -121,9 +129,14 @@
         "@type": "Place",
         "name": "Dubai, United Arab Emirates"
       },
-      "worksFor": {
-        "@id": "https://a-samadi.com/#appraiva"
-      },
+      "worksFor": [
+        {
+          "@id": "https://a-samadi.com/#appraiva"
+        },
+        {
+          "@id": "https://a-samadi.com/#royal-abraj"
+        }
+      ],
       "memberOf": {
         "@id": "https://a-samadi.com/#royal-abraj"
       },
@@ -188,13 +201,13 @@
   ]
 }</script>
 
-    <link rel="stylesheet" href="css/site.css?v=20261009-lagoon2" />
+    <link rel="stylesheet" href="css/site.css?v=20261009-lagoon3" />
 </head>
     <body>
         <a class="skip-link" href="#main">Skip to content</a>
         <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
-        <header class="site-header" aria-label="Primary navigation">
+        <header class="site-header">
             <a class="brand" href="#top" aria-label="Ahmadreza Samadi home">
                 <span class="brand-mark" aria-hidden="true">
                     <img src="assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="1060" height="670" />
@@ -243,7 +256,7 @@
                     <div class="frame" data-lens>
                         <span class="frame-aura" aria-hidden="true"></span>
                         <figure class="frame-photo">
-                            <img src="assets/img/ahmadreza-samadi-hero.jpg" srcset="assets/img/ahmadreza-samadi-portrait-450.webp 450w, assets/img/ahmadreza-samadi-portrait-900.webp 900w" sizes="(max-width: 760px) 270px, 420px" alt="Portrait of Ahmadreza Samadi" width="900" height="1200" fetchpriority="high" decoding="async" />
+                            <img src="assets/img/ahmadreza-samadi-hero.jpg" srcset="assets/img/ahmadreza-samadi-portrait-450.webp 450w, assets/img/ahmadreza-samadi-portrait-900.webp 900w" sizes="(max-width: 760px) 270px, 420px" alt="Ahmadreza Samadi, Dubai-based technology entrepreneur, in a dark suit in an office overlooking the Burj Khalifa" width="900" height="1200" fetchpriority="high" decoding="async" />
                             <span class="frame-scan" aria-hidden="true"></span>
                             <span class="frame-corners" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
                         </figure>
@@ -713,6 +726,6 @@
                 revealItems.forEach((item) => observer.observe(item));
             })();
         </script>
-        <script src="js/future.js?v=20261009-lagoon2" defer></script>
+        <script src="js/future.js?v=20261009-lagoon3" defer></script>
     </body>
 </html>

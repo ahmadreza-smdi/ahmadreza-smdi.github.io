@@ -1,0 +1,70 @@
+# Ahmadreza Samadi
+
+> Official website of Ahmadreza Samadi (also Ahmad Samadi; Persian: احمدرضا صمدی; Arabic: أحمدرضا صمدي), a Dubai-based technology entrepreneur. He is Co-Founder & Technical Lead at Appraiva, a US-based company in Cleveland, Ohio, building AI real estate intelligence (he works remotely), and Co-Founder & CEO of Royal Abraj Group, a Dubai business spanning property brokerage and documents-clearing services.
+
+English is the primary language of this site. Persian (/fa/) and Arabic (/ar/) pages are translations of the English originals and are linked to them with hreflang.
+
+Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and work; the explainers and films use fictional teaching examples where they say so.
+
+## Profile
+
+- [Homepage](https://a-samadi.com/): Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead at Appraiva, and Co-Founder & CEO of Royal Abraj Group.
+- [Biography](https://a-samadi.com/about.html): Ahmadreza Samadi (Ahmad Samadi) is a technology entrepreneur based in Dubai and co-founder of Appraiva and Royal Abraj Group. Biography, work and profiles.
+
+## Work
+
+- [Ahmadreza Samadi at Appraiva | Co-Founder & Technical Lead](https://a-samadi.com/work/appraiva.html): Ahmadreza Samadi’s work as Appraiva’s Co-Founder & Technical Lead, connecting property imagery, AI, data and search for real estate investment research.
+- [Oxfam Novib: CRM data and analytics](https://a-samadi.com/work/oxfam-novib.html): Ahmadreza Samadi’s work on Azure data infrastructure, CRM migration, analytics, and governed data workflows at Oxfam Novib.
+- [Ahmadreza Samadi at Royal Abraj Group | Co-Founder & CEO](https://a-samadi.com/work/royal-abraj.html): How Ahmadreza Samadi leads digital strategy at Royal Abraj Group, connecting websites, CRM, customer tools and internal operations as Co-Founder and CEO.
+
+## Writing
+
+- [Start with the decision, then build the AI](https://a-samadi.com/writing/start-with-the-decision.html): A practical approach to AI product decisions: start with the customer’s decision, assess the evidence, and evaluate the whole workflow.
+- [AI Cost per Verified Result: Beyond Token Prices](https://a-samadi.com/writing/ai-cost-per-verified-result.html): A practical framework for measuring AI workflow cost: include tokens, tools, retries and human review, then divide by results that pass verification.
+- [Writing on AI Products, Data and PropTech](https://a-samadi.com/writing/): Articles and explainers by Ahmadreza Samadi on building AI products, AI costs and decision models, connected apps, and real estate technology.
+- [Connected AI Apps: Access, Scope and Approval](https://a-samadi.com/writing/connected-ai-apps.html): What happens when you connect an app to ChatGPT or Gemini? A practical guide to accounts, permissions, reading versus acting, and approval before you connect.
+- [Jev Explained: An AI Decision Model, Not a Chatbot](https://a-samadi.com/writing/jev-ai-decision-model.html): What is Jev from TypeSafe AI? How a decision model differs from GPT and Claude, what the early Banking77 test shows, and how to test it as a routing layer.
+- [How passkeys work: why Face ID is not your password](https://a-samadi.com/writing/passkeys-face-id.html): What is a passkey? Ahmadreza Samadi explains Face ID, public and private keys, phishing resistance, and what happens if you lose your device.
+- [How ZIP files work: compression without losing data](https://a-samadi.com/writing/how-zip-files-work.html): How does a ZIP restore every byte? Ahmadreza Samadi explains the ZIP container, DEFLATE, repeated data, Huffman coding, and why videos may barely shrink.
+- [AI Agent Safety: Boundaries Before Actions](https://a-samadi.com/writing/ai-agent-safety-boundaries.html): What changes when AI assistants can act? Ahmadreza Samadi explains agent permissions, NVIDIA OpenShell, the proposed Sentry watchdog, and practical safety questions.
+- [Where AI should stop in real estate](https://a-samadi.com/writing/ai-human-review-real-estate.html): AI can draft listings and organize property information, but a professional must verify the facts and guide the decision. Ahmadreza Samadi explains the handoff.
+- [How to check an image claim, AI-made or not](https://a-samadi.com/writing/verify-ai-image-claims.html): A practical checklist for checking an image and its claim: find the source, reverse-search it, inspect provenance signals and seek independent corroboration.
+- [Foldable phone: two batteries, one charge reading](https://a-samadi.com/writing/foldable-two-batteries.html): Why a foldable phone can have a battery on each side but show one charge reading. Ahmadreza Samadi explains energy-aware gauging without guessing Apple's wiring.
+- [What AI home-value estimates miss](https://a-samadi.com/writing/ai-home-value-estimates.html): Ahmadreza Samadi explains what automated home-value estimates can miss: incomplete property facts, weak comparables, uncertainty and uneven error.
+- [Humanoid robots at home: shipments and autonomy](https://a-samadi.com/writing/humanoid-robots-at-home.html): Ahmadreza Samadi explains how to read humanoid robot claims: shipment forecasts, home robot preorders, remote assistance and evidence of useful autonomy.
+- [How satellite messaging works without cell towers](https://a-samadi.com/writing/how-satellite-messaging-works.html): How a supported phone sends texts through satellites, how the message returns to Earth, and what to check before going off-grid. By Ahmadreza Samadi.
+- [Does Incognito actually make you invisible?](https://a-samadi.com/writing/incognito-private-browsing.html): A simple gift-shopping story explains Incognito, cookies, website records, saved files and what private browsing actually hides. By Ahmadreza Samadi.
+- [Why does AI sound so confident when it is wrong?](https://a-samadi.com/writing/why-ai-sounds-confident.html): Ahmadreza Samadi explains confident AI mistakes with a fictional museum example, an animated film and a simple way to check claims against evidence.
+- [What does Accept cookies actually mean?](https://a-samadi.com/writing/what-accept-cookies-means.html): The same small browser note can remember your shopping basket or help a company recognise you across websites. The choice is about what that note does.
+- [Why does your phone stop charging at 80%?](https://a-samadi.com/writing/why-phone-stops-charging-at-80.html): A chosen limit, a learned routine and a heat pause can look similar. They have different triggers and different ways to resume charging.
+- [Profitable. But out of cash: why payment timing matters](https://a-samadi.com/writing/profitable-but-out-of-cash.html): A profitable sale can leave a business unable to pay its supplier. Follow one order to see why earned money and available cash are different.
+- [AI says 8% rental yield. Why is the owner still paying?](https://a-samadi.com/writing/ai-rental-yield-cash-flow.html): A correct rental-yield calculation can still leave a property owner covering a cash shortfall. Follow one fictional home from the headline to the money left after costs and the loan.
+
+## Films
+
+- [Watch: Why AI sounds confident when wrong](https://a-samadi.com/watch/ai-confidence.html): Watch Ahmadreza Samadi's 75-second animated film about checking an AI answer against evidence. English captions and the full sourced explanation are available.
+- [Watch: What Accept cookies means](https://a-samadi.com/watch/cookie-consent.html): Watch Ahmadreza Samadi's 64-second animated film about what a cookie banner asks you to accept. English captions and a sourced explanation are available.
+- [Watch: Why phones stop charging at 80%](https://a-samadi.com/watch/charging-80.html): Watch Ahmadreza Samadi's 67-second animated film about charge limits, learned charging routines and heat pauses. English captions and sources are available.
+- [Watch: Profitable but out of cash](https://a-samadi.com/watch/profit-cash.html): Watch Ahmadreza Samadi's 90-second animated film about the difference between profit and cash timing. English captions and the full explanation are available.
+- [Watch: AI rental yield and cash flow](https://a-samadi.com/watch/rental-yield.html): Watch Ahmadreza Samadi’s 99-second animated film about gross rental yield, property costs and loan payments. English captions and a transcript are included.
+
+## Tools
+
+- [Before You Build the AI](https://a-samadi.com/tools/before-you-build-ai.html): Turn an AI idea into a decision, an evidence plan and a small first experiment. A free interactive field guide by Ahmadreza Samadi.
+
+## Official profiles
+
+- [LinkedIn](https://www.linkedin.com/in/ahmadreza-samadi/)
+- [Instagram](https://www.instagram.com/ahmadreza_smdi/)
+- [GitHub](https://github.com/ahmadreza-smdi)
+- [Crunchbase](https://www.crunchbase.com/person/ahmadreza-samadi)
+- [YouTube](https://www.youtube.com/@ahmadreza-samadi)
+
+## Optional
+
+- [Persian homepage](https://a-samadi.com/fa/): the site in Persian
+- [Arabic homepage](https://a-samadi.com/ar/): the site in Arabic
+- [Persian writing](https://a-samadi.com/fa/writing/): Persian translations of the articles
+- [Arabic writing](https://a-samadi.com/ar/writing/): Arabic translations of the articles
+- [RSS feed](https://a-samadi.com/writing/feed.xml): new English articles
+- [Sitemap](https://a-samadi.com/sitemap.xml): every page with its language alternates

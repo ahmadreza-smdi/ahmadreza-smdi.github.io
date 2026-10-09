@@ -3,11 +3,14 @@
 Adds only what is missing, so it is safe to run again after pages change:
 og:site_name, og:locale, og:locale:alternate (from the page's hreflang cluster), og:image:alt,
 twitter:title, twitter:description, twitter:image, twitter:image:alt and a robots meta tag.
-It also writes hreflang alternates into sitemap.xml from the same clusters.
+English is the original: each English page's main structured-data item names its Persian and
+Arabic translations (workTranslation) and each translation names the English original
+(translationOfWork). It also writes hreflang alternates into sitemap.xml from the same clusters.
 Run with --check to report missing metadata without changing files.
 """
 from pathlib import Path
 import html
+import json
 import re
 import sys
 from xml.etree import ElementTree
@@ -96,6 +99,83 @@ def language(text):
     return match[1] if match else 'en'
 
 
+# The item a page is about, in order of preference, among the page's own structured-data nodes.
+PAGE_TYPES = ('ProfilePage', 'AboutPage', 'CollectionPage', 'Article', 'NewsArticle', 'BlogPosting',
+              'WebApplication', 'VideoObject', 'WebPage')
+LD = re.compile(r'(<script type="application/ld\+json">)(.*?)(</script>)', re.S)
+
+
+def canonical(text):
+    match = re.search(r'<link\s+rel="canonical"\s+href="([^"]+)"', text)
+    return match[1] if match else None
+
+
+def main_node(text):
+    """Return (@id, node) for the page's own main item, or (None, None)."""
+    url = canonical(text)
+    if not url:
+        return None, None
+    best = None
+    for block in LD.finditer(text):
+        try:
+            data = json.loads(block[2])
+        except ValueError:
+            continue
+        nodes = data.get('@graph', [data]) if isinstance(data, dict) else []
+        for node in nodes:
+            kind = node.get('@type')
+            kinds = [kind] if isinstance(kind, str) else list(kind or [])
+            rank = min((PAGE_TYPES.index(k) for k in kinds if k in PAGE_TYPES), default=None)
+            if rank is not None and str(node.get('@id', '')).startswith(url + '#'):
+                if best is None or rank < best[0]:
+                    best = (rank, node)
+    return (best[1]['@id'], best[1]) if best else (None, None)
+
+
+def page_for(url):
+    relative = url.replace(BASE, '', 1)
+    return ROOT / (relative + 'index.html' if relative == '' or relative.endswith('/') else relative)
+
+
+def main_id(url):
+    page = page_for(url)
+    return main_node(page.read_text())[0] if page.is_file() else None
+
+
+def translation_links(text):
+    """English pages list their translations; Persian and Arabic pages point to the English original."""
+    head = text[:text.find('</head>')]
+    lang = language(head)
+    alternates = cluster(head)
+    own_id, node = main_node(text)
+    if not own_id or 'en' not in alternates:
+        return text, []
+    if lang == 'en':
+        key = 'workTranslation'
+        value = [{'@id': target} for target in (main_id(alternates[code]) for code in ('fa', 'ar') if code in alternates) if target]
+    else:
+        key = 'translationOfWork'
+        original = main_id(alternates['en'])
+        value = {'@id': original} if original else None
+    if not value or key in node:
+        return text, []
+    anchor = f'"@id": "{own_id}"'
+    at = text.find(anchor)
+    if at < 0:
+        return text, []
+    end = at + len(anchor)
+    entry = f'"{key}": ' + json.dumps(value, ensure_ascii=False)
+    line_start = text.rfind('\n', 0, at) + 1
+    indent = text[line_start:at]
+    if indent.strip() == '' and text[end:end + 1] == ',' and text[end + 1:end + 2] == '\n':
+        text = text[:end + 2] + indent + entry + ',\n' + text[end + 2:]
+    else:
+        text = text[:end] + ', ' + entry + text[end:]
+    block = next(b for b in LD.finditer(text) if b.start() <= at < b.end())
+    json.loads(block[2])
+    return text, [key]
+
+
 def enrich(path, text):
     head_end = text.find('</head>')
     if head_end < 0:
@@ -156,7 +236,8 @@ def enrich(path, text):
             joiner = '\n' + before if before.strip() == '' else ''
             head = head[:sheet.start()] + preload + (joiner if joiner else '') + head[sheet.start():]
             added.append('font preload')
-    return head + rest, added
+    text, linked = translation_links(head + rest)
+    return text, added + linked
 
 
 def sitemap(check):

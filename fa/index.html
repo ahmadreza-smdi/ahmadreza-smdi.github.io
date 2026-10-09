@@ -67,6 +67,10 @@
       "@id": "https://a-samadi.com/#website",
       "url": "https://a-samadi.com/",
       "name": "Ahmadreza Samadi",
+      "alternateName": [
+        "Ahmad Samadi",
+        "a-samadi.com"
+      ],
       "inLanguage": [
         "en",
         "fa",
@@ -92,7 +96,10 @@
       "mainEntity": {
         "@id": "https://a-samadi.com/#person"
       },
-      "inLanguage": "fa"
+      "inLanguage": "fa",
+      "translationOfWork": {
+        "@id": "https://a-samadi.com/#profile"
+      }
     },
     {
       "@type": "Person",
@@ -118,7 +125,13 @@
         "url": "https://a-samadi.com/assets/img/ahmadreza-samadi-hero.jpg",
         "width": 900,
         "height": 1200,
-        "caption": "Ahmadreza Samadi"
+        "caption": "Ahmadreza Samadi",
+        "creator": {
+          "@id": "https://a-samadi.com/#person"
+        },
+        "creditText": "Ahmadreza Samadi",
+        "copyrightNotice": "© Ahmadreza Samadi",
+        "acquireLicensePage": "https://a-samadi.com/about.html#profile-resources"
       },
       "description": "Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead at Appraiva, and Co-Founder & CEO of Royal Abraj Group.",
       "jobTitle": "Co-Founder & Technical Lead",
@@ -126,9 +139,14 @@
         "@type": "Place",
         "name": "Dubai, United Arab Emirates"
       },
-      "worksFor": {
-        "@id": "https://a-samadi.com/#appraiva"
-      },
+      "worksFor": [
+        {
+          "@id": "https://a-samadi.com/#appraiva"
+        },
+        {
+          "@id": "https://a-samadi.com/#royal-abraj"
+        }
+      ],
       "memberOf": {
         "@id": "https://a-samadi.com/#royal-abraj"
       },
@@ -198,14 +216,14 @@
   ]
 }</script>
 
-    <link rel="stylesheet" href="../css/site.css?v=20261009-lagoon2" />
-    <link rel="stylesheet" href="../css/rtl.css?v=20261009-lagoon2" />
+    <link rel="stylesheet" href="../css/site.css?v=20261009-lagoon3" />
+    <link rel="stylesheet" href="../css/rtl.css?v=20261009-lagoon3" />
 </head>
     <body>
         <a class="skip-link" href="#main">رفتن به محتوا</a>
         <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
-        <header class="site-header" aria-label="ناوبری اصلی">
+        <header class="site-header">
             <a class="brand" href="#top" aria-label="صفحه اصلی احمدرضا صمدی">
                 <span class="brand-mark" aria-hidden="true">
                     <img src="../assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="1060" height="670" />
@@ -254,7 +272,7 @@
                     <div class="frame" data-lens>
                         <span class="frame-aura" aria-hidden="true"></span>
                         <figure class="frame-photo">
-                            <img src="../assets/img/ahmadreza-samadi-hero.jpg" srcset="../assets/img/ahmadreza-samadi-portrait-450.webp 450w, ../assets/img/ahmadreza-samadi-portrait-900.webp 900w" sizes="(max-width: 760px) 270px, 420px" alt="تصویر احمدرضا صمدی" width="900" height="1200" fetchpriority="high" decoding="async" />
+                            <img src="../assets/img/ahmadreza-samadi-hero.jpg" srcset="../assets/img/ahmadreza-samadi-portrait-450.webp 450w, ../assets/img/ahmadreza-samadi-portrait-900.webp 900w" sizes="(max-width: 760px) 270px, 420px" alt="احمدرضا صمدی، کارآفرین فناوری ساکن دبی، با کت‌وشلوار تیره در دفتری رو به برج خلیفه" width="900" height="1200" fetchpriority="high" decoding="async" />
                             <span class="frame-scan" aria-hidden="true"></span>
                             <span class="frame-corners" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
                         </figure>
@@ -367,10 +385,10 @@
                             </svg>
                         </div>
                         <ol class="run-steps">
-                            <li data-step><span class="step-index">01</span><strong>کشف املاک</strong><span class="step-state" aria-hidden="true"></span></li>
-                            <li data-step><span class="step-index">02</span><strong>غنی‌سازی داده</strong><span class="step-state" aria-hidden="true"></span></li>
-                            <li data-step><span class="step-index">03</span><strong>تحلیل فرصت‌ها</strong><span class="step-state" aria-hidden="true"></span></li>
-                            <li data-step><span class="step-index">04</span><strong>فرایندهای جست‌وجو و تصمیم‌گیری</strong><span class="step-state" aria-hidden="true"></span></li>
+                            <li data-step><span class="step-index">۰۱</span><strong>کشف املاک</strong><span class="step-state" aria-hidden="true"></span></li>
+                            <li data-step><span class="step-index">۰۲</span><strong>غنی‌سازی داده</strong><span class="step-state" aria-hidden="true"></span></li>
+                            <li data-step><span class="step-index">۰۳</span><strong>تحلیل فرصت‌ها</strong><span class="step-state" aria-hidden="true"></span></li>
+                            <li data-step><span class="step-index">۰۴</span><strong>فرایندهای جست‌وجو و تصمیم‌گیری</strong><span class="step-state" aria-hidden="true"></span></li>
                         </ol>
                     </div>
                 </article>
@@ -724,6 +742,6 @@
                 revealItems.forEach((item) => observer.observe(item));
             })();
         </script>
-        <script src="../js/future.js?v=20261009-lagoon2" defer></script>
+        <script src="../js/future.js?v=20261009-lagoon3" defer></script>
     </body>
 </html>

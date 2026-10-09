@@ -43,6 +43,7 @@ python3 scripts/check_internal_links.py
 node scripts/check_guide_locales.mjs
 python3 scripts/build_feed.py --check
 python3 scripts/enrich_metadata.py --check
+python3 scripts/build_llms.py --check
 ```
 
 The checks cover language and canonical metadata, author identity, same-site page and fragment links, localized guide behavior and exports, RSS consistency, and the social and search metadata every page carries in its own language.
@@ -52,7 +53,8 @@ The checks cover language and canonical metadata, author identity, same-site pag
 | Shared styles | Edit `css/premium.css`, `css/editorial.css` and `css/refinement.css`; run `python3 scripts/build_styles.py`. |
 | Homepages | Edit `index.html` and translations in `locales/fa.json` and `locales/ar.json`; run `python3 scripts/build_locales.py`. |
 | Interactive guide | Edit the English guide and `js/decision-guide.js`, plus `locales/decision-guide-fa.json` and `locales/decision-guide-ar.json`; run `python3 scripts/build_guide_locales.py`. |
-| Page metadata and sitemap languages | Run `python3 scripts/enrich_metadata.py` after adding or translating a page. It fills in missing Open Graph, Twitter and robots tags in the page's language and the sitemap's hreflang links, then regenerate the homepages and guide. |
+| Page metadata and sitemap languages | Run `python3 scripts/enrich_metadata.py` after adding or translating a page. It fills in missing Open Graph, Twitter and robots tags in the page's language, the sitemap's hreflang links and the structured-data links that mark English pages as the originals (`workTranslation`) and Persian and Arabic pages as their translations (`translationOfWork`); then regenerate the homepages and guide. |
+| AI assistant map | Run `python3 scripts/build_llms.py` after adding or retitling pages. It rewrites `llms.txt` from the sitemap and each page's title and description, English first. |
 | English writing feed | Edit the articles' metadata; run `python3 scripts/build_feed.py`. Keep original publication dates and include the existing RSS discovery link in new English articles. |
 
 Review generated changes and run the checks before publishing. Keep English as the primary entry point, preserve Persian and Arabic URLs, and retain the site's motion controls and reduced-motion support.
