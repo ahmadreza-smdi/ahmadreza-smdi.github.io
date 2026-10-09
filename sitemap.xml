@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://a-samadi.com/</loc>
         <lastmod>2026-10-09</lastmod>
@@ -160,7 +160,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/writing/</loc>
-        <lastmod>2026-10-08</lastmod>
+        <lastmod>2026-10-09</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -184,7 +184,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/</loc>
-        <lastmod>2026-10-08</lastmod>
+        <lastmod>2026-10-09</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -208,7 +208,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/</loc>
-        <lastmod>2026-10-08</lastmod>
+        <lastmod>2026-10-09</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -615,19 +615,68 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/profitable-but-out-of-cash.html" />
     </url>
     <url>
-        <loc>https://a-samadi.com/watch/ai-confidence.html</loc><lastmod>2026-10-09</lastmod>
-        <video:video><video:thumbnail_loc>https://a-samadi.com/assets/writing/ai-confidence/cover.png</video:thumbnail_loc><video:title>Why does AI sound so confident when it is wrong?</video:title><video:description>Watch the 75-second film, then read how to check each claim against its source.</video:description><video:content_loc>https://a-samadi.com/assets/writing/ai-confidence/ai-confidence.mp4</video:content_loc></video:video>
+        <loc>https://a-samadi.com/watch/ai-confidence.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <video:video>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/ai-confidence/cover.png</video:thumbnail_loc>
+            <video:title>Why does AI sound so confident when it is wrong?</video:title>
+            <video:description>Watch the 75-second film, then read how to check each claim against its source.</video:description>
+            <video:content_loc>https://a-samadi.com/assets/writing/ai-confidence/ai-confidence.mp4</video:content_loc>
+        </video:video>
     </url>
     <url>
-        <loc>https://a-samadi.com/watch/cookie-consent.html</loc><lastmod>2026-10-09</lastmod>
-        <video:video><video:thumbnail_loc>https://a-samadi.com/assets/writing/cookie-consent/cover.png</video:thumbnail_loc><video:title>What does Accept cookies actually mean?</video:title><video:description>Watch the 64-second film, then read the sourced explanation of cookie choices.</video:description><video:content_loc>https://a-samadi.com/assets/writing/cookie-consent/film.mp4</video:content_loc></video:video>
+        <loc>https://a-samadi.com/watch/cookie-consent.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <video:video>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/cookie-consent/cover.png</video:thumbnail_loc>
+            <video:title>What does Accept cookies actually mean?</video:title>
+            <video:description>Watch the 64-second film, then read the sourced explanation of cookie choices.</video:description>
+            <video:content_loc>https://a-samadi.com/assets/writing/cookie-consent/film.mp4</video:content_loc>
+        </video:video>
     </url>
     <url>
-        <loc>https://a-samadi.com/watch/charging-80.html</loc><lastmod>2026-10-09</lastmod>
-        <video:video><video:thumbnail_loc>https://a-samadi.com/assets/writing/charging-80/cover.png</video:thumbnail_loc><video:title>Why does your phone stop charging at 80%?</video:title><video:description>Watch the 67-second film to see three different causes of a charging pause.</video:description><video:content_loc>https://a-samadi.com/assets/writing/charging-80/film.mp4</video:content_loc></video:video>
+        <loc>https://a-samadi.com/watch/charging-80.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <video:video>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/charging-80/cover.png</video:thumbnail_loc>
+            <video:title>Why does your phone stop charging at 80%?</video:title>
+            <video:description>Watch the 67-second film to see three different causes of a charging pause.</video:description>
+            <video:content_loc>https://a-samadi.com/assets/writing/charging-80/film.mp4</video:content_loc>
+        </video:video>
     </url>
     <url>
-        <loc>https://a-samadi.com/watch/profit-cash.html</loc><lastmod>2026-10-09</lastmod>
-        <video:video><video:thumbnail_loc>https://a-samadi.com/assets/writing/profit-cash/cover.png</video:thumbnail_loc><video:title>Profitable. But out of cash: why payment timing matters</video:title><video:description>Watch the 90-second film to see how profit and payment timing diverge.</video:description><video:content_loc>https://a-samadi.com/assets/writing/profit-cash/film.mp4</video:content_loc></video:video>
+        <loc>https://a-samadi.com/watch/profit-cash.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <video:video>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/profit-cash/cover.png</video:thumbnail_loc>
+            <video:title>Profitable. But out of cash: why payment timing matters</video:title>
+            <video:description>Watch the 90-second film to see how profit and payment timing diverge.</video:description>
+            <video:content_loc>https://a-samadi.com/assets/writing/profit-cash/film.mp4</video:content_loc>
+        </video:video>
     </url>
+    <url>
+        <loc>https://a-samadi.com/writing/ai-rental-yield-cash-flow.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-rental-yield-cash-flow.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-rental-yield-cash-flow.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-rental-yield-cash-flow.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-rental-yield-cash-flow.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/ai-rental-yield-cash-flow.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-rental-yield-cash-flow.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-rental-yield-cash-flow.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-rental-yield-cash-flow.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-rental-yield-cash-flow.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/ai-rental-yield-cash-flow.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-rental-yield-cash-flow.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-rental-yield-cash-flow.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-rental-yield-cash-flow.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-rental-yield-cash-flow.html" />
+    </url>
+    <url><loc>https://a-samadi.com/watch/rental-yield.html</loc><lastmod>2026-10-09</lastmod><video:video><video:thumbnail_loc>https://a-samadi.com/assets/writing/rental-yield/cover.png</video:thumbnail_loc><video:title>AI says 8% rental yield. Why is the owner still paying?</video:title><video:description>Watch the 99-second film to see why an 8% gross rental yield can coexist with a cash shortfall.</video:description><video:content_loc>https://a-samadi.com/assets/writing/rental-yield/film.mp4</video:content_loc></video:video></url>
 </urlset>

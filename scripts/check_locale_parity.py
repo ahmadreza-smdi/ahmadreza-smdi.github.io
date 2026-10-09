@@ -187,6 +187,7 @@ clusters = (
  ('writing/incognito-private-browsing.html','fa/writing/incognito-private-browsing.html','ar/writing/incognito-private-browsing.html'),
  ('writing/why-ai-sounds-confident.html','fa/writing/why-ai-sounds-confident.html','ar/writing/why-ai-sounds-confident.html'),
  ('writing/why-phone-stops-charging-at-80.html','fa/writing/why-phone-stops-charging-at-80.html','ar/writing/why-phone-stops-charging-at-80.html'),
+ ('writing/ai-rental-yield-cash-flow.html','fa/writing/ai-rental-yield-cash-flow.html','ar/writing/ai-rental-yield-cash-flow.html'),
  ('writing/profitable-but-out-of-cash.html','fa/writing/profitable-but-out-of-cash.html','ar/writing/profitable-but-out-of-cash.html'),
  ('writing/what-accept-cookies-means.html','fa/writing/what-accept-cookies-means.html','ar/writing/what-accept-cookies-means.html'),
 )
