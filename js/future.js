@@ -137,6 +137,7 @@
         const showAnswer = (match) => {
             if (!answer) return;
             if (!match) {
+                window.clearTimeout(streamTimer);
                 current = null;
                 answer.hidden = true;
                 return;
@@ -214,8 +215,11 @@
                 return;
             }
             const match = search(raw);
+            const hadAnswer = Boolean(current);
+            // A previous passage must not remain clickable while the new query settles.
+            showAnswer(null);
             empty.hidden = found || Boolean(match);
-            answerTimer = window.setTimeout(() => { showAnswer(match); settleActive(); }, current ? 160 : 60);
+            answerTimer = window.setTimeout(() => { showAnswer(match); settleActive(); }, hadAnswer ? 160 : 60);
             settleActive();
         };
         let lastFocus = null;
@@ -236,10 +240,14 @@
         };
         const close = () => { if (dialog.open) dialog.close(); };
         dialog.addEventListener('close', () => {
+            window.clearTimeout(answerTimer);
+            window.clearTimeout(streamTimer);
             announce(false);
             if (!keepFocus && lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus({ preventScroll: true });
             keepFocus = false;
         });
+        const closeButton = $('.command-close', dialog);
+        if (closeButton) closeButton.addEventListener('click', close);
         triggers.forEach((trigger) => trigger.addEventListener('click', open));
         const typing = (target) => Boolean(target && target.closest && target.closest('input, textarea, select, [contenteditable="true"]'));
         document.addEventListener('keydown', (event) => {
