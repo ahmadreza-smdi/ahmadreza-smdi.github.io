@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="Ahmadreza Samadi">
+<title>لماذا يصبح الحاسوب بطيئًا عندما تكاد مساحة التخزين تمتلئ؟ | أحمدرضا صمدي</title><meta name="description" content="التخزين مساحة للعمل أيضًا. شرح بعشر شرائح للملفات المؤقتة وامتداد عمل الذاكرة إلى التخزين وإدارة SSD، مع خطوات عملية لتحرير المساحة."><meta name="robots" content="index, follow, max-image-preview:large"><link rel="canonical" href="https://a-samadi.com/ar/writing/why-full-storage-slows-computer.html"><link rel="alternate" type="application/rss+xml" title="Ahmadreza Samadi: English writing" href="https://a-samadi.com/writing/feed.xml">
+<link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-full-storage-slows-computer.html">
+<link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-full-storage-slows-computer.html">
+<link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-full-storage-slows-computer.html">
+<link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-full-storage-slows-computer.html">
+<link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg"><link rel="preload" as="font" type="font/woff2" href="/assets/fonts/vazirmatn-arabic-wght.woff2" crossorigin><link rel="stylesheet" href="/css/site.css?v=20261009-lagoon4">
+<link rel="stylesheet" href="/css/rtl.css?v=20261009-lagoon4">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ahmadreza Samadi">
+<meta property="og:title" content="لماذا يصبح الحاسوب بطيئًا عندما تكاد مساحة التخزين تمتلئ؟">
+<meta property="og:description" content="التخزين مساحة للعمل أيضًا. شرح بعشر شرائح للملفات المؤقتة وامتداد عمل الذاكرة إلى التخزين وإدارة SSD، مع خطوات عملية لتحرير المساحة.">
+<meta property="og:url" content="https://a-samadi.com/ar/writing/why-full-storage-slows-computer.html">
+<meta property="og:locale" content="ar_AE">
+<meta property="og:image" content="https://a-samadi.com/assets/writing/almost-full-storage/slide-01.png">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1350">
+<meta property="og:image:alt" content="غلاف مرجاني بحاسوب وشريط تخزين شبه ممتلئ يسأل لماذا يصبح الحاسوب بطيئًا؛ يحتاج الحاسوب إلى مساحة للعمل أيضًا.">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="fa_IR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="لماذا يصبح الحاسوب بطيئًا عندما تكاد مساحة التخزين تمتلئ؟">
+<meta name="twitter:description" content="التخزين مساحة للعمل أيضًا. شرح بعشر شرائح للملفات المؤقتة وامتداد عمل الذاكرة إلى التخزين وإدارة SSD، مع خطوات عملية لتحرير المساحة.">
+<meta name="twitter:image" content="https://a-samadi.com/assets/writing/almost-full-storage/slide-01.png">
+<meta name="twitter:image:alt" content="غلاف مرجاني بحاسوب وشريط تخزين شبه ممتلئ يسأل لماذا يصبح الحاسوب بطيئًا؛ يحتاج الحاسوب إلى مساحة للعمل أيضًا.">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://a-samadi.com/ar/writing/why-full-storage-slows-computer.html#article",
+      "headline": "لماذا يصبح الحاسوب بطيئًا عندما تكاد مساحة التخزين تمتلئ؟",
+      "description": "التخزين مساحة للعمل أيضًا. شرح بعشر شرائح للملفات المؤقتة وامتداد عمل الذاكرة إلى التخزين وإدارة SSD، مع خطوات عملية لتحرير المساحة.",
+      "url": "https://a-samadi.com/ar/writing/why-full-storage-slows-computer.html",
+      "mainEntityOfPage": "https://a-samadi.com/ar/writing/why-full-storage-slows-computer.html",
+      "datePublished": "2026-10-09",
+      "dateModified": "2026-10-09",
+      "inLanguage": "ar",
+      "image": "https://a-samadi.com/assets/writing/almost-full-storage/slide-01.png",
+      "author": {
+        "@type": "Person",
+        "@id": "https://a-samadi.com/#person",
+        "name": "أحمدرضا صمدي",
+        "url": "https://a-samadi.com/ar/about.html"
+      },
+      "publisher": {
+        "@id": "https://a-samadi.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://a-samadi.com/#website"
+      },
+      "citation": [
+        "https://support.apple.com/guide/mac-help/if-your-mac-runs-slowly-mchlp1731/mac",
+        "https://support.microsoft.com/en-us/windows/experience/storage-filemanagement/free-up-drive-space-in-windows",
+        "https://support.microsoft.com/en-gb/windows/deployment/updates-lifecycle/free-up-space-for-windows-updates",
+        "https://support.apple.com/guide/activity-monitor/view-memory-usage-actmntr1004/mac",
+        "https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/introduction-to-the-page-file",
+        "https://www.kingston.com/en/blog/servers-and-data-centers/garbage-collection",
+        "https://www.kingston.com/en/ssd/ssd-faq"
+      ],
+      "hasPart": {
+        "@type": "CreativeWork",
+        "name": "شاهد الشرح في عشر شرائح",
+        "inLanguage": "en",
+        "url": "https://a-samadi.com/assets/writing/almost-full-storage/almost-full-storage-carousel.pdf"
+      },
+      "translationOfWork": {
+        "@id": "https://a-samadi.com/writing/why-full-storage-slows-computer.html#article"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://a-samadi.com/ar/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "المقالات",
+          "item": "https://a-samadi.com/ar/writing/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "لماذا يصبح الحاسوب بطيئًا عندما تكاد مساحة التخزين تمتلئ؟"
+        }
+      ]
+    }
+  ]
+}</script>
+<style>.storage-opening{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1fr);gap:1.5rem;align-items:center;margin:2rem 0}.storage-cover{margin:0}.storage-cover img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 0 0 1px var(--line)}.storage-cover figcaption,.storage-note{font-size:.85rem!important;color:var(--muted)!important;line-height:1.6}.storage-cover figcaption{padding:.65rem 0}.storage-summary{display:grid;gap:.75rem}.storage-summary div{border:1px solid var(--line);background:var(--surface,#fff);border-radius:18px;padding:1.15rem}.storage-summary h2{font-size:1.1rem!important;margin:0 0 .4rem!important}.storage-summary p{margin:0!important;font-size:1rem!important}.storage-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.25rem 0}.storage-gallery figure{margin:0}.storage-gallery img{display:block;width:100%;height:auto;border-radius:12px}.storage-gallery figcaption{font-size:.85rem;color:var(--muted);padding:.5rem 0}.storage-slides summary{cursor:pointer;padding:1rem;border:1px solid var(--line);border-radius:12px;color:var(--ink);font-weight:600}.storage-slides summary:focus-visible{outline:3px solid var(--accent,#0b6a7a);outline-offset:4px}.storage-settings{border:1px solid var(--line);border-radius:18px;padding:1rem 1.25rem;background:var(--surface,#fff)}.storage-settings p{margin:.5rem 0!important;font-size:1rem!important}@media(max-width:650px){.storage-opening,.storage-gallery{grid-template-columns:1fr}.storage-cover{max-width:440px;margin-inline:auto}}</style></head>
+<body class="editorial-body arabic-page"><a class="skip-link" href="#main">انتقل إلى المحتوى</a><header class="editorial-header"><a href="/ar/"><img src="/assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">أحمدرضا صمدي / الرئيسية</a></header>
+<main id="main" class="editorial"><nav class="byline" aria-label="مسار التنقل"><a href="/ar/">الرئيسية</a> / <a href="/ar/writing/">المقالات</a> / <span aria-current="page">لماذا يصبح الحاسوب بطيئًا عندما تكاد مساحة التخزين تمتلئ؟</span></nav>
+<article><p class="eyebrow">شرح مبسّط · معرفة الحاسوب</p><h1>لماذا يصبح الحاسوب بطيئًا عندما تكاد مساحة التخزين تمتلئ؟</h1><p class="lead">يحفظ القرص الصور والمستندات، لكنه يوفر للحاسوب مساحة للعمل أيضًا. ثلاثة أنواع من النشاط خلف الكواليس تفسر لماذا قد يسبب نفاد المساحة مشكلات.</p>
+<p class="byline">بقلم <a href="/ar/about.html" rel="author">أحمدرضا صمدي</a> · <time datetime="2026-10-09">٩ أكتوبر ٢٠٢٦</time> · <a href="https://a-samadi.com/writing/why-full-storage-slows-computer.html" hreflang="en">النسخة الإنجليزية</a></p>
+<div class="storage-opening"><figure class="storage-cover"><img src="/assets/writing/almost-full-storage/slide-01.png" alt="غلاف مرجاني بحاسوب وشريط تخزين شبه ممتلئ يسأل لماذا يصبح الحاسوب بطيئًا؛ يحتاج الحاسوب إلى مساحة للعمل أيضًا." width="1080" height="1350" decoding="async"><figcaption>مجموعة الشرائح الأصلية بالمرجاني الفاتح. شريط التخزين رسم توضيحي، وليس نسبة موصى بها.</figcaption></figure><div class="storage-summary">
+<div><h2>عمل مؤقت</h2><p>قد تحتاج التحديثات والحفظ والتصدير إلى مساحة إضافية.</p></div>
+<div><h2>امتداد عمل الذاكرة</h2><p>عند انشغال RAM، قد تُنقل بيانات أقل نشاطًا إلى التخزين.</p></div>
+<div><h2>إدارة SSD</h2><p>قد تستلزم الكتابة الجديدة نقل بيانات موجودة.</p></div>
+</div></div>
+<section><h2>١. التحديث يحتاج أكثر من مساحة تنزيله</h2><p>قد يحتاج التحديث الذي نزلته إلى مساحة إضافية لفك الملفات والتثبيت والاحتفاظ بملفات الاستعادة. وقد تنشئ التطبيقات ملفات مؤقتة أثناء الحفظ أو التصدير. عند نقص المساحة قد تتوقف المهمة أو تفشل، بدلًا من أن تصبح أبطأ فقط.</p><p class="storage-note">المصدر: <a href="https://support.microsoft.com/en-gb/windows/deployment/updates-lifecycle/free-up-space-for-windows-updates" hreflang="en"><bdi>Microsoft: Free up space for Windows updates</bdi></a></p></section>
+<section><h2>٢. RAM هي المكتب. التخزين هو الخزانة.</h2><p>RAM ذاكرة سريعة للعمل الجاري الآن؛ التخزين يحفظ الملفات لمدة أطول. عند انشغال الذاكرة، قد ينقل النظام بيانات أقل نشاطًا إلى القرص. يستخدم Windows ملف ترحيل، ويستخدم Mac ملفات swap. هذا أبطأ من RAM، ويحتاج إلى مساحة على القرص. يحدث تحت ضغط الذاكرة، وليس لمجرد امتلاء القرص. تحرير التخزين لا يضيف RAM.</p><p class="storage-note">المصدر: <a href="https://support.apple.com/guide/activity-monitor/view-memory-usage-actmntr1004/mac" hreflang="en"><bdi>Apple: View memory usage in Activity Monitor</bdi></a> · <a href="https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/introduction-to-the-page-file" hreflang="en"><bdi>Microsoft Learn: Introduction to page files</bdi></a></p></section>
+<section><h2>٣. يحتاج SSD إلى إفساح المجال قبل بعض الكتابات</h2><p>SSD هو التخزين داخل معظم الحواسيب المحمولة الحديثة. تكتب ذاكرة الفلاش أجزاء صغيرة لكنها تمسح مجموعات أكبر تسمى كتلًا. لإعادة استخدام كتلة مشغولة جزئيًا، قد تنقل البيانات المطلوبة إلى مكان آخر، وتمسح الكتلة القديمة وتعيد استخدامها. قلة الكتل الحرة قد تزيد إعادة ترتيب البيانات أثناء الكتابة الجديدة.</p><p class="storage-note">المصدر: <a href="https://www.kingston.com/en/blog/servers-and-data-centers/garbage-collection" hreflang="en"><bdi>Kingston: Garbage collection</bdi></a></p></section>
+<section><h2>لماذا لا توجد نسبة سحرية؟</h2><p>يعتمد الأثر على SSD ونوع العمل وTRIM والسعة المحجوزة داخليًا. يساعد TRIM في إبلاغ القرص بالبيانات التي لم تعد مطلوبة. المساحة الحرة التي تراها تختلف عن احتياطه الداخلي. قد يحتاج تحديث كبير أو تصدير فيديو إلى مساحة أكبر بكثير من التصفح. نقص المساحة لا يبطئ تلقائيًا كل قراءة أو مهمة للمعالج.</p><p class="storage-note">المصدر: <a href="https://www.kingston.com/en/ssd/ssd-faq" hreflang="en"><bdi>Kingston: SSD FAQs</bdi></a></p></section>
+<section><h2>أفسح المجال. احتفظ بما يهم.</h2><p>ابدأ بإعدادات التخزين المدمجة. راجع الملفات الكبيرة والتطبيقات غير المستخدمة وتوصيات التنظيف. احتفظ بنسخة احتياطية من الملفات المهمة قبل حذفها، وراجع سلة المهملات قبل إفراغها. اترك مساحة لمهمتك التالية، بدلًا من ملاحقة نسبة واحدة تناسب الجميع.</p><p class="storage-note">المصدر: <a href="https://support.microsoft.com/en-us/windows/experience/storage-filemanagement/free-up-drive-space-in-windows" hreflang="en"><bdi>Microsoft: Free up drive space in Windows</bdi></a></p></section>
+<div class="storage-settings"><p>Mac: إعدادات النظام ← عام ← التخزين</p><p>Windows: الإعدادات ← النظام ← التخزين</p></div>
+<section><h2>ما زال بطيئًا؟ التخزين سبب واحد فقط.</h2><p>تحقق من التطبيقات المشغولة وضغط الذاكرة. القرص شبه الممتلئ ونقص RAM مشكلتان مختلفتان، حتى إن كانتا تؤثران في بعضهما.</p><p class="storage-note">المصدر: <a href="https://support.apple.com/guide/mac-help/if-your-mac-runs-slowly-mchlp1731/mac" hreflang="en"><bdi>Apple: If your Mac runs slowly</bdi></a></p></section>
+<h2>شاهد الشرح في عشر شرائح</h2><p>رسوم أصلية ومبسطة، وليست لقطات منتجات أو قياسات أداء. الشرائح العشر باللغة الإنجليزية.</p><details class="storage-slides"><summary>عرض الشرائح الإنجليزية العشر</summary><div class="storage-gallery">
+<figure><img src="/assets/writing/almost-full-storage/slide-01.png" alt="غلاف مرجاني بحاسوب وشريط تخزين شبه ممتلئ يسأل لماذا يصبح الحاسوب بطيئًا؛ يحتاج الحاسوب إلى مساحة للعمل أيضًا." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>الشريحة <bdi>1 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/almost-full-storage/slide-02.png" alt="لوحتان تقارنان الملفات المحفوظة بالعمل المؤقت. تحتاج التطبيقات إلى مساحة للعمل خلف الكواليس." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>الشريحة <bdi>2 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/almost-full-storage/slide-03.png" alt="ثلاثة رموز تعرض تنزيل تحديث وفك ملفاته وتثبيته؛ قد يحتاج التثبيت والاستعادة إلى مساحة تتجاوز حجم التنزيل." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>الشريحة <bdi>3 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/almost-full-storage/slide-04.png" alt="شريحة RAM وقرص في لوحتين: الذاكرة كالمكتب والتخزين كالخزانة. تحرير مساحة القرص لا يزيد RAM." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>الشريحة <bdi>4 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/almost-full-storage/slide-05.png" alt="سهم من RAM المشغولة إلى القرص. قد تنتقل البيانات الأقل نشاطًا إلى ملف ترحيل Windows أو swap في Mac تحت ضغط الذاكرة، وليس بسبب امتلاء القرص وحده." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>الشريحة <bdi>5 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/almost-full-storage/slide-06.png" alt="كتلة SSD تحتوي بيانات مطلوبة وأخرى محذوفة. تُكتب أجزاء صغيرة لكن تُمسح مجموعات كاملة؛ حذف جزء لا يجعل المجموعة كلها جاهزة لإعادة الاستخدام." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>الشريحة <bdi>6 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/almost-full-storage/slide-07.png" alt="ثلاث مراحل: نقل البيانات المطلوبة إلى كتلة أخرى، مسح الكتلة القديمة ثم كتابة بيانات جديدة. تبقى البيانات المحفوظة ظاهرة في وجهتها." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>الشريحة <bdi>7 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/almost-full-storage/slide-08.png" alt="شريط يفصل الملفات عن مساحة العمل، مع تنبيه بأنه رسم لا نسبة موصى بها. تختلف المساحة المطلوبة حسب المهمة." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>الشريحة <bdi>8 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/almost-full-storage/slide-09.png" alt="قائمة عملية: افتح إعدادات التخزين، وراجع الملفات الكبيرة والتطبيقات، وانسخ المهم احتياطيًا قبل حذفه وراجع سلة المهملات." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>الشريحة <bdi>9 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/almost-full-storage/slide-10.png" alt="الخلاصة: المساحة الحرة مساحة للعمل. قد تحتاجها الملفات المؤقتة وامتداد عمل الذاكرة وكتابات SSD؛ افحص أسباب البطء الأخرى أيضًا." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>الشريحة <bdi>10 / 10</bdi></figcaption></figure>
+</div></details><p><a href="/assets/writing/almost-full-storage/almost-full-storage-carousel.pdf" type="application/pdf" hreflang="en">تنزيل الشرائح الإنجليزية بصيغة PDF</a></p>
+<section id="social-publications"><h2>منشور أيضًا على</h2><p><a href="https://www.instagram.com/p/DeRD_FgCutT/" hreflang="en"><bdi>Instagram</bdi></a> · <a href="https://www.linkedin.com/feed/update/urn:li:activity:7514238957828878336/" hreflang="en"><bdi>LinkedIn</bdi></a> · <a href="https://www.youtube.com/post/UgkxPgMXxjFKMvohuq9zSIRxVrSlMkCPrbKp" hreflang="en"><bdi>YouTube</bdi></a></p></section>
+<h2>المصادر</h2><p class="storage-note">رُوجعت المصادر الأصلية في ٩ أكتوبر ٢٠٢٦. لا ندّعي حدًا دقيقًا للبطء أو تحسنًا مضمونًا في السرعة.</p><ul>
+<li><a href="https://support.apple.com/guide/mac-help/if-your-mac-runs-slowly-mchlp1731/mac" hreflang="en"><bdi>Apple: If your Mac runs slowly</bdi></a></li>
+<li><a href="https://support.microsoft.com/en-us/windows/experience/storage-filemanagement/free-up-drive-space-in-windows" hreflang="en"><bdi>Microsoft: Free up drive space in Windows</bdi></a></li>
+<li><a href="https://support.microsoft.com/en-gb/windows/deployment/updates-lifecycle/free-up-space-for-windows-updates" hreflang="en"><bdi>Microsoft: Free up space for Windows updates</bdi></a></li>
+<li><a href="https://support.apple.com/guide/activity-monitor/view-memory-usage-actmntr1004/mac" hreflang="en"><bdi>Apple: View memory usage in Activity Monitor</bdi></a></li>
+<li><a href="https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/introduction-to-the-page-file" hreflang="en"><bdi>Microsoft Learn: Introduction to page files</bdi></a></li>
+<li><a href="https://www.kingston.com/en/blog/servers-and-data-centers/garbage-collection" hreflang="en"><bdi>Kingston: Garbage collection</bdi></a></li>
+<li><a href="https://www.kingston.com/en/ssd/ssd-faq" hreflang="en"><bdi>Kingston: SSD FAQs</bdi></a></li>
+</ul></article><footer class="editorial-footer"><nav aria-label="قراءة ذات صلة"><a href="/ar/writing/">المقالات</a> · <a href="/ar/about.html">عن أحمدرضا صمدي</a></nav><p>أحمدرضا صمدي</p></footer></main></body></html>

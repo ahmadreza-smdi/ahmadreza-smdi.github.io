@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="Ahmadreza Samadi">
+<title>چرا وقتی فضای ذخیره‌سازی تقریباً پر است، کامپیوتر کند می‌شود؟ | احمدرضا صمدی</title><meta name="description" content="فضای ذخیره‌سازی، فضای کار هم هست. توضیحی ده‌اسلایدی درباره فایل‌های موقت، سرریز رم و کارهای داخلی SSD با راهنمای آزاد کردن فضا."><meta name="robots" content="index, follow, max-image-preview:large"><link rel="canonical" href="https://a-samadi.com/fa/writing/why-full-storage-slows-computer.html"><link rel="alternate" type="application/rss+xml" title="Ahmadreza Samadi: English writing" href="https://a-samadi.com/writing/feed.xml">
+<link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-full-storage-slows-computer.html">
+<link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-full-storage-slows-computer.html">
+<link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-full-storage-slows-computer.html">
+<link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-full-storage-slows-computer.html">
+<link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg"><link rel="preload" as="font" type="font/woff2" href="/assets/fonts/vazirmatn-arabic-wght.woff2" crossorigin><link rel="stylesheet" href="/css/site.css?v=20261009-lagoon4">
+<link rel="stylesheet" href="/css/rtl.css?v=20261009-lagoon4">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ahmadreza Samadi">
+<meta property="og:title" content="چرا وقتی فضای ذخیره‌سازی تقریباً پر است، کامپیوتر کند می‌شود؟">
+<meta property="og:description" content="فضای ذخیره‌سازی، فضای کار هم هست. توضیحی ده‌اسلایدی درباره فایل‌های موقت، سرریز رم و کارهای داخلی SSD با راهنمای آزاد کردن فضا.">
+<meta property="og:url" content="https://a-samadi.com/fa/writing/why-full-storage-slows-computer.html">
+<meta property="og:locale" content="fa_IR">
+<meta property="og:image" content="https://a-samadi.com/assets/writing/almost-full-storage/slide-01.png">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1350">
+<meta property="og:image:alt" content="جلد مرجانی با لپ‌تاپ و نوار ذخیره‌سازی تقریباً پر می‌پرسد چرا کامپیوتر کند می‌شود؛ کامپیوتر برای کار کردن هم فضا می‌خواهد.">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ar_AE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="چرا وقتی فضای ذخیره‌سازی تقریباً پر است، کامپیوتر کند می‌شود؟">
+<meta name="twitter:description" content="فضای ذخیره‌سازی، فضای کار هم هست. توضیحی ده‌اسلایدی درباره فایل‌های موقت، سرریز رم و کارهای داخلی SSD با راهنمای آزاد کردن فضا.">
+<meta name="twitter:image" content="https://a-samadi.com/assets/writing/almost-full-storage/slide-01.png">
+<meta name="twitter:image:alt" content="جلد مرجانی با لپ‌تاپ و نوار ذخیره‌سازی تقریباً پر می‌پرسد چرا کامپیوتر کند می‌شود؛ کامپیوتر برای کار کردن هم فضا می‌خواهد.">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://a-samadi.com/fa/writing/why-full-storage-slows-computer.html#article",
+      "headline": "چرا وقتی فضای ذخیره‌سازی تقریباً پر است، کامپیوتر کند می‌شود؟",
+      "description": "فضای ذخیره‌سازی، فضای کار هم هست. توضیحی ده‌اسلایدی درباره فایل‌های موقت، سرریز رم و کارهای داخلی SSD با راهنمای آزاد کردن فضا.",
+      "url": "https://a-samadi.com/fa/writing/why-full-storage-slows-computer.html",
+      "mainEntityOfPage": "https://a-samadi.com/fa/writing/why-full-storage-slows-computer.html",
+      "datePublished": "2026-10-09",
+      "dateModified": "2026-10-09",
+      "inLanguage": "fa",
+      "image": "https://a-samadi.com/assets/writing/almost-full-storage/slide-01.png",
+      "author": {
+        "@type": "Person",
+        "@id": "https://a-samadi.com/#person",
+        "name": "احمدرضا صمدی",
+        "url": "https://a-samadi.com/fa/about.html"
+      },
+      "publisher": {
+        "@id": "https://a-samadi.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://a-samadi.com/#website"
+      },
+      "citation": [
+        "https://support.apple.com/guide/mac-help/if-your-mac-runs-slowly-mchlp1731/mac",
+        "https://support.microsoft.com/en-us/windows/experience/storage-filemanagement/free-up-drive-space-in-windows",
+        "https://support.microsoft.com/en-gb/windows/deployment/updates-lifecycle/free-up-space-for-windows-updates",
+        "https://support.apple.com/guide/activity-monitor/view-memory-usage-actmntr1004/mac",
+        "https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/introduction-to-the-page-file",
+        "https://www.kingston.com/en/blog/servers-and-data-centers/garbage-collection",
+        "https://www.kingston.com/en/ssd/ssd-faq"
+      ],
+      "hasPart": {
+        "@type": "CreativeWork",
+        "name": "توضیح در ده اسلاید",
+        "inLanguage": "en",
+        "url": "https://a-samadi.com/assets/writing/almost-full-storage/almost-full-storage-carousel.pdf"
+      },
+      "translationOfWork": {
+        "@id": "https://a-samadi.com/writing/why-full-storage-slows-computer.html#article"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "خانه",
+          "item": "https://a-samadi.com/fa/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "نوشته‌ها",
+          "item": "https://a-samadi.com/fa/writing/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "چرا وقتی فضای ذخیره‌سازی تقریباً پر است، کامپیوتر کند می‌شود؟"
+        }
+      ]
+    }
+  ]
+}</script>
+<style>.storage-opening{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1fr);gap:1.5rem;align-items:center;margin:2rem 0}.storage-cover{margin:0}.storage-cover img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 0 0 1px var(--line)}.storage-cover figcaption,.storage-note{font-size:.85rem!important;color:var(--muted)!important;line-height:1.6}.storage-cover figcaption{padding:.65rem 0}.storage-summary{display:grid;gap:.75rem}.storage-summary div{border:1px solid var(--line);background:var(--surface,#fff);border-radius:18px;padding:1.15rem}.storage-summary h2{font-size:1.1rem!important;margin:0 0 .4rem!important}.storage-summary p{margin:0!important;font-size:1rem!important}.storage-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.25rem 0}.storage-gallery figure{margin:0}.storage-gallery img{display:block;width:100%;height:auto;border-radius:12px}.storage-gallery figcaption{font-size:.85rem;color:var(--muted);padding:.5rem 0}.storage-slides summary{cursor:pointer;padding:1rem;border:1px solid var(--line);border-radius:12px;color:var(--ink);font-weight:600}.storage-slides summary:focus-visible{outline:3px solid var(--accent,#0b6a7a);outline-offset:4px}.storage-settings{border:1px solid var(--line);border-radius:18px;padding:1rem 1.25rem;background:var(--surface,#fff)}.storage-settings p{margin:.5rem 0!important;font-size:1rem!important}@media(max-width:650px){.storage-opening,.storage-gallery{grid-template-columns:1fr}.storage-cover{max-width:440px;margin-inline:auto}}</style></head>
+<body class="editorial-body persian-page"><a class="skip-link" href="#main">رفتن به محتوا</a><header class="editorial-header"><a href="/fa/"><img src="/assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">احمدرضا صمدی / خانه</a></header>
+<main id="main" class="editorial"><nav class="byline" aria-label="مسیر صفحه"><a href="/fa/">خانه</a> / <a href="/fa/writing/">نوشته‌ها</a> / <span aria-current="page">چرا وقتی فضای ذخیره‌سازی تقریباً پر است، کامپیوتر کند می‌شود؟</span></nav>
+<article><p class="eyebrow">توضیح ساده · دانش کامپیوتر</p><h1>چرا وقتی فضای ذخیره‌سازی تقریباً پر است، کامپیوتر کند می‌شود؟</h1><p class="lead">درایو عکس‌ها و اسناد را نگه می‌دارد، اما برای کار کردن کامپیوتر هم فضا فراهم می‌کند. سه فعالیت پشت صحنه توضیح می‌دهند چرا کمبود فضا می‌تواند مشکل‌ساز شود.</p>
+<p class="byline">نوشتهٔ <a href="/fa/about.html" rel="author">احمدرضا صمدی</a> · <time datetime="2026-10-09">۹ اکتبر ۲۰۲۶</time> · <a href="https://a-samadi.com/writing/why-full-storage-slows-computer.html" hreflang="en">نسخهٔ انگلیسی</a></p>
+<div class="storage-opening"><figure class="storage-cover"><img src="/assets/writing/almost-full-storage/slide-01.png" alt="جلد مرجانی با لپ‌تاپ و نوار ذخیره‌سازی تقریباً پر می‌پرسد چرا کامپیوتر کند می‌شود؛ کامپیوتر برای کار کردن هم فضا می‌خواهد." width="1080" height="1350" decoding="async"><figcaption>کاروسل اصلی با رنگ مرجانی پاستلی. نوار فضای ذخیره‌سازی صرفاً تصویرسازی است، نه درصد پیشنهادی.</figcaption></figure><div class="storage-summary">
+<div><h2>کارهای موقت</h2><p>به‌روزرسانی، ذخیره و خروجی گرفتن ممکن است فضای اضافه بخواهند.</p></div>
+<div><h2>سرریز حافظه</h2><p>وقتی رم مشغول است، داده‌های کم‌استفاده ممکن است به درایو منتقل شوند.</p></div>
+<div><h2>کارهای داخلی SSD</h2><p>نوشتن داده جدید گاهی نیازمند جابه‌جایی داده موجود است.</p></div>
+</div></div>
+<section><h2>۱. به‌روزرسانی فقط به اندازه دانلودش فضا نمی‌خواهد</h2><p>بسته دانلودشده ممکن است برای باز کردن فایل‌ها، نصب و نگهداری فایل‌های بازیابی، فضای بیشتری بخواهد. برنامه‌ها هم هنگام ذخیره یا خروجی گرفتن فایل‌های موقت می‌سازند. کمبود فضا می‌تواند کار را متوقف یا ناموفق کند، نه اینکه فقط آن را کندتر کند.</p><p class="storage-note">منبع: <a href="https://support.microsoft.com/en-gb/windows/deployment/updates-lifecycle/free-up-space-for-windows-updates" hreflang="en"><bdi>Microsoft: Free up space for Windows updates</bdi></a></p></section>
+<section><h2>۲. رم میز کار است؛ ذخیره‌سازی کمد</h2><p>رم حافظه سریع برای کارهای همین لحظه است؛ درایو فایل‌ها را برای مدت طولانی‌تر نگه می‌دارد. وقتی رم مشغول است، سیستم می‌تواند داده‌های کم‌استفاده را به درایو منتقل کند. ویندوز از page file و مک از swap استفاده می‌کند. این روش از رم کندتر است و فضای درایو می‌خواهد. علت آن فشار بر حافظه است، نه صرفاً پر بودن درایو. آزاد کردن فضای ذخیره‌سازی، رم را افزایش نمی‌دهد.</p><p class="storage-note">منبع: <a href="https://support.apple.com/guide/activity-monitor/view-memory-usage-actmntr1004/mac" hreflang="en"><bdi>Apple: View memory usage in Activity Monitor</bdi></a> · <a href="https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/introduction-to-the-page-file" hreflang="en"><bdi>Microsoft Learn: Introduction to page files</bdi></a></p></section>
+<section><h2>۳. SSD پیش از بعضی نوشتن‌ها باید جا باز کند</h2><p>SSD محل ذخیره‌سازی بیشتر لپ‌تاپ‌های امروزی است. حافظه فلش داده را در قطعات کوچک می‌نویسد، اما گروه‌های بزرگ‌تری به نام بلوک را پاک می‌کند. برای استفاده دوباره از بلوکی که بخشی از آن اشغال است، ممکن است داده لازم را به جای دیگری ببرد، بلوک قدیمی را پاک کند و دوباره از آن استفاده کند. بلوک‌های آزاد کمتر می‌تواند جابه‌جایی هنگام نوشتن را بیشتر کند.</p><p class="storage-note">منبع: <a href="https://www.kingston.com/en/blog/servers-and-data-centers/garbage-collection" hreflang="en"><bdi>Kingston: Garbage collection</bdi></a></p></section>
+<section><h2>چرا درصد جادویی وجود ندارد؟</h2><p>اثر به مدل SSD، نوع کار، TRIM و ظرفیت رزروشده داخلی بستگی دارد. TRIM کمک می‌کند درایو بفهمد کدام داده دیگر لازم نیست. فضای آزادی که می‌بینید با ذخیره داخلی درایو یکسان نیست. به‌روزرسانی بزرگ یا خروجی ویدئو می‌تواند خیلی بیشتر از مرور وب فضا بخواهد. کمبود فضا لزوماً همه خواندن‌ها یا کارهای پردازنده را کند نمی‌کند.</p><p class="storage-note">منبع: <a href="https://www.kingston.com/en/ssd/ssd-faq" hreflang="en"><bdi>Kingston: SSD FAQs</bdi></a></p></section>
+<section><h2>جا باز کنید؛ چیزهای مهم را نگه دارید</h2><p>از تنظیمات داخلی ذخیره‌سازی شروع کنید. فایل‌های بزرگ، برنامه‌های بلااستفاده و پیشنهادهای پاک‌سازی را بررسی کنید. پیش از حذف فایل مهم، نسخه پشتیبان تهیه کنید و پیش از خالی کردن سطل زباله، محتویاتش را ببینید. برای کار بعدی فضا نگه دارید؛ یک درصد ثابت برای همه وجود ندارد.</p><p class="storage-note">منبع: <a href="https://support.microsoft.com/en-us/windows/experience/storage-filemanagement/free-up-drive-space-in-windows" hreflang="en"><bdi>Microsoft: Free up drive space in Windows</bdi></a></p></section>
+<div class="storage-settings"><p>مک: تنظیمات سیستم ← عمومی ← فضای ذخیره‌سازی</p><p>ویندوز: تنظیمات ← سیستم ← فضای ذخیره‌سازی</p></div>
+<section><h2>هنوز کند است؟ فضای ذخیره‌سازی فقط یکی از علت‌هاست</h2><p>برنامه‌های پرکار و فشار بر حافظه را بررسی کنید. درایو تقریباً پر و رم ناکافی دو مشکل جدا هستند، هرچند می‌توانند بر هم اثر بگذارند.</p><p class="storage-note">منبع: <a href="https://support.apple.com/guide/mac-help/if-your-mac-runs-slowly-mchlp1731/mac" hreflang="en"><bdi>Apple: If your Mac runs slowly</bdi></a></p></section>
+<h2>توضیح در ده اسلاید</h2><p>نمودارهای ساده و اصلی هستند، نه تصویر محصول یا نتایج اندازه‌گیری. هر ده اسلاید به انگلیسی‌اند.</p><details class="storage-slides"><summary>نمایش هر ۱۰ اسلاید انگلیسی</summary><div class="storage-gallery">
+<figure><img src="/assets/writing/almost-full-storage/slide-01.png" alt="جلد مرجانی با لپ‌تاپ و نوار ذخیره‌سازی تقریباً پر می‌پرسد چرا کامپیوتر کند می‌شود؛ کامپیوتر برای کار کردن هم فضا می‌خواهد." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>اسلاید <bdi>1 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/almost-full-storage/slide-02.png" alt="دو بخش فایل‌های ذخیره‌شده و کار موقت را مقایسه می‌کنند. برنامه‌ها برای کارهای پشت صحنه فضا لازم دارند." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>اسلاید <bdi>2 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/almost-full-storage/slide-03.png" alt="سه آیکون مراحل دانلود، باز کردن فایل‌ها و نصب به‌روزرسانی را نشان می‌دهند. نصب و بازیابی ممکن است فضای بیشتری از دانلود بخواهند." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>اسلاید <bdi>3 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/almost-full-storage/slide-04.png" alt="تراشه رم و درایو جدا نمایش داده شده‌اند: رم مانند میز کار و ذخیره‌سازی مانند کمد. آزاد کردن درایو، رم را افزایش نمی‌دهد." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>اسلاید <bdi>4 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/almost-full-storage/slide-05.png" alt="پیکان از رم مشغول به درایو می‌رود. داده کم‌استفاده می‌تواند از طریق page file ویندوز یا swap مک به درایو منتقل شود؛ این حالت به فشار حافظه بستگی دارد." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>اسلاید <bdi>5 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/almost-full-storage/slide-06.png" alt="بلوک SSD شامل داده لازم و داده حذف‌شده است. نوشتن در قطعات کوچک و پاک کردن در گروه‌ها انجام می‌شود؛ حذف یک قطعه کل بلوک را قابل استفاده نمی‌کند." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>اسلاید <bdi>6 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/almost-full-storage/slide-07.png" alt="سه مرحله نشان داده شده: داده لازم به بلوک دیگری منتقل می‌شود، بلوک قدیمی پاک می‌شود و داده جدید نوشته می‌شود. داده حفظ‌شده در مقصد باقی می‌ماند." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>اسلاید <bdi>7 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/almost-full-storage/slide-08.png" alt="نوار ذخیره‌سازی فایل‌ها و فضای کار را جدا می‌کند؛ صریحاً تصویرسازی است، نه درصد پیشنهادی. نیاز فضا به نوع کار بستگی دارد." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>اسلاید <bdi>8 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/almost-full-storage/slide-09.png" alt="فهرست عملی: تنظیمات ذخیره‌سازی را باز کنید، فایل‌ها و برنامه‌های بزرگ را بررسی کنید، پیش از حذف پشتیبان بگیرید و سطل زباله را بررسی کنید." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>اسلاید <bdi>9 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/almost-full-storage/slide-10.png" alt="جمع‌بندی: فضای آزاد، فضای کار است؛ فایل موقت، سرریز حافظه و نوشتن SSD ممکن است به آن نیاز داشته باشند. علت‌های دیگر کندی را هم بررسی کنید." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>اسلاید <bdi>10 / 10</bdi></figcaption></figure>
+</div></details><p><a href="/assets/writing/almost-full-storage/almost-full-storage-carousel.pdf" type="application/pdf" hreflang="en">دانلود کاروسل انگلیسی به صورت PDF</a></p>
+<section id="social-publications"><h2>منتشرشده در</h2><p><a href="https://www.instagram.com/p/DeRD_FgCutT/" hreflang="en"><bdi>Instagram</bdi></a> · <a href="https://www.linkedin.com/feed/update/urn:li:activity:7514238957828878336/" hreflang="en"><bdi>LinkedIn</bdi></a> · <a href="https://www.youtube.com/post/UgkxPgMXxjFKMvohuq9zSIRxVrSlMkCPrbKp" hreflang="en"><bdi>YouTube</bdi></a></p></section>
+<h2>منابع</h2><p class="storage-note">منابع اصلی در ۹ اکتبر ۲۰۲۶ بررسی شده‌اند. آستانه دقیق کند شدن یا بهبود سرعت تضمینی ادعا نشده است.</p><ul>
+<li><a href="https://support.apple.com/guide/mac-help/if-your-mac-runs-slowly-mchlp1731/mac" hreflang="en"><bdi>Apple: If your Mac runs slowly</bdi></a></li>
+<li><a href="https://support.microsoft.com/en-us/windows/experience/storage-filemanagement/free-up-drive-space-in-windows" hreflang="en"><bdi>Microsoft: Free up drive space in Windows</bdi></a></li>
+<li><a href="https://support.microsoft.com/en-gb/windows/deployment/updates-lifecycle/free-up-space-for-windows-updates" hreflang="en"><bdi>Microsoft: Free up space for Windows updates</bdi></a></li>
+<li><a href="https://support.apple.com/guide/activity-monitor/view-memory-usage-actmntr1004/mac" hreflang="en"><bdi>Apple: View memory usage in Activity Monitor</bdi></a></li>
+<li><a href="https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/introduction-to-the-page-file" hreflang="en"><bdi>Microsoft Learn: Introduction to page files</bdi></a></li>
+<li><a href="https://www.kingston.com/en/blog/servers-and-data-centers/garbage-collection" hreflang="en"><bdi>Kingston: Garbage collection</bdi></a></li>
+<li><a href="https://www.kingston.com/en/ssd/ssd-faq" hreflang="en"><bdi>Kingston: SSD FAQs</bdi></a></li>
+</ul></article><footer class="editorial-footer"><nav aria-label="مطالعهٔ مرتبط"><a href="/fa/writing/">نوشته‌ها</a> · <a href="/fa/about.html">درباره احمدرضا صمدی</a></nav><p>احمدرضا صمدی</p></footer></main></body></html>

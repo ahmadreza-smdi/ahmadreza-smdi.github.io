@@ -679,4 +679,40 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-rental-yield-cash-flow.html" />
     </url>
     <url><loc>https://a-samadi.com/watch/rental-yield.html</loc><lastmod>2026-10-09</lastmod><video:video><video:thumbnail_loc>https://a-samadi.com/assets/writing/rental-yield/cover.png</video:thumbnail_loc><video:title>AI says 8% rental yield. Why is the owner still paying?</video:title><video:description>Watch the 99-second film to see why an 8% gross rental yield can coexist with a cash shortfall.</video:description><video:content_loc>https://a-samadi.com/assets/writing/rental-yield/film.mp4</video:content_loc></video:video></url>
+    <url>
+        <loc>https://a-samadi.com/writing/why-full-storage-slows-computer.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-full-storage-slows-computer.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-full-storage-slows-computer.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-full-storage-slows-computer.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-full-storage-slows-computer.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/almost-full-storage/slide-01.png</image:loc>
+            <image:title>Why does your computer slow down when storage is almost full?</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/why-full-storage-slows-computer.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-full-storage-slows-computer.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-full-storage-slows-computer.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-full-storage-slows-computer.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-full-storage-slows-computer.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/almost-full-storage/slide-01.png</image:loc>
+            <image:title>چرا وقتی فضای ذخیره‌سازی تقریباً پر است، کامپیوتر کند می‌شود؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/why-full-storage-slows-computer.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-full-storage-slows-computer.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-full-storage-slows-computer.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-full-storage-slows-computer.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-full-storage-slows-computer.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/almost-full-storage/slide-01.png</image:loc>
+            <image:title>لماذا يصبح الحاسوب بطيئًا عندما تكاد مساحة التخزين تمتلئ؟</image:title>
+        </image:image>
+    </url>
 </urlset>
