@@ -430,6 +430,7 @@
             lens.classList.remove('is-scanning');
             void lens.offsetWidth;
             lens.classList.add('is-scanning');
+            window.dispatchEvent(new CustomEvent('site:scan'));
         };
         lens.addEventListener('animationend', (event) => {
             if (event.animationName === 'frame-scan') lens.classList.remove('is-scanning');
@@ -470,6 +471,388 @@
             tiltY = 0;
             if (!frame) frame = requestAnimationFrame(apply);
         });
+    }
+
+    /* The land behind the hero is alive. Contour lines trace a terrain that slowly shifts, data
+       points travel along them, the ground rises under the pointer, and a pulse ripples out from
+       the portrait whenever it is scanned. The static contour drawing stays in place without
+       JavaScript, with reduced motion, and until the first live frame is ready. */
+    function terrain() {
+        const hero = $('.hero');
+        const frame = $('[data-lens]');
+        if (!hero || !frame || reduceQuery.matches || typeof Path2D !== 'function') return;
+        const canvas = document.createElement('canvas');
+        canvas.className = 'terrain';
+        canvas.setAttribute('aria-hidden', 'true');
+        const ctx = canvas.getContext('2d');
+        if (!ctx) return;
+        hero.prepend(canvas);
+        const rtl = root.dir === 'rtl';
+        const LEVELS = 20;
+        const L0 = 0.05;
+        const DL = (1.3 - L0) / (LEVELS - 1);
+        const STYLES = [
+            ['rgba(118,192,158,.78)', 1], ['rgba(134,178,222,.78)', 1],
+            ['rgba(92,174,139,.92)', 1.7], ['rgba(104,156,210,.92)', 1.7]
+        ];
+        let w = 0, h = 0, dpr = 1, cs = 12, nx = 0, ny = 0;
+        let fade = null, fadeX = 1;
+        let field = null, base = null, summit = null, dist = null;
+        let cx = 0, cy = 0;
+        let particles = [];
+        let running = false, raf = 0, last = 0, clock = 0, born = -1, lastInput = 0;
+        let onScreen = true;
+        const pointer = { x: -9999, y: -9999, tx: -9999, ty: -9999, a: 0, ta: 0 };
+        const ripples = [];
+
+        const gauss = (dx, dy, sx, sy) => Math.exp(-((dx * dx) / (sx * sx) + (dy * dy) / (sy * sy)));
+        const measure = () => {
+            const box = canvas.getBoundingClientRect();
+            if (!box.width || !box.height) return false;
+            dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+            w = box.width; h = box.height;
+            canvas.width = Math.round(w * dpr); canvas.height = Math.round(h * dpr);
+            cs = w < 700 ? 15 : 12;
+            nx = Math.ceil(w / cs) + 2; ny = Math.ceil(h / cs) + 2;
+            const fr = frame.getBoundingClientRect();
+            cx = fr.left + fr.width / 2 - box.left;
+            cy = fr.top + fr.height * 0.46 - box.top;
+            const n = nx * ny;
+            field = new Float32Array(n); base = new Float32Array(n); summit = new Float32Array(n); dist = new Float32Array(n);
+            // One summit under the portrait and two lower hills; on one-column layouts they stack around it
+            const narrow = w < 961;
+            const sx = narrow ? Math.max(220, w * 0.62) : Math.max(280, Math.min(w * 0.38, 580));
+            const sy = narrow ? Math.max(300, Math.min(h * 0.24, 460)) : Math.max(260, h * 0.5);
+            const bx = rtl ? w * (narrow ? 0.86 : 0.84) : w * (narrow ? 0.14 : 0.16);
+            const by = narrow ? cy + Math.min(h * 0.3, 640) : h * 0.9;
+            const tx = narrow ? w * (rtl ? 0.35 : 0.65) : w * 0.48, ty = narrow ? cy - Math.min(h * 0.28, 560) : -h * 0.02;
+            for (let j = 0; j < ny; j += 1) {
+                for (let i = 0; i < nx; i += 1) {
+                    const x = i * cs, y = j * cs, k = j * nx + i;
+                    summit[k] = gauss(x - cx, y - cy, sx, sy);
+                    base[k] = 0.62 * gauss(x - bx, y - by, narrow ? 260 : 340, narrow ? 300 : 270) + 0.3 * gauss(x - tx, y - ty, narrow ? 280 : 360, 230);
+                    dist[k] = Math.hypot(x - cx, y - cy);
+                }
+            }
+            // The land fades out toward the words: an elliptical window centred on the portrait
+            const rx = w * (narrow ? 0.74 : 0.62), ry = h * (narrow ? 0.46 : 0.78);
+            fadeX = rx / ry;
+            fade = ctx.createRadialGradient(0, 0, 0, 0, 0, ry);
+            fade.addColorStop(0, '#000');
+            fade.addColorStop(0.2, '#000');
+            fade.addColorStop(0.55, 'rgba(0,0,0,.45)');
+            fade.addColorStop(0.86, 'rgba(0,0,0,0)');
+            fade.addColorStop(1, 'rgba(0,0,0,0)');
+            const count = Math.round(Math.min(130, Math.max(36, (w * h) / 10000)));
+            particles = Array.from({ length: count }, () => spawn({}, true));
+            return true;
+        };
+        const height = (x, y, t) =>
+            0.034 * Math.sin(x / 97 + y / 143 + t * 0.21) + 0.024 * Math.sin(x / 61 - y / 83 + 1.3 - t * 0.17) + 0.017 * Math.sin((x + y) / 41 + t * 0.29);
+        const compute = (t) => {
+            const breathe = 1 + 0.045 * Math.sin(t * 0.33);
+            for (let j = 0; j < ny; j += 1) {
+                const y = j * cs;
+                for (let i = 0; i < nx; i += 1) {
+                    const k = j * nx + i;
+                    field[k] = summit[k] * breathe + base[k] + height(i * cs, y, t);
+                }
+            }
+            if (pointer.a > 0.002) {
+                const r = 130, reach = Math.ceil((r * 2.6) / cs);
+                const pi = Math.round(pointer.x / cs), pj = Math.round(pointer.y / cs);
+                for (let j = Math.max(0, pj - reach); j < Math.min(ny, pj + reach); j += 1) {
+                    for (let i = Math.max(0, pi - reach); i < Math.min(nx, pi + reach); i += 1) {
+                        field[j * nx + i] += pointer.a * gauss(i * cs - pointer.x, j * cs - pointer.y, r, r);
+                    }
+                }
+            }
+            for (let q = ripples.length - 1; q >= 0; q -= 1) {
+                const ripple = ripples[q];
+                const age = t - ripple.t;
+                const radius = age * 430;
+                if (radius > Math.hypot(w, h)) { ripples.splice(q, 1); continue; }
+                const amp = 0.2 * Math.max(0, 1 - age / 2.6);
+                const local = Number.isFinite(ripple.x);
+                for (let k = 0; k < field.length; k += 1) {
+                    const away = local ? Math.hypot((k % nx) * cs - ripple.x, Math.floor(k / nx) * cs - ripple.y) : dist[k];
+                    const d = away - radius;
+                    if (d > -120 && d < 120) field[k] += amp * Math.exp(-(d * d) / 2500);
+                }
+            }
+        };
+        const paths = () => {
+            const out = [new Path2D(), new Path2D(), new Path2D(), new Path2D()];
+            for (let j = 0; j < ny - 1; j += 1) {
+                for (let i = 0; i < nx - 1; i += 1) {
+                    const k = j * nx + i;
+                    const a = field[k], b = field[k + 1], c = field[k + nx + 1], d = field[k + nx];
+                    const lo = Math.min(a, b, c, d), hi = Math.max(a, b, c, d);
+                    let first = Math.ceil((lo - L0) / DL), end = Math.floor((hi - L0) / DL);
+                    if (first < 0) first = 0;
+                    if (end > LEVELS - 1) end = LEVELS - 1;
+                    if (end < first) continue;
+                    const x0 = i * cs, y0 = j * cs;
+                    for (let n = first; n <= end; n += 1) {
+                        const level = L0 + n * DL;
+                        const code = (a > level ? 8 : 0) | (b > level ? 4 : 0) | (c > level ? 2 : 0) | (d > level ? 1 : 0);
+                        if (code === 0 || code === 15) continue;
+                        const top = () => [x0 + (cs * (level - a)) / (b - a), y0];
+                        const right = () => [x0 + cs, y0 + (cs * (level - b)) / (c - b)];
+                        const bottom = () => [x0 + (cs * (level - d)) / (c - d), y0 + cs];
+                        const left = () => [x0, y0 + (cs * (level - a)) / (d - a)];
+                        const path = out[(n % 5 === 4 ? 2 : 0) + (n % 2)];
+                        const seg = (p, q) => { path.moveTo(p[0], p[1]); path.lineTo(q[0], q[1]); };
+                        switch (code) {
+                            case 1: case 14: seg(left(), bottom()); break;
+                            case 2: case 13: seg(bottom(), right()); break;
+                            case 3: case 12: seg(left(), right()); break;
+                            case 4: case 11: seg(top(), right()); break;
+                            case 6: case 9: seg(top(), bottom()); break;
+                            case 7: case 8: seg(left(), top()); break;
+                            case 5: if ((a + b + c + d) / 4 > level) { seg(left(), bottom()); seg(top(), right()); } else { seg(left(), top()); seg(bottom(), right()); } break;
+                            case 10: if ((a + b + c + d) / 4 > level) { seg(left(), top()); seg(bottom(), right()); } else { seg(left(), bottom()); seg(top(), right()); } break;
+                            default: break;
+                        }
+                    }
+                }
+            }
+            return out;
+        };
+        const slope = (x, y) => {
+            const gx = x / cs, gy = y / cs;
+            const i = Math.floor(gx), j = Math.floor(gy);
+            if (i < 0 || j < 0 || i >= nx - 1 || j >= ny - 1) return null;
+            const fx = gx - i, fy = gy - j, k = j * nx + i;
+            const a = field[k], b = field[k + 1], c = field[k + nx + 1], d = field[k + nx];
+            return [((b - a) * (1 - fy) + (c - d) * fy) / cs, ((d - a) * (1 - fx) + (c - b) * fx) / cs, a + (b - a) * fx + (d - a) * fy];
+        };
+        function spawn(p, anywhere) {
+            for (let tries = 0; tries < 24; tries += 1) {
+                const x = Math.random() * w, y = Math.random() * h;
+                const k = Math.min(ny - 1, Math.round(y / cs)) * nx + Math.min(nx - 1, Math.round(x / cs));
+                const value = (summit ? summit[k] : 0) + (base ? base[k] : 0);
+                if (value > 0.16 && Math.random() < value) {
+                    p.x = x; p.y = y; break;
+                }
+            }
+            if (!Number.isFinite(p.x)) { p.x = cx + (Math.random() - 0.5) * 300; p.y = cy + (Math.random() - 0.5) * 300; }
+            p.life = anywhere ? Math.random() * 5 : 0;
+            p.span = 4 + Math.random() * 4;
+            p.speed = 16 + Math.random() * 22;
+            p.dir = Math.random() < 0.5 ? -1 : 1;
+            p.vx = 0; p.vy = 0;
+            return p;
+        }
+        const move = (dt) => {
+            for (const p of particles) {
+                p.life += dt;
+                const g = slope(p.x, p.y);
+                if (!g || p.life > p.span) { spawn(p, false); continue; }
+                const mag = Math.hypot(g[0], g[1]);
+                if (mag < 1e-5) { spawn(p, false); continue; }
+                const tx = (-g[1] / mag) * p.dir, ty = (g[0] / mag) * p.dir;
+                const speed = p.speed * (0.7 + Math.min(1.6, mag * 260));
+                p.vx = tx * speed; p.vy = ty * speed;
+                p.x += p.vx * dt; p.y += p.vy * dt;
+            }
+        };
+        const draw = (t) => {
+            ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+            ctx.clearRect(0, 0, w, h);
+            ctx.lineCap = 'round';
+            const out = paths();
+            out.forEach((path, n) => {
+                ctx.strokeStyle = STYLES[n][0];
+                ctx.lineWidth = STYLES[n][1];
+                ctx.stroke(path);
+            });
+            // Lines near the pointer catch the light
+            if (pointer.a > 0.01) {
+                ctx.globalCompositeOperation = 'source-atop';
+                const light = ctx.createRadialGradient(pointer.x, pointer.y, 0, pointer.x, pointer.y, 190);
+                light.addColorStop(0, `rgba(11,106,122,${(0.95 * pointer.a / 0.3).toFixed(3)})`);
+                light.addColorStop(1, 'rgba(11,106,122,0)');
+                ctx.fillStyle = light;
+                ctx.fillRect(pointer.x - 200, pointer.y - 200, 400, 400);
+                ctx.globalCompositeOperation = 'source-over';
+            }
+            // Data points travelling along the lines
+            for (const p of particles) {
+                const fade = Math.min(1, p.life / 0.7, (p.span - p.life) / 0.7);
+                if (fade <= 0) continue;
+                ctx.strokeStyle = `rgba(28,117,82,${(0.34 * fade).toFixed(3)})`;
+                ctx.lineWidth = 1.4;
+                ctx.beginPath();
+                ctx.moveTo(p.x - p.vx * 0.6, p.y - p.vy * 0.6);
+                ctx.lineTo(p.x, p.y);
+                ctx.stroke();
+                ctx.fillStyle = `rgba(11,106,122,${(0.85 * fade).toFixed(3)})`;
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, 1.8, 0, Math.PI * 2);
+                ctx.fill();
+            }
+            ctx.globalCompositeOperation = 'destination-in';
+            ctx.save();
+            ctx.translate(cx, cy);
+            ctx.scale(fadeX, 1);
+            ctx.fillStyle = fade;
+            ctx.fillRect(-w * 2, -h * 2, w * 4, h * 4);
+            ctx.restore();
+            ctx.globalCompositeOperation = 'source-over';
+            // On arrival the land draws itself outward from the portrait
+            const age = t - born;
+            if (age < 2.2) {
+                const reach = age * 900;
+                ctx.globalCompositeOperation = 'destination-in';
+                const reveal = ctx.createRadialGradient(cx, cy, 0, cx, cy, reach + 1);
+                reveal.addColorStop(0, '#000');
+                reveal.addColorStop(Math.max(0, 1 - 220 / (reach + 1)), '#000');
+                reveal.addColorStop(1, 'rgba(0,0,0,0)');
+                ctx.fillStyle = reveal;
+                ctx.fillRect(0, 0, w, h);
+                ctx.globalCompositeOperation = 'source-over';
+            }
+        };
+        const step = (now) => {
+            raf = 0;
+            if (!running) return;
+            raf = requestAnimationFrame(step);
+            // About 30 frames a second while someone is interacting, 15 once the page has been still for a while
+            if (last && now - last < (clock - lastInput > 12 ? 64 : 31)) return;
+            const dt = last ? Math.min((now - last) / 1000, 0.06) : 0.016;
+            last = now;
+            clock += dt;
+            if (born < 0) born = clock;
+            pointer.x += (pointer.tx - pointer.x) * Math.min(1, dt * 7);
+            pointer.y += (pointer.ty - pointer.y) * Math.min(1, dt * 7);
+            pointer.a += (pointer.ta - pointer.a) * Math.min(1, dt * 3);
+            compute(clock);
+            move(dt);
+            draw(clock);
+            if (!canvas.classList.contains('is-live')) {
+                canvas.classList.add('is-live');
+                root.classList.add('terrain-live');
+            }
+        };
+        const allowed = () => onScreen && !document.hidden && !paused() && !asking();
+        const sync = () => {
+            const go = allowed() && w > 0;
+            if (go && !running) { running = true; last = 0; raf = requestAnimationFrame(step); }
+            if (!go && running) { running = false; if (raf) cancelAnimationFrame(raf); raf = 0; }
+        };
+        const start = () => {
+            if (!measure()) return;
+            sync();
+        };
+        hero.addEventListener('pointermove', (event) => {
+            if (event.pointerType === 'touch') return;
+            const box = canvas.getBoundingClientRect();
+            pointer.tx = event.clientX - box.left; pointer.ty = event.clientY - box.top;
+            if (pointer.a < 0.01 && pointer.ta === 0) { pointer.x = pointer.tx; pointer.y = pointer.ty; }
+            pointer.ta = 0.3;
+            lastInput = clock;
+        }, { passive: true });
+        hero.addEventListener('pointerleave', () => { pointer.ta = 0; });
+        hero.addEventListener('pointerdown', (event) => {
+            if (event.pointerType !== 'touch' || event.target.closest('a, button, input')) return;
+            const box = canvas.getBoundingClientRect();
+            ripples.push({ t: clock, x: event.clientX - box.left, y: event.clientY - box.top });
+            lastInput = clock;
+        }, { passive: true });
+        window.addEventListener('site:scan', () => { if (running) { ripples.push({ t: clock }); lastInput = clock; } });
+        window.addEventListener('scroll', () => { lastInput = clock; }, { passive: true });
+        if ('ResizeObserver' in window) {
+            let pending = 0;
+            new ResizeObserver(() => {
+                window.clearTimeout(pending);
+                pending = window.setTimeout(() => { if (measure()) sync(); }, 120);
+            }).observe(hero);
+        }
+        if ('IntersectionObserver' in window) {
+            new IntersectionObserver((entries) => { onScreen = entries[0].isIntersecting; sync(); }).observe(hero);
+        }
+        document.addEventListener('visibilitychange', sync);
+        onMotion(sync);
+        reduceQuery.addEventListener('change', () => { if (reduceQuery.matches) { running = false; canvas.remove(); root.classList.remove('terrain-live'); } });
+        // Begin once the page has painted its words and portrait
+        const begin = () => window.setTimeout(start, 240);
+        if (root.classList.contains('is-loaded')) begin();
+        else {
+            const watcher = new MutationObserver(() => {
+                if (!root.classList.contains('is-loaded')) return;
+                watcher.disconnect();
+                begin();
+            });
+            watcher.observe(root, { attributes: true, attributeFilter: ['class'] });
+        }
+    }
+
+    /* Cards catch a soft light where the pointer is and their edge brightens nearby; the name
+       brightens to lagoon teal under the pointer. */
+    function spotlight() {
+        if (!finePointer.matches) return;
+        $$('.venture, .work-card, .capability, .feature, .guide-tile, .hero-name').forEach((element) => {
+            let frame = 0;
+            let x = 0;
+            let y = 0;
+            element.addEventListener('pointermove', (event) => {
+                const rect = element.getBoundingClientRect();
+                x = event.clientX - rect.left;
+                y = event.clientY - rect.top;
+                if (!frame) {
+                    frame = requestAnimationFrame(() => {
+                        frame = 0;
+                        element.style.setProperty('--mx', `${x.toFixed(0)}px`);
+                        element.style.setProperty('--my', `${y.toFixed(0)}px`);
+                    });
+                }
+            }, { passive: true });
+            element.addEventListener('pointerleave', () => { element.style.setProperty('--mx', '-999px'); });
+        });
+    }
+
+    /* Section names resolve from scrambled signal into words the first time they come into view. */
+    function decode() {
+        if (root.dir === 'rtl' || reduceQuery.matches || !('IntersectionObserver' in window)) return;
+        const labels = $$('.section-label');
+        const glyphs = 'ABCDEFGHJKLMNPQRSTUVWXYZ0123456789+/=';
+        const run = (label) => {
+            const text = label.textContent;
+            if (paused() || !text.trim()) return;
+            const range = document.createRange();
+            range.selectNodeContents(label);
+            const width = range.getBoundingClientRect().width;
+            const quiet = document.createElement('span');
+            quiet.className = 'sr-only';
+            quiet.textContent = text;
+            const shown = document.createElement('span');
+            shown.setAttribute('aria-hidden', 'true');
+            shown.className = 'decoding';
+            label.replaceChildren(quiet, shown);
+            // Hold the width of the final words so the survey line does not jump while letters settle
+            shown.style.width = `${Math.ceil(width)}px`;
+            const started = performance.now();
+            const duration = 420 + text.length * 22;
+            const tick = (now) => {
+                const progress = Math.min(1, (now - started) / duration);
+                const fixed = Math.floor(progress * text.length);
+                let out = text.slice(0, fixed);
+                for (let i = fixed; i < text.length; i += 1) out += text[i] === ' ' ? ' ' : glyphs[(Math.random() * glyphs.length) | 0];
+                shown.textContent = out;
+                if (progress < 1) requestAnimationFrame(tick);
+                else label.textContent = text;
+            };
+            requestAnimationFrame(tick);
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (!entry.isIntersecting) return;
+                observer.unobserve(entry.target);
+                run(entry.target);
+            });
+        }, { threshold: 0.8 });
+        labels.forEach((label) => observer.observe(label));
     }
 
     /* Once the Ask bar in the hero has scrolled away, Ask waits in the corner. On touch screens it
@@ -627,7 +1010,7 @@
         sync();
     }
 
-    [clock, askPanel, copyEmail, navGlow, lensTilt, floatingAsk, magnetic, agentRun, timeline, stagger, offscreen, motionCommand].forEach((feature) => {
+    [clock, askPanel, copyEmail, navGlow, lensTilt, terrain, spotlight, decode, floatingAsk, magnetic, agentRun, timeline, stagger, offscreen, motionCommand].forEach((feature) => {
         try {
             feature();
         } catch (error) {

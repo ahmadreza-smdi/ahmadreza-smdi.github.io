@@ -84,6 +84,6 @@ for lang in ('fa','ar'):
     # Persian and Arabic names and headings are set in Vazirmatn, so these pages do not preload the Latin display face.
     head,sora_count=re.subn(r'\n\s*<link rel="preload" as="font" type="font/woff2" href="[^"]*sora-latin-wght\.woff2" crossorigin />',"",head,count=1)
     if sora_count!=1:raise ValueError('Missing Sora preload in the English homepage')
-    head=head.replace('</head>','    <link rel="stylesheet" href="../css/rtl.css?v=20261009-lagoon3" />\n</head>')
+    head=head.replace('</head>','    <link rel="stylesheet" href="../css/rtl.css?v=20261009-lagoon4" />\n</head>')
     (ROOT/lang/'index.html').write_text(head+visible+'        <script>'+script)
     print('Built',lang)

@@ -87,6 +87,15 @@ html[dir="rtl"] .story-link::after{transform:scaleX(-1)}
 html[dir="rtl"] .story-link:hover::after{transform:scaleX(-1) translateX(3px)}
 .reveal{opacity:1;transform:none}
 @keyframes spin{to{transform:rotate(1turn)}}
+/* Moving between pages: the old page lifts away, the new one settles in and the header glides across */
+@media(prefers-reduced-motion:no-preference){
+  @view-transition{navigation:auto}
+  ::view-transition-old(root){animation:page-out .3s var(--ease) both}
+  ::view-transition-new(root){animation:page-in .55s var(--ease) both}
+  ::view-transition-group(site-header){animation-duration:.5s;animation-timing-function:var(--ease)}
+}
+@keyframes page-out{to{opacity:0;transform:translateY(-10px) scale(.995)}}
+@keyframes page-in{from{opacity:0;transform:translateY(16px)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;animation-delay:0s!important;transition-duration:.001ms!important;transition-delay:0s!important;scroll-behavior:auto!important}}
 @media(forced-colors:active){.eyebrow{color:CanvasText}.story-link::after{background:LinkText}.brand-mark img,.editorial-header a img{forced-color-adjust:none;background:CanvasText}}
 @media print{body{background:#fff!important}.skip-link{display:none!important}}

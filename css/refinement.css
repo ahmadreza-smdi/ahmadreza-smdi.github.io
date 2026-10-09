@@ -7,7 +7,7 @@
 html.has-js{scroll-padding-bottom:96px}
 
 /* ---------- Header ---------- */
-.site-header{position:fixed;top:12px;left:0;right:0;z-index:120;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:8px;width:min(100% - 32px,1180px);height:60px;margin:0 auto;padding-block:0;padding-inline:9px 10px;border-radius:16px;background:rgba(255,255,255,.62);-webkit-backdrop-filter:saturate(150%) blur(18px);backdrop-filter:saturate(150%) blur(18px);box-shadow:0 0 0 1px var(--line),0 18px 40px -30px rgba(14,42,51,.45);transition:background-color .4s,box-shadow .4s}
+.site-header{view-transition-name:site-header;position:fixed;top:12px;left:0;right:0;z-index:120;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:8px;width:min(100% - 32px,1180px);height:60px;margin:0 auto;padding-block:0;padding-inline:9px 10px;border-radius:16px;background:rgba(255,255,255,.62);-webkit-backdrop-filter:saturate(150%) blur(18px);backdrop-filter:saturate(150%) blur(18px);box-shadow:0 0 0 1px var(--line),0 18px 40px -30px rgba(14,42,51,.45);transition:background-color .4s,box-shadow .4s}
 .site-header.is-scrolled{background:rgba(255,255,255,.86)}
 .brand{display:inline-flex;align-items:center;gap:11px;min-height:44px;padding-inline:0 12px;border-radius:12px;color:var(--ink);font-family:var(--display);font-size:.9375rem;font-weight:600;letter-spacing:-.02em;text-decoration:none;white-space:nowrap}
 .brand:hover{text-decoration:none}
@@ -35,6 +35,11 @@ main{overflow-x:hidden;overflow-x:clip}
 .hero::before,.hero::after{content:"";position:absolute;top:0;bottom:-60px;left:50%;width:100vw;transform:translateX(-50%);pointer-events:none}
 .hero::before{z-index:-1;background:url("../assets/img/contours.svg") 50% 38%/cover no-repeat;opacity:.8;-webkit-mask:radial-gradient(62% 78% at 70% 44%,#000 18%,rgba(0,0,0,.45) 52%,transparent 82%);mask:radial-gradient(62% 78% at 70% 44%,#000 18%,rgba(0,0,0,.45) 52%,transparent 82%)}
 .hero::after{z-index:-2;background:radial-gradient(34% 46% at 66% 34%,rgba(189,231,210,.62),transparent 72%),radial-gradient(32% 44% at 86% 66%,rgba(195,220,244,.7),transparent 72%),radial-gradient(38% 40% at 12% 8%,rgba(195,220,244,.42),transparent 72%),radial-gradient(30% 34% at 30% 92%,rgba(189,231,210,.32),transparent 72%)}
+/* The live terrain (js/future.js) takes over from the static contours once its first frame is drawn */
+.terrain{position:absolute;z-index:-1;top:0;left:50%;width:100vw;max-width:none;height:calc(100% + 60px);transform:translateX(-50%);pointer-events:none;opacity:0;transition:opacity 1.1s var(--ease)}
+.terrain.is-live{opacity:.95}
+.hero::before{transition:opacity .9s var(--ease)}
+html.terrain-live .hero::before{opacity:0}
 .hero-copy{position:relative;z-index:2;min-width:0}
 .status-chip{display:inline-flex;align-items:center;gap:9px;margin:0;padding-block:7px;padding-inline:11px 14px;border-radius:10px;background:rgba(255,255,255,.72);box-shadow:inset 0 0 0 1px var(--line);color:var(--ink-soft);font-family:var(--display);font-size:.8125rem;font-weight:500;letter-spacing:-.005em}
 .hero-name{margin:26px 0 28px;color:var(--ink);font-family:var(--display);font-size:clamp(3.4rem,6.6vw,6.5rem);font-weight:600;line-height:.98;letter-spacing:-.05em}
@@ -114,7 +119,7 @@ html:not(.has-js) .ask{display:none}
 .ventures{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:min(100% - 64px,var(--max));margin:0 auto;overflow:hidden;border-radius:24px;background:#fff;box-shadow:0 0 0 1px var(--line),0 30px 60px -48px rgba(14,42,51,.4)}
 .venture{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"label arrow" "name arrow" "role arrow";align-items:center;column-gap:16px;row-gap:3px;min-height:136px;padding:26px 26px 24px;color:var(--ink);text-decoration:none;transition:background-color .3s}
 .venture+.venture::before{content:"";position:absolute;inset-block:26px;inset-inline-start:0;width:1px;background:var(--line)}
-.venture:hover{background:var(--tint,var(--mint-soft));text-decoration:none}
+.venture:hover{background-color:var(--tint,var(--mint-soft));text-decoration:none}
 .venture:focus-visible{outline-offset:-4px;border-radius:20px}
 .venture-orb{position:absolute;top:33px;inset-inline-start:26px;width:8px;height:8px;border-radius:50%;background:var(--glow);box-shadow:0 0 0 4px color-mix(in srgb,var(--glow) 16%,transparent)}
 .venture-sky{--glow:var(--sky-deep);--tint:var(--sky-soft)}
@@ -135,6 +140,7 @@ html:not(.has-js) .ask{display:none}
 /* Section names sit on a survey line: a marker, the name, and a rule that fades out */
 .section-label{display:flex;align-items:center;gap:12px;width:100%;max-width:420px;margin:0 0 18px;color:var(--teal);font-family:var(--display);font-size:.9375rem;font-weight:600;letter-spacing:-.005em;line-height:1.4}
 .section-label::before{content:"";flex:0 0 auto;width:9px;height:9px;border-radius:2.5px;background:var(--mint);box-shadow:inset 0 0 0 1.5px var(--mint-deep)}
+.section-label .decoding{display:inline-block;overflow:hidden;white-space:nowrap;vertical-align:bottom}
 .section-label::after{content:"";flex:1 1 auto;min-width:24px;height:1px;background:linear-gradient(90deg,var(--line-strong),transparent)}
 .section-heading h2,.contact h2{margin:0 0 16px;font-family:var(--display);font-size:clamp(2.1rem,4vw,3.25rem);font-weight:600;line-height:1.08;letter-spacing:-.04em}
 .section-heading>p:last-child{max-width:40rem;margin:0;color:var(--muted);font-size:clamp(1.0625rem,1.5vw,1.25rem);line-height:1.5}
@@ -338,6 +344,21 @@ html:not(.has-js) .ask{display:none}
 .command-foot{margin:0;padding:11px 20px;border-top:1px solid var(--line);color:var(--muted);font-size:.75rem;line-height:1.4}
 @media(hover:none){.command-foot,.command kbd{display:none}}
 
+/* ---------- Light that follows the pointer ---------- */
+@media(hover:hover) and (pointer:fine){
+  .work-card{background:radial-gradient(460px circle at var(--mx,-999px) var(--my,-999px),rgba(189,231,210,.34),transparent 62%) #fff}
+  .feature{background:radial-gradient(560px circle at var(--mx,-999px) var(--my,-999px),rgba(195,220,244,.3),transparent 62%) #fff}
+  .venture,.capability{background-image:radial-gradient(360px circle at var(--mx,-999px) var(--my,-999px),rgba(189,231,210,.32),transparent 62%)}
+  .guide-tile{background:radial-gradient(420px circle at var(--mx,-999px) var(--my,-999px),rgba(255,255,255,.7),transparent 62%),linear-gradient(150deg,var(--mint-soft),#fff 48%,var(--sky-soft))}
+  /* The edge nearest the pointer brightens to lagoon teal */
+  :is(.venture,.work-card,.capability,.feature,.guide-tile)::after{content:"";position:absolute;inset:0;z-index:3;border-radius:inherit;padding:1.5px;background:radial-gradient(280px circle at var(--mx,-999px) var(--my,-999px),rgba(11,106,122,.6),rgba(143,214,180,.3) 45%,transparent 72%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);pointer-events:none;opacity:0;transition:opacity .35s var(--ease)}
+  :is(.venture,.work-card,.capability,.feature,.guide-tile):hover::after{opacity:1}
+  /* The name brightens to teal under the pointer */
+  @supports ((-webkit-background-clip:text) or (background-clip:text)){
+    html.has-js .hero-name{background:radial-gradient(240px circle at var(--mx,-999px) var(--my,-999px),var(--teal) 0,#1c7552 32%,var(--ink) 74%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+  }
+}
+
 /* ---------- Motion ---------- */
 @media(prefers-reduced-motion:no-preference){
   html.has-js:not(.no-intro) .site-header{animation:dock-in .9s var(--ease) both}
@@ -366,6 +387,15 @@ html:not(.has-js) .ask{display:none}
 .motion-paused *,.motion-paused *::before,.motion-paused *::after,.is-offscreen,.is-offscreen *,.is-offscreen *::before,.is-offscreen *::after{animation-play-state:paused!important}
 .motion-paused :is(.site-header,.command-panel,.copy-status,.is-found){animation-play-state:running!important}
 .agent-active main *,.agent-active main *::before,.agent-active main *::after,.ask-floating:not(.is-visible) *{animation-play-state:paused!important}
+/* Survey lines draw across as each section arrives, where the browser can tie animation to scroll */
+@supports (animation-timeline:view()){
+  @media(prefers-reduced-motion:no-preference){
+    .section-label::after{transform-origin:left center;animation:rule-draw linear both;animation-timeline:view();animation-range:entry 5% cover 32%}
+    html[dir="rtl"] .section-label::after{transform-origin:right center}
+    .motion-paused .section-label::after{animation:none}
+  }
+}
+@keyframes rule-draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 @keyframes dock-in{from{opacity:0;transform:translate3d(0,-20px,0) scale(.98)}to{opacity:1;transform:none}}
 @keyframes frame-scan{0%{opacity:0;transform:translateY(-100%)}12%{opacity:1}82%{opacity:1}100%{opacity:0;transform:translateY(334%)}}
 @keyframes current{to{background-position:0 0,300% 0}}
@@ -532,11 +562,13 @@ html[dir="rtl"] .run-steps li[data-state="running"]::after{transform-origin:righ
   .section-label,.answer-label>span:first-child,.prompt::before{color:CanvasText}
   .ask::before{border-color:CanvasText;background:Canvas}
   .venture-arrow::after,.card-topline a::after,.command-item::after{background:CanvasText}
-  .frame-scan,.frame-aura,.hero::before,.hero::after,.contact::before,.guide-tile::before{display:none}
+  .frame-scan,.frame-aura,.terrain,.hero::before,.hero::after,.contact::before,.guide-tile::before{display:none}
+  html.has-js .hero-name{background:none;color:CanvasText;-webkit-text-fill-color:CanvasText}
   .frame-tags span{border:1px solid CanvasText}
 }
 @media print{
-  .scroll-progress,.site-header,.command,.hero-visual,.hero-foot,.ask,.prompt-actions,.hero::before,.hero::after,.contact::before,.guide-tile::before{display:none!important}
+  .scroll-progress,.site-header,.command,.hero-visual,.hero-foot,.ask,.prompt-actions,.terrain,.hero::before,.hero::after,.contact::before,.guide-tile::before{display:none!important}
+  html.has-js .hero-name{background:none;color:#0e2a33;-webkit-text-fill-color:#0e2a33}
   .hero{grid-template-columns:1fr;min-height:0;padding-top:20px}
   .has-js .reveal,.has-js .intro-step{opacity:1!important;transform:none!important}
 }
