@@ -6,8 +6,12 @@ twitter:title, twitter:description, twitter:image, twitter:image:alt and a robot
 English is the original: each English page's main structured-data item names its Persian and
 Arabic translations (workTranslation) and each translation names the English original
 (translationOfWork). It also writes hreflang alternates into sitemap.xml from the same clusters.
-Run with --check to report missing metadata without changing files.
+Articles retain their image and identify it as the main image of their WebPage. Historical
+article dates are preserved; new articles and changed dates must record the real publication
+or update time as ISO 8601 with the publishing timezone (+03:30), never a guessed time.
+Run with --check to report missing metadata or invalid article dates without changing files.
 """
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 import html
 import json
@@ -60,6 +64,35 @@ CARD_ALT = {
 }
 ROBOTS = 'index, follow, max-image-preview:large'
 NOT_FOUND_DESCRIPTION = 'This page does not exist. Find Ahmadreza Samadi’s work, writing and contact details from the homepage.'
+
+ARTICLE_TYPES = ('Article', 'NewsArticle', 'BlogPosting')
+PUBLISHING_TIMEZONE = timezone(timedelta(hours=3, minutes=30))
+# Frozen on 9 October 2026. These 20 existing articles in each language have dates whose
+# historical time was not recorded. Only these exact values are grandfathered, so a new
+# page or an updated legacy date cannot silently inherit a fabricated midnight timestamp.
+LEGACY_ARTICLE_DATES = {
+    'ai-agent-safety-boundaries.html': ('2026-09-29', '2026-09-29'),
+    'ai-cost-per-verified-result.html': ('2026-09-24', '2026-09-25'),
+    'ai-home-value-estimates.html': ('2026-10-03', '2026-10-03'),
+    'ai-human-review-real-estate.html': ('2026-10-03', '2026-10-09'),
+    'ai-rental-yield-cash-flow.html': ('2026-10-09', '2026-10-09'),
+    'connected-ai-apps.html': ('2026-09-25', '2026-09-25'),
+    'foldable-two-batteries.html': ('2026-10-03', '2026-10-03'),
+    'how-satellite-messaging-works.html': ('2026-10-04', '2026-10-04'),
+    'how-zip-files-work.html': ('2026-09-28', '2026-09-29'),
+    'humanoid-robots-at-home.html': ('2026-10-03', '2026-10-03'),
+    'incognito-private-browsing.html': ('2026-10-05', '2026-10-05'),
+    'jev-ai-decision-model.html': ('2026-09-25', '2026-09-25'),
+    'passkeys-face-id.html': ('2026-09-28', '2026-09-29'),
+    'profitable-but-out-of-cash.html': ('2026-10-08', '2026-10-08'),
+    'start-with-the-decision.html': ('2026-09-25', '2026-09-25'),
+    'verify-ai-image-claims.html': ('2026-10-03', '2026-10-03'),
+    'what-accept-cookies-means.html': ('2026-10-05', '2026-10-05'),
+    'why-ai-sounds-confident.html': ('2026-10-05', '2026-10-05'),
+    'why-full-storage-slows-computer.html': ('2026-10-09', '2026-10-09'),
+    'why-phone-stops-charging-at-80.html': ('2026-10-05', '2026-10-05'),
+}
+LEGACY_ENGLISH_DECISION_DATES = ('2026-09-13T10:06:07+00:00', '2026-10-01')
 
 META = r'<meta\s+(?:property|name)="{key}"\s+content="([^"]*)"\s*/?>'
 
@@ -140,6 +173,103 @@ def page_for(url):
 def main_id(url):
     page = page_for(url)
     return main_node(page.read_text())[0] if page.is_file() else None
+
+
+def article_node(text):
+    own_id, node = main_node(text)
+    if node:
+        kind = node.get('@type')
+        kinds = [kind] if isinstance(kind, str) else list(kind or [])
+        if any(kind in ARTICLE_TYPES for kind in kinds):
+            return own_id, node
+    return None, None
+
+
+def image_url(image):
+    if isinstance(image, str):
+        return image
+    if isinstance(image, dict):
+        return image.get('url') or image.get('contentUrl')
+    if isinstance(image, list):
+        return next((url for url in map(image_url, image) if url), None)
+    return None
+
+
+def article_page_image(text):
+    """primaryImageOfPage describes a WebPage, not an Article; retain the Article's image."""
+    own_id, node = article_node(text)
+    if not own_id or not image_url(node.get('image')):
+        return text, []
+    page = node.get('mainEntityOfPage')
+    if isinstance(page, dict) and 'primaryImageOfPage' in page:
+        return text, []
+    url = canonical(text)
+    if page != url and not (isinstance(page, dict) and (page.get('@id') == url or page.get('url') == url)):
+        return text, []
+    webpage = dict(page) if isinstance(page, dict) else {'@type': 'WebPage', '@id': url}
+    webpage.setdefault('@type', 'WebPage')
+    webpage['primaryImageOfPage'] = {'@type': 'ImageObject', 'url': image_url(node['image'])}
+    # Replace only this property value; keep the rest of each JSON-LD block and HTML intact.
+    decoder = json.JSONDecoder()
+    for block in LD.finditer(text):
+        if own_id not in block[2]:
+            continue
+        for match in re.finditer(r'"mainEntityOfPage"\s*:\s*', block[2]):
+            old, length = decoder.raw_decode(block[2][match.end():])
+            if old != page:
+                continue
+            start = block.start(2) + match.end()
+            updated = text[:start] + json.dumps(webpage, ensure_ascii=False) + text[start + length:]
+            return updated, ['WebPage primaryImageOfPage']
+    return text, []
+
+
+def article_issues(path, text, now=None):
+    """Validate real timestamps for new/changed dates while retaining exact historical dates."""
+    _, node = article_node(text)
+    if not node:
+        return []
+    issues = []
+    relative = path.relative_to(ROOT).as_posix()
+    known_path = any(relative == prefix + path.name for prefix in ('writing/', 'fa/writing/', 'ar/writing/'))
+    legacy = LEGACY_ARTICLE_DATES.get(path.name) if known_path else None
+    if relative == 'writing/start-with-the-decision.html':
+        legacy = LEGACY_ENGLISH_DECISION_DATES
+    now = now or datetime.now(timezone.utc)
+    parsed = {}
+    for index, key in enumerate(('datePublished', 'dateModified')):
+        value = node.get(key)
+        historical = legacy is not None and value == legacy[index]
+        if not isinstance(value, str):
+            issues.append(f'{key} must record the actual date and time')
+            continue
+        if historical and re.fullmatch(r'\d{4}-\d{2}-\d{2}', value):
+            parsed[key] = date.fromisoformat(value)
+            continue
+        if not historical and not re.fullmatch(r'\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,6})?\+03:30', value):
+            issues.append(f'{key} must use a real ISO 8601 datetime with +03:30; do not invent historical times')
+            continue
+        try:
+            instant = datetime.fromisoformat(value)
+            if instant.tzinfo is None:
+                raise ValueError('missing timezone')
+            parsed[key] = instant.astimezone(PUBLISHING_TIMEZONE)
+            if instant > now:
+                issues.append(f'{key} cannot be in the future')
+        except ValueError:
+            issues.append(f'{key} is not a valid ISO 8601 datetime')
+    if len(parsed) == 2:
+        published, modified = parsed['datePublished'], parsed['dateModified']
+        if not all(isinstance(value, datetime) for value in (published, modified)):
+            published, modified = (value.date() if isinstance(value, datetime) else value for value in (published, modified))
+        if modified < published:
+            issues.append('dateModified cannot precede datePublished')
+    page = node.get('mainEntityOfPage')
+    if not isinstance(page, dict) or page.get('@type') != 'WebPage' or page.get('@id', page.get('url')) != canonical(text):
+        issues.append('mainEntityOfPage must identify the canonical WebPage')
+    elif image_url(page.get('primaryImageOfPage')) != image_url(node.get('image')):
+        issues.append('WebPage primaryImageOfPage must match the existing Article image')
+    return issues
 
 
 def translation_links(text):
@@ -237,7 +367,8 @@ def enrich(path, text):
             head = head[:sheet.start()] + preload + (joiner if joiner else '') + head[sheet.start():]
             added.append('font preload')
     text, linked = translation_links(head + rest)
-    return text, added + linked
+    text, image_added = article_page_image(text)
+    return text, added + linked + image_added
 
 
 def sitemap(check):
@@ -278,6 +409,7 @@ def sitemap(check):
 def main():
     check = '--check' in sys.argv
     changed = 0
+    invalid = 0
     for path in sorted(ROOT.rglob('*.html')):
         relative = path.relative_to(ROOT)
         if relative.parts[0] in ('.git', 'node_modules') or path.name.startswith('google'):
@@ -289,10 +421,14 @@ def main():
             print(('MISSING ' if check else 'Updated ') + relative.as_posix() + ': ' + ', '.join(added))
             if not check:
                 path.write_text(updated)
+        issues = article_issues(path, updated)
+        if issues:
+            invalid += 1
+            print('INVALID ' + relative.as_posix() + ': ' + '; '.join(issues))
     links = sitemap(check)
     if links:
         print(('MISSING ' if check else 'Added ') + f'{links} sitemap hreflang links')
-    if check and (changed or links):
+    if invalid or (check and (changed or links)):
         sys.exit(1)
     print('PASS metadata: ' + ('no changes needed' if not changed and not links else f'{changed} pages and {links} sitemap links updated'))
 

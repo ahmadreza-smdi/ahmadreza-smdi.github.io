@@ -1,0 +1,4 @@
+Contact: mailto:ahmadreza.smdi@gmail.com
+Expires: 2027-04-09T23:59:00+03:30
+Preferred-Languages: en, fa
+Canonical: https://a-samadi.com/.well-known/security.txt

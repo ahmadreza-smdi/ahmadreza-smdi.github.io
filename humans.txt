@@ -1,0 +1,9 @@
+/* TEAM */
+Owner and author: Ahmadreza Samadi
+Website: https://a-samadi.com/
+Contact: ahmadreza.smdi@gmail.com
+Location: Dubai, United Arab Emirates
+
+/* SITE */
+Languages: English, Persian, Arabic
+Last updated: 2026-10-09
