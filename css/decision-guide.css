@@ -86,6 +86,15 @@
   .guide-grid{margin-top:16px}
 }
 @media(prefers-reduced-motion:reduce){.decision-guide button{transition:none}}
+/* Shadows disappear in forced-colors mode; keep fields, selected examples and focus visible. */
+@media(forced-colors:active){
+  .input-panel input,.input-panel textarea,.input-panel select{border:1px solid CanvasText;background:Canvas;color:CanvasText;box-shadow:none}
+  .input-panel input:focus,.input-panel textarea:focus,.input-panel select:focus{outline:3px solid Highlight;outline-offset:3px;box-shadow:none}
+  .decision-guide button{border:1px solid ButtonText;box-shadow:none}
+  .decision-guide button[aria-pressed=true]{border:3px double ButtonText;font-weight:700}
+  .decision-guide button:focus-visible{outline:3px solid Highlight;outline-offset:3px}
+  .decision-guide button:disabled{color:GrayText;border-color:GrayText;opacity:1}
+}
 @media print{
   .decision-guide{background:#fff!important;color:#111!important}
   .editorial-header,.guide-intro,.example-bar,.input-panel,.brief-actions,.privacy,.guide-outro,.guide-footer,.skip-link{display:none!important}
