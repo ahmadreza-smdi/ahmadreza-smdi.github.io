@@ -446,7 +446,7 @@ html:not(.has-js) .ask{display:none}
   /* On phones the labels line up under the portrait instead of crossing its edges */
   .hero-visual{padding:18px 0 30px}
   .frame{--frame:min(66vw,264px)}
-  .frame-tags{position:static;display:flex;flex-wrap:wrap;justify-content:center;gap:6px;width:min(100vw - 40px,360px);margin-top:16px;margin-inline:calc((var(--frame) - min(100vw - 40px,360px)) / 2)}
+  .frame-tags{position:relative;inset:auto;display:flex;flex-wrap:wrap;justify-content:center;gap:6px;width:min(100vw - 40px,360px);margin-top:16px;margin-inline:calc((var(--frame) - min(100vw - 40px,360px)) / 2)}
   .frame-tags li{position:static;transform:none}
   .frame-tags span{padding-block:6px;padding-inline:8px 10px;font-size:.72rem;box-shadow:0 0 0 1px var(--line)}
   .frame-corners i{width:20px;height:20px}
