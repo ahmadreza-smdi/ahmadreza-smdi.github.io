@@ -46,6 +46,7 @@ Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and
 - [Profitable. But out of cash: why payment timing matters](https://a-samadi.com/writing/profitable-but-out-of-cash.html): A profitable sale can leave a business unable to pay its supplier. Follow one order to see why earned money and available cash are different.
 - [AI says 8% rental yield. Why is the owner still paying?](https://a-samadi.com/writing/ai-rental-yield-cash-flow.html): A correct rental-yield calculation can still leave a property owner covering a cash shortfall. Follow one fictional home from the headline to the money left after costs and the loan.
 - [Why does your computer slow down when storage is almost full?](https://a-samadi.com/writing/why-full-storage-slows-computer.html): Storage is working room too. A ten-slide explainer on temporary files, RAM overflow and SSD housekeeping, with practical cleanup advice.
+- [iPhone Duo: what does the extra $800 cost per day?](https://a-samadi.com/writing/iphone-duo-price-per-day.html): A 104-second film turns the $800 US launch-price gap between iPhone Duo and iPhone 18 Pro into a daily comparison, with the assumptions made clear.
 
 ## Films
 
@@ -54,6 +55,7 @@ Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and
 - [Watch: Why phones stop charging at 80%](https://a-samadi.com/watch/charging-80.html): Watch Ahmadreza Samadi's 67-second animated film about charge limits, learned charging routines and heat pauses. English captions and sources are available.
 - [Watch: Profitable but out of cash](https://a-samadi.com/watch/profit-cash.html): Watch Ahmadreza Samadi's 90-second animated film about the difference between profit and cash timing. English captions and the full explanation are available.
 - [Watch: AI rental yield and cash flow](https://a-samadi.com/watch/rental-yield.html): Watch Ahmadreza Samadi’s 99-second animated film about gross rental yield, property costs and loan payments. English captions and a transcript are included.
+- [Watch: iPhone Duo’s $800 price gap](https://a-samadi.com/watch/iphone-duo.html): Watch the 104-second film comparing the $800 model-price gap over three years. English captions, a transcript and the calculation’s limits are included.
 
 ## Tools
 

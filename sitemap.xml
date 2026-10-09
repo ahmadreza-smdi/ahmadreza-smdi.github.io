@@ -160,7 +160,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/writing/</loc>
-        <lastmod>2026-10-09</lastmod>
+        <lastmod>2026-10-10T02:10:47+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -184,7 +184,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/</loc>
-        <lastmod>2026-10-09</lastmod>
+        <lastmod>2026-10-10T02:10:47+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -208,7 +208,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/</loc>
-        <lastmod>2026-10-09</lastmod>
+        <lastmod>2026-10-10T02:10:47+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -786,5 +786,53 @@
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/topics/business-systems-dubai.html" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/topics/business-systems-dubai.html" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/topics/business-systems-dubai.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/iphone-duo-price-per-day.html</loc>
+        <lastmod>2026-10-10T02:10:47+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/iphone-duo-price-per-day.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/iphone-duo-price-per-day.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/iphone-duo-price-per-day.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/iphone-duo-price-per-day.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/iphone-duo/cover.png</image:loc>
+            <image:title>iPhone Duo: what does the extra $800 cost per day?</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/iphone-duo-price-per-day.html</loc>
+        <lastmod>2026-10-10T02:10:47+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/iphone-duo-price-per-day.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/iphone-duo-price-per-day.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/iphone-duo-price-per-day.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/iphone-duo-price-per-day.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/iphone-duo/cover.png</image:loc>
+            <image:title>آیفون Duo: اختلاف قیمت ۸۰۰ دلاری روزانه چقدر می‌شود؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/iphone-duo-price-per-day.html</loc>
+        <lastmod>2026-10-10T02:10:47+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/iphone-duo-price-per-day.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/iphone-duo-price-per-day.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/iphone-duo-price-per-day.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/iphone-duo-price-per-day.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/iphone-duo/cover.png</image:loc>
+            <image:title>iPhone Duo: كم يبلغ فرق السعر البالغ 800 دولار يوميًا؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/watch/iphone-duo.html</loc>
+        <lastmod>2026-10-10T02:10:47+03:30</lastmod>
+        <video:video>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/iphone-duo/cover.png</video:thumbnail_loc>
+            <video:title>iPhone Duo: what does the extra $800 cost per day?</video:title>
+            <video:description>Watch the 104-second film comparing the $800 model-price gap over three years. English captions, a transcript and the calculation’s limits are included.</video:description>
+            <video:content_loc>https://a-samadi.com/assets/writing/iphone-duo/film.mp4</video:content_loc>
+            <video:duration>104</video:duration>
+            <video:publication_date>2026-10-10T02:10:47+03:30</video:publication_date>
+        </video:video>
     </url>
 </urlset>
