@@ -715,4 +715,76 @@
             <image:title>لماذا يصبح الحاسوب بطيئًا عندما تكاد مساحة التخزين تمتلئ؟</image:title>
         </image:image>
     </url>
+    <url>
+        <loc>https://a-samadi.com/press.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/press.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/press.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/press.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/press.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/press.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/press.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/press.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/press.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/press.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/press.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/press.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/press.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/press.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/press.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/topics/ai-real-estate.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/topics/ai-real-estate.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/topics/ai-real-estate.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/topics/ai-real-estate.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/topics/ai-real-estate.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/topics/ai-real-estate.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/topics/ai-real-estate.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/topics/ai-real-estate.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/topics/ai-real-estate.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/topics/ai-real-estate.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/topics/ai-real-estate.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/topics/ai-real-estate.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/topics/ai-real-estate.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/topics/ai-real-estate.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/topics/ai-real-estate.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/topics/business-systems-dubai.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/topics/business-systems-dubai.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/topics/business-systems-dubai.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/topics/business-systems-dubai.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/topics/business-systems-dubai.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/topics/business-systems-dubai.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/topics/business-systems-dubai.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/topics/business-systems-dubai.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/topics/business-systems-dubai.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/topics/business-systems-dubai.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/topics/business-systems-dubai.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/topics/business-systems-dubai.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/topics/business-systems-dubai.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/topics/business-systems-dubai.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/topics/business-systems-dubai.html" />
+    </url>
 </urlset>

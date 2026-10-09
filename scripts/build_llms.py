@@ -71,13 +71,15 @@ def section(url):
         return 'Tools'
     if path.startswith('watch/'):
         return 'Films'
+    if path.startswith('topics/'):
+        return 'Topics'
     if path.startswith('writing/'):
         return 'Writing'
     return 'Profile'
 
 
 def build():
-    groups = {name: [] for name in ('Profile', 'Work', 'Writing', 'Films', 'Tools')}
+    groups = {name: [] for name in ('Profile', 'Work', 'Topics', 'Writing', 'Films', 'Tools')}
     for url, text in entries():
         name = section(url)
         if name:

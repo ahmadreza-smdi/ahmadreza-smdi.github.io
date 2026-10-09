@@ -1,0 +1,493 @@
+{
+  "primary_language": "en",
+  "resources": {
+    "appraiva": {
+      "paths": {
+        "en": "work/appraiva.html",
+        "fa": "fa/work/appraiva.html",
+        "ar": "ar/work/appraiva.html"
+      }
+    },
+    "royal_abraj": {
+      "paths": {
+        "en": "work/royal-abraj.html",
+        "fa": "fa/work/royal-abraj.html",
+        "ar": "ar/work/royal-abraj.html"
+      }
+    },
+    "home_estimates": {
+      "paths": {
+        "en": "writing/ai-home-value-estimates.html",
+        "fa": "fa/writing/ai-home-value-estimates.html",
+        "ar": "ar/writing/ai-home-value-estimates.html"
+      }
+    },
+    "human_review": {
+      "paths": {
+        "en": "writing/ai-human-review-real-estate.html",
+        "fa": "fa/writing/ai-human-review-real-estate.html",
+        "ar": "ar/writing/ai-human-review-real-estate.html"
+      }
+    },
+    "verified_cost": {
+      "paths": {
+        "en": "writing/ai-cost-per-verified-result.html",
+        "fa": "fa/writing/ai-cost-per-verified-result.html",
+        "ar": "ar/writing/ai-cost-per-verified-result.html"
+      }
+    },
+    "rental_yield": {
+      "paths": {
+        "en": "writing/ai-rental-yield-cash-flow.html",
+        "fa": "fa/writing/ai-rental-yield-cash-flow.html",
+        "ar": "ar/writing/ai-rental-yield-cash-flow.html"
+      }
+    },
+    "decision_first": {
+      "paths": {
+        "en": "writing/start-with-the-decision.html",
+        "fa": "fa/writing/start-with-the-decision.html",
+        "ar": "ar/writing/start-with-the-decision.html"
+      }
+    },
+    "connected_apps": {
+      "paths": {
+        "en": "writing/connected-ai-apps.html",
+        "fa": "fa/writing/connected-ai-apps.html",
+        "ar": "ar/writing/connected-ai-apps.html"
+      }
+    },
+    "profit_cash": {
+      "paths": {
+        "en": "writing/profitable-but-out-of-cash.html",
+        "fa": "fa/writing/profitable-but-out-of-cash.html",
+        "ar": "ar/writing/profitable-but-out-of-cash.html"
+      }
+    },
+    "decision_guide": {
+      "paths": {
+        "en": "tools/before-you-build-ai.html",
+        "fa": "fa/tools/before-you-build-ai.html",
+        "ar": "ar/tools/before-you-build-ai.html"
+      }
+    },
+    "rental_film": {
+      "paths": {
+        "en": "watch/rental-yield.html"
+      }
+    },
+    "profit_film": {
+      "paths": {
+        "en": "watch/profit-cash.html"
+      }
+    }
+  },
+  "hubs": [
+    {
+      "id": "ai-real-estate",
+      "paths": {
+        "en": "topics/ai-real-estate.html",
+        "fa": "fa/topics/ai-real-estate.html",
+        "ar": "ar/topics/ai-real-estate.html"
+      },
+      "locales": {
+        "en": {
+          "title": "AI in real estate: evidence and decisions | Ahmadreza Samadi",
+          "heading": "AI in real estate: evidence and decisions",
+          "description": "A reading path through property data, human review, AI workflow costs and rental cash flow, with Ahmadreza Samadi’s work at Appraiva as context.",
+          "eyebrow": "Reading path · AI and property research",
+          "lead": "Follow a property signal through the questions that make it useful: what supports it, who checks it, and what decision comes next.",
+          "context_heading": "From an image to a research workflow",
+          "context": [
+            "At Appraiva, my work connects property imagery analysis with property identity, data enrichment and search. I work remotely from Dubai as Co-Founder & Technical Lead of the company based in Cleveland, Ohio, United States.",
+            "The case study explains those connections. The readings below then examine four checks around a property decision: the data behind an estimate, human review, the cost of useful AI work, and the difference between rental yield and cash flow."
+          ],
+          "case_study": {
+            "resource": "appraiva",
+            "label": "Read the Appraiva case study",
+            "summary": "See how imagery, property data and search fit together in my technical work."
+          },
+          "questions_heading": "Keep these questions in view",
+          "questions": [
+            "Which property and source records support the result?",
+            "Who checks the important claims before someone acts?",
+            "What does the full workflow cost, and what money remains after property costs and loan payments?"
+          ],
+          "reading_heading": "Read in this order",
+          "reading_path": [
+            {
+              "resource": "home_estimates",
+              "question": "What does the estimate know?",
+              "summary": "Check property facts, comparable sales and uncertainty before relying on an automated home-value estimate."
+            },
+            {
+              "resource": "human_review",
+              "question": "Who checks a material claim?",
+              "summary": "Separate AI preparation from professional verification and the client’s decision."
+            },
+            {
+              "resource": "verified_cost",
+              "question": "What does a useful AI result cost?",
+              "summary": "Count tools, retries and human review as well as model calls. The property-research test is a proposed experiment, not a company result."
+            },
+            {
+              "resource": "rental_yield",
+              "question": "What remains after costs and loan payments?",
+              "summary": "Follow a fictional home to see how gross rental yield can coexist with a cash shortfall."
+            }
+          ],
+          "film": {
+            "resource": "rental_film",
+            "heading": "See the rental example in motion",
+            "summary": "A 99-second English film with English captions and a transcript. The property, AI interface and amounts are fictional.",
+            "label": "Watch the rental-yield film"
+          },
+          "apply": {
+            "resource": "decision_guide",
+            "heading": "Apply the questions to one workflow",
+            "summary": "Use the decision worksheet to define the user’s next action, identify the evidence it needs, and plan a first experiment.",
+            "label": "Open Before You Build the AI"
+          },
+          "cross_hub": {
+            "hub": "business-systems-dubai",
+            "label": "Building business systems in Dubai",
+            "summary": "Continue with the customer journey, permissions and payment timing behind everyday business operations."
+          },
+          "author_bio": "Technology Entrepreneur based in Dubai. Co-Founder & Technical Lead at Appraiva; Co-Founder & CEO at Royal Abraj Group."
+        },
+        "fa": {
+          "title": "هوش مصنوعی در املاک: از شواهد تا تصمیم | احمدرضا صمدی",
+          "heading": "هوش مصنوعی در املاک: از شواهد تا تصمیم",
+          "description": "مسیر مطالعه‌ای درباره داده‌های ملک، بازبینی انسانی، هزینه فرایند هوش مصنوعی و جریان نقدی اجاره، با نگاهی به کار احمدرضا صمدی در Appraiva.",
+          "eyebrow": "مسیر مطالعه · هوش مصنوعی و بررسی ملک",
+          "lead": "یک نشانه درباره ملک را با این پرسش‌ها دنبال کنید: چه شواهدی آن را پشتیبانی می‌کند، چه کسی آن را بررسی می‌کند و تصمیم بعدی چیست؟",
+          "context_heading": "از تصویر تا فرایند بررسی ملک",
+          "context": [
+            "در Appraiva، کار من تحلیل تصاویر ملک را به شناسایی ملک، تکمیل داده‌ها و جست‌وجو پیوند می‌دهد. من از دبی و به‌صورت دورکار، به‌عنوان هم‌بنیان‌گذار و راهبر فنی این شرکت مستقر در کلیولندِ اوهایو در ایالات متحده فعالیت می‌کنم.",
+            "مطالعه موردی این ارتباط‌ها را توضیح می‌دهد. سپس نوشته‌های زیر چهار جنبه تصمیم‌گیری درباره ملک را بررسی می‌کنند: داده‌های پشت یک برآورد، بازبینی انسانی، هزینه کار مفید با هوش مصنوعی و تفاوت بازده اجاره با جریان نقدی."
+          ],
+          "case_study": {
+            "resource": "appraiva",
+            "label": "مطالعه موردی Appraiva را بخوانید",
+            "summary": "ببینید تصاویر، داده‌های ملک و جست‌وجو چگونه در کار فنی من به هم متصل می‌شوند."
+          },
+          "questions_heading": "این پرسش‌ها را در نظر داشته باشید",
+          "questions": [
+            "نتیجه بر پایه کدام ملک و سوابق منبع است؟",
+            "پیش از اقدام، چه کسی ادعاهای مهم را بررسی می‌کند؟",
+            "کل فرایند چقدر هزینه دارد و پس از هزینه‌های ملک و اقساط وام چه پولی باقی می‌ماند؟"
+          ],
+          "reading_heading": "با این ترتیب بخوانید",
+          "reading_path": [
+            {
+              "resource": "home_estimates",
+              "question": "برآورد چه اطلاعاتی دارد؟",
+              "summary": "پیش از اتکا به برآورد خودکار ارزش خانه، اطلاعات ملک، معاملات قابل‌مقایسه و عدم‌قطعیت را بررسی کنید."
+            },
+            {
+              "resource": "human_review",
+              "question": "چه کسی یک ادعای مهم را بررسی می‌کند؟",
+              "summary": "آماده‌سازی با هوش مصنوعی، تأیید متخصص و تصمیم مشتری را از هم جدا کنید."
+            },
+            {
+              "resource": "verified_cost",
+              "question": "یک نتیجه مفید از هوش مصنوعی چقدر هزینه دارد؟",
+              "summary": "در کنار فراخوانی مدل، ابزارها، تلاش‌های دوباره و بازبینی انسانی را هم حساب کنید. آزمون بررسی ملک یک آزمایش پیشنهادی است، نه نتیجه یک شرکت."
+            },
+            {
+              "resource": "rental_yield",
+              "question": "پس از هزینه‌ها و اقساط چه می‌ماند؟",
+              "summary": "یک خانه فرضی را دنبال کنید تا ببینید بازده ناخالص اجاره چگونه می‌تواند با کسری نقدی همراه باشد."
+            }
+          ],
+          "film": {
+            "resource": "rental_film",
+            "heading": "مثال اجاره را در فیلم ببینید",
+            "summary": "فیلم ۹۹ ثانیه‌ای به زبان انگلیسی، با زیرنویس و متن انگلیسی. ملک، رابط هوش مصنوعی و مبالغ فرضی‌اند.",
+            "label": "فیلم بازده اجاره را تماشا کنید"
+          },
+          "apply": {
+            "resource": "decision_guide",
+            "heading": "پرسش‌ها را روی یک فرایند به کار ببرید",
+            "summary": "با کاربرگ تصمیم، اقدام بعدی کاربر را مشخص کنید، شواهد لازم را بشناسید و نخستین آزمایش را برنامه‌ریزی کنید.",
+            "label": "راهنمای «پیش از ساخت سامانه هوش مصنوعی» را باز کنید"
+          },
+          "cross_hub": {
+            "hub": "business-systems-dubai",
+            "label": "ساخت سیستم‌های کسب‌وکار در دبی",
+            "summary": "مسیر مشتری، مجوزهای دسترسی و زمان‌بندی پرداخت‌ها در کار روزمره کسب‌وکار را دنبال کنید."
+          },
+          "author_bio": "کارآفرین فناوری ساکن دبی. هم‌بنیان‌گذار و راهبر فنی Appraiva؛ هم‌بنیان‌گذار و مدیرعامل گروه رویال ابراج."
+        },
+        "ar": {
+          "title": "الذكاء الاصطناعي في العقارات: الأدلة والقرارات | أحمدرضا صمدي",
+          "heading": "الذكاء الاصطناعي في العقارات: الأدلة والقرارات",
+          "description": "مسار قراءة عن بيانات العقارات والمراجعة البشرية وتكلفة عمل الذكاء الاصطناعي والتدفق النقدي للإيجار، في سياق عمل أحمدرضا صمدي في Appraiva.",
+          "eyebrow": "مسار قراءة · الذكاء الاصطناعي والبحث العقاري",
+          "lead": "تتبّع مؤشرًا عن عقار من خلال الأسئلة التي تجعله مفيدًا: ما الأدلة التي تدعمه، ومن يتحقق منه، وما القرار التالي؟",
+          "context_heading": "من الصورة إلى سير البحث العقاري",
+          "context": [
+            "في Appraiva، يربط عملي تحليل صور العقارات بتحديد العقار وإثراء البيانات والبحث. أعمل عن بُعد من دبي بصفتي الشريك المؤسس والقائد التقني للشركة التي تتخذ من كليفلاند بولاية أوهايو في الولايات المتحدة مقرًا لها.",
+            "تشرح دراسة الحالة هذه الروابط. ثم تتناول القراءات التالية أربع نقاط حول القرار العقاري: البيانات وراء التقدير، والمراجعة البشرية، وتكلفة العمل المفيد بالذكاء الاصطناعي، والفرق بين عائد الإيجار والتدفق النقدي."
+          ],
+          "case_study": {
+            "resource": "appraiva",
+            "label": "اقرأ دراسة حالة Appraiva",
+            "summary": "تعرّف إلى كيفية ترابط الصور وبيانات العقارات والبحث في عملي التقني."
+          },
+          "questions_heading": "ضع هذه الأسئلة في الحسبان",
+          "questions": [
+            "أي عقار وسجلات مصدر تدعم النتيجة؟",
+            "من يتحقق من الادعاءات المهمة قبل اتخاذ إجراء؟",
+            "ما تكلفة سير العمل كاملًا، وما المال المتبقي بعد تكاليف العقار وأقساط القرض؟"
+          ],
+          "reading_heading": "اقرأ بهذا الترتيب",
+          "reading_path": [
+            {
+              "resource": "home_estimates",
+              "question": "ماذا يعرف التقدير؟",
+              "summary": "راجع بيانات العقار والمبيعات القابلة للمقارنة وعدم اليقين قبل الاعتماد على تقدير آلي لقيمة المنزل."
+            },
+            {
+              "resource": "human_review",
+              "question": "من يتحقق من الادعاء المهم؟",
+              "summary": "افصل إعداد الذكاء الاصطناعي عن تحقق المختص وقرار العميل."
+            },
+            {
+              "resource": "verified_cost",
+              "question": "ما تكلفة نتيجة مفيدة من الذكاء الاصطناعي؟",
+              "summary": "احسب الأدوات والمحاولات المتكررة والمراجعة البشرية إلى جانب استدعاءات النموذج. اختبار البحث العقاري تجربة مقترحة، وليس نتيجة لشركة."
+            },
+            {
+              "resource": "rental_yield",
+              "question": "ماذا يتبقى بعد التكاليف وأقساط القرض؟",
+              "summary": "تابع منزلًا افتراضيًا لترى كيف يمكن لعائد الإيجار الإجمالي أن يتزامن مع عجز نقدي."
+            }
+          ],
+          "film": {
+            "resource": "rental_film",
+            "heading": "شاهد مثال الإيجار في فيلم",
+            "summary": "فيلم مدته ٩٩ ثانية باللغة الإنجليزية، مع ترجمة نصية ونص مكتوب بالإنجليزية. العقار وواجهة الذكاء الاصطناعي والمبالغ افتراضية.",
+            "label": "شاهد فيلم عائد الإيجار"
+          },
+          "apply": {
+            "resource": "decision_guide",
+            "heading": "طبّق الأسئلة على سير عمل واحد",
+            "summary": "استخدم ورقة القرار لتحديد إجراء المستخدم التالي، ومعرفة الأدلة اللازمة، والتخطيط لتجربة أولى.",
+            "label": "افتح دليل «قبل أن تبني نظام الذكاء الاصطناعي»"
+          },
+          "cross_hub": {
+            "hub": "business-systems-dubai",
+            "label": "بناء أنظمة الأعمال في دبي",
+            "summary": "تابع رحلة العميل والصلاحيات وتوقيت المدفوعات وراء العمليات اليومية للشركة."
+          },
+          "author_bio": "رائد أعمال تقني مقيم في دبي. الشريك المؤسس والقائد التقني في Appraiva؛ والشريك المؤسس والرئيس التنفيذي لمجموعة رويال أبراج."
+        }
+      },
+      "ordered_resources": [
+        "appraiva",
+        "home_estimates",
+        "human_review",
+        "verified_cost",
+        "rental_yield",
+        "rental_film",
+        "decision_guide"
+      ]
+    },
+    {
+      "id": "business-systems-dubai",
+      "paths": {
+        "en": "topics/business-systems-dubai.html",
+        "fa": "fa/topics/business-systems-dubai.html",
+        "ar": "ar/topics/business-systems-dubai.html"
+      },
+      "locales": {
+        "en": {
+          "title": "Building business systems in Dubai | Ahmadreza Samadi",
+          "heading": "Building business systems in Dubai",
+          "description": "A reading path from Ahmadreza Samadi’s Royal Abraj work to customer workflows, decision-first product design, connected-app permissions and cash timing.",
+          "eyebrow": "Reading path · Business systems and decisions",
+          "lead": "Follow a customer enquiry into the work behind it: the next sales action, the active case, the permissions and the payment dates.",
+          "context_heading": "Give each system a clear job",
+          "context": [
+            "At Royal Abraj Group in Dubai, my work as Co-Founder & CEO connects websites, CRM workflows, customer tools and internal operations. A website explains a service and captures an enquiry; the CRM supports follow-up; customer and operational tools support the work being delivered.",
+            "The readings here focus on those everyday product and operating decisions. Start with the actual customer journey, decide where technology helps, define access before connecting an assistant, and keep payment timing visible."
+          ],
+          "case_study": {
+            "resource": "royal_abraj",
+            "label": "Read the Royal Abraj case study",
+            "summary": "See why a lead’s next sales action and a case’s next delivery action need distinct responsibilities."
+          },
+          "questions_heading": "Keep these questions in view",
+          "questions": [
+            "What happens after an enquiry, and who owns the next step?",
+            "What evidence and permissions does the system need?",
+            "When does cash arrive, what is due first, and what covers the gap?"
+          ],
+          "reading_heading": "Read in this order",
+          "reading_path": [
+            {
+              "resource": "decision_first",
+              "question": "Which decision should the product help?",
+              "summary": "Start with the person, their evidence and their next action before choosing an AI capability."
+            },
+            {
+              "resource": "connected_apps",
+              "question": "What can a connected assistant do?",
+              "summary": "Check the account, access scope, supported actions and approval rules when linking business tools."
+            },
+            {
+              "resource": "profit_cash",
+              "question": "Can a profitable order still leave a cash gap?",
+              "summary": "Follow one fictional order through supplier and customer payment dates. Profit and available cash answer different questions."
+            }
+          ],
+          "film": {
+            "resource": "profit_film",
+            "heading": "Follow the payment dates in a film",
+            "summary": "A 90-second English film with English captions and a transcript. The business and transaction amounts are fictional.",
+            "label": "Watch Profitable. But out of cash"
+          },
+          "apply": {
+            "resource": "decision_guide",
+            "heading": "Turn one operating problem into a test",
+            "summary": "Use the decision worksheet to describe the current process, the evidence a person needs and the smallest useful experiment.",
+            "label": "Open Before You Build the AI"
+          },
+          "cross_hub": {
+            "hub": "ai-real-estate",
+            "label": "AI in real estate: evidence and decisions",
+            "summary": "Continue with the property data and human review that support investment research."
+          },
+          "author_bio": "Technology Entrepreneur based in Dubai. Co-Founder & Technical Lead at Appraiva; Co-Founder & CEO at Royal Abraj Group."
+        },
+        "fa": {
+          "title": "ساخت سیستم‌های کسب‌وکار در دبی | احمدرضا صمدی",
+          "heading": "ساخت سیستم‌های کسب‌وکار در دبی",
+          "description": "مسیر مطالعه‌ای از کار احمدرضا صمدی در رویال ابراج تا فرایند مشتری، طراحی محصول بر پایه تصمیم، مجوز اپ‌های متصل و زمان‌بندی جریان نقدی.",
+          "eyebrow": "مسیر مطالعه · سیستم‌های کسب‌وکار و تصمیم‌ها",
+          "lead": "درخواست مشتری را تا کارهای پس از آن دنبال کنید: اقدام بعدی فروش، پرونده فعال، مجوزهای دسترسی و تاریخ پرداخت‌ها.",
+          "context_heading": "برای هر سیستم وظیفه‌ای روشن تعیین کنید",
+          "context": [
+            "در گروه رویال ابراج در دبی، کار من به‌عنوان هم‌بنیان‌گذار و مدیرعامل، وب‌سایت‌ها، فرایندهای CRM، ابزارهای مشتری و عملیات داخلی را به هم پیوند می‌دهد. وب‌سایت خدمت را توضیح می‌دهد و درخواست را ثبت می‌کند؛ CRM از پیگیری فروش پشتیبانی می‌کند؛ ابزارهای مشتری و عملیات نیز کار در حال انجام را پشتیبانی می‌کنند.",
+            "نوشته‌های این صفحه بر همین تصمیم‌های روزمره محصول و عملیات تمرکز دارند. از مسیر واقعی مشتری شروع کنید، مشخص کنید فناوری کجا کمک می‌کند، پیش از اتصال دستیار محدوده دسترسی را تعیین کنید و زمان‌بندی پرداخت‌ها را روشن نگه دارید."
+          ],
+          "case_study": {
+            "resource": "royal_abraj",
+            "label": "مطالعه موردی رویال ابراج را بخوانید",
+            "summary": "ببینید چرا اقدام بعدی فروش برای یک سرنخ و اقدام بعدی تحویل برای یک پرونده، مسئولیت‌های جداگانه‌ای می‌خواهند."
+          },
+          "questions_heading": "این پرسش‌ها را در نظر داشته باشید",
+          "questions": [
+            "پس از درخواست مشتری چه اتفاقی می‌افتد و مسئول گام بعدی کیست؟",
+            "سیستم به چه شواهد و مجوزهایی نیاز دارد؟",
+            "پول چه زمانی می‌رسد، کدام پرداخت زودتر موعد دارد و کسری چگونه پوشش داده می‌شود؟"
+          ],
+          "reading_heading": "با این ترتیب بخوانید",
+          "reading_path": [
+            {
+              "resource": "decision_first",
+              "question": "محصول باید به کدام تصمیم کمک کند؟",
+              "summary": "پیش از انتخاب قابلیت هوش مصنوعی، از فرد تصمیم‌گیرنده، شواهد موردنیاز و اقدام بعدی او شروع کنید."
+            },
+            {
+              "resource": "connected_apps",
+              "question": "دستیار متصل چه کاری می‌تواند انجام دهد؟",
+              "summary": "هنگام اتصال ابزارهای کسب‌وکار، حساب، محدوده دسترسی، اقدام‌های پشتیبانی‌شده و قواعد تأیید را بررسی کنید."
+            },
+            {
+              "resource": "profit_cash",
+              "question": "آیا سفارش سودآور هم می‌تواند کسری نقدی ایجاد کند؟",
+              "summary": "یک سفارش فرضی را با تاریخ پرداخت به تأمین‌کننده و دریافت از مشتری دنبال کنید. سود و پول در دسترس به دو پرسش متفاوت پاسخ می‌دهند."
+            }
+          ],
+          "film": {
+            "resource": "profit_film",
+            "heading": "تاریخ‌های پرداخت را در فیلم دنبال کنید",
+            "summary": "فیلم ۹۰ ثانیه‌ای به زبان انگلیسی، با زیرنویس و متن انگلیسی. کسب‌وکار و مبالغ معامله فرضی‌اند.",
+            "label": "فیلم «سودآور، اما بدون پول نقد» را تماشا کنید"
+          },
+          "apply": {
+            "resource": "decision_guide",
+            "heading": "یک مسئله عملیاتی را به آزمایش تبدیل کنید",
+            "summary": "با کاربرگ تصمیم، فرایند فعلی، شواهد موردنیاز فرد و کوچک‌ترین آزمایش مفید را مشخص کنید.",
+            "label": "راهنمای «پیش از ساخت سامانه هوش مصنوعی» را باز کنید"
+          },
+          "cross_hub": {
+            "hub": "ai-real-estate",
+            "label": "هوش مصنوعی در املاک: از شواهد تا تصمیم",
+            "summary": "داده‌های ملک و بازبینی انسانی را که از بررسی فرصت‌های سرمایه‌گذاری پشتیبانی می‌کنند دنبال کنید."
+          },
+          "author_bio": "کارآفرین فناوری ساکن دبی. هم‌بنیان‌گذار و راهبر فنی Appraiva؛ هم‌بنیان‌گذار و مدیرعامل گروه رویال ابراج."
+        },
+        "ar": {
+          "title": "بناء أنظمة الأعمال في دبي | أحمدرضا صمدي",
+          "heading": "بناء أنظمة الأعمال في دبي",
+          "description": "مسار قراءة من عمل أحمدرضا صمدي في رويال أبراج إلى رحلة العميل وتصميم المنتجات حول القرار وصلاحيات التطبيقات المتصلة وتوقيت النقد.",
+          "eyebrow": "مسار قراءة · أنظمة الأعمال والقرارات",
+          "lead": "تتبّع استفسار العميل إلى العمل الذي يليه: إجراء المبيعات التالي، والحالة الجارية، والصلاحيات، ومواعيد الدفع.",
+          "context_heading": "حدّد وظيفة واضحة لكل نظام",
+          "context": [
+            "في مجموعة رويال أبراج بدبي، يربط عملي بصفتي الشريك المؤسس والرئيس التنفيذي المواقع وسير عمل CRM وأدوات العملاء والعمليات الداخلية. يشرح الموقع الخدمة ويسجل الاستفسار؛ ويدعم CRM متابعة المبيعات؛ وتدعم أدوات العملاء والعمليات العمل الجاري تسليمه.",
+            "تركّز القراءات هنا على هذه القرارات اليومية للمنتج والعمليات. ابدأ برحلة العميل الفعلية، وحدّد أين تساعد التقنية، وعيّن حدود الوصول قبل ربط المساعد، واجعل توقيت المدفوعات واضحًا."
+          ],
+          "case_study": {
+            "resource": "royal_abraj",
+            "label": "اقرأ دراسة حالة رويال أبراج",
+            "summary": "تعرّف إلى سبب احتياج إجراء المبيعات التالي للعميل المحتمل وإجراء التسليم التالي للحالة إلى مسؤوليات واضحة ومنفصلة."
+          },
+          "questions_heading": "ضع هذه الأسئلة في الحسبان",
+          "questions": [
+            "ماذا يحدث بعد استفسار العميل، ومن يتولى الخطوة التالية؟",
+            "ما الأدلة والصلاحيات التي يحتاجها النظام؟",
+            "متى يصل النقد، وما المستحق أولًا، وما الذي يغطي الفجوة؟"
+          ],
+          "reading_heading": "اقرأ بهذا الترتيب",
+          "reading_path": [
+            {
+              "resource": "decision_first",
+              "question": "أي قرار ينبغي أن يساعد المنتج؟",
+              "summary": "ابدأ بالشخص والأدلة التي يحتاجها وإجرائه التالي قبل اختيار قدرة للذكاء الاصطناعي."
+            },
+            {
+              "resource": "connected_apps",
+              "question": "ماذا يستطيع المساعد المتصل أن يفعل؟",
+              "summary": "راجع الحساب وحدود الوصول والإجراءات المدعومة وقواعد الموافقة عند ربط أدوات العمل."
+            },
+            {
+              "resource": "profit_cash",
+              "question": "هل يمكن لطلب مربح أن يترك فجوة نقدية؟",
+              "summary": "تابع طلبًا افتراضيًا عبر مواعيد الدفع للمورد والتحصيل من العميل. الربح والنقد المتاح يجيبان عن سؤالين مختلفين."
+            }
+          ],
+          "film": {
+            "resource": "profit_film",
+            "heading": "تابع مواعيد الدفع في فيلم",
+            "summary": "فيلم مدته ٩٠ ثانية باللغة الإنجليزية، مع ترجمة نصية ونص مكتوب بالإنجليزية. الشركة ومبالغ المعاملات افتراضية.",
+            "label": "شاهد فيلم «مربح، لكن بلا نقد»"
+          },
+          "apply": {
+            "resource": "decision_guide",
+            "heading": "حوّل مشكلة تشغيلية واحدة إلى تجربة",
+            "summary": "استخدم ورقة القرار لوصف العملية الحالية والأدلة التي يحتاجها الشخص وأصغر تجربة مفيدة.",
+            "label": "افتح دليل «قبل أن تبني نظام الذكاء الاصطناعي»"
+          },
+          "cross_hub": {
+            "hub": "ai-real-estate",
+            "label": "الذكاء الاصطناعي في العقارات: الأدلة والقرارات",
+            "summary": "تابع بيانات العقارات والمراجعة البشرية التي تدعم البحث عن فرص الاستثمار."
+          },
+          "author_bio": "رائد أعمال تقني مقيم في دبي. الشريك المؤسس والقائد التقني في Appraiva؛ والشريك المؤسس والرئيس التنفيذي لمجموعة رويال أبراج."
+        }
+      },
+      "ordered_resources": [
+        "royal_abraj",
+        "decision_first",
+        "connected_apps",
+        "profit_cash",
+        "profit_film",
+        "decision_guide"
+      ]
+    }
+  ]
+}

@@ -10,12 +10,18 @@ Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and
 
 - [Homepage](https://a-samadi.com/): Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead at Appraiva, and Co-Founder & CEO of Royal Abraj Group.
 - [Biography](https://a-samadi.com/about.html): Ahmadreza Samadi (Ahmad Samadi) is a technology entrepreneur based in Dubai and co-founder of Appraiva and Royal Abraj Group. Biography, work and profiles.
+- [Press & media kit](https://a-samadi.com/press.html): Media kit for Ahmadreza Samadi, a Dubai-based technology entrepreneur and co-founder of Appraiva and Royal Abraj Group. Bios, portrait and contact.
 
 ## Work
 
 - [Ahmadreza Samadi at Appraiva | Co-Founder & Technical Lead](https://a-samadi.com/work/appraiva.html): Ahmadreza Samadi’s work as Appraiva’s Co-Founder & Technical Lead, connecting property imagery, AI, data and search for real estate investment research.
 - [Oxfam Novib: CRM data and analytics](https://a-samadi.com/work/oxfam-novib.html): Ahmadreza Samadi’s work on Azure data infrastructure, CRM migration, analytics, and governed data workflows at Oxfam Novib.
 - [Ahmadreza Samadi at Royal Abraj Group | Co-Founder & CEO](https://a-samadi.com/work/royal-abraj.html): How Ahmadreza Samadi leads digital strategy at Royal Abraj Group, connecting websites, CRM, customer tools and internal operations as Co-Founder and CEO.
+
+## Topics
+
+- [AI in real estate: evidence and decisions](https://a-samadi.com/topics/ai-real-estate.html): A reading path through property data, human review, AI workflow costs and rental cash flow, with Ahmadreza Samadi’s work at Appraiva as context.
+- [Building business systems in Dubai](https://a-samadi.com/topics/business-systems-dubai.html): A reading path from Ahmadreza Samadi’s Royal Abraj work to customer workflows, decision-first product design, connected-app permissions and cash timing.
 
 ## Writing
 
