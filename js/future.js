@@ -351,11 +351,12 @@
         const status = $('.copy-status');
         const message = i18n('copied', 'Email address copied');
         let timer = 0;
-        const write = async () => {
+        const write = async (isCurrent) => {
             try {
                 await navigator.clipboard.writeText(email);
                 return true;
             } catch (error) {
+                if (!isCurrent()) return false;
                 const area = document.createElement('textarea');
                 area.value = email;
                 area.setAttribute('readonly', '');
@@ -368,34 +369,54 @@
                 return copied;
             }
         };
-        buttons.forEach((button) => button.addEventListener('click', async () => {
-            if (button.classList.contains('is-copied')) return;
-            const copied = await write();
-            if (!copied) {
-                if (link) window.getSelection().selectAllChildren(link);
-                return;
-            }
-            if (status) {
-                status.textContent = message;
-                status.classList.remove('is-fresh');
-                void status.offsetWidth;
-                status.classList.add('is-fresh');
-                window.clearTimeout(timer);
-                timer = window.setTimeout(() => { status.textContent = ''; }, 4500);
-            }
-            if (button.classList.contains('command-item')) {
-                if (!button.dataset.label) button.dataset.label = button.textContent;
-                const label = button.dataset.label;
-                button.textContent = message;
-                button.classList.add('is-copied');
-                window.setTimeout(() => {
+        buttons.forEach((button) => {
+            const dialog = button.classList.contains('command-item') ? button.closest('dialog') : null;
+            const label = button.textContent;
+            let feedbackTimer = 0;
+            let operation = 0;
+            const reset = () => {
+                operation += 1;
+                window.clearTimeout(feedbackTimer);
+                feedbackTimer = 0;
+                if (button.classList.contains('is-copied')) {
                     button.textContent = label;
                     button.classList.remove('is-copied');
-                    const dialog = button.closest('dialog');
-                    if (dialog && dialog.open) dialog.close();
-                }, 900);
+                }
+            };
+            if (dialog) {
+                dialog.addEventListener('close', () => { if (!dialog.open) reset(); });
+                // A reopened Ask panel is a new session, even if the old close event is still queued.
+                window.addEventListener('site:ask', (event) => { if (event.detail.active) reset(); });
             }
-        }));
+            button.addEventListener('click', async () => {
+                if (button.classList.contains('is-copied')) return;
+                const request = ++operation;
+                const isCurrent = () => request === operation && (!dialog || dialog.open);
+                const copied = await write(isCurrent);
+                if (!isCurrent()) return;
+                if (!copied) {
+                    if (link) window.getSelection().selectAllChildren(link);
+                    return;
+                }
+                if (status) {
+                    status.textContent = message;
+                    status.classList.remove('is-fresh');
+                    void status.offsetWidth;
+                    status.classList.add('is-fresh');
+                    window.clearTimeout(timer);
+                    timer = window.setTimeout(() => { status.textContent = ''; }, 4500);
+                }
+                if (dialog) {
+                    button.textContent = message;
+                    button.classList.add('is-copied');
+                    feedbackTimer = window.setTimeout(() => {
+                        if (!isCurrent()) return;
+                        reset();
+                        dialog.close();
+                    }, 900);
+                }
+            });
+        });
     }
 
     /* The marker that follows the hovered or current section link. */
