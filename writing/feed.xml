@@ -8,6 +8,14 @@
     <dc:creator>Ahmadreza Samadi</dc:creator>
     <atom:link href="https://a-samadi.com/writing/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>How does property data enrichment connect an image to the right property?</title>
+      <link>https://a-samadi.com/writing/property-data-enrichment.html</link>
+      <description>A fictional image-and-record comparison shows how to check property identity, source dates and unresolved claims before combining property information.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Sat, 10 Oct 2026 17:00:06 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/property-data-enrichment.html</guid>
+    </item>
+    <item>
       <title>How many coffees must a cafe sell before it makes any profit?</title>
       <link>https://a-samadi.com/writing/how-many-coffees-to-break-even.html</link>
       <description>A fictional cafe sells 100 coffees for $500 and makes $0 operating profit. Follow its costs to understand contribution and break-even.</description>

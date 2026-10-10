@@ -8,6 +8,13 @@
         "ar": "ar/work/appraiva.html"
       }
     },
+    "property_enrichment": {
+      "paths": {
+        "en": "writing/property-data-enrichment.html",
+        "fa": "fa/writing/property-data-enrichment.html",
+        "ar": "ar/writing/property-data-enrichment.html"
+      }
+    },
     "royal_abraj": {
       "paths": {
         "en": "work/royal-abraj.html",
@@ -100,7 +107,7 @@
           "context_heading": "From an image to a research workflow",
           "context": [
             "At Appraiva, my work connects property imagery analysis with property identity, data enrichment and search. I work remotely from Dubai as Co-Founder & Technical Lead of the company based in Cleveland, Ohio, United States.",
-            "The case study explains those connections. The readings below then examine four checks around a property decision: the data behind an estimate, human review, the cost of useful AI work, and the difference between rental yield and cash flow."
+            "The case study explains those connections. The readings below then examine five checks around a property decision: matching an image to property identity and dated sources, the data behind an estimate, human review, the cost of useful AI work, and the difference between rental yield and cash flow."
           ],
           "case_study": {
             "resource": "appraiva",
@@ -115,6 +122,11 @@
           ],
           "reading_heading": "Read in this order",
           "reading_path": [
+            {
+              "resource": "property_enrichment",
+              "question": "Which property do the image and records describe?",
+              "summary": "A fictional image-and-record comparison shows how to check property identity, source dates and unresolved claims before combining property information."
+            },
             {
               "resource": "home_estimates",
               "question": "What does the estimate know?",
@@ -164,7 +176,7 @@
           "context_heading": "از تصویر تا فرایند بررسی ملک",
           "context": [
             "در Appraiva، کار من تحلیل تصاویر ملک را به شناسایی ملک، تکمیل داده‌ها و جست‌وجو پیوند می‌دهد. من از دبی و به‌صورت دورکار، به‌عنوان هم‌بنیان‌گذار و راهبر فنی این شرکت مستقر در کلیولندِ اوهایو در ایالات متحده فعالیت می‌کنم.",
-            "مطالعه موردی این ارتباط‌ها را توضیح می‌دهد. سپس نوشته‌های زیر چهار جنبه تصمیم‌گیری درباره ملک را بررسی می‌کنند: داده‌های پشت یک برآورد، بازبینی انسانی، هزینه کار مفید با هوش مصنوعی و تفاوت بازده اجاره با جریان نقدی."
+            "مطالعه موردی این ارتباط‌ها را توضیح می‌دهد. سپس نوشته‌های زیر پنج جنبه تصمیم‌گیری درباره ملک را بررسی می‌کنند: پیوند تصویر با هویت ملک و منابع تاریخ‌دار، داده‌های پشت یک برآورد، بازبینی انسانی، هزینه کار مفید با هوش مصنوعی و تفاوت بازده اجاره با جریان نقدی."
           ],
           "case_study": {
             "resource": "appraiva",
@@ -179,6 +191,11 @@
           ],
           "reading_heading": "با این ترتیب بخوانید",
           "reading_path": [
+            {
+              "resource": "property_enrichment",
+              "question": "تصویر و سوابق به کدام ملک اشاره دارند؟",
+              "summary": "یک مقایسهٔ خیالی میان تصویر و سابقه نشان می‌دهد پیش از ترکیب اطلاعات ملک، چگونه هویت ملک، تاریخ منابع و ادعاهای تأییدنشده را بررسی کنیم."
+            },
             {
               "resource": "home_estimates",
               "question": "برآورد چه اطلاعاتی دارد؟",
@@ -228,7 +245,7 @@
           "context_heading": "من الصورة إلى سير البحث العقاري",
           "context": [
             "في Appraiva، يربط عملي تحليل صور العقارات بتحديد العقار وإثراء البيانات والبحث. أعمل عن بُعد من دبي بصفتي الشريك المؤسس والقائد التقني للشركة التي تتخذ من كليفلاند بولاية أوهايو في الولايات المتحدة مقرًا لها.",
-            "تشرح دراسة الحالة هذه الروابط. ثم تتناول القراءات التالية أربع نقاط حول القرار العقاري: البيانات وراء التقدير، والمراجعة البشرية، وتكلفة العمل المفيد بالذكاء الاصطناعي، والفرق بين عائد الإيجار والتدفق النقدي."
+            "تشرح دراسة الحالة هذه الروابط. ثم تتناول القراءات التالية خمس نقاط حول القرار العقاري: ربط الصورة بهوية العقار ومصادر مؤرخة، والبيانات وراء التقدير، والمراجعة البشرية، وتكلفة العمل المفيد بالذكاء الاصطناعي، والفرق بين عائد الإيجار والتدفق النقدي."
           ],
           "case_study": {
             "resource": "appraiva",
@@ -243,6 +260,11 @@
           ],
           "reading_heading": "اقرأ بهذا الترتيب",
           "reading_path": [
+            {
+              "resource": "property_enrichment",
+              "question": "أي عقار تصفه الصورة والسجلات؟",
+              "summary": "يوضح مثال خيالي يقارن صورة بسجل كيفية فحص هوية العقار وتواريخ المصادر والادعاءات التي لم تُحسم قبل جمع المعلومات العقارية."
+            },
             {
               "resource": "home_estimates",
               "question": "ماذا يعرف التقدير؟",
@@ -286,6 +308,7 @@
       },
       "ordered_resources": [
         "appraiva",
+        "property_enrichment",
         "home_estimates",
         "human_review",
         "verified_cost",

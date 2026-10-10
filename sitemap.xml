@@ -160,7 +160,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/writing/</loc>
-        <lastmod>2026-10-10T18:02:07+03:30</lastmod>
+        <lastmod>2026-10-10T20:30:06+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -184,7 +184,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/</loc>
-        <lastmod>2026-10-10T18:02:07+03:30</lastmod>
+        <lastmod>2026-10-10T20:30:06+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -208,7 +208,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/</loc>
-        <lastmod>2026-10-10T18:02:07+03:30</lastmod>
+        <lastmod>2026-10-10T20:30:06+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -755,7 +755,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/topics/ai-real-estate.html</loc>
-        <lastmod>2026-10-09</lastmod>
+        <lastmod>2026-10-10T20:30:06+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/topics/ai-real-estate.html" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/topics/ai-real-estate.html" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/topics/ai-real-estate.html" />
@@ -763,7 +763,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/fa/topics/ai-real-estate.html</loc>
-        <lastmod>2026-10-09</lastmod>
+        <lastmod>2026-10-10T20:30:06+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/topics/ai-real-estate.html" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/topics/ai-real-estate.html" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/topics/ai-real-estate.html" />
@@ -771,7 +771,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/ar/topics/ai-real-estate.html</loc>
-        <lastmod>2026-10-09</lastmod>
+        <lastmod>2026-10-10T20:30:06+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/topics/ai-real-estate.html" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/topics/ai-real-estate.html" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/topics/ai-real-estate.html" />
@@ -1147,6 +1147,42 @@
         <image:image>
             <image:loc>https://a-samadi.com/assets/writing/how-many-coffees-to-break-even/slide-01.png</image:loc>
             <image:title>كم كوب قهوة يجب أن يبيع المقهى قبل أن يحقق ربحًا؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/property-data-enrichment.html</loc>
+        <lastmod>2026-10-10T20:30:06+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/property-data-enrichment.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/property-data-enrichment.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/property-data-enrichment.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/property-data-enrichment.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg</image:loc>
+            <image:title>How does property data enrichment connect an image to the right property?</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/property-data-enrichment.html</loc>
+        <lastmod>2026-10-10T20:30:06+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/property-data-enrichment.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/property-data-enrichment.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/property-data-enrichment.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/property-data-enrichment.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg</image:loc>
+            <image:title>غنی‌سازی داده‌های ملک چگونه یک تصویر را به ملک درست پیوند می‌دهد؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/property-data-enrichment.html</loc>
+        <lastmod>2026-10-10T20:30:06+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/property-data-enrichment.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/property-data-enrichment.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/property-data-enrichment.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/property-data-enrichment.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg</image:loc>
+            <image:title>كيف يربط إثراء البيانات العقارية الصورة بالعقار الصحيح؟</image:title>
         </image:image>
     </url>
 </urlset>
