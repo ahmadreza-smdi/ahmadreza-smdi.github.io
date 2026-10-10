@@ -26,6 +26,68 @@ class Structure(HTMLParser):
   if self.body:self.items.append(('/'+t,{}))
 def parse(path,url):
  p=Structure(url);p.feed(path.read_text());return p
+class ProfileLinks(HTMLParser):
+ """Collect identity links and the biographies' visible official-profile lists."""
+ VOID_TAGS={'area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr'}
+ def __init__(self):
+  super().__init__()
+  self.rel_me=set()
+  self.official_links=set()
+  self.official_without_me=set()
+  self.sections=0
+  self.lists=0
+  self.stack=[]
+ def handle_starttag(self,tag,attributes):
+  attrs=dict(attributes)
+  rel={token.lower() for token in attrs.get('rel','').split()}
+  if tag in ('link','a') and 'me' in rel:
+   self.rel_me.add(attrs.get('href'))
+  is_section=tag=='section' and attrs.get('id')=='official-profiles'
+  in_section=is_section or bool(self.stack and self.stack[-1][1])
+  is_list=in_section and tag=='ul' and 'official-profiles' in attrs.get('class','').split()
+  in_list=is_list or bool(self.stack and self.stack[-1][2])
+  self.sections+=is_section
+  self.lists+=is_list
+  if tag=='a' and in_list:
+   self.official_links.add(attrs.get('href'))
+   if 'me' not in rel:self.official_without_me.add(attrs.get('href'))
+  if tag not in self.VOID_TAGS:self.stack.append((tag,in_section,in_list))
+ def handle_endtag(self,tag):
+  for index in range(len(self.stack)-1,-1,-1):
+   if self.stack[index][0]==tag:
+    del self.stack[index:]
+    break
+ def handle_startendtag(self,tag,attributes):
+  self.handle_starttag(tag,attributes)
+  self.handle_endtag(tag)
+
+def profile_person(source,name):
+ """Resolve the ProfilePage's inline Person or its unique graph reference."""
+ schemas=[json.loads(raw) for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>',source,re.S)]
+ graph=[item for schema in schemas for item in schema.get('@graph',[schema])]
+ profiles=[item for item in graph if item.get('@type')=='ProfilePage']
+ assert len(profiles)==1, f'{name}: expected one ProfilePage for identity links'
+ entity=profiles[0].get('mainEntity',{})
+ if entity.get('@type')=='Person':return entity
+ people=[item for item in graph if item.get('@type')=='Person' and item.get('@id')==entity.get('@id')]
+ assert len(people)==1, f'{name}: expected one referenced Person for identity links'
+ return people[0]
+
+def profile_urls(person,name):
+ urls=person.get('sameAs',[])
+ assert isinstance(urls,list) and urls and all(isinstance(url,str) and url for url in urls), f'{name}: missing or invalid Person sameAs list'
+ return set(urls)
+
+def check_profile_links(source,name,person,approved_person,approved_urls):
+ assert (person.get('@id'),person.get('name'))==(approved_person.get('@id'),approved_person.get('name')), f'{name}: profile links use a different Person identity'
+ assert profile_urls(person,name)==approved_urls, f'{name}: Person sameAs profiles differ from the English homepage'
+ links=ProfileLinks();links.feed(source)
+ assert links.rel_me==approved_urls, f'{name}: rel=me profiles differ from Person sameAs'
+ if name.endswith('about.html'):
+  assert links.sections==links.lists==1, f'{name}: expected one visible official-profile list'
+  assert not links.official_without_me, f'{name}: official-profile link lacks rel=me'
+  assert links.official_links==approved_urls, f'{name}: visible official profiles differ from Person sameAs'
+
 base=parse(ROOT/'index.html','https://a-samadi.com/')
 for lang in ['fa','ar']:
  p=parse(ROOT/lang/'index.html',f'https://a-samadi.com/{lang}/')
@@ -201,6 +263,9 @@ clusters = (
  ('writing/profitable-but-out-of-cash.html','fa/writing/profitable-but-out-of-cash.html','ar/writing/profitable-but-out-of-cash.html'),
  ('writing/what-accept-cookies-means.html','fa/writing/what-accept-cookies-means.html','ar/writing/what-accept-cookies-means.html'),
 )
+# The canonical English homepage remains the source of approved profile URLs.
+approved_person=profile_person((ROOT/'index.html').read_text(),'index.html')
+approved_profile_urls=profile_urls(approved_person,'index.html')
 for cluster in clusters:
  urls=[BASE+(name[:-10] if name.endswith('index.html') else name) for name in cluster]
  expected=dict(zip(('en','fa','ar'),urls));expected['x-default']=urls[0]
@@ -230,6 +295,7 @@ for cluster in clusters:
    assert person and person.get('@id')==BASE+'#person' and person.get('name')=='Ahmadreza Samadi', f'{name}: inconsistent person identity'
    assert {'احمدرضا صمدی','أحمدرضا صمدي','Ahmad Samadi'} <= set(person.get('alternateName',[])), f'{name}: missing established name variation'
    assert {'https://www.instagram.com/ahmadreza_smdi/','https://www.linkedin.com/in/ahmadreza-samadi/'} <= set(person.get('sameAs',[])), f'{name}: missing official social identity link'
+   check_profile_links(source,name,profile_person(source,name),approved_person,approved_profile_urls)
    modified=profile.get('dateModified')
    if modified:
     parsed=datetime.fromisoformat(modified)
