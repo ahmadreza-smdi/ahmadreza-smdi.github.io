@@ -32,7 +32,7 @@
       "url": "https://a-samadi.com/writing/jev-ai-decision-model.html",
       "mainEntityOfPage": {"@type": "WebPage", "@id": "https://a-samadi.com/writing/jev-ai-decision-model.html", "primaryImageOfPage": {"@type": "ImageObject", "url": "https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg"}},
       "datePublished": "2026-09-25",
-      "dateModified": "2026-09-25",
+      "dateModified": "2026-10-10T12:47:00+03:30",
       "inLanguage": "en",
       "image": "https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg",
       "keywords": [
@@ -100,11 +100,17 @@
 <h1>Jev: an AI decision model, not another chatbot</h1>
 <p class="lead">Most people meet AI as a system that writes. Jev is interesting because it is built to choose: to make a bounded decision that software can act on.</p>
 <p class="byline">By <a href="/about.html" rel="author">Ahmadreza Samadi</a> · <time datetime="2026-09-25">25 September 2026</time></p>
+<p class="byline">Updated <time datetime="2026-10-10T12:47:00+03:30">10 October 2026</time></p>
+<section aria-labelledby="article-at-a-glance">
+<h2 id="article-at-a-glance">At a glance</h2>
+<p>According to TypeSafe, Jev answers within options an application defines. A structured answer can still be the wrong decision, and the cited benchmark is not a general model ranking. In the test I propose, confidence thresholds would be checked on held-out workflow data, uncertain cases would be reviewed, and permissions and final actions would stay in application code.</p>
+</section>
+
 <p>On 15 September 2026, <a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">TypeSafe AI introduced Jev</a> and what it calls System One models. The pitch is not a better conversation partner. It is a model designed to sit inside an application at the moment software needs a judgment, such as deciding where an incoming message should go next.</p>
 <h2>What is Jev?</h2>
 <p>According to <a href="https://docs.typesafe.ai/introduction">TypeSafe’s documentation</a>, Jev takes application state and typed questions, then returns choices, scores or probability-like values that code can use directly. Instead of producing an open-ended paragraph, it answers within the options you define.</p>
 <p>TypeSafe describes Jev’s sampling as parallel rather than autoregressive: it does not generate its answer token by token the way a chatbot writes text. That is the company’s description of its own architecture, and I treat it as a vendor claim until independent work examines it.</p>
-<h2>Deciding versus generating</h2>
+<h2>How can a decision model and a generative model work together?</h2>
 <p>Imagine a message arriving at a business: “I need help with my account.” Should it go to sales, to support, or to a person for review? A decision model can look at the message and pick support from the allowed options. A generative model such as GPT or Claude can then draft a helpful reply.</p>
 <p>One model helps decide what happens next; another helps explain or create. They can work together. GPT and Claude can also produce structured outputs, so the distinction is specialization and workflow design, not a claim that only Jev can return a structured answer.</p>
 <h2>What the early evidence shows</h2>
@@ -125,7 +131,7 @@
 <li>Keep exact rules, permissions and final actions in application code.</li>
 </ol>
 <p>Then measure what matters end to end: accuracy, review rate, latency and cost per accepted decision. That last measure applies a framework I use for any AI workflow, described in <a href="/writing/ai-cost-per-verified-result.html">AI cost per verified result</a>.</p>
-<h2>The limit to remember</h2>
+<h2>Can a structured answer still be the wrong decision?</h2>
 <p>A typed answer cannot drift outside its allowed format, but it can still be the wrong decision. Structure makes an output easier to use; it does not make it correct. Test with real examples, and keep uncertain cases open for review.</p>
 <h2>Continue the discussion</h2>
 <p>I wrote an <a href="https://www.linkedin.com/feed/update/urn:li:activity:7509183536575176704/">eight-page technical LinkedIn document</a> on Jev for engineering readers and a <a href="https://www.instagram.com/p/DdtJkPbCjAl/">simple Instagram explainer</a> for a general audience. Related reading: <a href="/writing/connected-ai-apps.html">Connected AI apps: access, scope and approval</a> and <a href="/writing/start-with-the-decision.html">Start with the decision, then build the AI</a>.</p>

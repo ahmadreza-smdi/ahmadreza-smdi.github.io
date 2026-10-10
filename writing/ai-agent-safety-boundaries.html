@@ -32,7 +32,7 @@
       "url": "https://a-samadi.com/writing/ai-agent-safety-boundaries.html",
       "mainEntityOfPage": {"@type": "WebPage", "@id": "https://a-samadi.com/writing/ai-agent-safety-boundaries.html", "primaryImageOfPage": {"@type": "ImageObject", "url": "https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg"}},
       "datePublished": "2026-09-29",
-      "dateModified": "2026-09-29",
+      "dateModified": "2026-10-10T12:47:00+03:30",
       "inLanguage": "en",
       "image": "https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg",
       "keywords": ["AI agent safety", "AI agent permissions", "NVIDIA OpenShell", "NVIDIA Sentry", "agent security"],
@@ -65,13 +65,19 @@
 <h1>AI agent safety: boundaries before actions</h1>
 <p class="lead">An AI assistant that only answers a question and an agent that can use tools need different safeguards. The moment software can act, permissions become part of the product design.</p>
 <p class="byline">By <a href="/about.html" rel="author">Ahmadreza Samadi</a> · <time datetime="2026-09-29">29 September 2026</time></p>
+<p class="byline">Updated <time datetime="2026-10-10T12:47:00+03:30">10 October 2026</time></p>
+<section aria-labelledby="article-at-a-glance">
+<h2 id="article-at-a-glance">At a glance</h2>
+<p>Before giving an AI agent access, define which account it acts as, what data and tools it can reach, whether it can read or change things, and which actions need approval. Enforce permissions outside the model, log attempts and failures, and keep a way to revoke access. No single boundary proves an agent safe.</p>
+</section>
+
 <p>On 28 September, <a href="https://nvidianews.nvidia.com/news/open-agent-safety-platform">NVIDIA announced its Open Agent Safety Platform</a>. The announcement combines OpenShell software with a separate Sentry reference system design. It is a useful prompt to ask where an AI agent’s limits should live—and what happens if it tries to cross them.</p>
 <h2>Why agents need more than a careful prompt</h2>
 <p>A chatbot may explain how to organize an inbox. An agent with email access might actually send, move or delete messages. The second system needs explicit limits on which account it uses, which data it can reach, which tools it may call and which actions require a person’s approval. Instructions inside a prompt are not a substitute for enforceable permissions outside the model.</p>
 <h2>What OpenShell and Sentry do</h2>
 <p>According to NVIDIA, <strong>OpenShell</strong> is an open-source secure runtime that traces agent actions and enforces policy while the agent runs. NVIDIA says OpenShell is now broadly available. Its software boundary is intended to restrict what the agent can do even if the model asks for more.</p>
 <p><strong>Sentry</strong> is different: NVIDIA describes it as an out-of-band watchdog in a reference system design using BlueField-4 DPUs. It is designed to monitor agent behavior and quarantine an agent that moves outside its boundary. The announcement does not mean Sentry is installed in every AI assistant, or that every system using OpenShell also has this hardware layer.</p>
-<h2>Four boundaries I would check</h2>
+<h2>Which four boundaries would I check before granting access?</h2>
 <ol>
 <li><strong>Identity:</strong> Which user or service account is the agent acting as?</li>
 <li><strong>Scope:</strong> Which files, messages, records and tools can it reach?</li>
@@ -79,7 +85,7 @@
 <li><strong>Oversight:</strong> Which actions require approval, and how are attempts and failures logged?</li>
 </ol>
 <p>The room-and-guard analogy is helpful: grant access to one room, then independently watch the door. But no single boundary proves an agent is safe. Teams still need task-specific tests, review paths and a way to revoke access.</p>
-<h2>Before allowing an agent to send email</h2>
+<h2>What would I test before allowing an agent to send email?</h2>
 <p>I would start with a narrow use case: let it draft a message, but require a person to approve the recipient and contents before sending. Next, test what happens when the agent reads misleading instructions inside an email, asks for a tool outside its allowed scope or retries after a denial. Only then should the team consider broader autonomy, with a measurable benefit and a clear rollback path.</p>
 <h2>Continue the discussion</h2>
 <p>The <a href="https://www.instagram.com/p/Dd2G3aRCgIF/">seven-slide Instagram carousel</a> explains these ideas visually, and the <a href="https://www.linkedin.com/feed/update/urn:li:activity:7510444836915916800/">LinkedIn document post</a> discusses the boundaries in more detail. For the related question of what a connected assistant can read or change, see <a href="/writing/connected-ai-apps.html">Connected AI apps: access, scope and approval</a>.</p>
