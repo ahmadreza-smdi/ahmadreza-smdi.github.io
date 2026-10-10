@@ -160,7 +160,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/writing/</loc>
-        <lastmod>2026-10-10T03:05:36+03:30</lastmod>
+        <lastmod>2026-10-10T06:01:29+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -184,7 +184,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/</loc>
-        <lastmod>2026-10-10T03:05:36+03:30</lastmod>
+        <lastmod>2026-10-10T06:01:29+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -208,7 +208,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/</loc>
-        <lastmod>2026-10-10T03:05:36+03:30</lastmod>
+        <lastmod>2026-10-10T06:01:29+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -1040,5 +1040,41 @@
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/speaking.html" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/speaking.html" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/speaking.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/why-wifi-is-slow-with-full-bars.html</loc>
+        <lastmod>2026-10-10T06:01:29+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-wifi-is-slow-with-full-bars.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-wifi-is-slow-with-full-bars.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-wifi-is-slow-with-full-bars.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-wifi-is-slow-with-full-bars.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/why-wifi-is-slow-with-full-bars/slide-01.png</image:loc>
+            <image:title>Why is Wi-Fi slow even with full bars?</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/why-wifi-is-slow-with-full-bars.html</loc>
+        <lastmod>2026-10-10T06:01:29+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-wifi-is-slow-with-full-bars.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-wifi-is-slow-with-full-bars.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-wifi-is-slow-with-full-bars.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-wifi-is-slow-with-full-bars.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/why-wifi-is-slow-with-full-bars/slide-01.png</image:loc>
+            <image:title>چرا با آنتن کامل وای‌فای، اینترنت کند است؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/why-wifi-is-slow-with-full-bars.html</loc>
+        <lastmod>2026-10-10T06:01:29+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-wifi-is-slow-with-full-bars.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-wifi-is-slow-with-full-bars.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-wifi-is-slow-with-full-bars.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-wifi-is-slow-with-full-bars.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/why-wifi-is-slow-with-full-bars/slide-01.png</image:loc>
+            <image:title>لماذا يبقى الإنترنت بطيئًا مع إشارة Wi-Fi كاملة؟</image:title>
+        </image:image>
     </url>
 </urlset>
