@@ -33,7 +33,7 @@
       "description": "Why a foldable phone can have a battery on each side but show one charge reading. Ahmadreza Samadi explains energy-aware gauging without guessing Apple's wiring.",
       "url": "https://a-samadi.com/writing/foldable-two-batteries.html",
       "mainEntityOfPage": {"@type": "WebPage", "@id": "https://a-samadi.com/writing/foldable-two-batteries.html", "primaryImageOfPage": {"@type": "ImageObject", "url": "https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg"}},
-      "datePublished": "2026-10-03", "dateModified": "2026-10-03", "inLanguage": "en",
+      "datePublished": "2026-10-03", "dateModified": "2026-10-10T13:35:56+03:30", "inLanguage": "en",
       "image": "https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg",
       "author": {"@type": "Person", "@id": "https://a-samadi.com/#person", "name": "Ahmadreza Samadi", "url": "https://a-samadi.com/about.html"},
       "publisher": {"@id": "https://a-samadi.com/#person"},
@@ -62,12 +62,17 @@
 <h1>Two batteries, one foldable phone: how the battery reading works</h1>
 <p class="lead">A foldable can put a battery on each side of its hinge and still feel like one device. The battery icon is a useful estimate of the whole system, not a simple vote between two percentages.</p>
 <p class="byline">By <a href="/about.html" rel="author">Ahmadreza Samadi</a> · <time datetime="2026-10-03">3 October 2026</time></p>
+<p class="byline">Updated <time datetime="2026-10-10T13:35:56+03:30">10 October 2026</time></p>
+<section aria-labelledby="article-at-a-glance">
+<h2 id="article-at-a-glance">At a glance</h2>
+<p>A combined battery reading estimates usable energy across the system. Capacity, load, temperature and health can matter, so simply averaging two percentages can mislead. The worked numbers below are illustrative; one icon does not reveal the device’s wiring or balancing algorithm.</p>
+</section>
 <h2>Why split the battery?</h2>
 <p>A folding hinge interrupts the space that an ordinary flat phone can use. Apple says its announced iPhone Duo places one high-energy battery on each side and uses Apple silicon and “energy rebalancing algorithms” to make them operate seamlessly as one. That confirms the two-battery design and the stated software-level goal. The announcement does not publish a detailed circuit diagram or the exact control algorithm, so the explanation below is about the general principle, not a teardown of iPhone Duo.</p>
-<h2>One useful reading from two stores of energy</h2>
+<h2>How does one reading combine two stores of energy?</h2>
 <p>The phone needs to estimate how much usable energy remains in the system. Battery fuel gauges do more than read an instantaneous voltage: they estimate state of charge and health using models that can account for capacity, load, resistance and temperature. The phone can then present a single system-level reading while managing charging and power use behind the scenes. The exact physical connection and balancing strategy depend on the product design.</p>
 <p>Why not just average the two displayed percentages? Suppose an illustrative battery A can store 12 watt-hours and is half full, while battery B can store 8 watt-hours and is full. In this example, 50% means half the energy stored when the battery is fully charged; a real phone’s displayed charge percentage may be calculated differently. They hold about 6 + 8 = 14 watt-hours out of 20, or <strong>70%</strong> of their combined nominal energy. Averaging 50% and 100% would say 75% and overstate the total. These are made-up numbers, not iPhone Duo specifications. Real remaining-runtime estimates also depend on load, battery health and what part of the stored energy is usable.</p>
-<h2>What the icon does not tell you</h2>
+<h2>What can’t one battery icon tell you?</h2>
 <p>One icon makes the device easier to use, but it does not reveal each pack’s capacity, charge level or health. Nor does it prove the two packs are wired in series, in parallel or through a particular converter. Those details require product-specific documentation or a reliable teardown. The clear distinction is this: Apple confirms two batteries and energy rebalancing; the capacity-weighted example explains why a combined reading needs more thought than averaging two percentages.</p>
 <h2>See the original explanation</h2>
 <p>My <a href="https://www.instagram.com/p/DeAhR0PCqaa/" hreflang="en">Instagram carousel</a> and <a href="https://www.linkedin.com/feed/update/urn:li:activity:7511910075654070272/" hreflang="en">LinkedIn document post</a> show the hinge constraint and the illustrative percentage example as short visual walkthroughs.</p>

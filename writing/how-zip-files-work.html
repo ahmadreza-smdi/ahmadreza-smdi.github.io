@@ -35,7 +35,7 @@
       "url": "https://a-samadi.com/writing/how-zip-files-work.html",
       "mainEntityOfPage": {"@type": "WebPage", "@id": "https://a-samadi.com/writing/how-zip-files-work.html", "primaryImageOfPage": {"@type": "ImageObject", "url": "https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg"}},
       "datePublished": "2026-09-28",
-      "dateModified": "2026-09-29",
+      "dateModified": "2026-10-10T13:35:56+03:30",
       "inLanguage": "en",
       "image": "https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg",
       "author": {
@@ -94,11 +94,17 @@
 <h1>How ZIP files work: compression without losing data</h1>
 <p class="lead">A ZIP can bundle files, compress their contents, or do both. A smaller archive is useful only if extraction can reconstruct the original bytes exactly.</p>
 <p class="byline">By <a href="/about.html" rel="author">Ahmadreza Samadi</a> · <time datetime="2026-09-28">28 September 2026</time></p>
-<h2>A container and a compression method</h2>
+<p class="byline">Updated <time datetime="2026-10-10T13:35:56+03:30">10 October 2026</time></p>
+<section aria-labelledby="article-at-a-glance">
+<h2 id="article-at-a-glance">At a glance</h2>
+<p>ZIP is the container; DEFLATE is one compression method it can use. Files that are already compressed may barely shrink, and archive headers can even make the result larger. Compression does not provide confidentiality, and CRC-32 helps detect accidental corruption rather than proving authenticity.</p>
+</section>
+
+<h2>How are ZIP and DEFLATE different?</h2>
 <p>ZIP stores individual file entries and a central directory that helps an extractor locate them. Entries can be stored without compression or use a supported compression method. DEFLATE is a common choice, but ZIP and DEFLATE are not interchangeable names.</p>
-<h2>How repeated bytes become instructions</h2>
+<h2>How do repeated bytes become instructions?</h2>
 <p>In my animated example, the bytes ABCDABCD repeat a four-byte sequence. After the first ABCD, a compressor could represent the next part as “go back four bytes and copy four.” This illustrates an LZ77 length-distance match. It is not a promise about the exact output of a real compressor for such a short input.</p>
-<h2>Where Huffman coding fits</h2>
+<h2>Where does Huffman coding fit in DEFLATE?</h2>
 <p>DEFLATE can encode literals and match information using Huffman codes. A suitable code gives common symbols shorter representations. Fixed-code and uncompressed blocks also exist; a compressor chooses how to represent its data. Extraction decodes the instructions and rebuilds the bytes in order.</p>
 <h2>Why does a JPG or MP4 barely shrink?</h2>
 <p>Many photos and videos are already compressed. Another compression pass often finds little useful redundancy, and the archive's headers can even make the result larger. Bundling several files can still make a ZIP useful when it saves no space.</p>

@@ -34,7 +34,7 @@
       "url": "https://a-samadi.com/ar/writing/how-zip-files-work.html",
       "mainEntityOfPage": {"@type": "WebPage", "@id": "https://a-samadi.com/ar/writing/how-zip-files-work.html", "primaryImageOfPage": {"@type": "ImageObject", "url": "https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg"}},
       "datePublished": "2026-09-28",
-      "dateModified": "2026-09-29",
+      "dateModified": "2026-10-10T13:35:56+03:30",
       "inLanguage": "ar",
       "image": "https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg",
       "author": {
@@ -96,7 +96,13 @@
 <h1>كيف تعمل ملفات ZIP؟ ضغط البيانات دون فقدانها</h1>
 <p class="lead">يمكن لملف ZIP جمع ملفات متعددة أو ضغط محتوياتها أو القيام بالأمرين. فائدة الأرشيف الأصغر تعتمد على استعادة البايتات الأصلية بدقة عند فك الضغط.</p>
 <p class="byline">بقلم <a href="/ar/about.html" rel="author">أحمدرضا صمدي</a> · <time datetime="2026-09-28">٢٨ سبتمبر ٢٠٢٦</time> · <a href="/writing/how-zip-files-work.html" hreflang="en">النسخة الإنجليزية من المقال</a></p>
-<h2>حاوية ملفات وطريقة ضغط</h2>
+<p class="byline">تحديث <time datetime="2026-10-10T13:35:56+03:30">١٠ أكتوبر ٢٠٢٦</time></p>
+<section aria-labelledby="article-at-a-glance">
+<h2 id="article-at-a-glance">نظرة سريعة</h2>
+<p>ZIP حاوية للأرشيف، وDEFLATE إحدى طرق الضغط التي يمكن استخدامها فيه. قد لا تصغر الملفات المضغوطة مسبقًا كثيرًا، وقد تجعل ترويسات الأرشيف حجمه أكبر. الضغط لا يمنح السرية، ويساعد CRC-32 على كشف التلف العرضي لكنه لا يثبت أصالة البيانات.</p>
+</section>
+
+<h2>ما الفرق بين ZIP وDEFLATE؟</h2>
 <p>يحتفظ ZIP بإدخالات منفصلة للملفات ودليل مركزي يساعد أداة الاستخراج على العثور عليها. يمكن تخزين كل إدخال دون ضغط أو باستخدام طريقة ضغط مدعومة. DEFLATE خيار شائع، لكن ZIP وDEFLATE ليسا اسمين للشيء نفسه.</p>
 <h2>كيف تتحول البايتات المتكررة إلى تعليمات؟</h2>
 <p>في مثالي المتحرك، يتكرر تسلسل من أربعة بايتات داخل ABCDABCD. بعد ABCD الأولى، يمكن تمثيل الجزء التالي بتعليمة: «ارجع أربعة بايتات وانسخ أربعة». يوضح ذلك مطابقة الطول والمسافة في LZ77، ولا يضمن الناتج الفعلي لضاغط حقيقي مع مدخل قصير كهذا.</p>
