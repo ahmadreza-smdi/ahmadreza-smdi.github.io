@@ -39,6 +39,18 @@ Export before leaving: worksheet entries stay in page memory. This is a structur
 
 Inspect the [English page source](tools/before-you-build-ai.html) alongside the worksheet logic.
 
+## Offline video publication-date linter
+
+[Video date lint](tools/video-date-lint/) is an original Python utility for checking local HTML JSON-LD and video sitemap publication dates. It reports missing timezones, impossible dates and conflicting timestamps for the same exact video URL without modifying files or making network requests.
+
+From the repository root, with Python 3.10 or newer:
+
+```sh
+python3 tools/video-date-lint/video_datetime_lint.py . --sitemap sitemap.xml --strict-datetime --require-sitemap-dates --require-video
+```
+
+The [utility documentation](tools/video-date-lint/README.md) explains the checks, exit codes, tests and limits. Its [MIT license](tools/video-date-lint/LICENSE) covers only files within `tools/video-date-lint/`; it does not relicense the rest of this repository or its media and fonts.
+
 ## Preview locally
 
 The site uses static HTML, CSS and JavaScript. From the repository root, start a local server with Python 3:
