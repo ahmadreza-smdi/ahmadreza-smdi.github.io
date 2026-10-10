@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://a-samadi.com/</loc>
-        <lastmod>2026-10-09</lastmod>
+        <lastmod>2026-10-10T10:08:47+03:30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/" />
@@ -21,7 +21,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/about.html</loc>
-        <lastmod>2026-10-09</lastmod>
+        <lastmod>2026-10-10T10:08:47+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/about.html" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/about.html" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/about.html" />
@@ -112,7 +112,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/fa/</loc>
-        <lastmod>2026-10-09</lastmod>
+        <lastmod>2026-10-10T10:08:47+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/" />
@@ -120,7 +120,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/ar/</loc>
-        <lastmod>2026-10-09</lastmod>
+        <lastmod>2026-10-10T10:08:47+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/" />
