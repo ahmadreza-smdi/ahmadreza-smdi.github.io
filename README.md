@@ -19,6 +19,26 @@ These case studies describe my contributions to company and client projects; thi
 - [English RSS feed](https://a-samadi.com/writing/feed.xml) — article summaries linking to the original essays.
 - [Biography and official profiles](https://a-samadi.com/about.html) · [Get in touch](https://a-samadi.com/#contact).
 
+## Try the property-research example
+
+Open the [live English guide](https://a-samadi.com/tools/before-you-build-ai.html) with JavaScript enabled. **Property research** loads automatically and builds an illustrative brief. You can reload it with the **Property research** button; **Support triage** loads another example, and **Start empty** clears the worksheet.
+
+The property example asks which properties deserve closer investigation before an investor commits more time. Its next action is a shortlist followed by requests for missing information or a manual inspection. The initial selections are:
+
+- Evidence: **Some is available; gaps remain**.
+- Consequences: **It creates meaningful rework or cost**.
+- Review: **A person reviews every result**.
+
+The default **Resolve first** section begins:
+
+> Make the gaps visible. Identify missing sources and define when the tool must ask for information or hand the decision back to a person.
+
+Try changing **Who reviews before action?** to **No review is planned**. Both **Export .txt** and **Print / save PDF** become disabled when an input changes. Click **Build my decision brief** to rebuild from the completed fields; the brief now recommends adding a review step, and export/print become available again.
+
+Export before leaving: worksheet entries stay in page memory. This is a structured thinking aid with illustrative scenarios, not customer results or a validated assessment. The [worksheet logic](js/decision-guide.js) turns the selected evidence, consequences and review choices into guidance; it does not validate the supplied evidence.
+
+Inspect the [English page source](tools/before-you-build-ai.html) alongside the worksheet logic.
+
 ## Preview locally
 
 The site uses static HTML, CSS and JavaScript. From the repository root, start a local server with Python 3:
