@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="Ahmadreza Samadi">
+<title>Why can AI lose track of something you already said? | Ahmadreza Samadi</title><meta name="description" content="Chat history, working context, summaries, saved memory and training are different things. Understand why a chatbot can miss an earlier detail and how to help."><meta name="robots" content="index, follow, max-image-preview:large"><link rel="canonical" href="https://a-samadi.com/writing/why-ai-loses-earlier-chat-context.html"><link rel="alternate" type="application/rss+xml" title="Ahmadreza Samadi: English writing" href="https://a-samadi.com/writing/feed.xml">
+<link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-ai-loses-earlier-chat-context.html">
+<link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-ai-loses-earlier-chat-context.html">
+<link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-ai-loses-earlier-chat-context.html">
+<link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-ai-loses-earlier-chat-context.html">
+<link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg"><link rel="stylesheet" href="/css/site.css?v=20261009-lagoon4">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ahmadreza Samadi">
+<meta property="og:title" content="Why can AI lose track of something you already said?">
+<meta property="og:description" content="Chat history, working context, summaries, saved memory and training are different things. Understand why a chatbot can miss an earlier detail and how to help.">
+<meta property="og:url" content="https://a-samadi.com/writing/why-ai-loses-earlier-chat-context.html">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://a-samadi.com/assets/writing/why-ai-loses-earlier-chat-context/slide-01.png">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1350">
+<meta property="og:image:alt" content="Two fictional chat cards say budget 600 dollars and later propose a 900 dollar trip. The example illustrates lost context without claiming a real chatbot produced these messages.">
+<meta property="og:locale:alternate" content="fa_IR">
+<meta property="og:locale:alternate" content="ar_AE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why can AI lose track of something you already said?">
+<meta name="twitter:description" content="Chat history, working context, summaries, saved memory and training are different things. Understand why a chatbot can miss an earlier detail and how to help.">
+<meta name="twitter:image" content="https://a-samadi.com/assets/writing/why-ai-loses-earlier-chat-context/slide-01.png">
+<meta name="twitter:image:alt" content="Two fictional chat cards say budget 600 dollars and later propose a 900 dollar trip. The example illustrates lost context without claiming a real chatbot produced these messages.">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://a-samadi.com/writing/why-ai-loses-earlier-chat-context.html#article",
+      "headline": "Why can AI lose track of something you already said?",
+      "description": "Chat history, working context, summaries, saved memory and training are different things. Understand why a chatbot can miss an earlier detail and how to help.",
+      "url": "https://a-samadi.com/writing/why-ai-loses-earlier-chat-context.html",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://a-samadi.com/writing/why-ai-loses-earlier-chat-context.html",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://a-samadi.com/assets/writing/why-ai-loses-earlier-chat-context/slide-01.png"
+        }
+      },
+      "datePublished": "2026-10-10T12:00:13+03:30",
+      "dateModified": "2026-10-10T12:00:13+03:30",
+      "inLanguage": "en",
+      "image": "https://a-samadi.com/assets/writing/why-ai-loses-earlier-chat-context/slide-01.png",
+      "author": {
+        "@type": "Person",
+        "@id": "https://a-samadi.com/#person",
+        "name": "Ahmadreza Samadi",
+        "url": "https://a-samadi.com/about.html"
+      },
+      "publisher": {
+        "@id": "https://a-samadi.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://a-samadi.com/#website"
+      },
+      "citation": [
+        "https://platform.claude.com/docs/en/build-with-claude/context-windows",
+        "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+        "https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context",
+        "https://www.ibm.com/think/topics/ai-inference"
+      ],
+      "hasPart": {
+        "@type": "CreativeWork",
+        "name": "See the explanation in slides",
+        "inLanguage": "en",
+        "url": "https://a-samadi.com/assets/writing/why-ai-loses-earlier-chat-context/why-ai-loses-earlier-chat-context-carousel.pdf"
+      },
+      "workTranslation": [
+        {
+          "@id": "https://a-samadi.com/fa/writing/why-ai-loses-earlier-chat-context.html#article"
+        },
+        {
+          "@id": "https://a-samadi.com/ar/writing/why-ai-loses-earlier-chat-context.html#article"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://a-samadi.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Writing",
+          "item": "https://a-samadi.com/writing/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Why can AI lose track of something you already said?"
+        }
+      ]
+    }
+  ]
+}</script>
+<style>.carousel-opening{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1fr);gap:1.5rem;align-items:center;margin:2rem 0}.carousel-cover{margin:0}.carousel-cover img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 0 0 1px var(--line)}.carousel-cover figcaption,.carousel-note{font-size:.85rem!important;color:var(--muted)!important;line-height:1.6}.carousel-cover figcaption{padding:.65rem 0}.carousel-summary{display:grid;gap:.75rem}.carousel-summary div{border:1px solid var(--line);background:var(--surface,#fff);border-radius:18px;padding:1.15rem}.carousel-summary h2{font-size:1.1rem!important;margin:0 0 .4rem!important}.carousel-summary p{margin:0!important;font-size:1rem!important}.carousel-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.25rem 0}.carousel-gallery figure{margin:0}.carousel-gallery img{display:block;width:100%;height:auto;border-radius:12px}.carousel-gallery figcaption{font-size:.85rem;color:var(--muted);padding:.5rem 0}.carousel-slides summary{cursor:pointer;padding:1rem;border:1px solid var(--line);border-radius:12px;color:var(--ink);font-weight:600}.carousel-slides summary:focus-visible{outline:3px solid var(--accent,#0b6a7a);outline-offset:4px}@media(max-width:650px){.carousel-opening,.carousel-gallery{grid-template-columns:1fr}.carousel-cover{max-width:440px;margin-inline:auto}}</style>
+<link rel="stylesheet" href="/css/author-box.css?v=20261009-author1">
+<script src="/js/site-analytics.js?v=20261009-analytics1" defer></script>
+</head>
+<body class="editorial-body"><a class="skip-link" href="#main">Skip to content</a><header class="editorial-header"><a href="/"><img src="/assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">Ahmadreza Samadi / Home</a></header>
+<main id="main" class="editorial"><nav class="byline" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/writing/">Writing</a> / <span aria-current="page">Why can AI lose track of something you already said?</span></nav>
+<article><p class="eyebrow">Everyday ideas, explained</p><h1>Why can AI lose track of something you already said?</h1><p class="lead">You told an AI assistant the budget was $600, then it proposed a $900 trip. This fictional example makes one distinction clear: what you can scroll back to see is not necessarily everything used for the next reply.</p>
+<p class="byline">By <a href="/about.html" rel="author">Ahmadreza Samadi</a> · <time datetime="2026-10-10T12:00:13+03:30">10 October 2026</time></p>
+<div class="carousel-opening"><figure class="carousel-cover"><img src="/assets/writing/why-ai-loses-earlier-chat-context/slide-01.png" alt="Two fictional chat cards say budget 600 dollars and later propose a 900 dollar trip. The example illustrates lost context without claiming a real chatbot produced these messages." width="1080" height="1350" decoding="async"><figcaption>Original pastel butter yellow carousel. Simplified diagrams, not product screenshots.</figcaption></figure><div class="carousel-summary">
+<div><h2>Context</h2><p>Information available for this reply.</p></div>
+<div><h2>Memory</h2><p>Selected saved notes, if the app supports them.</p></div>
+<div><h2>Training</h2><p>How the model learned its underlying patterns.</p></div>
+</div></div>
+<section><h2>Each reply uses available context</h2><p>Context is the input available when a model produces a response. It can include your question, instructions, earlier messages and relevant files or tool results. The context window is a limited amount of working space. Its size depends on the model; text, images and the new answer can all consume it.</p><p class="carousel-note">Source: <a href="https://platform.claude.com/docs/en/build-with-claude/context-windows" hreflang="en"><bdi>Anthropic: Context windows</bdi></a></p></section>
+<section><h2>A long chat may be managed by the app</h2><p>A chat application can summarize earlier turns, leave some material out or retrieve past information when needed. Different products handle this differently. A visible transcript and the current input therefore need not be identical. The working-desk illustration is an analogy, not a literal description of storage.</p><p class="carousel-note">Source: <a href="https://platform.claude.com/docs/en/build-with-claude/context-windows" hreflang="en"><bdi>Anthropic: Context windows</bdi></a> · <a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents" hreflang="en"><bdi>Anthropic: Effective context engineering for AI agents</bdi></a> · <a href="https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context" hreflang="en"><bdi>Claude Help Center: Chat search and memory</bdi></a></p></section>
+<section><h2>A summary can drop a detail</h2><p>A shorter summary may preserve the main goal but omit an exact limit, date or decision. In the fictional example, plan a trip survives while budget $600 is missing. Summarization can help a conversation continue, but the selection of what to keep matters.</p><p class="carousel-note">Source: <a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents" hreflang="en"><bdi>Anthropic: Effective context engineering for AI agents</bdi></a></p></section>
+<section><h2>Available does not mean correctly used</h2><p>A model can overlook or misuse a detail that is still in its input. Larger context is not a guarantee of better recall or a correct answer. Losing access to a constraint and failing to follow an available constraint are different failure modes.</p><p class="carousel-note">Source: <a href="https://platform.claude.com/docs/en/build-with-claude/context-windows" hreflang="en"><bdi>Anthropic: Context windows</bdi></a> · <a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents" hreflang="en"><bdi>Anthropic: Effective context engineering for AI agents</bdi></a></p></section>
+<section><h2>Saved memory is a separate feature</h2><p>Some applications save selected information across conversations or retrieve relevant earlier chats. These features depend on the product, settings and access. They are not the same as including every old message in every reply. Review important saved notes rather than assuming a complete permanent transcript is active.</p><p class="carousel-note">Source: <a href="https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context" hreflang="en"><bdi>Claude Help Center: Chat search and memory</bdi></a></p></section>
+<section><h2>A message is not an instant training step</h2><p>Training adjusts a model to learn patterns. Ordinary answering, called inference, uses a trained model on current input. Sending a chat message does not itself instantly retrain the model. A service may have separate policies for later use of chat data; check its settings and terms.</p><p class="carousel-note">Source: <a href="https://www.ibm.com/think/topics/ai-inference" hreflang="en"><bdi>IBM: What is AI inference?</bdi></a></p></section>
+<section><h2>Keep a short current brief</h2><p>For a long task, restate the goal, hard limits and latest decisions together. Ask the assistant to list those constraints before answering, then compare the result with them. A fresh brief helps provide useful input; it cannot guarantee correctness. Check important names, dates and numbers in the final output.</p><p class="carousel-note">Source: <a href="https://platform.claude.com/docs/en/build-with-claude/context-windows" hreflang="en"><bdi>Anthropic: Context windows</bdi></a> · <a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents" hreflang="en"><bdi>Anthropic: Effective context engineering for AI agents</bdi></a></p></section>
+<h2>See the explanation in slides</h2><p>These original diagrams explain the mechanism. The carousel is in English.</p><details class="carousel-slides"><summary>View all 10 English slides</summary><div class="carousel-gallery">
+<figure><img src="/assets/writing/why-ai-loses-earlier-chat-context/slide-01.png" alt="Two fictional chat cards say budget 600 dollars and later propose a 900 dollar trip. The example illustrates lost context without claiming a real chatbot produced these messages." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>Slide <bdi>1 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/why-ai-loses-earlier-chat-context/slide-02.png" alt="Question, instructions and selected conversation material feed into one current AI reply. Context is defined as the information available for that reply." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>Slide <bdi>2 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/why-ai-loses-earlier-chat-context/slide-03.png" alt="A small active desk holds a few information cards while a larger stored-history shelf sits apart. This is an analogy for limited active context, not a literal storage design." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>Slide <bdi>3 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/why-ai-loses-earlier-chat-context/slide-04.png" alt="A long row of old and recent conversation cards sits behind an outlined active window. A summary card can bring some earlier information into the window, with behavior labeled as app dependent." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>Slide <bdi>4 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/why-ai-loses-earlier-chat-context/slide-05.png" alt="A fictional original brief includes a trip and budget 600 dollars; a short summary says plan a trip and omits the budget. Summaries can lose important detail." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>Slide <bdi>5 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/why-ai-loses-earlier-chat-context/slide-06.png" alt="An active context card clearly says budget 600 dollars, while the reply proposes 900 dollars. A check highlights the mismatch, showing that context availability does not guarantee correct use." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>Slide <bdi>6 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/why-ai-loses-earlier-chat-context/slide-07.png" alt="A saved note box and an active chat window are shown as separate objects, with one selected note flowing into the current reply. Memory is not depicted as a complete transcript." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>Slide <bdi>7 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/why-ai-loses-earlier-chat-context/slide-08.png" alt="A training stage shapes a model, then a separate chat-input stage sends a question through that trained model to a reply. The stages distinguish training from answering." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>Slide <bdi>8 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/why-ai-loses-earlier-chat-context/slide-09.png" alt="A fictional travel brief lists goal, maximum budget 600 dollars and no car rental. Three stages say restate, confirm and check, emphasizing verification rather than guaranteed compliance." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>Slide <bdi>9 / 10</bdi></figcaption></figure>
+<figure><img src="/assets/writing/why-ai-loses-earlier-chat-context/slide-10.png" alt="Three separate labeled cards identify working context, optional saved memory and training. A final brief says keep the goal, current constraints and latest decisions easy to find." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>Slide <bdi>10 / 10</bdi></figcaption></figure>
+</div></details><p><a href="/assets/writing/why-ai-loses-earlier-chat-context/why-ai-loses-earlier-chat-context-carousel.pdf" type="application/pdf" hreflang="en">Download the English carousel PDF</a></p>
+<h2>Sources</h2><p class="carousel-note">Primary references checked on 10 October 2026. Product support and behavior can vary.</p><ul>
+<li><a href="https://platform.claude.com/docs/en/build-with-claude/context-windows" hreflang="en"><bdi>Anthropic: Context windows</bdi></a></li>
+<li><a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents" hreflang="en"><bdi>Anthropic: Effective context engineering for AI agents</bdi></a></li>
+<li><a href="https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context" hreflang="en"><bdi>Claude Help Center: Chat search and memory</bdi></a></li>
+<li><a href="https://www.ibm.com/think/topics/ai-inference" hreflang="en"><bdi>IBM: What is AI inference?</bdi></a></li>
+</ul>
+<!-- author-box:start -->
+<aside class="article-author" aria-labelledby="article-author-title">
+<h2 id="article-author-title">About the author</h2>
+<p class="article-author__name"><a href="/about.html" rel="author">Ahmadreza Samadi</a></p>
+<p>Technology Entrepreneur based in Dubai. Co-Founder &amp; Technical Lead at Appraiva; Co-Founder &amp; CEO at Royal Abraj Group.</p>
+</aside>
+<!-- author-box:end -->
+</article>
+<footer class="editorial-footer"><nav aria-label="Related reading"><a href="/writing/">Writing</a> · <a href="/about.html">About Ahmadreza Samadi</a></nav><p>Ahmadreza Samadi</p></footer></main></body></html>

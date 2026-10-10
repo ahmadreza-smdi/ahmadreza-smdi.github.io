@@ -160,7 +160,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/writing/</loc>
-        <lastmod>2026-10-10T06:01:29+03:30</lastmod>
+        <lastmod>2026-10-10T12:00:13+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -184,7 +184,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/</loc>
-        <lastmod>2026-10-10T06:01:29+03:30</lastmod>
+        <lastmod>2026-10-10T12:00:13+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -208,7 +208,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/</loc>
-        <lastmod>2026-10-10T06:01:29+03:30</lastmod>
+        <lastmod>2026-10-10T12:00:13+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -1075,6 +1075,42 @@
         <image:image>
             <image:loc>https://a-samadi.com/assets/writing/why-wifi-is-slow-with-full-bars/slide-01.png</image:loc>
             <image:title>لماذا يبقى الإنترنت بطيئًا مع إشارة Wi-Fi كاملة؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/why-ai-loses-earlier-chat-context.html</loc>
+        <lastmod>2026-10-10T12:00:13+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-ai-loses-earlier-chat-context.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-ai-loses-earlier-chat-context.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-ai-loses-earlier-chat-context.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-ai-loses-earlier-chat-context.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/why-ai-loses-earlier-chat-context/slide-01.png</image:loc>
+            <image:title>Why can AI lose track of something you already said?</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/why-ai-loses-earlier-chat-context.html</loc>
+        <lastmod>2026-10-10T12:00:13+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-ai-loses-earlier-chat-context.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-ai-loses-earlier-chat-context.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-ai-loses-earlier-chat-context.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-ai-loses-earlier-chat-context.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/why-ai-loses-earlier-chat-context/slide-01.png</image:loc>
+            <image:title>چرا هوش مصنوعی چیزی را که قبلاً گفتید از یاد می‌برد؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/why-ai-loses-earlier-chat-context.html</loc>
+        <lastmod>2026-10-10T12:00:13+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-ai-loses-earlier-chat-context.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-ai-loses-earlier-chat-context.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-ai-loses-earlier-chat-context.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-ai-loses-earlier-chat-context.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/why-ai-loses-earlier-chat-context/slide-01.png</image:loc>
+            <image:title>لماذا قد يفقد الذكاء الاصطناعي تفصيلًا ذكرته سابقًا؟</image:title>
         </image:image>
     </url>
 </urlset>

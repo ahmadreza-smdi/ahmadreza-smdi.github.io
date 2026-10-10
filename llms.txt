@@ -54,6 +54,7 @@ Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and
 - [Why do identical-looking USB-C cables behave differently?](https://a-samadi.com/writing/why-usb-c-cables-differ.html): USB-C describes the connector. Power, file-transfer speed and video support are separate capabilities to check in the whole connection.
 - [How does your phone turn text in a photo into copyable words?](https://a-samadi.com/writing/how-photo-text-recognition-works.html): OCR finds text regions and recognises visual patterns as letters and words. The AI feature can save typing, but copied text still needs checking.
 - [Why is Wi-Fi slow even with full bars?](https://a-samadi.com/writing/why-wifi-is-slow-with-full-bars.html): Full Wi-Fi bars describe your signal to the router, not the speed of the whole internet route. Learn what else can slow it down and how to compare.
+- [Why can AI lose track of something you already said?](https://a-samadi.com/writing/why-ai-loses-earlier-chat-context.html): Chat history, working context, summaries, saved memory and training are different things. Understand why a chatbot can miss an earlier detail and how to help.
 
 ## Films
 

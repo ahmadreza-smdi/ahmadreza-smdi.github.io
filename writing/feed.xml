@@ -8,6 +8,14 @@
     <dc:creator>Ahmadreza Samadi</dc:creator>
     <atom:link href="https://a-samadi.com/writing/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Why can AI lose track of something you already said?</title>
+      <link>https://a-samadi.com/writing/why-ai-loses-earlier-chat-context.html</link>
+      <description>Chat history, working context, summaries, saved memory and training are different things. Understand why a chatbot can miss an earlier detail and how to help.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Sat, 10 Oct 2026 08:30:13 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/why-ai-loses-earlier-chat-context.html</guid>
+    </item>
+    <item>
       <title>Why is Wi-Fi slow even with full bars?</title>
       <link>https://a-samadi.com/writing/why-wifi-is-slow-with-full-bars.html</link>
       <description>Full Wi-Fi bars describe your signal to the router, not the speed of the whole internet route. Learn what else can slow it down and how to compare.</description>
