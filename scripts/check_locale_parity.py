@@ -226,6 +226,7 @@ for css in ROOT.rglob('*.css'):
   check_local_asset(source,ref)
 
 clusters = (
+ ('writing/how-many-coffees-to-break-even.html','fa/writing/how-many-coffees-to-break-even.html','ar/writing/how-many-coffees-to-break-even.html'),
  ('writing/why-ai-loses-earlier-chat-context.html','fa/writing/why-ai-loses-earlier-chat-context.html','ar/writing/why-ai-loses-earlier-chat-context.html'),
  ('writing/why-wifi-is-slow-with-full-bars.html','fa/writing/why-wifi-is-slow-with-full-bars.html','ar/writing/why-wifi-is-slow-with-full-bars.html'),
  ('now.html','fa/now.html','ar/now.html'),
