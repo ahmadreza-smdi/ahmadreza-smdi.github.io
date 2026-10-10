@@ -57,6 +57,7 @@ Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and
 - [Why can AI lose track of something you already said?](https://a-samadi.com/writing/why-ai-loses-earlier-chat-context.html): Chat history, working context, summaries, saved memory and training are different things. Understand why a chatbot can miss an earlier detail and how to help.
 - [How many coffees must a cafe sell before it makes any profit?](https://a-samadi.com/writing/how-many-coffees-to-break-even.html): A fictional cafe sells 100 coffees for $500 and makes $0 operating profit. Follow its costs to understand contribution and break-even.
 - [How does property data enrichment connect an image to the right property?](https://a-samadi.com/writing/property-data-enrichment.html): A fictional image-and-record comparison shows how to check property identity, source dates and unresolved claims before combining property information.
+- [How can a building have a live digital copy?](https://a-samadi.com/writing/how-building-digital-twins-work.html): Sensors connect real rooms and equipment to an updating digital model. See how a building digital twin turns readings into useful context.
 
 ## Films
 

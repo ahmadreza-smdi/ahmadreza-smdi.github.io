@@ -160,7 +160,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/writing/</loc>
-        <lastmod>2026-10-10T20:30:06+03:30</lastmod>
+        <lastmod>2026-10-11T00:08:56+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -184,7 +184,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/</loc>
-        <lastmod>2026-10-10T20:30:06+03:30</lastmod>
+        <lastmod>2026-10-11T00:08:56+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -208,7 +208,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/</loc>
-        <lastmod>2026-10-10T20:30:06+03:30</lastmod>
+        <lastmod>2026-10-11T00:08:56+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -1183,6 +1183,42 @@
         <image:image>
             <image:loc>https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg</image:loc>
             <image:title>كيف يربط إثراء البيانات العقارية الصورة بالعقار الصحيح؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/how-building-digital-twins-work.html</loc>
+        <lastmod>2026-10-11T00:08:56+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/how-building-digital-twins-work.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/how-building-digital-twins-work.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/how-building-digital-twins-work.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/how-building-digital-twins-work.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/how-building-digital-twins-work/slide-01.png</image:loc>
+            <image:title>How can a building have a live digital copy?</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/how-building-digital-twins-work.html</loc>
+        <lastmod>2026-10-11T00:08:56+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/how-building-digital-twins-work.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/how-building-digital-twins-work.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/how-building-digital-twins-work.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/how-building-digital-twins-work.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/how-building-digital-twins-work/slide-01.png</image:loc>
+            <image:title>یک ساختمان چطور می‌تواند نسخه دیجیتال زنده داشته باشد؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/how-building-digital-twins-work.html</loc>
+        <lastmod>2026-10-11T00:08:56+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/how-building-digital-twins-work.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/how-building-digital-twins-work.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/how-building-digital-twins-work.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/how-building-digital-twins-work.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/how-building-digital-twins-work/slide-01.png</image:loc>
+            <image:title>كيف يمكن أن يكون للمبنى نسخة رقمية حيّة؟</image:title>
         </image:image>
     </url>
 </urlset>
