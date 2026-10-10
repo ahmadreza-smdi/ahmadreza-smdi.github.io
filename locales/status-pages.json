@@ -1,0 +1,426 @@
+{
+  "primary_language": "en",
+  "email": "ahmadreza.smdi@gmail.com",
+  "pages": [
+    {
+      "id": "now",
+      "updated_at": "2026-10-10T03:42:25+03:30",
+      "locales": {
+        "en": {
+          "title": "Now | Ahmadreza Samadi",
+          "description": "Ahmadreza Samadi's current work at Appraiva and Royal Abraj Group, alongside recent plain-language technology explainers. October 2026.",
+          "heading": "Now",
+          "lead": "What I’m working on and sharing in October 2026.",
+          "sections": [
+            {
+              "id": "appraiva",
+              "heading": "AI real estate intelligence",
+              "paragraphs": [
+                "I’m based in Dubai and work remotely as Co-Founder & Technical Lead at Appraiva, a US-based company in Cleveland, Ohio. My work connects property imagery analysis, property data, enrichment and search with tools for investment research."
+              ],
+              "links": [
+                {
+                  "path": "work/appraiva.html",
+                  "label": "My work at Appraiva"
+                }
+              ]
+            },
+            {
+              "id": "royal-abraj",
+              "heading": "Business systems in Dubai",
+              "paragraphs": [
+                "As Co-Founder & CEO of Royal Abraj Group, I lead digital strategy across websites, CRM workflows, customer tools and internal operations. My work connects the customer journey with the systems the team uses to manage it."
+              ],
+              "links": [
+                {
+                  "path": "work/royal-abraj.html",
+                  "label": "My work at Royal Abraj Group"
+                }
+              ]
+            },
+            {
+              "id": "recent-writing",
+              "heading": "Recently shared",
+              "paragraphs": [
+                "My latest technology explainers cover how contactless cards work without batteries, how noise cancellation works, why USB-C cables have different capabilities, and how phones recognize text in photos."
+              ],
+              "links": [
+                {
+                  "path": "writing/how-contactless-cards-work.html",
+                  "label": "Contactless cards"
+                },
+                {
+                  "path": "writing/how-noise-cancellation-works.html",
+                  "label": "Noise cancellation"
+                },
+                {
+                  "path": "writing/why-usb-c-cables-differ.html",
+                  "label": "USB-C cables"
+                },
+                {
+                  "path": "writing/how-photo-text-recognition-works.html",
+                  "label": "Photo-to-text recognition"
+                }
+              ]
+            }
+          ],
+          "footer_links": [
+            {
+              "path": "about.html",
+              "label": "Biography and background"
+            },
+            {
+              "path": "writing/",
+              "label": "All writing"
+            },
+            {
+              "path": "speaking.html",
+              "label": "Speaking & conversation topics"
+            }
+          ]
+        },
+        "fa": {
+          "title": "این روزها | احمدرضا صمدی",
+          "description": "فعالیت‌های کنونی احمدرضا صمدی در Appraiva و گروه رویال ابراج، در کنار تازه‌ترین توضیح‌های ساده درباره فناوری؛ اکتبر ۲۰۲۶.",
+          "heading": "این روزها",
+          "lead": "آنچه در اکتبر ۲۰۲۶ روی آن کار می‌کنم و به اشتراک می‌گذارم.",
+          "sections": [
+            {
+              "id": "appraiva",
+              "heading": "هوش مصنوعی برای تحلیل اطلاعات املاک",
+              "paragraphs": [
+                "ساکن دبی هستم و به‌عنوان هم‌بنیان‌گذار و راهبر فنی Appraiva، شرکتی آمریکایی مستقر در کلیولند، اوهایو، از راه دور کار می‌کنم. کار من تحلیل تصاویر ملک، داده‌های املاک، غنی‌سازی داده و جست‌وجو را به ابزارهایی برای بررسی فرصت‌های سرمایه‌گذاری پیوند می‌دهد."
+              ],
+              "links": [
+                {
+                  "path": "work/appraiva.html",
+                  "label": "کار من در Appraiva"
+                }
+              ]
+            },
+            {
+              "id": "royal-abraj",
+              "heading": "سامانه‌های کسب‌وکار در دبی",
+              "paragraphs": [
+                "به‌عنوان هم‌بنیان‌گذار و مدیرعامل گروه رویال ابراج، راهبرد دیجیتال وب‌سایت‌ها، فرایندهای مدیریت ارتباط با مشتری، ابزارهای مشتریان و عملیات داخلی را هدایت می‌کنم. کار من مسیر ارتباط و همکاری با مشتری را به سامانه‌هایی پیوند می‌دهد که تیم برای مدیریت آن به کار می‌برد."
+              ],
+              "links": [
+                {
+                  "path": "work/royal-abraj.html",
+                  "label": "کار من در گروه رویال ابراج"
+                }
+              ]
+            },
+            {
+              "id": "recent-writing",
+              "heading": "تازه منتشر کرده‌ام",
+              "paragraphs": [
+                "تازه‌ترین توضیح‌های من درباره فناوری به این موضوع‌ها می‌پردازند: کارت‌های بدون تماس چگونه بدون باتری کار می‌کنند، حذف نویز چگونه انجام می‌شود، چرا کابل‌های USB-C قابلیت‌های متفاوتی دارند و گوشی چگونه متن داخل عکس را تشخیص می‌دهد."
+              ],
+              "links": [
+                {
+                  "path": "writing/how-contactless-cards-work.html",
+                  "label": "کارت‌های بدون تماس"
+                },
+                {
+                  "path": "writing/how-noise-cancellation-works.html",
+                  "label": "حذف نویز"
+                },
+                {
+                  "path": "writing/why-usb-c-cables-differ.html",
+                  "label": "کابل‌های USB-C"
+                },
+                {
+                  "path": "writing/how-photo-text-recognition-works.html",
+                  "label": "تشخیص متن در عکس"
+                }
+              ]
+            }
+          ],
+          "footer_links": [
+            {
+              "path": "about.html",
+              "label": "زندگی‌نامه و پیشینه"
+            },
+            {
+              "path": "writing/",
+              "label": "همه نوشته‌ها"
+            },
+            {
+              "path": "speaking.html",
+              "label": "موضوع‌های سخنرانی و گفت‌وگو"
+            }
+          ]
+        },
+        "ar": {
+          "title": "ما أعمل عليه الآن | أحمدرضا صمدي",
+          "description": "أعمال أحمدرضا صمدي الحالية في Appraiva ومجموعة رويال أبراج، إلى جانب أحدث شروحاته التقنية المبسطة؛ أكتوبر ٢٠٢٦.",
+          "heading": "ما أعمل عليه الآن",
+          "lead": "ما أعمل عليه وما أشاركه في أكتوبر ٢٠٢٦.",
+          "sections": [
+            {
+              "id": "appraiva",
+              "heading": "المعلومات العقارية بالذكاء الاصطناعي",
+              "paragraphs": [
+                "أقيم في دبي وأعمل عن بُعد بصفتي المؤسس المشارك والقائد التقني في Appraiva، وهي شركة أمريكية مقرها كليفلاند، أوهايو. يربط عملي تحليل صور العقارات وبياناتها وإثراء تلك البيانات والبحث فيها بأدوات لدراسة فرص الاستثمار."
+              ],
+              "links": [
+                {
+                  "path": "work/appraiva.html",
+                  "label": "عملي في Appraiva"
+                }
+              ]
+            },
+            {
+              "id": "royal-abraj",
+              "heading": "أنظمة الأعمال في دبي",
+              "paragraphs": [
+                "بصفتي المؤسس المشارك والرئيس التنفيذي لمجموعة رويال أبراج، أقود الاستراتيجية الرقمية للمواقع الإلكترونية وسير عمل إدارة علاقات العملاء وأدوات العملاء والعمليات الداخلية. يربط عملي رحلة العميل بالأنظمة التي يستخدمها الفريق لإدارتها."
+              ],
+              "links": [
+                {
+                  "path": "work/royal-abraj.html",
+                  "label": "عملي في مجموعة رويال أبراج"
+                }
+              ]
+            },
+            {
+              "id": "recent-writing",
+              "heading": "ما نشرته مؤخرًا",
+              "paragraphs": [
+                "تتناول أحدث شروحاتي التقنية كيفية عمل البطاقات اللاتلامسية دون بطاريات، وكيف يعمل إلغاء الضوضاء، ولماذا تختلف قدرات كابلات USB-C، وكيف تتعرّف الهواتف على النص داخل الصور."
+              ],
+              "links": [
+                {
+                  "path": "writing/how-contactless-cards-work.html",
+                  "label": "البطاقات اللاتلامسية"
+                },
+                {
+                  "path": "writing/how-noise-cancellation-works.html",
+                  "label": "إلغاء الضوضاء"
+                },
+                {
+                  "path": "writing/why-usb-c-cables-differ.html",
+                  "label": "كابلات USB-C"
+                },
+                {
+                  "path": "writing/how-photo-text-recognition-works.html",
+                  "label": "التعرّف على النص في الصور"
+                }
+              ]
+            }
+          ],
+          "footer_links": [
+            {
+              "path": "about.html",
+              "label": "السيرة والخلفية المهنية"
+            },
+            {
+              "path": "writing/",
+              "label": "جميع المقالات"
+            },
+            {
+              "path": "speaking.html",
+              "label": "موضوعات للمحاضرات والحوار"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "speaking",
+      "updated_at": "2026-10-10T03:41:04+03:30",
+      "locales": {
+        "en": {
+          "title": "Speaking & conversation topics | Ahmadreza Samadi",
+          "description": "Conversation topics from Ahmadreza Samadi's work in AI products, property data and business systems, with related writing and contact for enquiries.",
+          "heading": "Speaking & conversation topics",
+          "lead": "Topics drawn from my work in AI products, property data and business operations, with related writing for each conversation.",
+          "sections": [
+            {
+              "id": "decision-first-ai",
+              "heading": "Start with the decision, then build the AI",
+              "paragraphs": [
+                "How a customer’s decision shapes the data, interface and engineering behind an AI product, and why uncertainty and context belong in the product experience."
+              ],
+              "links": [
+                {
+                  "path": "writing/start-with-the-decision.html",
+                  "label": "Read the decision-first essay"
+                }
+              ]
+            },
+            {
+              "id": "property-imagery",
+              "heading": "From property imagery to decision support",
+              "paragraphs": [
+                "How imagery analysis, property matching, enrichment and search connect in a real estate intelligence workflow."
+              ],
+              "links": [
+                {
+                  "path": "work/appraiva.html",
+                  "label": "Explore my work at Appraiva"
+                }
+              ]
+            },
+            {
+              "id": "business-operations",
+              "heading": "Building technology close to business operations",
+              "paragraphs": [
+                "How websites, CRM workflows, customer tools and internal systems fit together, and how product choices connect with the work people need to do."
+              ],
+              "links": [
+                {
+                  "path": "work/royal-abraj.html",
+                  "label": "Explore my work at Royal Abraj Group"
+                }
+              ]
+            }
+          ],
+          "contact_heading": "Enquiries",
+          "contact_copy": "For topic, interview or event enquiries, email",
+          "footer_links": [
+            {
+              "path": "press.html",
+              "label": "Biography and media resources"
+            },
+            {
+              "path": "about.html",
+              "label": "About Ahmadreza Samadi"
+            },
+            {
+              "path": "now.html",
+              "label": "What I’m working on now"
+            }
+          ]
+        },
+        "fa": {
+          "title": "موضوع‌های سخنرانی و گفت‌وگو | احمدرضا صمدی",
+          "description": "موضوع‌هایی برای گفت‌وگو بر پایه کار احمدرضا صمدی در محصولات هوش مصنوعی، داده‌های املاک و سامانه‌های کسب‌وکار؛ همراه با نوشته‌های مرتبط و راه تماس.",
+          "heading": "موضوع‌های سخنرانی و گفت‌وگو",
+          "lead": "موضوع‌هایی برگرفته از کار من در محصولات هوش مصنوعی، داده‌های املاک و عملیات کسب‌وکار، همراه با نوشته‌های مرتبط برای هر گفت‌وگو.",
+          "sections": [
+            {
+              "id": "decision-first-ai",
+              "heading": "از تصمیم شروع کنید، سپس هوش مصنوعی را بسازید",
+              "paragraphs": [
+                "تصمیم مشتری چگونه به داده‌ها، رابط کاربری و مهندسی یک محصول هوش مصنوعی شکل می‌دهد و چرا باید عدم‌قطعیت و زمینه را در تجربه کار با محصول در نظر گرفت."
+              ],
+              "links": [
+                {
+                  "path": "writing/start-with-the-decision.html",
+                  "label": "خواندن یادداشت درباره شروع از تصمیم"
+                }
+              ]
+            },
+            {
+              "id": "property-imagery",
+              "heading": "از تصاویر ملک تا پشتیبانی از تصمیم‌گیری",
+              "paragraphs": [
+                "تحلیل تصویر، تطبیق تصاویر با ملک، غنی‌سازی داده و جست‌وجو چگونه در یک فرایند تحلیل اطلاعات املاک به هم متصل می‌شوند."
+              ],
+              "links": [
+                {
+                  "path": "work/appraiva.html",
+                  "label": "آشنایی با کار من در Appraiva"
+                }
+              ]
+            },
+            {
+              "id": "business-operations",
+              "heading": "ساخت فناوری در کنار کار روزمره کسب‌وکار",
+              "paragraphs": [
+                "وب‌سایت‌ها، فرایندهای مدیریت ارتباط با مشتری، ابزارهای مشتریان و سامانه‌های داخلی چگونه کنار هم قرار می‌گیرند و تصمیم‌های محصول چگونه با کاری که افراد باید انجام دهند پیوند می‌خورند."
+              ],
+              "links": [
+                {
+                  "path": "work/royal-abraj.html",
+                  "label": "آشنایی با کار من در گروه رویال ابراج"
+                }
+              ]
+            }
+          ],
+          "contact_heading": "تماس",
+          "contact_copy": "برای پرسش درباره موضوع‌ها، مصاحبه یا رویداد، ایمیل بفرستید به",
+          "footer_links": [
+            {
+              "path": "press.html",
+              "label": "زندگی‌نامه و منابع رسانه‌ای"
+            },
+            {
+              "path": "about.html",
+              "label": "درباره احمدرضا صمدی"
+            },
+            {
+              "path": "now.html",
+              "label": "این روزها روی چه کار می‌کنم"
+            }
+          ]
+        },
+        "ar": {
+          "title": "موضوعات للمحاضرات والحوار | أحمدرضا صمدي",
+          "description": "موضوعات للحوار مستمدة من عمل أحمدرضا صمدي في منتجات الذكاء الاصطناعي وبيانات العقارات وأنظمة الأعمال، مع قراءات مرتبطة ووسيلة للاستفسار.",
+          "heading": "موضوعات للمحاضرات والحوار",
+          "lead": "موضوعات مستمدة من عملي في منتجات الذكاء الاصطناعي وبيانات العقارات وعمليات الأعمال، مع قراءات مرتبطة بكل حوار.",
+          "sections": [
+            {
+              "id": "decision-first-ai",
+              "heading": "ابدأ بالقرار، ثم ابنِ الذكاء الاصطناعي",
+              "paragraphs": [
+                "كيف يوجّه قرار العميل البيانات والواجهة والهندسة وراء منتج الذكاء الاصطناعي، ولماذا ينبغي أن يكون السياق وعدم اليقين جزءًا من تجربة المنتج."
+              ],
+              "links": [
+                {
+                  "path": "writing/start-with-the-decision.html",
+                  "label": "اقرأ المقال عن البدء بالقرار"
+                }
+              ]
+            },
+            {
+              "id": "property-imagery",
+              "heading": "من صور العقارات إلى دعم القرار",
+              "paragraphs": [
+                "كيف يرتبط تحليل الصور ومطابقتها بالعقارات وإثراء البيانات والبحث في سير عمل للمعلومات العقارية."
+              ],
+              "links": [
+                {
+                  "path": "work/appraiva.html",
+                  "label": "تعرّف على عملي في Appraiva"
+                }
+              ]
+            },
+            {
+              "id": "business-operations",
+              "heading": "بناء التقنية بالقرب من عمليات الأعمال",
+              "paragraphs": [
+                "كيف تتكامل المواقع الإلكترونية وسير عمل إدارة علاقات العملاء وأدوات العملاء والأنظمة الداخلية، وكيف ترتبط قرارات المنتج بالعمل الذي يحتاج الناس إلى إنجازه."
+              ],
+              "links": [
+                {
+                  "path": "work/royal-abraj.html",
+                  "label": "تعرّف على عملي في مجموعة رويال أبراج"
+                }
+              ]
+            }
+          ],
+          "contact_heading": "الاستفسارات",
+          "contact_copy": "للاستفسار عن موضوع أو مقابلة أو فعالية، راسلني على",
+          "footer_links": [
+            {
+              "path": "press.html",
+              "label": "السيرة والمواد الإعلامية"
+            },
+            {
+              "path": "about.html",
+              "label": "نبذة عن أحمدرضا صمدي"
+            },
+            {
+              "path": "now.html",
+              "label": "ما أعمل عليه الآن"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

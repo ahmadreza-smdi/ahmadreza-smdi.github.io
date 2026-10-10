@@ -993,4 +993,52 @@
             <image:title>كيف يحوّل هاتفك النص في صورة إلى كلمات قابلة للنسخ؟</image:title>
         </image:image>
     </url>
+    <url>
+        <loc>https://a-samadi.com/now.html</loc>
+        <lastmod>2026-10-10T03:42:25+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/now.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/now.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/now.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/now.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/now.html</loc>
+        <lastmod>2026-10-10T03:42:25+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/now.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/now.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/now.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/now.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/now.html</loc>
+        <lastmod>2026-10-10T03:42:25+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/now.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/now.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/now.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/now.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/speaking.html</loc>
+        <lastmod>2026-10-10T03:41:04+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/speaking.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/speaking.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/speaking.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/speaking.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/speaking.html</loc>
+        <lastmod>2026-10-10T03:41:04+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/speaking.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/speaking.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/speaking.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/speaking.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/speaking.html</loc>
+        <lastmod>2026-10-10T03:41:04+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/speaking.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/speaking.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/speaking.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/speaking.html" />
+    </url>
 </urlset>

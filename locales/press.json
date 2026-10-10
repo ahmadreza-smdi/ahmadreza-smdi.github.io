@@ -78,6 +78,14 @@
         {
           "label": "Royal Abraj Group: digital strategy and operations",
           "path": "/work/royal-abraj.html"
+        },
+        {
+          "label": "What I’m working on now",
+          "path": "/now.html"
+        },
+        {
+          "label": "Speaking & conversation topics",
+          "path": "/speaking.html"
         }
       ],
       "home": "Home",
@@ -161,6 +169,14 @@
         {
           "label": "گروه رویال ابراج: استراتژی دیجیتال و عملیات",
           "path": "/fa/work/royal-abraj.html"
+        },
+        {
+          "label": "این روزها روی چه کار می‌کنم",
+          "path": "/fa/now.html"
+        },
+        {
+          "label": "موضوع‌های سخنرانی و گفت‌وگو",
+          "path": "/fa/speaking.html"
         }
       ],
       "home": "خانه",
@@ -244,6 +260,14 @@
         {
           "label": "مجموعة رويال أبراج: الاستراتيجية الرقمية والعمليات",
           "path": "/ar/work/royal-abraj.html"
+        },
+        {
+          "label": "ما أعمل عليه الآن",
+          "path": "/ar/now.html"
+        },
+        {
+          "label": "موضوعات للمحاضرات والحوار",
+          "path": "/ar/speaking.html"
         }
       ],
       "home": "الرئيسية",

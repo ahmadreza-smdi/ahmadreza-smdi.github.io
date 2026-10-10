@@ -164,6 +164,8 @@ for css in ROOT.rglob('*.css'):
   check_local_asset(source,ref)
 
 clusters = (
+ ('now.html','fa/now.html','ar/now.html'),
+ ('speaking.html','fa/speaking.html','ar/speaking.html'),
  ('writing/how-contactless-cards-work.html','fa/writing/how-contactless-cards-work.html','ar/writing/how-contactless-cards-work.html'),
  ('writing/how-noise-cancellation-works.html','fa/writing/how-noise-cancellation-works.html','ar/writing/how-noise-cancellation-works.html'),
  ('writing/why-usb-c-cables-differ.html','fa/writing/why-usb-c-cables-differ.html','ar/writing/why-usb-c-cables-differ.html'),
