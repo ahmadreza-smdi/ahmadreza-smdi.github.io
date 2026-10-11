@@ -22,7 +22,7 @@ class Translator(HTMLParser):
             translated=value
             if self.body and key in ('aria-label','alt') and value:
                 translated=self.translations[value]
-            if key=='href' and (value.startswith('about.html') or value in ('tools/before-you-build-ai.html','work/appraiva.html','work/royal-abraj.html','work/oxfam-novib.html','writing/ai-cost-per-verified-result.html','writing/ai-home-value-estimates.html','writing/connected-ai-apps.html','writing/jev-ai-decision-model.html','writing/start-with-the-decision.html','writing/ai-agent-safety-boundaries.html','writing/')):
+            if key=='href' and (value.startswith('topics/') or value.startswith('about.html') or value in ('tools/before-you-build-ai.html','work/appraiva.html','work/royal-abraj.html','work/oxfam-novib.html','writing/ai-cost-per-verified-result.html','writing/ai-home-value-estimates.html','writing/connected-ai-apps.html','writing/jev-ai-decision-model.html','writing/start-with-the-decision.html','writing/ai-agent-safety-boundaries.html','writing/')):
                 translated=value
             elif key in ('href','src','poster','data-src') and not re.match(r'^(?:[a-z]+:|/|#)',value):translated='../'+value
             if key in ('srcset','imagesrcset'):
@@ -85,5 +85,7 @@ for lang in ('fa','ar'):
     head,sora_count=re.subn(r'\n\s*<link rel="preload" as="font" type="font/woff2" href="[^"]*sora-latin-wght\.woff2" crossorigin />',"",head,count=1)
     if sora_count!=1:raise ValueError('Missing Sora preload in the English homepage')
     head=head.replace('</head>','    <link rel="stylesheet" href="../css/rtl.css?v=20261009-lagoon4" />\n</head>')
+    # Keep the existing manual analytics tag after the RTL stylesheet.
+    head=re.sub(r'(\n\n<script src="/js/site-analytics\.js[^\"]*" defer></script>)(\n    <link rel="stylesheet" href="../css/rtl.css[^\"]*" />)',r'\2\1',head,count=1)
     (ROOT/lang/'index.html').write_text(head+visible+'        <script>'+script)
     print('Built',lang)

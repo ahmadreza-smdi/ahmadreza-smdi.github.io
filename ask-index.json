@@ -348,6 +348,29 @@
         {
           "position": 25,
           "section": "Writing",
+          "title": "",
+          "text": "AI in real estate: evidence and decisions Building business systems in Dubai Tech, explained",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#writing",
+          "links": [
+            {
+              "label": "AI in real estate: evidence and decisions",
+              "url": "https://a-samadi.com/topics/ai-real-estate.html"
+            },
+            {
+              "label": "Building business systems in Dubai",
+              "url": "https://a-samadi.com/topics/business-systems-dubai.html"
+            },
+            {
+              "label": "Tech, explained",
+              "url": "https://a-samadi.com/topics/tech-explained.html"
+            }
+          ]
+        },
+        {
+          "position": 26,
+          "section": "Writing",
           "title": "Before You Build the AI",
           "text": "Interactive field guide Before You Build the AI Turn an AI idea into one clear decision, an evidence plan and a useful first experiment. Build a decision brief",
           "paragraphs": [
@@ -363,7 +386,7 @@
           ]
         },
         {
-          "position": 26,
+          "position": 27,
           "section": "Writing",
           "title": "AI agent safety: boundaries before actions",
           "text": "AI agentsAI agent safety: boundaries before actionsWhere to put permissions, approval and monitoring before an AI agent can act.",
@@ -380,7 +403,7 @@
           ]
         },
         {
-          "position": 27,
+          "position": 28,
           "section": "Writing",
           "title": "Connected AI apps: access, scope and approval",
           "text": "Connected systemsConnected AI apps: access, scope and approvalWhat changes when an AI assistant can use your calendar, files or email, and what to check before you connect.",
@@ -397,7 +420,7 @@
           ]
         },
         {
-          "position": 28,
+          "position": 29,
           "section": "Writing",
           "title": "AI cost per verified result",
           "text": "Product thinkingAI cost per verified resultWhy lower model prices are only one part of the cost of useful AI work.",
@@ -414,7 +437,7 @@
           ]
         },
         {
-          "position": 29,
+          "position": 30,
           "section": "Contact",
           "title": "Let’s talk about a product or business workflow.",
           "text": "Contact Let’s talk about a product or business workflow. I welcome conversations with founders and industry experts working on AI products, property data, or the systems behind business operations. Tell me who the work is for, how it is handled today, and what decision or process you want to improve. A short description and a relevant link are enough to start. Dubai, United Arab Emirates",
@@ -832,6 +855,29 @@
         {
           "position": 25,
           "section": "نوشته‌ها",
+          "title": "",
+          "text": "هوش مصنوعی در املاک: از شواهد تا تصمیم ساخت سیستم‌های کسب‌وکار در دبی فناوری به زبان ساده",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#writing",
+          "links": [
+            {
+              "label": "هوش مصنوعی در املاک: از شواهد تا تصمیم",
+              "url": "https://a-samadi.com/fa/topics/ai-real-estate.html"
+            },
+            {
+              "label": "ساخت سیستم‌های کسب‌وکار در دبی",
+              "url": "https://a-samadi.com/fa/topics/business-systems-dubai.html"
+            },
+            {
+              "label": "فناوری به زبان ساده",
+              "url": "https://a-samadi.com/fa/topics/tech-explained.html"
+            }
+          ]
+        },
+        {
+          "position": 26,
+          "section": "نوشته‌ها",
           "title": "پیش از ساخت محصول هوش مصنوعی",
           "text": "راهنمای تعاملی پیش از ساخت محصول هوش مصنوعی ایده هوش مصنوعی را به یک تصمیم روشن، برنامه‌ای برای جمع‌آوری شواهد و یک آزمایش اولیه کاربردی تبدیل کنید. خلاصه تصمیم خود را بسازید",
           "paragraphs": [
@@ -847,7 +893,7 @@
           ]
         },
         {
-          "position": 26,
+          "position": 27,
           "section": "نوشته‌ها",
           "title": "امنیت عامل‌های هوش مصنوعی: تعیین مرز پیش از اقدام",
           "text": "عامل‌های هوش مصنوعیامنیت عامل‌های هوش مصنوعی: تعیین مرز پیش از اقدامپیش از آنکه عامل هوش مصنوعی دست به اقدام بزند، مجوزها، تأیید و نظارت را کجا قرار دهیم؟",
@@ -864,7 +910,7 @@
           ]
         },
         {
-          "position": 27,
+          "position": 28,
           "section": "نوشته‌ها",
           "title": "اتصال اپ‌ها به هوش مصنوعی: دسترسی، محدوده و تأیید",
           "text": "سیستم‌های متصلاتصال اپ‌ها به هوش مصنوعی: دسترسی، محدوده و تأییدوقتی دستیار هوش مصنوعی به تقویم، فایل‌ها یا ایمیل شما دسترسی دارد چه چیزی تغییر می‌کند و پیش از اتصال چه چیزهایی را باید بررسی کرد.",
@@ -881,7 +927,7 @@
           ]
         },
         {
-          "position": 28,
+          "position": 29,
           "section": "نوشته‌ها",
           "title": "هزینه هوش مصنوعی به‌ازای هر نتیجه تأییدشده",
           "text": "تفکر محصولهزینه هوش مصنوعی به‌ازای هر نتیجه تأییدشدهچرا کاهش قیمت مدل‌ها تنها بخشی از هزینه کار مفید با هوش مصنوعی است.",
@@ -898,7 +944,7 @@
           ]
         },
         {
-          "position": 29,
+          "position": 30,
           "section": "تماس",
           "title": "درباره یک محصول یا فرایند کسب‌وکار گفت‌وگو کنیم.",
           "text": "تماس درباره یک محصول یا فرایند کسب‌وکار گفت‌وگو کنیم. از گفت‌وگو با بنیان‌گذاران و متخصصان صنعت که روی محصولات هوش مصنوعی، داده‌های املاک یا سیستم‌های پشتیبان عملیات کسب‌وکار کار می‌کنند، استقبال می‌کنم. بگویید این کار برای چه کسانی است، امروز چگونه انجام می‌شود و کدام تصمیم یا فرایند را می‌خواهید بهتر کنید. برای شروع، یک توضیح کوتاه و یک پیوند مرتبط کافی است. دبی، امارات متحده عربی",
@@ -1315,6 +1361,29 @@
         {
           "position": 25,
           "section": "المقالات",
+          "title": "",
+          "text": "الذكاء الاصطناعي في العقارات: الأدلة والقرارات بناء أنظمة الأعمال في دبي التكنولوجيا ببساطة",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#writing",
+          "links": [
+            {
+              "label": "الذكاء الاصطناعي في العقارات: الأدلة والقرارات",
+              "url": "https://a-samadi.com/ar/topics/ai-real-estate.html"
+            },
+            {
+              "label": "بناء أنظمة الأعمال في دبي",
+              "url": "https://a-samadi.com/ar/topics/business-systems-dubai.html"
+            },
+            {
+              "label": "التكنولوجيا ببساطة",
+              "url": "https://a-samadi.com/ar/topics/tech-explained.html"
+            }
+          ]
+        },
+        {
+          "position": 26,
+          "section": "المقالات",
           "title": "قبل أن تبني منتج الذكاء الاصطناعي",
           "text": "دليل تفاعلي قبل أن تبني منتج الذكاء الاصطناعي حوّل فكرة الذكاء الاصطناعي إلى قرار واضح وخطة للأدلة وتجربة أولية مفيدة. أنشئ موجز القرار",
           "paragraphs": [
@@ -1330,7 +1399,7 @@
           ]
         },
         {
-          "position": 26,
+          "position": 27,
           "section": "المقالات",
           "title": "أمان وكلاء الذكاء الاصطناعي: حدود قبل التنفيذ",
           "text": "وكلاء الذكاء الاصطناعيأمان وكلاء الذكاء الاصطناعي: حدود قبل التنفيذأين نضع الأذونات والموافقة والمراقبة قبل أن يتمكن وكيل الذكاء الاصطناعي من اتخاذ إجراء؟",
@@ -1347,7 +1416,7 @@
           ]
         },
         {
-          "position": 27,
+          "position": 28,
           "section": "المقالات",
           "title": "ربط التطبيقات بالذكاء الاصطناعي: الوصول والصلاحيات والموافقة",
           "text": "الأنظمة المتصلةربط التطبيقات بالذكاء الاصطناعي: الوصول والصلاحيات والموافقةما الذي يتغير عندما يستطيع مساعد الذكاء الاصطناعي استخدام تقويمك أو ملفاتك أو بريدك، وما الذي ينبغي التحقق منه قبل الربط.",
@@ -1364,7 +1433,7 @@
           ]
         },
         {
-          "position": 28,
+          "position": 29,
           "section": "المقالات",
           "title": "تكلفة الذكاء الاصطناعي لكل نتيجة مُتحقَّق منها",
           "text": "التفكير في المنتجتكلفة الذكاء الاصطناعي لكل نتيجة مُتحقَّق منهالماذا يُعد انخفاض سعر النموذج جزءاً واحداً فقط من تكلفة العمل المفيد بالذكاء الاصطناعي.",
@@ -1381,7 +1450,7 @@
           ]
         },
         {
-          "position": 29,
+          "position": 30,
           "section": "تواصل",
           "title": "لنتحدث عن منتج أو سير عمل.",
           "text": "تواصل لنتحدث عن منتج أو سير عمل. أرحب بالحوار مع المؤسسين وخبراء القطاع الذين يعملون على منتجات الذكاء الاصطناعي أو البيانات العقارية أو الأنظمة التي تدعم عمليات الأعمال. أخبرني بمن يستفيد من هذا العمل، وكيف يُنجز اليوم، وما القرار أو العملية التي تريد تحسينها. يكفي وصف موجز ورابط ذو صلة للبدء. دبي، الإمارات العربية المتحدة",

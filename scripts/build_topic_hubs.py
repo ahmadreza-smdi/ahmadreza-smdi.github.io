@@ -1,4 +1,4 @@
-"""Build or check the six curated topic hubs from their public locale data.
+"""Build or check the localized topic hubs from their public locale data.
 
 The reading destinations and their current headings come from existing pages.
 These are CollectionPages, so they do not create articles or publication dates.
@@ -128,13 +128,15 @@ def render(data, hub, language):
              copy["apply"]["resource"]: copy["apply"]["label"]}
     for card in copy["reading_path"]:
         names[card["resource"]] = destinations[card["resource"]]["title"]
+    for key in hub.get("additional_resources", []):
+        names[key] = destinations[key]["title"]
     page = {
         "@type": "CollectionPage", "@id": canonical + "#page", "url": canonical,
         "name": copy["title"], "description": copy["description"], "inLanguage": language,
         "author": {"@type": "Person", "@id": BASE + "#person",
                    "name": "Ahmadreza Samadi", "url": biography},
         "about": [{"@id": BASE + "#person"},
-                  {"@id": BASE + ("#appraiva" if hub["id"] == "ai-real-estate" else "#royal-abraj")}],
+                  *([{"@id": BASE + ("#appraiva" if hub["id"] == "ai-real-estate" else "#royal-abraj")}] if hub.get("kind") != "explainer" else [])],
         "isPartOf": {"@id": BASE + "#website"},
         "image": {"@id": BASE + "#portrait"},
         "primaryImageOfPage": {"@id": BASE + "#portrait"},
@@ -182,6 +184,21 @@ def render(data, hub, language):
     if language != "en":
         original_link = (f'<p class="byline"><a href="/{hub["paths"]["en"]}" '
                          f'hreflang="en" data-locale-primary="en">{escape(labels["english"])}</a></p>\n')
+    additional = ""
+    if hub.get("additional_resources"):
+        heading = hub["all_articles_heading"][language]
+        links = []
+        for key in hub["additional_resources"]:
+            destination = destinations[key]
+            label = destination["title"]
+            if language != "en" and destination["language"] == "en":
+                label += " (" + ("انگلیسی" if language == "fa" else "بالإنجليزية") + ")"
+            links.append("<li>" + tagged_link(destination, key, label) + "</li>")
+        additional = '<section aria-labelledby="topic-complete-heading"><h2 id="topic-complete-heading">' + escape(heading) + '</h2><ul>' + "\n".join(links) + '</ul></section>'
+    other_topics = []
+    for candidate in data["hubs"]:
+        if candidate["id"] != hub["id"] and candidate["id"] != cross["hub"]:
+            other_topics.append('<p><a data-hub-navigation href="/' + candidate["paths"][language] + '">' + escape(candidate["locales"][language]["heading"]) + '</a></p>')
     direction = '' if language == "en" else ' dir="rtl"'
     body_class = "editorial-body topic-hub" + (" persian-page" if language == "fa" else " arabic-page" if language == "ar" else "")
     return f'''<!doctype html>
@@ -231,6 +248,7 @@ def render(data, hub, language):
 </nav>
 <h2 id="reading-path">{escape(copy["reading_heading"])}</h2>
 {chr(10).join(cards)}
+{additional}
 <section aria-labelledby="topic-film-heading">
 <h2 id="topic-film-heading">{escape(film["heading"])}</h2>
 <p>{escape(film["summary"])}</p>
@@ -243,7 +261,8 @@ def render(data, hub, language):
 </section>
 <section aria-labelledby="topic-next-heading">
 <h2 id="topic-next-heading">{escape(labels["next"])}</h2>
-<p><a href="/{other_hub["paths"][language]}">{escape(cross["label"])}</a>: {escape(cross["summary"])}</p>
+<p><a data-hub-navigation href="/{other_hub["paths"][language]}">{escape(cross["label"])}</a>: {escape(cross["summary"])}</p>
+{chr(10).join(other_topics)}
 </section>
 <aside class="article-author" aria-labelledby="article-author-title">
 <h2 id="article-author-title">{escape(labels["author"])}</h2>

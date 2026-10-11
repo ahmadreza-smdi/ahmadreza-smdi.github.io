@@ -25,6 +25,10 @@ jobs:
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/check_internal_links.py
       - name: Verify current work and speaking locale pages
         run: PYTHONDONTWRITEBYTECODE=1 python3 scripts/build_status_pages.py --check
+      - name: Verify complete topic and Article hub navigation
+        run: |
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/build_topic_hubs.py --check
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/build_article_hubs.py --check
       - name: Verify public homepage passage export
         run: PYTHONDONTWRITEBYTECODE=1 python3 scripts/build_ask_index.py --check
       - name: Notify changed canonical pages after successful Pages deployment

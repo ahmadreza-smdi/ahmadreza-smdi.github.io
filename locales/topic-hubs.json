@@ -87,6 +87,190 @@
       "paths": {
         "en": "watch/profit-cash.html"
       }
+    },
+    "article_how_building_digital_twins_work": {
+      "paths": {
+        "en": "writing/how-building-digital-twins-work.html",
+        "fa": "fa/writing/how-building-digital-twins-work.html",
+        "ar": "ar/writing/how-building-digital-twins-work.html"
+      }
+    },
+    "article_ai_agent_safety_boundaries": {
+      "paths": {
+        "en": "writing/ai-agent-safety-boundaries.html",
+        "fa": "fa/writing/ai-agent-safety-boundaries.html",
+        "ar": "ar/writing/ai-agent-safety-boundaries.html"
+      }
+    },
+    "article_jev_ai_decision_model": {
+      "paths": {
+        "en": "writing/jev-ai-decision-model.html",
+        "fa": "fa/writing/jev-ai-decision-model.html",
+        "ar": "ar/writing/jev-ai-decision-model.html"
+      }
+    },
+    "article_why_ai_sounds_confident": {
+      "paths": {
+        "en": "writing/why-ai-sounds-confident.html",
+        "fa": "fa/writing/why-ai-sounds-confident.html",
+        "ar": "ar/writing/why-ai-sounds-confident.html"
+      }
+    },
+    "article_why_ai_loses_earlier_chat_context": {
+      "paths": {
+        "en": "writing/why-ai-loses-earlier-chat-context.html",
+        "fa": "fa/writing/why-ai-loses-earlier-chat-context.html",
+        "ar": "ar/writing/why-ai-loses-earlier-chat-context.html"
+      }
+    },
+    "article_verify_ai_image_claims": {
+      "paths": {
+        "en": "writing/verify-ai-image-claims.html",
+        "fa": "fa/writing/verify-ai-image-claims.html",
+        "ar": "ar/writing/verify-ai-image-claims.html"
+      }
+    },
+    "article_how_many_coffees_to_break_even": {
+      "paths": {
+        "en": "writing/how-many-coffees-to-break-even.html",
+        "fa": "fa/writing/how-many-coffees-to-break-even.html",
+        "ar": "ar/writing/how-many-coffees-to-break-even.html"
+      }
+    },
+    "article_why_wifi_is_slow_with_full_bars": {
+      "paths": {
+        "en": "writing/why-wifi-is-slow-with-full-bars.html",
+        "fa": "fa/writing/why-wifi-is-slow-with-full-bars.html",
+        "ar": "ar/writing/why-wifi-is-slow-with-full-bars.html"
+      }
+    },
+    "article_why_usb_c_cables_differ": {
+      "paths": {
+        "en": "writing/why-usb-c-cables-differ.html",
+        "fa": "fa/writing/why-usb-c-cables-differ.html",
+        "ar": "ar/writing/why-usb-c-cables-differ.html"
+      }
+    },
+    "article_how_photo_text_recognition_works": {
+      "paths": {
+        "en": "writing/how-photo-text-recognition-works.html",
+        "fa": "fa/writing/how-photo-text-recognition-works.html",
+        "ar": "ar/writing/how-photo-text-recognition-works.html"
+      }
+    },
+    "article_how_contactless_cards_work": {
+      "paths": {
+        "en": "writing/how-contactless-cards-work.html",
+        "fa": "fa/writing/how-contactless-cards-work.html",
+        "ar": "ar/writing/how-contactless-cards-work.html"
+      }
+    },
+    "article_how_noise_cancellation_works": {
+      "paths": {
+        "en": "writing/how-noise-cancellation-works.html",
+        "fa": "fa/writing/how-noise-cancellation-works.html",
+        "ar": "ar/writing/how-noise-cancellation-works.html"
+      }
+    },
+    "article_iphone_duo_price_per_day": {
+      "paths": {
+        "en": "writing/iphone-duo-price-per-day.html",
+        "fa": "fa/writing/iphone-duo-price-per-day.html",
+        "ar": "ar/writing/iphone-duo-price-per-day.html"
+      }
+    },
+    "article_why_full_storage_slows_computer": {
+      "paths": {
+        "en": "writing/why-full-storage-slows-computer.html",
+        "fa": "fa/writing/why-full-storage-slows-computer.html",
+        "ar": "ar/writing/why-full-storage-slows-computer.html"
+      }
+    },
+    "article_why_phone_stops_charging_at_80": {
+      "paths": {
+        "en": "writing/why-phone-stops-charging-at-80.html",
+        "fa": "fa/writing/why-phone-stops-charging-at-80.html",
+        "ar": "ar/writing/why-phone-stops-charging-at-80.html"
+      }
+    },
+    "article_what_accept_cookies_means": {
+      "paths": {
+        "en": "writing/what-accept-cookies-means.html",
+        "fa": "fa/writing/what-accept-cookies-means.html",
+        "ar": "ar/writing/what-accept-cookies-means.html"
+      }
+    },
+    "article_incognito_private_browsing": {
+      "paths": {
+        "en": "writing/incognito-private-browsing.html",
+        "fa": "fa/writing/incognito-private-browsing.html",
+        "ar": "ar/writing/incognito-private-browsing.html"
+      }
+    },
+    "article_how_satellite_messaging_works": {
+      "paths": {
+        "en": "writing/how-satellite-messaging-works.html",
+        "fa": "fa/writing/how-satellite-messaging-works.html",
+        "ar": "ar/writing/how-satellite-messaging-works.html"
+      }
+    },
+    "article_humanoid_robots_at_home": {
+      "paths": {
+        "en": "writing/humanoid-robots-at-home.html",
+        "fa": "fa/writing/humanoid-robots-at-home.html",
+        "ar": "ar/writing/humanoid-robots-at-home.html"
+      }
+    },
+    "article_foldable_two_batteries": {
+      "paths": {
+        "en": "writing/foldable-two-batteries.html",
+        "fa": "fa/writing/foldable-two-batteries.html",
+        "ar": "ar/writing/foldable-two-batteries.html"
+      }
+    },
+    "article_passkeys_face_id": {
+      "paths": {
+        "en": "writing/passkeys-face-id.html",
+        "fa": "fa/writing/passkeys-face-id.html",
+        "ar": "ar/writing/passkeys-face-id.html"
+      }
+    },
+    "article_how_zip_files_work": {
+      "paths": {
+        "en": "writing/how-zip-files-work.html",
+        "fa": "fa/writing/how-zip-files-work.html",
+        "ar": "ar/writing/how-zip-files-work.html"
+      }
+    },
+    "tech_film_ai_confidence": {
+      "paths": {
+        "en": "watch/ai-confidence.html"
+      }
+    },
+    "tech_film_cookie_consent": {
+      "paths": {
+        "en": "watch/cookie-consent.html"
+      }
+    },
+    "tech_film_charging_80": {
+      "paths": {
+        "en": "watch/charging-80.html"
+      }
+    },
+    "tech_film_profit_cash": {
+      "paths": {
+        "en": "watch/profit-cash.html"
+      }
+    },
+    "tech_film_rental_yield": {
+      "paths": {
+        "en": "watch/rental-yield.html"
+      }
+    },
+    "tech_film_iphone_duo": {
+      "paths": {
+        "en": "watch/iphone-duo.html"
+      }
     }
   },
   "hubs": [
@@ -313,8 +497,31 @@
         "human_review",
         "verified_cost",
         "rental_yield",
+        "article_how_building_digital_twins_work",
+        "article_ai_agent_safety_boundaries",
+        "article_jev_ai_decision_model",
+        "connected_apps",
+        "decision_first",
+        "article_why_ai_sounds_confident",
+        "article_why_ai_loses_earlier_chat_context",
+        "article_verify_ai_image_claims",
         "rental_film",
         "decision_guide"
+      ],
+      "all_articles_heading": {
+        "en": "All articles in this topic",
+        "fa": "همه نوشته‌های این موضوع",
+        "ar": "جميع مقالات هذا الموضوع"
+      },
+      "additional_resources": [
+        "article_how_building_digital_twins_work",
+        "article_ai_agent_safety_boundaries",
+        "article_jev_ai_decision_model",
+        "connected_apps",
+        "decision_first",
+        "article_why_ai_sounds_confident",
+        "article_why_ai_loses_earlier_chat_context",
+        "article_verify_ai_image_claims"
       ]
     },
     {
@@ -508,9 +715,211 @@
         "decision_first",
         "connected_apps",
         "profit_cash",
+        "article_how_many_coffees_to_break_even",
         "profit_film",
         "decision_guide"
+      ],
+      "all_articles_heading": {
+        "en": "All articles in this topic",
+        "fa": "همه نوشته‌های این موضوع",
+        "ar": "جميع مقالات هذا الموضوع"
+      },
+      "additional_resources": [
+        "article_how_many_coffees_to_break_even"
       ]
+    },
+    {
+      "id": "tech-explained",
+      "kind": "explainer",
+      "paths": {
+        "en": "topics/tech-explained.html",
+        "fa": "fa/topics/tech-explained.html",
+        "ar": "ar/topics/tech-explained.html"
+      },
+      "ordered_resources": [
+        "decision_first",
+        "article_why_wifi_is_slow_with_full_bars",
+        "article_why_usb_c_cables_differ",
+        "article_how_photo_text_recognition_works",
+        "article_how_contactless_cards_work",
+        "article_how_noise_cancellation_works",
+        "article_iphone_duo_price_per_day",
+        "article_why_full_storage_slows_computer",
+        "article_why_phone_stops_charging_at_80",
+        "article_what_accept_cookies_means",
+        "article_incognito_private_browsing",
+        "article_how_satellite_messaging_works",
+        "article_humanoid_robots_at_home",
+        "article_foldable_two_batteries",
+        "article_passkeys_face_id",
+        "article_how_zip_files_work",
+        "tech_film_ai_confidence",
+        "tech_film_cookie_consent",
+        "tech_film_charging_80",
+        "tech_film_profit_cash",
+        "tech_film_rental_yield",
+        "tech_film_iphone_duo",
+        "decision_guide"
+      ],
+      "additional_resources": [
+        "article_why_wifi_is_slow_with_full_bars",
+        "article_why_usb_c_cables_differ",
+        "article_how_photo_text_recognition_works",
+        "article_how_contactless_cards_work",
+        "article_how_noise_cancellation_works",
+        "article_iphone_duo_price_per_day",
+        "article_why_full_storage_slows_computer",
+        "article_why_phone_stops_charging_at_80",
+        "article_what_accept_cookies_means",
+        "article_incognito_private_browsing",
+        "article_how_satellite_messaging_works",
+        "article_humanoid_robots_at_home",
+        "article_foldable_two_batteries",
+        "article_passkeys_face_id",
+        "article_how_zip_files_work",
+        "tech_film_ai_confidence",
+        "tech_film_cookie_consent",
+        "tech_film_charging_80",
+        "tech_film_profit_cash",
+        "tech_film_rental_yield",
+        "tech_film_iphone_duo"
+      ],
+      "all_articles_heading": {
+        "en": "Existing explainers and films",
+        "fa": "توضیح‌ها و فیلم‌های موجود",
+        "ar": "الشروحات والأفلام الحالية"
+      },
+      "locales": {
+        "en": {
+          "heading": "Tech, explained",
+          "title": "Tech, explained | Ahmadreza Samadi",
+          "description": "Plain-language technology explainers and original films. Choose a mechanism, check its limits, and connect it to the decision you need to make.",
+          "lead": "Start with the job you need to do, then understand the mechanism and its limits. These existing explainers use diagrams, films and clearly labeled examples.",
+          "context_heading": "Choose an explanation for the decision",
+          "context": [
+            "For a device problem, compare the parts of the connection before guessing at one cause. For an AI answer, inspect the supporting source before relying on fluent wording.",
+            "For a calculation, check the inputs and what the result leaves out. The films and illustrated examples make those checks visible; they do not report customer outcomes."
+          ],
+          "questions_heading": "Three checks before acting",
+          "questions": [
+            "What job do I need the technology to do?",
+            "Which source, setting or input supports the answer?",
+            "What remains uncertain, and what should a person check?"
+          ],
+          "reading_heading": "Find the mechanism you need",
+          "eyebrow": "Reading path · Plain-language technology",
+          "author_bio": "Technology Entrepreneur based in Dubai. Co-Founder & Technical Lead at Appraiva; Co-Founder & CEO at Royal Abraj Group.",
+          "case_study": {
+            "resource": "decision_first",
+            "label": "Start with the decision, then build the AI",
+            "summary": "Define one decision, the evidence it needs and a useful first experiment."
+          },
+          "reading_path": [],
+          "film": {
+            "resource": "tech_film_ai_confidence",
+            "heading": "Films with captions and transcripts",
+            "summary": "The watch pages use English audio, English caption tracks and written transcripts. The AI and property films also connect to the core topic hubs.",
+            "label": "Watch the AI-confidence film"
+          },
+          "apply": {
+            "resource": "decision_guide",
+            "heading": "Turn an explanation into a check",
+            "summary": "Use the existing worksheet to name the next action and the evidence required before taking it.",
+            "label": "Open Before You Build the AI"
+          },
+          "cross_hub": {
+            "hub": "ai-real-estate",
+            "label": "AI in real estate: evidence and decisions",
+            "summary": "Continue with property information, human review and decision-first AI."
+          }
+        },
+        "fa": {
+          "heading": "فناوری به زبان ساده",
+          "title": "فناوری به زبان ساده | احمدرضا صمدی",
+          "description": "توضیح‌های ساده فناوری و فیلم‌های اصلی. سازوکار را بشناسید، محدودیت‌ها را بررسی کنید و آن را به تصمیم موردنیازتان پیوند دهید.",
+          "lead": "از کاری شروع کنید که می‌خواهید انجام دهید؛ سپس سازوکار و محدودیت‌های آن را بشناسید. این نوشته‌های موجود از نمودار، فیلم و مثال‌های مشخص استفاده می‌کنند.",
+          "context_heading": "توضیح مناسب تصمیم را انتخاب کنید",
+          "context": [
+            "برای مشکل یک دستگاه، پیش از حدس‌زدن یک علت، بخش‌های اتصال را مقایسه کنید. برای پاسخ هوش مصنوعی، پیش از اعتماد به بیان روان، منبع پشتیبان را بررسی کنید.",
+            "برای یک محاسبه، ورودی‌ها و موارد خارج از نتیجه را بررسی کنید. فیلم‌ها و مثال‌های تصویری این بررسی‌ها را نشان می‌دهند؛ آن‌ها گزارشی از نتایج مشتریان نیستند."
+          ],
+          "questions_heading": "سه بررسی پیش از اقدام",
+          "questions": [
+            "فناوری باید چه کاری برای من انجام دهد؟",
+            "کدام منبع، تنظیم یا ورودی از پاسخ پشتیبانی می‌کند؟",
+            "چه چیزی نامطمئن است و انسان باید چه چیزی را بررسی کند؟"
+          ],
+          "reading_heading": "سازوکار موردنیازتان را پیدا کنید",
+          "eyebrow": "مسیر مطالعه · فناوری به زبان ساده",
+          "author_bio": "کارآفرین فناوری ساکن دبی. هم‌بنیان‌گذار و رهبر فنی Appraiva؛ هم‌بنیان‌گذار و مدیرعامل گروه رویال ابراج.",
+          "case_study": {
+            "resource": "decision_first",
+            "label": "از تصمیم شروع کنید، سپس هوش مصنوعی را بسازید",
+            "summary": "یک تصمیم، شواهد موردنیاز آن و نخستین آزمایش مفید را مشخص کنید."
+          },
+          "reading_path": [],
+          "film": {
+            "resource": "tech_film_ai_confidence",
+            "heading": "فیلم‌ها با زیرنویس و متن گفتار",
+            "summary": "صفحه‌های تماشای فیلم صوت انگلیسی، زیرنویس انگلیسی و متن گفتار دارند. فیلم‌های هوش مصنوعی و املاک به موضوع‌های اصلی نیز پیوند دارند.",
+            "label": "تماشای فیلم اعتمادبه‌نفس هوش مصنوعی (انگلیسی)"
+          },
+          "apply": {
+            "resource": "decision_guide",
+            "heading": "توضیح را به یک بررسی تبدیل کنید",
+            "summary": "از کاربرگ موجود برای مشخص‌کردن اقدام بعدی و شواهد لازم پیش از آن استفاده کنید.",
+            "label": "بازکردن راهنمای «قبل از ساخت هوش مصنوعی»"
+          },
+          "cross_hub": {
+            "hub": "ai-real-estate",
+            "label": "هوش مصنوعی در املاک: شواهد و تصمیم‌ها",
+            "summary": "با اطلاعات ملک، بررسی انسانی و هوش مصنوعی مبتنی بر تصمیم ادامه دهید."
+          }
+        },
+        "ar": {
+          "heading": "التكنولوجيا ببساطة",
+          "title": "التكنولوجيا ببساطة | أحمدرضا صمدي",
+          "description": "شروحات مبسطة للتكنولوجيا وأفلام أصلية. افهم الآلية وحدودها، ثم اربطها بالقرار الذي تحتاج إلى اتخاذه.",
+          "lead": "ابدأ بالمهمة التي تحتاج إلى إنجازها، ثم افهم الآلية وحدودها. تستخدم هذه الشروحات الحالية الرسوم والأفلام والأمثلة الموضحة بوضوح.",
+          "context_heading": "اختر شرحًا يخدم القرار",
+          "context": [
+            "عند وجود مشكلة في جهاز، قارن أجزاء الاتصال قبل تخمين سبب واحد. ولإجابة الذكاء الاصطناعي، افحص المصدر الداعم قبل الاعتماد على الصياغة السلسة.",
+            "في الحسابات، تحقق من المدخلات وما لا تشملُه النتيجة. تُظهر الأفلام والأمثلة المصورة هذه الفحوص؛ ولا تقدم نتائج للعملاء."
+          ],
+          "questions_heading": "ثلاثة فحوص قبل التصرف",
+          "questions": [
+            "ما المهمة التي أحتاج من التكنولوجيا أن تنجزها؟",
+            "أي مصدر أو إعداد أو مُدخل يدعم الإجابة؟",
+            "ما الذي يبقى غير مؤكد، وما الذي ينبغي أن يتحقق منه شخص؟"
+          ],
+          "reading_heading": "ابحث عن الآلية التي تحتاجها",
+          "eyebrow": "مسار قراءة · التكنولوجيا ببساطة",
+          "author_bio": "رائد أعمال تقني مقيم في دبي. الشريك المؤسس والقائد التقني في Appraiva؛ والشريك المؤسس والرئيس التنفيذي لمجموعة رويال أبراج.",
+          "case_study": {
+            "resource": "decision_first",
+            "label": "ابدأ بالقرار، ثم ابنِ الذكاء الاصطناعي",
+            "summary": "حدد قرارًا واحدًا والأدلة التي يحتاجها وأول تجربة مفيدة."
+          },
+          "reading_path": [],
+          "film": {
+            "resource": "tech_film_ai_confidence",
+            "heading": "أفلام مع ترجمة نصية ونص مكتوب",
+            "summary": "تستخدم صفحات المشاهدة صوتًا إنجليزيًا ومسارات ترجمة نصية إنجليزية ونصوصًا مكتوبة. وترتبط أفلام الذكاء الاصطناعي والعقارات بالموضوعات الأساسية أيضًا.",
+            "label": "شاهد فيلم ثقة الذكاء الاصطناعي (بالإنجليزية)"
+          },
+          "apply": {
+            "resource": "decision_guide",
+            "heading": "حوّل الشرح إلى فحص",
+            "summary": "استخدم ورقة العمل الحالية لتحديد الخطوة التالية والأدلة المطلوبة قبل اتخاذها.",
+            "label": "افتح دليل «قبل أن تبني نظام الذكاء الاصطناعي»"
+          },
+          "cross_hub": {
+            "hub": "ai-real-estate",
+            "label": "الذكاء الاصطناعي في العقارات: الأدلة والقرارات",
+            "summary": "تابع مع معلومات العقارات والمراجعة البشرية والذكاء الاصطناعي الذي يبدأ بالقرار."
+          }
+        }
+      }
     }
   ]
 }

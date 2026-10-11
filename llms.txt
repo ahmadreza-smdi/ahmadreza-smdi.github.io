@@ -24,6 +24,7 @@ Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and
 
 - [AI in real estate: evidence and decisions](https://a-samadi.com/topics/ai-real-estate.html): A reading path through property data, human review, AI workflow costs and rental cash flow, with Ahmadreza Samadi’s work at Appraiva as context.
 - [Building business systems in Dubai](https://a-samadi.com/topics/business-systems-dubai.html): A reading path from Ahmadreza Samadi’s Royal Abraj work to customer workflows, decision-first product design, connected-app permissions and cash timing.
+- [Tech, explained](https://a-samadi.com/topics/tech-explained.html): Plain-language technology explainers and original films. Choose a mechanism, check its limits, and connect it to the decision you need to make.
 
 ## Writing
 
@@ -71,6 +72,8 @@ Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and
 ## Tools
 
 - [Before You Build the AI](https://a-samadi.com/tools/before-you-build-ai.html): Turn an AI idea into a decision, an evidence plan and a small first experiment. A free interactive field guide by Ahmadreza Samadi.
+- [Rental cash flow calculator](https://a-samadi.com/tools/rental-cash-flow.html): Separate annual rent, property costs, debt cash payments and upfront invested cash using your own AED inputs. Blank values remain unknown.
+- [Dubai purchase costs calculator](https://a-samadi.com/tools/dubai-purchase-cost.html): Estimate buyer-paid components for a completed residential purchase using dated fee rules, explicit payer shares and your actual quotes.
 
 ## Official profiles
 

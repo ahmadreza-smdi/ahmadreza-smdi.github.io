@@ -1,0 +1,725 @@
+{
+  "primary_language": "en",
+  "families": [
+    {
+      "stem": "property-data-enrichment",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/property-data-enrichment.html",
+        "fa": "fa/writing/property-data-enrichment.html",
+        "ar": "ar/writing/property-data-enrichment.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/how-photo-text-recognition-works.html"
+        }
+      ]
+    },
+    {
+      "stem": "ai-rental-yield-cash-flow",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/ai-rental-yield-cash-flow.html",
+        "fa": "fa/writing/ai-rental-yield-cash-flow.html",
+        "ar": "ar/writing/ai-rental-yield-cash-flow.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/iphone-duo-price-per-day.html"
+        }
+      ]
+    },
+    {
+      "stem": "profitable-but-out-of-cash",
+      "classification": "core",
+      "hub": "business-systems-dubai",
+      "paths": {
+        "en": "writing/profitable-but-out-of-cash.html",
+        "fa": "fa/writing/profitable-but-out-of-cash.html",
+        "ar": "ar/writing/profitable-but-out-of-cash.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-rental-yield-cash-flow.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/iphone-duo-price-per-day.html"
+        }
+      ]
+    },
+    {
+      "stem": "ai-human-review-real-estate",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/ai-human-review-real-estate.html",
+        "fa": "fa/writing/ai-human-review-real-estate.html",
+        "ar": "ar/writing/ai-human-review-real-estate.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/how-photo-text-recognition-works.html"
+        }
+      ]
+    },
+    {
+      "stem": "ai-home-value-estimates",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/ai-home-value-estimates.html",
+        "fa": "fa/writing/ai-home-value-estimates.html",
+        "ar": "ar/writing/ai-home-value-estimates.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/how-photo-text-recognition-works.html"
+        }
+      ]
+    },
+    {
+      "stem": "how-building-digital-twins-work",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/how-building-digital-twins-work.html",
+        "fa": "fa/writing/how-building-digital-twins-work.html",
+        "ar": "ar/writing/how-building-digital-twins-work.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
+    },
+    {
+      "stem": "ai-agent-safety-boundaries",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/ai-agent-safety-boundaries.html",
+        "fa": "fa/writing/ai-agent-safety-boundaries.html",
+        "ar": "ar/writing/ai-agent-safety-boundaries.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/passkeys-face-id.html"
+        }
+      ]
+    },
+    {
+      "stem": "jev-ai-decision-model",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/jev-ai-decision-model.html",
+        "fa": "fa/writing/jev-ai-decision-model.html",
+        "ar": "ar/writing/jev-ai-decision-model.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-cost-per-verified-result.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/how-photo-text-recognition-works.html"
+        }
+      ]
+    },
+    {
+      "stem": "connected-ai-apps",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/connected-ai-apps.html",
+        "fa": "fa/writing/connected-ai-apps.html",
+        "ar": "ar/writing/connected-ai-apps.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/what-accept-cookies-means.html"
+        }
+      ]
+    },
+    {
+      "stem": "ai-cost-per-verified-result",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/ai-cost-per-verified-result.html",
+        "fa": "fa/writing/ai-cost-per-verified-result.html",
+        "ar": "ar/writing/ai-cost-per-verified-result.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/how-zip-files-work.html"
+        }
+      ]
+    },
+    {
+      "stem": "start-with-the-decision",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/start-with-the-decision.html",
+        "fa": "fa/writing/start-with-the-decision.html",
+        "ar": "ar/writing/start-with-the-decision.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "tools/before-you-build-ai.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-usb-c-cables-differ.html"
+        }
+      ]
+    },
+    {
+      "stem": "why-ai-sounds-confident",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/why-ai-sounds-confident.html",
+        "fa": "fa/writing/why-ai-sounds-confident.html",
+        "ar": "ar/writing/why-ai-sounds-confident.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/verify-ai-image-claims.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/how-photo-text-recognition-works.html"
+        }
+      ]
+    },
+    {
+      "stem": "why-ai-loses-earlier-chat-context",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/why-ai-loses-earlier-chat-context.html",
+        "fa": "fa/writing/why-ai-loses-earlier-chat-context.html",
+        "ar": "ar/writing/why-ai-loses-earlier-chat-context.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-full-storage-slows-computer.html"
+        }
+      ]
+    },
+    {
+      "stem": "verify-ai-image-claims",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/verify-ai-image-claims.html",
+        "fa": "fa/writing/verify-ai-image-claims.html",
+        "ar": "ar/writing/verify-ai-image-claims.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/how-photo-text-recognition-works.html"
+        }
+      ]
+    },
+    {
+      "stem": "how-many-coffees-to-break-even",
+      "classification": "core",
+      "hub": "business-systems-dubai",
+      "paths": {
+        "en": "writing/how-many-coffees-to-break-even.html",
+        "fa": "fa/writing/how-many-coffees-to-break-even.html",
+        "ar": "ar/writing/how-many-coffees-to-break-even.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-rental-yield-cash-flow.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/iphone-duo-price-per-day.html"
+        }
+      ]
+    },
+    {
+      "stem": "why-wifi-is-slow-with-full-bars",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/why-wifi-is-slow-with-full-bars.html",
+        "fa": "fa/writing/why-wifi-is-slow-with-full-bars.html",
+        "ar": "ar/writing/why-wifi-is-slow-with-full-bars.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-usb-c-cables-differ.html"
+        }
+      ]
+    },
+    {
+      "stem": "why-usb-c-cables-differ",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/why-usb-c-cables-differ.html",
+        "fa": "fa/writing/why-usb-c-cables-differ.html",
+        "ar": "ar/writing/why-usb-c-cables-differ.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
+    },
+    {
+      "stem": "how-photo-text-recognition-works",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/how-photo-text-recognition-works.html",
+        "fa": "fa/writing/how-photo-text-recognition-works.html",
+        "ar": "ar/writing/how-photo-text-recognition-works.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/how-zip-files-work.html"
+        }
+      ]
+    },
+    {
+      "stem": "how-contactless-cards-work",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/how-contactless-cards-work.html",
+        "fa": "fa/writing/how-contactless-cards-work.html",
+        "ar": "ar/writing/how-contactless-cards-work.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/passkeys-face-id.html"
+        }
+      ]
+    },
+    {
+      "stem": "how-noise-cancellation-works",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/how-noise-cancellation-works.html",
+        "fa": "fa/writing/how-noise-cancellation-works.html",
+        "ar": "ar/writing/how-noise-cancellation-works.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
+    },
+    {
+      "stem": "iphone-duo-price-per-day",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/iphone-duo-price-per-day.html",
+        "fa": "fa/writing/iphone-duo-price-per-day.html",
+        "ar": "ar/writing/iphone-duo-price-per-day.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/foldable-two-batteries.html"
+        }
+      ]
+    },
+    {
+      "stem": "why-full-storage-slows-computer",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/why-full-storage-slows-computer.html",
+        "fa": "fa/writing/why-full-storage-slows-computer.html",
+        "ar": "ar/writing/why-full-storage-slows-computer.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/how-zip-files-work.html"
+        }
+      ]
+    },
+    {
+      "stem": "why-phone-stops-charging-at-80",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/why-phone-stops-charging-at-80.html",
+        "fa": "fa/writing/why-phone-stops-charging-at-80.html",
+        "ar": "ar/writing/why-phone-stops-charging-at-80.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/foldable-two-batteries.html"
+        }
+      ]
+    },
+    {
+      "stem": "what-accept-cookies-means",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/what-accept-cookies-means.html",
+        "fa": "fa/writing/what-accept-cookies-means.html",
+        "ar": "ar/writing/what-accept-cookies-means.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/incognito-private-browsing.html"
+        }
+      ]
+    },
+    {
+      "stem": "incognito-private-browsing",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/incognito-private-browsing.html",
+        "fa": "fa/writing/incognito-private-browsing.html",
+        "ar": "ar/writing/incognito-private-browsing.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/what-accept-cookies-means.html"
+        }
+      ]
+    },
+    {
+      "stem": "how-satellite-messaging-works",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/how-satellite-messaging-works.html",
+        "fa": "fa/writing/how-satellite-messaging-works.html",
+        "ar": "ar/writing/how-satellite-messaging-works.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
+    },
+    {
+      "stem": "humanoid-robots-at-home",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/humanoid-robots-at-home.html",
+        "fa": "fa/writing/humanoid-robots-at-home.html",
+        "ar": "ar/writing/humanoid-robots-at-home.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/how-photo-text-recognition-works.html"
+        }
+      ]
+    },
+    {
+      "stem": "foldable-two-batteries",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/foldable-two-batteries.html",
+        "fa": "fa/writing/foldable-two-batteries.html",
+        "ar": "ar/writing/foldable-two-batteries.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-phone-stops-charging-at-80.html"
+        }
+      ]
+    },
+    {
+      "stem": "passkeys-face-id",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/passkeys-face-id.html",
+        "fa": "fa/writing/passkeys-face-id.html",
+        "ar": "ar/writing/passkeys-face-id.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/how-contactless-cards-work.html"
+        }
+      ]
+    },
+    {
+      "stem": "how-zip-files-work",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/how-zip-files-work.html",
+        "fa": "fa/writing/how-zip-files-work.html",
+        "ar": "ar/writing/how-zip-files-work.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-full-storage-slows-computer.html"
+        }
+      ]
+    }
+  ]
+}
