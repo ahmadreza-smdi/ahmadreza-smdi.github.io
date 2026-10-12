@@ -720,6 +720,30 @@
           "path": "writing/why-full-storage-slows-computer.html"
         }
       ]
+    },
+    {
+      "stem": "chatgpt-intelligent-ui-explained",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/chatgpt-intelligent-ui-explained.html",
+        "fa": "fa/writing/chatgpt-intelligent-ui-explained.html",
+        "ar": "ar/writing/chatgpt-intelligent-ui-explained.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/how-photo-text-recognition-works.html"
+        }
+      ]
     }
   ]
 }

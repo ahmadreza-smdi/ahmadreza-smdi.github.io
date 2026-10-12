@@ -8,6 +8,14 @@
     <dc:creator>Ahmadreza Samadi</dc:creator>
     <atom:link href="https://a-samadi.com/writing/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>How does ChatGPT's Intelligent UI work?</title>
+      <link>https://a-samadi.com/writing/chatgpt-intelligent-ui-explained.html</link>
+      <description>A simple explanation of ChatGPT's interactive answers, the 7 October announcement and a fictional budget that shows why assumptions still matter.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Mon, 12 Oct 2026 08:39:26 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/chatgpt-intelligent-ui-explained.html</guid>
+    </item>
+    <item>
       <title>How can a building have a live digital copy?</title>
       <link>https://a-samadi.com/writing/how-building-digital-twins-work.html</link>
       <description>Sensors connect real rooms and equipment to an updating digital model. See how a building digital twin turns readings into useful context.</description>

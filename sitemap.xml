@@ -160,7 +160,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/writing/</loc>
-        <lastmod>2026-10-11T00:08:56+03:30</lastmod>
+        <lastmod>2026-10-12T12:09:26+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -184,7 +184,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/</loc>
-        <lastmod>2026-10-11T00:08:56+03:30</lastmod>
+        <lastmod>2026-10-12T12:09:26+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -208,7 +208,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/</loc>
-        <lastmod>2026-10-11T00:08:56+03:30</lastmod>
+        <lastmod>2026-10-12T12:09:26+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -1247,5 +1247,41 @@
     </url>
     <url>
         <loc>https://a-samadi.com/tools/dubai-purchase-cost.html</loc>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/chatgpt-intelligent-ui-explained.html</loc>
+        <lastmod>2026-10-12T12:09:26+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/chatgpt-intelligent-ui-explained.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/chatgpt-intelligent-ui-explained.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/chatgpt-intelligent-ui-explained.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/chatgpt-intelligent-ui-explained.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/chatgpt-intelligent-ui-explained/slide-01.png</image:loc>
+            <image:title>How does ChatGPT's Intelligent UI work?</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/chatgpt-intelligent-ui-explained.html</loc>
+        <lastmod>2026-10-12T12:09:26+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/chatgpt-intelligent-ui-explained.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/chatgpt-intelligent-ui-explained.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/chatgpt-intelligent-ui-explained.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/chatgpt-intelligent-ui-explained.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/chatgpt-intelligent-ui-explained/slide-01.png</image:loc>
+            <image:title>رابط تعاملی ChatGPT چگونه کار می‌کند؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/chatgpt-intelligent-ui-explained.html</loc>
+        <lastmod>2026-10-12T12:09:26+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/chatgpt-intelligent-ui-explained.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/chatgpt-intelligent-ui-explained.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/chatgpt-intelligent-ui-explained.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/chatgpt-intelligent-ui-explained.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/chatgpt-intelligent-ui-explained/slide-01.png</image:loc>
+            <image:title>كيف تعمل الواجهة التفاعلية في ChatGPT؟</image:title>
+        </image:image>
     </url>
 </urlset>

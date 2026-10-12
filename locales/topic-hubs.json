@@ -271,6 +271,13 @@
       "paths": {
         "en": "watch/iphone-duo.html"
       }
+    },
+    "article_chatgpt_intelligent_ui_explained": {
+      "paths": {
+        "en": "writing/chatgpt-intelligent-ui-explained.html",
+        "fa": "fa/writing/chatgpt-intelligent-ui-explained.html",
+        "ar": "ar/writing/chatgpt-intelligent-ui-explained.html"
+      }
     }
   },
   "hubs": [
@@ -505,6 +512,7 @@
         "article_why_ai_sounds_confident",
         "article_why_ai_loses_earlier_chat_context",
         "article_verify_ai_image_claims",
+        "article_chatgpt_intelligent_ui_explained",
         "rental_film",
         "decision_guide"
       ],
@@ -521,7 +529,8 @@
         "decision_first",
         "article_why_ai_sounds_confident",
         "article_why_ai_loses_earlier_chat_context",
-        "article_verify_ai_image_claims"
+        "article_verify_ai_image_claims",
+        "article_chatgpt_intelligent_ui_explained"
       ]
     },
     {
