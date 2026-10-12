@@ -8,6 +8,14 @@
     <dc:creator>Ahmadreza Samadi</dc:creator>
     <atom:link href="https://a-samadi.com/writing/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>How do property tokens work, and can you sell them?</title>
+      <link>https://a-samadi.com/writing/dubai-property-tokenisation-explained.html</link>
+      <description>A simple property-token explainer connects digital ownership, fractional shares and net rent with the separate challenge of finding a buyer.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Mon, 12 Oct 2026 15:56:21 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/dubai-property-tokenisation-explained.html</guid>
+    </item>
+    <item>
       <title>How does ChatGPT's Intelligent UI work?</title>
       <link>https://a-samadi.com/writing/chatgpt-intelligent-ui-explained.html</link>
       <description>A simple explanation of ChatGPT's interactive answers, the 7 October announcement and a fictional budget that shows why assumptions still matter.</description>

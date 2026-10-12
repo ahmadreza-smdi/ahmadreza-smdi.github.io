@@ -744,6 +744,30 @@
           "path": "writing/how-photo-text-recognition-works.html"
         }
       ]
+    },
+    {
+      "stem": "dubai-property-tokenisation-explained",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/dubai-property-tokenisation-explained.html",
+        "fa": "fa/writing/dubai-property-tokenisation-explained.html",
+        "ar": "ar/writing/dubai-property-tokenisation-explained.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-rental-yield-cash-flow.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/passkeys-face-id.html"
+        }
+      ]
     }
   ]
 }

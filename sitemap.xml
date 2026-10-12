@@ -160,7 +160,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/writing/</loc>
-        <lastmod>2026-10-12T12:09:26+03:30</lastmod>
+        <lastmod>2026-10-12T19:26:21+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -184,7 +184,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/</loc>
-        <lastmod>2026-10-12T12:09:26+03:30</lastmod>
+        <lastmod>2026-10-12T19:26:21+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -208,7 +208,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/</loc>
-        <lastmod>2026-10-12T12:09:26+03:30</lastmod>
+        <lastmod>2026-10-12T19:26:21+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -1282,6 +1282,42 @@
         <image:image>
             <image:loc>https://a-samadi.com/assets/writing/chatgpt-intelligent-ui-explained/slide-01.png</image:loc>
             <image:title>كيف تعمل الواجهة التفاعلية في ChatGPT؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/dubai-property-tokenisation-explained.html</loc>
+        <lastmod>2026-10-12T19:26:21+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/dubai-property-tokenisation-explained.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/dubai-property-tokenisation-explained.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/dubai-property-tokenisation-explained.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/dubai-property-tokenisation-explained.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/dubai-property-tokenisation-explained/slide-01.png</image:loc>
+            <image:title>How do property tokens work, and can you sell them?</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/dubai-property-tokenisation-explained.html</loc>
+        <lastmod>2026-10-12T19:26:21+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/dubai-property-tokenisation-explained.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/dubai-property-tokenisation-explained.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/dubai-property-tokenisation-explained.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/dubai-property-tokenisation-explained.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/dubai-property-tokenisation-explained/slide-01.png</image:loc>
+            <image:title>توکن‌های ملکی چگونه کار می‌کنند و آیا می‌توان آن‌ها را فروخت؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/dubai-property-tokenisation-explained.html</loc>
+        <lastmod>2026-10-12T19:26:21+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/dubai-property-tokenisation-explained.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/dubai-property-tokenisation-explained.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/dubai-property-tokenisation-explained.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/dubai-property-tokenisation-explained.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/dubai-property-tokenisation-explained/slide-01.png</image:loc>
+            <image:title>كيف تعمل الرموز العقارية، وهل يمكن بيعها؟</image:title>
         </image:image>
     </url>
 </urlset>
