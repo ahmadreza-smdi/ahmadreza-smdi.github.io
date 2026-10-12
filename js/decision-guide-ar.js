@@ -35,7 +35,8 @@
     document.getElementById('download').disabled = false; document.getElementById('print').disabled = false;
   }
   function load(name) {
-    form.reset(); keys.forEach(key => { form.elements[key].setCustomValidity(''); if (examples[name]) form.elements[key].value = examples[name][key]; });
+    const defaults = { user: '', decision: '', action: '', evidence: '', availability: 'unknown', stakes: 'low', review: 'always', baseline: '', success: '' };
+    form.reset(); keys.forEach(key => { form.elements[key].setCustomValidity(''); form.elements[key].value = examples[name] ? examples[name][key] : defaults[key]; });
     document.querySelectorAll('[data-example]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.example === name)));
     if (name === 'blank') { content.replaceChildren(); briefText = ''; dirty = true; status.textContent = 'أكمل الورقة ثم أنشئ الموجز.'; document.getElementById('download').disabled = true; document.getElementById('print').disabled = true; form.elements.user.focus(); }
     else build('تم تحميل مثال توضيحي. عدّل أي تفصيل ثم أعد إنشاء الموجز.');
@@ -47,4 +48,6 @@
   document.getElementById('print').addEventListener('click', () => { if (!dirty) window.print(); });
   document.getElementById('interactive').hidden = false;
   load('property');
+  // Only expose controls after all handlers and the initial brief are ready.
+  document.querySelectorAll('[data-startup-control]').forEach(control => { control.disabled = false; });
 })();

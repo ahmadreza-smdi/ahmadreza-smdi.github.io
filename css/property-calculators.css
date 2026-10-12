@@ -11,3 +11,6 @@
 body.property-calculator{padding-top:0}
 .property-calculator .editorial-header{position:relative;inset:auto;transform:none;width:100%;max-width:none;margin:0}
 .property-calculator .results{top:20px}
+
+/* Keep startup grid geometry while controls remain invisible and unavailable. */
+body.property-calculator form[data-calculator][hidden]{display:block!important;visibility:hidden}

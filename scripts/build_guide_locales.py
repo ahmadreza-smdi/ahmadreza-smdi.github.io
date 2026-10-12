@@ -2,6 +2,7 @@
 import json
 import re
 import sys
+import subprocess
 from pathlib import Path
 
 sys.dont_write_bytecode = True
@@ -37,7 +38,7 @@ for lang in ('fa', 'ar'):
     page = page.replace('"inLanguage": "en"', f'"inLanguage": "{lang}"')
     # Preserve shared assets; localize only document routes, not the canonical Person identity.
     page = page.replace('="../css/', '="../../css/').replace('="../assets/', '="../../assets/')
-    page = page.replace('../js/decision-guide.js?v=1', f'../../js/decision-guide-{lang}.js?v=1')
+    page = re.sub(r'\.\./js/decision-guide\.js(\?[^" ]*)?', lambda match: f'../../js/decision-guide-{lang}.js' + (match.group(1) or ''), page)
     page = page.replace('href="/"', f'href="/{lang}/"')
     # Hreflang must remain reciprocal, so temporarily protect those complete tags.
     alternates = re.findall(r'<link rel="alternate"[^>]+>', page)
@@ -48,12 +49,14 @@ for lang in ('fa', 'ar'):
     page = page.replace('"item": "https://a-samadi.com/"', f'"item": "https://a-samadi.com/{lang}/"')
     for i, tag in enumerate(alternates):
         page = page.replace(f'__ALTERNATE_{i}__', tag)
-    page = page.replace('</head>', '<link rel="stylesheet" href="../../css/rtl.css?v=20261009-lagoon4"><link rel="stylesheet" href="../../css/decision-guide-rtl.css?v=1"></head>')
+    page = re.sub(r'\n(?:\s*\n)?(<script src="/js/site-analytics\.js[^"]*" defer></script>)', r'\n<link rel="stylesheet" href="../../css/rtl.css?v=20261009-lagoon4"><link rel="stylesheet" href="../../css/decision-guide-rtl.css?v=1">\n\1', page, count=1)
     english_label = {'fa': 'مطالعه راهنما به انگلیسی ←', 'ar': 'اقرأ الدليل بالإنجليزية ←'}[lang]
     english_link = f'<p class="byline"><a href="/tools/before-you-build-ai.html" hreflang="en" data-locale-primary="en">{english_label}</a></p>'
     assert page.count('</section>\n<noscript>') == 1, f'{lang}: missing guide intro insertion point'
     page = page.replace('</section>\n<noscript>', '</section>\n' + english_link + '\n<noscript>', 1)
     js = js.replace('decision-brief-ahmadreza-samadi.txt', f'decision-brief-ahmadreza-samadi-{lang}.txt')
+    # Bind static startup geometry to the actual localized default runtime output.
+    page = subprocess.run(['node', str(ROOT / 'scripts/render_guide_startup.mjs')], input=json.dumps({'html': page, 'script': js}), text=True, capture_output=True, check=True).stdout
     destination = ROOT / lang / 'tools/before-you-build-ai.html'
     # Social metadata copied from the English page is rebuilt in this page's language.
     for key in ('og:site_name', 'og:locale:alternate', 'og:locale', 'og:image:alt', 'twitter:title', 'twitter:description', 'twitter:image:alt'):
