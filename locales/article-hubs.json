@@ -768,6 +768,30 @@
           "path": "writing/passkeys-face-id.html"
         }
       ]
+    },
+    {
+      "stem": "small-ai-models-task-routing-explained",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/small-ai-models-task-routing-explained.html",
+        "fa": "fa/writing/small-ai-models-task-routing-explained.html",
+        "ar": "ar/writing/small-ai-models-task-routing-explained.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-cost-per-verified-result.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/chatgpt-intelligent-ui-explained.html"
+        }
+      ]
     }
   ]
 }

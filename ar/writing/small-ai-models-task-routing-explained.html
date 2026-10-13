@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="Ahmadreza Samadi">
+<title>اختيار نموذج ذكاء اصطناعي أصغر | أحمدرضا صمدي</title><meta name="description" content="Haiku 5.5 مثال حديث على المهام المحددة للذكاء الاصطناعي. تعرّف على تعريف المهمة والتقييم والتوجيه وحساب تكلفة افتراضي دون افتراض جودة متساوية."><meta name="robots" content="index, follow, max-image-preview:large"><link rel="canonical" href="https://a-samadi.com/ar/writing/small-ai-models-task-routing-explained.html"><link rel="alternate" type="application/rss+xml" title="Ahmadreza Samadi: English writing" href="https://a-samadi.com/writing/feed.xml">
+<link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/small-ai-models-task-routing-explained.html">
+<link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/small-ai-models-task-routing-explained.html">
+<link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/small-ai-models-task-routing-explained.html">
+<link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/small-ai-models-task-routing-explained.html">
+<link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg"><link rel="stylesheet" href="/css/site.css?v=20261009-lagoon4">
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/vazirmatn-arabic-wght.woff2" crossorigin><link rel="stylesheet" href="/css/rtl.css?v=20261009-lagoon4">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ahmadreza Samadi">
+<meta property="og:title" content="كيف يمكن لنموذج ذكاء اصطناعي أصغر أن يناسب مهمة مفيدة؟">
+<meta property="og:description" content="Haiku 5.5 مثال حديث على المهام المحددة للذكاء الاصطناعي. تعرّف على تعريف المهمة والتقييم والتوجيه وحساب تكلفة افتراضي دون افتراض جودة متساوية.">
+<meta property="og:url" content="https://a-samadi.com/ar/writing/small-ai-models-task-routing-explained.html">
+<meta property="og:locale" content="ar_AE">
+<meta property="og:image" content="https://a-samadi.com/assets/writing/small-ai-models-task-routing-explained/slide-01.png">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1350">
+<meta property="og:image:alt" content="يربط رمزان أصليان مهمة محددة ومتكررة بنموذج أصغر ومهمة معقدة بنموذج أقوى. أحجام الرموز تصورية وليست أحجامًا فعلية للنماذج.">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="fa_IR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="كيف يمكن لنموذج ذكاء اصطناعي أصغر أن يناسب مهمة مفيدة؟">
+<meta name="twitter:description" content="Haiku 5.5 مثال حديث على المهام المحددة للذكاء الاصطناعي. تعرّف على تعريف المهمة والتقييم والتوجيه وحساب تكلفة افتراضي دون افتراض جودة متساوية.">
+<meta name="twitter:image" content="https://a-samadi.com/assets/writing/small-ai-models-task-routing-explained/slide-01.png">
+<meta name="twitter:image:alt" content="يربط رمزان أصليان مهمة محددة ومتكررة بنموذج أصغر ومهمة معقدة بنموذج أقوى. أحجام الرموز تصورية وليست أحجامًا فعلية للنماذج.">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://a-samadi.com/ar/writing/small-ai-models-task-routing-explained.html#article",
+      "headline": "كيف يمكن لنموذج ذكاء اصطناعي أصغر أن يناسب مهمة مفيدة؟",
+      "description": "Haiku 5.5 مثال حديث على المهام المحددة للذكاء الاصطناعي. تعرّف على تعريف المهمة والتقييم والتوجيه وحساب تكلفة افتراضي دون افتراض جودة متساوية.",
+      "url": "https://a-samadi.com/ar/writing/small-ai-models-task-routing-explained.html",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://a-samadi.com/ar/writing/small-ai-models-task-routing-explained.html",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://a-samadi.com/assets/writing/small-ai-models-task-routing-explained/slide-01.png"
+        }
+      },
+      "datePublished": "2026-10-13T13:31:09+03:30",
+      "dateModified": "2026-10-13T13:31:09+03:30",
+      "inLanguage": "ar",
+      "image": "https://a-samadi.com/assets/writing/small-ai-models-task-routing-explained/slide-01.png",
+      "author": {
+        "@type": "Person",
+        "@id": "https://a-samadi.com/#person",
+        "name": "أحمدرضا صمدي",
+        "url": "https://a-samadi.com/ar/about.html"
+      },
+      "publisher": {
+        "@id": "https://a-samadi.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://a-samadi.com/#website"
+      },
+      "citation": [
+        "https://www.anthropic.com/claude-haiku-5-5",
+        "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+        "https://platform.claude.com/docs/en/about-claude/pricing",
+        "https://www.anthropic.com/claude/haiku"
+      ],
+      "hasPart": {
+        "@type": "CreativeWork",
+        "name": "شاهد الشرح في الشرائح",
+        "inLanguage": "en",
+        "url": "https://a-samadi.com/assets/writing/small-ai-models-task-routing-explained/small-ai-models-task-routing-explained-carousel.pdf"
+      },
+      "translationOfWork": {
+        "@id": "https://a-samadi.com/writing/small-ai-models-task-routing-explained.html#article"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://a-samadi.com/ar/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "المقالات",
+          "item": "https://a-samadi.com/ar/writing/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "كيف يمكن لنموذج ذكاء اصطناعي أصغر أن يناسب مهمة مفيدة؟"
+        }
+      ]
+    }
+  ]
+}</script>
+<style>.carousel-opening{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1fr);gap:1.5rem;align-items:center;margin:2rem 0}.carousel-cover{margin:0}.carousel-cover img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 0 0 1px var(--line)}.carousel-cover figcaption,.carousel-note{font-size:.85rem!important;color:var(--muted)!important;line-height:1.6}.carousel-cover figcaption{padding:.65rem 0}.carousel-summary{display:grid;gap:.75rem}.carousel-summary div{border:1px solid var(--line);background:var(--surface,#fff);border-radius:18px;padding:1.15rem}.carousel-summary h2{font-size:1.1rem!important;margin:0 0 .4rem!important}.carousel-summary p{margin:0!important;font-size:1rem!important}.carousel-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.25rem 0}.carousel-gallery figure{margin:0}.carousel-gallery img{display:block;width:100%;height:auto;border-radius:12px}.carousel-gallery figcaption{font-size:.85rem;color:var(--muted);padding:.5rem 0}.carousel-slides summary{cursor:pointer;padding:1rem;border:1px solid var(--line);border-radius:12px;color:var(--ink);font-weight:600}.carousel-slides summary:focus-visible{outline:3px solid var(--accent,#0b6a7a);outline-offset:4px}@media(max-width:650px){.carousel-opening,.carousel-gallery{grid-template-columns:1fr}.carousel-cover{max-width:440px;margin-inline:auto}}</style>
+<link rel="stylesheet" href="/css/author-box.css?v=20261009-author1">
+<script src="/js/site-analytics.js?v=20261009-analytics1" defer></script>
+</head>
+<body class="editorial-body"><a class="skip-link" href="#main">انتقل إلى المحتوى</a><header class="editorial-header"><a href="/ar/"><img src="/assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">أحمدرضا صمدي / الرئيسية</a></header>
+<main id="main" class="editorial"><nav class="byline" aria-label="مسار الصفحة"><a href="/ar/">الرئيسية</a> / <a href="/ar/writing/">المقالات</a> / <span aria-current="page">كيف يمكن لنموذج ذكاء اصطناعي أصغر أن يناسب مهمة مفيدة؟</span></nav>
+<article><p class="eyebrow">شرح مبسّط للتكنولوجيا وتقنيات العقارات</p><h1>كيف يمكن لنموذج ذكاء اصطناعي أصغر أن يناسب مهمة مفيدة؟</h1><p class="lead">قد يكون نموذج ذكاء اصطناعي أصغر مفيدًا عندما يلبي متطلبات مهمة محددة بوضوح. ابدأ بالإجابة المطلوبة، واختبر الحالات الصعبة، واحتفظ بمسار للاستثناءات. انخفاض سعر الاستدعاء مفيد داخل سير عمل ينتج نتائج مقبولة.</p>
+<p class="byline">بقلم <a href="/ar/about.html" rel="author">أحمدرضا صمدي</a> · <time datetime="2026-10-13T13:31:09+03:30">١٣ أكتوبر ٢٠٢٦</time> · <a href="https://a-samadi.com/writing/small-ai-models-task-routing-explained.html" hreflang="en">النسخة الإنجليزية</a></p>
+<div class="carousel-opening"><figure class="carousel-cover"><img src="/assets/writing/small-ai-models-task-routing-explained/slide-01.png" alt="يربط رمزان أصليان مهمة محددة ومتكررة بنموذج أصغر ومهمة معقدة بنموذج أقوى. أحجام الرموز تصورية وليست أحجامًا فعلية للنماذج." width="1080" height="1350" decoding="async"><figcaption>شرائح أصلية بلون اللافندر الباستيل مع رسومات توضيحية مبسّطة.</figcaption></figure><div class="carousel-summary">
+<div><h2>حدّد المهمة</h2><p>اختر مهمة محددة بقواعد واضحة للمخرجات ومسار للمراجعة.</p></div>
+<div><h2>اختبر النتيجة</h2><p>راجع أمثلة ذات إجابات معروفة وحالات غامضة والأخطاء وزمن الاستجابة.</p></div>
+<div><h2>احسب التكلفة كاملة</h2><p>الاستدعاءات وإعادة المحاولة والأدوات والتوجيه والمراجعة تؤثر في تكلفة النتيجة المقبولة.</p></div>
+</div></div>
+<section><h2>لماذا نتحدث عن النماذج الأصغر هذا الأسبوع؟</h2><p>قدمت Anthropic نموذج Haiku 5.5 في ٧ أكتوبر ٢٠٢٦ للمهام المحددة والمتكررة. وما زال الإعلان يميز النماذج الأكبر للمهام المعقدة. هذا الإصدار المؤرخ هو الصلة الخبرية الحديثة لهذا الشرح، وليس دليلًا على أن النموذج الأصغر أفضل لكل مهمة أو أن معايير الشركة تتنبأ بنتائجك.</p><p class="carousel-note">المصدر: <a href="https://www.anthropic.com/claude-haiku-5-5" hreflang="en"><bdi>Anthropic: Introducing Claude Haiku 5.5</bdi></a> · <a href="https://www.anthropic.com/claude/haiku" hreflang="en"><bdi>Anthropic: Claude Haiku model page</bdi></a></p></section>
+<section><h2>كيف تبدو المهمة المحددة؟</h2><p>يتلقى تطبيقنا الافتراضي رسائل دعم. المهمة هي تصنيف كل رسالة ضمن تسجيل الدخول أو الرفع أو أخرى، وفق قواعد واضحة. لا أستطيع تسجيل الدخول مثال افتراضي للفئة الأولى، وفشل رفع الصورة مثال للفئة الثانية. تذهب الرسالة خارج الفئات المحددة إلى المراجعة. هذه تصنيفات متوقعة في مثال أصلي، وليست مخرجات فعلية من نموذج. الحدود الواضحة تجعل التقييم ممكنًا.</p><p class="carousel-note">المصدر: <a href="https://platform.claude.com/docs/en/test-and-evaluate/develop-tests" hreflang="en"><bdi>Claude Platform: Define success criteria and build evaluations</bdi></a></p></section>
+<section><h2>كيف تتحقق من نجاحه؟</h2><p>استخدم أمثلة بإجابات معروفة وأدرج مدخلات غامضة وغير معتادة وناقصة. قارن الخيارات على مجموعة المهام المناسبة نفسها. افحص الأخطاء واتساق الإجابات وزمن الاستجابة والتكلفة وفق المتطلبات التي حددتها. الإجابة المقنعة أو قول النموذج إنه واثق لا يثبت صحتها. هذه عملية تقييم مقترحة؛ لم يُختبر أي نموذج من أجل هذا المنشور.</p><p class="carousel-note">المصدر: <a href="https://platform.claude.com/docs/en/test-and-evaluate/develop-tests" hreflang="en"><bdi>Claude Platform: Define success criteria and build evaluations</bdi></a></p></section>
+<section><h2>ما المقصود بالتوجيه؟</h2><p>يختار التوجيه مسار العمل. قد تذهب المهمة المحددة والمتكررة إلى نموذج أصغر. ويمكن إحالة نتيجة غامضة أو فحص غير ناجح أو طلب معقد إلى نموذج أقوى أو شخص. حدد هذا المسار البديل بوضوح وافحص نتيجته أيضًا. النموذج الأقوى خيار آخر، وليس ضمانًا تلقائيًا لحل الحالة الصعبة. الرسم تصميم تصوري، وليس نظامًا منشورًا.</p><p class="carousel-note">المصدر: <a href="https://www.anthropic.com/claude-haiku-5-5" hreflang="en"><bdi>Anthropic: Introducing Claude Haiku 5.5</bdi></a> · <a href="https://platform.claude.com/docs/en/test-and-evaluate/develop-tests" hreflang="en"><bdi>Claude Platform: Define success criteria and build evaluations</bdi></a> · <a href="https://www.anthropic.com/claude/haiku" hreflang="en"><bdi>Anthropic: Claude Haiku model page</bdi></a></p></section>
+<section><h2>كيف يعمل الحساب الافتراضي؟</h2><p>افترض أن كل طلب من ١٠٠ طلب يحصل على استدعاء أولي برسوم مخترعة قدرها ٠٫٠٢ دولار: ١٠٠ ضرب ٠٫٠٢ يساوي دولارين. وافترض أن ٢٠ طلبًا تحتاج إلى استدعاء إضافي برسوم مخترعة قدرها ٠٫٢٠ دولار: ٢٠ ضرب ٠٫٢٠ يساوي ٤ دولارات. مجموع رسوم النموذج ٦ دولارات عبر ١٢٠ استدعاء. إرسال الطلبات الأولية المئة كلها عبر مسار ٠٫٢٠ دولار يعطي ١٠٠ ضرب ٠٫٢٠ يساوي ٢٠ دولارًا. هذه الرسوم والإحالات العشرون افتراضات، وليست أسعار Haiku أو معدل أخطاء أو توفيرًا مقاسًا أو دليلًا على جودة متساوية.</p></section>
+<section><h2>ما الذي لا يشمله مجموع الاستدعاءات؟</h2><p>لا يشمل الحساب تكلفة التوجيه وإعادة المحاولة ورسوم الأدوات ووقت الشخص الذي يفحص المخرجات. ولا يوضح عدد النتائج التي تجتاز المراجعة. قارن التكلفة الكاملة لكل نتيجة مقبولة بعد استيفاء كل خيار لمعيار الجودة المناسب. قد تغير المحاولة الأرخص التي تحتاج إلى تصحيح أكثر نتيجة المقارنة. يوضح المثال سؤالًا ينبغي قياسه، وليس توقعًا لتوفير شركة.</p><p class="carousel-note">المصدر: <a href="https://platform.claude.com/docs/en/test-and-evaluate/develop-tests" hreflang="en"><bdi>Claude Platform: Define success criteria and build evaluations</bdi></a> · <a href="https://platform.claude.com/docs/en/about-claude/pricing" hreflang="en"><bdi>Claude Platform: Pricing</bdi></a></p></section>
+<section><h2>ماذا تتحقق منه قبل الاختيار؟</h2><p>تحقق من الوصول الحالي إلى النموذج في المنتج والمزود والحساب الذي تنوي استخدامه. اقرأ أسعار API الحالية؛ لا تعتبر اسم النموذج سعرًا ثابتًا لكل استدعاء ولا تفترض أن الاشتراك يغطي عبء العمل. يمكن أن تؤثر المدخلات والمخرجات وطول الطلب والتخزين المؤقت ومستوى الجهد والأدوات في الفاتورة. طابق النموذج مع المهمة، واختبر المخرجات، واحتفظ بمسار للمراجعة، وقارن عبء العمل كاملًا.</p><p class="carousel-note">المصدر: <a href="https://www.anthropic.com/claude-haiku-5-5" hreflang="en"><bdi>Anthropic: Introducing Claude Haiku 5.5</bdi></a> · <a href="https://platform.claude.com/docs/en/about-claude/pricing" hreflang="en"><bdi>Claude Platform: Pricing</bdi></a> · <a href="https://www.anthropic.com/claude/haiku" hreflang="en"><bdi>Anthropic: Claude Haiku model page</bdi></a></p></section>
+<h2>شاهد الشرح في الشرائح</h2><p>تشرح هذه الرسومات الأصلية الآلية. نص الشرائح باللغة الإنجليزية.</p><details class="carousel-slides"><summary>عرض جميع الشرائح الإنجليزية: 8</summary><div class="carousel-gallery">
+<figure><img src="/assets/writing/small-ai-models-task-routing-explained/slide-01.png" alt="يربط رمزان أصليان مهمة محددة ومتكررة بنموذج أصغر ومهمة معقدة بنموذج أقوى. أحجام الرموز تصورية وليست أحجامًا فعلية للنماذج." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>شريحة <bdi>1 / 8</bdi></figcaption></figure>
+<figure><img src="/assets/writing/small-ai-models-task-routing-explained/slide-02.png" alt="تُقرن رسالتا دعم افتراضيتان، تعذر تسجيل الدخول وفشل رفع الصورة، بتصنيفين متوقعين لتسجيل الدخول والرفع. ويؤدي تصنيف أخرى إلى المراجعة. ليست مخرجات مقاسة للنموذج." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>شريحة <bdi>2 / 8</bdi></figcaption></figure>
+<figure><img src="/assets/writing/small-ai-models-task-routing-explained/slide-03.png" alt="يتلقى مساران تصوريان للنماذج أمثلة الاختبار نفسها وينتهيان بقائمة لفحص الأخطاء وزمن الاستجابة والتكلفة. لا تظهر درجات معيارية أو نتائج اختبار فعلي للمنتج." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>شريحة <bdi>3 / 8</bdi></figcaption></figure>
+<figure><img src="/assets/writing/small-ai-models-task-routing-explained/slide-04.png" alt="يمر طلب في مسار تصوري عبر نموذج أصغر وفحص. يواصل المسار المطابق للقواعد، وتذهب حالة تحتاج إلى مراجعة إلى نموذج أقوى أو شخص. لا يوجد ضمان للدقة." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>شريحة <bdi>4 / 8</bdi></figcaption></figure>
+<figure><img src="/assets/writing/small-ai-models-task-routing-explained/slide-05.png" alt="يعرض حساب افتراضي بالدولار ١٠٠ استدعاء أولي ضرب ٠٫٠٢ يساوي دولارين، و٢٠ استدعاء إضافيًا ضرب ٠٫٢٠ يساوي ٤ دولارات، بمجموع ٦ دولارات. الرسوم مخترعة وليست أسعار Haiku." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>شريحة <bdi>5 / 8</bdi></figcaption></figure>
+<figure><img src="/assets/writing/small-ai-models-task-routing-explained/slide-06.png" alt="يقارن مجموعان افتراضيان مسار البدء بالنموذج الأصغر عند ٦ دولارات مع الاستدعاءات المئة عبر المسار الآخر عند ٢٠ دولارًا. يسأل بند منفصل إن كان المساران يحققان معيار الجودة؛ التوجيه والمحاولات والمراجعة تكاليف إضافية." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>شريحة <bdi>6 / 8</bdi></figcaption></figure>
+<figure><img src="/assets/writing/small-ai-models-task-routing-explained/slide-07.png" alt="تفصل قائمة أصلية الوصول إلى الحساب والنموذج عن رموز الإدخال والإخراج وطول الطلب والتخزين المؤقت والأدوات. لا تعد بسعر مزود أو حق استخدام ضمن اشتراك." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>شريحة <bdi>7 / 8</bdi></figcaption></figure>
+<figure><img src="/assets/writing/small-ai-models-task-routing-explained/slide-08.png" alt="تسأل ثلاثة أسئلة عما يجب أن يكون صحيحًا، ومسار الحالة الغامضة، وتكلفة كل نتيجة مقبولة. لا تبلغ القائمة المقترحة عن نتائج تقييم فعلية." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>شريحة <bdi>8 / 8</bdi></figcaption></figure>
+</div></details><p><a href="/assets/writing/small-ai-models-task-routing-explained/small-ai-models-task-routing-explained-carousel.pdf" type="application/pdf" hreflang="en">تنزيل الشرائح الإنجليزية بصيغة PDF</a></p>
+<h2>المصادر</h2><p class="carousel-note">تمت مراجعة المصادر الأصلية في 2026-10-12. يوضح الشرح تواريخ الإعلانات وينسب تقارير المشغّلين إليهم؛ قد تتغير الإتاحة والشروط.</p><ul>
+<li><a href="https://www.anthropic.com/claude-haiku-5-5" hreflang="en"><bdi>Anthropic: Introducing Claude Haiku 5.5</bdi></a></li>
+<li><a href="https://platform.claude.com/docs/en/test-and-evaluate/develop-tests" hreflang="en"><bdi>Claude Platform: Define success criteria and build evaluations</bdi></a></li>
+<li><a href="https://platform.claude.com/docs/en/about-claude/pricing" hreflang="en"><bdi>Claude Platform: Pricing</bdi></a></li>
+<li><a href="https://www.anthropic.com/claude/haiku" hreflang="en"><bdi>Anthropic: Claude Haiku model page</bdi></a></li>
+</ul>
+<!-- article-hubs:start -->
+<nav class="article-reading-path" aria-labelledby="article-related-title">
+<p>ضمن موضوع: <a href="/ar/topics/tech-explained.html" data-hub-primary="tech-explained">التكنولوجيا ببساطة</a></p>
+<h2 id="article-related-title">محتوى ذو صلة</h2>
+<ul><li><a href="/ar/writing/ai-cost-per-verified-result.html" data-related-pillar="property-decisions">تكلفة الذكاء الاصطناعي لكل نتيجة مُتحقَّق منها</a></li>
+<li><a href="/ar/writing/start-with-the-decision.html" data-related-pillar="decision-first-ai">ابدأ بالقرار، ثم ابنِ الذكاء الاصطناعي</a></li>
+<li><a href="/ar/writing/chatgpt-intelligent-ui-explained.html" data-related-pillar="tech-explained">كيف تعمل الواجهة التفاعلية في ChatGPT؟</a></li></ul>
+</nav>
+<!-- article-hubs:end -->
+<!-- author-box:start -->
+<aside class="article-author" aria-labelledby="article-author-title">
+<h2 id="article-author-title">عن الكاتب</h2>
+<p class="article-author__name"><a href="/ar/about.html" rel="author">أحمدرضا صمدي</a></p>
+<p>رائد أعمال تقني مقيم في دبي؛ شريك مؤسس وقائد تقني في <bdi lang="en">Appraiva</bdi> وشريك مؤسس ورئيس تنفيذي لمجموعة رويال أبراج.</p>
+</aside>
+<!-- author-box:end -->
+</article>
+<footer class="editorial-footer"><nav aria-label="قراءة مرتبطة"><a href="/ar/writing/">المقالات</a> · <a href="/ar/about.html">عن أحمدرضا صمدي</a></nav><p>أحمدرضا صمدي</p></footer></main></body></html>

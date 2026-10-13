@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="Ahmadreza Samadi">
+<title>انتخاب مدل کوچک‌تر هوش مصنوعی | احمدرضا صمدی</title><meta name="description" content="Haiku 5.5 نمونه‌ای تازه از کاربردهای محدود هوش مصنوعی است. تعریف کار، ارزیابی، مسیردهی و یک محاسبه هزینه فرضی را بدون فرض کیفیت یکسان ببینید."><meta name="robots" content="index, follow, max-image-preview:large"><link rel="canonical" href="https://a-samadi.com/fa/writing/small-ai-models-task-routing-explained.html"><link rel="alternate" type="application/rss+xml" title="Ahmadreza Samadi: English writing" href="https://a-samadi.com/writing/feed.xml">
+<link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/small-ai-models-task-routing-explained.html">
+<link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/small-ai-models-task-routing-explained.html">
+<link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/small-ai-models-task-routing-explained.html">
+<link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/small-ai-models-task-routing-explained.html">
+<link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg"><link rel="stylesheet" href="/css/site.css?v=20261009-lagoon4">
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/vazirmatn-arabic-wght.woff2" crossorigin><link rel="stylesheet" href="/css/rtl.css?v=20261009-lagoon4">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ahmadreza Samadi">
+<meta property="og:title" content="یک مدل کوچک‌تر هوش مصنوعی چگونه می‌تواند برای یک کار مفید مناسب باشد؟">
+<meta property="og:description" content="Haiku 5.5 نمونه‌ای تازه از کاربردهای محدود هوش مصنوعی است. تعریف کار، ارزیابی، مسیردهی و یک محاسبه هزینه فرضی را بدون فرض کیفیت یکسان ببینید.">
+<meta property="og:url" content="https://a-samadi.com/fa/writing/small-ai-models-task-routing-explained.html">
+<meta property="og:locale" content="fa_IR">
+<meta property="og:image" content="https://a-samadi.com/assets/writing/small-ai-models-task-routing-explained/slide-01.png">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1350">
+<meta property="og:image:alt" content="دو نماد اصلی مدل، کار محدود و تکراری را به مدل کوچک‌تر و کار پیچیده را به مدل قوی‌تر وصل می‌کنند. اندازه نمادها مفهومی است و اندازه واقعی مدل را نشان نمی‌دهد.">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ar_AE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="یک مدل کوچک‌تر هوش مصنوعی چگونه می‌تواند برای یک کار مفید مناسب باشد؟">
+<meta name="twitter:description" content="Haiku 5.5 نمونه‌ای تازه از کاربردهای محدود هوش مصنوعی است. تعریف کار، ارزیابی، مسیردهی و یک محاسبه هزینه فرضی را بدون فرض کیفیت یکسان ببینید.">
+<meta name="twitter:image" content="https://a-samadi.com/assets/writing/small-ai-models-task-routing-explained/slide-01.png">
+<meta name="twitter:image:alt" content="دو نماد اصلی مدل، کار محدود و تکراری را به مدل کوچک‌تر و کار پیچیده را به مدل قوی‌تر وصل می‌کنند. اندازه نمادها مفهومی است و اندازه واقعی مدل را نشان نمی‌دهد.">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://a-samadi.com/fa/writing/small-ai-models-task-routing-explained.html#article",
+      "headline": "یک مدل کوچک‌تر هوش مصنوعی چگونه می‌تواند برای یک کار مفید مناسب باشد؟",
+      "description": "Haiku 5.5 نمونه‌ای تازه از کاربردهای محدود هوش مصنوعی است. تعریف کار، ارزیابی، مسیردهی و یک محاسبه هزینه فرضی را بدون فرض کیفیت یکسان ببینید.",
+      "url": "https://a-samadi.com/fa/writing/small-ai-models-task-routing-explained.html",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://a-samadi.com/fa/writing/small-ai-models-task-routing-explained.html",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://a-samadi.com/assets/writing/small-ai-models-task-routing-explained/slide-01.png"
+        }
+      },
+      "datePublished": "2026-10-13T13:31:09+03:30",
+      "dateModified": "2026-10-13T13:31:09+03:30",
+      "inLanguage": "fa",
+      "image": "https://a-samadi.com/assets/writing/small-ai-models-task-routing-explained/slide-01.png",
+      "author": {
+        "@type": "Person",
+        "@id": "https://a-samadi.com/#person",
+        "name": "احمدرضا صمدی",
+        "url": "https://a-samadi.com/fa/about.html"
+      },
+      "publisher": {
+        "@id": "https://a-samadi.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://a-samadi.com/#website"
+      },
+      "citation": [
+        "https://www.anthropic.com/claude-haiku-5-5",
+        "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+        "https://platform.claude.com/docs/en/about-claude/pricing",
+        "https://www.anthropic.com/claude/haiku"
+      ],
+      "hasPart": {
+        "@type": "CreativeWork",
+        "name": "توضیح در اسلایدها",
+        "inLanguage": "en",
+        "url": "https://a-samadi.com/assets/writing/small-ai-models-task-routing-explained/small-ai-models-task-routing-explained-carousel.pdf"
+      },
+      "translationOfWork": {
+        "@id": "https://a-samadi.com/writing/small-ai-models-task-routing-explained.html#article"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "خانه",
+          "item": "https://a-samadi.com/fa/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "نوشته‌ها",
+          "item": "https://a-samadi.com/fa/writing/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "یک مدل کوچک‌تر هوش مصنوعی چگونه می‌تواند برای یک کار مفید مناسب باشد؟"
+        }
+      ]
+    }
+  ]
+}</script>
+<style>.carousel-opening{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1fr);gap:1.5rem;align-items:center;margin:2rem 0}.carousel-cover{margin:0}.carousel-cover img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 0 0 1px var(--line)}.carousel-cover figcaption,.carousel-note{font-size:.85rem!important;color:var(--muted)!important;line-height:1.6}.carousel-cover figcaption{padding:.65rem 0}.carousel-summary{display:grid;gap:.75rem}.carousel-summary div{border:1px solid var(--line);background:var(--surface,#fff);border-radius:18px;padding:1.15rem}.carousel-summary h2{font-size:1.1rem!important;margin:0 0 .4rem!important}.carousel-summary p{margin:0!important;font-size:1rem!important}.carousel-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.25rem 0}.carousel-gallery figure{margin:0}.carousel-gallery img{display:block;width:100%;height:auto;border-radius:12px}.carousel-gallery figcaption{font-size:.85rem;color:var(--muted);padding:.5rem 0}.carousel-slides summary{cursor:pointer;padding:1rem;border:1px solid var(--line);border-radius:12px;color:var(--ink);font-weight:600}.carousel-slides summary:focus-visible{outline:3px solid var(--accent,#0b6a7a);outline-offset:4px}@media(max-width:650px){.carousel-opening,.carousel-gallery{grid-template-columns:1fr}.carousel-cover{max-width:440px;margin-inline:auto}}</style>
+<link rel="stylesheet" href="/css/author-box.css?v=20261009-author1">
+<script src="/js/site-analytics.js?v=20261009-analytics1" defer></script>
+</head>
+<body class="editorial-body"><a class="skip-link" href="#main">رفتن به محتوا</a><header class="editorial-header"><a href="/fa/"><img src="/assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">احمدرضا صمدی / خانه</a></header>
+<main id="main" class="editorial"><nav class="byline" aria-label="مسیر صفحه"><a href="/fa/">خانه</a> / <a href="/fa/writing/">نوشته‌ها</a> / <span aria-current="page">یک مدل کوچک‌تر هوش مصنوعی چگونه می‌تواند برای یک کار مفید مناسب باشد؟</span></nav>
+<article><p class="eyebrow">فناوری و فناوری املاک به زبان ساده</p><h1>یک مدل کوچک‌تر هوش مصنوعی چگونه می‌تواند برای یک کار مفید مناسب باشد؟</h1><p class="lead">مدل کوچک‌تر هوش مصنوعی وقتی مفید است که نیازهای یک کار روشن و مشخص را برآورده کند. از پاسخ مورد نیاز شروع کنید، حالت‌های دشوار را آزمایش کنید و برای استثناها مسیر دیگری داشته باشید. هزینه کمتر هر فراخوانی در فرایندی ارزش دارد که نتیجه قابل قبول تولید کند.</p>
+<p class="byline">نویسنده: <a href="/fa/about.html" rel="author">احمدرضا صمدی</a> · <time datetime="2026-10-13T13:31:09+03:30">۱۳ اکتبر ۲۰۲۶</time> · <a href="https://a-samadi.com/writing/small-ai-models-task-routing-explained.html" hreflang="en">نسخه انگلیسی</a></p>
+<div class="carousel-opening"><figure class="carousel-cover"><img src="/assets/writing/small-ai-models-task-routing-explained/slide-01.png" alt="دو نماد اصلی مدل، کار محدود و تکراری را به مدل کوچک‌تر و کار پیچیده را به مدل قوی‌تر وصل می‌کنند. اندازه نمادها مفهومی است و اندازه واقعی مدل را نشان نمی‌دهد." width="1080" height="1350" decoding="async"><figcaption>کاروسل اصلی با رنگ اسطوخودوس پاستلی و نمودارهای ساده‌شده برای توضیح.</figcaption></figure><div class="carousel-summary">
+<div><h2>کار را تعریف کنید</h2><p>کاری محدود با قواعد روشن برای خروجی و مسیر بازبینی انتخاب کنید.</p></div>
+<div><h2>نتیجه را آزمایش کنید</h2><p>نمونه‌های با پاسخ معلوم و مبهم، خطاها و زمان پاسخ را بررسی کنید.</p></div>
+<div><h2>کل هزینه را حساب کنید</h2><p>فراخوانی مدل، تلاش دوباره، ابزار، مسیردهی و بازبینی بر هزینه هر نتیجه پذیرفته‌شده اثر دارند.</p></div>
+</div></div>
+<section><h2>چرا این هفته درباره مدل‌های کوچک‌تر صحبت می‌کنیم؟</h2><p>Anthropic در ۷ اکتبر ۲۰۲۶، Haiku 5.5 را برای کارهای محدود و تکراری معرفی کرد. اطلاعیه همچنان مدل‌های بزرگ‌تر را برای کارهای پیچیده متمایز می‌کند. این انتشار تاریخ‌دار، ارتباط خبری تازه این توضیح است؛ نه مدرکی که مدل کوچک‌تر برای هر کاری بهتر است یا نتایج معیارهای فروشنده، نتیجه کار شما را پیش‌بینی می‌کنند.</p><p class="carousel-note">منبع: <a href="https://www.anthropic.com/claude-haiku-5-5" hreflang="en"><bdi>Anthropic: Introducing Claude Haiku 5.5</bdi></a> · <a href="https://www.anthropic.com/claude/haiku" hreflang="en"><bdi>Anthropic: Claude Haiku model page</bdi></a></p></section>
+<section><h2>یک کار محدود چه شکلی دارد؟</h2><p>برنامه فرضی ما پیام‌های پشتیبانی دریافت می‌کند. کار این است که با قواعد مشخص به هر پیام برچسب ورود، بارگذاری یا سایر بدهیم. نمی‌توانم وارد شوم، نمونه فرضی دسته ورود است؛ بارگذاری عکس انجام نشد، نمونه دسته بارگذاری است. پیام خارج از دسته‌های تعریف‌شده به بازبینی می‌رود. این‌ها برچسب‌های مورد انتظار یک مثال اصلی‌اند، نه خروجی واقعی مدل. مرز روشن کار، ارزیابی را ممکن می‌کند.</p><p class="carousel-note">منبع: <a href="https://platform.claude.com/docs/en/test-and-evaluate/develop-tests" hreflang="en"><bdi>Claude Platform: Define success criteria and build evaluations</bdi></a></p></section>
+<section><h2>چگونه بررسی کنیم که کار می‌کند؟</h2><p>از نمونه‌هایی با پاسخ معلوم استفاده کنید و ورودی‌های مبهم، غیرمعمول و ناقص را هم بگنجانید. گزینه‌ها را با مجموعه کارهای مرتبط یکسان مقایسه کنید. خطا، ثبات پاسخ، زمان پاسخ و هزینه را در برابر نیازهای تعریف‌شده بسنجید. پاسخ قانع‌کننده یا ابراز اطمینان مدل، درستی را ثابت نمی‌کند. این یک فرایند ارزیابی پیشنهادی است؛ برای این مطلب هیچ مدلی آزمایش نشده است.</p><p class="carousel-note">منبع: <a href="https://platform.claude.com/docs/en/test-and-evaluate/develop-tests" hreflang="en"><bdi>Claude Platform: Define success criteria and build evaluations</bdi></a></p></section>
+<section><h2>مسیردهی چیست؟</h2><p>مسیردهی، مسیر انجام کار را انتخاب می‌کند. کار محدود و تکراری ممکن است به مدل کوچک‌تر برود. نتیجه مبهم، بررسی ناموفق یا درخواست پیچیده می‌تواند به مدل قوی‌تر یا یک انسان ارجاع شود. این مسیر جایگزین را صریح تعریف کنید و نتیجه آن را هم بررسی کنید. مدل قوی‌تر یک گزینه دیگر است، نه تضمین خودکار حل شدن حالت دشوار. نمودار، طرح مفهومی است و سامانه پیاده‌سازی‌شده نیست.</p><p class="carousel-note">منبع: <a href="https://www.anthropic.com/claude-haiku-5-5" hreflang="en"><bdi>Anthropic: Introducing Claude Haiku 5.5</bdi></a> · <a href="https://platform.claude.com/docs/en/test-and-evaluate/develop-tests" hreflang="en"><bdi>Claude Platform: Define success criteria and build evaluations</bdi></a> · <a href="https://www.anthropic.com/claude/haiku" hreflang="en"><bdi>Anthropic: Claude Haiku model page</bdi></a></p></section>
+<section><h2>محاسبه فرضی چگونه انجام می‌شود؟</h2><p>فرض کنید هر یک از ۱۰۰ درخواست، یک فراخوانی اولیه با هزینه ساختگی ۰٫۰۲ دلار دارد: ۱۰۰ ضرب‌در ۰٫۰۲ برابر با ۲ دلار است. فرض کنید ۲۰ درخواست به یک فراخوانی اضافه با هزینه ساختگی ۰٫۲۰ دلار نیاز دارند: ۲۰ ضرب‌در ۰٫۲۰ برابر با ۴ دلار است. مجموع هزینه فراخوانی‌ها ۶ دلار برای ۱۲۰ فراخوانی است. اگر هر ۱۰۰ درخواست اولیه از مسیر ۰٫۲۰ دلاری بروند، ۱۰۰ ضرب‌در ۰٫۲۰ برابر با ۲۰ دلار می‌شود. این هزینه‌ها و ۲۰ ارجاع، فرضی‌اند؛ قیمت Haiku، نرخ خطای مدل، صرفه‌جویی اندازه‌گیری‌شده یا مدرک کیفیت یکسان نیستند.</p></section>
+<section><h2>چه چیزی در این مجموع نیست؟</h2><p>این محاسبه هزینه مسیردهی، تلاش دوباره، ابزارها و زمانی را که انسان صرف بررسی خروجی می‌کند در نظر نمی‌گیرد. همچنین نشان نمی‌دهد چند خروجی بازبینی را گذرانده‌اند. فقط پس از برآورده شدن معیار کیفیت مرتبط، کل هزینه هر نتیجه پذیرفته‌شده را مقایسه کنید. تلاشی ارزان‌تر که اصلاح بیشتری می‌خواهد می‌تواند نتیجه مقایسه را تغییر دهد. این مثال، پرسشی برای اندازه‌گیری است، نه پیش‌بینی صرفه‌جویی یک شرکت.</p><p class="carousel-note">منبع: <a href="https://platform.claude.com/docs/en/test-and-evaluate/develop-tests" hreflang="en"><bdi>Claude Platform: Define success criteria and build evaluations</bdi></a> · <a href="https://platform.claude.com/docs/en/about-claude/pricing" hreflang="en"><bdi>Claude Platform: Pricing</bdi></a></p></section>
+<section><h2>پیش از انتخاب چه چیزی را بررسی کنیم؟</h2><p>دسترسی فعلی مدل را برای محصول، ارائه‌دهنده و حسابی که می‌خواهید استفاده کنید بررسی کنید. نرخ‌های فعلی API را بخوانید؛ نام مدل را قیمت ثابت هر فراخوانی ندانید و فرض نکنید اشتراک، یک حجم کار را پوشش می‌دهد. مقدار ورودی و خروجی، طول ورودی، حافظه نهان، میزان تلاش پردازشی و ابزارها می‌توانند بر صورتحساب اثر بگذارند. کار را متناسب انتخاب کنید، خروجی‌ها را آزمایش کنید، مسیر بازبینی داشته باشید و کل حجم کار را مقایسه کنید.</p><p class="carousel-note">منبع: <a href="https://www.anthropic.com/claude-haiku-5-5" hreflang="en"><bdi>Anthropic: Introducing Claude Haiku 5.5</bdi></a> · <a href="https://platform.claude.com/docs/en/about-claude/pricing" hreflang="en"><bdi>Claude Platform: Pricing</bdi></a> · <a href="https://www.anthropic.com/claude/haiku" hreflang="en"><bdi>Anthropic: Claude Haiku model page</bdi></a></p></section>
+<h2>توضیح در اسلایدها</h2><p>این نمودارهای اصلی سازوکار را توضیح می‌دهند. متن کاروسل به انگلیسی است.</p><details class="carousel-slides"><summary>نمایش هر 8 اسلاید انگلیسی</summary><div class="carousel-gallery">
+<figure><img src="/assets/writing/small-ai-models-task-routing-explained/slide-01.png" alt="دو نماد اصلی مدل، کار محدود و تکراری را به مدل کوچک‌تر و کار پیچیده را به مدل قوی‌تر وصل می‌کنند. اندازه نمادها مفهومی است و اندازه واقعی مدل را نشان نمی‌دهد." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>اسلاید <bdi>1 / 8</bdi></figcaption></figure>
+<figure><img src="/assets/writing/small-ai-models-task-routing-explained/slide-02.png" alt="دو پیام پشتیبانی فرضی، نمی‌توانم وارد شوم و بارگذاری عکس انجام نشد، با برچسب‌های مورد انتظار ورود و بارگذاری همراه‌اند. برچسب سایر به بازبینی می‌رود؛ خروجی‌ها اندازه‌گیری نشده‌اند." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>اسلاید <bdi>2 / 8</bdi></figcaption></figure>
+<figure><img src="/assets/writing/small-ai-models-task-routing-explained/slide-03.png" alt="دو مسیر مفهومی مدل، نمونه‌های آزمایشی یکسان را دریافت می‌کنند و به بررسی خطا، زمان پاسخ و هزینه می‌رسند. هیچ امتیاز معیار یا آزمون واقعی محصول نمایش داده نشده است." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>اسلاید <bdi>3 / 8</bdi></figcaption></figure>
+<figure><img src="/assets/writing/small-ai-models-task-routing-explained/slide-04.png" alt="در مسیر مفهومی، پیام از مدل کوچک‌تر و بررسی عبور می‌کند. مسیر سازگار با قواعد ادامه می‌یابد و حالت نیازمند بازبینی به مدل قوی‌تر یا انسان می‌رود. دقت تضمین نشده است." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>اسلاید <bdi>4 / 8</bdi></figcaption></figure>
+<figure><img src="/assets/writing/small-ai-models-task-routing-explained/slide-05.png" alt="محاسبه فرضی دلاری نشان می‌دهد ۱۰۰ فراخوانی اولیه ضرب‌در ۰٫۰۲ برابر با ۲ دلار و ۲۰ فراخوانی اضافه ضرب‌در ۰٫۲۰ برابر با ۴ دلار است؛ مجموع ۶ دلار است. این‌ها هزینه‌های ساختگی‌اند و قیمت Haiku نیستند." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>اسلاید <bdi>5 / 8</bdi></figcaption></figure>
+<figure><img src="/assets/writing/small-ai-models-task-routing-explained/slide-06.png" alt="دو مجموع فرضی، مسیر شروع با مدل کوچک‌تر را با ۶ دلار و مسیر ۱۰۰ فراخوانی دیگر را با ۲۰ دلار مقایسه می‌کنند. پرسشی جدا می‌پرسد آیا هر دو معیار کیفیت را دارند؛ مسیردهی، تلاش دوباره و بازبینی هزینه اضافه دارند." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>اسلاید <bdi>6 / 8</bdi></figcaption></figure>
+<figure><img src="/assets/writing/small-ai-models-task-routing-explained/slide-07.png" alt="فهرست اصلی، دسترسی حساب و مدل را از تعداد توکن ورودی و خروجی، طول ورودی، حافظه نهان و ابزارها جدا می‌کند. هیچ نرخ فروشنده یا حق استفاده ناشی از اشتراک وعده داده نشده است." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>اسلاید <bdi>7 / 8</bdi></figcaption></figure>
+<figure><img src="/assets/writing/small-ai-models-task-routing-explained/slide-08.png" alt="سه پرسش درباره آنچه باید درست باشد، مسیر حالت مبهم و هزینه هر نتیجه پذیرفته‌شده‌اند. فهرست پیشنهادی، نتیجه ارزیابی واقعی گزارش نمی‌کند." width="1080" height="1350" loading="lazy" decoding="async"><figcaption>اسلاید <bdi>8 / 8</bdi></figcaption></figure>
+</div></details><p><a href="/assets/writing/small-ai-models-task-routing-explained/small-ai-models-task-routing-explained-carousel.pdf" type="application/pdf" hreflang="en">دانلود کاروسل انگلیسی به صورت PDF</a></p>
+<h2>منابع</h2><p class="carousel-note">منابع اصلی در 2026-10-12 بررسی شدند. اطلاعیه‌های تاریخ‌دار و گزارش‌های ارائه‌دهندگان در متن مشخص شده‌اند؛ دسترسی و شرایط ممکن است تغییر کند.</p><ul>
+<li><a href="https://www.anthropic.com/claude-haiku-5-5" hreflang="en"><bdi>Anthropic: Introducing Claude Haiku 5.5</bdi></a></li>
+<li><a href="https://platform.claude.com/docs/en/test-and-evaluate/develop-tests" hreflang="en"><bdi>Claude Platform: Define success criteria and build evaluations</bdi></a></li>
+<li><a href="https://platform.claude.com/docs/en/about-claude/pricing" hreflang="en"><bdi>Claude Platform: Pricing</bdi></a></li>
+<li><a href="https://www.anthropic.com/claude/haiku" hreflang="en"><bdi>Anthropic: Claude Haiku model page</bdi></a></li>
+</ul>
+<!-- article-hubs:start -->
+<nav class="article-reading-path" aria-labelledby="article-related-title">
+<p>بخشی از: <a href="/fa/topics/tech-explained.html" data-hub-primary="tech-explained">فناوری به زبان ساده</a></p>
+<h2 id="article-related-title">مطالب مرتبط</h2>
+<ul><li><a href="/fa/writing/ai-cost-per-verified-result.html" data-related-pillar="property-decisions">هزینه هوش مصنوعی به‌ازای هر نتیجه تأییدشده</a></li>
+<li><a href="/fa/writing/start-with-the-decision.html" data-related-pillar="decision-first-ai">از تصمیم شروع کنید، سپس هوش مصنوعی را بسازید</a></li>
+<li><a href="/fa/writing/chatgpt-intelligent-ui-explained.html" data-related-pillar="tech-explained">رابط تعاملی ChatGPT چگونه کار می‌کند؟</a></li></ul>
+</nav>
+<!-- article-hubs:end -->
+<!-- author-box:start -->
+<aside class="article-author" aria-labelledby="article-author-title">
+<h2 id="article-author-title">درباره نویسنده</h2>
+<p class="article-author__name"><a href="/fa/about.html" rel="author">احمدرضا صمدی</a></p>
+<p>کارآفرین فناوری ساکن دبی؛ هم‌بنیان‌گذار و راهبر فنی <bdi lang="en">Appraiva</bdi> و هم‌بنیان‌گذار و مدیرعامل گروه رویال ابراج.</p>
+</aside>
+<!-- author-box:end -->
+</article>
+<footer class="editorial-footer"><nav aria-label="مطالعه مرتبط"><a href="/fa/writing/">نوشته‌ها</a> · <a href="/fa/about.html">درباره احمدرضا صمدی</a></nav><p>احمدرضا صمدی</p></footer></main></body></html>
