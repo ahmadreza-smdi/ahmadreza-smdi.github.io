@@ -292,6 +292,13 @@
         "fa": "fa/writing/small-ai-models-task-routing-explained.html",
         "ar": "ar/writing/small-ai-models-task-routing-explained.html"
       }
+    },
+    "article_ai_data_center_site_readiness": {
+      "paths": {
+        "en": "writing/ai-data-center-site-readiness.html",
+        "fa": "fa/writing/ai-data-center-site-readiness.html",
+        "ar": "ar/writing/ai-data-center-site-readiness.html"
+      }
     }
   },
   "hubs": [
@@ -528,6 +535,7 @@
         "article_verify_ai_image_claims",
         "article_chatgpt_intelligent_ui_explained",
         "article_dubai_property_tokenisation_explained",
+        "article_ai_data_center_site_readiness",
         "rental_film",
         "decision_guide"
       ],
@@ -546,7 +554,8 @@
         "article_why_ai_loses_earlier_chat_context",
         "article_verify_ai_image_claims",
         "article_chatgpt_intelligent_ui_explained",
-        "article_dubai_property_tokenisation_explained"
+        "article_dubai_property_tokenisation_explained",
+        "article_ai_data_center_site_readiness"
       ]
     },
     {

@@ -62,6 +62,7 @@ Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and
 - [How does ChatGPT's Intelligent UI work?](https://a-samadi.com/writing/chatgpt-intelligent-ui-explained.html): A simple explanation of ChatGPT's interactive answers, the 7 October announcement and a fictional budget that shows why assumptions still matter.
 - [How do property tokens work, and can you sell them?](https://a-samadi.com/writing/dubai-property-tokenisation-explained.html): A simple property-token explainer connects digital ownership, fractional shares and net rent with the separate challenge of finding a buyer.
 - [Choosing a smaller AI model](https://a-samadi.com/writing/small-ai-models-task-routing-explained.html): Haiku 5.5 is a current example of narrow AI work. Learn task definition, evaluation, routing and a fictional cost calculation without assuming equal quality.
+- [AI data-center site readiness](https://a-samadi.com/writing/ai-data-center-site-readiness.html): Power, cooling, networks and building fit explained through fictional sites, with current JLL and Meta sources and questions for specialist review.
 
 ## Films
 

@@ -792,6 +792,30 @@
           "path": "writing/chatgpt-intelligent-ui-explained.html"
         }
       ]
+    },
+    {
+      "stem": "ai-data-center-site-readiness",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/ai-data-center-site-readiness.html",
+        "fa": "fa/writing/ai-data-center-site-readiness.html",
+        "ar": "ar/writing/ai-data-center-site-readiness.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
     }
   ]
 }

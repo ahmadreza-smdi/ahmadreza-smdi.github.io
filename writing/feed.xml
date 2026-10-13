@@ -8,6 +8,14 @@
     <dc:creator>Ahmadreza Samadi</dc:creator>
     <atom:link href="https://a-samadi.com/writing/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>What makes a building ready for AI data centers?</title>
+      <link>https://a-samadi.com/writing/ai-data-center-site-readiness.html</link>
+      <description>Power, cooling, networks and building fit explained through fictional sites, with current JLL and Meta sources and questions for specialist review.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Tue, 13 Oct 2026 14:42:26 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/ai-data-center-site-readiness.html</guid>
+    </item>
+    <item>
       <title>How can a smaller AI model fit a useful task?</title>
       <link>https://a-samadi.com/writing/small-ai-models-task-routing-explained.html</link>
       <description>Haiku 5.5 is a current example of narrow AI work. Learn task definition, evaluation, routing and a fictional cost calculation without assuming equal quality.</description>
