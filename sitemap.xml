@@ -160,7 +160,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/writing/</loc>
-        <lastmod>2026-10-13T18:12:26+03:30</lastmod>
+        <lastmod>2026-10-14T12:04:37+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -184,7 +184,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/</loc>
-        <lastmod>2026-10-13T18:12:26+03:30</lastmod>
+        <lastmod>2026-10-14T12:04:37+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -208,7 +208,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/</loc>
-        <lastmod>2026-10-13T18:12:26+03:30</lastmod>
+        <lastmod>2026-10-14T12:04:37+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -1390,6 +1390,42 @@
         <image:image>
             <image:loc>https://a-samadi.com/assets/writing/ai-data-center-site-readiness/slide-01.png</image:loc>
             <image:title>ما الذي يجعل مبنى مناسبًا لمركز بيانات للذكاء الاصطناعي؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/ai-inference-memory-movement-explained.html</loc>
+        <lastmod>2026-10-14T12:04:37+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-inference-memory-movement-explained.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-inference-memory-movement-explained.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-inference-memory-movement-explained.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-inference-memory-movement-explained.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/ai-inference-memory-movement-explained/slide-01.png</image:loc>
+            <image:title>Why does moving data matter for AI chips?</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/ai-inference-memory-movement-explained.html</loc>
+        <lastmod>2026-10-14T12:04:37+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-inference-memory-movement-explained.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-inference-memory-movement-explained.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-inference-memory-movement-explained.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-inference-memory-movement-explained.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/ai-inference-memory-movement-explained/slide-01.png</image:loc>
+            <image:title>چرا جابه‌جایی داده برای تراشه هوش مصنوعی مهم است؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/ai-inference-memory-movement-explained.html</loc>
+        <lastmod>2026-10-14T12:04:37+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-inference-memory-movement-explained.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-inference-memory-movement-explained.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-inference-memory-movement-explained.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-inference-memory-movement-explained.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/ai-inference-memory-movement-explained/slide-01.png</image:loc>
+            <image:title>لماذا تهم حركة البيانات في شرائح الذكاء الاصطناعي؟</image:title>
         </image:image>
     </url>
 </urlset>

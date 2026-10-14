@@ -8,6 +8,14 @@
     <dc:creator>Ahmadreza Samadi</dc:creator>
     <atom:link href="https://a-samadi.com/writing/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Why does moving data matter for AI chips?</title>
+      <link>https://a-samadi.com/writing/ai-inference-memory-movement-explained.html</link>
+      <description>Our original framework: identify the workload, locate the bottleneck, then test the complete result. No chip test, measured saving or vendor ranking is claimed.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Wed, 14 Oct 2026 08:34:37 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/ai-inference-memory-movement-explained.html</guid>
+    </item>
+    <item>
       <title>What makes a building ready for AI data centers?</title>
       <link>https://a-samadi.com/writing/ai-data-center-site-readiness.html</link>
       <description>Power, cooling, networks and building fit explained through fictional sites, with current JLL and Meta sources and questions for specialist review.</description>

@@ -299,6 +299,13 @@
         "fa": "fa/writing/ai-data-center-site-readiness.html",
         "ar": "ar/writing/ai-data-center-site-readiness.html"
       }
+    },
+    "article_ai_inference_memory_movement_explained": {
+      "paths": {
+        "en": "writing/ai-inference-memory-movement-explained.html",
+        "fa": "fa/writing/ai-inference-memory-movement-explained.html",
+        "ar": "ar/writing/ai-inference-memory-movement-explained.html"
+      }
     }
   },
   "hubs": [
@@ -788,6 +795,7 @@
         "article_passkeys_face_id",
         "article_how_zip_files_work",
         "article_small_ai_models_task_routing_explained",
+        "article_ai_inference_memory_movement_explained",
         "tech_film_ai_confidence",
         "tech_film_cookie_consent",
         "tech_film_charging_80",
@@ -818,7 +826,8 @@
         "tech_film_profit_cash",
         "tech_film_rental_yield",
         "tech_film_iphone_duo",
-        "article_small_ai_models_task_routing_explained"
+        "article_small_ai_models_task_routing_explained",
+        "article_ai_inference_memory_movement_explained"
       ],
       "all_articles_heading": {
         "en": "Existing explainers and films",
