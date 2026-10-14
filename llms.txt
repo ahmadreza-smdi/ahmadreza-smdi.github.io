@@ -64,6 +64,7 @@ Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and
 - [Choosing a smaller AI model](https://a-samadi.com/writing/small-ai-models-task-routing-explained.html): Haiku 5.5 is a current example of narrow AI work. Learn task definition, evaluation, routing and a fictional cost calculation without assuming equal quality.
 - [AI data-center site readiness](https://a-samadi.com/writing/ai-data-center-site-readiness.html): Power, cooling, networks and building fit explained through fictional sites, with current JLL and Meta sources and questions for specialist review.
 - [Why does moving data matter for AI chips?](https://a-samadi.com/writing/ai-inference-memory-movement-explained.html): Our original framework: identify the workload, locate the bottleneck, then test the complete result. No chip test, measured saving or vendor ranking is claimed.
+- [Building laser scans explained](https://a-samadi.com/writing/building-laser-scans-point-clouds-explained.html): Use the scan as evidence for a defined question. It does not certify structural safety, hidden services or universal accuracy. No real building was surveyed for this post.
 
 ## Films
 

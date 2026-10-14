@@ -160,7 +160,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/writing/</loc>
-        <lastmod>2026-10-14T12:04:37+03:30</lastmod>
+        <lastmod>2026-10-14T18:00:41+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -184,7 +184,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/</loc>
-        <lastmod>2026-10-14T12:04:37+03:30</lastmod>
+        <lastmod>2026-10-14T18:00:41+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -208,7 +208,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/</loc>
-        <lastmod>2026-10-14T12:04:37+03:30</lastmod>
+        <lastmod>2026-10-14T18:00:41+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -1426,6 +1426,42 @@
         <image:image>
             <image:loc>https://a-samadi.com/assets/writing/ai-inference-memory-movement-explained/slide-01.png</image:loc>
             <image:title>لماذا تهم حركة البيانات في شرائح الذكاء الاصطناعي؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/building-laser-scans-point-clouds-explained.html</loc>
+        <lastmod>2026-10-14T18:00:41+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/building-laser-scans-point-clouds-explained.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/building-laser-scans-point-clouds-explained.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/building-laser-scans-point-clouds-explained.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/building-laser-scans-point-clouds-explained.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/building-laser-scans-point-clouds-explained/slide-01.png</image:loc>
+            <image:title>How does a laser scan become a building record?</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/building-laser-scans-point-clouds-explained.html</loc>
+        <lastmod>2026-10-14T18:00:41+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/building-laser-scans-point-clouds-explained.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/building-laser-scans-point-clouds-explained.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/building-laser-scans-point-clouds-explained.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/building-laser-scans-point-clouds-explained.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/building-laser-scans-point-clouds-explained/slide-01.png</image:loc>
+            <image:title>اسکن لیزری چگونه به سندی از ساختمان تبدیل می‌شود؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/building-laser-scans-point-clouds-explained.html</loc>
+        <lastmod>2026-10-14T18:00:41+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/building-laser-scans-point-clouds-explained.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/building-laser-scans-point-clouds-explained.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/building-laser-scans-point-clouds-explained.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/building-laser-scans-point-clouds-explained.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/building-laser-scans-point-clouds-explained/slide-01.png</image:loc>
+            <image:title>كيف يصبح المسح الليزري سجلًا للمبنى؟</image:title>
         </image:image>
     </url>
 </urlset>

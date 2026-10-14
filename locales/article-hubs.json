@@ -840,6 +840,30 @@
           "path": "writing/why-wifi-is-slow-with-full-bars.html"
         }
       ]
+    },
+    {
+      "stem": "building-laser-scans-point-clouds-explained",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/building-laser-scans-point-clouds-explained.html",
+        "fa": "fa/writing/building-laser-scans-point-clouds-explained.html",
+        "ar": "ar/writing/building-laser-scans-point-clouds-explained.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
     }
   ]
 }
