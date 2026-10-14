@@ -1,3 +1,4 @@
+import {initializeSharing} from "./sharing.mjs?v=20261015-share1";
 import {calculateRental,calculatePurchase,FICTIONAL_RENTAL,FICTIONAL_PURCHASE} from "./calculations.mjs";
 const page=document.querySelector("[data-page]"), form=document.querySelector("[data-calculator]");
 if(form){
@@ -57,6 +58,7 @@ if(form){
     row.append(dt,dd);items.append(row);
    }
   }
+  page.dispatchEvent(new Event("calculator:render"));
  }
  form.addEventListener("submit",event=>{event.preventDefault();showIssues=true;render();});
  form.addEventListener("input",render);form.addEventListener("change",render);
@@ -76,6 +78,7 @@ if(form){
   for(const key of ["titleBuyerPercent","mapBuyerPercent","adminBuyerPercent","partnerBuyerPercent"])form.elements[key].value="100";
   render();
  });
- form.hidden=false;render();
+ page.addEventListener("calculator:restore",()=>{showIssues=true;render();});
+ initializeSharing(page,form);form.hidden=false;render();
 }
 

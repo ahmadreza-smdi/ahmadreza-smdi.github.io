@@ -14,3 +14,8 @@ body.property-calculator{padding-top:0}
 
 /* Keep startup grid geometry while controls remain invisible and unavailable. */
 body.property-calculator form[data-calculator][hidden]{display:block!important;visibility:hidden}
+
+.calculator-sharing textarea,.embed-instructions textarea{width:100%;min-height:120px;font:14px/1.5 monospace;padding:12px;border:1px solid var(--line);border-radius:10px}.print-only{display:none}.calculator-embed .editorial-header,.calculator-embed .article-author,.calculator-embed .follow-subscribe,.calculator-embed .editorial-footer,.calculator-embed .embed-instructions{display:none}.embed-attribution{border-top:1px solid var(--line);padding-top:16px;font-size:.9rem}.calculator-embed .wrap{padding:16px}.calculator-embed .intro{padding-top:12px}.print-input-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.print-input-list dd{margin:3px 0 0;font-weight:600}.print-input-list div{break-inside:avoid}
+@media print{form[data-calculator],.calculator-sharing,.embed-instructions,.editorial-header,.article-author,.follow-subscribe,.editorial-footer{display:none!important}.print-only{display:block}.panel{break-inside:auto;box-shadow:none}.wrap{padding:0}.results{position:static}.metric{break-inside:avoid}.print-only p{font-size:.85rem}.print-input-list{font-size:.85rem}h2{break-after:avoid}}
+
+.calculator-embed .print-attribution{display:none!important}
