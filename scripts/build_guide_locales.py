@@ -7,10 +7,12 @@ from pathlib import Path
 
 sys.dont_write_bytecode = True
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from follow_blocks import enrich_follow
 from enrich_metadata import enrich  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 html = (ROOT / 'tools/before-you-build-ai.html').read_text()
+html = re.sub(r'<!-- follow-subscribe:start -->.*?<!-- follow-subscribe:end -->\n?', '', html, flags=re.S)
 script = (ROOT / 'js/decision-guide.js').read_text()
 for lang in ('fa', 'ar'):
     data = json.loads((ROOT / f'locales/decision-guide-{lang}.json').read_text())
@@ -63,6 +65,6 @@ for lang in ('fa', 'ar'):
         page = re.sub(r'<meta\s+(?:property|name)="' + re.escape(key) + r'"\s+content="[^"]*"\s*/?>\n?', '', page)
     page, _ = enrich(destination, page)
     destination.parent.mkdir(parents=True, exist_ok=True)
-    destination.write_text(page)
+    destination.write_text(enrich_follow(page))
     (ROOT / f'js/decision-guide-{lang}.js').write_text(js)
     print(f'Generated {lang}: page, examples, every guidance branch and export text')

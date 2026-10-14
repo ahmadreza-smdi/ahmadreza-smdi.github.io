@@ -5,6 +5,7 @@ These are CollectionPages, so they do not create articles or publication dates.
 """
 
 import argparse
+from follow_blocks import enrich_follow
 from datetime import datetime, timezone
 from html import escape
 from html.parser import HTMLParser
@@ -293,7 +294,7 @@ def main():
             if not hub["paths"][language].startswith(expected_prefix) or path.suffix != ".html":
                 raise ValueError(f"Unexpected generated path: {path}")
             current = path.read_text() if path.exists() else None
-            pages.append((path, current, render(data, hub, language)))
+            pages.append((path, current, enrich_follow(render(data, hub, language))))
     changed = [(path, current, expected) for path, current, expected in pages if current != expected]
     if args.check:
         for path, _, _ in changed:
