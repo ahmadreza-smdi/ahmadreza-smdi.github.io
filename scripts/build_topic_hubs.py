@@ -91,7 +91,7 @@ def resource(data, key, language):
     if not source.is_file():
         raise ValueError(f"Missing reading destination: {relative}")
     metadata = Heading(source.read_text())
-    if metadata.canonical != BASE + relative or not metadata.title:
+    if metadata.canonical != BASE + (relative[:-10] if relative.endswith("/index.html") else relative) or not metadata.title:
         raise ValueError(f"Invalid reading destination: {relative}")
     return {"url": BASE + relative, "href": "/" + relative,
             "title": metadata.title, "language": destination_language}

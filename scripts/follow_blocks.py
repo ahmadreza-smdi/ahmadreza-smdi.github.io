@@ -67,7 +67,8 @@ def main():
         article=any(n.get('@type')=='Article' for n in nodes)
         route=bool(re.fullmatch(r'(fa/|ar/)?(topics|tools)/[^/]+\.html',name))
         brief=name in ('index.html','fa/index.html','ar/index.html','about.html','fa/about.html','ar/about.html')
-        if not (article or route or brief):continue
+        study=bool(re.fullmatch(r'studies/[^/]+/index\.html',name))
+        if not (article or route or brief or study):continue
         result=enrich_follow(source);count+=1
         if result!=source:changes.append((path,source,result))
     if args.check:

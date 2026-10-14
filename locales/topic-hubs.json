@@ -313,6 +313,11 @@
         "fa": "fa/writing/building-laser-scans-point-clouds-explained.html",
         "ar": "ar/writing/building-laser-scans-point-clouds-explained.html"
       }
+    },
+    "rent_ownership_study": {
+      "paths": {
+        "en": "studies/rent-own-2026/index.html"
+      }
     }
   },
   "hubs": [
@@ -551,6 +556,7 @@
         "article_dubai_property_tokenisation_explained",
         "article_ai_data_center_site_readiness",
         "article_building_laser_scans_point_clouds_explained",
+        "rent_ownership_study",
         "rental_film",
         "decision_guide"
       ],
@@ -571,7 +577,8 @@
         "article_chatgpt_intelligent_ui_explained",
         "article_dubai_property_tokenisation_explained",
         "article_ai_data_center_site_readiness",
-        "article_building_laser_scans_point_clouds_explained"
+        "article_building_laser_scans_point_clouds_explained",
+        "rent_ownership_study"
       ]
     },
     {
