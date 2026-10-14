@@ -145,7 +145,7 @@ def propose(plan, receipt):
             raise ValueError('New family already has navigation; review its existing content')
     # Confirm current generated hub output before replacing it with a complement.
     for lang, relative in hub['paths'].items():
-        if (ROOT / relative).read_text() != topics.render(topic_data, hub, lang):
+        if (ROOT / relative).read_text() != topics.enrich_follow(topics.render(topic_data, hub, lang)):
             raise ValueError('Existing hub differs from its source: ' + relative)
     key = 'article_' + slug.replace('-', '_')
     if key in topic_data['resources'] or any(
@@ -173,7 +173,7 @@ def propose(plan, receipt):
             raise ValueError('Article content, head or dates changed outside navigation')
         result[relative] = after
     for lang, relative in hub['paths'].items():
-        result[relative] = topics.render(topic_data, hub, lang)
+        result[relative] = topics.enrich_follow(topics.render(topic_data, hub, lang))
     return result
 
 
