@@ -888,6 +888,30 @@
           "path": "writing/why-wifi-is-slow-with-full-bars.html"
         }
       ]
+    },
+    {
+      "stem": "why-rent-to-value-is-not-property-yield",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/why-rent-to-value-is-not-property-yield.html",
+        "fa": "fa/writing/why-rent-to-value-is-not-property-yield.html",
+        "ar": "ar/writing/why-rent-to-value-is-not-property-yield.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-rental-yield-cash-flow.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/how-zip-files-work.html"
+        }
+      ]
     }
   ]
 }

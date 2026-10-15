@@ -325,6 +325,13 @@
         "fa": "fa/writing/why-ai-weather-models-need-local-observations.html",
         "ar": "ar/writing/why-ai-weather-models-need-local-observations.html"
       }
+    },
+    "article_rent_value_methodology": {
+      "paths": {
+        "en": "writing/why-rent-to-value-is-not-property-yield.html",
+        "fa": "fa/writing/why-rent-to-value-is-not-property-yield.html",
+        "ar": "ar/writing/why-rent-to-value-is-not-property-yield.html"
+      }
     }
   },
   "hubs": [
@@ -565,7 +572,8 @@
         "article_building_laser_scans_point_clouds_explained",
         "rent_ownership_study",
         "rental_film",
-        "decision_guide"
+        "decision_guide",
+        "article_rent_value_methodology"
       ],
       "all_articles_heading": {
         "en": "All articles in this topic",
@@ -585,7 +593,8 @@
         "article_dubai_property_tokenisation_explained",
         "article_ai_data_center_site_readiness",
         "article_building_laser_scans_point_clouds_explained",
-        "rent_ownership_study"
+        "rent_ownership_study",
+        "article_rent_value_methodology"
       ]
     },
     {
