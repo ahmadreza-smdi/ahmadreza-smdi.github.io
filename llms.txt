@@ -66,6 +66,7 @@ Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and
 - [AI data-center site readiness](https://a-samadi.com/writing/ai-data-center-site-readiness.html): Power, cooling, networks and building fit explained through fictional sites, with current JLL and Meta sources and questions for specialist review.
 - [Why does moving data matter for AI chips?](https://a-samadi.com/writing/ai-inference-memory-movement-explained.html): Our original framework: identify the workload, locate the bottleneck, then test the complete result. No chip test, measured saving or vendor ranking is claimed.
 - [Building laser scans explained](https://a-samadi.com/writing/building-laser-scans-point-clouds-explained.html): Use the scan as evidence for a defined question. It does not certify structural safety, hidden services or universal accuracy. No real building was surveyed for this post.
+- [Why does AI need weather stations?](https://a-samadi.com/writing/why-ai-weather-models-need-local-observations.html): A clever model still needs clues from the real world.
 
 ## Films
 

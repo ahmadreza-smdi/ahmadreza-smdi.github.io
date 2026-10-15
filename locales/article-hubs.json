@@ -864,6 +864,30 @@
           "path": "writing/why-wifi-is-slow-with-full-bars.html"
         }
       ]
+    },
+    {
+      "stem": "why-ai-weather-models-need-local-observations",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/why-ai-weather-models-need-local-observations.html",
+        "fa": "fa/writing/why-ai-weather-models-need-local-observations.html",
+        "ar": "ar/writing/why-ai-weather-models-need-local-observations.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
     }
   ]
 }
