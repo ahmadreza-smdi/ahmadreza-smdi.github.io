@@ -160,7 +160,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/writing/</loc>
-        <lastmod>2026-10-15T12:01:10+03:30</lastmod>
+        <lastmod>2026-10-15T18:00:54+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -184,7 +184,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/</loc>
-        <lastmod>2026-10-15T12:01:10+03:30</lastmod>
+        <lastmod>2026-10-15T18:00:54+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -208,7 +208,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/</loc>
-        <lastmod>2026-10-15T12:01:10+03:30</lastmod>
+        <lastmod>2026-10-15T18:00:54+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -1526,5 +1526,41 @@
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-rent-to-value-is-not-property-yield.html" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-rent-to-value-is-not-property-yield.html" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-rent-to-value-is-not-property-yield.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/why-occupancy-sensor-lights-switch-off.html</loc>
+        <lastmod>2026-10-15T18:00:54+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-occupancy-sensor-lights-switch-off.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-occupancy-sensor-lights-switch-off.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-occupancy-sensor-lights-switch-off.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-occupancy-sensor-lights-switch-off.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/why-occupancy-sensor-lights-switch-off/slide-01.png</image:loc>
+            <image:title>Why did the lights go out while you were there?</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/why-occupancy-sensor-lights-switch-off.html</loc>
+        <lastmod>2026-10-15T18:00:54+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-occupancy-sensor-lights-switch-off.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-occupancy-sensor-lights-switch-off.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-occupancy-sensor-lights-switch-off.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-occupancy-sensor-lights-switch-off.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/why-occupancy-sensor-lights-switch-off/slide-01.png</image:loc>
+            <image:title>چرا چراغ حسگردار با حضور شما خاموش می‌شود؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/why-occupancy-sensor-lights-switch-off.html</loc>
+        <lastmod>2026-10-15T18:00:54+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-occupancy-sensor-lights-switch-off.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-occupancy-sensor-lights-switch-off.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-occupancy-sensor-lights-switch-off.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/why-occupancy-sensor-lights-switch-off.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/why-occupancy-sensor-lights-switch-off/slide-01.png</image:loc>
+            <image:title>لماذا تنطفئ إضاءة الحساس وأنت موجود؟</image:title>
+        </image:image>
     </url>
 </urlset>

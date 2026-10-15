@@ -332,6 +332,13 @@
         "fa": "fa/writing/why-rent-to-value-is-not-property-yield.html",
         "ar": "ar/writing/why-rent-to-value-is-not-property-yield.html"
       }
+    },
+    "article_why_occupancy_sensor_lights_switch_off": {
+      "paths": {
+        "en": "writing/why-occupancy-sensor-lights-switch-off.html",
+        "fa": "fa/writing/why-occupancy-sensor-lights-switch-off.html",
+        "ar": "ar/writing/why-occupancy-sensor-lights-switch-off.html"
+      }
     }
   },
   "hubs": [
@@ -573,7 +580,8 @@
         "rent_ownership_study",
         "rental_film",
         "decision_guide",
-        "article_rent_value_methodology"
+        "article_rent_value_methodology",
+        "article_why_occupancy_sensor_lights_switch_off"
       ],
       "all_articles_heading": {
         "en": "All articles in this topic",
@@ -594,7 +602,8 @@
         "article_ai_data_center_site_readiness",
         "article_building_laser_scans_point_clouds_explained",
         "rent_ownership_study",
-        "article_rent_value_methodology"
+        "article_rent_value_methodology",
+        "article_why_occupancy_sensor_lights_switch_off"
       ]
     },
     {

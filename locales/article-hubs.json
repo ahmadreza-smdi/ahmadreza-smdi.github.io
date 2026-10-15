@@ -912,6 +912,30 @@
           "path": "writing/how-zip-files-work.html"
         }
       ]
+    },
+    {
+      "stem": "why-occupancy-sensor-lights-switch-off",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/why-occupancy-sensor-lights-switch-off.html",
+        "fa": "fa/writing/why-occupancy-sensor-lights-switch-off.html",
+        "ar": "ar/writing/why-occupancy-sensor-lights-switch-off.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
     }
   ]
 }

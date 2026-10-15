@@ -68,6 +68,7 @@ Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and
 - [Building laser scans explained](https://a-samadi.com/writing/building-laser-scans-point-clouds-explained.html): Use the scan as evidence for a defined question. It does not certify structural safety, hidden services or universal accuracy. No real building was surveyed for this post.
 - [Why does AI need weather stations?](https://a-samadi.com/writing/why-ai-weather-models-need-local-observations.html): A clever model still needs clues from the real world.
 - [Why rent divided by home value is not property yield](https://a-samadi.com/writing/why-rent-to-value-is-not-property-yield.html): Why a metro rent-to-value ratio is not an observed property yield. A fictional cash budget shows the difference and the next evidence to check.
+- [Why did the lights go out while you were there?](https://a-samadi.com/writing/why-occupancy-sensor-lights-switch-off.html): A sensor can miss the clue that you are there.
 
 ## Films
 

@@ -226,6 +226,7 @@ for css in ROOT.rglob('*.css'):
   check_local_asset(source,ref)
 
 clusters = (
+ ('writing/why-occupancy-sensor-lights-switch-off.html','fa/writing/why-occupancy-sensor-lights-switch-off.html','ar/writing/why-occupancy-sensor-lights-switch-off.html'),
  ('writing/why-ai-weather-models-need-local-observations.html','fa/writing/why-ai-weather-models-need-local-observations.html','ar/writing/why-ai-weather-models-need-local-observations.html'),
  ('writing/building-laser-scans-point-clouds-explained.html','fa/writing/building-laser-scans-point-clouds-explained.html','ar/writing/building-laser-scans-point-clouds-explained.html'),
  ('writing/ai-inference-memory-movement-explained.html','fa/writing/ai-inference-memory-movement-explained.html','ar/writing/ai-inference-memory-movement-explained.html'),
