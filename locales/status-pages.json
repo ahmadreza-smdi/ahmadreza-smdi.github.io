@@ -75,7 +75,7 @@
             },
             {
               "path": "speaking.html",
-              "label": "Speaking & conversation topics"
+              "label": "Writing topics"
             }
           ]
         },
@@ -148,7 +148,7 @@
             },
             {
               "path": "speaking.html",
-              "label": "موضوع‌های سخنرانی و گفت‌وگو"
+              "label": "موضوع‌های نوشتار"
             }
           ]
         },
@@ -221,7 +221,7 @@
             },
             {
               "path": "speaking.html",
-              "label": "موضوعات للمحاضرات والحوار"
+              "label": "موضوعات الكتابة"
             }
           ]
         }
@@ -229,13 +229,13 @@
     },
     {
       "id": "speaking",
-      "updated_at": "2026-10-10T03:41:04+03:30",
+      "updated_at": "2026-10-17T00:30:02+03:30",
       "locales": {
         "en": {
-          "title": "Speaking & conversation topics | Ahmadreza Samadi",
-          "description": "Conversation topics from Ahmadreza Samadi's work in AI products, property data and business systems, with related writing and contact for enquiries.",
-          "heading": "Speaking & conversation topics",
-          "lead": "Topics drawn from my work in AI products, property data and business operations, with related writing for each conversation.",
+          "title": "Writing topics | Ahmadreza Samadi",
+          "description": "Writing topics from Ahmadreza Samadi's work in AI products, property data and business systems, with related published work and written contact details.",
+          "heading": "Writing topics",
+          "lead": "Topics drawn from my work in AI products, property data and business operations, with related published work to read.",
           "sections": [
             {
               "id": "decision-first-ai",
@@ -277,8 +277,8 @@
               ]
             }
           ],
-          "contact_heading": "Enquiries",
-          "contact_copy": "For topic, interview or event enquiries, email",
+          "contact_heading": "Written enquiries",
+          "contact_copy": "For written questions about published work or factual corrections, email",
           "footer_links": [
             {
               "path": "press.html",
@@ -295,10 +295,10 @@
           ]
         },
         "fa": {
-          "title": "موضوع‌های سخنرانی و گفت‌وگو | احمدرضا صمدی",
-          "description": "موضوع‌هایی برای گفت‌وگو بر پایه کار احمدرضا صمدی در محصولات هوش مصنوعی، داده‌های املاک و سامانه‌های کسب‌وکار؛ همراه با نوشته‌های مرتبط و راه تماس.",
-          "heading": "موضوع‌های سخنرانی و گفت‌وگو",
-          "lead": "موضوع‌هایی برگرفته از کار من در محصولات هوش مصنوعی، داده‌های املاک و عملیات کسب‌وکار، همراه با نوشته‌های مرتبط برای هر گفت‌وگو.",
+          "title": "موضوع‌های نوشتار | احمدرضا صمدی",
+          "description": "موضوع‌های نوشتار احمدرضا صمدی درباره محصولات هوش مصنوعی، داده‌های املاک و سامانه‌های کسب‌وکار؛ همراه با آثار منتشرشده و راه تماس کتبی.",
+          "heading": "موضوع‌های نوشتار",
+          "lead": "موضوع‌هایی برگرفته از کار من در محصولات هوش مصنوعی، داده‌های املاک و عملیات کسب‌وکار، همراه با آثار منتشرشده برای مطالعه.",
           "sections": [
             {
               "id": "decision-first-ai",
@@ -340,8 +340,8 @@
               ]
             }
           ],
-          "contact_heading": "تماس",
-          "contact_copy": "برای پرسش درباره موضوع‌ها، مصاحبه یا رویداد، ایمیل بفرستید به",
+          "contact_heading": "پرسش‌های کتبی",
+          "contact_copy": "برای پرسش کتبی درباره آثار منتشرشده یا اصلاح اطلاعات، به این نشانی ایمیل بزنید:",
           "footer_links": [
             {
               "path": "press.html",
@@ -358,10 +358,10 @@
           ]
         },
         "ar": {
-          "title": "موضوعات للمحاضرات والحوار | أحمدرضا صمدي",
-          "description": "موضوعات للحوار مستمدة من عمل أحمدرضا صمدي في منتجات الذكاء الاصطناعي وبيانات العقارات وأنظمة الأعمال، مع قراءات مرتبطة ووسيلة للاستفسار.",
-          "heading": "موضوعات للمحاضرات والحوار",
-          "lead": "موضوعات مستمدة من عملي في منتجات الذكاء الاصطناعي وبيانات العقارات وعمليات الأعمال، مع قراءات مرتبطة بكل حوار.",
+          "title": "موضوعات الكتابة | أحمدرضا صمدي",
+          "description": "موضوعات كتابة أحمدرضا صمدي حول منتجات الذكاء الاصطناعي وبيانات العقارات وأنظمة الأعمال، مع أعمال منشورة ووسيلة تواصل كتابية.",
+          "heading": "موضوعات الكتابة",
+          "lead": "موضوعات مستمدة من عملي في منتجات الذكاء الاصطناعي وبيانات العقارات وعمليات الأعمال، مع أعمال منشورة للقراءة.",
           "sections": [
             {
               "id": "decision-first-ai",
@@ -403,8 +403,8 @@
               ]
             }
           ],
-          "contact_heading": "الاستفسارات",
-          "contact_copy": "للاستفسار عن موضوع أو مقابلة أو فعالية، راسلني على",
+          "contact_heading": "الاستفسارات المكتوبة",
+          "contact_copy": "للأسئلة المكتوبة حول الأعمال المنشورة أو لتصحيح المعلومات، راسل:",
           "footer_links": [
             {
               "path": "press.html",

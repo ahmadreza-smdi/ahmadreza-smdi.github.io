@@ -37,10 +37,29 @@ def validate(data):
         path = ROOT / resource['path'].lstrip('/')
         if not path.is_file():
             raise ValueError('Missing approved public resource: ' + resource['path'])
+    assets = data['original_work']
+    if len({asset['id'] for asset in assets}) != len(assets):
+        raise ValueError('Original work identifiers must be unique')
+    for asset in assets:
+        if not asset['links'] or len({link['id'] for link in asset['links']}) != len(asset['links']):
+            raise ValueError('Original work links must have unique identifiers')
+        for link in asset['links']:
+            url = link['url']
+            if url.startswith('/') and not url.startswith('//'):
+                target = ROOT / url.lstrip('/')
+                if not (target / 'index.html' if url.endswith('/') else target).is_file():
+                    raise ValueError('Missing original work destination: ' + url)
+            elif not url.startswith('https://github.com/ahmadreza-smdi/'):
+                raise ValueError('Unexpected original work destination: ' + url)
     for lang, page in data['pages'].items():
         expected = '/press.html' if lang == 'en' else f'/{lang}/press.html'
         if page['path'] != expected or page['dir'] != ('ltr' if lang == 'en' else 'rtl'):
             raise ValueError('Incorrect press locale destination or direction')
+        if set(page['original_work_entries']) != {asset['id'] for asset in assets}:
+            raise ValueError('All press languages must describe the same original work')
+        for asset in assets:
+            if set(page['original_work_entries'][asset['id']]['link_labels']) != {link['id'] for link in asset['links']}:
+                raise ValueError('All original work links need localized labels')
 
 
 def schema(data, lang):
@@ -130,7 +149,13 @@ def build(data, lang):
     parts.extend(f'<div><dt>{mixed(fact["label"], lang)}</dt><dd>{mixed(fact["value"], lang)}</dd></div>' for fact in copy['facts'])
     parts += ['</dl></section>', f'<section class="profile-resources" id="press-resources" aria-labelledby="press-resources-title"><h2 id="press-resources-title">{escape(copy["resources_heading"])}</h2><p>{escape(copy["resources_intro"])}</p><div class="profile-downloads">']
     parts.extend(f'<a href="{resource["path"]}" download>{mixed(copy["resource_labels"][resource["id"]], lang)}</a>' for resource in data['resources'])
-    parts += ['</div></section>', f'<section class="profile-resources" id="press-contact" aria-labelledby="press-contact-title"><h2 id="press-contact-title">{escape(copy["contact_heading"])}</h2><p>{escape(copy["contact_copy"])} <a href="mailto:{data["email"]}" dir="ltr">{data["email"]}</a>.</p></section>',
+    parts += ['</div></section>', f'<section class="profile-resources" id="original-work" aria-labelledby="original-work-title"><h2 id="original-work-title">{escape(copy["original_work_heading"])}</h2><p>{escape(copy["original_work_intro"])}</p><ul>']
+    for asset in data['original_work']:
+        entry = copy['original_work_entries'][asset['id']]
+        parts.append(f'<li><p><strong>{mixed(entry["title"], lang)}</strong></p><p>{mixed(entry["description"], lang)}</p><p>')
+        parts.append(' · '.join(f'<a href="{escape(link["url"], quote=True)}">{mixed(entry["link_labels"][link["id"]], lang)}</a>' for link in asset['links']))
+        parts.append('</p></li>')
+    parts += ['</ul></section>', f'<section class="profile-resources" id="press-contact" aria-labelledby="press-contact-title"><h2 id="press-contact-title">{escape(copy["contact_heading"])}</h2><p>{escape(copy["contact_copy"])} <a href="mailto:{data["email"]}" dir="ltr">{data["email"]}</a>.</p></section>',
               f'<section class="profile-resources" aria-labelledby="press-context-title"><h2 id="press-context-title">{escape(copy["context_heading"])}</h2><ul>']
     parts.extend(f'<li><a href="{link["path"]}">{mixed(link["label"], lang)}</a></li>' for link in copy['context_links'])
     parts += ['</ul></section>',
