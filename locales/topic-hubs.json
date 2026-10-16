@@ -367,6 +367,13 @@
         "fa": "fa/writing/where-wearable-ai-computation-runs.html",
         "ar": "ar/writing/where-wearable-ai-computation-runs.html"
       }
+    },
+    "article_dubai_sources": {
+      "paths": {
+        "en": "writing/which-dubai-property-source.html",
+        "fa": "fa/writing/which-dubai-property-source.html",
+        "ar": "ar/writing/which-dubai-property-source.html"
+      }
     }
   },
   "hubs": [
@@ -610,7 +617,8 @@
         "decision_guide",
         "article_rent_value_methodology",
         "article_why_occupancy_sensor_lights_switch_off",
-        "article_building_leak_alert_response_checklist"
+        "article_building_leak_alert_response_checklist",
+        "article_dubai_sources"
       ],
       "all_articles_heading": {
         "en": "All articles in this topic",
@@ -633,7 +641,8 @@
         "rent_ownership_study",
         "article_rent_value_methodology",
         "article_why_occupancy_sensor_lights_switch_off",
-        "article_building_leak_alert_response_checklist"
+        "article_building_leak_alert_response_checklist",
+        "article_dubai_sources"
       ]
     },
     {

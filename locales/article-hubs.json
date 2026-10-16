@@ -1032,6 +1032,30 @@
           "path": "writing/why-wifi-is-slow-with-full-bars.html"
         }
       ]
+    },
+    {
+      "stem": "which-dubai-property-source",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/which-dubai-property-source.html",
+        "fa": "fa/writing/which-dubai-property-source.html",
+        "ar": "ar/writing/which-dubai-property-source.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-rental-yield-cash-flow.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/how-zip-files-work.html"
+        }
+      ]
     }
   ]
 }
