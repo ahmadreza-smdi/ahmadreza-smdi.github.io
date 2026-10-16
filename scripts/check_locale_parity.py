@@ -226,6 +226,10 @@ for css in ROOT.rglob('*.css'):
   check_local_asset(source,ref)
 
 clusters = (
+ ('writing/where-wearable-ai-computation-runs.html','fa/writing/where-wearable-ai-computation-runs.html','ar/writing/where-wearable-ai-computation-runs.html'),
+ ('writing/building-leak-alert-response-checklist.html','fa/writing/building-leak-alert-response-checklist.html','ar/writing/building-leak-alert-response-checklist.html'),
+ ('writing/ai-document-review-claim-evidence-checklist.html','fa/writing/ai-document-review-claim-evidence-checklist.html','ar/writing/ai-document-review-claim-evidence-checklist.html'),
+ ('writing/virtual-machine-device-sharing-explained.html','fa/writing/virtual-machine-device-sharing-explained.html','ar/writing/virtual-machine-device-sharing-explained.html'),
  ('writing/why-occupancy-sensor-lights-switch-off.html','fa/writing/why-occupancy-sensor-lights-switch-off.html','ar/writing/why-occupancy-sensor-lights-switch-off.html'),
  ('writing/why-ai-weather-models-need-local-observations.html','fa/writing/why-ai-weather-models-need-local-observations.html','ar/writing/why-ai-weather-models-need-local-observations.html'),
  ('writing/building-laser-scans-point-clouds-explained.html','fa/writing/building-laser-scans-point-clouds-explained.html','ar/writing/building-laser-scans-point-clouds-explained.html'),

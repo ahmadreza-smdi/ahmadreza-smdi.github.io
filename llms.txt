@@ -69,6 +69,10 @@ Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and
 - [Why does AI need weather stations?](https://a-samadi.com/writing/why-ai-weather-models-need-local-observations.html): A clever model still needs clues from the real world.
 - [Why rent divided by home value is not property yield](https://a-samadi.com/writing/why-rent-to-value-is-not-property-yield.html): Why a metro rent-to-value ratio is not an observed property yield. A fictional cash budget shows the difference and the next evidence to check.
 - [Why did the lights go out while you were there?](https://a-samadi.com/writing/why-occupancy-sensor-lights-switch-off.html): A sensor can miss the clue that you are there.
+- [How a virtual PC can use your real printer](https://a-samadi.com/writing/virtual-machine-device-sharing-explained.html): Our original checklist: Which virtual PC? Which resources? Do I need each one? The film is conceptual, not product footage or a tested setup.
+- [Who checks the AI’s homework?](https://a-samadi.com/writing/ai-document-review-claim-evidence-checklist.html): Our checklist: write the claim, locate its support, then resolve the gap or keep it visible.
+- [Your building sent an alert.](https://a-samadi.com/writing/building-leak-alert-response-checklist.html): Who receives it? Who responds? How do we know the issue was checked?
+- [Where does your wearable’s AI run?](https://a-samadi.com/writing/where-wearable-ai-computation-runs.html): Which task runs locally? What is sent out? What happens without a connection?
 
 ## Films
 

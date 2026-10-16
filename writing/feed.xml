@@ -8,6 +8,38 @@
     <dc:creator>Ahmadreza Samadi</dc:creator>
     <atom:link href="https://a-samadi.com/writing/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Where does your wearable’s AI run?</title>
+      <link>https://a-samadi.com/writing/where-wearable-ai-computation-runs.html</link>
+      <description>Which task runs locally? What is sent out? What happens without a connection?</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Fri, 16 Oct 2026 20:11:18 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/where-wearable-ai-computation-runs.html</guid>
+    </item>
+    <item>
+      <title>Your building sent an alert.</title>
+      <link>https://a-samadi.com/writing/building-leak-alert-response-checklist.html</link>
+      <description>Who receives it? Who responds? How do we know the issue was checked?</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Fri, 16 Oct 2026 20:11:11 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/building-leak-alert-response-checklist.html</guid>
+    </item>
+    <item>
+      <title>Who checks the AI’s homework?</title>
+      <link>https://a-samadi.com/writing/ai-document-review-claim-evidence-checklist.html</link>
+      <description>Our checklist: write the claim, locate its support, then resolve the gap or keep it visible.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Fri, 16 Oct 2026 20:11:04 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/ai-document-review-claim-evidence-checklist.html</guid>
+    </item>
+    <item>
+      <title>How a virtual PC can use your real printer</title>
+      <link>https://a-samadi.com/writing/virtual-machine-device-sharing-explained.html</link>
+      <description>Our original checklist: Which virtual PC? Which resources? Do I need each one? The film is conceptual, not product footage or a tested setup.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Fri, 16 Oct 2026 20:10:54 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/virtual-machine-device-sharing-explained.html</guid>
+    </item>
+    <item>
       <title>Why did the lights go out while you were there?</title>
       <link>https://a-samadi.com/writing/why-occupancy-sensor-lights-switch-off.html</link>
       <description>A sensor can miss the clue that you are there.</description>

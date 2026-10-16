@@ -339,6 +339,34 @@
         "fa": "fa/writing/why-occupancy-sensor-lights-switch-off.html",
         "ar": "ar/writing/why-occupancy-sensor-lights-switch-off.html"
       }
+    },
+    "article_virtual_machine_device_sharing_explained": {
+      "paths": {
+        "en": "writing/virtual-machine-device-sharing-explained.html",
+        "fa": "fa/writing/virtual-machine-device-sharing-explained.html",
+        "ar": "ar/writing/virtual-machine-device-sharing-explained.html"
+      }
+    },
+    "article_ai_document_review_claim_evidence_checklist": {
+      "paths": {
+        "en": "writing/ai-document-review-claim-evidence-checklist.html",
+        "fa": "fa/writing/ai-document-review-claim-evidence-checklist.html",
+        "ar": "ar/writing/ai-document-review-claim-evidence-checklist.html"
+      }
+    },
+    "article_building_leak_alert_response_checklist": {
+      "paths": {
+        "en": "writing/building-leak-alert-response-checklist.html",
+        "fa": "fa/writing/building-leak-alert-response-checklist.html",
+        "ar": "ar/writing/building-leak-alert-response-checklist.html"
+      }
+    },
+    "article_where_wearable_ai_computation_runs": {
+      "paths": {
+        "en": "writing/where-wearable-ai-computation-runs.html",
+        "fa": "fa/writing/where-wearable-ai-computation-runs.html",
+        "ar": "ar/writing/where-wearable-ai-computation-runs.html"
+      }
     }
   },
   "hubs": [
@@ -581,7 +609,8 @@
         "rental_film",
         "decision_guide",
         "article_rent_value_methodology",
-        "article_why_occupancy_sensor_lights_switch_off"
+        "article_why_occupancy_sensor_lights_switch_off",
+        "article_building_leak_alert_response_checklist"
       ],
       "all_articles_heading": {
         "en": "All articles in this topic",
@@ -603,7 +632,8 @@
         "article_building_laser_scans_point_clouds_explained",
         "rent_ownership_study",
         "article_rent_value_methodology",
-        "article_why_occupancy_sensor_lights_switch_off"
+        "article_why_occupancy_sensor_lights_switch_off",
+        "article_building_leak_alert_response_checklist"
       ]
     },
     {
@@ -838,6 +868,9 @@
         "article_small_ai_models_task_routing_explained",
         "article_ai_inference_memory_movement_explained",
         "article_why_ai_weather_models_need_local_observations",
+        "article_virtual_machine_device_sharing_explained",
+        "article_ai_document_review_claim_evidence_checklist",
+        "article_where_wearable_ai_computation_runs",
         "tech_film_ai_confidence",
         "tech_film_cookie_consent",
         "tech_film_charging_80",
@@ -870,7 +903,10 @@
         "tech_film_iphone_duo",
         "article_small_ai_models_task_routing_explained",
         "article_ai_inference_memory_movement_explained",
-        "article_why_ai_weather_models_need_local_observations"
+        "article_why_ai_weather_models_need_local_observations",
+        "article_virtual_machine_device_sharing_explained",
+        "article_ai_document_review_claim_evidence_checklist",
+        "article_where_wearable_ai_computation_runs"
       ],
       "all_articles_heading": {
         "en": "Existing explainers and films",

@@ -160,7 +160,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/writing/</loc>
-        <lastmod>2026-10-15T18:00:54+03:30</lastmod>
+        <lastmod>2026-10-16T23:41:18+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -184,7 +184,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/</loc>
-        <lastmod>2026-10-15T18:00:54+03:30</lastmod>
+        <lastmod>2026-10-16T23:41:18+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -208,7 +208,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/</loc>
-        <lastmod>2026-10-15T18:00:54+03:30</lastmod>
+        <lastmod>2026-10-16T23:41:18+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -1561,6 +1561,150 @@
         <image:image>
             <image:loc>https://a-samadi.com/assets/writing/why-occupancy-sensor-lights-switch-off/slide-01.png</image:loc>
             <image:title>لماذا تنطفئ إضاءة الحساس وأنت موجود؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/virtual-machine-device-sharing-explained.html</loc>
+        <lastmod>2026-10-16T23:40:54+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/virtual-machine-device-sharing-explained.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/virtual-machine-device-sharing-explained.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/virtual-machine-device-sharing-explained.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/virtual-machine-device-sharing-explained.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/virtual-machine-device-sharing-explained/slide-01.png</image:loc>
+            <image:title>How a virtual PC can use your real printer</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/virtual-machine-device-sharing-explained.html</loc>
+        <lastmod>2026-10-16T23:40:54+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/virtual-machine-device-sharing-explained.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/virtual-machine-device-sharing-explained.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/virtual-machine-device-sharing-explained.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/virtual-machine-device-sharing-explained.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/virtual-machine-device-sharing-explained/slide-01.png</image:loc>
+            <image:title>رایانه مجازی و اشتراک چاپگر واقعی</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/virtual-machine-device-sharing-explained.html</loc>
+        <lastmod>2026-10-16T23:40:54+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/virtual-machine-device-sharing-explained.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/virtual-machine-device-sharing-explained.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/virtual-machine-device-sharing-explained.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/virtual-machine-device-sharing-explained.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/virtual-machine-device-sharing-explained/slide-01.png</image:loc>
+            <image:title>الحاسوب الافتراضي ومشاركة الطابعة الحقيقية</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/ai-document-review-claim-evidence-checklist.html</loc>
+        <lastmod>2026-10-16T23:41:04+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-document-review-claim-evidence-checklist.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-document-review-claim-evidence-checklist.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-document-review-claim-evidence-checklist.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-document-review-claim-evidence-checklist.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/ai-document-review-claim-evidence-checklist/slide-01.png</image:loc>
+            <image:title>Who checks the AI’s homework?</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/ai-document-review-claim-evidence-checklist.html</loc>
+        <lastmod>2026-10-16T23:41:04+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-document-review-claim-evidence-checklist.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-document-review-claim-evidence-checklist.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-document-review-claim-evidence-checklist.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-document-review-claim-evidence-checklist.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/ai-document-review-claim-evidence-checklist/slide-01.png</image:loc>
+            <image:title>بررسی سند با هوش مصنوعی و شواهد</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/ai-document-review-claim-evidence-checklist.html</loc>
+        <lastmod>2026-10-16T23:41:04+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-document-review-claim-evidence-checklist.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-document-review-claim-evidence-checklist.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-document-review-claim-evidence-checklist.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-document-review-claim-evidence-checklist.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/ai-document-review-claim-evidence-checklist/slide-01.png</image:loc>
+            <image:title>مراجعة الوثائق بالذكاء الاصطناعي والأدلة</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/building-leak-alert-response-checklist.html</loc>
+        <lastmod>2026-10-16T23:41:11+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/building-leak-alert-response-checklist.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/building-leak-alert-response-checklist.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/building-leak-alert-response-checklist.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/building-leak-alert-response-checklist.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/building-leak-alert-response-checklist/slide-01.png</image:loc>
+            <image:title>Your building sent an alert.</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/building-leak-alert-response-checklist.html</loc>
+        <lastmod>2026-10-16T23:41:11+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/building-leak-alert-response-checklist.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/building-leak-alert-response-checklist.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/building-leak-alert-response-checklist.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/building-leak-alert-response-checklist.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/building-leak-alert-response-checklist/slide-01.png</image:loc>
+            <image:title>هشدار نشتی ساختمان و مسئول پاسخ</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/building-leak-alert-response-checklist.html</loc>
+        <lastmod>2026-10-16T23:41:11+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/building-leak-alert-response-checklist.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/building-leak-alert-response-checklist.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/building-leak-alert-response-checklist.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/building-leak-alert-response-checklist.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/building-leak-alert-response-checklist/slide-01.png</image:loc>
+            <image:title>تنبيه تسرب المبنى ومسؤول الاستجابة</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/where-wearable-ai-computation-runs.html</loc>
+        <lastmod>2026-10-16T23:41:18+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/where-wearable-ai-computation-runs.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/where-wearable-ai-computation-runs.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/where-wearable-ai-computation-runs.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/where-wearable-ai-computation-runs.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/where-wearable-ai-computation-runs/slide-01.png</image:loc>
+            <image:title>Where does your wearable’s AI run?</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/where-wearable-ai-computation-runs.html</loc>
+        <lastmod>2026-10-16T23:41:18+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/where-wearable-ai-computation-runs.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/where-wearable-ai-computation-runs.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/where-wearable-ai-computation-runs.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/where-wearable-ai-computation-runs.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/where-wearable-ai-computation-runs/slide-01.png</image:loc>
+            <image:title>پردازش هوش مصنوعی ابزار پوشیدنی کجاست؟</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/where-wearable-ai-computation-runs.html</loc>
+        <lastmod>2026-10-16T23:41:18+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/where-wearable-ai-computation-runs.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/where-wearable-ai-computation-runs.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/where-wearable-ai-computation-runs.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/where-wearable-ai-computation-runs.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/where-wearable-ai-computation-runs/slide-01.png</image:loc>
+            <image:title>أين تعالج الأجهزة القابلة للارتداء الذكاء الاصطناعي؟</image:title>
         </image:image>
     </url>
 </urlset>

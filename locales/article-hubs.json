@@ -936,6 +936,102 @@
           "path": "writing/why-wifi-is-slow-with-full-bars.html"
         }
       ]
+    },
+    {
+      "stem": "virtual-machine-device-sharing-explained",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/virtual-machine-device-sharing-explained.html",
+        "fa": "fa/writing/virtual-machine-device-sharing-explained.html",
+        "ar": "ar/writing/virtual-machine-device-sharing-explained.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
+    },
+    {
+      "stem": "ai-document-review-claim-evidence-checklist",
+      "classification": "core",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/ai-document-review-claim-evidence-checklist.html",
+        "fa": "fa/writing/ai-document-review-claim-evidence-checklist.html",
+        "ar": "ar/writing/ai-document-review-claim-evidence-checklist.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
+    },
+    {
+      "stem": "building-leak-alert-response-checklist",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/building-leak-alert-response-checklist.html",
+        "fa": "fa/writing/building-leak-alert-response-checklist.html",
+        "ar": "ar/writing/building-leak-alert-response-checklist.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
+    },
+    {
+      "stem": "where-wearable-ai-computation-runs",
+      "classification": "core",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/where-wearable-ai-computation-runs.html",
+        "fa": "fa/writing/where-wearable-ai-computation-runs.html",
+        "ar": "ar/writing/where-wearable-ai-computation-runs.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
     }
   ]
 }
