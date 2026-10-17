@@ -388,6 +388,13 @@
         "fa": "fa/writing/bacnet-building-devices-common-language.html",
         "ar": "ar/writing/bacnet-building-devices-common-language.html"
       }
+    },
+    "article_geospatial_ai_map_answer_review": {
+      "paths": {
+        "en": "writing/geospatial-ai-map-answer-review.html",
+        "fa": "fa/writing/geospatial-ai-map-answer-review.html",
+        "ar": "ar/writing/geospatial-ai-map-answer-review.html"
+      }
     }
   },
   "hubs": [
@@ -897,6 +904,7 @@
         "article_ai_document_review_claim_evidence_checklist",
         "article_where_wearable_ai_computation_runs",
         "article_on_device_ai_scam_warnings_explained",
+        "article_geospatial_ai_map_answer_review",
         "tech_film_ai_confidence",
         "tech_film_cookie_consent",
         "tech_film_charging_80",
@@ -933,7 +941,8 @@
         "article_virtual_machine_device_sharing_explained",
         "article_ai_document_review_claim_evidence_checklist",
         "article_where_wearable_ai_computation_runs",
-        "article_on_device_ai_scam_warnings_explained"
+        "article_on_device_ai_scam_warnings_explained",
+        "article_geospatial_ai_map_answer_review"
       ],
       "all_articles_heading": {
         "en": "Existing explainers and films",

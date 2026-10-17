@@ -1104,6 +1104,30 @@
           "path": "writing/why-wifi-is-slow-with-full-bars.html"
         }
       ]
+    },
+    {
+      "stem": "geospatial-ai-map-answer-review",
+      "classification": "core",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/geospatial-ai-map-answer-review.html",
+        "fa": "fa/writing/geospatial-ai-map-answer-review.html",
+        "ar": "ar/writing/geospatial-ai-map-answer-review.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
     }
   ]
 }

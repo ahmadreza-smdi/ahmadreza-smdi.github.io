@@ -76,6 +76,7 @@ Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and
 - [Which Dubai property source answers your question?](https://a-samadi.com/writing/which-dubai-property-source.html): Distinguish Dubai sales-price indices, rental benchmarks and property valuations. Check purpose, period, coverage and source limits before an AI summary.
 - [The message looks convincing.](https://a-samadi.com/writing/on-device-ai-scam-warnings-explained.html): Our framework: stop the rushed action, use a trusted separate contact route, keep uncertainty visible.
 - [Your thermostat speaks. Who listens?](https://a-samadi.com/writing/bacnet-building-devices-common-language.html): Our checklist: which devices, which data and commands, and who verifies the integration?
+- [A map answer. The right place?](https://a-samadi.com/writing/geospatial-ai-map-answer-review.html): Which boundary? Which date? Which source and assumptions? Keep unsupported conclusions open.
 
 ## Films
 
