@@ -374,6 +374,13 @@
         "fa": "fa/writing/which-dubai-property-source.html",
         "ar": "ar/writing/which-dubai-property-source.html"
       }
+    },
+    "article_on_device_ai_scam_warnings_explained": {
+      "paths": {
+        "en": "writing/on-device-ai-scam-warnings-explained.html",
+        "fa": "fa/writing/on-device-ai-scam-warnings-explained.html",
+        "ar": "ar/writing/on-device-ai-scam-warnings-explained.html"
+      }
     }
   },
   "hubs": [
@@ -880,6 +887,7 @@
         "article_virtual_machine_device_sharing_explained",
         "article_ai_document_review_claim_evidence_checklist",
         "article_where_wearable_ai_computation_runs",
+        "article_on_device_ai_scam_warnings_explained",
         "tech_film_ai_confidence",
         "tech_film_cookie_consent",
         "tech_film_charging_80",
@@ -915,7 +923,8 @@
         "article_why_ai_weather_models_need_local_observations",
         "article_virtual_machine_device_sharing_explained",
         "article_ai_document_review_claim_evidence_checklist",
-        "article_where_wearable_ai_computation_runs"
+        "article_where_wearable_ai_computation_runs",
+        "article_on_device_ai_scam_warnings_explained"
       ],
       "all_articles_heading": {
         "en": "Existing explainers and films",

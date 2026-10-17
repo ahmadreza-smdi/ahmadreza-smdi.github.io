@@ -1056,6 +1056,30 @@
           "path": "writing/how-zip-files-work.html"
         }
       ]
+    },
+    {
+      "stem": "on-device-ai-scam-warnings-explained",
+      "classification": "core",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/on-device-ai-scam-warnings-explained.html",
+        "fa": "fa/writing/on-device-ai-scam-warnings-explained.html",
+        "ar": "ar/writing/on-device-ai-scam-warnings-explained.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
     }
   ]
 }

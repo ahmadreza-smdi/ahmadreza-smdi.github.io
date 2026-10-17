@@ -74,6 +74,7 @@ Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and
 - [Your building sent an alert.](https://a-samadi.com/writing/building-leak-alert-response-checklist.html): Who receives it? Who responds? How do we know the issue was checked?
 - [Where does your wearable’s AI run?](https://a-samadi.com/writing/where-wearable-ai-computation-runs.html): Which task runs locally? What is sent out? What happens without a connection?
 - [Which Dubai property source answers your question?](https://a-samadi.com/writing/which-dubai-property-source.html): Distinguish Dubai sales-price indices, rental benchmarks and property valuations. Check purpose, period, coverage and source limits before an AI summary.
+- [The message looks convincing.](https://a-samadi.com/writing/on-device-ai-scam-warnings-explained.html): Our framework: stop the rushed action, use a trusted separate contact route, keep uncertainty visible.
 
 ## Films
 

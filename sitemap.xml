@@ -160,7 +160,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/writing/</loc>
-        <lastmod>2026-10-16T23:41:18+03:30</lastmod>
+        <lastmod>2026-10-17T12:00:05+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -184,7 +184,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/</loc>
-        <lastmod>2026-10-16T23:41:18+03:30</lastmod>
+        <lastmod>2026-10-17T12:00:05+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -208,7 +208,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/</loc>
-        <lastmod>2026-10-16T23:41:18+03:30</lastmod>
+        <lastmod>2026-10-17T12:00:05+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -1730,5 +1730,41 @@
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/which-dubai-property-source.html" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/which-dubai-property-source.html" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/which-dubai-property-source.html" />
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/on-device-ai-scam-warnings-explained.html</loc>
+        <lastmod>2026-10-17T12:00:05+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/on-device-ai-scam-warnings-explained.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/on-device-ai-scam-warnings-explained.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/on-device-ai-scam-warnings-explained.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/on-device-ai-scam-warnings-explained.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/on-device-ai-scam-warnings-explained/slide-01.png</image:loc>
+            <image:title>The message looks convincing.</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/on-device-ai-scam-warnings-explained.html</loc>
+        <lastmod>2026-10-17T12:00:05+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/on-device-ai-scam-warnings-explained.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/on-device-ai-scam-warnings-explained.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/on-device-ai-scam-warnings-explained.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/on-device-ai-scam-warnings-explained.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/on-device-ai-scam-warnings-explained/slide-01.png</image:loc>
+            <image:title>هشدار کلاهبرداری با هوش مصنوعی روی دستگاه</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/on-device-ai-scam-warnings-explained.html</loc>
+        <lastmod>2026-10-17T12:00:05+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/on-device-ai-scam-warnings-explained.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/on-device-ai-scam-warnings-explained.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/on-device-ai-scam-warnings-explained.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/on-device-ai-scam-warnings-explained.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/on-device-ai-scam-warnings-explained/slide-01.png</image:loc>
+            <image:title>تنبيهات الاحتيال بالذكاء الاصطناعي على الجهاز</image:title>
+        </image:image>
     </url>
 </urlset>
