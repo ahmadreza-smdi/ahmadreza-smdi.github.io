@@ -395,6 +395,11 @@
         "fa": "fa/writing/geospatial-ai-map-answer-review.html",
         "ar": "ar/writing/geospatial-ai-map-answer-review.html"
       }
+    },
+    "rental_cash_flow_tool": {
+      "paths": {
+        "en": "tools/rental-cash-flow.html"
+      }
     }
   },
   "hubs": [
@@ -454,6 +459,11 @@
               "resource": "rental_yield",
               "question": "What remains after costs and loan payments?",
               "summary": "Follow a fictional home to see how gross rental yield can coexist with a cash shortfall."
+            },
+            {
+              "resource": "rental_cash_flow_tool",
+              "question": "What happens with your own rent and cost assumptions?",
+              "summary": "Use the rental cash-flow calculator to enter annual rent, vacancy, operating costs and loan payments. Read the assumptions and exclusions beside the result; this educational tool does not supply a property valuation or market rent."
             }
           ],
           "film": {
@@ -523,6 +533,11 @@
               "resource": "rental_yield",
               "question": "پس از هزینه‌ها و اقساط چه می‌ماند؟",
               "summary": "یک خانه فرضی را دنبال کنید تا ببینید بازده ناخالص اجاره چگونه می‌تواند با کسری نقدی همراه باشد."
+            },
+            {
+              "resource": "rental_cash_flow_tool",
+              "question": "با فرض‌های خودتان دربارهٔ اجاره و هزینه چه نتیجه‌ای می‌گیرید؟",
+              "summary": "در ماشین‌حساب جریان نقدی اجاره، اجارهٔ سالانه، خالی‌ماندن ملک، هزینه‌های عملیاتی و اقساط وام را وارد کنید. فرض‌ها و موارد خارج از محاسبه را کنار نتیجه بخوانید؛ این ابزار آموزشی به زبان انگلیسی است و ارزش ملک یا اجارهٔ بازار را تعیین نمی‌کند."
             }
           ],
           "film": {
@@ -592,6 +607,11 @@
               "resource": "rental_yield",
               "question": "ماذا يتبقى بعد التكاليف وأقساط القرض؟",
               "summary": "تابع منزلًا افتراضيًا لترى كيف يمكن لعائد الإيجار الإجمالي أن يتزامن مع عجز نقدي."
+            },
+            {
+              "resource": "rental_cash_flow_tool",
+              "question": "ماذا يحدث مع افتراضاتك للإيجار والتكاليف؟",
+              "summary": "أدخل الإيجار السنوي والشغور وتكاليف التشغيل ودفعات القرض في حاسبة التدفق النقدي للإيجار. اقرأ الافتراضات والاستثناءات إلى جانب النتيجة؛ هذه الأداة التعليمية باللغة الإنجليزية ولا تقدم تقييماً للعقار أو إيجار السوق."
             }
           ],
           "film": {
@@ -621,6 +641,7 @@
         "human_review",
         "verified_cost",
         "rental_yield",
+        "rental_cash_flow_tool",
         "article_how_building_digital_twins_work",
         "article_ai_agent_safety_boundaries",
         "article_jev_ai_decision_model",
@@ -711,6 +732,11 @@
               "summary": "Check the account, access scope, supported actions and approval rules when linking business tools."
             },
             {
+              "resource": "verified_cost",
+              "question": "What does an accepted AI result cost?",
+              "summary": "Count recorded costs across retries and failures, then divide by results accepted under an explicit criterion. The article links an offline ledger and a fictional experiment workbook."
+            },
+            {
               "resource": "profit_cash",
               "question": "Can a profitable order still leave a cash gap?",
               "summary": "Follow one fictional order through supplier and customer payment dates. Profit and available cash answer different questions."
@@ -768,6 +794,11 @@
               "resource": "connected_apps",
               "question": "دستیار متصل چه کاری می‌تواند انجام دهد؟",
               "summary": "هنگام اتصال ابزارهای کسب‌وکار، حساب، محدوده دسترسی، اقدام‌های پشتیبانی‌شده و قواعد تأیید را بررسی کنید."
+            },
+            {
+              "resource": "verified_cost",
+              "question": "هزینهٔ یک نتیجهٔ پذیرفته‌شدهٔ هوش مصنوعی چقدر است؟",
+              "summary": "هزینه‌های ثبت‌شدهٔ تلاش‌های مجدد و ناموفق را هم حساب کنید، سپس مجموع را بر تعداد نتایج پذیرفته‌شده طبق معیاری روشن تقسیم کنید. مقاله به دفتر ثبت آفلاین و کاربرگ آزمایشی با مثال‌های فرضی لینک می‌دهد."
             },
             {
               "resource": "profit_cash",
@@ -829,6 +860,11 @@
               "summary": "راجع الحساب وحدود الوصول والإجراءات المدعومة وقواعد الموافقة عند ربط أدوات العمل."
             },
             {
+              "resource": "verified_cost",
+              "question": "ما تكلفة النتيجة المقبولة من الذكاء الاصطناعي؟",
+              "summary": "احسب التكاليف المسجلة للمحاولات المتكررة والفاشلة أيضاً، ثم اقسم المجموع على عدد النتائج المقبولة وفق معيار صريح. تتضمن المقالة روابط إلى سجل يعمل دون اتصال وورقة تجربة بأمثلة افتراضية."
+            },
+            {
               "resource": "profit_cash",
               "question": "هل يمكن لطلب مربح أن يترك فجوة نقدية؟",
               "summary": "تابع طلبًا افتراضيًا عبر مواعيد الدفع للمورد والتحصيل من العميل. الربح والنقد المتاح يجيبان عن سؤالين مختلفين."
@@ -858,6 +894,7 @@
         "royal_abraj",
         "decision_first",
         "connected_apps",
+        "verified_cost",
         "profit_cash",
         "article_how_many_coffees_to_break_even",
         "profit_film",

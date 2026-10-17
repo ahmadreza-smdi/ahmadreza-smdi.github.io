@@ -55,7 +55,7 @@
     }
   },
   "datePublished": "2026-09-24",
-  "dateModified": "2026-10-17T00:12:19+03:30",
+  "dateModified": "2026-10-17T16:20:42+03:30",
   "inLanguage": "en",
   "image": {
     "@type": "ImageObject",
@@ -88,7 +88,7 @@
 <p class="eyebrow">Analysis · AI product economics</p>
 <h1>AI cost per verified result</h1>
 <p class="lead">The price of a model call matters. The cost of getting a useful result through a complete workflow matters more.</p>
-<p class="byline">By <a href="/about.html" rel="author">Ahmadreza Samadi</a> · 24 September 2026 · Updated <time datetime="2026-10-17T00:12:19+03:30">17 October 2026</time></p>
+<p class="byline">By <a href="/about.html" rel="author">Ahmadreza Samadi</a> · 24 September 2026 · Updated <time datetime="2026-10-17T16:20:42+03:30">17 October 2026</time></p>
 <section aria-labelledby="article-at-a-glance">
 <h2 id="article-at-a-glance">At a glance</h2>
 <p>Divide the full workflow cost, including model calls, tools, retries and human review, by the number of results that pass a defined review standard. Cheaper requests do not automatically mean cheaper accepted results. The property-research example below is a proposed test, not a reported company result.</p>
@@ -99,6 +99,9 @@
 <p>Start with the <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/v0.1.0/examples/fictional-attempts.csv">fictional sample ledger</a>: three attempts across two intended results, one accepted result and a total cost of 0.85 in the selected currency. These are invented teaching numbers. Missing costs are rejected; an explicit zero remains zero. If no result is accepted, unit cost is undefined while total spend remains visible.</p>
 <p>The tool totals your recorded costs and acceptance labels. It does not independently verify outputs or measure a company outcome.</p>
 <p>Prefer a spreadsheet? Download the <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/releases/download/v0.1.1/AI-Workflow-Experiment.xlsx">AI workflow experiment workbook (XLSX, in English)</a> to record the same result batch in manual and AI workflows, including retries, acceptance outcomes, costs, labor and elapsed time. It holds 10 paired results and 30 attempts. Its worked example is fictional teaching data.</p>
+<p id="workbook-start-guide">For setup and interpretation, use the <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/b26e9759dec443e265df6e4d08f5b411ebb3c635/docs/workbook-start.md">workbook starting guide (in English)</a>. It identifies editable ranges, formula cells and the fictional comparison, and explains how the workbook layout differs from the CLI CSV.</p>
+<p id="paired-ledger-comparison">Have two CLI ledgers for the same result IDs? The <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/tree/5eb52dc449cda3b3af6a14881a8801b31002fd94#compare-two-ledgers-for-the-same-recorded-results">paired-ledger comparison guide (in English)</a> shows both totals, accepted-result counts and unit costs in one JSON report. It includes failed and retried attempts and refuses mismatched result IDs or unknown costs. A lower total bill does not by itself mean a cheaper accepted result. The teaching examples are fictional; acceptance and cost completeness remain your responsibility. Prefer a local walkthrough? <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/11d627b9ddb0d1d778373c9bb6537b74c9e1c467/examples/AI-Cost-Paired-Ledgers.zip">Download the offline paired-ledger kit (in English)</a>, extract the entire ZIP and open <code>index.html</code>. Python 3.10 or newer is required to run its commands. If the comparison rejects different result IDs, use the <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/050e51d437cc38c7616be1acb63958ea58e32e54/docs/input-errors.md#the-comparison-has-unmatched-result-ids">input-error guide (in English)</a>; do not drop unmatched results or invent zero-cost attempts.</p>
+<p id="worked-cost-examples">Try three runnable teaching cases in the <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/releases/download/v0.1.2/AI-Cost-Worked-Examples.zip">worked AI cost examples (ZIP, in English)</a>. They illustrate full attempt costs, no accepted results and explicitly known zero costs. All data are fictional; the cases are not a model or workflow benchmark.</p>
 </section>
 <p>When an AI provider lowers its price, a team can afford to test more ideas. But a cheaper call does not automatically make a product cheaper to operate. The workflow may still need repeated calls, other tools, and a person to check the output.</p>
 <h2>What changed in September 2026?</h2>

@@ -1,0 +1,53 @@
+HOW TO READ THE FICTIONAL DECISION-FIRST CARD
+Ahmadreza Samadi | https://a-samadi.com/about.html
+Prepared 17 October 2026. Educational planning example; no experiment was run.
+
+The decision is whether to try a supervised pilot for private summaries of public
+housing reports. It is not a decision to automate publication, make a property
+recommendation or claim that AI has already saved time.
+
+1. Define an action, not a model preference.
+The proposed output helps a researcher decide whether a trial is worth running.
+The card does not name a model or imply that Ahmadreza uses a particular tool.
+
+2. Make acceptance checkable.
+In this fictional plan, each factual claim must be supported by its source and no
+material caveat may be omitted. The researcher accepts or rejects the result.
+A fluent summary or the model's own confidence is not evidence of acceptance.
+
+3. Resolve source eligibility before starting.
+Public access alone is not permission to reuse a report or submit it to a tool.
+No actual reports, reuse permissions, provider terms or source coverage have been
+checked for this fictional pilot. Verify these for the actual intended use. Do
+not include confidential or personal material. The example sends nothing.
+
+4. Compare the same task and record the whole process.
+The proposed six reports are an illustrative planning choice, not a recommended
+sample size or evidence of reliability. Define the eligible cases, instructions,
+review rules and observation cutoff before testing. Apply the same acceptance
+criterion to manual and AI-assisted work. Record failed drafts and retries as
+well as accepted results, model/tool charges, review effort and other costs.
+No costs or working-time measurements are provided by this example.
+
+5. Use the stop rules.
+Stop or return to manual work when source-use rights are unclear or claims cannot
+be verified. Correcting a draft does not establish that the next draft is safe.
+Keep a human responsible for the final decision and any eventual publication.
+
+6. Leave the outcome unknown until observed.
+The completed field says "Unknown: no pilot run." It does not claim zero cost,
+zero errors, accepted results, savings, performance or a company deployment.
+A small pilot would still not establish broad reliability or ROI.
+
+HOW TO USE THE FILE
+The example is a separate editable copy of the existing ten-field blank card.
+It has explicit fictional labels. The original blank PDF is unchanged. Start
+real planning from a clean blank copy; do not carry fictional answers into your
+records. PDF viewers differ: native-reader edit/save behaviour is not verified.
+There are no scripts, automatic submission actions or external connections.
+Visible links open the existing tool or biography only when followed.
+
+Full interactive brief: https://a-samadi.com/tools/before-you-build-ai.html
+Related public cost-recording tool: https://github.com/ahmadreza-smdi/ai-workflow-cost
+Author-proposed thinking aid, not a validated assessment. AI-assisted preparation.
+No company/customer experience, measurements or results are represented here.

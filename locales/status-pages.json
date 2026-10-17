@@ -4,11 +4,11 @@
   "pages": [
     {
       "id": "now",
-      "updated_at": "2026-10-10T03:42:25+03:30",
+      "updated_at": "2026-10-17T06:57:43+03:30",
       "locales": {
         "en": {
           "title": "Now | Ahmadreza Samadi",
-          "description": "Ahmadreza Samadi's current work at Appraiva and Royal Abraj Group, alongside recent plain-language technology explainers. October 2026.",
+          "description": "Ahmadreza Samadi's current work at Appraiva and Royal Abraj Group, alongside public AI tools, data studies and selected explainers. October 2026.",
           "heading": "Now",
           "lead": "What I’m working on and sharing in October 2026.",
           "sections": [
@@ -39,10 +39,25 @@
               ]
             },
             {
-              "id": "recent-writing",
-              "heading": "Recently shared",
+              "id": "public-tools-data",
+              "heading": "Public tools and data",
               "paragraphs": [
-                "My latest technology explainers cover how contactless cards work without batteries, how noise cancellation works, why USB-C cables have different capabilities, and how phones recognize text in photos."
+                "My recent public work includes an AI workflow cost ledger with fictional worked examples, an ACS 2024 rent-burden study covering 386 US metropolitan areas, and a video publication-date checker. Code, data and methods are linked from my media resources.",
+                "These releases were prepared with AI assistance. The examples are teaching material and the study is descriptive; they do not report company results, establish investment returns or independently verify the quality of an AI answer.",
+                "I am preparing a comparison of house price growth and a rent benchmark. The published methods now specify a five-year primary window policy; exact dates and results remain unresolved."
+              ],
+              "links": [
+                {
+                  "path": "press.html",
+                  "label": "Explore the public resources"
+                }
+              ]
+            },
+            {
+              "id": "recent-writing",
+              "heading": "Selected explainers",
+              "paragraphs": [
+                "Selected technology explainers cover how contactless cards work without batteries, how noise cancellation works, why USB-C cables have different capabilities, and how phones recognize text in photos."
               ],
               "links": [
                 {
@@ -81,7 +96,7 @@
         },
         "fa": {
           "title": "این روزها | احمدرضا صمدی",
-          "description": "فعالیت‌های کنونی احمدرضا صمدی در Appraiva و گروه رویال ابراج، در کنار تازه‌ترین توضیح‌های ساده درباره فناوری؛ اکتبر ۲۰۲۶.",
+          "description": "فعالیت‌های کنونی احمدرضا صمدی در Appraiva و گروه رویال ابراج، در کنار ابزارهای عمومی هوش مصنوعی، مطالعات داده و توضیح‌های منتخب؛ اکتبر ۲۰۲۶.",
           "heading": "این روزها",
           "lead": "آنچه در اکتبر ۲۰۲۶ روی آن کار می‌کنم و به اشتراک می‌گذارم.",
           "sections": [
@@ -112,10 +127,25 @@
               ]
             },
             {
-              "id": "recent-writing",
-              "heading": "تازه منتشر کرده‌ام",
+              "id": "public-tools-data",
+              "heading": "ابزارها و داده‌های عمومی",
               "paragraphs": [
-                "تازه‌ترین توضیح‌های من درباره فناوری به این موضوع‌ها می‌پردازند: کارت‌های بدون تماس چگونه بدون باتری کار می‌کنند، حذف نویز چگونه انجام می‌شود، چرا کابل‌های USB-C قابلیت‌های متفاوتی دارند و گوشی چگونه متن داخل عکس را تشخیص می‌دهد."
+                "از کارهای عمومی اخیر من می‌توان به دفتر محاسبهٔ هزینهٔ فرایندهای هوش مصنوعی همراه با مثال‌های فرضی، مطالعهٔ فشار اجاره با داده‌های ACS سال ۲۰۲۴ برای ۳۸۶ منطقهٔ شهری آمریکا و ابزار بررسی تاریخ انتشار ویدئو اشاره کرد. لینک کد، داده و روش‌ها در منابع رسانه‌ای من آمده است.",
+                "این آثار با کمک هوش مصنوعی آماده شده‌اند. مثال‌ها آموزشی و مطالعه توصیفی است؛ این آثار نتیجهٔ عملکرد شرکت‌ها را گزارش نمی‌کنند، بازده سرمایه‌گذاری را اثبات نمی‌کنند و کیفیت پاسخ هوش مصنوعی را به‌طور مستقل تأیید نمی‌کنند.",
+                "در حال آماده‌سازی مقایسهٔ رشد قیمت مسکن و معیار اجاره هستم. روش منتشرشده اکنون قاعدهٔ بازهٔ اصلی پنج‌ساله را مشخص می‌کند؛ تاریخ‌های دقیق و نتایج هنوز مشخص نیستند."
+              ],
+              "links": [
+                {
+                  "path": "press.html",
+                  "label": "مشاهدهٔ منابع عمومی"
+                }
+              ]
+            },
+            {
+              "id": "recent-writing",
+              "heading": "توضیح‌های منتخب",
+              "paragraphs": [
+                "توضیح‌های منتخب من درباره فناوری به این موضوع‌ها می‌پردازند: کارت‌های بدون تماس چگونه بدون باتری کار می‌کنند، حذف نویز چگونه انجام می‌شود، چرا کابل‌های USB-C قابلیت‌های متفاوتی دارند و گوشی چگونه متن داخل عکس را تشخیص می‌دهد."
               ],
               "links": [
                 {
@@ -154,7 +184,7 @@
         },
         "ar": {
           "title": "ما أعمل عليه الآن | أحمدرضا صمدي",
-          "description": "أعمال أحمدرضا صمدي الحالية في Appraiva ومجموعة رويال أبراج، إلى جانب أحدث شروحاته التقنية المبسطة؛ أكتوبر ٢٠٢٦.",
+          "description": "أعمال أحمدرضا صمدي الحالية في Appraiva ومجموعة رويال أبراج، إلى جانب أدوات عامة للذكاء الاصطناعي ودراسات بيانات وشروحات مختارة؛ أكتوبر ٢٠٢٦.",
           "heading": "ما أعمل عليه الآن",
           "lead": "ما أعمل عليه وما أشاركه في أكتوبر ٢٠٢٦.",
           "sections": [
@@ -185,10 +215,25 @@
               ]
             },
             {
-              "id": "recent-writing",
-              "heading": "ما نشرته مؤخرًا",
+              "id": "public-tools-data",
+              "heading": "أدوات وبيانات عامة",
               "paragraphs": [
-                "تتناول أحدث شروحاتي التقنية كيفية عمل البطاقات اللاتلامسية دون بطاريات، وكيف يعمل إلغاء الضوضاء، ولماذا تختلف قدرات كابلات USB-C، وكيف تتعرّف الهواتف على النص داخل الصور."
+                "تشمل أعمالي العامة الحديثة سجلًا لحساب تكاليف سير عمل الذكاء الاصطناعي مع أمثلة افتراضية، ودراسة وصفية لعبء الإيجار باستخدام بيانات ACS لعام ٢٠٢٤ تغطي ٣٨٦ منطقة حضرية أمريكية، وأداة لفحص تاريخ نشر الفيديو. تتوفر روابط الشيفرة والبيانات والمنهجية ضمن مواردي الإعلامية.",
+                "أُعدّت هذه الأعمال بمساعدة الذكاء الاصطناعي. الأمثلة تعليمية والدراسة وصفية؛ ولا تعرض هذه الأعمال نتائج الشركات، ولا تثبت عوائد استثمارية، ولا تتحقق بصورة مستقلة من جودة إجابة الذكاء الاصطناعي.",
+                "أُعدّ مقارنة بين نمو أسعار المساكن ومعيار الإيجار. تحدد المنهجية المنشورة الآن قاعدة لفترة المقارنة الأساسية من خمس سنوات؛ ولم تُحسم بعد التواريخ الدقيقة أو النتائج."
+              ],
+              "links": [
+                {
+                  "path": "press.html",
+                  "label": "استعرض الموارد العامة"
+                }
+              ]
+            },
+            {
+              "id": "recent-writing",
+              "heading": "شروحات مختارة",
+              "paragraphs": [
+                "تتناول شروحاتي التقنية المختارة كيفية عمل البطاقات اللاتلامسية دون بطاريات، وكيف يعمل إلغاء الضوضاء، ولماذا تختلف قدرات كابلات USB-C، وكيف تتعرّف الهواتف على النص داخل الصور."
               ],
               "links": [
                 {

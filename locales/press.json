@@ -59,7 +59,8 @@
         "biography": "Download English biography",
         "portrait": "Download portrait (JPG)",
         "monogram": "Download personal monogram (SVG)",
-        "contact": "Save contact details"
+        "contact": "Save contact details",
+        "selected_work": "Download selected public work (English PDF)"
       },
       "portrait_alt": "Ahmadreza Samadi in a dark suit",
       "portrait_caption": "Ahmadreza Samadi · Technology Entrepreneur",
@@ -130,6 +131,22 @@
             "source": "Code and instructions",
             "license": "Project licence"
           }
+        },
+        "rent_burden": {
+          "title": "ACS 2024 rent burden across 386 US metros",
+          "description": "AI-assisted, reproducible analysis of renter-occupied housing units with computable rent-to-income ratios. Units without a computable ratio are excluded from the percentage denominator and reported separately. Includes methods, data and citation metadata; not property yield or an investment ranking. Resources are in English.",
+          "link_labels": {
+            "release": "Versioned release and methods",
+            "csv": "Download CSV",
+            "citation": "Citation metadata"
+          }
+        },
+        "price_rent_methods": {
+          "title": "Working methods for a price and rent benchmark study",
+          "description": "Published methods for an unfinished study, including an author-selected five-year window policy. Exact dates, eligible metros and results remain unresolved.",
+          "link_labels": {
+            "methods": "Read the working methods (English)"
+          }
         }
       }
     },
@@ -189,7 +206,8 @@
         "biography": "دریافت زندگی‌نامه انگلیسی",
         "portrait": "دریافت تصویر چهره (JPG)",
         "monogram": "دریافت نشان شخصی (SVG)",
-        "contact": "ذخیره اطلاعات تماس"
+        "contact": "ذخیره اطلاعات تماس",
+        "selected_work": "دریافت گزیدهٔ آثار عمومی (PDF انگلیسی)"
       },
       "portrait_alt": "احمدرضا صمدی با کت‌وشلوار تیره",
       "portrait_caption": "احمدرضا صمدی · کارآفرین فناوری",
@@ -260,6 +278,22 @@
             "source": "کد و راهنما",
             "license": "مجوز پروژه"
           }
+        },
+        "rent_burden": {
+          "title": "فشار اجاره در ۳۸۶ منطقهٔ شهری آمریکا؛ داده‌های ACS ۲۰۲۴",
+          "description": "تحلیل بازتولیدپذیر با کمک هوش مصنوعی دربارهٔ واحدهای مسکونی اجاره‌نشین که نسبت اجاره به درآمد برای آن‌ها قابل محاسبه است. واحدهای بدون نسبت قابل محاسبه از مخرج محاسبهٔ درصدها کنار گذاشته شده‌اند و جداگانه گزارش می‌شوند. شامل روش، داده و اطلاعات ارجاع؛ بیانگر بازده ملک یا رتبه‌بندی سرمایه‌گذاری نیست. منابع به زبان انگلیسی‌اند.",
+          "link_labels": {
+            "release": "نسخهٔ منتشرشده و روش تحلیل",
+            "csv": "دریافت CSV",
+            "citation": "اطلاعات ارجاع"
+          }
+        },
+        "price_rent_methods": {
+          "title": "روش پیشنهادی مطالعهٔ قیمت و معیار اجاره",
+          "description": "روش منتشرشدهٔ مطالعه‌ای ناتمام، شامل قاعدهٔ انتخاب بازهٔ پنج‌ساله. تاریخ‌های دقیق، مناطق شهری واجد شرایط و نتایج هنوز مشخص نیستند.",
+          "link_labels": {
+            "methods": "خواندن روش پیشنهادی به انگلیسی"
+          }
         }
       }
     },
@@ -319,7 +353,8 @@
         "biography": "تنزيل السيرة الإنجليزية",
         "portrait": "تنزيل الصورة الشخصية (JPG)",
         "monogram": "تنزيل الشعار الشخصي (SVG)",
-        "contact": "حفظ بيانات الاتصال"
+        "contact": "حفظ بيانات الاتصال",
+        "selected_work": "تنزيل مختارات من الأعمال العامة (PDF بالإنجليزية)"
       },
       "portrait_alt": "أحمدرضا صمدي يرتدي بدلة داكنة",
       "portrait_caption": "أحمدرضا صمدي · رائد أعمال تقني",
@@ -390,6 +425,22 @@
             "source": "الكود والتعليمات",
             "license": "ترخيص المشروع"
           }
+        },
+        "rent_burden": {
+          "title": "عبء الإيجار في ٣٨٦ منطقة حضرية أمريكية؛ بيانات ACS ٢٠٢٤",
+          "description": "تحليل قابل لإعادة الإنتاج بمساعدة الذكاء الاصطناعي للوحدات السكنية المشغولة بالإيجار التي يمكن حساب نسبة إيجارها إلى الدخل. تُستبعد الوحدات التي لا يمكن حساب هذه النسبة لها من مقام حساب النسب المئوية، وتُعرض أعدادها بشكل منفصل. يشمل المنهجية والبيانات وبيانات الاستشهاد؛ ولا يمثل عائد العقار أو ترتيباً استثمارياً. الموارد باللغة الإنجليزية.",
+          "link_labels": {
+            "release": "الإصدار المنشور والمنهجية",
+            "csv": "تنزيل CSV",
+            "citation": "بيانات الاستشهاد"
+          }
+        },
+        "price_rent_methods": {
+          "title": "منهجية مقترحة لدراسة الأسعار ومعيار الإيجار",
+          "description": "منهجية منشورة لدراسة لم تكتمل، تتضمن قاعدة لاختيار فترة من خمس سنوات. لم تُحسم بعد التواريخ الدقيقة أو المناطق الحضرية المؤهلة أو النتائج.",
+          "link_labels": {
+            "methods": "قراءة المنهجية المقترحة بالإنجليزية"
+          }
         }
       }
     }
@@ -399,6 +450,11 @@
       "id": "kit",
       "path": "/assets/profile/ahmadreza-samadi-profile-kit.zip",
       "mime": "application/zip"
+    },
+    {
+      "id": "selected_work",
+      "path": "/assets/downloads/ahmadreza-samadi-selected-public-work.pdf",
+      "mime": "application/pdf"
     },
     {
       "id": "biography",
@@ -456,6 +512,23 @@
       ]
     },
     {
+      "id": "rent_burden",
+      "links": [
+        {
+          "id": "release",
+          "url": "https://github.com/ahmadreza-smdi/metro-rent-burden/releases/tag/v1.0.0"
+        },
+        {
+          "id": "csv",
+          "url": "https://github.com/ahmadreza-smdi/metro-rent-burden/releases/download/v1.0.0/metro-rent-burden-2024.csv"
+        },
+        {
+          "id": "citation",
+          "url": "https://github.com/ahmadreza-smdi/metro-rent-burden/releases/download/v1.0.0/CITATION.cff"
+        }
+      ]
+    },
+    {
       "id": "calculators",
       "links": [
         {
@@ -495,6 +568,15 @@
         {
           "id": "license",
           "url": "https://github.com/ahmadreza-smdi/video-date-lint/blob/f66759339e294dad130f0da9dd39dc883a7cd961/LICENSE"
+        }
+      ]
+    },
+    {
+      "id": "price_rent_methods",
+      "links": [
+        {
+          "id": "methods",
+          "url": "https://github.com/ahmadreza-smdi/ahmadreza-smdi/blob/767cdb9f7b53b16302151b90c41a7e3502673a04/docs/research/price-and-rent-study-methods.md"
         }
       ]
     }

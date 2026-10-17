@@ -94,7 +94,9 @@ for lang in ['fa','ar']:
  primary_links=[attrs for tag,attrs in p.items if tag=='a' and attrs.get('data-locale-primary')=='en']
  assert len(primary_links)==1 and primary_links[0].get('href')==BASE and primary_links[0].get('hreflang')=='en', f'{lang}: missing primary English homepage link'
  oxfam_links=[attrs for tag,attrs in p.items if tag=='a' and attrs.get('href','').endswith('/work/oxfam-novib.html')]
- assert len(oxfam_links)==1 and oxfam_links[0]['href']==f'{BASE}{lang}/work/oxfam-novib.html', f'{lang}: Oxfam card must link to the localized case study'
+ oxfam_cards=[attrs for attrs in oxfam_links if 'story-link' in attrs.get('class','').split()]
+ assert len(oxfam_cards)==1, f'{lang}: expected one Oxfam work card'
+ assert all(attrs['href']==f'{BASE}{lang}/work/oxfam-novib.html' for attrs in oxfam_links), f'{lang}: every Oxfam link must use the localized case study'
  normalized=[]
  skip_primary=False
  for tag,attrs in p.items:

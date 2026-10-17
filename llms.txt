@@ -11,7 +11,7 @@ Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and
 - [Homepage](https://a-samadi.com/): Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead at Appraiva, and Co-Founder & CEO of Royal Abraj Group.
 - [Biography](https://a-samadi.com/about.html): Ahmadreza Samadi (Ahmad Samadi) is a technology entrepreneur based in Dubai and co-founder of Appraiva and Royal Abraj Group. Biography, work and profiles.
 - [Press & media kit](https://a-samadi.com/press.html): Biographies, original research and tools, portrait and written contact details for Ahmadreza Samadi, a Dubai-based technology entrepreneur.
-- [Now](https://a-samadi.com/now.html): Ahmadreza Samadi's current work at Appraiva and Royal Abraj Group, alongside recent plain-language technology explainers. October 2026.
+- [Now](https://a-samadi.com/now.html): Ahmadreza Samadi's current work at Appraiva and Royal Abraj Group, alongside public AI tools, data studies and selected explainers. October 2026.
 - [Writing topics](https://a-samadi.com/speaking.html): Writing topics from Ahmadreza Samadi's work in AI products, property data and business systems, with related published work and written contact details.
 - [Rent and ownership scenarios](https://a-samadi.com/studies/rent-own-2026/): Explore hypothetical ownership cash budgets across US metros using HUD rent areas and ACS owner-stock values. Methods and limitations are explicit.
 
@@ -92,6 +92,12 @@ Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and
 - [Before You Build the AI](https://a-samadi.com/tools/before-you-build-ai.html): Turn an AI idea into a decision, an evidence plan and a small first experiment. A free interactive field guide by Ahmadreza Samadi.
 - [Rental cash flow calculator](https://a-samadi.com/tools/rental-cash-flow.html): Separate annual rent, property costs, debt cash payments and upfront invested cash using your own AED inputs. Blank values remain unknown.
 - [Dubai purchase costs calculator](https://a-samadi.com/tools/dubai-purchase-cost.html): Estimate buyer-paid components for a completed residential purchase using dated fee rules, explicit payer shares and your actual quotes.
+
+## Public code and data
+
+- [AI workflow cost ledger](https://github.com/ahmadreza-smdi/ai-workflow-cost/releases/tag/v0.1.2): Testing an AI workflow? Start with cost per caller-accepted result; the workbook and worked examples are fictional.
+- [ACS2024 metro rent burden](https://github.com/ahmadreza-smdi/metro-rent-burden/releases/tag/v1.1.1): Comparing rent pressure across metros? Start with the ACS2024 CSV, chart, method and limits; this is not a property-level estimate.
+- [Video publication-date linter](https://github.com/ahmadreza-smdi/video-date-lint/releases/tag/v0.1.1): Preparing a video page? Check local publication-date metadata offline; this does not verify that the video is actually public.
 
 ## Official profiles
 

@@ -21,3 +21,23 @@ Website: https://a-samadi.com/
 LinkedIn: https://www.linkedin.com/in/ahmadreza-samadi/
 Contact: ahmadreza.smdi@gmail.com
 Instagram: https://www.instagram.com/ahmadreza_smdi/
+
+SIGNATURE IDEA
+
+Start with the decision.
+
+PUBLIC TOOLS AND RESEARCH
+
+Rent and ownership scenarios: illustrative cash budgets, source years, assumptions and limits; not observed investment returns.
+https://a-samadi.com/studies/rent-own-2026/
+
+AI workflow cost ledger: offline cost per caller-accepted result, fictional examples and a companion experiment workbook.
+https://github.com/ahmadreza-smdi/ai-workflow-cost
+
+ACS2024 metro rent-burden code and data release, with methodology and limits.
+https://github.com/ahmadreza-smdi/metro-rent-burden/releases/tag/v1.1.1
+
+Video publication-date linter: offline checks of local metadata without modifying the inputs.
+https://github.com/ahmadreza-smdi/video-date-lint
+
+These educational resources were developed with AI assistance. They do not establish customer adoption, company deployment, commercial results, endorsements or independent citations. Reuse terms are resource-specific.

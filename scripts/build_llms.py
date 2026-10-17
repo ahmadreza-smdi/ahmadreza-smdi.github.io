@@ -5,6 +5,7 @@ under Optional. Titles and descriptions are read from the pages themselves, so t
 step with the site. Run with --check to report whether llms.txt is out of date.
 """
 from pathlib import Path
+from html.parser import HTMLParser
 import html
 import re
 import sys
@@ -32,6 +33,74 @@ PROFILES = [
     ('Crunchbase', 'https://www.crunchbase.com/person/ahmadreza-samadi'),
     ('YouTube', 'https://www.youtube.com/@ahmadreza-samadi'),
 ]
+
+
+class PublicResourceParser(HTMLParser):
+    """Read only visible list items in the existing public-tools-data block."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.depth = 0
+        self.item = None
+        self.in_link = False
+        self.resources = []
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == 'div':
+            if self.depth:
+                self.depth += 1
+            elif 'public-tools-data' in (attrs.get('class') or '').split():
+                self.depth = 1
+        if not self.depth:
+            return
+        if tag == 'li':
+            if self.item is not None:
+                raise ValueError('Nested public resource list item')
+            self.item = {'text': [], 'label': [], 'url': None}
+        elif tag == 'a' and self.item is not None:
+            href = attrs.get('href', '')
+            if href.startswith('https://github.com/ahmadreza-smdi/'):
+                if self.item['url'] is not None:
+                    raise ValueError('Multiple public code links in one resource')
+                self.item['url'] = href
+                self.in_link = True
+
+    def handle_data(self, text):
+        if self.depth and self.item is not None:
+            self.item['text'].append(text)
+            if self.in_link:
+                self.item['label'].append(text)
+
+    def handle_endtag(self, tag):
+        if not self.depth:
+            return
+        if tag == 'a':
+            self.in_link = False
+        elif tag == 'li' and self.item is not None:
+            item = self.item
+            self.item = None
+            if item['url']:
+                label = re.sub(r'\s+', ' ', ''.join(item['label'])).strip()
+                text = re.sub(r'\s+', ' ', ''.join(item['text'])).strip()
+                if not label or not text.startswith(label):
+                    raise ValueError('Public resource must begin with its linked label')
+                description = text[len(label):].lstrip(' —–-:')
+                if not description:
+                    raise ValueError('Public resource description is missing')
+                if any(url == item['url'] for _, url, _ in self.resources):
+                    raise ValueError('Duplicate public resource URL')
+                self.resources.append((label, item['url'], description))
+        elif tag == 'div':
+            self.depth -= 1
+
+
+def public_resources(text):
+    parser = PublicResourceParser()
+    parser.feed(text)
+    parser.close()
+    if parser.depth or parser.item is not None:
+        raise ValueError('Incomplete public resource block')
+    return parser.resources
 
 
 def page_for(url):
@@ -89,6 +158,9 @@ def build():
     for name, items in groups.items():
         if items:
             lines += [f'## {name}', '', *items, '']
+    resources = public_resources((ROOT / 'about.html').read_text())
+    if resources:
+        lines += ['## Public code and data', '', *[f'- [{label}]({url}): {description}' for label, url, description in resources], '']
     lines += ['## Official profiles', '', *[f'- [{label}]({url})' for label, url in PROFILES], '']
     lines += [
         '## Optional', '',

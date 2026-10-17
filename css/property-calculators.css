@@ -19,3 +19,6 @@ body.property-calculator form[data-calculator][hidden]{display:block!important;v
 @media print{form[data-calculator],.calculator-sharing,.embed-instructions,.editorial-header,.article-author,.follow-subscribe,.editorial-footer{display:none!important}.print-only{display:block}.panel{break-inside:auto;box-shadow:none}.wrap{padding:0}.results{position:static}.metric{break-inside:avoid}.print-only p{font-size:.85rem}.print-input-list{font-size:.85rem}h2{break-after:avoid}}
 
 .calculator-embed .print-attribution{display:none!important}
+
+/* Keep long calculated amounts inside their result cards on narrow screens. */
+@media(max-width:760px){.property-calculator .metric dd{min-width:0;max-width:100%;overflow-wrap:anywhere}}
