@@ -381,6 +381,13 @@
         "fa": "fa/writing/on-device-ai-scam-warnings-explained.html",
         "ar": "ar/writing/on-device-ai-scam-warnings-explained.html"
       }
+    },
+    "article_bacnet_building_devices_common_language": {
+      "paths": {
+        "en": "writing/bacnet-building-devices-common-language.html",
+        "fa": "fa/writing/bacnet-building-devices-common-language.html",
+        "ar": "ar/writing/bacnet-building-devices-common-language.html"
+      }
     }
   },
   "hubs": [
@@ -625,7 +632,8 @@
         "article_rent_value_methodology",
         "article_why_occupancy_sensor_lights_switch_off",
         "article_building_leak_alert_response_checklist",
-        "article_dubai_sources"
+        "article_dubai_sources",
+        "article_bacnet_building_devices_common_language"
       ],
       "all_articles_heading": {
         "en": "All articles in this topic",
@@ -649,7 +657,8 @@
         "article_rent_value_methodology",
         "article_why_occupancy_sensor_lights_switch_off",
         "article_building_leak_alert_response_checklist",
-        "article_dubai_sources"
+        "article_dubai_sources",
+        "article_bacnet_building_devices_common_language"
       ]
     },
     {

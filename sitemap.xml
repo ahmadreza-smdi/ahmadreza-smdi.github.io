@@ -160,7 +160,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/writing/</loc>
-        <lastmod>2026-10-17T12:00:05+03:30</lastmod>
+        <lastmod>2026-10-17T18:00:04+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -184,7 +184,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/</loc>
-        <lastmod>2026-10-17T12:00:05+03:30</lastmod>
+        <lastmod>2026-10-17T18:00:04+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -208,7 +208,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/</loc>
-        <lastmod>2026-10-17T12:00:05+03:30</lastmod>
+        <lastmod>2026-10-17T18:00:04+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -1765,6 +1765,42 @@
         <image:image>
             <image:loc>https://a-samadi.com/assets/writing/on-device-ai-scam-warnings-explained/slide-01.png</image:loc>
             <image:title>تنبيهات الاحتيال بالذكاء الاصطناعي على الجهاز</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/bacnet-building-devices-common-language.html</loc>
+        <lastmod>2026-10-17T18:00:04+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/bacnet-building-devices-common-language.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/bacnet-building-devices-common-language.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/bacnet-building-devices-common-language.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/bacnet-building-devices-common-language.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/bacnet-building-devices-common-language/slide-01.png</image:loc>
+            <image:title>Your thermostat speaks. Who listens?</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/bacnet-building-devices-common-language.html</loc>
+        <lastmod>2026-10-17T18:00:04+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/bacnet-building-devices-common-language.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/bacnet-building-devices-common-language.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/bacnet-building-devices-common-language.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/bacnet-building-devices-common-language.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/bacnet-building-devices-common-language/slide-01.png</image:loc>
+            <image:title>زبان مشترک تجهیزات ساختمان با BACnet</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/bacnet-building-devices-common-language.html</loc>
+        <lastmod>2026-10-17T18:00:04+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/bacnet-building-devices-common-language.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/bacnet-building-devices-common-language.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/bacnet-building-devices-common-language.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/bacnet-building-devices-common-language.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/bacnet-building-devices-common-language/slide-01.png</image:loc>
+            <image:title>لغة مشتركة لأجهزة المباني مع BACnet</image:title>
         </image:image>
     </url>
 </urlset>
