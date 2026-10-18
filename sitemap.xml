@@ -1839,4 +1839,48 @@
             <image:title>مراجعة إجابة الذكاء الاصطناعي على الخريطة</image:title>
         </image:image>
     </url>
+    <url>
+        <loc>https://a-samadi.com/writing/phone-location-across-street.html</loc>
+        <lastmod>2026-10-18T21:00:00+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/phone-location-across-street.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/phone-location-across-street.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/phone-location-across-street.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/phone-location-across-street.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/phone-location-across-street/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/phone-location-across-street.html</loc>
+        <lastmod>2026-10-18T21:00:00+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/phone-location-across-street.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/phone-location-across-street.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/phone-location-across-street.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/phone-location-across-street.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/phone-location-across-street/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/phone-location-across-street.html</loc>
+        <lastmod>2026-10-18T21:00:00+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/phone-location-across-street.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/phone-location-across-street.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/phone-location-across-street.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/phone-location-across-street.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/phone-location-across-street/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/watch/phone-location-across-street.html</loc>
+        <lastmod>2026-10-18T21:00:00+03:30</lastmod>
+        <video:video>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/phone-location-across-street/cover.png</video:thumbnail_loc>
+            <video:title>Why your phone puts you across the street</video:title>
+            <video:description>A fictional pickup explains reflected satellite signals, an uncertain map dot and a practical way to agree where to meet.</video:description>
+            <video:content_loc>https://a-samadi.com/assets/writing/phone-location-across-street/film.mp4</video:content_loc>
+            <video:publication_date>2026-10-18T21:00:00+03:30</video:publication_date>
+        </video:video>
+    </url>
 </urlset>

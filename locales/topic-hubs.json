@@ -400,6 +400,13 @@
       "paths": {
         "en": "tools/rental-cash-flow.html"
       }
+    },
+    "article_phone_location_across_street": {
+      "paths": {
+        "en": "writing/phone-location-across-street.html",
+        "fa": "fa/writing/phone-location-across-street.html",
+        "ar": "ar/writing/phone-location-across-street.html"
+      }
     }
   },
   "hubs": [
@@ -942,6 +949,7 @@
         "article_where_wearable_ai_computation_runs",
         "article_on_device_ai_scam_warnings_explained",
         "article_geospatial_ai_map_answer_review",
+        "article_phone_location_across_street",
         "tech_film_ai_confidence",
         "tech_film_cookie_consent",
         "tech_film_charging_80",
@@ -979,7 +987,8 @@
         "article_ai_document_review_claim_evidence_checklist",
         "article_where_wearable_ai_computation_runs",
         "article_on_device_ai_scam_warnings_explained",
-        "article_geospatial_ai_map_answer_review"
+        "article_geospatial_ai_map_answer_review",
+        "article_phone_location_across_street"
       ],
       "all_articles_heading": {
         "en": "Existing explainers and films",

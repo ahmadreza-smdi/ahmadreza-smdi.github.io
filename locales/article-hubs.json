@@ -1128,6 +1128,30 @@
           "path": "writing/why-wifi-is-slow-with-full-bars.html"
         }
       ]
+    },
+    {
+      "stem": "phone-location-across-street",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/phone-location-across-street.html",
+        "fa": "fa/writing/phone-location-across-street.html",
+        "ar": "ar/writing/phone-location-across-street.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
     }
   ]
 }

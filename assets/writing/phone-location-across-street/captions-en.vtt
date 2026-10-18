@@ -1,0 +1,181 @@
+WEBVTT
+
+1
+00:00:00.740 --> 00:00:04.230
+Mina is waiting for a ride
+outside a busy station.
+
+2
+00:00:04.230 --> 00:00:06.900
+Her phone puts her
+on the other side of the street.
+
+3
+00:00:07.290 --> 00:00:10.611
+So why does your location go wrong
+among tall buildings?
+
+4
+00:00:10.901 --> 00:00:12.891
+Your phone listens to satellites.
+
+5
+00:00:12.891 --> 00:00:17.504
+GPS has at least 24,
+about 20,000 kilometres up.
+
+6
+00:00:17.594 --> 00:00:21.864
+Each one sends a radio message:
+where it is, and the precise time.
+
+7
+00:00:21.954 --> 00:00:23.544
+It travels at the speed of light,
+
+8
+00:00:23.544 --> 00:00:27.526
+so the delay tells the phone
+how far away that satellite is.
+
+9
+00:00:27.616 --> 00:00:29.986
+With distances to at least four satellites,
+
+10
+00:00:29.986 --> 00:00:32.181
+the phone can work out where it is.
+
+11
+00:00:32.521 --> 00:00:35.805
+But this assumes each signal
+flies straight to the phone.
+
+12
+00:00:35.995 --> 00:00:39.275
+On Mina’s street, tall buildings
+hide much of the sky,
+
+13
+00:00:39.275 --> 00:00:42.545
+and a signal can bounce
+off a glass wall to reach her.
+
+14
+00:00:42.635 --> 00:00:44.275
+The bounce makes the trip longer,
+
+15
+00:00:44.275 --> 00:00:47.325
+so that satellite seems
+farther away than it is.
+
+16
+00:00:47.415 --> 00:00:50.175
+A few wrong distances,
+and the dot slides,
+
+17
+00:00:50.175 --> 00:00:52.365
+often to the wrong side of the street.
+
+18
+00:00:52.705 --> 00:00:55.255
+It’s like a friend calling
+from around a corner:
+
+19
+00:00:55.255 --> 00:00:59.246
+their voice bounces off a wall
+and takes the long way to you.
+
+20
+00:00:59.336 --> 00:01:01.086
+That’s where the comparison stops.
+
+21
+00:01:01.086 --> 00:01:02.746
+You might notice an echo.
+
+22
+00:01:02.746 --> 00:01:04.820
+A phone that can’t spot the bounce
+
+23
+00:01:04.820 --> 00:01:07.293
+counts the extra delay as distance.
+
+24
+00:01:07.383 --> 00:01:10.583
+At the speed of light,
+one ten-millionth of a second
+
+25
+00:01:10.583 --> 00:01:11.910
+is about 30 metres.
+
+26
+00:01:12.250 --> 00:01:15.370
+Phones also use Wi-Fi
+and mobile networks.
+
+27
+00:01:15.370 --> 00:01:19.440
+But tall buildings can get between you
+and the mobile towers too.
+
+28
+00:01:19.630 --> 00:01:21.110
+So when the app is unsure,
+
+29
+00:01:21.110 --> 00:01:23.970
+it may draw a light blue circle
+around the dot.
+
+30
+00:01:23.970 --> 00:01:25.950
+It’s an estimate, not a promise.
+
+31
+00:01:25.950 --> 00:01:29.340
+A smaller circle means
+a more confident estimate.
+
+32
+00:01:29.680 --> 00:01:31.430
+Mina sees a big circle.
+
+33
+00:01:31.430 --> 00:01:34.100
+She walks along the pavement
+to the open corner,
+
+34
+00:01:34.100 --> 00:01:36.980
+where more sky may help,
+sets the pin herself,
+
+35
+00:01:36.980 --> 00:01:39.620
+and tells the driver:
+by the pharmacy.
+
+36
+00:01:40.010 --> 00:01:41.670
+This is the simple version.
+
+37
+00:01:41.670 --> 00:01:45.430
+Some phones can correct for bounces,
+but not every time.
+
+38
+00:01:45.430 --> 00:01:48.270
+The atmosphere and the receiver
+matter too.
+
+39
+00:01:48.610 --> 00:01:51.840
+When the circle is big,
+trust a landmark, not the dot.

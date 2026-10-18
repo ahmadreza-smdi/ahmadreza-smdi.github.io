@@ -8,6 +8,14 @@
     <dc:creator>Ahmadreza Samadi</dc:creator>
     <atom:link href="https://a-samadi.com/writing/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Why your phone puts you across the street</title>
+      <link>https://a-samadi.com/writing/phone-location-across-street.html</link>
+      <description>A fictional pickup explains reflected satellite signals, an uncertain map dot and a practical way to agree where to meet.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Sun, 18 Oct 2026 17:30:00 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/phone-location-across-street.html</guid>
+    </item>
+    <item>
       <title>A map answer. The right place?</title>
       <link>https://a-samadi.com/writing/geospatial-ai-map-answer-review.html</link>
       <description>Which boundary? Which date? Which source and assumptions? Keep unsupported conclusions open.</description>

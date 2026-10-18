@@ -77,6 +77,7 @@ Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and
 - [The message looks convincing.](https://a-samadi.com/writing/on-device-ai-scam-warnings-explained.html): Our framework: stop the rushed action, use a trusted separate contact route, keep uncertainty visible.
 - [Your thermostat speaks. Who listens?](https://a-samadi.com/writing/bacnet-building-devices-common-language.html): Our checklist: which devices, which data and commands, and who verifies the integration?
 - [A map answer. The right place?](https://a-samadi.com/writing/geospatial-ai-map-answer-review.html): Which boundary? Which date? Which source and assumptions? Keep unsupported conclusions open.
+- [Why your phone puts you across the street](https://a-samadi.com/writing/phone-location-across-street.html): A fictional pickup explains reflected satellite signals, an uncertain map dot and a practical way to agree where to meet.
 
 ## Films
 
@@ -86,6 +87,7 @@ Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and
 - [Watch: Profitable but out of cash](https://a-samadi.com/watch/profit-cash.html): Watch Ahmadreza Samadi's 90-second animated film about the difference between profit and cash timing. English captions and the full explanation are available.
 - [Watch: AI rental yield and cash flow](https://a-samadi.com/watch/rental-yield.html): Watch Ahmadreza Samadi’s 99-second animated film about gross rental yield, property costs and loan payments. English captions and a transcript are included.
 - [Watch: iPhone Duo’s $800 price gap](https://a-samadi.com/watch/iphone-duo.html): Watch the 104-second film comparing the $800 model-price gap over three years. English captions, a transcript and the calculation’s limits are included.
+- [Watch: Why your phone puts you across the street](https://a-samadi.com/watch/phone-location-across-street.html): Watch the English animated film about reflected satellite signals, an uncertain map dot and a fictional pickup.
 
 ## Tools
 
