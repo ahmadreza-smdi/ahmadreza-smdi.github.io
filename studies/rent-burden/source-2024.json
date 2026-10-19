@@ -1,0 +1,23 @@
+{
+  "accessed_at": "2026-10-16T23:40:34.643627+00:00",
+  "survey_year": 2024,
+  "product": "ACS1-year detailed tables",
+  "table": "B25070",
+  "access": "Official public table-based summary file; no key or account",
+  "sources": [
+    {
+      "file": "raw/2024-b25070.dat",
+      "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/1YRData/acsdt1y2024-b25070.dat",
+      "sha256": "edf1abe1970b39c3cb9038f762fc203dcfea081e8f2ca6cb0f8c7a75c62cd770",
+      "bytes": 973896,
+      "state": "downloaded"
+    },
+    {
+      "file": "raw/2024-geographies.txt",
+      "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/documentation/Geos20241YR.txt",
+      "sha256": "2155acb3c81672eee9b0bd971cca60cd77d8b66222b34973928f57c087ea4afe",
+      "bytes": 1065169,
+      "state": "existing official source snapshot reused"
+    }
+  ]
+}

@@ -4,7 +4,7 @@
   "pages": [
     {
       "id": "now",
-      "updated_at": "2026-10-17T06:57:43+03:30",
+      "updated_at": "2026-10-18T22:05:29+03:30",
       "locales": {
         "en": {
           "title": "Now | Ahmadreza Samadi",
@@ -39,9 +39,24 @@
               ]
             },
             {
+              "id": "this-week",
+              "heading": "This week: public work and preparation",
+              "paragraphs": [
+                "On 18 October I updated my public GitHub profile README to connect my property-data studies, decision tools and three signature ideas. I also updated the biography and media resources on this website. These are changes to how the work is presented, not evidence of audience growth or better investment decisions.",
+                "I am preparing an Ideas page, a studies hub and clearer reading paths through existing essays. They remain unpublished at this update. Three further editions of Start with the Decision are scheduled for 10, 17 and 24 November; a saved schedule is not a published edition."
+              ],
+              "links": [
+                {
+                  "path": "about.html",
+                  "label": "Biography and official profiles"
+                }
+              ]
+            },
+            {
               "id": "public-tools-data",
               "heading": "Public tools and data",
               "paragraphs": [
+                "On 18 October I published Evidence Note, a browser-local editor for recording a claim, its source and the next check. It exports HTML, Markdown and JSON, and can reopen a saved JSON note. Source relationships are recorded by the user and are not independently verified by the editor. Its source, download and project page are public on GitHub and Peerlist.",
                 "My recent public work includes an AI workflow cost ledger with fictional worked examples, an ACS 2024 rent-burden study covering 386 US metropolitan areas, and a video publication-date checker. Code, data and methods are linked from my media resources.",
                 "These releases were prepared with AI assistance. The examples are teaching material and the study is descriptive; they do not report company results, establish investment returns or independently verify the quality of an AI answer.",
                 "I am preparing a comparison of house price growth and a rent benchmark. The published methods now specify a five-year primary window policy; exact dates and results remain unresolved."
@@ -127,9 +142,24 @@
               ]
             },
             {
+              "id": "this-week",
+              "heading": "این هفته: کارهای منتشرشده و آماده‌سازی",
+              "paragraphs": [
+                "در ۱۸ اکتبر، معرفی عمومی گیت‌هابم را به‌روز کردم تا مطالعات داده‌های املاک، ابزارهای تصمیم‌گیری و سه ایدهٔ اصلی‌ام را به هم پیوند دهد. زندگی‌نامه و منابع رسانه‌ای این وب‌سایت را هم به‌روز کردم. این‌ها تغییراتی در نحوهٔ ارائهٔ کار هستند؛ نشانهٔ رشد مخاطب یا بهتر شدن تصمیم‌های سرمایه‌گذاری نیستند.",
+                "در حال آماده‌سازی صفحهٔ ایده‌ها، مرکز مطالعات و مسیرهای روشن‌تر برای خواندن مقاله‌های موجود هستم. هنگام این به‌روزرسانی هنوز منتشر نشده‌اند. سه شمارهٔ دیگر خبرنامهٔ Start with the Decision برای ۱۰، ۱۷ و ۲۴ نوامبر زمان‌بندی شده‌اند؛ ذخیره شدن زمان‌بندی به معنی انتشار شماره نیست."
+              ],
+              "links": [
+                {
+                  "path": "about.html",
+                  "label": "زندگی‌نامه و پروفایل‌های رسمی"
+                }
+              ]
+            },
+            {
               "id": "public-tools-data",
               "heading": "ابزارها و داده‌های عمومی",
               "paragraphs": [
+                "در ۱۸ اکتبر، Evidence Note را منتشر کردم؛ ویرایشگری که در مرورگر اجرا می‌شود و برای ثبت یک ادعا، منبع آن و بررسی بعدی به کار می‌رود. خروجی HTML، Markdown و JSON می‌دهد و می‌تواند یادداشت JSON ذخیره‌شده را دوباره باز کند. رابطهٔ منبع با ادعا را کاربر ثبت می‌کند و ویرایشگر آن را مستقلاً تأیید نمی‌کند. منبع، فایل دریافت و صفحهٔ پروژه در GitHub و Peerlist عمومی هستند.",
                 "از کارهای عمومی اخیر من می‌توان به دفتر محاسبهٔ هزینهٔ فرایندهای هوش مصنوعی همراه با مثال‌های فرضی، مطالعهٔ فشار اجاره با داده‌های ACS سال ۲۰۲۴ برای ۳۸۶ منطقهٔ شهری آمریکا و ابزار بررسی تاریخ انتشار ویدئو اشاره کرد. لینک کد، داده و روش‌ها در منابع رسانه‌ای من آمده است.",
                 "این آثار با کمک هوش مصنوعی آماده شده‌اند. مثال‌ها آموزشی و مطالعه توصیفی است؛ این آثار نتیجهٔ عملکرد شرکت‌ها را گزارش نمی‌کنند، بازده سرمایه‌گذاری را اثبات نمی‌کنند و کیفیت پاسخ هوش مصنوعی را به‌طور مستقل تأیید نمی‌کنند.",
                 "در حال آماده‌سازی مقایسهٔ رشد قیمت مسکن و معیار اجاره هستم. روش منتشرشده اکنون قاعدهٔ بازهٔ اصلی پنج‌ساله را مشخص می‌کند؛ تاریخ‌های دقیق و نتایج هنوز مشخص نیستند."
@@ -215,9 +245,24 @@
               ]
             },
             {
+              "id": "this-week",
+              "heading": "هذا الأسبوع: أعمال منشورة وأعمال قيد الإعداد",
+              "paragraphs": [
+                "في ١٨ أكتوبر حدّثت ملف التعريف العام في GitHub لربط دراساتي لبيانات العقارات وأدوات القرار وأفكاري الرئيسية الثلاث. وحدّثت أيضًا السيرة والموارد الإعلامية في هذا الموقع. هذه تغييرات في طريقة عرض العمل، ولا تثبت نمو الجمهور أو تحسّن قرارات الاستثمار.",
+                "أُعدّ صفحة للأفكار ومركزًا للدراسات ومسارات أوضح لقراءة المقالات الموجودة. ولم تُنشر هذه الصفحات عند هذا التحديث. جرى تحديد مواعيد ثلاثة أعداد إضافية من Start with the Decision في ١٠ و١٧ و٢٤ نوفمبر؛ وحفظ موعد النشر لا يعني أن العدد قد نُشر."
+              ],
+              "links": [
+                {
+                  "path": "about.html",
+                  "label": "السيرة والحسابات الرسمية"
+                }
+              ]
+            },
+            {
               "id": "public-tools-data",
               "heading": "أدوات وبيانات عامة",
               "paragraphs": [
+                "في ١٨ أكتوبر نشرت Evidence Note، محررًا يعمل محليًا في المتصفح لتسجيل ادعاء ومصدره والتحقق التالي. يصدّر HTML وMarkdown وJSON، ويمكنه إعادة فتح ملاحظة JSON محفوظة. يسجّل المستخدم علاقة المصدر بالادعاء، ولا يتحقق المحرر منها بصورة مستقلة. الشيفرة وملف التنزيل وصفحة المشروع متاحة للعامة على GitHub وPeerlist.",
                 "تشمل أعمالي العامة الحديثة سجلًا لحساب تكاليف سير عمل الذكاء الاصطناعي مع أمثلة افتراضية، ودراسة وصفية لعبء الإيجار باستخدام بيانات ACS لعام ٢٠٢٤ تغطي ٣٨٦ منطقة حضرية أمريكية، وأداة لفحص تاريخ نشر الفيديو. تتوفر روابط الشيفرة والبيانات والمنهجية ضمن مواردي الإعلامية.",
                 "أُعدّت هذه الأعمال بمساعدة الذكاء الاصطناعي. الأمثلة تعليمية والدراسة وصفية؛ ولا تعرض هذه الأعمال نتائج الشركات، ولا تثبت عوائد استثمارية، ولا تتحقق بصورة مستقلة من جودة إجابة الذكاء الاصطناعي.",
                 "أُعدّ مقارنة بين نمو أسعار المساكن ومعيار الإيجار. تحدد المنهجية المنشورة الآن قاعدة لفترة المقارنة الأساسية من خمس سنوات؛ ولم تُحسم بعد التواريخ الدقيقة أو النتائج."

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="author" content="Ahmadreza Samadi">
-<title>كيف تعمل ملفات ZIP؟ ضغط البيانات دون فقدانها | أحمدرضا صمدي</title>
-<meta name="description" content="يشرح أحمدرضا صمدي بنية ZIP وضغط DEFLATE والتكرار وترميز هوفمان، ولماذا قد لا يصغر حجم الصور والفيديو كثيراً بعد الضغط.">
+<title>كيف يعمل ضغط ZIP ولماذا لا يصغر الفيديو كثيرًا؟ | أحمدرضا صمدي</title>
+<meta name="description" content="يجمع ZIP الملفات ويمكنه ضغطها دون فقدان البايتات الأصلية. تعرّف على DEFLATE وسبب صغر التوفير في JPG وMP4 والفرق بين الضغط والتشفير.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://a-samadi.com/ar/writing/how-zip-files-work.html">
 <link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/how-zip-files-work.html">
@@ -16,13 +16,13 @@
 <link rel="stylesheet" href="/css/site.css?v=20261009-lagoon4">
 <link rel="stylesheet" href="/css/rtl.css?v=20261009-lagoon4">
 <meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
-<meta property="og:title" content="كيف تعمل ملفات ZIP؟ ضغط البيانات دون فقدانها | أحمدرضا صمدي">
-<meta property="og:description" content="يشرح أحمدرضا صمدي بنية ZIP وضغط DEFLATE والتكرار وترميز هوفمان، ولماذا قد لا يصغر حجم الصور والفيديو كثيراً بعد الضغط."><meta property="og:url" content="https://a-samadi.com/ar/writing/how-zip-files-work.html">
+<meta property="og:title" content="كيف يعمل ضغط ZIP ولماذا لا يصغر الفيديو كثيرًا؟ | أحمدرضا صمدي">
+<meta property="og:description" content="يجمع ZIP الملفات ويمكنه ضغطها دون فقدان البايتات الأصلية. تعرّف على DEFLATE وسبب صغر التوفير في JPG وMP4 والفرق بين الضغط والتشفير."><meta property="og:url" content="https://a-samadi.com/ar/writing/how-zip-files-work.html">
 <meta property="og:locale" content="ar_AE">
 <meta property="og:locale:alternate" content="en_US">
 <meta property="og:locale:alternate" content="fa_IR">
 <meta property="og:image" content="https://a-samadi.com/assets/share/how-zip-files-work.png">
-<meta property="og:image:alt" content="غلاف المقالة الإنجليزية: How ZIP files work: compression without losing data"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="كيف تعمل ملفات ZIP؟ ضغط البيانات دون فقدانها | أحمدرضا صمدي"><meta name="twitter:description" content="يشرح أحمدرضا صمدي بنية ZIP وضغط DEFLATE والتكرار وترميز هوفمان، ولماذا قد لا يصغر حجم الصور والفيديو كثيراً بعد الضغط."><meta name="twitter:image" content="https://a-samadi.com/assets/share/how-zip-files-work.png"><meta name="twitter:image:alt" content="غلاف المقالة الإنجليزية: How ZIP files work: compression without losing data">
+<meta property="og:image:alt" content="غلاف المقالة الإنجليزية: How ZIP files work: compression without losing data"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="كيف يعمل ضغط ZIP ولماذا لا يصغر الفيديو كثيرًا؟ | أحمدرضا صمدي"><meta name="twitter:description" content="يجمع ZIP الملفات ويمكنه ضغطها دون فقدان البايتات الأصلية. تعرّف على DEFLATE وسبب صغر التوفير في JPG وMP4 والفرق بين الضغط والتشفير."><meta name="twitter:image" content="https://a-samadi.com/assets/share/how-zip-files-work.png"><meta name="twitter:image:alt" content="غلاف المقالة الإنجليزية: How ZIP files work: compression without losing data">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -31,7 +31,7 @@
       "@type": "Article",
       "@id": "https://a-samadi.com/ar/writing/how-zip-files-work.html#article",
       "headline": "كيف تعمل ملفات ZIP؟ ضغط البيانات دون فقدانها",
-      "description": "يشرح أحمدرضا صمدي بنية ZIP وضغط DEFLATE والتكرار وترميز هوفمان، ولماذا قد لا يصغر حجم الصور والفيديو كثيراً بعد الضغط.",
+      "description": "يجمع ZIP الملفات ويمكنه ضغطها دون فقدان البايتات الأصلية. تعرّف على DEFLATE وسبب صغر التوفير في JPG وMP4 والفرق بين الضغط والتشفير.",
       "url": "https://a-samadi.com/ar/writing/how-zip-files-work.html",
       "mainEntityOfPage": {
         "@type": "WebPage",
@@ -44,7 +44,7 @@
         }
       },
       "datePublished": "2026-09-28",
-      "dateModified": "2026-10-10T13:35:56+03:30",
+      "dateModified": "2026-10-19T10:43:53+03:30",
       "inLanguage": "ar",
       "image": {
         "@type": "ImageObject",
@@ -112,9 +112,10 @@
 <article>
 <p class="eyebrow">Wait, That’s Tech? · التقنية اليومية</p>
 <h1>كيف تعمل ملفات ZIP؟ ضغط البيانات دون فقدانها</h1>
-<p class="lead">يمكن لملف ZIP جمع ملفات متعددة أو ضغط محتوياتها أو القيام بالأمرين. فائدة الأرشيف الأصغر تعتمد على استعادة البايتات الأصلية بدقة عند فك الضغط.</p>
+<p class="lead">ZIP حاوية تجمع الملفات ويمكنها ضغط محتوياتها مع استعادة البايتات الأصلية بدقة عند فك الضغط. قد لا تصغر الصور والفيديوهات المضغوطة مسبقًا كثيرًا، وإنشاء ZIP لا يشفّر الملفات بحد ذاته.</p>
+<p class="byline" data-search-reading="v1">اقرأ المزيد: <a href="/ar/topics/tech-explained.html">التقنية ببساطة</a> · <a href="/ideas.html" lang="en" dir="ltr">Signature ideas (English)</a></p>
 <p class="byline">بقلم <a href="/ar/about.html" rel="author">أحمدرضا صمدي</a> · <time datetime="2026-09-28">٢٨ سبتمبر ٢٠٢٦</time> · <a href="/writing/how-zip-files-work.html" hreflang="en">النسخة الإنجليزية من المقال</a></p>
-<p class="byline">تحديث <time datetime="2026-10-10T13:35:56+03:30">١٠ أكتوبر ٢٠٢٦</time></p>
+<p class="byline">تحديث <time datetime="2026-10-18T15:48:37+03:30">١٨ أكتوبر ٢٠٢٦</time></p>
 <section aria-labelledby="article-at-a-glance">
 <h2 id="article-at-a-glance">نظرة سريعة</h2>
 <p>ZIP حاوية للأرشيف، وDEFLATE إحدى طرق الضغط التي يمكن استخدامها فيه. قد لا تصغر الملفات المضغوطة مسبقًا كثيرًا، وقد تجعل ترويسات الأرشيف حجمه أكبر. الضغط لا يمنح السرية، ويساعد CRC-32 على كشف التلف العرضي لكنه لا يثبت أصالة البيانات.</p>
@@ -149,7 +150,8 @@
 <aside class="article-author" aria-labelledby="article-author-title">
 <h2 id="article-author-title">عن الكاتب</h2>
 <p class="article-author__name"><a href="/ar/about.html" rel="author">أحمدرضا صمدي</a></p>
-<p>رائد أعمال تقني مقيم في دبي؛ شريك مؤسس وقائد تقني في <bdi lang="en">Appraiva</bdi> وشريك مؤسس ورئيس تنفيذي لمجموعة رويال أبراج.</p>
+<p>أحمدرضا صمدي رائد أعمال تقني مقيم في دبي، وشريك مؤسس وقائد تقني في Appraiva التي تطوّر حلول ذكاء اصطناعي للمعلومات العقارية، وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group.</p>
+<p class="article-author__series">ضمن سلسلة <bdi lang="en">Tech, explained</bdi></p>
 </aside>
 <!-- author-box:end -->
 <!-- follow-subscribe:start -->

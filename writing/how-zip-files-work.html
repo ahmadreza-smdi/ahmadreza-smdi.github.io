@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="author" content="Ahmadreza Samadi">
-<title>How ZIP files work: compression without losing data | Ahmadreza Samadi</title>
-<meta name="description" content="How does a ZIP restore every byte? Ahmadreza Samadi explains the ZIP container, DEFLATE, repeated data, Huffman coding, and why videos may barely shrink.">
+<title>How ZIP Compression Works and Why Videos Barely Shrink | Ahmadreza Samadi</title>
+<meta name="description" content="ZIP bundles files and can use lossless compression. Learn how DEFLATE restores every byte, why JPG and MP4 may barely shrink, and why compression is not encryption.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://a-samadi.com/writing/how-zip-files-work.html">
 <link rel="alternate" type="application/rss+xml" title="Ahmadreza Samadi — English writing" href="https://a-samadi.com/writing/feed.xml">
@@ -16,13 +16,13 @@
 <link rel="stylesheet" href="/css/site.css?v=20261009-lagoon4">
 
 <meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
-<meta property="og:title" content="How ZIP files work: compression without losing data | Ahmadreza Samadi">
-<meta property="og:description" content="How does a ZIP restore every byte? Ahmadreza Samadi explains the ZIP container, DEFLATE, repeated data, Huffman coding, and why videos may barely shrink."><meta property="og:url" content="https://a-samadi.com/writing/how-zip-files-work.html">
+<meta property="og:title" content="How ZIP Compression Works and Why Videos Barely Shrink | Ahmadreza Samadi">
+<meta property="og:description" content="ZIP bundles files and can use lossless compression. Learn how DEFLATE restores every byte, why JPG and MP4 may barely shrink, and why compression is not encryption."><meta property="og:url" content="https://a-samadi.com/writing/how-zip-files-work.html">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="fa_IR">
 <meta property="og:locale:alternate" content="ar_AE">
 <meta property="og:image" content="https://a-samadi.com/assets/share/how-zip-files-work.png">
-<meta property="og:image:alt" content="English article cover: How ZIP files work: compression without losing data"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How ZIP files work: compression without losing data | Ahmadreza Samadi"><meta name="twitter:description" content="How does a ZIP restore every byte? Ahmadreza Samadi explains the ZIP container, DEFLATE, repeated data, Huffman coding, and why videos may barely shrink."><meta name="twitter:image" content="https://a-samadi.com/assets/share/how-zip-files-work.png"><meta name="twitter:image:alt" content="English article cover: How ZIP files work: compression without losing data">
+<meta property="og:image:alt" content="English article cover: How ZIP files work: compression without losing data"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How ZIP Compression Works and Why Videos Barely Shrink | Ahmadreza Samadi"><meta name="twitter:description" content="ZIP bundles files and can use lossless compression. Learn how DEFLATE restores every byte, why JPG and MP4 may barely shrink, and why compression is not encryption."><meta name="twitter:image" content="https://a-samadi.com/assets/share/how-zip-files-work.png"><meta name="twitter:image:alt" content="English article cover: How ZIP files work: compression without losing data">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -39,7 +39,7 @@
         }
       ],
       "headline": "How ZIP files work: compression without losing data",
-      "description": "How does a ZIP restore every byte? Ahmadreza Samadi explains the ZIP container, DEFLATE, repeated data, Huffman coding, and why videos may barely shrink.",
+      "description": "ZIP bundles files and can use lossless compression. Learn how DEFLATE restores every byte, why JPG and MP4 may barely shrink, and why compression is not encryption.",
       "url": "https://a-samadi.com/writing/how-zip-files-work.html",
       "mainEntityOfPage": {
         "@type": "WebPage",
@@ -52,7 +52,7 @@
         }
       },
       "datePublished": "2026-09-28",
-      "dateModified": "2026-10-10T13:35:56+03:30",
+      "dateModified": "2026-10-19T10:43:53+03:30",
       "inLanguage": "en",
       "image": {
         "@type": "ImageObject",
@@ -117,9 +117,10 @@
 <article>
 <p class="eyebrow">Wait, That’s Tech? · Everyday technology</p>
 <h1>How ZIP files work: compression without losing data</h1>
-<p class="lead">A ZIP can bundle files, compress their contents, or do both. A smaller archive is useful only if extraction can reconstruct the original bytes exactly.</p>
+<p class="lead">ZIP is a container that can bundle files and compress their contents without losing the original bytes. Already-compressed photos and videos may barely shrink, and creating a ZIP does not by itself encrypt the files.</p>
+<p class="byline" data-search-reading="v1">Continue reading: <a href="/topics/tech-explained.html">Tech, explained</a> · <a href="/ideas.html">Signature ideas</a></p>
 <p class="byline">By <a href="/about.html" rel="author">Ahmadreza Samadi</a> · <time datetime="2026-09-28">28 September 2026</time></p>
-<p class="byline">Updated <time datetime="2026-10-10T13:35:56+03:30">10 October 2026</time></p>
+<p class="byline">Updated <time datetime="2026-10-18T15:48:37+03:30">18 October 2026</time></p>
 <section aria-labelledby="article-at-a-glance">
 <h2 id="article-at-a-glance">At a glance</h2>
 <p>ZIP is the container; DEFLATE is one compression method it can use. Files that are already compressed may barely shrink, and archive headers can even make the result larger. Compression does not provide confidentiality, and CRC-32 helps detect accidental corruption rather than proving authenticity.</p>
@@ -154,7 +155,8 @@
 <aside class="article-author" aria-labelledby="article-author-title">
 <h2 id="article-author-title">About the author</h2>
 <p class="article-author__name"><a href="/about.html" rel="author">Ahmadreza Samadi</a></p>
-<p>Technology Entrepreneur based in Dubai. Co-Founder &amp; Technical Lead at Appraiva; Co-Founder &amp; CEO at Royal Abraj Group.</p>
+<p>Dubai-based technology entrepreneur Ahmadreza Samadi is Co-Founder &amp; Technical Lead of Appraiva, building AI real estate intelligence, and Co-Founder &amp; CEO of Royal Abraj Group.</p>
+<p class="article-author__series">Part of <bdi lang="en">Tech, explained</bdi></p>
 </aside>
 <!-- author-box:end -->
 <!-- follow-subscribe:start -->

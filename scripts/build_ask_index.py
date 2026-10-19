@@ -35,7 +35,7 @@ JS_SPACE = re.compile(r"[\t\n\v\f\r \u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\
 EMAIL_PATTERN = re.compile(r"[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
 PLACE_CLASSES = (
     "hero-copy", "venture", "section-heading", "feature", "work-card", "timeline-item",
-    "capability", "guide-tile", "writing-item", "contact-copy",
+    "capability", "guide-tile", "writing-item", "contact-copy", "brand-card", "brand-links",
 )
 EXCLUDED_PARAGRAPH_CLASSES = ("section-label", "card-topline", "topic", "copy-status", "company")
 # A deliberate extraction contract with the existing client. Fail on a changed contract
@@ -44,7 +44,7 @@ RUNTIME_CONTRACT = (
     "const dialog = $('dialog.command');",
     "const commands = $$('.command-item', dialog).filter((item) => !item.hasAttribute('data-answer-go'));",
     "const clean = (node) => node.textContent.replace(/\\s+/g, ' ').trim();",
-    "const places = $$('.hero-copy, .venture, .section-heading, .feature, .work-card, .bio-copy > p, .timeline-item, .capability, .guide-tile, .writing-item, .contact-copy', $('main'));",
+    "const places = $$('.hero-copy, .venture, .section-heading, .feature, .work-card, .bio-copy > p, .timeline-item, .capability, .guide-tile, .writing-item, .contact-copy, .brand-card, .brand-links', $('main'));",
     "const section = place.closest('section');",
     "const label = section && section.querySelector('.section-label');",
     "const title = place.matches('p') ? null : place.querySelector('h1, h2, h3, strong');",

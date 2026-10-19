@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="author" content="Ahmadreza Samadi">
-<title>AI Cost per Verified Result: Beyond Token Prices | Ahmadreza Samadi</title>
+<title>AI Cost per Accepted Result: Beyond Token Prices | Ahmadreza Samadi</title>
 <meta name="description" content="A practical framework for measuring AI workflow cost: include tokens, tools, retries and human review, then divide by results that pass verification.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://a-samadi.com/writing/ai-cost-per-verified-result.html">
@@ -18,13 +18,13 @@
 <meta property="og:site_name" content="Ahmadreza Samadi">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="fa_IR">
-<meta property="og:locale:alternate" content="ar_AE"><meta property="og:title" content="AI Cost per Verified Result | Ahmadreza Samadi">
+<meta property="og:locale:alternate" content="ar_AE"><meta property="og:title" content="AI Cost per Accepted Result | Ahmadreza Samadi">
 <meta property="og:description" content="Lower model prices help. The useful measure is the full cost of results that pass review.">
 <meta property="og:url" content="https://a-samadi.com/writing/ai-cost-per-verified-result.html">
 <meta property="og:image" content="https://a-samadi.com/assets/share/ai-cost-per-verified-result.png">
 <meta property="og:image:alt" content="English article cover: AI cost per verified result">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AI Cost per Verified Result | Ahmadreza Samadi">
+<meta name="twitter:title" content="AI Cost per Accepted Result | Ahmadreza Samadi">
 <meta name="twitter:description" content="Lower model prices help. The useful measure is the full cost of results that pass review.">
 <meta name="twitter:image" content="https://a-samadi.com/assets/share/ai-cost-per-verified-result.png">
 <meta name="twitter:image:alt" content="English article cover: AI cost per verified result">
@@ -41,8 +41,8 @@
       "@id": "https://a-samadi.com/ar/writing/ai-cost-per-verified-result.html#article"
     }
   ],
-  "headline": "AI Cost per Verified Result: Beyond Token Prices",
-  "description": "A practical framework for measuring the full cost of verified AI workflow results.",
+  "headline": "AI Cost per Accepted Result: Beyond Token Prices",
+  "description": "A practical framework for measuring the full cost of accepted AI workflow results.",
   "url": "https://a-samadi.com/writing/ai-cost-per-verified-result.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -55,7 +55,7 @@
     }
   },
   "datePublished": "2026-09-24",
-  "dateModified": "2026-10-17T16:20:42+03:30",
+  "dateModified": "2026-10-19T10:43:53+03:30",
   "inLanguage": "en",
   "image": {
     "@type": "ImageObject",
@@ -86,13 +86,17 @@
 <header class="editorial-header"><a href="/"><img src="../assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">Ahmadreza Samadi / Home</a></header>
 <main id="main" class="editorial">
 <p class="eyebrow">Analysis · AI product economics</p>
-<h1>AI cost per verified result</h1>
+<h1>AI cost per accepted result</h1>
 <p class="lead">The price of a model call matters. The cost of getting a useful result through a complete workflow matters more.</p>
-<p class="byline">By <a href="/about.html" rel="author">Ahmadreza Samadi</a> · 24 September 2026 · Updated <time datetime="2026-10-17T16:20:42+03:30">17 October 2026</time></p>
+<p class="byline">By <a href="/about.html" rel="author">Ahmadreza Samadi</a> · 24 September 2026 · Updated <time datetime="2026-10-18T15:15:10+03:30">18 October 2026</time></p>
 <section aria-labelledby="article-at-a-glance">
 <h2 id="article-at-a-glance">At a glance</h2>
 <p>Divide the full workflow cost, including model calls, tools, retries and human review, by the number of results that pass a defined review standard. Cheaper requests do not automatically mean cheaper accepted results. The property-research example below is a proposed test, not a reported company result.</p>
 </section>
+<!-- cornerstone:start -->
+<section aria-labelledby="cornerstone-title"><h2 id="cornerstone-title">Measure cost per accepted result</h2><p><strong>Divide all recorded workflow costs by the number of distinct results accepted under a rule fixed before the test. Include retries and rejected attempts in cost; do not count repeated attempts as new accepted results.</strong></p><figure style="margin:1.5rem 0"><div class="cornerstone-flow" role="img" aria-label="Total recorded cost ÷ distinct accepted results. With none accepted, unit cost is undefined." style="text-align:center;max-width:100%"><div style="background:#BDE7D2;border:1px solid #0B6A7A;border-radius:12px;padding:.75rem;color:#0E2A33">All attempt costs</div><div aria-hidden="true" style="color:#0B6A7A">↓</div><div style="background:#C3DCF4;border:1px solid #0B6A7A;border-radius:12px;padding:.75rem;color:#0E2A33">Acceptance rule</div><div aria-hidden="true" style="color:#0B6A7A">↓</div><div style="background:#F2F7F5;border:1px solid #0B6A7A;border-radius:12px;padding:.75rem;color:#0E2A33">Cost per accepted result</div></div><figcaption>Total recorded cost ÷ distinct accepted results. With none accepted, unit cost is undefined.</figcaption></figure><p>This guide uses “accepted result” for an output that passes the recorded review rule. “Verified result” in the historical URL and earlier title refers to that same rule; neither term establishes independent certification. Keep unknown costs separate from explicit zero. Compare the same intended result batch and currency, and report acceptance counts alongside unit cost. A lower unit cost with a weaker acceptance rule is not a like-for-like improvement.</p><h3>A checklist for the next experiment</h3><ol><li>Freeze the task, intended result IDs and acceptance rule.</li><li>Record model, tool, labor and other costs consistently for all attempts.</li><li>Retain rejected attempts and retries in the numerator.</li><li>Count each accepted result once; report unknown cost inputs as unknown.</li><li>If no result is accepted, report total spend and zero accepted results, with unit cost undefined.</li></ol><p><a href="https://github.com/ahmadreza-smdi/ai-workflow-cost">Use the decision brief or tool</a> · <a href="/ideas.html">Explore the three signature ideas</a></p><h3>Primary references</h3><ul><li><a href="https://arxiv.org/abs/2211.09110" lang="en">Holistic Evaluation of Language Models (2022)</a></li><li><a href="https://www.nist.gov/itl/ai-risk-management-framework" lang="en">NIST AI RMF 1.0</a></li><li><a href="https://github.com/ahmadreza-smdi/ai-workflow-cost" lang="en">AI workflow cost ledger: source and measurement limits</a></li></ul><p>These references inform the evaluation and interaction principles. The workflow above is an editorial synthesis, not an endorsed standard or a reported company outcome.</p></section>
+<!-- cornerstone:end -->
+
 <section aria-labelledby="workflow-ledger-title">
 <h2 id="workflow-ledger-title">How can I try this with my own ledger?</h2>
 <p>The <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/releases/tag/v0.1.0">AI workflow cost ledger v0.1.0</a> is an offline Python tool with <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost#try-the-fictional-example">English instructions</a>. It includes recorded model, tool, review and other costs across retries and failed attempts. You supply the task, currency label and acceptance criterion.</p>
@@ -107,13 +111,13 @@
 <h2>What changed in September 2026?</h2>
 <p>On 22 September, <a href="https://openai.com/index/introducing-gpt-6-sol-and-luna/">OpenAI announced</a> that GPT-6 Sol and Luna API prices were 50% lower than their GPT-5.6 promotional prices. <a href="https://www.anthropic.com/claude-opus-5-5">Anthropic announced</a> lower prices for Claude Opus 5.5 and estimated about 40% lower cost for typical token-billed work than Opus 5. The providers use different baselines, so these percentages do not compare their models with each other.</p>
 <p>For a business, the opportunity is to retest tasks that were too expensive before. The decision still depends on quality, the amount of review required, and the cost of the whole process.</p>
-<h2>How do you calculate cost per verified result?</h2>
+<h2>How do you calculate cost per accepted result?</h2>
 <p>I would start with a simple measure:</p>
-<p><strong>Cost per verified result = total workflow cost ÷ results that pass review.</strong></p>
+<p><strong>Cost per accepted result = total workflow cost ÷ results that pass review.</strong></p>
 <p>The numerator includes model input and output, cached context, tool calls, retries, failed runs, and human review time. The denominator counts outputs that meet a defined standard for the task. A low price per request can still produce an expensive result when many requests fail or need extensive correction.</p>
-<p>If no output passes review, report the experiment’s total spend and zero accepted outputs separately. Cost per verified result is undefined for that run; do not report it as zero or infinity.</p>
-<p>Compare workflows only for the same defined task and acceptance criterion, and include the relevant cost categories consistently. Read cost per verified result alongside precision, recall and time to a decision; a lower cost figure alone does not show that the workflow is more useful.</p>
-<p>This is a measurement framework, not a universal benchmark. Teams need to define what “verified” means for their own workflow and record the assumptions behind any cost comparison.</p>
+<p>If no output passes review, report the experiment’s total spend and zero accepted outputs separately. Cost per accepted result is undefined for that run; do not report it as zero or infinity.</p>
+<p>Compare workflows only for the same defined task and acceptance criterion, and include the relevant cost categories consistently. Read cost per accepted result alongside precision, recall and time to a decision; a lower cost figure alone does not show that the workflow is more useful.</p>
+<p>This is a measurement framework, not a universal benchmark. Teams need to define what “accepted” means for their own workflow and record the assumptions behind any cost comparison.</p>
 <section>
 <h2>How does this connect to my work?</h2>
 <p>At <a href="/work/appraiva.html">Appraiva</a>, I work on connecting property imagery analysis with property identity, data enrichment and search. The property-research test in this article is a proposed experiment, not a description of an Appraiva feature or a reported company result.</p>
@@ -146,7 +150,8 @@
 <aside class="article-author" aria-labelledby="article-author-title">
 <h2 id="article-author-title">About the author</h2>
 <p class="article-author__name"><a href="/about.html" rel="author">Ahmadreza Samadi</a></p>
-<p>Technology Entrepreneur based in Dubai. Co-Founder &amp; Technical Lead at Appraiva; Co-Founder &amp; CEO at Royal Abraj Group.</p>
+<p>Dubai-based technology entrepreneur Ahmadreza Samadi is Co-Founder &amp; Technical Lead of Appraiva, building AI real estate intelligence, and Co-Founder &amp; CEO of Royal Abraj Group.</p>
+<p class="article-author__series">Part of <bdi lang="en">Start with the Decision</bdi></p>
 </aside>
 <!-- author-box:end -->
 <!-- follow-subscribe:start -->

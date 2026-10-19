@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="author" content="Ahmadreza Samadi">
-<title>AI Agent Safety: Boundaries Before Actions | Ahmadreza Samadi</title>
-<meta name="description" content="What changes when AI assistants can act? Ahmadreza Samadi explains agent permissions, NVIDIA OpenShell, the proposed Sentry watchdog, and practical safety questions.">
+<title>AI Agent Safety: Accounts, Tools and Approval | Ahmadreza Samadi</title>
+<meta name="description" content="Before an AI agent acts, define its account, data, tools and approval rules. A practical guide to permissions enforced outside the model and revoking access.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://a-samadi.com/writing/ai-agent-safety-boundaries.html">
 <link rel="alternate" type="application/rss+xml" title="Ahmadreza Samadi — English writing" href="https://a-samadi.com/writing/feed.xml">
@@ -15,11 +15,11 @@
 <link rel="icon" type="image/svg+xml" href="../assets/brand/favicon.svg">
 <link rel="stylesheet" href="../css/site.css?v=20261009-lagoon4">
 <meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
-<meta property="og:title" content="AI agent safety: boundaries before actions | Ahmadreza Samadi">
-<meta property="og:description" content="A practical look at permissions for AI agents, NVIDIA OpenShell and the Sentry reference design.">
+<meta property="og:title" content="AI Agent Safety: Accounts, Tools and Approval | Ahmadreza Samadi">
+<meta property="og:description" content="Before an AI agent acts, define its account, data, tools and approval rules. A practical guide to permissions enforced outside the model and revoking access.">
 <meta property="og:url" content="https://a-samadi.com/writing/ai-agent-safety-boundaries.html"><meta property="og:locale" content="en_US"><meta property="og:locale:alternate" content="fa_IR"><meta property="og:locale:alternate" content="ar_AE">
 <meta property="og:image" content="https://a-samadi.com/assets/share/ai-agent-safety-boundaries.png">
-<meta property="og:image:alt" content="English article cover: AI agent safety: boundaries before actions"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="AI agent safety: boundaries before actions | Ahmadreza Samadi"><meta name="twitter:description" content="A practical look at permissions for AI agents, NVIDIA OpenShell and the Sentry reference design."><meta name="twitter:image" content="https://a-samadi.com/assets/share/ai-agent-safety-boundaries.png"><meta name="twitter:image:alt" content="English article cover: AI agent safety: boundaries before actions">
+<meta property="og:image:alt" content="English article cover: AI agent safety: boundaries before actions"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="AI Agent Safety: Accounts, Tools and Approval | Ahmadreza Samadi"><meta name="twitter:description" content="Before an AI agent acts, define its account, data, tools and approval rules. A practical guide to permissions enforced outside the model and revoking access."><meta name="twitter:image" content="https://a-samadi.com/assets/share/ai-agent-safety-boundaries.png"><meta name="twitter:image:alt" content="English article cover: AI agent safety: boundaries before actions">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -49,7 +49,7 @@
         }
       },
       "datePublished": "2026-09-29",
-      "dateModified": "2026-10-10T12:47:00+03:30",
+      "dateModified": "2026-10-19T10:43:53+03:30",
       "inLanguage": "en",
       "image": {
         "@type": "ImageObject",
@@ -119,9 +119,10 @@
 <nav class="byline" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/writing/">Writing</a> / <span aria-current="page">AI agent safety: boundaries before actions</span></nav>
 <p class="eyebrow">Explainer · AI agents and permissions</p>
 <h1>AI agent safety: boundaries before actions</h1>
-<p class="lead">An AI assistant that only answers a question and an agent that can use tools need different safeguards. The moment software can act, permissions become part of the product design.</p>
+<p class="lead">Before an AI agent acts, define its account, the data and tools it can reach, what it may change and which actions need approval. Enforce these limits outside the model, record attempts and keep a way to revoke access.</p>
+<p class="byline" data-search-reading="v1">Continue reading: <a href="/topics/ai-real-estate.html">AI for property decisions</a> · <a href="/ideas.html">Signature ideas</a></p>
 <p class="byline">By <a href="/about.html" rel="author">Ahmadreza Samadi</a> · <time datetime="2026-09-29">29 September 2026</time></p>
-<p class="byline">Updated <time datetime="2026-10-10T12:47:00+03:30">10 October 2026</time></p>
+<p class="byline">Updated <time datetime="2026-10-18T15:48:37+03:30">18 October 2026</time></p>
 <section aria-labelledby="article-at-a-glance">
 <h2 id="article-at-a-glance">At a glance</h2>
 <p>Before giving an AI agent access, define which account it acts as, what data and tools it can reach, whether it can read or change things, and which actions need approval. Enforce permissions outside the model, log attempts and failures, and keep a way to revoke access. No single boundary proves an agent safe.</p>
@@ -161,7 +162,8 @@
 <aside class="article-author" aria-labelledby="article-author-title">
 <h2 id="article-author-title">About the author</h2>
 <p class="article-author__name"><a href="/about.html" rel="author">Ahmadreza Samadi</a></p>
-<p>Technology Entrepreneur based in Dubai. Co-Founder &amp; Technical Lead at Appraiva; Co-Founder &amp; CEO at Royal Abraj Group.</p>
+<p>Dubai-based technology entrepreneur Ahmadreza Samadi is Co-Founder &amp; Technical Lead of Appraiva, building AI real estate intelligence, and Co-Founder &amp; CEO of Royal Abraj Group.</p>
+<p class="article-author__series">Part of <bdi lang="en">Start with the Decision</bdi></p>
 </aside>
 <!-- author-box:end -->
 <!-- follow-subscribe:start -->

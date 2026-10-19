@@ -1,0 +1,248 @@
+{
+  "ideas": [
+    {
+      "id": "start-with-the-decision",
+      "name": "Start with the decision.",
+      "definition": "Name the decision, the person making it and the evidence it needs before choosing a model.",
+      "why": "A model is a component. A useful product also needs a person, evidence, a next action and a way to judge whether the decision improved. Starting there makes the limits visible before an experiment grows.",
+      "steps": [
+        "Name the decision",
+        "Identify the evidence",
+        "Choose the next action",
+        "Then test the AI"
+      ],
+      "apply": [
+        [
+          "/writing/start-with-the-decision.html",
+          "Read the decision-first field guide"
+        ],
+        [
+          "/tools/before-you-build-ai.html",
+          "Write a decision brief"
+        ],
+        [
+          "/studies/rent-own-2026/",
+          "Explore explicit ownership scenarios"
+        ]
+      ],
+      "checklist": [
+        "Write one decision as a question a person needs to answer.",
+        "Name the person responsible for the next action.",
+        "List the evidence and what would make it insufficient.",
+        "Choose an acceptance rule before comparing tools."
+      ]
+    },
+    {
+      "id": "where-the-ai-must-stop",
+      "name": "Where the AI must stop.",
+      "definition": "Make the point for human checking, override or sign-off part of the product.",
+      "why": "An answer and an action carry different consequences. Property identity, missing information, permissions and accountability need explicit checks. A person must be able to see the evidence and stop or override the proposed action.",
+      "steps": [
+        "AI proposes",
+        "Check source and limits",
+        "Person accepts or overrides",
+        "Authorized action"
+      ],
+      "apply": [
+        [
+          "/writing/ai-human-review-real-estate.html",
+          "Read about human review in real estate"
+        ],
+        [
+          "/writing/ai-agent-safety-boundaries.html",
+          "Set an agent’s permissions"
+        ],
+        [
+          "/writing/property-data-enrichment.html",
+          "Check the property identity and source"
+        ]
+      ],
+      "checklist": [
+        "Identify the error that could affect the decision.",
+        "Put the human check before that consequence.",
+        "Show source, date and uncertainty at the check.",
+        "Specify what happens when evidence or approval is missing."
+      ]
+    },
+    {
+      "id": "cost-per-accepted-result",
+      "name": "Cost per accepted result.",
+      "definition": "Include retries, failures and review when counting the cost of a result that meets an explicit acceptance rule.",
+      "why": "A cheaper request may require more retries or review. Count the full workflow cost against distinct results that meet an explicit acceptance rule. The cost ledger records caller acceptance; it does not independently certify the output.",
+      "steps": [
+        "All attempt costs",
+        "Include tools and review",
+        "Count accepted results",
+        "Divide cost by results"
+      ],
+      "apply": [
+        [
+          "/writing/ai-cost-per-verified-result.html",
+          "Read the workflow-cost essay"
+        ],
+        [
+          "https://github.com/ahmadreza-smdi/ai-workflow-cost/releases/tag/v0.1.2",
+          "Use the cost ledger and fictional worked examples"
+        ],
+        [
+          "/tools/before-you-build-ai.html",
+          "Set an acceptance rule"
+        ]
+      ],
+      "checklist": [
+        "Define what counts as one distinct result.",
+        "Write the acceptance rule and who applies it.",
+        "Record failed attempts, retries, tool costs and review time.",
+        "Report no accepted results as undefined cost per result, not zero."
+      ]
+    }
+  ],
+  "labels": {
+    "en": {
+      "ideas": "Signature ideas",
+      "data": "Property Decision Data",
+      "intro": "Three ideas for choosing, building and checking AI.",
+      "studyintro": "Open studies and practical tools, with sources, methods and limits.",
+      "studylink": "Explore the studies",
+      "newsletter": "Read Start with the Decision",
+      "english": "English resources",
+      "beliefs": "What I believe",
+      "public": "Work in public",
+      "known": "Known for",
+      "knownintro": "My work centers on three areas.",
+      "knownnames": [
+        "AI for property decisions",
+        "Start with the Decision",
+        "Tech, explained"
+      ],
+      "knowncopy": [
+        "At Appraiva, my technical work connects property imagery analysis with property identity, data enrichment and search.",
+        "My essay and interactive guide start with the person’s next decision, the evidence it needs and a useful first experiment.",
+        "Plain-language technology articles and films explain how systems work, using examples with their limits made clear."
+      ],
+      "publiclinks": [
+        "Property studies",
+        "Decision guide",
+        "Property calculators",
+        "Open-source repositories",
+        "Weekly newsletter"
+      ],
+      "beliefitems": [
+        "Start with the decision, then choose the AI.",
+        "Define where a person checks the work and takes responsibility.",
+        "Count the full cost of an accepted result.",
+        "Keep property identity, source and date together.",
+        "Set permissions before an AI agent can act."
+      ]
+    },
+    "fa": {
+      "ideas": "ایده‌های اصلی",
+      "data": "Property Decision Data",
+      "intro": "سه ایده برای انتخاب، ساخت و بررسی هوش مصنوعی.",
+      "studyintro": "مطالعه‌های باز و ابزارهای کاربردی، همراه با منابع، روش‌ها و محدودیت‌ها.",
+      "studylink": "مشاهدهٔ مطالعه‌ها",
+      "newsletter": "مطالعهٔ Start with the Decision",
+      "english": "منابع به زبان انگلیسی",
+      "beliefs": "باورهای من",
+      "public": "کارهای عمومی من",
+      "known": "حوزه‌های اصلی کار",
+      "knownintro": "کار من بر سه حوزه متمرکز است.",
+      "knownnames": [
+        "هوش مصنوعی برای تصمیم‌های ملکی",
+        "Start with the Decision",
+        "Tech, explained"
+      ],
+      "knowncopy": [
+        "در Appraiva، کار فنی من تحلیل تصاویر املاک را به هویت ملک، غنی‌سازی داده و جست‌وجو متصل می‌کند.",
+        "مقاله و راهنمای تعاملی من از تصمیم بعدی فرد، شواهد موردنیاز و یک آزمایش اولیهٔ مفید آغاز می‌شوند.",
+        "مقاله‌ها و فیلم‌های سادهٔ فناوری، عملکرد سیستم‌ها را با مثال‌هایی توضیح می‌دهند که محدودیت‌هایشان روشن است."
+      ],
+      "publiclinks": [
+        "مطالعه‌های املاک",
+        "راهنمای تصمیم‌گیری",
+        "ماشین‌حساب‌های املاک",
+        "مخزن‌های متن‌باز",
+        "خبرنامهٔ هفتگی"
+      ],
+      "beliefitems": [
+        "از تصمیم آغاز کنید، سپس هوش مصنوعی را انتخاب کنید.",
+        "نقطه‌ای را مشخص کنید که فرد کار را بررسی می‌کند و مسئولیت می‌پذیرد.",
+        "هزینهٔ کامل یک نتیجهٔ پذیرفته‌شده را حساب کنید.",
+        "هویت ملک، منبع و تاریخ را کنار هم نگه دارید.",
+        "پیش از اقدام عامل هوش مصنوعی، مجوزهایش را مشخص کنید."
+      ]
+    },
+    "ar": {
+      "ideas": "الأفكار الأساسية",
+      "data": "Property Decision Data",
+      "intro": "ثلاث أفكار لاختيار الذكاء الاصطناعي وبنائه ومراجعة عمله.",
+      "studyintro": "دراسات مفتوحة وأدوات عملية، مع المصادر والمنهجيات والحدود.",
+      "studylink": "استكشف الدراسات",
+      "newsletter": "اقرأ Start with the Decision",
+      "english": "موارد باللغة الإنجليزية",
+      "beliefs": "ما أؤمن به",
+      "public": "أعمالي المتاحة للجمهور",
+      "known": "مجالات عملي الأساسية",
+      "knownintro": "يركّز عملي على ثلاثة مجالات.",
+      "knownnames": [
+        "الذكاء الاصطناعي للقرارات العقارية",
+        "Start with the Decision",
+        "Tech, explained"
+      ],
+      "knowncopy": [
+        "في Appraiva، يربط عملي التقني تحليل صور العقارات بهوية العقار وإثراء البيانات والبحث.",
+        "تنطلق مقالتي ودليلي التفاعلي من القرار التالي للشخص، والأدلة المطلوبة، وتجربة أولى مفيدة.",
+        "تشرح مقالاتي وأفلامي التقنية بلغة مبسطة طريقة عمل الأنظمة، بأمثلة توضح حدودها."
+      ],
+      "publiclinks": [
+        "الدراسات العقارية",
+        "دليل اتخاذ القرار",
+        "الحاسبات العقارية",
+        "مستودعات مفتوحة المصدر",
+        "النشرة الأسبوعية"
+      ],
+      "beliefitems": [
+        "ابدأ بالقرار، ثم اختر الذكاء الاصطناعي.",
+        "حدّد النقطة التي يراجع فيها الشخص العمل ويتحمّل المسؤولية.",
+        "احسب التكلفة الكاملة للنتيجة المقبولة.",
+        "أبقِ هوية العقار والمصدر والتاريخ معًا.",
+        "حدّد الصلاحيات قبل أن يتصرف وكيل الذكاء الاصطناعي."
+      ]
+    }
+  },
+  "homepage_translations": {
+    "Start with the decision.": [
+      "از تصمیم آغاز کنید.",
+      "ابدأ بالقرار."
+    ],
+    "Where the AI must stop.": [
+      "هوش مصنوعی کجا باید متوقف شود.",
+      "أين يجب أن يتوقف الذكاء الاصطناعي."
+    ],
+    "Cost per accepted result.": [
+      "هزینهٔ هر نتیجهٔ پذیرفته‌شده.",
+      "التكلفة لكل نتيجة مقبولة."
+    ],
+    "Name the decision, the person making it and the evidence it needs before choosing a model.": [
+      "پیش از انتخاب مدل، تصمیم، فرد تصمیم‌گیرنده و شواهد موردنیاز را مشخص کنید.",
+      "حدّد القرار والشخص الذي يتخذه والأدلة المطلوبة قبل اختيار النموذج."
+    ],
+    "Make the point for human checking, override or sign-off part of the product.": [
+      "نقطهٔ بررسی، لغو یا تأیید انسانی را بخشی از محصول قرار دهید.",
+      "اجعل نقطة المراجعة البشرية أو التجاوز أو الموافقة جزءًا من المنتج."
+    ],
+    "Include retries, failures and review when counting the cost of a result that meets an explicit acceptance rule.": [
+      "در محاسبهٔ هزینهٔ نتیجه‌ای که معیار پذیرش مشخصی را برآورده می‌کند، تلاش‌های دوباره، شکست‌ها و بررسی را لحاظ کنید.",
+      "احسب إعادة المحاولة والإخفاق والمراجعة ضمن تكلفة النتيجة التي تستوفي قاعدة قبول واضحة."
+    ]
+  },
+  "belief_sources": [
+    "/writing/start-with-the-decision.html",
+    "/writing/ai-human-review-real-estate.html",
+    "/writing/ai-cost-per-verified-result.html",
+    "/writing/property-data-enrichment.html",
+    "/writing/ai-agent-safety-boundaries.html"
+  ],
+  "newsletter": "https://www.linkedin.com/newsletters/7516204575893393408/",
+  "translation_note": "Machine translations checked by back-translation for the same decision/evidence/human boundary/acceptance and factual scope; no human/native certification."
+}

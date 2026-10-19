@@ -298,7 +298,7 @@
     <item>
       <title>How satellite messaging works without cell towers</title>
       <link>https://a-samadi.com/writing/how-satellite-messaging-works.html</link>
-      <description>How a supported phone sends texts through satellites, how the message returns to Earth, and what to check before going off-grid. By Ahmadreza Samadi.</description>
+      <description>Follow a supported phone message from a satellite back to Earth. Check service support, a clear sky view and delivery limits before going off-grid.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/how-satellite-messaging-works.html</guid>
@@ -322,7 +322,7 @@
     <item>
       <title>Two batteries, one foldable phone: how the battery reading works</title>
       <link>https://a-samadi.com/writing/foldable-two-batteries.html</link>
-      <description>Why a foldable phone can have a battery on each side but show one charge reading. Ahmadreza Samadi explains energy-aware gauging without guessing Apple's wiring.</description>
+      <description>Two batteries can power one foldable phone with one charge reading. See why capacity and usable energy matter more than averaging two percentages.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Sat, 03 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/foldable-two-batteries.html</guid>
@@ -354,7 +354,7 @@
     <item>
       <title>How ZIP files work: compression without losing data</title>
       <link>https://a-samadi.com/writing/how-zip-files-work.html</link>
-      <description>How does a ZIP restore every byte? Ahmadreza Samadi explains the ZIP container, DEFLATE, repeated data, Huffman coding, and why videos may barely shrink.</description>
+      <description>ZIP bundles files and can use lossless compression. Learn how DEFLATE restores every byte, why JPG and MP4 may barely shrink, and why compression is not encryption.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/how-zip-files-work.html</guid>
@@ -362,7 +362,7 @@
     <item>
       <title>How passkeys work: why Face ID is not your password</title>
       <link>https://a-samadi.com/writing/passkeys-face-id.html</link>
-      <description>What is a passkey? Ahmadreza Samadi explains Face ID, public and private keys, phishing resistance, and what happens if you lose your device.</description>
+      <description>A passkey proves access to a private key; Face ID approves its use locally. Learn what the website receives and what to check for account recovery.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/passkeys-face-id.html</guid>
@@ -378,15 +378,15 @@
     <item>
       <title>Jev: an AI decision model, not another chatbot</title>
       <link>https://a-samadi.com/writing/jev-ai-decision-model.html</link>
-      <description>What is Jev from TypeSafe AI? How a decision model differs from GPT and Claude, what the early Banking77 test shows, and how to test it as a routing layer.</description>
+      <description>How TypeSafe describes Jev, how bounded decisions differ from chatbot replies, and what to check before using a model to route a real workflow.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Fri, 25 Sep 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/jev-ai-decision-model.html</guid>
     </item>
     <item>
-      <title>AI Cost per Verified Result: Beyond Token Prices</title>
+      <title>AI Cost per Accepted Result: Beyond Token Prices</title>
       <link>https://a-samadi.com/writing/ai-cost-per-verified-result.html</link>
-      <description>A practical framework for measuring the full cost of verified AI workflow results.</description>
+      <description>A practical framework for measuring the full cost of accepted AI workflow results.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/ai-cost-per-verified-result.html</guid>

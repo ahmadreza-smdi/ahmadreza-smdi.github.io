@@ -31,24 +31,392 @@
       "creator": {
         "@type": "Person",
         "name": "Ahmadreza Samadi",
-        "url": "https://a-samadi.com/about.html"
+        "url": "https://a-samadi.com/about.html",
+        "@id": "https://a-samadi.com/#person"
       },
       "isAccessibleForFree": true,
       "inLanguage": "en",
       "isBasedOn": [
-        "https://www.huduser.gov/portal/datasets/fmr.html",
-        "https://www.census.gov/programs-surveys/acs/data/summary-file.html"
+        {
+          "@type": "Dataset",
+          "name": "ACS 2024 one-year table B25077",
+          "url": "https://data.census.gov/table/ACSDT1Y2024.B25077",
+          "temporalCoverage": "2024-01-01/2024-12-31",
+          "creator": {
+            "@type": "Organization",
+            "name": "U.S. Census Bureau"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "HUD FY2027 Fair Market Rent benchmarks",
+          "url": "https://www.huduser.gov/portal/datasets/fmr.html",
+          "temporalCoverage": "2026-10-01/2027-09-30",
+          "description": "Benchmark applicability period, not a calendar-year observation or guarantee that every area rate is effective; reevaluation exceptions may apply.",
+          "creator": {
+            "@type": "Organization",
+            "name": "U.S. Department of Housing and Urban Development"
+          }
+        }
       ],
       "distribution": [
         {
           "@type": "DataDownload",
           "encodingFormat": "text/csv",
-          "contentUrl": "https://a-samadi.com/studies/rent-own-2026/metro-scenarios.csv"
+          "contentUrl": "https://a-samadi.com/studies/rent-own-2026/metro-scenarios.csv",
+          "description": "1179 rows; 30 columns. See the column dictionary and scoped reuse terms on the study page."
         },
         {
           "@type": "DataDownload",
           "encodingFormat": "text/csv",
-          "contentUrl": "https://a-samadi.com/studies/rent-own-2026/hud-area-scenarios.csv"
+          "contentUrl": "https://a-samadi.com/studies/rent-own-2026/hud-area-scenarios.csv",
+          "description": "1947 rows; 33 columns. See the column dictionary and scoped reuse terms on the study page."
+        }
+      ],
+      "sameAs": "https://github.com/ahmadreza-smdi/rent-own-metro-study/releases/tag/v1.0.0",
+      "identifier": "https://github.com/ahmadreza-smdi/rent-own-metro-study/releases/tag/v1.0.0",
+      "usageInfo": [
+        "https://github.com/ahmadreza-smdi/rent-own-metro-study/blob/7eacdc415794290a30d09d9eccb0e1f03b2b4601/data-notes.md",
+        "https://a-samadi.com/studies/rent-own-2026/#study-reuse"
+      ],
+      "publisher": {
+        "@id": "https://a-samadi.com/#person"
+      },
+      "variableMeasured": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "scenario",
+          "name": "Scenario identifier",
+          "description": "Named set of fixed illustrative assumptions, repeated across metros/areas.",
+          "unitText": "identifier"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "cbsa",
+          "name": "CBSA code",
+          "description": "Five-character metropolitan-area identifier; preserve as text.",
+          "unitText": "identifier"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "metro",
+          "name": "Metropolitan-area label",
+          "description": "Published whole metropolitan-area name; not a property identifier.",
+          "unitText": "label"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "hud_fiscal_year",
+          "name": "HUD benchmark fiscal year",
+          "description": "Fiscal-year label of the FMR benchmark; not a calendar-year observation date.",
+          "unitText": "fiscal year"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "acs_year",
+          "name": "ACS observation year",
+          "description": "Calendar year of the ACS one-year owner-stock source.",
+          "unitText": "year"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "hud_area_count",
+          "name": "Retained HUD area count",
+          "description": "Number of distinct candidate HUD rent areas retained for this metropolitan area.",
+          "unitText": "areas"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "owner_value_proxy_usd",
+          "name": "ACS median owner-stock value proxy",
+          "description": "ACS2024 B25077 all-owner-occupied-unit median value; not a price quote for a matching two-bedroom rental.",
+          "unitText": "USD"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "owner_value_moe_usd",
+          "name": "Published ACS owner-value margin of error",
+          "description": "Source B25077 margin of error for the all-owner-stock median value; retained separately from derived scenario sensitivity.",
+          "unitText": "USD"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "hud_2br_gross_min_usd",
+          "name": "Lowest retained HUD two-bedroom gross rent",
+          "description": "Minimum FY2027 two-bedroom FMR across candidate HUD areas in the metro.",
+          "unitText": "USD per month"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "hud_2br_gross_max_usd",
+          "name": "Highest retained HUD two-bedroom gross rent",
+          "description": "Maximum FY2027 two-bedroom FMR across candidate HUD areas in the metro.",
+          "unitText": "USD per month"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "cash_surplus_min_usd",
+          "name": "Lowest illustrative annual cash surplus",
+          "description": "Minimum across retained HUD areas at the central ACS owner-value estimate and fixed scenario assumptions.",
+          "unitText": "USD per year"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "cash_surplus_max_usd",
+          "name": "Highest illustrative annual cash surplus",
+          "description": "Maximum across retained HUD areas at the central ACS owner-value estimate and fixed scenario assumptions.",
+          "unitText": "USD per year"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "price_endpoint_surplus_min_usd",
+          "name": "Lowest owner-value endpoint sensitivity",
+          "description": "Minimum annual cash surplus across retained HUD areas and owner-value estimate ± published MOE; not a joint confidence interval.",
+          "unitText": "USD per year"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "price_endpoint_surplus_max_usd",
+          "name": "Highest owner-value endpoint sensitivity",
+          "description": "Maximum annual cash surplus across retained HUD areas and owner-value estimate ± published MOE; not a joint confidence interval.",
+          "unitText": "USD per year"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "break_even_gross_monthly_usd",
+          "name": "Illustrative break-even monthly gross rent",
+          "description": "Same threshold as the area-level output; threshold depends on the owner proxy and assumptions, not a selected HUD area rent.",
+          "unitText": "USD per month"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "scenario_coverage",
+          "name": "Candidate-rent coverage category",
+          "description": "Whether all, some or no retained HUD rents cover the modeled cash budget; not a property or investment rank.",
+          "unitText": "label"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "geography_note",
+          "name": "Geographic comparison note",
+          "description": "County-match/retained-exception note; distinct HUD subareas are not averaged.",
+          "unitText": "label"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "interpretation",
+          "name": "Interpretation limit",
+          "description": "Explicit reminder that results are hypothetical budgets, not matched-property or observed returns.",
+          "unitText": "label"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "down_payment_fraction",
+          "name": "Assumed down-payment share",
+          "description": "Scenario input expressed as a 0–1 fraction of the owner-value proxy.",
+          "unitText": "fraction"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "annual_interest_rate",
+          "name": "Assumed fixed annual interest rate",
+          "description": "Scenario input expressed as a 0–1 fraction, not a percentage number.",
+          "unitText": "fraction"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "loan_years",
+          "name": "Assumed loan term",
+          "description": "Loan term used by the fixed-payment model.",
+          "unitText": "years"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "occupied_months",
+          "name": "Assumed paid months",
+          "description": "Assumed paid months in the modeled year, between zero and twelve.",
+          "unitText": "months per year"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "management_fraction",
+          "name": "Assumed management share",
+          "description": "Management expense as a 0–1 fraction of adjusted receipts.",
+          "unitText": "fraction"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "property_tax_fraction",
+          "name": "Assumed annual property-tax share",
+          "description": "Annual property-tax cost as a 0–1 fraction of the owner-value proxy.",
+          "unitText": "fraction"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "insurance_fraction",
+          "name": "Assumed annual insurance share",
+          "description": "Annual property insurance as a 0–1 fraction of the owner-value proxy.",
+          "unitText": "fraction"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "maintenance_reserve_fraction",
+          "name": "Assumed annual maintenance share",
+          "description": "Annual maintenance reserve as a 0–1 fraction of the owner-value proxy.",
+          "unitText": "fraction"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "monthly_utilities",
+          "name": "Assumed monthly utility deduction",
+          "description": "Deduction from HUD gross rent before multiplying by paid months; not a measured utility bill.",
+          "unitText": "USD per month"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "monthly_hoa",
+          "name": "Assumed monthly HOA cost",
+          "description": "Monthly scenario cost included twelve times in the annual fixed budget.",
+          "unitText": "USD per month"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "annual_other_costs",
+          "name": "Assumed other annual costs",
+          "description": "Explicit additional annual scenario cost.",
+          "unitText": "USD per year"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "annual_mortgage_insurance",
+          "name": "Assumed annual mortgage insurance",
+          "description": "Explicit annual scenario cost; not an observed quote.",
+          "unitText": "USD per year"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "hud_area_code",
+          "name": "HUD rent-area code",
+          "description": "Retained source HUD area identifier, distinct from a CBSA code.",
+          "unitText": "identifier"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "hud_area_name",
+          "name": "HUD rent-area name",
+          "description": "Published name of the retained HUD rent area.",
+          "unitText": "label"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "hud_2br_gross_monthly_usd",
+          "name": "HUD area two-bedroom gross rent",
+          "description": "FY2027 two-bedroom FMR for this retained HUD area, including utility treatment; not landlord cash receipts.",
+          "unitText": "USD per month"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "annual_receipts",
+          "name": "Illustrative annual rental receipts",
+          "description": "HUD monthly gross rent minus the assumed monthly utility deduction, multiplied by assumed paid months.",
+          "unitText": "USD per year"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "annual_management",
+          "name": "Illustrative annual management cost",
+          "description": "Adjusted annual receipts multiplied by the assumed management fraction.",
+          "unitText": "USD per year"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "annual_property_tax",
+          "name": "Illustrative annual property tax",
+          "description": "Owner-stock value proxy multiplied by the assumed annual property-tax fraction.",
+          "unitText": "USD per year"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "annual_insurance",
+          "name": "Illustrative annual property insurance",
+          "description": "Owner-stock value proxy multiplied by the assumed insurance fraction.",
+          "unitText": "USD per year"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "annual_maintenance_reserve",
+          "name": "Illustrative annual maintenance reserve",
+          "description": "Owner-stock value proxy multiplied by the assumed reserve fraction.",
+          "unitText": "USD per year"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "annual_fixed_budget",
+          "name": "Illustrative annual fixed budget",
+          "description": "Property tax, insurance, maintenance reserve, 12 monthly HOA payments, other annual costs and mortgage insurance; excludes management and principal/interest.",
+          "unitText": "USD per year"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "annual_principal_interest",
+          "name": "Illustrative annual principal and interest",
+          "description": "Twelve fixed loan payments; insurance, taxes and other costs are separate.",
+          "unitText": "USD per year"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "annual_cash_surplus",
+          "name": "Illustrative annual cash surplus",
+          "description": "Receipts minus management, fixed budget and principal/interest; not an investment return.",
+          "unitText": "USD per year"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "break_even_gross_monthly_rent",
+          "name": "Illustrative break-even monthly gross rent",
+          "description": "Utility deduction plus (fixed budget + principal/interest) / (paid months * (1 - management fraction)); unavailable when paid months are zero.",
+          "unitText": "USD per month"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "input_status",
+          "name": "Scenario input status",
+          "description": "Illustrative status label; not evidence of a performed investment or company test.",
+          "unitText": "label"
+        }
+      ],
+      "spatialCoverage": "393 metropolitan areas in the available ACS2024 one-year universe,including Puerto Rico;distinct HUD rent areas retained. Owner-stock and rental populations differ.",
+      "license": {
+        "@type": "CreativeWork",
+        "name": "CC BY 4.0 — original study contributions only",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "text": "To the extent copyright or similar rights exist and are held by Ahmadreza Samadi, original study explanations and analytical selection/arrangement are offered under CC BY 4.0. Underlying government data and documents retain their source status and exceptions. This grant does not cover code, third-party materials, fonts, portraits or marks; existing grants are not withdrawn."
+      },
+      "copyrightNotice": "To the extent copyright or similar rights exist and are held by Ahmadreza Samadi, original study explanations and analytical selection/arrangement are offered under CC BY 4.0. Underlying government data and documents retain their source status and exceptions. This grant does not cover code, third-party materials, fonts, portraits or marks; existing grants are not withdrawn.",
+      "temporalCoverage": [
+        "2024-01-01/2024-12-31",
+        "2026-10-01/2027-09-30"
+      ],
+      "citation": [
+        {
+          "@type": "SoftwareSourceCode",
+          "name": "Where does rent cover the cost of owning? 2026 metro edition",
+          "version": "1.0.0",
+          "datePublished": "2026-10-15",
+          "author": {
+            "@id": "https://a-samadi.com/#person"
+          },
+          "url": "https://github.com/ahmadreza-smdi/rent-own-metro-study/releases/tag/v1.0.0"
+        },
+        {
+          "@type": "Dataset",
+          "name": "U.S. Census Bureau ACS 2024 one-year table B25077",
+          "url": "https://data.census.gov/table/ACSDT1Y2024.B25077"
+        },
+        {
+          "@type": "Dataset",
+          "name": "HUD FY2027 FMR",
+          "url": "https://www.huduser.gov/portal/datasets/fmr.html"
         }
       ]
     }
@@ -72,6 +440,10 @@
 <p class="small"><a href="https://www.hud.gov/sites/documents/webpubstandards.pdf">HUD reuse policy, section 1D</a> · <a href="https://www2.census.gov/foia/ds_policies/ds027.pdf">Census public-access policy</a>.</p><h2>Use the next decision check</h2><p><a href="https://a-samadi.com/writing/ai-rental-yield-cash-flow.html">Rental yield versus cash flow</a> · <a href="https://a-samadi.com/watch/rental-yield.html">The rental-yield film</a> · <a href="https://a-samadi.com/tools/rental-cash-flow.html">Property-specific cash-flow calculator</a></p>
 <div class="embed-instructions"><h2>Embed with attribution</h2><p>The embed preserves the source years, assumptions and Ahmadreza Samadi attribution. Keep the attribution and source years when embedding this chart.</p><label>Embed HTML<textarea readonly>&lt;iframe src=&quot;https://a-samadi.com/studies/rent-own-2026/embed.html&quot; title=&quot;Rent and ownership cash-budget scenarios by Ahmadreza Samadi&quot; width=&quot;100%&quot; height=&quot;1100&quot; loading=&quot;lazy&quot;&gt;&lt;/iframe&gt;
 &lt;p&gt;Source: &lt;a href=&quot;https://a-samadi.com/studies/rent-own-2026/&quot;&gt;Ahmadreza Samadi — rent and ownership scenarios&lt;/a&gt;. HUD FY2027 / ACS 2024; illustrative assumptions.&lt;/p&gt;</textarea></label></div></section>
+
+<!-- study-publication-details:start -->
+<section class="panel" aria-labelledby="study-publication-details"><h2 id="study-publication-details">Dates, columns and reuse</h2><p>ACS describes calendar year 2024. HUD inputs are FY2027 two-bedroom FMR benchmarks for the fiscal period 1 October 2026–30 September 2027; area-specific effective rates and reevaluation exceptions can differ. This mixed-vintage scenario is not an observed 2024–2027 time series. July 2023 geography defines boundaries, not a housing observation date.</p><details><summary>CSV column dictionary (43 distinct fields)</summary><dl><dt><code style="overflow-wrap:anywhere">scenario</code></dt><dd>Named set of fixed illustrative assumptions, repeated across metros/areas. Unit: identifier.</dd><dt><code style="overflow-wrap:anywhere">cbsa</code></dt><dd>Five-character metropolitan-area identifier; preserve as text. Unit: identifier.</dd><dt><code style="overflow-wrap:anywhere">metro</code></dt><dd>Published whole metropolitan-area name; not a property identifier. Unit: label.</dd><dt><code style="overflow-wrap:anywhere">hud_fiscal_year</code></dt><dd>Fiscal-year label of the FMR benchmark; not a calendar-year observation date. Unit: fiscal year.</dd><dt><code style="overflow-wrap:anywhere">acs_year</code></dt><dd>Calendar year of the ACS one-year owner-stock source. Unit: year.</dd><dt><code style="overflow-wrap:anywhere">hud_area_count</code></dt><dd>Number of distinct candidate HUD rent areas retained for this metropolitan area. Unit: areas.</dd><dt><code style="overflow-wrap:anywhere">owner_value_proxy_usd</code></dt><dd>ACS2024 B25077 all-owner-occupied-unit median value; not a price quote for a matching two-bedroom rental. Unit: USD.</dd><dt><code style="overflow-wrap:anywhere">owner_value_moe_usd</code></dt><dd>Source B25077 margin of error for the all-owner-stock median value; retained separately from derived scenario sensitivity. Unit: USD.</dd><dt><code style="overflow-wrap:anywhere">hud_2br_gross_min_usd</code></dt><dd>Minimum FY2027 two-bedroom FMR across candidate HUD areas in the metro. Unit: USD per month.</dd><dt><code style="overflow-wrap:anywhere">hud_2br_gross_max_usd</code></dt><dd>Maximum FY2027 two-bedroom FMR across candidate HUD areas in the metro. Unit: USD per month.</dd><dt><code style="overflow-wrap:anywhere">cash_surplus_min_usd</code></dt><dd>Minimum across retained HUD areas at the central ACS owner-value estimate and fixed scenario assumptions. Unit: USD per year.</dd><dt><code style="overflow-wrap:anywhere">cash_surplus_max_usd</code></dt><dd>Maximum across retained HUD areas at the central ACS owner-value estimate and fixed scenario assumptions. Unit: USD per year.</dd><dt><code style="overflow-wrap:anywhere">price_endpoint_surplus_min_usd</code></dt><dd>Minimum annual cash surplus across retained HUD areas and owner-value estimate ± published MOE; not a joint confidence interval. Unit: USD per year.</dd><dt><code style="overflow-wrap:anywhere">price_endpoint_surplus_max_usd</code></dt><dd>Maximum annual cash surplus across retained HUD areas and owner-value estimate ± published MOE; not a joint confidence interval. Unit: USD per year.</dd><dt><code style="overflow-wrap:anywhere">break_even_gross_monthly_usd</code></dt><dd>Same threshold as the area-level output; threshold depends on the owner proxy and assumptions, not a selected HUD area rent. Unit: USD per month.</dd><dt><code style="overflow-wrap:anywhere">scenario_coverage</code></dt><dd>Whether all, some or no retained HUD rents cover the modeled cash budget; not a property or investment rank. Unit: label.</dd><dt><code style="overflow-wrap:anywhere">geography_note</code></dt><dd>County-match/retained-exception note; distinct HUD subareas are not averaged. Unit: label.</dd><dt><code style="overflow-wrap:anywhere">interpretation</code></dt><dd>Explicit reminder that results are hypothetical budgets, not matched-property or observed returns. Unit: label.</dd><dt><code style="overflow-wrap:anywhere">down_payment_fraction</code></dt><dd>Scenario input expressed as a 0–1 fraction of the owner-value proxy. Unit: fraction.</dd><dt><code style="overflow-wrap:anywhere">annual_interest_rate</code></dt><dd>Scenario input expressed as a 0–1 fraction, not a percentage number. Unit: fraction.</dd><dt><code style="overflow-wrap:anywhere">loan_years</code></dt><dd>Loan term used by the fixed-payment model. Unit: years.</dd><dt><code style="overflow-wrap:anywhere">occupied_months</code></dt><dd>Assumed paid months in the modeled year, between zero and twelve. Unit: months per year.</dd><dt><code style="overflow-wrap:anywhere">management_fraction</code></dt><dd>Management expense as a 0–1 fraction of adjusted receipts. Unit: fraction.</dd><dt><code style="overflow-wrap:anywhere">property_tax_fraction</code></dt><dd>Annual property-tax cost as a 0–1 fraction of the owner-value proxy. Unit: fraction.</dd><dt><code style="overflow-wrap:anywhere">insurance_fraction</code></dt><dd>Annual property insurance as a 0–1 fraction of the owner-value proxy. Unit: fraction.</dd><dt><code style="overflow-wrap:anywhere">maintenance_reserve_fraction</code></dt><dd>Annual maintenance reserve as a 0–1 fraction of the owner-value proxy. Unit: fraction.</dd><dt><code style="overflow-wrap:anywhere">monthly_utilities</code></dt><dd>Deduction from HUD gross rent before multiplying by paid months; not a measured utility bill. Unit: USD per month.</dd><dt><code style="overflow-wrap:anywhere">monthly_hoa</code></dt><dd>Monthly scenario cost included twelve times in the annual fixed budget. Unit: USD per month.</dd><dt><code style="overflow-wrap:anywhere">annual_other_costs</code></dt><dd>Explicit additional annual scenario cost. Unit: USD per year.</dd><dt><code style="overflow-wrap:anywhere">annual_mortgage_insurance</code></dt><dd>Explicit annual scenario cost; not an observed quote. Unit: USD per year.</dd><dt><code style="overflow-wrap:anywhere">hud_area_code</code></dt><dd>Retained source HUD area identifier, distinct from a CBSA code. Unit: identifier.</dd><dt><code style="overflow-wrap:anywhere">hud_area_name</code></dt><dd>Published name of the retained HUD rent area. Unit: label.</dd><dt><code style="overflow-wrap:anywhere">hud_2br_gross_monthly_usd</code></dt><dd>FY2027 two-bedroom FMR for this retained HUD area, including utility treatment; not landlord cash receipts. Unit: USD per month.</dd><dt><code style="overflow-wrap:anywhere">annual_receipts</code></dt><dd>HUD monthly gross rent minus the assumed monthly utility deduction, multiplied by assumed paid months. Unit: USD per year.</dd><dt><code style="overflow-wrap:anywhere">annual_management</code></dt><dd>Adjusted annual receipts multiplied by the assumed management fraction. Unit: USD per year.</dd><dt><code style="overflow-wrap:anywhere">annual_property_tax</code></dt><dd>Owner-stock value proxy multiplied by the assumed annual property-tax fraction. Unit: USD per year.</dd><dt><code style="overflow-wrap:anywhere">annual_insurance</code></dt><dd>Owner-stock value proxy multiplied by the assumed insurance fraction. Unit: USD per year.</dd><dt><code style="overflow-wrap:anywhere">annual_maintenance_reserve</code></dt><dd>Owner-stock value proxy multiplied by the assumed reserve fraction. Unit: USD per year.</dd><dt><code style="overflow-wrap:anywhere">annual_fixed_budget</code></dt><dd>Property tax, insurance, maintenance reserve, 12 monthly HOA payments, other annual costs and mortgage insurance; excludes management and principal/interest. Unit: USD per year.</dd><dt><code style="overflow-wrap:anywhere">annual_principal_interest</code></dt><dd>Twelve fixed loan payments; insurance, taxes and other costs are separate. Unit: USD per year.</dd><dt><code style="overflow-wrap:anywhere">annual_cash_surplus</code></dt><dd>Receipts minus management, fixed budget and principal/interest; not an investment return. Unit: USD per year.</dd><dt><code style="overflow-wrap:anywhere">break_even_gross_monthly_rent</code></dt><dd>Utility deduction plus (fixed budget + principal/interest) / (paid months * (1 - management fraction)); unavailable when paid months are zero. Unit: USD per month.</dd><dt><code style="overflow-wrap:anywhere">input_status</code></dt><dd>Illustrative status label; not evidence of a performed investment or company test. Unit: label.</dd></dl></details><h3 id="study-reuse">Reuse and citation</h3><p>Original study explanations and analytical selection/arrangement are shared under <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, to the extent Ahmadreza Samadi holds copyright or similar rights. Credit the author, link the licence and indicate changes. Underlying government data and documents retain their source status and exceptions; this does not relicense them or restrict public-domain facts. Existing code/dictionary licences, font notices, portraits and marks retain their own terms. Earlier grants are not withdrawn.</p><p>Source notices: <a href="https://www2.census.gov/foia/ds_policies/ds027.pdf">Census DS027, page 9</a> and <a href="https://www.hud.gov/sites/documents/webpubstandards.pdf">HUD web publication policy, section 1D</a>. These sources do not endorse this analysis.</p><p>Suggested citation: Ahmadreza Samadi (2026-10-15). Where does rent cover the cost of owning? 2026 metro edition. Software/method version 1.0.0. https://a-samadi.com/studies/rent-own-2026/</p></section>
+<!-- study-publication-details:end -->
 <p class="attribution">Study and original code by <a href="https://a-samadi.com/about.html">Ahmadreza Samadi</a> · <a href="https://a-samadi.com/studies/rent-own-2026/">Full method and study</a>. Sources: HUD FY2027 / ACS 2024. Illustrative cash budgets, not investment returns.</p><!-- follow-subscribe:start -->
 <aside class="details follow-subscribe" aria-labelledby="follow-subscribe-title">
 <h2 id="follow-subscribe-title">Follow / Subscribe</h2>

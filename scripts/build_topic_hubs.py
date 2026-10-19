@@ -201,6 +201,13 @@ def render(data, hub, language):
         if candidate["id"] != hub["id"] and candidate["id"] != cross["hub"]:
             other_topics.append('<p><a data-hub-navigation href="/' + candidate["paths"][language] + '">' + escape(candidate["locales"][language]["heading"]) + '</a></p>')
     direction = '' if language == "en" else ' dir="rtl"'
+    discovery_labels = {
+        'en': ('Signature ideas', 'Property Decision Data'),
+        'fa': ('ایده‌های اصلی (انگلیسی)', 'داده‌های تصمیم‌گیری ملکی (انگلیسی)'),
+        'ar': ('الأفكار الرئيسية (بالإنجليزية)', 'بيانات القرار العقاري (بالإنجليزية)'),
+    }[language]
+    discovery = ('<p data-brand-discovery="v1"><a href="/ideas.html">' + escape(discovery_labels[0]) +
+                 '</a> · <a href="/studies/">' + escape(discovery_labels[1]) + '</a></p>')
     body_class = "editorial-body topic-hub" + (" persian-page" if language == "fa" else " arabic-page" if language == "ar" else "")
     return f'''<!doctype html>
 <html lang="{language}"{direction}>
@@ -270,7 +277,7 @@ def render(data, hub, language):
 <p class="article-author__name"><a href="/{prefix}about.html" rel="author">{escape(labels["name"])}</a></p>
 <p>{escape(copy["author_bio"])}</p>
 </aside>
-<footer class="editorial-footer"><nav aria-label="{escape(labels["related"], quote=True)}"><a href="/{prefix}writing/">{escape(labels["all_writing"])}</a> · <a href="/{prefix}about.html#official-profiles">{escape(labels["profiles"])}</a></nav><p>{escape(labels["name"])} · {escape(labels["position"])}</p><a href="/{prefix}#contact">{escape(labels["contact"])}</a></footer>
+<footer class="editorial-footer"><nav aria-label="{escape(labels["related"], quote=True)}"><a href="/{prefix}writing/">{escape(labels["all_writing"])}</a> · <a href="/{prefix}about.html#official-profiles">{escape(labels["profiles"])}</a></nav>{discovery}<p>{escape(labels["name"])} · {escape(labels["position"])}</p><a href="/{prefix}#contact">{escape(labels["contact"])}</a></footer>
 </main>
 </body>
 </html>

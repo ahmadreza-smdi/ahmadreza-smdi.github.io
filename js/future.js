@@ -89,7 +89,7 @@
         // The page index: each card, log entry, capability or paragraph is one place you can be taken to.
         let index = null;
         const build = () => {
-            const places = $$('.hero-copy, .venture, .section-heading, .feature, .work-card, .bio-copy > p, .timeline-item, .capability, .guide-tile, .writing-item, .contact-copy', $('main'));
+            const places = $$('.hero-copy, .venture, .section-heading, .feature, .work-card, .bio-copy > p, .timeline-item, .capability, .guide-tile, .writing-item, .contact-copy, .brand-card, .brand-links', $('main'));
             index = places.map((place) => {
                 const section = place.closest('section');
                 const label = section && section.querySelector('.section-label');

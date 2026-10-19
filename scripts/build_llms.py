@@ -24,7 +24,11 @@ NOTES = (
     'English is the primary language of this site. Persian (/fa/) and Arabic (/ar/) pages are translations of the '
     'English originals and are linked to them with hreflang.\n\n'
     'Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and work; the explainers and films '
-    'use fictional teaching examples where they say so.'
+    'use fictional teaching examples where they say so.\n\n'
+    'Positioning, in his own words: "I build AI that helps people make better property decisions, and I run a '
+    'property business in Dubai, so I know where the AI must stop."\n\n'
+    'Series: Start with the Decision (ideas and newsletter); Property Decision Data (studies and tools); '
+    'Tech, explained (plain-language articles and films).'
 )
 PROFILES = [
     ('LinkedIn', 'https://www.linkedin.com/in/ahmadreza-samadi/'),

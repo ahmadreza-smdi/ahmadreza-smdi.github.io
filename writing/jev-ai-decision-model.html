@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="author" content="Ahmadreza Samadi">
-<title>Jev Explained: An AI Decision Model, Not a Chatbot | Ahmadreza Samadi</title>
-<meta name="description" content="What is Jev from TypeSafe AI? How a decision model differs from GPT and Claude, what the early Banking77 test shows, and how to test it as a routing layer.">
+<title>What is Jev? AI Decision Models Explained | Ahmadreza Samadi</title>
+<meta name="description" content="How TypeSafe describes Jev, how bounded decisions differ from chatbot replies, and what to check before using a model to route a real workflow.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://a-samadi.com/writing/jev-ai-decision-model.html">
 <link rel="alternate" type="application/rss+xml" title="Ahmadreza Samadi — English writing" href="https://a-samadi.com/writing/feed.xml">
@@ -15,11 +15,11 @@
 <link rel="icon" type="image/svg+xml" href="../assets/brand/favicon.svg">
 <link rel="stylesheet" href="../css/site.css?v=20261009-lagoon4">
 <meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
-<meta property="og:title" content="Jev: an AI decision model, not another chatbot | Ahmadreza Samadi">
-<meta property="og:description" content="Jev is built to choose the next step, not to write the answer. What that means, what the early evidence shows, and how to test it.">
+<meta property="og:title" content="What is Jev? AI Decision Models Explained | Ahmadreza Samadi">
+<meta property="og:description" content="How TypeSafe describes Jev, how bounded decisions differ from chatbot replies, and what to check before using a model to route a real workflow.">
 <meta property="og:url" content="https://a-samadi.com/writing/jev-ai-decision-model.html"><meta property="og:locale" content="en_US"><meta property="og:locale:alternate" content="fa_IR"><meta property="og:locale:alternate" content="ar_AE">
 <meta property="og:image" content="https://a-samadi.com/assets/share/jev-ai-decision-model.png">
-<meta property="og:image:alt" content="English article cover: Jev: an AI decision model, not another chatbot"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Jev: an AI decision model, not another chatbot | Ahmadreza Samadi"><meta name="twitter:description" content="Jev is built to choose the next step, not to write the answer. What that means, what the early evidence shows, and how to test it."><meta name="twitter:image" content="https://a-samadi.com/assets/share/jev-ai-decision-model.png"><meta name="twitter:image:alt" content="English article cover: Jev: an AI decision model, not another chatbot">
+<meta property="og:image:alt" content="English article cover: Jev: an AI decision model, not another chatbot"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="What is Jev? AI Decision Models Explained | Ahmadreza Samadi"><meta name="twitter:description" content="How TypeSafe describes Jev, how bounded decisions differ from chatbot replies, and what to check before using a model to route a real workflow."><meta name="twitter:image" content="https://a-samadi.com/assets/share/jev-ai-decision-model.png"><meta name="twitter:image:alt" content="English article cover: Jev: an AI decision model, not another chatbot">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -36,7 +36,7 @@
         }
       ],
       "headline": "Jev: an AI decision model, not another chatbot",
-      "description": "What is Jev from TypeSafe AI? How a decision model differs from GPT and Claude, what the early Banking77 test shows, and how to test it as a routing layer.",
+      "description": "How TypeSafe describes Jev, how bounded decisions differ from chatbot replies, and what to check before using a model to route a real workflow.",
       "url": "https://a-samadi.com/writing/jev-ai-decision-model.html",
       "mainEntityOfPage": {
         "@type": "WebPage",
@@ -49,7 +49,7 @@
         }
       },
       "datePublished": "2026-09-25",
-      "dateModified": "2026-10-10T12:47:00+03:30",
+      "dateModified": "2026-10-19T10:43:53+03:30",
       "inLanguage": "en",
       "image": {
         "@type": "ImageObject",
@@ -123,9 +123,10 @@
 <nav class="byline" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/writing/">Writing</a> / <span aria-current="page">Jev: an AI decision model, not another chatbot</span></nav>
 <p class="eyebrow">Analysis · AI decision models</p>
 <h1>Jev: an AI decision model, not another chatbot</h1>
-<p class="lead">Most people meet AI as a system that writes. Jev is interesting because it is built to choose: to make a bounded decision that software can act on.</p>
+<p class="lead">TypeSafe describes Jev as an AI decision model that chooses within options an application defines. The useful question is whether its choices improve your workflow; structured output alone does not make a decision correct.</p>
+<p class="byline" data-search-reading="v1">Continue reading: <a href="/topics/ai-real-estate.html">AI for property decisions</a> · <a href="/ideas.html">Signature ideas</a></p>
 <p class="byline">By <a href="/about.html" rel="author">Ahmadreza Samadi</a> · <time datetime="2026-09-25">25 September 2026</time></p>
-<p class="byline">Updated <time datetime="2026-10-10T12:47:00+03:30">10 October 2026</time></p>
+<p class="byline">Updated <time datetime="2026-10-18T15:48:37+03:30">18 October 2026</time></p>
 <section aria-labelledby="article-at-a-glance">
 <h2 id="article-at-a-glance">At a glance</h2>
 <p>According to TypeSafe, Jev answers within options an application defines. A structured answer can still be the wrong decision, and the cited benchmark is not a general model ranking. In the test I propose, confidence thresholds would be checked on held-out workflow data, uncertain cases would be reviewed, and permissions and final actions would stay in application code.</p>
@@ -155,7 +156,7 @@
 <li>Escalate uncertain cases to a larger model or a human reviewer.</li>
 <li>Keep exact rules, permissions and final actions in application code.</li>
 </ol>
-<p>Then measure what matters end to end: accuracy, review rate, latency and cost per accepted decision. That last measure applies a framework I use for any AI workflow, described in <a href="/writing/ai-cost-per-verified-result.html">AI cost per verified result</a>.</p>
+<p>Then measure what matters end to end: accuracy, review rate, latency and cost per accepted decision. That last measure applies a framework I use for any AI workflow, described in <a href="/writing/ai-cost-per-verified-result.html">AI cost per accepted result</a>.</p>
 <h2>Can a structured answer still be the wrong decision?</h2>
 <p>A typed answer cannot drift outside its allowed format, but it can still be the wrong decision. Structure makes an output easier to use; it does not make it correct. Test with real examples, and keep uncertain cases open for review.</p>
 <h2>Continue the discussion</h2>
@@ -176,7 +177,7 @@
 <nav class="article-reading-path" aria-labelledby="article-related-title">
 <p>Part of: <a href="/topics/ai-real-estate.html" data-hub-primary="ai-real-estate">AI in real estate: evidence and decisions</a></p>
 <h2 id="article-related-title">Related</h2>
-<ul><li><a href="/writing/ai-cost-per-verified-result.html" data-related-pillar="property-decisions">AI cost per verified result</a></li>
+<ul><li><a href="/writing/ai-cost-per-verified-result.html" data-related-pillar="property-decisions">AI cost per accepted result</a></li>
 <li><a href="/writing/start-with-the-decision.html" data-related-pillar="decision-first-ai">Start with the decision, then build the AI</a></li>
 <li><a href="/writing/how-photo-text-recognition-works.html" data-related-pillar="tech-explained">How does your phone turn text in a photo into copyable words?</a></li></ul>
 </nav>
@@ -185,7 +186,8 @@
 <aside class="article-author" aria-labelledby="article-author-title">
 <h2 id="article-author-title">About the author</h2>
 <p class="article-author__name"><a href="/about.html" rel="author">Ahmadreza Samadi</a></p>
-<p>Technology Entrepreneur based in Dubai. Co-Founder &amp; Technical Lead at Appraiva; Co-Founder &amp; CEO at Royal Abraj Group.</p>
+<p>Dubai-based technology entrepreneur Ahmadreza Samadi is Co-Founder &amp; Technical Lead of Appraiva, building AI real estate intelligence, and Co-Founder &amp; CEO of Royal Abraj Group.</p>
+<p class="article-author__series">Part of <bdi lang="en">Tech, explained</bdi></p>
 </aside>
 <!-- author-box:end -->
 <!-- follow-subscribe:start -->

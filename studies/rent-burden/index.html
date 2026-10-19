@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rent burden in 386 US metros: ACS 2024 | Ahmadreza Samadi</title>
+<meta name="robots" content="index,follow,max-image-preview:large"><meta name="author" content="Ahmadreza Samadi">
+<meta name="description" content="A reproducible ACS 2024 study of 30% and 50% gross-rent-to-income thresholds, with explicit denominator exclusions and uncertainty limits.">
+<link rel="stylesheet" href="study.css?v=20261017-burden1">
+<style>figure{margin:0}figure img{max-width:100%;height:auto}figcaption{font-size:.85rem;line-height:1.6}.skip{position:absolute;left:-9999px}.skip:focus{left:1rem;top:1rem;background:#fff;padding:1rem;z-index:2}.formula{font-family:monospace;overflow-wrap:anywhere}.source-list li{margin-bottom:1rem}</style><link rel="canonical" href="https://a-samadi.com/studies/rent-burden/"><meta property="og:type" content="website"><meta property="og:site_name" content="Ahmadreza Samadi"><meta property="og:locale" content="en_US"><meta property="og:title" content="Rent burden in 386 US metros: ACS 2024 | Ahmadreza Samadi"><meta property="og:description" content="A reproducible survey snapshot with explicit denominator exclusions and uncertainty limits."><meta property="og:url" content="https://a-samadi.com/studies/rent-burden/"><meta property="og:image" content="https://a-samadi.com/studies/rent-burden/rent-burden-2024.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Rent burden in 386 US metros: ACS 2024 | Ahmadreza Samadi"><meta name="twitter:description" content="A reproducible survey snapshot with explicit denominator exclusions and uncertainty limits."><meta name="twitter:image" content="https://a-samadi.com/studies/rent-burden/rent-burden-2024.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://a-samadi.com/studies/rent-burden/#page",
+      "url": "https://a-samadi.com/studies/rent-burden/",
+      "name": "How much income goes to gross rent?",
+      "description": "ACS 2024 rent-burden point estimates across 386 published metropolitan areas, with denominator exclusions and uncertainty limits.",
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://a-samadi.com/#person"
+      },
+      "mainEntity": {
+        "@id": "https://a-samadi.com/studies/rent-burden/#dataset"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://a-samadi.com/studies/rent-burden/#dataset",
+      "url": "https://a-samadi.com/studies/rent-burden/",
+      "name": "Metro rent burden: ACS 2024 point estimates",
+      "description": "Derived shares at 30% and 50% gross-rent-to-income thresholds among units with computable ratios. Source estimate/MOE pairs retained; derived percentage MOEs not calculated.",
+      "creator": {
+        "@type": "Person",
+        "name": "Ahmadreza Samadi",
+        "url": "https://a-samadi.com/about.html",
+        "@id": "https://a-samadi.com/#person"
+      },
+      "temporalCoverage": "2024-01-01/2024-12-31",
+      "isAccessibleForFree": true,
+      "inLanguage": "en",
+      "isBasedOn": [
+        {
+          "@type": "Dataset",
+          "name": "ACS 2024 one-year table B25070",
+          "url": "https://data.census.gov/table/ACSDT1Y2024.B25070",
+          "temporalCoverage": "2024-01-01/2024-12-31",
+          "creator": {
+            "@type": "Organization",
+            "name": "U.S. Census Bureau"
+          }
+        }
+      ],
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/csv",
+          "contentUrl": "https://a-samadi.com/studies/rent-burden/metro-rent-burden-2024.csv",
+          "description": "386 rows; 35 columns. See the column dictionary and scoped reuse terms on the study page."
+        },
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "contentUrl": "https://github.com/ahmadreza-smdi/metro-rent-burden/releases/download/v1.1.0/Metro-Rent-Burden-2024.xlsx"
+        }
+      ],
+      "variableMeasured": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "geo_id",
+          "name": "geo_id",
+          "description": "Exact GEO_ID from the source geography file; keep as text, including its geography-vintage marker.",
+          "unitText": "identifier"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "cbsa_code",
+          "name": "cbsa_code",
+          "description": "Five-character CBSA code from the source geography file; preserve text and leading zeros.",
+          "unitText": "identifier"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "metro_name",
+          "name": "metro_name",
+          "description": "Published whole metropolitan-area label, not a property or city-only boundary.",
+          "unitText": "label"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "survey_year",
+          "name": "survey_year",
+          "description": "ACS 1-year source year, not download year or current market year.",
+          "unitText": "year"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "status",
+          "name": "status",
+          "description": "Analysis availability status. This fixed released snapshot contains only ok. The builder can also report unavailable source estimate or zero computable denominator.",
+          "unitText": "status"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "renter_units_total",
+          "name": "renter_units_total",
+          "description": "Total renter-occupied housing units; not a count of people or only cash-rent units.",
+          "unitText": "housing units",
+          "measurementTechnique": "B25070_E001"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "not_computed_units",
+          "name": "not_computed_units",
+          "description": "Units for which the source ratio is not computed; retained separately, not treated as zero burden.",
+          "unitText": "housing units",
+          "measurementTechnique": "B25070_E011"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "computable_units",
+          "name": "computable_units",
+          "description": "Denominator for the two threshold percentages.",
+          "unitText": "housing units",
+          "measurementTechnique": "B25070_E001 - B25070_E011"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "rent_30plus_units",
+          "name": "rent_30plus_units",
+          "description": "Units in the published 30.0%-or-more bins.",
+          "unitText": "housing units",
+          "measurementTechnique": "B25070_E007 + B25070_E008 + B25070_E009 + B25070_E010"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "rent_50plus_units",
+          "name": "rent_50plus_units",
+          "description": "Units in the published 50.0%-or-more bin; a subset of rent_30plus_units.",
+          "unitText": "housing units",
+          "measurementTechnique": "B25070_E010"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "rent_30plus_pct",
+          "name": "rent_30plus_pct",
+          "description": "Share of computable units at 30.0% or more, rounded to six decimals; not a 0–1 fraction.",
+          "unitText": "percent (0–100)",
+          "measurementTechnique": "100 * rent_30plus_units / computable_units"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "rent_50plus_pct",
+          "name": "rent_50plus_pct",
+          "description": "Share of computable units at 50.0% or more; nested inside the 30% group. Do not add these percentages.",
+          "unitText": "percent (0–100)",
+          "measurementTechnique": "100 * rent_50plus_units / computable_units"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "not_computed_pct_all_renters",
+          "name": "not_computed_pct_all_renters",
+          "description": "Share of all renter-occupied units with a not-computed ratio; its denominator differs from the two burden percentages.",
+          "unitText": "percent (0–100)",
+          "measurementTechnique": "100 * not_computed_units / renter_units_total"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "B25070_E001",
+          "name": "B25070_E001",
+          "description": "Published estimate. Source token retained; a sentinel is not a valid count and never becomes zero.",
+          "unitText": "housing units"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "B25070_M001",
+          "name": "B25070_M001",
+          "description": "Published margin of error for the matching estimate; not the error of a derived percentage. Source token retained; a sentinel is not a valid count and never becomes zero.",
+          "unitText": "housing units"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "B25070_E002",
+          "name": "B25070_E002",
+          "description": "Published estimate. Source token retained; a sentinel is not a valid count and never becomes zero.",
+          "unitText": "housing units"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "B25070_M002",
+          "name": "B25070_M002",
+          "description": "Published margin of error for the matching estimate; not the error of a derived percentage. Source token retained; a sentinel is not a valid count and never becomes zero.",
+          "unitText": "housing units"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "B25070_E003",
+          "name": "B25070_E003",
+          "description": "Published estimate. Source token retained; a sentinel is not a valid count and never becomes zero.",
+          "unitText": "housing units"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "B25070_M003",
+          "name": "B25070_M003",
+          "description": "Published margin of error for the matching estimate; not the error of a derived percentage. Source token retained; a sentinel is not a valid count and never becomes zero.",
+          "unitText": "housing units"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "B25070_E004",
+          "name": "B25070_E004",
+          "description": "Published estimate. Source token retained; a sentinel is not a valid count and never becomes zero.",
+          "unitText": "housing units"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "B25070_M004",
+          "name": "B25070_M004",
+          "description": "Published margin of error for the matching estimate; not the error of a derived percentage. Source token retained; a sentinel is not a valid count and never becomes zero.",
+          "unitText": "housing units"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "B25070_E005",
+          "name": "B25070_E005",
+          "description": "Published estimate. Source token retained; a sentinel is not a valid count and never becomes zero.",
+          "unitText": "housing units"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "B25070_M005",
+          "name": "B25070_M005",
+          "description": "Published margin of error for the matching estimate; not the error of a derived percentage. Source token retained; a sentinel is not a valid count and never becomes zero.",
+          "unitText": "housing units"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "B25070_E006",
+          "name": "B25070_E006",
+          "description": "Published estimate. Source token retained; a sentinel is not a valid count and never becomes zero.",
+          "unitText": "housing units"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "B25070_M006",
+          "name": "B25070_M006",
+          "description": "Published margin of error for the matching estimate; not the error of a derived percentage. Source token retained; a sentinel is not a valid count and never becomes zero.",
+          "unitText": "housing units"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "B25070_E007",
+          "name": "B25070_E007",
+          "description": "Published estimate. Source token retained; a sentinel is not a valid count and never becomes zero.",
+          "unitText": "housing units"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "B25070_M007",
+          "name": "B25070_M007",
+          "description": "Published margin of error for the matching estimate; not the error of a derived percentage. Source token retained; a sentinel is not a valid count and never becomes zero.",
+          "unitText": "housing units"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "B25070_E008",
+          "name": "B25070_E008",
+          "description": "Published estimate. Source token retained; a sentinel is not a valid count and never becomes zero.",
+          "unitText": "housing units"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "B25070_M008",
+          "name": "B25070_M008",
+          "description": "Published margin of error for the matching estimate; not the error of a derived percentage. Source token retained; a sentinel is not a valid count and never becomes zero.",
+          "unitText": "housing units"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "B25070_E009",
+          "name": "B25070_E009",
+          "description": "Published estimate. Source token retained; a sentinel is not a valid count and never becomes zero.",
+          "unitText": "housing units"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "B25070_M009",
+          "name": "B25070_M009",
+          "description": "Published margin of error for the matching estimate; not the error of a derived percentage. Source token retained; a sentinel is not a valid count and never becomes zero.",
+          "unitText": "housing units"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "B25070_E010",
+          "name": "B25070_E010",
+          "description": "Published estimate. Source token retained; a sentinel is not a valid count and never becomes zero.",
+          "unitText": "housing units"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "B25070_M010",
+          "name": "B25070_M010",
+          "description": "Published margin of error for the matching estimate; not the error of a derived percentage. Source token retained; a sentinel is not a valid count and never becomes zero.",
+          "unitText": "housing units"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "B25070_E011",
+          "name": "B25070_E011",
+          "description": "Published estimate. Source token retained; a sentinel is not a valid count and never becomes zero.",
+          "unitText": "housing units"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "B25070_M011",
+          "name": "B25070_M011",
+          "description": "Published margin of error for the matching estimate; not the error of a derived percentage. Source token retained; a sentinel is not a valid count and never becomes zero.",
+          "unitText": "housing units"
+        }
+      ],
+      "measurementTechnique": "Derived point estimates from ACS 2024 table B25070 aggregate counts using the published ratio bins. The 50%-or-more group is nested inside the 30%-or-more group; derived percentage margins of error are not calculated.",
+      "spatialCoverage": "386 selected whole metropolitan areas in the 50 US states and the District of Columbia; Puerto Rico metros and micropolitan areas excluded.",
+      "sameAs": "https://github.com/ahmadreza-smdi/metro-rent-burden/releases/tag/v1.1.1",
+      "identifier": "https://github.com/ahmadreza-smdi/metro-rent-burden/releases/tag/v1.1.1",
+      "usageInfo": [
+        "https://github.com/ahmadreza-smdi/metro-rent-burden/blob/9525742e49956e51fe5ac72c9ef3000624af4401/README.md#reuse-and-citation",
+        "https://a-samadi.com/studies/rent-burden/#study-reuse"
+      ],
+      "publisher": {
+        "@id": "https://a-samadi.com/#person"
+      },
+      "license": {
+        "@type": "CreativeWork",
+        "name": "CC BY 4.0 — original study contributions only",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "text": "To the extent copyright or similar rights exist and are held by Ahmadreza Samadi, original study explanations and analytical selection/arrangement are offered under CC BY 4.0. Underlying government data and documents retain their source status and exceptions. This grant does not cover code, third-party materials, fonts, portraits or marks; existing grants are not withdrawn."
+      },
+      "copyrightNotice": "To the extent copyright or similar rights exist and are held by Ahmadreza Samadi, original study explanations and analytical selection/arrangement are offered under CC BY 4.0. Underlying government data and documents retain their source status and exceptions. This grant does not cover code, third-party materials, fonts, portraits or marks; existing grants are not withdrawn.",
+      "citation": [
+        {
+          "@type": "SoftwareSourceCode",
+          "name": "Metro rent burden: reproducible ACS 2024 point estimates",
+          "version": "1.1.1",
+          "datePublished": "2026-10-17",
+          "author": {
+            "@id": "https://a-samadi.com/#person"
+          },
+          "url": "https://github.com/ahmadreza-smdi/metro-rent-burden/releases/tag/v1.1.1"
+        },
+        {
+          "@type": "Dataset",
+          "name": "U.S. Census Bureau ACS 2024 one-year table B25070",
+          "url": "https://data.census.gov/table/ACSDT1Y2024.B25070"
+        }
+      ]
+    }
+  ]
+}</script>
+
+<script src="/js/site-analytics.js?v=20261009-analytics1" defer></script>
+</head>
+<body><a class="skip" href="#main">Skip to study</a><header><a href="https://a-samadi.com/">Ahmadreza Samadi / Home</a></header>
+<main id="main"><p class="eyebrow">Data study · evidence before decisions</p><h1>How much income goes to gross rent?</h1>
+<p class="lead">An ACS 2024 snapshot across 386 metropolitan areas in the 50 states and District of Columbia. The 30% and 50% thresholds describe renter-occupied units with a computable gross-rent-to-income ratio. Units outside that denominator stay visible.</p>
+<p>By <a href="https://a-samadi.com/about.html">Ahmadreza Samadi</a> · Source snapshot checked 17 October 2026</p>
+<section class="panel" aria-labelledby="answer"><h2 id="answer">What does this study measure?</h2>
+<p>It calculates the share of renter-occupied units whose Census-tabulated gross rent is at least 30% or at least 50% of household income, among units for which that ratio can be computed. Gross rent includes contract rent and separately renter-paid utilities and fuels. The 50% group is part of the 30% group; the two shares must not be added.</p>
+<p>This is a descriptive survey snapshot. It does not establish an individual household's full budget, a property's yield, a future rent, a causal explanation or an investment recommendation.</p></section>
+<section class="panel" aria-labelledby="chart"><h2 id="chart">A view of ten large renter populations</h2>
+<figure><img src="rent-burden-2024.png" width="1960" height="1400" alt="Grouped horizontal bar chart of ACS 2024 point estimates for 10 metropolitan areas selected by the largest computable renter-unit denominators, displayed alphabetically. Atlanta-Sandy Springs-Roswell, GA Metro Area: 56.1% at least 30%, 27.6% at least 50%; Chicago-Naperville-Elgin, IL-IN Metro Area: 50.5% at least 30%, 25.9% at least 50%; Dallas-Fort Worth-Arlington, TX Metro Area: 52.5% at least 30%, 25.3% at least 50%; Houston-Pasadena-The Woodlands, TX Metro Area: 55.2% at least 30%, 27.7% at least 50%; Los Angeles-Long Beach-Anaheim, CA Metro Area: 57.3% at least 30%, 29.9% at least 50%; Miami-Fort Lauderdale-West Palm Beach, FL Metro Area: 65.8% at least 30%, 36.2% at least 50%; New York-Newark-Jersey City, NY-NJ Metro Area: 52.0% at least 30%, 28.0% at least 50%; Philadelphia-Camden-Wilmington, PA-NJ-DE-MD Metro Area: 52.7% at least 30%, 29.6% at least 50%; San Francisco-Oakland-Fremont, CA Metro Area: 48.1% at least 30%, 25.1% at least 50%; Washington-Arlington-Alexandria, DC-VA-MD-WV Metro Area: 48.4% at least 30%, 23.5% at least 50%. Both shares exclude not-computed units; threshold groups overlap. Derived margins of error not calculated; no statistical ranking."><figcaption>The ten largest computable renter-unit denominators in this snapshot, displayed alphabetically. These are point estimates. Derived percentage margins of error are not calculated, so displayed differences are not established as statistically significant.</figcaption></figure>
+<div class="table-wrap"><table><caption>ACS 2024 B25070. Denominator exclusions shown separately. Unit counts are survey estimates.</caption><thead><tr><th scope="col">Metropolitan area</th><th scope="col">At least 30%</th><th scope="col">At least 50%</th><th scope="col">Computable units</th><th scope="col">Not-computed units</th></tr></thead><tbody><tr><th scope="row">Atlanta-Sandy Springs-Roswell, GA Metro Area</th><td>56.1%</td><td>27.6%</td><td>753,229</td><td>39,708</td></tr><tr><th scope="row">Chicago-Naperville-Elgin, IL-IN Metro Area</th><td>50.5%</td><td>25.9%</td><td>1,186,977</td><td>73,227</td></tr><tr><th scope="row">Dallas-Fort Worth-Arlington, TX Metro Area</th><td>52.5%</td><td>25.3%</td><td>1,148,755</td><td>55,843</td></tr><tr><th scope="row">Houston-Pasadena-The Woodlands, TX Metro Area</th><td>55.2%</td><td>27.7%</td><td>1,022,843</td><td>63,683</td></tr><tr><th scope="row">Los Angeles-Long Beach-Anaheim, CA Metro Area</th><td>57.3%</td><td>29.9%</td><td>2,264,762</td><td>108,540</td></tr><tr><th scope="row">Miami-Fort Lauderdale-West Palm Beach, FL Metro Area</th><td>65.8%</td><td>36.2%</td><td>882,414</td><td>51,124</td></tr><tr><th scope="row">New York-Newark-Jersey City, NY-NJ Metro Area</th><td>52.0%</td><td>28.0%</td><td>3,465,378</td><td>188,268</td></tr><tr><th scope="row">Philadelphia-Camden-Wilmington, PA-NJ-DE-MD Metro Area</th><td>52.7%</td><td>29.6%</td><td>783,376</td><td>46,721</td></tr><tr><th scope="row">San Francisco-Oakland-Fremont, CA Metro Area</th><td>48.1%</td><td>25.1%</td><td>757,749</td><td>37,929</td></tr><tr><th scope="row">Washington-Arlington-Alexandria, DC-VA-MD-WV Metro Area</th><td>48.4%</td><td>23.5%</td><td>843,539</td><td>40,790</td></tr></tbody></table></div>
+<p><a href="metro-rent-burden-2024.csv" download>Download all 386 metros as CSV</a> · <a href="rent-burden-2024.svg" download>Download chart as SVG</a> · <a href="chart-alt-2024.txt">Complete chart alt text</a></p>
+<p id="workbook-download"><a href="https://github.com/ahmadreza-smdi/metro-rent-burden/releases/download/v1.1.0/Metro-Rent-Burden-2024.xlsx">Download the Excel companion (XLSX)</a> for the same ACS 2024 snapshot, with a filterable table and formulas. <a href="https://github.com/ahmadreza-smdi/metro-rent-burden/blob/v1.1.0/WORKBOOK.md">Read the workbook instructions and limits</a>. Native Microsoft Excel execution and interactive sorting have not been tested.</p>
+<p id="csv-field-guide">Before reusing the CSV, read the <a href="https://github.com/ahmadreza-smdi/metro-rent-burden/blob/12005f17005124c1485e093de12f59312af5c430/DATA-DICTIONARY.txt">35-column field guide</a> or the <a href="https://github.com/ahmadreza-smdi/metro-rent-burden/blob/12005f17005124c1485e093de12f59312af5c430/data-dictionary.json">custom JSON dictionary</a>. Both describe this ACS 2024 snapshot, including percentage denominators, missing values and source estimate/margin-of-error pairs. This documentation companion is newer than the version 1.1.1 release archive; it adds no observations.</p>
+<p id="reading-card">Need a short explanation before using the data? <a href="READING-GUIDE.txt" download>Download the plain-text reading card</a> for the two study questions, count versus percentage uncertainty, and missing-value limits. The ownership scenarios and rent-burden estimates remain separate datasets.</p>
+<p id="offline-lookup">Prefer to search the CSV locally? The <a href="https://github.com/ahmadreza-smdi/metro-rent-burden/blob/main/downloads/Metro-Rent-Burden-Offline-Lookup.zip">offline lookup kit</a> includes the same fixed data, dictionary and Python helper. Unzip everything and follow <code>START-HERE.txt</code>; Python 3.12 or newer is required, with no extra packages or account. This download is separate from the v1.1.1 analysis archive and adds no observations or derived percentage uncertainty.</p></section>
+<section class="panel" aria-labelledby="denominator"><h2 id="denominator">Who is in the denominator?</h2>
+<p>The table's universe is renter-occupied housing units. Its “Not computed” category includes units where no rent is paid and households reporting no income or a net loss. Excluding that category from a ratio does not establish that those households have low costs or no affordability difficulty.</p>
+<p>For each published whole metropolitan area:</p><ul>
+<li>Computable denominator = total renter-occupied units minus not-computed units.</li>
+<li>At least 30% numerator = the 30.0–34.9, 35.0–39.9, 40.0–49.9 and 50.0-or-more percentage bins.</li>
+<li>At least 50% numerator = the 50.0-or-more bin.</li>
+<li>Each share = 100 × its numerator divided by the computable denominator.</li></ul>
+<p class="formula">B25070: denominator=E001−E011;30%+numerator=E007+E008+E009+E010;50%+numerator=E010.</p>
+<p>The CSV also reports not-computed units as a share of all renter-occupied units. A zero denominator produces an unavailable percentage; missing or sentinel estimates are not converted to zero. The cutoffs refer to the published rounded ratio bins, not a new calculation from household microdata.</p>
+<h3>A fictional denominator check</h3><p>Imagine 100 renter-occupied units: 20 are not computed, 40 are in the at-least 30% bins and 10 are in the at-least 50% bin. The denominator is 80. The two shares are 50% and 12.5%. Dividing 40 by 100 would instead produce 40%, answering a different question. These are invented teaching counts, not a metro's data.</p></section>
+<section class="panel" aria-labelledby="scope"><h2 id="scope">Why 386 metros?</h2>
+<p>The pipeline joins official ACS 1-year table B25070 to its matching geography labels by exact GEO_ID. It selects whole metropolitan statistical areas at summary level 310 and component 00, retaining cross-state areas once. It excludes 140 published micropolitan rows and 6 Puerto Rico metropolitan rows from this 50 states/DC scope. All excluded CBSA rows and reasons are retained.</p>
+<p>The 1-year product does not publish every small geography. No missing metro is filled with 5-year estimates. This is a different source universe from the earlier HUD rent/ownership study; the number of rows should not be forced to match it.</p></section>
+<section class="panel" aria-labelledby="limits"><h2 id="limits">What should a reader keep uncertain?</h2><ul>
+<li><strong>Sampling uncertainty.</strong> ACS figures are estimates. All 11 published estimate/MOE pairs are preserved in the CSV. Derived percentage MOEs are not calculated; this page does not rank statistical differences.</li>
+<li><strong>Time.</strong> The data year is 2024. Rent and household income have different ACS measurement windows. This is not a live asking-rent feed or a forecast.</li>
+<li><strong>Households outside the ratio.</strong> Not-computed units remain visible, rather than being called zero burden.</li>
+<li><strong>Individual decisions.</strong> A metropolitan share does not assess a particular apartment, household, loan or property return.</li></ul>
+<p>As checked 17 October 2026, the official 2025 ACS 1-year release is announced for 29 October 2026. No 2025 values are used here. The source date and availability will be checked at that announced release, with the saved 2024 snapshot retained for reproducibility.</p></section>
+<section class="panel" aria-labelledby="rebuild"><h2 id="rebuild">Can someone reproduce the chart?</h2>
+<p>Yes, from the public aggregate Census files. The download and build scripts preserve versioned raw inputs, exact source URLs and SHA-256 hashes. The analysis build uses Python's standard library; plotting additionally uses the pinned Matplotlib version. The analysis pipeline passed 17 tests, covering arithmetic and source-snapshot integrity, and a separate agent independently checked ten metro rows against raw source counts. This is not a human or Census certification.</p>
+<p><a href="#denominator">Method and denominator</a> · <a href="CITATION.cff">Citation metadata (version 1.1.1)</a> · <a href="source-2024.json">Raw source URLs and hashes</a></p>
+<p>Original analysis code is MIT. Input federal statistics retain their source status: Census employee-created data generally are not copyright-protected within the United States, with foreign-country and third-party exceptions. No worldwide CC0 dedication or Census endorsement is claimed. Code and aggregate source data are available in the <a href="https://github.com/ahmadreza-smdi/metro-rent-burden/releases/tag/v1.1.1">version 1.1.1 GitHub release</a>.</p></section>
+<section class="panel" aria-labelledby="sources"><h2 id="sources">Primary sources</h2><ul class="source-list">
+<li><a href="https://www.census.gov/programs-surveys/acs/data/summary-file.html">Census ACS table-based summary files</a>; exact 2024 B25070 and geography-file URLs are retained in the source record.</li>
+<li><a href="https://data.census.gov/table/ACSDT1Y2024.B25070">2024 ACS 1-year table B25070</a>, including its renter-occupied-unit universe.</li>
+<li><a href="https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2024_ACSSubjectDefinitions.pdf">2024 ACS subject definitions</a>, printed pages 19–20: gross rent and rent-to-income ratio.</li>
+<li><a href="https://www.census.gov/programs-surveys/acs/news/data-releases/2025/release.html">2025 release notice</a>, checked 17 October 2026.</li>
+<li><a href="https://www2.census.gov/foia/ds_policies/ds027.pdf">Census DS027 public-access policy</a>, printed page 9: reuse limits.</li></ul></section>
+<section class="panel" aria-labelledby="next"><h2 id="next">Start with the next decision</h2><p>Before reusing a rent-burden headline, record which units it describes, which units it excludes, the survey vintage and what the uncertainty allows you to say. If the question is about one property, collect property-specific evidence instead of substituting a metropolitan percentage.</p>
+<p><a href="https://a-samadi.com/writing/why-rent-to-value-is-not-property-yield.html">Why rent divided by home value is not property yield</a> · <a href="https://a-samadi.com/tools/rental-cash-flow.html">Property-specific cash-flow worksheet</a> · <a href="https://a-samadi.com/topics/ai-real-estate.html">AI in real estate reading path</a></p></section>
+
+<!-- study-publication-details:start -->
+<section class="panel" aria-labelledby="study-publication-details"><h2 id="study-publication-details">Dates, columns and reuse</h2><p>The observations are ACS 2024 one-year estimates. They are not 2026 asking rents. Source estimate/MOE pairs are retained; derived percentage MOEs have not been calculated.</p><details><summary>CSV column dictionary (35 distinct fields)</summary><dl><dt><code style="overflow-wrap:anywhere">geo_id</code></dt><dd>Exact GEO_ID from the source geography file; keep as text, including its geography-vintage marker. Unit: identifier.</dd><dt><code style="overflow-wrap:anywhere">cbsa_code</code></dt><dd>Five-character CBSA code from the source geography file; preserve text and leading zeros. Unit: identifier.</dd><dt><code style="overflow-wrap:anywhere">metro_name</code></dt><dd>Published whole metropolitan-area label, not a property or city-only boundary. Unit: label.</dd><dt><code style="overflow-wrap:anywhere">survey_year</code></dt><dd>ACS 1-year source year, not download year or current market year. Unit: year.</dd><dt><code style="overflow-wrap:anywhere">status</code></dt><dd>Analysis availability status. This fixed released snapshot contains only ok. The builder can also report unavailable source estimate or zero computable denominator. Unit: status.</dd><dt><code style="overflow-wrap:anywhere">renter_units_total</code></dt><dd>Total renter-occupied housing units; not a count of people or only cash-rent units. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">not_computed_units</code></dt><dd>Units for which the source ratio is not computed; retained separately, not treated as zero burden. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">computable_units</code></dt><dd>Denominator for the two threshold percentages. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">rent_30plus_units</code></dt><dd>Units in the published 30.0%-or-more bins. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">rent_50plus_units</code></dt><dd>Units in the published 50.0%-or-more bin; a subset of rent_30plus_units. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">rent_30plus_pct</code></dt><dd>Share of computable units at 30.0% or more, rounded to six decimals; not a 0–1 fraction. Unit: percent (0–100).</dd><dt><code style="overflow-wrap:anywhere">rent_50plus_pct</code></dt><dd>Share of computable units at 50.0% or more; nested inside the 30% group. Do not add these percentages. Unit: percent (0–100).</dd><dt><code style="overflow-wrap:anywhere">not_computed_pct_all_renters</code></dt><dd>Share of all renter-occupied units with a not-computed ratio; its denominator differs from the two burden percentages. Unit: percent (0–100).</dd><dt><code style="overflow-wrap:anywhere">B25070_E001</code></dt><dd>Published estimate. Source token retained; a sentinel is not a valid count and never becomes zero. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">B25070_M001</code></dt><dd>Published margin of error for the matching estimate; not the error of a derived percentage. Source token retained; a sentinel is not a valid count and never becomes zero. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">B25070_E002</code></dt><dd>Published estimate. Source token retained; a sentinel is not a valid count and never becomes zero. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">B25070_M002</code></dt><dd>Published margin of error for the matching estimate; not the error of a derived percentage. Source token retained; a sentinel is not a valid count and never becomes zero. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">B25070_E003</code></dt><dd>Published estimate. Source token retained; a sentinel is not a valid count and never becomes zero. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">B25070_M003</code></dt><dd>Published margin of error for the matching estimate; not the error of a derived percentage. Source token retained; a sentinel is not a valid count and never becomes zero. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">B25070_E004</code></dt><dd>Published estimate. Source token retained; a sentinel is not a valid count and never becomes zero. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">B25070_M004</code></dt><dd>Published margin of error for the matching estimate; not the error of a derived percentage. Source token retained; a sentinel is not a valid count and never becomes zero. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">B25070_E005</code></dt><dd>Published estimate. Source token retained; a sentinel is not a valid count and never becomes zero. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">B25070_M005</code></dt><dd>Published margin of error for the matching estimate; not the error of a derived percentage. Source token retained; a sentinel is not a valid count and never becomes zero. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">B25070_E006</code></dt><dd>Published estimate. Source token retained; a sentinel is not a valid count and never becomes zero. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">B25070_M006</code></dt><dd>Published margin of error for the matching estimate; not the error of a derived percentage. Source token retained; a sentinel is not a valid count and never becomes zero. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">B25070_E007</code></dt><dd>Published estimate. Source token retained; a sentinel is not a valid count and never becomes zero. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">B25070_M007</code></dt><dd>Published margin of error for the matching estimate; not the error of a derived percentage. Source token retained; a sentinel is not a valid count and never becomes zero. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">B25070_E008</code></dt><dd>Published estimate. Source token retained; a sentinel is not a valid count and never becomes zero. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">B25070_M008</code></dt><dd>Published margin of error for the matching estimate; not the error of a derived percentage. Source token retained; a sentinel is not a valid count and never becomes zero. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">B25070_E009</code></dt><dd>Published estimate. Source token retained; a sentinel is not a valid count and never becomes zero. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">B25070_M009</code></dt><dd>Published margin of error for the matching estimate; not the error of a derived percentage. Source token retained; a sentinel is not a valid count and never becomes zero. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">B25070_E010</code></dt><dd>Published estimate. Source token retained; a sentinel is not a valid count and never becomes zero. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">B25070_M010</code></dt><dd>Published margin of error for the matching estimate; not the error of a derived percentage. Source token retained; a sentinel is not a valid count and never becomes zero. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">B25070_E011</code></dt><dd>Published estimate. Source token retained; a sentinel is not a valid count and never becomes zero. Unit: housing units.</dd><dt><code style="overflow-wrap:anywhere">B25070_M011</code></dt><dd>Published margin of error for the matching estimate; not the error of a derived percentage. Source token retained; a sentinel is not a valid count and never becomes zero. Unit: housing units.</dd></dl></details><h3 id="study-reuse">Reuse and citation</h3><p>Original study explanations and analytical selection/arrangement are shared under <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, to the extent Ahmadreza Samadi holds copyright or similar rights. Credit the author, link the licence and indicate changes. Underlying government data and documents retain their source status and exceptions; this does not relicense them or restrict public-domain facts. Existing code/dictionary licences, font notices, portraits and marks retain their own terms. Earlier grants are not withdrawn.</p><p>Source notices: <a href="https://www2.census.gov/foia/ds_policies/ds027.pdf">Census DS027, page 9</a>. These sources do not endorse this analysis.</p><p>Suggested citation: Ahmadreza Samadi (2026-10-17). Metro rent burden: reproducible ACS 2024 point estimates. Software/method version 1.1.1. https://a-samadi.com/studies/rent-burden/</p></section>
+<!-- study-publication-details:end -->
+<section class="panel" aria-labelledby="author"><h2 id="author">About the author</h2><p>Dubai-based technology entrepreneur <a href="/about.html" rel="author">Ahmadreza Samadi</a> is Co-Founder &amp; Technical Lead of Appraiva, building AI real estate intelligence, and Co-Founder &amp; CEO of Royal Abraj Group.</p><p class="small" data-brand-series>Part of Property Decision Data</p><p>AI assisted the analysis pipeline, drafting and source comparison. No customer outcome, personal transaction, performed company experiment or native-language review is claimed.</p></section>
+<!-- follow-subscribe:start -->
+<aside class="details follow-subscribe" aria-labelledby="follow-subscribe-title">
+<h2 id="follow-subscribe-title">Follow / Subscribe</h2>
+<nav aria-label="Follow Ahmadreza Samadi"><a href="https://www.linkedin.com/newsletters/7516204575893393408/"><bdi>Get the weekly brief</bdi></a> · <a href="https://www.youtube.com/@ahmadreza-samadi"><bdi>YouTube</bdi></a> · <a href="https://www.instagram.com/ahmadreza_smdi/"><bdi>Instagram</bdi></a> · <a href="https://www.linkedin.com/in/ahmadreza-samadi/"><bdi>LinkedIn</bdi></a></nav>
+</aside>
+<!-- follow-subscribe:end -->
+</main><footer><a href="/ideas.html">Signature ideas</a> · <a href="/studies/">Property Decision Data</a> · <a href="https://a-samadi.com/writing/">All writing</a> · <a href="https://a-samadi.com/topics/ai-real-estate.html">AI and property decisions</a><p>Source snapshot: 17 October 2026. Data year: 2024. Read the method and limitations above.</p></footer></body></html>

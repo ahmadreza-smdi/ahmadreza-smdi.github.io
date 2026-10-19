@@ -19,7 +19,7 @@ OG_IMAGE = BASE + '/assets/img/ahmadreza-samadi-og.jpg'
 def mixed(value, lang):
     text = escape(value)
     if lang != 'en':
-        for name in ('Ahmadreza Samadi', 'Ahmad Samadi', 'Appraiva', 'Oxfam Novib', 'MCI', 'Bayshire Realty', 'JPG', 'SVG'):
+        for name in ('Ahmadreza Samadi', 'Ahmad Samadi', 'Appraiva', 'Royal Abraj Group', 'Oxfam Novib', 'MCI', 'Bayshire Realty', 'JPG', 'SVG'):
             text = text.replace(name, '<bdi lang="en">' + name + '</bdi>')
     return text
 
@@ -31,6 +31,19 @@ def validate(data):
     english = data['pages']['en']
     if english['short_bio'] != short or english['extended_bio'] != extended:
         raise ValueError('Update press biography copy in all languages to match the current approved public biography')
+    brand = data['brand']
+    for length, text in brand['bios']['en'].items():
+        if len(text.split()) != int(length):
+            raise ValueError('English brand bio does not match its stated word count')
+    author_bios = json.loads((ROOT / 'locales/author-bios.json').read_text())
+    for lang in ('en', 'fa', 'ar'):
+        if brand['bios'][lang]['25'] != author_bios[lang]:
+            raise ValueError('Press and article author biographies differ')
+    if brand['bios']['en']['25'] != short or brand['bios']['en']['100'] != '\n\n'.join(extended):
+        raise ValueError('Public biography does not match the brand bio set')
+    for figure in brand['figures']:
+        if not figure['source_years'] or not figure['url'] or set(figure['labels']) != set(LOCALES):
+            raise ValueError('Study figures require source years, destination and all locale labels')
     if data['primary_language'] != 'en' or data['email'] != 'ahmadreza.smdi@gmail.com':
         raise ValueError('Press resources must use English first and the personal email')
     for resource in data['resources']:
@@ -92,6 +105,36 @@ def schema(data, lang):
     return {'@context': 'https://schema.org', '@graph': [page, breadcrumb]}
 
 
+def brand_bios(data, lang):
+    brand = data['brand']
+    labels = brand['labels'][lang]
+    parts = [f'<section class="profile-resources" id="bio-set" aria-labelledby="bio-set-title"><h2 id="bio-set-title">{escape(labels["bios"])}</h2>']
+    for length, text in brand['bios'][lang].items():
+        heading = (f'{length} words' if lang == 'en' else
+                   f'ترجمهٔ بیوی {length} کلمه‌ای انگلیسی' if lang == 'fa' else
+                   f'ترجمة النبذة الإنجليزية من {length} كلمة')
+        parts.append(f'<h3 id="bio-{length}">{heading}</h3><p>{mixed(text, lang)}</p>')
+    parts.append('</section>')
+    return parts
+
+
+def brand_identity(data, lang):
+    brand = data['brand']
+    labels = brand['labels'][lang]
+    parts = [f'<section class="profile-resources" id="brand-usage"><h2>{escape(labels["usage"])}</h2><p>{mixed(labels["usage_copy"], lang)}</p>',
+             f'<h3>{escape(labels["palette"])}</h3><ul class="brand-palette">']
+    parts.extend(f'<li><bdi lang="en">{escape(name)} <code>{colour}</code></bdi></li>' for name, colour in brand['colours'].items())
+    parts.extend(['</ul>', f'<h3>{escape(labels["series"])}</h3><ul>'])
+    parts.extend(f'<li><bdi lang="en">{escape(name)}</bdi></li>' for name in brand['series'])
+    parts.extend(['</ul></section>', f'<section class="profile-resources" id="study-figures"><h2>{escape(labels["figures"])}</h2><ul>'])
+    for figure in brand['figures']:
+        parts.append(f'<li><p><strong>{figure["value"]}</strong> — {mixed(figure["labels"][lang], lang)}</p>'
+                     f'<p><a href="{escape(figure["url"], quote=True)}"><bdi lang="en">{escape(figure["source_years"])}</bdi></a></p></li>')
+    parts.extend(['</ul></section>', f'<section class="profile-resources" id="how-to-cite"><h2>{escape(labels["cite"])}</h2><p>{mixed(labels["cite_copy"], lang)}</p>',
+                  f'<p><a href="/ideas.html">{escape(labels["idea_link"])}</a> · <a href="/studies/">{escape(labels["data_link"])}</a></p></section>'])
+    return parts
+
+
 def build(data, lang):
     copy = data['pages'][lang]
     url = BASE + copy['path']
@@ -130,6 +173,7 @@ def build(data, lang):
               f'<meta name="twitter:image:alt" content="{escape(copy["portrait_alt"])}">',
               '<script type="application/ld+json">' + json.dumps(schema(data, lang), ensure_ascii=False, indent=2) + '</script>',
               '<script src="/js/site-analytics.js?v=20261009-analytics1" defer></script>',
+              '<link rel="stylesheet" href="/css/brand-layer.css?v=20261018-brand1">',
               '</head>', f'<body class="{body_class}">',
               f'<a class="skip-link" href="#main">{escape(copy["skip"])}</a>',
               f'<header class="editorial-header"><a href="{copy["home_path"]}"><img src="/assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">{escape(copy["name"])} / {escape(copy["home"])}</a></header>',
@@ -141,11 +185,10 @@ def build(data, lang):
               f'<a href="#press-contact">{escape(copy["contact_heading"])}</a>', '</div></div>',
               '<figure class="press-portrait">',
               f'<img src="{data["portrait_display"]["src"]}" srcset="{data["portrait_display"]["srcset"]}" sizes="(max-width: 259px) calc(100vw - 54px), 206px" alt="{escape(copy["portrait_alt"])}" width="900" height="1200" decoding="async">',
-              f'<figcaption>{escape(copy["portrait_caption"])}</figcaption></figure></div>',
-              f'<section class="profile-resources" aria-labelledby="short-bio-title"><h2 id="short-bio-title">{escape(copy["short_heading"])}</h2><p>{mixed(copy["short_bio"], lang)}</p></section>',
-              f'<section class="profile-resources" aria-labelledby="extended-bio-title"><h2 id="extended-bio-title">{escape(copy["extended_heading"])}</h2>']
-    parts.extend('<p>' + mixed(paragraph, lang) + '</p>' for paragraph in copy['extended_bio'])
-    parts += ['</section>', f'<section class="profile-resources quick-facts" aria-labelledby="press-facts-title"><h2 id="press-facts-title">{escape(copy["facts_heading"])}</h2><dl class="quick-facts-list">']
+              f'<figcaption>{escape(copy["portrait_caption"])}</figcaption></figure></div>']
+    parts.extend(brand_bios(data, lang))
+    parts.extend(brand_identity(data, lang))
+    parts += [f'<section class="profile-resources quick-facts" aria-labelledby="press-facts-title"><h2 id="press-facts-title">{escape(copy["facts_heading"])}</h2><dl class="quick-facts-list">']
     parts.extend(f'<div><dt>{mixed(fact["label"], lang)}</dt><dd>{mixed(fact["value"], lang)}</dd></div>' for fact in copy['facts'])
     parts += ['</dl></section>', f'<section class="profile-resources" id="press-resources" aria-labelledby="press-resources-title"><h2 id="press-resources-title">{escape(copy["resources_heading"])}</h2><p>{escape(copy["resources_intro"])}</p><div class="profile-downloads">']
     parts.extend(f'<a href="{resource["path"]}" download>{mixed(copy["resource_labels"][resource["id"]], lang)}</a>' for resource in data['resources'])
@@ -159,7 +202,7 @@ def build(data, lang):
               f'<section class="profile-resources" aria-labelledby="press-context-title"><h2 id="press-context-title">{escape(copy["context_heading"])}</h2><ul>']
     parts.extend(f'<li><a href="{link["path"]}">{mixed(link["label"], lang)}</a></li>' for link in copy['context_links'])
     parts += ['</ul></section>',
-              f'<footer class="editorial-footer"><nav aria-label="{escape(copy["context_heading"])}"><a href="{copy["context_links"][0]["path"]}">{escape(copy["footer_about"])}</a> · <a href="{copy["home_path"]}#contact">{escape(copy["footer_contact"])}</a></nav><p>{escape(copy["portrait_caption"])}</p></footer>',
+              f'<footer class="editorial-footer"><nav aria-label="{escape(copy["context_heading"])}"><a href="{copy["context_links"][0]["path"]}">{escape(copy["footer_about"])}</a> · <a href="/ideas.html">{escape(data["brand"]["labels"][lang]["idea_link"])}</a> · <a href="/studies/">{escape(data["brand"]["labels"][lang]["data_link"])}</a> · <a href="{copy["home_path"]}#contact">{escape(copy["footer_contact"])}</a></nav><p>{escape(copy["portrait_caption"])}</p></footer>',
               '</main>', '</body>', '</html>']
     return '\n'.join(parts) + '\n'
 
