@@ -86,6 +86,7 @@ Series: Start with the Decision (ideas and newsletter); Property Decision Data (
 - [A map answer. The right place?](https://a-samadi.com/writing/geospatial-ai-map-answer-review.html): Which boundary? Which date? Which source and assumptions? Keep unsupported conclusions open.
 - [Why your phone puts you across the street](https://a-samadi.com/writing/phone-location-across-street.html): A fictional pickup explains reflected satellite signals, an uncertain map dot and a practical way to agree where to meet.
 - [AI agents need shared notes, and a way to check them](https://a-samadi.com/writing/ai-agents-shared-notebook.html): A fictional repair workshop explains reusable agent knowledge, context checks and a boundary for private project information.
+- [Tesla says Roadster can fly: three questions to ask](https://a-samadi.com/writing/tesla-roadster-flight-claim.html): An illustrated hangar explains thrust and separates a manufacturer claim from availability and public-road approval.
 
 ## Films
 
@@ -97,6 +98,7 @@ Series: Start with the Decision (ideas and newsletter); Property Decision Data (
 - [Watch: iPhone Duo’s $800 price gap](https://a-samadi.com/watch/iphone-duo.html): By Ahmadreza Samadi. Watch the 104-second film comparing the $800 model-price gap over three years. English captions, a transcript and the calculation’s limits are included.
 - [Watch: Why your phone puts you across the street](https://a-samadi.com/watch/phone-location-across-street.html): Watch the English animated film about reflected satellite signals, an uncertain map dot and a fictional pickup.
 - [Watch: AI agents need shared notes, and a way to check them](https://a-samadi.com/watch/ai-agents-shared-notebook.html): Watch the English animated film about shared agent knowledge, context checks and a fictional repair workshop.
+- [Watch: Tesla says Roadster can fly: three questions to ask](https://a-samadi.com/watch/tesla-roadster-flight-claim.html): Watch the English animated film separating Tesla flight claims, access conditions and intended use, with an illustrated thrust mechanism.
 
 ## Tools
 

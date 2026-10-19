@@ -419,6 +419,13 @@
       "paths": {
         "en": "studies/rent-burden/index.html"
       }
+    },
+    "article_tesla_roadster_flight_claim": {
+      "paths": {
+        "en": "writing/tesla-roadster-flight-claim.html",
+        "fa": "fa/writing/tesla-roadster-flight-claim.html",
+        "ar": "ar/writing/tesla-roadster-flight-claim.html"
+      }
     }
   },
   "hubs": [
@@ -965,6 +972,7 @@
         "article_geospatial_ai_map_answer_review",
         "article_phone_location_across_street",
         "article_ai_agents_shared_notebook",
+        "article_tesla_roadster_flight_claim",
         "tech_film_ai_confidence",
         "tech_film_cookie_consent",
         "tech_film_charging_80",
@@ -1004,7 +1012,8 @@
         "article_on_device_ai_scam_warnings_explained",
         "article_geospatial_ai_map_answer_review",
         "article_phone_location_across_street",
-        "article_ai_agents_shared_notebook"
+        "article_ai_agents_shared_notebook",
+        "article_tesla_roadster_flight_claim"
       ],
       "all_articles_heading": {
         "en": "Existing explainers and films",

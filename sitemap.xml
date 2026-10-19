@@ -1945,4 +1945,48 @@
         <loc>https://a-samadi.com/studies/rent-burden/</loc>
         <lastmod>2026-10-19T10:43:53+03:30</lastmod>
     </url>
+    <url>
+        <loc>https://a-samadi.com/writing/tesla-roadster-flight-claim.html</loc>
+        <lastmod>2026-10-19T21:25:38+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/tesla-roadster-flight-claim.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/tesla-roadster-flight-claim.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/tesla-roadster-flight-claim.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/tesla-roadster-flight-claim.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/tesla-roadster-flight-claim/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/tesla-roadster-flight-claim.html</loc>
+        <lastmod>2026-10-19T21:25:38+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/tesla-roadster-flight-claim.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/tesla-roadster-flight-claim.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/tesla-roadster-flight-claim.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/tesla-roadster-flight-claim.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/tesla-roadster-flight-claim/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/tesla-roadster-flight-claim.html</loc>
+        <lastmod>2026-10-19T21:25:38+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/tesla-roadster-flight-claim.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/tesla-roadster-flight-claim.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/tesla-roadster-flight-claim.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/tesla-roadster-flight-claim.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/tesla-roadster-flight-claim/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/watch/tesla-roadster-flight-claim.html</loc>
+        <lastmod>2026-10-19T21:25:38+03:30</lastmod>
+        <video:video>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/tesla-roadster-flight-claim/cover.png</video:thumbnail_loc>
+            <video:title>Tesla says Roadster can fly: three questions to ask</video:title>
+            <video:description>An illustrated hangar explains thrust and separates a manufacturer claim from availability and public-road approval.</video:description>
+            <video:content_loc>https://a-samadi.com/assets/writing/tesla-roadster-flight-claim/film.mp4</video:content_loc>
+            <video:publication_date>2026-10-19T21:25:38+03:30</video:publication_date>
+        </video:video>
+    </url>
 </urlset>
