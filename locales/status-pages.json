@@ -4,7 +4,7 @@
   "pages": [
     {
       "id": "now",
-      "updated_at": "2026-10-18T22:05:29+03:30",
+      "updated_at": "2026-10-20T02:03:18+03:30",
       "locales": {
         "en": {
           "title": "Now | Ahmadreza Samadi",
@@ -39,18 +39,23 @@
               ]
             },
             {
-              "id": "this-week",
-              "heading": "This week: public work and preparation",
+              "heading": "This week: ideas with evidence",
               "paragraphs": [
-                "On 18 October I updated my public GitHub profile README to connect my property-data studies, decision tools and three signature ideas. I also updated the biography and media resources on this website. These are changes to how the work is presented, not evidence of audience growth or better investment decisions.",
-                "I am preparing an Ideas page, a studies hub and clearer reading paths through existing essays. They remain unpublished at this update. Three further editions of Start with the Decision are scheduled for 10, 17 and 24 November; a saved schedule is not a published edition."
+                "On 19 October I published the Signature ideas page, the Property Decision Data studies hub and the on-site rent-burden study. The Ideas page connects three principles to essays, tools and practical checklists. The studies hub provides a starting point for inspecting the data, methods and limits behind the work.",
+                "The three principles are: start with the decision, define where AI must stop, and count cost per accepted result. For a property-data question, the rent-burden study is one concrete place to examine the source and method before interpreting a result. The media resources page links to these English resources.",
+                "I also updated my public GitHub profile with my full and short names in English and Persian, my selected portrait and links to the newly published pages."
               ],
               "links": [
+                {
+                  "path": "press.html",
+                  "label": "Published studies, ideas and media resources"
+                },
                 {
                   "path": "about.html",
                   "label": "Biography and official profiles"
                 }
-              ]
+              ],
+              "id": "this-week"
             },
             {
               "id": "public-tools-data",
@@ -142,18 +147,23 @@
               ]
             },
             {
-              "id": "this-week",
-              "heading": "این هفته: کارهای منتشرشده و آماده‌سازی",
+              "heading": "این هفته: ایده‌ها همراه با شواهد",
               "paragraphs": [
-                "در ۱۸ اکتبر، معرفی عمومی گیت‌هابم را به‌روز کردم تا مطالعات داده‌های املاک، ابزارهای تصمیم‌گیری و سه ایدهٔ اصلی‌ام را به هم پیوند دهد. زندگی‌نامه و منابع رسانه‌ای این وب‌سایت را هم به‌روز کردم. این‌ها تغییراتی در نحوهٔ ارائهٔ کار هستند؛ نشانهٔ رشد مخاطب یا بهتر شدن تصمیم‌های سرمایه‌گذاری نیستند.",
-                "در حال آماده‌سازی صفحهٔ ایده‌ها، مرکز مطالعات و مسیرهای روشن‌تر برای خواندن مقاله‌های موجود هستم. هنگام این به‌روزرسانی هنوز منتشر نشده‌اند. سه شمارهٔ دیگر خبرنامهٔ Start with the Decision برای ۱۰، ۱۷ و ۲۴ نوامبر زمان‌بندی شده‌اند؛ ذخیره شدن زمان‌بندی به معنی انتشار شماره نیست."
+                "در ۱۹ اکتبر، صفحهٔ ایده‌های اصلی، مرکز مطالعات داده برای تصمیم‌گیری دربارهٔ املاک و نسخهٔ وب‌سایتی مطالعهٔ فشار اجاره را منتشر کردم. صفحهٔ ایده‌ها سه اصل را به مقاله‌ها، ابزارها و چک‌لیست‌های کاربردی پیوند می‌دهد. مرکز مطالعات نقطهٔ شروعی برای بررسی داده‌ها، روش‌ها و محدودیت‌های این کارهاست.",
+                "این سه اصل عبارت‌اند از: از تصمیم شروع کن، مشخص کن هوش مصنوعی کجا باید متوقف شود، و هزینهٔ هر نتیجهٔ پذیرفته‌شده را حساب کن. برای یک پرسش دربارهٔ داده‌های املاک، مطالعهٔ فشار اجاره نمونه‌ای مشخص برای بررسی منبع و روش، پیش از تفسیر نتیجه است. صفحهٔ منابع رسانه‌ای به این منابع انگلیسی پیوند دارد.",
+                "پروفایل عمومی گیت‌هابم را هم با شکل کامل و کوتاه نامم به انگلیسی و فارسی، عکس منتخبم و پیوند صفحه‌های تازه‌منتشرشده به‌روز کردم."
               ],
               "links": [
+                {
+                  "path": "press.html",
+                  "label": "مطالعات منتشرشده، ایده‌ها و منابع رسانه‌ای"
+                },
                 {
                   "path": "about.html",
                   "label": "زندگی‌نامه و پروفایل‌های رسمی"
                 }
-              ]
+              ],
+              "id": "this-week"
             },
             {
               "id": "public-tools-data",
@@ -245,18 +255,23 @@
               ]
             },
             {
-              "id": "this-week",
-              "heading": "هذا الأسبوع: أعمال منشورة وأعمال قيد الإعداد",
+              "heading": "هذا الأسبوع: أفكار مدعومة بالأدلة",
               "paragraphs": [
-                "في ١٨ أكتوبر حدّثت ملف التعريف العام في GitHub لربط دراساتي لبيانات العقارات وأدوات القرار وأفكاري الرئيسية الثلاث. وحدّثت أيضًا السيرة والموارد الإعلامية في هذا الموقع. هذه تغييرات في طريقة عرض العمل، ولا تثبت نمو الجمهور أو تحسّن قرارات الاستثمار.",
-                "أُعدّ صفحة للأفكار ومركزًا للدراسات ومسارات أوضح لقراءة المقالات الموجودة. ولم تُنشر هذه الصفحات عند هذا التحديث. جرى تحديد مواعيد ثلاثة أعداد إضافية من Start with the Decision في ١٠ و١٧ و٢٤ نوفمبر؛ وحفظ موعد النشر لا يعني أن العدد قد نُشر."
+                "في ١٩ أكتوبر نشرت صفحة الأفكار الرئيسية ومركز دراسات البيانات لاتخاذ القرارات العقارية ونسخة الموقع من دراسة عبء الإيجار. تربط صفحة الأفكار ثلاثة مبادئ بمقالات وأدوات وقوائم مراجعة عملية. ويقدّم مركز الدراسات نقطة بداية لفحص البيانات والمنهجيات والقيود التي يقوم عليها هذا العمل.",
+                "المبادئ الثلاثة هي: ابدأ بالقرار، وحدّد أين يجب أن يتوقف الذكاء الاصطناعي، واحسب التكلفة لكل نتيجة مقبولة. وفي سؤال عن بيانات العقارات، تمثّل دراسة عبء الإيجار مثالًا ملموسًا لفحص المصدر والمنهج قبل تفسير النتيجة. وتوفّر صفحة الموارد الإعلامية روابط إلى هذه الموارد باللغة الإنجليزية.",
+                "حدّثت أيضًا ملفي العام على GitHub باسمي الكامل والمختصر بالإنجليزية والفارسية، وصورتي المختارة، وروابط الصفحات المنشورة حديثًا."
               ],
               "links": [
+                {
+                  "path": "press.html",
+                  "label": "الدراسات المنشورة والأفكار والموارد الإعلامية"
+                },
                 {
                   "path": "about.html",
                   "label": "السيرة والحسابات الرسمية"
                 }
-              ]
+              ],
+              "id": "this-week"
             },
             {
               "id": "public-tools-data",

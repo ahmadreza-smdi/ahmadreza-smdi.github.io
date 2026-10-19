@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parent.parent
 BASE = 'https://a-samadi.com/'
 NS = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
 SUMMARY = (
-    'Official website of Ahmadreza Samadi (also Ahmad Samadi; Persian: احمدرضا صمدی; Arabic: أحمدرضا صمدي), '
+    'Official website of Ahmadreza Samadi (also Ahmad Samadi; Persian: احمدرضا صمدی, short form احمد صمدی; Arabic: أحمدرضا صمدي), '
     'a Dubai-based technology entrepreneur. He is Co-Founder & Technical Lead at Appraiva, a US-based company in '
     'Cleveland, Ohio, building AI real estate intelligence (he works remotely), and Co-Founder & CEO of Royal Abraj '
     'Group, a Dubai business spanning property brokerage and documents-clearing services.'

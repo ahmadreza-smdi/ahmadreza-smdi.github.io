@@ -316,7 +316,7 @@ for cluster in clusters:
    entity=profile.get('mainEntity',{})
    person=entity if entity.get('@type')=='Person' else next((item for item in graph if item.get('@type')=='Person' and item.get('@id')==entity.get('@id')),None)
    assert person and person.get('@id')==BASE+'#person' and person.get('name')=='Ahmadreza Samadi', f'{name}: inconsistent person identity'
-   assert {'احمدرضا صمدی','أحمدرضا صمدي','Ahmad Samadi'} <= set(person.get('alternateName',[])), f'{name}: missing established name variation'
+   assert {'احمدرضا صمدی','احمد صمدی','أحمدرضا صمدي','Ahmad Samadi'} <= set(person.get('alternateName',[])), f'{name}: missing established name variation'
    assert {'https://www.instagram.com/ahmadreza_smdi/','https://www.linkedin.com/in/ahmadreza-samadi/'} <= set(person.get('sameAs',[])), f'{name}: missing official social identity link'
    check_profile_links(source,name,profile_person(source,name),approved_person,approved_profile_urls)
    modified=profile.get('dateModified')
