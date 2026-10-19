@@ -407,6 +407,13 @@
         "fa": "fa/writing/phone-location-across-street.html",
         "ar": "ar/writing/phone-location-across-street.html"
       }
+    },
+    "article_ai_agents_shared_notebook": {
+      "paths": {
+        "en": "writing/ai-agents-shared-notebook.html",
+        "fa": "fa/writing/ai-agents-shared-notebook.html",
+        "ar": "ar/writing/ai-agents-shared-notebook.html"
+      }
     }
   },
   "hubs": [
@@ -950,6 +957,7 @@
         "article_on_device_ai_scam_warnings_explained",
         "article_geospatial_ai_map_answer_review",
         "article_phone_location_across_street",
+        "article_ai_agents_shared_notebook",
         "tech_film_ai_confidence",
         "tech_film_cookie_consent",
         "tech_film_charging_80",
@@ -988,7 +996,8 @@
         "article_where_wearable_ai_computation_runs",
         "article_on_device_ai_scam_warnings_explained",
         "article_geospatial_ai_map_answer_review",
-        "article_phone_location_across_street"
+        "article_phone_location_across_street",
+        "article_ai_agents_shared_notebook"
       ],
       "all_articles_heading": {
         "en": "Existing explainers and films",

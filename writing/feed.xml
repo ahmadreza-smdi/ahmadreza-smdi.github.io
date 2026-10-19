@@ -8,6 +8,14 @@
     <dc:creator>Ahmadreza Samadi</dc:creator>
     <atom:link href="https://a-samadi.com/writing/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>AI agents need shared notes, and a way to check them</title>
+      <link>https://a-samadi.com/writing/ai-agents-shared-notebook.html</link>
+      <description>A fictional repair workshop explains reusable agent knowledge, context checks and a boundary for private project information.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Mon, 19 Oct 2026 06:43:02 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/ai-agents-shared-notebook.html</guid>
+    </item>
+    <item>
       <title>Why your phone puts you across the street</title>
       <link>https://a-samadi.com/writing/phone-location-across-street.html</link>
       <description>A fictional pickup explains reflected satellite signals, an uncertain map dot and a practical way to agree where to meet.</description>
