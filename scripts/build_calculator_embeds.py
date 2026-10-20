@@ -13,7 +13,7 @@ def embedded(source,stem):
     return result
 def main():
     check='--check' in sys.argv;changed=[]
-    for stem in ['rental-cash-flow','dubai-purchase-cost']:
+    for stem in ['rental-cash-flow','dubai-purchase-cost','valuation-range']:
         primary=ROOT/'tools'/f'{stem}.html';destination=ROOT/'tools/embed'/f'{stem}.html';result=embedded(primary.read_text(),stem)
         old=destination.read_text() if destination.exists() else None
         if old!=result:
@@ -22,5 +22,5 @@ def main():
                 if destination.exists() and destination.read_text()!=old:raise RuntimeError('Concurrent embed edit')
                 destination.parent.mkdir(exist_ok=True);destination.write_text(result)
     if check and changed:raise SystemExit('STALE calculator embeds: '+', '.join(changed))
-    print('PASS calculator embeds:2; '+str(len(changed))+' changes')
+    print('PASS calculator embeds:3; '+str(len(changed))+' changes')
 if __name__=='__main__':main()

@@ -5,6 +5,7 @@ under Optional. Titles and descriptions are read from the pages themselves, so t
 step with the site. Run with --check to report whether llms.txt is out of date.
 """
 from pathlib import Path
+from build_profile_facts import FACTS
 from html.parser import HTMLParser
 import html
 import re
@@ -171,7 +172,7 @@ def build():
         if name:
             label = {BASE: 'Homepage', BASE + 'about.html': 'Biography'}.get(url) or title(text)
             groups[name].append(f'- [{label}]({url}): {meta(text, "description")}')
-    lines = ['# Ahmadreza Samadi', '', f'> {SUMMARY}', '', NOTES, '']
+    lines = ['# Ahmadreza Samadi', '', f'> {SUMMARY}', '', NOTES, '', FACTS, '']
     lines += ['## Four main topics', '', *[
         f'- [{label}]({BASE}{path})' for label, path in BEST_PAGES
     ], '']

@@ -12,6 +12,18 @@ Positioning, in his own words: "I build AI that helps people make better propert
 
 Series: Start with the Decision (ideas and newsletter); Property Decision Data (studies and tools); Tech, explained (plain-language articles and films).
 
+## Facts — as of October 2026
+
+- Based in Dubai, United Arab Emirates; also known as Ahmad Samadi.
+- Co-Founder & Technical Lead of Appraiva since October 2023. Appraiva is based in Cleveland, Ohio, United States; he works remotely from Dubai. It builds AI tools for investors and developers to find distressed and off-market properties through imagery analysis and enriched property data.
+- Co-Founder & CEO of Royal Abraj Group since 2022. The Dubai group covers property brokerage and documents-clearing services; he leads digital strategy and technology. The start month is not stated.
+- Background: enterprise data engineering and machine learning; Azure data infrastructure for CRM migration and analytics at Oxfam Novib; predictive customer segmentation at MCI.
+- Education: Master of Science in Computer Software Engineering, specialization in Data, Shahid Beheshti University, 2019–2021.
+- Spoken languages are not stated in the approved biography/CV. Translated pages do not establish language proficiency.
+- Contact: ahmadreza.smdi@gmail.com.
+- Other people share the name Ahmad Samadi; this is the official site of the Dubai-based technology entrepreneur.
+
+
 ## Four main topics
 
 - [AI property valuation](https://a-samadi.com/writing/ai-home-value-estimates.html)
@@ -96,6 +108,10 @@ Series: Start with the Decision (ideas and newsletter); Property Decision Data (
 - [Why your phone puts you across the street](https://a-samadi.com/writing/phone-location-across-street.html): A fictional pickup explains reflected satellite signals, an uncertain map dot and a practical way to agree where to meet.
 - [AI agents need shared notes, and a way to check them](https://a-samadi.com/writing/ai-agents-shared-notebook.html): A fictional repair workshop explains reusable agent knowledge, context checks and a boundary for private project information.
 - [Tesla says Roadster can fly: three questions to ask](https://a-samadi.com/writing/tesla-roadster-flight-claim.html): An illustrated hangar explains thrust and separates a manufacturer claim from availability and public-road approval.
+- [AVM vs appraisal: which fits your decision?](https://a-samadi.com/writing/avm-vs-appraisal.html): Choose the valuation process for the decision: compare AVMs, broker opinions and appraisals, then examine identity, dates, evidence and uncertainty.
+- [Rent or buy: the five numbers that decide it](https://a-samadi.com/writing/rent-or-buy-five-numbers.html): Compare rent and ownership using matched housing, running costs, upfront cash, time and net exit proceeds. Keep cash affordability separate from wealth.
+- [Where the person signs off: property AI review](https://a-samadi.com/writing/human-review-property-ai-checklist.html): A practical human-review checklist for property AI: define the decision, check evidence, preserve uncertainty and record who can approve the next action.
+- [Dubai property buying costs, item by item](https://a-samadi.com/writing/dubai-property-buying-costs.html): Build a dated Dubai purchase budget from official registration fees, mortgage charges and your own quotes. Separate total fees from the buyer’s share.
 
 ## Films
 
@@ -114,6 +130,7 @@ Series: Start with the Decision (ideas and newsletter); Property Decision Data (
 - [Before You Build the AI](https://a-samadi.com/tools/before-you-build-ai.html): Turn an AI idea into a decision, an evidence plan and a small first experiment. A free interactive field guide by Ahmadreza Samadi.
 - [Rental cash flow calculator](https://a-samadi.com/tools/rental-cash-flow.html): Separate annual rent, property costs, debt cash payments and upfront invested cash using your own AED inputs. Blank values remain unknown.
 - [Dubai purchase costs calculator](https://a-samadi.com/tools/dubai-purchase-cost.html): Estimate buyer-paid components for a completed residential purchase using dated fee rules, explicit payer shares and your actual quotes.
+- [Valuation range checker](https://a-samadi.com/tools/valuation-range.html): Compare two to five property estimates: median, range, spread and transparent review flags. Your inputs stay in your browser.
 
 ## Public code and data
 

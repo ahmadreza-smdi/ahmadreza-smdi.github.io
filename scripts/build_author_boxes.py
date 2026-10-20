@@ -46,6 +46,8 @@ IDEA_ARTICLES = {
     'connected-ai-apps.html', 'start-with-the-decision.html',
 }
 DATA_ARTICLES = {
+    'avm-vs-appraisal.html', 'rent-or-buy-five-numbers.html',
+    'human-review-property-ai-checklist.html', 'dubai-property-buying-costs.html',
     'ai-home-value-estimates.html', 'ai-rental-yield-cash-flow.html',
     'property-data-enrichment.html', 'which-dubai-property-source.html',
     'why-rent-to-value-is-not-property-yield.html',

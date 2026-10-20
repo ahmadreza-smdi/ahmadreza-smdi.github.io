@@ -428,6 +428,26 @@
         "fa": "fa/writing/tesla-roadster-flight-claim.html",
         "ar": "ar/writing/tesla-roadster-flight-claim.html"
       }
+    },
+    "day2_avm_vs_appraisal": {
+      "paths": {
+        "en": "writing/avm-vs-appraisal.html"
+      }
+    },
+    "day2_rent_or_buy_five_numbers": {
+      "paths": {
+        "en": "writing/rent-or-buy-five-numbers.html"
+      }
+    },
+    "day2_human_review_property_ai_checklist": {
+      "paths": {
+        "en": "writing/human-review-property-ai-checklist.html"
+      }
+    },
+    "day2_dubai_property_buying_costs": {
+      "paths": {
+        "en": "writing/dubai-property-buying-costs.html"
+      }
     }
   },
   "hubs": [
@@ -690,7 +710,11 @@
         "article_why_occupancy_sensor_lights_switch_off",
         "article_building_leak_alert_response_checklist",
         "article_dubai_sources",
-        "article_bacnet_building_devices_common_language"
+        "article_bacnet_building_devices_common_language",
+        "day2_avm_vs_appraisal",
+        "day2_rent_or_buy_five_numbers",
+        "day2_human_review_property_ai_checklist",
+        "day2_dubai_property_buying_costs"
       ],
       "all_articles_heading": {
         "en": "All articles in this topic",
@@ -716,7 +740,11 @@
         "article_why_occupancy_sensor_lights_switch_off",
         "article_building_leak_alert_response_checklist",
         "article_dubai_sources",
-        "article_bacnet_building_devices_common_language"
+        "article_bacnet_building_devices_common_language",
+        "day2_avm_vs_appraisal",
+        "day2_rent_or_buy_five_numbers",
+        "day2_human_review_property_ai_checklist",
+        "day2_dubai_property_buying_costs"
       ]
     },
     {

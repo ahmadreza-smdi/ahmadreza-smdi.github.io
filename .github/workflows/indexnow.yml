@@ -29,6 +29,10 @@ jobs:
         run: |
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/build_topic_hubs.py --check
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/build_article_hubs.py --check
+      - name: Verify dated profile facts and valuation arithmetic
+        run: |
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/build_profile_facts.py --check
+          node scripts/test_valuation_range.cjs
       - name: Verify public homepage passage export
         run: PYTHONDONTWRITEBYTECODE=1 python3 scripts/build_ask_index.py --check
       - name: Notify changed canonical pages after successful Pages deployment

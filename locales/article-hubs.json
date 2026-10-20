@@ -1200,6 +1200,98 @@
           "path": "writing/why-wifi-is-slow-with-full-bars.html"
         }
       ]
+    },
+    {
+      "stem": "avm-vs-appraisal",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "translation_status": "english-first",
+      "paths": {
+        "en": "writing/avm-vs-appraisal.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-home-value-estimates.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
+    },
+    {
+      "stem": "rent-or-buy-five-numbers",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "translation_status": "english-first",
+      "paths": {
+        "en": "writing/rent-or-buy-five-numbers.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/why-rent-to-value-is-not-property-yield.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
+    },
+    {
+      "stem": "human-review-property-ai-checklist",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "translation_status": "english-first",
+      "paths": {
+        "en": "writing/human-review-property-ai-checklist.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
+    },
+    {
+      "stem": "dubai-property-buying-costs",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "translation_status": "english-first",
+      "paths": {
+        "en": "writing/dubai-property-buying-costs.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/which-dubai-property-source.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
     }
   ]
 }
