@@ -57,7 +57,8 @@
         "portrait": "Download portrait (JPG)",
         "monogram": "Download personal monogram (SVG)",
         "contact": "Save contact details",
-        "selected_work": "Download selected public work (English PDF)"
+        "selected_work": "Download selected public work (English PDF)",
+        "facts_sheet": "Download one-page facts (English PDF)"
       },
       "portrait_alt": "Ahmadreza Samadi in a dark suit",
       "portrait_caption": "Ahmadreza Samadi · Technology Entrepreneur",
@@ -230,7 +231,8 @@
         "portrait": "دریافت تصویر چهره (JPG)",
         "monogram": "دریافت نشان شخصی (SVG)",
         "contact": "ذخیره اطلاعات تماس",
-        "selected_work": "دریافت گزیدهٔ آثار عمومی (PDF انگلیسی)"
+        "selected_work": "دریافت گزیدهٔ آثار عمومی (PDF انگلیسی)",
+        "facts_sheet": "دریافت برگهٔ یک‌صفحه‌ای اطلاعات (PDF انگلیسی)"
       },
       "portrait_alt": "احمدرضا صمدی با کت‌وشلوار تیره",
       "portrait_caption": "احمدرضا صمدی · کارآفرین فناوری",
@@ -403,7 +405,8 @@
         "portrait": "تنزيل الصورة الشخصية (JPG)",
         "monogram": "تنزيل الشعار الشخصي (SVG)",
         "contact": "حفظ بيانات الاتصال",
-        "selected_work": "تنزيل مختارات من الأعمال العامة (PDF بالإنجليزية)"
+        "selected_work": "تنزيل مختارات من الأعمال العامة (PDF بالإنجليزية)",
+        "facts_sheet": "تنزيل ورقة الحقائق من صفحة واحدة (PDF بالإنجليزية)"
       },
       "portrait_alt": "أحمدرضا صمدي يرتدي بدلة داكنة",
       "portrait_caption": "أحمدرضا صمدي · رائد أعمال تقني",
@@ -553,6 +556,10 @@
       "id": "contact",
       "path": "/assets/profile/ahmadreza-samadi.vcf",
       "mime": "text/vcard"
+    },
+    {
+      "id": "facts_sheet",
+      "path": "/assets/profile/ahmadreza-samadi-facts.pdf"
     }
   ],
   "portrait_display": {

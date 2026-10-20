@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="author" content="Ahmadreza Samadi">
-<title>AI Cost per Accepted Result: Beyond Token Prices | Ahmadreza Samadi</title>
+<title>AI cost per accepted result</title>
 <meta name="description" content="A practical framework for measuring AI workflow cost: include tokens, tools, retries and human review, then divide by results that pass verification.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://a-samadi.com/writing/ai-cost-per-verified-result.html">
@@ -18,13 +18,13 @@
 <meta property="og:site_name" content="Ahmadreza Samadi">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="fa_IR">
-<meta property="og:locale:alternate" content="ar_AE"><meta property="og:title" content="AI Cost per Accepted Result | Ahmadreza Samadi">
+<meta property="og:locale:alternate" content="ar_AE"><meta property="og:title" content="AI cost per accepted result">
 <meta property="og:description" content="Lower model prices help. The useful measure is the full cost of results that pass review.">
 <meta property="og:url" content="https://a-samadi.com/writing/ai-cost-per-verified-result.html">
 <meta property="og:image" content="https://a-samadi.com/assets/share/ai-cost-per-verified-result.png">
 <meta property="og:image:alt" content="English article cover: AI cost per verified result">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AI Cost per Accepted Result | Ahmadreza Samadi">
+<meta name="twitter:title" content="AI cost per accepted result">
 <meta name="twitter:description" content="Lower model prices help. The useful measure is the full cost of results that pass review.">
 <meta name="twitter:image" content="https://a-samadi.com/assets/share/ai-cost-per-verified-result.png">
 <meta name="twitter:image:alt" content="English article cover: AI cost per verified result">
@@ -41,7 +41,7 @@
       "@id": "https://a-samadi.com/ar/writing/ai-cost-per-verified-result.html#article"
     }
   ],
-  "headline": "AI Cost per Accepted Result: Beyond Token Prices",
+  "headline": "AI cost per accepted result",
   "description": "A practical framework for measuring the full cost of accepted AI workflow results.",
   "url": "https://a-samadi.com/writing/ai-cost-per-verified-result.html",
   "mainEntityOfPage": {
@@ -55,7 +55,7 @@
     }
   },
   "datePublished": "2026-09-24",
-  "dateModified": "2026-10-20T13:27:41+03:30",
+  "dateModified": "2026-10-20T21:02:45+03:30",
   "inLanguage": "en",
   "image": {
     "@type": "ImageObject",
@@ -71,7 +71,12 @@
   },
   "isPartOf": {
     "@id": "https://a-samadi.com/#website"
-  }
+  },
+  "citation": [
+    "https://arxiv.org/abs/2211.09110",
+    "https://www.nist.gov/itl/ai-risk-management-framework",
+    "https://developers.google.com/machine-learning/guides/rules-of-ml"
+  ]
 }
 </script>
 
@@ -81,38 +86,22 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="article:modified_time" content="2026-10-20T13:27:41+03:30">
-</head>
+<link rel="stylesheet" href="/css/property-guides.css?v=20261020-guides1"></head>
 <body class="editorial-body">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="editorial-header"><a href="/"><img src="../assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">Ahmadreza Samadi / Home</a></header>
 <main id="main" class="editorial">
 <p class="eyebrow">Analysis · AI product economics</p>
 <h1>AI cost per accepted result</h1>
-<p class="lead">The price of a model call matters. The cost of getting a useful result through a complete workflow matters more.</p>
-<p class="byline">By <a href="/about.html" rel="author">Ahmadreza Samadi</a> · 24 September 2026 · Updated <time datetime="2026-10-20T13:27:41+03:30">20 October 2026</time></p>
-<section aria-labelledby="article-at-a-glance">
-<h2 id="article-at-a-glance">At a glance</h2>
-<p>Divide the full workflow cost, including model calls, tools, retries and human review, by the number of results that pass a defined review standard. Cheaper requests do not automatically mean cheaper accepted results. The property-research example below is a proposed test, not a reported company result.</p>
-</section>
+<span id="article-at-a-glance"></span><p class="lead">Divide the full recorded workflow cost, including failed attempts, retries, tools and human review, by distinct results accepted under a rule fixed before the test. With no accepted results, unit cost is undefined. This is a measurement method, not independent certification of the outputs.</p><aside class="key-points" aria-labelledby="upgrade-key-points"><h2 id="upgrade-key-points">Key points</h2><ul><li>Include all recorded attempts, retries, tools and review costs.</li><li>Count distinct accepted results under a fixed rule.</li><li>With zero accepted results, unit cost is undefined.</li></ul></aside><div class="evidence-table"><table><caption>Original editorial comparison — all amounts and cases are fictional</caption><thead><tr><th scope="col">Step</th><th scope="col">Value or evidence</th><th scope="col">Interpretation</th></tr></thead><tbody><tr><td>Attempt 1, result A</td><td>0.25</td><td>Rejected</td></tr><tr><td>Attempt 2, result A</td><td>0.40</td><td>Accepted</td></tr><tr><td>Attempt 3, result B</td><td>0.20</td><td>Rejected</td></tr><tr><td>Total / one accepted result</td><td>0.85</td><td>Fictional costs, not a measured benchmark</td></tr></tbody></table></div>
+<p class="byline">By <a href="/about.html" rel="author">Ahmadreza Samadi</a> · 24 September 2026 · Updated <time datetime="2026-10-20T21:02:45+03:30">20 October 2026</time></p>
+
 <!-- cornerstone:start -->
 <section aria-labelledby="cornerstone-title"><h2 id="cornerstone-title">Measure cost per accepted result</h2><p><strong>Divide all recorded workflow costs by the number of distinct results accepted under a rule fixed before the test. Include retries and rejected attempts in cost; do not count repeated attempts as new accepted results.</strong></p><figure style="margin:1.5rem 0"><div class="cornerstone-flow" role="img" aria-label="Total recorded cost ÷ distinct accepted results. With none accepted, unit cost is undefined." style="text-align:center;max-width:100%"><div style="background:#BDE7D2;border:1px solid #0B6A7A;border-radius:12px;padding:.75rem;color:#0E2A33">All attempt costs</div><div aria-hidden="true" style="color:#0B6A7A">↓</div><div style="background:#C3DCF4;border:1px solid #0B6A7A;border-radius:12px;padding:.75rem;color:#0E2A33">Acceptance rule</div><div aria-hidden="true" style="color:#0B6A7A">↓</div><div style="background:#F2F7F5;border:1px solid #0B6A7A;border-radius:12px;padding:.75rem;color:#0E2A33">Cost per accepted result</div></div><figcaption>Total recorded cost ÷ distinct accepted results. With none accepted, unit cost is undefined.</figcaption></figure><p>This guide uses “accepted result” for an output that passes the recorded review rule. “Verified result” in the historical URL and earlier title refers to that same rule; neither term establishes independent certification. Keep unknown costs separate from explicit zero. Compare the same intended result batch and currency, and report acceptance counts alongside unit cost. A lower unit cost with a weaker acceptance rule is not a like-for-like improvement.</p><h3>A checklist for the next experiment</h3><ol><li>Freeze the task, intended result IDs and acceptance rule.</li><li>Record model, tool, labor and other costs consistently for all attempts.</li><li>Retain rejected attempts and retries in the numerator.</li><li>Count each accepted result once; report unknown cost inputs as unknown.</li><li>If no result is accepted, report total spend and zero accepted results, with unit cost undefined.</li></ol><p><a href="https://github.com/ahmadreza-smdi/ai-workflow-cost">Use the decision brief or tool</a> · <a href="/ideas.html">Explore the three signature ideas</a></p><h3>Primary references</h3><ul><li><a href="https://arxiv.org/abs/2211.09110" lang="en">Holistic Evaluation of Language Models (2022)</a></li><li><a href="https://www.nist.gov/itl/ai-risk-management-framework" lang="en">NIST AI RMF 1.0</a></li><li><a href="https://github.com/ahmadreza-smdi/ai-workflow-cost" lang="en">AI workflow cost ledger: source and measurement limits</a></li></ul><p>These references inform the evaluation and interaction principles. The workflow above is an editorial synthesis, not an endorsed standard or a reported company outcome.</p></section>
 <!-- cornerstone:end -->
 
 <section aria-labelledby="workflow-ledger-title">
-<h2 id="workflow-ledger-title">How can I try this with my own ledger?</h2>
-<p>The <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/releases/tag/v0.1.0">AI workflow cost ledger v0.1.0</a> is an offline Python tool with <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost#try-the-fictional-example">English instructions</a>. It includes recorded model, tool, review and other costs across retries and failed attempts. You supply the task, currency label and acceptance criterion.</p>
-<p>Start with the <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/v0.1.0/examples/fictional-attempts.csv">fictional sample ledger</a>: three attempts across two intended results, one accepted result and a total cost of 0.85 in the selected currency. These are invented teaching numbers. Missing costs are rejected; an explicit zero remains zero. If no result is accepted, unit cost is undefined while total spend remains visible.</p>
-<p>The tool totals your recorded costs and acceptance labels. It does not independently verify outputs or measure a company outcome.</p>
-<p>Prefer a spreadsheet? Download the <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/releases/download/v0.1.1/AI-Workflow-Experiment.xlsx">AI workflow experiment workbook (XLSX, in English)</a> to record the same result batch in manual and AI workflows, including retries, acceptance outcomes, costs, labor and elapsed time. It holds 10 paired results and 30 attempts. Its worked example is fictional teaching data.</p>
-<p id="workbook-start-guide">For setup and interpretation, use the <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/b26e9759dec443e265df6e4d08f5b411ebb3c635/docs/workbook-start.md">workbook starting guide (in English)</a>. It identifies editable ranges, formula cells and the fictional comparison, and explains how the workbook layout differs from the CLI CSV.</p>
-<p id="paired-ledger-comparison">Have two CLI ledgers for the same result IDs? The <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/tree/5eb52dc449cda3b3af6a14881a8801b31002fd94#compare-two-ledgers-for-the-same-recorded-results">paired-ledger comparison guide (in English)</a> shows both totals, accepted-result counts and unit costs in one JSON report. It includes failed and retried attempts and refuses mismatched result IDs or unknown costs. A lower total bill does not by itself mean a cheaper accepted result. The teaching examples are fictional; acceptance and cost completeness remain your responsibility. Prefer a local walkthrough? <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/11d627b9ddb0d1d778373c9bb6537b74c9e1c467/examples/AI-Cost-Paired-Ledgers.zip">Download the offline paired-ledger kit (in English)</a>, extract the entire ZIP and open <code>index.html</code>. Python 3.10 or newer is required to run its commands. If the comparison rejects different result IDs, use the <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/050e51d437cc38c7616be1acb63958ea58e32e54/docs/input-errors.md#the-comparison-has-unmatched-result-ids">input-error guide (in English)</a>; do not drop unmatched results or invent zero-cost attempts.</p>
-<p id="worked-cost-examples">Try three runnable teaching cases in the <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/releases/download/v0.1.2/AI-Cost-Worked-Examples.zip">worked AI cost examples (ZIP, in English)</a>. They illustrate full attempt costs, no accepted results and explicitly known zero costs. All data are fictional; the cases are not a model or workflow benchmark.</p>
-</section>
-<p>When an AI provider lowers its price, a team can afford to test more ideas. But a cheaper call does not automatically make a product cheaper to operate. The workflow may still need repeated calls, other tools, and a person to check the output.</p>
-<h2>What changed in September 2026?</h2>
-<p>On 22 September, <a href="https://openai.com/index/introducing-gpt-6-sol-and-luna/">OpenAI announced</a> that GPT-6 Sol and Luna API prices were 50% lower than their GPT-5.6 promotional prices. <a href="https://www.anthropic.com/claude-opus-5-5">Anthropic announced</a> lower prices for Claude Opus 5.5 and estimated about 40% lower cost for typical token-billed work than Opus 5. The providers use different baselines, so these percentages do not compare their models with each other.</p>
-<p>For a business, the opportunity is to retest tasks that were too expensive before. The decision still depends on quality, the amount of review required, and the cost of the whole process.</p>
-<h2>How do you calculate cost per accepted result?</h2>
+<h2 id="workflow-ledger-title">How can I try this with my own ledger?</h2><p>The offline ledger records costs and acceptance labels supplied by the user; it does not independently verify outputs. The teaching fixture has three attempts, two intended results, one accepted result and a total cost of 0.85. All amounts are fictional. Missing costs are rejected; explicit zero remains zero. Use the same task, currency and acceptance rule for both workflows.</p><p>Choose an existing resource:</p><ul><li><a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/releases/tag/v0.1.0">AI workflow cost ledger v0.1.0</a></li><li><a href="https://github.com/ahmadreza-smdi/ai-workflow-cost#try-the-fictional-example">English instructions</a></li><li><a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/v0.1.0/examples/fictional-attempts.csv">fictional sample ledger</a></li><li><a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/releases/download/v0.1.1/AI-Workflow-Experiment.xlsx">AI workflow experiment workbook (XLSX, in English)</a></li><li><a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/b26e9759dec443e265df6e4d08f5b411ebb3c635/docs/workbook-start.md">workbook starting guide (in English)</a></li><li><a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/tree/5eb52dc449cda3b3af6a14881a8801b31002fd94#compare-two-ledgers-for-the-same-recorded-results">paired-ledger comparison guide (in English)</a></li><li><a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/11d627b9ddb0d1d778373c9bb6537b74c9e1c467/examples/AI-Cost-Paired-Ledgers.zip">Download the offline paired-ledger kit (in English)</a></li><li><a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/050e51d437cc38c7616be1acb63958ea58e32e54/docs/input-errors.md#the-comparison-has-unmatched-result-ids">input-error guide (in English)</a></li><li><a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/releases/download/v0.1.2/AI-Cost-Worked-Examples.zip">worked AI cost examples (ZIP, in English)</a></li></ul></section><h2>How do you calculate cost per accepted result?</h2>
 <p>I would start with a simple measure:</p>
 <p><strong>Cost per accepted result = total workflow cost ÷ results that pass review.</strong></p>
 <p>The numerator includes model input and output, cached context, tool calls, retries, failed runs, and human review time. The denominator counts outputs that meet a defined standard for the task. A low price per request can still produce an expensive result when many requests fail or need extensive correction.</p>
@@ -126,7 +115,7 @@
 <h2>How would you test a property-research workflow?</h2>
 <p>Imagine testing a tool that flags property records for further investigation. Start with a human-labeled set of records. Ask the system to surface candidates with supporting evidence. Have a reviewer accept or reject each suggestion, then measure precision, recall, total cost, and time to a decision.</p>
 <p>That is a proposed experiment, not a description of an Appraiva feature or a reported company result. It illustrates why a model that is cheaper to call might still cost more per accepted candidate if it sends too many false leads to a reviewer.</p>
-<h2>What would I test first?</h2>
+<h3>What would I test first?</h3>
 <ul>
 <li>Choose one repetitive task and write down the current human process.</li>
 <li>Define a clear acceptance rule before running the AI test.</li>
@@ -138,11 +127,11 @@
 <p>New: how an <a href="jev-ai-decision-model.html">AI decision model like Jev</a> changes the cost per accepted decision, and what to check before giving an assistant <a href="connected-ai-apps.html">access to your apps</a>.</p>
 <p>I covered the same idea in an <a href="https://www.linkedin.com/feed/update/urn:li:activity:7508805808802086912/">eight-page LinkedIn document</a> for product and engineering teams and a <a href="https://www.instagram.com/p/Ddqbo0civsp/">plain-language Instagram carousel</a>. For the broader product approach, read <a href="start-with-the-decision.html">Start with the decision, then build the AI</a> or use the <a href="../tools/before-you-build-ai.html">interactive decision brief</a>.</p>
 
-<!-- article-hubs:start -->
+<p class="next-resource">Continue with the <a href="/writing/ai-human-review-real-estate.html">AI property decisions reference</a> and the <a href="/tools/before-you-build-ai.html">practical decision tool</a>.</p><section id="upgrade-sources"><h2>Primary sources and scope</h2><p>These three primary sources were opened on 20 October 2026. Access dates do not establish a new source publication date.</p><ul><li><a href="https://arxiv.org/abs/2211.09110">Stanford researchers: Holistic Evaluation of Language Models</a>. Original preprint 16 November 2022.</li><li><a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST: AI Risk Management Framework</a>. AI RMF 1.0 released January 2023.</li><li><a href="https://developers.google.com/machine-learning/guides/rules-of-ml">Google: Rules of Machine Learning</a>. Living engineering guide; no new publication date asserted.</li></ul><p>The examples and proposed methods are editorial teaching work. They are not company results or independently certified findings. Educational, not financial advice.</p></section><!-- article-hubs:start -->
 <nav class="article-reading-path" aria-labelledby="article-related-title">
 <p>Part of: <a href="/topics/ai-real-estate.html" data-hub-primary="ai-real-estate">AI in real estate: evidence and decisions</a></p>
 <h2 id="article-related-title">Related</h2>
-<ul><li><a href="/writing/property-data-enrichment.html" data-related-pillar="property-decisions">How does property data enrichment connect an image to the right property?</a></li>
+<ul><li><a href="/writing/property-data-enrichment.html" data-related-pillar="property-decisions">How does property data enrichment connect the right records?</a></li>
 <li><a href="/writing/start-with-the-decision.html" data-related-pillar="decision-first-ai">Start with the decision, then build the AI</a></li>
 <li><a href="/writing/how-zip-files-work.html" data-related-pillar="tech-explained">How ZIP files work: compression without losing data</a></li></ul>
 </nav>
