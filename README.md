@@ -2,6 +2,10 @@
 
 Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead of Appraiva, which builds AI real estate intelligence, and Co-Founder & CEO of Royal Abraj Group.
 
+For readers exploring his work and developers inspecting the public website source.
+
+![Property-decision guide preview in the existing Lagoon design](assets/share/avm-vs-appraisal.png)
+
 Source for his personal website, [a-samadi.com](https://a-samadi.com/).
 
 The site brings together my professional biography, selected work, writing on AI products and data systems, and an interactive decision guide. English is the primary language, with separate Persian and Arabic pages.
@@ -93,3 +97,15 @@ The checks cover language and canonical metadata, author identity, same-site pag
 | Rent study translations | Edit the English study and `locales/rent-study.json`; run `python3 scripts/enrich_study_metadata.py`, then `python3 scripts/build_rent_study_locales.py`. Check both with `--check`, plus `node scripts/test_rent_study_locales.mjs`. Keep the original model and data shared across languages. |
 
 Review generated changes and run the checks before publishing. Keep English as the primary entry point, preserve Persian and Arabic URLs, and retain the site's motion controls and reduced-motion support.
+
+## How to cite
+
+By [Ahmadreza Samadi](https://a-samadi.com/about.html). Cite a particular page by its title, author, canonical URL, published/modified date and access date. For this source repository, include the exact commit permalink; individual studies and utilities retain their own citation metadata.
+
+## Rights
+
+See [LICENSE](LICENSE). No blanket licence is assigned to the original website, profile text, selected photographs or AS mark. Existing third-party and explicitly licensed utility files retain their own terms.
+
+![Public valuation-range checker with an explicitly fictional example](docs/valuation-range-preview.png)
+
+The tool describes entered estimates; it does not verify a property value. [Open the valuation range checker](https://a-samadi.com/tools/valuation-range.html).

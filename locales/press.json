@@ -92,6 +92,10 @@
         {
           "path": "/studies/",
           "label": "Property Decision Data"
+        },
+        {
+          "path": "/work/",
+          "label": "Selected work"
         }
       ],
       "home": "Home",
@@ -261,6 +265,10 @@
         {
           "path": "/studies/",
           "label": "Property Decision Data"
+        },
+        {
+          "path": "/fa/work/",
+          "label": "پروژه‌های منتخب"
         }
       ],
       "home": "خانه",
@@ -430,6 +438,10 @@
         {
           "path": "/studies/",
           "label": "Property Decision Data"
+        },
+        {
+          "path": "/ar/work/",
+          "label": "أعمال مختارة"
         }
       ],
       "home": "الرئيسية",

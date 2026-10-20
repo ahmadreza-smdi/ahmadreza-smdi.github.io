@@ -100,9 +100,8 @@ def main():
         raise ValueError('Article taxonomy must cover exactly the current Article inventory')
     snapshots = []
     for family in data['families']:
-        languages = set(family['paths'])
-        if languages != {'en', 'fa', 'ar'} and not (languages == {'en'} and family.get('translation_status') == 'english-first'):
-            raise ValueError(f'Missing Article locale without explicit English-first status: {family["stem"]}')
+        if set(family['paths']) != {'en', 'fa', 'ar'}:
+            raise ValueError(f'Missing Article locale: {family["stem"]}')
         for language, relative in family['paths'].items():
             hub = next(h for h in topic_data['hubs'] if h['id'] == family['hub'])
             membership = {topic_data['resources'][key]['paths'].get(language, topic_data['resources'][key]['paths']['en']) for key in hub['ordered_resources']}

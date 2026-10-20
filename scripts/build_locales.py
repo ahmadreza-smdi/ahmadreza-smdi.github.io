@@ -24,7 +24,7 @@ class Translator(HTMLParser):
             translated=value
             if self.body and key in ('aria-label','alt') and value:
                 translated=self.translations[value]
-            if key=='href' and value in ('/writing/ai-home-value-estimates.html','/writing/ai-human-review-real-estate.html','/writing/which-dubai-property-source.html','/studies/rent-own-2026/','/work/appraiva.html','/work/royal-abraj.html','/writing/start-with-the-decision.html','/about.html','/writing/','/#work'):
+            if key=='href' and value in ('/work/','/writing/ai-home-value-estimates.html','/writing/ai-human-review-real-estate.html','/writing/which-dubai-property-source.html','/studies/rent-own-2026/','/work/appraiva.html','/work/royal-abraj.html','/writing/start-with-the-decision.html','/about.html','/writing/','/#work'):
                 translated='/'+self.lang+value
             elif key=='href' and (value.startswith('topics/') or value.startswith('about.html') or value in ('tools/before-you-build-ai.html','work/appraiva.html','work/royal-abraj.html','work/oxfam-novib.html','writing/ai-cost-per-verified-result.html','writing/ai-home-value-estimates.html','writing/ai-human-review-real-estate.html','writing/which-dubai-property-source.html','writing/connected-ai-apps.html','writing/jev-ai-decision-model.html','writing/start-with-the-decision.html','writing/ai-agent-safety-boundaries.html','writing/')):
                 translated=value

@@ -66,6 +66,8 @@ class Translate(HTMLParser):
                     translated = BASE + '/' + self.lang + '/studies/rent-own-2026/'
                 elif value == BASE + '/writing/ai-rental-yield-cash-flow.html':
                     translated = BASE + '/' + self.lang + '/writing/ai-rental-yield-cash-flow.html'
+            if key == 'href' and value == '/writing/rent-or-buy-five-numbers.html':
+                translated = '/' + self.lang + value
             if translated != value:
                 new = re.sub(r'(' + re.escape(key) + r'\s*=\s*")([^"]*)(")', lambda m:m[1] + escape(translated, quote=True) + m[3], new)
         if raw != new:

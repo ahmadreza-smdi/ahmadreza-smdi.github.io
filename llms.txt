@@ -48,6 +48,8 @@ Series: Start with the Decision (ideas and newsletter); Property Decision Data (
 - [Ahmadreza Samadi at Appraiva | Co-Founder & Technical Lead](https://a-samadi.com/work/appraiva.html): Ahmadreza Samadi is Appraiva’s Co-Founder & Technical Lead, working remotely from Dubai on AI real estate intelligence at the Cleveland, Ohio company.
 - [Oxfam Novib: CRM data and analytics](https://a-samadi.com/work/oxfam-novib.html): Ahmadreza Samadi’s background includes Azure data infrastructure for CRM migration and analytics at Oxfam Novib.
 - [Ahmadreza Samadi at Royal Abraj Group | Co-Founder & CEO](https://a-samadi.com/work/royal-abraj.html): Ahmadreza Samadi is Co-Founder & CEO of Royal Abraj Group in Dubai, leading digital strategy and technology across property brokerage and documents-clearing services.
+- [Selected work](https://a-samadi.com/work/): AI for property decisions, supported by product engineering, data systems and public tools.
+- [Hamrah e Aval (MCI)](https://a-samadi.com/work/mci.html): Machine Learning Engineer · November 2020–April 2022 · Tehran
 
 ## Topics
 

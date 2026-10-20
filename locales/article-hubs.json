@@ -1205,9 +1205,10 @@
       "stem": "avm-vs-appraisal",
       "classification": "core",
       "hub": "ai-real-estate",
-      "translation_status": "english-first",
       "paths": {
-        "en": "writing/avm-vs-appraisal.html"
+        "en": "writing/avm-vs-appraisal.html",
+        "fa": "fa/writing/avm-vs-appraisal.html",
+        "ar": "ar/writing/avm-vs-appraisal.html"
       },
       "related": [
         {
@@ -1228,9 +1229,10 @@
       "stem": "rent-or-buy-five-numbers",
       "classification": "core",
       "hub": "ai-real-estate",
-      "translation_status": "english-first",
       "paths": {
-        "en": "writing/rent-or-buy-five-numbers.html"
+        "en": "writing/rent-or-buy-five-numbers.html",
+        "fa": "fa/writing/rent-or-buy-five-numbers.html",
+        "ar": "ar/writing/rent-or-buy-five-numbers.html"
       },
       "related": [
         {
@@ -1251,9 +1253,10 @@
       "stem": "human-review-property-ai-checklist",
       "classification": "core",
       "hub": "ai-real-estate",
-      "translation_status": "english-first",
       "paths": {
-        "en": "writing/human-review-property-ai-checklist.html"
+        "en": "writing/human-review-property-ai-checklist.html",
+        "fa": "fa/writing/human-review-property-ai-checklist.html",
+        "ar": "ar/writing/human-review-property-ai-checklist.html"
       },
       "related": [
         {
@@ -1274,9 +1277,10 @@
       "stem": "dubai-property-buying-costs",
       "classification": "core",
       "hub": "ai-real-estate",
-      "translation_status": "english-first",
       "paths": {
-        "en": "writing/dubai-property-buying-costs.html"
+        "en": "writing/dubai-property-buying-costs.html",
+        "fa": "fa/writing/dubai-property-buying-costs.html",
+        "ar": "ar/writing/dubai-property-buying-costs.html"
       },
       "related": [
         {

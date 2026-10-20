@@ -431,22 +431,30 @@
     },
     "day2_avm_vs_appraisal": {
       "paths": {
-        "en": "writing/avm-vs-appraisal.html"
+        "en": "writing/avm-vs-appraisal.html",
+        "fa": "fa/writing/avm-vs-appraisal.html",
+        "ar": "ar/writing/avm-vs-appraisal.html"
       }
     },
     "day2_rent_or_buy_five_numbers": {
       "paths": {
-        "en": "writing/rent-or-buy-five-numbers.html"
+        "en": "writing/rent-or-buy-five-numbers.html",
+        "fa": "fa/writing/rent-or-buy-five-numbers.html",
+        "ar": "ar/writing/rent-or-buy-five-numbers.html"
       }
     },
     "day2_human_review_property_ai_checklist": {
       "paths": {
-        "en": "writing/human-review-property-ai-checklist.html"
+        "en": "writing/human-review-property-ai-checklist.html",
+        "fa": "fa/writing/human-review-property-ai-checklist.html",
+        "ar": "ar/writing/human-review-property-ai-checklist.html"
       }
     },
     "day2_dubai_property_buying_costs": {
       "paths": {
-        "en": "writing/dubai-property-buying-costs.html"
+        "en": "writing/dubai-property-buying-costs.html",
+        "fa": "fa/writing/dubai-property-buying-costs.html",
+        "ar": "ar/writing/dubai-property-buying-costs.html"
       }
     }
   },
