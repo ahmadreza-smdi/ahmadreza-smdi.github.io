@@ -1296,6 +1296,30 @@
           "path": "writing/profitable-but-out-of-cash.html"
         }
       ]
+    },
+    {
+      "stem": "heat-pump-moves-heat-explained",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/heat-pump-moves-heat-explained.html",
+        "fa": "fa/writing/heat-pump-moves-heat-explained.html",
+        "ar": "ar/writing/heat-pump-moves-heat-explained.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
     }
   ]
 }

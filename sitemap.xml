@@ -2157,4 +2157,48 @@
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/work/mci.html" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/work/mci.html" />
     </url>
+    <url>
+        <loc>https://a-samadi.com/writing/heat-pump-moves-heat-explained.html</loc>
+        <lastmod>2026-10-20T21:00:39+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/heat-pump-moves-heat-explained.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/heat-pump-moves-heat-explained.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/heat-pump-moves-heat-explained.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/heat-pump-moves-heat-explained.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/heat-pump-moves-heat-explained/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/heat-pump-moves-heat-explained.html</loc>
+        <lastmod>2026-10-20T21:00:39+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/heat-pump-moves-heat-explained.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/heat-pump-moves-heat-explained.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/heat-pump-moves-heat-explained.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/heat-pump-moves-heat-explained.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/heat-pump-moves-heat-explained/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/heat-pump-moves-heat-explained.html</loc>
+        <lastmod>2026-10-20T21:00:39+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/heat-pump-moves-heat-explained.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/heat-pump-moves-heat-explained.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/heat-pump-moves-heat-explained.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/heat-pump-moves-heat-explained.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/heat-pump-moves-heat-explained/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/watch/heat-pump-moves-heat-explained.html</loc>
+        <lastmod>2026-10-20T21:00:39+03:30</lastmod>
+        <video:video>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/heat-pump-moves-heat-explained/cover.png</video:thumbnail_loc>
+            <video:title>How cold outdoor air can help warm a home</video:title>
+            <video:description>A fictional home and an illustrative energy balance explain how a heat pump moves heat.</video:description>
+            <video:content_loc>https://a-samadi.com/assets/writing/heat-pump-moves-heat-explained/film.mp4</video:content_loc>
+            <video:publication_date>2026-10-20T21:00:39+03:30</video:publication_date>
+        </video:video>
+    </url>
 </urlset>

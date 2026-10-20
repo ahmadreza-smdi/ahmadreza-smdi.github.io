@@ -456,6 +456,13 @@
         "fa": "fa/writing/dubai-property-buying-costs.html",
         "ar": "ar/writing/dubai-property-buying-costs.html"
       }
+    },
+    "article_heat_pump_moves_heat_explained": {
+      "paths": {
+        "en": "writing/heat-pump-moves-heat-explained.html",
+        "fa": "fa/writing/heat-pump-moves-heat-explained.html",
+        "ar": "ar/writing/heat-pump-moves-heat-explained.html"
+      }
     }
   },
   "hubs": [
@@ -1011,6 +1018,7 @@
         "article_phone_location_across_street",
         "article_ai_agents_shared_notebook",
         "article_tesla_roadster_flight_claim",
+        "article_heat_pump_moves_heat_explained",
         "tech_film_ai_confidence",
         "tech_film_cookie_consent",
         "tech_film_charging_80",
@@ -1051,7 +1059,8 @@
         "article_geospatial_ai_map_answer_review",
         "article_phone_location_across_street",
         "article_ai_agents_shared_notebook",
-        "article_tesla_roadster_flight_claim"
+        "article_tesla_roadster_flight_claim",
+        "article_heat_pump_moves_heat_explained"
       ],
       "all_articles_heading": {
         "en": "Existing explainers and films",
