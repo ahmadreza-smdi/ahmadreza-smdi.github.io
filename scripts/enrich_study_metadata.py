@@ -432,6 +432,16 @@ FIELD_DEFINITIONS = json.loads(r'''{
 
 
 def enrich(relative, text):
+    if relative in ('fa/studies/rent-own-2026/index.html', 'ar/studies/rent-own-2026/index.html'):
+        # Localized pages share the original data/CSV definitions and are generated
+        # from the enriched English source, including all scoped reuse limits.
+        from build_rent_study_locales import build
+        return build(relative.split('/')[0])
+    if relative == 'studies/rent-own-2026/index.html':
+        # Add common translation links before serializing the study graph, so
+        # either generator order converges to the same normalized JSON-LD.
+        from enrich_metadata import enrich as enrich_page
+        text = enrich_page(ROOT / relative, text)[0]
     blocks = list(re.finditer(r'(<script type="application/ld\+json">)(.*?)(</script>)', text, re.S))
     if len(blocks) != 1:
         raise ValueError('Expected exactly one study JSON-LD graph')
@@ -536,7 +546,7 @@ def enrich(relative, text):
 if __name__ == '__main__':
     check = '--check' in sys.argv
     changed = []
-    for relative in STUDIES:
+    for relative in (*STUDIES, 'fa/studies/rent-own-2026/index.html', 'ar/studies/rent-own-2026/index.html'):
         path = ROOT / relative
         original = path.read_text()
         updated = enrich(relative, original)

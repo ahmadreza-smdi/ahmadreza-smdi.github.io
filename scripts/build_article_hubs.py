@@ -52,7 +52,11 @@ def render(family, language, hubs):
         pillars.add(related['pillar'])
         related_href, related_title = resource(relative)
         links.append(f'<li><a href="{escape(related_href, quote=True)}" data-related-pillar="{escape(related["pillar"], quote=True)}">{escape(related_title)}</a></li>')
-    if len(links) != 3 or pillars != {'property-decisions', 'decision-first-ai', 'tech-explained'}:
+    allowed_pillars = (
+        {'property-decisions', 'decision-first-ai', 'tech-explained'},
+        {'property-decisions', 'decision-first-ai', 'building-business'},
+    )
+    if len(links) != 3 or pillars not in allowed_pillars:
         raise ValueError(f'Expected three distinct pillar links: {family["stem"]}')
     return f'''{START}
 <nav class="article-reading-path" aria-labelledby="article-related-title">

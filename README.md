@@ -1,16 +1,18 @@
 # Ahmadreza Samadi — personal website
 
-Source for [a-samadi.com](https://a-samadi.com/), the personal website of Ahmadreza Samadi: Co-Founder & Technical Lead at Appraiva and Co-Founder & CEO at Royal Abraj Group, based in Dubai.
+Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead of Appraiva, which builds AI real estate intelligence, and Co-Founder & CEO of Royal Abraj Group.
+
+Source for his personal website, [a-samadi.com](https://a-samadi.com/).
 
 The site brings together my professional biography, selected work, writing on AI products and data systems, and an interactive decision guide. English is the primary language, with separate Persian and Arabic pages.
 
 ## Explore the work
 
 - [Appraiva: turning property imagery into decision support](https://a-samadi.com/work/appraiva.html) — my work on AI real estate intelligence as Co-Founder & Technical Lead.
-- [Royal Abraj Group: digital strategy and operations](https://a-samadi.com/work/royal-abraj.html) — connecting websites, CRM, customer tools and internal workflows.
-- [Oxfam Novib: a data foundation for CRM and analytics](https://a-samadi.com/work/oxfam-novib.html) — Azure data engineering for migration, governance and reporting.
+- [Royal Abraj Group: digital strategy and technology](https://a-samadi.com/work/royal-abraj.html) — Co-Founder & CEO of the Dubai group covering property brokerage and documents-clearing services.
+- [Oxfam Novib: a data foundation for CRM and analytics](https://a-samadi.com/work/oxfam-novib.html) — Azure data infrastructure for CRM migration and analytics.
 
-These case studies describe my contributions to company and client projects; this repository contains the personal website source.
+These pages describe my professional roles and background; this repository contains the personal website source.
 
 ## Read and try
 
@@ -88,5 +90,6 @@ The checks cover language and canonical metadata, author identity, same-site pag
 | Page metadata and sitemap languages | Run `python3 scripts/enrich_metadata.py` after adding or translating a page. It fills in missing Open Graph, Twitter and robots tags in the page's language, the sitemap's hreflang links and the structured-data links that mark English pages as the originals (`workTranslation`) and Persian and Arabic pages as their translations (`translationOfWork`); then regenerate the homepages and guide. |
 | AI assistant map | Run `python3 scripts/build_llms.py` after adding or retitling pages. It rewrites `llms.txt` from the sitemap and each page's title and description, English first. |
 | English writing feed | Edit the articles' metadata; run `python3 scripts/build_feed.py`. Keep original publication dates and include the existing RSS discovery link in new English articles. |
+| Rent study translations | Edit the English study and `locales/rent-study.json`; run `python3 scripts/enrich_study_metadata.py`, then `python3 scripts/build_rent_study_locales.py`. Check both with `--check`, plus `node scripts/test_rent_study_locales.mjs`. Keep the original model and data shared across languages. |
 
 Review generated changes and run the checks before publishing. Keep English as the primary entry point, preserve Persian and Arabic URLs, and retain the site's motion controls and reduced-motion support.

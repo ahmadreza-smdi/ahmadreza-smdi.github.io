@@ -13,10 +13,10 @@
       "h1": "Press & media kit",
       "lead": "Biographies, facts and public resources for professional introductions.",
       "short_heading": "Short biography",
-      "short_bio": "Dubai-based technology entrepreneur Ahmadreza Samadi is Co-Founder & Technical Lead of Appraiva, building AI real estate intelligence, and Co-Founder & CEO of Royal Abraj Group.",
+      "short_bio": "Technology entrepreneur in Dubai · Co-Founder & Technical Lead, Appraiva (AI real estate intelligence) · Co-Founder & CEO, Royal Abraj Group",
       "extended_heading": "Extended biography",
       "extended_bio": [
-        "Dubai-based technology entrepreneur Ahmadreza Samadi is Co-Founder & Technical Lead of Appraiva, building AI real estate intelligence, and Co-Founder & CEO of Royal Abraj Group. His work starts with the decision, then the AI. He publishes open property-data studies, practical decision tools and plain-language technology explainers at his website, a-samadi.com. Appraiva is based in Cleveland, Ohio; he works remotely from Dubai. Its AI helps investors find distressed and off-market properties through imagery analysis and enriched property data. Royal Abraj Group spans property brokerage and documents clearing. His background includes enterprise data engineering and machine learning at Oxfam Novib and MCI."
+        "Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead of Appraiva, which builds AI real estate intelligence, and Co-Founder & CEO of Royal Abraj Group. Appraiva is based in Cleveland, Ohio, United States; he works remotely from Dubai. Its tools help real estate investors and developers find distressed and off-market properties through imagery analysis and enriched property data. At Royal Abraj Group in Dubai, he leads digital strategy and technology across property brokerage and documents-clearing services. His background spans enterprise data engineering and machine learning, including work at Oxfam Novib and MCI. He studied at Shahid Beheshti University."
       ],
       "facts_heading": "Facts for introductions",
       "facts": [
@@ -38,7 +38,7 @@
         },
         {
           "label": "Appraiva role",
-          "value": "Co-Founder & Technical Lead, October 2023–present"
+          "value": "Co-Founder & Technical Lead"
         },
         {
           "label": "Appraiva work arrangement",
@@ -46,7 +46,7 @@
         },
         {
           "label": "Royal Abraj Group role",
-          "value": "Co-Founder & CEO, 2022–present"
+          "value": "Co-Founder & CEO"
         }
       ],
       "resources_heading": "Portrait, monogram and profile kit",
@@ -169,7 +169,8 @@
             "citation": "Citation metadata"
           }
         }
-      }
+      },
+      "entity_bio": "Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead of Appraiva, which builds AI real estate intelligence, and Co-Founder & CEO of Royal Abraj Group."
     },
     "fa": {
       "path": "/fa/press.html",
@@ -181,10 +182,10 @@
       "h1": "رسانه و معرفی حرفه‌ای",
       "lead": "زندگی‌نامه، اطلاعات اصلی و منابع عمومی برای معرفی حرفه‌ای.",
       "short_heading": "زندگی‌نامه کوتاه",
-      "short_bio": "احمدرضا صمدی، کارآفرین فناوری ساکن دبی، هم‌بنیان‌گذار و راهبر فنی Appraiva، سازندهٔ راهکارهای هوش مصنوعی در حوزهٔ املاک، و هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group است.",
+      "short_bio": "کارآفرین فناوری در دبی · هم‌بنیان‌گذار و راهبر فنی Appraiva (تحلیل اطلاعات املاک با هوش مصنوعی) · هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group",
       "extended_heading": "زندگی‌نامه کامل‌تر",
       "extended_bio": [
-        "احمدرضا صمدی، کارآفرین فناوری ساکن دبی، هم‌بنیان‌گذار و راهبر فنی Appraiva، سازندهٔ راهکارهای هوش مصنوعی در حوزهٔ املاک، و هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group است. او کار را از تصمیم آغاز می‌کند، سپس به سراغ هوش مصنوعی می‌رود. مطالعه‌های بازِ داده‌های املاک، ابزارهای کاربردی تصمیم‌گیری و توضیح‌های سادهٔ فناوری را در وب‌سایت شخصی‌اش، a-samadi.com، منتشر می‌کند."
+        "احمدرضا صمدی کارآفرین فناوری ساکن دبی، هم‌بنیان‌گذار و راهبر فنی Appraiva، سازندهٔ هوش مصنوعی برای تحلیل اطلاعات املاک، و هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group است. Appraiva در کلیولندِ اوهایو در ایالات متحده مستقر است؛ او از دبی به‌صورت دورکار فعالیت می‌کند. ابزارهای این شرکت با تحلیل تصاویر و داده‌های تکمیل‌شدهٔ املاک به سرمایه‌گذاران و توسعه‌دهندگان املاک کمک می‌کنند املاک دچار مشکلات مالی و املاک خارج از بازار را بیابند. او در Royal Abraj Group در دبی، راهبرد دیجیتال و فناوری را در حوزه‌های کارگزاری املاک و خدمات انجام امور اسناد هدایت می‌کند. پیشینهٔ او شامل مهندسی دادهٔ سازمانی و یادگیری ماشین، از جمله فعالیت در Oxfam Novib و MCI است. او در دانشگاه شهید بهشتی تحصیل کرده است."
       ],
       "facts_heading": "اطلاعات اصلی برای معرفی",
       "facts": [
@@ -206,7 +207,7 @@
         },
         {
           "label": "نقش در Appraiva",
-          "value": "هم‌بنیان‌گذار و راهبر فنی، اکتبر ۲۰۲۳ تاکنون"
+          "value": "هم‌بنیان‌گذار و راهبر فنی"
         },
         {
           "label": "شیوه فعالیت در Appraiva",
@@ -214,7 +215,7 @@
         },
         {
           "label": "نقش در گروه رویال ابراج",
-          "value": "هم‌بنیان‌گذار و مدیرعامل، از ۲۰۲۲ تاکنون"
+          "value": "هم‌بنیان‌گذار و مدیرعامل"
         }
       ],
       "resources_heading": "تصویر چهره، نشان شخصی و بسته معرفی",
@@ -337,7 +338,8 @@
             "citation": "اطلاعات استناد"
           }
         }
-      }
+      },
+      "entity_bio": "احمدرضا صمدی کارآفرین فناوری ساکن دبی، هم‌بنیان‌گذار و راهبر فنی Appraiva، سازندهٔ هوش مصنوعی برای تحلیل اطلاعات املاک، و هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group است."
     },
     "ar": {
       "path": "/ar/press.html",
@@ -349,10 +351,10 @@
       "h1": "المواد الإعلامية والتعريف المهني",
       "lead": "سير مهنية ومعلومات أساسية وموارد عامة للتعريف المهني.",
       "short_heading": "سيرة قصيرة",
-      "short_bio": "أحمدرضا صمدي رائد أعمال تقني مقيم في دبي، وشريك مؤسس وقائد تقني في Appraiva التي تطوّر حلول ذكاء اصطناعي للمعلومات العقارية، وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group.",
+      "short_bio": "رائد أعمال تقني في دبي · شريك مؤسس وقائد تقني في Appraiva (ذكاء اصطناعي للمعلومات العقارية) · شريك مؤسس ورئيس تنفيذي في Royal Abraj Group",
       "extended_heading": "سيرة موسّعة",
       "extended_bio": [
-        "أحمدرضا صمدي رائد أعمال تقني مقيم في دبي، وشريك مؤسس وقائد تقني في Appraiva التي تطوّر حلول ذكاء اصطناعي للمعلومات العقارية، وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group. ينطلق عمله من القرار، ثم الذكاء الاصطناعي. وينشر دراسات مفتوحة لبيانات العقارات، وأدوات عملية لاتخاذ القرار، وشروحات مبسطة للتكنولوجيا على موقعه الشخصي a-samadi.com."
+        "أحمدرضا صمدي رائد أعمال تقني مقيم في دبي، وشريك مؤسس وقائد تقني في Appraiva التي تطوّر ذكاءً اصطناعيًا لتحليل المعلومات العقارية، وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group. يقع مقر Appraiva في كليفلاند بولاية أوهايو في الولايات المتحدة؛ ويعمل عن بُعد من دبي. تساعد أدوات الشركة المستثمرين والمطورين العقاريين على العثور على عقارات متعثرة وعقارات غير معروضة في السوق من خلال تحليل الصور وبيانات العقارات المُثرَاة. وفي Royal Abraj Group في دبي، يقود الاستراتيجية الرقمية والتكنولوجيا في مجالي الوساطة العقارية وخدمات تخليص المستندات. تشمل خلفيته هندسة البيانات المؤسسية والتعلم الآلي، بما في ذلك العمل لدى Oxfam Novib وMCI. وقد درس في جامعة شهيد بهشتي."
       ],
       "facts_heading": "معلومات أساسية للتعريف",
       "facts": [
@@ -374,7 +376,7 @@
         },
         {
           "label": "دوره في Appraiva",
-          "value": "شريك مؤسس وقائد تقني، منذ أكتوبر ٢٠٢٣"
+          "value": "شريك مؤسس وقائد تقني"
         },
         {
           "label": "ترتيب العمل في Appraiva",
@@ -382,7 +384,7 @@
         },
         {
           "label": "دوره في مجموعة رويال أبراج",
-          "value": "شريك مؤسس ورئيس تنفيذي، منذ ٢٠٢٢"
+          "value": "شريك مؤسس ورئيس تنفيذي"
         }
       ],
       "resources_heading": "الصورة الشخصية والشعار وحزمة التعريف",
@@ -505,7 +507,8 @@
             "citation": "بيانات الاستشهاد"
           }
         }
-      }
+      },
+      "entity_bio": "أحمدرضا صمدي رائد أعمال تقني مقيم في دبي، وشريك مؤسس وقائد تقني في Appraiva التي تطوّر ذكاءً اصطناعيًا لتحليل المعلومات العقارية، وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group."
     }
   },
   "resources": [
@@ -673,18 +676,19 @@
   "brand": {
     "bios": {
       "en": {
-        "10": "Technology entrepreneur in Dubai building AI for better property decisions.",
-        "25": "Dubai-based technology entrepreneur Ahmadreza Samadi is Co-Founder & Technical Lead of Appraiva, building AI real estate intelligence, and Co-Founder & CEO of Royal Abraj Group.",
-        "50": "Dubai-based technology entrepreneur Ahmadreza Samadi is Co-Founder & Technical Lead of Appraiva, building AI real estate intelligence, and Co-Founder & CEO of Royal Abraj Group. His work starts with the decision, then the AI. He publishes open property-data studies, practical decision tools and plain-language technology explainers at his website, a-samadi.com.",
-        "100": "Dubai-based technology entrepreneur Ahmadreza Samadi is Co-Founder & Technical Lead of Appraiva, building AI real estate intelligence, and Co-Founder & CEO of Royal Abraj Group. His work starts with the decision, then the AI. He publishes open property-data studies, practical decision tools and plain-language technology explainers at his website, a-samadi.com. Appraiva is based in Cleveland, Ohio; he works remotely from Dubai. Its AI helps investors find distressed and off-market properties through imagery analysis and enriched property data. Royal Abraj Group spans property brokerage and documents clearing. His background includes enterprise data engineering and machine learning at Oxfam Novib and MCI."
+        "short": "Technology entrepreneur in Dubai · Co-Founder & Technical Lead, Appraiva (AI real estate intelligence) · Co-Founder & CEO, Royal Abraj Group",
+        "entity": "Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead of Appraiva, which builds AI real estate intelligence, and Co-Founder & CEO of Royal Abraj Group.",
+        "100": "Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead of Appraiva, which builds AI real estate intelligence, and Co-Founder & CEO of Royal Abraj Group. Appraiva is based in Cleveland, Ohio, United States; he works remotely from Dubai. Its tools help real estate investors and developers find distressed and off-market properties through imagery analysis and enriched property data. At Royal Abraj Group in Dubai, he leads digital strategy and technology across property brokerage and documents-clearing services. His background spans enterprise data engineering and machine learning, including work at Oxfam Novib and MCI. He studied at Shahid Beheshti University."
       },
       "fa": {
-        "25": "احمدرضا صمدی، کارآفرین فناوری ساکن دبی، هم‌بنیان‌گذار و راهبر فنی Appraiva، سازندهٔ راهکارهای هوش مصنوعی در حوزهٔ املاک، و هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group است.",
-        "50": "احمدرضا صمدی، کارآفرین فناوری ساکن دبی، هم‌بنیان‌گذار و راهبر فنی Appraiva، سازندهٔ راهکارهای هوش مصنوعی در حوزهٔ املاک، و هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group است. او کار را از تصمیم آغاز می‌کند، سپس به سراغ هوش مصنوعی می‌رود. مطالعه‌های بازِ داده‌های املاک، ابزارهای کاربردی تصمیم‌گیری و توضیح‌های سادهٔ فناوری را در وب‌سایت شخصی‌اش، a-samadi.com، منتشر می‌کند."
+        "short": "کارآفرین فناوری در دبی · هم‌بنیان‌گذار و راهبر فنی Appraiva (تحلیل اطلاعات املاک با هوش مصنوعی) · هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group",
+        "entity": "احمدرضا صمدی کارآفرین فناوری ساکن دبی، هم‌بنیان‌گذار و راهبر فنی Appraiva، سازندهٔ هوش مصنوعی برای تحلیل اطلاعات املاک، و هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group است.",
+        "100": "احمدرضا صمدی کارآفرین فناوری ساکن دبی، هم‌بنیان‌گذار و راهبر فنی Appraiva، سازندهٔ هوش مصنوعی برای تحلیل اطلاعات املاک، و هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group است. Appraiva در کلیولندِ اوهایو در ایالات متحده مستقر است؛ او از دبی به‌صورت دورکار فعالیت می‌کند. ابزارهای این شرکت با تحلیل تصاویر و داده‌های تکمیل‌شدهٔ املاک به سرمایه‌گذاران و توسعه‌دهندگان املاک کمک می‌کنند املاک دچار مشکلات مالی و املاک خارج از بازار را بیابند. او در Royal Abraj Group در دبی، راهبرد دیجیتال و فناوری را در حوزه‌های کارگزاری املاک و خدمات انجام امور اسناد هدایت می‌کند. پیشینهٔ او شامل مهندسی دادهٔ سازمانی و یادگیری ماشین، از جمله فعالیت در Oxfam Novib و MCI است. او در دانشگاه شهید بهشتی تحصیل کرده است."
       },
       "ar": {
-        "25": "أحمدرضا صمدي رائد أعمال تقني مقيم في دبي، وشريك مؤسس وقائد تقني في Appraiva التي تطوّر حلول ذكاء اصطناعي للمعلومات العقارية، وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group.",
-        "50": "أحمدرضا صمدي رائد أعمال تقني مقيم في دبي، وشريك مؤسس وقائد تقني في Appraiva التي تطوّر حلول ذكاء اصطناعي للمعلومات العقارية، وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group. ينطلق عمله من القرار، ثم الذكاء الاصطناعي. وينشر دراسات مفتوحة لبيانات العقارات، وأدوات عملية لاتخاذ القرار، وشروحات مبسطة للتكنولوجيا على موقعه الشخصي a-samadi.com."
+        "short": "رائد أعمال تقني في دبي · شريك مؤسس وقائد تقني في Appraiva (ذكاء اصطناعي للمعلومات العقارية) · شريك مؤسس ورئيس تنفيذي في Royal Abraj Group",
+        "entity": "أحمدرضا صمدي رائد أعمال تقني مقيم في دبي، وشريك مؤسس وقائد تقني في Appraiva التي تطوّر ذكاءً اصطناعيًا لتحليل المعلومات العقارية، وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group.",
+        "100": "أحمدرضا صمدي رائد أعمال تقني مقيم في دبي، وشريك مؤسس وقائد تقني في Appraiva التي تطوّر ذكاءً اصطناعيًا لتحليل المعلومات العقارية، وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group. يقع مقر Appraiva في كليفلاند بولاية أوهايو في الولايات المتحدة؛ ويعمل عن بُعد من دبي. تساعد أدوات الشركة المستثمرين والمطورين العقاريين على العثور على عقارات متعثرة وعقارات غير معروضة في السوق من خلال تحليل الصور وبيانات العقارات المُثرَاة. وفي Royal Abraj Group في دبي، يقود الاستراتيجية الرقمية والتكنولوجيا في مجالي الوساطة العقارية وخدمات تخليص المستندات. تشمل خلفيته هندسة البيانات المؤسسية والتعلم الآلي، بما في ذلك العمل لدى Oxfam Novib وMCI. وقد درس في جامعة شهيد بهشتي."
       }
     },
     "labels": {
@@ -698,7 +702,12 @@
         "usage_copy": "Use the supplied selected portraits and AS mark to identify Ahmadreza Samadi. Keep their proportions and colours; do not redraw the mark or imply a third-party endorsement. Use Sora for headings. Existing resource-specific reuse terms still apply.",
         "cite_copy": "Cite Ahmadreza Samadi, the study title, release or edition, source-data year and exact study URL. Keep geography, assumptions and limitations with any quoted figure. These two study counts cover different populations and are not directly comparable.",
         "idea_link": "Signature ideas",
-        "data_link": "Property Decision Data"
+        "data_link": "Property Decision Data",
+        "bio_headings": {
+          "short": "Short biography · 140 characters",
+          "entity": "Professional introduction",
+          "100": "100-word biography"
+        }
       },
       "fa": {
         "bios": "مجموعهٔ بیوگرافی‌ها",
@@ -710,7 +719,12 @@
         "usage_copy": "برای معرفی احمدرضا صمدی از تصاویر منتخب و نشان AS ارائه‌شده استفاده کنید. تناسب و رنگ‌ها را حفظ کنید؛ نشان را بازطراحی نکنید و تأیید شخص ثالث را القا نکنید. فونت عنوان‌ها Sora است. شرایط بازاستفادهٔ هر منبع همچنان معتبر است.",
         "cite_copy": "نام احمدرضا صمدی، عنوان مطالعه، نسخه، سال داده‌های منبع و نشانی دقیق مطالعه را ذکر کنید. محدودهٔ جغرافیایی، فرض‌ها و محدودیت‌ها را همراه هر عدد نقل‌شده نگه دارید. شمارش‌های این دو مطالعه جامعه‌های متفاوتی را پوشش می‌دهند و مستقیماً قابل‌مقایسه نیستند.",
         "idea_link": "ایده‌های اصلی",
-        "data_link": "Property Decision Data"
+        "data_link": "Property Decision Data",
+        "bio_headings": {
+          "short": "ترجمهٔ بیوی کوتاه انگلیسی",
+          "entity": "معرفی حرفه‌ای",
+          "100": "ترجمهٔ زندگی‌نامهٔ ۱۰۰ کلمه‌ای انگلیسی"
+        }
       },
       "ar": {
         "bios": "مجموعة النبذات التعريفية",
@@ -722,7 +736,12 @@
         "usage_copy": "استخدم الصور المختارة وعلامة AS المتاحة للتعريف بأحمدرضا صمدي. حافظ على النسب والألوان؛ لا تعِد رسم العلامة ولا توحِ بتأييد جهة خارجية. خط العناوين هو Sora. تبقى شروط إعادة الاستخدام الخاصة بكل مورد سارية.",
         "cite_copy": "اذكر أحمدرضا صمدي وعنوان الدراسة وإصدارها وسنة بيانات المصدر ورابط الدراسة الدقيق. أبقِ النطاق الجغرافي والافتراضات والحدود مع كل رقم منقول. يغطي العدّان المذكوران مجموعتين مختلفتين ولا تجوز مقارنتهما مباشرة.",
         "idea_link": "الأفكار الأساسية",
-        "data_link": "Property Decision Data"
+        "data_link": "Property Decision Data",
+        "bio_headings": {
+          "short": "ترجمة النبذة الإنجليزية القصيرة",
+          "entity": "التعريف المهني",
+          "100": "ترجمة السيرة الإنجليزية من 100 كلمة"
+        }
       }
     },
     "figures": [

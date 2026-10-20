@@ -1,0 +1,2 @@
+@font-face{font-family:Vazirmatn;src:url('/assets/fonts/vazirmatn-arabic-wght.woff2') format('woff2');font-weight:100 900;font-display:swap}
+html[dir=rtl]{font-family:Vazirmatn,Arial,sans-serif}html[dir=rtl] h1,html[dir=rtl] h2{letter-spacing:0;line-height:1.5}html[dir=rtl] td,html[dir=rtl] th,html[dir=rtl] .metro-button{text-align:start}html[dir=rtl] input[type=number],html[dir=rtl] textarea,html[dir=rtl] code{direction:ltr}html[dir=rtl] .table-wrap table{direction:rtl}html[dir=rtl] td svg{direction:ltr}code,p,a{overflow-wrap:anywhere}#share-url{direction:ltr}

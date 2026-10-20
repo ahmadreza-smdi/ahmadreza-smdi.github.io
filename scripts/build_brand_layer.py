@@ -60,25 +60,29 @@ def styled(text):
 
 def discovery_footer(text, lang):
     labels = DATA['labels'][lang]
-    # Keep the compact header unchanged; these destinations remain in the footer.
-    body = ('<p class="brand-links">' + link('/ideas.html', labels['ideas']) + ' · ' +
-            link('/studies/', labels['data']) + '</p>')
+    prefix = '' if lang == 'en' else '/' + lang
+    destinations = [prefix + '/#work', prefix + '/about.html', '/studies/', prefix + '/writing/']
+    body = '<p class="brand-links">' + ' · '.join(link(url, title) for url, title in zip(destinations, labels['navlabels'])) + '</p>'
     return marked(text, 'brand-discovery-footer', body, '</footer>')
 
 
 def homepage():
     labels = DATA['labels']['en']
-    cards = ''.join(f'<article class="brand-card"><h3>{link("/ideas.html#" + idea["id"], idea["name"])}</h3>'
-                    f'<p>{esc(idea["definition"])}</p></article>' for idea in DATA['ideas'])
+    def card(identifier, title, links):
+        return (f'<article class="brand-card" id="{identifier}"><h3>{esc(title)}</h3><ul>' +
+                ''.join('<li>' + link(url, label) + '</li>' for url, label in links) + '</ul></article>')
+    cards = card('what-i-work-on', 'What I work on', [
+        ('/work/appraiva.html', 'AI for property decisions'),
+        ('/writing/start-with-the-decision.html', 'Start with the decision'),
+        ('/work/royal-abraj.html', 'Building in Dubai')])
+    cards += card('property-decision-data', 'Proof', [
+        ('/work/appraiva.html', 'Appraiva'), ('/work/royal-abraj.html', 'Royal Abraj Group'),
+        ('/studies/', 'Property studies'), ('/studies/#tools', 'Practical tools')])
+    cards += card('my-topics', 'My topics', [(topic['path'], topic['labels']['en']) for topic in DATA['identity']['topics']])
     body = (f'<section class="section brand-layer" id="signature-ideas" aria-labelledby="signature-ideas-title">'
-            f'<div class="section-heading"><h2 id="signature-ideas-title">{labels["ideas"]}</h2>'
-            f'<p>{labels["intro"]}</p></div><div class="brand-grid">{cards}</div>'
-            f'<p class="brand-language-note">{labels["english"]}</p></section>'
-            f'<section class="section brand-layer" id="property-decision-data" aria-labelledby="property-decision-data-title">'
-            f'<div class="section-heading"><h2 id="property-decision-data-title">{labels["data"]}</h2>'
-            f'<p>{labels["studyintro"]}</p></div><p class="brand-links">'
-            f'{link("/studies/", labels["studylink"])} · {link(DATA["newsletter"], labels["newsletter"])}</p>'
-            f'<p class="brand-language-note">{labels["english"]}</p></section>')
+            '<div class="section-heading"><h2 id="signature-ideas-title">AI × property × business</h2>'
+            '<p>Explore the work, evidence and questions behind my property decisions.</p></div>'
+            f'<div class="brand-grid">{cards}</div></section>')
     path = ROOT / 'index.html'
     text = styled(marked(path.read_text(), 'brand-home', body, '<section class="section" id="work">'))
     store(path, discovery_footer(text, 'en'))
@@ -108,17 +112,51 @@ def biography():
         public = section('work-in-public', labels['public'], '<ul>' + ''.join('<li>' + link(url, title) + '</li>'
                           for url, title in zip(destinations, labels['publiclinks'])) + '</ul>')
         text = marked(text, 'brand-biography', beliefs + ideas + public, '<section class="profile-resources" id="career-timeline"')
-        known_links = [prefix + '/work/appraiva.html', prefix + '/writing/start-with-the-decision.html', prefix + '/topics/tech-explained.html']
+        known_links = [prefix + '/work/appraiva.html', prefix + '/tools/before-you-build-ai.html', prefix + '/work/royal-abraj.html']
         known = section('known-for', labels['known'], f'<p>{esc(labels["knownintro"])}</p><ul>' + ''.join(
             f'<li><h3>{link(url, title)}</h3><p>{esc(description)}</p></li>'
             for url, title, description in zip(known_links, labels['knownnames'], labels['knowncopy'])) + '</ul>')
         text, count = re.subn(r'<section class="profile-resources" id="known-for"[^>]*>.*?</section>', lambda _: known, text, flags=re.S)
         if count != 1:
             raise ValueError(f'{path}: Known for section count {count}')
+        identity = DATA['identity']
+        identity_labels = labels['identitylabels']
+        career = section('career-timeline', identity_labels['career'],
+                         '<ol>' + ''.join('<li data-career-role="' + key + '"><p>' + esc(copy) + '</p></li>'
+                                         for key, copy in zip(('appraiva', 'royal-abraj'), identity['roles'][lang])) +
+                         '</ol><ul>' + ''.join('<li>' + esc(copy) + '</li>' for copy in identity['background'][lang]) + '</ul>')
+        text, count = re.subn(r'<section class="profile-resources" id="career-timeline"[^>]*>.*?</section>', lambda _: career, text, flags=re.S)
+        if count != 1:
+            raise ValueError(f'{path}: career section count {count}')
+        text, count = re.subn(r'(<section class="profile-resources" id="education"[^>]*>.*?</h2>).*?</section>',
+                             lambda m: m[1] + '<p>' + esc(identity_labels['education']) + '</p></section>', text, flags=re.S)
+        if count != 1:
+            raise ValueError(f'{path}: education section count {count}')
+        topic_links = []
+        for topic in identity['topics']:
+            target = topic['path']
+            # The original rent/ownership study is an English resource; translated
+            # versions, when present, are selected by the locale-aware source.
+            local = ROOT / lang / target.lstrip('/')
+            if lang != 'en' and (local / 'index.html' if target.endswith('/') else local).exists():
+                target = prefix + target
+            topic_links.append('<li>' + link(target, topic['labels'][lang]) + '</li>')
+        topics = section('my-topics', identity_labels['topics'], '<ul>' + ''.join(topic_links) + '</ul>')
+        text = marked(text, 'brand-biography-topics', topics, '<section class="profile-resources" id="career-timeline"')
         # Name the displayed portrait in each localized biography's schema.
         # The selected image, identity and its existing rights remain unchanged.
         def portrait_metadata(match):
             graph = json.loads(match[1])
+            def update_person(value):
+                if isinstance(value, dict):
+                    if value.get('@type') == 'Person' and value.get('@id') == BASE + '/#person':
+                        value['description'] = identity['entity'][lang]
+                    for child in value.values():
+                        update_person(child)
+                elif isinstance(value, list):
+                    for child in value:
+                        update_person(child)
+            update_person(graph)
             for node in graph.get('@graph', [graph]):
                 if node.get('@type') == 'ProfilePage':
                     node['image'] = {

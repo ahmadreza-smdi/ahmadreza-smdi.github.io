@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1280" viewBox="0 0 1200 1280" role="img" aria-labelledby="title desc" xml:lang="ar">
+<title id="title">رسم أصلي لاتخاذ القرار</title><desc id="desc">أربعة أسئلة وأربعة أغراض للمصادر. راجع التواريخ والتغطية والشروط قبل استخدام الإجابة.</desc>
+<rect width="1200" height="1280" rx="32" fill="#F2F7F5"/>
+<rect x="70" y="70" width="1060" height="230" rx="22" fill="#BDE7D2" stroke="#0B6A7A" stroke-width="2"/>
+<text x="600" y="155" font-family="Vazirmatn, Tahoma, Arial, sans-serif" font-size="80" font-weight="600" fill="#0E2A33" text-anchor="middle" direction="rtl">اتجاه السوق؟</text>
+<text x="600" y="260" font-family="Vazirmatn, Tahoma, Arial, sans-serif" font-size="80" font-weight="600" fill="#0E2A33" text-anchor="middle" direction="rtl">مؤشر البيع</text>
+<rect x="70" y="360" width="1060" height="230" rx="22" fill="#C3DCF4" stroke="#0B6A7A" stroke-width="2"/>
+<text x="600" y="445" font-family="Vazirmatn, Tahoma, Arial, sans-serif" font-size="80" font-weight="600" fill="#0E2A33" text-anchor="middle" direction="rtl">مرجع الإيجار؟</text>
+<text x="600" y="550" font-family="Vazirmatn, Tahoma, Arial, sans-serif" font-size="80" font-weight="600" fill="#0E2A33" text-anchor="middle" direction="rtl">مؤشر الإيجار</text>
+<rect x="70" y="650" width="1060" height="230" rx="22" fill="#E3EDE8" stroke="#0B6A7A" stroke-width="2"/>
+<text x="600" y="735" font-family="Vazirmatn, Tahoma, Arial, sans-serif" font-size="80" font-weight="600" fill="#0E2A33" text-anchor="middle" direction="rtl">عقار محدد؟</text>
+<text x="600" y="840" font-family="Vazirmatn, Tahoma, Arial, sans-serif" font-size="80" font-weight="600" fill="#0E2A33" text-anchor="middle" direction="rtl">خدمة التقييم</text>
+<rect x="70" y="940" width="1060" height="230" rx="22" fill="#D7EAF4" stroke="#0B6A7A" stroke-width="2"/>
+<text x="600" y="1025" font-family="Vazirmatn, Tahoma, Arial, sans-serif" font-size="80" font-weight="600" fill="#0E2A33" text-anchor="middle" direction="rtl">تكلفة الشراء؟</text>
+<text x="600" y="1130" font-family="Vazirmatn, Tahoma, Arial, sans-serif" font-size="80" font-weight="600" fill="#0E2A33" text-anchor="middle" direction="rtl">صفحات الرسوم</text>
+</svg>

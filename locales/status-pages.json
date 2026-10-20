@@ -4,7 +4,7 @@
   "pages": [
     {
       "id": "now",
-      "updated_at": "2026-10-20T02:03:18+03:30",
+      "updated_at": "2026-10-20T13:00:21+03:30",
       "locales": {
         "en": {
           "title": "Now | Ahmadreza Samadi",
@@ -16,7 +16,7 @@
               "id": "appraiva",
               "heading": "AI real estate intelligence",
               "paragraphs": [
-                "I’m based in Dubai and work remotely as Co-Founder & Technical Lead at Appraiva, a US-based company in Cleveland, Ohio. My work connects property imagery analysis, property data, enrichment and search with tools for investment research."
+                "I am based in Dubai and work remotely as Co-Founder & Technical Lead at Appraiva, a US company in Cleveland, Ohio. It builds AI tools that help real estate investors and developers find distressed and off-market properties through imagery analysis and enriched property data."
               ],
               "links": [
                 {
@@ -29,7 +29,7 @@
               "id": "royal-abraj",
               "heading": "Business systems in Dubai",
               "paragraphs": [
-                "As Co-Founder & CEO of Royal Abraj Group, I lead digital strategy across websites, CRM workflows, customer tools and internal operations. My work connects the customer journey with the systems the team uses to manage it."
+                "I am Co-Founder & CEO of Royal Abraj Group in Dubai. The group covers property brokerage and documents-clearing services; I lead its digital strategy and technology."
               ],
               "links": [
                 {
@@ -75,26 +75,26 @@
             },
             {
               "id": "recent-writing",
-              "heading": "Selected explainers",
+              "heading": "Property decisions: selected reading",
               "paragraphs": [
-                "Selected technology explainers cover how contactless cards work without batteries, how noise cancellation works, why USB-C cables have different capabilities, and how phones recognize text in photos."
+                "Four starting points for AI property valuation, renting versus owning, AI in real estate decisions, and Dubai property costs and data."
               ],
               "links": [
                 {
-                  "path": "writing/how-contactless-cards-work.html",
-                  "label": "Contactless cards"
+                  "path": "writing/ai-home-value-estimates.html",
+                  "label": "AI property valuation"
                 },
                 {
-                  "path": "writing/how-noise-cancellation-works.html",
-                  "label": "Noise cancellation"
+                  "path": "studies/rent-own-2026/",
+                  "label": "Rent versus owning"
                 },
                 {
-                  "path": "writing/why-usb-c-cables-differ.html",
-                  "label": "USB-C cables"
+                  "path": "writing/ai-human-review-real-estate.html",
+                  "label": "Where AI should stop"
                 },
                 {
-                  "path": "writing/how-photo-text-recognition-works.html",
-                  "label": "Photo-to-text recognition"
+                  "path": "writing/which-dubai-property-source.html",
+                  "label": "Dubai property costs and data"
                 }
               ]
             }
@@ -124,7 +124,7 @@
               "id": "appraiva",
               "heading": "هوش مصنوعی برای تحلیل اطلاعات املاک",
               "paragraphs": [
-                "ساکن دبی هستم و به‌عنوان هم‌بنیان‌گذار و راهبر فنی Appraiva، شرکتی آمریکایی مستقر در کلیولند، اوهایو، از راه دور کار می‌کنم. کار من تحلیل تصاویر ملک، داده‌های املاک، غنی‌سازی داده و جست‌وجو را به ابزارهایی برای بررسی فرصت‌های سرمایه‌گذاری پیوند می‌دهد."
+                "من ساکن دبی هستم و به‌عنوان هم‌بنیان‌گذار و راهبر فنی Appraiva، شرکتی آمریکایی در کلیولندِ اوهایو، به‌صورت دورکار فعالیت می‌کنم. این شرکت ابزارهای هوش مصنوعی می‌سازد که با تحلیل تصاویر و داده‌های تکمیل‌شدهٔ املاک به سرمایه‌گذاران و توسعه‌دهندگان املاک کمک می‌کنند املاک دچار مشکلات مالی و املاک خارج از بازار را بیابند."
               ],
               "links": [
                 {
@@ -137,7 +137,7 @@
               "id": "royal-abraj",
               "heading": "سامانه‌های کسب‌وکار در دبی",
               "paragraphs": [
-                "به‌عنوان هم‌بنیان‌گذار و مدیرعامل گروه رویال ابراج، راهبرد دیجیتال وب‌سایت‌ها، فرایندهای مدیریت ارتباط با مشتری، ابزارهای مشتریان و عملیات داخلی را هدایت می‌کنم. کار من مسیر ارتباط و همکاری با مشتری را به سامانه‌هایی پیوند می‌دهد که تیم برای مدیریت آن به کار می‌برد."
+                "من هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group در دبی هستم. این گروه در حوزه‌های کارگزاری املاک و خدمات انجام امور اسناد فعالیت دارد؛ من راهبرد دیجیتال و فناوری آن را هدایت می‌کنم."
               ],
               "links": [
                 {
@@ -183,26 +183,26 @@
             },
             {
               "id": "recent-writing",
-              "heading": "توضیح‌های منتخب",
+              "heading": "تصمیم‌های ملکی: مطالعهٔ منتخب",
               "paragraphs": [
-                "توضیح‌های منتخب من درباره فناوری به این موضوع‌ها می‌پردازند: کارت‌های بدون تماس چگونه بدون باتری کار می‌کنند، حذف نویز چگونه انجام می‌شود، چرا کابل‌های USB-C قابلیت‌های متفاوتی دارند و گوشی چگونه متن داخل عکس را تشخیص می‌دهد."
+                "چهار نقطهٔ شروع برای ارزش‌گذاری ملک با هوش مصنوعی، اجاره در برابر مالکیت، هوش مصنوعی در تصمیم‌های ملکی و هزینه‌ها و داده‌های املاک دبی."
               ],
               "links": [
                 {
-                  "path": "writing/how-contactless-cards-work.html",
-                  "label": "کارت‌های بدون تماس"
+                  "path": "writing/ai-home-value-estimates.html",
+                  "label": "ارزش‌گذاری ملک با هوش مصنوعی"
                 },
                 {
-                  "path": "writing/how-noise-cancellation-works.html",
-                  "label": "حذف نویز"
+                  "path": "studies/rent-own-2026/",
+                  "label": "اجاره در برابر مالکیت"
                 },
                 {
-                  "path": "writing/why-usb-c-cables-differ.html",
-                  "label": "کابل‌های USB-C"
+                  "path": "writing/ai-human-review-real-estate.html",
+                  "label": "مرز کار هوش مصنوعی"
                 },
                 {
-                  "path": "writing/how-photo-text-recognition-works.html",
-                  "label": "تشخیص متن در عکس"
+                  "path": "writing/which-dubai-property-source.html",
+                  "label": "هزینه‌ها و داده‌های املاک دبی"
                 }
               ]
             }
@@ -232,7 +232,7 @@
               "id": "appraiva",
               "heading": "المعلومات العقارية بالذكاء الاصطناعي",
               "paragraphs": [
-                "أقيم في دبي وأعمل عن بُعد بصفتي المؤسس المشارك والقائد التقني في Appraiva، وهي شركة أمريكية مقرها كليفلاند، أوهايو. يربط عملي تحليل صور العقارات وبياناتها وإثراء تلك البيانات والبحث فيها بأدوات لدراسة فرص الاستثمار."
+                "أقيم في دبي وأعمل عن بُعد بصفتي شريكًا مؤسسًا وقائدًا تقنيًا في Appraiva، وهي شركة أمريكية في كليفلاند بولاية أوهايو. تبني الشركة أدوات ذكاء اصطناعي تساعد المستثمرين والمطورين العقاريين على العثور على عقارات متعثرة وعقارات غير معروضة في السوق من خلال تحليل الصور وبيانات العقارات المُثرَاة."
               ],
               "links": [
                 {
@@ -245,7 +245,7 @@
               "id": "royal-abraj",
               "heading": "أنظمة الأعمال في دبي",
               "paragraphs": [
-                "بصفتي المؤسس المشارك والرئيس التنفيذي لمجموعة رويال أبراج، أقود الاستراتيجية الرقمية للمواقع الإلكترونية وسير عمل إدارة علاقات العملاء وأدوات العملاء والعمليات الداخلية. يربط عملي رحلة العميل بالأنظمة التي يستخدمها الفريق لإدارتها."
+                "أنا شريك مؤسس ورئيس تنفيذي في Royal Abraj Group في دبي. تشمل أعمال المجموعة الوساطة العقارية وخدمات تخليص المستندات؛ وأقود استراتيجيتها الرقمية والتكنولوجيا."
               ],
               "links": [
                 {
@@ -291,26 +291,26 @@
             },
             {
               "id": "recent-writing",
-              "heading": "شروحات مختارة",
+              "heading": "القرارات العقارية: قراءات مختارة",
               "paragraphs": [
-                "تتناول شروحاتي التقنية المختارة كيفية عمل البطاقات اللاتلامسية دون بطاريات، وكيف يعمل إلغاء الضوضاء، ولماذا تختلف قدرات كابلات USB-C، وكيف تتعرّف الهواتف على النص داخل الصور."
+                "أربع نقاط بداية لتقييم العقارات بالذكاء الاصطناعي، والإيجار مقابل التملك، والذكاء الاصطناعي في القرارات العقارية، وتكاليف وبيانات عقارات دبي."
               ],
               "links": [
                 {
-                  "path": "writing/how-contactless-cards-work.html",
-                  "label": "البطاقات اللاتلامسية"
+                  "path": "writing/ai-home-value-estimates.html",
+                  "label": "تقييم العقارات بالذكاء الاصطناعي"
                 },
                 {
-                  "path": "writing/how-noise-cancellation-works.html",
-                  "label": "إلغاء الضوضاء"
+                  "path": "studies/rent-own-2026/",
+                  "label": "الإيجار مقابل التملك"
                 },
                 {
-                  "path": "writing/why-usb-c-cables-differ.html",
-                  "label": "كابلات USB-C"
+                  "path": "writing/ai-human-review-real-estate.html",
+                  "label": "أين يجب أن يتوقف الذكاء الاصطناعي"
                 },
                 {
-                  "path": "writing/how-photo-text-recognition-works.html",
-                  "label": "التعرّف على النص في الصور"
+                  "path": "writing/which-dubai-property-source.html",
+                  "label": "تكاليف وبيانات عقارات دبي"
                 }
               ]
             }
@@ -334,13 +334,13 @@
     },
     {
       "id": "speaking",
-      "updated_at": "2026-10-17T00:30:02+03:30",
+      "updated_at": "2026-10-20T13:00:21+03:30",
       "locales": {
         "en": {
           "title": "Writing topics | Ahmadreza Samadi",
           "description": "Writing topics from Ahmadreza Samadi's work in AI products, property data and business systems, with related published work and written contact details.",
           "heading": "Writing topics",
-          "lead": "Topics drawn from my work in AI products, property data and business operations, with related published work to read.",
+          "lead": "Writing about AI real estate intelligence, property decisions and business technology, with related published work to read.",
           "sections": [
             {
               "id": "decision-first-ai",
@@ -403,7 +403,7 @@
           "title": "موضوع‌های نوشتار | احمدرضا صمدی",
           "description": "موضوع‌های نوشتار احمدرضا صمدی درباره محصولات هوش مصنوعی، داده‌های املاک و سامانه‌های کسب‌وکار؛ همراه با آثار منتشرشده و راه تماس کتبی.",
           "heading": "موضوع‌های نوشتار",
-          "lead": "موضوع‌هایی برگرفته از کار من در محصولات هوش مصنوعی، داده‌های املاک و عملیات کسب‌وکار، همراه با آثار منتشرشده برای مطالعه.",
+          "lead": "نوشتن دربارهٔ تحلیل اطلاعات املاک با هوش مصنوعی، تصمیم‌های ملکی و فناوری کسب‌وکار، همراه با آثار منتشرشده برای مطالعه.",
           "sections": [
             {
               "id": "decision-first-ai",
@@ -466,7 +466,7 @@
           "title": "موضوعات الكتابة | أحمدرضا صمدي",
           "description": "موضوعات كتابة أحمدرضا صمدي حول منتجات الذكاء الاصطناعي وبيانات العقارات وأنظمة الأعمال، مع أعمال منشورة ووسيلة تواصل كتابية.",
           "heading": "موضوعات الكتابة",
-          "lead": "موضوعات مستمدة من عملي في منتجات الذكاء الاصطناعي وبيانات العقارات وعمليات الأعمال، مع أعمال منشورة للقراءة.",
+          "lead": "الكتابة عن المعلومات العقارية بالذكاء الاصطناعي والقرارات العقارية وتكنولوجيا الأعمال، مع أعمال منشورة للقراءة.",
           "sections": [
             {
               "id": "decision-first-ai",

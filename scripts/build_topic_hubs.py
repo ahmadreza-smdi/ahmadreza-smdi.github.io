@@ -274,8 +274,8 @@ def render(data, hub, language):
 </section>
 <aside class="article-author" aria-labelledby="article-author-title">
 <h2 id="article-author-title">{escape(labels["author"])}</h2>
-<p class="article-author__name"><a href="/{prefix}about.html" rel="author">{escape(labels["name"])}</a></p>
 <p>{escape(copy["author_bio"])}</p>
+<p class="article-author__name"><a href="/{prefix}about.html" rel="author">{escape(labels["name"])}</a></p>
 </aside>
 <footer class="editorial-footer"><nav aria-label="{escape(labels["related"], quote=True)}"><a href="/{prefix}writing/">{escape(labels["all_writing"])}</a> · <a href="/{prefix}about.html#official-profiles">{escape(labels["profiles"])}</a></nav>{discovery}<p>{escape(labels["name"])} · {escape(labels["position"])}</p><a href="/{prefix}#contact">{escape(labels["contact"])}</a></footer>
 </main>
@@ -287,7 +287,12 @@ def render(data, hub, language):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true")
+    parser.add_argument("--backup-root", type=Path, default=ROOT.parent.parent / "Backups",
+                        help="Private backup directory outside the public repository")
     args = parser.parse_args()
+    backup_root = args.backup_root.resolve()
+    if backup_root == ROOT or ROOT in backup_root.parents:
+        raise ValueError("Backups must remain outside the public repository")
     data = json.loads(DATA.read_text())
     if data.get("primary_language") != "en":
         raise ValueError("Topic hubs must retain English as the original")
@@ -313,7 +318,7 @@ def main():
     # Back up changed, existing outputs outside the public repository before replacing them.
     existing = [(path, current) for path, current, _ in changed if current is not None]
     if existing:
-        backup = ROOT.parent.parent / "Backups" / ("topic-hubs-" + datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ"))
+        backup = backup_root / ("topic-hubs-" + datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ"))
         for path, current in existing:
             saved = backup / path.relative_to(ROOT)
             saved.parent.mkdir(parents=True, exist_ok=True)

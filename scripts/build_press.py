@@ -1,7 +1,8 @@
 """Build the three factual press/media resource pages from approved public copy.
 
-Content lives in locales/press.json. The English bios must still match the current public
-biography; update all languages together when that biography changes. Existing portraits,
+Content lives in locales/press.json. The English short and 100-word bios must match the
+current public biography; the entity sentence must match article author bios. Update all
+languages together when that biography changes. Existing portraits,
 monogram, profile ZIP and contact card are linked directly. No Article dates, press coverage,
 speaking history or new personal claims are generated. Run --check before publication.
 """
@@ -32,14 +33,25 @@ def validate(data):
     if english['short_bio'] != short or english['extended_bio'] != extended:
         raise ValueError('Update press biography copy in all languages to match the current approved public biography')
     brand = data['brand']
-    for length, text in brand['bios']['en'].items():
-        if len(text.split()) != int(length):
-            raise ValueError('English brand bio does not match its stated word count')
     author_bios = json.loads((ROOT / 'locales/author-bios.json').read_text())
+    if len(brand['bios']['en']['short']) > 160:
+        raise ValueError('English short biography exceeds 160 characters')
+    if len(brand['bios']['en']['100'].split()) != 100:
+        raise ValueError('English 100-word biography does not match its stated word count')
     for lang in ('en', 'fa', 'ar'):
-        if brand['bios'][lang]['25'] != author_bios[lang]:
-            raise ValueError('Press and article author biographies differ')
-    if brand['bios']['en']['25'] != short or brand['bios']['en']['100'] != '\n\n'.join(extended):
+        bios = brand['bios'][lang]
+        page = data['pages'][lang]
+        if set(bios) != {'short', 'entity', '100'}:
+            raise ValueError('Each press locale needs a short bio, entity sentence and 100-word bio translation')
+        if set(brand['labels'][lang]['bio_headings']) != set(bios):
+            raise ValueError('Each press biography needs an accurate localized heading')
+        if bios['entity'] != author_bios[lang] or page['entity_bio'] != bios['entity']:
+            raise ValueError('Press and article author entity sentences differ')
+        if not bios['100'].startswith(bios['entity'] + ' '):
+            raise ValueError('Every long press biography must start with its entity sentence')
+        if page['short_bio'] != bios['short'] or '\n\n'.join(page['extended_bio']) != bios['100']:
+            raise ValueError('Press biography copies differ within a locale')
+    if brand['bios']['en']['short'] != short or brand['bios']['en']['100'] != '\n\n'.join(extended):
         raise ValueError('Public biography does not match the brand bio set')
     for figure in brand['figures']:
         if not figure['source_years'] or not figure['url'] or set(figure['labels']) != set(LOCALES):
@@ -109,11 +121,9 @@ def brand_bios(data, lang):
     brand = data['brand']
     labels = brand['labels'][lang]
     parts = [f'<section class="profile-resources" id="bio-set" aria-labelledby="bio-set-title"><h2 id="bio-set-title">{escape(labels["bios"])}</h2>']
-    for length, text in brand['bios'][lang].items():
-        heading = (f'{length} words' if lang == 'en' else
-                   f'ترجمهٔ بیوی {length} کلمه‌ای انگلیسی' if lang == 'fa' else
-                   f'ترجمة النبذة الإنجليزية من {length} كلمة')
-        parts.append(f'<h3 id="bio-{length}">{heading}</h3><p>{mixed(text, lang)}</p>')
+    for key, text in brand['bios'][lang].items():
+        heading = labels['bio_headings'][key]
+        parts.append(f'<h3 id="bio-{key}">{escape(heading)}</h3><p>{mixed(text, lang)}</p>')
     parts.append('</section>')
     return parts
 

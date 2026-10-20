@@ -112,13 +112,13 @@
       "knownintro": "My work centers on three areas.",
       "knownnames": [
         "AI for property decisions",
-        "Start with the Decision",
-        "Tech, explained"
+        "Start with the decision",
+        "Building in Dubai"
       ],
       "knowncopy": [
-        "At Appraiva, my technical work connects property imagery analysis with property identity, data enrichment and search.",
-        "My essay and interactive guide start with the person’s next decision, the evidence it needs and a useful first experiment.",
-        "Plain-language technology articles and films explain how systems work, using examples with their limits made clear."
+        "Co-Founder & Technical Lead, Appraiva. Appraiva is a US company in Cleveland, Ohio; he works remotely from Dubai. It builds AI tools that help real estate investors and developers find distressed and off-market properties through imagery analysis and enriched property data.",
+        "Decision-first guide.",
+        "Co-Founder & CEO, Royal Abraj Group, Dubai. The group covers property brokerage and documents-clearing services; he leads its digital strategy and technology."
       ],
       "publiclinks": [
         "Property studies",
@@ -133,7 +133,19 @@
         "Count the full cost of an accepted result.",
         "Keep property identity, source and date together.",
         "Set permissions before an AI agent can act."
-      ]
+      ],
+      "navlabels": [
+        "Work",
+        "About",
+        "Studies / Tools",
+        "Writing"
+      ],
+      "identitylabels": {
+        "career": "Career and background",
+        "education": "Education: Shahid Beheshti University.",
+        "topics": "My topics",
+        "selected": "Selected work and writing"
+      }
     },
     "fa": {
       "ideas": "ایده‌های اصلی",
@@ -149,13 +161,13 @@
       "knownintro": "کار من بر سه حوزه متمرکز است.",
       "knownnames": [
         "هوش مصنوعی برای تصمیم‌های ملکی",
-        "Start with the Decision",
-        "Tech, explained"
+        "از تصمیم آغاز کنید",
+        "ساخت کسب‌وکار در دبی"
       ],
       "knowncopy": [
-        "در Appraiva، کار فنی من تحلیل تصاویر املاک را به هویت ملک، غنی‌سازی داده و جست‌وجو متصل می‌کند.",
-        "مقاله و راهنمای تعاملی من از تصمیم بعدی فرد، شواهد موردنیاز و یک آزمایش اولیهٔ مفید آغاز می‌شوند.",
-        "مقاله‌ها و فیلم‌های سادهٔ فناوری، عملکرد سیستم‌ها را با مثال‌هایی توضیح می‌دهند که محدودیت‌هایشان روشن است."
+        "هم‌بنیان‌گذار و راهبر فنی Appraiva. اپرایوا شرکتی آمریکایی در کلیولند، اوهایو است؛ او از دبی به‌صورت دورکار فعالیت می‌کند. این شرکت ابزارهای هوش مصنوعی می‌سازد که با تحلیل تصاویر و داده‌های غنی‌شدهٔ املاک، به سرمایه‌گذاران و توسعه‌دهندگان املاک کمک می‌کنند املاک دارای مشکلات یا فرسودگی و املاک خارج از بازار عمومی را پیدا کنند.",
+        "راهنمای تصمیم‌محور.",
+        "هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group در دبی. این گروه در حوزهٔ کارگزاری املاک و خدمات انجام امور اسناد فعالیت می‌کند؛ او راهبرد دیجیتال و فناوری آن را هدایت می‌کند."
       ],
       "publiclinks": [
         "مطالعه‌های املاک",
@@ -170,7 +182,19 @@
         "هزینهٔ کامل یک نتیجهٔ پذیرفته‌شده را حساب کنید.",
         "هویت ملک، منبع و تاریخ را کنار هم نگه دارید.",
         "پیش از اقدام عامل هوش مصنوعی، مجوزهایش را مشخص کنید."
-      ]
+      ],
+      "navlabels": [
+        "کارها",
+        "درباره",
+        "مطالعه‌ها / ابزارها",
+        "نوشته‌ها"
+      ],
+      "identitylabels": {
+        "career": "مسیر حرفه‌ای و پیشینه",
+        "education": "تحصیلات: دانشگاه شهید بهشتی.",
+        "topics": "موضوع‌های من",
+        "selected": "کارها و نوشته‌های منتخب"
+      }
     },
     "ar": {
       "ideas": "الأفكار الأساسية",
@@ -186,13 +210,13 @@
       "knownintro": "يركّز عملي على ثلاثة مجالات.",
       "knownnames": [
         "الذكاء الاصطناعي للقرارات العقارية",
-        "Start with the Decision",
-        "Tech, explained"
+        "ابدأ بالقرار",
+        "بناء الأعمال في دبي"
       ],
       "knowncopy": [
-        "في Appraiva، يربط عملي التقني تحليل صور العقارات بهوية العقار وإثراء البيانات والبحث.",
-        "تنطلق مقالتي ودليلي التفاعلي من القرار التالي للشخص، والأدلة المطلوبة، وتجربة أولى مفيدة.",
-        "تشرح مقالاتي وأفلامي التقنية بلغة مبسطة طريقة عمل الأنظمة، بأمثلة توضح حدودها."
+        "شريك مؤسس وقائد تقني في Appraiva. أبرايفا شركة أمريكية في كليفلاند، أوهايو؛ ويعمل عن بُعد من دبي. تبني الشركة أدوات ذكاء اصطناعي تساعد المستثمرين والمطورين العقاريين على العثور على عقارات متعثرة أو غير معروضة في السوق، من خلال تحليل الصور وبيانات العقارات المُثرَاة.",
+        "دليل يبدأ بالقرار.",
+        "شريك مؤسس ورئيس تنفيذي في Royal Abraj Group بدبي. تشمل أعمال المجموعة الوساطة العقارية وخدمات تخليص المستندات؛ ويتولى قيادة استراتيجيتها الرقمية وتقنياتها."
       ],
       "publiclinks": [
         "الدراسات العقارية",
@@ -207,7 +231,19 @@
         "احسب التكلفة الكاملة للنتيجة المقبولة.",
         "أبقِ هوية العقار والمصدر والتاريخ معًا.",
         "حدّد الصلاحيات قبل أن يتصرف وكيل الذكاء الاصطناعي."
-      ]
+      ],
+      "navlabels": [
+        "الأعمال",
+        "نبذة",
+        "دراسات / أدوات",
+        "المقالات"
+      ],
+      "identitylabels": {
+        "career": "المسيرة المهنية والخلفية",
+        "education": "التعليم: جامعة شهيد بهشتي.",
+        "topics": "موضوعاتي",
+        "selected": "أعمال ومقالات مختارة"
+      }
     }
   },
   "homepage_translations": {
@@ -234,6 +270,158 @@
     "Include retries, failures and review when counting the cost of a result that meets an explicit acceptance rule.": [
       "در محاسبهٔ هزینهٔ نتیجه‌ای که معیار پذیرش مشخصی را برآورده می‌کند، تلاش‌های دوباره، شکست‌ها و بررسی را لحاظ کنید.",
       "احسب إعادة المحاولة والإخفاق والمراجعة ضمن تكلفة النتيجة التي تستوفي قاعدة قبول واضحة."
+    ],
+    "What I work on": [
+      "روی چه چیزی کار می‌کنم",
+      "مجالات عملي"
+    ],
+    "Proof": [
+      "کارهای قابل بررسی",
+      "أعمال يمكن الاطلاع عليها"
+    ],
+    "My topics": [
+      "موضوع‌های من",
+      "موضوعاتي"
+    ],
+    "AI for property decisions": [
+      "هوش مصنوعی برای تصمیم‌های ملکی",
+      "الذكاء الاصطناعي للقرارات العقارية"
+    ],
+    "Start with the decision": [
+      "از تصمیم آغاز کنید",
+      "ابدأ بالقرار"
+    ],
+    "Building in Dubai": [
+      "ساخت کسب‌وکار در دبی",
+      "بناء الأعمال في دبي"
+    ],
+    "Studies / Tools": [
+      "مطالعه‌ها / ابزارها",
+      "دراسات / أدوات"
+    ],
+    "Studies and tools": [
+      "مطالعه‌ها و ابزارها",
+      "دراسات وأدوات"
+    ],
+    "Property studies": [
+      "مطالعه‌های املاک",
+      "الدراسات العقارية"
+    ],
+    "Practical tools": [
+      "ابزارهای کاربردی",
+      "أدوات عملية"
+    ],
+    "AI × property × business": [
+      "هوش مصنوعی × املاک × کسب‌وکار",
+      "الذكاء الاصطناعي × العقارات × الأعمال"
+    ],
+    "Explore the work, evidence and questions behind my property decisions.": [
+      "کارها، شواهد و پرسش‌های مرتبط با تصمیم‌های ملکی من را ببینید.",
+      "استكشف الأعمال والأدلة والأسئلة التي تستند إليها قراراتي العقارية."
+    ],
+    "My current roles": [
+      "نقش‌های فعلی من",
+      "أدواري الحالية"
+    ],
+    "Background": [
+      "پیشینه",
+      "الخلفية"
+    ],
+    "Enterprise data engineering": [
+      "مهندسی دادهٔ سازمانی",
+      "هندسة بيانات المؤسسات"
+    ],
+    "Machine learning": [
+      "یادگیری ماشین",
+      "تعلّم الآلة"
+    ],
+    "Education: Shahid Beheshti University.": [
+      "تحصیلات: دانشگاه شهید بهشتی.",
+      "التعليم: جامعة شهيد بهشتي."
+    ],
+    "Dubai, UAE · Working remotely with Appraiva in Cleveland, Ohio": [
+      "دبی، امارات · همکاری دورکار با Appraiva در کلیولند، اوهایو",
+      "دبي، الإمارات · العمل عن بُعد مع Appraiva في كليفلاند، أوهايو"
+    ],
+    "Appraiva · Cleveland, Ohio, United States · Remote from Dubai": [
+      "Appraiva · کلیولند، اوهایو، آمریکا · دورکار از دبی",
+      "Appraiva · كليفلاند، أوهايو، الولايات المتحدة · عن بُعد من دبي"
+    ],
+    "Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead of Appraiva, which builds AI real estate intelligence, and Co-Founder & CEO of Royal Abraj Group.": [
+      "احمدرضا صمدی کارآفرین فناوری ساکن دبی، هم‌بنیان‌گذار و راهبر فنی Appraiva، سازندهٔ راهکارهای هوش مصنوعی برای اطلاعات املاک، و هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group است.",
+      "أحمدرضا صمدي رائد أعمال تقني مقيم في دبي، وشريك مؤسس وقائد تقني في Appraiva التي تطوّر حلول ذكاء اصطناعي للمعلومات العقارية، وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group."
+    ],
+    "Co-Founder & Technical Lead, Appraiva. Appraiva is a US company in Cleveland, Ohio; he works remotely from Dubai. It builds AI tools that help real estate investors and developers find distressed and off-market properties through imagery analysis and enriched property data.": [
+      "هم‌بنیان‌گذار و راهبر فنی Appraiva. اپرایوا شرکتی آمریکایی در کلیولند، اوهایو است؛ او از دبی به‌صورت دورکار فعالیت می‌کند. این شرکت ابزارهای هوش مصنوعی می‌سازد که با تحلیل تصاویر و داده‌های غنی‌شدهٔ املاک، به سرمایه‌گذاران و توسعه‌دهندگان املاک کمک می‌کنند املاک دارای مشکلات یا فرسودگی و املاک خارج از بازار عمومی را پیدا کنند.",
+      "شريك مؤسس وقائد تقني في Appraiva. أبرايفا شركة أمريكية في كليفلاند، أوهايو؛ ويعمل عن بُعد من دبي. تبني الشركة أدوات ذكاء اصطناعي تساعد المستثمرين والمطورين العقاريين على العثور على عقارات متعثرة أو غير معروضة في السوق، من خلال تحليل الصور وبيانات العقارات المُثرَاة."
+    ],
+    "Co-Founder & CEO, Royal Abraj Group, Dubai. The group covers property brokerage and documents-clearing services; he leads its digital strategy and technology.": [
+      "هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group در دبی. این گروه در حوزهٔ کارگزاری املاک و خدمات انجام امور اسناد فعالیت می‌کند؛ او راهبرد دیجیتال و فناوری آن را هدایت می‌کند.",
+      "شريك مؤسس ورئيس تنفيذي في Royal Abraj Group بدبي. تشمل أعمال المجموعة الوساطة العقارية وخدمات تخليص المستندات؛ ويتولى قيادة استراتيجيتها الرقمية وتقنياتها."
+    ],
+    "Enterprise data engineering and machine learning.": [
+      "مهندسی دادهٔ سازمانی و یادگیری ماشین.",
+      "هندسة بيانات المؤسسات وتعلّم الآلة."
+    ],
+    "Azure data infrastructure for CRM migration and analytics at Oxfam Novib.": [
+      "زیرساخت دادهٔ Azure برای مهاجرت CRM و تحلیل داده در Oxfam Novib.",
+      "بنية بيانات Azure لترحيل CRM والتحليلات لدى Oxfam Novib."
+    ],
+    "Predictive customer segmentation at MCI.": [
+      "بخش‌بندی پیش‌بینانهٔ مشتریان در MCI.",
+      "التقسيم التنبؤي للعملاء لدى MCI."
+    ],
+    "AI property valuation": [
+      "ارزش‌گذاری ملک با هوش مصنوعی",
+      "تقييم العقارات بالذكاء الاصطناعي"
+    ],
+    "Rent vs owning": [
+      "اجاره در برابر مالکیت",
+      "الإيجار مقابل التملّك"
+    ],
+    "AI in real estate decisions": [
+      "هوش مصنوعی در تصمیم‌های ملکی",
+      "الذكاء الاصطناعي في القرارات العقارية"
+    ],
+    "Dubai property costs and data": [
+      "هزینه‌ها و داده‌های املاک دبی",
+      "تكاليف وبيانات العقارات في دبي"
+    ],
+    "Co-Founder & Technical Lead, Appraiva. Co-Founder & CEO, Royal Abraj Group.": [
+      "هم‌بنیان‌گذار و راهبر فنی Appraiva. هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group.",
+      "شريك مؤسس وقائد تقني في Appraiva. شريك مؤسس ورئيس تنفيذي في Royal Abraj Group."
+    ],
+    "Enterprise data engineering and machine learning. Predictive customer segmentation at MCI.": [
+      "مهندسی دادهٔ سازمانی و یادگیری ماشین. بخش‌بندی پیش‌بینانهٔ مشتریان در MCI.",
+      "هندسة بيانات المؤسسات وتعلّم الآلة. التقسيم التنبؤي للعملاء لدى MCI."
+    ],
+    "Azure": [
+      "Azure",
+      "Azure"
+    ],
+    "CRM": [
+      "CRM",
+      "CRM"
+    ],
+    "MCI": [
+      "MCI",
+      "MCI"
+    ],
+    "Oxfam Novib": [
+      "Oxfam Novib",
+      "Oxfam Novib"
+    ],
+    "What an automated estimate can and cannot tell you about a home.": [
+      "برآورد خودکار دربارهٔ یک خانه چه چیزهایی را می‌تواند و چه چیزهایی را نمی‌تواند بگوید.",
+      "ما الذي يمكن للتقدير الآلي أن يخبرك به عن المنزل، وما حدوده."
+    ],
+    "Where a person checks evidence before a property decision.": [
+      "نقطه‌ای که فرد پیش از تصمیم ملکی، شواهد را بررسی می‌کند.",
+      "أين يراجع الشخص الأدلة قبل اتخاذ قرار عقاري."
+    ],
+    "Match the property question to the appropriate Dubai data source.": [
+      "پرسش ملکی را با منبع مناسب داده در دبی تطبیق دهید.",
+      "طابق السؤال العقاري مع مصدر البيانات المناسب في دبي."
     ]
   },
   "belief_sources": [
@@ -244,5 +432,82 @@
     "/writing/ai-agent-safety-boundaries.html"
   ],
   "newsletter": "https://www.linkedin.com/newsletters/7516204575893393408/",
-  "translation_note": "Machine translations checked by back-translation for the same decision/evidence/human boundary/acceptance and factual scope; no human/native certification."
+  "translation_note": "Machine translations checked by back-translation for the same decision/evidence/human boundary/acceptance and factual scope; no human/native certification.",
+  "identity": {
+    "entity": {
+      "en": "Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead of Appraiva, which builds AI real estate intelligence, and Co-Founder & CEO of Royal Abraj Group.",
+      "fa": "احمدرضا صمدی کارآفرین فناوری ساکن دبی، هم‌بنیان‌گذار و راهبر فنی Appraiva، سازندهٔ راهکارهای هوش مصنوعی برای اطلاعات املاک، و هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group است.",
+      "ar": "أحمدرضا صمدي رائد أعمال تقني مقيم في دبي، وشريك مؤسس وقائد تقني في Appraiva التي تطوّر حلول ذكاء اصطناعي للمعلومات العقارية، وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group."
+    },
+    "roles": {
+      "en": [
+        "Co-Founder & Technical Lead, Appraiva. Appraiva is a US company in Cleveland, Ohio; he works remotely from Dubai. It builds AI tools that help real estate investors and developers find distressed and off-market properties through imagery analysis and enriched property data.",
+        "Co-Founder & CEO, Royal Abraj Group, Dubai. The group covers property brokerage and documents-clearing services; he leads its digital strategy and technology."
+      ],
+      "fa": [
+        "هم‌بنیان‌گذار و راهبر فنی Appraiva. اپرایوا شرکتی آمریکایی در کلیولند، اوهایو است؛ او از دبی به‌صورت دورکار فعالیت می‌کند. این شرکت ابزارهای هوش مصنوعی می‌سازد که با تحلیل تصاویر و داده‌های غنی‌شدهٔ املاک، به سرمایه‌گذاران و توسعه‌دهندگان املاک کمک می‌کنند املاک دارای مشکلات یا فرسودگی و املاک خارج از بازار عمومی را پیدا کنند.",
+        "هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group در دبی. این گروه در حوزهٔ کارگزاری املاک و خدمات انجام امور اسناد فعالیت می‌کند؛ او راهبرد دیجیتال و فناوری آن را هدایت می‌کند."
+      ],
+      "ar": [
+        "شريك مؤسس وقائد تقني في Appraiva. أبرايفا شركة أمريكية في كليفلاند، أوهايو؛ ويعمل عن بُعد من دبي. تبني الشركة أدوات ذكاء اصطناعي تساعد المستثمرين والمطورين العقاريين على العثور على عقارات متعثرة أو غير معروضة في السوق، من خلال تحليل الصور وبيانات العقارات المُثرَاة.",
+        "شريك مؤسس ورئيس تنفيذي في Royal Abraj Group بدبي. تشمل أعمال المجموعة الوساطة العقارية وخدمات تخليص المستندات؛ ويتولى قيادة استراتيجيتها الرقمية وتقنياتها."
+      ]
+    },
+    "background": {
+      "en": [
+        "Enterprise data engineering and machine learning.",
+        "Azure data infrastructure for CRM migration and analytics at Oxfam Novib.",
+        "Predictive customer segmentation at MCI."
+      ],
+      "fa": [
+        "مهندسی دادهٔ سازمانی و یادگیری ماشین.",
+        "زیرساخت دادهٔ Azure برای مهاجرت CRM و تحلیل داده در Oxfam Novib.",
+        "بخش‌بندی پیش‌بینانهٔ مشتریان در MCI."
+      ],
+      "ar": [
+        "هندسة بيانات المؤسسات وتعلّم الآلة.",
+        "بنية بيانات Azure لترحيل CRM والتحليلات لدى Oxfam Novib.",
+        "التقسيم التنبؤي للعملاء لدى MCI."
+      ]
+    },
+    "brand_line": {
+      "en": "I build AI that helps people make better property decisions, and I run a property business in Dubai, so I know where the AI must stop.",
+      "fa": "هوش مصنوعی می‌سازم تا به مردم در تصمیم‌گیری بهتر دربارهٔ املاک کمک کند. کسب‌وکاری در حوزهٔ املاک را هم در دبی اداره می‌کنم؛ بنابراین می‌دانم هوش مصنوعی کجا باید متوقف شود.",
+      "ar": "أبني حلول ذكاء اصطناعي تساعد الناس على اتخاذ قرارات أفضل بشأن العقارات، وأدير نشاطًا عقاريًا في دبي، لذلك أعرف أين يجب أن يتوقف الذكاء الاصطناعي."
+    },
+    "topics": [
+      {
+        "path": "/writing/ai-home-value-estimates.html",
+        "labels": {
+          "en": "AI property valuation",
+          "fa": "ارزش‌گذاری ملک با هوش مصنوعی",
+          "ar": "تقييم العقارات بالذكاء الاصطناعي"
+        }
+      },
+      {
+        "path": "/studies/rent-own-2026/",
+        "labels": {
+          "en": "Rent vs owning",
+          "fa": "اجاره در برابر مالکیت",
+          "ar": "الإيجار مقابل التملّك"
+        }
+      },
+      {
+        "path": "/writing/ai-human-review-real-estate.html",
+        "labels": {
+          "en": "AI in real estate decisions",
+          "fa": "هوش مصنوعی در تصمیم‌های ملکی",
+          "ar": "الذكاء الاصطناعي في القرارات العقارية"
+        }
+      },
+      {
+        "path": "/writing/which-dubai-property-source.html",
+        "labels": {
+          "en": "Dubai property costs and data",
+          "fa": "هزینه‌ها و داده‌های املاک دبی",
+          "ar": "تكاليف وبيانات العقارات في دبي"
+        }
+      }
+    ]
+  }
 }

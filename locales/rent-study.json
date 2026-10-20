@@ -1,0 +1,682 @@
+{
+  "version": 1,
+  "source": "studies/rent-own-2026/index.html",
+  "locales": {
+    "fa": {
+      "lang": "fa",
+      "locale": "fa-IR",
+      "title": "اجاره در برابر مالکیت: سناریوهای بودجهٔ ۳۹۳ کلان‌شهر",
+      "description": "بودجهٔ نقدی فرضی موجر در ۳۹۳ کلان‌شهر با اجاره‌های HUD و ارزش‌های ACS؛ فرض‌ها و محدودیت‌ها را بررسی کنید. این پاسخ شخصی خرید در برابر اجاره نیست.",
+      "messages": {
+        "undefined": "تعریف‌نشده",
+        "required": "تمام فرض‌ها را کامل کنید؛ فقط در صورت فرض عمدی، صفر وارد کنید.",
+        "range": "بازهٔ بودجهٔ نقدی سالانه از {lo} تا {hi}",
+        "proxy": "نمایندهٔ ارزش موجودی مالک‌نشین ACS ۲۰۲۴: {price}؛ حاشیهٔ خطا: {moe}. {geography}",
+        "exception": "استثنای قانونی HUD برای بخشی از شهرستان: Sullivan City/Crawford County.",
+        "geography": "مجموعهٔ شهرستان‌ها تطابق دارد؛ هم‌ارزی شهر/زیرشهرستان و جمعیت مسکونی اثبات نشده است.",
+        "threshold": "اجارهٔ ناخالص ماهانهٔ سربه‌سر با این فرض‌ها: {threshold}. بازهٔ مازاد در دو سر حساسیت نمایندهٔ ارزش: {low} تا {high} در سال؛ فاصلهٔ اطمینان نیست.",
+        "budget": "با اجارهٔ نخستین محدودهٔ HUD فهرست‌شده: دریافتی {receipts} − مدیریت {management} − بودجهٔ ثابت {fixed} − اصل و سود {debt} = مازاد سالانه {surplus}. بودجهٔ ثابت مالیات، بیمه، ذخیرهٔ نگهداری، HOA، سایر هزینه‌ها و بیمهٔ وام را یک‌بار شامل می‌شود.",
+        "unresolved": "این کلان‌شهر با فرض‌های انتخاب‌شده قابل محاسبه نیست؛ نتیجهٔ صفر به آن اختصاص نمی‌یابد.",
+        "cleared": "نتایج تا تکمیل تمام فرض‌ها پاک شدند.",
+        "none": "محاسبهٔ جاری وجود ندارد.",
+        "count": "{total} کلان‌شهر نمایش داده شده؛ {valid} محاسبه شده؛ {invalid} با این ورودی‌ها حل‌نشده است. بازه‌ها سناریو هستند، نه رتبه‌بندی بازار.",
+        "between": "{lo} تا {hi}",
+        "page": "صفحهٔ {page} از {pages}",
+        "axis": "مقیاس نمودار: {low} تا {high} در سال؛ خط میانی صفر است.",
+        "restore": "این پیوند سناریو قابل بازیابی نبود؛ سناریوی آغازین نمایش داده می‌شود.",
+        "share": "پیوند سناریو آمادهٔ کپی است. فرض‌ها در بخش fragment پیوند قرار دارند و به سرور وب‌سایت فرستاده نمی‌شوند.",
+        "loan": "ورودی وام نامعتبر است",
+        "invalid": "ورودی‌های معتبر و متناهی وارد کنید؛ مدیریت باید کمتر از ۱۰۰٪ باشد.",
+        "utilities": "کسر خدمات از این اجارهٔ HUD بیشتر است.",
+        "unsupported": "پیوند سناریو پشتیبانی نمی‌شود."
+      },
+      "fields": {
+        "down_payment_fraction": "پیش‌پرداخت (%)",
+        "annual_interest_rate": "سود ثابت سالانه (%)",
+        "loan_years": "مدت وام (سال)",
+        "occupied_months": "ماه‌های پرداخت‌شده در سال",
+        "management_fraction": "مدیریت (% دریافتی)",
+        "property_tax_fraction": "مالیات سالانهٔ ملک (% ارزش)",
+        "insurance_fraction": "بیمهٔ سالانه (% ارزش)",
+        "maintenance_reserve_fraction": "ذخیرهٔ سالانهٔ نگهداری (% ارزش)",
+        "monthly_utilities": "کسر ماهانهٔ خدمات (دلار آمریکا)",
+        "monthly_hoa": "HOA ماهانه (دلار آمریکا)",
+        "annual_other_costs": "سایر هزینه‌های سالانه (دلار آمریکا)",
+        "annual_mortgage_insurance": "بیمهٔ سالانهٔ وام (دلار آمریکا)"
+      },
+      "scenarios": {
+        "illustrative-financed": "سناریوی نمونه با وام",
+        "illustrative-cash": "خرید نقدی نمونه",
+        "illustrative-stress": "سناریوی نمونه با هزینهٔ بیشتر"
+      },
+      "errors": {
+        "Invalid loan input": "ورودی وام نامعتبر است",
+        "Enter valid, finite inputs; management must be below 100%.": "ورودی‌های معتبر و متناهی وارد کنید؛ مدیریت باید کمتر از ۱۰۰٪ باشد.",
+        "Utility deduction exceeds this HUD rent.": "کسر خدمات از این اجارهٔ HUD بیشتر است.",
+        "Unsupported scenario link.": "پیوند سناریو پشتیبانی نمی‌شود.",
+        "Complete every assumption; use zero only when intentionally assumed.": "تمام فرض‌ها را کامل کنید؛ فقط در صورت فرض عمدی، صفر وارد کنید."
+      }
+    },
+    "ar": {
+      "lang": "ar",
+      "locale": "ar-AE",
+      "title": "الإيجار مقابل التملّك: سيناريوهات ميزانية 393 منطقة",
+      "description": "ميزانيات نقدية افتراضية للمؤجّر في 393 منطقة حضرية باستخدام إيجارات HUD وقيم ACS. افحص الافتراضات والحدود؛ ليست إجابة شخصية للشراء مقابل الاستئجار.",
+      "messages": {
+        "undefined": "غير معرّف",
+        "required": "أكمل كل الافتراضات؛ استخدم صفرًا فقط عند افتراضه عمدًا.",
+        "range": "نطاق الميزانية النقدية السنوية من {lo} إلى {hi}",
+        "proxy": "مؤشر قيمة مساكن المالكين ACS 2024: {price}؛ هامش الخطأ: {moe}. {geography}",
+        "exception": "استثناء HUD القانوني لجزء من المقاطعة: Sullivan City/Crawford County.",
+        "geography": "تتفق مجموعات المقاطعات؛ ولم يثبت التكافؤ على مستوى البلدات أو أجزاء المقاطعات أو مجموعات المساكن.",
+        "threshold": "الإيجار الإجمالي الشهري للتعادل وفق هذه الافتراضات: {threshold}. نطاق الفائض عند طرفي مؤشر القيمة: {low} إلى {high} سنويًا؛ ليس فترة ثقة.",
+        "budget": "عند إيجار أول منطقة HUD مدرجة: الإيرادات {receipts} − الإدارة {management} − الميزانية الثابتة {fixed} − الأصل والفوائد {debt} = الفائض السنوي {surplus}. تشمل الميزانية الثابتة الضريبة والتأمين واحتياطي الصيانة وHOA والتكاليف الأخرى وتأمين الرهن مرة واحدة.",
+        "unresolved": "لا يمكن حساب هذه المنطقة الحضرية بالافتراضات المختارة؛ ولا تُعطى نتيجة صفرية.",
+        "cleared": "مُسحت النتائج إلى أن تكتمل جميع الافتراضات.",
+        "none": "لا يوجد حساب حالي.",
+        "count": "تُعرض {total} منطقة حضرية؛ حُسبت {valid}؛ وبقيت {invalid} غير محسومة بهذه المدخلات. تصف النطاقات سيناريوهات وليست ترتيبًا للأسواق.",
+        "between": "{lo} إلى {hi}",
+        "page": "الصفحة {page} من {pages}",
+        "axis": "مقياس الرسم: {low} إلى {high} سنويًا؛ الخط الأوسط هو الصفر.",
+        "restore": "تعذّر استعادة رابط السيناريو؛ يُعرض السيناريو الأولي.",
+        "share": "رابط السيناريو جاهز للنسخ. توجد الافتراضات في جزء الرابط ولا تُرسل إلى خادم الموقع.",
+        "loan": "مدخل قرض غير صالح",
+        "invalid": "أدخل قيمًا صالحة ومحدودة؛ يجب أن تكون الإدارة أقل من 100%.",
+        "utilities": "خصم المرافق يتجاوز إيجار HUD هذا.",
+        "unsupported": "رابط سيناريو غير مدعوم."
+      },
+      "fields": {
+        "down_payment_fraction": "الدفعة الأولى (%)",
+        "annual_interest_rate": "الفائدة السنوية الثابتة (%)",
+        "loan_years": "مدة القرض (سنوات)",
+        "occupied_months": "الأشهر المدفوعة في السنة",
+        "management_fraction": "الإدارة (% من الإيرادات)",
+        "property_tax_fraction": "ضريبة العقار السنوية (% من القيمة)",
+        "insurance_fraction": "التأمين السنوي (% من القيمة)",
+        "maintenance_reserve_fraction": "احتياطي الصيانة السنوي (% من القيمة)",
+        "monthly_utilities": "خصم المرافق الشهري (دولار أمريكي)",
+        "monthly_hoa": "رسوم HOA الشهرية (دولار أمريكي)",
+        "annual_other_costs": "تكاليف سنوية أخرى (دولار أمريكي)",
+        "annual_mortgage_insurance": "تأمين الرهن السنوي (دولار أمريكي)"
+      },
+      "scenarios": {
+        "illustrative-financed": "سيناريو تمويل توضيحي",
+        "illustrative-cash": "شراء نقدي توضيحي",
+        "illustrative-stress": "سيناريو توضيحي بتكلفة أعلى"
+      },
+      "errors": {
+        "Invalid loan input": "مدخل قرض غير صالح",
+        "Enter valid, finite inputs; management must be below 100%.": "أدخل قيمًا صالحة ومحدودة؛ يجب أن تكون الإدارة أقل من 100%.",
+        "Utility deduction exceeds this HUD rent.": "خصم المرافق يتجاوز إيجار HUD هذا.",
+        "Unsupported scenario link.": "رابط سيناريو غير مدعوم.",
+        "Complete every assumption; use zero only when intentionally assumed.": "أكمل كل الافتراضات؛ استخدم صفرًا فقط عند افتراضه عمدًا."
+      }
+    }
+  },
+  "text": {
+    "Ahmadreza Samadi": {
+      "fa": "احمدرضا صمدی",
+      "ar": "أحمدرضا صمدي"
+    },
+    "· Start with the decision": {
+      "fa": "· از تصمیم آغاز کنید",
+      "ar": "· ابدأ بالقرار"
+    },
+    "2026 metro edition": {
+      "fa": "نسخهٔ کلان‌شهری ۲۰۲۶",
+      "ar": "إصدار المناطق الحضرية 2026"
+    },
+    "Rent vs owning: what do the cash-budget scenarios show?": {
+      "fa": "اجاره در برابر مالکیت: سناریوهای بودجه چه می‌گویند؟",
+      "ar": "الإيجار مقابل التملّك: ماذا تُظهر سيناريوهات الميزانية؟"
+    },
+    "Key points": {
+      "fa": "نکته‌های کلیدی",
+      "ar": "النقاط الأساسية"
+    },
+    "Which assumptions change the answer?": {
+      "fa": "کدام فرض‌ها پاسخ را تغییر می‌دهند؟",
+      "ar": "ما الافتراضات التي تغيّر الإجابة؟"
+    },
+    "Starting case": {
+      "fa": "سناریوی آغازین",
+      "ar": "السيناريو الأولي"
+    },
+    "What happens under different rent assumptions?": {
+      "fa": "با فرض‌های متفاوت اجاره چه اتفاقی می‌افتد؟",
+      "ar": "ماذا يحدث مع افتراضات مختلفة للإيجار؟"
+    },
+    "Find a metro or CBSA code": {
+      "fa": "نام کلان‌شهر یا کد CBSA",
+      "ar": "ابحث عن منطقة حضرية أو رمز CBSA"
+    },
+    "Order": {
+      "fa": "ترتیب",
+      "ar": "الترتيب"
+    },
+    "Alphabetical": {
+      "fa": "الفبایی",
+      "ar": "أبجدي"
+    },
+    "Lowest scenario surplus first": {
+      "fa": "کمترین مازاد سناریو در ابتدا",
+      "ar": "أقل فائض في السيناريو أولًا"
+    },
+    "Annual surplus across distinct HUD rent areas; select a metro for detail.": {
+      "fa": "مازاد سالانه در محدوده‌های مجزای اجارهٔ HUD؛ برای جزئیات یک کلان‌شهر را انتخاب کنید.",
+      "ar": "الفائض السنوي عبر مناطق إيجار HUD المنفصلة؛ اختر منطقة حضرية للتفاصيل."
+    },
+    "Metro": {
+      "fa": "کلان‌شهر",
+      "ar": "المنطقة الحضرية"
+    },
+    "HUD areas": {
+      "fa": "محدوده‌های HUD",
+      "ar": "مناطق HUD"
+    },
+    "Range around zero": {
+      "fa": "بازه نسبت به صفر",
+      "ar": "النطاق حول الصفر"
+    },
+    "Annual cash surplus (USD)": {
+      "fa": "مازاد نقدی سالانه (دلار آمریکا)",
+      "ar": "الفائض النقدي السنوي (دولار أمريكي)"
+    },
+    "Previous": {
+      "fa": "قبلی",
+      "ar": "السابق"
+    },
+    "Next": {
+      "fa": "بعدی",
+      "ar": "التالي"
+    },
+    "Download this scenario CSV": {
+      "fa": "دریافت CSV این سناریو",
+      "ar": "تنزيل CSV لهذا السيناريو"
+    },
+    "Print / save PDF": {
+      "fa": "چاپ / ذخیرهٔ PDF",
+      "ar": "طباعة / حفظ PDF"
+    },
+    "Create scenario link": {
+      "fa": "ساخت پیوند سناریو",
+      "ar": "إنشاء رابط السيناريو"
+    },
+    "Scenario link": {
+      "fa": "پیوند سناریو",
+      "ar": "رابط السيناريو"
+    },
+    "The interactive chart needs JavaScript.": {
+      "fa": "نمودار تعاملی به JavaScript نیاز دارد.",
+      "ar": "يتطلب الرسم التفاعلي JavaScript."
+    },
+    "Download all three fixed scenarios": {
+      "fa": "دریافت هر سه سناریوی ثابت",
+      "ar": "تنزيل السيناريوهات الثابتة الثلاثة"
+    },
+    "and": {
+      "fa": "و",
+      "ar": "و"
+    },
+    "HUD-area detail": {
+      "fa": "جزئیات محدوده‌های HUD",
+      "ar": "تفاصيل مناطق HUD"
+    },
+    "Every candidate HUD area for the selected metro; no geographic average.": {
+      "fa": "تمام محدوده‌های HUD در کلان‌شهر انتخاب‌شده؛ بدون میانگین‌گیری جغرافیایی.",
+      "ar": "جميع مناطق HUD المرشحة للمنطقة الحضرية المختارة؛ دون متوسط جغرافي."
+    },
+    "HUD area": {
+      "fa": "محدودهٔ HUD",
+      "ar": "منطقة HUD"
+    },
+    "Source code": {
+      "fa": "کد منبع",
+      "ar": "رمز المصدر"
+    },
+    "Two-bedroom gross rent/month": {
+      "fa": "اجارهٔ ناخالص ماهانهٔ دوخوابه",
+      "ar": "الإيجار الإجمالي الشهري لوحدة بغرفتي نوم"
+    },
+    "Scenario surplus/year": {
+      "fa": "مازاد سالانهٔ سناریو",
+      "ar": "فائض السيناريو سنويًا"
+    },
+    "What does this calculation include?": {
+      "fa": "این محاسبه چه چیزهایی را در بر می‌گیرد؟",
+      "ar": "ماذا يشمل هذا الحساب؟"
+    },
+    "Why show a range?": {
+      "fa": "چرا یک بازه نمایش داده می‌شود؟",
+      "ar": "لماذا نعرض نطاقًا؟"
+    },
+    "What remains outside the budget?": {
+      "fa": "چه چیزهایی خارج از بودجه می‌مانند؟",
+      "ar": "ما الذي يبقى خارج الميزانية؟"
+    },
+    "Sources and downloads": {
+      "fa": "منابع و دریافت فایل‌ها",
+      "ar": "المصادر والتنزيلات"
+    },
+    "Primary-source documentation checked on": {
+      "fa": "مدارک منابع اصلی بررسی شدند در",
+      "ar": "رُوجعت وثائق المصادر الأولية في"
+    },
+    "20 October 2026": {
+      "fa": "۲۰ اکتبر ۲۰۲۶",
+      "ar": "20 أكتوبر 2026"
+    },
+    "HUD Fair Market Rents — FY2027": {
+      "fa": "اجاره‌های معیار HUD — سال مالی ۲۰۲۷",
+      "ar": "إيجارات السوق المرجعية من HUD — السنة المالية 2027"
+    },
+    "HUD methodology — June 2026, geography pages 1–4": {
+      "fa": "روش‌شناسی HUD — ژوئن ۲۰۲۶، جغرافیا در صفحات ۱ تا ۴",
+      "ar": "منهجية HUD — يونيو 2026، الجغرافيا في الصفحات 1–4"
+    },
+    "Census ACS 2024 one-year B25077 — owner value and margin of error": {
+      "fa": "جدول یک‌سالهٔ B25077 سرشماری ACS ۲۰۲۴ — ارزش موجودی مالک‌نشین و حاشیهٔ خطا",
+      "ar": "جدول B25077 السنوي من ACS 2024 — قيمة المساكن المشغولة بمالكيها وهامش الخطأ"
+    },
+    "ACS 2024 table formats and geography labels": {
+      "fa": "قالب جدول‌های ACS ۲۰۲۴ و برچسب‌های جغرافیایی",
+      "ar": "تنسيقات جداول ACS 2024 والتسميات الجغرافية"
+    },
+    "July 2023 county delineation": {
+      "fa": "مرزبندی شهرستان‌ها در ژوئیهٔ ۲۰۲۳",
+      "ar": "تحديد المقاطعات في يوليو 2023"
+    },
+    "CFPB payment components — reviewed 28 August 2023": {
+      "fa": "اجزای پرداخت از CFPB — بازبینی ۲۸ اوت ۲۰۲۳",
+      "ar": "مكوّنات الدفعة من CFPB — مراجعة 28 أغسطس 2023"
+    },
+    "All three fixed scenarios CSV": {
+      "fa": "CSV هر سه سناریوی ثابت",
+      "ar": "CSV للسيناريوهات الثابتة الثلاثة"
+    },
+    "All HUD-area details CSV": {
+      "fa": "CSV تمام جزئیات محدوده‌های HUD",
+      "ar": "CSV لجميع تفاصيل مناطق HUD"
+    },
+    "Download reproducible code, inputs and citation metadata": {
+      "fa": "دریافت کد بازتولیدپذیر، ورودی‌ها و فرادادهٔ استناد",
+      "ar": "تنزيل الشفرة القابلة لإعادة الإنتاج والمدخلات وبيانات الاستشهاد"
+    },
+    "Read the code and citation file on GitHub": {
+      "fa": "خواندن کد و فایل استناد در GitHub",
+      "ar": "قراءة الشفرة وملف الاستشهاد على GitHub"
+    },
+    "HUD reuse policy, section 1D": {
+      "fa": "سیاست بازاستفادهٔ HUD، بخش 1D",
+      "ar": "سياسة إعادة الاستخدام في HUD، القسم 1D"
+    },
+    "Census public-access policy": {
+      "fa": "سیاست دسترسی عمومی ادارهٔ سرشماری",
+      "ar": "سياسة الإتاحة العامة لمكتب التعداد"
+    },
+    "Use the next decision check": {
+      "fa": "بررسی تصمیم بعدی",
+      "ar": "التحقق من القرار التالي"
+    },
+    "Why rent divided by home value is not property yield": {
+      "fa": "چرا تقسیم اجاره بر ارزش خانه، بازده ملک نیست",
+      "ar": "لماذا لا تعني قسمة الإيجار على قيمة المنزل عائدًا عقاريًا"
+    },
+    "Dubai purchase-cost calculator": {
+      "fa": "ماشین‌حساب هزینهٔ خرید ملک در دبی",
+      "ar": "حاسبة تكلفة شراء العقار في دبي"
+    },
+    "Rental yield versus cash flow": {
+      "fa": "بازده اجاره در برابر جریان نقدی",
+      "ar": "العائد الإيجاري مقابل التدفق النقدي"
+    },
+    "The rental-yield film": {
+      "fa": "فیلم توضیح بازده اجاره",
+      "ar": "الفيلم التوضيحي للعائد الإيجاري"
+    },
+    "Property-specific cash-flow calculator": {
+      "fa": "ماشین‌حساب جریان نقدی برای یک ملک",
+      "ar": "حاسبة التدفق النقدي لعقار محدد"
+    },
+    "Embed with attribution": {
+      "fa": "جاسازی همراه با ذکر منبع",
+      "ar": "تضمين الرسم مع الإسناد"
+    },
+    "Embed HTML": {
+      "fa": "کد HTML جاسازی (انگلیسی)",
+      "ar": "شفرة HTML للتضمين (بالإنجليزية)"
+    },
+    "Dates, columns and reuse": {
+      "fa": "تاریخ‌ها، ستون‌ها و بازاستفاده",
+      "ar": "التواريخ والأعمدة وإعادة الاستخدام"
+    },
+    "CSV column dictionary (43 distinct fields)": {
+      "fa": "راهنمای ستون‌های CSV (۴۳ فیلد مجزا)",
+      "ar": "دليل أعمدة CSV (43 حقلًا مختلفًا)"
+    },
+    "Reuse and citation": {
+      "fa": "بازاستفاده و استناد",
+      "ar": "إعادة الاستخدام والاستشهاد"
+    },
+    "Source notices:": {
+      "fa": "اطلاعیه‌های منابع:",
+      "ar": "إشعارات المصادر:"
+    },
+    "Census DS027, page 9": {
+      "fa": "سند DS027 سرشماری، صفحهٔ ۹",
+      "ar": "وثيقة Census DS027، الصفحة 9"
+    },
+    "HUD web publication policy, section 1D": {
+      "fa": "سیاست انتشار وب HUD، بخش 1D",
+      "ar": "سياسة النشر على الويب لدى HUD، القسم 1D"
+    },
+    ". These sources do not endorse this analysis.": {
+      "fa": ". این منابع تأییدکنندهٔ این تحلیل نیستند.",
+      "ar": ". لا تعني هذه المصادر تأييد هذا التحليل."
+    },
+    "Study and original code by": {
+      "fa": "مطالعه و کد اصلی از",
+      "ar": "الدراسة والشفرة الأصلية من"
+    },
+    "Full method and study": {
+      "fa": "روش کامل و مطالعه",
+      "ar": "المنهجية والدراسة الكاملتان"
+    },
+    "Follow / Subscribe": {
+      "fa": "دنبال‌کردن / اشتراک",
+      "ar": "متابعة / اشتراك"
+    },
+    "Get the weekly brief": {
+      "fa": "دریافت خلاصهٔ هفتگی",
+      "ar": "احصل على الموجز الأسبوعي"
+    },
+    "About the author": {
+      "fa": "دربارهٔ نویسنده",
+      "ar": "عن الكاتب"
+    },
+    "About Ahmadreza Samadi": {
+      "fa": "دربارهٔ احمدرضا صمدی",
+      "ar": "عن أحمدرضا صمدي"
+    },
+    "Studies and tools": {
+      "fa": "مطالعه‌ها و ابزارها",
+      "ar": "دراسات وأدوات"
+    },
+    "Writing": {
+      "fa": "نوشته‌ها",
+      "ar": "المقالات"
+    },
+    "For example: St. Louis": {
+      "fa": "برای نمونه: St. Louis",
+      "ar": "مثال: St. Louis"
+    },
+    "Follow Ahmadreza Samadi": {
+      "fa": "دنبال‌کردن احمدرضا صمدی",
+      "ar": "متابعة أحمدرضا صمدي"
+    },
+    "This study asks whether hypothetical rental receipts cover a landlord’s chosen ownership cash budget across 393 metros. It combines HUD FY2027 two-bedroom gross-rent benchmarks with ACS 2024 owner-stock values; it does not compare the personal cost of renting versus buying the same home.": {
+      "fa": "این مطالعه می‌پرسد آیا دریافتی فرضی اجاره، بودجهٔ نقدی مالکیت انتخاب‌شدهٔ موجر را در ۳۹۳ کلان‌شهر پوشش می‌دهد. اجارهٔ ناخالص معیار HUD سال مالی ۲۰۲۷ برای واحد دوخوابه با ارزش موجودی مسکن مالک‌نشین ACS ۲۰۲۴ ترکیب شده است؛ این مطالعه هزینهٔ شخصی اجاره و خرید همان خانه را مقایسه نمی‌کند.",
+      "ar": "تسأل هذه الدراسة عمّا إذا كانت إيرادات الإيجار الافتراضية تغطي ميزانية التملّك النقدية التي يختارها المؤجّر في 393 منطقة حضرية. تجمع بين إيجارات HUD الإجمالية المرجعية لغرفتي نوم للسنة المالية 2027 وقيم المساكن المشغولة بمالكيها من ACS 2024؛ ولا تقارن التكلفة الشخصية لاستئجار المنزل نفسه وشرائه."
+    },
+    "These are scenarios, not observed investment returns. Rent and value describe different housing populations. Every rate and operating cost below is a chosen assumption; replace it with property-specific evidence before making a decision.": {
+      "fa": "این‌ها سناریو هستند، نه بازده سرمایه‌گذاری مشاهده‌شده. اجاره و ارزش به جمعیت‌های مسکونی متفاوتی مربوط‌اند. تمام نرخ‌ها و هزینه‌های عملیاتی زیر فرض انتخابی‌اند؛ پیش از تصمیم‌گیری آن‌ها را با شواهد مختص ملک جایگزین کنید.",
+      "ar": "هذه سيناريوهات وليست عوائد استثمارية مرصودة. الإيجار والقيمة يصفان مجموعتين مختلفتين من المساكن. كل معدل وتكلفة تشغيل أدناه افتراض مختار؛ استبدله بدليل خاص بالعقار قبل اتخاذ قرار."
+    },
+    "393 metros, including Puerto Rico; distinct HUD rent areas remain separate.": {
+      "fa": "۳۹۳ کلان‌شهر، شامل پورتوریکو؛ محدوده‌های مجزای اجارهٔ HUD جدا نگه داشته شده‌اند.",
+      "ar": "393 منطقة حضرية، بما فيها بورتوريكو؛ تبقى مناطق إيجار HUD المختلفة منفصلة."
+    },
+    "Costs and financing are assumptions. Zero is a chosen input, not evidence that a cost is absent.": {
+      "fa": "هزینه‌ها و تأمین مالی فرض هستند. صفر ورودی انتخابی است و نبود هزینه را ثابت نمی‌کند.",
+      "ar": "التكاليف والتمويل افتراضات. الصفر قيمة مختارة، وليس دليلًا على غياب التكلفة."
+    },
+    "Rent benchmarks and owner-stock values describe different housing populations. These are scenarios, not achieved returns or personal buy-versus-rent advice.": {
+      "fa": "اجاره‌های معیار و ارزش موجودی مالک‌نشین، جمعیت‌های مسکونی متفاوتی را توصیف می‌کنند. این‌ها سناریو هستند، نه بازده تحقق‌یافته یا توصیهٔ شخصی خرید در برابر اجاره.",
+      "ar": "تصف الإيجارات المرجعية وقيم المساكن المشغولة بمالكيها مجموعتين مختلفتين من المساكن. هذه سيناريوهات وليست عوائد متحققة أو نصيحة شخصية للشراء مقابل الاستئجار."
+    },
+    "Cash purchase assumes no loan. Zero costs in a case are assumptions, not evidence of absence. Edited inputs remain in this browser; the chart sends no inputs to a server.": {
+      "fa": "خرید نقدی، نبود وام را فرض می‌کند. هزینه‌های صفر فرض‌اند، نه مدرک نبود هزینه. ورودی‌های ویرایش‌شده در همین مرورگر می‌مانند؛ نمودار آن‌ها را به سرور نمی‌فرستد.",
+      "ar": "يفترض الشراء النقدي عدم وجود قرض. التكاليف الصفرية افتراضات وليست دليلًا على الغياب. تبقى المدخلات المعدّلة في هذا المتصفح ولا يرسلها الرسم إلى خادم."
+    },
+    "The chart shows hypothetical annual cash-budget ranges around zero. Select a metro to inspect every retained HUD area.": {
+      "fa": "نمودار، بازه‌های فرضی بودجهٔ نقدی سالانه را نسبت به صفر نشان می‌دهد. برای بررسی تمام محدوده‌های حفظ‌شدهٔ HUD، یک کلان‌شهر انتخاب کنید.",
+      "ar": "يعرض الرسم نطاقات افتراضية للميزانية النقدية السنوية حول الصفر. اختر منطقة حضرية لفحص جميع مناطق HUD المحتفظ بها."
+    },
+    "Current-scenario download includes every filtered metro, all assumption values and unresolved inputs. Print includes every filtered row, beyond the current screen page.": {
+      "fa": "فایل سناریوی جاری، همهٔ کلان‌شهرهای فیلترشده، تمام فرض‌ها و ورودی‌های حل‌نشده را شامل می‌شود. نسخهٔ چاپی همهٔ ردیف‌های فیلترشده را فراتر از صفحهٔ جاری نمایش می‌دهد.",
+      "ar": "يشمل تنزيل السيناريو الحالي جميع المناطق الحضرية المصفّاة وقيم الافتراضات والمدخلات غير المحسومة. وتشمل الطباعة جميع الصفوف المصفّاة، لا صفحة الشاشة الحالية فقط."
+    },
+    "Cash receipts = (HUD gross rent − chosen monthly utilities) × paid months. Management is deducted from those receipts. The annual budget includes chosen property tax, insurance, maintenance reserve, HOA, other costs and mortgage insurance, plus loan principal and interest. Taxes and insurance are counted once; the loan payment excludes escrow.": {
+      "fa": "دریافتی نقدی = (اجارهٔ ناخالص HUD − کسر انتخابی خدمات ماهانه) × ماه‌های پرداخت‌شده. مدیریت از این دریافتی کسر می‌شود. بودجهٔ سالانه شامل مالیات ملک، بیمه، ذخیرهٔ نگهداری، HOA، سایر هزینه‌ها و بیمهٔ وامِ فرض‌شده، به‌علاوهٔ اصل و سود وام است. مالیات و بیمه یک‌بار شمرده می‌شوند؛ قسط وام پرداخت‌های حساب امانی را شامل نمی‌شود.",
+      "ar": "الإيرادات النقدية = (إيجار HUD الإجمالي − خصم المرافق الشهري المختار) × الأشهر المدفوعة. تُخصم الإدارة من هذه الإيرادات. تشمل الميزانية السنوية ضرائب العقار والتأمين واحتياطي الصيانة ورسوم HOA والتكاليف الأخرى وتأمين الرهن المفترضة، إضافة إلى أصل القرض وفوائده. تُحتسب الضرائب والتأمين مرة واحدة؛ ولا تشمل دفعة القرض حساب الضمان."
+    },
+    "Break-even gross monthly rent = utilities + (fixed annual budget + annual principal/interest) ÷ [paid months × (1 − management fraction)]. At zero paid months, that threshold is undefined. A negative surplus stays negative; incomplete or invalid inputs are never replaced with zero.": {
+      "fa": "اجارهٔ ناخالص ماهانهٔ سربه‌سر = خدمات + (بودجهٔ ثابت سالانه + اصل و سود سالانه) ÷ [ماه‌های پرداخت‌شده × (۱ − سهم مدیریت)]. اگر ماه‌های پرداخت‌شده صفر باشد، این آستانه تعریف‌نشده است. مازاد منفی، منفی می‌ماند؛ ورودی ناقص یا نامعتبر با صفر جایگزین نمی‌شود.",
+      "ar": "الإيجار الإجمالي الشهري للتعادل = المرافق + (الميزانية السنوية الثابتة + الأصل والفوائد السنوية) ÷ [الأشهر المدفوعة × (1 − حصة الإدارة)]. عند صفر أشهر مدفوعة تكون العتبة غير معرّفة. يبقى الفائض السالب سالبًا؛ ولا تُستبدل المدخلات الناقصة أو غير الصالحة بصفر."
+    },
+    "A Census metro can contain multiple HUD rent areas. We retain every distinct area, instead of averaging or selecting the central one. The chart's endpoints are their calculated scenarios, not the lowest/highest observed rents. The same metro owner-stock value proxy is used for each area; it is not a matched rental-property price.": {
+      "fa": "یک کلان‌شهر سرشماری ممکن است چند محدودهٔ اجارهٔ HUD داشته باشد. همهٔ محدوده‌های مجزا حفظ می‌شوند و میانگین‌گیری یا انتخاب محدودهٔ مرکزی انجام نمی‌شود. دو سر بازهٔ نمودار سناریوهای محاسبه‌شده‌اند، نه کمترین و بیشترین اجارهٔ مشاهده‌شده. برای هر محدوده از همان نمایندهٔ ارزش موجودی مالک‌نشین کلان‌شهر استفاده می‌شود؛ این قیمتِ ملک اجاره‌ای متناظر نیست.",
+      "ar": "قد تضم المنطقة الحضرية لدى التعداد عدة مناطق إيجار HUD. نحتفظ بكل منطقة منفصلة دون متوسط أو اختيار المنطقة المركزية. طرفا الرسم هما السيناريوهات المحسوبة، لا أدنى وأعلى إيجار مرصود. يُستخدم مؤشر قيمة مساكن المالكين نفسه لكل منطقة؛ وهو ليس سعر عقار إيجاري مطابق."
+    },
+    "The owner-value margin of error is retained. Price-minus-MOE and price-plus-MOE sensitivity endpoints are shown in detail and downloads; they are not a confidence interval for cash surplus. County membership agrees in 392 metros. St. Louis retains HUD's statutory Sullivan City/Crawford County exception. County agreement does not certify town-level equivalence.": {
+      "fa": "حاشیهٔ خطای ارزش مالک‌نشین حفظ شده است. نقاط حساسیت ارزش منهای حاشیهٔ خطا و ارزش به‌علاوهٔ آن در جزئیات و فایل‌ها نمایش داده می‌شوند؛ این‌ها فاصلهٔ اطمینان مازاد نقدی نیستند. عضویت شهرستان‌ها در ۳۹۲ کلان‌شهر یکسان است. در سنت‌لوئیس استثنای قانونی HUD برای Sullivan City/Crawford County حفظ شده است. تطابق شهرستان‌ها، هم‌ارزی در سطح شهر را اثبات نمی‌کند.",
+      "ar": "يُحتفظ بهامش خطأ قيمة مساكن المالكين. تظهر نقاط الحساسية للقيمة ناقص هامش الخطأ وزائدًا عليه في التفاصيل والتنزيلات؛ وهي ليست فترة ثقة للفائض النقدي. تتفق عضوية المقاطعات في 392 منطقة حضرية. وتحتفظ سانت لويس باستثناء HUD القانوني الخاص بـ Sullivan City/Crawford County. توافق المقاطعات لا يثبت التكافؤ على مستوى البلدات."
+    },
+    "Acquisition and sale costs, initial repairs, down-payment opportunity cost, appreciation, income tax, depreciation benefits, refinancing, rent growth and future capital surprises. Maintenance is an earmarked reserve, not a realized annual expense. Principal repayment affects cash and equity; surplus is not accounting profit or total return.": {
+      "fa": "هزینهٔ خرید و فروش، تعمیرات اولیه، هزینهٔ فرصت پیش‌پرداخت، افزایش ارزش، مالیات درآمد، مزایای استهلاک، تأمین مالی مجدد، رشد اجاره و هزینه‌های سرمایه‌ای پیش‌بینی‌نشدهٔ آینده. نگهداری یک ذخیرهٔ کنارگذاشته‌شده است، نه هزینهٔ سالانهٔ تحقق‌یافته. بازپرداخت اصل بر نقدینگی و حقوق مالکانه اثر می‌گذارد؛ مازاد، سود حسابداری یا بازده کل نیست.",
+      "ar": "تكاليف الشراء والبيع والإصلاحات الأولية وتكلفة فرصة الدفعة الأولى وارتفاع القيمة وضريبة الدخل ومزايا الاستهلاك وإعادة التمويل ونمو الإيجار والمفاجآت الرأسمالية المستقبلية. الصيانة احتياطي مخصّص وليست مصروفًا سنويًا متحققًا. يؤثر سداد الأصل في النقد وحقوق الملكية؛ والفائض ليس ربحًا محاسبيًا أو عائدًا كليًا."
+    },
+    ". Access dates describe this review; the source periods below are unchanged. No source values were refreshed.": {
+      "fa": ". تاریخ دسترسی مربوط به این بررسی است؛ دوره‌های منابع زیر تغییر نکرده‌اند. هیچ مقدار منبعی به‌روز نشده است.",
+      "ar": ". تشير تواريخ الاطلاع إلى هذه المراجعة؛ وفترات المصادر أدناه لم تتغير. لم تُحدّث أي قيمة من قيم المصادر."
+    },
+    "Federal output reuse follows the agencies' published policies, with third-party exceptions retained. Original code is MIT; input data is not relicensed MIT. Agency names indicate sources, not endorsement.": {
+      "fa": "بازاستفاده از خروجی‌های فدرال تابع سیاست‌های منتشرشدهٔ نهادهاست و استثناهای اشخاص ثالث حفظ می‌شود. کد اصلی مجوز MIT دارد؛ داده‌های ورودی دوباره تحت MIT مجوزدهی نمی‌شوند. نام نهادها منبع را نشان می‌دهد، نه تأیید آن‌ها.",
+      "ar": "تخضع إعادة استخدام المخرجات الفيدرالية لسياسات الجهات المنشورة مع الإبقاء على استثناءات الأطراف الثالثة. الشفرة الأصلية بترخيص MIT؛ ولا يعاد ترخيص البيانات المدخلة بـ MIT. تشير أسماء الجهات إلى المصادر، لا إلى التأييد."
+    },
+    "The embed preserves the source years, assumptions and Ahmadreza Samadi attribution. Keep the attribution and source years when embedding this chart.": {
+      "fa": "نسخهٔ جاسازی، سال منابع، فرض‌ها و نام احمدرضا صمدی را حفظ می‌کند. هنگام جاسازی نمودار، نام صاحب اثر و سال منابع را نگه دارید.",
+      "ar": "تحافظ النسخة المضمّنة على سنوات المصادر والافتراضات والإسناد إلى أحمدرضا صمدي. احتفظ بالإسناد وسنوات المصادر عند تضمين الرسم."
+    },
+    "ACS describes calendar year 2024. HUD inputs are FY2027 two-bedroom FMR benchmarks for the fiscal period 1 October 2026–30 September 2027; area-specific effective rates and reevaluation exceptions can differ. This mixed-vintage scenario is not an observed 2024–2027 time series. July 2023 geography defines boundaries, not a housing observation date.": {
+      "fa": "ACS سال تقویمی ۲۰۲۴ را توصیف می‌کند. ورودی‌های HUD، معیارهای FMR دوخوابهٔ سال مالی ۲۰۲۷ برای دورهٔ ۱ اکتبر ۲۰۲۶ تا ۳۰ سپتامبر ۲۰۲۷ هستند؛ نرخ‌های مؤثر هر محدوده و استثناهای ارزیابی مجدد می‌توانند متفاوت باشند. این سناریوی با دوره‌های ترکیبی، سری زمانی مشاهده‌شدهٔ ۲۰۲۴ تا ۲۰۲۷ نیست. جغرافیای ژوئیهٔ ۲۰۲۳ مرزها را تعیین می‌کند، نه تاریخ مشاهدهٔ مسکن.",
+      "ar": "تصف ACS السنة التقويمية 2024. مدخلات HUD هي معايير FMR لغرفتي نوم للسنة المالية 2027، للفترة من 1 أكتوبر 2026 إلى 30 سبتمبر 2027؛ وقد تختلف المعدلات النافذة والاستثناءات الناتجة عن إعادة التقييم حسب المنطقة. هذا السيناريو المختلط الفترات ليس سلسلة زمنية مرصودة من 2024 إلى 2027. تحدد جغرافيا يوليو 2023 الحدود، لا تاريخ رصد المساكن."
+    },
+    "Original study explanations and analytical selection/arrangement are shared under": {
+      "fa": "توضیحات اصلی مطالعه و انتخاب و چینش تحلیلی تحت این مجوز ارائه می‌شوند:",
+      "ar": "تُتاح الشروحات الأصلية للدراسة والاختيار والترتيب التحليلي بموجب"
+    },
+    ", to the extent Ahmadreza Samadi holds copyright or similar rights. Credit the author, link the licence and indicate changes. Underlying government data and documents retain their source status and exceptions; this does not relicense them or restrict public-domain facts. Existing code/dictionary licences, font notices, portraits and marks retain their own terms. Earlier grants are not withdrawn.": {
+      "fa": "، تا جایی که احمدرضا صمدی صاحب حق نشر یا حقوق مشابه باشد. نام نویسنده، پیوند مجوز و تغییرات را ذکر کنید. داده‌ها و اسناد دولتی، وضعیت منبع و استثناهای خود را حفظ می‌کنند؛ این کار مجوز آن‌ها را تغییر نمی‌دهد و واقعیت‌های عمومی را محدود نمی‌کند. مجوزهای کد و فرهنگ داده، اطلاعیه‌های قلم‌ها، پرتره‌ها و نشان‌ها تابع شرایط خود می‌مانند. مجوزهای قبلی لغو نمی‌شوند.",
+      "ar": "، بالقدر الذي يملك فيه أحمدرضا صمدي حقوق النشر أو حقوقًا مشابهة. انسب العمل إلى المؤلف واربط الترخيص واذكر التغييرات. تحتفظ البيانات والوثائق الحكومية بوضع مصادرها واستثناءاتها؛ ولا يعيد ذلك ترخيصها أو تقييد حقائق الملك العام. تبقى تراخيص الشفرة وقاموس البيانات وإشعارات الخطوط والصور والعلامات بشروطها الخاصة. لا تُسحب التراخيص السابقة."
+    },
+    ". Sources: HUD FY2027 / ACS 2024. Illustrative cash budgets, not investment returns.": {
+      "fa": ". منابع: HUD سال مالی ۲۰۲۷ / ACS ۲۰۲۴. بودجه‌های نقدی نمونه‌اند، نه بازده سرمایه‌گذاری.",
+      "ar": ". المصادر: HUD للسنة المالية 2027 / ACS 2024. ميزانيات نقدية توضيحية وليست عوائد استثمارية."
+    },
+    "AI-assisted explanation and translation; data, calculations and limitations are documented above.": {
+      "fa": "توضیح و ترجمه با کمک هوش مصنوعی؛ داده‌ها، محاسبات و محدودیت‌ها در بالا مستند شده‌اند.",
+      "ar": "شرح وترجمة بمساعدة الذكاء الاصطناعي؛ البيانات والحسابات والحدود موثقة أعلاه."
+    },
+    "Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead of Appraiva, which builds AI real estate intelligence, and Co-Founder & CEO of Royal Abraj Group.": {
+      "fa": "احمدرضا صمدی کارآفرین فناوری ساکن دبی، هم‌بنیان‌گذار و راهبر فنی Appraiva، سازندهٔ هوش مصنوعی برای تحلیل اطلاعات املاک، و هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group است.",
+      "ar": "أحمدرضا صمدي رائد أعمال تقني مقيم في دبي، وشريك مؤسس وقائد تقني في Appraiva التي تطوّر ذكاءً اصطناعيًا لتحليل المعلومات العقارية، وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group."
+    },
+    "Named set of fixed illustrative assumptions, repeated across metros/areas. Unit: identifier.": {
+      "fa": "مجموعهٔ نام‌گذاری‌شده‌ای از فرض‌های ثابت نمونه که در کلان‌شهرها و محدوده‌ها تکرار می‌شود. واحد: شناسه.",
+      "ar": "مجموعة مسمّاة من الافتراضات التوضيحية الثابتة تتكرر عبر المناطق الحضرية والمناطق الفرعية. الوحدة: معرّف."
+    },
+    "Five-character metropolitan-area identifier; preserve as text. Unit: identifier.": {
+      "fa": "شناسهٔ پنج‌کاراکتری کلان‌شهر؛ به شکل متن حفظ شود. واحد: شناسه.",
+      "ar": "معرّف المنطقة الحضرية من خمسة محارف؛ يُحفظ كنص. الوحدة: معرّف."
+    },
+    "Published whole metropolitan-area name; not a property identifier. Unit: label.": {
+      "fa": "نام منتشرشدهٔ کل کلان‌شهر؛ شناسهٔ ملک نیست. واحد: برچسب.",
+      "ar": "الاسم المنشور للمنطقة الحضرية الكاملة؛ ليس معرّف عقار. الوحدة: تسمية."
+    },
+    "Fiscal-year label of the FMR benchmark; not a calendar-year observation date. Unit: fiscal year.": {
+      "fa": "برچسب سال مالی معیار FMR؛ تاریخ مشاهدهٔ تقویمی نیست. واحد: سال مالی.",
+      "ar": "تسمية السنة المالية لمعيار FMR؛ ليست تاريخ رصد تقويميًا. الوحدة: سنة مالية."
+    },
+    "Calendar year of the ACS one-year owner-stock source. Unit: year.": {
+      "fa": "سال تقویمی منبع یک‌سالهٔ موجودی مالک‌نشین ACS. واحد: سال.",
+      "ar": "السنة التقويمية لمصدر ACS السنوي لمساكن المالكين. الوحدة: سنة."
+    },
+    "Number of distinct candidate HUD rent areas retained for this metropolitan area. Unit: areas.": {
+      "fa": "تعداد محدوده‌های مجزای اجارهٔ HUD که برای این کلان‌شهر حفظ شده‌اند. واحد: محدوده.",
+      "ar": "عدد مناطق إيجار HUD المرشحة والمنفصلة المحتفظ بها لهذه المنطقة الحضرية. الوحدة: مناطق."
+    },
+    "ACS2024 B25077 all-owner-occupied-unit median value; not a price quote for a matching two-bedroom rental. Unit: USD.": {
+      "fa": "میانهٔ ارزش کل واحدهای مالک‌نشین در ACS2024 B25077؛ قیمت پیشنهادی واحد اجاره‌ای دوخوابهٔ متناظر نیست. واحد: دلار آمریکا.",
+      "ar": "القيمة الوسيطة لجميع الوحدات المشغولة بمالكيها في ACS2024 B25077؛ ليست عرض سعر لوحدة إيجارية مطابقة بغرفتي نوم. الوحدة: دولار أمريكي."
+    },
+    "Source B25077 margin of error for the all-owner-stock median value; retained separately from derived scenario sensitivity. Unit: USD.": {
+      "fa": "حاشیهٔ خطای منبع B25077 برای میانهٔ کل موجودی مالک‌نشین؛ جدا از حساسیت سناریوی مشتق‌شده حفظ می‌شود. واحد: دلار آمریکا.",
+      "ar": "هامش خطأ B25077 لوسيط قيمة مساكن المالكين؛ يُحتفظ به منفصلًا عن حساسية السيناريو المشتقة. الوحدة: دولار أمريكي."
+    },
+    "Minimum FY2027 two-bedroom FMR across candidate HUD areas in the metro. Unit: USD per month.": {
+      "fa": "کمترین FMR دوخوابهٔ سال مالی ۲۰۲۷ در محدوده‌های نامزد HUD کلان‌شهر. واحد: دلار آمریکا در ماه.",
+      "ar": "أدنى FMR لغرفتي نوم للسنة المالية 2027 بين مناطق HUD المرشحة في المنطقة الحضرية. الوحدة: دولار أمريكي شهريًا."
+    },
+    "Maximum FY2027 two-bedroom FMR across candidate HUD areas in the metro. Unit: USD per month.": {
+      "fa": "بیشترین FMR دوخوابهٔ سال مالی ۲۰۲۷ در محدوده‌های نامزد HUD کلان‌شهر. واحد: دلار آمریکا در ماه.",
+      "ar": "أعلى FMR لغرفتي نوم للسنة المالية 2027 بين مناطق HUD المرشحة في المنطقة الحضرية. الوحدة: دولار أمريكي شهريًا."
+    },
+    "Minimum across retained HUD areas at the central ACS owner-value estimate and fixed scenario assumptions. Unit: USD per year.": {
+      "fa": "کمترین مقدار در محدوده‌های حفظ‌شدهٔ HUD با برآورد مرکزی ارزش مالک‌نشین ACS و فرض‌های ثابت سناریو. واحد: دلار آمریکا در سال.",
+      "ar": "الحد الأدنى عبر مناطق HUD المحتفظ بها عند التقدير المركزي لقيمة مساكن المالكين من ACS والافتراضات الثابتة. الوحدة: دولار أمريكي سنويًا."
+    },
+    "Maximum across retained HUD areas at the central ACS owner-value estimate and fixed scenario assumptions. Unit: USD per year.": {
+      "fa": "بیشترین مقدار در محدوده‌های حفظ‌شدهٔ HUD با برآورد مرکزی ارزش مالک‌نشین ACS و فرض‌های ثابت سناریو. واحد: دلار آمریکا در سال.",
+      "ar": "الحد الأعلى عبر مناطق HUD المحتفظ بها عند التقدير المركزي لقيمة مساكن المالكين من ACS والافتراضات الثابتة. الوحدة: دولار أمريكي سنويًا."
+    },
+    "Minimum annual cash surplus across retained HUD areas and owner-value estimate ± published MOE; not a joint confidence interval. Unit: USD per year.": {
+      "fa": "کمترین مازاد نقدی سالانه در محدوده‌های حفظ‌شدهٔ HUD و برآورد ارزش ± حاشیهٔ خطای منتشرشده؛ فاصلهٔ اطمینان مشترک نیست. واحد: دلار آمریکا در سال.",
+      "ar": "أدنى فائض نقدي سنوي عبر مناطق HUD المحتفظ بها وتقدير القيمة ± هامش الخطأ المنشور؛ ليس فترة ثقة مشتركة. الوحدة: دولار أمريكي سنويًا."
+    },
+    "Maximum annual cash surplus across retained HUD areas and owner-value estimate ± published MOE; not a joint confidence interval. Unit: USD per year.": {
+      "fa": "بیشترین مازاد نقدی سالانه در محدوده‌های حفظ‌شدهٔ HUD و برآورد ارزش ± حاشیهٔ خطای منتشرشده؛ فاصلهٔ اطمینان مشترک نیست. واحد: دلار آمریکا در سال.",
+      "ar": "أعلى فائض نقدي سنوي عبر مناطق HUD المحتفظ بها وتقدير القيمة ± هامش الخطأ المنشور؛ ليس فترة ثقة مشتركة. الوحدة: دولار أمريكي سنويًا."
+    },
+    "Same threshold as the area-level output; threshold depends on the owner proxy and assumptions, not a selected HUD area rent. Unit: USD per month.": {
+      "fa": "همان آستانهٔ خروجی سطح محدوده؛ به نمایندهٔ ارزش مالک‌نشین و فرض‌ها وابسته است، نه اجارهٔ یک محدودهٔ HUD انتخابی. واحد: دلار آمریکا در ماه.",
+      "ar": "عتبة المخرجات على مستوى المنطقة نفسها؛ تعتمد على مؤشر قيمة مساكن المالكين والافتراضات، لا على إيجار منطقة HUD مختارة. الوحدة: دولار أمريكي شهريًا."
+    },
+    "Whether all, some or no retained HUD rents cover the modeled cash budget; not a property or investment rank. Unit: label.": {
+      "fa": "این‌که همه، برخی یا هیچ‌یک از اجاره‌های حفظ‌شدهٔ HUD بودجهٔ مدل‌شده را پوشش می‌دهند؛ رتبه‌بندی ملک یا سرمایه‌گذاری نیست. واحد: برچسب.",
+      "ar": "هل تغطي جميع إيجارات HUD المحتفظ بها أو بعضها أو لا شيء منها الميزانية النموذجية؛ ليس ترتيبًا للعقارات أو الاستثمار. الوحدة: تسمية."
+    },
+    "County-match/retained-exception note; distinct HUD subareas are not averaged. Unit: label.": {
+      "fa": "یادداشت تطابق شهرستان یا استثنای حفظ‌شده؛ زیرمحدوده‌های مجزای HUD میانگین‌گیری نمی‌شوند. واحد: برچسب.",
+      "ar": "ملاحظة توافق المقاطعات أو الاستثناء المحتفظ به؛ لا تُحسب متوسطات مناطق HUD الفرعية المختلفة. الوحدة: تسمية."
+    },
+    "Explicit reminder that results are hypothetical budgets, not matched-property or observed returns. Unit: label.": {
+      "fa": "یادآوری صریح فرضی‌بودن بودجه‌ها؛ نتایج، بازده مشاهده‌شده یا ملک متناظر نیستند. واحد: برچسب.",
+      "ar": "تذكير صريح بأن النتائج ميزانيات افتراضية وليست عوائد مرصودة أو لعقارات مطابقة. الوحدة: تسمية."
+    },
+    "Scenario input expressed as a 0–1 fraction of the owner-value proxy. Unit: fraction.": {
+      "fa": "ورودی سناریو به شکل کسری بین صفر و یک از نمایندهٔ ارزش مالک‌نشین. واحد: کسر.",
+      "ar": "مدخل السيناريو ككسر بين صفر وواحد من مؤشر قيمة مساكن المالكين. الوحدة: كسر."
+    },
+    "Scenario input expressed as a 0–1 fraction, not a percentage number. Unit: fraction.": {
+      "fa": "ورودی سناریو به شکل کسری بین صفر و یک، نه عدد درصد. واحد: کسر.",
+      "ar": "مدخل السيناريو ككسر بين صفر وواحد، وليس رقم نسبة مئوية. الوحدة: كسر."
+    },
+    "Loan term used by the fixed-payment model. Unit: years.": {
+      "fa": "مدت وام در مدل قسط ثابت. واحد: سال.",
+      "ar": "مدة القرض المستخدمة في نموذج الدفعة الثابتة. الوحدة: سنوات."
+    },
+    "Assumed paid months in the modeled year, between zero and twelve. Unit: months per year.": {
+      "fa": "ماه‌های پرداخت‌شدهٔ فرضی در سال مدل‌شده، بین صفر و دوازده. واحد: ماه در سال.",
+      "ar": "الأشهر المدفوعة المفترضة في السنة النموذجية، بين صفر واثني عشر. الوحدة: أشهر في السنة."
+    },
+    "Management expense as a 0–1 fraction of adjusted receipts. Unit: fraction.": {
+      "fa": "هزینهٔ مدیریت به شکل کسری بین صفر و یک از دریافتی تعدیل‌شده. واحد: کسر.",
+      "ar": "مصروف الإدارة ككسر بين صفر وواحد من الإيرادات المعدّلة. الوحدة: كسر."
+    },
+    "Annual property-tax cost as a 0–1 fraction of the owner-value proxy. Unit: fraction.": {
+      "fa": "هزینهٔ مالیات سالانهٔ ملک به شکل کسری بین صفر و یک از نمایندهٔ ارزش مالک‌نشین. واحد: کسر.",
+      "ar": "ضريبة العقار السنوية ككسر بين صفر وواحد من مؤشر قيمة مساكن المالكين. الوحدة: كسر."
+    },
+    "Annual property insurance as a 0–1 fraction of the owner-value proxy. Unit: fraction.": {
+      "fa": "بیمهٔ سالانهٔ ملک به شکل کسری بین صفر و یک از نمایندهٔ ارزش مالک‌نشین. واحد: کسر.",
+      "ar": "تأمين العقار السنوي ككسر بين صفر وواحد من مؤشر قيمة مساكن المالكين. الوحدة: كسر."
+    },
+    "Annual maintenance reserve as a 0–1 fraction of the owner-value proxy. Unit: fraction.": {
+      "fa": "ذخیرهٔ سالانهٔ نگهداری به شکل کسری بین صفر و یک از نمایندهٔ ارزش مالک‌نشین. واحد: کسر.",
+      "ar": "احتياطي الصيانة السنوي ككسر بين صفر وواحد من مؤشر قيمة مساكن المالكين. الوحدة: كسر."
+    },
+    "Deduction from HUD gross rent before multiplying by paid months; not a measured utility bill. Unit: USD per month.": {
+      "fa": "کسر از اجارهٔ ناخالص HUD پیش از ضرب در ماه‌های پرداخت‌شده؛ قبض اندازه‌گیری‌شدهٔ خدمات نیست. واحد: دلار آمریکا در ماه.",
+      "ar": "خصم من إيجار HUD الإجمالي قبل ضربه في الأشهر المدفوعة؛ ليس فاتورة مرافق مقاسة. الوحدة: دولار أمريكي شهريًا."
+    },
+    "Monthly scenario cost included twelve times in the annual fixed budget. Unit: USD per month.": {
+      "fa": "هزینهٔ ماهانهٔ سناریو که دوازده بار در بودجهٔ ثابت سالانه منظور می‌شود. واحد: دلار آمریکا در ماه.",
+      "ar": "تكلفة شهرية للسيناريو تُحتسب اثنتي عشرة مرة في الميزانية السنوية الثابتة. الوحدة: دولار أمريكي شهريًا."
+    },
+    "Explicit additional annual scenario cost. Unit: USD per year.": {
+      "fa": "هزینهٔ اضافی سالانهٔ صریح سناریو. واحد: دلار آمریکا در سال.",
+      "ar": "تكلفة سنوية إضافية صريحة للسيناريو. الوحدة: دولار أمريكي سنويًا."
+    },
+    "Explicit annual scenario cost; not an observed quote. Unit: USD per year.": {
+      "fa": "هزینهٔ سالانهٔ صریح سناریو؛ مبلغ مشاهده‌شدهٔ پیشنهاد بیمه نیست. واحد: دلار آمریکا در سال.",
+      "ar": "تكلفة سنوية صريحة للسيناريو؛ ليست عرض سعر مرصودًا. الوحدة: دولار أمريكي سنويًا."
+    },
+    "Retained source HUD area identifier, distinct from a CBSA code. Unit: identifier.": {
+      "fa": "شناسهٔ منبع محدودهٔ HUD که حفظ شده و با کد CBSA متفاوت است. واحد: شناسه.",
+      "ar": "معرّف المصدر لمنطقة HUD المحتفظ بها، ويختلف عن رمز CBSA. الوحدة: معرّف."
+    },
+    "Published name of the retained HUD rent area. Unit: label.": {
+      "fa": "نام منتشرشدهٔ محدودهٔ اجارهٔ HUD حفظ‌شده. واحد: برچسب.",
+      "ar": "الاسم المنشور لمنطقة إيجار HUD المحتفظ بها. الوحدة: تسمية."
+    },
+    "FY2027 two-bedroom FMR for this retained HUD area, including utility treatment; not landlord cash receipts. Unit: USD per month.": {
+      "fa": "FMR دوخوابهٔ سال مالی ۲۰۲۷ برای این محدودهٔ HUD، شامل شیوهٔ لحاظ خدمات؛ دریافتی نقدی موجر نیست. واحد: دلار آمریکا در ماه.",
+      "ar": "FMR لغرفتي نوم للسنة المالية 2027 لهذه المنطقة، مع معالجة المرافق؛ ليس الإيراد النقدي للمؤجّر. الوحدة: دولار أمريكي شهريًا."
+    },
+    "HUD monthly gross rent minus the assumed monthly utility deduction, multiplied by assumed paid months. Unit: USD per year.": {
+      "fa": "اجارهٔ ناخالص ماهانهٔ HUD منهای کسر فرضی خدمات ماهانه، ضرب در ماه‌های پرداخت‌شدهٔ فرضی. واحد: دلار آمریکا در سال.",
+      "ar": "إيجار HUD الإجمالي الشهري ناقص خصم المرافق الشهري المفترض، مضروبًا في الأشهر المدفوعة المفترضة. الوحدة: دولار أمريكي سنويًا."
+    },
+    "Adjusted annual receipts multiplied by the assumed management fraction. Unit: USD per year.": {
+      "fa": "دریافتی تعدیل‌شدهٔ سالانه ضرب در سهم فرضی مدیریت. واحد: دلار آمریکا در سال.",
+      "ar": "الإيرادات السنوية المعدّلة مضروبة في حصة الإدارة المفترضة. الوحدة: دولار أمريكي سنويًا."
+    },
+    "Owner-stock value proxy multiplied by the assumed annual property-tax fraction. Unit: USD per year.": {
+      "fa": "نمایندهٔ ارزش مالک‌نشین ضرب در سهم فرضی مالیات سالانهٔ ملک. واحد: دلار آمریکا در سال.",
+      "ar": "مؤشر قيمة مساكن المالكين مضروبًا في حصة ضريبة العقار السنوية المفترضة. الوحدة: دولار أمريكي سنويًا."
+    },
+    "Owner-stock value proxy multiplied by the assumed insurance fraction. Unit: USD per year.": {
+      "fa": "نمایندهٔ ارزش مالک‌نشین ضرب در سهم فرضی بیمه. واحد: دلار آمریکا در سال.",
+      "ar": "مؤشر قيمة مساكن المالكين مضروبًا في حصة التأمين المفترضة. الوحدة: دولار أمريكي سنويًا."
+    },
+    "Owner-stock value proxy multiplied by the assumed reserve fraction. Unit: USD per year.": {
+      "fa": "نمایندهٔ ارزش مالک‌نشین ضرب در سهم فرضی ذخیره. واحد: دلار آمریکا در سال.",
+      "ar": "مؤشر قيمة مساكن المالكين مضروبًا في حصة الاحتياطي المفترضة. الوحدة: دولار أمريكي سنويًا."
+    },
+    "Property tax, insurance, maintenance reserve, 12 monthly HOA payments, other annual costs and mortgage insurance; excludes management and principal/interest. Unit: USD per year.": {
+      "fa": "مالیات ملک، بیمه، ذخیرهٔ نگهداری، دوازده پرداخت ماهانهٔ HOA، سایر هزینه‌ها و بیمهٔ وام؛ مدیریت و اصل و سود را شامل نمی‌شود. واحد: دلار آمریکا در سال.",
+      "ar": "ضريبة العقار والتأمين واحتياطي الصيانة و12 دفعة HOA شهرية والتكاليف الأخرى وتأمين الرهن؛ يستثني الإدارة والأصل والفوائد. الوحدة: دولار أمريكي سنويًا."
+    },
+    "Twelve fixed loan payments; insurance, taxes and other costs are separate. Unit: USD per year.": {
+      "fa": "دوازده قسط ثابت وام؛ بیمه، مالیات و سایر هزینه‌ها جدا هستند. واحد: دلار آمریکا در سال.",
+      "ar": "اثنتا عشرة دفعة قرض ثابتة؛ التأمين والضرائب والتكاليف الأخرى منفصلة. الوحدة: دولار أمريكي سنويًا."
+    },
+    "Receipts minus management, fixed budget and principal/interest; not an investment return. Unit: USD per year.": {
+      "fa": "دریافتی منهای مدیریت، بودجهٔ ثابت و اصل و سود؛ بازده سرمایه‌گذاری نیست. واحد: دلار آمریکا در سال.",
+      "ar": "الإيرادات ناقص الإدارة والميزانية الثابتة والأصل والفوائد؛ ليس عائدًا استثماريًا. الوحدة: دولار أمريكي سنويًا."
+    },
+    "Utility deduction plus (fixed budget + principal/interest) / (paid months * (1 - management fraction)); unavailable when paid months are zero. Unit: USD per month.": {
+      "fa": "کسر خدمات به‌علاوهٔ (بودجهٔ ثابت + اصل و سود) تقسیم بر (ماه‌های پرداخت‌شده × (۱ − سهم مدیریت))؛ با صفر ماه پرداخت‌شده در دسترس نیست. واحد: دلار آمریکا در ماه.",
+      "ar": "خصم المرافق مضافًا إلى (الميزانية الثابتة + الأصل والفوائد) مقسومًا على (الأشهر المدفوعة × (1 − حصة الإدارة))؛ غير متاح عند صفر أشهر مدفوعة. الوحدة: دولار أمريكي شهريًا."
+    },
+    "Illustrative status label; not evidence of a performed investment or company test. Unit: label.": {
+      "fa": "برچسب وضعیت نمونه؛ مدرک انجام سرمایه‌گذاری یا آزمون شرکت نیست. واحد: برچسب.",
+      "ar": "تسمية حالة توضيحية؛ ليست دليلًا على استثمار منفذ أو اختبار أجرته شركة. الوحدة: تسمية."
+    },
+    "Source place names and CSV field identifiers retain their original spelling.": {
+      "fa": "نام مکان‌ها و شناسهٔ فیلدهای CSV با املای اصلی منبع حفظ شده‌اند.",
+      "ar": "تحتفظ أسماء الأماكن ومعرّفات حقول CSV بتهجئتها الأصلية في المصدر."
+    }
+  }
+}

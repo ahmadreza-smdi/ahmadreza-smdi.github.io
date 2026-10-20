@@ -71,8 +71,8 @@ def author_box(lang, series=None):
     return ('<!-- author-box:start -->\n'
             '<aside class="article-author" aria-labelledby="article-author-title">\n'
             f'<h2 id="article-author-title">{copy["heading"]}</h2>\n'
-            f'<p class="article-author__name"><a href="{copy["about"]}" rel="author">{copy["name"]}</a></p>\n'
             f'<p>{copy["summary"]}</p>\n'
+            f'<p class="article-author__name"><a href="{copy["about"]}" rel="author">{copy["name"]}</a></p>\n'
             f'{series_line}'
             '</aside>\n<!-- author-box:end -->')
 

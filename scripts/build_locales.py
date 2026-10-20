@@ -9,9 +9,9 @@ ROOT=Path(__file__).resolve().parent.parent
 SOURCE=(ROOT/'index.html').read_text()
 SOURCE=re.sub(r'<!-- follow-subscribe:start -->.*?<!-- follow-subscribe:end -->\n?', '', SOURCE, flags=re.S)
 class Translator(HTMLParser):
-    def __init__(self, translations):
+    def __init__(self, translations, lang):
         super().__init__(convert_charrefs=False)
-        self.translations=translations; self.body=False; self.skip=False; self.edits=[]
+        self.translations=translations; self.lang=lang; self.body=False; self.skip=False; self.edits=[]
         self.lines=SOURCE.splitlines(keepends=True)
     def source_offset(self):
         line,col=self.getpos();return sum(map(len,self.lines[:line-1]))+col
@@ -24,7 +24,9 @@ class Translator(HTMLParser):
             translated=value
             if self.body and key in ('aria-label','alt') and value:
                 translated=self.translations[value]
-            if key=='href' and (value.startswith('topics/') or value.startswith('about.html') or value in ('tools/before-you-build-ai.html','work/appraiva.html','work/royal-abraj.html','work/oxfam-novib.html','writing/ai-cost-per-verified-result.html','writing/ai-home-value-estimates.html','writing/connected-ai-apps.html','writing/jev-ai-decision-model.html','writing/start-with-the-decision.html','writing/ai-agent-safety-boundaries.html','writing/')):
+            if key=='href' and value in ('/writing/ai-home-value-estimates.html','/writing/ai-human-review-real-estate.html','/writing/which-dubai-property-source.html','/studies/rent-own-2026/','/work/appraiva.html','/work/royal-abraj.html','/writing/start-with-the-decision.html','/about.html','/writing/','/#work'):
+                translated='/'+self.lang+value
+            elif key=='href' and (value.startswith('topics/') or value.startswith('about.html') or value in ('tools/before-you-build-ai.html','work/appraiva.html','work/royal-abraj.html','work/oxfam-novib.html','writing/ai-cost-per-verified-result.html','writing/ai-home-value-estimates.html','writing/ai-human-review-real-estate.html','writing/which-dubai-property-source.html','writing/connected-ai-apps.html','writing/jev-ai-decision-model.html','writing/start-with-the-decision.html','writing/ai-agent-safety-boundaries.html','writing/')):
                 translated=value
             elif key in ('href','src','poster','data-src') and not re.match(r'^(?:[a-z]+:|/|#)',value):translated='../'+value
             if key in ('srcset','imagesrcset'):
@@ -41,7 +43,7 @@ class Translator(HTMLParser):
         pass
 for lang in ('fa','ar'):
     tr=json.loads((ROOT/'locales'/f'{lang}.json').read_text())
-    p=Translator(tr);p.feed(SOURCE);out=SOURCE
+    p=Translator(tr,lang);p.feed(SOURCE);out=SOURCE
     for start,end,value in reversed(p.edits):out=out[:start]+value+out[end:]
     head,body=out.split('<body>',1)
     visible,script=body.split('        <script>',1)
@@ -75,6 +77,8 @@ for lang in ('fa','ar'):
     head=head.replace('content="Ahmadreza Samadi, Dubai-based founder and technical executive"','content="'+tr['Portrait of Ahmadreza Samadi']+'"')
     def schema(m):
         d=json.loads(m[1]);profile=next(x for x in d['@graph'] if x['@type']=='ProfilePage')
+        person=next(x for x in d['@graph'] if x.get('@type')=='Person' and x.get('@id')=='https://a-samadi.com/#person')
+        person['description']=tr['Person entity sentence']
         profile.update({'@id':f'https://a-samadi.com/{lang}/#profile','url':f'https://a-samadi.com/{lang}/','name':title,'description':description,'inLanguage':lang,'dateModified':modified})
         # The English homepage is the original; this page is its translation.
         profile.pop('workTranslation',None);profile['translationOfWork']={'@id':'https://a-samadi.com/#profile'}
