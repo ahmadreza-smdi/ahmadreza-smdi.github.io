@@ -11,6 +11,8 @@
   let briefText = '';
   let dirty = false;
   function values() { return Object.fromEntries(keys.map(key => [key, form.elements[key].value.trim()])); }
+  const conditionLabels = {'availability': { label: 'How ready is that evidence?', options: {'unknown': 'We have not checked the sources', 'partial': 'Some is available; gaps remain', 'ready': 'Available, with permission and freshness checked'} }, 'stakes': { label: 'If the answer is wrong…', options: {'low': 'Someone can easily undo the next step', 'medium': 'It creates meaningful rework or cost', 'high': 'It may have serious or hard-to-reverse consequences'} }, 'review': { label: 'Who reviews before action?', options: {'always': 'A person reviews every result', 'exceptions': 'A person reviews flagged exceptions', 'none': 'No review is planned'} }};
+  function conditions(v) { return ['availability', 'stakes', 'review'].map(key => conditionLabels[key].label + ' ' + conditionLabels[key].options[v[key]]).join('\n'); }
   function section(title, body, ordered = false) {
     const wrap = document.createElement('section'); wrap.className = 'brief-section';
     const h = document.createElement('h3'); h.textContent = title; wrap.append(h);
@@ -24,7 +26,7 @@
     content.replaceChildren();
     const blocker = v.availability === 'unknown' ? 'Check the evidence before testing the model. Confirm access, permitted use, freshness and coverage; write down what remains unknown.' : v.availability === 'partial' ? 'Make the gaps visible. Identify missing sources and define when the tool must ask for information or hand the decision back to a person.' : 'Test the evidence against real cases. Availability does not establish accuracy or representativeness; inspect provenance and difficult cases.';
     const review = v.stakes === 'high' ? 'Keep this first experiment offline, with a qualified person reviewing every result. Document serious failure cases and escalation conditions before considering live use.' : v.review === 'none' ? 'Add a review step to the first experiment. A person should inspect the evidence and errors before outputs trigger action.' : v.review === 'exceptions' ? 'Review every result in the first experiment, including unflagged cases. Check whether the exception rules miss errors before relying on them.' : 'Keep the reviewer in the test. Record corrections and the time needed to review each result, alongside the model output.';
-    const parts = [section('01 / The decision', `${v.user}\n\n${v.decision}`), section('The next action', v.action), section('02 / The evidence', v.evidence), section('Resolve first', blocker + '\n\n' + review), section('03 / The smallest useful experiment', [
+    const parts = [section('01 / The decision', `${v.user}\n\n${v.decision}\n\n${conditions(v)}`), section('The next action', v.action), section('02 / The evidence', v.evidence), section('Resolve first', blocker + '\n\n' + review), section('03 / The smallest useful experiment', [
       `Choose a small, explicitly scoped set of cases for this decision. Include typical cases, missing evidence and plausible failures. Do not treat a small pilot as proof of broad reliability.`,
       `Establish the baseline: ${v.baseline} Record time, outcomes and correction effort.`,
       `Prepare evidence-backed suggestions for the same cases, manually or with a simple prototype. ${review}`,

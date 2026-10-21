@@ -93,7 +93,19 @@
     "Your inputs have changed. Rebuild the brief to include them.": "ورودی‌ها تغییر کرده‌اند. برای اعمال آن‌ها برگه را دوباره بسازید.",
     "Please add a specific detail.": "لطفاً جزئیات مشخصی وارد کنید.",
     "Brief updated. Ready to export or print.": "برگه به‌روز شد و آماده دریافت یا چاپ است.",
-    "Brief exported as a text file.": "برگه به‌صورت فایل متنی دریافت شد."
+    "Brief exported as a text file.": "برگه به‌صورت فایل متنی دریافت شد.",
+    "How ready is that evidence?": "این شواهد چقدر آماده‌اند؟",
+    "We have not checked the sources": "هنوز منابع را بررسی نکرده‌ایم",
+    "Some is available; gaps remain": "بخشی موجود است؛ شکاف‌هایی باقی مانده",
+    "Available, with permission and freshness checked": "موجود است و مجوز استفاده و به‌روز بودن بررسی شده",
+    "If the answer is wrong…": "اگر پاسخ اشتباه باشد…",
+    "Someone can easily undo the next step": "گام بعدی به‌آسانی قابل بازگشت است",
+    "It creates meaningful rework or cost": "دوباره‌کاری یا هزینه قابل‌توجه ایجاد می‌کند",
+    "It may have serious or hard-to-reverse consequences": "ممکن است پیامدهای جدی یا دشوار برای جبران داشته باشد",
+    "Who reviews before action?": "چه کسی پیش از اقدام بازبینی می‌کند؟",
+    "A person reviews every result": "یک نفر همه نتایج را بازبینی می‌کند",
+    "A person reviews flagged exceptions": "یک نفر موارد علامت‌گذاری‌شده را بازبینی می‌کند",
+    "No review is planned": "بازبینی در نظر گرفته نشده"
   },
   "extra": {
     "Before You Build the AI": "پیش از ساخت هوش مصنوعی",

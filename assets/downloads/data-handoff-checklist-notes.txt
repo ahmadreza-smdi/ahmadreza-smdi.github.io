@@ -1,0 +1,25 @@
+A useful result has to survive the handoff.
+
+At Oxfam Novib, I built Azure data pipelines for CRM migration and analytics, and documented the operating workflows. Today, I work remotely from Dubai as Co-Founder & Technical Lead at Appraiva, based in Cleveland, Ohio. I am also Co-Founder & CEO of Royal Abraj Group in Dubai.
+
+My proposed handoff card asks four questions:
+- Decision or task: what will the next person use this for?
+- Evidence: which source supports the material statement?
+- Transformation: what was calculated, inferred or assumed?
+- Unresolved: what is missing, and what check comes next?
+
+The public rent and ownership study illustrates one bounded engineering check: comparing Python and JavaScript calculations on fixed scenarios. Agreement there does not establish a property's future rent, its purchase price or an investment return.
+
+The checklist is a current editorial proposal. The historical responsibilities provide professional context; no employer deployment of this checklist or measured company result is claimed. Diagram labels are illustrative and contain no client records.
+
+Supporting work:
+https://a-samadi.com/work/oxfam-novib.html
+https://a-samadi.com/studies/rent-own-2026/
+
+About me:
+https://a-samadi.com/about.html
+
+Start with the decision.
+Ahmadreza Samadi
+
+Prepared with AI assistance. Educational, not financial advice. The published study is an AI-assisted educational resource.

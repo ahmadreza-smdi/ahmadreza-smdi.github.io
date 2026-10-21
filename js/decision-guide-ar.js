@@ -11,6 +11,8 @@
   let briefText = '';
   let dirty = false;
   function values() { return Object.fromEntries(keys.map(key => [key, form.elements[key].value.trim()])); }
+  const conditionLabels = {'availability': { label: 'ما مدى جاهزية هذه الأدلة؟', options: {'unknown': 'لم نتحقق من المصادر بعد', 'partial': 'بعضها متاح، مع وجود فجوات', 'ready': 'متاحة، مع التحقق من إذن استخدامها وحداثتها'} }, 'stakes': { label: 'إذا كانت الإجابة خاطئة…', options: {'low': 'يمكن التراجع عن الخطوة التالية بسهولة', 'medium': 'تسبب إعادة عمل أو تكلفة ملموسة', 'high': 'قد تترتب عليها عواقب جسيمة أو يصعب تداركها'} }, 'review': { label: 'من يراجع قبل التنفيذ؟', options: {'always': 'يراجع شخص كل نتيجة', 'exceptions': 'يراجع شخص الحالات التي جرى التنبيه إليها', 'none': 'لا توجد مراجعة مخططة'} }};
+  function conditions(v) { return ['availability', 'stakes', 'review'].map(key => conditionLabels[key].label + ' ' + conditionLabels[key].options[v[key]]).join('\n'); }
   function section(title, body, ordered = false) {
     const wrap = document.createElement('section'); wrap.className = 'brief-section';
     const h = document.createElement('h3'); h.textContent = title; wrap.append(h);
@@ -24,7 +26,7 @@
     content.replaceChildren();
     const blocker = v.availability === 'unknown' ? 'افحص الأدلة قبل اختبار النموذج. تحقق من الوصول والاستخدام المسموح والحداثة والتغطية، ودوّن ما لا يزال مجهولاً.' : v.availability === 'partial' ? 'أظهر الفجوات. حدد المصادر الناقصة ومتى يجب أن تطلب الأداة معلومات إضافية أو تعيد القرار إلى شخص.' : 'اختبر الأدلة على حالات فعلية. إتاحتها لا تثبت دقتها أو تمثيلها للحالات؛ افحص مصادرها والحالات الصعبة.';
     const review = v.stakes === 'high' ? 'أبقِ التجربة الأولى خارج التشغيل الفعلي، مع مراجعة شخص مؤهل لكل نتيجة. وثّق حالات الفشل الجسيم وشروط التصعيد قبل التفكير في الاستخدام الفعلي.' : v.review === 'none' ? 'أضف خطوة مراجعة إلى التجربة الأولى. يجب أن يفحص شخص الأدلة والأخطاء قبل أن تؤدي المخرجات إلى إجراء.' : v.review === 'exceptions' ? 'راجع كل نتيجة في التجربة الأولى، بما فيها الحالات غير المعلّمة. تحقق مما إذا كانت قواعد الاستثناء تفوّت أخطاء قبل الاعتماد عليها.' : 'أبقِ المراجع ضمن الاختبار. سجل التصحيحات والوقت اللازم لمراجعة كل نتيجة إلى جانب مخرجات النموذج.';
-    const parts = [section('٠١ / القرار', `${v.user}\n\n${v.decision}`), section('الإجراء التالي', v.action), section('٠٢ / الأدلة', v.evidence), section('عالج أولاً', blocker + '\n\n' + review), section('٠٣ / أصغر تجربة مفيدة', [
+    const parts = [section('٠١ / القرار', `${v.user}\n\n${v.decision}\n\n${conditions(v)}`), section('الإجراء التالي', v.action), section('٠٢ / الأدلة', v.evidence), section('عالج أولاً', blocker + '\n\n' + review), section('٠٣ / أصغر تجربة مفيدة', [
       `اختر مجموعة صغيرة ومحددة النطاق من الحالات لهذا القرار. ضمّن حالات معتادة وأدلة ناقصة وإخفاقات محتملة. لا تعتبر تجربة صغيرة دليلاً على موثوقية واسعة.`,
       `حدد خط الأساس: ${v.baseline} سجل الوقت والنتائج وجهد التصحيح.`,
       `جهز اقتراحات مدعومة بالأدلة للحالات نفسها، يدوياً أو بنموذج أولي بسيط. ${review}`,

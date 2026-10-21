@@ -58,7 +58,8 @@
         "monogram": "Download personal monogram (SVG)",
         "contact": "Save contact details",
         "selected_work": "Download selected public work (English PDF)",
-        "facts_sheet": "Download one-page facts (English PDF)"
+        "facts_sheet": "Download one-page facts (English PDF)",
+        "question_guide": "Choose a resource by question (English TXT)"
       },
       "portrait_alt": "Ahmadreza Samadi in a dark suit",
       "portrait_caption": "Ahmadreza Samadi · Technology Entrepreneur",
@@ -155,7 +156,8 @@
           "title": "Working methods for a price and rent benchmark study",
           "description": "Published methods for an unfinished study, including an author-selected five-year window policy. Exact dates, eligible metros and results remain unresolved.",
           "link_labels": {
-            "methods": "Read the working methods (English)"
+            "methods": "Read the working methods (English)",
+            "coverage_reproduction": "Reproduce the coverage table (English)"
           }
         },
         "evidence_lab": {
@@ -232,7 +234,8 @@
         "monogram": "دریافت نشان شخصی (SVG)",
         "contact": "ذخیره اطلاعات تماس",
         "selected_work": "دریافت گزیدهٔ آثار عمومی (PDF انگلیسی)",
-        "facts_sheet": "دریافت برگهٔ یک‌صفحه‌ای اطلاعات (PDF انگلیسی)"
+        "facts_sheet": "دریافت برگهٔ یک‌صفحه‌ای اطلاعات (PDF انگلیسی)",
+        "question_guide": "انتخاب منبع بر اساس پرسش (فایل متنی انگلیسی)"
       },
       "portrait_alt": "احمدرضا صمدی با کت‌وشلوار تیره",
       "portrait_caption": "احمدرضا صمدی · کارآفرین فناوری",
@@ -329,7 +332,8 @@
           "title": "روش پیشنهادی مطالعهٔ قیمت و معیار اجاره",
           "description": "روش منتشرشدهٔ مطالعه‌ای ناتمام، شامل قاعدهٔ انتخاب بازهٔ پنج‌ساله. تاریخ‌های دقیق، مناطق شهری واجد شرایط و نتایج هنوز مشخص نیستند.",
           "link_labels": {
-            "methods": "خواندن روش پیشنهادی به انگلیسی"
+            "methods": "خواندن روش پیشنهادی به انگلیسی",
+            "coverage_reproduction": "بازتولید جدول پوشش داده‌ها (انگلیسی)"
           }
         },
         "evidence_lab": {
@@ -406,7 +410,8 @@
         "monogram": "تنزيل الشعار الشخصي (SVG)",
         "contact": "حفظ بيانات الاتصال",
         "selected_work": "تنزيل مختارات من الأعمال العامة (PDF بالإنجليزية)",
-        "facts_sheet": "تنزيل ورقة الحقائق من صفحة واحدة (PDF بالإنجليزية)"
+        "facts_sheet": "تنزيل ورقة الحقائق من صفحة واحدة (PDF بالإنجليزية)",
+        "question_guide": "اختيار مورد حسب السؤال (ملف نصي بالإنجليزية)"
       },
       "portrait_alt": "أحمدرضا صمدي يرتدي بدلة داكنة",
       "portrait_caption": "أحمدرضا صمدي · رائد أعمال تقني",
@@ -503,7 +508,8 @@
           "title": "منهجية مقترحة لدراسة الأسعار ومعيار الإيجار",
           "description": "منهجية منشورة لدراسة لم تكتمل، تتضمن قاعدة لاختيار فترة من خمس سنوات. لم تُحسم بعد التواريخ الدقيقة أو المناطق الحضرية المؤهلة أو النتائج.",
           "link_labels": {
-            "methods": "قراءة المنهجية المقترحة بالإنجليزية"
+            "methods": "قراءة المنهجية المقترحة بالإنجليزية",
+            "coverage_reproduction": "إعادة إنتاج جدول تغطية البيانات (بالإنجليزية)"
           }
         },
         "evidence_lab": {
@@ -560,6 +566,11 @@
     {
       "id": "facts_sheet",
       "path": "/assets/profile/ahmadreza-samadi-facts.pdf"
+    },
+    {
+      "path": "/assets/downloads/ahmadreza-samadi-start-with-the-question.txt",
+      "mime": "text/plain",
+      "id": "question_guide"
     }
   ],
   "portrait_display": {
@@ -662,6 +673,10 @@
         {
           "id": "methods",
           "url": "https://github.com/ahmadreza-smdi/ahmadreza-smdi/blob/767cdb9f7b53b16302151b90c41a7e3502673a04/docs/research/price-and-rent-study-methods.md"
+        },
+        {
+          "id": "coverage_reproduction",
+          "url": "https://github.com/ahmadreza-smdi/ahmadreza-smdi/tree/fc550a76f8fa08c480c8047224973d34d449701f/docs/research/fhfa-coverage"
         }
       ]
     },

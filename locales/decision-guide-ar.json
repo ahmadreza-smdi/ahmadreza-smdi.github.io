@@ -93,7 +93,19 @@
     "Your inputs have changed. Rebuild the brief to include them.": "تغيرت مدخلاتك. أعد إنشاء الموجز لتضمينها.",
     "Please add a specific detail.": "يرجى إضافة تفصيل محدد.",
     "Brief updated. Ready to export or print.": "تم تحديث الموجز. أصبح جاهزاً للتصدير أو الطباعة.",
-    "Brief exported as a text file.": "تم تصدير الموجز كملف نصي."
+    "Brief exported as a text file.": "تم تصدير الموجز كملف نصي.",
+    "How ready is that evidence?": "ما مدى جاهزية هذه الأدلة؟",
+    "We have not checked the sources": "لم نتحقق من المصادر بعد",
+    "Some is available; gaps remain": "بعضها متاح، مع وجود فجوات",
+    "Available, with permission and freshness checked": "متاحة، مع التحقق من إذن استخدامها وحداثتها",
+    "If the answer is wrong…": "إذا كانت الإجابة خاطئة…",
+    "Someone can easily undo the next step": "يمكن التراجع عن الخطوة التالية بسهولة",
+    "It creates meaningful rework or cost": "تسبب إعادة عمل أو تكلفة ملموسة",
+    "It may have serious or hard-to-reverse consequences": "قد تترتب عليها عواقب جسيمة أو يصعب تداركها",
+    "Who reviews before action?": "من يراجع قبل التنفيذ؟",
+    "A person reviews every result": "يراجع شخص كل نتيجة",
+    "A person reviews flagged exceptions": "يراجع شخص الحالات التي جرى التنبيه إليها",
+    "No review is planned": "لا توجد مراجعة مخططة"
   },
   "extra": {
     "Before You Build the AI": "قبل بناء الذكاء الاصطناعي",

@@ -113,7 +113,7 @@ def build(lang):
     # Rebuild alternates for the current language in the common enricher below.
     source = re.sub(r'<meta property="og:locale:alternate" content="[^"]*"\s*/?>', '', source)
     source = source.replace('href="study.css?v=20261015-study2"', 'href="/studies/rent-own-2026/study.css?v=20261015-study2"')
-    source = source.replace('src="study-ui.mjs?v=20261015-study2"', 'src="/studies/rent-own-2026/study-ui-localized.mjs?v=20261020-i18n1"')
+    source = source.replace('src="study-ui.mjs?v=20261021-range1"', 'src="/studies/rent-own-2026/study-ui-localized.mjs?v=20261021-range1"')
     source = source.replace('</head>', '<link rel="stylesheet" href="/studies/rent-own-2026/study-rtl.css?v=20261020-i18n1"></head>', 1)
     def schema(match):
         graph = json.loads(match[1])

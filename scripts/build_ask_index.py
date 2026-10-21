@@ -29,6 +29,7 @@ from xml.etree import ElementTree
 BASE = "https://a-samadi.com/"
 EMAIL = "ahmadreza.smdi@gmail.com"
 LANGUAGES = ("en", "fa", "ar")
+IDENTITY_NAMES = ('Ahmadreza Samadi', 'Ahmad Samadi', 'احمدرضا صمدی', 'احمد صمدی')
 VOID_TAGS = frozenset("area base br col embed hr img input link meta param source track wbr".split())
 # ECMAScript's WhiteSpace and LineTerminator characters, rather than Python's broader \s.
 JS_SPACE = re.compile(r"[\t\n\v\f\r \u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]+")
@@ -41,6 +42,10 @@ EXCLUDED_PARAGRAPH_CLASSES = ("section-label", "card-topline", "topic", "copy-st
 # A deliberate extraction contract with the existing client. Fail on a changed contract
 # instead of publishing a plausible but stale interpretation of Ask's index.
 RUNTIME_CONTRACT = (
+    "const requestedIdentityNames = new Set(['Ahmadreza Samadi', 'Ahmad Samadi', 'احمدرضا صمدی', 'احمد صمدی']);",
+    "if (item === biographyShortcut && identityAliases.has(query)) return true;",
+    "const identityShortcutHref = (query) => identityAliases.has(query) ? 'about.html' : 'about.html#profile-resources';",
+    "item.hidden = Boolean(query) && !matchesShortcut(item, query);",
     "const dialog = $('dialog.command');",
     "const commands = $$('.command-item', dialog).filter((item) => !item.hasAttribute('data-answer-go'));",
     "const clean = (node) => node.textContent.replace(/\\s+/g, ' ').trim();",
@@ -135,6 +140,37 @@ class Document(HTMLParser):
 
     def handle_data(self, value: str):
         self.stack[-1].children.append(value)
+
+
+def identity_names(document: Document) -> list[str]:
+    """Expose only the four requested names already present on the same Person."""
+    people = []
+
+    def visit(value):
+        if isinstance(value, list):
+            for child in value:
+                visit(child)
+        elif isinstance(value, dict):
+            if (value.get("@type") == "Person" and value.get("@id") == BASE + "#person"
+                    and value.get("url") == BASE + "about.html"):
+                people.append(value)
+            for child in value.values():
+                visit(child)
+
+    for node in document.nodes:
+        if node.tag == "script" and node.attrs.get("type") == "application/ld+json":
+            try:
+                visit(json.loads(node.text()))
+            except ValueError as error:
+                raise InvalidSource(document.source + ": invalid identity JSON-LD") from error
+    require(len(people) == 1, document.source + ": missing or duplicate canonical Person")
+    person = people[0]
+    alternatives = person.get("alternateName", [])
+    require(isinstance(alternatives, list), document.source + ": invalid Person names")
+    supported = [person.get("name"), *alternatives]
+    names = [name for name in IDENTITY_NAMES if name in supported]
+    require(names == list(IDENTITY_NAMES), document.source + ": required identity name is not supported")
+    return names
 
 
 class Exporter:
@@ -276,12 +312,21 @@ class Exporter:
             require(bool(passage["text"]), f"{relative}: empty indexed passage")
             passages.append(passage)
         shortcuts = []
+        aliases = identity_names(document)
+        biography_url = urljoin(source_url, "about.html#profile-resources")
         for node in dialogs[0].descendants():
             if node.tag == "a" and node.has_class("command-item") and "data-answer-go" not in node.attrs:
                 require(bool(node.attrs.get("href")), f"{relative}: link shortcut lacks href")
                 require(node.attrs.get("data-unavailable") != "true", f"{relative}: unavailable shortcut needs review")
-                shortcuts.extend(self.links(node, source_url))
+                links = self.links(node, source_url)
+                for link in links:
+                    if link["url"] == biography_url:
+                        link["aliases"] = aliases
+                        link["identity_url"] = urljoin(source_url, "about.html")
+                shortcuts.extend(links)
         require(bool(shortcuts), f"{relative}: no link shortcuts")
+        require(sum(link["url"] == biography_url for link in shortcuts) == 1,
+                f"{relative}: missing or duplicate biography shortcut")
         self.check_url(source_url)
         return {"language": language, "source_url": source_url, "passages": passages, "shortcuts": shortcuts}
 

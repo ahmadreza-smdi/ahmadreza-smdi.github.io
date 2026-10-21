@@ -1117,7 +1117,7 @@
       "related": [
         {
           "pillar": "property-decisions",
-          "path": "writing/how-building-digital-twins-work.html"
+          "path": "writing/property-data-enrichment.html"
         },
         {
           "pillar": "decision-first-ai",
@@ -1125,7 +1125,7 @@
         },
         {
           "pillar": "tech-explained",
-          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+          "path": "writing/why-ai-weather-models-need-local-observations.html"
         }
       ]
     },

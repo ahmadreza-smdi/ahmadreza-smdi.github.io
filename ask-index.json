@@ -533,7 +533,14 @@
         },
         {
           "label": "Biography and profile kit",
-          "url": "https://a-samadi.com/about.html#profile-resources"
+          "url": "https://a-samadi.com/about.html#profile-resources",
+          "aliases": [
+            "Ahmadreza Samadi",
+            "Ahmad Samadi",
+            "احمدرضا صمدی",
+            "احمد صمدی"
+          ],
+          "identity_url": "https://a-samadi.com/about.html"
         },
         {
           "label": "Data engineering and CRM pipelines at Oxfam Novib",
@@ -1094,7 +1101,14 @@
         },
         {
           "label": "زندگی‌نامه و بسته معرفی",
-          "url": "https://a-samadi.com/fa/about.html#profile-resources"
+          "url": "https://a-samadi.com/fa/about.html#profile-resources",
+          "aliases": [
+            "Ahmadreza Samadi",
+            "Ahmad Samadi",
+            "احمدرضا صمدی",
+            "احمد صمدی"
+          ],
+          "identity_url": "https://a-samadi.com/fa/about.html"
         },
         {
           "label": "مهندسی داده و فرایندهای CRM در Oxfam Novib",
@@ -1656,7 +1670,14 @@
         },
         {
           "label": "السيرة وملف التعريف",
-          "url": "https://a-samadi.com/ar/about.html#profile-resources"
+          "url": "https://a-samadi.com/ar/about.html#profile-resources",
+          "aliases": [
+            "Ahmadreza Samadi",
+            "Ahmad Samadi",
+            "احمدرضا صمدی",
+            "احمد صمدی"
+          ],
+          "identity_url": "https://a-samadi.com/ar/about.html"
         },
         {
           "label": "هندسة البيانات ومسارات CRM في Oxfam Novib",

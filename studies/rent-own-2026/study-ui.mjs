@@ -1,4 +1,4 @@
-import {summarize} from './study-model.mjs?v=20261015-study2';
+import {summarize} from './study-model.mjs?v=20261021-range1';
 const $=id=>document.getElementById(id),money=x=>x===null?'Undefined':new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(x);
 const data=JSON.parse($('study-data').textContent);
 const keys=data.fields.map(f=>f.key),percent=new Set(data.fields.filter(f=>f.percent).map(f=>f.key));
@@ -20,7 +20,11 @@ function details(s){
  const d=r.details[0].result;$('budget').textContent=`At the first listed HUD area's rent: receipts ${money(d.annual_receipts)} − management ${money(d.annual_management)} − fixed budget ${money(d.annual_fixed_budget)} − principal/interest ${money(d.annual_principal_interest)} = annual surplus ${money(d.annual_cash_surplus)}. Fixed budget includes tax, insurance, maintenance reserve, HOA, other costs and mortgage insurance once.`;
  }catch(e){$('threshold').textContent=e.message;$('budget').textContent='This metro cannot be calculated with the selected assumptions; it is not assigned a zero result.';}
 }
-function render(){
+function invalidateShare(){
+ const link=$('share-url');link.value='';link.hidden=true;$('share-status').textContent='';
+}
+function render(preserveShareNotice=false){
+ if(!preserveShareNotice)invalidateShare();
  let s;try{s=inputs();$('error').textContent='';$('download-current').disabled=false;}catch(e){$('error').textContent=e.message;results=[];$('result-body').replaceChildren();$('area-body').replaceChildren();$('print-assumptions').replaceChildren();$('count').textContent='Results cleared until every assumption is complete.';$('threshold').textContent='No current calculation.';$('budget').textContent='';$('download-current').disabled=true;return;}
  $('print-assumptions').replaceChildren();for(const f of data.fields){const item=el('div');item.append(el('dt',f.label),el('dd',String(s[f.key]*(f.percent?100:1))));$('print-assumptions').append(item);}
  const query=$('search').value.trim().toLowerCase();results=data.metros.filter(m=>m.name.toLowerCase().includes(query)||m.cbsa.includes(query)).map(m=>{try{return {m,...summarize(m,s)};}catch(e){return {m,error:e.message};}});
@@ -29,7 +33,7 @@ function render(){
  const valid=results.filter(r=>!r.error),extent=Math.max(1,...valid.flatMap(r=>[Math.abs(r.min),Math.abs(r.max)]));
  $('count').textContent=`${results.length} metros shown; ${valid.length} calculated; ${results.length-valid.length} unresolved with these inputs. Ranges describe scenarios, not market rankings.`;
  const body=$('result-body');body.replaceChildren();
- results.forEach((r,i)=>{const tr=el('tr');tr.className='result-row';tr.hidden=i<page*20||i>=(page+1)*20;const td=el('td'),button=el('button',r.m.name);button.className='metro-button';button.addEventListener('click',()=>{selected=r.m;details(s);$('detail').scrollIntoView({behavior:'auto',block:'start'});});td.append(button);tr.append(td,el('td',r.m.areas.length));
+ results.forEach((r,i)=>{const tr=el('tr');tr.className='result-row';tr.hidden=i<page*20||i>=(page+1)*20;const td=el('td'),button=el('button',r.m.name);button.className='metro-button';button.addEventListener('click',()=>{invalidateShare();selected=r.m;details(s);$('detail').scrollIntoView({behavior:'auto',block:'start'});});td.append(button);tr.append(td,el('td',r.m.areas.length));
  const graphic=el('td');if(!r.error)graphic.append(chart(r.min,r.max,extent));tr.append(graphic,el('td',r.error||`${money(r.min)} to ${money(r.max)}`));body.append(tr);});
  $('page').textContent=`Page ${page+1} of ${pages}`;$('previous').disabled=page===0;$('next').disabled=page>=pages-1;
  $('axis').textContent=`Chart scale: ${money(-extent)} to ${money(extent)} annually; centre line is zero.`;details(s);
@@ -46,10 +50,11 @@ function restoreLink(){
  if(!location.hash.startsWith('#scenario='))return;
  try{const saved=JSON.parse(decodeURIComponent(location.hash.slice(10)));
  if(saved.version!==1 || !saved.inputs || !keys.every(k=>Number.isFinite(saved.inputs[k])))throw Error('Unsupported scenario link.');
- const s={...current,...saved.inputs};const target=data.metros.find(m=>m.cbsa===saved.cbsa)||selected;summarize(target,s);setCase(s);
+ const target=data.metros.find(m=>m.cbsa===saved.cbsa);if(!target)throw Error('Unknown metro in scenario link.');
+ const s={...current,...saved.inputs};summarize(target,s);setCase(s);
  if(typeof saved.search==='string')$('search').value=saved.search.slice(0,150);
  if(typeof saved.cbsa==='string')selected=data.metros.find(m=>m.cbsa===saved.cbsa)||selected;
  }catch(e){$('share-status').textContent='This scenario link could not be restored; the initial case is shown.';}
 }
 $('share').addEventListener('click',()=>{try{const s=inputs();summarize(selected,s);const state={version:1,inputs:Object.fromEntries(keys.map(k=>[k,s[k]])),search:$('search').value,cbsa:selected.cbsa};$('share-url').value=location.href.split('#')[0]+'#scenario='+encodeURIComponent(JSON.stringify(state));$('share-url').hidden=false;$('share-url').select();$('share-status').textContent='Scenario link ready to copy. Assumptions are in the link fragment; they are not sent to the website server.';}catch(e){$('share-status').textContent=e.message;}});
-setCase(current);restoreLink();render();
+setCase(current);restoreLink();render(true);

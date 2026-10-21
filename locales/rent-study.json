@@ -54,7 +54,9 @@
         "Enter valid, finite inputs; management must be below 100%.": "ورودی‌های معتبر و متناهی وارد کنید؛ مدیریت باید کمتر از ۱۰۰٪ باشد.",
         "Utility deduction exceeds this HUD rent.": "کسر خدمات از این اجارهٔ HUD بیشتر است.",
         "Unsupported scenario link.": "پیوند سناریو پشتیبانی نمی‌شود.",
-        "Complete every assumption; use zero only when intentionally assumed.": "تمام فرض‌ها را کامل کنید؛ فقط در صورت فرض عمدی، صفر وارد کنید."
+        "Complete every assumption; use zero only when intentionally assumed.": "تمام فرض‌ها را کامل کنید؛ فقط در صورت فرض عمدی، صفر وارد کنید.",
+        "Loan calculation exceeds numeric range; revise inputs": "محاسبهٔ وام از محدودهٔ عددی خارج است؛ ورودی‌ها را اصلاح کنید",
+        "Cash-budget calculation exceeds numeric range; revise inputs": "محاسبهٔ بودجهٔ نقدی از محدودهٔ عددی خارج است؛ ورودی‌ها را اصلاح کنید"
       }
     },
     "ar": {
@@ -109,7 +111,9 @@
         "Enter valid, finite inputs; management must be below 100%.": "أدخل قيمًا صالحة ومحدودة؛ يجب أن تكون الإدارة أقل من 100%.",
         "Utility deduction exceeds this HUD rent.": "خصم المرافق يتجاوز إيجار HUD هذا.",
         "Unsupported scenario link.": "رابط سيناريو غير مدعوم.",
-        "Complete every assumption; use zero only when intentionally assumed.": "أكمل كل الافتراضات؛ استخدم صفرًا فقط عند افتراضه عمدًا."
+        "Complete every assumption; use zero only when intentionally assumed.": "أكمل كل الافتراضات؛ استخدم صفرًا فقط عند افتراضه عمدًا.",
+        "Loan calculation exceeds numeric range; revise inputs": "يتجاوز حساب القرض النطاق العددي؛ راجع المدخلات",
+        "Cash-budget calculation exceeds numeric range; revise inputs": "يتجاوز حساب الميزانية النقدية النطاق العددي؛ راجع المدخلات"
       }
     }
   },
@@ -697,6 +701,18 @@
     "to inspect the inputs.": {
       "fa": "برای بررسی ورودی‌ها استفاده کنید.",
       "ar": "لمراجعة المدخلات."
+    },
+    "New to cash-budget scenarios?": {
+      "fa": "با سناریوهای بودجهٔ نقدی آشنا نیستید؟",
+      "ar": "هل سيناريوهات الميزانية النقدية جديدة عليك؟"
+    },
+    "Read a fictional cash-budget worked example": {
+      "fa": "یک مثال فرضیِ حل‌شده از بودجهٔ نقدی را بخوانید (انگلیسی)",
+      "ar": "اقرأ مثالًا افتراضيًا محلولًا للميزانية النقدية (بالإنجليزية)"
+    },
+    "before interpreting the table.": {
+      "fa": "پیش از تفسیر جدول.",
+      "ar": "قبل تفسير الجدول."
     }
   }
 }

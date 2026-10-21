@@ -178,6 +178,18 @@ def render(data, hub, language):
 <p>{escape(card["summary"])}</p>
 </article>''')
     film = copy["film"]
+    playlist = hub.get("video_playlist")
+    playlist_html = ""
+    if playlist is not None:
+        allowed_playlists = {
+            "tech-explained": {"url": "https://www.youtube.com/playlist?list=PLOY3oVQEP8UQ", "title": "Tech Explained"},
+            "ai-real-estate": {"url": "https://www.youtube.com/playlist?list=PLVy10T3UbjJ0", "title": "AI × Property"},
+        }
+        if playlist != allowed_playlists.get(hub["id"]):
+            raise ValueError("Unknown owned playlist; verify its source before adding it")
+        playlist_html = ('\n<p><a href="' + escape(playlist["url"], quote=True)
+                         + '" hreflang="en"><bdi>' + escape(playlist["title"])
+                         + ' · YouTube</bdi></a></p>')
     apply = copy["apply"]
     other_hub = next(item for item in data["hubs"] if item["id"] == copy["cross_hub"]["hub"])
     cross = copy["cross_hub"]
@@ -260,7 +272,7 @@ def render(data, hub, language):
 <section aria-labelledby="topic-film-heading">
 <h2 id="topic-film-heading">{escape(film["heading"])}</h2>
 <p>{escape(film["summary"])}</p>
-<p>{tagged_link(destinations[film["resource"]], film["resource"], film["label"])}</p>
+<p>{tagged_link(destinations[film["resource"]], film["resource"], film["label"])}</p>{playlist_html}
 </section>
 <section aria-labelledby="topic-apply-heading">
 <h2 id="topic-apply-heading">{escape(apply["heading"])}</h2>

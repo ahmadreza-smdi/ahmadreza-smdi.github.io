@@ -11,6 +11,8 @@
   let briefText = '';
   let dirty = false;
   function values() { return Object.fromEntries(keys.map(key => [key, form.elements[key].value.trim()])); }
+  const conditionLabels = {'availability': { label: 'این شواهد چقدر آماده‌اند؟', options: {'unknown': 'هنوز منابع را بررسی نکرده‌ایم', 'partial': 'بخشی موجود است؛ شکاف‌هایی باقی مانده', 'ready': 'موجود است و مجوز استفاده و به‌روز بودن بررسی شده'} }, 'stakes': { label: 'اگر پاسخ اشتباه باشد…', options: {'low': 'گام بعدی به‌آسانی قابل بازگشت است', 'medium': 'دوباره‌کاری یا هزینه قابل‌توجه ایجاد می‌کند', 'high': 'ممکن است پیامدهای جدی یا دشوار برای جبران داشته باشد'} }, 'review': { label: 'چه کسی پیش از اقدام بازبینی می‌کند؟', options: {'always': 'یک نفر همه نتایج را بازبینی می‌کند', 'exceptions': 'یک نفر موارد علامت‌گذاری‌شده را بازبینی می‌کند', 'none': 'بازبینی در نظر گرفته نشده'} }};
+  function conditions(v) { return ['availability', 'stakes', 'review'].map(key => conditionLabels[key].label + ' ' + conditionLabels[key].options[v[key]]).join('\n'); }
   function section(title, body, ordered = false) {
     const wrap = document.createElement('section'); wrap.className = 'brief-section';
     const h = document.createElement('h3'); h.textContent = title; wrap.append(h);
@@ -24,7 +26,7 @@
     content.replaceChildren();
     const blocker = v.availability === 'unknown' ? 'پیش از آزمایش مدل، شواهد را بررسی کنید. دسترسی، مجوز استفاده، به‌روز بودن و پوشش را تأیید کنید و موارد نامعلوم را بنویسید.' : v.availability === 'partial' ? 'شکاف‌ها را آشکار کنید. منابع مفقود را مشخص کنید و تعیین کنید ابزار چه زمانی باید اطلاعات بخواهد یا تصمیم را به انسان برگرداند.' : 'شواهد را با موارد واقعی بسنجید. موجودبودن به معنای دقت یا نمایندگی مناسب نیست؛ منشأ و موارد دشوار را بررسی کنید.';
     const review = v.stakes === 'high' ? 'آزمایش نخست را آفلاین نگه دارید و از فرد واجد صلاحیت بخواهید همه نتایج را بازبینی کند. پیش از استفاده عملی، خطاهای جدی و شرایط ارجاع را مستند کنید.' : v.review === 'none' ? 'مرحله بازبینی را به آزمایش نخست اضافه کنید. پیش از آنکه خروجی به اقدام منجر شود، یک نفر باید شواهد و خطاها را بررسی کند.' : v.review === 'exceptions' ? 'در آزمایش نخست همه نتایج، حتی موارد علامت‌گذاری‌نشده، را بازبینی کنید. پیش از اتکا به قواعد استثنا، بررسی کنید آیا خطایی از دست می‌رود.' : 'بازبین را در آزمایش نگه دارید. اصلاحات و زمان بازبینی هر نتیجه را در کنار خروجی مدل ثبت کنید.';
-    const parts = [section('۰۱ / تصمیم', `${v.user}\n\n${v.decision}`), section('اقدام بعدی', v.action), section('۰۲ / شواهد', v.evidence), section('ابتدا حل کنید', blocker + '\n\n' + review), section('۰۳ / کوچک‌ترین آزمایش مفید', [
+    const parts = [section('۰۱ / تصمیم', `${v.user}\n\n${v.decision}\n\n${conditions(v)}`), section('اقدام بعدی', v.action), section('۰۲ / شواهد', v.evidence), section('ابتدا حل کنید', blocker + '\n\n' + review), section('۰۳ / کوچک‌ترین آزمایش مفید', [
       `مجموعه‌ای کوچک با دامنه روشن از موارد این تصمیم انتخاب کنید. موارد عادی، شواهد ناقص و خطاهای محتمل را بگنجانید. آزمایش کوچک را اثبات قابلیت اعتماد گسترده ندانید.`,
       `روش مبنا را مشخص کنید: ${v.baseline} زمان، نتایج و زحمت اصلاح را ثبت کنید.`,
       `برای همان موارد، دستی یا با نمونه‌ای ساده، پیشنهادهای مستند به شواهد آماده کنید. ${review}`,

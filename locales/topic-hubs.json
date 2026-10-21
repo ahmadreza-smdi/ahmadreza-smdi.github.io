@@ -760,7 +760,11 @@
         "day2_rent_or_buy_five_numbers",
         "day2_human_review_property_ai_checklist",
         "day2_dubai_property_buying_costs"
-      ]
+      ],
+      "video_playlist": {
+        "title": "AI × Property",
+        "url": "https://www.youtube.com/playlist?list=PLVy10T3UbjJ0"
+      }
     },
     {
       "id": "business-systems-dubai",
@@ -1197,6 +1201,10 @@
             "summary": "تابع مع معلومات العقارات والمراجعة البشرية والذكاء الاصطناعي الذي يبدأ بالقرار."
           }
         }
+      },
+      "video_playlist": {
+        "url": "https://www.youtube.com/playlist?list=PLOY3oVQEP8UQ",
+        "title": "Tech Explained"
       }
     }
   ]
