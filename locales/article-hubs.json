@@ -1344,6 +1344,30 @@
           "path": "writing/profitable-but-out-of-cash.html"
         }
       ]
+    },
+    {
+      "stem": "dubai-service-charge-same-rent",
+      "classification": "explainer",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/dubai-service-charge-same-rent.html",
+        "fa": "fa/writing/dubai-service-charge-same-rent.html",
+        "ar": "ar/writing/dubai-service-charge-same-rent.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
     }
   ]
 }

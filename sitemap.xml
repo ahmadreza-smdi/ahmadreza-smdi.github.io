@@ -2249,4 +2249,48 @@
             <video:publication_date>2026-10-21T10:06:51+03:30</video:publication_date>
         </video:video>
     </url>
+    <url>
+        <loc>https://a-samadi.com/writing/dubai-service-charge-same-rent.html</loc>
+        <lastmod>2026-10-21T21:20:06+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/dubai-service-charge-same-rent.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/dubai-service-charge-same-rent.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/dubai-service-charge-same-rent.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/dubai-service-charge-same-rent.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/dubai-service-charge-same-rent/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/dubai-service-charge-same-rent.html</loc>
+        <lastmod>2026-10-21T21:20:06+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/dubai-service-charge-same-rent.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/dubai-service-charge-same-rent.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/dubai-service-charge-same-rent.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/dubai-service-charge-same-rent.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/dubai-service-charge-same-rent/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/dubai-service-charge-same-rent.html</loc>
+        <lastmod>2026-10-21T21:20:06+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/dubai-service-charge-same-rent.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/dubai-service-charge-same-rent.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/dubai-service-charge-same-rent.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/dubai-service-charge-same-rent.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/dubai-service-charge-same-rent/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/watch/dubai-service-charge-same-rent.html</loc>
+        <lastmod>2026-10-21T21:20:06+03:30</lastmod>
+        <video:video>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/dubai-service-charge-same-rent/cover.png</video:thumbnail_loc>
+            <video:title>Same rent, different service-charge bill</video:title>
+            <video:description>A fictional Dubai property comparison separates advertised rent from cash remaining after one recurring cost.</video:description>
+            <video:content_loc>https://a-samadi.com/assets/writing/dubai-service-charge-same-rent/film.mp4</video:content_loc>
+            <video:publication_date>2026-10-21T21:20:06+03:30</video:publication_date>
+        </video:video>
+    </url>
 </urlset>

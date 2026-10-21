@@ -116,6 +116,7 @@ Series: Start with the Decision (ideas and newsletter); Property Decision Data (
 - [Dubai property buying costs, item by item](https://a-samadi.com/writing/dubai-property-buying-costs.html): Build a dated Dubai purchase budget from official registration fees, mortgage charges and your own quotes. Separate total fees from the buyer’s share.
 - [How cold outdoor air can help warm a home](https://a-samadi.com/writing/heat-pump-moves-heat-explained.html): A fictional home and an illustrative energy balance explain how a heat pump moves heat.
 - [AI agents: ability is not authority](https://a-samadi.com/writing/ai-agent-permissions-ability-authority.html): A fictional invoice explains reading, drafting and approval boundaries in business AI.
+- [Same rent, different service-charge bill](https://a-samadi.com/writing/dubai-service-charge-same-rent.html): A fictional Dubai property comparison separates advertised rent from cash remaining after one recurring cost.
 
 ## Films
 
@@ -130,6 +131,7 @@ Series: Start with the Decision (ideas and newsletter); Property Decision Data (
 - [Watch: Tesla says Roadster can fly: three questions to ask](https://a-samadi.com/watch/tesla-roadster-flight-claim.html): Watch the English animated film separating Tesla flight claims, access conditions and intended use, with an illustrated thrust mechanism.
 - [Watch: How cold outdoor air can help warm a home](https://a-samadi.com/watch/heat-pump-moves-heat-explained.html): Watch the English film: A fictional home and an illustrative energy balance explain how a heat pump moves heat.
 - [Watch: AI agents: ability is not authority](https://a-samadi.com/watch/ai-agent-permissions-ability-authority.html): Watch the English film: A fictional invoice explains reading, drafting and approval boundaries in business AI.
+- [Watch: Same rent, different service-charge bill](https://a-samadi.com/watch/dubai-service-charge-same-rent.html): Watch the English film: A fictional Dubai property comparison separates advertised rent from cash remaining after one recurring cost.
 
 ## Tools
 

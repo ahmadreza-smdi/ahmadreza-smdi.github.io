@@ -470,6 +470,13 @@
         "fa": "fa/writing/ai-agent-permissions-ability-authority.html",
         "ar": "ar/writing/ai-agent-permissions-ability-authority.html"
       }
+    },
+    "article_dubai_service_charge_same_rent": {
+      "paths": {
+        "en": "writing/dubai-service-charge-same-rent.html",
+        "fa": "fa/writing/dubai-service-charge-same-rent.html",
+        "ar": "ar/writing/dubai-service-charge-same-rent.html"
+      }
     }
   },
   "hubs": [
@@ -736,7 +743,8 @@
         "day2_avm_vs_appraisal",
         "day2_rent_or_buy_five_numbers",
         "day2_human_review_property_ai_checklist",
-        "day2_dubai_property_buying_costs"
+        "day2_dubai_property_buying_costs",
+        "article_dubai_service_charge_same_rent"
       ],
       "all_articles_heading": {
         "en": "All articles in this topic",
@@ -766,7 +774,8 @@
         "day2_avm_vs_appraisal",
         "day2_rent_or_buy_five_numbers",
         "day2_human_review_property_ai_checklist",
-        "day2_dubai_property_buying_costs"
+        "day2_dubai_property_buying_costs",
+        "article_dubai_service_charge_same_rent"
       ],
       "video_playlist": {
         "title": "AI × Property",
