@@ -463,6 +463,13 @@
         "fa": "fa/writing/heat-pump-moves-heat-explained.html",
         "ar": "ar/writing/heat-pump-moves-heat-explained.html"
       }
+    },
+    "article_ai_agent_permissions_ability_authority": {
+      "paths": {
+        "en": "writing/ai-agent-permissions-ability-authority.html",
+        "fa": "fa/writing/ai-agent-permissions-ability-authority.html",
+        "ar": "ar/writing/ai-agent-permissions-ability-authority.html"
+      }
     }
   },
   "hubs": [
@@ -974,6 +981,7 @@
         "verified_cost",
         "profit_cash",
         "article_how_many_coffees_to_break_even",
+        "article_ai_agent_permissions_ability_authority",
         "profit_film",
         "decision_guide"
       ],
@@ -983,7 +991,8 @@
         "ar": "جميع مقالات هذا الموضوع"
       },
       "additional_resources": [
-        "article_how_many_coffees_to_break_even"
+        "article_how_many_coffees_to_break_even",
+        "article_ai_agent_permissions_ability_authority"
       ]
     },
     {

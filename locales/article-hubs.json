@@ -1320,6 +1320,30 @@
           "path": "writing/why-wifi-is-slow-with-full-bars.html"
         }
       ]
+    },
+    {
+      "stem": "ai-agent-permissions-ability-authority",
+      "classification": "explainer",
+      "hub": "business-systems-dubai",
+      "paths": {
+        "en": "writing/ai-agent-permissions-ability-authority.html",
+        "fa": "fa/writing/ai-agent-permissions-ability-authority.html",
+        "ar": "ar/writing/ai-agent-permissions-ability-authority.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
     }
   ]
 }

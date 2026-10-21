@@ -228,6 +228,7 @@ for css in ROOT.rglob('*.css'):
   check_local_asset(source,ref)
 
 clusters = (
+ ('writing/ai-agent-permissions-ability-authority.html','fa/writing/ai-agent-permissions-ability-authority.html','ar/writing/ai-agent-permissions-ability-authority.html'),
  ('writing/heat-pump-moves-heat-explained.html','fa/writing/heat-pump-moves-heat-explained.html','ar/writing/heat-pump-moves-heat-explained.html'),
  ('writing/tesla-roadster-flight-claim.html','fa/writing/tesla-roadster-flight-claim.html','ar/writing/tesla-roadster-flight-claim.html'),
  ('writing/ai-agents-shared-notebook.html','fa/writing/ai-agents-shared-notebook.html','ar/writing/ai-agents-shared-notebook.html'),
