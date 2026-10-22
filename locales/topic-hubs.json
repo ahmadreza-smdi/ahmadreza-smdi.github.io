@@ -477,6 +477,13 @@
         "fa": "fa/writing/dubai-service-charge-same-rent.html",
         "ar": "ar/writing/dubai-service-charge-same-rent.html"
       }
+    },
+    "article_rag_check_business_records": {
+      "paths": {
+        "en": "writing/rag-check-business-records.html",
+        "fa": "fa/writing/rag-check-business-records.html",
+        "ar": "ar/writing/rag-check-business-records.html"
+      }
     }
   },
   "hubs": [
@@ -744,7 +751,8 @@
         "day2_rent_or_buy_five_numbers",
         "day2_human_review_property_ai_checklist",
         "day2_dubai_property_buying_costs",
-        "article_dubai_service_charge_same_rent"
+        "article_dubai_service_charge_same_rent",
+        "article_rag_check_business_records"
       ],
       "all_articles_heading": {
         "en": "All articles in this topic",
@@ -775,7 +783,8 @@
         "day2_rent_or_buy_five_numbers",
         "day2_human_review_property_ai_checklist",
         "day2_dubai_property_buying_costs",
-        "article_dubai_service_charge_same_rent"
+        "article_dubai_service_charge_same_rent",
+        "article_rag_check_business_records"
       ],
       "video_playlist": {
         "title": "AI × Property",

@@ -2293,4 +2293,48 @@
             <video:publication_date>2026-10-21T21:20:06+03:30</video:publication_date>
         </video:video>
     </url>
+    <url>
+        <loc>https://a-samadi.com/writing/rag-check-business-records.html</loc>
+        <lastmod>2026-10-22T10:01:41+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/rag-check-business-records.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/rag-check-business-records.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/rag-check-business-records.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/rag-check-business-records.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/rag-check-business-records/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/rag-check-business-records.html</loc>
+        <lastmod>2026-10-22T10:01:41+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/rag-check-business-records.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/rag-check-business-records.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/rag-check-business-records.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/rag-check-business-records.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/rag-check-business-records/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/rag-check-business-records.html</loc>
+        <lastmod>2026-10-22T10:01:41+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/rag-check-business-records.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/rag-check-business-records.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/rag-check-business-records.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/rag-check-business-records.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/rag-check-business-records/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/watch/rag-check-business-records.html</loc>
+        <lastmod>2026-10-22T10:01:41+03:30</lastmod>
+        <video:video>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/rag-check-business-records/cover.png</video:thumbnail_loc>
+            <video:title>The confident answer from the old price list</video:title>
+            <video:description>In a fictional hotel, Leila asks an AI assistant for a meeting-room quote. A fluent answer appears. Before sending it, she spots the problem: its supporting sheet is an old version. This is a teaching scenario, not a report of an actual hotel or product test.</video:description>
+            <video:content_loc>https://a-samadi.com/assets/writing/rag-check-business-records/film.mp4</video:content_loc>
+            <video:publication_date>2026-10-22T10:01:41+03:30</video:publication_date>
+        </video:video>
+    </url>
 </urlset>

@@ -1368,6 +1368,30 @@
           "path": "writing/profitable-but-out-of-cash.html"
         }
       ]
+    },
+    {
+      "stem": "rag-check-business-records",
+      "classification": "explainer",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/rag-check-business-records.html",
+        "fa": "fa/writing/rag-check-business-records.html",
+        "ar": "ar/writing/rag-check-business-records.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
     }
   ]
 }
