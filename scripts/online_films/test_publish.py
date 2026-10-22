@@ -77,6 +77,16 @@ class PublicationGuards(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     p.unpack(a, Path(td) / "bad", p.sha(a))
 
+    def test_cloudflare_email_transform_preserves_exact_content(self):
+        email = b"public@example.com"
+        encoded = bytes([42, *[b ^ 42 for b in email]]).hex().encode()
+        source = b'<p>Reviewed film</p><a href="mailto:' + email + b'">Contact</a>'
+        served = source.replace(b"mailto:" + email, b"/cdn-cgi/l/email-protection#" + encoded)
+        served += b'<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>'
+        self.assertEqual(source, p.normalize_served_html(served))
+        self.assertNotEqual(source, p.normalize_served_html(served.replace(b"Reviewed", b"Changed")))
+        self.assertNotEqual(source, p.normalize_served_html(served + b"<script>unexpected()</script>"))
+
     def test_existing_film_blocks_second_daily_film(self):
         with tempfile.TemporaryDirectory() as td:
             site = Path(td)

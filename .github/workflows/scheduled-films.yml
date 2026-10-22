@@ -9,7 +9,7 @@ on:
       mode:
         description: Verify private prepared bundles or publish only an actually due film
         type: choice
-        options: [verify, publish-due]
+        options: [verify, verify-deployment, publish-due]
         default: verify
 
 permissions:
@@ -40,6 +40,9 @@ jobs:
       - name: Rehearse all private bundles and verify Pages access
         if: github.event_name == 'workflow_dispatch' && inputs.mode == 'verify'
         run: python3 -B scripts/online_films/publish.py --verify --verify-build
+      - name: Verify existing Pages deployment only
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'verify-deployment'
+        run: python3 -B scripts/online_films/publish.py --verify-build
       - name: Publish only the reviewed film due now
         if: github.event_name == 'schedule' || inputs.mode == 'publish-due'
         run: python3 -B scripts/online_films/publish.py

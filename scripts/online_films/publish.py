@@ -184,6 +184,19 @@ def checks(site):
     return len(commands)
 
 
+def normalize_served_html(data):
+    # Cloudflare rewrites public mailto links and adds its email decoder.
+    # Decode only this known edge transformation; all other bytes must still match.
+    def decode(match):
+        encoded = bytes.fromhex(match.group(1).decode("ascii"))
+        if len(encoded) < 2:
+            raise ValueError("Invalid Cloudflare email encoding")
+        return b"mailto:" + bytes(x ^ encoded[0] for x in encoded[1:])
+    data = re.sub(rb"/cdn-cgi/l/email-protection#([0-9a-fA-F]+)", decode, data)
+    data = re.sub(rb'<script data-cfasync="false" src="/cdn-cgi/scripts/[0-9a-f]+/cloudflare-static/email-decode.min.js"></script>', b"", data)
+    return data
+
+
 def verify_live(config, commit, paths):
     # GITHUB_TOKEN pushes do not start Pages automatically; request its existing branch build explicitly.
     run(["gh", "api", "-X", "POST", f'repos/{config["repository"]}/pages/builds'])
@@ -203,14 +216,17 @@ def verify_live(config, commit, paths):
             req = urllib.request.Request(config["site_url"] + "/" + relative,
                                          headers={"User-Agent": "Ahmadreza-site-release-verifier/1.0"})
             with urllib.request.urlopen(req, timeout=90) as r:
-                received = hashlib.sha256(r.read()).hexdigest()
-            if received != sha(ROOT / relative):
-                failed.append(relative)
-        except Exception:
-            failed.append(relative)
+                received = r.read()
+            expected = (ROOT / relative).read_bytes()
+            if relative.endswith(".html"):
+                received = normalize_served_html(received)
+            if received != expected:
+                failed.append(relative + " (content mismatch)")
+        except Exception as error:
+            failed.append(relative + " (" + type(error).__name__ + ": " + str(error) + ")")
     if failed:
         raise RuntimeError("Pages built; live byte verification incomplete: " + ", ".join(failed))
-    print("Exact Pages deployment and live publication bytes verified.")
+    print("Exact Pages deployment and live publication content verified (known Cloudflare email-link transformation normalized).")
 
 
 def main():
@@ -221,6 +237,9 @@ def main():
     args = ap.parse_args()
     config = read(CONFIG)
     validate_schedule(config)
+    if args.verify_build and not args.verify:
+        verify_live(config, run(["git", "rev-parse", "HEAD"]), ["index.html"])
+        return
     now = datetime.now(ZONE)
     rows = config["films"] if args.verify else due_rows(config, now)
     if not rows:
