@@ -77,6 +77,37 @@ def due_rows(config, now):
             <= datetime.fromisoformat(r["publish_at"]) + timedelta(minutes=30)]
 
 
+def next_wait_seconds(config, now):
+    """Prewarm only today's reviewed slot, never an old slot or unbounded worker."""
+    waits = [(datetime.fromisoformat(r["publish_at"]) - now).total_seconds()
+             for r in config["films"]
+             if datetime.fromisoformat(r["publish_at"]).date() == now.astimezone(ZONE).date()]
+    return next((seconds for seconds in waits if 0 < seconds <= 3 * 3600), 0)
+
+
+def authorized_catchup_page(site, slug, due):
+    # A separately owner-authorized missed family does not consume today's normal slot.
+    # Only a committed receipt bound to an exact original schedule/bundle can do this.
+    config_path = site / "scripts/online_films/schedule.json"
+    if not config_path.exists():
+        return False
+    config = read(config_path)
+    for row in config["films"]:
+        receipt_path = site / ("data/film-publications/" + row["key"] + ".json")
+        if not receipt_path.exists():
+            continue
+        receipt = read(receipt_path)
+        authority = receipt.get("catch_up_authorization", {})
+        if (receipt.get("slug") == slug and receipt.get("bundle_sha256") == row["sha256"]
+                and receipt.get("scheduled_at") == row["publish_at"]
+                and authority.get("original_date") == row["key"]
+                and authority.get("owner_direct_request") is True
+                and len(authority.get("evidence_sha256", "")) == 64
+                and datetime.fromisoformat(row["publish_at"]).date() < due.date()):
+            return True
+    return False
+
+
 def refuse_existing_film_day(site, due):
     for page in (site / "writing").glob("*.html"):
         for raw in re.findall(r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>', page.read_text(), re.S):
@@ -86,6 +117,8 @@ def refuse_existing_film_day(site, due):
                 if node.get("@type") == "Article" and node.get("video") and node.get("datePublished"):
                     published = datetime.fromisoformat(node["datePublished"].replace("Z", "+00:00"))
                     if published.astimezone(ZONE).date() == due.astimezone(ZONE).date():
+                        if authorized_catchup_page(site, page.stem, due):
+                            continue
                         raise ValueError("This day already has a published film: " + page.name)
 
 
@@ -234,6 +267,7 @@ def main():
     ap.add_argument("--verify", action="store_true", help="Rehearse privately; never copy or commit future films")
     ap.add_argument("--verify-build", action="store_true", help="Test existing Pages build access, without future content")
     ap.add_argument("--local-bundles", type=Path)
+    ap.add_argument("--wait-for-slot", action="store_true", help="Bounded cloud prewarm; never publish early")
     args = ap.parse_args()
     config = read(CONFIG)
     validate_schedule(config)
@@ -241,8 +275,27 @@ def main():
         verify_live(config, run(["git", "rev-parse", "HEAD"]), ["index.html"])
         return
     now = datetime.now(ZONE)
+    if args.wait_for_slot:
+        deadline = time.monotonic() + 3 * 3600
+        while next_wait_seconds(config, now):
+            seconds = next_wait_seconds(config, now)
+            if time.monotonic() + seconds > deadline + 1:
+                raise RuntimeError("Bounded prewarm expired")
+            print(f"Cloud worker ready; waiting {seconds:.0f}s for reviewed21:00slot", flush=True)
+            time.sleep(min(seconds, 60))
+            now = datetime.now(ZONE)
+        # Another reviewed release can land while the runner waits.
+        run(["git", "pull", "--ff-only", "origin", "main"])
+        config = read(CONFIG)
+        validate_schedule(config)
     rows = config["films"] if args.verify else due_rows(config, now)
     if not rows:
+        missed = [r["key"] for r in config["films"]
+                  if datetime.fromisoformat(r["publish_at"]).date() == now.date()
+                  and now > datetime.fromisoformat(r["publish_at"]) + timedelta(minutes=30)
+                  and not (ROOT / ("data/film-publications/" + r["key"] + ".json")).exists()]
+        if missed:
+            raise RuntimeError("MISSED WEBSITE SLOT: " + ",".join(missed) + "; no automatic backfill")
         print("No film due. No publication or backfill.")
         return
     if run(["git", "status", "--porcelain=v1", "--untracked-files=no"]):

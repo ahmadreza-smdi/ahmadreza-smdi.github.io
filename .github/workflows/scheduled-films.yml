@@ -2,8 +2,9 @@ name: Scheduled daily films
 
 on:
   schedule:
-    # 21:00 Tehran, with two bounded retries. The manifest enforces exact 2026 dates.
-    - cron: '30,40,50 17 23-27 10 *'
+    # Start cloud workers before the slot; runner waits for21:00Tehran.
+    # Off-peak retries retain strict dates,30minwindow and duplicate guards.
+    - cron: '17,37,57 15-17 25-27 10 *'
   workflow_dispatch:
     inputs:
       mode:
@@ -23,7 +24,7 @@ concurrency:
 jobs:
   release:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 210
     env:
       GH_TOKEN: ${{ github.token }}
       PYTHONDONTWRITEBYTECODE: '1'
@@ -45,4 +46,4 @@ jobs:
         run: python3 -B scripts/online_films/publish.py --verify-build
       - name: Publish only the reviewed film due now
         if: github.event_name == 'schedule' || inputs.mode == 'publish-due'
-        run: python3 -B scripts/online_films/publish.py
+        run: python3 -B scripts/online_films/publish.py --wait-for-slot

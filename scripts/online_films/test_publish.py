@@ -44,6 +44,28 @@ class PublicationGuards(unittest.TestCase):
         with self.assertRaises(AssertionError):
             p.validate_schedule(self.config)
 
+    def test_cloud_prewarm_is_today_only_bounded_and_never_early(self):
+        self.assertEqual(7200, p.next_wait_seconds(self.config, self.due - timedelta(hours=2)))
+        for now in [self.due - timedelta(hours=4), self.due, self.due + timedelta(seconds=1), self.due - timedelta(days=1)]:
+            self.assertEqual(0, p.next_wait_seconds(self.config, now))
+
+    def test_catchup_requires_exact_owner_receipt_and_original_bundle(self):
+        with tempfile.TemporaryDirectory() as td:
+            site = Path(td)
+            (site / "scripts/online_films").mkdir(parents=True)
+            (site / "data/film-publications").mkdir(parents=True)
+            row = dict(self.row, key="2026-10-23")
+            (site / "scripts/online_films/schedule.json").write_text(json.dumps(dict(self.config, films=[row])))
+            receipt = {"slug": "escrow", "bundle_sha256": row["sha256"], "scheduled_at": row["publish_at"],
+                       "catch_up_authorization": {"original_date": row["key"], "owner_direct_request": True, "evidence_sha256": "b" * 64}}
+            path = site / "data/film-publications/2026-10-23.json"
+            path.write_text(json.dumps(receipt))
+            self.assertTrue(p.authorized_catchup_page(site, "escrow", self.due + timedelta(days=2)))
+            self.assertFalse(p.authorized_catchup_page(site, "escrow", self.due))
+            receipt["bundle_sha256"] = "c" * 64
+            path.write_text(json.dumps(receipt))
+            self.assertFalse(p.authorized_catchup_page(site, "escrow", self.due + timedelta(days=2)))
+
     def bundle(self, td, ready=True, extra=None):
         a = Path(td) / "bundle.zip"
         content = b"reviewed fixture"
