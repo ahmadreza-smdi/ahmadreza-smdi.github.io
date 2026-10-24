@@ -49,6 +49,18 @@ class PublicationGuards(unittest.TestCase):
         for now in [self.due - timedelta(hours=4), self.due, self.due + timedelta(seconds=1), self.due - timedelta(days=1)]:
             self.assertEqual(0, p.next_wait_seconds(self.config, now))
 
+    def test_late_job_after_midnight_is_a_missed_slot_not_green_noop(self):
+        with tempfile.TemporaryDirectory() as td:
+            site = Path(td)
+            row = dict(self.row, key="2026-10-23")
+            config = dict(self.config, films=[row])
+            self.assertEqual([row["key"]], p.missed_rows(config, self.due + timedelta(hours=4), site))
+            self.assertEqual([], p.missed_rows(config, self.due - timedelta(seconds=1), site))
+            path = site / "data/film-publications/2026-10-23.json"
+            path.parent.mkdir(parents=True)
+            path.write_text("{}")
+            self.assertEqual([], p.missed_rows(config, self.due + timedelta(hours=4), site))
+
     def test_catchup_requires_exact_owner_receipt_and_original_bundle(self):
         with tempfile.TemporaryDirectory() as td:
             site = Path(td)
@@ -98,6 +110,13 @@ class PublicationGuards(unittest.TestCase):
                 a = self.bundle(td, extra=extra)
                 with self.assertRaises(ValueError):
                     p.unpack(a, Path(td) / "bad", p.sha(a))
+
+    def test_pages_fallback_requires_exact_sha_environment_and_latest_success(self):
+        deployment = {"sha": "a" * 40, "environment": "github-pages"}
+        self.assertTrue(p.successful_exact_deployment(deployment, [{"state": "success"}], "a" * 40))
+        self.assertFalse(p.successful_exact_deployment(deployment, [{"state": "success"}], "b" * 40))
+        self.assertFalse(p.successful_exact_deployment(dict(deployment, environment="preview"), [{"state": "success"}], "a" * 40))
+        self.assertFalse(p.successful_exact_deployment(deployment, [{"state": "pending"}, {"state": "success"}], "a" * 40))
 
     def test_cloudflare_email_transform_preserves_exact_content(self):
         email = b"public@example.com"

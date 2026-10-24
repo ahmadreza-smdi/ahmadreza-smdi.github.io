@@ -85,6 +85,12 @@ def next_wait_seconds(config, now):
     return next((seconds for seconds in waits if 0 < seconds <= 3 * 3600), 0)
 
 
+def missed_rows(config, now, site):
+    return [r["key"] for r in config["films"]
+            if now > datetime.fromisoformat(r["publish_at"]) + timedelta(minutes=30)
+            and not (site / ("data/film-publications/" + r["key"] + ".json")).exists()]
+
+
 def authorized_catchup_page(site, slug, due):
     # A separately owner-authorized missed family does not consume today's normal slot.
     # Only a committed receipt bound to an exact original schedule/bundle can do this.
@@ -230,6 +236,12 @@ def normalize_served_html(data):
     return data
 
 
+def successful_exact_deployment(deployment, statuses, commit):
+    return (deployment.get("sha") == commit
+            and deployment.get("environment") == "github-pages"
+            and bool(statuses) and statuses[0].get("state") == "success")
+
+
 def verify_live(config, commit, paths):
     # GITHUB_TOKEN pushes do not start Pages automatically; request its existing branch build explicitly.
     run(["gh", "api", "-X", "POST", f'repos/{config["repository"]}/pages/builds'])
@@ -237,6 +249,17 @@ def verify_live(config, commit, paths):
         builds = json.loads(run(["gh", "api", f'repos/{config["repository"]}/pages/builds?per_page=10']))
         exact = next((b for b in builds if b.get("commit") == commit and b.get("status") == "built"), None)
         if exact:
+            break
+        # The legacy Pages build record can remain errored after a newer Actions
+        # deployment succeeds. Require the actual environment's exact SHA/status.
+        deployments = json.loads(run(["gh", "api", f'repos/{config["repository"]}/deployments?sha={commit}&environment=github-pages&per_page=5']))
+        deployed = False
+        for deployment in deployments:
+            statuses = json.loads(run(["gh", "api", f'repos/{config["repository"]}/deployments/{deployment["id"]}/statuses']))
+            if successful_exact_deployment(deployment, statuses, commit):
+                deployed = True
+                break
+        if deployed:
             break
         time.sleep(15)
     else:
@@ -290,10 +313,7 @@ def main():
         validate_schedule(config)
     rows = config["films"] if args.verify else due_rows(config, now)
     if not rows:
-        missed = [r["key"] for r in config["films"]
-                  if datetime.fromisoformat(r["publish_at"]).date() == now.date()
-                  and now > datetime.fromisoformat(r["publish_at"]) + timedelta(minutes=30)
-                  and not (ROOT / ("data/film-publications/" + r["key"] + ".json")).exists()]
+        missed = missed_rows(config, now, ROOT)
         if missed:
             raise RuntimeError("MISSED WEBSITE SLOT: " + ",".join(missed) + "; no automatic backfill")
         print("No film due. No publication or backfill.")
