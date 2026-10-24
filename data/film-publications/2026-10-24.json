@@ -1,0 +1,46 @@
+{
+  "scheduled_at": "2026-10-24T21:00:00+03:30",
+  "prepared_at": "2026-10-25T01:30:44+03:30",
+  "slug": "computer-agent-check-result",
+  "bundle_sha256": "76cb126ed8c076c5b654288a0ce5b37fe4e997b67071916a9cf3d4ff8add3aec",
+  "site_checks_passed": 28,
+  "public_paths": [
+    "ar/topics/ai-real-estate.html",
+    "ar/writing/computer-agent-check-result.html",
+    "ar/writing/index.html",
+    "assets/writing/computer-agent-check-result/captions-en.vtt",
+    "assets/writing/computer-agent-check-result/cover.png",
+    "assets/writing/computer-agent-check-result/film.mp4",
+    "fa/topics/ai-real-estate.html",
+    "fa/writing/computer-agent-check-result.html",
+    "fa/writing/index.html",
+    "llms.txt",
+    "locales/article-hubs.json",
+    "locales/topic-hubs.json",
+    "scripts/check_locale_parity.py",
+    "sitemap.xml",
+    "topics/ai-real-estate.html",
+    "watch/computer-agent-check-result.html",
+    "writing/computer-agent-check-result.html",
+    "writing/feed.xml",
+    "writing/index.html"
+  ],
+  "catch_up_authorization": {
+    "owner_direct_request": true,
+    "original_date": "2026-10-24",
+    "owner_request": "Revalidate and publish Saturday missed website article too; preserve tonight and remaining normal slots.",
+    "revalidated_on": "2026-10-25",
+    "primary_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool",
+    "primary_snapshot_sha256": "497f297c625198cff587255afa884940881094e5e3305c6622b33b2a11e6458f",
+    "claims_verified": [
+      "screenshot/model action/application execution/result agent loop",
+      "actions may be assumed successful without verification",
+      "post-step screenshot and outcome checking advice",
+      "coordinate and tool reliability limitations",
+      "separate approval for consequential business actions"
+    ],
+    "limits": "Fictional parcelstudio; conceptual teaching analogy, not product test or measured failure; no native/human review claim",
+    "frozen_bundle_changed": false,
+    "evidence_sha256": "960d2d97e8c3645a2f867defb4e0bb5afc24f9c1e04748b8f7a28d03e2dd8359"
+  }
+}

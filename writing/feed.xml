@@ -8,6 +8,14 @@
     <dc:creator>Ahmadreza Samadi</dc:creator>
     <atom:link href="https://a-samadi.com/writing/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>The button moved. The AI did not notice.</title>
+      <link>https://a-samadi.com/writing/computer-agent-check-result.html</link>
+      <description>In a fictional parcel studio, Nora asks an AI helper to prepare a label. A panel moves before the click arrives. The cursor moves, but the label is still missing. This illustrates a failure possibility; it is not an observed shipment or product test.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Sat, 24 Oct 2026 22:00:44 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/computer-agent-check-result.html</guid>
+    </item>
+    <item>
       <title>The money has a project name</title>
       <link>https://a-samadi.com/writing/dubai-project-escrow-controls.html</link>
       <description>Fictional buyer Rami sees a beautiful model of an unfinished building. His useful question is not only what it will look like, but which records support the payment instructions. No real project or account is represented here.</description>

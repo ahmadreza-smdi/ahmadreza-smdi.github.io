@@ -1,0 +1,163 @@
+WEBVTT
+
+1
+00:00:00.740 --> 00:00:03.160
+Nora runs a small parcel studio.
+
+2
+00:00:03.160 --> 00:00:06.485
+She asks her AI helper
+to prepare a shipping label.
+
+3
+00:00:06.624 --> 00:00:10.400
+The helper sees a button, chooses a click,
+and the app carries it out.
+
+4
+00:00:10.400 --> 00:00:12.464
+But a panel has just moved.
+
+5
+00:00:12.464 --> 00:00:14.470
+The click lands somewhere else.
+
+6
+00:00:14.720 --> 00:00:16.540
+The mouse moved successfully.
+
+7
+00:00:16.540 --> 00:00:18.350
+The label was not prepared.
+
+8
+00:00:18.710 --> 00:00:21.530
+A computer-using AI doesn’t finish a task
+
+9
+00:00:21.530 --> 00:00:23.350
+just by describing a click.
+
+10
+00:00:23.620 --> 00:00:28.296
+In one common design, the application
+sends it a picture of the screen.
+
+11
+00:00:28.436 --> 00:00:31.596
+The model chooses
+a mouse or keyboard action.
+
+12
+00:00:31.596 --> 00:00:35.250
+The application runs that action
+and returns the result.
+
+13
+00:00:35.576 --> 00:00:37.569
+Then the agent has to look again.
+
+14
+00:00:37.819 --> 00:00:40.479
+Our studio turns that loop
+into three stations.
+
+15
+00:00:40.479 --> 00:00:42.369
+Look. Act. Check.
+
+16
+00:00:42.619 --> 00:00:45.339
+The check matters,
+because a page can scroll,
+
+17
+00:00:45.339 --> 00:00:48.400
+a panel can open,
+or the screen can change.
+
+18
+00:00:48.739 --> 00:00:52.080
+The documentation for Claude’s
+computer use tool says Claude
+
+19
+00:00:52.080 --> 00:00:55.139
+sometimes assumes an action
+worked without checking,
+
+20
+00:00:55.139 --> 00:00:58.149
+and suggests a fresh screenshot
+after each step.
+
+21
+00:00:58.289 --> 00:01:01.999
+Some web agents read the page’s elements
+instead of pictures.
+
+22
+00:01:01.999 --> 00:01:03.800
+The lesson is the same.
+
+23
+00:01:03.800 --> 00:01:06.463
+Verify the result, rather than assume it.
+
+24
+00:01:06.713 --> 00:01:10.203
+Nora doesn’t accept a moving cursor
+as a finished label.
+
+25
+00:01:10.203 --> 00:01:13.107
+She checks the actual draft
+and its status.
+
+26
+00:01:13.247 --> 00:01:15.687
+If the result is missing or unclear,
+
+27
+00:01:15.687 --> 00:01:19.357
+the helper should stop,
+look at the current screen, and replan,
+
+28
+00:01:19.357 --> 00:01:21.577
+not blindly repeat the same click.
+
+29
+00:01:21.827 --> 00:01:24.877
+Before you trust a business agent,
+ask three things.
+
+30
+00:01:24.877 --> 00:01:27.320
+What did it see?
+What did it actually do?
+
+31
+00:01:27.320 --> 00:01:28.937
+And what proves the result?
+
+32
+00:01:29.187 --> 00:01:32.527
+Keep consequential actions
+behind a separate approval.
+
+33
+00:01:32.527 --> 00:01:34.337
+The goal isn’t more clicking.
+
+34
+00:01:34.337 --> 00:01:35.777
+It’s a checked result.
+
+35
+00:01:36.137 --> 00:01:37.607
+Ahmadreza Samadi.
+
+36
+00:01:37.607 --> 00:01:39.544
+More at a-samadi.com
