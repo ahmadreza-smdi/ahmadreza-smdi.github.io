@@ -311,13 +311,17 @@ def main():
         for row in rows:
             folder, review = obtain(config, row, temp, args.local_bundles)
             existing = ROOT / f'writing/{review["slug"]}.html'
-            if existing.exists() and not args.verify:
+            if existing.exists():
                 film = ROOT / f'assets/writing/{review["slug"]}/film.mp4'
                 if sha(film) != review["files"][review["media"]["film"]]:
                     raise ValueError("Existing family differs from reviewed film")
                 receipt = read(ROOT / ("data/film-publications/" + row["key"] + ".json"))
                 if receipt["bundle_sha256"] != row["sha256"] or receipt["slug"] != review["slug"]:
                     raise ValueError("Existing publication receipt differs")
+                if args.verify:
+                    # Still verify the archive/binding, but do not try to render an existing family.
+                    print("Existing family bound to reviewed bundle: " + review["slug"])
+                    continue
                 verify_live(config, base_head, receipt["public_paths"])
                 print("Already published; deployment verified without a duplicate commit.")
                 return
