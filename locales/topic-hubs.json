@@ -484,6 +484,13 @@
         "fa": "fa/writing/rag-check-business-records.html",
         "ar": "ar/writing/rag-check-business-records.html"
       }
+    },
+    "article_dubai_project_escrow_controls": {
+      "paths": {
+        "en": "writing/dubai-project-escrow-controls.html",
+        "fa": "fa/writing/dubai-project-escrow-controls.html",
+        "ar": "ar/writing/dubai-project-escrow-controls.html"
+      }
     }
   },
   "hubs": [
@@ -752,7 +759,8 @@
         "day2_human_review_property_ai_checklist",
         "day2_dubai_property_buying_costs",
         "article_dubai_service_charge_same_rent",
-        "article_rag_check_business_records"
+        "article_rag_check_business_records",
+        "article_dubai_project_escrow_controls"
       ],
       "all_articles_heading": {
         "en": "All articles in this topic",
@@ -784,7 +792,8 @@
         "day2_human_review_property_ai_checklist",
         "day2_dubai_property_buying_costs",
         "article_dubai_service_charge_same_rent",
-        "article_rag_check_business_records"
+        "article_rag_check_business_records",
+        "article_dubai_project_escrow_controls"
       ],
       "video_playlist": {
         "title": "AI × Property",

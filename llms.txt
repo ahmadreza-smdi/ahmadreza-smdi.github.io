@@ -118,6 +118,7 @@ Series: Start with the Decision (ideas and newsletter); Property Decision Data (
 - [AI agents: ability is not authority](https://a-samadi.com/writing/ai-agent-permissions-ability-authority.html): A fictional invoice explains reading, drafting and approval boundaries in business AI.
 - [Same rent, different service-charge bill](https://a-samadi.com/writing/dubai-service-charge-same-rent.html): A fictional Dubai property comparison separates advertised rent from cash remaining after one recurring cost.
 - [RAG: check the record behind an AI answer](https://a-samadi.com/writing/rag-check-business-records.html): In a fictional hotel, Leila asks an AI assistant for a meeting-room quote. A fluent answer appears. Before sending it, she spots the problem: its supporting sheet is an old version. This is a teaching scenario, not a report of an actual hotel or product test.
+- [Dubai project escrow: control is not a guarantee](https://a-samadi.com/writing/dubai-project-escrow-controls.html): Fictional buyer Rami sees a beautiful model of an unfinished building. His useful question is not only what it will look like, but which records support the payment instructions. No real project or account is represented here.
 
 ## Films
 
@@ -134,6 +135,7 @@ Series: Start with the Decision (ideas and newsletter); Property Decision Data (
 - [Watch: AI agents: ability is not authority](https://a-samadi.com/watch/ai-agent-permissions-ability-authority.html): Watch the English film: A fictional invoice explains reading, drafting and approval boundaries in business AI.
 - [Watch: Same rent, different service-charge bill](https://a-samadi.com/watch/dubai-service-charge-same-rent.html): Watch the English film: A fictional Dubai property comparison separates advertised rent from cash remaining after one recurring cost.
 - [Watch: RAG: check the record behind an AI answer](https://a-samadi.com/watch/rag-check-business-records.html): Watch the English film: In a fictional hotel, Leila asks an AI assistant for a meeting-room quote. A fluent answer appears. Before sending it, she spots the problem: its supporting sheet is an old version. This is a teaching scenario, not a report of an actual hotel or product test.
+- [Watch: Dubai project escrow: control is not a guarantee](https://a-samadi.com/watch/dubai-project-escrow-controls.html): Watch the English film: Fictional buyer Rami sees a beautiful model of an unfinished building. His useful question is not only what it will look like, but which records support the payment instructions. No real project or account is represented here.
 
 ## Tools
 

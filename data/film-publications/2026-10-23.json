@@ -1,0 +1,51 @@
+{
+  "scheduled_at": "2026-10-23T21:00:00+03:30",
+  "prepared_at": "2026-10-25T01:08:08+03:30",
+  "slug": "dubai-project-escrow-controls",
+  "bundle_sha256": "76069da745253d241913d2613650a3682ef483073067f498c450b184df4d7cf6",
+  "site_checks_passed": 28,
+  "public_paths": [
+    "ar/topics/ai-real-estate.html",
+    "ar/writing/dubai-project-escrow-controls.html",
+    "ar/writing/index.html",
+    "assets/writing/dubai-project-escrow-controls/captions-en.vtt",
+    "assets/writing/dubai-project-escrow-controls/cover.png",
+    "assets/writing/dubai-project-escrow-controls/film.mp4",
+    "fa/topics/ai-real-estate.html",
+    "fa/writing/dubai-project-escrow-controls.html",
+    "fa/writing/index.html",
+    "llms.txt",
+    "locales/article-hubs.json",
+    "locales/topic-hubs.json",
+    "scripts/check_locale_parity.py",
+    "sitemap.xml",
+    "topics/ai-real-estate.html",
+    "watch/dubai-project-escrow-controls.html",
+    "writing/dubai-project-escrow-controls.html",
+    "writing/feed.xml",
+    "writing/index.html"
+  ],
+  "catch_up_authorization": {
+    "owner_direct_request": true,
+    "original_date": "2026-10-23",
+    "authorized_action": "Revalidate and publish the missed Friday article now; preserve normal tonight25Oct21 and future slots.",
+    "source": "Direct owner request25October2026 in thischat",
+    "revalidated_on": "2026-10-25",
+    "primary_url": "https://dubailand.gov.ae/en/frequently-asked-questions/",
+    "primary_snapshot_sha256": "2dde118ee9ebee597452477a291aaa97af308aae244bdd297909cbe455bbbd4a",
+    "claims_rechecked": [
+      "project-named account",
+      "project-only use",
+      "RERA-approved bank/institution trustee",
+      "written construction stages",
+      "engineer site verification before trustee release"
+    ],
+    "limits_preserved": [
+      "not completion/return/refund guarantee",
+      "fictional project and visual analogy",
+      "not legal/financial advice"
+    ],
+    "frozen_bundle_modified": false,
+    "evidence_sha256": "4c28a9f361e3eea6f3f344fbb7144ca8f0ba6c741c7b00a20ea44b5db2132692"
+  }
+}
