@@ -2425,4 +2425,48 @@
             <video:publication_date>2026-10-25T01:30:44+03:30</video:publication_date>
         </video:video>
     </url>
+    <url>
+        <loc>https://a-samadi.com/writing/property-comparables-evidence.html</loc>
+        <lastmod>2026-10-25T21:10:29+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/property-comparables-evidence.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/property-comparables-evidence.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/property-comparables-evidence.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/property-comparables-evidence.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/property-comparables-evidence/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/property-comparables-evidence.html</loc>
+        <lastmod>2026-10-25T21:10:29+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/property-comparables-evidence.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/property-comparables-evidence.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/property-comparables-evidence.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/property-comparables-evidence.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/property-comparables-evidence/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/property-comparables-evidence.html</loc>
+        <lastmod>2026-10-25T21:10:29+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/property-comparables-evidence.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/property-comparables-evidence.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/property-comparables-evidence.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/property-comparables-evidence.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/property-comparables-evidence/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/watch/property-comparables-evidence.html</loc>
+        <lastmod>2026-10-25T21:10:29+03:30</lastmod>
+        <video:video>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/property-comparables-evidence/cover.png</video:thumbnail_loc>
+            <video:title>Next door is not always comparable</video:title>
+            <video:description>Fictional buyer Mina places two neighbouring flats on a comparison rail. One card is an asking price; the other records an older agreed sale. Neither card becomes identical evidence merely because the doors are close. No actual property, price or valuation is represented.</video:description>
+            <video:content_loc>https://a-samadi.com/assets/writing/property-comparables-evidence/film.mp4</video:content_loc>
+            <video:publication_date>2026-10-25T21:10:29+03:30</video:publication_date>
+        </video:video>
+    </url>
 </urlset>

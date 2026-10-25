@@ -498,6 +498,13 @@
         "fa": "fa/writing/computer-agent-check-result.html",
         "ar": "ar/writing/computer-agent-check-result.html"
       }
+    },
+    "article_property_comparables_evidence": {
+      "paths": {
+        "en": "writing/property-comparables-evidence.html",
+        "fa": "fa/writing/property-comparables-evidence.html",
+        "ar": "ar/writing/property-comparables-evidence.html"
+      }
     }
   },
   "hubs": [
@@ -768,7 +775,8 @@
         "article_dubai_service_charge_same_rent",
         "article_rag_check_business_records",
         "article_dubai_project_escrow_controls",
-        "article_computer_agent_check_result"
+        "article_computer_agent_check_result",
+        "article_property_comparables_evidence"
       ],
       "all_articles_heading": {
         "en": "All articles in this topic",
@@ -802,7 +810,8 @@
         "article_dubai_service_charge_same_rent",
         "article_rag_check_business_records",
         "article_dubai_project_escrow_controls",
-        "article_computer_agent_check_result"
+        "article_computer_agent_check_result",
+        "article_property_comparables_evidence"
       ],
       "video_playlist": {
         "title": "AI × Property",

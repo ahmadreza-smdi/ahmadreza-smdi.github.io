@@ -1440,6 +1440,30 @@
           "path": "writing/profitable-but-out-of-cash.html"
         }
       ]
+    },
+    {
+      "stem": "property-comparables-evidence",
+      "classification": "explainer",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/property-comparables-evidence.html",
+        "fa": "fa/writing/property-comparables-evidence.html",
+        "ar": "ar/writing/property-comparables-evidence.html"
+      },
+      "related": [
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
     }
   ]
 }

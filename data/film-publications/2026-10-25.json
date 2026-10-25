@@ -1,0 +1,28 @@
+{
+  "scheduled_at": "2026-10-25T21:00:00+03:30",
+  "prepared_at": "2026-10-25T21:10:29+03:30",
+  "slug": "property-comparables-evidence",
+  "bundle_sha256": "9902391d1d055df41e9f4ca7471db4f6a1953434cbc69aae7f0052f017dae376",
+  "site_checks_passed": 28,
+  "public_paths": [
+    "ar/topics/ai-real-estate.html",
+    "ar/writing/index.html",
+    "ar/writing/property-comparables-evidence.html",
+    "assets/writing/property-comparables-evidence/captions-en.vtt",
+    "assets/writing/property-comparables-evidence/cover.png",
+    "assets/writing/property-comparables-evidence/film.mp4",
+    "fa/topics/ai-real-estate.html",
+    "fa/writing/index.html",
+    "fa/writing/property-comparables-evidence.html",
+    "llms.txt",
+    "locales/article-hubs.json",
+    "locales/topic-hubs.json",
+    "scripts/check_locale_parity.py",
+    "sitemap.xml",
+    "topics/ai-real-estate.html",
+    "watch/property-comparables-evidence.html",
+    "writing/feed.xml",
+    "writing/index.html",
+    "writing/property-comparables-evidence.html"
+  ]
+}
