@@ -5,6 +5,7 @@ import importlib.util
 import json
 import tempfile
 import unittest
+from unittest.mock import patch
 import zipfile
 
 spec = importlib.util.spec_from_file_location("online_publish", Path(__file__).with_name("publish.py"))
@@ -48,6 +49,73 @@ class PublicationGuards(unittest.TestCase):
         self.assertEqual(7200, p.next_wait_seconds(self.config, self.due - timedelta(hours=2)))
         for now in [self.due - timedelta(hours=4), self.due, self.due + timedelta(seconds=1), self.due - timedelta(days=1)]:
             self.assertEqual(0, p.next_wait_seconds(self.config, now))
+
+    def test_private_preparation_does_not_make_future_content_due(self):
+        early = self.due - timedelta(hours=2)
+        self.assertEqual([self.row], p.preparation_rows(self.config, early, True))
+        self.assertEqual([], p.due_rows(self.config, early))
+        self.assertEqual([], p.preparation_rows(self.config, early, False))
+        for now in [self.due - timedelta(hours=4), self.due - timedelta(days=1),
+                    self.due + timedelta(minutes=31)]:
+            self.assertEqual([], p.preparation_rows(self.config, now, True))
+
+    def test_preflight_stays_private_and_expired_wait_cannot_copy_or_push(self):
+        for late in [False, True]:
+            with self.subTest(late=late), tempfile.TemporaryDirectory() as td:
+                root = Path(td)
+                (root / "writing").mkdir()
+                row = dict(self.row, key="2026-10-23")
+                config = dict(self.config, films=[row])
+                clock = [self.due - timedelta(hours=2)]
+                staged = []
+                pushed = []
+
+                class Clock(datetime):
+                    @classmethod
+                    def now(cls, zone=None):
+                        return clock[0]
+
+                def prepare(site, folder, review, stamp, record):
+                    self.assertFalse((root / "writing/new.html").exists())
+                    (site / "writing/new.html").write_text("reviewed private film")
+                    return ["writing/new.html"]
+
+                def checks(site):
+                    self.assertTrue((site / "writing/new.html").exists())
+                    self.assertFalse((root / "writing/new.html").exists())
+                    return 28
+
+                def wait(config, rows):
+                    self.assertFalse((root / "writing/new.html").exists())
+                    self.assertEqual([], pushed)
+                    clock[0] = self.due + timedelta(minutes=31 if late else 0)
+
+                def run(args, *unused, **kw):
+                    if args[:2] == ["git", "rev-parse"]:
+                        return "base"
+                    if args[:2] == ["git", "add"]:
+                        staged[:] = args[3:]
+                    if args == ["git", "diff", "--cached", "--name-only"]:
+                        return "\n".join(staged)
+                    if args[:2] == ["git", "push"]:
+                        self.assertTrue(p.due_rows(config, clock[0]))
+                        pushed.append(True)
+                    return ""
+
+                with patch.multiple(p, ROOT=root, read=lambda path: config, datetime=Clock,
+                                    run=run, prepare=prepare, checks=checks,
+                                    obtain=lambda *args: (root, {"slug": "new"}),
+                                    wait_until_due=wait, verify_live=lambda *args: None), \
+                        patch("sys.argv", ["publish.py", "--wait-for-slot"]):
+                    if late:
+                        with self.assertRaisesRegex(ValueError, "Release window expired"):
+                            p.main()
+                        self.assertFalse((root / "writing/new.html").exists())
+                        self.assertEqual([], pushed)
+                    else:
+                        p.main()
+                        self.assertTrue((root / "writing/new.html").exists())
+                        self.assertEqual([True], pushed)
 
     def test_late_job_after_midnight_is_a_missed_slot_not_green_noop(self):
         with tempfile.TemporaryDirectory() as td:

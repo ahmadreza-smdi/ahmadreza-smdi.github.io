@@ -85,6 +85,24 @@ def next_wait_seconds(config, now):
     return next((seconds for seconds in waits if 0 < seconds <= 3 * 3600), 0)
 
 
+def preparation_rows(config, now, prewarm=False):
+    """Allow private preparation before today's slot, never public release."""
+    if prewarm and next_wait_seconds(config, now):
+        return [r for r in config["films"]
+                if datetime.fromisoformat(r["publish_at"]).date() == now.astimezone(ZONE).date()]
+    return due_rows(config, now)
+
+
+def wait_until_due(config, rows):
+    deadline = time.monotonic() + 3 * 3600
+    while next_wait_seconds(config, datetime.now(ZONE)):
+        seconds = next_wait_seconds(config, datetime.now(ZONE))
+        if time.monotonic() + seconds > deadline + 1:
+            raise RuntimeError("Bounded prewarm expired")
+        print(f"PRIVATE_PREFLIGHT_READY {rows[0]['key']}; waiting {seconds:.0f}s for21:00; no public files changed", flush=True)
+        time.sleep(min(seconds, 60))
+
+
 def missed_rows(config, now, site):
     return [r["key"] for r in config["films"]
             if now > datetime.fromisoformat(r["publish_at"]) + timedelta(minutes=30)
@@ -298,20 +316,8 @@ def main():
         verify_live(config, run(["git", "rev-parse", "HEAD"]), ["index.html"])
         return
     now = datetime.now(ZONE)
-    if args.wait_for_slot:
-        deadline = time.monotonic() + 3 * 3600
-        while next_wait_seconds(config, now):
-            seconds = next_wait_seconds(config, now)
-            if time.monotonic() + seconds > deadline + 1:
-                raise RuntimeError("Bounded prewarm expired")
-            print(f"Cloud worker ready; waiting {seconds:.0f}s for reviewed21:00slot", flush=True)
-            time.sleep(min(seconds, 60))
-            now = datetime.now(ZONE)
-        # Another reviewed release can land while the runner waits.
-        run(["git", "pull", "--ff-only", "origin", "main"])
-        config = read(CONFIG)
-        validate_schedule(config)
-    rows = config["films"] if args.verify else due_rows(config, now)
+    rows = config["films"] if args.verify else preparation_rows(config, now, args.wait_for_slot)
+    warming = not args.verify and bool(rows) and not due_rows(config, now)
     if not rows:
         missed = missed_rows(config, now, ROOT)
         if missed:
@@ -349,7 +355,9 @@ def main():
                 refuse_existing_film_day(ROOT, datetime.fromisoformat(row["publish_at"]))
             record = temp / ("record-" + row["key"])
             record.mkdir()
-            changed.update(prepare(site, folder, review, now.isoformat(timespec="seconds"), record))
+            # Future output stays in this private temporary directory until due.
+            stamp = row["publish_at"] if warming else now.isoformat(timespec="seconds")
+            changed.update(prepare(site, folder, review, stamp, record))
             last_review = review
         count = checks(site)
         if args.verify:
@@ -359,6 +367,9 @@ def main():
             if args.verify_build:
                 verify_live(config, base_head, ["index.html"])
             return
+        if warming:
+            wait_until_due(config, rows)
+        # No stage copy, commit or push is possible before this fresh due check.
         if len(rows) != 1 or due_rows(config, datetime.now(ZONE)) != rows:
             raise ValueError("Release window expired; no late/burst publication")
         run(["git", "fetch", "origin", "main"])
@@ -370,6 +381,9 @@ def main():
             shutil.copyfile(site / relative, destination)
         receipt_path = "data/film-publications/" + now.strftime("%Y-%m-%d") + ".json"
         write(ROOT / receipt_path, {"scheduled_at": rows[0]["publish_at"], "prepared_at": now.isoformat(timespec="seconds"),
+                                    "release_started_at": datetime.now(ZONE).isoformat(timespec="seconds"),
+                                    "private_preflight_before_slot": warming,
+                                    "content_timestamp": rows[0]["publish_at"] if warming else now.isoformat(timespec="seconds"),
                                     "slug": last_review["slug"], "bundle_sha256": rows[0]["sha256"],
                                     "site_checks_passed": count, "public_paths": sorted(changed)})
         changed.add(receipt_path)
