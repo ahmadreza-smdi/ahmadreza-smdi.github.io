@@ -117,6 +117,23 @@ class PublicationGuards(unittest.TestCase):
                         self.assertTrue((root / "writing/new.html").exists())
                         self.assertEqual([True], pushed)
 
+    def test_retime_changes_dates_but_never_media_or_unreviewed_paths(self):
+        with tempfile.TemporaryDirectory() as td:
+            site = Path(td)
+            old = self.due.replace(hour=18).isoformat()
+            new = self.due.isoformat()
+            (site / "article.html").write_text('"datePublished":"' + old + '"')
+            (site / "feed.xml").write_text("<pubDate>Fri, 23 Oct 2026 14:30:00 GMT</pubDate>")
+            (site / "film.mp4").write_bytes(old.encode())
+            (site / "unrelated.txt").write_text(old)
+            p.retime_private_stage(site, ["article.html", "feed.xml", "film.mp4"], old, new)
+            self.assertIn(new, (site / "article.html").read_text())
+            self.assertIn("17:30:00 GMT", (site / "feed.xml").read_text())
+            self.assertEqual(old.encode(), (site / "film.mp4").read_bytes())
+            self.assertEqual(old, (site / "unrelated.txt").read_text())
+            with self.assertRaises(ValueError):
+                p.retime_private_stage(site, [], old, (self.due + timedelta(days=1)).isoformat())
+
     def test_late_job_after_midnight_is_a_missed_slot_not_green_noop(self):
         with tempfile.TemporaryDirectory() as td:
             site = Path(td)

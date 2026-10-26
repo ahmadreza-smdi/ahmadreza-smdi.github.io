@@ -13,6 +13,7 @@ import tempfile
 import time
 import urllib.request
 import zipfile
+from email.utils import format_datetime
 
 ROOT = Path(__file__).resolve().parents[2]
 CONFIG = ROOT / "scripts/online_films/schedule.json"
@@ -101,6 +102,24 @@ def wait_until_due(config, rows):
             raise RuntimeError("Bounded prewarm expired")
         print(f"PRIVATE_PREFLIGHT_READY {rows[0]['key']}; waiting {seconds:.0f}s for21:00; no public files changed", flush=True)
         time.sleep(min(seconds, 60))
+
+
+def retime_private_stage(site, paths, old_stamp, new_stamp):
+    """Refresh preparation timestamps before final checks; never touch media."""
+    old, new = datetime.fromisoformat(old_stamp), datetime.fromisoformat(new_stamp)
+    if old.date() != new.date() or new < old:
+        raise ValueError("Preflight cannot cross a date or move backwards")
+    replacements = [(old_stamp, new_stamp),
+                    (format_datetime(old.astimezone(timezone.utc), usegmt=True),
+                     format_datetime(new.astimezone(timezone.utc), usegmt=True))]
+    for relative in paths:
+        path = site / relative
+        if path.suffix not in {".html", ".xml", ".json", ".txt"}:
+            continue
+        text = path.read_text()
+        for before, after in replacements:
+            text = text.replace(before, after)
+        path.write_text(text)
 
 
 def missed_rows(config, now, site):
@@ -356,7 +375,7 @@ def main():
             record = temp / ("record-" + row["key"])
             record.mkdir()
             # Future output stays in this private temporary directory until due.
-            stamp = row["publish_at"] if warming else now.isoformat(timespec="seconds")
+            stamp = now.isoformat(timespec="seconds")
             changed.update(prepare(site, folder, review, stamp, record))
             last_review = review
         count = checks(site)
@@ -369,6 +388,10 @@ def main():
             return
         if warming:
             wait_until_due(config, rows)
+            stamp = datetime.now(ZONE).isoformat(timespec="seconds")
+            retime_private_stage(site, changed, now.isoformat(timespec="seconds"), stamp)
+            # Existing future-date checks remain mandatory, with the real clock.
+            count = checks(site)
         # No stage copy, commit or push is possible before this fresh due check.
         if len(rows) != 1 or due_rows(config, datetime.now(ZONE)) != rows:
             raise ValueError("Release window expired; no late/burst publication")
@@ -383,7 +406,7 @@ def main():
         write(ROOT / receipt_path, {"scheduled_at": rows[0]["publish_at"], "prepared_at": now.isoformat(timespec="seconds"),
                                     "release_started_at": datetime.now(ZONE).isoformat(timespec="seconds"),
                                     "private_preflight_before_slot": warming,
-                                    "content_timestamp": rows[0]["publish_at"] if warming else now.isoformat(timespec="seconds"),
+                                    "content_timestamp": stamp,
                                     "slug": last_review["slug"], "bundle_sha256": rows[0]["sha256"],
                                     "site_checks_passed": count, "public_paths": sorted(changed)})
         changed.add(receipt_path)
