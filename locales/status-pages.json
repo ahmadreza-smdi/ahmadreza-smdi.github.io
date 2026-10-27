@@ -4,7 +4,7 @@
   "pages": [
     {
       "id": "now",
-      "updated_at": "2026-10-20T13:00:21+03:30",
+      "updated_at": "2026-10-27T13:58:32+03:30",
       "locales": {
         "en": {
           "title": "Now | Ahmadreza Samadi",
@@ -35,6 +35,19 @@
                 {
                   "path": "work/royal-abraj.html",
                   "label": "My work at Royal Abraj Group"
+                }
+              ]
+            },
+            {
+              "id": "company-update-20261027",
+              "heading": "Company update: comparing brokerage quotes",
+              "paragraphs": [
+                "Royal Abraj Group announced a seven-point brokerage-fee checklist and a free two-quote worksheet in Royal Abraj Properties’ English and Persian buying-cost guide. The worksheet records fee scope, payer, VAT, included services, separate costs and payment terms; it does not set a commission rate or replace an agreement."
+              ],
+              "links": [
+                {
+                  "path": "work/royal-abraj.html",
+                  "label": "Company update and original sources"
                 }
               ]
             },
@@ -147,6 +160,19 @@
               ]
             },
             {
+              "id": "company-update-20261027",
+              "heading": "خبر شرکت: مقایسه استعلام‌های کارگزاری",
+              "paragraphs": [
+                "رویال ابراج گروپ از افزوده‌شدن یک چک‌لیست هفت‌بندی هزینه کارگزاری و برگه رایگان مقایسه دو استعلام به راهنمای فارسی و انگلیسی هزینه خرید رویال ابراج پراپرتیز خبر داده است. این برگه برای ثبت دامنه کارمزد، پرداخت‌کننده، مالیات بر ارزش افزوده، خدمات داخل مبلغ، هزینه‌های جداگانه و شرایط پرداخت است؛ نرخ کمیسیون تعیین نمی‌کند و جای قرارداد را نمی‌گیرد."
+              ],
+              "links": [
+                {
+                  "path": "work/royal-abraj.html",
+                  "label": "خبر شرکت و منابع اصلی"
+                }
+              ]
+            },
+            {
               "heading": "این هفته: ایده‌ها همراه با شواهد",
               "paragraphs": [
                 "در ۱۹ اکتبر، صفحهٔ ایده‌های اصلی، مرکز مطالعات داده برای تصمیم‌گیری دربارهٔ املاک و نسخهٔ وب‌سایتی مطالعهٔ فشار اجاره را منتشر کردم. صفحهٔ ایده‌ها سه اصل را به مقاله‌ها، ابزارها و چک‌لیست‌های کاربردی پیوند می‌دهد. مرکز مطالعات نقطهٔ شروعی برای بررسی داده‌ها، روش‌ها و محدودیت‌های این کارهاست.",
@@ -251,6 +277,19 @@
                 {
                   "path": "work/royal-abraj.html",
                   "label": "عملي في مجموعة رويال أبراج"
+                }
+              ]
+            },
+            {
+              "id": "company-update-20261027",
+              "heading": "تحديث الشركة: مقارنة عروض أتعاب الوساطة",
+              "paragraphs": [
+                "أعلنت رويال أبراج جروب إضافة قائمة تحقق من سبع نقاط لرسوم الوساطة وورقة مجانية لمقارنة عرضَي أتعاب إلى دليل تكاليف الشراء بالإنجليزية والفارسية لدى رويال أبراج بروبرتيز. تسجّل الورقة نطاق الأتعاب والطرف الذي يدفع وضريبة القيمة المضافة والخدمات المشمولة والتكاليف المنفصلة وشروط الدفع؛ ولا تحدد نسبة عمولة أو تحل محل الاتفاقية."
+              ],
+              "links": [
+                {
+                  "path": "work/royal-abraj.html",
+                  "label": "تحديث الشركة والمصادر الأصلية"
                 }
               ]
             },
