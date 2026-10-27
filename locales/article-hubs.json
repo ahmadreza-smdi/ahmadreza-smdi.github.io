@@ -1464,6 +1464,30 @@
           "path": "writing/profitable-but-out-of-cash.html"
         }
       ]
+    },
+    {
+      "stem": "building-digital-twin-data-freshness",
+      "classification": "explainer",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/building-digital-twin-data-freshness.html",
+        "fa": "fa/writing/building-digital-twin-data-freshness.html",
+        "ar": "ar/writing/building-digital-twin-data-freshness.html"
+      },
+      "related": [
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
     }
   ]
 }

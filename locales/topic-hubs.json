@@ -505,6 +505,13 @@
         "fa": "fa/writing/property-comparables-evidence.html",
         "ar": "ar/writing/property-comparables-evidence.html"
       }
+    },
+    "article_building_digital_twin_data_freshness": {
+      "paths": {
+        "en": "writing/building-digital-twin-data-freshness.html",
+        "fa": "fa/writing/building-digital-twin-data-freshness.html",
+        "ar": "ar/writing/building-digital-twin-data-freshness.html"
+      }
     }
   },
   "hubs": [
@@ -776,7 +783,8 @@
         "article_rag_check_business_records",
         "article_dubai_project_escrow_controls",
         "article_computer_agent_check_result",
-        "article_property_comparables_evidence"
+        "article_property_comparables_evidence",
+        "article_building_digital_twin_data_freshness"
       ],
       "all_articles_heading": {
         "en": "All articles in this topic",
@@ -811,7 +819,8 @@
         "article_rag_check_business_records",
         "article_dubai_project_escrow_controls",
         "article_computer_agent_check_result",
-        "article_property_comparables_evidence"
+        "article_property_comparables_evidence",
+        "article_building_digital_twin_data_freshness"
       ],
       "video_playlist": {
         "title": "AI × Property",
