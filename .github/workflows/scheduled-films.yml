@@ -5,10 +5,16 @@ on:
     # Start cloud workers before the slot; runner waits for21:00Tehran.
     # Off-peak retries retain strict dates,30minwindow and duplicate guards.
     - cron: '17,37,57 14-17 25-27 10 *'
+    # Bounded 28 October–2 November extension: privately prewarm each
+    # 10:00 carousel and21:00 film, plus one in-window retry. Tehran UTC+03:30.
+    - cron: '07 4,15 28-31 10 *'
+    - cron: '37 6,17 28-31 10 *'
+    - cron: '07 4,15 1-2 11 *'
+    - cron: '37 6,17 1-2 11 *'
   workflow_dispatch:
     inputs:
       mode:
-        description: Verify private prepared bundles or publish only an actually due film
+        description: Verify private prepared bundles or publish only actually due content
         type: choice
         options: [verify, verify-deployment, publish-due]
         default: verify
@@ -41,9 +47,15 @@ jobs:
       - name: Rehearse all private bundles and verify Pages access
         if: github.event_name == 'workflow_dispatch' && inputs.mode == 'verify'
         run: python3 -B scripts/online_films/publish.py --verify --verify-build
+      - name: Rehearse reviewed carousel galleries privately
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'verify'
+        run: python3 -B scripts/online_films/publish_carousel.py --verify
       - name: Verify existing Pages deployment only
         if: github.event_name == 'workflow_dispatch' && inputs.mode == 'verify-deployment'
         run: python3 -B scripts/online_films/publish.py --verify-build
+      - name: Publish only the reviewed carousel due now
+        if: github.event_name == 'schedule' || inputs.mode == 'publish-due'
+        run: python3 -B scripts/online_films/publish_carousel.py --wait-for-slot
       - name: Publish only the reviewed film due now
         if: github.event_name == 'schedule' || inputs.mode == 'publish-due'
         run: python3 -B scripts/online_films/publish.py --wait-for-slot
