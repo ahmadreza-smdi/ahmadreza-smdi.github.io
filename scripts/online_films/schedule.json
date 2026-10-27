@@ -5,7 +5,7 @@
   "timezone": "Asia/Tehran",
   "daily_count": 1,
   "local_slot": "21:00",
-  "owner_authority": "22 October 2026: one film per day, schedule all ready films online independently of this chat.",
+  "owner_authority": "27 October 2026: one film at 21:00 and one technology carousel at 10:00 Asia/Tehran each day through 2 November. Preserve the existing 27 October film. Add only reviewed frozen films; the existing cloud workflow is the sole publisher.",
   "films": [
     {
       "key": "2026-10-23",
@@ -41,6 +41,13 @@
       "asset_name": "film-2026-10-27.zip",
       "asset_id": 666361439,
       "sha256": "7986c78ce0a8d6e8de0578de52658bf9b61c842256e2d2f99ed2ed052aa4fb67"
+    },
+    {
+      "key": "2026-10-28",
+      "publish_at": "2026-10-28T21:00:00+03:30",
+      "asset_name": "film-2026-10-28.zip",
+      "asset_id": 681657961,
+      "sha256": "f21a54c324b0dc7553aa5e2bd6ce87ec75bc0cec7c5c8c0192b6e6388a84bd5d"
     }
   ]
 }
