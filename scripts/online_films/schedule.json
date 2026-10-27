@@ -55,6 +55,13 @@
       "asset_name": "reviewed-film-2026-10-29-cash-conversion-cycle-r03.zip",
       "asset_id": 682206883,
       "sha256": "67398a39b6a60abbdb260e2e27605a5627c587404720422cb82c1cea2283f8a8"
+    },
+    {
+      "key": "2026-10-30",
+      "publish_at": "2026-10-30T21:00:00+03:30",
+      "asset_name": "reviewed-film-2026-10-30-structured-output-source-checks-r02.zip",
+      "asset_id": 682518836,
+      "sha256": "43b06d688c3c5f8165425ddffb4d0f4bbbf3466c4f012c873cb83581e33bdfd8"
     }
   ]
 }
