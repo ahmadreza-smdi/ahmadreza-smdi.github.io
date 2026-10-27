@@ -8,6 +8,14 @@
     <dc:creator>Ahmadreza Samadi</dc:creator>
     <atom:link href="https://a-samadi.com/writing/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>The document tried to become the boss</title>
+      <link>https://a-samadi.com/writing/prompt-injection-layered-controls.html</link>
+      <description>A fictional theatre shows why reading a document should not let it take over an AI assistant. A smaller tool set, checks on incoming content and human approval points can limit the damage from a misleading instruction.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Tue, 27 Oct 2026 17:30:00 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/prompt-injection-layered-controls.html</guid>
+    </item>
+    <item>
       <title>A beautiful building model can still be out of date</title>
       <link>https://a-samadi.com/writing/building-digital-twin-data-freshness.html</link>
       <description>In a fictional office, Omar sees a polished building model while a room feels wrong. The useful question is not how realistic the model looks. It is which physical asset the data describes and when that data was observed.</description>

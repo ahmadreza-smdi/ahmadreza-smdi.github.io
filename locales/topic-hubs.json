@@ -517,6 +517,13 @@
       "paths": {
         "en": "studies/explorer.html"
       }
+    },
+    "article_prompt_injection_layered_controls": {
+      "paths": {
+        "en": "writing/prompt-injection-layered-controls.html",
+        "fa": "fa/writing/prompt-injection-layered-controls.html",
+        "ar": "ar/writing/prompt-injection-layered-controls.html"
+      }
     }
   },
   "hubs": [
@@ -790,6 +797,7 @@
         "article_computer_agent_check_result",
         "article_property_comparables_evidence",
         "article_building_digital_twin_data_freshness",
+        "article_prompt_injection_layered_controls",
         "property_study_explorer"
       ],
       "all_articles_heading": {
@@ -827,7 +835,8 @@
         "article_computer_agent_check_result",
         "article_property_comparables_evidence",
         "article_building_digital_twin_data_freshness",
-        "property_study_explorer"
+        "property_study_explorer",
+        "article_prompt_injection_layered_controls"
       ],
       "video_playlist": {
         "title": "AI × Property",

@@ -1,0 +1,158 @@
+WEBVTT
+
+1
+00:00:00.740 --> 00:00:03.190
+Asha runs a small records office.
+
+2
+00:00:03.190 --> 00:00:07.450
+She asks her AI assistant to
+summarise three supplier documents.
+
+3
+00:00:07.590 --> 00:00:11.790
+One of them carries a hidden note that
+has nothing to do with the summary.
+
+4
+00:00:11.790 --> 00:00:15.320
+It tries to send the assistant
+somewhere else entirely.
+
+5
+00:00:15.460 --> 00:00:20.570
+That’s a prompt injection: instructions
+hidden in the content an AI processes,
+
+6
+00:00:20.570 --> 00:00:22.338
+trying to steer what it does.
+
+7
+00:00:22.478 --> 00:00:25.580
+Anthropic’s research on
+browser agents says no
+
+8
+00:00:25.580 --> 00:00:28.778
+browser agent is immune
+to prompt injection.
+
+9
+00:00:28.778 --> 00:00:32.145
+And it describes several
+defences, not just one.
+
+10
+00:00:32.285 --> 00:00:33.775
+On the developer’s side,
+
+11
+00:00:33.775 --> 00:00:37.395
+they describe training the model
+to refuse such instructions,
+
+12
+00:00:37.395 --> 00:00:40.425
+classifiers that scan untrusted content,
+
+13
+00:00:40.425 --> 00:00:43.175
+and expert red teams that test the system.
+
+14
+00:00:43.315 --> 00:00:46.295
+Red teaming is testing by the developer.
+
+15
+00:00:46.295 --> 00:00:50.493
+It doesn’t mean a person reviews every
+action an assistant takes for you.
+
+16
+00:00:50.633 --> 00:00:55.033
+So in our fictional theatre, the note
+has to get past more than one gate,
+
+17
+00:00:55.033 --> 00:00:57.143
+and each gate has a different job.
+
+18
+00:00:57.283 --> 00:00:59.133
+First, a smaller key.
+
+19
+00:00:59.133 --> 00:01:02.203
+The assistant only gets
+the tools this task needs.
+
+20
+00:01:02.203 --> 00:01:05.839
+A summary doesn’t need the
+payment desk or your outbox.
+
+21
+00:01:05.979 --> 00:01:10.509
+Second, in our fictional theatre,
+a screen for untrusted content.
+
+22
+00:01:10.509 --> 00:01:13.560
+Notes that come from documents
+are meant to be flagged,
+
+23
+00:01:13.560 --> 00:01:15.889
+and kept away from the director’s chair.
+
+24
+00:01:16.029 --> 00:01:18.009
+Third, a real checkpoint.
+
+25
+00:01:18.009 --> 00:01:21.670
+Anything consequential, like
+sending, paying or deleting,
+
+26
+00:01:21.670 --> 00:01:23.619
+waits for a person who checks it.
+
+27
+00:01:23.759 --> 00:01:25.829
+Each of these controls can fail.
+
+28
+00:01:25.829 --> 00:01:28.959
+Together, they shrink what
+one bad note can reach.
+
+29
+00:01:28.959 --> 00:01:31.429
+That’s less risk, not zero risk.
+
+30
+00:01:31.569 --> 00:01:35.159
+Before you connect an assistant
+to your work, ask three things.
+
+31
+00:01:35.159 --> 00:01:36.229
+What can it reach?
+
+32
+00:01:36.229 --> 00:01:38.470
+What screens the content it reads?
+
+33
+00:01:38.470 --> 00:01:40.878
+And which actions wait for your approval?
+
+34
+00:01:41.018 --> 00:01:42.488
+Ahmadreza Samadi.
+
+35
+00:01:42.488 --> 00:01:44.425
+More at a-samadi.com

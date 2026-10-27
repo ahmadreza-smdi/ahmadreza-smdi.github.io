@@ -2513,5 +2513,51 @@
             <video:publication_date>2026-10-27T13:10:13+03:30</video:publication_date>
         </video:video>
     </url>
-    <url><loc>https://a-samadi.com/studies/explorer.html</loc></url>
+    <url>
+        <loc>https://a-samadi.com/studies/explorer.html</loc>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/prompt-injection-layered-controls.html</loc>
+        <lastmod>2026-10-27T21:00:00+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/prompt-injection-layered-controls.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/prompt-injection-layered-controls.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/prompt-injection-layered-controls.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/prompt-injection-layered-controls.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/prompt-injection-layered-controls/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/prompt-injection-layered-controls.html</loc>
+        <lastmod>2026-10-27T21:00:00+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/prompt-injection-layered-controls.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/prompt-injection-layered-controls.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/prompt-injection-layered-controls.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/prompt-injection-layered-controls.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/prompt-injection-layered-controls/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/prompt-injection-layered-controls.html</loc>
+        <lastmod>2026-10-27T21:00:00+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/prompt-injection-layered-controls.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/prompt-injection-layered-controls.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/prompt-injection-layered-controls.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/prompt-injection-layered-controls.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/prompt-injection-layered-controls/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/watch/prompt-injection-layered-controls.html</loc>
+        <lastmod>2026-10-27T21:00:00+03:30</lastmod>
+        <video:video>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/prompt-injection-layered-controls/cover.png</video:thumbnail_loc>
+            <video:title>The document tried to become the boss</video:title>
+            <video:description>A fictional theatre shows why reading a document should not let it take over an AI assistant. A smaller tool set, checks on incoming content and human approval points can limit the damage from a misleading instruction.</video:description>
+            <video:content_loc>https://a-samadi.com/assets/writing/prompt-injection-layered-controls/film.mp4</video:content_loc>
+            <video:publication_date>2026-10-27T21:00:00+03:30</video:publication_date>
+        </video:video>
+    </url>
 </urlset>

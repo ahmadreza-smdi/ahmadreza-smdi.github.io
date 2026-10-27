@@ -1,0 +1,31 @@
+{
+  "scheduled_at": "2026-10-27T21:00:00+03:30",
+  "prepared_at": "2026-10-27T18:05:57+03:30",
+  "release_started_at": "2026-10-27T21:00:09+03:30",
+  "private_preflight_before_slot": true,
+  "content_timestamp": "2026-10-27T21:00:00+03:30",
+  "slug": "prompt-injection-layered-controls",
+  "bundle_sha256": "7986c78ce0a8d6e8de0578de52658bf9b61c842256e2d2f99ed2ed052aa4fb67",
+  "site_checks_passed": 28,
+  "public_paths": [
+    "ar/topics/ai-real-estate.html",
+    "ar/writing/index.html",
+    "ar/writing/prompt-injection-layered-controls.html",
+    "assets/writing/prompt-injection-layered-controls/captions-en.vtt",
+    "assets/writing/prompt-injection-layered-controls/cover.png",
+    "assets/writing/prompt-injection-layered-controls/film.mp4",
+    "fa/topics/ai-real-estate.html",
+    "fa/writing/index.html",
+    "fa/writing/prompt-injection-layered-controls.html",
+    "llms.txt",
+    "locales/article-hubs.json",
+    "locales/topic-hubs.json",
+    "scripts/check_locale_parity.py",
+    "sitemap.xml",
+    "topics/ai-real-estate.html",
+    "watch/prompt-injection-layered-controls.html",
+    "writing/feed.xml",
+    "writing/index.html",
+    "writing/prompt-injection-layered-controls.html"
+  ]
+}
