@@ -512,6 +512,11 @@
         "fa": "fa/writing/building-digital-twin-data-freshness.html",
         "ar": "ar/writing/building-digital-twin-data-freshness.html"
       }
+    },
+    "property_study_explorer": {
+      "paths": {
+        "en": "studies/explorer.html"
+      }
     }
   },
   "hubs": [
@@ -784,7 +789,8 @@
         "article_dubai_project_escrow_controls",
         "article_computer_agent_check_result",
         "article_property_comparables_evidence",
-        "article_building_digital_twin_data_freshness"
+        "article_building_digital_twin_data_freshness",
+        "property_study_explorer"
       ],
       "all_articles_heading": {
         "en": "All articles in this topic",
@@ -820,7 +826,8 @@
         "article_dubai_project_escrow_controls",
         "article_computer_agent_check_result",
         "article_property_comparables_evidence",
-        "article_building_digital_twin_data_freshness"
+        "article_building_digital_twin_data_freshness",
+        "property_study_explorer"
       ],
       "video_playlist": {
         "title": "AI × Property",

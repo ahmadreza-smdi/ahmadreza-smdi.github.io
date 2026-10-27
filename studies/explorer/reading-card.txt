@@ -1,0 +1,22 @@
+Two property studies, two different questions
+A reading card by Ahmadreza Samadi
+
+Start with the decision. Choose the study whose measure fits your question.
+
+QUESTION 1 — How much income do renters spend on housing?
+The rent-burden study describes 386 US metro areas using 2024 Census ACS B25070 estimates. The displayed percentages use units with computable rent-to-income ratios. Units marked “not computed” are kept separate. The 50%+ group is already inside the 30%+ group: do not add those percentages together.
+
+These are survey point estimates. The study does not calculate margins of error for the derived percentages, so a difference between two displayed values does not establish a statistically significant difference.
+
+QUESTION 2 — What might remain under a chosen ownership budget?
+The ownership study covers 393 metros and three hypothetical scenarios. It combines HUD FY2027 two-bedroom gross-rent benchmarks with a 2024 ACS owner-stock value proxy. These are different inputs, not an observed purchase and rent for the same property.
+
+Read the selected down payment, interest, occupancy and cost assumptions before comparing a surplus range. Surplus is after mortgage principal and interest; it is not accounting profit or total return. A zero cost is a chosen assumption, not proof that the cost does not exist.
+
+BEFORE USING EITHER TABLE
+• Keep the populations separate: 386 and 393 metros are not one matched dataset.
+• Treat “Unavailable” as missing information, not zero.
+• Use the full CSV and method to see the columns omitted from the short display.
+• Do not turn alphabetical results into an investment ranking or forecast.
+
+Sources and scope: the two studies linked in the explorer. This card is an explanation of those studies, not a new analysis, financial recommendation or claim about a particular property.
