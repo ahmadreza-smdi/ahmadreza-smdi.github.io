@@ -524,6 +524,11 @@
         "fa": "fa/writing/prompt-injection-layered-controls.html",
         "ar": "ar/writing/prompt-injection-layered-controls.html"
       }
+    },
+    "carousel_tech_trend_assisted_permissions": {
+      "paths": {
+        "en": "carousels/tech-trend-assisted-permissions.html"
+      }
     }
   },
   "hubs": [
@@ -798,7 +803,8 @@
         "article_property_comparables_evidence",
         "article_building_digital_twin_data_freshness",
         "article_prompt_injection_layered_controls",
-        "property_study_explorer"
+        "property_study_explorer",
+        "carousel_tech_trend_assisted_permissions"
       ],
       "all_articles_heading": {
         "en": "All articles in this topic",
@@ -836,7 +842,8 @@
         "article_property_comparables_evidence",
         "article_building_digital_twin_data_freshness",
         "property_study_explorer",
-        "article_prompt_injection_layered_controls"
+        "article_prompt_injection_layered_controls",
+        "carousel_tech_trend_assisted_permissions"
       ],
       "video_playlist": {
         "title": "AI × Property",

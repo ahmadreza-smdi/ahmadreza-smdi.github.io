@@ -43,6 +43,8 @@ Series: Start with the Decision (ideas and newsletter); Property Decision Data (
 - [Property Decision Data](https://a-samadi.com/studies/): Open property studies by Ahmadreza Samadi, with source years, geography, assumptions, methods and practical decision tools.
 - [Rent burden in 386 US metros: ACS 2024](https://a-samadi.com/studies/rent-burden/): A reproducible ACS 2024 study of 30% and 50% gross-rent-to-income thresholds, with explicit denominator exclusions and uncertainty limits.
 - [Property studies explorer](https://a-samadi.com/studies/explorer.html): Search US metro rent-burden estimates and illustrative ownership budgets. Keep data years, assumptions and geography limits visible.
+- [AI agents are learning when to ask.](https://a-samadi.com/carousels/tech-trend-assisted-permissions.html): GitHub has made assisted permissions generally available in Copilot CLI, the Copilot app and VS Code. The useful question is what still needs your approval.
+- [Technology explainers](https://a-samadi.com/carousels/): Source-dated visual explainers on AI and business technology by Ahmadreza Samadi.
 
 ## Work
 
