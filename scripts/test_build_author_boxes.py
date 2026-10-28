@@ -36,6 +36,7 @@ class AuthorBoxesTest(unittest.TestCase):
         updated = builder.enrich_author(path, original)
         self.assertIn('Property Decision Data', updated)
         self.assertNotIn('application/ld+json', updated)
+        self.assertIn('target="_blank" rel="author noopener"', updated)
         self.assertEqual(builder.enrich_author(path, updated), updated)
 
     def test_article_body_and_publication_date_are_untouched(self):

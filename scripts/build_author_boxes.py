@@ -89,6 +89,9 @@ def enrich_author(path, text):
     if len(BOX.findall(text)) > 1 or len(STYLE_LINK.findall(text)) > 1:
         raise ValueError(f'{path}: duplicate author boxes or stylesheet links')
     box = author_box(lang, series_for(path))
+    if path.relative_to(ROOT).parts[:2] == ('tools', 'embed'):
+        from build_calculator_embeds import outbound_links
+        box = outbound_links(box)
     if BOX.search(text):
         text = BOX.sub(lambda _: box, text)
     else:
