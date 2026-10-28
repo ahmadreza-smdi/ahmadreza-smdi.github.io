@@ -1443,7 +1443,7 @@
     },
     {
       "stem": "property-comparables-evidence",
-      "classification": "explainer",
+      "classification": "core",
       "hub": "ai-real-estate",
       "paths": {
         "en": "writing/property-comparables-evidence.html",
