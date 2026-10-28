@@ -8,6 +8,27 @@ import enrich_metadata as metadata
 
 
 class MetadataCompleteness(TestCase):
+    def test_recorded_update_does_not_expand_bare_id_references(self):
+        path = metadata.ROOT / 'about.html'
+        page_id = metadata.BASE + 'about.html#profile'
+        source = '<html lang="en"><head><link rel="canonical" href="https://a-samadi.com/about.html"><script type="application/ld+json">' + json.dumps({'@graph': [
+            {'@type': 'ProfilePage', '@id': page_id, 'dateModified': '2026-10-01'},
+            {'@type': 'Person', '@id': metadata.BASE + '#person', 'mainEntityOfPage': {'@id': page_id}},
+        ]}) + '</script></head><h1>About</h1>'
+        with patch.object(metadata, 'CONTENT_UPDATES', {'about.html': {'dateModified': '2026-10-28T22:00:00+03:30'}}):
+            result, _ = metadata.complete_schema(path, source)
+        graph = json.loads(metadata.LD.search(result)[2])['@graph']
+        self.assertEqual(graph[0]['dateModified'], '2026-10-28T22:00:00+03:30')
+        self.assertEqual(graph[1]['mainEntityOfPage'], {'@id': page_id})
+
+    def test_unreviewed_description_change_fails_closed(self):
+        path = metadata.ROOT / 'example.html'
+        source = '<html lang="en"><head><meta name="description" content="A newly edited source."></head></html>'
+        record = {'previous': 'Previously reviewed source.', 'description': 'A' * 125}
+        with patch.object(metadata, 'DESCRIPTION_UPDATES', {'example.html': record}):
+            with self.assertRaisesRegex(ValueError, 'description source changed'):
+                metadata.enrich(path, source)
+
     def test_article_additions_preserve_frozen_dates_and_use_existing_parent(self):
         with TemporaryDirectory() as directory:
             root = Path(directory)
