@@ -23,6 +23,7 @@ import struct
 from xml.etree import ElementTree
 
 ROOT = Path(__file__).resolve().parent.parent
+CONTENT_UPDATES = json.loads((ROOT / 'locales/content-updates.json').read_text())
 BASE = 'https://a-samadi.com/'
 LOCALES = {'en': 'en_US', 'fa': 'fa_IR', 'ar': 'ar_AE'}
 SITE_NAME = 'Ahmadreza Samadi'
@@ -217,12 +218,16 @@ def complete_schema(path, text):
     relative = path.relative_to(ROOT).as_posix()
     unlocalized = re.sub(r'^(fa|ar)/', '', relative)
     changes = []
+    update_record = CONTENT_UPDATES.get(relative)
+    own_id, _ = main_node(text)
 
     def update(match):
         data = json.loads(match[2])
         before = json.dumps(data, ensure_ascii=False)
         for node in schema_nodes(data):
             kind = node.get('@type')
+            if update_record and node.get('@id') == own_id:
+                node['dateModified'] = update_record['dateModified']
             if kind in ARTICLE_TYPES and 'publisher' not in node:
                 node['publisher'] = {'@id': BASE + '#person'}
             if kind == 'ProfilePage' and unlocalized == 'index.html':
@@ -509,6 +514,13 @@ def enrich(path, text):
     head, rest = text[:head_end], text[head_end:]
     lang = language(head)
     added = []
+    update_record = CONTENT_UPDATES.get(path.relative_to(ROOT).as_posix())
+    if update_record:
+        for key in ('og:updated_time', 'article:modified_time'):
+            match = find(head, key)
+            if match and html.unescape(match[1]) != update_record['dateModified']:
+                head = head[:match.start(1)] + update_record['dateModified'] + head[match.end(1):]
+                added.append(key)
 
     def add_after(anchor_keys, kind, key, content):
         nonlocal head
@@ -597,6 +609,24 @@ def sitemap(check):
         loc = url.find(f'{{{namespace}}}loc').text
         relative = loc.replace(BASE, '')
         page = ROOT / (relative + 'index.html' if relative == '' or relative.endswith('/') else relative)
+        if page.is_file():
+            _, node = main_node(page.read_text())
+            modified = node.get('dateModified') if node else None
+            # Reuse the page's recorded precision; never stamp the build time.
+            if modified:
+                lastmod = url.find(f'{{{namespace}}}lastmod')
+                if lastmod is None:
+                    lastmod = ElementTree.Element(f'{{{namespace}}}lastmod')
+                    url.insert(1, lastmod)
+                if lastmod.text != modified:
+                    lastmod.text = modified
+                    added += 1
+        if loc == BASE:
+            for key in ('changefreq', 'priority'):
+                element = url.find(f'{{{namespace}}}{key}')
+                if element is not None:
+                    url.remove(element)
+                    added += 1
         alternates = cluster(page.read_text()) if page.is_file() else {}
         present = {link.get('hreflang') for link in url.findall(f'{{{xhtml}}}link')}
         missing = sorted((code for code in alternates if code not in present), key=lambda code: order.get(code, 9))
@@ -644,10 +674,10 @@ def main():
         print('INVALID ' + issue)
     links = sitemap(check)
     if links:
-        print(('MISSING ' if check else 'Added ') + f'{links} sitemap hreflang links')
+        print(('MISSING ' if check else 'Updated ') + f'{links} sitemap metadata records')
     if invalid or (check and (changed or links)):
         sys.exit(1)
-    print('PASS metadata: ' + ('no changes needed' if not changed and not links else f'{changed} pages and {links} sitemap links updated'))
+    print('PASS metadata: ' + ('no changes needed' if not changed and not links else f'{changed} pages and {links} sitemap records updated'))
 
 
 if __name__ == '__main__':

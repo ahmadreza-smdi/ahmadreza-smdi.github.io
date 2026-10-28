@@ -1,0 +1,137 @@
+{
+  "index.html": {
+    "dateModified": "2026-10-28T23:01:34+03:30",
+    "sourceCommit": "4aa118af1252d0f1a4b5fdd40f7e732ad6182f13",
+    "reason": "Supported biography or responsibility copy changed."
+  },
+  "fa/index.html": {
+    "dateModified": "2026-10-28T23:01:34+03:30",
+    "sourceCommit": "4aa118af1252d0f1a4b5fdd40f7e732ad6182f13",
+    "reason": "Supported biography or responsibility copy changed."
+  },
+  "ar/index.html": {
+    "dateModified": "2026-10-28T23:01:34+03:30",
+    "sourceCommit": "4aa118af1252d0f1a4b5fdd40f7e732ad6182f13",
+    "reason": "Supported biography or responsibility copy changed."
+  },
+  "about.html": {
+    "dateModified": "2026-10-28T23:01:34+03:30",
+    "sourceCommit": "4aa118af1252d0f1a4b5fdd40f7e732ad6182f13",
+    "reason": "Supported biography or responsibility copy changed."
+  },
+  "fa/about.html": {
+    "dateModified": "2026-10-28T23:01:34+03:30",
+    "sourceCommit": "4aa118af1252d0f1a4b5fdd40f7e732ad6182f13",
+    "reason": "Supported biography or responsibility copy changed."
+  },
+  "ar/about.html": {
+    "dateModified": "2026-10-28T23:01:34+03:30",
+    "sourceCommit": "4aa118af1252d0f1a4b5fdd40f7e732ad6182f13",
+    "reason": "Supported biography or responsibility copy changed."
+  },
+  "work/appraiva.html": {
+    "dateModified": "2026-10-28T23:01:34+03:30",
+    "sourceCommit": "4aa118af1252d0f1a4b5fdd40f7e732ad6182f13",
+    "reason": "Supported biography or responsibility copy changed."
+  },
+  "fa/work/appraiva.html": {
+    "dateModified": "2026-10-28T23:01:34+03:30",
+    "sourceCommit": "4aa118af1252d0f1a4b5fdd40f7e732ad6182f13",
+    "reason": "Supported biography or responsibility copy changed."
+  },
+  "ar/work/appraiva.html": {
+    "dateModified": "2026-10-28T23:01:34+03:30",
+    "sourceCommit": "4aa118af1252d0f1a4b5fdd40f7e732ad6182f13",
+    "reason": "Supported biography or responsibility copy changed."
+  },
+  "work/oxfam-novib.html": {
+    "dateModified": "2026-10-28T23:01:34+03:30",
+    "sourceCommit": "4aa118af1252d0f1a4b5fdd40f7e732ad6182f13",
+    "reason": "Supported biography or responsibility copy changed."
+  },
+  "fa/work/oxfam-novib.html": {
+    "dateModified": "2026-10-28T23:01:34+03:30",
+    "sourceCommit": "4aa118af1252d0f1a4b5fdd40f7e732ad6182f13",
+    "reason": "Supported biography or responsibility copy changed."
+  },
+  "ar/work/oxfam-novib.html": {
+    "dateModified": "2026-10-28T23:01:34+03:30",
+    "sourceCommit": "4aa118af1252d0f1a4b5fdd40f7e732ad6182f13",
+    "reason": "Supported biography or responsibility copy changed."
+  },
+  "press.html": {
+    "dateModified": "2026-10-28T21:13:31+03:30",
+    "sourceCommit": "833879b9f90d169570bf4d6ae253f23a2bdb1a9b",
+    "reason": "Added the sourced personal background passage; approved bios retained."
+  },
+  "fa/press.html": {
+    "dateModified": "2026-10-28T21:13:31+03:30",
+    "sourceCommit": "833879b9f90d169570bf4d6ae253f23a2bdb1a9b",
+    "reason": "Added the sourced personal background passage; approved bios retained."
+  },
+  "ar/press.html": {
+    "dateModified": "2026-10-28T21:13:31+03:30",
+    "sourceCommit": "833879b9f90d169570bf4d6ae253f23a2bdb1a9b",
+    "reason": "Added the sourced personal background passage; approved bios retained."
+  },
+  "work/mci.html": {
+    "dateModified": "2026-10-28T21:16:21+03:30",
+    "sourceCommit": "5c346ed21933f74964658ee76c957e9a5cd9155d",
+    "reason": "Expanded supported case-study responsibilities and role history."
+  },
+  "fa/work/mci.html": {
+    "dateModified": "2026-10-28T21:16:21+03:30",
+    "sourceCommit": "5c346ed21933f74964658ee76c957e9a5cd9155d",
+    "reason": "Expanded supported case-study responsibilities and role history."
+  },
+  "ar/work/mci.html": {
+    "dateModified": "2026-10-28T21:16:21+03:30",
+    "sourceCommit": "5c346ed21933f74964658ee76c957e9a5cd9155d",
+    "reason": "Expanded supported case-study responsibilities and role history."
+  },
+  "work/royal-abraj.html": {
+    "dateModified": "2026-10-28T21:16:21+03:30",
+    "sourceCommit": "5c346ed21933f74964658ee76c957e9a5cd9155d",
+    "reason": "Expanded supported case-study responsibilities and role history."
+  },
+  "fa/work/royal-abraj.html": {
+    "dateModified": "2026-10-28T21:16:21+03:30",
+    "sourceCommit": "5c346ed21933f74964658ee76c957e9a5cd9155d",
+    "reason": "Expanded supported case-study responsibilities and role history."
+  },
+  "ar/work/royal-abraj.html": {
+    "dateModified": "2026-10-28T21:16:21+03:30",
+    "sourceCommit": "5c346ed21933f74964658ee76c957e9a5cd9155d",
+    "reason": "Expanded supported case-study responsibilities and role history."
+  },
+  "studies/rent-own-2026/index.html": {
+    "dateModified": "2026-10-28T21:17:53+03:30",
+    "sourceCommit": "f4c029ef0a0df525938dae4af95e2c84b1619f74",
+    "reason": "Added static findings from the published study data."
+  },
+  "fa/studies/rent-own-2026/index.html": {
+    "dateModified": "2026-10-28T21:17:53+03:30",
+    "sourceCommit": "f4c029ef0a0df525938dae4af95e2c84b1619f74",
+    "reason": "Added static findings from the published study data."
+  },
+  "ar/studies/rent-own-2026/index.html": {
+    "dateModified": "2026-10-28T21:17:53+03:30",
+    "sourceCommit": "f4c029ef0a0df525938dae4af95e2c84b1619f74",
+    "reason": "Added static findings from the published study data."
+  },
+  "writing/dubai-service-charge-same-rent.html": {
+    "dateModified": "2026-10-28T23:01:34+03:30",
+    "sourceCommit": "4aa118af1252d0f1a4b5fdd40f7e732ad6182f13",
+    "reason": "Added the sourced DLD service-charge definition."
+  },
+  "fa/writing/dubai-service-charge-same-rent.html": {
+    "dateModified": "2026-10-28T23:01:34+03:30",
+    "sourceCommit": "4aa118af1252d0f1a4b5fdd40f7e732ad6182f13",
+    "reason": "Added the sourced DLD service-charge definition."
+  },
+  "ar/writing/dubai-service-charge-same-rent.html": {
+    "dateModified": "2026-10-28T23:01:34+03:30",
+    "sourceCommit": "4aa118af1252d0f1a4b5fdd40f7e732ad6182f13",
+    "reason": "Added the sourced DLD service-charge definition."
+  }
+}
