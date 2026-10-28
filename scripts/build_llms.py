@@ -24,7 +24,7 @@ PROFILES = [
     ('GitHub', 'https://github.com/ahmadreza-smdi', 'Ahmadreza Samadi’s public GitHub profile, connecting his repositories with the personal website.'),
     ('YouTube', 'https://www.youtube.com/@ahmadreza-samadi', 'Ahmadreza Samadi’s YouTube channel, connecting published explainer films with his personal website.'),
     ('DEV', 'https://dev.to/ahmadreza_smdi', 'Ahmadreza Samadi’s DEV profile, connecting published technical writing with his personal website.'),
-    ('LinkedIn', 'https://www.linkedin.com/in/ahmadreza-samadi/', 'Professional profile listed by Ahmadreza Samadi as an official account on his biography page.'),
+    ('LinkedIn', 'https://www.linkedin.com/in/ahmadreza-samadi', 'Professional profile listed by Ahmadreza Samadi as an official account on his biography page.'),
     ('Instagram', 'https://www.instagram.com/ahmadreza_smdi/', 'Instagram profile listed by Ahmadreza Samadi as an official account on his biography page.'),
     ('Crunchbase', 'https://www.crunchbase.com/person/ahmadreza-samadi', 'Crunchbase profile listed in the biography; public access and its website backlink remain unverified.'),
     ('Peerlist', 'https://peerlist.io/ahmadrezasmdi', 'Peerlist profile listed by Ahmadreza Samadi as an official account on his biography page.'),
