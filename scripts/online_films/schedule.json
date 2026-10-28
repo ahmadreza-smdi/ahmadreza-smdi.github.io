@@ -62,6 +62,13 @@
       "asset_name": "reviewed-film-2026-10-30-optional-captions-v2.zip",
       "asset_id": 684609207,
       "sha256": "4990f2c968ccbe8afe8ecb79cf35491f2559aceda4ef92e0d3029e6b87582c9b"
+    },
+    {
+      "key": "2026-10-31",
+      "publish_at": "2026-10-31T21:00:00+03:30",
+      "asset_name": "reviewed-film-2026-10-31-building-energy-audit-r02.zip",
+      "asset_id": 684647301,
+      "sha256": "10a8ad560057329892d5129b8bb64f63b9559353be65b97ca2d901d90fd1e3cf"
     }
   ]
 }
