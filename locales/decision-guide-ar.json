@@ -57,7 +57,9 @@
     "Technology Entrepreneur · Dubai": "رائد أعمال تقني · دبي",
     "About the author →": "عن الكاتب ←",
     "Discuss a product decision →": "ناقش قراراً متعلقاً بالمنتج ←",
-    "Start with the decision: read the framework →": "ابدأ بالقرار: اقرأ المنهج ←"
+    "Start with the decision: read the framework →": "ابدأ بالقرار: اقرأ المنهج ←",
+    "For property workflows, read ": "لمسارات العمل العقارية، اقرأ ",
+    "where AI should stop in real estate": "أين يجب أن يتوقف الذكاء الاصطناعي في العقارات"
   },
   "dynamic": {
     "A property researcher": "باحث عقاري",

@@ -25,7 +25,7 @@ def prefix(language):
 def resource(relative):
     if relative.startswith('/') or '..' in Path(relative).parts:
         raise ValueError(f'Unsafe local resource: {relative}')
-    path = ROOT / relative
+    path = ROOT / (relative + 'index.html' if relative.endswith('/') else relative)
     text = path.read_text()
     from html import unescape
     match = re.search(r'<h1\b[^>]*>(.*?)</h1>', text, re.S)

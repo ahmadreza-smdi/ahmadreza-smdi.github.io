@@ -40,6 +40,7 @@ CORE_PATHS = (
     'tools/dubai-purchase-cost.html', 'tools/valuation-range.html', 'tools/dubai-rental-yield.html',
     'writing/ai-home-value-estimates.html', 'writing/ai-human-review-real-estate.html',
     'writing/which-dubai-property-source.html', 'writing/avm-vs-appraisal.html',
+    'writing/dubai-service-charge-same-rent.html', 'writing/dubai-property-buying-costs.html',
     'writing/property-comparables-evidence.html', 'writing/rent-or-buy-five-numbers.html',
     'writing/why-rent-to-value-is-not-property-yield.html', 'writing/start-with-the-decision.html',
     'writing/ai-cost-per-verified-result.html', 'writing/ai-rental-yield-cash-flow.html',
