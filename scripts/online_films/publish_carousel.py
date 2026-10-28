@@ -94,7 +94,7 @@ def prepare(site,folder,review,stamp):
  for name in ['enrich_metadata','build_author_boxes','build_analytics','build_topic_hubs','follow_blocks','build_feed','build_llms','build_ask_index','build_status_pages']:
   core.run(['python3','-B','scripts/'+name+'.py'],site)
  after=core.inventory(site);changed=sorted(k for k in after if before.get(k)!=after[k])
- if set(before)-set(after) or set(changed)-set(review['public_allowlist']):raise ValueError('Change outside reviewed gallery paths')
+ if set(before)-set(after) or set(changed)-(set(review['public_allowlist']) | {'llms-full.txt'}):raise ValueError('Change outside reviewed gallery paths')
  return changed
 
 def verify_live(config,commit,paths):

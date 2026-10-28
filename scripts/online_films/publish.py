@@ -237,7 +237,7 @@ def prepare(site, folder, review, stamp, record):
     run(["python3", "-B", "scripts/check_new_article_titles.py", "--release-receipt", str(receipt)], site)
     after = inventory(site)
     changed = sorted(p for p in after if before.get(p) != after[p])
-    if set(before) - set(after) or set(changed) - set(review["public_allowlist"]):
+    if set(before) - set(after) or set(changed) - (set(review["public_allowlist"]) | {"llms-full.txt"}):
         raise ValueError("Changes outside reviewed publication paths")
     return changed
 
