@@ -126,6 +126,7 @@ Series: Start with the Decision (ideas and newsletter); Property Decision Data (
 - [Property comparables: evidence beyond the nearby price](https://a-samadi.com/writing/property-comparables-evidence.html): Fictional buyer Mina compares neighbouring flats: one asking price and one older agreed sale. Nearby doors do not make them identical valuation evidence.
 - [Building digital twins: ask how fresh the data is](https://a-samadi.com/writing/building-digital-twin-data-freshness.html): In a fictional office, Omar sees a polished building model while a room feels wrong. Check which physical asset the data describes and when it was observed.
 - [Prompt injection: give documents less power](https://a-samadi.com/writing/prompt-injection-layered-controls.html): A fictional theatre shows why a document should not control an AI assistant. Fewer tools, content checks and human approval can limit misleading instructions.
+- [AI evaluations: test the task, not just the demo](https://a-samadi.com/writing/business-ai-evaluation-cases.html): A polished demonstration does not establish reliability for the actual task.
 
 ## Films
 
@@ -147,6 +148,7 @@ Series: Start with the Decision (ideas and newsletter); Property Decision Data (
 - [Watch: Property comparables: evidence beyond the nearby price](https://a-samadi.com/watch/property-comparables-evidence.html): Watch the English film: fictional buyer Mina compares two neighbouring flats, an asking price and an older agreed sale. Proximity is not identical evidence.
 - [Watch: Building digital twins: ask how fresh the data is](https://a-samadi.com/watch/building-digital-twin-data-freshness.html): Watch the English film: a fictional office model looks convincing while a room feels wrong. Check the physical asset and when its data was observed.
 - [Watch: Prompt injection: give documents less power](https://a-samadi.com/watch/prompt-injection-layered-controls.html): Watch the English film: a fictional theatre shows why documents need limited power over an AI assistant, with fewer tools, checks and human approval.
+- [Watch: AI evaluations: test the task, not just the demo](https://a-samadi.com/watch/business-ai-evaluation-cases.html): Watch the English film: A polished demonstration does not establish reliability for the actual task.
 
 ## Tools
 

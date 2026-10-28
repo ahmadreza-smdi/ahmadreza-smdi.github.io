@@ -1,0 +1,144 @@
+WEBVTT
+
+1
+00:00:00.740 --> 00:00:04.270
+Lina runs customer service
+for a fictional bakery chain.
+
+2
+00:00:04.270 --> 00:00:06.880
+She watches an AI assistant demo.
+
+3
+00:00:06.880 --> 00:00:09.190
+Every answer is quick and polite.
+
+4
+00:00:09.330 --> 00:00:12.300
+Then a messier fictional request arrives.
+
+5
+00:00:12.300 --> 00:00:16.580
+A customer wants to change part of
+an order, and mentions an allergy.
+
+6
+00:00:16.580 --> 00:00:20.435
+The assistant answers confidently,
+and misses the allergy.
+
+7
+00:00:20.575 --> 00:00:22.815
+The demo used easy questions.
+
+8
+00:00:22.815 --> 00:00:26.153
+Nobody had written down what
+a good answer must include.
+
+9
+00:00:26.293 --> 00:00:29.813
+OpenAI’s guide to evaluation starts there:
+
+10
+00:00:29.813 --> 00:00:32.373
+decide the success criteria for your task,
+
+11
+00:00:32.373 --> 00:00:34.143
+before you judge any model.
+
+12
+00:00:34.283 --> 00:00:36.713
+Then build a set of example cases.
+
+13
+00:00:36.713 --> 00:00:39.350
+The guide says to include typical cases,
+
+14
+00:00:39.350 --> 00:00:42.073
+edge cases and adversarial cases.
+
+15
+00:00:42.213 --> 00:00:45.973
+In Lina’s test kitchen,
+ordinary orders run smoothly.
+
+16
+00:00:45.973 --> 00:00:49.560
+An edge case, like a half-changed
+order, slows the line.
+
+17
+00:00:49.560 --> 00:00:51.190
+A tricky one stops it.
+
+18
+00:00:51.330 --> 00:00:53.710
+Keep a separate set of cases for checking,
+
+19
+00:00:53.710 --> 00:00:56.260
+so you aren’t only testing
+what you tuned for.
+
+20
+00:00:56.400 --> 00:00:59.620
+Review real outputs
+against a clear rubric.
+
+21
+00:00:59.620 --> 00:01:04.170
+The guide recommends detailed human
+review to refine that scorecard.
+
+22
+00:01:04.310 --> 00:01:06.630
+Compare options on the same cases,
+
+23
+00:01:06.630 --> 00:01:09.329
+and run the checks again after every change.
+
+24
+00:01:09.469 --> 00:01:13.839
+No finite set of tests proves an
+assistant will always be right.
+
+25
+00:01:13.839 --> 00:01:17.619
+But it can show you where it
+fails, before a customer finds out.
+
+26
+00:01:17.759 --> 00:01:20.429
+Before you trust a demo, ask three things.
+
+27
+00:01:20.429 --> 00:01:22.089
+Which cases were tested?
+
+28
+00:01:22.089 --> 00:01:23.639
+What counted as success?
+
+29
+00:01:23.639 --> 00:01:25.629
+And what evidence shows it passed?
+
+30
+00:01:25.769 --> 00:01:28.119
+A smooth demo is a first impression.
+
+31
+00:01:28.119 --> 00:01:30.276
+A tested case is evidence.
+
+32
+00:01:30.416 --> 00:01:31.886
+Ahmadreza Samadi.
+
+33
+00:01:31.886 --> 00:01:33.823
+More at a-samadi.com

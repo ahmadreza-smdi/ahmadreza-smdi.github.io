@@ -2571,4 +2571,48 @@
         <loc>https://a-samadi.com/carousels/</loc>
         <lastmod>2026-10-28T16:43:04+03:30</lastmod>
     </url>
+    <url>
+        <loc>https://a-samadi.com/writing/business-ai-evaluation-cases.html</loc>
+        <lastmod>2026-10-28T21:00:00+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/business-ai-evaluation-cases.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/business-ai-evaluation-cases.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/business-ai-evaluation-cases.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/business-ai-evaluation-cases.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/business-ai-evaluation-cases/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/business-ai-evaluation-cases.html</loc>
+        <lastmod>2026-10-28T21:00:00+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/business-ai-evaluation-cases.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/business-ai-evaluation-cases.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/business-ai-evaluation-cases.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/business-ai-evaluation-cases.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/business-ai-evaluation-cases/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/business-ai-evaluation-cases.html</loc>
+        <lastmod>2026-10-28T21:00:00+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/business-ai-evaluation-cases.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/business-ai-evaluation-cases.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/business-ai-evaluation-cases.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/business-ai-evaluation-cases.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/business-ai-evaluation-cases/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/watch/business-ai-evaluation-cases.html</loc>
+        <lastmod>2026-10-28T21:00:00+03:30</lastmod>
+        <video:video>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/business-ai-evaluation-cases/cover.png</video:thumbnail_loc>
+            <video:title>The AI demo passed. The real work did not.</video:title>
+            <video:description>A polished demonstration does not establish reliability for the actual task.</video:description>
+            <video:content_loc>https://a-samadi.com/assets/writing/business-ai-evaluation-cases/film.mp4</video:content_loc>
+            <video:publication_date>2026-10-28T21:00:00+03:30</video:publication_date>
+        </video:video>
+    </url>
 </urlset>

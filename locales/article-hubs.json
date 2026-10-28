@@ -1512,6 +1512,30 @@
           "path": "writing/profitable-but-out-of-cash.html"
         }
       ]
+    },
+    {
+      "stem": "business-ai-evaluation-cases",
+      "classification": "explainer",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/business-ai-evaluation-cases.html",
+        "fa": "fa/writing/business-ai-evaluation-cases.html",
+        "ar": "ar/writing/business-ai-evaluation-cases.html"
+      },
+      "related": [
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
     }
   ]
 }
