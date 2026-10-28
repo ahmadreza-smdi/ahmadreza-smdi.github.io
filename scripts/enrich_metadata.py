@@ -519,6 +519,15 @@ def enrich(path, text):
     head, rest = text[:head_end], text[head_end:]
     lang = language(head)
     added = []
+    relative = path.relative_to(ROOT).as_posix()
+    if relative.startswith('carousels/') and path.name != 'index.html':
+        title = re.search(r'<title>(.*?)</title>', head, re.S)
+        suffix = ' | Ahmadreza Samadi'
+        if title and not html.unescape(title[1]).endswith(suffix):
+            candidate = html.unescape(title[1]) + suffix
+            if len(candidate) <= 65:
+                head = head[:title.start(1)] + html.escape(candidate) + head[title.end(1):]
+                added.append('carousel title attribution')
     description_record = DESCRIPTION_UPDATES.get(path.relative_to(ROOT).as_posix())
     if description_record:
         description = description_record['description']

@@ -8,6 +8,16 @@ import enrich_metadata as metadata
 
 
 class MetadataCompleteness(TestCase):
+    def test_carousel_title_attribution_respects_limit_and_is_idempotent(self):
+        path = metadata.ROOT / 'carousels/example.html'
+        for count in (46, 47):
+            title = 'A' * count
+            source = '<html lang="en"><head><title>' + title + '</title><meta property="og:title" content="Example"></head></html>'
+            result, _ = metadata.enrich(path, source)
+            expected = title + ' | Ahmadreza Samadi' if count == 46 else title
+            self.assertIn('<title>' + expected + '</title>', result)
+            self.assertEqual(metadata.enrich(path, result)[0], result)
+
     def test_recorded_update_does_not_expand_bare_id_references(self):
         path = metadata.ROOT / 'about.html'
         page_id = metadata.BASE + 'about.html#profile'
