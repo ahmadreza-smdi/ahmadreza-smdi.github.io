@@ -5,6 +5,17 @@ import argparse,importlib.util,json,os,re,shutil,tempfile,time,urllib.request,zi
 import publish as core
 ROOT=Path(__file__).resolve().parents[2]
 CONFIG=ROOT/'scripts/online_films/carousels.json'
+CATCHUP=ROOT/'scripts/online_films/carousel-catchup-2026-10-28.json'
+
+def owner_catchup_rows(config,now,authorization):
+ """One explicit same-day owner exception; never a general late-release switch."""
+ rows=[r for r in config['carousels'] if r['key']=='2026-10-28']
+ if len(rows)!=1:raise ValueError('Exact catch-up row missing')
+ row=rows[0]
+ expected={'owner_instruction_date':'2026-10-28','key':row['key'],'slug':row['slug'],'bundle_sha256':row['sha256'],'destination':'https://a-samadi.com','action':'publish_missed_carousel_once','not_before':'2026-10-28T10:30:01+03:30','expires_at':'2026-10-28T23:30:00+03:30'}
+ if authorization!=expected:raise ValueError('Exact owner catch-up authorization differs')
+ if not datetime.fromisoformat(expected['not_before'])<=now<=datetime.fromisoformat(expected['expires_at']):raise ValueError('Owner catch-up expired or early')
+ return rows
 
 def validate(config):
  if config.get('schema')!=1 or config.get('timezone')!='Asia/Tehran' or config.get('daily_count')!=1 or config.get('local_slot')!='10:00':raise ValueError('Carousel cadence changed')
@@ -95,15 +106,18 @@ def verify_live(config,commit,paths):
    if data!=(ROOT/relative).read_bytes():raise RuntimeError('Live discovery/PDF mismatch:'+relative)
 
 def main():
- ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--verify',action='store_true');ap.add_argument('--wait-for-slot',action='store_true');ap.add_argument('--local-bundles',type=Path);args=ap.parse_args()
+ ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--verify',action='store_true');ap.add_argument('--wait-for-slot',action='store_true');ap.add_argument('--local-bundles',type=Path);ap.add_argument('--owner-catchup-2026-10-28',action='store_true');args=ap.parse_args()
  config=core.read(CONFIG);validate(config);now=datetime.now(core.ZONE)
- rows=config['carousels'] if args.verify else rows_now(config,now,args.wait_for_slot)
+ catchup=core.read(CATCHUP) if args.owner_catchup_2026_10_28 else None
+ if catchup and (args.verify or args.wait_for_slot or args.local_bundles):raise ValueError('Catch-up must use exact remote bundle alone')
+ selected=lambda instant:owner_catchup_rows(config,instant,catchup) if catchup else rows_now(config,instant)
+ rows=selected(now) if catchup else config['carousels'] if args.verify else rows_now(config,now,args.wait_for_slot)
  if not rows:
   missed=[r['key'] for r in config['carousels'] if now>datetime.fromisoformat(r['publish_at'])+timedelta(minutes=30) and not (ROOT/'data/carousel-publications'/f'{r["key"]}.json').exists()]
   if missed:print('::warning::MISSED carousel website slot(s):'+','.join(missed)+'; no automatic backfill. Other due film work may continue.')
   print('No carousel due; no public change.');return
  if core.run(['git','status','--porcelain=v1','--untracked-files=no'],ROOT):raise ValueError('Concurrent tracked changes')
- base=core.run(['git','rev-parse','HEAD'],ROOT);original=core.inventory(ROOT);warming=not args.verify and not rows_now(config,now)
+ base=core.run(['git','rev-parse','HEAD'],ROOT);original=core.inventory(ROOT);warming=not args.verify and not catchup and not rows_now(config,now)
  with tempfile.TemporaryDirectory(prefix='reviewed-carousel-') as td:
   temp=Path(td).resolve();site=temp/'site';shutil.copytree(ROOT,site,ignore=shutil.ignore_patterns('__pycache__','node_modules','.DS_Store'));changed=set();last=None
   for row in rows:
@@ -130,16 +144,16 @@ def main():
     print(f'PRIVATE_CAROUSEL_READY {rows[0]["key"]};waiting {seconds:.0f}s;no public files changed',flush=True);time.sleep(min(seconds,60))
    stamp=datetime.now(core.ZONE).isoformat(timespec='seconds');core.retime_private_stage(site,changed,now.isoformat(timespec='seconds'),stamp);count=core.checks(site)
   else:stamp=now.isoformat(timespec='seconds')
-  if len(rows)!=1 or rows_now(config,datetime.now(core.ZONE))!=rows:raise ValueError('Early/expired release window')
+  if len(rows)!=1 or selected(datetime.now(core.ZONE))!=rows:raise ValueError('Early/expired release window')
   core.run(['git','fetch','origin','main'],ROOT)
   if core.run(['git','rev-parse','origin/main'],ROOT)!=base or core.inventory(ROOT)!=original:raise ValueError('Concurrent main/checkout change')
   for relative in sorted(changed):
    dest=ROOT/relative;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(site/relative,dest)
   receipt_path='data/carousel-publications/'+rows[0]['key']+'.json'
-  core.write(ROOT/receipt_path,{'scheduled_at':rows[0]['publish_at'],'prepared_at':now.isoformat(timespec='seconds'),'release_started_at':datetime.now(core.ZONE).isoformat(timespec='seconds'),'content_timestamp':stamp,'private_preflight_before_slot':warming,'automatic_daily_exception':True,'format':'carousel_gallery','human_native_review_claimed':False,'slug':last['slug'],'bundle_sha256':rows[0]['sha256'],'site_checks_passed':count,'public_paths':sorted(changed)})
+  core.write(ROOT/receipt_path,{'scheduled_at':rows[0]['publish_at'],'prepared_at':now.isoformat(timespec='seconds'),'release_started_at':datetime.now(core.ZONE).isoformat(timespec='seconds'),'content_timestamp':stamp,'private_preflight_before_slot':warming,'automatic_daily_exception':not bool(catchup),'owner_authorized_catchup':catchup,'format':'carousel_gallery','human_native_review_claimed':False,'slug':last['slug'],'bundle_sha256':rows[0]['sha256'],'site_checks_passed':count,'public_paths':sorted(changed)})
   changed.add(receipt_path);core.run(['git','add','--',*sorted(changed)],ROOT);core.run(['git','diff','--cached','--check'],ROOT)
   if set(core.run(['git','diff','--cached','--name-only'],ROOT).splitlines())!=changed:raise ValueError('Unexpected staged files')
-  if rows_now(config,datetime.now(core.ZONE))!=rows:raise ValueError('Window expired before commit')
+  if selected(datetime.now(core.ZONE))!=rows:raise ValueError('Window expired before commit')
   core.run(['git','config','user.name','github-actions[bot]'],ROOT);core.run(['git','config','user.email','41898282+github-actions[bot]@users.noreply.github.com'],ROOT)
   core.run(['git','commit','-m','Publish reviewed carousel '+rows[0]['key']],ROOT);core.run(['git','push','origin','HEAD:main'],ROOT);commit=core.run(['git','rev-parse','HEAD'],ROOT);verify_live(config,commit,sorted(changed));print('Published due carousel once:'+last['slug'])
 if __name__=='__main__':main()

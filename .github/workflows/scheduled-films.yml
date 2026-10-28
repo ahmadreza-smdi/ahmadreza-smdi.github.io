@@ -6,17 +6,18 @@ on:
     # Off-peak retries retain strict dates,30minwindow and duplicate guards.
     - cron: '17,37,57 14-17 25-27 10 *'
     # Bounded 28 October–2 November extension: privately prewarm each
-    # 10:00 carousel and21:00 film, plus one in-window retry. Tehran UTC+03:30.
-    - cron: '07 4,15 28-31 10 *'
+    # 10:00 carousel and21:00 film, with off-peak prewarm retries and a
+    # bounded in-window retry. One concurrency group serializes all owners.
+    - cron: '7,27,47 4-6,15-17 28-31 10 *'
     - cron: '37 6,17 28-31 10 *'
-    - cron: '07 4,15 1-2 11 *'
+    - cron: '7,27,47 4-6,15-17 1-2 11 *'
     - cron: '37 6,17 1-2 11 *'
   workflow_dispatch:
     inputs:
       mode:
         description: Verify private prepared bundles or publish only actually due content
         type: choice
-        options: [verify, verify-deployment, publish-due]
+        options: [verify, verify-deployment, publish-due, catchup-carousel-2026-10-28]
         default: verify
 
 permissions:
@@ -56,6 +57,9 @@ jobs:
       - name: Publish only the reviewed carousel due now
         if: github.event_name == 'schedule' || inputs.mode == 'publish-due'
         run: python3 -B scripts/online_films/publish_carousel.py --wait-for-slot
+      - name: Publish the exact missed carousel once under dated owner authorization
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'catchup-carousel-2026-10-28'
+        run: python3 -B scripts/online_films/publish_carousel.py --owner-catchup-2026-10-28
       - name: Publish only the reviewed film due now
         if: github.event_name == 'schedule' || inputs.mode == 'publish-due'
         run: python3 -B scripts/online_films/publish.py --wait-for-slot

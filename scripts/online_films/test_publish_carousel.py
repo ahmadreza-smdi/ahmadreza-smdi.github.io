@@ -21,6 +21,26 @@ def artifact(folder,change=None,extra=None):
  return zpath,p.core.sha(zpath)
 
 class Guards(unittest.TestCase):
+ def catchup(self):
+  c=config();r=c['carousels'][0]
+  return c,{'owner_instruction_date':'2026-10-28','key':r['key'],'slug':r['slug'],'bundle_sha256':r['sha256'],'destination':'https://a-samadi.com','action':'publish_missed_carousel_once','not_before':'2026-10-28T10:30:01+03:30','expires_at':'2026-10-28T23:30:00+03:30'}
+ def test_owner_catchup_exact_same_day_and_window_only(self):
+  c,a=self.catchup()
+  for stamp in ['2026-10-28T10:30:01+03:30','2026-10-28T17:00:00+03:30','2026-10-28T23:30:00+03:30']:
+   self.assertEqual(c['carousels'],p.owner_catchup_rows(c,datetime.fromisoformat(stamp),a))
+  for stamp in ['2026-10-28T10:30:00+03:30','2026-10-28T23:30:01+03:30','2026-10-29T17:00:00+03:30']:
+   with self.assertRaises(ValueError):p.owner_catchup_rows(c,datetime.fromisoformat(stamp),a)
+ def test_owner_catchup_refuses_changed_authority_hash_or_row(self):
+  c,a=self.catchup();now=datetime.fromisoformat('2026-10-28T17:00:00+03:30')
+  for field in a:
+   changed=dict(a);changed[field]='changed'
+   with self.assertRaises(ValueError):p.owner_catchup_rows(c,now,changed)
+  changed=copy.deepcopy(c);changed['carousels'][0]['sha256']='b'*64
+  with self.assertRaises(ValueError):p.owner_catchup_rows(changed,now,a)
+  changed=copy.deepcopy(c);changed['carousels'][0]['key']='2026-10-29'
+  with self.assertRaises(ValueError):p.owner_catchup_rows(changed,now,a)
+  changed=copy.deepcopy(c);changed['carousels'].append(copy.deepcopy(changed['carousels'][0]))
+  with self.assertRaises(ValueError):p.owner_catchup_rows(changed,now,a)
  def test_cadence_and_timezone(self):
   p.validate(config())
   for key,value in [('daily_count',2),('local_slot','21:00'),('timezone','UTC')]:
