@@ -76,6 +76,13 @@
       "asset_name": "reviewed-film-2026-11-01-agent-workflow-bottleneck.zip",
       "asset_id": 684706302,
       "sha256": "c66cfd30afc3eefce3b8052ded3da02f608a1340260ce67f45fc1983e3b02a43"
+    },
+    {
+      "key": "2026-11-02",
+      "publish_at": "2026-11-02T21:00:00+03:30",
+      "asset_name": "reviewed-film-2026-11-02-ai-research-understanding.zip",
+      "asset_id": 684728761,
+      "sha256": "6349eb7ef1f8525917b645a165498eb381158228798889aa973639ad450927b5"
     }
   ]
 }
