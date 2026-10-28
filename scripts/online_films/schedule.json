@@ -45,23 +45,23 @@
     {
       "key": "2026-10-28",
       "publish_at": "2026-10-28T21:00:00+03:30",
-      "asset_name": "film-2026-10-28.zip",
-      "asset_id": 681657961,
-      "sha256": "f21a54c324b0dc7553aa5e2bd6ce87ec75bc0cec7c5c8c0192b6e6388a84bd5d"
+      "asset_name": "reviewed-film-2026-10-28-optional-captions-v2.zip",
+      "asset_id": 684609209,
+      "sha256": "e59494e77321e3425cd000da0914ba23b7cfb00f41c1cef92506572a0b574cd1"
     },
     {
       "key": "2026-10-29",
       "publish_at": "2026-10-29T21:00:00+03:30",
-      "asset_name": "reviewed-film-2026-10-29-cash-conversion-cycle-r03.zip",
-      "asset_id": 682206883,
-      "sha256": "67398a39b6a60abbdb260e2e27605a5627c587404720422cb82c1cea2283f8a8"
+      "asset_name": "reviewed-film-2026-10-29-optional-captions-v2.zip",
+      "asset_id": 684609217,
+      "sha256": "583fabc9419019c13d0c238c82b0ea3f604219f5f94b69a5c6eab03ac84ebe9e"
     },
     {
       "key": "2026-10-30",
       "publish_at": "2026-10-30T21:00:00+03:30",
-      "asset_name": "reviewed-film-2026-10-30-structured-output-source-checks-r02.zip",
-      "asset_id": 682518836,
-      "sha256": "43b06d688c3c5f8165425ddffb4d0f4bbbf3466c4f012c873cb83581e33bdfd8"
+      "asset_name": "reviewed-film-2026-10-30-optional-captions-v2.zip",
+      "asset_id": 684609207,
+      "sha256": "4990f2c968ccbe8afe8ecb79cf35491f2559aceda4ef92e0d3029e6b87582c9b"
     }
   ]
 }
