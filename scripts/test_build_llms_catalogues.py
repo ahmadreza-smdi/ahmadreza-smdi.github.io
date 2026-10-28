@@ -36,6 +36,16 @@ class Catalogues(unittest.TestCase):
         value = 'This fictional example explains a budget without claiming any measured business result.'
         self.assertEqual(catalog.description(value, 'https://example.test/'), value)
 
+    def test_reviewed_long_sources_keep_complete_fictional_sentences(self):
+        for source, sentence in catalog.REVIEWED_DESCRIPTION_SENTENCES.items():
+            self.assertGreater(len(source.split()), 30)
+            self.assertTrue(source.startswith(sentence))
+            self.assertTrue(sentence.endswith('.'))
+            self.assertIn('fictional', sentence)
+            self.assertEqual(catalog.description(source, 'https://example.test/'), sentence)
+            with self.assertRaises(ValueError):
+                catalog.description(source + ' Changed source.', 'https://example.test/')
+
     def test_correct_groups_and_unchanged_identity(self):
         self.assertEqual(catalog.section(catalog.BASE + 'studies/rent-burden/'), 'Studies')
         self.assertEqual(catalog.section(catalog.BASE + 'carousels/example.html'), 'Explainers')

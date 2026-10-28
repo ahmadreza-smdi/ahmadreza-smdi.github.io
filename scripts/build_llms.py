@@ -52,6 +52,17 @@ RESOURCE_DESCRIPTIONS = {
 }
 
 
+# Complete, reviewed source sentences from the two existing frozen companion
+# descriptions longer than 30 words. Match the entire source string so changed
+# or unknown copy still fails closed. Nothing is listed before its page exists.
+REVIEWED_DESCRIPTION_SENTENCES = {
+    'Mira, a fictional building manager, sees a high energy bill and wants new equipment. Instead of choosing a machine from one number, she asks for the building assets and operations to be assessed.':
+        'Mira, a fictional building manager, sees a high energy bill and wants new equipment.',
+    'In a fictional dispatch library, adding more helpers does not shorten the queue: every independent task waits for the same key. The illustration asks where work must be coordinated and where it can proceed independently.':
+        'In a fictional dispatch library, adding more helpers does not shorten the queue: every independent task waits for the same key.',
+}
+
+
 class PublicResourceParser(HTMLParser):
     """Read only visible list items in the existing public-tools-data block."""
     def __init__(self):
@@ -170,6 +181,7 @@ def section(url):
 
 def description(value, url):
     """Keep complete source descriptions; never silently truncate a factual qualification."""
+    value = REVIEWED_DESCRIPTION_SENTENCES.get(value, value)
     count = len(value.split())
     if not 10 <= count <= 30:
         raise ValueError(f'{url}: description must have 10–30 words; found {count}')
