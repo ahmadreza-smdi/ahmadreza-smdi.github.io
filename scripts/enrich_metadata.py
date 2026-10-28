@@ -25,6 +25,7 @@ from xml.etree import ElementTree
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT_UPDATES = json.loads((ROOT / 'locales/content-updates.json').read_text())
 DESCRIPTION_UPDATES = json.loads((ROOT / 'locales/metadata-descriptions.json').read_text())
+SHARE_IMAGES = {row['source']: row['output'] for row in json.loads((ROOT / 'locales/share-images.json').read_text())['images']}
 BASE = 'https://a-samadi.com/'
 LOCALES = {'en': 'en_US', 'fa': 'fa_IR', 'ar': 'ar_AE'}
 SITE_NAME = 'Ahmadreza Samadi'
@@ -572,6 +573,21 @@ def enrich(path, text):
             added.append('og:locale:alternate')
     image = value(head, 'og:image')
     if image:
+        landscape = SHARE_IMAGES.get(image.removeprefix(BASE))
+        if landscape:
+            for key in ('og:image', 'twitter:image'):
+                match = find(head, key)
+                if match:
+                    head = head[:match.start(1)] + BASE + landscape + head[match.end(1):]
+                    added.append(key + ' landscape cover')
+            image = BASE + landscape
+            dimensions = local_image_dimensions(image)
+            if dimensions != (1200, 630):
+                raise ValueError('Reviewed landscape cover is missing or has incorrect dimensions: ' + landscape)
+            for key, dimension in zip(('og:image:width', 'og:image:height'), dimensions):
+                match = find(head, key)
+                if match:
+                    head = head[:match.start(1)] + str(dimension) + head[match.end(1):]
         dimensions = local_image_dimensions(image)
         if dimensions:
             add_after(['og:image'], 'property', 'og:image:width', str(dimensions[0]))

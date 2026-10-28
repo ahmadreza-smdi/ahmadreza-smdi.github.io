@@ -1,0 +1,242 @@
+{
+  "background": "#F2F7F5",
+  "width": 1200,
+  "height": 630,
+  "maximumBytes": 300000,
+  "images": [
+    {
+      "source": "assets/carousels/tech-trend-assisted-permissions/slide-01.png",
+      "sourceSha256": "4d2a6dc8922d771beb1a92c9de043ba314b3fdabfecf0a87c266883a6d1f1e1f",
+      "output": "assets/share/tech-trend-assisted-permissions-og-1200x630.png",
+      "outputSha256": "35a6526597e99bae09d553565b2593760d344bead0f6997d3deb0a4ee46eb98a"
+    },
+    {
+      "source": "assets/writing/phone-location-across-street/cover.png",
+      "sourceSha256": "8819908e4e118aa647ccd83549df8bf2f07db8a8190f699ae37e432af81b9d5b",
+      "output": "assets/share/phone-location-across-street-og-1200x630.png",
+      "outputSha256": "a03fe65d65fbee4ffa30063beb0470bec5182c405f374aa50bf1574cb7a2aa48"
+    },
+    {
+      "source": "assets/writing/property-comparables-evidence/cover.png",
+      "sourceSha256": "4295fe53601ce247a75c646f731391d25ed905e4342044f8f39c7e0a469c4e3c",
+      "output": "assets/share/property-comparables-evidence-og-1200x630.png",
+      "outputSha256": "6d4efbff2aa15af5ddabf88e15eeccc46cf8f5377d691b6959f46fc7a7d6fb44"
+    },
+    {
+      "source": "assets/writing/ai-agents-shared-notebook/cover.png",
+      "sourceSha256": "4e3e46c5b4d3ee853a97f4e22cddcf7a68e2738377fcbd1c72b835af3e4508c4",
+      "output": "assets/share/ai-agents-shared-notebook-og-1200x630.png",
+      "outputSha256": "faf55c2cb4ada9b6061b9965b0b6a748a9e3beb684d57fd1956061caa3e083c7"
+    },
+    {
+      "source": "assets/writing/ai-agent-permissions-ability-authority/cover.png",
+      "sourceSha256": "efd01e4e73c3c441b5de2251ef4bf42d2cd9177ab63b5bb092235f4dfcc925a1",
+      "output": "assets/share/ai-agent-permissions-ability-authority-og-1200x630.png",
+      "outputSha256": "bd6a185cfb5ffc7a6a94d03aa190f54c7a7db73c8db87fc305a932cfd1d41f5e"
+    },
+    {
+      "source": "assets/writing/prompt-injection-layered-controls/cover.png",
+      "sourceSha256": "3943887afbbedb7b2bfdd6610853efa4799ab1707bdc6ba4c2dcd492adc6c337",
+      "output": "assets/share/prompt-injection-layered-controls-og-1200x630.png",
+      "outputSha256": "94d3b7ca1c882705a136817e6c6562e26d807d373b3a4fbccb8a82f745c003c9"
+    },
+    {
+      "source": "assets/writing/heat-pump-moves-heat-explained/cover.png",
+      "sourceSha256": "aed0ba76aa3b4852095e53ff13e6916b9c25eb35457adaa06479b53a356114f0",
+      "output": "assets/share/heat-pump-moves-heat-explained-og-1200x630.png",
+      "outputSha256": "19c4cb8eef536b0348cf0db37bac155e32ae303b5303dc27c551a2db0d889410"
+    },
+    {
+      "source": "assets/writing/dubai-project-escrow-controls/cover.png",
+      "sourceSha256": "4976d122d2e3287a55d47dcac4a0050430ff7e8f8988db79b94812e272d5518a",
+      "output": "assets/share/dubai-project-escrow-controls-og-1200x630.png",
+      "outputSha256": "1a7aa29ce466099266089b0394a74f319e4c27cfbdd19a6d09050d4f54ad090f"
+    },
+    {
+      "source": "assets/writing/dubai-service-charge-same-rent/cover.png",
+      "sourceSha256": "c347d92333984984a5ef32a7428c304d06637edc585a77295fe599ab4297efa1",
+      "output": "assets/share/dubai-service-charge-same-rent-og-1200x630.png",
+      "outputSha256": "663596a1a8635c408991a070d4a86f2f4355407b71416a411334a14984b11dfe"
+    },
+    {
+      "source": "assets/writing/building-digital-twin-data-freshness/cover.png",
+      "sourceSha256": "9da2784d25b13fd3ca04325b06326c00ee134560b4d00a8eb8c10e6d6c975859",
+      "output": "assets/share/building-digital-twin-data-freshness-og-1200x630.png",
+      "outputSha256": "0ad36886b7f3dc05e1f96217855b19bf4244c38a8319af2506b213962eb47863"
+    },
+    {
+      "source": "assets/writing/business-ai-evaluation-cases/cover.png",
+      "sourceSha256": "5e9388dc8d4ef7f32b3cd84954da1b03ef9f3e4fa290bd0389b4b6424fb1f6e4",
+      "output": "assets/share/business-ai-evaluation-cases-og-1200x630.png",
+      "outputSha256": "6bf1c76620807a7adef61ebdd038912ab9bd5a0ff1fa35b6c11219c7706be865"
+    },
+    {
+      "source": "assets/writing/computer-agent-check-result/cover.png",
+      "sourceSha256": "0930ffc4014d04f1574d3637a0b65e15ec80afee9e7fa97a66c385238051db94",
+      "output": "assets/share/computer-agent-check-result-og-1200x630.png",
+      "outputSha256": "8fc1ca184c546b8ec4ec02fd2e89bdc3f2e53089776de1df1a7d4b8479480d11"
+    },
+    {
+      "source": "assets/writing/rag-check-business-records/cover.png",
+      "sourceSha256": "cb8c4006848244ab4f1e62f1292a8c8bd8b7a03b30764947f1255a2f9e532ed7",
+      "output": "assets/share/rag-check-business-records-og-1200x630.png",
+      "outputSha256": "db8284078d01c1614b92475ed44971fe6675e489f1618f8b9706a5c32cd2183d"
+    },
+    {
+      "source": "assets/writing/tesla-roadster-flight-claim/cover.png",
+      "sourceSha256": "40d908637b2163968cabb3b4d4365ee56772800a0f4d3ca662aea48ebab07650",
+      "output": "assets/share/tesla-roadster-flight-claim-og-1200x630.png",
+      "outputSha256": "072264dde8faed6c5e10b4f50a226c44a70d0479aeb4de38c69cad9cf3534efe"
+    },
+    {
+      "source": "assets/share/profit-cash.png",
+      "sourceSha256": "c90818a047163472ea89f8768dc3b979e5356b4016feec72638af7ffb5f914a0",
+      "output": "assets/share/profit-cash-og-1200x630.png",
+      "outputSha256": "7186ccf3997af754553bfe154bb0c3c82895ab873171cc4430c4b79323e8f458"
+    },
+    {
+      "source": "assets/writing/bacnet-building-devices-common-language/slide-01.png",
+      "sourceSha256": "adf6ae1509b50629a2d3b54933e48610d5d9c4111c24b4cead79c883009be397",
+      "output": "assets/share/bacnet-building-devices-common-language-og-1200x630.png",
+      "outputSha256": "bab1bba7d1a48a8fca3f7a812371a666f35ccceeb66ffeed8048b92ccc512fa1"
+    },
+    {
+      "source": "assets/share/how-building-digital-twins-work.png",
+      "sourceSha256": "e582f12dcc852ad822b41a685ae1980ba381a06afb9d65b650f5c350965b42d7",
+      "output": "assets/share/how-building-digital-twins-work-og-1200x630.png",
+      "outputSha256": "1849beff01367d85ca11fe6892affdbe0c669d25c1bf6ed3eeca136784d1f86f"
+    },
+    {
+      "source": "assets/writing/where-wearable-ai-computation-runs/slide-01.png",
+      "sourceSha256": "bb4e77cd3ec0f2c88f2ec716d5252df4fc8d5344de737fb53db0baf6316e8cc3",
+      "output": "assets/share/where-wearable-ai-computation-runs-og-1200x630.png",
+      "outputSha256": "0d38edeab9c45d31c67c3424a8b6f84bfe35444de9a42bb6613265b238e75ec3"
+    },
+    {
+      "source": "assets/share/how-noise-cancellation-works.png",
+      "sourceSha256": "051203b88c41083b9cf7ebbe0e21ffb1742e215614e6bfa19b5e6ad73fab1e0d",
+      "output": "assets/share/how-noise-cancellation-works-og-1200x630.png",
+      "outputSha256": "5e66603d612b3efcd9b628bc2a92d345197289ca51906c723430946188da6221"
+    },
+    {
+      "source": "assets/share/dubai-property-tokenisation-explained.png",
+      "sourceSha256": "f5767e5e56ef3f08d796a8a0e6938d1197df0741622dabe85f800fb3e20ca20b",
+      "output": "assets/share/dubai-property-tokenisation-explained-og-1200x630.png",
+      "outputSha256": "7f887537fc5cdfae0aa8f66ed2f1ef97021053adfc3ad72ca14536dda62c1898"
+    },
+    {
+      "source": "assets/writing/ai-document-review-claim-evidence-checklist/slide-01.png",
+      "sourceSha256": "026c38427e5588b14a18ff3ccbac6b87f0c98b5e679efe0dcf63dbea9ebbf7ce",
+      "output": "assets/share/ai-document-review-claim-evidence-checklist-og-1200x630.png",
+      "outputSha256": "b3cabd630d6aac5ae7946b534ef1e085072381ec722f98ca336466d78a4c5cf5"
+    },
+    {
+      "source": "assets/share/small-ai-models-task-routing-explained.png",
+      "sourceSha256": "c28c4cc9adf2a3ba28ffdb89d97efc28f4cb1aef017e10e54332fd45b84cbf08",
+      "output": "assets/share/small-ai-models-task-routing-explained-og-1200x630.png",
+      "outputSha256": "0367a164d07285f1f17367e9a72f0ab7fc0b2e0354fec93e0cb372726561d2f6"
+    },
+    {
+      "source": "assets/writing/virtual-machine-device-sharing-explained/slide-01.png",
+      "sourceSha256": "b2659052ae72cc69e60f2bd79afba997aa79fcf0eafd3d8347826b2d39ab4487",
+      "output": "assets/share/virtual-machine-device-sharing-explained-og-1200x630.png",
+      "outputSha256": "d151c2152f4948cdaf0ed8a7766554425c4839a035911449045a701fac5ee326"
+    },
+    {
+      "source": "assets/share/ai-inference-memory-movement-explained.png",
+      "sourceSha256": "baf362a3d04223bfbee4c2343851c7c5d512d694dd12d7b4ef2832a2dc8bcd8f",
+      "output": "assets/share/ai-inference-memory-movement-explained-og-1200x630.png",
+      "outputSha256": "4fe3c514c3d2297ed885baabb52d72c58748a76001abeeae5a9c73a5ba41a983"
+    },
+    {
+      "source": "assets/share/why-usb-c-cables-differ.png",
+      "sourceSha256": "e7c3b9457e8f0d78258edb8443608a72c00a763bbe47603a18476aa0cdcd13ca",
+      "output": "assets/share/why-usb-c-cables-differ-og-1200x630.png",
+      "outputSha256": "157415e73a006c7368824fe1912427ddca4bb5baa3ca920bd1b56d137acd3f5e"
+    },
+    {
+      "source": "assets/writing/why-occupancy-sensor-lights-switch-off/slide-01.png",
+      "sourceSha256": "51a40bc9fb6b1088420b606449aa924763baa8f859dd2893bbac202691cffd30",
+      "output": "assets/share/why-occupancy-sensor-lights-switch-off-og-1200x630.png",
+      "outputSha256": "8c2910b0b304bb46a07c70013909b7684e33944abb216edba4f5c80c1bb1a553"
+    },
+    {
+      "source": "assets/share/chatgpt-intelligent-ui-explained.png",
+      "sourceSha256": "3c1855294611ffc8b401fcb89378ca94e907d82fb49fc543c929ee5bcb6877b1",
+      "output": "assets/share/chatgpt-intelligent-ui-explained-og-1200x630.png",
+      "outputSha256": "c06fe9fe58c3c6bf0a63a4754c41108a8289966e4996d0164114071cce8d9050"
+    },
+    {
+      "source": "assets/share/how-contactless-cards-work.png",
+      "sourceSha256": "05080f6b909f48d882b2496fb7c3cc5207659d778c7782ce949ef28fb08210c4",
+      "output": "assets/share/how-contactless-cards-work-og-1200x630.png",
+      "outputSha256": "1279c663436293d460158d219c1fec9f530e04959428811ef7ffecbc5075e043"
+    },
+    {
+      "source": "assets/share/how-photo-text-recognition-works.png",
+      "sourceSha256": "6a2151239fa7144d08d3382f1a93a6e410cda7af9bd926a4bd4da2ac831ff811",
+      "output": "assets/share/how-photo-text-recognition-works-og-1200x630.png",
+      "outputSha256": "6b5f37cd2f7f6e7e5aae38883eed72368883d3924d922294af7081b3769d8f21"
+    },
+    {
+      "source": "assets/writing/on-device-ai-scam-warnings-explained/slide-01.png",
+      "sourceSha256": "7491555641bd74d32b86156ce56b122e465e536878f9e638dae82bfc70b552cf",
+      "output": "assets/share/on-device-ai-scam-warnings-explained-og-1200x630.png",
+      "outputSha256": "33a15db3c5837e902b68f9594a9c7a856b9b87685ff78209c650290f0b4ef88d"
+    },
+    {
+      "source": "assets/share/why-ai-loses-earlier-chat-context.png",
+      "sourceSha256": "eb05502636a0a9b129a34b849b71b734ab2a925d246d00b3002491261a7639fd",
+      "output": "assets/share/why-ai-loses-earlier-chat-context-og-1200x630.png",
+      "outputSha256": "b7a1972a47e2af0c1b7a1a478e1471709e84893131775fe35fd8a738062156fd"
+    },
+    {
+      "source": "assets/writing/geospatial-ai-map-answer-review/slide-01.png",
+      "sourceSha256": "00e171505a8f685b8f39dfcc4e5198a8b589a03cd57f6338aac37f43894e9bac",
+      "output": "assets/share/geospatial-ai-map-answer-review-og-1200x630.png",
+      "outputSha256": "3e72caf6a1435329089c72b297b708a6b919a099c60ade4dbc53c3a21ed5fcee"
+    },
+    {
+      "source": "assets/share/almost-full-storage.png",
+      "sourceSha256": "756a2427eff525dc6fe1b47ceb17306504d6ab71edbaea4fce942b5a2027f557",
+      "output": "assets/share/almost-full-storage-og-1200x630.png",
+      "outputSha256": "5439f7cdbb1f06322252ea61219b45c487c1e39655e6144fc949e9e92ce6b58c"
+    },
+    {
+      "source": "assets/share/how-many-coffees-to-break-even.png",
+      "sourceSha256": "7865ee670111fb1b64d04b498513ab7d6cd45957bcd1ef3cd36a8c4da3159703",
+      "output": "assets/share/how-many-coffees-to-break-even-og-1200x630.png",
+      "outputSha256": "de33a0d8c2c982839153084ea6e2f5db00712b00c30b7345ed9484228841b34d"
+    },
+    {
+      "source": "assets/share/ai-data-center-site-readiness.png",
+      "sourceSha256": "b488e645e3837dd9cd76bc8b0f1b43c46cf6d54a07d1260d5e88c79915f41468",
+      "output": "assets/share/ai-data-center-site-readiness-og-1200x630.png",
+      "outputSha256": "ad5ad16e3acebdc2c952394131e60b7ace81c61ac722a39524217f6a73e0ea45"
+    },
+    {
+      "source": "assets/writing/why-ai-weather-models-need-local-observations/slide-01.png",
+      "sourceSha256": "0f4666622e2081b4171ea79b62933f9f1d145540887e8cc1b0c080a194218700",
+      "output": "assets/share/why-ai-weather-models-need-local-observations-og-1200x630.png",
+      "outputSha256": "b6319768e4f0a52a70aed733d090b6063e13bb622496fc056a490371e76191ee"
+    },
+    {
+      "source": "assets/share/building-laser-scans-point-clouds-explained.png",
+      "sourceSha256": "30fe66c745baabbebbcacd6a0917da3226b5cdc26000dc9aad0977354d3941a1",
+      "output": "assets/share/building-laser-scans-point-clouds-explained-og-1200x630.png",
+      "outputSha256": "9e185b6340af62844e5fe2e0251c0989902d6edfcb68d12d8a61cdf1d8cd94cd"
+    },
+    {
+      "source": "assets/writing/building-leak-alert-response-checklist/slide-01.png",
+      "sourceSha256": "a02ca1acae7324042ab893b81cab7e2f7a913a385f1ad01e1bb85aacf1d074fb",
+      "output": "assets/share/building-leak-alert-response-checklist-og-1200x630.png",
+      "outputSha256": "14d1de0631ec7284cceeea223bafb5d56ec0a3fd12cb358fa3302005eeca6a2f"
+    },
+    {
+      "source": "assets/share/why-wifi-is-slow-with-full-bars.png",
+      "sourceSha256": "df2a16914f0e7ea31653fcfbeecfa8a485a6326a4ab6308ac9da01da5d4f827e",
+      "output": "assets/share/why-wifi-is-slow-with-full-bars-og-1200x630.png",
+      "outputSha256": "1f89103d1efd49fd626ee9556bb8a8e12846349698ef18ee0b8d4c07fd25f28c"
+    }
+  ]
+}
