@@ -109,22 +109,22 @@
       "beliefs": "What I believe",
       "public": "Work in public",
       "known": "Known for",
-      "knownintro": "My work centers on three areas.",
+      "knownintro": "Three ideas connect my work.",
       "knownnames": [
         "AI for property decisions",
-        "Start with the decision",
+        "Decision-first guide",
         "Building in Dubai"
       ],
       "knowncopy": [
-        "Co-Founder & Technical Lead, Appraiva. Appraiva is a US company in Cleveland, Ohio; he works remotely from Dubai. It builds AI tools that help real estate investors and developers find distressed and off-market properties through imagery analysis and enriched property data.",
-        "Decision-first guide.",
+        "Where AI helps with property valuation and investment decisions, and where human review must stay.",
+        "Turn an AI idea into one clear decision, an evidence plan and a useful first experiment.",
         "Ahmadreza Samadi is Co-Founder & CEO of Royal Abraj Group in Dubai, a role held since 2022. The group covers property brokerage and documents-clearing services. He leads its digital strategy and technology, including websites, CRM workflows, a customer portal and internal tools."
       ],
       "publiclinks": [
         "Property studies",
         "Decision guide",
         "Property calculators",
-        "Open-source repositories",
+        "Public GitHub repositories",
         "Weekly newsletter"
       ],
       "beliefitems": [
@@ -158,22 +158,22 @@
       "beliefs": "باورهای من",
       "public": "کارهای عمومی من",
       "known": "حوزه‌های اصلی کار",
-      "knownintro": "کار من بر سه حوزه متمرکز است.",
+      "knownintro": "سه ایده کارهای من را به هم پیوند می‌دهد.",
       "knownnames": [
         "هوش مصنوعی برای تصمیم‌های ملکی",
-        "از تصمیم آغاز کنید",
+        "راهنمای تصمیم‌محور",
         "ساخت کسب‌وکار در دبی"
       ],
       "knowncopy": [
-        "هم‌بنیان‌گذار و راهبر فنی Appraiva. اپرایوا شرکتی آمریکایی در کلیولند، اوهایو است؛ او از دبی به‌صورت دورکار فعالیت می‌کند. این شرکت ابزارهای هوش مصنوعی می‌سازد که با تحلیل تصاویر و داده‌های غنی‌شدهٔ املاک، به سرمایه‌گذاران و توسعه‌دهندگان املاک کمک می‌کنند املاک دارای مشکلات یا فرسودگی و املاک خارج از بازار عمومی را پیدا کنند.",
-        "راهنمای تصمیم‌محور.",
+        "هوش مصنوعی کجا به ارزش‌گذاری املاک و تصمیم‌های سرمایه‌گذاری کمک می‌کند و بررسی انسانی کجا باید باقی بماند.",
+        "یک ایدهٔ هوش مصنوعی را به یک تصمیم روشن، برنامهٔ شواهد و آزمایش اولیهٔ مفید تبدیل کنید.",
         "احمدرضا صمدی هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group در دبی است و از سال ۲۰۲۲ این نقش را دارد. این گروه در حوزهٔ کارگزاری املاک و خدمات انجام امور اسناد فعالیت می‌کند. او راهبرد دیجیتال و فناوری آن، از جمله وب‌سایت‌ها، گردش‌کارهای CRM، پورتال مشتریان و ابزارهای داخلی را هدایت می‌کند."
       ],
       "publiclinks": [
         "مطالعه‌های املاک",
         "راهنمای تصمیم‌گیری",
         "ماشین‌حساب‌های املاک",
-        "مخزن‌های متن‌باز",
+        "مخزن‌های عمومی GitHub",
         "خبرنامهٔ هفتگی"
       ],
       "beliefitems": [
@@ -207,22 +207,22 @@
       "beliefs": "ما أؤمن به",
       "public": "أعمالي المتاحة للجمهور",
       "known": "مجالات عملي الأساسية",
-      "knownintro": "يركّز عملي على ثلاثة مجالات.",
+      "knownintro": "ثلاث أفكار تربط أعمالي.",
       "knownnames": [
         "الذكاء الاصطناعي للقرارات العقارية",
-        "ابدأ بالقرار",
+        "دليل يبدأ بالقرار",
         "بناء الأعمال في دبي"
       ],
       "knowncopy": [
-        "شريك مؤسس وقائد تقني في Appraiva. أبرايفا شركة أمريكية في كليفلاند، أوهايو؛ ويعمل عن بُعد من دبي. تبني الشركة أدوات ذكاء اصطناعي تساعد المستثمرين والمطورين العقاريين على العثور على عقارات متعثرة أو غير معروضة في السوق، من خلال تحليل الصور وبيانات العقارات المُثرَاة.",
-        "دليل يبدأ بالقرار.",
+        "أين يساعد الذكاء الاصطناعي في التقييم العقاري وقرارات الاستثمار، وأين يجب أن تبقى المراجعة البشرية.",
+        "حوّل فكرة ذكاء اصطناعي إلى قرار واضح وخطة للأدلة وتجربة أولى مفيدة.",
         "أحمدرضا صمدي شريك مؤسس ورئيس تنفيذي في Royal Abraj Group بدبي، وهو دور يتولاه منذ عام ٢٠٢٢. تعمل المجموعة في الوساطة العقارية وخدمات تخليص المستندات. ويقود استراتيجيتها الرقمية وتقنيتها، بما يشمل المواقع الإلكترونية وسير عمل CRM وبوابة العملاء والأدوات الداخلية."
       ],
       "publiclinks": [
         "الدراسات العقارية",
         "دليل اتخاذ القرار",
         "الحاسبات العقارية",
-        "مستودعات مفتوحة المصدر",
+        "مستودعات GitHub العامة",
         "النشرة الأسبوعية"
       ],
       "beliefitems": [

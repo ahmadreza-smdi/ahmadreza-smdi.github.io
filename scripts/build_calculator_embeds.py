@@ -1,7 +1,21 @@
 """Keep attributed, unmeasured calculator embeds aligned with their primary pages."""
 from pathlib import Path
+import html
 import re,sys
 ROOT=Path(__file__).resolve().parent.parent
+def outbound_links(text):
+    def replace(match):
+        tag=match[0]
+        href=re.search(r'\bhref="([^"]*)"',tag)
+        if not href or html.unescape(href[1]).startswith('#'):return tag
+        if not re.match(r'^(?:https?://|/|\.?\.?/)',html.unescape(href[1])):return tag
+        tag=re.sub(r'\s+target="[^"]*"','',tag)
+        rel=re.search(r'\s+rel="([^"]*)"',tag)
+        tokens=html.unescape(rel[1]).split() if rel else []
+        if 'noopener' not in tokens:tokens.append('noopener')
+        if rel:tag=tag[:rel.start()]+tag[rel.end():]
+        return tag[:-1]+' target="_blank" rel="'+html.escape(' '.join(tokens),quote=True)+'">'
+    return re.sub(r'<a\b[^>]*>',replace,text)
 def embedded(source,stem):
     if 'data-share' not in source or 'data-print-inputs' not in source:raise ValueError('Primary calculator lacks sharing controls')
     result=source.replace('class="property-calculator"','class="property-calculator calculator-embed"')
@@ -11,7 +25,7 @@ def embedded(source,stem):
     result=re.sub(r'<script src="/js/site-analytics.js[^\"]*" defer></script>','',result)
     result=result.replace('</main>',f'<p class="embed-attribution">Calculator by <a href="/about.html">Ahmadreza Samadi</a> · <a href="/tools/{stem}.html">Full calculator and sources</a>. Your inputs are not independently verified facts or quotes.</p></main>',1)
     if 'site-analytics.js' in result or 'data-cf-beacon' in result:raise ValueError('Embed must not contain analytics')
-    return result
+    return outbound_links(result)
 def main():
     check='--check' in sys.argv;changed=[]
     for stem in ['rental-cash-flow','dubai-purchase-cost','valuation-range']:
