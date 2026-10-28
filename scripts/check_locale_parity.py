@@ -108,7 +108,7 @@ for lang in ['fa','ar']:
    skip_primary=False
    continue
   attrs=attrs.copy()
-  for local_page in ('#work','work/','studies/rent-own-2026/','tools/before-you-build-ai.html','about.html','work/appraiva.html','work/royal-abraj.html','work/oxfam-novib.html','writing/ai-home-value-estimates.html','writing/','topics/'):
+  for local_page in ('#work','work/','studies/rent-own-2026/','tools/before-you-build-ai.html','about.html','press.html','work/appraiva.html','work/royal-abraj.html','work/oxfam-novib.html','writing/ai-home-value-estimates.html','writing/','topics/'):
    if attrs.get('href','').startswith(f'https://a-samadi.com/{lang}/{local_page}'):
     attrs['href']=attrs['href'].replace(f'https://a-samadi.com/{lang}/{local_page}',f'https://a-samadi.com/{local_page}',1)
   normalized.append((tag,attrs))
@@ -116,6 +116,9 @@ for lang in ['fa','ar']:
  assert normalized==base.items, f'{lang}: element or asset mismatch'
  assert p.ids==base.ids and len(p.ids)==len(set(p.ids)), f'{lang}: missing/duplicate section IDs'
  s=(ROOT/lang/'index.html').read_text()
+ hero=re.search(r'<section class="hero".*?</section>',s,re.S).group(0)
+ for destination in ('about.html','press.html','work/'):
+  assert f'href="/{lang}/{destination}"' in hero, f'{lang}: missing localized hero identity link: {destination}'
  assert f'<html lang="{lang}" dir="rtl">' in s
  assert f'rel="canonical" href="https://a-samadi.com/{lang}/"' in s
  scripts=re.findall(r'<script>(.*?)</script>',s,re.S)

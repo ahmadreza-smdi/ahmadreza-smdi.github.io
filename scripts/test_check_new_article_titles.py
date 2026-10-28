@@ -317,6 +317,56 @@ class DailyTitleCLI(unittest.TestCase):
         shutil.copyfile(SCRIPT, installed)
         self.run_check(script=installed, default_root=True)
 
+    def maintenance_check(self, expected=0):
+        before = self.state()
+        result = subprocess.run([sys.executable, '-B', str(SCRIPT), '--root', str(self.root)],
+                                capture_output=True, text=True, timeout=15, env=GIT_ENV)
+        self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+        self.assertEqual(self.state(), before, 'Maintenance check must be read-only')
+        return result
+
+    def commit_existing_pages(self):
+        self.git('add', '.')
+        self.git('commit', '-qm', 'Existing page fixtures')
+
+    def test_maintenance_refuses_new_untracked_or_staged_pages(self):
+        self.assertIn('require --release-receipt', self.maintenance_check(1).stderr)
+        self.git('add', '.')
+        self.assertIn('require --release-receipt', self.maintenance_check(1).stderr)
+
+    def test_maintenance_accepts_65_decoded_characters_but_refuses_66(self):
+        self.commit_existing_pages()
+        self.title('en', 'A' * 64 + '&amp;')
+        self.assertIn('1 changed indexable pages', self.maintenance_check().stdout)
+        self.title('en', 'A' * 65 + '&amp;')
+        self.assertIn('exceeds 65', self.maintenance_check(1).stderr)
+
+    def test_maintenance_preserves_self_canonical_and_head_structure_checks(self):
+        self.commit_existing_pages()
+        path = self.root / self.paths['en']
+        original = path.read_text()
+        path.write_text(original.replace('https://a-samadi.com/', 'https://example.com/'))
+        self.assertIn('self-canonical', self.maintenance_check(1).stderr)
+        path.write_text(original.replace('</head>', '<title>Duplicate</title></head>'))
+        self.maintenance_check(1)
+
+    def test_maintenance_noindex_embed_does_not_need_parent_self_canonical(self):
+        path = self.root / self.paths['en']
+        source = self.html('tools/parent.html', 'A' * 70).replace(
+            '</head>', '<meta name="robots" content="noindex,follow"></head>')
+        path.write_text(source)
+        self.commit_existing_pages()
+        path.write_text(source.replace('</title>', ' (embed)</title>'))
+        self.assertIn('0 changed indexable pages', self.maintenance_check().stdout)
+
+    def test_maintenance_rejects_symlink_replacement(self):
+        self.commit_existing_pages()
+        path = self.root / self.paths['en']
+        target = self.directory / 'external.html'
+        target.write_bytes(path.read_bytes())
+        path.unlink(); path.symlink_to(target)
+        self.maintenance_check(1)
+
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)

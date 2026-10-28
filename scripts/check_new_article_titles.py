@@ -1,9 +1,11 @@
-"""Read-only title check for a newly prepared automatic daily EN/FA/AR family.
+"""Read-only title checks for a daily family or existing-page maintenance.
 
 Run with the actual helper Release-Prepared.json after hub synchronization and
 before commit. This checks current titles, not the helper's pre-sync byte hashes.
 It grants no publishing authority or human/native review certification. Length
 means Unicode code points after HTML entity decoding and whitespace collapse.
+Without a receipt, check changed existing indexable pages against 65 characters.
+New HTML pages still require the actual daily receipt and the 60-character limit.
 """
 import argparse
 from html.parser import HTMLParser
@@ -151,7 +153,7 @@ class HeadTitle(HTMLParser):
         if self.in_title:
             raise ValueError('Malformed title declaration')
 
-    def checked_length(self, canonical):
+    def checked_length(self, canonical, max_length=60):
         if (self.heads != 1 or self.head_ends != 1 or self.in_head
                 or self.titles != 1 or self.in_title):
             raise ValueError('Exactly one complete head and title are required')
@@ -162,8 +164,8 @@ class HeadTitle(HTMLParser):
                    and unicodedata.category(character) not in {'Cc', 'Cf', 'Cs'}
                    for character in title):
             raise ValueError('Title must contain rendered text')
-        if len(title) > 60:
-            raise ValueError('Title exceeds 60 Unicode characters')
+        if len(title) > max_length:
+            raise ValueError(f'Title exceeds {max_length} Unicode characters')
         return len(title)
 
 
@@ -230,13 +232,52 @@ def check(root, receipt_path):
     return lengths
 
 
+def check_existing(root):
+    """Audit local edits without borrowing or fabricating a daily release receipt."""
+    head = git(root, 'rev-parse', 'HEAD')
+    paths = git(root, 'diff', '--name-only', '-z', 'HEAD', '--', '*.html')
+    untracked = git(root, 'ls-files', '--others', '--exclude-standard', '-z', '--', '*.html')
+    if untracked:
+        raise ValueError('New HTML pages require --release-receipt')
+    sources = {}; lengths = {}
+    for raw_path in paths.split(b'\0'):
+        if not raw_path:
+            continue
+        relative = raw_path.decode('utf-8')
+        try:
+            git(root, 'cat-file', '-e', head.decode() + ':' + relative)
+        except subprocess.CalledProcessError:
+            raise ValueError('New HTML pages require --release-receipt: ' + relative)
+        data = read_regular(root / relative)
+        sources[relative] = data
+        source = data.decode('utf-8')
+        if re.search(r'<meta\b[^>]*name=[\"\']robots[\"\'][^>]*content=[\"\'][^\"\']*noindex', source, re.I):
+            continue
+        parser = HeadTitle(); parser.feed(source); parser.close()
+        route = relative[:-10] if relative.endswith('index.html') else relative
+        try:
+            lengths[relative] = parser.checked_length('https://a-samadi.com/' + route, max_length=65)
+        except ValueError as error:
+            raise ValueError(relative + ': ' + str(error))
+    if (git(root, 'rev-parse', 'HEAD') != head
+            or git(root, 'diff', '--name-only', '-z', 'HEAD', '--', '*.html') != paths
+            or git(root, 'ls-files', '--others', '--exclude-standard', '-z', '--', '*.html') != untracked
+            or any(read_regular(root / path) != data for path, data in sources.items())):
+        raise ValueError('HEAD or HTML files changed during checking')
+    return lengths
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--release-receipt', type=Path, required=True)
+    parser.add_argument('--release-receipt', type=Path)
     parser.add_argument('--root', type=Path, default=ROOT,
                         help='Website repository top level; defaults to script parent directory')
     args = parser.parse_args()
     try:
+        if args.release_receipt is None:
+            lengths = check_existing(args.root)
+            print(f'PASS: existing-page titles ({len(lengths)} changed indexable pages, limit 65); no files changed')
+            return 0
         lengths = check(args.root, args.release_receipt)
     except (ValueError, OSError, UnicodeError, subprocess.CalledProcessError, AssertionError) as error:
         print('FAIL: new daily title check: ' + str(error), file=sys.stderr)

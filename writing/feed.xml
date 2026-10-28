@@ -10,7 +10,7 @@
     <item>
       <title>The document tried to become the boss</title>
       <link>https://a-samadi.com/writing/prompt-injection-layered-controls.html</link>
-      <description>A fictional theatre shows why reading a document should not let it take over an AI assistant. A smaller tool set, checks on incoming content and human approval points can limit the damage from a misleading instruction.</description>
+      <description>A fictional theatre shows why a document should not control an AI assistant. Fewer tools, content checks and human approval can limit misleading instructions.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Tue, 27 Oct 2026 17:30:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/prompt-injection-layered-controls.html</guid>
@@ -18,7 +18,7 @@
     <item>
       <title>A beautiful building model can still be out of date</title>
       <link>https://a-samadi.com/writing/building-digital-twin-data-freshness.html</link>
-      <description>In a fictional office, Omar sees a polished building model while a room feels wrong. The useful question is not how realistic the model looks. It is which physical asset the data describes and when that data was observed.</description>
+      <description>In a fictional office, Omar sees a polished building model while a room feels wrong. Check which physical asset the data describes and when it was observed.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Tue, 27 Oct 2026 09:40:13 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/building-digital-twin-data-freshness.html</guid>
@@ -26,7 +26,7 @@
     <item>
       <title>Next door is not always comparable</title>
       <link>https://a-samadi.com/writing/property-comparables-evidence.html</link>
-      <description>Fictional buyer Mina places two neighbouring flats on a comparison rail. One card is an asking price; the other records an older agreed sale. Neither card becomes identical evidence merely because the doors are close. No actual property, price or valuation is represented.</description>
+      <description>Fictional buyer Mina compares neighbouring flats: one asking price and one older agreed sale. Nearby doors do not make them identical valuation evidence.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Sun, 25 Oct 2026 17:40:29 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/property-comparables-evidence.html</guid>
@@ -34,7 +34,7 @@
     <item>
       <title>The button moved. The AI did not notice.</title>
       <link>https://a-samadi.com/writing/computer-agent-check-result.html</link>
-      <description>In a fictional parcel studio, Nora asks an AI helper to prepare a label. A panel moves before the click arrives. The cursor moves, but the label is still missing. This illustrates a failure possibility; it is not an observed shipment or product test.</description>
+      <description>In a fictional parcel studio, Nora asks an AI helper for a label. A panel moves before the click arrives: the cursor moves, but the label is still missing.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Sat, 24 Oct 2026 22:00:44 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/computer-agent-check-result.html</guid>
@@ -42,7 +42,7 @@
     <item>
       <title>The money has a project name</title>
       <link>https://a-samadi.com/writing/dubai-project-escrow-controls.html</link>
-      <description>Fictional buyer Rami sees a beautiful model of an unfinished building. His useful question is not only what it will look like, but which records support the payment instructions. No real project or account is represented here.</description>
+      <description>Fictional buyer Rami sees a model of an unfinished building and asks which records support its payment instructions. No real project or account is represented.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Sat, 24 Oct 2026 21:38:08 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/dubai-project-escrow-controls.html</guid>
@@ -50,7 +50,7 @@
     <item>
       <title>The confident answer from the old price list</title>
       <link>https://a-samadi.com/writing/rag-check-business-records.html</link>
-      <description>In a fictional hotel, Leila asks an AI assistant for a meeting-room quote. A fluent answer appears. Before sending it, she spots the problem: its supporting sheet is an old version. This is a teaching scenario, not a report of an actual hotel or product test.</description>
+      <description>In a fictional hotel, Leila asks an AI assistant for a meeting-room quote. Before sending its fluent answer, she checks the source and finds an old price list.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Thu, 22 Oct 2026 06:31:41 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/rag-check-business-records.html</guid>
@@ -178,7 +178,7 @@
     <item>
       <title>Your building sent an alert.</title>
       <link>https://a-samadi.com/writing/building-leak-alert-response-checklist.html</link>
-      <description>Who receives it? Who responds? How do we know the issue was checked?</description>
+      <description>A fictional building leak alert shows why a named responder, a location check and a recorded outcome matter. Three questions to ask before buying a sensor.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Fri, 16 Oct 2026 20:11:11 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/building-leak-alert-response-checklist.html</guid>
@@ -202,7 +202,7 @@
     <item>
       <title>Why did the lights go out while you were there?</title>
       <link>https://a-samadi.com/writing/why-occupancy-sensor-lights-switch-off.html</link>
-      <description>A sensor can miss the clue that you are there.</description>
+      <description>Why occupancy sensors can miss a seated person: check their view, movement detection and timeout before asking the facilities team to investigate.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Thu, 15 Oct 2026 14:30:54 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/why-occupancy-sensor-lights-switch-off.html</guid>
@@ -218,7 +218,7 @@
     <item>
       <title>Why does AI need weather stations?</title>
       <link>https://a-samadi.com/writing/why-ai-weather-models-need-local-observations.html</link>
-      <description>A clever model still needs clues from the real world.</description>
+      <description>AI weather models need current observations as well as past patterns. Check location, update time and forecast window, and distinguish radar from forecasts.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Thu, 15 Oct 2026 08:31:10 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/why-ai-weather-models-need-local-observations.html</guid>
@@ -226,7 +226,7 @@
     <item>
       <title>How does a laser scan become a building record?</title>
       <link>https://a-samadi.com/writing/building-laser-scans-point-clouds-explained.html</link>
-      <description>Use the scan as evidence for a defined question. It does not certify structural safety, hidden services or universal accuracy. No real building was surveyed for this post.</description>
+      <description>Use a scan as evidence for a defined question. It does not certify structural safety, hidden services or universal accuracy. No real building was scanned.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Wed, 14 Oct 2026 14:30:41 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/building-laser-scans-point-clouds-explained.html</guid>
@@ -354,7 +354,7 @@
     <item>
       <title>Why can 8% rental yield still leave a cash shortfall?</title>
       <link>https://a-samadi.com/writing/ai-rental-yield-cash-flow.html</link>
-      <description>A correct rental-yield calculation can still leave a property owner covering a cash shortfall. Follow one fictional home from the headline to the money left after costs and the loan.</description>
+      <description>A correct rental-yield calculation can still leave a cash shortfall. Follow a fictional home from headline yield to money left after costs and the loan.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/ai-rental-yield-cash-flow.html</guid>

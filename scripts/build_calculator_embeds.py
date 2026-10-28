@@ -5,6 +5,7 @@ ROOT=Path(__file__).resolve().parent.parent
 def embedded(source,stem):
     if 'data-share' not in source or 'data-print-inputs' not in source:raise ValueError('Primary calculator lacks sharing controls')
     result=source.replace('class="property-calculator"','class="property-calculator calculator-embed"')
+    result=re.sub(r'(<title>)(.*?)(</title>)',lambda m:m[1]+m[2]+' (embed)'+m[3],result,count=1)
     if 'calculator-embed' not in result:result=re.sub(r'<body\b([^>]*class=")',r'<body\1calculator-embed ',result,count=1)
     result=re.sub(r'<meta name="robots" content="[^"]*">','<meta name="robots" content="noindex,follow">',result)
     result=re.sub(r'<script src="/js/site-analytics.js[^\"]*" defer></script>','',result)
