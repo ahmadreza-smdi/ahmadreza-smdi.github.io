@@ -124,6 +124,8 @@ def brand_bios(data, lang):
     for key, text in brand['bios'][lang].items():
         heading = labels['bio_headings'][key]
         parts.append(f'<h3 id="bio-{key}">{escape(heading)}</h3><p>{mixed(text, lang)}</p>')
+    copy = data['pages'][lang]
+    parts.append(f'<h3>{escape(copy["background_heading"])}</h3><p>{mixed(copy["background"], lang)}</p>')
     parts.append('</section>')
     return parts
 
