@@ -2,153 +2,51 @@
 
 > Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead of Appraiva, which builds AI real estate intelligence, and Co-Founder & CEO of Royal Abraj Group.
 
-Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احمد صمدی. Arabic: أحمدرضا صمدي. Appraiva is based in Cleveland, Ohio, United States; he works remotely from Dubai. It builds AI tools that help real estate investors and developers find distressed and off-market properties through imagery analysis and enriched property data. Royal Abraj Group covers property brokerage and documents-clearing services; he leads its digital strategy and technology.
-
-English is the primary language of this site. Persian (/fa/) and Arabic (/ar/) pages are translations of the English originals and are linked to them with hreflang.
-
-Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and work; the explainers and films use fictional teaching examples where they say so.
-
-Positioning, in his own words: "I build AI that helps people make better property decisions, and I run a property business in Dubai, so I know where the AI must stop."
-
-Series: Start with the Decision (ideas and newsletter); Property Decision Data (studies and tools); Tech, explained (plain-language articles and films).
+Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احمد صمدی. Arabic: أحمدرضا صمدي.
 
 ## Facts — as of October 2026
 
 - Based in Dubai, United Arab Emirates; also known as Ahmad Samadi.
 - Co-Founder & Technical Lead of Appraiva since October 2023. Appraiva is based in Cleveland, Ohio, United States; he works remotely from Dubai. It builds AI tools for investors and developers to find distressed and off-market properties through imagery analysis and enriched property data.
-- Co-Founder & CEO of Royal Abraj Group since 2022. The Dubai group covers property brokerage and documents-clearing services; he leads digital strategy and technology. The start month is not stated.
+- Co-Founder & CEO of Royal Abraj Group since 2022. The Dubai group covers property brokerage and documents-clearing services; he leads digital strategy and technology.
 - Background: enterprise data engineering and machine learning; Azure data infrastructure for CRM migration and analytics at Oxfam Novib; predictive customer segmentation at MCI.
 - Education: Master of Science in Computer Software Engineering, specialization in Data, Shahid Beheshti University, 2019–2021.
-- Spoken languages are not stated in the approved biography/CV. Translated pages do not establish language proficiency.
 - Contact: ahmadreza.smdi@gmail.com.
 - Other people share the name Ahmad Samadi; this is the official site of the Dubai-based technology entrepreneur.
-
-
-## Four main topics
-
-- [AI property valuation](https://a-samadi.com/writing/ai-home-value-estimates.html)
-- [Rent vs owning](https://a-samadi.com/studies/rent-own-2026/)
-- [AI in real estate decisions: where AI should stop](https://a-samadi.com/writing/ai-human-review-real-estate.html)
-- [Dubai property costs and data](https://a-samadi.com/writing/which-dubai-property-source.html)
 
 ## Profile
 
 - [Homepage](https://a-samadi.com/): Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead at Appraiva, and Co-Founder & CEO of Royal Abraj Group.
 - [Biography](https://a-samadi.com/about.html): Ahmadreza Samadi builds AI for property decisions at Appraiva and leads Royal Abraj Group in Dubai. Read his biography, ideas, studies and public work.
 - [Press & media kit](https://a-samadi.com/press.html): Biographies, original research and tools, portrait and written contact details for Ahmadreza Samadi, a Dubai-based technology entrepreneur.
-- [Now](https://a-samadi.com/now.html): Ahmadreza Samadi's current work at Appraiva and Royal Abraj Group, alongside public AI tools, data studies and selected explainers. October 2026.
-- [Writing topics](https://a-samadi.com/speaking.html): Writing topics from Ahmadreza Samadi's work in AI products, property data and business systems, with related published work and written contact details.
-- [Rent vs owning: 393 metro cash-budget scenarios](https://a-samadi.com/studies/rent-own-2026/): Rent vs owning through hypothetical landlord cash budgets across 393 metros. Compare HUD rent areas, ACS values, costs and limits; not a personal buy-or-rent answer.
-- [Signature ideas](https://a-samadi.com/ideas.html): Three practical ideas from Ahmadreza Samadi’s essays: start with the decision, define where AI must stop, and count cost per accepted result.
-- [Property Decision Data](https://a-samadi.com/studies/): Open property studies by Ahmadreza Samadi, with source years, geography, assumptions, methods and practical decision tools.
-- [Rent burden in 386 US metros: ACS 2024](https://a-samadi.com/studies/rent-burden/): A reproducible ACS 2024 study of 30% and 50% gross-rent-to-income thresholds, with explicit denominator exclusions and uncertainty limits.
-- [Property studies explorer](https://a-samadi.com/studies/explorer.html): Search US metro rent-burden estimates and illustrative ownership budgets. Keep data years, assumptions and geography limits visible.
-- [AI agents are learning when to ask.](https://a-samadi.com/carousels/tech-trend-assisted-permissions.html): GitHub has made assisted permissions generally available in Copilot CLI, the Copilot app and VS Code. The useful question is what still needs your approval.
-- [Technology explainers](https://a-samadi.com/carousels/): Source-dated visual explainers on AI and business technology by Ahmadreza Samadi.
 
 ## Work
 
 - [Ahmadreza Samadi at Appraiva | Co-Founder & Technical Lead](https://a-samadi.com/work/appraiva.html): Ahmadreza Samadi is Appraiva’s Co-Founder & Technical Lead, working remotely from Dubai on AI real estate intelligence at the Cleveland, Ohio company.
 - [Oxfam Novib: CRM data and analytics](https://a-samadi.com/work/oxfam-novib.html): Ahmadreza Samadi’s background includes Azure data infrastructure for CRM migration and analytics at Oxfam Novib.
 - [Ahmadreza Samadi at Royal Abraj Group | Co-Founder & CEO](https://a-samadi.com/work/royal-abraj.html): Ahmadreza Samadi, Co-Founder & CEO of Royal Abraj Group in Dubai, leads digital strategy and technology for property brokerage and documents-clearing services.
-- [Selected work](https://a-samadi.com/work/): AI for property decisions, supported by product engineering, data systems and public tools.
 - [Hamrah e Aval (MCI)](https://a-samadi.com/work/mci.html): Ahmadreza Samadi’s MCI work used RFM and behavioral data for customer segmentation, churn-risk analysis and campaign targeting, without uplift claims.
 
-## Topics
+## Studies
 
-- [AI in real estate: evidence and decisions](https://a-samadi.com/topics/ai-real-estate.html): A reading path through property data, human review, AI workflow costs and rental cash flow, with Ahmadreza Samadi’s work at Appraiva as context.
-- [Building business systems in Dubai](https://a-samadi.com/topics/business-systems-dubai.html): A reading path from Ahmadreza Samadi’s Royal Abraj work to customer workflows, decision-first product design, connected-app permissions and cash timing.
-- [Tech, explained](https://a-samadi.com/topics/tech-explained.html): Plain-language technology explainers and original films. Choose a mechanism, check its limits, and connect it to the decision you need to make.
+- [Rent vs owning: 393 metro cash-budget scenarios](https://a-samadi.com/studies/rent-own-2026/): Rent vs owning through hypothetical landlord cash budgets across 393 metros. Compare HUD rent areas, ACS values, costs and limits; not a personal buy-or-rent answer.
+- [Property Decision Data](https://a-samadi.com/studies/): Open property studies by Ahmadreza Samadi, with source years, geography, assumptions, methods and practical decision tools.
+- [Rent burden in 386 US metros: ACS 2024](https://a-samadi.com/studies/rent-burden/): A reproducible ACS 2024 study of 30% and 50% gross-rent-to-income thresholds, with explicit denominator exclusions and uncertainty limits.
 
 ## Writing
 
 - [Start with the decision, then build the AI](https://a-samadi.com/writing/start-with-the-decision.html): A practical approach to AI product decisions: start with the customer’s decision, assess the evidence, and evaluate the whole workflow.
 - [AI cost per accepted result](https://a-samadi.com/writing/ai-cost-per-verified-result.html): A practical framework for measuring AI workflow cost: include tokens, tools, retries and human review, then divide by results that pass verification.
-- [Writing on AI Products, Data and PropTech](https://a-samadi.com/writing/): Articles and explainers by Ahmadreza Samadi on building AI products, AI costs and decision models, connected apps, and real estate technology.
-- [Connected AI Apps: Access, Scope and Approval](https://a-samadi.com/writing/connected-ai-apps.html): What happens when you connect an app to ChatGPT or Gemini? A practical guide to accounts, permissions, reading versus acting, and approval before you connect.
-- [What is Jev? AI Decision Models Explained](https://a-samadi.com/writing/jev-ai-decision-model.html): How TypeSafe describes Jev, how bounded decisions differ from chatbot replies, and what to check before using a model to route a real workflow.
-- [Passkeys and Face ID explained](https://a-samadi.com/writing/passkeys-face-id.html): A passkey proves access to a private key; Face ID approves its use locally. Learn what the website receives and what to check for account recovery.
-- [How ZIP compression works](https://a-samadi.com/writing/how-zip-files-work.html): ZIP bundles files and can use lossless compression. Learn how DEFLATE restores every byte, why JPG and MP4 may barely shrink, and why compression is not encryption.
 - [AI Agent Safety: Accounts, Tools and Approval](https://a-samadi.com/writing/ai-agent-safety-boundaries.html): Before an AI agent acts, define its account, data, tools and approval rules. A practical guide to permissions enforced outside the model and revoking access.
 - [AI in real estate decisions: where AI should stop](https://a-samadi.com/writing/ai-human-review-real-estate.html): AI can prepare real estate information; people must verify material claims and explain uncertainty before a client decides. Use an explicit review handoff.
-- [How to check an image claim, AI-made or not](https://a-samadi.com/writing/verify-ai-image-claims.html): A practical checklist for checking an image and its claim: find the source, reverse-search it, inspect provenance signals and seek independent corroboration.
-- [Why Foldable Phones Have Two Batteries](https://a-samadi.com/writing/foldable-two-batteries.html): Two batteries can power one foldable phone with one charge reading. See why capacity and usable energy matter more than averaging two percentages.
 - [AI property valuation: what an estimate misses](https://a-samadi.com/writing/ai-home-value-estimates.html): AI property valuation needs current facts, comparable sales and uncertainty checks. Learn how to review an estimate and resolve conflicting valuations.
-- [Home robots: shipments and autonomy](https://a-samadi.com/writing/humanoid-robots-at-home.html): Ahmadreza Samadi explains how to read humanoid robot claims: shipment forecasts, home robot preorders, remote assistance and evidence of useful autonomy.
-- [How Phones Send Satellite Messages](https://a-samadi.com/writing/how-satellite-messaging-works.html): Follow a supported phone message from a satellite back to Earth. Check service support, a clear sky view and delivery limits before going off-grid.
-- [Does Incognito actually make you invisible?](https://a-samadi.com/writing/incognito-private-browsing.html): A simple gift-shopping story explains Incognito, cookies, website records, saved files and what private browsing actually hides. By Ahmadreza Samadi.
-- [Why AI sounds confident when wrong](https://a-samadi.com/writing/why-ai-sounds-confident.html): Ahmadreza Samadi explains confident AI mistakes with a fictional museum example, an animated film and a simple way to check claims against evidence.
-- [What does Accept cookies actually mean?](https://a-samadi.com/writing/what-accept-cookies-means.html): The same small browser note can remember your shopping basket or help a company recognise you across websites. The choice is about what that note does.
-- [Why does your phone stop charging at 80%?](https://a-samadi.com/writing/why-phone-stops-charging-at-80.html): A chosen limit, a learned routine and a heat pause can look similar. They have different triggers and different ways to resume charging.
-- [How can a profitable business run out of cash?](https://a-samadi.com/writing/profitable-but-out-of-cash.html): A profitable sale can leave a business unable to pay its supplier. Follow one order to see why earned money and available cash are different.
-- [Why can 8% rental yield still leave a cash shortfall?](https://a-samadi.com/writing/ai-rental-yield-cash-flow.html): A correct rental-yield calculation can still leave a cash shortfall. Follow a fictional home from headline yield to money left after costs and the loan.
-- [Why full storage slows a computer](https://a-samadi.com/writing/why-full-storage-slows-computer.html): Storage is working room too. A ten-slide explainer on temporary files, RAM overflow and SSD housekeeping, with practical cleanup advice.
-- [iPhone Duo: the $800 gap per day](https://a-samadi.com/writing/iphone-duo-price-per-day.html): A 104-second film turns the $800 US launch-price gap between iPhone Duo and iPhone 18 Pro into a daily comparison, with the assumptions made clear.
-- [Contactless cards without batteries](https://a-samadi.com/writing/how-contactless-cards-work.html): A payment terminal briefly powers the chip in a passive contactless card. Follow the energy and the payment data through a tap.
-- [How noise cancellation works](https://a-samadi.com/writing/how-noise-cancellation-works.html): Microphones measure outside noise and a speaker adds a carefully timed opposite wave. Why this reduces a hum better than every sudden voice.
-- [Why USB-C cables work differently](https://a-samadi.com/writing/why-usb-c-cables-differ.html): USB-C describes the connector. Power, file-transfer speed and video support are separate capabilities to check in the whole connection.
-- [How phones read text in photos](https://a-samadi.com/writing/how-photo-text-recognition-works.html): OCR finds text regions and recognises visual patterns as letters and words. The AI feature can save typing, but copied text still needs checking.
-- [Why is Wi-Fi slow even with full bars?](https://a-samadi.com/writing/why-wifi-is-slow-with-full-bars.html): Full Wi-Fi bars describe your signal to the router, not the speed of the whole internet route. Learn what else can slow it down and how to compare.
-- [Why AI loses earlier chat context](https://a-samadi.com/writing/why-ai-loses-earlier-chat-context.html): Chat history, working context, summaries, saved memory and training are different things. Understand why a chatbot can miss an earlier detail and how to help.
-- [How many coffees to break even?](https://a-samadi.com/writing/how-many-coffees-to-break-even.html): A fictional cafe sells 100 coffees for $500 and makes $0 operating profit. Follow its costs to understand contribution and break-even.
+- [Why can 8% rental yield still leave a cash shortfall?](https://a-samadi.com/writing/ai-rental-yield-cash-flow.html) (article + [film](https://a-samadi.com/watch/rental-yield.html)): A correct rental-yield calculation can still leave a cash shortfall. Follow a fictional home from headline yield to money left after costs and the loan.
 - [How does property data enrichment connect the right records?](https://a-samadi.com/writing/property-data-enrichment.html): A fictional image-and-record comparison shows how to check property identity, source dates and unresolved claims before combining property information.
-- [How can a building have a live digital copy?](https://a-samadi.com/writing/how-building-digital-twins-work.html): Sensors connect real rooms and equipment to an updating digital model. See how a building digital twin turns readings into useful context.
-- [How does ChatGPT's Intelligent UI work?](https://a-samadi.com/writing/chatgpt-intelligent-ui-explained.html): A simple explanation of ChatGPT's interactive answers, the 7 October announcement and a fictional budget that shows why assumptions still matter.
-- [How do property tokens work, and can you sell them?](https://a-samadi.com/writing/dubai-property-tokenisation-explained.html): A simple property-token explainer connects digital ownership, fractional shares and net rent with the separate challenge of finding a buyer.
-- [Choosing a smaller AI model](https://a-samadi.com/writing/small-ai-models-task-routing-explained.html): Haiku 5.5 is a current example of narrow AI work. Learn task definition, evaluation, routing and a fictional cost calculation without assuming equal quality.
-- [AI data-center site readiness](https://a-samadi.com/writing/ai-data-center-site-readiness.html): Power, cooling, networks and building fit explained through fictional sites, with current JLL and Meta sources and questions for specialist review.
-- [Why does moving data matter for AI chips?](https://a-samadi.com/writing/ai-inference-memory-movement-explained.html): Our original framework: identify the workload, locate the bottleneck, then test the complete result. No chip test, measured saving or vendor ranking is claimed.
-- [Building laser scans explained](https://a-samadi.com/writing/building-laser-scans-point-clouds-explained.html): Use a scan as evidence for a defined question. It does not certify structural safety, hidden services or universal accuracy. No real building was scanned.
-- [Why does AI need weather stations?](https://a-samadi.com/writing/why-ai-weather-models-need-local-observations.html): AI weather models need current observations as well as past patterns. Check location, update time and forecast window, and distinguish radar from forecasts.
 - [Why rent divided by home value is not property yield](https://a-samadi.com/writing/why-rent-to-value-is-not-property-yield.html): Why a metro rent-to-value ratio is not an observed property yield. A fictional cash budget shows the difference and the next evidence to check.
-- [Why did the lights go out while you were there?](https://a-samadi.com/writing/why-occupancy-sensor-lights-switch-off.html): Why occupancy sensors can miss a seated person: check their view, movement detection and timeout before asking the facilities team to investigate.
-- [How a virtual PC can use your real printer](https://a-samadi.com/writing/virtual-machine-device-sharing-explained.html): Our original checklist: Which virtual PC? Which resources? Do I need each one? The film is conceptual, not product footage or a tested setup.
-- [Who checks the AI’s homework?](https://a-samadi.com/writing/ai-document-review-claim-evidence-checklist.html): Our checklist: write the claim, locate its support, then resolve the gap or keep it visible.
-- [Your building sent an alert.](https://a-samadi.com/writing/building-leak-alert-response-checklist.html): A fictional building leak alert shows why a named responder, a location check and a recorded outcome matter. Three questions to ask before buying a sensor.
-- [Where does your wearable’s AI run?](https://a-samadi.com/writing/where-wearable-ai-computation-runs.html): Which task runs locally? What is sent out? What happens without a connection?
 - [Dubai property costs and data: choose the right source](https://a-samadi.com/writing/which-dubai-property-source.html): Choose Dubai property sources by purpose: sale and mortgage fees, rental benchmarks, sales-price indices or a specific valuation. Keep dates and limits visible.
-- [The message looks convincing.](https://a-samadi.com/writing/on-device-ai-scam-warnings-explained.html): Our framework: stop the rushed action, use a trusted separate contact route, keep uncertainty visible.
-- [Your thermostat speaks. Who listens?](https://a-samadi.com/writing/bacnet-building-devices-common-language.html): Our checklist: which devices, which data and commands, and who verifies the integration?
-- [A map answer. The right place?](https://a-samadi.com/writing/geospatial-ai-map-answer-review.html): Which boundary? Which date? Which source and assumptions? Keep unsupported conclusions open.
-- [Why your phone puts you across the street](https://a-samadi.com/writing/phone-location-across-street.html): A fictional pickup explains reflected satellite signals, an uncertain map dot and a practical way to agree where to meet.
-- [AI agents need shared notes, and a way to check them](https://a-samadi.com/writing/ai-agents-shared-notebook.html): A fictional repair workshop explains reusable agent knowledge, context checks and a boundary for private project information.
-- [Tesla says Roadster can fly: three questions to ask](https://a-samadi.com/writing/tesla-roadster-flight-claim.html): An illustrated hangar explains thrust and separates a manufacturer claim from availability and public-road approval.
 - [AVM vs appraisal: which fits your decision?](https://a-samadi.com/writing/avm-vs-appraisal.html): Choose the valuation process for the decision: compare AVMs, broker opinions and appraisals, then examine identity, dates, evidence and uncertainty.
 - [Rent or buy: the five numbers that decide it](https://a-samadi.com/writing/rent-or-buy-five-numbers.html): Compare rent and ownership using matched housing, running costs, upfront cash, time and net exit proceeds. Keep cash affordability separate from wealth.
-- [Where the person signs off: property AI review](https://a-samadi.com/writing/human-review-property-ai-checklist.html): A practical human-review checklist for property AI: define the decision, check evidence, preserve uncertainty and record who can approve the next action.
-- [Dubai property buying costs, item by item](https://a-samadi.com/writing/dubai-property-buying-costs.html): Build a dated Dubai purchase budget from official registration fees, mortgage charges and your own quotes. Separate total fees from the buyer’s share.
-- [How cold outdoor air can help warm a home](https://a-samadi.com/writing/heat-pump-moves-heat-explained.html): A fictional home and an illustrative energy balance explain how a heat pump moves heat.
-- [AI agents: ability is not authority](https://a-samadi.com/writing/ai-agent-permissions-ability-authority.html): A fictional invoice explains reading, drafting and approval boundaries in business AI.
-- [Same rent, different service-charge bill](https://a-samadi.com/writing/dubai-service-charge-same-rent.html): A fictional Dubai property comparison separates advertised rent from cash remaining after one recurring cost.
-- [RAG: check the record behind an AI answer](https://a-samadi.com/writing/rag-check-business-records.html): In a fictional hotel, Leila asks an AI assistant for a meeting-room quote. Before sending its fluent answer, she checks the source and finds an old price list.
-- [Dubai project escrow: control is not a guarantee](https://a-samadi.com/writing/dubai-project-escrow-controls.html): Fictional buyer Rami sees a model of an unfinished building and asks which records support its payment instructions. No real project or account is represented.
-- [AI computer use: check the result, not just the click](https://a-samadi.com/writing/computer-agent-check-result.html): In a fictional parcel studio, Nora asks an AI helper for a label. A panel moves before the click arrives: the cursor moves, but the label is still missing.
 - [Property comparables: evidence beyond the nearby price](https://a-samadi.com/writing/property-comparables-evidence.html): Fictional buyer Mina compares neighbouring flats: one asking price and one older agreed sale. Nearby doors do not make them identical valuation evidence.
-- [Building digital twins: ask how fresh the data is](https://a-samadi.com/writing/building-digital-twin-data-freshness.html): In a fictional office, Omar sees a polished building model while a room feels wrong. Check which physical asset the data describes and when it was observed.
-- [Prompt injection: give documents less power](https://a-samadi.com/writing/prompt-injection-layered-controls.html): A fictional theatre shows why a document should not control an AI assistant. Fewer tools, content checks and human approval can limit misleading instructions.
-- [AI evaluations: test the task, not just the demo](https://a-samadi.com/writing/business-ai-evaluation-cases.html): A polished demonstration does not establish reliability for the actual task.
-
-## Films
-
-- [Watch: Why AI sounds confident when wrong](https://a-samadi.com/watch/ai-confidence.html): By Ahmadreza Samadi. An animated fictional museum example explains confident AI mistakes and how to check evidence. English narration and captions.
-- [Watch: What Accept cookies means](https://a-samadi.com/watch/cookie-consent.html): By Ahmadreza Samadi. An animated explanation of cookie banners and what accepting optional purposes may mean. English narration and captions.
-- [Watch: Why phones stop charging at 80%](https://a-samadi.com/watch/charging-80.html): By Ahmadreza Samadi. An animated explanation of charge limits, learned charging routines and heat pauses. English narration and captions.
-- [Watch: Profitable but out of cash](https://a-samadi.com/watch/profit-cash.html): An animated example of a profitable business short of cash because bills and customer payments fall on different dates, with English narration and captions.
-- [Watch: AI rental yield and cash flow](https://a-samadi.com/watch/rental-yield.html): By Ahmadreza Samadi. Watch the 99-second film to see why an 8% gross rental yield can coexist with a cash shortfall.
-- [Watch: iPhone Duo’s $800 price gap](https://a-samadi.com/watch/iphone-duo.html): Watch Ahmadreza Samadi’s 104-second film comparing the $800 model-price gap over three years, with English captions, a transcript and calculation limits.
-- [Watch: Why your phone puts you across the street](https://a-samadi.com/watch/phone-location-across-street.html): Watch the English animated film about reflected satellite signals, an uncertain map dot and a fictional pickup.
-- [Watch: AI agents need shared notes, and a way to check them](https://a-samadi.com/watch/ai-agents-shared-notebook.html): Watch the English animated film about shared agent knowledge, context checks and a fictional repair workshop.
-- [Watch: Tesla says Roadster can fly: three questions to ask](https://a-samadi.com/watch/tesla-roadster-flight-claim.html): Watch the English animated film separating Tesla flight claims, access conditions and intended use, with an illustrated thrust mechanism.
-- [Watch: How cold outdoor air can help warm a home](https://a-samadi.com/watch/heat-pump-moves-heat-explained.html): Watch the English film: A fictional home and an illustrative energy balance explain how a heat pump moves heat.
-- [Watch: AI agents: ability is not authority](https://a-samadi.com/watch/ai-agent-permissions-ability-authority.html): Watch the English film: A fictional invoice explains reading, drafting and approval boundaries in business AI.
-- [Watch: Same rent, different service-charge bill](https://a-samadi.com/watch/dubai-service-charge-same-rent.html): Watch the English film: A fictional Dubai property comparison separates advertised rent from cash remaining after one recurring cost.
-- [Watch: RAG: check the record behind an AI answer](https://a-samadi.com/watch/rag-check-business-records.html): Watch the English film: in a fictional hotel, Leila checks an AI meeting-room quote and finds an old price list behind the fluent answer. Check the record.
-- [Watch: Dubai project escrow: control is not a guarantee](https://a-samadi.com/watch/dubai-project-escrow-controls.html): Watch the English film: fictional buyer Rami asks which records support a Dubai project’s payment instructions. No real project or account is shown.
-- [Watch: AI computer use: check the result, not just the click](https://a-samadi.com/watch/computer-agent-check-result.html): Watch the English film: in a fictional parcel studio, an AI clicks after a panel moves. The cursor moves, but the label is missing. Check the result.
-- [Watch: Property comparables: evidence beyond the nearby price](https://a-samadi.com/watch/property-comparables-evidence.html): Watch the English film: fictional buyer Mina compares two neighbouring flats, an asking price and an older agreed sale. Proximity is not identical evidence.
-- [Watch: Building digital twins: ask how fresh the data is](https://a-samadi.com/watch/building-digital-twin-data-freshness.html): Watch the English film: a fictional office model looks convincing while a room feels wrong. Check the physical asset and when its data was observed.
-- [Watch: Prompt injection: give documents less power](https://a-samadi.com/watch/prompt-injection-layered-controls.html): Watch the English film: a fictional theatre shows why documents need limited power over an AI assistant, with fewer tools, checks and human approval.
-- [Watch: AI evaluations: test the task, not just the demo](https://a-samadi.com/watch/business-ai-evaluation-cases.html): Watch the English film: A polished demonstration does not establish reliability for the actual task.
 
 ## Tools
 
@@ -158,29 +56,18 @@ Series: Start with the Decision (ideas and newsletter); Property Decision Data (
 - [Valuation range checker](https://a-samadi.com/tools/valuation-range.html): Compare two to five property estimates: median, range, spread and transparent review flags. Your inputs stay in your browser.
 - [Dubai rental yield: gross versus net](https://a-samadi.com/tools/dubai-rental-yield.html): Compare potential gross rent with net operating income after vacancy, service charges and your own costs. No market rates or returns are assumed.
 
-## Public code and data
-
-- [AI workflow cost ledger](https://github.com/ahmadreza-smdi/ai-workflow-cost/releases/tag/v0.1.2): Testing an AI workflow? Start with cost per caller-accepted result; the workbook and worked examples are fictional.
-- [ACS2024 metro rent burden](https://github.com/ahmadreza-smdi/metro-rent-burden/releases/tag/v1.1.1): Comparing rent pressure across metros? Start with the ACS2024 CSV, chart, method and limits; this is not a property-level estimate.
-
 ## Official profiles
 
-- [LinkedIn](https://www.linkedin.com/in/ahmadreza-samadi/)
-- [Instagram](https://www.instagram.com/ahmadreza_smdi/)
-- [GitHub](https://github.com/ahmadreza-smdi)
-- [Crunchbase](https://www.crunchbase.com/person/ahmadreza-samadi)
-- [YouTube](https://www.youtube.com/@ahmadreza-samadi)
-- [DEV](https://dev.to/ahmadreza_smdi)
-- [Peerlist](https://peerlist.io/ahmadrezasmdi)
-- [Product Hunt](https://www.producthunt.com/@ahmadreza_samadi)
-- [Wellfound](https://wellfound.com/u/ahmadreza-samadi)
+- [GitHub](https://github.com/ahmadreza-smdi): Ahmadreza Samadi’s public GitHub profile, connecting his repositories with the personal website.
+- [YouTube](https://www.youtube.com/@ahmadreza-samadi): Ahmadreza Samadi’s YouTube channel, connecting published explainer films with his personal website.
+- [DEV](https://dev.to/ahmadreza_smdi): Ahmadreza Samadi’s DEV profile, connecting published technical writing with his personal website.
+- [LinkedIn](https://www.linkedin.com/in/ahmadreza-samadi/): Professional profile listed by Ahmadreza Samadi as an official account on his biography page.
+- [Instagram](https://www.instagram.com/ahmadreza_smdi/): Instagram profile listed by Ahmadreza Samadi as an official account on his biography page.
+- [Crunchbase](https://www.crunchbase.com/person/ahmadreza-samadi): Crunchbase profile listed in the biography; public access and its website backlink remain unverified.
+- [Peerlist](https://peerlist.io/ahmadrezasmdi): Peerlist profile listed by Ahmadreza Samadi as an official account on his biography page.
+- [Product Hunt](https://www.producthunt.com/@ahmadreza_samadi): Product Hunt profile listed by Ahmadreza Samadi as an official account on his biography page.
+- [Wellfound](https://wellfound.com/u/ahmadreza-samadi): Wellfound profile listed by Ahmadreza Samadi as an official account on his biography page.
 
-## Optional
+## Complete catalogue
 
-- [Persian homepage](https://a-samadi.com/fa/): the site in Persian
-- [Arabic homepage](https://a-samadi.com/ar/): the site in Arabic
-- [Persian writing](https://a-samadi.com/fa/writing/): Persian translations of the articles
-- [Arabic writing](https://a-samadi.com/ar/writing/): Arabic translations of the articles
-- [Homepage work index (JSON)](https://a-samadi.com/ask-index.json): existing homepage passages and destinations in English, Persian and Arabic.
-- [RSS feed](https://a-samadi.com/writing/feed.xml): new English articles
-- [Sitemap](https://a-samadi.com/sitemap.xml): every page with its language alternates
+- [Full site catalogue](https://a-samadi.com/llms-full.txt): All English pages, films, public code resources, translated entry points and machine-readable discovery files.

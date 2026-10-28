@@ -1,8 +1,8 @@
-"""Write /llms.txt: a plain-language map of the site for AI assistants and agents (llmstxt.org).
+"""Build a curated /llms.txt and a complete /llms-full.txt from the public site.
 
 English pages come first and carry the descriptions; Persian and Arabic entry points are listed
 under Optional. Titles and descriptions are read from the pages themselves, so the file stays in
-step with the site. Run with --check to report whether llms.txt is out of date.
+step with the site. Run with --check to validate both outputs and description lengths.
 """
 from pathlib import Path
 from build_profile_facts import FACTS
@@ -19,38 +19,37 @@ SUMMARY = (
     'Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead of Appraiva, '
     'which builds AI real estate intelligence, and Co-Founder & CEO of Royal Abraj Group.'
 )
-NOTES = (
-    'Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احمد صمدی. Arabic: أحمدرضا صمدي. '
-    'Appraiva is based in Cleveland, Ohio, United States; he works remotely from Dubai. It builds AI tools '
-    'that help real estate investors and developers find distressed and off-market properties through '
-    'imagery analysis and enriched property data. Royal Abraj Group covers property brokerage and '
-    'documents-clearing services; he leads its digital strategy and technology.\n\n'
-    'English is the primary language of this site. Persian (/fa/) and Arabic (/ar/) pages are translations of the '
-    'English originals and are linked to them with hreflang.\n\n'
-    'Contact: ahmadreza.smdi@gmail.com. Facts on this site describe his own roles and work; the explainers and films '
-    'use fictional teaching examples where they say so.\n\n'
-    'Positioning, in his own words: "I build AI that helps people make better property decisions, and I run a '
-    'property business in Dubai, so I know where the AI must stop."\n\n'
-    'Series: Start with the Decision (ideas and newsletter); Property Decision Data (studies and tools); '
-    'Tech, explained (plain-language articles and films).'
-)
+NOTES = 'Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احمد صمدی. Arabic: أحمدرضا صمدي.'
 PROFILES = [
-    ('LinkedIn', 'https://www.linkedin.com/in/ahmadreza-samadi/'),
-    ('Instagram', 'https://www.instagram.com/ahmadreza_smdi/'),
-    ('GitHub', 'https://github.com/ahmadreza-smdi'),
-    ('Crunchbase', 'https://www.crunchbase.com/person/ahmadreza-samadi'),
-    ('YouTube', 'https://www.youtube.com/@ahmadreza-samadi'),
-    ('DEV', 'https://dev.to/ahmadreza_smdi'),
-    ('Peerlist', 'https://peerlist.io/ahmadrezasmdi'),
-    ('Product Hunt', 'https://www.producthunt.com/@ahmadreza_samadi'),
-    ('Wellfound', 'https://wellfound.com/u/ahmadreza-samadi'),
+    ('GitHub', 'https://github.com/ahmadreza-smdi', 'Ahmadreza Samadi’s public GitHub profile, connecting his repositories with the personal website.'),
+    ('YouTube', 'https://www.youtube.com/@ahmadreza-samadi', 'Ahmadreza Samadi’s YouTube channel, connecting published explainer films with his personal website.'),
+    ('DEV', 'https://dev.to/ahmadreza_smdi', 'Ahmadreza Samadi’s DEV profile, connecting published technical writing with his personal website.'),
+    ('LinkedIn', 'https://www.linkedin.com/in/ahmadreza-samadi/', 'Professional profile listed by Ahmadreza Samadi as an official account on his biography page.'),
+    ('Instagram', 'https://www.instagram.com/ahmadreza_smdi/', 'Instagram profile listed by Ahmadreza Samadi as an official account on his biography page.'),
+    ('Crunchbase', 'https://www.crunchbase.com/person/ahmadreza-samadi', 'Crunchbase profile listed in the biography; public access and its website backlink remain unverified.'),
+    ('Peerlist', 'https://peerlist.io/ahmadrezasmdi', 'Peerlist profile listed by Ahmadreza Samadi as an official account on his biography page.'),
+    ('Product Hunt', 'https://www.producthunt.com/@ahmadreza_samadi', 'Product Hunt profile listed by Ahmadreza Samadi as an official account on his biography page.'),
+    ('Wellfound', 'https://wellfound.com/u/ahmadreza-samadi', 'Wellfound profile listed by Ahmadreza Samadi as an official account on his biography page.'),
 ]
-BEST_PAGES = [
-    ('AI property valuation', 'writing/ai-home-value-estimates.html'),
-    ('Rent vs owning', 'studies/rent-own-2026/'),
-    ('AI in real estate decisions: where AI should stop', 'writing/ai-human-review-real-estate.html'),
-    ('Dubai property costs and data', 'writing/which-dubai-property-source.html'),
-]
+# Primary destinations are intentionally stable as the complete catalogue grows.
+CORE_PATHS = (
+    '', 'about.html', 'press.html',
+    'work/appraiva.html', 'work/royal-abraj.html', 'work/oxfam-novib.html', 'work/mci.html',
+    'studies/', 'studies/rent-own-2026/', 'studies/rent-burden/',
+    'tools/before-you-build-ai.html', 'tools/rental-cash-flow.html',
+    'tools/dubai-purchase-cost.html', 'tools/valuation-range.html', 'tools/dubai-rental-yield.html',
+    'writing/ai-home-value-estimates.html', 'writing/ai-human-review-real-estate.html',
+    'writing/which-dubai-property-source.html', 'writing/avm-vs-appraisal.html',
+    'writing/property-comparables-evidence.html', 'writing/rent-or-buy-five-numbers.html',
+    'writing/why-rent-to-value-is-not-property-yield.html', 'writing/start-with-the-decision.html',
+    'writing/ai-cost-per-verified-result.html', 'writing/ai-rental-yield-cash-flow.html',
+    'writing/property-data-enrichment.html', 'writing/ai-agent-safety-boundaries.html',
+)
+GROUPS = ('Profile', 'Work', 'Studies', 'Topics', 'Writing', 'Films', 'Tools', 'Explainers')
+RESOURCE_DESCRIPTIONS = {
+    'AI workflow cost ledger': 'AI workflow cost ledger includes retries, failed attempts and caller-defined acceptance; the workbook and worked examples are fictional.',
+    'ACS2024 metro rent burden': 'ACS2024 metro rent-burden data with a CSV, chart, method and limits; not a property-level estimate.',
+}
 
 
 class PublicResourceParser(HTMLParser):
@@ -162,52 +161,91 @@ def section(url):
         return 'Topics'
     if path.startswith('writing/'):
         return 'Writing'
+    if path.startswith('studies/'):
+        return 'Studies'
+    if path.startswith('carousels/'):
+        return 'Explainers'
     return 'Profile'
 
 
-def build():
-    groups = {name: [] for name in ('Profile', 'Work', 'Topics', 'Writing', 'Films', 'Tools')}
-    for url, text in entries():
+def description(value, url):
+    """Keep complete source descriptions; never silently truncate a factual qualification."""
+    count = len(value.split())
+    if not 10 <= count <= 30:
+        raise ValueError(f'{url}: description must have 10–30 words; found {count}')
+    return value
+
+
+def entry(label, url, copy, film=None):
+    suffix = f' (article + [film]({film}))' if film else ''
+    return f'- [{label}]({url}){suffix}: {description(copy, url)}'
+
+
+def facts():
+    return '\n'.join(line.replace(' The start month is not stated.', '')
+                     for line in FACTS.splitlines() if not line.startswith('- Spoken languages'))
+
+
+def catalogue(pages, curated):
+    groups = {name: [] for name in GROUPS}
+    chosen = {BASE + path for path in CORE_PATHS}
+    missing = chosen - pages.keys()
+    if missing:
+        raise ValueError('Missing curated destinations: ' + ', '.join(sorted(missing)))
+    for url, text in pages.items():
         name = section(url)
-        if name:
+        if name and (not curated or url in chosen):
             label = {BASE: 'Homepage', BASE + 'about.html': 'Biography'}.get(url) or title(text)
-            groups[name].append(f'- [{label}]({url}): {meta(text, "description")}')
-    lines = ['# Ahmadreza Samadi', '', f'> {SUMMARY}', '', NOTES, '', FACTS, '']
-    lines += ['## Four main topics', '', *[
-        f'- [{label}]({BASE}{path})' for label, path in BEST_PAGES
-    ], '']
+            film = None
+            if curated and url.startswith(BASE + 'writing/'):
+                links = re.findall(r'<a\b[^>]*href="(/watch/[^"#?]+\.html)"', text)
+                film = next((BASE.rstrip('/') + path for path in links if BASE.rstrip('/') + path in pages), None)
+            groups[name].append(entry(label, url, meta(text, 'description'), film))
+    lines = ['# Ahmadreza Samadi', '', f'> {SUMMARY}', '', NOTES, '', facts(), '']
     for name, items in groups.items():
         if items:
             lines += [f'## {name}', '', *items, '']
-    resources = public_resources((ROOT / 'about.html').read_text())
-    if resources:
-        lines += ['## Public code and data', '', *[f'- [{label}]({url}): {description}' for label, url, description in resources], '']
-    lines += ['## Official profiles', '', *[f'- [{label}]({url})' for label, url in PROFILES], '']
-    lines += [
-        '## Optional', '',
-        f'- [Persian homepage]({BASE}fa/): the site in Persian',
-        f'- [Arabic homepage]({BASE}ar/): the site in Arabic',
-        f'- [Persian writing]({BASE}fa/writing/): Persian translations of the articles',
-        f'- [Arabic writing]({BASE}ar/writing/): Arabic translations of the articles',
-        f'- [Homepage work index (JSON)]({BASE}ask-index.json): existing homepage passages and destinations in English, Persian and Arabic.',
-        f'- [RSS feed]({BASE}writing/feed.xml): new English articles',
-        f'- [Sitemap]({BASE}sitemap.xml): every page with its language alternates',
-        '',
-    ]
+    if not curated:
+        resources = public_resources((ROOT / 'about.html').read_text())
+        if resources:
+            lines += ['## Public code and data', '', *[
+                entry(label, url, RESOURCE_DESCRIPTIONS.get(label, copy)) for label, url, copy in resources], '']
+    lines += ['## Official profiles', '', *[entry(*profile) for profile in PROFILES], '']
+    if curated:
+        lines += ['## Complete catalogue', '', entry('Full site catalogue', BASE + 'llms-full.txt',
+                  'All English pages, films, public code resources, translated entry points and machine-readable discovery files.'), '']
+    else:
+        optional = [
+            ('Persian homepage', 'fa/', 'Persian translation of the homepage, with the same supported identity, roles and selected work.'),
+            ('Arabic homepage', 'ar/', 'Arabic translation of the homepage, with the same supported identity, roles and selected work.'),
+            ('Persian writing', 'fa/writing/', 'Persian article index with translated titles, summaries and links to the corresponding reading pages.'),
+            ('Arabic writing', 'ar/writing/', 'Arabic article index with translated titles, summaries and links to the corresponding reading pages.'),
+            ('Homepage work index (JSON)', 'ask-index.json', 'Existing homepage passages and destinations in English, Persian and Arabic, exported from the visible source.'),
+            ('RSS feed', 'writing/feed.xml', 'English article summaries with canonical links and original publication dates, generated from the published pages.'),
+            ('Sitemap', 'sitemap.xml', 'Canonical indexable pages and their language alternates; embedded players and calculators are excluded.'),
+        ]
+        lines += ['## Optional', '', *[entry(label, BASE + path, copy) for label, path, copy in optional], '']
     return '\n'.join(lines)
 
 
+def build():
+    pages = dict(entries())
+    return {'llms.txt': catalogue(pages, curated=True), 'llms-full.txt': catalogue(pages, curated=False)}
+
+
 def main():
-    target = ROOT / 'llms.txt'
-    content = build()
+    outputs = build()
     if '--check' in sys.argv:
-        if not target.is_file() or target.read_text() != content:
-            print('MISSING or out of date: llms.txt (run python3 scripts/build_llms.py)')
+        stale = [name for name, content in outputs.items()
+                 if not (ROOT / name).is_file() or (ROOT / name).read_text() != content]
+        if stale:
+            print('MISSING or out of date: ' + ', '.join(stale) + ' (run python3 scripts/build_llms.py)')
             sys.exit(1)
-        print('PASS llms.txt: up to date')
+        print('PASS llms.txt and llms-full.txt: current; all descriptions contain 10–30 words')
         return
-    target.write_text(content)
-    print(f'Wrote llms.txt ({len(content):,} characters)')
+    for name, content in outputs.items():
+        (ROOT / name).write_text(content)
+        print(f'Wrote {name} ({len(content):,} characters)')
 
 
 if __name__ == '__main__':
