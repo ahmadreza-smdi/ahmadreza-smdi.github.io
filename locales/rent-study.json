@@ -713,6 +713,22 @@
     "before interpreting the table.": {
       "fa": "پیش از تفسیر جدول.",
       "ar": "قبل تفسير الجدول."
+    },
+    "What the 2026 edition shows": {
+      "fa": "نسخهٔ ۲۰۲۶ چه نشان می‌دهد",
+      "ar": "ما الذي تعرضه نسخة ٢٠٢٦"
+    },
+    "The 2026 edition combines 393 metro owner-value proxies with 649 retained HUD rent areas across three fixed illustrative scenarios. The published files contain 1,179 metro-scenario rows and 1,947 HUD-area-scenario rows. At the central ACS owner-value estimates, none of the candidate rents covers the chosen cash budget in any metro under the financed or higher-cost case. Under the cash-purchase case, all candidate rents cover the budget in 374 metros, some cover it in 14, and none covers it in five. These counts use HUD FY2027 two-bedroom gross-rent benchmarks and ACS 2024 owner-stock values. The rent and value inputs describe different housing populations, and the same metro value proxy is used for each retained HUD area. Financing, occupancy and operating costs are chosen assumptions. The counts describe the published cash-budget scenarios; they do not measure property investment returns or compare renting and buying the same home.": {
+      "fa": "نسخهٔ ۲۰۲۶، ۳۹۳ نمایندهٔ ارزش مسکنِ مالک‌نشین در مناطق کلان‌شهری را با ۶۴۹ محدودهٔ اجارهٔ حفظ‌شدهٔ HUD در سه سناریوی ثابت و فرضی ترکیب می‌کند. فایل‌های منتشرشده شامل ۱٬۱۷۹ ردیف منطقه–سناریو و ۱٬۹۴۷ ردیف محدودهٔ HUD–سناریو هستند. در برآوردهای مرکزی ارزش مسکنِ مالک‌نشین ACS، در سناریوی دارای وام یا هزینهٔ بالاتر، هیچ‌یک از اجاره‌های کاندید در هیچ منطقه‌ای بودجهٔ نقدی انتخاب‌شده را پوشش نمی‌دهد. در سناریوی خرید نقدی، همهٔ اجاره‌های کاندید در ۳۷۴ منطقه، برخی در ۱۴ منطقه و هیچ‌کدام در پنج منطقه بودجه را پوشش می‌دهند. این شمارش از معیارهای اجارهٔ ناخالص دوخوابهٔ HUD برای سال مالی ۲۰۲۷ و ارزش مسکنِ مالک‌نشین ACS در سال ۲۰۲۴ استفاده می‌کند. ورودی‌های اجاره و ارزش به جمعیت‌های مسکونی متفاوت مربوط‌اند و برای هر محدودهٔ HUD از همان نمایندهٔ ارزش منطقه استفاده می‌شود. تأمین مالی، میزان اشغال و هزینه‌های عملیاتی فرض‌های انتخاب‌شده‌اند. این شمارش سناریوهای منتشرشدهٔ بودجهٔ نقدی را توصیف می‌کند؛ بازده سرمایه‌گذاری ملک را اندازه نمی‌گیرد و اجاره و خرید یک خانهٔ واحد را مقایسه نمی‌کند.",
+      "ar": "تجمع نسخة ٢٠٢٦ بين ٣٩٣ قيمة تمثيلية لمساكن المالكين في المناطق الحضرية و٦٤٩ منطقة إيجار محتفظاً بها من HUD، ضمن ثلاثة سيناريوهات افتراضية ثابتة. تحتوي الملفات المنشورة على ١٬١٧٩ صفاً للمنطقة الحضرية–السيناريو، و١٬٩٤٧ صفاً لمنطقة HUD–السيناريو. عند التقديرات المركزية لقيم مساكن المالكين في ACS، لا يغطي أي إيجار مرشح الميزانية النقدية المختارة في أي منطقة حضرية ضمن حالة التمويل أو حالة التكلفة الأعلى. وفي حالة الشراء النقدي، تغطي جميع الإيجارات المرشحة الميزانية في ٣٧٤ منطقة حضرية، وبعضها في ١٤، ولا يغطيها أي منها في خمس مناطق. تستخدم الأعداد معايير HUD للإيجار الإجمالي لغرفتي نوم للسنة المالية ٢٠٢٧ وقيم مساكن المالكين من ACS لعام ٢٠٢٤. تصف مدخلات الإيجار والقيمة مجموعات سكنية مختلفة، وتُستخدم القيمة التمثيلية نفسها للمنطقة الحضرية مع كل منطقة HUD محتفظ بها. التمويل والإشغال وتكاليف التشغيل افتراضات مختارة. تصف الأعداد سيناريوهات الميزانية النقدية المنشورة؛ ولا تقيس عوائد الاستثمار العقاري أو تقارن استئجار المنزل نفسه وشراءه."
+    },
+    "For a personal rent-or-buy decision, start with": {
+      "fa": "برای تصمیم شخصی دربارهٔ اجاره یا خرید، از",
+      "ar": "لاتخاذ قرار شخصي بشأن الإيجار أو الشراء، ابدأ بـ"
+    },
+    "the five-number decision guide": {
+      "fa": "راهنمای تصمیم با پنج عدد شروع کنید",
+      "ar": "دليل القرار ذي الأرقام الخمسة"
     }
   }
 }
