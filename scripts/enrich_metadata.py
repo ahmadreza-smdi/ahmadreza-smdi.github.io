@@ -24,6 +24,7 @@ from xml.etree import ElementTree
 
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT_UPDATES = json.loads((ROOT / 'locales/content-updates.json').read_text())
+DESCRIPTION_UPDATES = json.loads((ROOT / 'locales/metadata-descriptions.json').read_text())
 BASE = 'https://a-samadi.com/'
 LOCALES = {'en': 'en_US', 'fa': 'fa_IR', 'ar': 'ar_AE'}
 SITE_NAME = 'Ahmadreza Samadi'
@@ -219,6 +220,7 @@ def complete_schema(path, text):
     unlocalized = re.sub(r'^(fa|ar)/', '', relative)
     changes = []
     update_record = CONTENT_UPDATES.get(relative)
+    description_record = DESCRIPTION_UPDATES.get(relative)
     own_id, _ = main_node(text)
 
     def update(match):
@@ -226,8 +228,10 @@ def complete_schema(path, text):
         before = json.dumps(data, ensure_ascii=False)
         for node in schema_nodes(data):
             kind = node.get('@type')
-            if update_record and node.get('@id') == own_id:
+            if update_record and kind and node.get('@id') == own_id:
                 node['dateModified'] = update_record['dateModified']
+            if description_record and ((kind and node.get('@id') == own_id) or node.get('description') == description_record['previous']):
+                node['description'] = description_record['description']
             if kind in ARTICLE_TYPES and 'publisher' not in node:
                 node['publisher'] = {'@id': BASE + '#person'}
             if kind == 'ProfilePage' and unlocalized == 'index.html':
@@ -514,6 +518,18 @@ def enrich(path, text):
     head, rest = text[:head_end], text[head_end:]
     lang = language(head)
     added = []
+    description_record = DESCRIPTION_UPDATES.get(path.relative_to(ROOT).as_posix())
+    if description_record:
+        description = description_record['description']
+        if not 120 <= len(description) <= 165:
+            raise ValueError(f'{path}: reviewed description must contain 120–165 characters')
+        if value(head, 'description') not in (description_record['previous'], description):
+            raise ValueError(f'{path}: description source changed; review the explicit metadata copy')
+        for key in ('description', 'og:description', 'twitter:description'):
+            match = find(head, key)
+            if match and html.unescape(match[1]) != description:
+                head = head[:match.start(1)] + html.escape(description, quote=True) + head[match.end(1):]
+                added.append(key)
     update_record = CONTENT_UPDATES.get(path.relative_to(ROOT).as_posix())
     if update_record:
         for key in ('og:updated_time', 'article:modified_time'):
@@ -542,6 +558,7 @@ def enrich(path, text):
 
     if not find(head, 'og:title'):
         return text, []
+    add_after(['og:title'], 'property', 'og:description', value(head, 'description'))
     add_after(['og:type', 'og:title'], 'property', 'og:site_name', SITE_NAME)
     add_after(['og:site_name', 'og:type', 'og:url'], 'property', 'og:locale', LOCALES.get(lang, 'en_US'))
     if not find(head, 'og:locale:alternate'):

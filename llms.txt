@@ -23,7 +23,7 @@ Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احم�
 ## Work
 
 - [Ahmadreza Samadi at Appraiva | Co-Founder & Technical Lead](https://a-samadi.com/work/appraiva.html): Ahmadreza Samadi is Appraiva’s Co-Founder & Technical Lead, working remotely from Dubai on AI real estate intelligence at the Cleveland, Ohio company.
-- [Oxfam Novib: CRM data and analytics](https://a-samadi.com/work/oxfam-novib.html): Ahmadreza Samadi’s background includes Azure data infrastructure for CRM migration and analytics at Oxfam Novib.
+- [Oxfam Novib: CRM data and analytics](https://a-samadi.com/work/oxfam-novib.html): Ahmadreza Samadi’s Oxfam Novib work: Azure data infrastructure for CRM migration and analytics as a Data Engineer, September 2022–June 2023.
 - [Ahmadreza Samadi at Royal Abraj Group | Co-Founder & CEO](https://a-samadi.com/work/royal-abraj.html): Ahmadreza Samadi, Co-Founder & CEO of Royal Abraj Group in Dubai, leads digital strategy and technology for property brokerage and documents-clearing services.
 - [Hamrah e Aval (MCI)](https://a-samadi.com/work/mci.html): Ahmadreza Samadi’s MCI work used RFM and behavioral data for customer segmentation, churn-risk analysis and campaign targeting, without uplift claims.
 
@@ -47,7 +47,7 @@ Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احم�
 - [AVM vs appraisal: which fits your decision?](https://a-samadi.com/writing/avm-vs-appraisal.html): Choose the valuation process for the decision: compare AVMs, broker opinions and appraisals, then examine identity, dates, evidence and uncertainty.
 - [Rent or buy: the five numbers that decide it](https://a-samadi.com/writing/rent-or-buy-five-numbers.html): Compare rent and ownership using matched housing, running costs, upfront cash, time and net exit proceeds. Keep cash affordability separate from wealth.
 - [Dubai property buying costs, item by item](https://a-samadi.com/writing/dubai-property-buying-costs.html): Build a dated Dubai purchase budget from official registration fees, mortgage charges and your own quotes. Separate total fees from the buyer’s share.
-- [Dubai service charge: same rent](https://a-samadi.com/writing/dubai-service-charge-same-rent.html) (article + [film](https://a-samadi.com/watch/dubai-service-charge-same-rent.html)): A fictional Dubai property comparison separates advertised rent from cash remaining after one recurring cost.
+- [Dubai service charge: same rent](https://a-samadi.com/writing/dubai-service-charge-same-rent.html) (article + [film](https://a-samadi.com/watch/dubai-service-charge-same-rent.html)): A fictional Dubai comparison by Ahmadreza Samadi separates advertised rent from cash after service charges, with DLD’s definition and limits.
 - [Property comparables: evidence beyond the nearby price](https://a-samadi.com/writing/property-comparables-evidence.html) (article + [film](https://a-samadi.com/watch/property-comparables-evidence.html)): Fictional buyer Mina compares neighbouring flats: one asking price and one older agreed sale. Nearby doors do not make them identical valuation evidence.
 
 ## Tools

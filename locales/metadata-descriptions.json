@@ -1,0 +1,254 @@
+{
+  "work/oxfam-novib.html": {
+    "previous": "Ahmadreza Samadi’s background includes Azure data infrastructure for CRM migration and analytics at Oxfam Novib.",
+    "description": "Ahmadreza Samadi’s Oxfam Novib work: Azure data infrastructure for CRM migration and analytics as a Data Engineer, September 2022–June 2023."
+  },
+  "ar/writing/index.html": {
+    "previous": "مقالات وشروحات أحمدرضا صمدي عن بناء منتجات الذكاء الاصطناعي وتكلفته ونماذج القرار وربط التطبيقات وتقنيات العقارات.",
+    "description": "مقالات وشروحات أحمدرضا صمدي عن بناء منتجات الذكاء الاصطناعي وتكلفته ونماذج القرار وربط التطبيقات وتقنيات العقارات، مع أدلة وأدوات عملية."
+  },
+  "ar/writing/start-with-the-decision.html": {
+    "previous": "منهج عملي لقرارات منتجات الذكاء الاصطناعي: ابدأ بقرار العميل، وقيّم الأدلة اللازمة، وقِس سير العمل بأكمله.",
+    "description": "منهج أحمدرضا صمدي لقرارات منتجات الذكاء الاصطناعي: ابدأ بقرار العميل، وقيّم الأدلة اللازمة، وقِس سير العمل بأكمله مع تكلفة المراجعة البشرية."
+  },
+  "fa/work/oxfam-novib.html": {
+    "previous": "پیشینهٔ احمدرضا صمدی شامل زیرساخت دادهٔ Azure برای مهاجرت CRM و تحلیل داده در Oxfam Novib است.",
+    "description": "کار احمدرضا صمدی در Oxfam Novib: مهندس داده از سپتامبر ۲۰۲۲ تا ژوئن ۲۰۲۳، با تمرکز بر زیرساخت دادهٔ Azure برای مهاجرت CRM و تحلیل داده."
+  },
+  "ar/work/oxfam-novib.html": {
+    "previous": "تشمل خلفية أحمدرضا صمدي بنية بيانات Azure لترحيل CRM والتحليلات لدى Oxfam Novib.",
+    "description": "عمل أحمدرضا صمدي لدى Oxfam Novib مهندس بيانات من سبتمبر ٢٠٢٢ إلى يونيو ٢٠٢٣، لبناء بنية بيانات Azure لترحيل CRM والتحليلات."
+  },
+  "fa/tools/before-you-build-ai.html": {
+    "previous": "ایده هوش مصنوعی را به یک تصمیم، برنامه شواهد و آزمایشی کوچک تبدیل کنید؛ راهنمای تعاملی رایگان احمدرضا صمدی.",
+    "description": "ایدهٔ هوش مصنوعی را به یک تصمیم روشن، برنامهٔ شواهد و آزمایشی کوچک تبدیل کنید؛ راهنمای تعاملی احمدرضا صمدی با معیار پذیرش و بررسی انسانی."
+  },
+  "ar/tools/before-you-build-ai.html": {
+    "previous": "حوّل فكرة ذكاء اصطناعي إلى قرار وخطة أدلة وتجربة أولى صغيرة. دليل تفاعلي مجاني من أحمدرضا صمدي.",
+    "description": "حوّل فكرة ذكاء اصطناعي إلى قرار وخطة أدلة وتجربة أولى صغيرة. دليل تفاعلي مجاني من أحمدرضا صمدي لتحديد معيار القبول والمراجعة البشرية."
+  },
+  "fa/writing/ai-human-review-real-estate.html": {
+    "previous": "هوش مصنوعی اطلاعات ملک و پیش‌نویس را آماده می‌کند؛ متخصص ادعاها و عدم‌قطعیت را بررسی می‌کند و مشتری تصمیم می‌گیرد.",
+    "description": "احمدرضا صمدی مرز نقش‌ها را توضیح می‌دهد: هوش مصنوعی اطلاعات ملک و پیش‌نویس را آماده می‌کند؛ متخصص ادعاها را بررسی می‌کند و مشتری تصمیم می‌گیرد."
+  },
+  "ar/writing/ai-home-value-estimates.html": {
+    "previous": "راجع بيانات العقار والمبيعات المقارنة وعدم اليقين قبل استخدام تقييم آلي، وافحص الأدلة عندما تختلف التقديرات.",
+    "description": "يوضح أحمدرضا صمدي كيف تراجع بيانات العقار والمبيعات المقارنة وعدم اليقين قبل استخدام تقييم آلي، وتفحص الأدلة عندما تختلف التقديرات."
+  },
+  "fa/writing/incognito-private-browsing.html": {
+    "previous": "احمدرضا صمدی با مثال خرید هدیه، حالت ناشناس، کوکی، سابقه مرور و ردپای بازدید در وب‌سایت را به زبان ساده توضیح می‌دهد.",
+    "description": "احمدرضا صمدی با مثال خیالی خرید هدیه، حالت ناشناس، کوکی، سابقهٔ مرور و ردپای بازدید در وب‌سایت را توضیح می‌دهد؛ حریم خصوصی محلی با ناشناس‌بودن فرق دارد."
+  },
+  "ar/writing/why-ai-sounds-confident.html": {
+    "previous": "يشرح أحمدرضا صمدي أخطاء الذكاء الاصطناعي الواثقة بمثال متحف خيالي وفيلم قصير وطريقة بسيطة للتحقق من الأدلة.",
+    "description": "يشرح أحمدرضا صمدي أخطاء الذكاء الاصطناعي الواثقة بمثال متحف خيالي وفيلم قصير: افتح المصدر وتحقق من دعمه للادعاء بدلاً من الاعتماد على نبرة الثقة."
+  },
+  "ar/writing/why-phone-stops-charging-at-80.html": {
+    "previous": "قد يبدو الحد الذي اخترته والروتين المتعلم والتوقف بسبب الحرارة متشابهين. لكن أسبابها وطريقة استئناف الشحن مختلفة.",
+    "description": "يشرح أحمدرضا صمدي توقف الشحن عند ٨٠٪: الحد الذي اخترته والروتين المتعلم والتوقف بسبب الحرارة قد تتشابه، لكن أسبابها وطريقة استئناف الشحن مختلفة."
+  },
+  "ar/writing/profitable-but-out-of-cash.html": {
+    "previous": "قد تترك صفقة مربحة الشركة عاجزة عن دفع مستحقات المورد. تابع طلبًا واحدًا لتفهم الفرق بين الإيراد المكتسب والنقد المتاح.",
+    "description": "قد تترك صفقة مربحة الشركة عاجزة عن دفع مستحقات المورد. تابع طلبًا خياليًا واحدًا لتفهم الفرق بين الإيراد المكتسب والنقد المتاح وتوقيت الدفع."
+  },
+  "watch/rental-yield.html": {
+    "previous": "By Ahmadreza Samadi. Watch the 99-second film to see why an 8% gross rental yield can coexist with a cash shortfall.",
+    "description": "Ahmadreza Samadi’s 99-second film uses a fictional rental budget to show how an 8% gross yield can coexist with a cash shortfall."
+  },
+  "fa/press.html": {
+    "previous": "زندگی‌نامه، پژوهش و ابزارهای اصلی، تصویر و راه تماس کتبی با احمدرضا صمدی، کارآفرین فناوری ساکن دبی.",
+    "description": "زندگی‌نامه، پژوهش و ابزارهای اصلی، تصویر و راه تماس کتبی با احمدرضا صمدی، کارآفرین فناوری ساکن دبی؛ همراه با معرفی Appraiva و Royal Abraj Group."
+  },
+  "ar/press.html": {
+    "previous": "السيرة والبحوث والأدوات الأصلية والصورة ووسيلة التواصل الكتابي مع أحمدرضا صمدي، رائد أعمال تقني مقيم في دبي.",
+    "description": "السيرة والبحوث والأدوات الأصلية والصورة ووسيلة التواصل الكتابي مع أحمدرضا صمدي، رائد أعمال تقني مقيم في دبي، مع سياق أدواره في Appraiva وRoyal Abraj Group."
+  },
+  "ar/writing/how-contactless-cards-work.html": {
+    "previous": "يشغّل جهاز الدفع شريحة البطاقة اللاتلامسية السلبية للحظة. تتبّع الطاقة وبيانات الدفع خلال تمرير البطاقة.",
+    "description": "يشرح أحمدرضا صمدي كيف يشغّل جهاز الدفع شريحة البطاقة اللاتلامسية السلبية للحظة. تتبّع الطاقة وبيانات الدفع خلال تمرير البطاقة في مثال توضيحي."
+  },
+  "ar/writing/how-noise-cancellation-works.html": {
+    "previous": "تقيس الميكروفونات الضوضاء الخارجية ويضيف المكبر موجة معاكسة بتوقيت دقيق. لماذا تنخفض الهمهمة أفضل من الأصوات المفاجئة؟",
+    "description": "تقيس الميكروفونات الضوضاء الخارجية ويضيف المكبر موجة معاكسة بتوقيت دقيق. يشرح أحمدرضا صمدي لماذا تنخفض الهمهمة أفضل من الأصوات المفاجئة."
+  },
+  "ar/writing/why-usb-c-cables-differ.html": {
+    "previous": "USB-C يصف الموصل. القدرة وسرعة نقل الملفات ودعم الفيديو قدرات منفصلة يجب التحقق منها في الاتصال كله.",
+    "description": "يوضح أحمدرضا صمدي أن USB-C يصف الموصل. القدرة وسرعة نقل الملفات ودعم الفيديو قدرات منفصلة يجب التحقق منها في الكابل والأجهزة والاتصال كله."
+  },
+  "ar/writing/why-wifi-is-slow-with-full-bars.html": {
+    "previous": "توضح أشرطة Wi-Fi قوة الإشارة إلى الموجّه، لا سرعة مسار الإنترنت كله. تعرف على أسباب أخرى للبطء وكيف تقارن.",
+    "description": "يوضح أحمدرضا صمدي أن أشرطة Wi-Fi تقيس قوة الإشارة إلى الموجّه، لا سرعة مسار الإنترنت كله. تعرف على أسباب أخرى للبطء وكيف تقارن الاتصال."
+  },
+  "ar/writing/why-ai-loses-earlier-chat-context.html": {
+    "previous": "سجل المحادثة والسياق الحالي والملخص والذاكرة المحفوظة والتدريب أمور مختلفة. افهم سبب فقدان التفاصيل وكيف تساعد المساعد.",
+    "description": "سجل المحادثة والسياق الحالي والملخص والذاكرة المحفوظة والتدريب أمور مختلفة. يشرح أحمدرضا صمدي سبب فقدان التفاصيل وكيف تساعد المساعد على الاحتفاظ بالسياق."
+  },
+  "ar/writing/how-many-coffees-to-break-even.html": {
+    "previous": "يبيع مقهى افتراضي ١٠٠ قهوة مقابل ٥٠٠ دولار ولا يحقق ربحًا تشغيليًا. تتبّع التكاليف لفهم هامش المساهمة ونقطة التعادل.",
+    "description": "يبيع مقهى افتراضي ١٠٠ قهوة مقابل ٥٠٠ دولار ولا يحقق ربحًا تشغيليًا. تتبّع التكاليف الثابتة والمتغيرة لفهم هامش المساهمة ونقطة التعادل."
+  },
+  "ar/topics/tech-explained.html": {
+    "previous": "شروحات مبسطة للتكنولوجيا وأفلام أصلية. افهم الآلية وحدودها، ثم اربطها بالقرار الذي تحتاج إلى اتخاذه.",
+    "description": "شروحات أحمدرضا صمدي المبسطة للتكنولوجيا وأفلامه الأصلية: افهم الآلية وحدودها، ثم اربطها بالقرار الذي تحتاج إلى اتخاذه، مع مصادر وقراءات مرتبطة."
+  },
+  "fa/writing/chatgpt-intelligent-ui-explained.html": {
+    "previous": "توضیح ساده پاسخ‌های تعاملی ChatGPT، معرفی ۷ اکتبر و یک بودجه فرضی که نشان می‌دهد چرا بررسی فرض‌ها هنوز مهم است.",
+    "description": "احمدرضا صمدی پاسخ‌های تعاملی ChatGPT و معرفی ۷ اکتبر را توضیح می‌دهد؛ یک بودجهٔ فرضی نشان می‌دهد چرا حتی با رابط تعاملی، بررسی فرض‌ها مهم است."
+  },
+  "ar/writing/chatgpt-intelligent-ui-explained.html": {
+    "previous": "شرح بسيط لإجابات ChatGPT التفاعلية وإعلان ٧ أكتوبر، مع ميزانية افتراضية توضح لماذا تظل مراجعة الافتراضات مهمة.",
+    "description": "يشرح أحمدرضا صمدي إجابات ChatGPT التفاعلية وإعلان ٧ أكتوبر، مع ميزانية افتراضية توضح لماذا تظل مراجعة الافتراضات مهمة حتى مع واجهة تفاعلية."
+  },
+  "fa/writing/dubai-property-tokenisation-explained.html": {
+    "previous": "توضیحی ساده درباره ارتباط مالکیت دیجیتال، سهم کوچک از ملک و درآمد خالص اجاره با مسئله جداگانه پیدا کردن خریدار.",
+    "description": "احمدرضا صمدی ارتباط ثبت دیجیتال مالکیت، سهم کوچک از ملک و درآمد خالص اجاره را توضیح می‌دهد و آن را از مسئلهٔ جداگانهٔ پیدا کردن خریدار تفکیک می‌کند."
+  },
+  "ar/writing/dubai-property-tokenisation-explained.html": {
+    "previous": "شرح بسيط يربط سجل الملكية الرقمي والحصص العقارية وصافي الإيجار بالتحدي المنفصل المتمثل في إيجاد مشترٍ.",
+    "description": "يشرح أحمدرضا صمدي العلاقة بين سجل الملكية الرقمي والحصص العقارية وصافي الإيجار، ويفصلها عن التحدي المستقل المتمثل في إيجاد مشترٍ للحصة."
+  },
+  "ar/writing/ai-data-center-site-readiness.html": {
+    "previous": "الكهرباء والتبريد والشبكات وملاءمة المبنى عبر موقعين افتراضيين، مع مصادر حديثة من JLL وميتا وأسئلة لتقييم المختصين.",
+    "description": "الكهرباء والتبريد والشبكات وملاءمة المبنى عبر موقعين افتراضيين، مع مصادر من JLL وميتا وأسئلة لتقييم المختصين؛ شرح أحمدرضا صمدي لقرارات الموقع."
+  },
+  "fa/writing/why-ai-weather-models-need-local-observations.html": {
+    "previous": "مدل هوشمند هم به نشانه‌هایی از دنیای واقعی نیاز دارد. موضوع این مطلب نقش داده‌های محلی در پیش‌بینی هواست.",
+    "description": "احمدرضا صمدی نقش رصد محلی را در پیش‌بینی هوا توضیح می‌دهد: مدل هوشمند هم به داده‌ها و نشانه‌هایی از دنیای واقعی نیاز دارد، نه فقط توان محاسباتی."
+  },
+  "ar/writing/why-ai-weather-models-need-local-observations.html": {
+    "previous": "حتى النموذج الذكي يحتاج إلى أدلة من العالم الحقيقي. يشرح هذا المقال دور الرصد المحلي في التنبؤ بالطقس.",
+    "description": "يشرح أحمدرضا صمدي دور الرصد المحلي في التنبؤ بالطقس: حتى النموذج الذكي يحتاج إلى بيانات وأدلة من العالم الحقيقي، وليس إلى القدرة الحاسوبية وحدها."
+  },
+  "fa/writing/why-rent-to-value-is-not-property-yield.html": {
+    "previous": "تفاوت نسبت اجاره به ارزش با بازده واقعی ملک؛ یک بودجه نقدی خیالی، محدودیت داده‌ها و بررسی بعدی را روشن می‌کند.",
+    "description": "احمدرضا صمدی تفاوت نسبت اجاره به ارزش با بازده واقعی ملک را توضیح می‌دهد؛ یک بودجهٔ نقدی خیالی، محدودیت داده‌ها و بررسی بعدی را روشن می‌کند."
+  },
+  "fa/writing/why-occupancy-sensor-lights-switch-off.html": {
+    "previous": "گاهی چراغ خاموش می‌شود در حالی که هنوز در اتاق هستید. ممکن است حسگر، نشانه حضور شما را دریافت نکرده باشد.",
+    "description": "احمدرضا صمدی توضیح می‌دهد چرا گاهی چراغ با حضور شما در اتاق خاموش می‌شود: حسگر ممکن است نشانهٔ حضور را نگیرد؛ تشخیص حرکت با حضور دائمی یکسان نیست."
+  },
+  "ar/writing/why-occupancy-sensor-lights-switch-off.html": {
+    "previous": "قد تنطفئ الإضاءة وأنت ما زلت في الغرفة. ربما لم يلتقط الحساس دليلا على وجودك.",
+    "description": "يشرح أحمدرضا صمدي لماذا قد تنطفئ الإضاءة وأنت في الغرفة: قد لا يلتقط الحساس دليلاً على وجودك، فاستشعار الحركة لا يثبت استمرار وجود الشخص."
+  },
+  "ar/writing/virtual-machine-device-sharing-explained.html": {
+    "previous": "قائمتنا الأصلية: أي حاسوب افتراضي، وأي موارد، وهل أحتاج كل مورد؟ الفيلم مفاهيمي، وليس تصويرا للمنتج أو إعدادا مختبرا.",
+    "description": "قائمة لفحص الحاسوب الافتراضي وموارده والحاجة إلى كل مورد، من أحمدرضا صمدي. الفيلم شرح مفاهيمي لمشاركة الأجهزة، وليس تصويرًا للمنتج أو إعدادًا مختبرًا."
+  },
+  "writing/ai-document-review-claim-evidence-checklist.html": {
+    "previous": "Our checklist: write the claim, locate its support, then resolve the gap or keep it visible.",
+    "description": "A document-review checklist by Ahmadreza Samadi: write the claim, locate its supporting evidence, then resolve the gap or keep it visible."
+  },
+  "writing/where-wearable-ai-computation-runs.html": {
+    "previous": "Which task runs locally? What is sent out? What happens without a connection?",
+    "description": "Ahmadreza Samadi explains wearable AI computation: which tasks run locally, what data is sent out and what happens without a connection."
+  },
+  "writing/on-device-ai-scam-warnings-explained.html": {
+    "previous": "Our framework: stop the rushed action, use a trusted separate contact route, keep uncertainty visible.",
+    "description": "Ahmadreza Samadi explains AI scam warnings: stop a rushed action, verify through a trusted separate contact route and keep uncertainty visible."
+  },
+  "writing/bacnet-building-devices-common-language.html": {
+    "previous": "Our checklist: which devices, which data and commands, and who verifies the integration?",
+    "description": "Ahmadreza Samadi explains BACnet building integration: identify the devices, data and commands, and who verifies that they work together."
+  },
+  "writing/geospatial-ai-map-answer-review.html": {
+    "previous": "Which boundary? Which date? Which source and assumptions? Keep unsupported conclusions open.",
+    "description": "Ahmadreza Samadi’s geospatial AI checklist: check the boundary, date, source and assumptions behind a map answer; keep unsupported conclusions open."
+  },
+  "ar/writing/phone-location-across-street.html": {
+    "previous": "يوضح موعد ركوب خيالي انعكاس إشارات الأقمار وعدم يقين نقطة الخريطة وطريقة عملية للاتفاق على مكان اللقاء.",
+    "description": "يوضح أحمدرضا صمدي، عبر موعد ركوب خيالي، انعكاس إشارات الأقمار وعدم يقين نقطة الخريطة وطريقة عملية للاتفاق على مكان اللقاء بدلاً من الثقة بالنقطة وحدها."
+  },
+  "watch/phone-location-across-street.html": {
+    "previous": "Watch the English animated film about reflected satellite signals, an uncertain map dot and a fictional pickup.",
+    "description": "Watch Ahmadreza Samadi’s English film: a fictional pickup explains reflected satellite signals, an uncertain map dot and agreeing where to meet."
+  },
+  "fa/writing/ai-agents-shared-notebook.html": {
+    "previous": "یک تعمیرگاه خیالی، دانش قابل‌استفادهٔ دوباره برای عامل‌ها، بررسی زمینه و مرز اطلاعات خصوصی پروژه را توضیح می‌دهد.",
+    "description": "احمدرضا صمدی با یک تعمیرگاه خیالی، دانش قابل‌استفادهٔ دوباره برای عامل‌های هوش مصنوعی، بررسی زمینه و مرز اطلاعات خصوصی پروژه را توضیح می‌دهد."
+  },
+  "ar/writing/ai-agents-shared-notebook.html": {
+    "previous": "تشرح ورشة إصلاح خيالية معرفة الوكلاء القابلة لإعادة الاستخدام وفحص السياق وحدود معلومات المشروع الخاصة.",
+    "description": "يشرح أحمدرضا صمدي، عبر ورشة إصلاح خيالية، معرفة وكلاء الذكاء الاصطناعي القابلة لإعادة الاستخدام وفحص السياق وحدود معلومات المشروع الخاصة."
+  },
+  "watch/ai-agents-shared-notebook.html": {
+    "previous": "Watch the English animated film about shared agent knowledge, context checks and a fictional repair workshop.",
+    "description": "Watch Ahmadreza Samadi’s English film: a fictional repair workshop explains shared agent knowledge, context checks and private project information."
+  },
+  "writing/tesla-roadster-flight-claim.html": {
+    "previous": "An illustrated hangar explains thrust and separates a manufacturer claim from availability and public-road approval.",
+    "description": "Ahmadreza Samadi’s fictional hangar explains thrust and separates a manufacturer’s Tesla Roadster claim from availability and public-road approval."
+  },
+  "fa/writing/tesla-roadster-flight-claim.html": {
+    "previous": "یک آشیانهٔ خیالی، رانش را توضیح می‌دهد و ادعای سازنده را از دسترسی و تأیید استفاده در جادهٔ عمومی جدا می‌کند.",
+    "description": "احمدرضا صمدی با یک آشیانهٔ خیالی، رانش را توضیح می‌دهد و ادعای سازنده دربارهٔ Tesla Roadster را از دسترسی به محصول و تأیید استفاده در جادهٔ عمومی جدا می‌کند."
+  },
+  "ar/writing/tesla-roadster-flight-claim.html": {
+    "previous": "تشرح حظيرة خيالية قوة الدفع وتفصل ادعاء الشركة عن الإتاحة والموافقة على استخدام الطرق العامة.",
+    "description": "يشرح أحمدرضا صمدي قوة الدفع عبر حظيرة خيالية، ويفصل ادعاء الشركة بشأن Tesla Roadster عن إتاحة المنتج والموافقة على استخدام الطرق العامة."
+  },
+  "work/index.html": {
+    "previous": "AI for property decisions, supported by product engineering, data systems and public tools.",
+    "description": "Selected work by Ahmadreza Samadi: AI for property decisions, supported by product engineering, data systems, public studies and practical tools."
+  },
+  "fa/work/index.html": {
+    "previous": "هوش مصنوعی برای تصمیم‌های ملکی، با پشتوانه مهندسی محصول، سامانه‌های داده و ابزارهای عمومی.",
+    "description": "کارهای منتخب احمدرضا صمدی: هوش مصنوعی برای تصمیم‌های ملکی، با پشتوانهٔ مهندسی محصول، سامانه‌های داده، مطالعه‌های عمومی و ابزارهای کاربردی."
+  },
+  "ar/work/index.html": {
+    "previous": "الذكاء الاصطناعي للقرارات العقارية، بدعم من هندسة المنتجات وأنظمة البيانات والأدوات العامة.",
+    "description": "أعمال مختارة لأحمدرضا صمدي: الذكاء الاصطناعي للقرارات العقارية، بدعم من هندسة المنتجات وأنظمة البيانات والدراسات العامة والأدوات العملية."
+  },
+  "writing/heat-pump-moves-heat-explained.html": {
+    "previous": "A fictional home and an illustrative energy balance explain how a heat pump moves heat.",
+    "description": "Ahmadreza Samadi explains how a heat pump moves heat through a fictional home and an illustrative energy balance, with an English animated film."
+  },
+  "fa/writing/heat-pump-moves-heat-explained.html": {
+    "previous": "یک خانه خیالی و تراز انرژی نمونه، انتقال گرما با پمپ حرارتی را توضیح می‌دهند.",
+    "description": "احمدرضا صمدی با یک خانهٔ خیالی و تراز انرژی نمونه، انتقال گرما با پمپ حرارتی را توضیح می‌دهد؛ همراه با فیلم پویانمایی انگلیسی و منابع توضیح سازوکار."
+  },
+  "watch/heat-pump-moves-heat-explained.html": {
+    "previous": "Watch the English film: A fictional home and an illustrative energy balance explain how a heat pump moves heat.",
+    "description": "Watch Ahmadreza Samadi’s English animated film: a fictional home and an illustrative energy balance explain how a heat pump transfers heat."
+  },
+  "writing/ai-agent-permissions-ability-authority.html": {
+    "previous": "A fictional invoice explains reading, drafting and approval boundaries in business AI.",
+    "description": "Ahmadreza Samadi uses a fictional invoice to explain business AI permissions: the boundaries between reading, drafting and approving an action."
+  },
+  "fa/writing/ai-agent-permissions-ability-authority.html": {
+    "previous": "یک فاکتور فرضی، مرز خواندن، نوشتن پیش‌نویس و تأیید در هوش مصنوعی کسب‌وکار را توضیح می‌دهد.",
+    "description": "احمدرضا صمدی با یک فاکتور فرضی، مجوزهای عامل هوش مصنوعی در کسب‌وکار را توضیح می‌دهد: مرز خواندن، نوشتن پیش‌نویس و تأیید اقدام را جدا نگه دارید."
+  },
+  "ar/writing/ai-agent-permissions-ability-authority.html": {
+    "previous": "فاتورة افتراضية تشرح حدود القراءة وإعداد المسودات والموافقة في ذكاء الأعمال الاصطناعي.",
+    "description": "يشرح أحمدرضا صمدي صلاحيات وكيل الذكاء الاصطناعي في الأعمال عبر فاتورة افتراضية: الفصل بين قراءة المعلومات وإعداد المسودات والموافقة على الإجراء."
+  },
+  "watch/ai-agent-permissions-ability-authority.html": {
+    "previous": "Watch the English film: A fictional invoice explains reading, drafting and approval boundaries in business AI.",
+    "description": "Watch Ahmadreza Samadi’s English film: a fictional invoice explains the boundaries between reading, drafting and approval in business AI."
+  },
+  "writing/dubai-service-charge-same-rent.html": {
+    "previous": "A fictional Dubai property comparison separates advertised rent from cash remaining after one recurring cost.",
+    "description": "A fictional Dubai comparison by Ahmadreza Samadi separates advertised rent from cash after service charges, with DLD’s definition and limits."
+  },
+  "fa/writing/dubai-service-charge-same-rent.html": {
+    "previous": "مقایسه فرضی دو ملک در دبی، اجاره اعلامی را از مبلغ باقی‌مانده پس از یک هزینه دوره‌ای جدا می‌کند.",
+    "description": "مقایسهٔ فرضی دو ملک در دبی از احمدرضا صمدی، اجارهٔ اعلامی را از پول باقی‌مانده پس از هزینهٔ خدمات جدا می‌کند؛ با تعریف ادارهٔ زمین دبی و محدودیت‌ها."
+  },
+  "ar/writing/dubai-service-charge-same-rent.html": {
+    "previous": "مقارنة عقارية افتراضية في دبي تفصل الإيجار المعلن عن المبلغ المتبقي بعد تكلفة دورية واحدة.",
+    "description": "مقارنة عقارية افتراضية لأحمدرضا صمدي في دبي تفصل الإيجار المعلن عن النقد بعد رسوم الخدمات، مع تعريف دائرة الأراضي والأملاك وحدود المقارنة."
+  },
+  "carousels/index.html": {
+    "previous": "Source-dated visual explainers on AI and business technology by Ahmadreza Samadi.",
+    "description": "Source-dated visual explainers by Ahmadreza Samadi on AI and business technology, with the original slides, source links and companion pages."
+  },
+  "writing/business-ai-evaluation-cases.html": {
+    "previous": "A polished demonstration does not establish reliability for the actual task.",
+    "description": "Ahmadreza Samadi explains why a polished AI demonstration does not establish reliability for the real task: choose evaluation cases from the work."
+  },
+  "watch/business-ai-evaluation-cases.html": {
+    "previous": "Watch the English film: A polished demonstration does not establish reliability for the actual task.",
+    "description": "Watch Ahmadreza Samadi’s English film about AI evaluation: a polished demo is not proof of task reliability; choose cases that reflect the work."
+  }
+}

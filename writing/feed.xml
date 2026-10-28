@@ -10,7 +10,7 @@
     <item>
       <title>The AI demo passed. The real work did not.</title>
       <link>https://a-samadi.com/writing/business-ai-evaluation-cases.html</link>
-      <description>A polished demonstration does not establish reliability for the actual task.</description>
+      <description>Ahmadreza Samadi explains why a polished AI demonstration does not establish reliability for the real task: choose evaluation cases from the work.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Wed, 28 Oct 2026 17:30:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/business-ai-evaluation-cases.html</guid>
@@ -66,7 +66,7 @@
     <item>
       <title>Dubai service charge: same rent, different bills</title>
       <link>https://a-samadi.com/writing/dubai-service-charge-same-rent.html</link>
-      <description>A fictional Dubai property comparison separates advertised rent from cash remaining after one recurring cost.</description>
+      <description>A fictional Dubai comparison by Ahmadreza Samadi separates advertised rent from cash after service charges, with DLD’s definition and limits.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Wed, 21 Oct 2026 17:50:06 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/dubai-service-charge-same-rent.html</guid>
@@ -74,7 +74,7 @@
     <item>
       <title>AI agents: ability is not authority</title>
       <link>https://a-samadi.com/writing/ai-agent-permissions-ability-authority.html</link>
-      <description>A fictional invoice explains reading, drafting and approval boundaries in business AI.</description>
+      <description>Ahmadreza Samadi uses a fictional invoice to explain business AI permissions: the boundaries between reading, drafting and approving an action.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Wed, 21 Oct 2026 06:36:51 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/ai-agent-permissions-ability-authority.html</guid>
@@ -82,7 +82,7 @@
     <item>
       <title>How cold outdoor air can help warm a home</title>
       <link>https://a-samadi.com/writing/heat-pump-moves-heat-explained.html</link>
-      <description>A fictional home and an illustrative energy balance explain how a heat pump moves heat.</description>
+      <description>Ahmadreza Samadi explains how a heat pump moves heat through a fictional home and an illustrative energy balance, with an English animated film.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Tue, 20 Oct 2026 17:30:39 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/heat-pump-moves-heat-explained.html</guid>
@@ -122,7 +122,7 @@
     <item>
       <title>Tesla says Roadster can fly: three questions to ask</title>
       <link>https://a-samadi.com/writing/tesla-roadster-flight-claim.html</link>
-      <description>An illustrated hangar explains thrust and separates a manufacturer claim from availability and public-road approval.</description>
+      <description>Ahmadreza Samadi’s fictional hangar explains thrust and separates a manufacturer’s Tesla Roadster claim from availability and public-road approval.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Mon, 19 Oct 2026 17:55:38 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/tesla-roadster-flight-claim.html</guid>
@@ -146,7 +146,7 @@
     <item>
       <title>A map answer. The right place?</title>
       <link>https://a-samadi.com/writing/geospatial-ai-map-answer-review.html</link>
-      <description>Which boundary? Which date? Which source and assumptions? Keep unsupported conclusions open.</description>
+      <description>Ahmadreza Samadi’s geospatial AI checklist: check the boundary, date, source and assumptions behind a map answer; keep unsupported conclusions open.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Sat, 17 Oct 2026 17:30:04 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/geospatial-ai-map-answer-review.html</guid>
@@ -154,7 +154,7 @@
     <item>
       <title>Your thermostat speaks. Who listens?</title>
       <link>https://a-samadi.com/writing/bacnet-building-devices-common-language.html</link>
-      <description>Our checklist: which devices, which data and commands, and who verifies the integration?</description>
+      <description>Ahmadreza Samadi explains BACnet building integration: identify the devices, data and commands, and who verifies that they work together.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Sat, 17 Oct 2026 14:30:04 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/bacnet-building-devices-common-language.html</guid>
@@ -162,7 +162,7 @@
     <item>
       <title>The message looks convincing.</title>
       <link>https://a-samadi.com/writing/on-device-ai-scam-warnings-explained.html</link>
-      <description>Our framework: stop the rushed action, use a trusted separate contact route, keep uncertainty visible.</description>
+      <description>Ahmadreza Samadi explains AI scam warnings: stop a rushed action, verify through a trusted separate contact route and keep uncertainty visible.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Sat, 17 Oct 2026 08:30:05 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/on-device-ai-scam-warnings-explained.html</guid>
@@ -178,7 +178,7 @@
     <item>
       <title>Where does your wearable’s AI run?</title>
       <link>https://a-samadi.com/writing/where-wearable-ai-computation-runs.html</link>
-      <description>Which task runs locally? What is sent out? What happens without a connection?</description>
+      <description>Ahmadreza Samadi explains wearable AI computation: which tasks run locally, what data is sent out and what happens without a connection.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Fri, 16 Oct 2026 20:11:18 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/where-wearable-ai-computation-runs.html</guid>
@@ -194,7 +194,7 @@
     <item>
       <title>Who checks the AI’s homework?</title>
       <link>https://a-samadi.com/writing/ai-document-review-claim-evidence-checklist.html</link>
-      <description>Our checklist: write the claim, locate its support, then resolve the gap or keep it visible.</description>
+      <description>A document-review checklist by Ahmadreza Samadi: write the claim, locate its supporting evidence, then resolve the gap or keep it visible.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Fri, 16 Oct 2026 20:11:04 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/ai-document-review-claim-evidence-checklist.html</guid>
