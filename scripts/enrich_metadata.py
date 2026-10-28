@@ -19,6 +19,7 @@ import html
 import json
 import re
 import sys
+import struct
 from xml.etree import ElementTree
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -27,7 +28,7 @@ LOCALES = {'en': 'en_US', 'fa': 'fa_IR', 'ar': 'ar_AE'}
 SITE_NAME = 'Ahmadreza Samadi'
 PORTRAIT_CARD = BASE + 'assets/img/ahmadreza-samadi-og.jpg'
 PORTRAIT_ALT = {
-    'en': 'Ahmadreza Samadi, Dubai-based founder and technical executive',
+    'en': 'Ahmadreza Samadi, Dubai-based technology entrepreneur',
     'fa': 'تصویر احمدرضا صمدی',
     'ar': 'صورة أحمدرضا صمدي',
 }
@@ -195,6 +196,123 @@ def image_url(image):
     if isinstance(image, list):
         return next((url for url in map(image_url, image) if url), None)
     return None
+
+
+def schema_nodes(value):
+    if isinstance(value, dict):
+        yield value
+        for child in value.values():
+            yield from schema_nodes(child)
+    elif isinstance(value, list):
+        for child in value:
+            yield from schema_nodes(child)
+
+
+def complete_schema(path, text):
+    """Fill source-supported entity links without changing historical dates."""
+    url = canonical(text)
+    if not url:
+        return text, []
+    lang = language(text)
+    relative = path.relative_to(ROOT).as_posix()
+    unlocalized = re.sub(r'^(fa|ar)/', '', relative)
+    changes = []
+
+    def update(match):
+        data = json.loads(match[2])
+        before = json.dumps(data, ensure_ascii=False)
+        for node in schema_nodes(data):
+            kind = node.get('@type')
+            if kind in ARTICLE_TYPES and 'publisher' not in node:
+                node['publisher'] = {'@id': BASE + '#person'}
+            if kind == 'ProfilePage' and unlocalized == 'index.html':
+                node.setdefault('inLanguage', lang)
+            if kind == 'WebApplication' and unlocalized.startswith('studies/rent-own-2026/'):
+                node['author'] = {'@id': BASE + '#person'}
+                node.setdefault('inLanguage', lang)
+        if json.dumps(data, ensure_ascii=False) == before:
+            return match[0]
+        changes.append('structured-data completeness')
+        return match[1] + json.dumps(data, ensure_ascii=False, indent=2) + match[3]
+
+    text = LD.sub(update, text)
+    nodes = [node for block in LD.finditer(text) for node in schema_nodes(json.loads(block[2]))]
+    # Content pages only: do not invent a parent URL or a breadcrumb for a homepage.
+    section = unlocalized.split('/')[0]
+    if (section not in ('writing', 'watch', 'work', 'studies', 'tools')
+            or unlocalized in (section + '/index.html',)
+            or 'noindex' in (value(text, 'robots') or '')
+            or any(node.get('@type') == 'BreadcrumbList' for node in nodes)):
+        return text, changes
+    heading = re.search(r'<h1\b[^>]*>(.*?)</h1>', text, re.S)
+    if not heading:
+        return text, changes
+    title = ' '.join(html.unescape(re.sub(r'<[^>]+>', ' ', heading[1])).split())
+    prefix = '' if lang == 'en' else lang + '/'
+    labels = {
+        'en': ('Home', {'writing': 'Writing', 'watch': 'Watch', 'work': 'Work', 'studies': 'Studies', 'tools': 'Tools'}),
+        'fa': ('خانه', {'writing': 'نوشته‌ها', 'watch': 'تماشا', 'work': 'کارها', 'studies': 'مطالعات', 'tools': 'ابزارها'}),
+        'ar': ('الرئيسية', {'writing': 'المقالات', 'watch': 'المشاهدة', 'work': 'الأعمال', 'studies': 'الدراسات', 'tools': 'الأدوات'}),
+    }
+    home, sections = labels[lang]
+    trail = [(BASE + prefix, home)]
+    parent = BASE + prefix + section + '/'
+    if page_for(parent).is_file() and canonical(page_for(parent).read_text()) == parent:
+        trail.append((parent, sections[section]))
+    trail.append((url, title))
+    breadcrumb = {'@context': 'https://schema.org', '@type': 'BreadcrumbList', '@id': url + '#breadcrumbs',
+                  'itemListElement': [{'@type': 'ListItem', 'position': i, 'name': label, 'item': target}
+                                      for i, (target, label) in enumerate(trail, 1)]}
+    for block in LD.finditer(text):
+        data = json.loads(block[2])
+        if isinstance(data, dict) and '@graph' in data:
+            breadcrumb.pop('@context')
+            data['@graph'].append(breadcrumb)
+            text = text[:block.start(2)] + json.dumps(data, ensure_ascii=False, indent=2) + text[block.end(2):]
+            return text, changes + ['BreadcrumbList']
+    text = text.replace('</head>', '<script type="application/ld+json">' + json.dumps(breadcrumb, ensure_ascii=False, indent=2) + '</script>\n</head>', 1)
+    return text, changes + ['BreadcrumbList']
+
+
+def local_image_dimensions(url):
+    """Read PNG/JPEG headers using the standard library available to the publisher."""
+    if not url or not url.startswith(BASE):
+        return None
+    path = ROOT / url.removeprefix(BASE)
+    if not path.is_file():
+        return None
+    with path.open('rb') as handle:
+        header = handle.read(24)
+        if header.startswith(b'\x89PNG\r\n\x1a\n') and len(header) == 24:
+            return struct.unpack('>II', header[16:24])
+        if not header.startswith(b'\xff\xd8'):
+            return None
+        handle.seek(2)
+        while True:
+            marker = handle.read(1)
+            if not marker:
+                return None
+            if marker != b'\xff':
+                continue
+            while marker == b'\xff':
+                marker = handle.read(1)
+            if marker in (b'', b'\xd9', b'\xda'):
+                return None
+            if marker == b'\x01' or b'\xd0' <= marker <= b'\xd8':
+                continue
+            length = handle.read(2)
+            if len(length) != 2:
+                return None
+            length = int.from_bytes(length, 'big')
+            if length < 2:
+                return None
+            if marker[0] in (0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7, 0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF):
+                frame = handle.read(5)
+                if len(frame) != 5:
+                    return None
+                height, width = struct.unpack('>HH', frame[1:])
+                return width, height
+            handle.seek(length - 2, 1)
 
 
 def article_page_image(text):
@@ -425,14 +543,28 @@ def enrich(path, text):
             added.append('og:locale:alternate')
     image = value(head, 'og:image')
     if image:
+        dimensions = local_image_dimensions(image)
+        if dimensions:
+            add_after(['og:image'], 'property', 'og:image:width', str(dimensions[0]))
+            add_after(['og:image:width'], 'property', 'og:image:height', str(dimensions[1]))
         card = image.replace(BASE, '')
         alt = PORTRAIT_ALT[lang] if image == PORTRAIT_CARD else CARD_ALT.get(card, {}).get(lang)
+        if not alt:
+            alt = value(head, 'og:title')
         add_after(['og:image:height', 'og:image:width', 'og:image:type', 'og:image'], 'property', 'og:image:alt', alt)
     add_after(['twitter:card'], 'name', 'twitter:title', value(head, 'og:title'))
     add_after(['twitter:title', 'twitter:card'], 'name', 'twitter:description', value(head, 'og:description'))
     add_after(['twitter:description', 'twitter:title', 'twitter:card'], 'name', 'twitter:image', value(head, 'og:image'))
     add_after(['twitter:image'], 'name', 'twitter:image:alt', value(head, 'og:image:alt'))
     add_after(['description'], 'name', 'robots', ROBOTS)
+    add_after(['robots', 'description'], 'name', 'referrer', 'strict-origin-when-cross-origin')
+    if lang == 'en':
+        for key in ('og:image:alt', 'twitter:image:alt'):
+            old_alt = value(head, key)
+            if old_alt and 'technical executive' in old_alt:
+                match = find(head, key)
+                head = head[:match.start(1)] + html.escape(old_alt.replace('founder and technical executive', 'technology entrepreneur').replace('technical executive', 'technology entrepreneur'), quote=True) + head[match.end(1):]
+                added.append(key + ' identity wording')
     # Persian and Arabic text is set in Vazirmatn; fetch it with the stylesheet instead of after layout.
     if re.search(r'<html[^>]*\sdir="rtl"', head) and not re.search(r'<link[^>]+rel="preload"[^>]+vazirmatn', head):
         sheet = re.search(r'<link\s+rel="stylesheet"[^>]*>', head)
@@ -446,7 +578,8 @@ def enrich(path, text):
             added.append('font preload')
     text, linked = translation_links(head + rest)
     text, image_added = article_page_image(text)
-    return text, added + linked + image_added
+    text, schema_added = complete_schema(path, text)
+    return text, added + linked + image_added + schema_added
 
 
 def sitemap(check):

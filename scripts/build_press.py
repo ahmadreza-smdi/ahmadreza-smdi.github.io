@@ -114,7 +114,9 @@ def schema(data, lang):
             {'@type': 'ListItem', 'position': 2, 'name': copy['h1'], 'item': url},
         ],
     }
-    return {'@context': 'https://schema.org', '@graph': [page, breadcrumb]}
+    person = {'@type': 'Person', '@id': BASE + '/#person', 'name': 'Ahmadreza Samadi', 'url': BASE + '/about.html'}
+    website = {'@type': 'WebSite', '@id': BASE + '/#website', 'url': BASE + '/', 'name': 'Ahmadreza Samadi'}
+    return {'@context': 'https://schema.org', '@graph': [page, breadcrumb, person, website]}
 
 
 def brand_bios(data, lang):
@@ -216,7 +218,8 @@ def build(data, lang):
     parts += ['</ul></section>',
               f'<footer class="editorial-footer"><nav aria-label="{escape(copy["context_heading"])}"><a href="{copy["context_links"][0]["path"]}">{escape(copy["footer_about"])}</a> · <a href="/ideas.html">{escape(data["brand"]["labels"][lang]["idea_link"])}</a> · <a href="/studies/">{escape(data["brand"]["labels"][lang]["data_link"])}</a> · <a href="{copy["home_path"]}#contact">{escape(copy["footer_contact"])}</a></nav><p>{escape(copy["portrait_caption"])}</p></footer>',
               '</main>', '</body>', '</html>']
-    return '\n'.join(parts) + '\n'
+    from enrich_metadata import enrich
+    return enrich(ROOT / copy['path'].lstrip('/'), '\n'.join(parts) + '\n')[0]
 
 
 def main():

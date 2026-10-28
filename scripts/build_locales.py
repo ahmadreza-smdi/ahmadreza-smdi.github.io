@@ -74,7 +74,7 @@ for lang in ('fa','ar'):
     own='fa_IR' if lang=='fa' else 'ar_AE'
     head=head.replace('<meta property="og:locale" content="en_US" />',f'<meta property="og:locale" content="{own}" />')
     head=head.replace(f'<meta property="og:locale:alternate" content="{own}" />','<meta property="og:locale:alternate" content="en_US" />')
-    head=head.replace('content="Ahmadreza Samadi, Dubai-based founder and technical executive"','content="'+tr['Portrait of Ahmadreza Samadi']+'"')
+    head=head.replace('content="Ahmadreza Samadi, Dubai-based technology entrepreneur"','content="'+tr['Portrait of Ahmadreza Samadi']+'"')
     def schema(m):
         d=json.loads(m[1]);profile=next(x for x in d['@graph'] if x['@type']=='ProfilePage')
         person=next(x for x in d['@graph'] if x.get('@type')=='Person' and x.get('@id')=='https://a-samadi.com/#person')

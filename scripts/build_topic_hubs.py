@@ -104,7 +104,7 @@ def tagged_link(destination, key, label):
             f'{escape(label)}</a>')
 
 
-def render(data, hub, language):
+def _render(data, hub, language):
     copy = hub["locales"][language]
     labels = LABELS[language]
     prefix = local_prefix(language)
@@ -294,6 +294,11 @@ def render(data, hub, language):
 </body>
 </html>
 '''
+
+
+def render(data, hub, language):
+    from enrich_metadata import enrich
+    return enrich(ROOT / hub['paths'][language], _render(data, hub, language))[0]
 
 
 def main():

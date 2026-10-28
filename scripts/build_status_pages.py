@@ -189,7 +189,8 @@ def render(data, page, language):
               f'<nav aria-label="{escape(labels["related"])}">' + ' · '.join(link(item, language) for item in copy["footer_links"]) + '</nav>',
               f'<p>{escape(labels["name"])} · {escape(labels["position"])}</p>',
               '</footer>', '</main>', '</body>', '</html>']
-    return '\n'.join(parts) + '\n'
+    from enrich_metadata import enrich
+    return enrich(ROOT / route(page['id'], language), '\n'.join(parts) + '\n')[0]
 
 
 def check_sitemap(data):

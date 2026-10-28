@@ -32,11 +32,38 @@ def person_schema(m):
     collect(d)
     for n in nodes:
         if n.get('@type')!='Person' or n.get('@id')!='https://a-samadi.com/#person':continue
+        n['jobTitle']=['Co-Founder & Technical Lead, Appraiva','Co-Founder & CEO, Royal Abraj Group']
         n['knowsAbout']=[{'@type':'DefinedTerm','name':name,'sameAs':'https://www.wikidata.org/wiki/'+qid} for name,qid in SUBJECTS]
         # Schema.org's Role pattern attaches dates to the association, not to an Occupation.
         n['worksFor']=[{'@type':'OrganizationRole','roleName':title,'startDate':start,'worksFor':{'@id':'https://a-samadi.com/#'+org}} for title,start,org in [('Co-Founder & Technical Lead','2023-10','appraiva'),('Co-Founder & CEO','2022','royal-abraj')]]
-        n['hasOccupation']=[{'@type':'Occupation','name':'Co-Founder & Technical Lead at Appraiva','description':'Held since October 2023; remote from Dubai.','responsibilities':'AI tools for property discovery using imagery analysis and enriched property data.'},{'@type':'Occupation','name':'Co-Founder & CEO at Royal Abraj Group','description':'Held since 2022; start month not stated.','responsibilities':'Digital strategy and technology.'}]
+        n['hasOccupation']=[{'@type':'Occupation','name':'Co-Founder & Technical Lead at Appraiva','description':'Held since October 2023; remote from Dubai.','responsibilities':'AI tools for property discovery using imagery analysis and enriched property data.'},{'@type':'Occupation','name':'Co-Founder & CEO at Royal Abraj Group','description':'Held since 2022.','responsibilities':'Digital strategy and technology.'}]
     return '<script type="application/ld+json">\n'+json.dumps(d,ensure_ascii=False,indent=2)+'\n</script>'
+def about_parity(text,lang):
+    """Reuse supported English facts; preserve each locale's copy and canonical identity."""
+    source=(ROOT/'about.html').read_text()
+    graphs=[json.loads(b) for b in re.findall(r'<script type="application/ld\+json">(.*?)</script>',source,re.S)]
+    entities=[n for g in graphs for n in g.get('@graph',[g])]
+    person=next(n for n in entities if n.get('@type')=='Person')
+    def align(m):
+        data=json.loads(m[1]);graph=data.get('@graph',[data])
+        profile=next((n for n in graph if n.get('@type')=='ProfilePage'),None)
+        if profile is None:return m[0]
+        target=profile.get('mainEntity',{})
+        if target.get('@type')=='Person':
+            for key in ('givenName','familyName','jobTitle','alumniOf','homeLocation','memberOf'):
+                target[key]=person[key]
+            target['mainEntityOfPage']={'@id':profile['@id']}
+        profile['isPartOf']={'@id':'https://a-samadi.com/#website'}
+        ids={n.get('@id') for n in graph}
+        for entity in entities:
+            if entity.get('@type') not in ('WebSite','Organization') or entity.get('@id') in ids:continue
+            # Corroborating organizations, without adding company contact or administration fields.
+            keys=('@type','@id','name','url','description') if entity['@type']=='Organization' else tuple(entity)
+            graph.append({key:entity[key] for key in keys if key in entity})
+        for n in graph:n.pop('@context',None)
+        return '<script type="application/ld+json">\n'+json.dumps({'@context':'https://schema.org','@graph':graph},ensure_ascii=False,indent=2)+'\n</script>'
+    return re.sub(r'<script type="application/ld\+json">(.*?)</script>',align,text,flags=re.S)
+
 def main():
     check='--check' in sys.argv;changed=[]
     for lang,d in DATA.items():
@@ -46,7 +73,10 @@ def main():
             if tail=='about.html':
                 text,n=re.subn(r'<section class="profile-resources quick-facts" id="at-a-glance".*?</section>(?:\s*<section class="profile-resources" id="profile-questions".*?</section>)?',lambda _:section(d),text,count=1,flags=re.S)
                 if n!=1:raise ValueError('Missing facts section: '+str(path))
+            if tail=='about.html' and lang!='en':text=about_parity(text,lang)
             text=re.sub(r'<script type="application/ld\+json">(.*?)</script>',person_schema,text,flags=re.S)
+            from enrich_metadata import enrich
+            text=enrich(path,text)[0]
             if text!=old:
                 changed.append(str(path.relative_to(ROOT)))
                 if not check:
