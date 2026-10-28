@@ -62,6 +62,13 @@ REVIEWED_DESCRIPTION_SENTENCES = {
         'In a fictional dispatch library, adding more helpers does not shorten the queue: every independent task waits for the same key.',
 }
 
+# The frozen watch renderer prepends exactly this phrase to the same source.
+for _source, _sentence in list(REVIEWED_DESCRIPTION_SENTENCES.items()):
+    REVIEWED_DESCRIPTION_SENTENCES['Watch the English film: ' + _source] = 'Watch the English film: ' + _sentence
+REVIEWED_DESCRIPTION_SENTENCES[
+    'Watch the English film: Zara, a fictional research coordinator, receives an AI-generated result. A polished answer alone does not explain which assumptions support it, what was checked, or what its limitations mean.'
+] = 'Watch the English film: Zara, a fictional research coordinator, receives an AI-generated result.'
+
 
 class PublicResourceParser(HTMLParser):
     """Read only visible list items in the existing public-tools-data block."""
