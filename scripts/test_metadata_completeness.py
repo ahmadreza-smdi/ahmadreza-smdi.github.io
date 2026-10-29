@@ -8,6 +8,26 @@ import enrich_metadata as metadata
 
 
 class MetadataCompleteness(TestCase):
+    def test_hubs_have_two_items_and_carousels_use_existing_parent(self):
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'carousels').mkdir()
+            (root / 'carousels/index.html').write_text('<link rel="canonical" href="https://a-samadi.com/carousels/">')
+            for relative, url, language, expected in [
+                ('work/index.html', 'work/', 'en', ['', 'work/']),
+                ('ar/work/index.html', 'ar/work/', 'ar', ['ar/', 'ar/work/']),
+                ('studies/index.html', 'studies/', 'en', ['', 'studies/']),
+                ('ideas.html', 'ideas.html', 'en', ['', 'ideas.html']),
+                ('carousels/index.html', 'carousels/', 'en', ['', 'carousels/']),
+                ('carousels/example.html', 'carousels/example.html', 'en', ['', 'carousels/', 'carousels/example.html']),
+            ]:
+                with self.subTest(relative=relative), patch.object(metadata, 'ROOT', root):
+                    source = f'<html lang="{language}"><head><link rel="canonical" href="{metadata.BASE + url}"></head><h1>Example</h1>'
+                    result, _ = metadata.complete_schema(root / relative, source)
+                    trail = json.loads(metadata.LD.search(result)[2])['itemListElement']
+                    self.assertEqual([item['item'] for item in trail], [metadata.BASE + item for item in expected])
+                    self.assertEqual(metadata.complete_schema(root / relative, result), (result, []))
+
     def test_carousel_title_attribution_respects_limit_and_is_idempotent(self):
         path = metadata.ROOT / 'carousels/example.html'
         for count in (46, 47):

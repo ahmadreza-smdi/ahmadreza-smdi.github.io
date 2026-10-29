@@ -218,9 +218,9 @@ def ideas_page():
 def studies_page():
     burden = '/studies/rent-burden/' if (ROOT / 'studies/rent-burden/index.html').is_file() else 'https://github.com/ahmadreza-smdi/metro-rent-burden/releases/tag/v1.1.1'
     studies = [('/studies/rent-own-2026/', 'Rent and ownership cash-budget scenarios',
-                '2026 edition using ACS 2024 owner-stock values and HUD FY2027 gross rents. Explicit hypothetical budgets retain distinct HUD areas; they are not matched-property yields or observed returns.'),
+                '2026 edition covering 393 metropolitan areas, including Puerto Rico, using ACS 2024 owner-stock values and HUD FY2027 gross rents. Explicit hypothetical budgets retain distinct HUD areas; they are not matched-property yields or observed returns.'),
                (burden, 'Metro rent burden: ACS 2024',
-                'Public data, chart, dictionary, workbook and method notes. Compare metropolitan rent pressure with the stated denominator and coverage; this is not a property-level affordability estimate.')]
+                'Public data, chart, dictionary, workbook and method notes covering 386 whole metropolitan areas in the 50 states and District of Columbia. Compare metropolitan rent pressure with the stated denominator and coverage; this is not a property-level affordability estimate.')]
     body = '<p>Property Decision Data is my series for checking what a housing number can and cannot support. Read the population, geography, source year and assumptions before comparing results.</p>'
     body += ''.join(section('study-' + str(i), title, f'<p>{esc(description)}</p><p>{link(url, "Open the study and methods")}</p>') for i, (url, title, description) in enumerate(studies, 1))
     body += section('tools', 'Apply the evidence', '<ul>' + ''.join('<li>' + link(url, title) + '</li>' for url, title in [('/tools/dubai-purchase-cost.html', 'Dubai purchase-cost calculator'), ('/tools/rental-cash-flow.html', 'Rental cash-flow calculator'), ('/tools/valuation-range.html', 'Valuation range checker'), ('/tools/dubai-rental-yield.html', 'Dubai rental-yield calculator'), ('/tools/before-you-build-ai.html', 'Before you build the AI'), ('/writing/why-rent-to-value-is-not-property-yield.html', 'Why rent divided by home value is not property yield'), ('https://github.com/ahmadreza-smdi', 'Public GitHub repositories')]) + '</ul>')

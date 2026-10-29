@@ -11,7 +11,7 @@
           "position": 1,
           "section": "",
           "title": "Ahmadreza Samadi",
-          "text": "Technology Entrepreneur · Dubai, UAE Ahmadreza Samadi I build AI for better property decisions. Co-Founder & Technical Lead at Appraiva. Co-Founder & CEO of Royal Abraj Group. Read my biography, press resources and selected work. Get in touch Selected Work Ask about my work",
+          "text": "Technology Entrepreneur · Dubai, UAE Ahmadreza Samadi I build AI for better property decisions. Co-Founder & Technical Lead at Appraiva. Co-Founder & CEO of Royal Abraj Group. Read my biography, press resources and selected work. Explore my work Get in touch Ask about my work",
           "paragraphs": [
             "Technology Entrepreneur · Dubai, UAE",
             "I build AI for better property decisions.",
@@ -34,12 +34,12 @@
               "url": "https://a-samadi.com/work/"
             },
             {
-              "label": "Get in touch",
-              "url": "mailto:ahmadreza.smdi@gmail.com"
+              "label": "Explore my work",
+              "url": "https://a-samadi.com/#work"
             },
             {
-              "label": "Selected Work",
-              "url": "https://a-samadi.com/#work"
+              "label": "Get in touch",
+              "url": "mailto:ahmadreza.smdi@gmail.com"
             }
           ]
         },
@@ -593,7 +593,7 @@
           "position": 1,
           "section": "",
           "title": "احمدرضا صمدی",
-          "text": "کارآفرین فناوری · دبی، امارات احمدرضا صمدی برای تصمیم‌های بهتر دربارهٔ املاک، هوش مصنوعی می‌سازم. هم‌بنیان‌گذار و راهبر فنی Appraiva؛ هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group. بخوانید: زندگی‌نامهٔ من، منابع رسانه‌ای و منتخب کارها. در تماس باشید پروژه‌های منتخب درباره کارهایم بپرسید",
+          "text": "کارآفرین فناوری · دبی، امارات احمدرضا صمدی برای تصمیم‌های بهتر دربارهٔ املاک، هوش مصنوعی می‌سازم. هم‌بنیان‌گذار و راهبر فنی Appraiva؛ هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group. بخوانید: زندگی‌نامهٔ من، منابع رسانه‌ای و منتخب کارها. کارهایم را ببینید در تماس باشید درباره کارهایم بپرسید",
           "paragraphs": [
             "کارآفرین فناوری · دبی، امارات",
             "برای تصمیم‌های بهتر دربارهٔ املاک، هوش مصنوعی می‌سازم.",
@@ -616,12 +616,12 @@
               "url": "https://a-samadi.com/fa/work/"
             },
             {
-              "label": "در تماس باشید",
-              "url": "mailto:ahmadreza.smdi@gmail.com"
+              "label": "کارهایم را ببینید",
+              "url": "https://a-samadi.com/fa/#work"
             },
             {
-              "label": "پروژه‌های منتخب",
-              "url": "https://a-samadi.com/fa/#work"
+              "label": "در تماس باشید",
+              "url": "mailto:ahmadreza.smdi@gmail.com"
             }
           ]
         },
@@ -1174,7 +1174,7 @@
           "position": 1,
           "section": "",
           "title": "أحمدرضا صمدي",
-          "text": "رائد أعمال تقني · دبي، الإمارات أحمدرضا صمدي أبني حلول ذكاء اصطناعي لاتخاذ قرارات عقارية أفضل. شريك مؤسس وقائد تقني في Appraiva. وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group. اطّلع على سيرتي، الموارد الإعلامية و أعمال مختارة. تواصل معي مشاريع مختارة اسأل عن أعمالي",
+          "text": "رائد أعمال تقني · دبي، الإمارات أحمدرضا صمدي أبني حلول ذكاء اصطناعي لاتخاذ قرارات عقارية أفضل. شريك مؤسس وقائد تقني في Appraiva. وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group. اطّلع على سيرتي، الموارد الإعلامية و أعمال مختارة. استكشف أعمالي تواصل معي اسأل عن أعمالي",
           "paragraphs": [
             "رائد أعمال تقني · دبي، الإمارات",
             "أبني حلول ذكاء اصطناعي لاتخاذ قرارات عقارية أفضل.",
@@ -1197,12 +1197,12 @@
               "url": "https://a-samadi.com/ar/work/"
             },
             {
-              "label": "تواصل معي",
-              "url": "mailto:ahmadreza.smdi@gmail.com"
+              "label": "استكشف أعمالي",
+              "url": "https://a-samadi.com/ar/#work"
             },
             {
-              "label": "مشاريع مختارة",
-              "url": "https://a-samadi.com/ar/#work"
+              "label": "تواصل معي",
+              "url": "mailto:ahmadreza.smdi@gmail.com"
             }
           ]
         },

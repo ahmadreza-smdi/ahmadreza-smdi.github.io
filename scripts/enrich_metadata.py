@@ -229,9 +229,9 @@ def complete_schema(path, text):
         before = json.dumps(data, ensure_ascii=False)
         for node in schema_nodes(data):
             kind = node.get('@type')
-            if update_record and kind and node.get('@id') == own_id:
+            if update_record and own_id and kind and node.get('@id') == own_id:
                 node['dateModified'] = update_record['dateModified']
-            if description_record and ((kind and node.get('@id') == own_id) or node.get('description') == description_record['previous']):
+            if description_record and ((own_id and kind and node.get('@id') == own_id) or node.get('description') == description_record['previous']):
                 node['description'] = description_record['description']
             if kind in ARTICLE_TYPES and 'publisher' not in node:
                 node['publisher'] = {'@id': BASE + '#person'}
@@ -247,10 +247,11 @@ def complete_schema(path, text):
 
     text = LD.sub(update, text)
     nodes = [node for block in LD.finditer(text) for node in schema_nodes(json.loads(block[2]))]
-    # Content pages only: do not invent a parent URL or a breadcrumb for a homepage.
+    # Existing content pages and selected hubs; never invent parents or duplicate the hub.
     section = unlocalized.split('/')[0]
-    if (section not in ('writing', 'watch', 'work', 'studies', 'tools')
-            or unlocalized in (section + '/index.html',)
+    hub = unlocalized in ('ideas.html', 'studies/index.html', 'work/index.html', 'carousels/index.html')
+    if ((not hub and section not in ('writing', 'watch', 'work', 'studies', 'tools', 'carousels'))
+            or (not hub and unlocalized == section + '/index.html')
             or 'noindex' in (value(text, 'robots') or '')
             or any(node.get('@type') == 'BreadcrumbList' for node in nodes)):
         return text, changes
@@ -260,14 +261,14 @@ def complete_schema(path, text):
     title = ' '.join(html.unescape(re.sub(r'<[^>]+>', ' ', heading[1])).split())
     prefix = '' if lang == 'en' else lang + '/'
     labels = {
-        'en': ('Home', {'writing': 'Writing', 'watch': 'Watch', 'work': 'Work', 'studies': 'Studies', 'tools': 'Tools'}),
-        'fa': ('خانه', {'writing': 'نوشته‌ها', 'watch': 'تماشا', 'work': 'کارها', 'studies': 'مطالعات', 'tools': 'ابزارها'}),
-        'ar': ('الرئيسية', {'writing': 'المقالات', 'watch': 'المشاهدة', 'work': 'الأعمال', 'studies': 'الدراسات', 'tools': 'الأدوات'}),
+        'en': ('Home', {'writing': 'Writing', 'watch': 'Watch', 'work': 'Work', 'studies': 'Studies', 'tools': 'Tools', 'carousels': 'Carousels'}),
+        'fa': ('خانه', {'writing': 'نوشته‌ها', 'watch': 'تماشا', 'work': 'کارها', 'studies': 'مطالعات', 'tools': 'ابزارها', 'carousels': 'اسلایدها'}),
+        'ar': ('الرئيسية', {'writing': 'المقالات', 'watch': 'المشاهدة', 'work': 'الأعمال', 'studies': 'الدراسات', 'tools': 'الأدوات', 'carousels': 'الشرائح'}),
     }
     home, sections = labels[lang]
     trail = [(BASE + prefix, home)]
     parent = BASE + prefix + section + '/'
-    if page_for(parent).is_file() and canonical(page_for(parent).read_text()) == parent:
+    if not hub and page_for(parent).is_file() and canonical(page_for(parent).read_text()) == parent:
         trail.append((parent, sections[section]))
     trail.append((url, title))
     breadcrumb = {'@context': 'https://schema.org', '@type': 'BreadcrumbList', '@id': url + '#breadcrumbs',

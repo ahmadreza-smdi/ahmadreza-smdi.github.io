@@ -50,14 +50,14 @@
     "reason": "Supported biography or responsibility copy changed."
   },
   "fa/work/oxfam-novib.html": {
-    "dateModified": "2026-10-28T23:01:34+03:30",
-    "sourceCommit": "4aa118af1252d0f1a4b5fdd40f7e732ad6182f13",
-    "reason": "Supported biography or responsibility copy changed."
+    "dateModified": "2026-10-29T14:03:28+03:30",
+    "sourceCommit": "6d99405602c89bca4e01b74ae5b59e41c50de164",
+    "reason": "Restore source-supported translation detail and qualifications."
   },
   "ar/work/oxfam-novib.html": {
-    "dateModified": "2026-10-28T23:01:34+03:30",
-    "sourceCommit": "4aa118af1252d0f1a4b5fdd40f7e732ad6182f13",
-    "reason": "Supported biography or responsibility copy changed."
+    "dateModified": "2026-10-29T14:03:28+03:30",
+    "sourceCommit": "6d99405602c89bca4e01b74ae5b59e41c50de164",
+    "reason": "Restore source-supported translation detail and qualifications."
   },
   "press.html": {
     "dateModified": "2026-10-28T21:13:31+03:30",
@@ -133,5 +133,50 @@
     "dateModified": "2026-10-28T23:01:34+03:30",
     "sourceCommit": "4aa118af1252d0f1a4b5fdd40f7e732ad6182f13",
     "reason": "Added the sourced DLD service-charge definition."
+  },
+  "ar/writing/ai-document-review-claim-evidence-checklist.html": {
+    "dateModified": "2026-10-29T14:03:28+03:30",
+    "sourceCommit": "6d99405602c89bca4e01b74ae5b59e41c50de164",
+    "reason": "Restore source-supported translation detail and qualifications."
+  },
+  "fa/writing/ai-document-review-claim-evidence-checklist.html": {
+    "dateModified": "2026-10-29T14:03:28+03:30",
+    "sourceCommit": "6d99405602c89bca4e01b74ae5b59e41c50de164",
+    "reason": "Restore source-supported translation detail and qualifications."
+  },
+  "ar/writing/building-leak-alert-response-checklist.html": {
+    "dateModified": "2026-10-29T14:03:28+03:30",
+    "sourceCommit": "6d99405602c89bca4e01b74ae5b59e41c50de164",
+    "reason": "Restore source-supported translation detail and qualifications."
+  },
+  "ar/writing/where-wearable-ai-computation-runs.html": {
+    "dateModified": "2026-10-29T14:03:28+03:30",
+    "sourceCommit": "6d99405602c89bca4e01b74ae5b59e41c50de164",
+    "reason": "Restore source-supported translation detail and qualifications."
+  },
+  "ar/writing/on-device-ai-scam-warnings-explained.html": {
+    "dateModified": "2026-10-29T14:03:28+03:30",
+    "sourceCommit": "6d99405602c89bca4e01b74ae5b59e41c50de164",
+    "reason": "Restore source-supported translation detail and qualifications."
+  },
+  "ar/writing/bacnet-building-devices-common-language.html": {
+    "dateModified": "2026-10-29T14:03:28+03:30",
+    "sourceCommit": "6d99405602c89bca4e01b74ae5b59e41c50de164",
+    "reason": "Restore source-supported translation detail and qualifications."
+  },
+  "ar/writing/geospatial-ai-map-answer-review.html": {
+    "dateModified": "2026-10-29T14:03:28+03:30",
+    "sourceCommit": "6d99405602c89bca4e01b74ae5b59e41c50de164",
+    "reason": "Restore source-supported translation detail and qualifications."
+  },
+  "fa/writing/geospatial-ai-map-answer-review.html": {
+    "dateModified": "2026-10-29T14:03:28+03:30",
+    "sourceCommit": "6d99405602c89bca4e01b74ae5b59e41c50de164",
+    "reason": "Restore source-supported translation detail and qualifications."
+  },
+  "studies/index.html": {
+    "dateModified": "2026-10-29T14:03:28+03:30",
+    "sourceCommit": "6d99405602c89bca4e01b74ae5b59e41c50de164",
+    "reason": "Specify the two studies’ distinct, supported metropolitan coverage."
   }
 }

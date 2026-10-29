@@ -237,6 +237,24 @@
       "sourceSha256": "df2a16914f0e7ea31653fcfbeecfa8a485a6326a4ab6308ac9da01da5d4f827e",
       "output": "assets/share/why-wifi-is-slow-with-full-bars-og-1200x630.png",
       "outputSha256": "1f89103d1efd49fd626ee9556bb8a8e12846349698ef18ee0b8d4c07fd25f28c"
+    },
+    {
+      "source": "assets/share/ai-rental-yield-cash-flow.png",
+      "sourceSha256": "d8d4d1362104fba43119fb9aa564bf55597b3e562eed3a3206d5c8414f53296b",
+      "output": "assets/share/ai-rental-yield-cash-flow-og-1200x630.png",
+      "outputSha256": "982f9be3a22803fdea2a6746b3203a5f6e8a15e9d59c1df57b6dae653068321f"
+    },
+    {
+      "source": "assets/share/iphone-duo-price-per-day.png",
+      "sourceSha256": "d385a2c845e42bbf2d7f338eae4ed83c09b5d1b805ea68a9aa2a9c0b3886b94b",
+      "output": "assets/share/iphone-duo-price-per-day-og-1200x630.png",
+      "outputSha256": "ec3b3a79a502f0b8d386df5fc8503e15f0c3844d887687ecb66763633a2f944a"
+    },
+    {
+      "source": "studies/rent-burden/rent-burden-2024.png",
+      "sourceSha256": "3ec47d0e0ab67224ad3dcb1e4b7fd4b9b69cd6074e3e1f61e3b6f5b158c23d0f",
+      "output": "assets/share/rent-burden-2024-og-1200x630.png",
+      "outputSha256": "c7563c4ae06a7e3b2981ebbb4f4b97fed24f3f9138bfbe02d3d1001a70bd2fb3"
     }
   ]
 }
