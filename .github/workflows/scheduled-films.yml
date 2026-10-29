@@ -17,7 +17,7 @@ on:
       mode:
         description: Verify private prepared bundles or publish only actually due content
         type: choice
-        options: [verify, verify-deployment, publish-due, catchup-carousel-2026-10-28]
+        options: [verify, verify-deployment, publish-due, catchup-carousel-2026-10-28, catchup-carousel-2026-10-29]
         default: verify
 
 permissions:
@@ -60,6 +60,9 @@ jobs:
       - name: Publish the exact missed carousel once under dated owner authorization
         if: github.event_name == 'workflow_dispatch' && inputs.mode == 'catchup-carousel-2026-10-28'
         run: python3 -B scripts/online_films/publish_carousel.py --owner-catchup-2026-10-28
+      - name: Publish the exact29October missed carousel under owner authorization
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'catchup-carousel-2026-10-29'
+        run: python3 -B scripts/online_films/publish_carousel.py --owner-catchup-2026-10-29
       - name: Publish only the reviewed film due now
         if: github.event_name == 'schedule' || inputs.mode == 'publish-due'
         run: python3 -B scripts/online_films/publish.py --wait-for-slot

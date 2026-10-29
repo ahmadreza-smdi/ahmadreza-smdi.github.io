@@ -41,6 +41,18 @@ class Guards(unittest.TestCase):
   with self.assertRaises(ValueError):p.owner_catchup_rows(changed,now,a)
   changed=copy.deepcopy(c);changed['carousels'].append(copy.deepcopy(changed['carousels'][0]))
   with self.assertRaises(ValueError):p.owner_catchup_rows(changed,now,a)
+ def test_29oct_owner_exception_cannot_replay_or_expand(self):
+  c=config();r=c['carousels'][0];r.update(key='2026-10-29',publish_at='2026-10-29T10:00:00+03:30')
+  a={'owner_instruction_date':'2026-10-29','key':r['key'],'slug':r['slug'],'bundle_sha256':r['sha256'],'destination':'https://a-samadi.com','action':'publish_missed_carousel_once','not_before':'2026-10-29T10:30:01+03:30','expires_at':'2026-10-29T23:30:00+03:30'}
+  now=datetime.fromisoformat('2026-10-29T14:00:00+03:30')
+  self.assertEqual(c['carousels'],p.owner_catchup_rows(c,now,a,'2026-10-29'))
+  for stamp in ['2026-10-29T10:30:00+03:30','2026-10-29T23:30:01+03:30','2026-10-30T14:00:00+03:30']:
+   with self.assertRaises(ValueError):p.owner_catchup_rows(c,datetime.fromisoformat(stamp),a,'2026-10-29')
+  for key in a:
+   bad=dict(a);bad[key]='changed'
+   with self.assertRaises(ValueError):p.owner_catchup_rows(c,now,bad,'2026-10-29')
+  with self.assertRaises(ValueError):p.owner_catchup_rows(c,now,a)
+  with self.assertRaises(ValueError):p.owner_catchup_rows(c,now,a,'2026-10-30')
  def test_cadence_and_timezone(self):
   p.validate(config())
   for key,value in [('daily_count',2),('local_slot','21:00'),('timezone','UTC')]:

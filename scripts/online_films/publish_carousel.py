@@ -6,13 +6,15 @@ import publish as core
 ROOT=Path(__file__).resolve().parents[2]
 CONFIG=ROOT/'scripts/online_films/carousels.json'
 CATCHUP=ROOT/'scripts/online_films/carousel-catchup-2026-10-28.json'
+CATCHUP29=ROOT/'scripts/online_films/carousel-catchup-2026-10-29.json'
 
-def owner_catchup_rows(config,now,authorization):
+def owner_catchup_rows(config,now,authorization,day="2026-10-28"):
  """One explicit same-day owner exception; never a general late-release switch."""
- rows=[r for r in config['carousels'] if r['key']=='2026-10-28']
+ if day not in ('2026-10-28','2026-10-29'):raise ValueError('No owner catch-up authority for this date')
+ rows=[r for r in config['carousels'] if r['key']==day]
  if len(rows)!=1:raise ValueError('Exact catch-up row missing')
  row=rows[0]
- expected={'owner_instruction_date':'2026-10-28','key':row['key'],'slug':row['slug'],'bundle_sha256':row['sha256'],'destination':'https://a-samadi.com','action':'publish_missed_carousel_once','not_before':'2026-10-28T10:30:01+03:30','expires_at':'2026-10-28T23:30:00+03:30'}
+ expected={'owner_instruction_date':day,'key':row['key'],'slug':row['slug'],'bundle_sha256':row['sha256'],'destination':'https://a-samadi.com','action':'publish_missed_carousel_once','not_before':day+'T10:30:01+03:30','expires_at':day+'T23:30:00+03:30'}
  if authorization!=expected:raise ValueError('Exact owner catch-up authorization differs')
  if not datetime.fromisoformat(expected['not_before'])<=now<=datetime.fromisoformat(expected['expires_at']):raise ValueError('Owner catch-up expired or early')
  return rows
@@ -106,11 +108,12 @@ def verify_live(config,commit,paths):
    if data!=(ROOT/relative).read_bytes():raise RuntimeError('Live discovery/PDF mismatch:'+relative)
 
 def main():
- ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--verify',action='store_true');ap.add_argument('--wait-for-slot',action='store_true');ap.add_argument('--local-bundles',type=Path);ap.add_argument('--owner-catchup-2026-10-28',action='store_true');args=ap.parse_args()
+ ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--verify',action='store_true');ap.add_argument('--wait-for-slot',action='store_true');ap.add_argument('--local-bundles',type=Path);group=ap.add_mutually_exclusive_group();group.add_argument('--owner-catchup-2026-10-28',action='store_true');group.add_argument('--owner-catchup-2026-10-29',action='store_true');args=ap.parse_args()
  config=core.read(CONFIG);validate(config);now=datetime.now(core.ZONE)
- catchup=core.read(CATCHUP) if args.owner_catchup_2026_10_28 else None
+ catchup_day='2026-10-29' if args.owner_catchup_2026_10_29 else '2026-10-28'
+ catchup=core.read(CATCHUP29) if args.owner_catchup_2026_10_29 else core.read(CATCHUP) if args.owner_catchup_2026_10_28 else None
  if catchup and (args.verify or args.wait_for_slot or args.local_bundles):raise ValueError('Catch-up must use exact remote bundle alone')
- selected=lambda instant:owner_catchup_rows(config,instant,catchup) if catchup else rows_now(config,instant)
+ selected=lambda instant:owner_catchup_rows(config,instant,catchup,catchup_day) if catchup else rows_now(config,instant)
  rows=selected(now) if catchup else config['carousels'] if args.verify else rows_now(config,now,args.wait_for_slot)
  if not rows:
   missed=[r['key'] for r in config['carousels'] if now>datetime.fromisoformat(r['publish_at'])+timedelta(minutes=30) and not (ROOT/'data/carousel-publications'/f'{r["key"]}.json').exists()]
