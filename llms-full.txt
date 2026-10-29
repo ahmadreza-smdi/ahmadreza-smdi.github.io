@@ -146,6 +146,7 @@ Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احم�
 
 - [AI agents are learning when to ask.](https://a-samadi.com/carousels/tech-trend-assisted-permissions.html): GitHub has made assisted permissions generally available in Copilot CLI, the Copilot app and VS Code. The useful question is what still needs your approval.
 - [Technology explainers](https://a-samadi.com/carousels/): Source-dated visual explainers by Ahmadreza Samadi on AI and business technology, with the original slides, source links and companion pages.
+- [More AI calls do not prove more useful work.](https://a-samadi.com/carousels/tech-trend-ai-usage-not-outcomes.html): GitHub has expanded Copilot usage reporting across tools. That helps show activity. It does not measure business results by itself.
 
 ## Public code and data
 

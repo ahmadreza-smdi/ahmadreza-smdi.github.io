@@ -1,0 +1,40 @@
+{
+  "scheduled_at": "2026-10-29T10:00:00+03:30",
+  "prepared_at": "2026-10-29T13:44:13+03:30",
+  "release_started_at": "2026-10-29T13:44:44+03:30",
+  "content_timestamp": "2026-10-29T13:44:13+03:30",
+  "private_preflight_before_slot": false,
+  "automatic_daily_exception": false,
+  "owner_authorized_catchup": {
+    "owner_instruction_date": "2026-10-29",
+    "key": "2026-10-29",
+    "slug": "tech-trend-ai-usage-not-outcomes",
+    "bundle_sha256": "9b171b779e30ac299d65190099a4bb651ebf036d34523f1a2ff7bea5720e3fd9",
+    "destination": "https://a-samadi.com",
+    "action": "publish_missed_carousel_once",
+    "not_before": "2026-10-29T10:30:01+03:30",
+    "expires_at": "2026-10-29T23:30:00+03:30"
+  },
+  "format": "carousel_gallery",
+  "human_native_review_claimed": false,
+  "slug": "tech-trend-ai-usage-not-outcomes",
+  "bundle_sha256": "9b171b779e30ac299d65190099a4bb651ebf036d34523f1a2ff7bea5720e3fd9",
+  "site_checks_passed": 28,
+  "public_paths": [
+    "ar/topics/ai-real-estate.html",
+    "assets/carousels/tech-trend-ai-usage-not-outcomes/carousel.pdf",
+    "assets/carousels/tech-trend-ai-usage-not-outcomes/slide-01.png",
+    "assets/carousels/tech-trend-ai-usage-not-outcomes/slide-02.png",
+    "assets/carousels/tech-trend-ai-usage-not-outcomes/slide-03.png",
+    "assets/carousels/tech-trend-ai-usage-not-outcomes/slide-04.png",
+    "assets/carousels/tech-trend-ai-usage-not-outcomes/slide-05.png",
+    "assets/carousels/tech-trend-ai-usage-not-outcomes/slide-06.png",
+    "carousels/index.html",
+    "carousels/tech-trend-ai-usage-not-outcomes.html",
+    "fa/topics/ai-real-estate.html",
+    "llms-full.txt",
+    "locales/topic-hubs.json",
+    "sitemap.xml",
+    "topics/ai-real-estate.html"
+  ]
+}

@@ -536,6 +536,11 @@
         "fa": "fa/writing/business-ai-evaluation-cases.html",
         "ar": "ar/writing/business-ai-evaluation-cases.html"
       }
+    },
+    "carousel_tech_trend_ai_usage_not_outcomes": {
+      "paths": {
+        "en": "carousels/tech-trend-ai-usage-not-outcomes.html"
+      }
     }
   },
   "hubs": [
@@ -812,7 +817,8 @@
         "article_prompt_injection_layered_controls",
         "article_business_ai_evaluation_cases",
         "property_study_explorer",
-        "carousel_tech_trend_assisted_permissions"
+        "carousel_tech_trend_assisted_permissions",
+        "carousel_tech_trend_ai_usage_not_outcomes"
       ],
       "all_articles_heading": {
         "en": "All articles in this topic",
@@ -852,7 +858,8 @@
         "property_study_explorer",
         "article_prompt_injection_layered_controls",
         "carousel_tech_trend_assisted_permissions",
-        "article_business_ai_evaluation_cases"
+        "article_business_ai_evaluation_cases",
+        "carousel_tech_trend_ai_usage_not_outcomes"
       ],
       "video_playlist": {
         "title": "AI × Property",
