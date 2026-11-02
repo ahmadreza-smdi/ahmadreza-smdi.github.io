@@ -21,7 +21,6 @@ SUMMARY = (
 )
 NOTES = 'Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احمد صمدی. Arabic: أحمدرضا صمدي.'
 PROFILES = [
-    ('X', 'https://x.com/AhmadrezaSmdi', 'Ahmadreza Samadi’s official X profile, with technology explainers and links to his personal website.'),
     ('GitHub', 'https://github.com/ahmadreza-smdi', 'Ahmadreza Samadi’s public GitHub profile, connecting his repositories with the personal website.'),
     ('YouTube', 'https://www.youtube.com/@ahmadreza-samadi', 'Ahmadreza Samadi’s YouTube channel, connecting published explainer films with his personal website.'),
     ('DEV', 'https://dev.to/ahmadreza_smdi', 'Ahmadreza Samadi’s DEV profile, connecting published technical writing with his personal website.'),
@@ -31,6 +30,7 @@ PROFILES = [
     ('Peerlist', 'https://peerlist.io/ahmadrezasmdi', 'Peerlist profile listed by Ahmadreza Samadi as an official account on his biography page.'),
     ('Product Hunt', 'https://www.producthunt.com/@ahmadreza_samadi', 'Product Hunt profile listed by Ahmadreza Samadi as an official account on his biography page.'),
     ('Wellfound', 'https://wellfound.com/u/ahmadreza-samadi', 'Wellfound profile listed by Ahmadreza Samadi as an official account on his biography page.'),
+    ('X', 'https://x.com/AhmadrezaSmdi', 'Ahmadreza Samadi’s official X profile, with technology explainers and links to his personal website.'),
 ]
 # Primary destinations are intentionally stable as the complete catalogue grows.
 CORE_PATHS = (
