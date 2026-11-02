@@ -25,7 +25,7 @@ class Page(HTMLParser):
 
 def render(language, config):
     title, label, brief = LABELS[language]
-    links=[(name, config[name]) for name in ('YouTube','Instagram','LinkedIn')]
+    links=[(name, config[name]) for name in ('YouTube','Instagram','LinkedIn','X')]
     if config.get('newsletter'):
         links.insert(0, (brief, config['newsletter']))
     anchors=' · '.join(f'<a href="{html.escape(url, quote=True)}"><bdi>{html.escape(name)}</bdi></a>' for name,url in links)
