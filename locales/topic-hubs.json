@@ -541,6 +541,13 @@
       "paths": {
         "en": "carousels/tech-trend-ai-usage-not-outcomes.html"
       }
+    },
+    "article_ai_research_examination_understanding": {
+      "paths": {
+        "en": "writing/ai-research-examination-understanding.html",
+        "fa": "fa/writing/ai-research-examination-understanding.html",
+        "ar": "ar/writing/ai-research-examination-understanding.html"
+      }
     }
   },
   "hubs": [
@@ -816,6 +823,7 @@
         "article_building_digital_twin_data_freshness",
         "article_prompt_injection_layered_controls",
         "article_business_ai_evaluation_cases",
+        "article_ai_research_examination_understanding",
         "property_study_explorer",
         "carousel_tech_trend_assisted_permissions",
         "carousel_tech_trend_ai_usage_not_outcomes"
@@ -859,7 +867,8 @@
         "article_prompt_injection_layered_controls",
         "carousel_tech_trend_assisted_permissions",
         "article_business_ai_evaluation_cases",
-        "carousel_tech_trend_ai_usage_not_outcomes"
+        "carousel_tech_trend_ai_usage_not_outcomes",
+        "article_ai_research_examination_understanding"
       ],
       "video_playlist": {
         "title": "AI × Property",

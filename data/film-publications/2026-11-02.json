@@ -1,0 +1,31 @@
+{
+  "scheduled_at": "2026-11-02T21:00:00+03:30",
+  "prepared_at": "2026-11-02T20:03:15+03:30",
+  "release_started_at": "2026-11-02T21:00:17+03:30",
+  "private_preflight_before_slot": true,
+  "content_timestamp": "2026-11-02T21:00:00+03:30",
+  "slug": "ai-research-examination-understanding",
+  "bundle_sha256": "6349eb7ef1f8525917b645a165498eb381158228798889aa973639ad450927b5",
+  "site_checks_passed": 28,
+  "public_paths": [
+    "ar/topics/ai-real-estate.html",
+    "ar/writing/ai-research-examination-understanding.html",
+    "ar/writing/index.html",
+    "assets/writing/ai-research-examination-understanding/captions-en.vtt",
+    "assets/writing/ai-research-examination-understanding/cover.png",
+    "assets/writing/ai-research-examination-understanding/film.mp4",
+    "fa/topics/ai-real-estate.html",
+    "fa/writing/ai-research-examination-understanding.html",
+    "fa/writing/index.html",
+    "llms-full.txt",
+    "locales/article-hubs.json",
+    "locales/topic-hubs.json",
+    "scripts/check_locale_parity.py",
+    "sitemap.xml",
+    "topics/ai-real-estate.html",
+    "watch/ai-research-examination-understanding.html",
+    "writing/ai-research-examination-understanding.html",
+    "writing/feed.xml",
+    "writing/index.html"
+  ]
+}

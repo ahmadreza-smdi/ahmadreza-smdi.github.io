@@ -158,7 +158,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/writing/</loc>
-        <lastmod>2026-10-28T21:00:00+03:30</lastmod>
+        <lastmod>2026-11-02T21:00:00+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -182,7 +182,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/</loc>
-        <lastmod>2026-10-28T21:00:00+03:30</lastmod>
+        <lastmod>2026-11-02T21:00:00+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -206,7 +206,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/</loc>
-        <lastmod>2026-10-28T21:00:00+03:30</lastmod>
+        <lastmod>2026-11-02T21:00:00+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -2620,5 +2620,49 @@
         <image:image>
             <image:loc>https://a-samadi.com/assets/carousels/tech-trend-ai-usage-not-outcomes/slide-01.png</image:loc>
         </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/ai-research-examination-understanding.html</loc>
+        <lastmod>2026-11-02T21:00:00+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-research-examination-understanding.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-research-examination-understanding.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-research-examination-understanding.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-research-examination-understanding.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/ai-research-examination-understanding/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/ai-research-examination-understanding.html</loc>
+        <lastmod>2026-11-02T21:00:00+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-research-examination-understanding.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-research-examination-understanding.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-research-examination-understanding.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-research-examination-understanding.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/ai-research-examination-understanding/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/ai-research-examination-understanding.html</loc>
+        <lastmod>2026-11-02T21:00:00+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-research-examination-understanding.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-research-examination-understanding.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-research-examination-understanding.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-research-examination-understanding.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/ai-research-examination-understanding/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/watch/ai-research-examination-understanding.html</loc>
+        <lastmod>2026-11-02T21:00:00+03:30</lastmod>
+        <video:video>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/ai-research-examination-understanding/cover.png</video:thumbnail_loc>
+            <video:title>AI wrote the result. People still need to understand it.</video:title>
+            <video:description>Zara, a fictional research coordinator, receives an AI-generated result. A polished answer alone does not explain which assumptions support it, what was checked, or what its limitations mean.</video:description>
+            <video:content_loc>https://a-samadi.com/assets/writing/ai-research-examination-understanding/film.mp4</video:content_loc>
+            <video:publication_date>2026-11-02T21:00:00+03:30</video:publication_date>
+        </video:video>
     </url>
 </urlset>

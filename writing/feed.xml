@@ -8,6 +8,14 @@
     <dc:creator>Ahmadreza Samadi</dc:creator>
     <atom:link href="https://a-samadi.com/writing/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>AI wrote the result. People still need to understand it.</title>
+      <link>https://a-samadi.com/writing/ai-research-examination-understanding.html</link>
+      <description>Zara, a fictional research coordinator, receives an AI-generated result. A polished answer alone does not explain which assumptions support it, what was checked, or what its limitations mean.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Mon, 02 Nov 2026 17:30:00 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/ai-research-examination-understanding.html</guid>
+    </item>
+    <item>
       <title>The AI demo passed. The real work did not.</title>
       <link>https://a-samadi.com/writing/business-ai-evaluation-cases.html</link>
       <description>Ahmadreza Samadi explains why a polished AI demonstration does not establish reliability for the real task: choose evaluation cases from the work.</description>
