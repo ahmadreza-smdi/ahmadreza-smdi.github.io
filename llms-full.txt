@@ -161,6 +161,12 @@ Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احم�
 - [An AI factory needs more than GPUs.](https://a-samadi.com/carousels/tech-trend-ai-factory-observability.html): NVIDIA announced Minerva, an AIOps platform connecting infrastructure and workload signals. The trend is visibility across the whole operation.
 - [A simulated world is still a test environment.](https://a-samadi.com/carousels/tech-trend-world-models-real-tests.html): NVIDIA expanded Cosmos with data, training and simulation tools for physical AI. Generated scenarios can broaden what developers test.
 - [A chat request is not a shipped fix.](https://a-samadi.com/carousels/tech-trend-notification-to-reviewed-fix.html): GitHub announced a consolidated Teams app that connects issue notifications with Copilot. The review step still belongs in the workflow.
+- [Dubai broker verification: check the record](https://a-samadi.com/carousels/dubai-broker-record-check.html): Check the official broker record, then separately check the property and transaction.
+- [Dubai project status: check the right project](https://a-samadi.com/carousels/dubai-project-status-check.html): Match the registered project before interpreting the progress reported for that exact project.
+- [Dubai rental index: compare the right evidence](https://a-samadi.com/carousels/dubai-rental-index-context.html): Keep asking rents, property details and the official index result clearly labelled.
+- [Dubai procedure status: check the actual result](https://a-samadi.com/carousels/dubai-procedure-status-check.html): Report the observed procedure status, not the outcome you expected.
+- [Dubai valuation: identify the evidence behind the number](https://a-samadi.com/carousels/dubai-valuation-evidence.html): Name the evidence type, source and purpose before comparing property values.
+- [AI property briefs: keep claims tied to evidence](https://a-samadi.com/carousels/ai-property-brief-evidence.html): Attach a source trail to each important claim and keep gaps visible.
 
 ## Public code and data
 
