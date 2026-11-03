@@ -464,6 +464,86 @@
         "bytes": 61226,
         "quality": 80
       }
+    },
+    {
+      "source": "assets/writing/cash-conversion-cycle-clocks/cover.png",
+      "sourceSha256": "85f27c23bc2118b59e65622b27fc8f506288ec75d0ec9f9ef5fc5d1d258dfcca",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/cash-conversion-cycle-clocks/cover-poster.jpg",
+        "sha256": "1d602ec742bab991fa3ba4ad15cf5a21692e07e3012e3717fe49dcd65ed2cbf5",
+        "bytes": 189043,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/cash-conversion-cycle-clocks/cover-poster.webp",
+        "sha256": "fff9e80554bda6e238506e54b223f33249eff581116227568ce304aa218e0d8b",
+        "bytes": 74042,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/structured-output-source-checks/cover.png",
+      "sourceSha256": "7f5d967d5aa4dbcf468fc975a71313909f9823d337de1219a8cb0e1a9f67037f",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/structured-output-source-checks/cover-poster.jpg",
+        "sha256": "e1a276cbdb98691cbc54ac7ebd44691e8448f657c98205cf7d743fecba25505c",
+        "bytes": 153015,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/structured-output-source-checks/cover-poster.webp",
+        "sha256": "836c4a4805afcb7c89d8105ce766f29a3b643f6d94d83897f6082130f3a2f546",
+        "bytes": 49784,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/building-energy-audit-decisions/cover.png",
+      "sourceSha256": "154c318776d772e192469873f06f2c41fbd07c952de2f34f13fb54f8062fac6a",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/building-energy-audit-decisions/cover-poster.jpg",
+        "sha256": "b8b6f4b3ba6f803769c34f406dd56310a4b92765b86fb32bd76e7090fdfd2727",
+        "bytes": 194810,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/building-energy-audit-decisions/cover-poster.webp",
+        "sha256": "e6923148f29a871096697d376aa5d549ff0bd7d7463aaa3d6d058e03f372007e",
+        "bytes": 80026,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/agent-workflow-shared-bottlenecks/cover.png",
+      "sourceSha256": "f57c84ade651f41890547f9c449c634da3006d64a22634835af2e6b5ec68ef03",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/agent-workflow-shared-bottlenecks/cover-poster.jpg",
+        "sha256": "0170396a6f4700857c241baa08b9ea881bc1ef26b99427fd70ddbe33511ca6d3",
+        "bytes": 193176,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/agent-workflow-shared-bottlenecks/cover-poster.webp",
+        "sha256": "43298884f9be25cab44fc7fa42456782d210735fc467a7abffbc77a3be386102",
+        "bytes": 79998,
+        "quality": 80
+      }
     }
   ],
   "preloadPages": {

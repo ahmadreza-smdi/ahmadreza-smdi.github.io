@@ -158,7 +158,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/writing/</loc>
-        <lastmod>2026-11-02T21:00:00+03:30</lastmod>
+        <lastmod>2026-11-03T19:07:36+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -182,7 +182,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/</loc>
-        <lastmod>2026-11-02T21:00:00+03:30</lastmod>
+        <lastmod>2026-11-03T19:07:36+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -206,7 +206,7 @@
     </url>
     <url>
         <loc>https://a-samadi.com/ar/writing/</loc>
-        <lastmod>2026-11-02T21:00:00+03:30</lastmod>
+        <lastmod>2026-11-03T19:07:36+03:30</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/" />
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/" />
@@ -2664,5 +2664,209 @@
             <video:content_loc>https://a-samadi.com/assets/writing/ai-research-examination-understanding/film.mp4</video:content_loc>
             <video:publication_date>2026-11-02T21:00:00+03:30</video:publication_date>
         </video:video>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/cash-conversion-cycle-clocks.html</loc>
+        <lastmod>2026-11-03T19:07:36+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/cash-conversion-cycle-clocks.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/cash-conversion-cycle-clocks.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/cash-conversion-cycle-clocks.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/cash-conversion-cycle-clocks.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/cash-conversion-cycle-clocks/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/cash-conversion-cycle-clocks.html</loc>
+        <lastmod>2026-11-03T19:07:36+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/cash-conversion-cycle-clocks.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/cash-conversion-cycle-clocks.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/cash-conversion-cycle-clocks.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/cash-conversion-cycle-clocks.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/cash-conversion-cycle-clocks/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/cash-conversion-cycle-clocks.html</loc>
+        <lastmod>2026-11-03T19:07:36+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/cash-conversion-cycle-clocks.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/cash-conversion-cycle-clocks.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/cash-conversion-cycle-clocks.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/cash-conversion-cycle-clocks.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/cash-conversion-cycle-clocks/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/watch/cash-conversion-cycle-clocks.html</loc>
+        <lastmod>2026-11-03T19:07:36+03:30</lastmod>
+        <video:video>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/cash-conversion-cycle-clocks/cover.png</video:thumbnail_loc>
+            <video:title>The sale happened. The cash is still on its way.</video:title>
+            <video:description>Sales alone do not tell Sami how much cash is available today.</video:description>
+            <video:content_loc>https://a-samadi.com/assets/writing/cash-conversion-cycle-clocks/film.mp4</video:content_loc>
+            <video:publication_date>2026-11-03T19:07:36+03:30</video:publication_date>
+        </video:video>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/carousels/tech-trend-gemini-business-hub.html</loc>
+        <lastmod>2026-11-03T19:07:36+03:30</lastmod>
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/carousels/tech-trend-gemini-business-hub/slide-01.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/structured-output-source-checks.html</loc>
+        <lastmod>2026-11-03T19:07:36+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/structured-output-source-checks.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/structured-output-source-checks.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/structured-output-source-checks.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/structured-output-source-checks.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/structured-output-source-checks/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/structured-output-source-checks.html</loc>
+        <lastmod>2026-11-03T19:07:36+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/structured-output-source-checks.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/structured-output-source-checks.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/structured-output-source-checks.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/structured-output-source-checks.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/structured-output-source-checks/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/structured-output-source-checks.html</loc>
+        <lastmod>2026-11-03T19:07:36+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/structured-output-source-checks.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/structured-output-source-checks.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/structured-output-source-checks.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/structured-output-source-checks.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/structured-output-source-checks/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/watch/structured-output-source-checks.html</loc>
+        <lastmod>2026-11-03T19:07:36+03:30</lastmod>
+        <video:video>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/structured-output-source-checks/cover.png</video:thumbnail_loc>
+            <video:title>The form was perfect. The answer was wrong.</video:title>
+            <video:description>A tidy shape and a true statement are different checks.</video:description>
+            <video:content_loc>https://a-samadi.com/assets/writing/structured-output-source-checks/film.mp4</video:content_loc>
+            <video:publication_date>2026-11-03T19:07:36+03:30</video:publication_date>
+        </video:video>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/carousels/tech-trend-ai-factory-observability.html</loc>
+        <lastmod>2026-11-03T19:07:36+03:30</lastmod>
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/carousels/tech-trend-ai-factory-observability/slide-01.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/building-energy-audit-decisions.html</loc>
+        <lastmod>2026-11-03T19:07:36+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/building-energy-audit-decisions.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/building-energy-audit-decisions.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/building-energy-audit-decisions.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/building-energy-audit-decisions.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/building-energy-audit-decisions/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/building-energy-audit-decisions.html</loc>
+        <lastmod>2026-11-03T19:07:36+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/building-energy-audit-decisions.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/building-energy-audit-decisions.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/building-energy-audit-decisions.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/building-energy-audit-decisions.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/building-energy-audit-decisions/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/building-energy-audit-decisions.html</loc>
+        <lastmod>2026-11-03T19:07:36+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/building-energy-audit-decisions.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/building-energy-audit-decisions.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/building-energy-audit-decisions.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/building-energy-audit-decisions.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/building-energy-audit-decisions/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/watch/building-energy-audit-decisions.html</loc>
+        <lastmod>2026-11-03T19:07:36+03:30</lastmod>
+        <video:video>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/building-energy-audit-decisions/cover.png</video:thumbnail_loc>
+            <video:title>Before buying a new machine, find where the energy goes</video:title>
+            <video:description>Mira, a fictional building manager, sees a high energy bill and wants new equipment. Instead of choosing a machine from one number, she asks for the building assets and operations to be assessed.</video:description>
+            <video:content_loc>https://a-samadi.com/assets/writing/building-energy-audit-decisions/film.mp4</video:content_loc>
+            <video:publication_date>2026-11-03T19:07:36+03:30</video:publication_date>
+        </video:video>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/carousels/tech-trend-world-models-real-tests.html</loc>
+        <lastmod>2026-11-03T19:07:36+03:30</lastmod>
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/carousels/tech-trend-world-models-real-tests/slide-01.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/writing/agent-workflow-shared-bottlenecks.html</loc>
+        <lastmod>2026-11-03T19:07:36+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/agent-workflow-shared-bottlenecks.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/agent-workflow-shared-bottlenecks.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/agent-workflow-shared-bottlenecks.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/agent-workflow-shared-bottlenecks.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/agent-workflow-shared-bottlenecks/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/fa/writing/agent-workflow-shared-bottlenecks.html</loc>
+        <lastmod>2026-11-03T19:07:36+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/agent-workflow-shared-bottlenecks.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/agent-workflow-shared-bottlenecks.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/agent-workflow-shared-bottlenecks.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/agent-workflow-shared-bottlenecks.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/agent-workflow-shared-bottlenecks/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/ar/writing/agent-workflow-shared-bottlenecks.html</loc>
+        <lastmod>2026-11-03T19:07:36+03:30</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/agent-workflow-shared-bottlenecks.html" />
+        <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/agent-workflow-shared-bottlenecks.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/agent-workflow-shared-bottlenecks.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/agent-workflow-shared-bottlenecks.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/writing/agent-workflow-shared-bottlenecks/cover.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/watch/agent-workflow-shared-bottlenecks.html</loc>
+        <lastmod>2026-11-03T19:07:36+03:30</lastmod>
+        <video:video>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/agent-workflow-shared-bottlenecks/cover.png</video:thumbnail_loc>
+            <video:title>More agents. The same queue.</video:title>
+            <video:description>In a fictional dispatch library, adding more helpers does not shorten the queue: every independent task waits for the same key. The illustration asks where work must be coordinated and where it can proceed independently.</video:description>
+            <video:content_loc>https://a-samadi.com/assets/writing/agent-workflow-shared-bottlenecks/film.mp4</video:content_loc>
+            <video:publication_date>2026-11-03T19:07:36+03:30</video:publication_date>
+        </video:video>
+    </url>
+    <url>
+        <loc>https://a-samadi.com/carousels/tech-trend-notification-to-reviewed-fix.html</loc>
+        <lastmod>2026-11-03T19:07:36+03:30</lastmod>
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/carousels/tech-trend-notification-to-reviewed-fix/slide-01.png</image:loc>
+        </image:image>
     </url>
 </urlset>

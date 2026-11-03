@@ -1567,6 +1567,106 @@
         }
       ],
       "watch": "watch/ai-research-examination-understanding.html"
+    },
+    {
+      "stem": "cash-conversion-cycle-clocks",
+      "classification": "explainer",
+      "hub": "business-systems-dubai",
+      "paths": {
+        "en": "writing/cash-conversion-cycle-clocks.html",
+        "fa": "fa/writing/cash-conversion-cycle-clocks.html",
+        "ar": "ar/writing/cash-conversion-cycle-clocks.html"
+      },
+      "related": [
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ],
+      "watch": "watch/cash-conversion-cycle-clocks.html"
+    },
+    {
+      "stem": "structured-output-source-checks",
+      "classification": "explainer",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/structured-output-source-checks.html",
+        "fa": "fa/writing/structured-output-source-checks.html",
+        "ar": "ar/writing/structured-output-source-checks.html"
+      },
+      "related": [
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ],
+      "watch": "watch/structured-output-source-checks.html"
+    },
+    {
+      "stem": "building-energy-audit-decisions",
+      "classification": "explainer",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/building-energy-audit-decisions.html",
+        "fa": "fa/writing/building-energy-audit-decisions.html",
+        "ar": "ar/writing/building-energy-audit-decisions.html"
+      },
+      "related": [
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ],
+      "watch": "watch/building-energy-audit-decisions.html"
+    },
+    {
+      "stem": "agent-workflow-shared-bottlenecks",
+      "classification": "explainer",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/agent-workflow-shared-bottlenecks.html",
+        "fa": "fa/writing/agent-workflow-shared-bottlenecks.html",
+        "ar": "ar/writing/agent-workflow-shared-bottlenecks.html"
+      },
+      "related": [
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ],
+      "watch": "watch/agent-workflow-shared-bottlenecks.html"
     }
   ]
 }

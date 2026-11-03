@@ -1763,6 +1763,14 @@
   ],
   "published_resources": [
     {
+      "url": "https://a-samadi.com/carousels/tech-trend-ai-factory-observability.html",
+      "language": "en",
+      "type": "CollectionPage",
+      "title": "An AI factory needs more than GPUs.",
+      "description": "NVIDIA announced Minerva, an AIOps platform connecting infrastructure and workload signals. The trend is visibility across the whole operation.",
+      "date_published": "2026-11-03T19:07:36+03:30"
+    },
+    {
       "url": "https://a-samadi.com/carousels/tech-trend-ai-usage-not-outcomes.html",
       "language": "en",
       "type": "CollectionPage",
@@ -1777,6 +1785,38 @@
       "title": "AI agents are learning when to ask.",
       "description": "GitHub has made assisted permissions generally available in Copilot CLI, the Copilot app and VS Code. The useful question is what still needs your approval.",
       "date_published": "2026-10-28T16:43:04+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/carousels/tech-trend-gemini-business-hub.html",
+      "language": "en",
+      "type": "CollectionPage",
+      "title": "A business hub is not a business autopilot.",
+      "description": "Google announced a Gemini landing page for small businesses, with brand, finance and connected-app tools. Start with the workflow you need.",
+      "date_published": "2026-11-03T19:07:36+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/carousels/tech-trend-notification-to-reviewed-fix.html",
+      "language": "en",
+      "type": "CollectionPage",
+      "title": "A chat request is not a shipped fix.",
+      "description": "GitHub announced a consolidated Teams app that connects issue notifications with Copilot. The review step still belongs in the workflow.",
+      "date_published": "2026-11-03T19:07:36+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/carousels/tech-trend-world-models-real-tests.html",
+      "language": "en",
+      "type": "CollectionPage",
+      "title": "A simulated world is still a test environment.",
+      "description": "NVIDIA expanded Cosmos with data, training and simulation tools for physical AI. Generated scenarios can broaden what developers test.",
+      "date_published": "2026-11-03T19:07:36+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/agent-workflow-shared-bottlenecks.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "More agents. The same queue.",
+      "description": "Watch the English film: In a fictional dispatch library, adding more helpers does not shorten the queue: every independent task waits for the same key. The illustration asks where work must be coordinated and where it can proceed independently.",
+      "date_published": "2026-11-03T19:07:36+03:30"
     },
     {
       "url": "https://a-samadi.com/watch/ai-agent-permissions-ability-authority.html",
@@ -1819,12 +1859,28 @@
       "date_published": "2026-10-27T13:10:13+03:30"
     },
     {
+      "url": "https://a-samadi.com/watch/building-energy-audit-decisions.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "Before buying a new machine, find where the energy goes",
+      "description": "Watch the English film: Mira, a fictional building manager, sees a high energy bill and wants new equipment. Instead of choosing a machine from one number, she asks for the building assets and operations to be assessed.",
+      "date_published": "2026-11-03T19:07:36+03:30"
+    },
+    {
       "url": "https://a-samadi.com/watch/business-ai-evaluation-cases.html",
       "language": "en",
       "type": "VideoObject",
       "title": "The AI demo passed. The real work did not.",
       "description": "Watch Ahmadreza Samadi’s English film about AI evaluation: a polished demo is not proof of task reliability; choose cases that reflect the work.",
       "date_published": "2026-10-28T21:00:00+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/cash-conversion-cycle-clocks.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "The sale happened. The cash is still on its way.",
+      "description": "Watch the English film: Sales alone do not tell Sami how much cash is available today.",
+      "date_published": "2026-11-03T19:07:36+03:30"
     },
     {
       "url": "https://a-samadi.com/watch/charging-80.html",
@@ -1931,12 +1987,28 @@
       "date_published": "2026-10-09T03:57:44+03:30"
     },
     {
+      "url": "https://a-samadi.com/watch/structured-output-source-checks.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "The form was perfect. The answer was wrong.",
+      "description": "Watch the English film: A tidy shape and a true statement are different checks.",
+      "date_published": "2026-11-03T19:07:36+03:30"
+    },
+    {
       "url": "https://a-samadi.com/watch/tesla-roadster-flight-claim.html",
       "language": "en",
       "type": "VideoObject",
       "title": "Tesla says Roadster can fly: three questions to ask",
       "description": "Watch the English animated film separating Tesla flight claims, access conditions and intended use, with an illustrated thrust mechanism.",
       "date_published": "2026-10-19T21:25:38+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/agent-workflow-shared-bottlenecks.html",
+      "language": "en",
+      "type": "Article",
+      "title": "More agents. The same queue.",
+      "description": "In a fictional dispatch library, adding more helpers does not shorten the queue: every independent task waits for the same key. The illustration asks where work must be coordinated and where it can proceed independently.",
+      "date_published": "2026-11-03T19:07:36+03:30"
     },
     {
       "url": "https://a-samadi.com/writing/ai-agent-permissions-ability-authority.html",
@@ -2051,6 +2123,14 @@
       "date_published": "2026-10-27T13:10:13+03:30"
     },
     {
+      "url": "https://a-samadi.com/writing/building-energy-audit-decisions.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Before buying a new machine, find where the energy goes",
+      "description": "Mira, a fictional building manager, sees a high energy bill and wants new equipment. Instead of choosing a machine from one number, she asks for the building assets and operations to be assessed.",
+      "date_published": "2026-11-03T19:07:36+03:30"
+    },
+    {
       "url": "https://a-samadi.com/writing/building-laser-scans-point-clouds-explained.html",
       "language": "en",
       "type": "Article",
@@ -2073,6 +2153,14 @@
       "title": "The AI demo passed. The real work did not.",
       "description": "Ahmadreza Samadi explains why a polished AI demonstration does not establish reliability for the real task: choose evaluation cases from the work.",
       "date_published": "2026-10-28T21:00:00+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/cash-conversion-cycle-clocks.html",
+      "language": "en",
+      "type": "Article",
+      "title": "The sale happened. The cash is still on its way.",
+      "description": "Sales alone do not tell Sami how much cash is available today.",
+      "date_published": "2026-11-03T19:07:36+03:30"
     },
     {
       "url": "https://a-samadi.com/writing/chatgpt-intelligent-ui-explained.html",
@@ -2337,6 +2425,14 @@
       "title": "Start with the decision, then build the AI",
       "description": "A practical approach to AI product decisions: start with the customer’s decision, assess the evidence, and evaluate the whole workflow.",
       "date_published": "2026-09-13T10:06:07+00:00"
+    },
+    {
+      "url": "https://a-samadi.com/writing/structured-output-source-checks.html",
+      "language": "en",
+      "type": "Article",
+      "title": "The form was perfect. The answer was wrong.",
+      "description": "A tidy shape and a true statement are different checks.",
+      "date_published": "2026-11-03T19:07:36+03:30"
     },
     {
       "url": "https://a-samadi.com/writing/tesla-roadster-flight-claim.html",

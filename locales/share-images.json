@@ -267,6 +267,54 @@
       "sourceSha256": "1c1999187d6af1ed21d6e85ab778c2cc773aeeca3f66d45866415716a5495c04",
       "output": "assets/share/ai-research-examination-understanding-og-1200x630.png",
       "outputSha256": "189d460c0b93b0af237df9f06045726968e83e28065cafd007a905d57e3441f6"
+    },
+    {
+      "source": "assets/writing/cash-conversion-cycle-clocks/cover.png",
+      "sourceSha256": "85f27c23bc2118b59e65622b27fc8f506288ec75d0ec9f9ef5fc5d1d258dfcca",
+      "output": "assets/share/cash-conversion-cycle-clocks-og-1200x630.png",
+      "outputSha256": "6d7b5bd656955b66152775c1b78f21dab23320d2133b680fe0d3b72b888c502a"
+    },
+    {
+      "source": "assets/carousels/tech-trend-gemini-business-hub/slide-01.png",
+      "sourceSha256": "c800fd0ca6787a13e61ab75e2bde844f23b5d51423aa18c5a955a3e60997b7c9",
+      "output": "assets/share/tech-trend-gemini-business-hub-og-1200x630.png",
+      "outputSha256": "49a09d1cf781de4c915fde8343ef15deb8e160a74e2e8c974753069b00f06023"
+    },
+    {
+      "source": "assets/writing/structured-output-source-checks/cover.png",
+      "sourceSha256": "7f5d967d5aa4dbcf468fc975a71313909f9823d337de1219a8cb0e1a9f67037f",
+      "output": "assets/share/structured-output-source-checks-og-1200x630.png",
+      "outputSha256": "c7c800b553ab64b3be2d62a19bbc60e31dd7079c6cfe817be9951faa68fe05e4"
+    },
+    {
+      "source": "assets/carousels/tech-trend-ai-factory-observability/slide-01.png",
+      "sourceSha256": "2d54f6d0ee56bf2b1ae8b9c9f4a067d2bdb8403375952e240e44e17d5640406d",
+      "output": "assets/share/tech-trend-ai-factory-observability-og-1200x630.png",
+      "outputSha256": "4b74349b290806e0439932b9b40b92398b756b85803d1bb7ef237eb3373fba31"
+    },
+    {
+      "source": "assets/writing/building-energy-audit-decisions/cover.png",
+      "sourceSha256": "154c318776d772e192469873f06f2c41fbd07c952de2f34f13fb54f8062fac6a",
+      "output": "assets/share/building-energy-audit-decisions-og-1200x630.png",
+      "outputSha256": "c79d3396283f606e9f0fe6ce18c75c4df666f44e4bee8a5a4e05ab66d2071c4d"
+    },
+    {
+      "source": "assets/carousels/tech-trend-world-models-real-tests/slide-01.png",
+      "sourceSha256": "b30ddc889692ddbb132c5adfde74545bdd19a7bf10637cfd2929a6b4b2aee4f4",
+      "output": "assets/share/tech-trend-world-models-real-tests-og-1200x630.png",
+      "outputSha256": "c753643e259ebda604027351c74b981a0ea5706873d52c1bb1669c3186469684"
+    },
+    {
+      "source": "assets/writing/agent-workflow-shared-bottlenecks/cover.png",
+      "sourceSha256": "f57c84ade651f41890547f9c449c634da3006d64a22634835af2e6b5ec68ef03",
+      "output": "assets/share/agent-workflow-shared-bottlenecks-og-1200x630.png",
+      "outputSha256": "250a9db5aa8269a6c80984fa9c5baae5fd31133672dc99b7c0d3554be8334298"
+    },
+    {
+      "source": "assets/carousels/tech-trend-notification-to-reviewed-fix/slide-01.png",
+      "sourceSha256": "3379b428bbeafd72c128860b51e26fe7189a6041a29928229be84f0a0d1a4291",
+      "output": "assets/share/tech-trend-notification-to-reviewed-fix-og-1200x630.png",
+      "outputSha256": "da222ca3288c565ccbf4b6f917a853d2348f06e564d1d2c54bab33dd85981609"
     }
   ]
 }

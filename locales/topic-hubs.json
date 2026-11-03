@@ -558,6 +558,54 @@
       "paths": {
         "en": "tools/dubai-rental-yield.html"
       }
+    },
+    "article_cash_conversion_cycle_clocks": {
+      "paths": {
+        "en": "writing/cash-conversion-cycle-clocks.html",
+        "fa": "fa/writing/cash-conversion-cycle-clocks.html",
+        "ar": "ar/writing/cash-conversion-cycle-clocks.html"
+      }
+    },
+    "carousel_tech_trend_gemini_business_hub": {
+      "paths": {
+        "en": "carousels/tech-trend-gemini-business-hub.html"
+      }
+    },
+    "article_structured_output_source_checks": {
+      "paths": {
+        "en": "writing/structured-output-source-checks.html",
+        "fa": "fa/writing/structured-output-source-checks.html",
+        "ar": "ar/writing/structured-output-source-checks.html"
+      }
+    },
+    "carousel_tech_trend_ai_factory_observability": {
+      "paths": {
+        "en": "carousels/tech-trend-ai-factory-observability.html"
+      }
+    },
+    "article_building_energy_audit_decisions": {
+      "paths": {
+        "en": "writing/building-energy-audit-decisions.html",
+        "fa": "fa/writing/building-energy-audit-decisions.html",
+        "ar": "ar/writing/building-energy-audit-decisions.html"
+      }
+    },
+    "carousel_tech_trend_world_models_real_tests": {
+      "paths": {
+        "en": "carousels/tech-trend-world-models-real-tests.html"
+      }
+    },
+    "article_agent_workflow_shared_bottlenecks": {
+      "paths": {
+        "en": "writing/agent-workflow-shared-bottlenecks.html",
+        "fa": "fa/writing/agent-workflow-shared-bottlenecks.html",
+        "ar": "ar/writing/agent-workflow-shared-bottlenecks.html"
+      }
+    },
+    "carousel_tech_trend_notification_to_reviewed_fix": {
+      "paths": {
+        "en": "carousels/tech-trend-notification-to-reviewed-fix.html"
+      }
     }
   },
   "hubs": [
@@ -834,11 +882,18 @@
         "article_prompt_injection_layered_controls",
         "article_business_ai_evaluation_cases",
         "article_ai_research_examination_understanding",
+        "article_structured_output_source_checks",
+        "article_building_energy_audit_decisions",
+        "article_agent_workflow_shared_bottlenecks",
         "property_study_explorer",
         "carousel_tech_trend_assisted_permissions",
         "carousel_tech_trend_ai_usage_not_outcomes",
         "dubai_purchase_cost_calculator",
-        "dubai_rental_yield_calculator"
+        "dubai_rental_yield_calculator",
+        "carousel_tech_trend_gemini_business_hub",
+        "carousel_tech_trend_ai_factory_observability",
+        "carousel_tech_trend_world_models_real_tests",
+        "carousel_tech_trend_notification_to_reviewed_fix"
       ],
       "all_articles_heading": {
         "en": "All articles in this topic",
@@ -882,7 +937,14 @@
         "carousel_tech_trend_ai_usage_not_outcomes",
         "article_ai_research_examination_understanding",
         "dubai_purchase_cost_calculator",
-        "dubai_rental_yield_calculator"
+        "dubai_rental_yield_calculator",
+        "carousel_tech_trend_gemini_business_hub",
+        "article_structured_output_source_checks",
+        "carousel_tech_trend_ai_factory_observability",
+        "article_building_energy_audit_decisions",
+        "carousel_tech_trend_world_models_real_tests",
+        "article_agent_workflow_shared_bottlenecks",
+        "carousel_tech_trend_notification_to_reviewed_fix"
       ],
       "video_playlist": {
         "title": "AI × Property",
@@ -1098,6 +1160,7 @@
         "profit_cash",
         "article_how_many_coffees_to_break_even",
         "article_ai_agent_permissions_ability_authority",
+        "article_cash_conversion_cycle_clocks",
         "profit_film",
         "decision_guide"
       ],
@@ -1108,7 +1171,8 @@
       },
       "additional_resources": [
         "article_how_many_coffees_to_break_even",
-        "article_ai_agent_permissions_ability_authority"
+        "article_ai_agent_permissions_ability_authority",
+        "article_cash_conversion_cycle_clocks"
       ]
     },
     {

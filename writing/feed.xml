@@ -8,6 +8,74 @@
     <dc:creator>Ahmadreza Samadi</dc:creator>
     <atom:link href="https://a-samadi.com/writing/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>An AI factory needs more than GPUs.</title>
+      <link>https://a-samadi.com/carousels/tech-trend-ai-factory-observability.html</link>
+      <description>NVIDIA announced Minerva, an AIOps platform connecting infrastructure and workload signals. The trend is visibility across the whole operation.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Tue, 03 Nov 2026 15:37:36 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/carousels/tech-trend-ai-factory-observability.html</guid>
+    </item>
+    <item>
+      <title>A business hub is not a business autopilot.</title>
+      <link>https://a-samadi.com/carousels/tech-trend-gemini-business-hub.html</link>
+      <description>Google announced a Gemini landing page for small businesses, with brand, finance and connected-app tools. Start with the workflow you need.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Tue, 03 Nov 2026 15:37:36 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/carousels/tech-trend-gemini-business-hub.html</guid>
+    </item>
+    <item>
+      <title>A chat request is not a shipped fix.</title>
+      <link>https://a-samadi.com/carousels/tech-trend-notification-to-reviewed-fix.html</link>
+      <description>GitHub announced a consolidated Teams app that connects issue notifications with Copilot. The review step still belongs in the workflow.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Tue, 03 Nov 2026 15:37:36 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/carousels/tech-trend-notification-to-reviewed-fix.html</guid>
+    </item>
+    <item>
+      <title>A simulated world is still a test environment.</title>
+      <link>https://a-samadi.com/carousels/tech-trend-world-models-real-tests.html</link>
+      <description>NVIDIA expanded Cosmos with data, training and simulation tools for physical AI. Generated scenarios can broaden what developers test.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Tue, 03 Nov 2026 15:37:36 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/carousels/tech-trend-world-models-real-tests.html</guid>
+    </item>
+    <item>
+      <title>More agents. The same queue.</title>
+      <link>https://a-samadi.com/writing/agent-workflow-shared-bottlenecks.html</link>
+      <description>In a fictional dispatch library, adding more helpers does not shorten the queue: every independent task waits for the same key. The illustration asks where work must be coordinated and where it can proceed independently.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Tue, 03 Nov 2026 15:37:36 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/agent-workflow-shared-bottlenecks.html</guid>
+      <atom:link href="https://a-samadi.com/watch/agent-workflow-shared-bottlenecks.html" rel="related" type="text/html" />
+    </item>
+    <item>
+      <title>Before buying a new machine, find where the energy goes</title>
+      <link>https://a-samadi.com/writing/building-energy-audit-decisions.html</link>
+      <description>Mira, a fictional building manager, sees a high energy bill and wants new equipment. Instead of choosing a machine from one number, she asks for the building assets and operations to be assessed.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Tue, 03 Nov 2026 15:37:36 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/building-energy-audit-decisions.html</guid>
+      <atom:link href="https://a-samadi.com/watch/building-energy-audit-decisions.html" rel="related" type="text/html" />
+    </item>
+    <item>
+      <title>The sale happened. The cash is still on its way.</title>
+      <link>https://a-samadi.com/writing/cash-conversion-cycle-clocks.html</link>
+      <description>Sales alone do not tell Sami how much cash is available today.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Tue, 03 Nov 2026 15:37:36 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/cash-conversion-cycle-clocks.html</guid>
+      <atom:link href="https://a-samadi.com/watch/cash-conversion-cycle-clocks.html" rel="related" type="text/html" />
+    </item>
+    <item>
+      <title>The form was perfect. The answer was wrong.</title>
+      <link>https://a-samadi.com/writing/structured-output-source-checks.html</link>
+      <description>A tidy shape and a true statement are different checks.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Tue, 03 Nov 2026 15:37:36 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/writing/structured-output-source-checks.html</guid>
+      <atom:link href="https://a-samadi.com/watch/structured-output-source-checks.html" rel="related" type="text/html" />
+    </item>
+    <item>
       <title>AI wrote the result. People still need to understand it.</title>
       <link>https://a-samadi.com/writing/ai-research-examination-understanding.html</link>
       <description>Zara, a fictional research coordinator, receives an AI-generated result. A polished answer alone does not explain which assumptions support it, what was checked, or what its limitations mean.</description>
