@@ -15,7 +15,69 @@
 <link rel="alternate" type="application/rss+xml" title="Ahmadreza Samadi — English writing" href="https://a-samadi.com/writing/feed.xml">
 <link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg">
 <link rel="stylesheet" href="/css/site.css?v=20261009-writing1">
-<link rel="stylesheet" href="/css/author-box.css?v=20261009-author1">
+<style data-author-box>
+/* A quiet author reference at the end of each article, using the Lagoon tokens. */
+.editorial .article-author {
+  margin-block: 2.5rem 0;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid var(--line-strong);
+  border-inline-start: 3px solid var(--mint-deep);
+  border-radius: 16px;
+  background: var(--surface);
+  text-align: start;
+  overflow-wrap: anywhere;
+}
+.editorial .article-author h2 {
+  margin: 0 0 .25rem;
+  color: var(--muted);
+  font-size: .875rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.editorial .article-author p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.editorial .article-author .article-author__name {
+  margin-block-end: .35rem;
+  font-family: var(--display);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.editorial .article-author a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 44px;
+  max-inline-size: 100%;
+  padding-block: .25rem;
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+.editorial .article-author a:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+@media (forced-colors: active) {
+  .editorial .article-author { border-color: CanvasText; background: Canvas; }
+  .editorial .article-author h2, .editorial .article-author p { color: CanvasText; }
+  .editorial .article-author a { color: LinkText; }
+  .editorial .article-author a:focus-visible { outline-color: Highlight; }
+}
+@media print {
+  .editorial .article-author {
+    break-inside: avoid;
+    margin-block-start: 1.5rem;
+    border-color: #777;
+    background: transparent;
+  }
+  .editorial .article-author h2, .editorial .article-author p, .editorial .article-author a { color: #000; }
+}
+</style>
 <meta property="og:type" content="website"><meta property="og:site_name" content="Ahmadreza Samadi">
 <meta property="og:title" content="AI in real estate: evidence and decisions | Ahmadreza Samadi">
 <meta property="og:description" content="A reading path through property data, human review, AI workflow costs and rental cash flow, with Ahmadreza Samadi’s work at Appraiva as context.">
@@ -66,7 +128,7 @@
         "@type": "ItemList",
         "@id": "https://a-samadi.com/topics/ai-real-estate.html#reading-path",
         "itemListOrder": "https://schema.org/ItemListOrderAscending",
-        "numberOfItems": 44,
+        "numberOfItems": 46,
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -331,6 +393,18 @@
             "position": 44,
             "url": "https://a-samadi.com/carousels/tech-trend-ai-usage-not-outcomes.html",
             "name": "More AI calls do not prove more useful work."
+          },
+          {
+            "@type": "ListItem",
+            "position": 45,
+            "url": "https://a-samadi.com/tools/dubai-purchase-cost.html",
+            "name": "Dubai purchase-cost calculator: what cash does the purchase require?"
+          },
+          {
+            "@type": "ListItem",
+            "position": 46,
+            "url": "https://a-samadi.com/tools/dubai-rental-yield.html",
+            "name": "Dubai rental yield: what remains after costs?"
           }
         ]
       },
@@ -456,7 +530,9 @@
 <li><a href="/carousels/tech-trend-assisted-permissions.html" data-topic-resource="carousel_tech_trend_assisted_permissions" hreflang="en">AI agents are learning when to ask.</a></li>
 <li><a href="/writing/business-ai-evaluation-cases.html" data-topic-resource="article_business_ai_evaluation_cases" hreflang="en">The AI demo passed. The real work did not.</a></li>
 <li><a href="/carousels/tech-trend-ai-usage-not-outcomes.html" data-topic-resource="carousel_tech_trend_ai_usage_not_outcomes" hreflang="en">More AI calls do not prove more useful work.</a></li>
-<li><a href="/writing/ai-research-examination-understanding.html" data-topic-resource="article_ai_research_examination_understanding" hreflang="en">AI wrote the result. People still need to understand it.</a></li></ul></section>
+<li><a href="/writing/ai-research-examination-understanding.html" data-topic-resource="article_ai_research_examination_understanding" hreflang="en">AI wrote the result. People still need to understand it.</a></li>
+<li><a href="/tools/dubai-purchase-cost.html" data-topic-resource="dubai_purchase_cost_calculator" hreflang="en">Dubai purchase-cost calculator: what cash does the purchase require?</a></li>
+<li><a href="/tools/dubai-rental-yield.html" data-topic-resource="dubai_rental_yield_calculator" hreflang="en">Dubai rental yield: what remains after costs?</a></li></ul></section>
 <section aria-labelledby="topic-film-heading">
 <h2 id="topic-film-heading">See the rental example in motion</h2>
 <p>A 99-second English film with English captions and a transcript. The property, AI interface and amounts are fictional.</p>

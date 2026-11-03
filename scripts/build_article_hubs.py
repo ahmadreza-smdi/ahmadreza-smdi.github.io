@@ -14,9 +14,9 @@ BASE = 'https://a-samadi.com/'
 START = '<!-- article-hubs:start -->'
 END = '<!-- article-hubs:end -->'
 LABELS = {
-    'en': {'part': 'Part of', 'related': 'Related'},
-    'fa': {'part': 'بخشی از', 'related': 'مطالب مرتبط'},
-    'ar': {'part': 'ضمن موضوع', 'related': 'محتوى ذو صلة'},
+    'en': {'part': 'Part of', 'related': 'Related', 'watch': 'Watch the accompanying film (English)'},
+    'fa': {'part': 'بخشی از', 'related': 'مطالب مرتبط', 'watch': 'تماشای فیلم همراه این مطلب (انگلیسی)'},
+    'ar': {'part': 'ضمن موضوع', 'related': 'محتوى ذو صلة', 'watch': 'شاهد الفيديو المرافق لهذا المقال (بالإنجليزية)'},
 }
 
 def prefix(language):
@@ -58,10 +58,16 @@ def render(family, language, hubs):
     )
     if len(links) != 3 or pillars not in allowed_pillars:
         raise ValueError(f'Expected three distinct pillar links: {family["stem"]}')
+    watch = ''
+    if family.get('watch'):
+        if not re.fullmatch(r'watch/[a-z0-9-]+\.html', family['watch']):
+            raise ValueError(f'Expected a public English watch page: {family["stem"]}')
+        watch_href, _ = resource(family['watch'])
+        watch = f'<p><a href="{escape(watch_href, quote=True)}" hreflang="en">{escape(labels["watch"])}</a></p>\n'
     return f'''{START}
 <nav class="article-reading-path" aria-labelledby="article-related-title">
 <p>{escape(labels['part'])}: <a href="{escape(href, quote=True)}" data-hub-primary="{escape(family['hub'], quote=True)}">{escape(title)}</a></p>
-<h2 id="article-related-title">{escape(labels['related'])}</h2>
+{watch}<h2 id="article-related-title">{escape(labels['related'])}</h2>
 <ul>{chr(10).join(links)}</ul>
 </nav>
 {END}

@@ -1,4 +1,4 @@
-"""Build or check the English RSS feed from existing Article metadata."""
+"""Build English article/carousel RSS entries and their existing film links."""
 
 import argparse
 from datetime import date, datetime, time, timezone
@@ -19,13 +19,22 @@ ET.register_namespace("dc", DC)
 
 class PageMetadata(HTMLParser):
     def __init__(self, path):
+        self.load(path.read_text())
+
+    @classmethod
+    def from_text(cls, text):
+        instance = cls.__new__(cls)
+        instance.load(text)
+        return instance
+
+    def load(self, text):
         super().__init__()
         self.language = None
         self.canonicals = []
         self.feed_links = []
         self.records = []
         self.json_buffer = None
-        self.feed(path.read_text())
+        self.feed(text)
 
     def handle_starttag(self, tag, attributes):
         attrs = dict(attributes)
@@ -49,10 +58,11 @@ class PageMetadata(HTMLParser):
             self.records.extend(schema.get("@graph", [schema]))
             self.json_buffer = None
 
-    def record(self, kind, canonical):
+    def record(self, kind, canonical, require_feed=True):
         records = [item for item in self.records if item.get("@type") == kind]
         if (self.language != "en" or self.canonicals != [canonical]
-                or self.feed_links != [FEED_URL] or len(records) != 1):
+                or (self.feed_links != [FEED_URL] if require_feed else self.feed_links not in ([], [FEED_URL]))
+                or len(records) != 1):
             raise ValueError(f"Invalid English metadata or RSS discovery link: {canonical}")
         record = records[0]
         if record.get("url") != canonical or record.get("inLanguage") != "en":
@@ -76,19 +86,48 @@ def build_feed():
         "CollectionPage", BASE + "writing/"
     )
     articles = []
+    films = {}
+    for path in sorted((ROOT / "watch").glob("*.html")):
+        canonical = BASE + "watch/" + path.name
+        metadata = PageMetadata(path)
+        if metadata.language != "en" or metadata.canonicals != [canonical]:
+            raise ValueError(f"Invalid film canonical/language: {canonical}")
+        videos = [r for r in metadata.records if r.get("@type") == "VideoObject"]
+        if len(videos) != 1 or not videos[0].get("contentUrl"):
+            raise ValueError(f"Missing unique film source: {canonical}")
+        media = videos[0]["contentUrl"]
+        if media in films:
+            raise ValueError(f"Duplicate film source: {canonical}")
+        films[media] = canonical
     for path in sorted((ROOT / "writing").glob("*.html")):
         if path.name == "index.html":
             continue
         canonical = BASE + "writing/" + path.name
-        article = PageMetadata(path).record("Article", canonical)
+        metadata = PageMetadata(path)
+        article = metadata.record("Article", canonical)
         for field in ("headline", "description", "datePublished"):
             if not isinstance(article.get(field), str) or not article[field].strip():
                 raise ValueError(f"Missing {field}: {canonical}")
         if article.get("author") != hub.get("author"):
             raise ValueError(f"Inconsistent existing author: {canonical}")
-        articles.append((publication_time(article["datePublished"]), article))
+        related = sorted({films[r["contentUrl"]] for r in metadata.records
+                          if r.get("@type") == "VideoObject" and r.get("contentUrl") in films})
+        articles.append((publication_time(article["datePublished"]), article, related))
     if not articles:
         raise ValueError("No English articles found")
+    for path in sorted((ROOT / "carousels").glob("*.html")):
+        if path.name == "index.html":
+            continue
+        canonical = BASE + "carousels/" + path.name
+        gallery = PageMetadata(path).record("CollectionPage", canonical, require_feed=False)
+        for field in ("name", "description", "datePublished"):
+            if not isinstance(gallery.get(field), str) or not gallery[field].strip():
+                raise ValueError(f"Missing {field}: {canonical}")
+        if any(gallery.get("author", {}).get(key) != hub["author"].get(key)
+               for key in ("@id", "name")):
+            raise ValueError(f"Inconsistent carousel author: {canonical}")
+        articles.append((publication_time(gallery["datePublished"]),
+                         dict(gallery, headline=gallery["name"]), []))
     articles.sort(key=lambda item: (-item[0].timestamp(), item[1]["url"]))
 
     rss = ET.Element("rss", {"version": "2.0"})
@@ -104,7 +143,7 @@ def build_feed():
     ET.SubElement(channel, f"{{{ATOM}}}link", {
         "href": FEED_URL, "rel": "self", "type": "application/rss+xml"
     })
-    for published, article in articles:
+    for published, article, related in articles:
         item = ET.SubElement(channel, "item")
         for tag, value in (
             ("title", article["headline"]),
@@ -115,6 +154,10 @@ def build_feed():
         ):
             ET.SubElement(item, tag).text = value
         ET.SubElement(item, "guid", {"isPermaLink": "true"}).text = article["url"]
+        for url in related:
+            ET.SubElement(item, f"{{{ATOM}}}link", {
+                "href": url, "rel": "related", "type": "text/html"
+            })
     ET.indent(rss, space="  ")
     return ET.tostring(rss, encoding="utf-8", xml_declaration=True) + b"\n", len(articles)
 
@@ -128,10 +171,10 @@ def main():
     if args.check:
         if not target.is_file() or target.read_bytes() != content:
             raise SystemExit("RSS feed is missing or stale; run python3 scripts/build_feed.py")
-        print(f"PASS RSS: {count} English articles, source metadata and discovery links match")
+        print(f"PASS RSS: {count} English articles/carousels; source metadata and related films match")
     else:
         target.write_bytes(content)
-        print(f"Built writing/feed.xml with {count} English articles")
+        print(f"Built writing/feed.xml with {count} English articles/carousels")
 
 
 if __name__ == "__main__":

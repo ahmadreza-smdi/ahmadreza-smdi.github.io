@@ -5,8 +5,9 @@ Usage:
   python3 build_ask_index.py --repo-root /path/to/website --output /path/to/ask-index.json
   python3 build_ask_index.py --repo-root /path/to/website --output /path/to/ask-index.json --check
 
-The three checked-in homepages are the only content sources. Their layout/translation
-generator remains authoritative. This export adds no answers, server, or search endpoint.
+Homepage passages retain their exact layout/translation source and runtime contract.
+An additional resource directory copies published English article, film and carousel
+metadata from canonical sitemap pages. This adds no answers or search endpoint.
 --report writes private provenance/check evidence separately from the public JSON.
 """
 from __future__ import annotations
@@ -25,6 +26,7 @@ import sys
 import tempfile
 from urllib.parse import unquote, urljoin, urlsplit
 from xml.etree import ElementTree
+from build_feed import PageMetadata, publication_time
 
 BASE = "https://a-samadi.com/"
 EMAIL = "ahmadreza.smdi@gmail.com"
@@ -330,6 +332,33 @@ class Exporter:
         self.check_url(source_url)
         return {"language": language, "source_url": source_url, "passages": passages, "shortcuts": shortcuts}
 
+    def published_resources(self) -> list[dict]:
+        resources = []
+        for url in sorted(self.public_pages):
+            relative = url.removeprefix(BASE)
+            if not relative.startswith(("writing/", "watch/", "carousels/")) or not relative.endswith(".html"):
+                continue
+            if relative.endswith("/index.html"):
+                continue
+            self.check_url(url)
+            metadata = PageMetadata.from_text(self.read(self.root / relative, "published resource metadata"))
+            kind = ("Article" if relative.startswith("writing/") else
+                    "VideoObject" if relative.startswith("watch/") else "CollectionPage")
+            records = [r for r in metadata.records if r.get("@type") == kind]
+            require(metadata.language == "en" and len(records) == 1,
+                    "Missing unique English resource metadata: " + relative)
+            record = records[0]
+            name = record.get("headline" if kind == "Article" else "name")
+            description = record.get("description")
+            published = record.get("uploadDate" if kind == "VideoObject" else "datePublished")
+            require(all(isinstance(value, str) and value.strip() for value in (name, description, published)),
+                    "Incomplete published resource: " + relative)
+            require(record.get("url", url) == url, "Resource URL differs: " + relative)
+            publication_time(published)  # Preserve source precision; reject invalid dates.
+            resources.append({"url": url, "language": "en", "type": kind,
+                              "title": name, "description": description, "date_published": published})
+        return resources
+
     def build(self) -> dict:
         self.check_runtime_contract()
         self.load_public_routes()
@@ -338,7 +367,8 @@ class Exporter:
                 "Homepage passage structure differs across languages; regenerate/check locales first")
         require(len({len(locale["shortcuts"]) for locale in locales}) == 1,
                 "Homepage link shortcut structure differs across languages")
-        data = {"version": 1, "site_url": BASE, "primary_language": "en", "locales": locales}
+        data = {"version": 1, "site_url": BASE, "primary_language": "en", "locales": locales,
+                "published_resources": self.published_resources()}
         encoded = serialize(data)
         emails = set(EMAIL_PATTERN.findall(encoded))
         require(emails == {EMAIL}, f"Unexpected/missing personal email in export: {sorted(emails)}")
@@ -369,12 +399,13 @@ class Exporter:
                          "unanchored_passages": sum(passage["section_url"] is None for passage in locale["passages"])}
                         for locale in data["locales"]],
             "unique_same_site_destinations_checked": len(self.internal_destinations),
+            "published_resources": len(data["published_resources"]),
             "existing_external_destinations_copied": sorted(self.external_destinations),
             "checks": {"source_provenance": True, "runtime_selectors_and_filters": True,
                        "canonical_languages_and_direction": True, "same_site_files_and_fragments": True,
                        "canonical_public_route_allowlist": True,
                        "personal_contact_only": True, "english_first": True, "source_bytes_unchanged": True},
-            "scope": "Static homepage text and existing link directory for consumers that choose to read it; no endpoint or ranking claim.",
+            "scope": "Static homepage passages and published English resource metadata; no endpoint or ranking claim.",
         }
 
 

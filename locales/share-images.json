@@ -255,6 +255,18 @@
       "sourceSha256": "3ec47d0e0ab67224ad3dcb1e4b7fd4b9b69cd6074e3e1f61e3b6f5b158c23d0f",
       "output": "assets/share/rent-burden-2024-og-1200x630.png",
       "outputSha256": "c7563c4ae06a7e3b2981ebbb4f4b97fed24f3f9138bfbe02d3d1001a70bd2fb3"
+    },
+    {
+      "source": "assets/carousels/tech-trend-ai-usage-not-outcomes/slide-01.png",
+      "sourceSha256": "225299ce03108a9f42397e7c938504e18dad5cc47c56615900f0812f67417ece",
+      "output": "assets/share/tech-trend-ai-usage-not-outcomes-og-1200x630.png",
+      "outputSha256": "bab2e9646b2dbc8928282785e61d52f73c358ef47910042a882853f2c91b9591"
+    },
+    {
+      "source": "assets/writing/ai-research-examination-understanding/cover.png",
+      "sourceSha256": "1c1999187d6af1ed21d6e85ab778c2cc773aeeca3f66d45866415716a5495c04",
+      "output": "assets/share/ai-research-examination-understanding-og-1200x630.png",
+      "outputSha256": "189d460c0b93b0af237df9f06045726968e83e28065cafd007a905d57e3441f6"
     }
   ]
 }

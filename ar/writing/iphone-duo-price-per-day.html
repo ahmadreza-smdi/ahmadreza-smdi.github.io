@@ -134,7 +134,69 @@
 <script defer src="/js/watch-player.js?v=20261009-video2"></script>
 <script src="/js/site-analytics.js?v=20261009-analytics1" defer></script>
 
-<link rel="stylesheet" href="/css/author-box.css?v=20261009-author1">
+<style data-author-box>
+/* A quiet author reference at the end of each article, using the Lagoon tokens. */
+.editorial .article-author {
+  margin-block: 2.5rem 0;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid var(--line-strong);
+  border-inline-start: 3px solid var(--mint-deep);
+  border-radius: 16px;
+  background: var(--surface);
+  text-align: start;
+  overflow-wrap: anywhere;
+}
+.editorial .article-author h2 {
+  margin: 0 0 .25rem;
+  color: var(--muted);
+  font-size: .875rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.editorial .article-author p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.editorial .article-author .article-author__name {
+  margin-block-end: .35rem;
+  font-family: var(--display);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.editorial .article-author a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 44px;
+  max-inline-size: 100%;
+  padding-block: .25rem;
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+.editorial .article-author a:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+@media (forced-colors: active) {
+  .editorial .article-author { border-color: CanvasText; background: Canvas; }
+  .editorial .article-author h2, .editorial .article-author p { color: CanvasText; }
+  .editorial .article-author a { color: LinkText; }
+  .editorial .article-author a:focus-visible { outline-color: Highlight; }
+}
+@media print {
+  .editorial .article-author {
+    break-inside: avoid;
+    margin-block-start: 1.5rem;
+    border-color: #777;
+    background: transparent;
+  }
+  .editorial .article-author h2, .editorial .article-author p, .editorial .article-author a { color: #000; }
+}
+</style>
 </head>
 <body class="editorial-body arabic-page"><a class="skip-link" href="#main">انتقل إلى المحتوى</a><header class="editorial-header"><a href="/ar/"><img src="/assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">أحمدرضا صمدي / الرئيسية</a></header><main id="main" class="editorial">
 <nav class="byline" aria-label="مسار التنقل"><a href="/ar/">الرئيسية</a> / <a href="/ar/writing/">المقالات</a> / <span aria-current="page">iPhone Duo: كم يبلغ فرق السعر البالغ 800 دولار يوميًا؟</span></nav>
@@ -147,7 +209,7 @@
 </section>
 <p class="film-habit"><bdi>1,999 − 1,199 = 800 دولار · 800 ÷ 1,095 يومًا ≈ 0.73 دولار يوميًا</bdi></p>
 <h2>شاهد الفيلم</h2><p><a href="/watch/iphone-duo.html" hreflang="en">صفحة المشاهدة والنص الإنجليزي الكامل</a></p><p class="film-note">فيلم متحرك مدته 104 ثوانٍ، بسرد وترجمة نصية إنجليزية. الهواتف رسوم عامة، وليست تصاميم منتجات Apple الفعلية. الصوت اصطناعي.</p>
-<div class="film-wrap"><video data-watch-player controls playsinline preload="metadata" poster="/assets/writing/iphone-duo/cover.png" width="1080" height="1920" aria-label="iPhone Duo: كم يبلغ فرق السعر البالغ 800 دولار يوميًا؟"><source src="/assets/writing/iphone-duo/film.mp4" type="video/mp4"><track kind="captions" src="/assets/writing/iphone-duo/captions-en.vtt" srclang="en" label="English captions" default><a href="/assets/writing/iphone-duo/film.mp4">MP4</a></video></div>
+<div class="film-wrap"><video data-watch-player controls playsinline preload="metadata" poster="/assets/writing/iphone-duo/cover-poster.jpg" width="1080" height="1920" aria-label="iPhone Duo: كم يبلغ فرق السعر البالغ 800 دولار يوميًا؟"><source src="/assets/writing/iphone-duo/film.mp4" type="video/mp4"><track kind="captions" src="/assets/writing/iphone-duo/captions-en.vtt" srclang="en" label="English captions" default><a href="/assets/writing/iphone-duo/film.mp4">MP4</a></video></div>
 <section><h2>ماذا يقارن فرق السعر الكامل؟</h2><p>سعر الإطلاق الأمريكي للنسخة الأساسية بسعة 256GB هو 1,999 دولارًا لـiPhone Duo و1,199 دولارًا لـiPhone 18 Pro. الفرق 800 دولار. هذه مقارنة بين طرازين كاملين، وليست سعر مفصلة أو مكوّن شاشة قابلة للطي. يشمل الفرق اختلاف الكاميرات وخصائص أخرى أيضًا.</p>
 <p class="film-note"><a href="https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo/" hreflang="en"><bdi>Apple: iPhone Duo announcement and installment footnote</bdi></a> · <a href="https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/" hreflang="en"><bdi>Apple: iPhone 18 Pro and Pro Max announcement</bdi></a></p>
 </section>

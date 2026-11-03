@@ -87,7 +87,69 @@
     }
   ]
 }</script><style>.film-wrap{max-width:420px;margin:2rem auto}.film-wrap video{width:100%;height:auto;display:block;border-radius:20px;background:var(--ink)}.film-note{font-size:.95rem!important;color:var(--muted)}.film-links{margin:2rem 0}.film-habit{padding:1rem 1.5rem;border:1px solid var(--line);border-radius:16px}</style><link rel="stylesheet" href="/css/rtl.css?v=20261009-lagoon4">
-<link rel="stylesheet" href="/css/author-box.css?v=20261009-author1">
+<style data-author-box>
+/* A quiet author reference at the end of each article, using the Lagoon tokens. */
+.editorial .article-author {
+  margin-block: 2.5rem 0;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid var(--line-strong);
+  border-inline-start: 3px solid var(--mint-deep);
+  border-radius: 16px;
+  background: var(--surface);
+  text-align: start;
+  overflow-wrap: anywhere;
+}
+.editorial .article-author h2 {
+  margin: 0 0 .25rem;
+  color: var(--muted);
+  font-size: .875rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.editorial .article-author p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.editorial .article-author .article-author__name {
+  margin-block-end: .35rem;
+  font-family: var(--display);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.editorial .article-author a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 44px;
+  max-inline-size: 100%;
+  padding-block: .25rem;
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+.editorial .article-author a:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+@media (forced-colors: active) {
+  .editorial .article-author { border-color: CanvasText; background: Canvas; }
+  .editorial .article-author h2, .editorial .article-author p { color: CanvasText; }
+  .editorial .article-author a { color: LinkText; }
+  .editorial .article-author a:focus-visible { outline-color: Highlight; }
+}
+@media print {
+  .editorial .article-author {
+    break-inside: avoid;
+    margin-block-start: 1.5rem;
+    border-color: #777;
+    background: transparent;
+  }
+  .editorial .article-author h2, .editorial .article-author p, .editorial .article-author a { color: #000; }
+}
+</style>
 
 <script src="/js/site-analytics.js?v=20261009-analytics1" defer></script>
 </head><body class="editorial-body arabic-page">
@@ -104,7 +166,7 @@
 <p>لا تضمن الصفقة المربحة توفر النقد عند استحقاق فاتورة. في المثال الخيالي، يوجد ربح مبسّط قدره ٣٬٠٠٠ دولار قبل الضرائب والمصروفات الأخرى، ومع ذلك يبقى عجز نقدي قدره ٣٬٠٠٠ دولار في اليوم ١٥: يجب دفع مستحقات المورد قبل موعد دفع العميل المتفق عليه في اليوم ٦٠. اسأل متى يصل النقد، وما المستحق أولًا، وما الذي يغطي الفجوة.</p>
 </section>
 <h2>شاهد الفيلم</h2><p class="film-note">فيلم متحرك مدته ٩٠ ثانية بصوت وترجمة إنجليزية. الشركة وجميع مبالغ المعاملة أمثلة خيالية. الضرائب والمصروفات الأخرى غير محسوبة. الصوت مولد بالذكاء الاصطناعي.</p>
-<div class="film-wrap"><video controls playsinline preload="metadata" poster="/assets/writing/profit-cash/poster.webp" width="1080" height="1920" aria-label="مربح، لكن بلا نقد: لماذا يهم توقيت الدفع؟"><source src="/assets/writing/profit-cash/film.mp4" type="video/mp4"><track kind="captions" src="/assets/writing/profit-cash/captions-en.vtt" srclang="en" label="English captions" default><a href="/assets/writing/profit-cash/film.mp4">MP4</a></video></div>
+<div class="film-wrap"><video controls playsinline preload="metadata" poster="/assets/writing/profit-cash/cover-poster.jpg" width="1080" height="1920" aria-label="مربح، لكن بلا نقد: لماذا يهم توقيت الدفع؟"><source src="/assets/writing/profit-cash/film.mp4" type="video/mp4"><track kind="captions" src="/assets/writing/profit-cash/captions-en.vtt" srclang="en" label="English captions" default><a href="/assets/writing/profit-cash/film.mp4">MP4</a></video></div>
 <section><h2>كيف يُظهر الطلب ربحًا قبل وصول النقد؟</h2><p>تبدأ شركة صغيرة وفي حسابها ٤٬٠٠٠ دولار. تسلم طلبًا بقيمة ١٠٬٠٠٠ دولار في اليوم الأول. تكلفة المنتجات ٧٬٠٠٠ دولار، وقد حصلت عليها بالشراء الآجل من المورد. بعد تسليم الطلب وإثبات تكلفته، يبلغ الربح المبسط ٣٬٠٠٠ دولار قبل الضرائب والمصروفات الأخرى. تسجل الفاتورة المبلغ الذي يدين به العميل، لكنها لا تضيف نقدًا إلى الحساب.</p></section><section><h2>لماذا ينقص النقد قبل أن يدفع العميل؟</h2><p>يستحق للمورد مبلغ ٧٬٠٠٠ دولار في اليوم الخامس عشر، بينما اتفق العميل على الدفع في اليوم الستين. في اليوم الخامس عشر، لا يتوفر إلا ٤٬٠٠٠ دولار، أي عجز نقدي قدره ٣٬٠٠٠ دولار. العميل لم يتأخر أصلًا. تحتاج الشركة إلى تغطية هذه الفجوة قبل وصول دفعة العميل المتفق عليها.</p></section><section><h2>الربح والنقد يجيبان عن سؤالين مختلفين</h2><p>الربح هو الإيراد ناقص المصروفات المثبتة خلال فترة. التدفق النقدي يتتبع الأموال التي تدخل وتخرج فعلًا. في المحاسبة على أساس الاستحقاق، قد يختلف وقت كسب الإيراد عن وقت تحصيله. يوضح <a href="https://www.sec.gov/files/cash-flow-statement-bblocks.pdf">دليل SEC للتدفق النقدي</a> العلاقة بين الدخل وحركة النقد الفعلية. العجز لا يعني الإفلاس تلقائيًا، لكن استمرار العجز عن الوفاء بالمدفوعات قد يهدد بقاء الشركة.</p></section><section><h2>ماذا تقول الأبحاث الحديثة؟</h2><p>تذكر تقارير Intuit لعام ٢٠٢٦ أن ٣٩٪ من أصحاب الأعمال الأمريكيين المشاركين واجهوا ضغطًا على دفع الرواتب أو الفواتير بسبب دفعة واحدة متأخرة خلال العام السابق. شمل <a href="https://quickbooks.intuit.com/r/small-business-data/business-ownership-in-2026/">استطلاع أصحاب الأعمال الأصلي</a> ١٬٣٠٥ مالكًا أمريكيًا في ديسمبر ٢٠٢٥. هذه تجارب أبلغوا عنها، وليست معدلًا عالميًا لفشل الشركات. البحث يتناول التأخر، بينما يوضح مثال الفيلم أن شروط الدفع المتفق عليها وحدها قد تخلق فجوة نقدية.</p></section><section><h2>الدفعة المقدمة تغير التوقيت، لا الربح</h2><p>في الشروط البديلة بالفيلم، يدفع العميل ٤٬٠٠٠ دولار قبل التسليم و٦٬٠٠٠ دولار في اليوم الستين. يصبح النقد المتاح ٨٬٠٠٠ دولار مع الرصيد الأصلي. بعد دفع ٧٬٠٠٠ دولار للمورد، يبقى ١٬٠٠٠ دولار. تظل قيمة البيع ١٠٬٠٠٠ دولار والربح المبسط ٣٬٠٠٠ دولار. الدفعة المقدمة جزء من البيع وليست إيرادًا إضافيًا. هذا مثال لاتفاق ممكن، وليس ضمانًا لموافقة العميل أو لكفاية الاحتياطي لجميع المصروفات.</p></section><section><h2>ثلاثة أسئلة للمؤسس أو المستثمر</h2><p>قد تزيد الطلبات الجديدة الحاجة إلى نقد مقدم إذا وجب الدفع للموردين قبل تحصيل العملاء. حدد تواريخ الدفع، وتفاوض على دفعة مقدمة أو شروط أنسب حيثما أمكن، وخطط لاحتياطي نقدي. قبل تقييم الشركة بالربح وحده، اسأل: متى يصل النقد؟ ما المستحق أولًا؟ وما الذي يغطي الفجوة؟</p></section>
 <section class="film-links" aria-label="شاهد على منصتك المفضلة"><h2>شاهد على منصتك المفضلة</h2><p><a href="https://www.instagram.com/reel/DeOQR1GsTXe/"><bdi>Instagram</bdi></a> · <a href="https://www.linkedin.com/feed/update/urn:li:activity:7513843449545125893/"><bdi>LinkedIn</bdi></a> · <a href="https://www.youtube.com/shorts/qWeCoHAvYE8"><bdi>YouTube Shorts</bdi></a></p></section>
 <h2>المصادر</h2><p class="film-note">تم التحقق من مصادر الناشرين الأصليين في ٨ أكتوبر ٢٠٢٦.</p><ul><li><a hreflang="en" href="https://quickbooks.intuit.com/r/small-business-data/small-business-late-payments-report-2026/"><bdi>Intuit QuickBooks: 2026 Small Business Late Payments Report</bdi></a></li><li><a hreflang="en" href="https://quickbooks.intuit.com/r/small-business-data/business-ownership-in-2026/"><bdi>Intuit QuickBooks: Business Ownership in 2026</bdi></a></li><li><a hreflang="en" href="https://www.xero.com/us/guides/late-payment-small-business/"><bdi>Xero: Late payments are climbing again, 19 August 2026</bdi></a></li><li><a hreflang="en" href="https://www.intrum.com/insights/publications/epr-2026/"><bdi>Intrum: European Payment Report 2026</bdi></a></li><li><a hreflang="en" href="https://www.sec.gov/files/cash-flow-statement-bblocks.pdf"><bdi>US SEC: What is a statement of cash flows?</bdi></a></li></ul>

@@ -11,6 +11,7 @@ import html
 import re
 import sys
 from xml.etree import ElementTree
+from build_feed import PageMetadata, publication_time
 
 ROOT = Path(__file__).resolve().parent.parent
 BASE = 'https://a-samadi.com/'
@@ -207,12 +208,36 @@ def facts():
                      for line in FACTS.splitlines() if not line.startswith('- Spoken languages'))
 
 
+def recent_companions(pages, limit=12):
+    """Keep the latest published film articles and carousel galleries discoverable.
+
+    Selection uses original metadata dates, never the build clock or an unpublished
+    schedule. Paired watch links remain beside their article in the curated map.
+    """
+    candidates = []
+    for url, text in pages.items():
+        if not url.startswith((BASE + 'writing/', BASE + 'carousels/')) or not url.endswith('.html'):
+            continue
+        metadata = PageMetadata.from_text(text)
+        kind = 'Article' if url.startswith(BASE + 'writing/') else 'CollectionPage'
+        records = [r for r in metadata.records if r.get('@type') == kind]
+        if kind == 'Article' and not any(r.get('@type') == 'VideoObject' for r in metadata.records):
+            continue
+        if len(records) != 1 or not records[0].get('datePublished'):
+            raise ValueError('Missing dated companion metadata: ' + url)
+        candidates.append((publication_time(records[0]['datePublished']), url))
+    candidates.sort(key=lambda item: (-item[0].timestamp(), item[1]))
+    return {url for _, url in candidates[:limit]}
+
+
 def catalogue(pages, curated):
     groups = {name: [] for name in GROUPS}
     chosen = {BASE + path for path in CORE_PATHS}
     missing = chosen - pages.keys()
     if missing:
         raise ValueError('Missing curated destinations: ' + ', '.join(sorted(missing)))
+    if curated:
+        chosen.update(recent_companions(pages))
     for url, text in pages.items():
         name = section(url)
         if name and (not curated or url in chosen):
@@ -241,8 +266,8 @@ def catalogue(pages, curated):
             ('Arabic homepage', 'ar/', 'Arabic translation of the homepage, with the same supported identity, roles and selected work.'),
             ('Persian writing', 'fa/writing/', 'Persian article index with translated titles, summaries and links to the corresponding reading pages.'),
             ('Arabic writing', 'ar/writing/', 'Arabic article index with translated titles, summaries and links to the corresponding reading pages.'),
-            ('Homepage work index (JSON)', 'ask-index.json', 'Existing homepage passages and destinations in English, Persian and Arabic, exported from the visible source.'),
-            ('RSS feed', 'writing/feed.xml', 'English article summaries with canonical links and original publication dates, generated from the published pages.'),
+            ('Homepage and resource index (JSON)', 'ask-index.json', 'Existing multilingual homepage passages and published English article, film and carousel metadata, exported from canonical pages.'),
+            ('RSS feed', 'writing/feed.xml', 'English articles and carousels with canonical links, related films and original publication dates, generated from published pages.'),
             ('Sitemap', 'sitemap.xml', 'Canonical indexable pages and their language alternates; embedded players and calculators are excluded.'),
         ]
         lines += ['## Optional', '', *[entry(label, BASE + path, copy) for label, path, copy in optional], '']

@@ -548,6 +548,16 @@
         "fa": "fa/writing/ai-research-examination-understanding.html",
         "ar": "ar/writing/ai-research-examination-understanding.html"
       }
+    },
+    "dubai_purchase_cost_calculator": {
+      "paths": {
+        "en": "tools/dubai-purchase-cost.html"
+      }
+    },
+    "dubai_rental_yield_calculator": {
+      "paths": {
+        "en": "tools/dubai-rental-yield.html"
+      }
     }
   },
   "hubs": [
@@ -826,7 +836,9 @@
         "article_ai_research_examination_understanding",
         "property_study_explorer",
         "carousel_tech_trend_assisted_permissions",
-        "carousel_tech_trend_ai_usage_not_outcomes"
+        "carousel_tech_trend_ai_usage_not_outcomes",
+        "dubai_purchase_cost_calculator",
+        "dubai_rental_yield_calculator"
       ],
       "all_articles_heading": {
         "en": "All articles in this topic",
@@ -868,7 +880,9 @@
         "carousel_tech_trend_assisted_permissions",
         "article_business_ai_evaluation_cases",
         "carousel_tech_trend_ai_usage_not_outcomes",
-        "article_ai_research_examination_understanding"
+        "article_ai_research_examination_understanding",
+        "dubai_purchase_cost_calculator",
+        "dubai_rental_yield_calculator"
       ],
       "video_playlist": {
         "title": "AI × Property",

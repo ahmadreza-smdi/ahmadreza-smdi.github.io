@@ -17,10 +17,15 @@ on:
       mode:
         description: Verify private prepared bundles or publish only actually due content
         type: choice
-        options: [verify, verify-deployment, publish-due, catchup-carousel-2026-10-28, catchup-carousel-2026-10-29]
+        options: [verify, verify-deployment, publish-due, catchup-carousel-2026-10-28, catchup-carousel-2026-10-29, catchup-backlog-2026-11-03]
         default: verify
+      verification_run:
+        description: Successful verify dispatch on this exact commit (required for backlog catch-up)
+        type: string
+        required: false
 
 permissions:
+  actions: read
   contents: write
   pages: write
 
@@ -45,12 +50,20 @@ jobs:
           python-version: '3.13'
       - name: Test date, duplicate and bundle guards
         run: python3 -B -m unittest discover -s scripts/online_films -p 'test_*.py' -v
-      - name: Rehearse all private bundles and verify Pages access
+      - name: Install reviewed image builder dependency for backlog preparation
+        if: github.event_name == 'workflow_dispatch' && (inputs.mode == 'verify' || inputs.mode == 'catchup-backlog-2026-11-03')
+        run: python3 -m pip install --disable-pip-version-check Pillow==12.3.0
+      - name: Rehearse the exact nine-item backlog privately
         if: github.event_name == 'workflow_dispatch' && inputs.mode == 'verify'
-        run: python3 -B scripts/online_films/publish.py --verify --verify-build
-      - name: Rehearse reviewed carousel galleries privately
+        run: python3 -B scripts/online_films/publish.py --verify-backlog-2026-11-03
+      - name: Verify existing Pages access after private rehearsal
         if: github.event_name == 'workflow_dispatch' && inputs.mode == 'verify'
-        run: python3 -B scripts/online_films/publish_carousel.py --verify
+        run: python3 -B scripts/online_films/publish.py --verify-build
+      - name: Publish the exact backlog once under dated owner authorization
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'catchup-backlog-2026-11-03'
+        env:
+          BACKLOG_VERIFICATION_RUN: ${{ inputs.verification_run }}
+        run: python3 -B scripts/online_films/publish.py --owner-catchup-2026-11-03 --backlog-verification-run "$BACKLOG_VERIFICATION_RUN"
       - name: Verify existing Pages deployment only
         if: github.event_name == 'workflow_dispatch' && inputs.mode == 'verify-deployment'
         run: python3 -B scripts/online_films/publish.py --verify-build

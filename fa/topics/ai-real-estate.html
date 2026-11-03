@@ -17,7 +17,69 @@
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/vazirmatn-arabic-wght.woff2" crossorigin>
 <link rel="stylesheet" href="/css/rtl.css?v=20261009-lagoon4">
 <link rel="stylesheet" href="/css/site.css?v=20261009-writing1">
-<link rel="stylesheet" href="/css/author-box.css?v=20261009-author1">
+<style data-author-box>
+/* A quiet author reference at the end of each article, using the Lagoon tokens. */
+.editorial .article-author {
+  margin-block: 2.5rem 0;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid var(--line-strong);
+  border-inline-start: 3px solid var(--mint-deep);
+  border-radius: 16px;
+  background: var(--surface);
+  text-align: start;
+  overflow-wrap: anywhere;
+}
+.editorial .article-author h2 {
+  margin: 0 0 .25rem;
+  color: var(--muted);
+  font-size: .875rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.editorial .article-author p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.editorial .article-author .article-author__name {
+  margin-block-end: .35rem;
+  font-family: var(--display);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.editorial .article-author a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 44px;
+  max-inline-size: 100%;
+  padding-block: .25rem;
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+.editorial .article-author a:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+@media (forced-colors: active) {
+  .editorial .article-author { border-color: CanvasText; background: Canvas; }
+  .editorial .article-author h2, .editorial .article-author p { color: CanvasText; }
+  .editorial .article-author a { color: LinkText; }
+  .editorial .article-author a:focus-visible { outline-color: Highlight; }
+}
+@media print {
+  .editorial .article-author {
+    break-inside: avoid;
+    margin-block-start: 1.5rem;
+    border-color: #777;
+    background: transparent;
+  }
+  .editorial .article-author h2, .editorial .article-author p, .editorial .article-author a { color: #000; }
+}
+</style>
 <meta property="og:type" content="website"><meta property="og:site_name" content="Ahmadreza Samadi">
 <meta property="og:title" content="هوش مصنوعی در املاک: از شواهد تا تصمیم | احمدرضا صمدی">
 <meta property="og:description" content="مسیر مطالعه‌ای درباره داده‌های ملک، بازبینی انسانی، هزینه فرایند هوش مصنوعی و جریان نقدی اجاره، با نگاهی به کار احمدرضا صمدی در Appraiva.">
@@ -68,7 +130,7 @@
         "@type": "ItemList",
         "@id": "https://a-samadi.com/fa/topics/ai-real-estate.html#reading-path",
         "itemListOrder": "https://schema.org/ItemListOrderAscending",
-        "numberOfItems": 44,
+        "numberOfItems": 46,
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -333,6 +395,18 @@
             "position": 44,
             "url": "https://a-samadi.com/carousels/tech-trend-ai-usage-not-outcomes.html",
             "name": "More AI calls do not prove more useful work."
+          },
+          {
+            "@type": "ListItem",
+            "position": 45,
+            "url": "https://a-samadi.com/tools/dubai-purchase-cost.html",
+            "name": "Dubai purchase-cost calculator: what cash does the purchase require?"
+          },
+          {
+            "@type": "ListItem",
+            "position": 46,
+            "url": "https://a-samadi.com/tools/dubai-rental-yield.html",
+            "name": "Dubai rental yield: what remains after costs?"
           }
         ]
       },
@@ -454,7 +528,9 @@
 <li><a href="/carousels/tech-trend-assisted-permissions.html" data-topic-resource="carousel_tech_trend_assisted_permissions" hreflang="en">AI agents are learning when to ask. (انگلیسی)</a></li>
 <li><a href="/fa/writing/business-ai-evaluation-cases.html" data-topic-resource="article_business_ai_evaluation_cases">نمایش هوش مصنوعی موفق بود؛ کار واقعی نه</a></li>
 <li><a href="/carousels/tech-trend-ai-usage-not-outcomes.html" data-topic-resource="carousel_tech_trend_ai_usage_not_outcomes" hreflang="en">More AI calls do not prove more useful work. (انگلیسی)</a></li>
-<li><a href="/fa/writing/ai-research-examination-understanding.html" data-topic-resource="article_ai_research_examination_understanding">هوش مصنوعی نتیجه را نوشت؛ انسان‌ها هنوز باید آن را بفهمند</a></li></ul></section>
+<li><a href="/fa/writing/ai-research-examination-understanding.html" data-topic-resource="article_ai_research_examination_understanding">هوش مصنوعی نتیجه را نوشت؛ انسان‌ها هنوز باید آن را بفهمند</a></li>
+<li><a href="/tools/dubai-purchase-cost.html" data-topic-resource="dubai_purchase_cost_calculator" hreflang="en">Dubai purchase-cost calculator: what cash does the purchase require? (انگلیسی)</a></li>
+<li><a href="/tools/dubai-rental-yield.html" data-topic-resource="dubai_rental_yield_calculator" hreflang="en">Dubai rental yield: what remains after costs? (انگلیسی)</a></li></ul></section>
 <section aria-labelledby="topic-film-heading">
 <h2 id="topic-film-heading">مثال اجاره را در فیلم ببینید</h2>
 <p>فیلم ۹۹ ثانیه‌ای به زبان انگلیسی، با زیرنویس و متن انگلیسی. ملک، رابط هوش مصنوعی و مبالغ فرضی‌اند.</p>

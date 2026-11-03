@@ -208,7 +208,7 @@ def obtain(config, row, temp, local_bundles=None):
     return destination, review
 
 
-def prepare(site, folder, review, stamp, record):
+def prepare(site, folder, review, stamp, record, *, backlog_discovery=False):
     slug = review["slug"]
     if (site / f"writing/{slug}.html").exists():
         raise ValueError("Film family already exists; never overwrite")
@@ -237,7 +237,10 @@ def prepare(site, folder, review, stamp, record):
     run(["python3", "-B", "scripts/check_new_article_titles.py", "--release-receipt", str(receipt)], site)
     after = inventory(site)
     changed = sorted(p for p in after if before.get(p) != after[p])
-    if set(before) - set(after) or set(changed) - (set(review["public_allowlist"]) | {"llms-full.txt"}):
+    # Only the explicit, hash-bound backlog path extends the frozen discovery
+    # contract. Ordinary due/verify calls retain their original allowlist.
+    discovery = {"ask-index.json"} if backlog_discovery else set()
+    if set(before) - set(after) or set(changed) - (set(review["public_allowlist"]) | {"llms-full.txt"} | discovery):
         raise ValueError("Changes outside reviewed publication paths")
     return changed
 
@@ -328,7 +331,23 @@ def main():
     ap.add_argument("--verify-build", action="store_true", help="Test existing Pages build access, without future content")
     ap.add_argument("--local-bundles", type=Path)
     ap.add_argument("--wait-for-slot", action="store_true", help="Bounded cloud prewarm; never publish early")
+    backlog_mode = ap.add_mutually_exclusive_group()
+    backlog_mode.add_argument("--verify-backlog-2026-11-03", action="store_true")
+    backlog_mode.add_argument("--owner-catchup-2026-11-03", action="store_true")
+    ap.add_argument("--backlog-verification-run")
+    ap.add_argument("--backlog-report", type=Path)
     args = ap.parse_args()
+    if args.verify_backlog_2026_11_03 or args.owner_catchup_2026_11_03:
+        if args.verify or args.verify_build or args.wait_for_slot:
+            ap.error("Backlog mode cannot be combined with a normal publisher mode")
+        from backlog import run_backlog
+        run_backlog(ROOT, verify=args.verify_backlog_2026_11_03,
+                    local_bundles=args.local_bundles,
+                    verification_run_id=args.backlog_verification_run,
+                    report_path=args.backlog_report)
+        return
+    if args.backlog_verification_run or args.backlog_report:
+        ap.error("Backlog evidence flags require an explicit backlog mode")
     config = read(CONFIG)
     validate_schedule(config)
     if args.verify_build and not args.verify:

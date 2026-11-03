@@ -14,6 +14,15 @@
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Mon, 02 Nov 2026 17:30:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/ai-research-examination-understanding.html</guid>
+      <atom:link href="https://a-samadi.com/watch/ai-research-examination-understanding.html" rel="related" type="text/html" />
+    </item>
+    <item>
+      <title>More AI calls do not prove more useful work.</title>
+      <link>https://a-samadi.com/carousels/tech-trend-ai-usage-not-outcomes.html</link>
+      <description>GitHub has expanded Copilot usage reporting across tools. That helps show activity. It does not measure business results by itself.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Thu, 29 Oct 2026 10:14:13 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/carousels/tech-trend-ai-usage-not-outcomes.html</guid>
     </item>
     <item>
       <title>The AI demo passed. The real work did not.</title>
@@ -22,6 +31,15 @@
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Wed, 28 Oct 2026 17:30:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/business-ai-evaluation-cases.html</guid>
+      <atom:link href="https://a-samadi.com/watch/business-ai-evaluation-cases.html" rel="related" type="text/html" />
+    </item>
+    <item>
+      <title>AI agents are learning when to ask.</title>
+      <link>https://a-samadi.com/carousels/tech-trend-assisted-permissions.html</link>
+      <description>GitHub has made assisted permissions generally available in Copilot CLI, the Copilot app and VS Code. The useful question is what still needs your approval.</description>
+      <dc:creator>Ahmadreza Samadi</dc:creator>
+      <pubDate>Wed, 28 Oct 2026 13:13:04 GMT</pubDate>
+      <guid isPermaLink="true">https://a-samadi.com/carousels/tech-trend-assisted-permissions.html</guid>
     </item>
     <item>
       <title>The document tried to become the boss</title>
@@ -30,6 +48,7 @@
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Tue, 27 Oct 2026 17:30:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/prompt-injection-layered-controls.html</guid>
+      <atom:link href="https://a-samadi.com/watch/prompt-injection-layered-controls.html" rel="related" type="text/html" />
     </item>
     <item>
       <title>A beautiful building model can still be out of date</title>
@@ -38,6 +57,7 @@
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Tue, 27 Oct 2026 09:40:13 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/building-digital-twin-data-freshness.html</guid>
+      <atom:link href="https://a-samadi.com/watch/building-digital-twin-data-freshness.html" rel="related" type="text/html" />
     </item>
     <item>
       <title>Next door is not always comparable</title>
@@ -46,6 +66,7 @@
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Sun, 25 Oct 2026 17:40:29 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/property-comparables-evidence.html</guid>
+      <atom:link href="https://a-samadi.com/watch/property-comparables-evidence.html" rel="related" type="text/html" />
     </item>
     <item>
       <title>The button moved. The AI did not notice.</title>
@@ -54,6 +75,7 @@
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Sat, 24 Oct 2026 22:00:44 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/computer-agent-check-result.html</guid>
+      <atom:link href="https://a-samadi.com/watch/computer-agent-check-result.html" rel="related" type="text/html" />
     </item>
     <item>
       <title>The money has a project name</title>
@@ -62,6 +84,7 @@
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Sat, 24 Oct 2026 21:38:08 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/dubai-project-escrow-controls.html</guid>
+      <atom:link href="https://a-samadi.com/watch/dubai-project-escrow-controls.html" rel="related" type="text/html" />
     </item>
     <item>
       <title>The confident answer from the old price list</title>
@@ -70,6 +93,7 @@
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Thu, 22 Oct 2026 06:31:41 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/rag-check-business-records.html</guid>
+      <atom:link href="https://a-samadi.com/watch/rag-check-business-records.html" rel="related" type="text/html" />
     </item>
     <item>
       <title>Dubai service charge: same rent, different bills</title>
@@ -78,6 +102,7 @@
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Wed, 21 Oct 2026 17:50:06 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/dubai-service-charge-same-rent.html</guid>
+      <atom:link href="https://a-samadi.com/watch/dubai-service-charge-same-rent.html" rel="related" type="text/html" />
     </item>
     <item>
       <title>AI agents: ability is not authority</title>
@@ -86,6 +111,7 @@
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Wed, 21 Oct 2026 06:36:51 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/ai-agent-permissions-ability-authority.html</guid>
+      <atom:link href="https://a-samadi.com/watch/ai-agent-permissions-ability-authority.html" rel="related" type="text/html" />
     </item>
     <item>
       <title>How cold outdoor air can help warm a home</title>
@@ -94,6 +120,7 @@
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Tue, 20 Oct 2026 17:30:39 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/heat-pump-moves-heat-explained.html</guid>
+      <atom:link href="https://a-samadi.com/watch/heat-pump-moves-heat-explained.html" rel="related" type="text/html" />
     </item>
     <item>
       <title>AVM vs appraisal: which fits your decision?</title>
@@ -134,6 +161,7 @@
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Mon, 19 Oct 2026 17:55:38 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/tesla-roadster-flight-claim.html</guid>
+      <atom:link href="https://a-samadi.com/watch/tesla-roadster-flight-claim.html" rel="related" type="text/html" />
     </item>
     <item>
       <title>AI agents need shared notes, and a way to check them</title>
@@ -142,6 +170,7 @@
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Mon, 19 Oct 2026 06:43:02 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/ai-agents-shared-notebook.html</guid>
+      <atom:link href="https://a-samadi.com/watch/ai-agents-shared-notebook.html" rel="related" type="text/html" />
     </item>
     <item>
       <title>Why your phone puts you across the street</title>
@@ -150,6 +179,7 @@
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Sun, 18 Oct 2026 17:30:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/phone-location-across-street.html</guid>
+      <atom:link href="https://a-samadi.com/watch/phone-location-across-street.html" rel="related" type="text/html" />
     </item>
     <item>
       <title>A map answer. The right place?</title>
@@ -366,6 +396,7 @@
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Fri, 09 Oct 2026 22:40:47 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/iphone-duo-price-per-day.html</guid>
+      <atom:link href="https://a-samadi.com/watch/iphone-duo.html" rel="related" type="text/html" />
     </item>
     <item>
       <title>Why can 8% rental yield still leave a cash shortfall?</title>
@@ -374,6 +405,7 @@
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/ai-rental-yield-cash-flow.html</guid>
+      <atom:link href="https://a-samadi.com/watch/rental-yield.html" rel="related" type="text/html" />
     </item>
     <item>
       <title>Why does your computer slow down when storage is almost full?</title>
@@ -390,6 +422,7 @@
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/profitable-but-out-of-cash.html</guid>
+      <atom:link href="https://a-samadi.com/watch/profit-cash.html" rel="related" type="text/html" />
     </item>
     <item>
       <title>Does Incognito actually make you invisible?</title>
@@ -406,6 +439,7 @@
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/what-accept-cookies-means.html</guid>
+      <atom:link href="https://a-samadi.com/watch/cookie-consent.html" rel="related" type="text/html" />
     </item>
     <item>
       <title>Why does AI sound so confident when it is wrong?</title>
@@ -414,6 +448,7 @@
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/why-ai-sounds-confident.html</guid>
+      <atom:link href="https://a-samadi.com/watch/ai-confidence.html" rel="related" type="text/html" />
     </item>
     <item>
       <title>Why does your phone stop charging at 80%?</title>
@@ -422,6 +457,7 @@
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/why-phone-stops-charging-at-80.html</guid>
+      <atom:link href="https://a-samadi.com/watch/charging-80.html" rel="related" type="text/html" />
     </item>
     <item>
       <title>How satellite messaging works without cell towers</title>

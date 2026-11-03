@@ -174,6 +174,6 @@ Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احم�
 - [Arabic homepage](https://a-samadi.com/ar/): Arabic translation of the homepage, with the same supported identity, roles and selected work.
 - [Persian writing](https://a-samadi.com/fa/writing/): Persian article index with translated titles, summaries and links to the corresponding reading pages.
 - [Arabic writing](https://a-samadi.com/ar/writing/): Arabic article index with translated titles, summaries and links to the corresponding reading pages.
-- [Homepage work index (JSON)](https://a-samadi.com/ask-index.json): Existing homepage passages and destinations in English, Persian and Arabic, exported from the visible source.
-- [RSS feed](https://a-samadi.com/writing/feed.xml): English article summaries with canonical links and original publication dates, generated from the published pages.
+- [Homepage and resource index (JSON)](https://a-samadi.com/ask-index.json): Existing multilingual homepage passages and published English article, film and carousel metadata, exported from canonical pages.
+- [RSS feed](https://a-samadi.com/writing/feed.xml): English articles and carousels with canonical links, related films and original publication dates, generated from published pages.
 - [Sitemap](https://a-samadi.com/sitemap.xml): Canonical indexable pages and their language alternates; embedded players and calculators are excluded.

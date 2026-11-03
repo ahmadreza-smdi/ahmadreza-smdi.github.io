@@ -69,6 +69,21 @@ class AuthorBoxesTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'duplicate'):
             builder.enrich_author(self.page('writing/example.html'), text)
 
+    def test_old_stylesheet_migrates_once_without_an_external_request(self):
+        path = self.page('writing/example.html')
+        old_link = '<link rel="stylesheet" href="/css/author-box.css?v=old">'
+        original = self.article().replace('</head>', old_link + '</head>')
+        updated = builder.enrich_author(path, original)
+        self.assertNotIn(old_link, updated)
+        self.assertEqual(updated.count('<style data-author-box>'), 1)
+        self.assertEqual(builder.enrich_author(path, updated), updated)
+
+    def test_duplicate_inline_and_external_styles_are_rejected(self):
+        original = self.article().replace('</head>', builder.STYLESHEET +
+            '<link rel="stylesheet" href="/css/author-box.css?v=old"></head>')
+        with self.assertRaisesRegex(ValueError, 'duplicate'):
+            builder.enrich_author(self.page('writing/example.html'), original)
+
     def test_recursive_discovery_covers_tools_and_new_article_directories(self):
         paths = [self.page('writing/example.html'), self.page('studies/example.html'),
                  self.page('tools/embed/example.html')]

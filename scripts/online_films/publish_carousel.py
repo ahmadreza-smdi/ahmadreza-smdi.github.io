@@ -88,7 +88,7 @@ def refuse_existing_day(site,due):
     if node.get('@type')=='CollectionPage' and node.get('@id','').endswith('#gallery') and node.get('datePublished'):
      if datetime.fromisoformat(node['datePublished'].replace('Z','+00:00')).astimezone(core.ZONE).date()==due.astimezone(core.ZONE).date():raise ValueError('This day already has a published carousel')
 
-def prepare(site,folder,review,stamp):
+def prepare(site,folder,review,stamp,*,backlog_discovery=False):
  before=core.inventory(site)
  spec=importlib.util.spec_from_file_location('reviewed_carousel_renderer',folder/'render_carousel_gallery.py');renderer=importlib.util.module_from_spec(spec);spec.loader.exec_module(renderer)
  media={'slides':[str(folder/x) for x in review['media']['slides']],'pdf':str(folder/review['media']['pdf'])}
@@ -96,7 +96,8 @@ def prepare(site,folder,review,stamp):
  for name in ['enrich_metadata','build_author_boxes','build_analytics','build_topic_hubs','follow_blocks','build_feed','build_llms','build_ask_index','build_status_pages']:
   core.run(['python3','-B','scripts/'+name+'.py'],site)
  after=core.inventory(site);changed=sorted(k for k in after if before.get(k)!=after[k])
- if set(before)-set(after) or set(changed)-(set(review['public_allowlist']) | {'llms-full.txt'}):raise ValueError('Change outside reviewed gallery paths')
+ discovery={'ask-index.json','writing/feed.xml'} if backlog_discovery else set()
+ if set(before)-set(after) or set(changed)-(set(review['public_allowlist']) | {'llms-full.txt'} | discovery):raise ValueError('Change outside reviewed gallery paths')
  return changed
 
 def verify_live(config,commit,paths):

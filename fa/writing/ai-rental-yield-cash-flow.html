@@ -93,7 +93,69 @@
   ]
 }
 </script><style>.film-wrap{max-width:420px;margin:2rem auto}.film-wrap video{width:100%;height:auto;display:block;border-radius:20px;background:var(--ink)}.film-note{font-size:.95rem!important;color:var(--muted)}.film-links{margin:2rem 0}.film-habit{padding:1rem 1.5rem;border:1px solid var(--line);border-radius:16px}</style><link rel="stylesheet" href="/css/rtl.css?v=20261009-lagoon4">
-<link rel="stylesheet" href="/css/author-box.css?v=20261009-author1">
+<style data-author-box>
+/* A quiet author reference at the end of each article, using the Lagoon tokens. */
+.editorial .article-author {
+  margin-block: 2.5rem 0;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid var(--line-strong);
+  border-inline-start: 3px solid var(--mint-deep);
+  border-radius: 16px;
+  background: var(--surface);
+  text-align: start;
+  overflow-wrap: anywhere;
+}
+.editorial .article-author h2 {
+  margin: 0 0 .25rem;
+  color: var(--muted);
+  font-size: .875rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.editorial .article-author p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.editorial .article-author .article-author__name {
+  margin-block-end: .35rem;
+  font-family: var(--display);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.editorial .article-author a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 44px;
+  max-inline-size: 100%;
+  padding-block: .25rem;
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+.editorial .article-author a:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+@media (forced-colors: active) {
+  .editorial .article-author { border-color: CanvasText; background: Canvas; }
+  .editorial .article-author h2, .editorial .article-author p { color: CanvasText; }
+  .editorial .article-author a { color: LinkText; }
+  .editorial .article-author a:focus-visible { outline-color: Highlight; }
+}
+@media print {
+  .editorial .article-author {
+    break-inside: avoid;
+    margin-block-start: 1.5rem;
+    border-color: #777;
+    background: transparent;
+  }
+  .editorial .article-author h2, .editorial .article-author p, .editorial .article-author a { color: #000; }
+}
+</style>
 
 <script src="/js/site-analytics.js?v=20261009-analytics1" defer></script>
 <meta property="article:modified_time" content="2026-10-20T13:27:41+03:30">
@@ -110,7 +172,7 @@
 <p>بازده ناخالص اجاره، اجاره سالانه را پیش از کسر هزینه‌ها با قیمت خرید مقایسه می‌کند. بازده ناخالص ۸٪ هم می‌تواند پس از ماه‌های بدون مستأجر، هزینه‌های عملیاتی و اقساط وام با کسری نقدی همراه باشد. این مثال فرضی است و جریان نقدی با بازده کل سرمایه‌گذاری یکسان نیست.</p>
 </section>
 <h2>تماشای فیلم</h2><p class="film-note">فیلم انیمیشنی ۹۹ ثانیه‌ای با روایت و زیرنویس انگلیسی. ملک، رابط هوش مصنوعی و مبالغ فرضی‌اند. صدا مصنوعی است.</p>
-<div class="film-wrap"><video controls playsinline preload="metadata" poster="/assets/writing/rental-yield/poster.webp" width="1080" height="1920" aria-label="هوش مصنوعی بازده اجاره را ۸٪ می‌داند؛ چرا مالک هنوز پول می‌پردازد؟"><source src="/assets/writing/rental-yield/film.mp4" type="video/mp4"><track kind="captions" src="/assets/writing/rental-yield/captions-en.vtt" srclang="en" label="English captions" default><a href="/assets/writing/rental-yield/film.mp4">MP4</a></video></div>
+<div class="film-wrap"><video controls playsinline preload="metadata" poster="/assets/writing/rental-yield/cover-poster.jpg" width="1080" height="1920" aria-label="هوش مصنوعی بازده اجاره را ۸٪ می‌داند؛ چرا مالک هنوز پول می‌پردازد؟"><source src="/assets/writing/rental-yield/film.mp4" type="video/mp4"><track kind="captions" src="/assets/writing/rental-yield/captions-en.vtt" srclang="en" label="English captions" default><a href="/assets/writing/rental-yield/film.mp4">MP4</a></video></div>
 <section><h2>بازده ناخالص اجاره ۸٪ چگونه محاسبه می‌شود؟</h2><p>فرض کنید قیمت خرید خانه ۳۰۰٬۰۰۰ دلار و اجاره بالقوه ماهانه ۲٬۰۰۰ دلار است. با حضور مستأجر در تمام سال، اجاره سالانه ۲۴٬۰۰۰ دلار می‌شود. تقسیم آن بر قیمت خرید، بازده ناخالص اجاره ۸٪ را می‌دهد. این نسبت پیش از کسر هزینه‌هاست و نشان‌دهنده پولی نیست که برای مالک باقی می‌ماند.</p></section><section><h2>پس از ماه‌های بدون مستأجر و هزینه‌های عملیاتی چه باقی می‌ماند؟</h2><p>یک ماه بدون مستأجر، اجاره بالقوه را ۲٬۰۰۰ دلار کم می‌کند؛ در نتیجه ۲۲٬۰۰۰ دلار دریافت می‌شود. مالیات ملک، بیمه، تعمیرات و مدیریت در این مثال مجموعاً ۷٬۰۰۰ دلار هزینه دارند. پیش از پرداخت اقساط، ۱۵٬۰۰۰ دلار باقی می‌ماند. ماه خالی فقط یک بار و جدا از این هزینه‌ها حساب شده است.</p></section><section><h2>چرا وام می‌تواند کسری نقدی ایجاد کند؟</h2><p>پرداخت سالانه وام ۱۸٬۰۰۰ دلار است و فقط اصل و بهره را شامل می‌شود. مالیات و بیمه قبلاً حساب شده‌اند و دوباره از طریق حساب امانی کسر نمی‌شوند. ۱۵٬۰۰۰ دلار باقی‌مانده برای اقساط ۳٬۰۰۰ دلار کم است. مالک در طول سال ۳٬۰۰۰ دلار از جیب خود می‌پردازد؛ به‌طور متوسط ماهانه ۲۵۰ دلار. دریافت‌ها و صورت‌حساب‌های واقعی در ماه‌ها یکسان نیستند.</p></section><section><h2>آیا جریان نقدی با بازده کل سرمایه‌گذاری یکسان است؟</h2><p>بازپرداخت اصل وام، بدهی را کاهش می‌دهد و می‌تواند سهم مالک را افزایش دهد. این پرداخت خروج پول است، اما هزینه عملیاتی نیست. کسری نقدی ۳٬۰۰۰ دلاری به‌تنهایی سود یا زیان کل سرمایه‌گذاری را تعیین نمی‌کند. این مثال افزایش ارزش، نرخ سرمایه‌سازی، بازده نقدی سرمایه یا بازده کل را محاسبه نمی‌کند.</p></section><section>
 <h2>این موضوع چه ارتباطی با کار من دارد؟</h2>
 <p>من هم‌بنیان‌گذار و راهبر فنی <a href="/fa/work/appraiva.html">Appraiva</a> هستم؛ شرکتی آمریکایی در کلیولند، اوهایو. از دبی به‌صورت دورکار فعالیت می‌کنم. Appraiva ابزارهای هوش مصنوعی می‌سازد که با تحلیل تصاویر و داده‌های تکمیل‌شدهٔ املاک به سرمایه‌گذاران و توسعه‌دهندگان املاک کمک می‌کنند املاک مسئله‌دار و خارج از بازار را پیدا کنند. محاسبه اجاره در این مقاله، مثالی فرضی برای توضیح موضوع است، نه نتیجه گزارش‌شده Appraiva یا ارائه‌دهنده دیگری.</p>

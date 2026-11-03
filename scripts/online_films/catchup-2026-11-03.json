@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "catchup-backlog-2026-11-03",
+  "destination": "https://a-samadi.com",
+  "action": "publish_exact_missed_backlog_once",
+  "single_use": true,
+  "status": "APPROVED",
+  "owner_quote": "Ok push and deploy all the prepared website changes, publish the eight missing items, and verify everything is live. Keep Instagram paused.",
+  "owner_instruction_at": "2026-11-03T18:42:15+03:30",
+  "not_before": "2026-11-03T18:42:15+03:30",
+  "expires_at": "2026-11-03T20:29:59+03:30",
+  "assets_sha256": "79709a9e8256516175982c53f4ddf0c2a507fb9895e52229417e2e450caac1f1",
+  "items": [
+    {
+      "kind": "film",
+      "key": "2026-10-29",
+      "publish_at": "2026-10-29T21:00:00+03:30",
+      "asset_name": "reviewed-film-2026-10-29-optional-captions-v2.zip",
+      "asset_id": 684609217,
+      "sha256": "583fabc9419019c13d0c238c82b0ea3f604219f5f94b69a5c6eab03ac84ebe9e",
+      "slug": "cash-conversion-cycle-clocks"
+    },
+    {
+      "kind": "carousel",
+      "key": "2026-10-30",
+      "slug": "tech-trend-gemini-business-hub",
+      "publish_at": "2026-10-30T10:00:00+03:30",
+      "asset_name": "reviewed-carousel-2026-10-30-gemini-business-hub-r02.zip",
+      "sha256": "1c8e63c1d022de4b2765b21513627b281644717d890943aebb20ddac74ba6c72",
+      "asset_id": 681402763
+    },
+    {
+      "kind": "film",
+      "key": "2026-10-30",
+      "publish_at": "2026-10-30T21:00:00+03:30",
+      "asset_name": "reviewed-film-2026-10-30-optional-captions-v2.zip",
+      "asset_id": 684609207,
+      "sha256": "4990f2c968ccbe8afe8ecb79cf35491f2559aceda4ef92e0d3029e6b87582c9b",
+      "slug": "structured-output-source-checks"
+    },
+    {
+      "kind": "carousel",
+      "key": "2026-10-31",
+      "slug": "tech-trend-ai-factory-observability",
+      "publish_at": "2026-10-31T10:00:00+03:30",
+      "asset_name": "reviewed-carousel-2026-10-31-ai-factory-observability-r02.zip",
+      "sha256": "4a7b7f997f221ddc79300f6cab95a566b5eb07c941530e073fcd3f4ab41cb32e",
+      "asset_id": 681402760
+    },
+    {
+      "kind": "film",
+      "key": "2026-10-31",
+      "publish_at": "2026-10-31T21:00:00+03:30",
+      "asset_name": "reviewed-film-2026-10-31-building-energy-audit-r02.zip",
+      "asset_id": 684647301,
+      "sha256": "10a8ad560057329892d5129b8bb64f63b9559353be65b97ca2d901d90fd1e3cf",
+      "slug": "building-energy-audit-decisions"
+    },
+    {
+      "kind": "carousel",
+      "key": "2026-11-01",
+      "slug": "tech-trend-world-models-real-tests",
+      "publish_at": "2026-11-01T10:00:00+03:30",
+      "asset_name": "reviewed-carousel-2026-11-01-world-models-real-tests-r02.zip",
+      "sha256": "a7b71552c0b7c6f68d7a716d0f8b581c0a7ee78613b9be020c6e03ff7f682a0e",
+      "asset_id": 681402759
+    },
+    {
+      "kind": "film",
+      "key": "2026-11-01",
+      "publish_at": "2026-11-01T21:00:00+03:30",
+      "asset_name": "reviewed-film-2026-11-01-agent-workflow-bottleneck.zip",
+      "asset_id": 684706302,
+      "sha256": "c66cfd30afc3eefce3b8052ded3da02f608a1340260ce67f45fc1983e3b02a43",
+      "slug": "agent-workflow-shared-bottlenecks"
+    },
+    {
+      "kind": "carousel",
+      "key": "2026-11-02",
+      "slug": "tech-trend-notification-to-reviewed-fix",
+      "publish_at": "2026-11-02T10:00:00+03:30",
+      "asset_name": "reviewed-carousel-2026-11-02-notification-to-reviewed-fix-r02.zip",
+      "sha256": "e0c621a2641ba8a5f921d9aa59b841719d4f1f36efd8ac475f13f12b690b4495",
+      "asset_id": 681403060
+    },
+    {
+      "kind": "film",
+      "key": "2026-11-02",
+      "publish_at": "2026-11-02T21:00:00+03:30",
+      "asset_name": "reviewed-film-2026-11-02-ai-research-understanding.zip",
+      "asset_id": 684728761,
+      "sha256": "6349eb7ef1f8525917b645a165498eb381158228798889aa973639ad450927b5",
+      "slug": "ai-research-examination-understanding"
+    }
+  ]
+}

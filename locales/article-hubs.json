@@ -287,7 +287,8 @@
           "pillar": "tech-explained",
           "path": "writing/how-photo-text-recognition-works.html"
         }
-      ]
+      ],
+      "watch": "watch/ai-confidence.html"
     },
     {
       "stem": "why-ai-loses-earlier-chat-context",
@@ -551,7 +552,8 @@
           "pillar": "tech-explained",
           "path": "writing/foldable-two-batteries.html"
         }
-      ]
+      ],
+      "watch": "watch/charging-80.html"
     },
     {
       "stem": "what-accept-cookies-means",
@@ -575,7 +577,8 @@
           "pillar": "tech-explained",
           "path": "writing/incognito-private-browsing.html"
         }
-      ]
+      ],
+      "watch": "watch/cookie-consent.html"
     },
     {
       "stem": "incognito-private-browsing",
@@ -1463,7 +1466,8 @@
           "pillar": "building-business",
           "path": "writing/profitable-but-out-of-cash.html"
         }
-      ]
+      ],
+      "watch": "watch/property-comparables-evidence.html"
     },
     {
       "stem": "building-digital-twin-data-freshness",
@@ -1511,7 +1515,8 @@
           "pillar": "building-business",
           "path": "writing/profitable-but-out-of-cash.html"
         }
-      ]
+      ],
+      "watch": "watch/prompt-injection-layered-controls.html"
     },
     {
       "stem": "business-ai-evaluation-cases",
@@ -1535,7 +1540,8 @@
           "pillar": "building-business",
           "path": "writing/profitable-but-out-of-cash.html"
         }
-      ]
+      ],
+      "watch": "watch/business-ai-evaluation-cases.html"
     },
     {
       "stem": "ai-research-examination-understanding",
@@ -1559,7 +1565,8 @@
           "pillar": "building-business",
           "path": "writing/profitable-but-out-of-cash.html"
         }
-      ]
+      ],
+      "watch": "watch/ai-research-examination-understanding.html"
     }
   ]
 }

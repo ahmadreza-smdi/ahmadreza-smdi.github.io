@@ -6,6 +6,7 @@ These are CollectionPages, so they do not create articles or publication dates.
 
 import argparse
 from follow_blocks import enrich_follow
+from build_author_boxes import STYLESHEET as AUTHOR_STYLES
 from datetime import datetime, timezone
 from html import escape
 from html.parser import HTMLParser
@@ -234,7 +235,7 @@ def _render(data, hub, language):
 <link rel="alternate" type="application/rss+xml" title="Ahmadreza Samadi — English writing" href="https://a-samadi.com/writing/feed.xml">
 <link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg">
 {rtl_head}<link rel="stylesheet" href="/css/site.css?v=20261009-writing1">
-<link rel="stylesheet" href="/css/author-box.css?v=20261009-author1">
+{AUTHOR_STYLES}
 <meta property="og:type" content="website"><meta property="og:site_name" content="Ahmadreza Samadi">
 <meta property="og:title" content="{escape(copy["title"], quote=True)}">
 <meta property="og:description" content="{escape(copy["description"], quote=True)}">

@@ -18,7 +18,69 @@
 <meta name="twitter:description" content="Estimate buyer-paid components for a completed residential purchase using dated fee rules, explicit payer shares and your actual quotes.">
 <meta name="twitter:image" content="https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg">
 <meta name="twitter:image:alt" content="Ahmadreza Samadi, Dubai-based technology entrepreneur">
-<link rel="canonical" href="https://a-samadi.com/tools/dubai-purchase-cost.html"><link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg"><link rel="stylesheet" href="/css/site.css?v=20261009-lagoon4"><link rel="stylesheet" href="/css/author-box.css?v=20261009-author1"><link rel="stylesheet" href="/css/property-calculators.css?v=20261018-wrap1">
+<link rel="canonical" href="https://a-samadi.com/tools/dubai-purchase-cost.html"><link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg"><link rel="stylesheet" href="/css/site.css?v=20261009-lagoon4"><style data-author-box>
+/* A quiet author reference at the end of each article, using the Lagoon tokens. */
+.editorial .article-author {
+  margin-block: 2.5rem 0;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid var(--line-strong);
+  border-inline-start: 3px solid var(--mint-deep);
+  border-radius: 16px;
+  background: var(--surface);
+  text-align: start;
+  overflow-wrap: anywhere;
+}
+.editorial .article-author h2 {
+  margin: 0 0 .25rem;
+  color: var(--muted);
+  font-size: .875rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.editorial .article-author p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.editorial .article-author .article-author__name {
+  margin-block-end: .35rem;
+  font-family: var(--display);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.editorial .article-author a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 44px;
+  max-inline-size: 100%;
+  padding-block: .25rem;
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+.editorial .article-author a:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+@media (forced-colors: active) {
+  .editorial .article-author { border-color: CanvasText; background: Canvas; }
+  .editorial .article-author h2, .editorial .article-author p { color: CanvasText; }
+  .editorial .article-author a { color: LinkText; }
+  .editorial .article-author a:focus-visible { outline-color: Highlight; }
+}
+@media print {
+  .editorial .article-author {
+    break-inside: avoid;
+    margin-block-start: 1.5rem;
+    border-color: #777;
+    background: transparent;
+  }
+  .editorial .article-author h2, .editorial .article-author p, .editorial .article-author a { color: #000; }
+}
+</style><link rel="stylesheet" href="/css/property-calculators.css?v=20261018-wrap1">
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -75,7 +137,8 @@
         "https://developers.cloudflare.com/web-analytics/faq/",
         "https://tax.gov.ae/en/faq.aspx?keyword=How+will+real+estate+be+treated%3F",
         "https://tax.gov.ae/en/faq.aspx?keyword=What+is+the+standard+rate+of+VAT+in+the+UAE%3F"
-      ]
+      ],
+      "dateModified": "2026-11-02T19:56:00+03:30"
     },
     {
       "@type": "BreadcrumbList",
@@ -104,7 +167,7 @@
 }</script>
 
 </head><body class="calculator-embed editorial-body property-calculator"><a href="#main" class="skip">Skip to calculator</a><div class="wrap"><header class="header editorial-header"><a class="brand" href="/" target="_blank" rel="noopener"><img src="/assets/brand/ahmadreza-samadi-mark-azure.svg" width="44" height="28" alt="">Ahmadreza Samadi / Home</a><nav class="nav" aria-label="Calculator navigation"><a href="/tools/rental-cash-flow.html" target="_blank" rel="noopener">Rental cash flow</a><a href="/tools/dubai-purchase-cost.html" target="_blank" rel="noopener">Purchase costs</a><a href="/writing/" target="_blank" rel="noopener">Writing and tools</a></nav></header>
-<main id="main" data-page="purchase"><section class="intro"><span class="eyebrow">Know the cost before the commitment</span><h1>Dubai purchase-cost calculator:<br>what cash does the purchase require?</h1><p>A dated component estimate for an ordinary completed residential sale. Your agreement and fee quote determine who pays and which charges apply.</p><span class="review">Browser-local calculation · Your own inputs</span><p class="small" data-educational-notice>Educational, not financial advice.</p><p class="small">Loan funding is your own input; this tool does not assess lending eligibility or loan-to-value limits. A negative cash-required result means the entered funding exceeds the price plus modeled costs. Confirm the actual advance and any surplus with your lender.</p></section>
+<main id="main" data-page="purchase"><section class="intro"><span class="eyebrow">Know the cost before the commitment</span><h1>Dubai purchase-cost calculator:<br>what cash does the purchase require?</h1><p>Use this Dubai property fees calculator to estimate the purchase costs of an ordinary completed residential sale. Your agreement and dated fee quote determine who pays and which charges apply.</p><span class="review">Browser-local calculation · Your own inputs</span><p class="small" data-educational-notice>Educational, not financial advice.</p><p class="small">Loan funding is your own input; this tool does not assess lending eligibility or loan-to-value limits. A negative cash-required result means the entered funding exceeds the price plus modeled costs. Confirm the actual advance and any surplus with your lender.</p></section>
 <noscript><style>body.property-calculator form[data-calculator][hidden]{display:none!important}</style><p>This calculator needs JavaScript. Its dated fee basis remains readable below. Calculations run locally in your browser.</p></noscript>
 <div class="layout"><form data-calculator hidden novalidate>
 <section class="panel"><h2>Purchase and fee basis</h2><p class="small">Verified official fee sources: 11 October 2026. This preview covers completed existing residential property only. Off-plan, commercial, special exemptions and other dispositions need separate review.</p><div class="fields">
@@ -147,7 +210,8 @@
 <li><a href="https://dubailand.gov.ae/en/eservices/request-for-mortgage-registration/" target="_blank" rel="noopener">DLD mortgage registration</a></li>
 <li><a href="https://dlp.dubai.gov.ae/Legislation%20Reference/2013/ECR%2030%20of%202013.html" target="_blank" rel="noopener">Dubai Executive Council Resolution 30 of 2013</a></li>
 <li><a href="https://tax.gov.ae/en/faq.aspx?keyword=real+estate" target="_blank" rel="noopener">FTA real-estate VAT guidance</a></li></ul>
-<p class="small">Relevant FTA FAQs: <a href="https://tax.gov.ae/en/faq.aspx?keyword=How+will+real+estate+be+treated%3F" target="_blank" rel="noopener">Residential property treatment</a> and <a href="https://tax.gov.ae/en/faq.aspx?keyword=What+is+the+standard+rate+of+VAT+in+the+UAE%3F" target="_blank" rel="noopener">the standard VAT rate</a>.</p><details><summary>Scope and limits</summary><p>Existing residential property is generally VAT-exempt; service-fee VAT is a separate matter. This tool adds 5% only to the published sale partner service fee. Your other quotes must already include any VAT. No blanket VAT is added to the residential purchase price.</p><p>The mortgage service page lists an ordinary partner service at AED 4,000 plus VAT and repeats a title-deed charge. This calculator requires your combined quote instead of stacking another fixed set. No provisional Oqood fee is preset.</p><p>Sources were checked on 11 October 2026. The DLD site's 7 October footer is a site-wide update date, not a fee-effective date. Recheck the current rules and exact channel before using a total. </p></details><p class="small">Inputs remain in this page, without server transmission or saving. No property dataset or market return is implied.</p></section><section class="details"><h2>Income and cash flow</h2><p>Read the <a href="/writing/which-dubai-property-source.html" target="_blank" rel="noopener">Dubai property source guide</a> to choose the evidence for a decision. Explore the <a href="/studies/rent-own-2026/" target="_blank" rel="noopener">rent and ownership study</a> for hypothetical US metro cash-budget scenarios and their limits.</p><p>Use the <a href="/tools/rental-cash-flow.html" target="_blank" rel="noopener">rental cash-flow calculator</a> to separate annual income, property costs and debt payments. <a href="/watch/rental-yield.html" target="_blank" rel="noopener">Watch the existing rental-yield film</a> or <a href="/writing/ai-rental-yield-cash-flow.html" target="_blank" rel="noopener">read its explanation</a>.</p></section><section class="details" aria-labelledby="calculator-privacy"><h2 id="calculator-privacy">Your inputs and site analytics</h2><p>This calculator processes the values you enter in this page. It does not send or save those values. The site uses <a href="https://developers.cloudflare.com/web-analytics/faq/" target="_blank" rel="noopener">Cloudflare Web Analytics</a> for page visits and performance; the calculator has no account, data API or property dataset.</p></section><!-- author-box:start -->
+<p class="small">Relevant FTA FAQs: <a href="https://tax.gov.ae/en/faq.aspx?keyword=How+will+real+estate+be+treated%3F" target="_blank" rel="noopener">Residential property treatment</a> and <a href="https://tax.gov.ae/en/faq.aspx?keyword=What+is+the+standard+rate+of+VAT+in+the+UAE%3F" target="_blank" rel="noopener">the standard VAT rate</a>.</p><details><summary>Scope and limits</summary><p>Existing residential property is generally VAT-exempt; service-fee VAT is a separate matter. This tool adds 5% only to the published sale partner service fee. Your other quotes must already include any VAT. No blanket VAT is added to the residential purchase price.</p><p>The mortgage service page lists an ordinary partner service at AED 4,000 plus VAT and repeats a title-deed charge. This calculator requires your combined quote instead of stacking another fixed set. No provisional Oqood fee is preset.</p><p>Sources were checked on 11 October 2026. The DLD site's 7 October footer is a site-wide update date, not a fee-effective date. Recheck the current rules and exact channel before using a total. </p></details><p class="small">Inputs remain in this page, without server transmission or saving. No property dataset or market return is implied.</p></section><section class="details"><h2>Income and cash flow</h2><p>Read the <a href="/writing/which-dubai-property-source.html" target="_blank" rel="noopener">Dubai property source guide</a> to choose the evidence for a decision. Explore the <a href="/studies/rent-own-2026/" target="_blank" rel="noopener">rent and ownership study</a> for hypothetical US metro cash-budget scenarios and their limits.</p><p>Use the <a href="/tools/rental-cash-flow.html" target="_blank" rel="noopener">rental cash-flow calculator</a> to separate annual income, property costs and debt payments. <a href="/watch/rental-yield.html" target="_blank" rel="noopener">Watch the existing rental-yield film</a> or <a href="/writing/ai-rental-yield-cash-flow.html" target="_blank" rel="noopener">read its explanation</a>.</p></section><section class="details" aria-labelledby="calculator-privacy"><h2 id="calculator-privacy">Your inputs and site analytics</h2><p>This calculator processes the values you enter in this page. It does not send or save those values. The site uses <a href="https://developers.cloudflare.com/web-analytics/faq/" target="_blank" rel="noopener">Cloudflare Web Analytics</a> for page visits and performance; the calculator has no account, data API or property dataset.</p></section><nav aria-label="Related Dubai calculations"><p>Continue the comparison: <a href="/tools/dubai-rental-yield.html" target="_blank" rel="noopener">Dubai gross and net rental yield</a> · <a href="/writing/dubai-service-charge-same-rent.html" target="_blank" rel="noopener">Dubai service charges: same rent, different bills</a>.</p></nav>
+<!-- author-box:start -->
 <aside class="article-author" aria-labelledby="article-author-title">
 <h2 id="article-author-title">About the author</h2>
 <p>Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder &amp; Technical Lead of Appraiva, which builds AI real estate intelligence, and Co-Founder &amp; CEO of Royal Abraj Group.</p>

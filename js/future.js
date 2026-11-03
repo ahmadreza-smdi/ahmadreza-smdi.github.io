@@ -459,8 +459,9 @@
                 nav.style.setProperty('--nav-o', '0');
                 return;
             }
-            nav.style.setProperty('--nav-x', `${target.offsetLeft}px`);
-            nav.style.setProperty('--nav-w', `${target.offsetWidth}px`);
+            const left = target.offsetLeft, width = target.offsetWidth;
+            nav.style.setProperty('--nav-x', `${left}px`);
+            nav.style.setProperty('--nav-w', `${width}px`);
             nav.style.setProperty('--nav-o', '1');
         };
         links.forEach((link) => {
@@ -483,8 +484,10 @@
         if (!hero || !lens) return;
         const scan = () => {
             if (paused() || document.hidden) return;
-            lens.classList.remove('is-scanning');
-            void lens.offsetWidth;
+            if (lens.classList.contains('is-scanning')) {
+                lens.classList.remove('is-scanning');
+                void lens.offsetWidth;
+            }
             lens.classList.add('is-scanning');
             window.dispatchEvent(new CustomEvent('site:scan'));
         };
@@ -553,7 +556,7 @@
         ];
         let w = 0, h = 0, dpr = 1, cs = 12, nx = 0, ny = 0;
         let fade = null, fadeX = 1;
-        let field = null, base = null, summit = null, dist = null;
+        let field = null, base = null, summit = null, dist = null, waves = null;
         let cx = 0, cy = 0;
         let particles = [];
         let running = false, raf = 0, last = 0, clock = 0, born = -1, lastInput = 0;
@@ -565,16 +568,17 @@
         const measure = () => {
             const box = canvas.getBoundingClientRect();
             if (!box.width || !box.height) return false;
+            const fr = frame.getBoundingClientRect();
             dpr = Math.min(window.devicePixelRatio || 1, 1.5);
             w = box.width; h = box.height;
             canvas.width = Math.round(w * dpr); canvas.height = Math.round(h * dpr);
             cs = w < 700 ? 15 : 12;
             nx = Math.ceil(w / cs) + 2; ny = Math.ceil(h / cs) + 2;
-            const fr = frame.getBoundingClientRect();
             cx = fr.left + fr.width / 2 - box.left;
             cy = fr.top + fr.height * 0.46 - box.top;
             const n = nx * ny;
             field = new Float32Array(n); base = new Float32Array(n); summit = new Float32Array(n); dist = new Float32Array(n);
+            waves = new Float64Array(n * 6);
             // One summit under the portrait and two lower hills; on one-column layouts they stack around it
             const narrow = w < 961;
             const sx = narrow ? Math.max(220, w * 0.62) : Math.max(280, Math.min(w * 0.38, 580));
@@ -588,6 +592,13 @@
                     summit[k] = gauss(x - cx, y - cy, sx, sy);
                     base[k] = 0.62 * gauss(x - bx, y - by, narrow ? 260 : 340, narrow ? 300 : 270) + 0.3 * gauss(x - tx, y - ty, narrow ? 280 : 360, 230);
                     dist[k] = Math.hypot(x - cx, y - cy);
+                    // Spatial phases stay fixed until resize. Only six time phases
+                    // need trigonometry each frame, rather than three per grid point.
+                    const phases = [x / 97 + y / 143, x / 61 - y / 83 + 1.3, (x + y) / 41];
+                    for (let q = 0; q < 3; q += 1) {
+                        waves[k * 6 + q * 2] = Math.sin(phases[q]);
+                        waves[k * 6 + q * 2 + 1] = Math.cos(phases[q]);
+                    }
                 }
             }
             // The land fades out toward the words: an elliptical window centred on the portrait
@@ -603,16 +614,17 @@
             particles = Array.from({ length: count }, () => spawn({}, true));
             return true;
         };
-        const height = (x, y, t) =>
-            0.034 * Math.sin(x / 97 + y / 143 + t * 0.21) + 0.024 * Math.sin(x / 61 - y / 83 + 1.3 - t * 0.17) + 0.017 * Math.sin((x + y) / 41 + t * 0.29);
         const compute = (t) => {
             const breathe = 1 + 0.045 * Math.sin(t * 0.33);
-            for (let j = 0; j < ny; j += 1) {
-                const y = j * cs;
-                for (let i = 0; i < nx; i += 1) {
-                    const k = j * nx + i;
-                    field[k] = summit[k] * breathe + base[k] + height(i * cs, y, t);
-                }
+            const s1 = Math.sin(t * 0.21), c1 = Math.cos(t * 0.21);
+            const s2 = Math.sin(-t * 0.17), c2 = Math.cos(-t * 0.17);
+            const s3 = Math.sin(t * 0.29), c3 = Math.cos(t * 0.29);
+            for (let k = 0; k < field.length; k += 1) {
+                const q = k * 6;
+                const height = 0.034 * (waves[q] * c1 + waves[q + 1] * s1)
+                    + 0.024 * (waves[q + 2] * c2 + waves[q + 3] * s2)
+                    + 0.017 * (waves[q + 4] * c3 + waves[q + 5] * s3);
+                field[k] = summit[k] * breathe + base[k] + height;
             }
             if (pointer.a > 0.002) {
                 const r = 130, reach = Math.ceil((r * 2.6) / cs);
@@ -637,6 +649,7 @@
                 }
             }
         };
+        const segment = (path, x1, y1, x2, y2) => { path.moveTo(x1, y1); path.lineTo(x2, y2); };
         const paths = () => {
             const out = [new Path2D(), new Path2D(), new Path2D(), new Path2D()];
             for (let j = 0; j < ny - 1; j += 1) {
@@ -653,21 +666,21 @@
                         const level = L0 + n * DL;
                         const code = (a > level ? 8 : 0) | (b > level ? 4 : 0) | (c > level ? 2 : 0) | (d > level ? 1 : 0);
                         if (code === 0 || code === 15) continue;
-                        const top = () => [x0 + (cs * (level - a)) / (b - a), y0];
-                        const right = () => [x0 + cs, y0 + (cs * (level - b)) / (c - b)];
-                        const bottom = () => [x0 + (cs * (level - d)) / (c - d), y0 + cs];
-                        const left = () => [x0, y0 + (cs * (level - a)) / (d - a)];
+                        // Compute only crossed edges; avoid per-cell closures and point arrays.
+                        const top = ((code & 8) > 0) !== ((code & 4) > 0) ? x0 + (cs * (level - a)) / (b - a) : 0;
+                        const right = ((code & 4) > 0) !== ((code & 2) > 0) ? y0 + (cs * (level - b)) / (c - b) : 0;
+                        const bottom = ((code & 1) > 0) !== ((code & 2) > 0) ? x0 + (cs * (level - d)) / (c - d) : 0;
+                        const left = ((code & 8) > 0) !== ((code & 1) > 0) ? y0 + (cs * (level - a)) / (d - a) : 0;
                         const path = out[(n % 5 === 4 ? 2 : 0) + (n % 2)];
-                        const seg = (p, q) => { path.moveTo(p[0], p[1]); path.lineTo(q[0], q[1]); };
                         switch (code) {
-                            case 1: case 14: seg(left(), bottom()); break;
-                            case 2: case 13: seg(bottom(), right()); break;
-                            case 3: case 12: seg(left(), right()); break;
-                            case 4: case 11: seg(top(), right()); break;
-                            case 6: case 9: seg(top(), bottom()); break;
-                            case 7: case 8: seg(left(), top()); break;
-                            case 5: if ((a + b + c + d) / 4 > level) { seg(left(), bottom()); seg(top(), right()); } else { seg(left(), top()); seg(bottom(), right()); } break;
-                            case 10: if ((a + b + c + d) / 4 > level) { seg(left(), top()); seg(bottom(), right()); } else { seg(left(), bottom()); seg(top(), right()); } break;
+                            case 1: case 14: segment(path, x0, left, bottom, y0 + cs); break;
+                            case 2: case 13: segment(path, bottom, y0 + cs, x0 + cs, right); break;
+                            case 3: case 12: segment(path, x0, left, x0 + cs, right); break;
+                            case 4: case 11: segment(path, top, y0, x0 + cs, right); break;
+                            case 6: case 9: segment(path, top, y0, bottom, y0 + cs); break;
+                            case 7: case 8: segment(path, x0, left, top, y0); break;
+                            case 5: if ((a + b + c + d) / 4 > level) { segment(path, x0, left, bottom, y0 + cs); segment(path, top, y0, x0 + cs, right); } else { segment(path, x0, left, top, y0); segment(path, bottom, y0 + cs, x0 + cs, right); } break;
+                            case 10: if ((a + b + c + d) / 4 > level) { segment(path, x0, left, top, y0); segment(path, bottom, y0 + cs, x0 + cs, right); } else { segment(path, x0, left, bottom, y0 + cs); segment(path, top, y0, x0 + cs, right); } break;
                             default: break;
                         }
                     }
@@ -1022,8 +1035,9 @@
             const line = window.innerHeight * 0.62;
             const rect = log.getBoundingClientRect();
             const progress = Math.min(1, Math.max(0, (line - rect.top) / rect.height));
+            const passed = items.map((item) => item.getBoundingClientRect().top + 40 < line);
             log.style.setProperty('--progress', progress.toFixed(3));
-            items.forEach((item) => item.classList.toggle('is-passed', item.getBoundingClientRect().top + 40 < line));
+            items.forEach((item, i) => item.classList.toggle('is-passed', passed[i]));
         };
         const schedule = () => { if (!frame) frame = requestAnimationFrame(update); };
         window.addEventListener('scroll', schedule, { passive: true });

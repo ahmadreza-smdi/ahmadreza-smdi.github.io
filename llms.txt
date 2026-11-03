@@ -36,7 +36,7 @@ Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احم�
 ## Writing
 
 - [Start with the decision, then build the AI](https://a-samadi.com/writing/start-with-the-decision.html): A practical approach to AI product decisions: start with the customer’s decision, assess the evidence, and evaluate the whole workflow.
-- [AI cost per accepted result](https://a-samadi.com/writing/ai-cost-per-verified-result.html): A practical framework for measuring AI workflow cost: include tokens, tools, retries and human review, then divide by results that pass verification.
+- [AI cost per accepted result](https://a-samadi.com/writing/ai-cost-per-verified-result.html) (article + [film](https://a-samadi.com/watch/business-ai-evaluation-cases.html)): A practical framework for measuring AI workflow cost: include tokens, tools, retries and human review, then divide by results that pass verification.
 - [AI Agent Safety: Accounts, Tools and Approval](https://a-samadi.com/writing/ai-agent-safety-boundaries.html): Before an AI agent acts, define its account, data, tools and approval rules. A practical guide to permissions enforced outside the model and revoking access.
 - [AI in real estate decisions: where AI should stop](https://a-samadi.com/writing/ai-human-review-real-estate.html): AI can prepare real estate information; people must verify material claims and explain uncertainty before a client decides. Use an explicit review handoff.
 - [AI property valuation: what an estimate misses](https://a-samadi.com/writing/ai-home-value-estimates.html): AI property valuation needs current facts, comparable sales and uncertainty checks. Learn how to review an estimate and resolve conflicting valuations.
@@ -47,8 +47,16 @@ Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احم�
 - [AVM vs appraisal: which fits your decision?](https://a-samadi.com/writing/avm-vs-appraisal.html): Choose the valuation process for the decision: compare AVMs, broker opinions and appraisals, then examine identity, dates, evidence and uncertainty.
 - [Rent or buy: the five numbers that decide it](https://a-samadi.com/writing/rent-or-buy-five-numbers.html): Compare rent and ownership using matched housing, running costs, upfront cash, time and net exit proceeds. Keep cash affordability separate from wealth.
 - [Dubai property buying costs, item by item](https://a-samadi.com/writing/dubai-property-buying-costs.html): Build a dated Dubai purchase budget from official registration fees, mortgage charges and your own quotes. Separate total fees from the buyer’s share.
+- [AI agents: ability is not authority](https://a-samadi.com/writing/ai-agent-permissions-ability-authority.html) (article + [film](https://a-samadi.com/watch/ai-agent-permissions-ability-authority.html)): Ahmadreza Samadi uses a fictional invoice to explain business AI permissions: the boundaries between reading, drafting and approving an action.
 - [Dubai service charge: same rent](https://a-samadi.com/writing/dubai-service-charge-same-rent.html) (article + [film](https://a-samadi.com/watch/dubai-service-charge-same-rent.html)): A fictional Dubai comparison by Ahmadreza Samadi separates advertised rent from cash after service charges, with DLD’s definition and limits.
+- [RAG: check the record behind an AI answer](https://a-samadi.com/writing/rag-check-business-records.html) (article + [film](https://a-samadi.com/watch/rag-check-business-records.html)): In a fictional hotel, Leila asks an AI assistant for a meeting-room quote. Before sending its fluent answer, she checks the source and finds an old price list.
+- [Dubai project escrow: control is not a guarantee](https://a-samadi.com/writing/dubai-project-escrow-controls.html) (article + [film](https://a-samadi.com/watch/dubai-project-escrow-controls.html)): Fictional buyer Rami sees a model of an unfinished building and asks which records support its payment instructions. No real project or account is represented.
+- [AI computer use: check the result, not just the click](https://a-samadi.com/writing/computer-agent-check-result.html) (article + [film](https://a-samadi.com/watch/computer-agent-check-result.html)): In a fictional parcel studio, Nora asks an AI helper for a label. A panel moves before the click arrives: the cursor moves, but the label is still missing.
 - [Property comparables: evidence beyond the nearby price](https://a-samadi.com/writing/property-comparables-evidence.html) (article + [film](https://a-samadi.com/watch/property-comparables-evidence.html)): Fictional buyer Mina compares neighbouring flats: one asking price and one older agreed sale. Nearby doors do not make them identical valuation evidence.
+- [Building digital twins: ask how fresh the data is](https://a-samadi.com/writing/building-digital-twin-data-freshness.html) (article + [film](https://a-samadi.com/watch/building-digital-twin-data-freshness.html)): In a fictional office, Omar sees a polished building model while a room feels wrong. Check which physical asset the data describes and when it was observed.
+- [Prompt injection: give documents less power](https://a-samadi.com/writing/prompt-injection-layered-controls.html) (article + [film](https://a-samadi.com/watch/prompt-injection-layered-controls.html)): A fictional theatre shows why a document should not control an AI assistant. Fewer tools, content checks and human approval can limit misleading instructions.
+- [AI evaluations: test the task, not just the demo](https://a-samadi.com/writing/business-ai-evaluation-cases.html) (article + [film](https://a-samadi.com/watch/business-ai-evaluation-cases.html)): Ahmadreza Samadi explains why a polished AI demonstration does not establish reliability for the real task: choose evaluation cases from the work.
+- [AI research output needs examination and understanding](https://a-samadi.com/writing/ai-research-examination-understanding.html) (article + [film](https://a-samadi.com/watch/ai-research-examination-understanding.html)): Zara, a fictional research coordinator, receives an AI-generated result. A polished answer alone does not explain which assumptions support it, what was checked, or what its limitations mean.
 
 ## Tools
 
@@ -57,6 +65,11 @@ Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احم�
 - [Dubai purchase costs calculator](https://a-samadi.com/tools/dubai-purchase-cost.html): Estimate buyer-paid components for a completed residential purchase using dated fee rules, explicit payer shares and your actual quotes.
 - [Valuation range checker](https://a-samadi.com/tools/valuation-range.html): Compare two to five property estimates: median, range, spread and transparent review flags. Your inputs stay in your browser.
 - [Dubai rental yield: gross versus net](https://a-samadi.com/tools/dubai-rental-yield.html): Compare potential gross rent with net operating income after vacancy, service charges and your own costs. No market rates or returns are assumed.
+
+## Explainers
+
+- [AI agents are learning when to ask.](https://a-samadi.com/carousels/tech-trend-assisted-permissions.html): GitHub has made assisted permissions generally available in Copilot CLI, the Copilot app and VS Code. The useful question is what still needs your approval.
+- [More AI calls do not prove more useful work.](https://a-samadi.com/carousels/tech-trend-ai-usage-not-outcomes.html): GitHub has expanded Copilot usage reporting across tools. That helps show activity. It does not measure business results by itself.
 
 ## Official profiles
 

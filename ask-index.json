@@ -1760,5 +1760,703 @@
         }
       ]
     }
+  ],
+  "published_resources": [
+    {
+      "url": "https://a-samadi.com/carousels/tech-trend-ai-usage-not-outcomes.html",
+      "language": "en",
+      "type": "CollectionPage",
+      "title": "More AI calls do not prove more useful work.",
+      "description": "GitHub has expanded Copilot usage reporting across tools. That helps show activity. It does not measure business results by itself.",
+      "date_published": "2026-10-29T13:44:13+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/carousels/tech-trend-assisted-permissions.html",
+      "language": "en",
+      "type": "CollectionPage",
+      "title": "AI agents are learning when to ask.",
+      "description": "GitHub has made assisted permissions generally available in Copilot CLI, the Copilot app and VS Code. The useful question is what still needs your approval.",
+      "date_published": "2026-10-28T16:43:04+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/ai-agent-permissions-ability-authority.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "AI agents: ability is not authority",
+      "description": "Watch Ahmadreza Samadi’s English film: a fictional invoice explains the boundaries between reading, drafting and approval in business AI.",
+      "date_published": "2026-10-21T10:06:51+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/ai-agents-shared-notebook.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "AI agents need shared notes, and a way to check them",
+      "description": "Watch Ahmadreza Samadi’s English film: a fictional repair workshop explains shared agent knowledge, context checks and private project information.",
+      "date_published": "2026-10-19T10:13:02+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/ai-confidence.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "Why does AI sound so confident when it is wrong?",
+      "description": "By Ahmadreza Samadi. An animated fictional museum example explains confident AI mistakes and how to check evidence. English narration and captions.",
+      "date_published": "2026-10-05T18:47:15+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/ai-research-examination-understanding.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "AI wrote the result. People still need to understand it.",
+      "description": "Watch the English film: Zara, a fictional research coordinator, receives an AI-generated result. A polished answer alone does not explain which assumptions support it, what was checked, or what its limitations mean.",
+      "date_published": "2026-11-02T21:00:00+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/building-digital-twin-data-freshness.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "A beautiful building model can still be out of date",
+      "description": "Watch the English film: In a fictional office, Omar sees a polished building model while a room feels wrong. The useful question is not how realistic the model looks. It is which physical asset the data describes and when that data was observed.",
+      "date_published": "2026-10-27T13:10:13+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/business-ai-evaluation-cases.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "The AI demo passed. The real work did not.",
+      "description": "Watch Ahmadreza Samadi’s English film about AI evaluation: a polished demo is not proof of task reliability; choose cases that reflect the work.",
+      "date_published": "2026-10-28T21:00:00+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/charging-80.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "Why does your phone stop charging at 80%?",
+      "description": "By Ahmadreza Samadi. An animated explanation of charge limits, learned charging routines and heat pauses. English narration and captions.",
+      "date_published": "2026-10-05T19:41:49+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/computer-agent-check-result.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "The button moved. The AI did not notice.",
+      "description": "Watch the English film: In a fictional parcel studio, Nora asks an AI helper to prepare a label. A panel moves before the click arrives. The cursor moves, but the label is still missing. This illustrates a failure possibility; it is not an observed shipment or product test.",
+      "date_published": "2026-10-25T01:30:44+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/cookie-consent.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "What does Accept cookies actually mean?",
+      "description": "By Ahmadreza Samadi. An animated explanation of cookie banners and what accepting optional purposes may mean. English narration and captions.",
+      "date_published": "2026-10-05T19:35:43+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/dubai-project-escrow-controls.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "The money has a project name",
+      "description": "Watch the English film: Fictional buyer Rami sees a beautiful model of an unfinished building. His useful question is not only what it will look like, but which records support the payment instructions. No real project or account is represented here.",
+      "date_published": "2026-10-25T01:08:08+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/dubai-service-charge-same-rent.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "Same rent, different service-charge bill",
+      "description": "Watch the English film: A fictional Dubai property comparison separates advertised rent from cash remaining after one recurring cost.",
+      "date_published": "2026-10-21T21:20:06+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/heat-pump-moves-heat-explained.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "How cold outdoor air can help warm a home",
+      "description": "Watch Ahmadreza Samadi’s English animated film: a fictional home and an illustrative energy balance explain how a heat pump transfers heat.",
+      "date_published": "2026-10-20T21:00:39+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/iphone-duo.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "iPhone Duo: what does the extra $800 cost per day?",
+      "description": "By Ahmadreza Samadi. Watch the 104-second film comparing the $800 model-price gap over three years. English captions, a transcript and the calculation’s limits are included.",
+      "date_published": "2026-10-10T02:10:47+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/phone-location-across-street.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "Why your phone puts you across the street",
+      "description": "Watch Ahmadreza Samadi’s English film: a fictional pickup explains reflected satellite signals, an uncertain map dot and agreeing where to meet.",
+      "date_published": "2026-10-18T21:00:00+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/profit-cash.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "Profitable. But out of cash: why payment timing matters",
+      "description": "By Ahmadreza Samadi. An animated example of a profitable business short of cash because bills and customer payments fall on different dates. English narration and captions.",
+      "date_published": "2026-10-08T09:44:46+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/prompt-injection-layered-controls.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "The document tried to become the boss",
+      "description": "Watch the English film: A fictional theatre shows why reading a document should not let it take over an AI assistant. A smaller tool set, checks on incoming content and human approval points can limit the damage from a misleading instruction.",
+      "date_published": "2026-10-27T21:00:00+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/property-comparables-evidence.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "Next door is not always comparable",
+      "description": "Watch the English film: Fictional buyer Mina places two neighbouring flats on a comparison rail. One card is an asking price; the other records an older agreed sale. Neither card becomes identical evidence merely because the doors are close. No actual property, price or valuation is represented.",
+      "date_published": "2026-10-25T21:10:29+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/rag-check-business-records.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "The confident answer from the old price list",
+      "description": "Watch the English film: In a fictional hotel, Leila asks an AI assistant for a meeting-room quote. A fluent answer appears. Before sending it, she spots the problem: its supporting sheet is an old version. This is a teaching scenario, not a report of an actual hotel or product test.",
+      "date_published": "2026-10-22T10:01:41+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/rental-yield.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "AI says 8% rental yield. Why is the owner still paying?",
+      "description": "Ahmadreza Samadi’s 99-second film uses a fictional rental budget to show how an 8% gross yield can coexist with a cash shortfall.",
+      "date_published": "2026-10-09T03:57:44+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/tesla-roadster-flight-claim.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "Tesla says Roadster can fly: three questions to ask",
+      "description": "Watch the English animated film separating Tesla flight claims, access conditions and intended use, with an illustrated thrust mechanism.",
+      "date_published": "2026-10-19T21:25:38+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/ai-agent-permissions-ability-authority.html",
+      "language": "en",
+      "type": "Article",
+      "title": "AI agents: ability is not authority",
+      "description": "Ahmadreza Samadi uses a fictional invoice to explain business AI permissions: the boundaries between reading, drafting and approving an action.",
+      "date_published": "2026-10-21T10:06:51+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/ai-agent-safety-boundaries.html",
+      "language": "en",
+      "type": "Article",
+      "title": "AI agent safety: boundaries before actions",
+      "description": "What changes when AI assistants can act? A practical guide to agent permissions, NVIDIA OpenShell and the Sentry reference design.",
+      "date_published": "2026-09-29"
+    },
+    {
+      "url": "https://a-samadi.com/writing/ai-agents-shared-notebook.html",
+      "language": "en",
+      "type": "Article",
+      "title": "AI agents need shared notes, and a way to check them",
+      "description": "A fictional repair workshop explains reusable agent knowledge, context checks and a boundary for private project information.",
+      "date_published": "2026-10-19T10:13:02+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/ai-cost-per-verified-result.html",
+      "language": "en",
+      "type": "Article",
+      "title": "AI cost per accepted result",
+      "description": "A practical framework for measuring the full cost of accepted AI workflow results.",
+      "date_published": "2026-09-24"
+    },
+    {
+      "url": "https://a-samadi.com/writing/ai-data-center-site-readiness.html",
+      "language": "en",
+      "type": "Article",
+      "title": "What makes a building ready for AI data centers?",
+      "description": "Power, cooling, networks and building fit explained through fictional sites, with current JLL and Meta sources and questions for specialist review.",
+      "date_published": "2026-10-13T18:12:26+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/ai-document-review-claim-evidence-checklist.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Who checks the AI’s homework?",
+      "description": "A document-review checklist by Ahmadreza Samadi: write the claim, locate its supporting evidence, then resolve the gap or keep it visible.",
+      "date_published": "2026-10-16T23:41:04+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/ai-home-value-estimates.html",
+      "language": "en",
+      "type": "Article",
+      "title": "AI property valuation: what an estimate misses",
+      "description": "AI property valuation needs current facts, comparable sales and uncertainty checks. Learn how to review an estimate and resolve conflicting valuations.",
+      "date_published": "2026-10-03"
+    },
+    {
+      "url": "https://a-samadi.com/writing/ai-human-review-real-estate.html",
+      "language": "en",
+      "type": "Article",
+      "title": "AI in real estate decisions: where AI should stop",
+      "description": "AI can prepare real estate information; people must verify material claims and explain uncertainty before a client decides. Use an explicit review handoff.",
+      "date_published": "2026-10-03"
+    },
+    {
+      "url": "https://a-samadi.com/writing/ai-inference-memory-movement-explained.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Why does moving data matter for AI chips?",
+      "description": "Our original framework: identify the workload, locate the bottleneck, then test the complete result. No chip test, measured saving or vendor ranking is claimed.",
+      "date_published": "2026-10-14T12:04:37+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/ai-rental-yield-cash-flow.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Why can 8% rental yield still leave a cash shortfall?",
+      "description": "A correct rental-yield calculation can still leave a cash shortfall. Follow a fictional home from headline yield to money left after costs and the loan.",
+      "date_published": "2026-10-09"
+    },
+    {
+      "url": "https://a-samadi.com/writing/ai-research-examination-understanding.html",
+      "language": "en",
+      "type": "Article",
+      "title": "AI wrote the result. People still need to understand it.",
+      "description": "Zara, a fictional research coordinator, receives an AI-generated result. A polished answer alone does not explain which assumptions support it, what was checked, or what its limitations mean.",
+      "date_published": "2026-11-02T21:00:00+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/avm-vs-appraisal.html",
+      "language": "en",
+      "type": "Article",
+      "title": "AVM vs appraisal: which fits your decision?",
+      "description": "Choose the valuation process for the decision: compare AVMs, broker opinions and appraisals, then examine identity, dates, evidence and uncertainty.",
+      "date_published": "2026-10-20T18:38:29+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/bacnet-building-devices-common-language.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Your thermostat speaks. Who listens?",
+      "description": "Ahmadreza Samadi explains BACnet building integration: identify the devices, data and commands, and who verifies that they work together.",
+      "date_published": "2026-10-17T18:00:04+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/building-digital-twin-data-freshness.html",
+      "language": "en",
+      "type": "Article",
+      "title": "A beautiful building model can still be out of date",
+      "description": "In a fictional office, Omar sees a polished building model while a room feels wrong. Check which physical asset the data describes and when it was observed.",
+      "date_published": "2026-10-27T13:10:13+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/building-laser-scans-point-clouds-explained.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How does a laser scan become a building record?",
+      "description": "Use a scan as evidence for a defined question. It does not certify structural safety, hidden services or universal accuracy. No real building was scanned.",
+      "date_published": "2026-10-14T18:00:41+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/building-leak-alert-response-checklist.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Your building sent an alert.",
+      "description": "A fictional building leak alert shows why a named responder, a location check and a recorded outcome matter. Three questions to ask before buying a sensor.",
+      "date_published": "2026-10-16T23:41:11+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/business-ai-evaluation-cases.html",
+      "language": "en",
+      "type": "Article",
+      "title": "The AI demo passed. The real work did not.",
+      "description": "Ahmadreza Samadi explains why a polished AI demonstration does not establish reliability for the real task: choose evaluation cases from the work.",
+      "date_published": "2026-10-28T21:00:00+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/chatgpt-intelligent-ui-explained.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How does ChatGPT's Intelligent UI work?",
+      "description": "A simple explanation of ChatGPT's interactive answers, the 7 October announcement and a fictional budget that shows why assumptions still matter.",
+      "date_published": "2026-10-12T12:09:26+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/computer-agent-check-result.html",
+      "language": "en",
+      "type": "Article",
+      "title": "The button moved. The AI did not notice.",
+      "description": "In a fictional parcel studio, Nora asks an AI helper for a label. A panel moves before the click arrives: the cursor moves, but the label is still missing.",
+      "date_published": "2026-10-25T01:30:44+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/connected-ai-apps.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Connected AI apps: access, scope and approval",
+      "description": "What happens when you connect an app to ChatGPT or Gemini? A practical guide to accounts, permissions, reading versus acting, and approval before you connect.",
+      "date_published": "2026-09-25"
+    },
+    {
+      "url": "https://a-samadi.com/writing/dubai-project-escrow-controls.html",
+      "language": "en",
+      "type": "Article",
+      "title": "The money has a project name",
+      "description": "Fictional buyer Rami sees a model of an unfinished building and asks which records support its payment instructions. No real project or account is represented.",
+      "date_published": "2026-10-25T01:08:08+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/dubai-property-buying-costs.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Dubai property buying costs, item by item",
+      "description": "Build a dated Dubai purchase budget from official registration fees, mortgage charges and your own quotes. Separate total fees from the buyer’s share.",
+      "date_published": "2026-10-20T18:38:29+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/dubai-property-tokenisation-explained.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How do property tokens work, and can you sell them?",
+      "description": "A simple property-token explainer connects digital ownership, fractional shares and net rent with the separate challenge of finding a buyer.",
+      "date_published": "2026-10-12T19:26:21+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/dubai-service-charge-same-rent.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Dubai service charge: same rent, different bills",
+      "description": "A fictional Dubai comparison by Ahmadreza Samadi separates advertised rent from cash after service charges, with DLD’s definition and limits.",
+      "date_published": "2026-10-21T21:20:06+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/foldable-two-batteries.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Two batteries, one foldable phone: how the battery reading works",
+      "description": "Two batteries can power one foldable phone with one charge reading. See why capacity and usable energy matter more than averaging two percentages.",
+      "date_published": "2026-10-03"
+    },
+    {
+      "url": "https://a-samadi.com/writing/geospatial-ai-map-answer-review.html",
+      "language": "en",
+      "type": "Article",
+      "title": "A map answer. The right place?",
+      "description": "Ahmadreza Samadi’s geospatial AI checklist: check the boundary, date, source and assumptions behind a map answer; keep unsupported conclusions open.",
+      "date_published": "2026-10-17T21:00:04+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/heat-pump-moves-heat-explained.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How cold outdoor air can help warm a home",
+      "description": "Ahmadreza Samadi explains how a heat pump moves heat through a fictional home and an illustrative energy balance, with an English animated film.",
+      "date_published": "2026-10-20T21:00:39+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/how-building-digital-twins-work.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How can a building have a live digital copy?",
+      "description": "Sensors connect real rooms and equipment to an updating digital model. See how a building digital twin turns readings into useful context.",
+      "date_published": "2026-10-11T00:08:56+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/how-contactless-cards-work.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How does a contactless card work without a battery?",
+      "description": "A payment terminal briefly powers the chip in a passive contactless card. Follow the energy and the payment data through a tap.",
+      "date_published": "2026-10-10T03:05:36+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/how-many-coffees-to-break-even.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How many coffees must a cafe sell before it makes any profit?",
+      "description": "A fictional cafe sells 100 coffees for $500 and makes $0 operating profit. Follow its costs to understand contribution and break-even.",
+      "date_published": "2026-10-10T18:02:07+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/how-noise-cancellation-works.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How do headphones cancel noise by making more sound?",
+      "description": "Microphones measure outside noise and a speaker adds a carefully timed opposite wave. Why this reduces a hum better than every sudden voice.",
+      "date_published": "2026-10-10T03:05:36+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/how-photo-text-recognition-works.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How does your phone turn text in a photo into copyable words?",
+      "description": "OCR finds text regions and recognises visual patterns as letters and words. The AI feature can save typing, but copied text still needs checking.",
+      "date_published": "2026-10-10T03:05:36+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/how-satellite-messaging-works.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How satellite messaging works without cell towers",
+      "description": "Follow a supported phone message from a satellite back to Earth. Check service support, a clear sky view and delivery limits before going off-grid.",
+      "date_published": "2026-10-04"
+    },
+    {
+      "url": "https://a-samadi.com/writing/how-zip-files-work.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How ZIP files work: compression without losing data",
+      "description": "ZIP bundles files and can use lossless compression. Learn how DEFLATE restores every byte, why JPG and MP4 may barely shrink, and why compression is not encryption.",
+      "date_published": "2026-09-28"
+    },
+    {
+      "url": "https://a-samadi.com/writing/human-review-property-ai-checklist.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Where the person signs off: property AI review",
+      "description": "A practical human-review checklist for property AI: define the decision, check evidence, preserve uncertainty and record who can approve the next action.",
+      "date_published": "2026-10-20T18:38:29+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/humanoid-robots-at-home.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Humanoid robots at home: demos, shipments and autonomy",
+      "description": "Ahmadreza Samadi explains how to read humanoid robot claims: shipment forecasts, home robot preorders, remote assistance and evidence of useful autonomy.",
+      "date_published": "2026-10-03"
+    },
+    {
+      "url": "https://a-samadi.com/writing/incognito-private-browsing.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Does Incognito actually make you invisible?",
+      "description": "A simple gift-shopping story explains Incognito, cookies, website records, saved files and what private browsing actually hides. By Ahmadreza Samadi.",
+      "date_published": "2026-10-05"
+    },
+    {
+      "url": "https://a-samadi.com/writing/iphone-duo-price-per-day.html",
+      "language": "en",
+      "type": "Article",
+      "title": "iPhone Duo: what does the extra $800 cost per day?",
+      "description": "A 104-second film turns the $800 US launch-price gap between iPhone Duo and iPhone 18 Pro into a daily comparison, with the assumptions made clear.",
+      "date_published": "2026-10-10T02:10:47+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/jev-ai-decision-model.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Jev: an AI decision model, not another chatbot",
+      "description": "How TypeSafe describes Jev, how bounded decisions differ from chatbot replies, and what to check before using a model to route a real workflow.",
+      "date_published": "2026-09-25"
+    },
+    {
+      "url": "https://a-samadi.com/writing/on-device-ai-scam-warnings-explained.html",
+      "language": "en",
+      "type": "Article",
+      "title": "The message looks convincing.",
+      "description": "Ahmadreza Samadi explains AI scam warnings: stop a rushed action, verify through a trusted separate contact route and keep uncertainty visible.",
+      "date_published": "2026-10-17T12:00:05+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/passkeys-face-id.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How passkeys work: why Face ID is not your password",
+      "description": "A passkey proves access to a private key; Face ID approves its use locally. Learn what the website receives and what to check for account recovery.",
+      "date_published": "2026-09-28"
+    },
+    {
+      "url": "https://a-samadi.com/writing/phone-location-across-street.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Why your phone puts you across the street",
+      "description": "A fictional pickup explains reflected satellite signals, an uncertain map dot and a practical way to agree where to meet.",
+      "date_published": "2026-10-18T21:00:00+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/profitable-but-out-of-cash.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How can a profitable business run out of cash?",
+      "description": "A profitable sale can leave a business unable to pay its supplier. Follow one order to see why earned money and available cash are different.",
+      "date_published": "2026-10-08"
+    },
+    {
+      "url": "https://a-samadi.com/writing/prompt-injection-layered-controls.html",
+      "language": "en",
+      "type": "Article",
+      "title": "The document tried to become the boss",
+      "description": "A fictional theatre shows why a document should not control an AI assistant. Fewer tools, content checks and human approval can limit misleading instructions.",
+      "date_published": "2026-10-27T21:00:00+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/property-comparables-evidence.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Next door is not always comparable",
+      "description": "Fictional buyer Mina compares neighbouring flats: one asking price and one older agreed sale. Nearby doors do not make them identical valuation evidence.",
+      "date_published": "2026-10-25T21:10:29+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/property-data-enrichment.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How does property data enrichment connect the right records?",
+      "description": "A fictional image-and-record comparison shows how to check property identity, source dates and unresolved claims before combining property information.",
+      "date_published": "2026-10-10T20:30:06+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/rag-check-business-records.html",
+      "language": "en",
+      "type": "Article",
+      "title": "The confident answer from the old price list",
+      "description": "In a fictional hotel, Leila asks an AI assistant for a meeting-room quote. Before sending its fluent answer, she checks the source and finds an old price list.",
+      "date_published": "2026-10-22T10:01:41+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/rent-or-buy-five-numbers.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Rent or buy: the five numbers that decide it",
+      "description": "Compare rent and ownership using matched housing, running costs, upfront cash, time and net exit proceeds. Keep cash affordability separate from wealth.",
+      "date_published": "2026-10-20T18:38:29+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/small-ai-models-task-routing-explained.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How can a smaller AI model fit a useful task?",
+      "description": "Haiku 5.5 is a current example of narrow AI work. Learn task definition, evaluation, routing and a fictional cost calculation without assuming equal quality.",
+      "date_published": "2026-10-13T13:31:09+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/start-with-the-decision.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Start with the decision, then build the AI",
+      "description": "A practical approach to AI product decisions: start with the customer’s decision, assess the evidence, and evaluate the whole workflow.",
+      "date_published": "2026-09-13T10:06:07+00:00"
+    },
+    {
+      "url": "https://a-samadi.com/writing/tesla-roadster-flight-claim.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Tesla says Roadster can fly: three questions to ask",
+      "description": "Ahmadreza Samadi’s fictional hangar explains thrust and separates a manufacturer’s Tesla Roadster claim from availability and public-road approval.",
+      "date_published": "2026-10-19T21:25:38+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/verify-ai-image-claims.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How to check an image claim, AI-made or not",
+      "description": "A practical checklist for checking an image and its claim: find the source, reverse-search it, inspect provenance signals and seek independent corroboration.",
+      "date_published": "2026-10-03"
+    },
+    {
+      "url": "https://a-samadi.com/writing/virtual-machine-device-sharing-explained.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How a virtual PC can use your real printer",
+      "description": "Our original checklist: Which virtual PC? Which resources? Do I need each one? The film is conceptual, not product footage or a tested setup.",
+      "date_published": "2026-10-16T23:40:54+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/what-accept-cookies-means.html",
+      "language": "en",
+      "type": "Article",
+      "title": "What does Accept cookies actually mean?",
+      "description": "The same small browser note can remember your shopping basket or help a company recognise you across websites. The choice is about what that note does.",
+      "date_published": "2026-10-05"
+    },
+    {
+      "url": "https://a-samadi.com/writing/where-wearable-ai-computation-runs.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Where does your wearable’s AI run?",
+      "description": "Ahmadreza Samadi explains wearable AI computation: which tasks run locally, what data is sent out and what happens without a connection.",
+      "date_published": "2026-10-16T23:41:18+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/which-dubai-property-source.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Dubai property costs and data: choose the right source",
+      "description": "Choose Dubai property sources by purpose: sale and mortgage fees, rental benchmarks, sales-price indices or a specific valuation. Keep dates and limits visible.",
+      "date_published": "2026-10-17T00:57:39+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/why-ai-loses-earlier-chat-context.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Why can AI lose track of something you already said?",
+      "description": "Chat history, working context, summaries, saved memory and training are different things. Understand why a chatbot can miss an earlier detail and how to help.",
+      "date_published": "2026-10-10T12:00:13+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/why-ai-sounds-confident.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Why does AI sound so confident when it is wrong?",
+      "description": "Ahmadreza Samadi explains confident AI mistakes with a fictional museum example, an animated film and a simple way to check claims against evidence.",
+      "date_published": "2026-10-05"
+    },
+    {
+      "url": "https://a-samadi.com/writing/why-ai-weather-models-need-local-observations.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Why does AI need weather stations?",
+      "description": "AI weather models need current observations as well as past patterns. Check location, update time and forecast window, and distinguish radar from forecasts.",
+      "date_published": "2026-10-15T12:01:10+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/why-full-storage-slows-computer.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Why does your computer slow down when storage is almost full?",
+      "description": "Storage is working room too. A ten-slide explainer on temporary files, RAM overflow and SSD housekeeping, with practical cleanup advice.",
+      "date_published": "2026-10-09"
+    },
+    {
+      "url": "https://a-samadi.com/writing/why-occupancy-sensor-lights-switch-off.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Why did the lights go out while you were there?",
+      "description": "Why occupancy sensors can miss a seated person: check their view, movement detection and timeout before asking the facilities team to investigate.",
+      "date_published": "2026-10-15T18:00:54+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/why-phone-stops-charging-at-80.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Why does your phone stop charging at 80%?",
+      "description": "A chosen limit, a learned routine and a heat pause can look similar. They have different triggers and different ways to resume charging.",
+      "date_published": "2026-10-05"
+    },
+    {
+      "url": "https://a-samadi.com/writing/why-rent-to-value-is-not-property-yield.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Why dividing metro rent by home value does not give property yield",
+      "description": "Why a metro rent-to-value ratio is not an observed property yield. A fictional cash budget shows the difference and the next evidence to check.",
+      "date_published": "2026-10-15T12:40:34+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/why-usb-c-cables-differ.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Why do identical-looking USB-C cables behave differently?",
+      "description": "USB-C describes the connector. Power, file-transfer speed and video support are separate capabilities to check in the whole connection.",
+      "date_published": "2026-10-10T03:05:36+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/why-wifi-is-slow-with-full-bars.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Why is Wi-Fi slow even with full bars?",
+      "description": "Full Wi-Fi bars describe your signal to the router, not the speed of the whole internet route. Learn what else can slow it down and how to compare.",
+      "date_published": "2026-10-10T06:01:29+03:30"
+    }
   ]
 }

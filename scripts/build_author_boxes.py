@@ -12,8 +12,9 @@ import sys
 from enrich_metadata import article_node, language
 
 ROOT = Path(__file__).resolve().parent.parent
-STYLESHEET = '<link rel="stylesheet" href="/css/author-box.css?v=20261009-author1">'
+STYLESHEET = '<style data-author-box>\n' + (ROOT / 'css/author-box.css').read_text().strip() + '\n</style>'
 STYLE_LINK = re.compile(r'<link\s+rel="stylesheet"\s+href="/css/author-box\.css(?:\?[^\"]*)?"\s*/?>')
+STYLE_INLINE = re.compile(r'<style data-author-box>.*?</style>', re.S)
 BIOS = json.loads((ROOT / 'locales/author-bios.json').read_text())
 BOX = re.compile(r'<!-- author-box:start -->.*?<!-- author-box:end -->', re.S)
 COPY = {
@@ -86,7 +87,7 @@ def enrich_author(path, text):
     lang = language(text)
     if lang not in COPY:
         raise ValueError(f'{path}: no supported author copy for {lang}')
-    if len(BOX.findall(text)) > 1 or len(STYLE_LINK.findall(text)) > 1:
+    if len(BOX.findall(text)) > 1 or len(STYLE_LINK.findall(text)) + len(STYLE_INLINE.findall(text)) > 1:
         raise ValueError(f'{path}: duplicate author boxes or stylesheet links')
     box = author_box(lang, series_for(path))
     if path.relative_to(ROOT).parts[:2] == ('tools', 'embed'):
@@ -103,7 +104,9 @@ def enrich_author(path, text):
         end_article = text.rfind('</article>', 0, footer)
         insertion = end_article if end_article >= 0 else footer
         text = text[:insertion] + '\n' + box + '\n' + text[insertion:]
-    if STYLE_LINK.search(text):
+    if STYLE_INLINE.search(text):
+        text = STYLE_INLINE.sub(lambda _: STYLESHEET, text)
+    elif STYLE_LINK.search(text):
         text = STYLE_LINK.sub(lambda _: STYLESHEET, text)
     else:
         if '</head>' not in text:
