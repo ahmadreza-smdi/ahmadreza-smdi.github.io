@@ -1,0 +1,4 @@
+# Rebuild-only dependencies. build_film_css.py --check uses the standard library.
+tinycss2==1.5.1
+cssselect2==0.10.1
+lxml==6.1.3
