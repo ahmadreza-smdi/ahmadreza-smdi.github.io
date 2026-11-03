@@ -545,6 +545,10 @@
         canvas.setAttribute('aria-hidden', 'true');
         const ctx = canvas.getContext('2d');
         if (!ctx) return;
+        // The portrait fade is fixed between layout changes. Rasterize it once
+        // so each animated frame composites a bitmap instead of a full gradient.
+        const fadeCanvas = document.createElement('canvas');
+        const fadeContext = fadeCanvas.getContext('2d');
         hero.prepend(canvas);
         const rtl = root.dir === 'rtl';
         const LEVELS = 20;
@@ -555,7 +559,7 @@
             ['rgba(92,174,139,.92)', 1.7], ['rgba(104,156,210,.92)', 1.7]
         ];
         let w = 0, h = 0, dpr = 1, cs = 12, nx = 0, ny = 0;
-        let fade = null, fadeX = 1;
+        let fade = null, fadeX = 1, fadePattern = null;
         let field = null, base = null, summit = null, dist = null, waves = null;
         let cx = 0, cy = 0;
         let particles = [];
@@ -610,6 +614,16 @@
             fade.addColorStop(0.55, 'rgba(0,0,0,.45)');
             fade.addColorStop(0.86, 'rgba(0,0,0,0)');
             fade.addColorStop(1, 'rgba(0,0,0,0)');
+            if (fadeContext) {
+                fadeCanvas.width = canvas.width;
+                fadeCanvas.height = canvas.height;
+                fadeContext.setTransform(dpr, 0, 0, dpr, 0, 0);
+                fadeContext.translate(cx, cy);
+                fadeContext.scale(fadeX, 1);
+                fadeContext.fillStyle = fade;
+                fadeContext.fillRect(-w * 2, -h * 2, w * 4, h * 4);
+                fadePattern = ctx.createPattern(fadeCanvas, 'no-repeat');
+            }
             const count = Math.round(Math.min(130, Math.max(36, (w * h) / 10000)));
             particles = Array.from({ length: count }, () => spawn({}, true));
             return true;
@@ -763,10 +777,16 @@
             }
             ctx.globalCompositeOperation = 'destination-in';
             ctx.save();
-            ctx.translate(cx, cy);
-            ctx.scale(fadeX, 1);
-            ctx.fillStyle = fade;
-            ctx.fillRect(-w * 2, -h * 2, w * 4, h * 4);
+            if (fadePattern) {
+                ctx.setTransform(1, 0, 0, 1, 0, 0);
+                ctx.fillStyle = fadePattern;
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+            } else {
+                ctx.translate(cx, cy);
+                ctx.scale(fadeX, 1);
+                ctx.fillStyle = fade;
+                ctx.fillRect(-w * 2, -h * 2, w * 4, h * 4);
+            }
             ctx.restore();
             ctx.globalCompositeOperation = 'source-over';
             // On arrival the land draws itself outward from the portrait
