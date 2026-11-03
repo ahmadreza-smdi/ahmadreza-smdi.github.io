@@ -606,6 +606,36 @@
       "paths": {
         "en": "carousels/tech-trend-notification-to-reviewed-fix.html"
       }
+    },
+    "carousel_dubai_broker_record_check": {
+      "paths": {
+        "en": "carousels/dubai-broker-record-check.html"
+      }
+    },
+    "carousel_dubai_project_status_check": {
+      "paths": {
+        "en": "carousels/dubai-project-status-check.html"
+      }
+    },
+    "carousel_dubai_rental_index_context": {
+      "paths": {
+        "en": "carousels/dubai-rental-index-context.html"
+      }
+    },
+    "carousel_dubai_procedure_status_check": {
+      "paths": {
+        "en": "carousels/dubai-procedure-status-check.html"
+      }
+    },
+    "carousel_dubai_valuation_evidence": {
+      "paths": {
+        "en": "carousels/dubai-valuation-evidence.html"
+      }
+    },
+    "carousel_ai_property_brief_evidence": {
+      "paths": {
+        "en": "carousels/ai-property-brief-evidence.html"
+      }
     }
   },
   "hubs": [
@@ -893,7 +923,13 @@
         "carousel_tech_trend_gemini_business_hub",
         "carousel_tech_trend_ai_factory_observability",
         "carousel_tech_trend_world_models_real_tests",
-        "carousel_tech_trend_notification_to_reviewed_fix"
+        "carousel_tech_trend_notification_to_reviewed_fix",
+        "carousel_dubai_broker_record_check",
+        "carousel_dubai_project_status_check",
+        "carousel_dubai_rental_index_context",
+        "carousel_dubai_procedure_status_check",
+        "carousel_dubai_valuation_evidence",
+        "carousel_ai_property_brief_evidence"
       ],
       "all_articles_heading": {
         "en": "All articles in this topic",
@@ -944,7 +980,13 @@
         "article_building_energy_audit_decisions",
         "carousel_tech_trend_world_models_real_tests",
         "article_agent_workflow_shared_bottlenecks",
-        "carousel_tech_trend_notification_to_reviewed_fix"
+        "carousel_tech_trend_notification_to_reviewed_fix",
+        "carousel_dubai_broker_record_check",
+        "carousel_dubai_project_status_check",
+        "carousel_dubai_rental_index_context",
+        "carousel_dubai_procedure_status_check",
+        "carousel_dubai_valuation_evidence",
+        "carousel_ai_property_brief_evidence"
       ],
       "video_playlist": {
         "title": "AI × Property",
