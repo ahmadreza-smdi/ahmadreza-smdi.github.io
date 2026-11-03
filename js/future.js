@@ -559,7 +559,7 @@
             ['rgba(92,174,139,.92)', 1.7], ['rgba(104,156,210,.92)', 1.7]
         ];
         let w = 0, h = 0, dpr = 1, cs = 12, nx = 0, ny = 0;
-        let fade = null, fadeX = 1, fadePattern = null;
+        let fade = null, fadeX = 1, fadePattern = null, fadeBounds = null, compositorMask = false;
         let field = null, base = null, summit = null, dist = null, waves = null;
         let cx = 0, cy = 0;
         let particles = [];
@@ -608,6 +608,13 @@
             // The land fades out toward the words: an elliptical window centred on the portrait
             const rx = w * (narrow ? 0.74 : 0.62), ry = h * (narrow ? 0.46 : 0.78);
             fadeX = rx / ry;
+            // The fade is transparent beyond 0.86 of its radius. Bound the
+            // mask fill in device pixels, allowing two pixels for sampling.
+            const left = Math.max(0, Math.floor((cx - rx * 0.86) * dpr) - 2);
+            const top = Math.max(0, Math.floor((cy - ry * 0.86) * dpr) - 2);
+            const right = Math.min(canvas.width, Math.ceil((cx + rx * 0.86) * dpr) + 2);
+            const bottom = Math.min(canvas.height, Math.ceil((cy + ry * 0.86) * dpr) + 2);
+            fadeBounds = [left, top, right - left, bottom - top];
             fade = ctx.createRadialGradient(0, 0, 0, 0, 0, ry);
             fade.addColorStop(0, '#000');
             fade.addColorStop(0.2, '#000');
@@ -623,6 +630,19 @@
                 fadeContext.fillStyle = fade;
                 fadeContext.fillRect(-w * 2, -h * 2, w * 4, h * 4);
                 fadePattern = ctx.createPattern(fadeCanvas, 'no-repeat');
+                // Reuse the exact fade bitmap as a static compositor mask. This
+                // avoids multiplying every canvas pixel on every moving frame.
+                // Keep the existing canvas path when CSS masks are unavailable.
+                compositorMask = false;
+                canvas.style.maskImage = 'none';
+                if (window.CSS && CSS.supports('mask-image', 'url("data:image/png;base64,")')) {
+                    try {
+                        canvas.style.maskImage = `url("${fadeCanvas.toDataURL()}")`;
+                        canvas.style.maskSize = '100% 100%';
+                        canvas.style.maskRepeat = 'no-repeat';
+                        compositorMask = canvas.style.maskImage.startsWith('url(');
+                    } catch (_) { /* Canvas compositing remains the fallback. */ }
+                }
             }
             const count = Math.round(Math.min(130, Math.max(36, (w * h) / 10000)));
             particles = Array.from({ length: count }, () => spawn({}, true));
@@ -775,20 +795,22 @@
                 ctx.arc(p.x, p.y, 1.8, 0, Math.PI * 2);
                 ctx.fill();
             }
-            ctx.globalCompositeOperation = 'destination-in';
-            ctx.save();
-            if (fadePattern) {
-                ctx.setTransform(1, 0, 0, 1, 0, 0);
-                ctx.fillStyle = fadePattern;
-                ctx.fillRect(0, 0, canvas.width, canvas.height);
-            } else {
-                ctx.translate(cx, cy);
-                ctx.scale(fadeX, 1);
-                ctx.fillStyle = fade;
-                ctx.fillRect(-w * 2, -h * 2, w * 4, h * 4);
+            if (!compositorMask) {
+                ctx.globalCompositeOperation = 'destination-in';
+                ctx.save();
+                if (fadePattern) {
+                    ctx.setTransform(1, 0, 0, 1, 0, 0);
+                    ctx.fillStyle = fadePattern;
+                    ctx.fillRect(...fadeBounds);
+                } else {
+                    ctx.translate(cx, cy);
+                    ctx.scale(fadeX, 1);
+                    ctx.fillStyle = fade;
+                    ctx.fillRect(-w * 2, -h * 2, w * 4, h * 4);
+                }
+                ctx.restore();
+                ctx.globalCompositeOperation = 'source-over';
             }
-            ctx.restore();
-            ctx.globalCompositeOperation = 'source-over';
             // On arrival the land draws itself outward from the portrait
             const age = t - born;
             if (age < 2.2) {
@@ -799,7 +821,12 @@
                 reveal.addColorStop(Math.max(0, 1 - 220 / (reach + 1)), '#000');
                 reveal.addColorStop(1, 'rgba(0,0,0,0)');
                 ctx.fillStyle = reveal;
-                ctx.fillRect(0, 0, w, h);
+                const radius = reach + 1;
+                const left = Math.max(0, Math.floor((cx - radius) * dpr) - 2) / dpr;
+                const top = Math.max(0, Math.floor((cy - radius) * dpr) - 2) / dpr;
+                const right = Math.min(canvas.width, Math.ceil((cx + radius) * dpr) + 2) / dpr;
+                const bottom = Math.min(canvas.height, Math.ceil((cy + radius) * dpr) + 2) / dpr;
+                ctx.fillRect(left, top, right - left, bottom - top);
                 ctx.globalCompositeOperation = 'source-over';
             }
         };
