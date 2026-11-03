@@ -305,6 +305,31 @@ def private_checkout(root, destination, base):
     core.run(['git', 'read-tree', base], destination)
 
 
+def hold_reviewed_posters(site, poster):
+    """Temporarily hold only exact derivatives in the disposable private stage.
+
+    The frozen renderer correctly rejects any pre-existing film directory.
+    Reviewed derivatives can be shipped ahead of the film without changing that
+    guard: remove them only from this private copy and restore after rendering.
+    """
+    if site.resolve() == core.ROOT.resolve():
+        raise ValueError('Poster staging refuses the active checkout')
+    folder = (site / poster['source']).parent
+    if not folder.exists():
+        return {}
+    expected = {site / poster[kind]['output']: poster[kind]['sha256']
+                for kind in ('jpeg', 'webp')}
+    if set(folder.iterdir()) != set(expected):
+        raise ValueError('Unexpected existing film assets; no replacement')
+    held = {path: path.read_bytes() for path in expected}
+    if any(digest(data) != expected[path] for path, data in held.items()):
+        raise ValueError('Pre-staged reviewed poster hash differs')
+    for path in held:
+        path.unlink()
+    folder.rmdir()
+    return held
+
+
 def run_backlog(root=core.ROOT, *, verify=False, local_bundles=None,
                 verification_run_id=None, report_path=None):
     root = Path(root).resolve()
@@ -353,7 +378,13 @@ def run_backlog(root=core.ROOT, *, verify=False, local_bundles=None,
                 if item['kind'] == 'film':
                     record = area / 'record'
                     record.mkdir()
+                    artwork = next(row for row in assets['items'] if row['slug'] == item['slug'])
+                    held = hold_reviewed_posters(site, artwork['poster'])
                     core.prepare(site, folder, review, stamp, record, backlog_discovery=True)
+                    for path, data in held.items():
+                        if path.exists():
+                            raise ValueError('Frozen renderer unexpectedly wrote a derivative')
+                        path.write_bytes(data)
                     title_receipts.append(record / 'Release-Prepared.json')
                 else:
                     carousel.prepare(site, folder, review, stamp, backlog_discovery=True)

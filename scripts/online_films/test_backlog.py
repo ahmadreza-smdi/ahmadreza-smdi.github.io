@@ -94,6 +94,31 @@ class BacklogGuards(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'Partial existing'):
                 b.existing_publication(root,item,{})
 
+    def test_private_poster_staging_preserves_only_exact_reviewed_bytes(self):
+        with tempfile.TemporaryDirectory() as directory:
+            site = Path(directory).resolve()
+            folder = site / 'assets/writing/example'
+            folder.mkdir(parents=True)
+            poster = {'source': 'assets/writing/example/cover.png'}
+            for kind, extension in [('jpeg', 'jpg'), ('webp', 'webp')]:
+                path = folder / ('cover-poster.' + extension)
+                data = kind.encode()
+                path.write_bytes(data)
+                poster[kind] = {'output': str(path.relative_to(site)), 'sha256': b.digest(data)}
+            unknown = folder / 'film.mp4'
+            unknown.write_bytes(b'existing film')
+            with self.assertRaisesRegex(ValueError, 'Unexpected existing'):
+                b.hold_reviewed_posters(site, poster)
+            self.assertEqual(len(list(folder.iterdir())), 3)
+            unknown.unlink()
+            (folder / 'cover-poster.jpg').write_bytes(b'changed')
+            with self.assertRaisesRegex(ValueError, 'hash differs'):
+                b.hold_reviewed_posters(site, poster)
+            (folder / 'cover-poster.jpg').write_bytes(b'jpeg')
+            held = b.hold_reviewed_posters(site, poster)
+            self.assertFalse(folder.exists())
+            self.assertEqual(set(held.values()), {b'jpeg', b'webp'})
+
     def test_git_index_is_checked_against_reviewed_bytes(self):
         with tempfile.TemporaryDirectory() as td:
             root=Path(td);subprocess.run(['git','init','-q',str(root)],check=True)
