@@ -223,6 +223,7 @@ python3 -B scripts/build_poster_derivatives.py --check
 python3 -B scripts/build_carousel_hub.py --check
 node --check js/future.js'''.splitlines()
     commands.append('python3 -B scripts/test_content_discovery.py')
+    commands.append('python3 -B scripts/test_reviewed_image_bytes.py')
     if title_receipts:
         # New film families are checked with their actual preparation receipts,
         # as required by the existing title checker. The no-receipt maintenance

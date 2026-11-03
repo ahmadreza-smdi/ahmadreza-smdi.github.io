@@ -70,12 +70,19 @@ def main():
             dest = safe_asset(spec['output'])
             if dest == source or dest.parent != source.parent:
                 raise ValueError('Derivative must be beside its preserved original')
-            result, dimensions = render(data, kind, spec.get('quality', config['quality'][kind]))
+            old = dest.read_bytes() if dest.exists() else None
+            # Keep exact reviewed bytes across platform codec versions. Missing
+            # or changed files still require a render matching the bound hash.
+            if old is not None and digest(old) == spec['sha256']:
+                result = old
+                with Image.open(io.BytesIO(result)) as image:
+                    dimensions = list(image.size)
+            else:
+                result, dimensions = render(data, kind, spec.get('quality', config['quality'][kind]))
             if dimensions != row['dimensions'] or digest(result) != spec['sha256']:
                 raise ValueError('Derivative differs from reviewed manifest: ' + spec['output'])
             if len(result) > config['maximumBytes']:
                 raise ValueError('Poster exceeds size limit: ' + spec['output'])
-            old = dest.read_bytes() if dest.exists() else None
             if old != result:
                 changes.append((dest, old, result))
         mapping['/' + row['source']] = '/' + row['jpeg']['output']

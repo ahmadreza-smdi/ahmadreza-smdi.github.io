@@ -42,10 +42,15 @@ def main():
         before = source.read_bytes()
         if hashlib.sha256(before).hexdigest() != row['sourceSha256']:
             raise ValueError('Cover source changed; review it before rebuilding: ' + row['source'])
-        result = build(before, config)
+        existing = destination.read_bytes() if destination.exists() else None
+        # Reviewed file bytes are the portable artifact. PNG compression can
+        # differ between macOS and Linux even with the same Pillow version.
+        result = existing if existing is not None and hashlib.sha256(existing).hexdigest() == row['outputSha256'] else build(before, config)
         if hashlib.sha256(result).hexdigest() != row['outputSha256']:
             raise ValueError('Rendered bytes differ from the reviewed output: ' + row['output'])
-        existing = destination.read_bytes() if destination.exists() else None
+        with Image.open(io.BytesIO(result)) as image:
+            if image.size != (config['width'], config['height']) or len(result) > config['maximumBytes']:
+                raise ValueError('Reviewed share image dimensions or size differ: ' + row['output'])
         if existing != result:
             if args.check:
                 raise SystemExit('STALE share image: ' + row['output'])
