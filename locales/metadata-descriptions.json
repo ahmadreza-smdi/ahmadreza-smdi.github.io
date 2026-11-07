@@ -188,8 +188,10 @@
     "description": "يشرح أحمدرضا صمدي قوة الدفع عبر حظيرة خيالية، ويفصل ادعاء الشركة بشأن Tesla Roadster عن إتاحة المنتج والموافقة على استخدام الطرق العامة."
   },
   "work/index.html": {
-    "previous": "Selected work by Ahmadreza Samadi: AI for property decisions, supported by product engineering, data systems, public studies and practical tools.",
-    "description": "Selected work by Ahmadreza Samadi: building AI at Appraiva and business systems at Royal Abraj, with data engineering, public studies and tools."
+    "previous": "Selected work by Ahmadreza Samadi: building AI at Appraiva and business systems at Royal Abraj, with data engineering, public studies and tools.",
+    "description": "Explore Ahmadreza Samadi’s work on property imagery and search at Appraiva, customer workflows at Royal Abraj Group, and data engineering at Oxfam Novib.",
+    "previous_title": "Selected work | Ahmadreza Samadi",
+    "title": "AI Products and Business Systems | Ahmadreza Samadi"
   },
   "fa/work/index.html": {
     "previous": "هوش مصنوعی برای تصمیم‌های ملکی، با پشتوانه مهندسی محصول، سامانه‌های داده و ابزارهای عمومی.",
@@ -250,5 +252,31 @@
   "watch/business-ai-evaluation-cases.html": {
     "previous": "Watch the English film: A polished demonstration does not establish reliability for the actual task.",
     "description": "Watch Ahmadreza Samadi’s English film about AI evaluation: a polished demo is not proof of task reliability; choose cases that reflect the work."
+  },
+  "index.html": {
+    "previous": "Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead at Appraiva, and Co-Founder & CEO of Royal Abraj Group.",
+    "description": "Ahmadreza Samadi builds AI and runs a business that has to live with it. Explore his work at Appraiva, Royal Abraj Group in Dubai and his decision guides.",
+    "previous_title": "Ahmadreza Samadi | Technology Entrepreneur, Dubai",
+    "title": "Ahmadreza Samadi | AI Products for Business"
+  },
+  "about.html": {
+    "previous": "Ahmadreza Samadi builds AI at Appraiva and runs Royal Abraj Group in Dubai, and writes about where AI earns its place in a business. Read his biography and work.",
+    "description": "Ahmadreza Samadi builds AI at Appraiva and runs Royal Abraj Group in Dubai. Read his biography, from data engineering to building products for business decisions.",
+    "previous_title": "Technology Entrepreneur, Dubai | Ahmadreza Samadi",
+    "title": "Ahmadreza Samadi | Appraiva Co-Founder and Dubai Entrepreneur"
+  },
+  "work/appraiva.html": {
+    "previous": "Ahmadreza Samadi is Appraiva’s Co-Founder & Technical Lead, working remotely from Dubai on AI real estate intelligence at the Cleveland, Ohio company.",
+    "description": "See how Ahmadreza Samadi connects property photos, records and search at Appraiva so investors can decide which properties deserve a closer look."
+  },
+  "work/royal-abraj.html": {
+    "previous": "Ahmadreza Samadi, Co-Founder & CEO of Royal Abraj Group in Dubai, leads digital strategy and technology for property brokerage and documents-clearing services.",
+    "description": "At Royal Abraj Group in Dubai, Ahmadreza Samadi connects website enquiries, CRM follow-up and a customer portal for property brokerage and documents clearing."
+  },
+  "writing/index.html": {
+    "previous": "Articles and explainers by Ahmadreza Samadi on building AI products, AI costs and decision models, connected apps, and real estate technology.",
+    "description": "Read Ahmadreza Samadi on building AI products, testing them on real tasks and counting review costs. Explore property examples and everyday technology explainers.",
+    "previous_title": "Writing on AI Products, Data and PropTech | Ahmadreza Samadi",
+    "title": "Writing on AI Products and Business Decisions | Ahmadreza Samadi"
   }
 }

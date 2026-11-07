@@ -229,9 +229,12 @@ def complete_schema(path, text):
         before = json.dumps(data, ensure_ascii=False)
         for node in schema_nodes(data):
             kind = node.get('@type')
-            if update_record and own_id and kind and node.get('@id') == own_id:
+            is_main_item = own_id is not None and kind is not None and node.get('@id') == own_id
+            if update_record and is_main_item:
                 node['dateModified'] = update_record['dateModified']
-            if description_record and ((own_id and kind and node.get('@id') == own_id) or node.get('description') == description_record['previous']):
+            if description_record and is_main_item and 'title' in description_record:
+                node['name'] = description_record['title']
+            if description_record and (is_main_item or node.get('description') == description_record['previous']):
                 node['description'] = description_record['description']
             if kind in ARTICLE_TYPES and 'publisher' not in node:
                 node['publisher'] = {'@id': BASE + '#person'}
@@ -531,6 +534,21 @@ def enrich(path, text):
                 added.append('carousel title attribution')
     description_record = DESCRIPTION_UPDATES.get(path.relative_to(ROOT).as_posix())
     if description_record:
+        if 'title' in description_record:
+            title = description_record['title']
+            source = re.search(r'<title>([^<]+)</title>', head)
+            if not source or html.unescape(source[1]) not in (description_record['previous_title'], title):
+                raise ValueError(f'{path}: title source changed; review the explicit metadata copy')
+            if not 0 < len(title) <= 65:
+                raise ValueError(f'{path}: reviewed title must contain 1–65 characters')
+            if html.unescape(source[1]) != title:
+                head = head[:source.start(1)] + html.escape(title) + head[source.end(1):]
+                added.append('title')
+            for key in ('og:title', 'twitter:title'):
+                match = find(head, key)
+                if match and html.unescape(match[1]) != title:
+                    head = head[:match.start(1)] + html.escape(title) + head[match.end(1):]
+                    added.append(key)
         description = description_record['description']
         if not 120 <= len(description) <= 165:
             raise ValueError(f'{path}: reviewed description must contain 120–165 characters')

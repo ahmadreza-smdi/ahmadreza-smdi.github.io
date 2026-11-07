@@ -3,6 +3,7 @@ from pathlib import Path
 import html,json,re,sys
 ROOT=Path(__file__).resolve().parent.parent
 DATA=json.loads((ROOT/'locales/profile-facts.json').read_text())
+IDENTITY = json.loads((ROOT/'locales/brand-layer.json').read_text())['identity']
 SUBJECTS=[('Artificial intelligence','Q11660'),('Machine learning','Q2539'),('Real estate','Q684740'),('Automated valuation','Q4826487'),('Data engineering','Q104659521')]
 FACTS='''## Facts — as of October 2026
 
@@ -21,7 +22,14 @@ def section(d):
     facts=''.join('<div><dt>'+paragraph(k)+'</dt><dd>'+paragraph(v)+'</dd></div>' for k,v in d['facts'])
     qa=''.join('<h3>'+paragraph(q)+'</h3><p>'+paragraph(a)+'</p>' for q,a in d['qa'])
     return '<section class="profile-resources quick-facts" id="at-a-glance" aria-labelledby="at-a-glance-title"><h2 id="at-a-glance-title">'+paragraph(d['heading'])+'</h2><p>'+paragraph(d['intro'])+'</p><dl class="quick-facts-list">'+facts+'</dl><p>'+paragraph(d['disambiguation'])+'</p></section>\n<section class="profile-resources" id="profile-questions" aria-labelledby="profile-questions-title"><h2 id="profile-questions-title">'+paragraph(d['qa_title'])+'</h2>'+qa+'</section>'
-def person_schema(m):
+def person_subjects(lang):
+    subjects = [{'@type': 'DefinedTerm', 'name': name, 'sameAs': 'https://www.wikidata.org/wiki/' + qid}
+                for name, qid in SUBJECTS]
+    if lang == 'en':
+        return IDENTITY['decision_subjects'] + subjects
+    return subjects
+
+def person_schema(m, lang):
     d=json.loads(m[1]);nodes=[]
     def collect(value):
         if isinstance(value,dict):
@@ -33,7 +41,9 @@ def person_schema(m):
     for n in nodes:
         if n.get('@type')!='Person' or n.get('@id')!='https://a-samadi.com/#person':continue
         n['jobTitle']=['Co-Founder & Technical Lead, Appraiva','Co-Founder & CEO, Royal Abraj Group']
-        n['knowsAbout']=[{'@type':'DefinedTerm','name':name,'sameAs':'https://www.wikidata.org/wiki/'+qid} for name,qid in SUBJECTS]
+        n['knowsAbout'] = person_subjects(lang)
+        if lang == 'en':
+            n['description'] = IDENTITY['entity']['en']
         # Schema.org's Role pattern attaches dates to the association, not to an Occupation.
         n['worksFor']=[{'@type':'OrganizationRole','roleName':title,'startDate':start,'worksFor':{'@id':'https://a-samadi.com/#'+org}} for title,start,org in [('Co-Founder & Technical Lead','2023-10','appraiva'),('Co-Founder & CEO','2022','royal-abraj')]]
         n['hasOccupation']=[{'@type':'Occupation','name':'Co-Founder & Technical Lead at Appraiva','description':'Held since October 2023; remote from Dubai.','responsibilities':'AI tools for property discovery using imagery analysis and enriched property data.'},{'@type':'Occupation','name':'Co-Founder & CEO at Royal Abraj Group','description':'Held since 2022.','responsibilities':'Digital strategy and technology.'}]
@@ -74,7 +84,7 @@ def main():
                 text,n=re.subn(r'<section class="profile-resources quick-facts" id="at-a-glance".*?</section>(?:\s*<section class="profile-resources" id="profile-questions".*?</section>)?',lambda _:section(d),text,count=1,flags=re.S)
                 if n!=1:raise ValueError('Missing facts section: '+str(path))
             if tail=='about.html' and lang!='en':text=about_parity(text,lang)
-            text=re.sub(r'<script type="application/ld\+json">(.*?)</script>',person_schema,text,flags=re.S)
+            text=re.sub(r'<script type="application/ld\+json">(.*?)</script>',lambda match: person_schema(match, lang),text,flags=re.S)
             from enrich_metadata import enrich
             text=enrich(path,text)[0]
             if text!=old:

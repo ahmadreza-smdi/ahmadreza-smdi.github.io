@@ -5,6 +5,7 @@ import html
 import json
 import re
 from follow_blocks import enrich_follow
+from build_profile_facts import person_subjects
 ROOT=Path(__file__).resolve().parent.parent
 SOURCE=(ROOT/'index.html').read_text()
 SOURCE=re.sub(r'<!-- follow-subscribe:start -->.*?<!-- follow-subscribe:end -->\n?', '', SOURCE, flags=re.S)
@@ -79,10 +80,11 @@ for lang in ('fa','ar'):
         d=json.loads(m[1]);profile=next(x for x in d['@graph'] if x['@type']=='ProfilePage')
         person=next(x for x in d['@graph'] if x.get('@type')=='Person' and x.get('@id')=='https://a-samadi.com/#person')
         person['description']=tr['Person entity sentence']
+        person['knowsAbout']=person_subjects(lang)
         profile.update({'@id':f'https://a-samadi.com/{lang}/#profile','url':f'https://a-samadi.com/{lang}/','name':title,'description':description,'inLanguage':lang,'dateModified':modified})
         # The English homepage is the original; this page is its translation.
         profile.pop('workTranslation',None);profile['translationOfWork']={'@id':'https://a-samadi.com/#profile'}
-        return '<script type="application/ld+json">'+json.dumps(d,ensure_ascii=False,indent=2)+'</script>'
+        return '<script type="application/ld+json">\n'+json.dumps(d,ensure_ascii=False,indent=2)+'\n</script>'
     head=re.sub(r'<script type="application/ld\+json">(.*?)</script>',schema,head,flags=re.S)
     # Persian and Arabic text is set in Vazirmatn (Latin keeps the system font), so preload it with the portrait.
     head,font_count=re.subn(r'(\n(\s*)<link rel="preload" as="image"[^\n]*\n)',lambda m:m[1]+m[2]+'<link rel="preload" as="font" type="font/woff2" href="../assets/fonts/vazirmatn-arabic-wght.woff2" crossorigin />\n',head,count=1)

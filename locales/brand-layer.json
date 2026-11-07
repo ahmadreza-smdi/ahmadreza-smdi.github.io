@@ -111,12 +111,12 @@
       "known": "Known for",
       "knownintro": "Three ideas connect my work.",
       "knownnames": [
-        "AI for property decisions",
+        "Building AI products at Appraiva",
         "Decision-first guide",
         "Building in Dubai"
       ],
       "knowncopy": [
-        "Where AI helps with property valuation and investment decisions, and where human review must stay.",
+        "Connecting property imagery, records and search so an investor can decide what to investigate.",
         "Turn an AI idea into one clear decision, an evidence plan and a useful first experiment.",
         "Ahmadreza Samadi is Co-Founder & CEO of Royal Abraj Group in Dubai, a role held since 2022. The group covers property brokerage and documents-clearing services. He leads its digital strategy and technology, including websites, CRM workflows, a customer portal and internal tools."
       ],
@@ -315,7 +315,7 @@
       "هوش مصنوعی × املاک × کسب‌وکار",
       "الذكاء الاصطناعي × العقارات × الأعمال"
     ],
-    "Explore the work, evidence and questions behind my property decisions.": [
+    "See how I build AI at Appraiva, run a business in Dubai and decide what needs a human check.": [
       "کارها، شواهد و پرسش‌های مرتبط با تصمیم‌های ملکی من را ببینید.",
       "استكشف الأعمال والأدلة والأسئلة التي تستند إليها قراراتي العقارية."
     ],
@@ -347,7 +347,7 @@
       "Appraiva · کلیولند، اوهایو، آمریکا · دورکار از دبی",
       "Appraiva · كليفلاند، أوهايو، الولايات المتحدة · عن بُعد من دبي"
     ],
-    "Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead of Appraiva, which builds AI real estate intelligence, and Co-Founder & CEO of Royal Abraj Group.": [
+    "Ahmadreza Samadi builds AI products at Appraiva and runs Royal Abraj Group in Dubai. He writes about how businesses decide what to build, check and measure.": [
       "احمدرضا صمدی کارآفرین فناوری ساکن دبی، هم‌بنیان‌گذار و راهبر فنی Appraiva، سازندهٔ راهکارهای هوش مصنوعی برای اطلاعات املاک، و هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group است.",
       "أحمدرضا صمدي رائد أعمال تقني مقيم في دبي، وشريك مؤسس وقائد تقني في Appraiva التي تطوّر حلول ذكاء اصطناعي للمعلومات العقارية، وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group."
     ],
@@ -434,7 +434,7 @@
   "translation_note": "Machine translations checked by back-translation for the same decision/evidence/human boundary/acceptance and factual scope; no human/native certification.",
   "identity": {
     "entity": {
-      "en": "Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead of Appraiva, which builds AI real estate intelligence, and Co-Founder & CEO of Royal Abraj Group.",
+      "en": "Ahmadreza Samadi builds AI products at Appraiva and runs Royal Abraj Group in Dubai. He writes about how businesses decide what to build, check and measure.",
       "fa": "احمدرضا صمدی کارآفرین فناوری ساکن دبی، هم‌بنیان‌گذار و راهبر فنی Appraiva، سازندهٔ راهکارهای هوش مصنوعی برای اطلاعات املاک، و هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group است.",
       "ar": "أحمدرضا صمدي رائد أعمال تقني مقيم في دبي، وشريك مؤسس وقائد تقني في Appraiva التي تطوّر حلول ذكاء اصطناعي للمعلومات العقارية، وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group."
     },
@@ -470,7 +470,7 @@
       ]
     },
     "brand_line": {
-      "en": "I build AI that helps people make better property decisions, and I run a property business in Dubai, so I know where the AI must stop.",
+      "en": "I build AI, and I run a business that has to live with it.",
       "fa": "هوش مصنوعی می‌سازم تا به مردم در تصمیم‌گیری بهتر دربارهٔ املاک کمک کند. کسب‌وکاری در حوزهٔ املاک را هم در دبی اداره می‌کنم؛ بنابراین می‌دانم هوش مصنوعی کجا باید متوقف شود.",
       "ar": "أبني حلول ذكاء اصطناعي تساعد الناس على اتخاذ قرارات أفضل بشأن العقارات، وأدير نشاطًا عقاريًا في دبي، لذلك أعرف أين يجب أن يتوقف الذكاء الاصطناعي."
     },
@@ -507,6 +507,16 @@
           "ar": "تكاليف وبيانات العقارات في دبي"
         }
       }
+    ],
+    "decision_subjects": [
+      "AI product development",
+      "Business AI evaluation",
+      "Human review of AI outputs",
+      "AI cost per accepted result"
     ]
+  },
+  "ideas_page": {
+    "heading": "Where AI belongs in a business",
+    "description": "Three questions to ask before using AI in a business. Which decision will it improve, who will check the result, and what does each accepted result cost?"
   }
 }

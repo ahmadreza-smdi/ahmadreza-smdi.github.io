@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
   <channel>
-    <title>Writing on AI Products, Data and PropTech | Ahmadreza Samadi</title>
+    <title>Writing on AI Products and Business Decisions | Ahmadreza Samadi</title>
     <link>https://a-samadi.com/writing/</link>
-    <description>Articles and explainers by Ahmadreza Samadi on building AI products, AI costs and decision models, connected apps, and real estate technology.</description>
+    <description>Read Ahmadreza Samadi on building AI products, testing them on real tasks and counting review costs. Explore property examples and everyday technology explainers.</description>
     <language>en</language>
     <dc:creator>Ahmadreza Samadi</dc:creator>
     <atom:link href="https://a-samadi.com/writing/feed.xml" rel="self" type="application/rss+xml" />

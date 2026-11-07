@@ -8,6 +8,7 @@ from pathlib import Path
 from build_profile_facts import FACTS
 from html.parser import HTMLParser
 import html
+import json
 import re
 import sys
 from xml.etree import ElementTree
@@ -16,10 +17,7 @@ from build_feed import PageMetadata, publication_time
 ROOT = Path(__file__).resolve().parent.parent
 BASE = 'https://a-samadi.com/'
 NS = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
-SUMMARY = (
-    'Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead of Appraiva, '
-    'which builds AI real estate intelligence, and Co-Founder & CEO of Royal Abraj Group.'
-)
+SUMMARY = json.loads((ROOT / 'locales/brand-layer.json').read_text())['identity']['entity']['en']
 NOTES = 'Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احمد صمدی. Arabic: أحمدرضا صمدي.'
 PROFILES = [
     ('GitHub', 'https://github.com/ahmadreza-smdi', 'Ahmadreza Samadi’s public GitHub profile, connecting his repositories with the personal website.'),
@@ -34,18 +32,17 @@ PROFILES = [
 ]
 # Primary destinations are intentionally stable as the complete catalogue grows.
 CORE_PATHS = (
-    '', 'about.html', 'press.html',
+    '', 'about.html', 'press.html', 'ideas.html', 'work/', 'writing/',
     'work/appraiva.html', 'work/royal-abraj.html', 'work/oxfam-novib.html', 'work/mci.html',
+    'topics/ai-real-estate.html', 'topics/business-systems-dubai.html', 'topics/tech-explained.html',
+    'tools/before-you-build-ai.html', 'writing/start-with-the-decision.html',
+    'writing/business-ai-evaluation-cases.html', 'writing/ai-cost-per-verified-result.html',
+    'writing/ai-human-review-real-estate.html', 'writing/ai-agent-safety-boundaries.html',
     'studies/', 'studies/rent-own-2026/', 'studies/rent-burden/',
-    'tools/before-you-build-ai.html', 'tools/rental-cash-flow.html',
-    'tools/dubai-purchase-cost.html', 'tools/valuation-range.html', 'tools/dubai-rental-yield.html',
-    'writing/ai-home-value-estimates.html', 'writing/ai-human-review-real-estate.html',
+    'tools/rental-cash-flow.html', 'tools/dubai-purchase-cost.html', 'tools/valuation-range.html',
+    'tools/dubai-rental-yield.html', 'writing/ai-home-value-estimates.html',
     'writing/which-dubai-property-source.html', 'writing/avm-vs-appraisal.html',
-    'writing/dubai-service-charge-same-rent.html', 'writing/dubai-property-buying-costs.html',
-    'writing/property-comparables-evidence.html', 'writing/rent-or-buy-five-numbers.html',
-    'writing/why-rent-to-value-is-not-property-yield.html', 'writing/start-with-the-decision.html',
-    'writing/ai-cost-per-verified-result.html', 'writing/ai-rental-yield-cash-flow.html',
-    'writing/property-data-enrichment.html', 'writing/ai-agent-safety-boundaries.html',
+    'writing/property-data-enrichment.html',
 )
 GROUPS = ('Profile', 'Work', 'Studies', 'Topics', 'Writing', 'Films', 'Tools', 'Explainers')
 RESOURCE_DESCRIPTIONS = {

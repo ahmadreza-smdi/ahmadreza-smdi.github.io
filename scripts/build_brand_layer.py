@@ -81,7 +81,7 @@ def homepage():
     cards += card('my-topics', 'My topics', [(topic['path'], topic['labels']['en']) for topic in DATA['identity']['topics']])
     body = (f'<section class="section brand-layer" id="signature-ideas" aria-labelledby="signature-ideas-title">'
             '<div class="section-heading"><h2 id="signature-ideas-title">AI × property × business</h2>'
-            '<p>Explore the work, evidence and questions behind my property decisions.</p></div>'
+            '<p>See how I build AI at Appraiva, run a business in Dubai and decide what needs a human check.</p></div>'
             f'<div class="brand-grid">{cards}</div></section>')
     path = ROOT / 'index.html'
     text = styled(marked(path.read_text(), 'brand-home', body, '<section class="section" id="work">'))
@@ -210,8 +210,8 @@ def ideas_page():
                       'inDefinedTermSet': {'@id': BASE + '/ideas.html#ideas'}, 'creator': {'@id': BASE + '/#person'}})
     term_set = {'@type': 'DefinedTermSet', '@id': BASE + '/ideas.html#ideas', 'name': 'Signature ideas',
                 'creator': {'@id': BASE + '/#person'}, 'hasDefinedTerm': [{'@id': t['@id']} for t in terms]}
-    store(ROOT / 'ideas.html', document('/ideas.html', 'Signature ideas',
-          'Three practical ideas from Ahmadreza Samadi’s essays: start with the decision, define where AI must stop, and count cost per accepted result.',
+    copy = DATA['ideas_page']
+    store(ROOT / 'ideas.html', document('/ideas.html', copy['heading'], copy['description'],
           '<p>These are the principles I use to explain and design AI workflows. They are supported by the linked essays and tools, rather than claims of measured company results.</p>' + ''.join(sections), [term_set, *terms]))
 
 
