@@ -4,13 +4,13 @@
   "pages": [
     {
       "id": "now",
-      "updated_at": "2026-10-27T13:58:32+03:30",
+      "updated_at": "2026-11-08T02:34:03+03:30",
       "locales": {
         "en": {
           "title": "Now | Ahmadreza Samadi",
-          "description": "Ahmadreza Samadi's current work at Appraiva and Royal Abraj Group, alongside public AI tools, data studies and selected explainers. October 2026.",
+          "description": "What Ahmadreza Samadi is working on in November 2026: building AI at Appraiva, running Royal Abraj Group, and a weekly piece on where AI earns its place in business.",
           "heading": "Now",
-          "lead": "What I’m working on and sharing in October 2026.",
+          "lead": "What I’m working on in November 2026.",
           "sections": [
             {
               "id": "appraiva",
@@ -39,36 +39,22 @@
               ]
             },
             {
-              "id": "company-update-20261027",
-              "heading": "Company update: comparing brokerage quotes",
+              "id": "focus",
+              "heading": "Focus: where AI earns its place in a business",
               "paragraphs": [
-                "Royal Abraj Group announced a seven-point brokerage-fee checklist and a free two-quote worksheet in Royal Abraj Properties’ English and Persian buying-cost guide. The worksheet records fee scope, payer, VAT, included services, separate costs and payment terms; it does not set a commission rate or replace an agreement."
+                "I build AI, and I run a business that has to live with it. From November 2026 I share one piece a week on AI in business: the decision it should improve, where a person must check the result, and what it really costs once review and retries are counted.",
+                "The examples come from building AI at Appraiva and from running Royal Abraj Group. I post each piece on LinkedIn in English, on Instagram with a Persian caption, and on YouTube when it is a video."
               ],
               "links": [
                 {
-                  "path": "work/royal-abraj.html",
-                  "label": "Company update and original sources"
-                }
-              ]
-            },
-            {
-              "heading": "This week: ideas with evidence",
-              "paragraphs": [
-                "On 19 October I published the Signature ideas page, the Property Decision Data studies hub and the on-site rent-burden study. The Ideas page connects three principles to essays, tools and practical checklists. The studies hub provides a starting point for inspecting the data, methods and limits behind the work.",
-                "The three principles are: start with the decision, define where AI must stop, and count cost per accepted result. For a property-data question, the rent-burden study is one concrete place to examine the source and method before interpreting a result. The media resources page links to these English resources.",
-                "I also updated my public GitHub profile with my full and short names in English and Persian, my selected portrait and links to the newly published pages."
-              ],
-              "links": [
-                {
-                  "path": "press.html",
-                  "label": "Published studies, ideas and media resources"
+                  "path": "topics/business-systems-dubai.html",
+                  "label": "AI and business systems"
                 },
                 {
-                  "path": "about.html",
-                  "label": "Biography and official profiles"
+                  "path": "tools/before-you-build-ai.html",
+                  "label": "Before You Build the AI"
                 }
-              ],
-              "id": "this-week"
+              ]
             },
             {
               "id": "public-tools-data",
@@ -76,8 +62,7 @@
               "paragraphs": [
                 "On 18 October I published Evidence Note, a browser-local editor for recording a claim, its source and the next check. It exports HTML, Markdown and JSON, and can reopen a saved JSON note. Source relationships are recorded by the user and are not independently verified by the editor. Its source, download and project page are public on GitHub and Peerlist.",
                 "My recent public work includes an AI workflow cost ledger with fictional worked examples, an ACS 2024 rent-burden study covering 386 US metropolitan areas, and a video publication-date checker. Code, data and methods are linked from my media resources.",
-                "These releases were prepared with AI assistance. The examples are teaching material and the study is descriptive; they do not report company results, establish investment returns or independently verify the quality of an AI answer.",
-                "I am preparing a comparison of house price growth and a rent benchmark. The published methods now specify a five-year primary window policy; exact dates and results remain unresolved."
+                "These releases were prepared with AI assistance. The examples are teaching material and the study is descriptive; they do not report company results, establish investment returns or independently verify the quality of an AI answer."
               ],
               "links": [
                 {
@@ -88,26 +73,26 @@
             },
             {
               "id": "recent-writing",
-              "heading": "Property decisions: selected reading",
+              "heading": "AI in business: selected reading",
               "paragraphs": [
-                "Four starting points for AI property valuation, renting versus owning, AI in real estate decisions, and Dubai property costs and data."
+                "Four starting points for deciding where AI belongs in a business."
               ],
               "links": [
                 {
-                  "path": "writing/ai-home-value-estimates.html",
-                  "label": "AI property valuation"
+                  "path": "writing/start-with-the-decision.html",
+                  "label": "Start with the decision"
                 },
                 {
-                  "path": "studies/rent-own-2026/",
-                  "label": "Rent versus owning"
+                  "path": "writing/ai-cost-per-verified-result.html",
+                  "label": "Cost per accepted result"
+                },
+                {
+                  "path": "writing/business-ai-evaluation-cases.html",
+                  "label": "Test the task, not the demo"
                 },
                 {
                   "path": "writing/ai-human-review-real-estate.html",
                   "label": "Where AI should stop"
-                },
-                {
-                  "path": "writing/which-dubai-property-source.html",
-                  "label": "Dubai property costs and data"
                 }
               ]
             }
@@ -129,9 +114,9 @@
         },
         "fa": {
           "title": "این روزها | احمدرضا صمدی",
-          "description": "فعالیت‌های کنونی احمدرضا صمدی در Appraiva و گروه رویال ابراج، در کنار ابزارهای عمومی هوش مصنوعی، مطالعات داده و توضیح‌های منتخب؛ اکتبر ۲۰۲۶.",
+          "description": "کارهای احمدرضا صمدی در نوامبر ۲۰۲۶: ساختن هوش مصنوعی در Appraiva، ادارهٔ گروه رویال ابراج و یک نوشتهٔ هفتگی دربارهٔ جای درست هوش مصنوعی در کسب‌وکار.",
           "heading": "این روزها",
-          "lead": "آنچه در اکتبر ۲۰۲۶ روی آن کار می‌کنم و به اشتراک می‌گذارم.",
+          "lead": "آنچه در نوامبر ۲۰۲۶ روی آن کار می‌کنم.",
           "sections": [
             {
               "id": "appraiva",
@@ -160,36 +145,22 @@
               ]
             },
             {
-              "id": "company-update-20261027",
-              "heading": "خبر شرکت: مقایسه استعلام‌های کارگزاری",
+              "id": "focus",
+              "heading": "تمرکز: هوش مصنوعی کجا در کسب‌وکار جای خود را به دست می‌آورد",
               "paragraphs": [
-                "رویال ابراج گروپ از افزوده‌شدن یک چک‌لیست هفت‌بندی هزینه کارگزاری و برگه رایگان مقایسه دو استعلام به راهنمای فارسی و انگلیسی هزینه خرید رویال ابراج پراپرتیز خبر داده است. این برگه برای ثبت دامنه کارمزد، پرداخت‌کننده، مالیات بر ارزش افزوده، خدمات داخل مبلغ، هزینه‌های جداگانه و شرایط پرداخت است؛ نرخ کمیسیون تعیین نمی‌کند و جای قرارداد را نمی‌گیرد."
+                "من هوش مصنوعی می‌سازم و کسب‌وکاری را اداره می‌کنم که باید با آن کار کند. از نوامبر ۲۰۲۶ هر هفته یک نوشته دربارهٔ هوش مصنوعی در کسب‌وکار منتشر می‌کنم: تصمیمی که باید بهتر شود، جایی که یک انسان باید نتیجه را بررسی کند، و هزینهٔ واقعی آن پس از حساب‌کردن بازبینی‌ها و تلاش‌های دوباره.",
+                "نمونه‌ها از ساختن هوش مصنوعی در Appraiva و ادارهٔ گروه رویال ابراج می‌آیند. هر نوشته را در لینکدین به انگلیسی، در اینستاگرام با توضیح فارسی و، اگر ویدیو باشد، در یوتیوب منتشر می‌کنم."
               ],
               "links": [
                 {
-                  "path": "work/royal-abraj.html",
-                  "label": "خبر شرکت و منابع اصلی"
-                }
-              ]
-            },
-            {
-              "heading": "این هفته: ایده‌ها همراه با شواهد",
-              "paragraphs": [
-                "در ۱۹ اکتبر، صفحهٔ ایده‌های اصلی، مرکز مطالعات داده برای تصمیم‌گیری دربارهٔ املاک و نسخهٔ وب‌سایتی مطالعهٔ فشار اجاره را منتشر کردم. صفحهٔ ایده‌ها سه اصل را به مقاله‌ها، ابزارها و چک‌لیست‌های کاربردی پیوند می‌دهد. مرکز مطالعات نقطهٔ شروعی برای بررسی داده‌ها، روش‌ها و محدودیت‌های این کارهاست.",
-                "این سه اصل عبارت‌اند از: از تصمیم شروع کن، مشخص کن هوش مصنوعی کجا باید متوقف شود، و هزینهٔ هر نتیجهٔ پذیرفته‌شده را حساب کن. برای یک پرسش دربارهٔ داده‌های املاک، مطالعهٔ فشار اجاره نمونه‌ای مشخص برای بررسی منبع و روش، پیش از تفسیر نتیجه است. صفحهٔ منابع رسانه‌ای به این منابع انگلیسی پیوند دارد.",
-                "پروفایل عمومی گیت‌هابم را هم با شکل کامل و کوتاه نامم به انگلیسی و فارسی، عکس منتخبم و پیوند صفحه‌های تازه‌منتشرشده به‌روز کردم."
-              ],
-              "links": [
-                {
-                  "path": "press.html",
-                  "label": "مطالعات منتشرشده، ایده‌ها و منابع رسانه‌ای"
+                  "path": "topics/business-systems-dubai.html",
+                  "label": "هوش مصنوعی و سیستم‌های کسب‌وکار"
                 },
                 {
-                  "path": "about.html",
-                  "label": "زندگی‌نامه و پروفایل‌های رسمی"
+                  "path": "tools/before-you-build-ai.html",
+                  "label": "پیش از ساختن هوش مصنوعی"
                 }
-              ],
-              "id": "this-week"
+              ]
             },
             {
               "id": "public-tools-data",
@@ -197,8 +168,7 @@
               "paragraphs": [
                 "در ۱۸ اکتبر، Evidence Note را منتشر کردم؛ ویرایشگری که در مرورگر اجرا می‌شود و برای ثبت یک ادعا، منبع آن و بررسی بعدی به کار می‌رود. خروجی HTML، Markdown و JSON می‌دهد و می‌تواند یادداشت JSON ذخیره‌شده را دوباره باز کند. رابطهٔ منبع با ادعا را کاربر ثبت می‌کند و ویرایشگر آن را مستقلاً تأیید نمی‌کند. منبع، فایل دریافت و صفحهٔ پروژه در GitHub و Peerlist عمومی هستند.",
                 "از کارهای عمومی اخیر من می‌توان به دفتر محاسبهٔ هزینهٔ فرایندهای هوش مصنوعی همراه با مثال‌های فرضی، مطالعهٔ فشار اجاره با داده‌های ACS سال ۲۰۲۴ برای ۳۸۶ منطقهٔ شهری آمریکا و ابزار بررسی تاریخ انتشار ویدئو اشاره کرد. لینک کد، داده و روش‌ها در منابع رسانه‌ای من آمده است.",
-                "این آثار با کمک هوش مصنوعی آماده شده‌اند. مثال‌ها آموزشی و مطالعه توصیفی است؛ این آثار نتیجهٔ عملکرد شرکت‌ها را گزارش نمی‌کنند، بازده سرمایه‌گذاری را اثبات نمی‌کنند و کیفیت پاسخ هوش مصنوعی را به‌طور مستقل تأیید نمی‌کنند.",
-                "در حال آماده‌سازی مقایسهٔ رشد قیمت مسکن و معیار اجاره هستم. روش منتشرشده اکنون قاعدهٔ بازهٔ اصلی پنج‌ساله را مشخص می‌کند؛ تاریخ‌های دقیق و نتایج هنوز مشخص نیستند."
+                "این آثار با کمک هوش مصنوعی آماده شده‌اند. مثال‌ها آموزشی و مطالعه توصیفی است؛ این آثار نتیجهٔ عملکرد شرکت‌ها را گزارش نمی‌کنند، بازده سرمایه‌گذاری را اثبات نمی‌کنند و کیفیت پاسخ هوش مصنوعی را به‌طور مستقل تأیید نمی‌کنند."
               ],
               "links": [
                 {
@@ -209,26 +179,26 @@
             },
             {
               "id": "recent-writing",
-              "heading": "تصمیم‌های ملکی: مطالعهٔ منتخب",
+              "heading": "هوش مصنوعی در کسب‌وکار: نوشته‌های منتخب",
               "paragraphs": [
-                "چهار نقطهٔ شروع برای ارزش‌گذاری ملک با هوش مصنوعی، اجاره در برابر مالکیت، هوش مصنوعی در تصمیم‌های ملکی و هزینه‌ها و داده‌های املاک دبی."
+                "چهار نقطهٔ شروع برای تصمیم‌گیری دربارهٔ جای هوش مصنوعی در کسب‌وکار."
               ],
               "links": [
                 {
-                  "path": "writing/ai-home-value-estimates.html",
-                  "label": "ارزش‌گذاری ملک با هوش مصنوعی"
+                  "path": "writing/start-with-the-decision.html",
+                  "label": "از تصمیم شروع کنید"
                 },
                 {
-                  "path": "studies/rent-own-2026/",
-                  "label": "اجاره در برابر مالکیت"
+                  "path": "writing/ai-cost-per-verified-result.html",
+                  "label": "هزینه برای هر نتیجهٔ پذیرفته‌شده"
+                },
+                {
+                  "path": "writing/business-ai-evaluation-cases.html",
+                  "label": "کار را بیازمایید، نه نمایش را"
                 },
                 {
                   "path": "writing/ai-human-review-real-estate.html",
-                  "label": "مرز کار هوش مصنوعی"
-                },
-                {
-                  "path": "writing/which-dubai-property-source.html",
-                  "label": "هزینه‌ها و داده‌های املاک دبی"
+                  "label": "هوش مصنوعی کجا باید بایستد"
                 }
               ]
             }
@@ -250,9 +220,9 @@
         },
         "ar": {
           "title": "ما أعمل عليه الآن | أحمدرضا صمدي",
-          "description": "أعمال أحمدرضا صمدي الحالية في Appraiva ومجموعة رويال أبراج، إلى جانب أدوات عامة للذكاء الاصطناعي ودراسات بيانات وشروحات مختارة؛ أكتوبر ٢٠٢٦.",
+          "description": "ما يعمل عليه أحمدرضا صمدي في نوفمبر 2026: بناء الذكاء الاصطناعي في Appraiva، وإدارة مجموعة رويال أبراج، ومقال أسبوعي عن مكان الذكاء الاصطناعي الصحيح في الأعمال.",
           "heading": "ما أعمل عليه الآن",
-          "lead": "ما أعمل عليه وما أشاركه في أكتوبر ٢٠٢٦.",
+          "lead": "ما أعمل عليه في نوفمبر 2026.",
           "sections": [
             {
               "id": "appraiva",
@@ -281,36 +251,22 @@
               ]
             },
             {
-              "id": "company-update-20261027",
-              "heading": "تحديث الشركة: مقارنة عروض أتعاب الوساطة",
+              "id": "focus",
+              "heading": "التركيز: أين يستحق الذكاء الاصطناعي مكانه في الأعمال",
               "paragraphs": [
-                "أعلنت رويال أبراج جروب إضافة قائمة تحقق من سبع نقاط لرسوم الوساطة وورقة مجانية لمقارنة عرضَي أتعاب إلى دليل تكاليف الشراء بالإنجليزية والفارسية لدى رويال أبراج بروبرتيز. تسجّل الورقة نطاق الأتعاب والطرف الذي يدفع وضريبة القيمة المضافة والخدمات المشمولة والتكاليف المنفصلة وشروط الدفع؛ ولا تحدد نسبة عمولة أو تحل محل الاتفاقية."
+                "أبني الذكاء الاصطناعي، وأدير شركة عليها أن تعمل به. منذ نوفمبر 2026 أنشر مقالًا واحدًا كل أسبوع عن الذكاء الاصطناعي في الأعمال: القرار الذي يجب أن يتحسن، والموضع الذي يجب أن يراجع فيه شخصٌ النتيجة، وتكلفته الحقيقية بعد احتساب المراجعة وإعادة المحاولات.",
+                "تأتي الأمثلة من بناء الذكاء الاصطناعي في Appraiva ومن إدارة مجموعة رويال أبراج. أنشر كل مقال على لينكدإن بالإنجليزية، وعلى إنستغرام مع تعليق بالفارسية، وعلى يوتيوب عندما يكون فيديو."
               ],
               "links": [
                 {
-                  "path": "work/royal-abraj.html",
-                  "label": "تحديث الشركة والمصادر الأصلية"
-                }
-              ]
-            },
-            {
-              "heading": "هذا الأسبوع: أفكار مدعومة بالأدلة",
-              "paragraphs": [
-                "في ١٩ أكتوبر نشرت صفحة الأفكار الرئيسية ومركز دراسات البيانات لاتخاذ القرارات العقارية ونسخة الموقع من دراسة عبء الإيجار. تربط صفحة الأفكار ثلاثة مبادئ بمقالات وأدوات وقوائم مراجعة عملية. ويقدّم مركز الدراسات نقطة بداية لفحص البيانات والمنهجيات والقيود التي يقوم عليها هذا العمل.",
-                "المبادئ الثلاثة هي: ابدأ بالقرار، وحدّد أين يجب أن يتوقف الذكاء الاصطناعي، واحسب التكلفة لكل نتيجة مقبولة. وفي سؤال عن بيانات العقارات، تمثّل دراسة عبء الإيجار مثالًا ملموسًا لفحص المصدر والمنهج قبل تفسير النتيجة. وتوفّر صفحة الموارد الإعلامية روابط إلى هذه الموارد باللغة الإنجليزية.",
-                "حدّثت أيضًا ملفي العام على GitHub باسمي الكامل والمختصر بالإنجليزية والفارسية، وصورتي المختارة، وروابط الصفحات المنشورة حديثًا."
-              ],
-              "links": [
-                {
-                  "path": "press.html",
-                  "label": "الدراسات المنشورة والأفكار والموارد الإعلامية"
+                  "path": "topics/business-systems-dubai.html",
+                  "label": "الذكاء الاصطناعي وأنظمة الأعمال"
                 },
                 {
-                  "path": "about.html",
-                  "label": "السيرة والحسابات الرسمية"
+                  "path": "tools/before-you-build-ai.html",
+                  "label": "قبل أن تبني الذكاء الاصطناعي"
                 }
-              ],
-              "id": "this-week"
+              ]
             },
             {
               "id": "public-tools-data",
@@ -318,8 +274,7 @@
               "paragraphs": [
                 "في ١٨ أكتوبر نشرت Evidence Note، محررًا يعمل محليًا في المتصفح لتسجيل ادعاء ومصدره والتحقق التالي. يصدّر HTML وMarkdown وJSON، ويمكنه إعادة فتح ملاحظة JSON محفوظة. يسجّل المستخدم علاقة المصدر بالادعاء، ولا يتحقق المحرر منها بصورة مستقلة. الشيفرة وملف التنزيل وصفحة المشروع متاحة للعامة على GitHub وPeerlist.",
                 "تشمل أعمالي العامة الحديثة سجلًا لحساب تكاليف سير عمل الذكاء الاصطناعي مع أمثلة افتراضية، ودراسة وصفية لعبء الإيجار باستخدام بيانات ACS لعام ٢٠٢٤ تغطي ٣٨٦ منطقة حضرية أمريكية، وأداة لفحص تاريخ نشر الفيديو. تتوفر روابط الشيفرة والبيانات والمنهجية ضمن مواردي الإعلامية.",
-                "أُعدّت هذه الأعمال بمساعدة الذكاء الاصطناعي. الأمثلة تعليمية والدراسة وصفية؛ ولا تعرض هذه الأعمال نتائج الشركات، ولا تثبت عوائد استثمارية، ولا تتحقق بصورة مستقلة من جودة إجابة الذكاء الاصطناعي.",
-                "أُعدّ مقارنة بين نمو أسعار المساكن ومعيار الإيجار. تحدد المنهجية المنشورة الآن قاعدة لفترة المقارنة الأساسية من خمس سنوات؛ ولم تُحسم بعد التواريخ الدقيقة أو النتائج."
+                "أُعدّت هذه الأعمال بمساعدة الذكاء الاصطناعي. الأمثلة تعليمية والدراسة وصفية؛ ولا تعرض هذه الأعمال نتائج الشركات، ولا تثبت عوائد استثمارية، ولا تتحقق بصورة مستقلة من جودة إجابة الذكاء الاصطناعي."
               ],
               "links": [
                 {
@@ -330,26 +285,26 @@
             },
             {
               "id": "recent-writing",
-              "heading": "القرارات العقارية: قراءات مختارة",
+              "heading": "الذكاء الاصطناعي في الأعمال: قراءات مختارة",
               "paragraphs": [
-                "أربع نقاط بداية لتقييم العقارات بالذكاء الاصطناعي، والإيجار مقابل التملك، والذكاء الاصطناعي في القرارات العقارية، وتكاليف وبيانات عقارات دبي."
+                "أربع نقاط انطلاق لتحديد مكان الذكاء الاصطناعي في الأعمال."
               ],
               "links": [
                 {
-                  "path": "writing/ai-home-value-estimates.html",
-                  "label": "تقييم العقارات بالذكاء الاصطناعي"
+                  "path": "writing/start-with-the-decision.html",
+                  "label": "ابدأ بالقرار"
                 },
                 {
-                  "path": "studies/rent-own-2026/",
-                  "label": "الإيجار مقابل التملك"
+                  "path": "writing/ai-cost-per-verified-result.html",
+                  "label": "التكلفة لكل نتيجة مقبولة"
+                },
+                {
+                  "path": "writing/business-ai-evaluation-cases.html",
+                  "label": "اختبر المهمة لا العرض"
                 },
                 {
                   "path": "writing/ai-human-review-real-estate.html",
                   "label": "أين يجب أن يتوقف الذكاء الاصطناعي"
-                },
-                {
-                  "path": "writing/which-dubai-property-source.html",
-                  "label": "تكاليف وبيانات عقارات دبي"
                 }
               ]
             }

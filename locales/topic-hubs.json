@@ -716,7 +716,7 @@
           },
           "cross_hub": {
             "hub": "business-systems-dubai",
-            "label": "Building business systems in Dubai",
+            "label": "AI and business systems: lessons from Dubai",
             "summary": "Continue with the customer journey, permissions and payment timing behind everyday business operations."
           },
           "author_bio": "Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead of Appraiva, which builds AI real estate intelligence, and Co-Founder & CEO of Royal Abraj Group."
@@ -790,7 +790,7 @@
           },
           "cross_hub": {
             "hub": "business-systems-dubai",
-            "label": "ساخت سیستم‌های کسب‌وکار در دبی",
+            "label": "هوش مصنوعی و سیستم‌های کسب‌وکار: درس‌هایی از دبی",
             "summary": "مسیر مشتری، مجوزهای دسترسی و زمان‌بندی پرداخت‌ها در کار روزمره کسب‌وکار را دنبال کنید."
           },
           "author_bio": "احمدرضا صمدی کارآفرین فناوری ساکن دبی، هم‌بنیان‌گذار و راهبر فنی Appraiva، سازندهٔ هوش مصنوعی برای تحلیل اطلاعات املاک، و هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group است."
@@ -864,7 +864,7 @@
           },
           "cross_hub": {
             "hub": "business-systems-dubai",
-            "label": "بناء أنظمة الأعمال في دبي",
+            "label": "الذكاء الاصطناعي وأنظمة الأعمال: دروس من دبي",
             "summary": "تابع رحلة العميل والصلاحيات وتوقيت المدفوعات وراء العمليات اليومية للشركة."
           },
           "author_bio": "أحمدرضا صمدي رائد أعمال تقني مقيم في دبي، وشريك مؤسس وقائد تقني في Appraiva التي تطوّر ذكاءً اصطناعيًا لتحليل المعلومات العقارية، وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group."
@@ -1002,10 +1002,10 @@
       },
       "locales": {
         "en": {
-          "title": "Building business systems in Dubai | Ahmadreza Samadi",
-          "heading": "Building business systems in Dubai",
-          "description": "A reading path from Ahmadreza Samadi’s Royal Abraj work to customer workflows, decision-first product design, connected-app permissions and cash timing.",
-          "eyebrow": "Reading path · Business systems and decisions",
+          "title": "AI and business systems: lessons from Dubai | Ahmadreza Samadi",
+          "heading": "AI and business systems: lessons from Dubai",
+          "description": "A reading path from Ahmadreza Samadi’s Royal Abraj work to deciding where AI helps a business: customer workflows, permissions, accepted-result cost and cash timing.",
+          "eyebrow": "Reading path · AI in business",
           "lead": "Follow a customer enquiry into the work behind it: the next sales action, the active case, the permissions and the payment dates.",
           "context_heading": "Give each system a clear job",
           "context": [
@@ -1066,10 +1066,10 @@
           "author_bio": "Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead of Appraiva, which builds AI real estate intelligence, and Co-Founder & CEO of Royal Abraj Group."
         },
         "fa": {
-          "title": "ساخت سیستم‌های کسب‌وکار در دبی | احمدرضا صمدی",
-          "heading": "ساخت سیستم‌های کسب‌وکار در دبی",
+          "title": "هوش مصنوعی و سیستم‌های کسب‌وکار: درس‌هایی از دبی | احمدرضا صمدی",
+          "heading": "هوش مصنوعی و سیستم‌های کسب‌وکار: درس‌هایی از دبی",
           "description": "مسیر مطالعه‌ای از کار احمدرضا صمدی در رویال ابراج تا فرایند مشتری، طراحی محصول بر پایه تصمیم، مجوز اپ‌های متصل و زمان‌بندی جریان نقدی.",
-          "eyebrow": "مسیر مطالعه · سیستم‌های کسب‌وکار و تصمیم‌ها",
+          "eyebrow": "مسیر مطالعه · هوش مصنوعی در کسب‌وکار",
           "lead": "درخواست مشتری را تا کارهای پس از آن دنبال کنید: اقدام بعدی فروش، پرونده فعال، مجوزهای دسترسی و تاریخ پرداخت‌ها.",
           "context_heading": "برای هر سیستم وظیفه‌ای روشن تعیین کنید",
           "context": [
@@ -1130,10 +1130,10 @@
           "author_bio": "احمدرضا صمدی کارآفرین فناوری ساکن دبی، هم‌بنیان‌گذار و راهبر فنی Appraiva، سازندهٔ هوش مصنوعی برای تحلیل اطلاعات املاک، و هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group است."
         },
         "ar": {
-          "title": "بناء أنظمة الأعمال في دبي | أحمدرضا صمدي",
-          "heading": "بناء أنظمة الأعمال في دبي",
+          "title": "الذكاء الاصطناعي وأنظمة الأعمال: دروس من دبي | أحمدرضا صمدي",
+          "heading": "الذكاء الاصطناعي وأنظمة الأعمال: دروس من دبي",
           "description": "مسار قراءة من عمل أحمدرضا صمدي في رويال أبراج إلى رحلة العميل وتصميم المنتجات حول القرار وصلاحيات التطبيقات المتصلة وتوقيت النقد.",
-          "eyebrow": "مسار قراءة · أنظمة الأعمال والقرارات",
+          "eyebrow": "مسار قراءة · الذكاء الاصطناعي في الأعمال",
           "lead": "تتبّع استفسار العميل إلى العمل الذي يليه: إجراء المبيعات التالي، والحالة الجارية، والصلاحيات، ومواعيد الدفع.",
           "context_heading": "حدّد وظيفة واضحة لكل نظام",
           "context": [

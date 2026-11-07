@@ -108,7 +108,7 @@ def biography():
         idea_items = ''.join('<li>' + link('/ideas.html#' + idea['id'], idea['name']) + '</li>' for idea in DATA['ideas'])
         ideas = section('signature-ideas', labels['ideas'], '<ul>' + idea_items + '</ul>' + f'<p>{esc(labels["english"])}</p>')
         destinations = ['/studies/', prefix + '/tools/before-you-build-ai.html',
-                        '/tools/rental-cash-flow.html', 'https://github.com/ahmadreza-smdi', DATA['newsletter']]
+                        '/tools/rental-cash-flow.html', 'https://github.com/ahmadreza-smdi']
         public = section('work-in-public', labels['public'], '<ul>' + ''.join('<li>' + link(url, title) + '</li>'
                           for url, title in zip(destinations, labels['publiclinks'])) + '</ul>')
         text = marked(text, 'brand-biography', beliefs + ideas + public, '<section class="profile-resources" id="career-timeline"')
@@ -193,7 +193,7 @@ def document(path, title, description, body, nodes):
             f'<h1>{esc(title)}</h1><p class="lead">{esc(description)}</p>{body}'
             '<footer class="editorial-footer"><a href="/about.html">About Ahmadreza Samadi</a> · '
             '<a href="/ideas.html">Signature ideas</a> · <a href="/studies/">Property Decision Data</a> · '
-            f'{link(DATA["newsletter"], "Start with the Decision newsletter")}</footer></main></body></html>\n')
+            '<a href="/work/">Selected work</a></footer></main></body></html>\n')
 
 
 def ideas_page():

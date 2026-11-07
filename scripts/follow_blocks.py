@@ -6,9 +6,9 @@ from html.parser import HTMLParser
 
 START = '<!-- follow-subscribe:start -->'
 END = '<!-- follow-subscribe:end -->'
-LABELS = {'en': ('Follow / Subscribe', 'Follow Ahmadreza Samadi', 'Get the weekly brief'),
-          'fa': ('دنبال کردن / اشتراک', 'دنبال کردن احمدرضا صمدی', 'دریافت خلاصهٔ هفتگی'),
-          'ar': ('المتابعة / الاشتراك', 'متابعة أحمدرضا صمدي', 'احصل على الموجز الأسبوعي')}
+LABELS = {'en': ('Follow', 'Follow Ahmadreza Samadi', 'Get the weekly brief'),
+          'fa': ('دنبال کردن', 'دنبال کردن احمدرضا صمدی', 'دریافت خلاصهٔ هفتگی'),
+          'ar': ('المتابعة', 'متابعة أحمدرضا صمدي', 'احصل على الموجز الأسبوعي')}
 class Page(HTMLParser):
     def __init__(self):
         super().__init__(); self.lang=None; self.canonical=None; self.scripts=[]; self.on=False; self.data=''
@@ -25,7 +25,7 @@ class Page(HTMLParser):
 
 def render(language, config):
     title, label, brief = LABELS[language]
-    links=[(name, config[name]) for name in ('YouTube','Instagram','LinkedIn','X')]
+    links=[(name, config[name]) for name in ('LinkedIn','YouTube','Instagram') if config.get(name)]
     if config.get('newsletter'):
         links.insert(0, (brief, config['newsletter']))
     anchors=' · '.join(f'<a href="{html.escape(url, quote=True)}"><bdi>{html.escape(name)}</bdi></a>' for name,url in links)

@@ -17,9 +17,9 @@ Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احم�
 ## Profile
 
 - [Homepage](https://a-samadi.com/): Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead at Appraiva, and Co-Founder & CEO of Royal Abraj Group.
-- [Biography](https://a-samadi.com/about.html): Ahmadreza Samadi builds AI for property decisions at Appraiva and leads Royal Abraj Group in Dubai. Read his biography, ideas, studies and public work.
+- [Biography](https://a-samadi.com/about.html): Ahmadreza Samadi builds AI at Appraiva and runs Royal Abraj Group in Dubai, and writes about where AI earns its place in a business. Read his biography and work.
 - [Press & media kit](https://a-samadi.com/press.html): Biographies, original research and tools, portrait and written contact details for Ahmadreza Samadi, a Dubai-based technology entrepreneur.
-- [Now](https://a-samadi.com/now.html): Ahmadreza Samadi's current work at Appraiva and Royal Abraj Group, alongside public AI tools, data studies and selected explainers. October 2026.
+- [Now](https://a-samadi.com/now.html): What Ahmadreza Samadi is working on in November 2026: building AI at Appraiva, running Royal Abraj Group, and a weekly piece on where AI earns its place in business.
 - [Writing topics](https://a-samadi.com/speaking.html): Writing topics from Ahmadreza Samadi's work in AI products, property data and business systems, with related published work and written contact details.
 - [Signature ideas](https://a-samadi.com/ideas.html): Three practical ideas from Ahmadreza Samadi’s essays: start with the decision, define where AI must stop, and count cost per accepted result.
 
@@ -28,7 +28,7 @@ Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احم�
 - [Ahmadreza Samadi at Appraiva | Co-Founder & Technical Lead](https://a-samadi.com/work/appraiva.html): Ahmadreza Samadi is Appraiva’s Co-Founder & Technical Lead, working remotely from Dubai on AI real estate intelligence at the Cleveland, Ohio company.
 - [Oxfam Novib: CRM data and analytics](https://a-samadi.com/work/oxfam-novib.html): Ahmadreza Samadi’s Oxfam Novib work: Azure data infrastructure for CRM migration and analytics as a Data Engineer, September 2022–June 2023.
 - [Ahmadreza Samadi at Royal Abraj Group | Co-Founder & CEO](https://a-samadi.com/work/royal-abraj.html): Ahmadreza Samadi, Co-Founder & CEO of Royal Abraj Group in Dubai, leads digital strategy and technology for property brokerage and documents-clearing services.
-- [Selected work](https://a-samadi.com/work/): Selected work by Ahmadreza Samadi: AI for property decisions, supported by product engineering, data systems, public studies and practical tools.
+- [Selected work](https://a-samadi.com/work/): Selected work by Ahmadreza Samadi: building AI at Appraiva and business systems at Royal Abraj, with data engineering, public studies and tools.
 - [Hamrah e Aval (MCI)](https://a-samadi.com/work/mci.html): Ahmadreza Samadi’s MCI work used RFM and behavioral data for customer segmentation, churn-risk analysis and campaign targeting, without uplift claims.
 
 ## Studies
@@ -41,7 +41,7 @@ Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احم�
 ## Topics
 
 - [AI in real estate: evidence and decisions](https://a-samadi.com/topics/ai-real-estate.html): A reading path through property data, human review, AI workflow costs and rental cash flow, with Ahmadreza Samadi’s work at Appraiva as context.
-- [Building business systems in Dubai](https://a-samadi.com/topics/business-systems-dubai.html): A reading path from Ahmadreza Samadi’s Royal Abraj work to customer workflows, decision-first product design, connected-app permissions and cash timing.
+- [AI and business systems: lessons from Dubai](https://a-samadi.com/topics/business-systems-dubai.html): A reading path from Ahmadreza Samadi’s Royal Abraj work to deciding where AI helps a business: customer workflows, permissions, accepted-result cost and cash timing.
 - [Tech, explained](https://a-samadi.com/topics/tech-explained.html): Plain-language technology explainers and original films. Choose a mechanism, check its limits, and connect it to the decision you need to make.
 
 ## Writing
@@ -184,7 +184,6 @@ Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احم�
 - [Peerlist](https://peerlist.io/ahmadrezasmdi): Peerlist profile listed by Ahmadreza Samadi as an official account on his biography page.
 - [Product Hunt](https://www.producthunt.com/@ahmadreza_samadi): Product Hunt profile listed by Ahmadreza Samadi as an official account on his biography page.
 - [Wellfound](https://wellfound.com/u/ahmadreza-samadi): Wellfound profile listed by Ahmadreza Samadi as an official account on his biography page.
-- [X](https://x.com/AhmadrezaSmdi): Ahmadreza Samadi’s official X profile, with technology explainers and links to his personal website.
 
 ## Optional
 
