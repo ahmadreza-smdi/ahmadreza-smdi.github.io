@@ -422,6 +422,38 @@
     "Match the property question to the appropriate Dubai data source.": [
       "پرسش ملکی را با منبع مناسب داده در دبی تطبیق دهید.",
       "طابق السؤال العقاري مع مصدر البيانات المناسب في دبي."
+    ],
+    "Technology × AI × business": [
+      "فناوری × هوش مصنوعی × کسب‌وکار",
+      "التقنية × الذكاء الاصطناعي × الأعمال"
+    ],
+    "Building AI products": [
+      "ساخت محصولات هوش مصنوعی",
+      "بناء منتجات الذكاء الاصطناعي"
+    ],
+    "Running a business with technology": [
+      "اداره کسب‌وکار با فناوری",
+      "إدارة الأعمال بالتقنية"
+    ],
+    "Public studies and tools": [
+      "مطالعه‌ها و ابزارهای عمومی",
+      "دراسات وأدوات عامة"
+    ],
+    "Where AI is worth it in a business": [
+      "هوش مصنوعی کجا در کسب‌وکار ارزش دارد",
+      "أين يستحق الذكاء الاصطناعي مكانه في الأعمال"
+    ],
+    "Cost per accepted result": [
+      "هزینهٔ هر نتیجهٔ پذیرفته‌شده",
+      "التكلفة لكل نتيجة مقبولة"
+    ],
+    "Testing AI on real tasks": [
+      "آزمودن هوش مصنوعی روی کارهای واقعی",
+      "اختبار الذكاء الاصطناعي على مهام حقيقية"
+    ],
+    "Where AI must stop": [
+      "هوش مصنوعی کجا باید متوقف شود",
+      "أين يجب أن يتوقف الذكاء الاصطناعي"
     ]
   },
   "belief_sources": [
@@ -476,35 +508,43 @@
     },
     "topics": [
       {
-        "path": "/writing/ai-home-value-estimates.html",
+        "path": "/tools/before-you-build-ai.html",
         "labels": {
-          "en": "AI property valuation",
-          "fa": "ارزش‌گذاری ملک با هوش مصنوعی",
-          "ar": "تقييم العقارات بالذكاء الاصطناعي"
+          "en": "Where AI is worth it in a business",
+          "fa": "هوش مصنوعی کجا در کسب‌وکار ارزش دارد",
+          "ar": "أين يستحق الذكاء الاصطناعي مكانه في الأعمال"
         }
       },
       {
-        "path": "/studies/rent-own-2026/",
+        "path": "/writing/ai-cost-per-verified-result.html",
         "labels": {
-          "en": "Rent vs owning",
-          "fa": "اجاره در برابر مالکیت",
-          "ar": "الإيجار مقابل التملّك"
+          "en": "Cost per accepted result",
+          "fa": "هزینهٔ هر نتیجهٔ پذیرفته‌شده",
+          "ar": "التكلفة لكل نتيجة مقبولة"
+        }
+      },
+      {
+        "path": "/writing/business-ai-evaluation-cases.html",
+        "labels": {
+          "en": "Testing AI on real tasks",
+          "fa": "آزمودن هوش مصنوعی روی کارهای واقعی",
+          "ar": "اختبار الذكاء الاصطناعي على مهام حقيقية"
         }
       },
       {
         "path": "/writing/ai-human-review-real-estate.html",
         "labels": {
-          "en": "AI in real estate decisions",
-          "fa": "هوش مصنوعی در تصمیم‌های ملکی",
-          "ar": "الذكاء الاصطناعي في القرارات العقارية"
+          "en": "Where AI must stop",
+          "fa": "هوش مصنوعی کجا باید متوقف شود",
+          "ar": "أين يجب أن يتوقف الذكاء الاصطناعي"
         }
       },
       {
-        "path": "/writing/which-dubai-property-source.html",
+        "path": "/writing/ai-home-value-estimates.html",
         "labels": {
-          "en": "Dubai property costs and data",
-          "fa": "هزینه‌ها و داده‌های املاک دبی",
-          "ar": "تكاليف وبيانات العقارات في دبي"
+          "en": "AI property valuation",
+          "fa": "ارزش‌گذاری ملک با هوش مصنوعی",
+          "ar": "تقييم العقارات بالذكاء الاصطناعي"
         }
       }
     ],

@@ -72,15 +72,15 @@ def homepage():
         return (f'<article class="brand-card" id="{identifier}"><h3>{esc(title)}</h3><ul>' +
                 ''.join('<li>' + link(url, label) + '</li>' for url, label in links) + '</ul></article>')
     cards = card('what-i-work-on', 'What I work on', [
-        ('/work/appraiva.html', 'AI for property decisions'),
-        ('/writing/start-with-the-decision.html', 'Start with the decision'),
-        ('/work/royal-abraj.html', 'Building in Dubai')])
+        ('/work/appraiva.html', 'Building AI products'),
+        ('/work/royal-abraj.html', 'Running a business with technology'),
+        ('/writing/start-with-the-decision.html', 'Start with the decision')])
     cards += card('property-decision-data', 'Proof', [
         ('/work/appraiva.html', 'Appraiva'), ('/work/royal-abraj.html', 'Royal Abraj Group'),
-        ('/studies/', 'Property studies'), ('/studies/#tools', 'Practical tools')])
+        ('/studies/', 'Public studies and tools')])
     cards += card('my-topics', 'My topics', [(topic['path'], topic['labels']['en']) for topic in DATA['identity']['topics']])
     body = (f'<section class="section brand-layer" id="signature-ideas" aria-labelledby="signature-ideas-title">'
-            '<div class="section-heading"><h2 id="signature-ideas-title">AI × property × business</h2>'
+            '<div class="section-heading"><h2 id="signature-ideas-title">Technology × AI × business</h2>'
             '<p>See how I build AI at Appraiva, run a business in Dubai and decide what needs a human check.</p></div>'
             f'<div class="brand-grid">{cards}</div></section>')
     path = ROOT / 'index.html'

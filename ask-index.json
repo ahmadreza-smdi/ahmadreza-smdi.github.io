@@ -91,8 +91,8 @@
         {
           "position": 5,
           "section": "",
-          "title": "AI × property × business",
-          "text": "AI × property × businessSee how I build AI at Appraiva, run a business in Dubai and decide what needs a human check.",
+          "title": "Technology × AI × business",
+          "text": "Technology × AI × businessSee how I build AI at Appraiva, run a business in Dubai and decide what needs a human check.",
           "paragraphs": [
             "See how I build AI at Appraiva, run a business in Dubai and decide what needs a human check."
           ],
@@ -104,22 +104,22 @@
           "position": 6,
           "section": "",
           "title": "What I work on",
-          "text": "What I work onAI for property decisionsStart with the decisionBuilding in Dubai",
+          "text": "What I work onBuilding AI productsRunning a business with technologyStart with the decision",
           "paragraphs": [],
           "source_url": "https://a-samadi.com/",
           "section_url": "https://a-samadi.com/#signature-ideas",
           "links": [
             {
-              "label": "AI for property decisions",
+              "label": "Building AI products",
               "url": "https://a-samadi.com/work/appraiva.html"
+            },
+            {
+              "label": "Running a business with technology",
+              "url": "https://a-samadi.com/work/royal-abraj.html"
             },
             {
               "label": "Start with the decision",
               "url": "https://a-samadi.com/writing/start-with-the-decision.html"
-            },
-            {
-              "label": "Building in Dubai",
-              "url": "https://a-samadi.com/work/royal-abraj.html"
             }
           ]
         },
@@ -127,7 +127,7 @@
           "position": 7,
           "section": "",
           "title": "Proof",
-          "text": "ProofAppraivaRoyal Abraj GroupProperty studiesPractical tools",
+          "text": "ProofAppraivaRoyal Abraj GroupPublic studies and tools",
           "paragraphs": [],
           "source_url": "https://a-samadi.com/",
           "section_url": "https://a-samadi.com/#signature-ideas",
@@ -141,12 +141,8 @@
               "url": "https://a-samadi.com/work/royal-abraj.html"
             },
             {
-              "label": "Property studies",
+              "label": "Public studies and tools",
               "url": "https://a-samadi.com/studies/"
-            },
-            {
-              "label": "Practical tools",
-              "url": "https://a-samadi.com/studies/#tools"
             }
           ]
         },
@@ -154,26 +150,30 @@
           "position": 8,
           "section": "",
           "title": "My topics",
-          "text": "My topicsAI property valuationRent vs owningAI in real estate decisionsDubai property costs and data",
+          "text": "My topicsWhere AI is worth it in a businessCost per accepted resultTesting AI on real tasksWhere AI must stopAI property valuation",
           "paragraphs": [],
           "source_url": "https://a-samadi.com/",
           "section_url": "https://a-samadi.com/#signature-ideas",
           "links": [
             {
-              "label": "AI property valuation",
-              "url": "https://a-samadi.com/writing/ai-home-value-estimates.html"
+              "label": "Where AI is worth it in a business",
+              "url": "https://a-samadi.com/tools/before-you-build-ai.html"
             },
             {
-              "label": "Rent vs owning",
-              "url": "https://a-samadi.com/studies/rent-own-2026/"
+              "label": "Cost per accepted result",
+              "url": "https://a-samadi.com/writing/ai-cost-per-verified-result.html"
             },
             {
-              "label": "AI in real estate decisions",
+              "label": "Testing AI on real tasks",
+              "url": "https://a-samadi.com/writing/business-ai-evaluation-cases.html"
+            },
+            {
+              "label": "Where AI must stop",
               "url": "https://a-samadi.com/writing/ai-human-review-real-estate.html"
             },
             {
-              "label": "Dubai property costs and data",
-              "url": "https://a-samadi.com/writing/which-dubai-property-source.html"
+              "label": "AI property valuation",
+              "url": "https://a-samadi.com/writing/ai-home-value-estimates.html"
             }
           ]
         },
@@ -673,8 +673,8 @@
         {
           "position": 5,
           "section": "",
-          "title": "هوش مصنوعی × املاک × کسب‌وکار",
-          "text": "هوش مصنوعی × املاک × کسب‌وکارکارها، شواهد و پرسش‌های مرتبط با تصمیم‌های ملکی من را ببینید.",
+          "title": "فناوری × هوش مصنوعی × کسب‌وکار",
+          "text": "فناوری × هوش مصنوعی × کسب‌وکارکارها، شواهد و پرسش‌های مرتبط با تصمیم‌های ملکی من را ببینید.",
           "paragraphs": [
             "کارها، شواهد و پرسش‌های مرتبط با تصمیم‌های ملکی من را ببینید."
           ],
@@ -686,22 +686,22 @@
           "position": 6,
           "section": "",
           "title": "روی چه چیزی کار می‌کنم",
-          "text": "روی چه چیزی کار می‌کنمهوش مصنوعی برای تصمیم‌های ملکیاز تصمیم آغاز کنیدساخت کسب‌وکار در دبی",
+          "text": "روی چه چیزی کار می‌کنمساخت محصولات هوش مصنوعیاداره کسب‌وکار با فناوریاز تصمیم آغاز کنید",
           "paragraphs": [],
           "source_url": "https://a-samadi.com/fa/",
           "section_url": "https://a-samadi.com/fa/#signature-ideas",
           "links": [
             {
-              "label": "هوش مصنوعی برای تصمیم‌های ملکی",
+              "label": "ساخت محصولات هوش مصنوعی",
               "url": "https://a-samadi.com/fa/work/appraiva.html"
+            },
+            {
+              "label": "اداره کسب‌وکار با فناوری",
+              "url": "https://a-samadi.com/fa/work/royal-abraj.html"
             },
             {
               "label": "از تصمیم آغاز کنید",
               "url": "https://a-samadi.com/fa/writing/start-with-the-decision.html"
-            },
-            {
-              "label": "ساخت کسب‌وکار در دبی",
-              "url": "https://a-samadi.com/fa/work/royal-abraj.html"
             }
           ]
         },
@@ -709,7 +709,7 @@
           "position": 7,
           "section": "",
           "title": "کارهای قابل بررسی",
-          "text": "کارهای قابل بررسیAppraivaگروه رویال ابراجمطالعه‌های املاکابزارهای کاربردی",
+          "text": "کارهای قابل بررسیAppraivaگروه رویال ابراجمطالعه‌ها و ابزارهای عمومی",
           "paragraphs": [],
           "source_url": "https://a-samadi.com/fa/",
           "section_url": "https://a-samadi.com/fa/#signature-ideas",
@@ -723,12 +723,8 @@
               "url": "https://a-samadi.com/fa/work/royal-abraj.html"
             },
             {
-              "label": "مطالعه‌های املاک",
+              "label": "مطالعه‌ها و ابزارهای عمومی",
               "url": "https://a-samadi.com/studies/"
-            },
-            {
-              "label": "ابزارهای کاربردی",
-              "url": "https://a-samadi.com/studies/#tools"
             }
           ]
         },
@@ -736,26 +732,30 @@
           "position": 8,
           "section": "",
           "title": "موضوع‌های من",
-          "text": "موضوع‌های منارزش‌گذاری ملک با هوش مصنوعیاجاره در برابر مالکیتهوش مصنوعی در تصمیم‌های ملکیهزینه‌ها و داده‌های املاک دبی",
+          "text": "موضوع‌های منهوش مصنوعی کجا در کسب‌وکار ارزش داردهزینهٔ هر نتیجهٔ پذیرفته‌شدهآزمودن هوش مصنوعی روی کارهای واقعیهوش مصنوعی کجا باید متوقف شودارزش‌گذاری ملک با هوش مصنوعی",
           "paragraphs": [],
           "source_url": "https://a-samadi.com/fa/",
           "section_url": "https://a-samadi.com/fa/#signature-ideas",
           "links": [
             {
-              "label": "ارزش‌گذاری ملک با هوش مصنوعی",
-              "url": "https://a-samadi.com/fa/writing/ai-home-value-estimates.html"
+              "label": "هوش مصنوعی کجا در کسب‌وکار ارزش دارد",
+              "url": "https://a-samadi.com/tools/before-you-build-ai.html"
             },
             {
-              "label": "اجاره در برابر مالکیت",
-              "url": "https://a-samadi.com/fa/studies/rent-own-2026/"
+              "label": "هزینهٔ هر نتیجهٔ پذیرفته‌شده",
+              "url": "https://a-samadi.com/writing/ai-cost-per-verified-result.html"
             },
             {
-              "label": "هوش مصنوعی در تصمیم‌های ملکی",
+              "label": "آزمودن هوش مصنوعی روی کارهای واقعی",
+              "url": "https://a-samadi.com/writing/business-ai-evaluation-cases.html"
+            },
+            {
+              "label": "هوش مصنوعی کجا باید متوقف شود",
               "url": "https://a-samadi.com/fa/writing/ai-human-review-real-estate.html"
             },
             {
-              "label": "هزینه‌ها و داده‌های املاک دبی",
-              "url": "https://a-samadi.com/fa/writing/which-dubai-property-source.html"
+              "label": "ارزش‌گذاری ملک با هوش مصنوعی",
+              "url": "https://a-samadi.com/fa/writing/ai-home-value-estimates.html"
             }
           ]
         },
@@ -1254,8 +1254,8 @@
         {
           "position": 5,
           "section": "",
-          "title": "الذكاء الاصطناعي × العقارات × الأعمال",
-          "text": "الذكاء الاصطناعي × العقارات × الأعمالاستكشف الأعمال والأدلة والأسئلة التي تستند إليها قراراتي العقارية.",
+          "title": "التقنية × الذكاء الاصطناعي × الأعمال",
+          "text": "التقنية × الذكاء الاصطناعي × الأعمالاستكشف الأعمال والأدلة والأسئلة التي تستند إليها قراراتي العقارية.",
           "paragraphs": [
             "استكشف الأعمال والأدلة والأسئلة التي تستند إليها قراراتي العقارية."
           ],
@@ -1267,22 +1267,22 @@
           "position": 6,
           "section": "",
           "title": "مجالات عملي",
-          "text": "مجالات عمليالذكاء الاصطناعي للقرارات العقاريةابدأ بالقراربناء الأعمال في دبي",
+          "text": "مجالات عمليبناء منتجات الذكاء الاصطناعيإدارة الأعمال بالتقنيةابدأ بالقرار",
           "paragraphs": [],
           "source_url": "https://a-samadi.com/ar/",
           "section_url": "https://a-samadi.com/ar/#signature-ideas",
           "links": [
             {
-              "label": "الذكاء الاصطناعي للقرارات العقارية",
+              "label": "بناء منتجات الذكاء الاصطناعي",
               "url": "https://a-samadi.com/ar/work/appraiva.html"
+            },
+            {
+              "label": "إدارة الأعمال بالتقنية",
+              "url": "https://a-samadi.com/ar/work/royal-abraj.html"
             },
             {
               "label": "ابدأ بالقرار",
               "url": "https://a-samadi.com/ar/writing/start-with-the-decision.html"
-            },
-            {
-              "label": "بناء الأعمال في دبي",
-              "url": "https://a-samadi.com/ar/work/royal-abraj.html"
             }
           ]
         },
@@ -1290,7 +1290,7 @@
           "position": 7,
           "section": "",
           "title": "أعمال يمكن الاطلاع عليها",
-          "text": "أعمال يمكن الاطلاع عليهاAppraivaمجموعة رويال أبراجالدراسات العقاريةأدوات عملية",
+          "text": "أعمال يمكن الاطلاع عليهاAppraivaمجموعة رويال أبراجدراسات وأدوات عامة",
           "paragraphs": [],
           "source_url": "https://a-samadi.com/ar/",
           "section_url": "https://a-samadi.com/ar/#signature-ideas",
@@ -1304,12 +1304,8 @@
               "url": "https://a-samadi.com/ar/work/royal-abraj.html"
             },
             {
-              "label": "الدراسات العقارية",
+              "label": "دراسات وأدوات عامة",
               "url": "https://a-samadi.com/studies/"
-            },
-            {
-              "label": "أدوات عملية",
-              "url": "https://a-samadi.com/studies/#tools"
             }
           ]
         },
@@ -1317,26 +1313,30 @@
           "position": 8,
           "section": "",
           "title": "موضوعاتي",
-          "text": "موضوعاتيتقييم العقارات بالذكاء الاصطناعيالإيجار مقابل التملّكالذكاء الاصطناعي في القرارات العقاريةتكاليف وبيانات العقارات في دبي",
+          "text": "موضوعاتيأين يستحق الذكاء الاصطناعي مكانه في الأعمالالتكلفة لكل نتيجة مقبولةاختبار الذكاء الاصطناعي على مهام حقيقيةأين يجب أن يتوقف الذكاء الاصطناعيتقييم العقارات بالذكاء الاصطناعي",
           "paragraphs": [],
           "source_url": "https://a-samadi.com/ar/",
           "section_url": "https://a-samadi.com/ar/#signature-ideas",
           "links": [
             {
-              "label": "تقييم العقارات بالذكاء الاصطناعي",
-              "url": "https://a-samadi.com/ar/writing/ai-home-value-estimates.html"
+              "label": "أين يستحق الذكاء الاصطناعي مكانه في الأعمال",
+              "url": "https://a-samadi.com/tools/before-you-build-ai.html"
             },
             {
-              "label": "الإيجار مقابل التملّك",
-              "url": "https://a-samadi.com/ar/studies/rent-own-2026/"
+              "label": "التكلفة لكل نتيجة مقبولة",
+              "url": "https://a-samadi.com/writing/ai-cost-per-verified-result.html"
             },
             {
-              "label": "الذكاء الاصطناعي في القرارات العقارية",
+              "label": "اختبار الذكاء الاصطناعي على مهام حقيقية",
+              "url": "https://a-samadi.com/writing/business-ai-evaluation-cases.html"
+            },
+            {
+              "label": "أين يجب أن يتوقف الذكاء الاصطناعي",
               "url": "https://a-samadi.com/ar/writing/ai-human-review-real-estate.html"
             },
             {
-              "label": "تكاليف وبيانات العقارات في دبي",
-              "url": "https://a-samadi.com/ar/writing/which-dubai-property-source.html"
+              "label": "تقييم العقارات بالذكاء الاصطناعي",
+              "url": "https://a-samadi.com/ar/writing/ai-home-value-estimates.html"
             }
           ]
         },
