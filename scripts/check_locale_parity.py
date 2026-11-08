@@ -288,6 +288,7 @@ clusters = (
  ('writing/jev-ai-decision-model.html','fa/writing/jev-ai-decision-model.html','ar/writing/jev-ai-decision-model.html'),
  ('writing/index.html','fa/writing/index.html','ar/writing/index.html'),
  ('writing/start-with-the-decision.html','fa/writing/start-with-the-decision.html','ar/writing/start-with-the-decision.html'),
+ ('writing/build-ai-run-a-business.html','fa/writing/build-ai-run-a-business.html','ar/writing/build-ai-run-a-business.html'),
  ('writing/passkeys-face-id.html','fa/writing/passkeys-face-id.html','ar/writing/passkeys-face-id.html'),
  ('writing/how-zip-files-work.html','fa/writing/how-zip-files-work.html','ar/writing/how-zip-files-work.html'),
  ('writing/ai-agent-safety-boundaries.html','fa/writing/ai-agent-safety-boundaries.html','ar/writing/ai-agent-safety-boundaries.html'),

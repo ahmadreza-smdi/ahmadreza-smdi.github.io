@@ -636,6 +636,13 @@
       "paths": {
         "en": "carousels/ai-property-brief-evidence.html"
       }
+    },
+    "article_build_ai_run_a_business": {
+      "paths": {
+        "en": "writing/build-ai-run-a-business.html",
+        "fa": "fa/writing/build-ai-run-a-business.html",
+        "ar": "ar/writing/build-ai-run-a-business.html"
+      }
     }
   },
   "hubs": [
@@ -1203,6 +1210,7 @@
         "article_how_many_coffees_to_break_even",
         "article_ai_agent_permissions_ability_authority",
         "article_cash_conversion_cycle_clocks",
+        "article_build_ai_run_a_business",
         "profit_film",
         "decision_guide"
       ],
@@ -1214,7 +1222,8 @@
       "additional_resources": [
         "article_how_many_coffees_to_break_even",
         "article_ai_agent_permissions_ability_authority",
-        "article_cash_conversion_cycle_clocks"
+        "article_cash_conversion_cycle_clocks",
+        "article_build_ai_run_a_business"
       ]
     },
     {

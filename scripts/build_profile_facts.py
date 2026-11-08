@@ -7,6 +7,7 @@ IDENTITY = json.loads((ROOT/'locales/brand-layer.json').read_text())['identity']
 SUBJECTS=[('Artificial intelligence','Q11660'),('Machine learning','Q2539'),('Real estate','Q684740'),('Automated valuation','Q4826487'),('Data engineering','Q104659521')]
 FACTS='''## Facts — as of October 2026
 
+- Position: “I build AI, and I run a business that has to live with it.” Technology entrepreneur; Co-Founder & Technical Lead of Appraiva and Co-Founder & CEO of Royal Abraj Group.
 - Based in Dubai, United Arab Emirates; also known as Ahmad Samadi.
 - Co-Founder & Technical Lead of Appraiva since October 2023. Appraiva is based in Cleveland, Ohio, United States; he works remotely from Dubai. It builds AI tools for investors and developers to find distressed and off-market properties through imagery analysis and enriched property data.
 - Co-Founder & CEO of Royal Abraj Group since 2022. The Dubai group covers property brokerage and documents-clearing services; he leads digital strategy and technology. The start month is not stated.
@@ -44,9 +45,10 @@ def person_schema(m, lang):
         n['knowsAbout'] = person_subjects(lang)
         if lang == 'en':
             n['description'] = IDENTITY['entity']['en']
+            n['disambiguatingDescription'] = 'Dubai-based technology entrepreneur who builds AI as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO.'
         # Schema.org's Role pattern attaches dates to the association, not to an Occupation.
         n['worksFor']=[{'@type':'OrganizationRole','roleName':title,'startDate':start,'worksFor':{'@id':'https://a-samadi.com/#'+org}} for title,start,org in [('Co-Founder & Technical Lead','2023-10','appraiva'),('Co-Founder & CEO','2022','royal-abraj')]]
-        n['hasOccupation']=[{'@type':'Occupation','name':'Co-Founder & Technical Lead at Appraiva','description':'Held since October 2023; remote from Dubai.','responsibilities':'AI tools for property discovery using imagery analysis and enriched property data.'},{'@type':'Occupation','name':'Co-Founder & CEO at Royal Abraj Group','description':'Held since 2022.','responsibilities':'Digital strategy and technology.'}]
+        n['hasOccupation']=[{'@type':'Occupation','name':'Co-Founder & Technical Lead at Appraiva','description':'Held since October 2023; remote from Dubai.','responsibilities':'Product architecture, data systems, AI workflows and cloud infrastructure for AI tools that find distressed and off-market properties through imagery analysis and enriched property data.'},{'@type':'Occupation','name':'Co-Founder & CEO at Royal Abraj Group','description':'Held since 2022.','responsibilities':'Digital strategy and technology.'}]
     return '<script type="application/ld+json">\n'+json.dumps(d,ensure_ascii=False,indent=2)+'\n</script>'
 def about_parity(text,lang):
     """Reuse supported English facts; preserve each locale's copy and canonical identity."""

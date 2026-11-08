@@ -37,7 +37,7 @@
   "Ideas into systems": "از ایده تا سیستم",
   "AI · Product · Business": "هوش مصنوعی · محصول · کسب‌وکار",
   "From business problems to working products.": "از مسائل کسب‌وکار تا محصولاتی که کار می‌کنند.",
-  "Selected work across AI real estate intelligence, enterprise data, and predictive analytics.": "منتخبی از کارهایم در هوشمندسازی املاک، داده‌های سازمانی و تحلیل‌های پیش‌بینی‌کننده.",
+  "Selected work across AI products at Appraiva, business systems at Royal Abraj Group, enterprise data and predictive analytics.": "کارهای منتخب در زمینهٔ محصولات هوش مصنوعی در Appraiva، سامانه‌های کسب‌وکار در Royal Abraj Group، داده‌های سازمانی و تحلیل پیش‌بین.",
   "Flagship company": "شرکت محوری",
   "Visit Appraiva": "بازدید از Appraiva",
   "Appraiva AI Real Estate Intelligence Platform": "Appraiva، پلتفرم هوشمند تحلیل املاک",
@@ -280,7 +280,7 @@
   "What an automated estimate can and cannot tell you about a home.": "برآورد خودکار دربارهٔ یک خانه چه چیزهایی را می‌تواند و چه چیزهایی را نمی‌تواند بگوید.",
   "Where a person checks evidence before a property decision.": "نقطه‌ای که فرد پیش از تصمیم ملکی، شواهد را بررسی می‌کند.",
   "Match the property question to the appropriate Dubai data source.": "پرسش ملکی را با منبع مناسب داده در دبی تطبیق دهید.",
-  "Person entity sentence": "احمدرضا صمدی کارآفرین فناوری ساکن دبی، هم‌بنیان‌گذار و راهبر فنی Appraiva، سازندهٔ راهکارهای هوش مصنوعی برای اطلاعات املاک، و هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group است.",
+  "Person entity sentence": "احمدرضا صمدی کارآفرین فناوری ساکن دبی است؛ در Appraiva به‌عنوان هم‌بنیان‌گذار و راهبر فنی هوش مصنوعی می‌سازد و Royal Abraj Group را به‌عنوان هم‌بنیان‌گذار و مدیرعامل اداره می‌کند.",
   "Property valuation": "ارزش‌گذاری ملک",
   "Human review": "بررسی انسانی",
   "Dubai property data": "داده‌های املاک دبی",
@@ -312,5 +312,6 @@
   "Where AI is worth it in a business": "هوش مصنوعی کجا در کسب‌وکار ارزش دارد",
   "Cost per accepted result": "هزینهٔ هر نتیجهٔ پذیرفته‌شده",
   "Testing AI on real tasks": "آزمودن هوش مصنوعی روی کارهای واقعی",
-  "Where AI must stop": "هوش مصنوعی کجا باید متوقف شود"
+  "Where AI must stop": "هوش مصنوعی کجا باید متوقف شود",
+  "Why I build AI and run a business": "چرا هم هوش مصنوعی می‌سازم و هم کسب‌وکار اداره می‌کنم"
 }

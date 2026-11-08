@@ -37,7 +37,7 @@
   "Ideas into systems": "من الأفكار إلى الأنظمة",
   "AI · Product · Business": "الذكاء الاصطناعي · المنتج · الأعمال",
   "From business problems to working products.": "من تحديات الأعمال إلى منتجات تعمل.",
-  "Selected work across AI real estate intelligence, enterprise data, and predictive analytics.": "أعمال مختارة في ذكاء البيانات العقارية والبيانات المؤسسية والتحليلات التنبؤية.",
+  "Selected work across AI products at Appraiva, business systems at Royal Abraj Group, enterprise data and predictive analytics.": "أعمال مختارة في منتجات الذكاء الاصطناعي في Appraiva، وأنظمة الأعمال في Royal Abraj Group، وبيانات المؤسسات والتحليلات التنبؤية.",
   "Flagship company": "الشركة الرئيسية",
   "Visit Appraiva": "زيارة Appraiva",
   "Appraiva AI Real Estate Intelligence Platform": "Appraiva، منصة الذكاء العقاري",
@@ -280,7 +280,7 @@
   "What an automated estimate can and cannot tell you about a home.": "ما الذي يمكن للتقدير الآلي أن يخبرك به عن المنزل، وما حدوده.",
   "Where a person checks evidence before a property decision.": "أين يراجع الشخص الأدلة قبل اتخاذ قرار عقاري.",
   "Match the property question to the appropriate Dubai data source.": "طابق السؤال العقاري مع مصدر البيانات المناسب في دبي.",
-  "Person entity sentence": "أحمدرضا صمدي رائد أعمال تقني مقيم في دبي، وشريك مؤسس وقائد تقني في Appraiva التي تطوّر حلول ذكاء اصطناعي للمعلومات العقارية، وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group.",
+  "Person entity sentence": "أحمدرضا صمدي رائد أعمال تقني مقيم في دبي؛ يبني الذكاء الاصطناعي بصفته شريكاً مؤسساً وقائداً تقنياً في Appraiva، ويدير Royal Abraj Group بصفته شريكاً مؤسساً ورئيساً تنفيذياً.",
   "Property valuation": "تقييم العقارات",
   "Human review": "المراجعة البشرية",
   "Dubai property data": "بيانات العقارات في دبي",
@@ -312,5 +312,6 @@
   "Where AI is worth it in a business": "أين يستحق الذكاء الاصطناعي مكانه في الأعمال",
   "Cost per accepted result": "التكلفة لكل نتيجة مقبولة",
   "Testing AI on real tasks": "اختبار الذكاء الاصطناعي على مهام حقيقية",
-  "Where AI must stop": "أين يجب أن يتوقف الذكاء الاصطناعي"
+  "Where AI must stop": "أين يجب أن يتوقف الذكاء الاصطناعي",
+  "Why I build AI and run a business": "لماذا أبني الذكاء الاصطناعي وأدير شركة"
 }

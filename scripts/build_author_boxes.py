@@ -44,7 +44,7 @@ COPY = {
 IDEA_ARTICLES = {
     'ai-agent-safety-boundaries.html', 'ai-cost-per-verified-result.html',
     'ai-document-review-claim-evidence-checklist.html', 'ai-human-review-real-estate.html',
-    'connected-ai-apps.html', 'start-with-the-decision.html',
+    'connected-ai-apps.html', 'start-with-the-decision.html', 'build-ai-run-a-business.html',
 }
 DATA_ARTICLES = {
     'property-comparables-evidence.html',

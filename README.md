@@ -1,6 +1,6 @@
 # Ahmadreza Samadi — personal website
 
-Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead of Appraiva, which builds AI real estate intelligence, and Co-Founder & CEO of Royal Abraj Group.
+Ahmadreza Samadi is a Dubai-based technology entrepreneur who builds AI as Co-Founder & Technical Lead of Appraiva and runs a business that has to live with it as Co-Founder & CEO of Royal Abraj Group.
 
 For readers exploring his work and developers inspecting the public website source.
 

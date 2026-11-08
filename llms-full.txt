@@ -6,6 +6,7 @@ Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احم�
 
 ## Facts — as of October 2026
 
+- Position: “I build AI, and I run a business that has to live with it.” Technology entrepreneur; Co-Founder & Technical Lead of Appraiva and Co-Founder & CEO of Royal Abraj Group.
 - Based in Dubai, United Arab Emirates; also known as Ahmad Samadi.
 - Co-Founder & Technical Lead of Appraiva since October 2023. Appraiva is based in Cleveland, Ohio, United States; he works remotely from Dubai. It builds AI tools for investors and developers to find distressed and off-market properties through imagery analysis and enriched property data.
 - Co-Founder & CEO of Royal Abraj Group since 2022. The Dubai group covers property brokerage and documents-clearing services; he leads digital strategy and technology.
@@ -46,6 +47,7 @@ Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احم�
 
 ## Writing
 
+- [I build AI, and I run a business that has to live with it](https://a-samadi.com/writing/build-ai-run-a-business.html): Ahmadreza Samadi builds AI at Appraiva and runs Royal Abraj Group in Dubai. Three questions for deciding where AI belongs in a business, and where it must stop.
 - [Start with the decision, then build the AI](https://a-samadi.com/writing/start-with-the-decision.html): A practical approach to AI product decisions: start with the customer’s decision, assess the evidence, and evaluate the whole workflow.
 - [AI cost per accepted result](https://a-samadi.com/writing/ai-cost-per-verified-result.html): A practical framework for measuring AI workflow cost: include tokens, tools, retries and human review, then divide by results that pass verification.
 - [Writing on AI Products and Business Decisions](https://a-samadi.com/writing/): Read Ahmadreza Samadi on building AI products, testing them on real tasks and counting review costs. Explore property examples and everyday technology explainers.

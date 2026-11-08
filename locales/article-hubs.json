@@ -1667,6 +1667,30 @@
         }
       ],
       "watch": "watch/agent-workflow-shared-bottlenecks.html"
+    },
+    {
+      "stem": "build-ai-run-a-business",
+      "classification": "core",
+      "hub": "business-systems-dubai",
+      "paths": {
+        "en": "writing/build-ai-run-a-business.html",
+        "fa": "fa/writing/build-ai-run-a-business.html",
+        "ar": "ar/writing/build-ai-run-a-business.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/ai-agent-permissions-ability-authority.html"
+        }
+      ]
     }
   ]
 }

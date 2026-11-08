@@ -74,7 +74,8 @@ def homepage():
     cards = card('what-i-work-on', 'What I work on', [
         ('/work/appraiva.html', 'Building AI products'),
         ('/work/royal-abraj.html', 'Running a business with technology'),
-        ('/writing/start-with-the-decision.html', 'Start with the decision')])
+        ('/writing/start-with-the-decision.html', 'Start with the decision'),
+        ('/writing/build-ai-run-a-business.html', 'Why I build AI and run a business')])
     cards += card('property-decision-data', 'Proof', [
         ('/work/appraiva.html', 'Appraiva'), ('/work/royal-abraj.html', 'Royal Abraj Group'),
         ('/studies/', 'Public studies and tools')])
