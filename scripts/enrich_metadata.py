@@ -613,6 +613,26 @@ def enrich(path, text):
         if others:
             added.append('og:locale:alternate')
     image = value(head, 'og:image')
+    default_card = BASE + 'assets/img/ahmadreza-samadi-og.jpg'
+    mapped = SHARE_IMAGES.get(image.removeprefix(BASE)) if image else None
+    if (not mapped and local_image_dimensions(image) != (1200, 630)
+            and 'noindex' not in (value(head, 'robots') or '')
+            and local_image_dimensions(default_card) == (1200, 630)):
+        default_alt = {'en': 'Ahmadreza Samadi, Dubai-based technology entrepreneur',
+                       'fa': 'تصویر احمدرضا صمدی', 'ar': 'صورة أحمدرضا صمدي'}[lang]
+        replacements = {'og:image': default_card, 'twitter:image': default_card,
+                        'og:image:width': '1200', 'og:image:height': '630',
+                        'og:image:alt': default_alt, 'twitter:image:alt': default_alt}
+        for key, content in replacements.items():
+            match = find(head, key)
+            if match:
+                head = head[:match.start(1)] + html.escape(content, quote=True) + head[match.end(1):]
+            elif key == 'og:image':
+                add_after(['og:url', 'og:title'], 'property', key, content)
+            elif key == 'og:image:alt':
+                add_after(['og:image'], 'property', key, content)
+        image = default_card
+        added.append('use existing default 1200 by 630 share card')
     if image:
         landscape = SHARE_IMAGES.get(image.removeprefix(BASE))
         if landscape:
