@@ -524,6 +524,19 @@ def enrich(path, text):
     lang = language(head)
     added = []
     relative = path.relative_to(ROOT).as_posix()
+    def decode_content_image(match):
+        tag = match[0]
+        if 'decoding=' in tag or not re.search(r'\balt="[^"]+"', tag):
+            return tag
+        added.append('asynchronous image decoding')
+        return tag.replace('<img ', '<img decoding="async" ', 1)
+
+    rest = re.sub(r'<img\s+[^>]+>', decode_content_image, rest)
+    if relative.startswith('watch/'):
+        poster = re.search(r'<div class="film-wrap">\s*<video\b[^>]*\bposter="(/assets/[^"]+)"', rest)
+        if poster and f'href="{poster[1]}"' not in head:
+            head += f'<link rel="preload" as="image" href="{poster[1]}" fetchpriority="high">\n'
+            added.append('preload the visible film poster')
     if relative.startswith('carousels/') and path.name != 'index.html':
         title = re.search(r'<title>(.*?)</title>', head, re.S)
         suffix = ' | Ahmadreza Samadi'

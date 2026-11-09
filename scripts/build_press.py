@@ -198,7 +198,7 @@ def build(data, lang):
               f'<a href="/assets/profile/ahmadreza-samadi-profile-kit.zip" download>{escape(copy["resource_labels"]["kit"])}</a>',
               f'<a href="#press-contact">{escape(copy["contact_heading"])}</a>', '</div></div>',
               '<figure class="press-portrait">',
-              f'<img src="{data["portrait_display"]["src"]}" srcset="{data["portrait_display"]["srcset"]}" sizes="(max-width: 259px) calc(100vw - 54px), 206px" alt="{escape(copy["portrait_alt"])}" width="900" height="1200" decoding="async">',
+              f'<img src="{data["portrait_display"]["src"]}" srcset="{data["portrait_display"]["srcset"]}" sizes="(max-width: 259px) calc(100vw - 54px), 206px" alt="{escape(copy["portrait_alt"])}" width="900" height="1200" decoding="async" fetchpriority="high">',
               f'<figcaption>{escape(copy["portrait_caption"])}</figcaption></figure></div>']
     parts.extend(brand_bios(data, lang))
     parts.extend(brand_identity(data, lang))
