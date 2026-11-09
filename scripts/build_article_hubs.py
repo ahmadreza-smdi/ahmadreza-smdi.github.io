@@ -44,9 +44,9 @@ def render(family, language, hubs, membership=None, trail=None):
     primary = f'<a href="{escape(href, quote=True)}" data-hub-primary="{escape(family["hub"], quote=True)}">{escape(title)}</a>'
     location = f"{escape(labels['part'])}: {primary}"
     if trail:
-        home, current, breadcrumb = trail
+        home, breadcrumb = trail
         location = (f'<span role="navigation" aria-label="{escape(breadcrumb)}"><a href="/{prefix(language)}">{escape(home)}</a> / '
-                    f'{primary} / <span aria-current="page">{escape(current)}</span></span>')
+                    f'{primary}</span>')
     for other in membership or ():
         if other['id'] != hub['id']:
             location += (f' · <a href="/{escape(other["paths"][language], quote=True)}" data-hub-secondary="{escape(other["id"], quote=True)}">'
@@ -94,8 +94,8 @@ def install(text, block):
     return text.replace(marker, block + marker, 1)
 
 
-TOP_TRAIL = re.compile(r'<nav\b[^>]*class="byline"[^>]*>(?:(?!</nav>).)*?aria-current="page"(?:(?!</nav>).)*?</nav>', re.S)
-LIST_ITEMS = re.compile(r'("itemListElement"\s*:\s*)(\[\s*\{[^\[\]]*?\}\s*\])')
+TOP_TRAIL = re.compile(r'<nav\b[^>]*class="byline"[^>]*aria-label="[^"]+"[^>]*>\s*<a href="/(?:fa/|ar/)?">(?:(?!</nav>).)*?</nav>', re.S)
+LIST_ITEMS = re.compile(r'("@type"\s*:\s*"BreadcrumbList"\s*,\s*(?:"@id"\s*:\s*"[^"]+"\s*,\s*)?"itemListElement"\s*:\s*)(\[\s*\{[^\[\]]*?\}\s*\])')
 CRUMB_LABELS = {'en': ('Home', 'Breadcrumb'), 'fa': ('خانه', 'مسیر صفحه'), 'ar': ('الرئيسية', 'مسار الصفحة')}
 
 
@@ -103,34 +103,34 @@ def align_trail(text, relative, language, hub):
     home, label = CRUMB_LABELS[language]
     hub_title = hub['locales'][language]['heading']
     hub_path = hub['paths'][language]
-    _, title = resource(relative)
     top = TOP_TRAIL.search(text)
     if top:
         markup = top[0]
         anchors = list(re.finditer(r'<a href="([^"]+)">([^<]*)</a>', markup))
-        last = re.search(r'<span aria-current="page">(.*?)</span>', markup, re.S)
-        if len(anchors) != 2 or last is None:
+        if len(anchors) != 2:
             raise ValueError(f'Unexpected top breadcrumb: {relative}')
         home = unescape(anchors[0][2])
-        title = unescape(re.sub(r'<[^>]+>', '', last[1]))
         parent = f'<a href="/{hub_path}">{escape(hub_title)}</a>'
-        text = text[:top.start()] + markup[:anchors[1].start()] + parent + markup[anchors[1].end():] + text[top.end():]
-    items = [(home, BASE + prefix(language)), (hub_title, BASE + hub_path), (title, BASE + relative)]
+        text = text[:top.start()] + markup[:anchors[1].start()] + parent + '</nav>' + text[top.end():]
+    # The article heading already names the current page. Show its two ancestors
+    # in both trails so a long duplicate headline cannot displace the article.
+    items = [(home, BASE + prefix(language)), (hub_title, BASE + hub_path)]
     def align_schema(match):
         value = json.loads(match[2])
-        if len(value) != 3 or value[0].get('item') != items[0][1] or not all(i.get('@type') == 'ListItem' for i in value):
-            return match[0]
-        # Keep the graph's existing whitespace and optional current-page URL.
-        objects = iter(items)
-        def align_item(obj):
-            name, url = next(objects)
-            def field(m):
-                replacement = name if m[1] == 'name' else url
-                return m[0][:m.start(2)-m.start()] + json.dumps(replacement, ensure_ascii=False)
-            return re.sub(r'"(name|item)"\s*:\s*("(?:[^"\\]|\\.)*")', field, obj[0])
-        return match[1] + re.sub(r'\{[^{}]*\}', align_item, match[2])
-    text = LIST_ITEMS.sub(align_schema, text)
-    return text, None if top else (home, title, label)
+        if len(value) not in (2, 3) or value[0].get('item') != items[0][1]:
+            raise ValueError(f'Unexpected article breadcrumb: {relative}')
+        expected = [{'@type': 'ListItem', 'position': i, 'name': name, 'item': target}
+                    for i, (name, target) in enumerate(items, 1)]
+        indent = re.search(r'\n( *)"itemListElement"', match[1])
+        if indent:
+            encoded = json.dumps(expected, ensure_ascii=False, indent=2).replace('\n', '\n' + indent[1])
+        else:
+            encoded = json.dumps(expected, ensure_ascii=False)
+        return match[1] + encoded
+    text, count = LIST_ITEMS.subn(align_schema, text)
+    if count != 1:
+        raise ValueError(f'Expected one structured article breadcrumb: {relative}')
+    return text, None if top else (home, label)
 
 def all_articles():
     found = set()
