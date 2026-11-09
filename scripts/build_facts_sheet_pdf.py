@@ -32,8 +32,19 @@ def build(template):
         ([NumberObject(0), NumberObject(-15)], b"Td"),
         ([ByteStringObject(SUMMARY.encode("ascii"))], b"Tj"),
     ]
+    # Current edition labels.
+    replacements = {
+        "OFFICIAL FACTS / OCTOBER 2026": "OFFICIAL FACTS / NOVEMBER 2026",
+        " \x01 Facts checked 20 October 2026": " \x01 Facts checked 9 November 2026",
+    }
+    for idx, (args, op) in enumerate(content.operations):
+        if op == b"Tj" and str(args[0]) in replacements:
+            content.operations[idx] = ([ByteStringObject(replacements.pop(str(args[0])).encode("latin-1"))], b"Tj")
+    if replacements:
+        raise ValueError("Edition labels not found in the template")
     page.replace_contents(content)
-    writer.add_metadata({"/Subject": SUMMARY, "/ModDate": "D:20261109"})
+    writer.add_metadata({"/Subject": SUMMARY, "/ModDate": "D:20261109",
+                         "/Title": "Ahmadreza Samadi - Official facts, November 2026"})
     buffer = BytesIO()
     writer.write(buffer)
     return buffer.getvalue()
