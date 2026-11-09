@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="Ahmadreza Samadi">
-<title>How does ChatGPT&#x27;s Intelligent UI work? | Ahmadreza Samadi</title><meta name="description" content="A simple explanation of ChatGPT&#x27;s interactive answers, the 7 October announcement and a fictional budget that shows why assumptions still matter."><meta name="robots" content="index, follow, max-image-preview:large"><meta name="referrer" content="strict-origin-when-cross-origin"><link rel="canonical" href="https://a-samadi.com/writing/chatgpt-intelligent-ui-explained.html"><link rel="alternate" type="application/rss+xml" title="Ahmadreza Samadi: English writing" href="https://a-samadi.com/writing/feed.xml">
+<title>How ChatGPT’s intelligent UI turns answers into tools</title><meta name="description" content="Explore ChatGPT&#x27;s interactive answers using a fictional budget. Changing a number shows what the interface can calculate and which assumptions still need checking."><meta name="robots" content="index, follow, max-image-preview:large"><meta name="referrer" content="strict-origin-when-cross-origin"><link rel="canonical" href="https://a-samadi.com/writing/chatgpt-intelligent-ui-explained.html"><link rel="alternate" type="application/rss+xml" title="Ahmadreza Samadi: English writing" href="https://a-samadi.com/writing/feed.xml">
 <link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/chatgpt-intelligent-ui-explained.html">
 <link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/chatgpt-intelligent-ui-explained.html">
 <link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/chatgpt-intelligent-ui-explained.html">
@@ -8,8 +8,8 @@
 <link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg"><link rel="stylesheet" href="/css/site.css?v=20261009-lagoon4">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Ahmadreza Samadi">
-<meta property="og:title" content="How does ChatGPT&#x27;s Intelligent UI work?">
-<meta property="og:description" content="A simple explanation of ChatGPT&#x27;s interactive answers, the 7 October announcement and a fictional budget that shows why assumptions still matter.">
+<meta property="og:title" content="How ChatGPT’s intelligent UI turns answers into tools">
+<meta property="og:description" content="Explore ChatGPT&#x27;s interactive answers using a fictional budget. Changing a number shows what the interface can calculate and which assumptions still need checking.">
 <meta property="og:url" content="https://a-samadi.com/writing/chatgpt-intelligent-ui-explained.html">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://a-samadi.com/assets/share/chatgpt-intelligent-ui-explained-og-1200x630.png">
@@ -19,19 +19,18 @@
 <meta property="og:locale:alternate" content="fa_IR">
 <meta property="og:locale:alternate" content="ar_AE">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="How does ChatGPT&#x27;s Intelligent UI work?">
-<meta name="twitter:description" content="A simple explanation of ChatGPT&#x27;s interactive answers, the 7 October announcement and a fictional budget that shows why assumptions still matter.">
+<meta name="twitter:title" content="How ChatGPT’s intelligent UI turns answers into tools">
+<meta name="twitter:description" content="Explore ChatGPT&#x27;s interactive answers using a fictional budget. Changing a number shows what the interface can calculate and which assumptions still need checking.">
 <meta name="twitter:image" content="https://a-samadi.com/assets/share/chatgpt-intelligent-ui-explained-og-1200x630.png">
 <meta name="twitter:image:alt" content="An original concept diagram connects a written question to an interactive budget card with controls. No actual ChatGPT screen is shown.">
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Article",
       "@id": "https://a-samadi.com/writing/chatgpt-intelligent-ui-explained.html#article",
       "headline": "How does ChatGPT's Intelligent UI work?",
-      "description": "A simple explanation of ChatGPT's interactive answers, the 7 October announcement and a fictional budget that shows why assumptions still matter.",
+      "description": "Explore ChatGPT's interactive answers using a fictional budget. Changing a number shows what the interface can calculate and which assumptions still need checking.",
       "url": "https://a-samadi.com/writing/chatgpt-intelligent-ui-explained.html",
       "mainEntityOfPage": {
         "@type": "WebPage",
@@ -75,7 +74,8 @@
         {
           "@id": "https://a-samadi.com/ar/writing/chatgpt-intelligent-ui-explained.html#article"
         }
-      ]
+      ],
+      "name": "How ChatGPT’s intelligent UI turns answers into tools"
     },
     {
       "@type": "BreadcrumbList",
@@ -100,8 +100,7 @@
       ]
     }
   ]
-}
-</script>
+}</script>
 <style>.carousel-opening{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1fr);gap:1.5rem;align-items:center;margin:2rem 0}.carousel-cover{margin:0}.carousel-cover img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 0 0 1px var(--line)}.carousel-cover figcaption,.carousel-note{font-size:.85rem!important;color:var(--muted)!important;line-height:1.6}.carousel-cover figcaption{padding:.65rem 0}.carousel-summary{display:grid;gap:.75rem}.carousel-summary div{border:1px solid var(--line);background:var(--surface,#fff);border-radius:18px;padding:1.15rem}.carousel-summary h2{font-size:1.1rem!important;margin:0 0 .4rem!important}.carousel-summary p{margin:0!important;font-size:1rem!important}.carousel-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.25rem 0}.carousel-gallery figure{margin:0}.carousel-gallery img{display:block;width:100%;height:auto;border-radius:12px}.carousel-gallery figcaption{font-size:.85rem;color:var(--muted);padding:.5rem 0}.carousel-slides summary{cursor:pointer;padding:1rem;border:1px solid var(--line);border-radius:12px;color:var(--ink);font-weight:600}.carousel-slides summary:focus-visible{outline:3px solid var(--accent,#0b6a7a);outline-offset:4px}@media(max-width:650px){.carousel-opening,.carousel-gallery{grid-template-columns:1fr}.carousel-cover{max-width:440px;margin-inline:auto}}</style>
 <style data-author-box>
 /* A quiet author reference at the end of each article, using the Lagoon tokens. */

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="Ahmadreza Samadi">
-<title>چرا فضای ذخیره‌سازی پر، کامپیوتر را کند می‌کند؟ | احمدرضا صمدی</title><meta name="description" content="فضای ذخیره‌سازی، فضای کار هم هست. توضیحی ده‌اسلایدی درباره فایل‌های موقت، سرریز رم و کارهای داخلی SSD با راهنمای آزاد کردن فضا."><meta name="robots" content="index, follow, max-image-preview:large"><meta name="referrer" content="strict-origin-when-cross-origin"><link rel="canonical" href="https://a-samadi.com/fa/writing/why-full-storage-slows-computer.html"><link rel="alternate" type="application/rss+xml" title="Ahmadreza Samadi: English writing" href="https://a-samadi.com/writing/feed.xml">
+<title>چرا پر شدن درایو حتی با وجود رم آزاد کامپیوتر را کند می‌کند؟</title><meta name="description" content="فایل‌های موقت، سرریز حافظه و کارهای داخلی SSD به فضای خالی نیاز دارند. ببینید پر شدن درایو چه اثری بر سرعت رایانه دارد و چه زمانی آزاد کردن فضا کمک می‌کند."><meta name="robots" content="index, follow, max-image-preview:large"><meta name="referrer" content="strict-origin-when-cross-origin"><link rel="canonical" href="https://a-samadi.com/fa/writing/why-full-storage-slows-computer.html"><link rel="alternate" type="application/rss+xml" title="Ahmadreza Samadi: English writing" href="https://a-samadi.com/writing/feed.xml">
 <link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-full-storage-slows-computer.html">
 <link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-full-storage-slows-computer.html">
 <link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-full-storage-slows-computer.html">
@@ -9,8 +9,8 @@
 <link rel="stylesheet" href="/css/rtl.css?v=20261009-lagoon4">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Ahmadreza Samadi">
-<meta property="og:title" content="چرا فضای ذخیره‌سازی پر، کامپیوتر را کند می‌کند؟ | احمدرضا صمدی">
-<meta property="og:description" content="فضای ذخیره‌سازی، فضای کار هم هست. توضیحی ده‌اسلایدی درباره فایل‌های موقت، سرریز رم و کارهای داخلی SSD با راهنمای آزاد کردن فضا.">
+<meta property="og:title" content="چرا پر شدن درایو حتی با وجود رم آزاد کامپیوتر را کند می‌کند؟">
+<meta property="og:description" content="فایل‌های موقت، سرریز حافظه و کارهای داخلی SSD به فضای خالی نیاز دارند. ببینید پر شدن درایو چه اثری بر سرعت رایانه دارد و چه زمانی آزاد کردن فضا کمک می‌کند.">
 <meta property="og:url" content="https://a-samadi.com/fa/writing/why-full-storage-slows-computer.html">
 <meta property="og:locale" content="fa_IR">
 <meta property="og:image" content="https://a-samadi.com/assets/share/almost-full-storage-og-1200x630.png">
@@ -20,19 +20,18 @@
 <meta property="og:locale:alternate" content="en_US">
 <meta property="og:locale:alternate" content="ar_AE">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="چرا فضای ذخیره‌سازی پر، کامپیوتر را کند می‌کند؟ | احمدرضا صمدی">
-<meta name="twitter:description" content="فضای ذخیره‌سازی، فضای کار هم هست. توضیحی ده‌اسلایدی درباره فایل‌های موقت، سرریز رم و کارهای داخلی SSD با راهنمای آزاد کردن فضا.">
+<meta name="twitter:title" content="چرا پر شدن درایو حتی با وجود رم آزاد کامپیوتر را کند می‌کند؟">
+<meta name="twitter:description" content="فایل‌های موقت، سرریز حافظه و کارهای داخلی SSD به فضای خالی نیاز دارند. ببینید پر شدن درایو چه اثری بر سرعت رایانه دارد و چه زمانی آزاد کردن فضا کمک می‌کند.">
 <meta name="twitter:image" content="https://a-samadi.com/assets/share/almost-full-storage-og-1200x630.png">
 <meta name="twitter:image:alt" content="جلد مرجانی با لپ‌تاپ و نوار ذخیره‌سازی تقریباً پر می‌پرسد چرا کامپیوتر کند می‌شود؛ کامپیوتر برای کار کردن هم فضا می‌خواهد.">
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Article",
       "@id": "https://a-samadi.com/fa/writing/why-full-storage-slows-computer.html#article",
       "headline": "چرا وقتی فضای ذخیره‌سازی تقریباً پر است، کامپیوتر کند می‌شود؟",
-      "description": "فضای ذخیره‌سازی، فضای کار هم هست. توضیحی ده‌اسلایدی درباره فایل‌های موقت، سرریز رم و کارهای داخلی SSD با راهنمای آزاد کردن فضا.",
+      "description": "فایل‌های موقت، سرریز حافظه و کارهای داخلی SSD به فضای خالی نیاز دارند. ببینید پر شدن درایو چه اثری بر سرعت رایانه دارد و چه زمانی آزاد کردن فضا کمک می‌کند.",
       "url": "https://a-samadi.com/fa/writing/why-full-storage-slows-computer.html",
       "mainEntityOfPage": {
         "@type": "WebPage",
@@ -77,7 +76,8 @@
       },
       "translationOfWork": {
         "@id": "https://a-samadi.com/writing/why-full-storage-slows-computer.html#article"
-      }
+      },
+      "name": "چرا پر شدن درایو حتی با وجود رم آزاد کامپیوتر را کند می‌کند؟"
     },
     {
       "@type": "BreadcrumbList",
@@ -102,8 +102,7 @@
       ]
     }
   ]
-}
-</script>
+}</script>
 <style>.storage-opening{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1fr);gap:1.5rem;align-items:center;margin:2rem 0}.storage-cover{margin:0}.storage-cover img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 0 0 1px var(--line)}.storage-cover figcaption,.storage-note{font-size:.85rem!important;color:var(--muted)!important;line-height:1.6}.storage-cover figcaption{padding:.65rem 0}.storage-summary{display:grid;gap:.75rem}.storage-summary div{border:1px solid var(--line);background:var(--surface,#fff);border-radius:18px;padding:1.15rem}.storage-summary h2{font-size:1.1rem!important;margin:0 0 .4rem!important}.storage-summary p{margin:0!important;font-size:1rem!important}.storage-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.25rem 0}.storage-gallery figure{margin:0}.storage-gallery img{display:block;width:100%;height:auto;border-radius:12px}.storage-gallery figcaption{font-size:.85rem;color:var(--muted);padding:.5rem 0}.storage-slides summary{cursor:pointer;padding:1rem;border:1px solid var(--line);border-radius:12px;color:var(--ink);font-weight:600}.storage-slides summary:focus-visible{outline:3px solid var(--accent,#0b6a7a);outline-offset:4px}.storage-settings{border:1px solid var(--line);border-radius:18px;padding:1rem 1.25rem;background:var(--surface,#fff)}.storage-settings p{margin:.5rem 0!important;font-size:1rem!important}@media(max-width:650px){.storage-opening,.storage-gallery{grid-template-columns:1fr}.storage-cover{max-width:440px;margin-inline:auto}}</style>
 <style data-author-box>
 /* A quiet author reference at the end of each article, using the Lagoon tokens. */

@@ -537,7 +537,7 @@ def enrich(path, text):
         if 'title' in description_record:
             title = description_record['title']
             source = re.search(r'<title>([^<]+)</title>', head)
-            if not source or html.unescape(source[1]) not in (description_record['previous_title'], title):
+            if not source or html.unescape(source[1]) not in (description_record['previous_title'], description_record.get('source_title'), title):
                 raise ValueError(f'{path}: title source changed; review the explicit metadata copy')
             if not 0 < len(title) <= 65:
                 raise ValueError(f'{path}: reviewed title must contain 1–65 characters')
@@ -552,7 +552,7 @@ def enrich(path, text):
         description = description_record['description']
         if not 120 <= len(description) <= 165:
             raise ValueError(f'{path}: reviewed description must contain 120–165 characters')
-        if value(head, 'description') not in (description_record['previous'], description):
+        if value(head, 'description') not in (description_record['previous'], description_record.get('source_description', description), description):
             raise ValueError(f'{path}: description source changed; review the explicit metadata copy')
         for key in ('description', 'og:description', 'twitter:description'):
             match = find(head, key)

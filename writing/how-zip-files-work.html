@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="author" content="Ahmadreza Samadi">
-<title>How ZIP compression works | Ahmadreza Samadi</title>
-<meta name="description" content="ZIP bundles files and can use lossless compression. Learn how DEFLATE restores every byte, why JPG and MP4 may barely shrink, and why compression is not encryption.">
+<title>How ZIP files compress data and restore every byte</title>
+<meta name="description" content="See how lossless ZIP compression stores repeating data and rebuilds the original file. Find out why a folder of photos or videos may shrink very little.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="https://a-samadi.com/writing/how-zip-files-work.html">
@@ -17,15 +17,14 @@
 <link rel="stylesheet" href="/css/site.css?v=20261009-lagoon4">
 
 <meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
-<meta property="og:title" content="How ZIP compression works | Ahmadreza Samadi">
-<meta property="og:description" content="ZIP bundles files and can use lossless compression. Learn how DEFLATE restores every byte, why JPG and MP4 may barely shrink, and why compression is not encryption."><meta property="og:url" content="https://a-samadi.com/writing/how-zip-files-work.html">
+<meta property="og:title" content="How ZIP files compress data and restore every byte">
+<meta property="og:description" content="See how lossless ZIP compression stores repeating data and rebuilds the original file. Find out why a folder of photos or videos may shrink very little."><meta property="og:url" content="https://a-samadi.com/writing/how-zip-files-work.html">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="fa_IR">
 <meta property="og:locale:alternate" content="ar_AE">
 <meta property="og:image" content="https://a-samadi.com/assets/share/how-zip-files-work.png">
-<meta property="og:image:alt" content="English article cover: How ZIP files work: compression without losing data"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How ZIP compression works | Ahmadreza Samadi"><meta name="twitter:description" content="ZIP bundles files and can use lossless compression. Learn how DEFLATE restores every byte, why JPG and MP4 may barely shrink, and why compression is not encryption."><meta name="twitter:image" content="https://a-samadi.com/assets/share/how-zip-files-work.png"><meta name="twitter:image:alt" content="English article cover: How ZIP files work: compression without losing data">
-<script type="application/ld+json">
-{
+<meta property="og:image:alt" content="English article cover: How ZIP files work: compression without losing data"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How ZIP files compress data and restore every byte"><meta name="twitter:description" content="See how lossless ZIP compression stores repeating data and rebuilds the original file. Find out why a folder of photos or videos may shrink very little."><meta name="twitter:image" content="https://a-samadi.com/assets/share/how-zip-files-work.png"><meta name="twitter:image:alt" content="English article cover: How ZIP files work: compression without losing data">
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -40,7 +39,7 @@
         }
       ],
       "headline": "How ZIP files work: compression without losing data",
-      "description": "ZIP bundles files and can use lossless compression. Learn how DEFLATE restores every byte, why JPG and MP4 may barely shrink, and why compression is not encryption.",
+      "description": "See how lossless ZIP compression stores repeating data and rebuilds the original file. Find out why a folder of photos or videos may shrink very little.",
       "url": "https://a-samadi.com/writing/how-zip-files-work.html",
       "mainEntityOfPage": {
         "@type": "WebPage",
@@ -76,7 +75,8 @@
       "citation": [
         "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT",
         "https://www.rfc-editor.org/rfc/rfc1951"
-      ]
+      ],
+      "name": "How ZIP files compress data and restore every byte"
     },
     {
       "@type": "BreadcrumbList",
@@ -101,8 +101,7 @@
       ]
     }
   ]
-}
-</script>
+}</script>
 
 <style data-author-box>
 /* A quiet author reference at the end of each article, using the Lagoon tokens. */

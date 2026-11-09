@@ -1,19 +1,18 @@
 <!doctype html>
 <html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="Ahmadreza Samadi">
-<title>ما الذي يخفيه التصفح المتخفي ومن يستطيع رؤيتك؟ | أحمدرضا صمدي</title><meta name="description" content="يحد التصفح المتخفي مما يحفظه Chrome على الجهاز، لكنه لا يخفي زيارتك عن الموقع أو عنوان IP. شرح عملي لما يتغير عند إغلاق جميع النوافذ المتخفية."><meta name="robots" content="index, follow, max-image-preview:large"><meta name="referrer" content="strict-origin-when-cross-origin"><link rel="canonical" href="https://a-samadi.com/ar/writing/incognito-private-browsing.html"><link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/incognito-private-browsing.html">
+<title>ماذا يخفي التصفح المتخفي ومن يستطيع رؤية نشاطك على الويب؟</title><meta name="description" content="ماذا يختفي من الجهاز بعد إغلاق نافذة التصفح المتخفي؟ تتبع مثالا لشراء هدية يميز بين سجل المتصفح وملفات الارتباط والتنزيلات وما يحتفظ به الموقع."><meta name="robots" content="index, follow, max-image-preview:large"><meta name="referrer" content="strict-origin-when-cross-origin"><link rel="canonical" href="https://a-samadi.com/ar/writing/incognito-private-browsing.html"><link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/incognito-private-browsing.html">
 <link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/incognito-private-browsing.html">
 <link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/incognito-private-browsing.html">
 <link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/incognito-private-browsing.html">
 <link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg"><link rel="preload" as="font" type="font/woff2" href="/assets/fonts/vazirmatn-arabic-wght.woff2" crossorigin><link rel="stylesheet" href="/css/site.css?v=20261009-lagoon4"><link rel="stylesheet" href="/css/rtl.css?v=20261009-lagoon4">
-<meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi"><meta property="og:title" content="ما الذي يخفيه التصفح المتخفي ومن يستطيع رؤيتك؟ | أحمدرضا صمدي"><meta property="og:description" content="يحد التصفح المتخفي مما يحفظه Chrome على الجهاز، لكنه لا يخفي زيارتك عن الموقع أو عنوان IP. شرح عملي لما يتغير عند إغلاق جميع النوافذ المتخفية."><meta property="og:url" content="https://a-samadi.com/ar/writing/incognito-private-browsing.html"><meta property="og:locale" content="ar_AE"><meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="fa_IR"><meta property="og:image" content="https://a-samadi.com/assets/writing/incognito/incognito-og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="التصفح المتخفي: من لا يزال يرى؟ رسم لنافذة تصفح خاصة."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ما الذي يخفيه التصفح المتخفي ومن يستطيع رؤيتك؟ | أحمدرضا صمدي"><meta name="twitter:description" content="يحد التصفح المتخفي مما يحفظه Chrome على الجهاز، لكنه لا يخفي زيارتك عن الموقع أو عنوان IP. شرح عملي لما يتغير عند إغلاق جميع النوافذ المتخفية."><meta name="twitter:image" content="https://a-samadi.com/assets/writing/incognito/incognito-og.png"><meta name="twitter:image:alt" content="التصفح المتخفي: من لا يزال يرى؟ رسم لنافذة تصفح خاصة."><script type="application/ld+json">
-{
+<meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi"><meta property="og:title" content="ماذا يخفي التصفح المتخفي ومن يستطيع رؤية نشاطك على الويب؟"><meta property="og:description" content="ماذا يختفي من الجهاز بعد إغلاق نافذة التصفح المتخفي؟ تتبع مثالا لشراء هدية يميز بين سجل المتصفح وملفات الارتباط والتنزيلات وما يحتفظ به الموقع."><meta property="og:url" content="https://a-samadi.com/ar/writing/incognito-private-browsing.html"><meta property="og:locale" content="ar_AE"><meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="fa_IR"><meta property="og:image" content="https://a-samadi.com/assets/writing/incognito/incognito-og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="التصفح المتخفي: من لا يزال يرى؟ رسم لنافذة تصفح خاصة."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ماذا يخفي التصفح المتخفي ومن يستطيع رؤية نشاطك على الويب؟"><meta name="twitter:description" content="ماذا يختفي من الجهاز بعد إغلاق نافذة التصفح المتخفي؟ تتبع مثالا لشراء هدية يميز بين سجل المتصفح وملفات الارتباط والتنزيلات وما يحتفظ به الموقع."><meta name="twitter:image" content="https://a-samadi.com/assets/writing/incognito/incognito-og.png"><meta name="twitter:image:alt" content="التصفح المتخفي: من لا يزال يرى؟ رسم لنافذة تصفح خاصة."><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Article",
       "@id": "https://a-samadi.com/ar/writing/incognito-private-browsing.html#article",
       "headline": "هل يجعلك التصفح المتخفي غير مرئي فعلاً؟",
-      "description": "يحد التصفح المتخفي مما يحفظه Chrome على الجهاز، لكنه لا يخفي زيارتك عن الموقع أو عنوان IP. شرح عملي لما يتغير عند إغلاق جميع النوافذ المتخفية.",
+      "description": "ماذا يختفي من الجهاز بعد إغلاق نافذة التصفح المتخفي؟ تتبع مثالا لشراء هدية يميز بين سجل المتصفح وملفات الارتباط والتنزيلات وما يحتفظ به الموقع.",
       "url": "https://a-samadi.com/ar/writing/incognito-private-browsing.html",
       "mainEntityOfPage": {
         "@type": "WebPage",
@@ -47,7 +46,8 @@
       ],
       "translationOfWork": {
         "@id": "https://a-samadi.com/writing/incognito-private-browsing.html#article"
-      }
+      },
+      "name": "ماذا يخفي التصفح المتخفي ومن يستطيع رؤية نشاطك على الويب؟"
     },
     {
       "@type": "BreadcrumbList",
@@ -72,8 +72,7 @@
       ]
     }
   ]
-}
-</script><style>.privacy-summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:2rem 0}.privacy-summary div{background:#fff;box-shadow:0 0 0 1px var(--line);color:var(--ink);border-radius:20px;padding:1.5rem}.privacy-summary h2{font-size:1.25rem!important;margin:0 0 .6rem!important;color:var(--ink)!important}.privacy-summary p{color:var(--ink)!important;margin:0!important;font-size:1rem!important}.privacy-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.25rem 0}.privacy-gallery figure{margin:0}.privacy-gallery img{display:block;width:100%;border-radius:12px}.privacy-gallery figcaption{font-size:.8rem;color:var(--muted);padding:.5rem 0}.privacy-details summary{cursor:pointer;padding:1rem;border:1px solid var(--line);border-radius:12px;color:var(--ink)}.privacy-note{font-size:.9rem!important;color:var(--muted)!important}@media(max-width:550px){.privacy-summary,.privacy-gallery{grid-template-columns:1fr}}</style>
+}</script><style>.privacy-summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:2rem 0}.privacy-summary div{background:#fff;box-shadow:0 0 0 1px var(--line);color:var(--ink);border-radius:20px;padding:1.5rem}.privacy-summary h2{font-size:1.25rem!important;margin:0 0 .6rem!important;color:var(--ink)!important}.privacy-summary p{color:var(--ink)!important;margin:0!important;font-size:1rem!important}.privacy-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.25rem 0}.privacy-gallery figure{margin:0}.privacy-gallery img{display:block;width:100%;border-radius:12px}.privacy-gallery figcaption{font-size:.8rem;color:var(--muted);padding:.5rem 0}.privacy-details summary{cursor:pointer;padding:1rem;border:1px solid var(--line);border-radius:12px;color:var(--ink)}.privacy-note{font-size:.9rem!important;color:var(--muted)!important}@media(max-width:550px){.privacy-summary,.privacy-gallery{grid-template-columns:1fr}}</style>
 <style data-author-box>
 /* A quiet author reference at the end of each article, using the Lagoon tokens. */
 .editorial .article-author {

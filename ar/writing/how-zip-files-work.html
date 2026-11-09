@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="author" content="Ahmadreza Samadi">
-<title>كيف يعمل ضغط ZIP ولماذا لا يصغر الفيديو كثيرًا؟ | أحمدرضا صمدي</title>
-<meta name="description" content="يجمع ZIP الملفات ويمكنه ضغطها دون فقدان البايتات الأصلية. تعرّف على DEFLATE وسبب صغر التوفير في JPG وMP4 والفرق بين الضغط والتشفير.">
+<title>كيف يضغط ملف ZIP البيانات ويستعيدها من دون فقد أي بايت؟</title>
+<meta name="description" content="تعرّف إلى طريقة ضغط ZIP للبيانات المتكررة واستعادة الملف الأصلي كاملا. يوضح المثال لماذا قد لا ينخفض حجم مجلد الصور أو الفيديو كثيرا بعد الضغط.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="https://a-samadi.com/ar/writing/how-zip-files-work.html">
@@ -17,22 +17,21 @@
 <link rel="stylesheet" href="/css/site.css?v=20261009-lagoon4">
 <link rel="stylesheet" href="/css/rtl.css?v=20261009-lagoon4">
 <meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
-<meta property="og:title" content="كيف يعمل ضغط ZIP ولماذا لا يصغر الفيديو كثيرًا؟ | أحمدرضا صمدي">
-<meta property="og:description" content="يجمع ZIP الملفات ويمكنه ضغطها دون فقدان البايتات الأصلية. تعرّف على DEFLATE وسبب صغر التوفير في JPG وMP4 والفرق بين الضغط والتشفير."><meta property="og:url" content="https://a-samadi.com/ar/writing/how-zip-files-work.html">
+<meta property="og:title" content="كيف يضغط ملف ZIP البيانات ويستعيدها من دون فقد أي بايت؟">
+<meta property="og:description" content="تعرّف إلى طريقة ضغط ZIP للبيانات المتكررة واستعادة الملف الأصلي كاملا. يوضح المثال لماذا قد لا ينخفض حجم مجلد الصور أو الفيديو كثيرا بعد الضغط."><meta property="og:url" content="https://a-samadi.com/ar/writing/how-zip-files-work.html">
 <meta property="og:locale" content="ar_AE">
 <meta property="og:locale:alternate" content="en_US">
 <meta property="og:locale:alternate" content="fa_IR">
 <meta property="og:image" content="https://a-samadi.com/assets/share/how-zip-files-work.png">
-<meta property="og:image:alt" content="غلاف المقالة الإنجليزية: How ZIP files work: compression without losing data"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="كيف يعمل ضغط ZIP ولماذا لا يصغر الفيديو كثيرًا؟ | أحمدرضا صمدي"><meta name="twitter:description" content="يجمع ZIP الملفات ويمكنه ضغطها دون فقدان البايتات الأصلية. تعرّف على DEFLATE وسبب صغر التوفير في JPG وMP4 والفرق بين الضغط والتشفير."><meta name="twitter:image" content="https://a-samadi.com/assets/share/how-zip-files-work.png"><meta name="twitter:image:alt" content="غلاف المقالة الإنجليزية: How ZIP files work: compression without losing data">
-<script type="application/ld+json">
-{
+<meta property="og:image:alt" content="غلاف المقالة الإنجليزية: How ZIP files work: compression without losing data"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="كيف يضغط ملف ZIP البيانات ويستعيدها من دون فقد أي بايت؟"><meta name="twitter:description" content="تعرّف إلى طريقة ضغط ZIP للبيانات المتكررة واستعادة الملف الأصلي كاملا. يوضح المثال لماذا قد لا ينخفض حجم مجلد الصور أو الفيديو كثيرا بعد الضغط."><meta name="twitter:image" content="https://a-samadi.com/assets/share/how-zip-files-work.png"><meta name="twitter:image:alt" content="غلاف المقالة الإنجليزية: How ZIP files work: compression without losing data">
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Article",
       "@id": "https://a-samadi.com/ar/writing/how-zip-files-work.html#article",
       "headline": "كيف تعمل ملفات ZIP؟ ضغط البيانات دون فقدانها",
-      "description": "يجمع ZIP الملفات ويمكنه ضغطها دون فقدان البايتات الأصلية. تعرّف على DEFLATE وسبب صغر التوفير في JPG وMP4 والفرق بين الضغط والتشفير.",
+      "description": "تعرّف إلى طريقة ضغط ZIP للبيانات المتكررة واستعادة الملف الأصلي كاملا. يوضح المثال لماذا قد لا ينخفض حجم مجلد الصور أو الفيديو كثيرا بعد الضغط.",
       "url": "https://a-samadi.com/ar/writing/how-zip-files-work.html",
       "mainEntityOfPage": {
         "@type": "WebPage",
@@ -71,7 +70,8 @@
       ],
       "translationOfWork": {
         "@id": "https://a-samadi.com/writing/how-zip-files-work.html#article"
-      }
+      },
+      "name": "كيف يضغط ملف ZIP البيانات ويستعيدها من دون فقد أي بايت؟"
     },
     {
       "@type": "BreadcrumbList",
@@ -96,8 +96,7 @@
       ]
     }
   ]
-}
-</script>
+}</script>
 
 <style data-author-box>
 /* A quiet author reference at the end of each article, using the Lagoon tokens. */

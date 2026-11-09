@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="author" content="Ahmadreza Samadi">
-<title>Passkeys and Face ID explained | Ahmadreza Samadi</title>
-<meta name="description" content="A passkey proves access to a private key; Face ID approves its use locally. Learn what the website receives and what to check for account recovery.">
+<title>Passkey vs. Face ID: what a website actually receives</title>
+<meta name="description" content="Face ID unlocks a passkey locally. Follow a sign-in to see how the site checks the cryptographic proof, where your face data stays and how recovery fits in.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="https://a-samadi.com/writing/passkeys-face-id.html">
@@ -17,15 +17,14 @@
 <link rel="stylesheet" href="/css/site.css?v=20261009-lagoon4">
 
 <meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
-<meta property="og:title" content="Passkeys and Face ID explained | Ahmadreza Samadi">
-<meta property="og:description" content="A passkey proves access to a private key; Face ID approves its use locally. Learn what the website receives and what to check for account recovery."><meta property="og:url" content="https://a-samadi.com/writing/passkeys-face-id.html">
+<meta property="og:title" content="Passkey vs. Face ID: what a website actually receives">
+<meta property="og:description" content="Face ID unlocks a passkey locally. Follow a sign-in to see how the site checks the cryptographic proof, where your face data stays and how recovery fits in."><meta property="og:url" content="https://a-samadi.com/writing/passkeys-face-id.html">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="fa_IR">
 <meta property="og:locale:alternate" content="ar_AE">
 <meta property="og:image" content="https://a-samadi.com/assets/share/passkeys-face-id.png">
-<meta property="og:image:alt" content="English article cover: How passkeys work: why Face ID is not your password"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Passkeys and Face ID explained | Ahmadreza Samadi"><meta name="twitter:description" content="A passkey proves access to a private key; Face ID approves its use locally. Learn what the website receives and what to check for account recovery."><meta name="twitter:image" content="https://a-samadi.com/assets/share/passkeys-face-id.png"><meta name="twitter:image:alt" content="English article cover: How passkeys work: why Face ID is not your password">
-<script type="application/ld+json">
-{
+<meta property="og:image:alt" content="English article cover: How passkeys work: why Face ID is not your password"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Passkey vs. Face ID: what a website actually receives"><meta name="twitter:description" content="Face ID unlocks a passkey locally. Follow a sign-in to see how the site checks the cryptographic proof, where your face data stays and how recovery fits in."><meta name="twitter:image" content="https://a-samadi.com/assets/share/passkeys-face-id.png"><meta name="twitter:image:alt" content="English article cover: How passkeys work: why Face ID is not your password">
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -40,7 +39,7 @@
         }
       ],
       "headline": "How passkeys work: why Face ID is not your password",
-      "description": "A passkey proves access to a private key; Face ID approves its use locally. Learn what the website receives and what to check for account recovery.",
+      "description": "Face ID unlocks a passkey locally. Follow a sign-in to see how the site checks the cryptographic proof, where your face data stays and how recovery fits in.",
       "url": "https://a-samadi.com/writing/passkeys-face-id.html",
       "mainEntityOfPage": {
         "@type": "WebPage",
@@ -77,7 +76,8 @@
         "https://fidoalliance.org/passkeys/",
         "https://support.apple.com/en-us/102195",
         "https://www.w3.org/TR/webauthn-3/"
-      ]
+      ],
+      "name": "Passkey vs. Face ID: what a website actually receives"
     },
     {
       "@type": "BreadcrumbList",
@@ -102,8 +102,7 @@
       ]
     }
   ]
-}
-</script>
+}</script>
 
 <style data-author-box>
 /* A quiet author reference at the end of each article, using the Lagoon tokens. */

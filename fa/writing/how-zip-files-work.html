@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="author" content="Ahmadreza Samadi">
-<title>فایل ZIP چگونه کار می‌کند؟ فشرده‌سازی داده | احمدرضا صمدی</title>
-<meta name="description" content="احمدرضا صمدی ساختار ZIP، فشرده‌سازی DEFLATE، داده‌های تکراری و کدگذاری هافمن را توضیح می‌دهد؛ چرا عکس و ویدئو گاهی کوچک‌تر نمی‌شوند؟">
+<title>فایل ZIP چگونه داده را فشرده و دوباره بدون تغییر باز می‌کند؟</title>
+<meta name="description" content="ببینید فشرده‌سازی بدون اتلاف ZIP چطور از الگوهای تکراری استفاده می‌کند و همه بایت‌ها را برمی‌گرداند. چرا پوشه عکس یا ویدیو گاهی چندان کوچک‌تر نمی‌شود؟">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="https://a-samadi.com/fa/writing/how-zip-files-work.html">
@@ -17,22 +17,21 @@
 <link rel="stylesheet" href="/css/site.css?v=20261009-lagoon4">
 <link rel="stylesheet" href="/css/rtl.css?v=20261009-lagoon4">
 <meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
-<meta property="og:title" content="فایل ZIP چگونه کار می‌کند؟ فشرده‌سازی بدون از دست‌دادن داده | احمدرضا صمدی">
-<meta property="og:description" content="احمدرضا صمدی ساختار ZIP، فشرده‌سازی DEFLATE، داده‌های تکراری و کدگذاری هافمن را توضیح می‌دهد؛ چرا عکس و ویدئو گاهی کوچک‌تر نمی‌شوند؟"><meta property="og:url" content="https://a-samadi.com/fa/writing/how-zip-files-work.html">
+<meta property="og:title" content="فایل ZIP چگونه داده را فشرده و دوباره بدون تغییر باز می‌کند؟">
+<meta property="og:description" content="ببینید فشرده‌سازی بدون اتلاف ZIP چطور از الگوهای تکراری استفاده می‌کند و همه بایت‌ها را برمی‌گرداند. چرا پوشه عکس یا ویدیو گاهی چندان کوچک‌تر نمی‌شود؟"><meta property="og:url" content="https://a-samadi.com/fa/writing/how-zip-files-work.html">
 <meta property="og:locale" content="fa_IR">
 <meta property="og:locale:alternate" content="en_US">
 <meta property="og:locale:alternate" content="ar_AE">
 <meta property="og:image" content="https://a-samadi.com/assets/share/how-zip-files-work.png">
-<meta property="og:image:alt" content="طرح جلد مقالهٔ انگلیسی: How ZIP files work: compression without losing data"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="فایل ZIP چگونه کار می‌کند؟ فشرده‌سازی بدون از دست‌دادن داده | احمدرضا صمدی"><meta name="twitter:description" content="احمدرضا صمدی ساختار ZIP، فشرده‌سازی DEFLATE، داده‌های تکراری و کدگذاری هافمن را توضیح می‌دهد؛ چرا عکس و ویدئو گاهی کوچک‌تر نمی‌شوند؟"><meta name="twitter:image" content="https://a-samadi.com/assets/share/how-zip-files-work.png"><meta name="twitter:image:alt" content="طرح جلد مقالهٔ انگلیسی: How ZIP files work: compression without losing data">
-<script type="application/ld+json">
-{
+<meta property="og:image:alt" content="طرح جلد مقالهٔ انگلیسی: How ZIP files work: compression without losing data"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="فایل ZIP چگونه داده را فشرده و دوباره بدون تغییر باز می‌کند؟"><meta name="twitter:description" content="ببینید فشرده‌سازی بدون اتلاف ZIP چطور از الگوهای تکراری استفاده می‌کند و همه بایت‌ها را برمی‌گرداند. چرا پوشه عکس یا ویدیو گاهی چندان کوچک‌تر نمی‌شود؟"><meta name="twitter:image" content="https://a-samadi.com/assets/share/how-zip-files-work.png"><meta name="twitter:image:alt" content="طرح جلد مقالهٔ انگلیسی: How ZIP files work: compression without losing data">
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Article",
       "@id": "https://a-samadi.com/fa/writing/how-zip-files-work.html#article",
       "headline": "فایل ZIP چگونه کار می‌کند؟ فشرده‌سازی بدون از دست‌دادن داده",
-      "description": "احمدرضا صمدی ساختار ZIP، فشرده‌سازی DEFLATE، داده‌های تکراری و کدگذاری هافمن را توضیح می‌دهد؛ چرا عکس و ویدئو گاهی کوچک‌تر نمی‌شوند؟",
+      "description": "ببینید فشرده‌سازی بدون اتلاف ZIP چطور از الگوهای تکراری استفاده می‌کند و همه بایت‌ها را برمی‌گرداند. چرا پوشه عکس یا ویدیو گاهی چندان کوچک‌تر نمی‌شود؟",
       "url": "https://a-samadi.com/fa/writing/how-zip-files-work.html",
       "mainEntityOfPage": {
         "@type": "WebPage",
@@ -71,7 +70,8 @@
       ],
       "translationOfWork": {
         "@id": "https://a-samadi.com/writing/how-zip-files-work.html#article"
-      }
+      },
+      "name": "فایل ZIP چگونه داده را فشرده و دوباره بدون تغییر باز می‌کند؟"
     },
     {
       "@type": "BreadcrumbList",
@@ -96,8 +96,7 @@
       ]
     }
   ]
-}
-</script>
+}</script>
 
 <style data-author-box>
 /* A quiet author reference at the end of each article, using the Lagoon tokens. */

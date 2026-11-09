@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="author" content="Ahmadreza Samadi">
-<title>امنیت عامل‌های هوش مصنوعی: تعیین مرز پیش از اقدام | احمدرضا صمدی</title>
-<meta name="description" content="وقتی دستیار هوش مصنوعی می‌تواند اقدام کند، چه مرزهایی لازم است؟ توضیح احمدرضا صمدی درباره مجوزها، NVIDIA OpenShell و طرح مرجع Sentry.">
+<title>امنیت عامل هوش مصنوعی؛ تعیین دسترسی ابزارها و تأیید انسانی</title>
+<meta name="description" content="برای عامل هوش مصنوعی مشخص کنید کدام حساب، داده و ابزار را در اختیار دارد. ببینید مجوز کجا اعمال می‌شود، چه اقدامی تأیید انسانی می‌خواهد و دسترسی چگونه لغو می‌شود.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="https://a-samadi.com/fa/writing/ai-agent-safety-boundaries.html">
@@ -16,20 +16,19 @@
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/vazirmatn-arabic-wght.woff2" crossorigin>
 <link rel="stylesheet" href="../../css/site.css?v=20261009-lagoon4"><link rel="stylesheet" href="../../css/rtl.css?v=20261009-lagoon4">
 <meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
-<meta property="og:title" content="امنیت عامل‌های هوش مصنوعی: تعیین مرز پیش از اقدام | احمدرضا صمدی">
-<meta property="og:description" content="نگاهی کاربردی به مجوزهای عامل‌های هوش مصنوعی، OpenShell و طرح مرجع Sentry.">
+<meta property="og:title" content="امنیت عامل هوش مصنوعی؛ تعیین دسترسی ابزارها و تأیید انسانی">
+<meta property="og:description" content="برای عامل هوش مصنوعی مشخص کنید کدام حساب، داده و ابزار را در اختیار دارد. ببینید مجوز کجا اعمال می‌شود، چه اقدامی تأیید انسانی می‌خواهد و دسترسی چگونه لغو می‌شود.">
 <meta property="og:url" content="https://a-samadi.com/fa/writing/ai-agent-safety-boundaries.html"><meta property="og:locale" content="fa_IR"><meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="ar_AE">
 <meta property="og:image" content="https://a-samadi.com/assets/share/ai-agent-safety-boundaries.png">
-<meta property="og:image:alt" content="طرح جلد مقالهٔ انگلیسی: AI agent safety: boundaries before actions"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="امنیت عامل‌های هوش مصنوعی: تعیین مرز پیش از اقدام | احمدرضا صمدی"><meta name="twitter:description" content="نگاهی کاربردی به مجوزهای عامل‌های هوش مصنوعی، OpenShell و طرح مرجع Sentry."><meta name="twitter:image" content="https://a-samadi.com/assets/share/ai-agent-safety-boundaries.png"><meta name="twitter:image:alt" content="طرح جلد مقالهٔ انگلیسی: AI agent safety: boundaries before actions">
-<script type="application/ld+json">
-{
+<meta property="og:image:alt" content="طرح جلد مقالهٔ انگلیسی: AI agent safety: boundaries before actions"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="امنیت عامل هوش مصنوعی؛ تعیین دسترسی ابزارها و تأیید انسانی"><meta name="twitter:description" content="برای عامل هوش مصنوعی مشخص کنید کدام حساب، داده و ابزار را در اختیار دارد. ببینید مجوز کجا اعمال می‌شود، چه اقدامی تأیید انسانی می‌خواهد و دسترسی چگونه لغو می‌شود."><meta name="twitter:image" content="https://a-samadi.com/assets/share/ai-agent-safety-boundaries.png"><meta name="twitter:image:alt" content="طرح جلد مقالهٔ انگلیسی: AI agent safety: boundaries before actions">
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Article",
       "@id": "https://a-samadi.com/fa/writing/ai-agent-safety-boundaries.html#article",
       "headline": "امنیت عامل‌های هوش مصنوعی: تعیین مرز پیش از اقدام",
-      "description": "وقتی دستیار هوش مصنوعی می‌تواند اقدام کند، چه مرزهایی لازم است؟ راهنمایی درباره مجوزها، NVIDIA OpenShell و طرح مرجع Sentry.",
+      "description": "برای عامل هوش مصنوعی مشخص کنید کدام حساب، داده و ابزار را در اختیار دارد. ببینید مجوز کجا اعمال می‌شود، چه اقدامی تأیید انسانی می‌خواهد و دسترسی چگونه لغو می‌شود.",
       "url": "https://a-samadi.com/fa/writing/ai-agent-safety-boundaries.html",
       "mainEntityOfPage": {
         "@type": "WebPage",
@@ -73,7 +72,8 @@
       },
       "translationOfWork": {
         "@id": "https://a-samadi.com/writing/ai-agent-safety-boundaries.html#article"
-      }
+      },
+      "name": "امنیت عامل هوش مصنوعی؛ تعیین دسترسی ابزارها و تأیید انسانی"
     },
     {
       "@type": "BreadcrumbList",
@@ -98,8 +98,7 @@
       ]
     }
   ]
-}
-</script>
+}</script>
 
 <style data-author-box>
 /* A quiet author reference at the end of each article, using the Lagoon tokens. */

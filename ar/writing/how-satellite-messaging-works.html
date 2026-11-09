@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="author" content="Ahmadreza Samadi">
-<title>كيف تعمل الرسائل عبر الأقمار الصناعية؟ | أحمدرضا صمدي</title>
-<meta name="description" content="يشرح أحمدرضا صمدي مسار الرسالة من الهاتف إلى القمر الصناعي ثم الشبكات الأرضية، وما يجب التحقق منه قبل السفر خارج التغطية.">
+<title>كيف يرسل الهاتف رسالة عبر القمر الصناعي عند غياب الشبكة؟</title>
+<meta name="description" content="تتبع رسالة يرسلها هاتف مدعوم مباشرة إلى قمر صناعي ثم إلى محطة أرضية. تعرف إلى أثر انكشاف السماء في الاتصال وسبب تأخر وصول الرسالة أحيانا مقارنة بالرسائل العادية.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="https://a-samadi.com/ar/writing/how-satellite-messaging-works.html">
@@ -17,13 +17,13 @@
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/vazirmatn-arabic-wght.woff2" crossorigin>
 <link rel="stylesheet" href="/css/site.css?v=20261009-lagoon4"><link rel="stylesheet" href="/css/rtl.css?v=20261009-lagoon4">
 <meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
-<meta property="og:title" content="كيف تعمل الرسائل عبر الأقمار الصناعية؟ | أحمدرضا صمدي"><meta property="og:description" content="يشرح أحمدرضا صمدي مسار الرسالة من الهاتف إلى القمر الصناعي ثم الشبكات الأرضية، وما يجب التحقق منه قبل السفر خارج التغطية.">
+<meta property="og:title" content="كيف يرسل الهاتف رسالة عبر القمر الصناعي عند غياب الشبكة؟"><meta property="og:description" content="تتبع رسالة يرسلها هاتف مدعوم مباشرة إلى قمر صناعي ثم إلى محطة أرضية. تعرف إلى أثر انكشاف السماء في الاتصال وسبب تأخر وصول الرسالة أحيانا مقارنة بالرسائل العادية.">
 <meta property="og:url" content="https://a-samadi.com/ar/writing/how-satellite-messaging-works.html"><meta property="og:locale" content="ar_AE"><meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="fa_IR">
 <meta property="og:image" content="https://a-samadi.com/assets/writing/satellite-messaging/satellite-messaging-og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="هاتف يتصل بقمر صناعي؛ العنوان: كيف تعمل الرسائل عبر الأقمار الصناعية">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="كيف تعمل الرسائل عبر الأقمار الصناعية؟ | أحمدرضا صمدي">
-<meta name="twitter:description" content="يشرح أحمدرضا صمدي مسار الرسالة من الهاتف إلى القمر الصناعي ثم الشبكات الأرضية، وما يجب التحقق منه قبل السفر خارج التغطية.">
+<meta name="twitter:title" content="كيف يرسل الهاتف رسالة عبر القمر الصناعي عند غياب الشبكة؟">
+<meta name="twitter:description" content="تتبع رسالة يرسلها هاتف مدعوم مباشرة إلى قمر صناعي ثم إلى محطة أرضية. تعرف إلى أثر انكشاف السماء في الاتصال وسبب تأخر وصول الرسالة أحيانا مقارنة بالرسائل العادية.">
 <meta name="twitter:image" content="https://a-samadi.com/assets/writing/satellite-messaging/satellite-messaging-og.png">
 <meta name="twitter:image:alt" content="هاتف يتصل بقمر صناعي؛ العنوان: كيف تعمل الرسائل عبر الأقمار الصناعية">
 <script type="application/ld+json">{
@@ -33,9 +33,16 @@
       "@type": "Article",
       "@id": "https://a-samadi.com/ar/writing/how-satellite-messaging-works.html#article",
       "headline": "كيف تعمل الرسائل عبر الأقمار الصناعية دون أبراج قريبة؟",
-      "description": "يشرح أحمدرضا صمدي مسار الرسالة من الهاتف إلى القمر الصناعي ثم الشبكات الأرضية، وما يجب التحقق منه قبل السفر خارج التغطية.",
+      "description": "تتبع رسالة يرسلها هاتف مدعوم مباشرة إلى قمر صناعي ثم إلى محطة أرضية. تعرف إلى أثر انكشاف السماء في الاتصال وسبب تأخر وصول الرسالة أحيانا مقارنة بالرسائل العادية.",
       "url": "https://a-samadi.com/ar/writing/how-satellite-messaging-works.html",
-      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://a-samadi.com/ar/writing/how-satellite-messaging-works.html", "primaryImageOfPage": {"@type": "ImageObject", "url": "https://a-samadi.com/assets/writing/satellite-messaging/satellite-messaging-og.png"}},
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://a-samadi.com/ar/writing/how-satellite-messaging-works.html",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://a-samadi.com/assets/writing/satellite-messaging/satellite-messaging-og.png"
+        }
+      },
       "datePublished": "2026-10-04",
       "dateModified": "2026-10-10T13:35:56+03:30",
       "inLanguage": "ar",
@@ -60,7 +67,8 @@
       ],
       "translationOfWork": {
         "@id": "https://a-samadi.com/writing/how-satellite-messaging-works.html#article"
-      }
+      },
+      "name": "كيف يرسل الهاتف رسالة عبر القمر الصناعي عند غياب الشبكة؟"
     },
     {
       "@type": "BreadcrumbList",

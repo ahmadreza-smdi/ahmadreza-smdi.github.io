@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="Ahmadreza Samadi">
-<title>Why full storage slows a computer | Ahmadreza Samadi</title><meta name="description" content="Storage is working room too. A ten-slide explainer on temporary files, RAM overflow and SSD housekeeping, with practical cleanup advice."><meta name="robots" content="index, follow, max-image-preview:large"><meta name="referrer" content="strict-origin-when-cross-origin"><link rel="canonical" href="https://a-samadi.com/writing/why-full-storage-slows-computer.html"><link rel="alternate" type="application/rss+xml" title="Ahmadreza Samadi: English writing" href="https://a-samadi.com/writing/feed.xml">
+<title>Does full storage slow down a computer with free RAM?</title><meta name="description" content="See why a nearly full drive leaves less room for temporary files, memory overflow and SSD housekeeping. These examples explain when freeing space can help."><meta name="robots" content="index, follow, max-image-preview:large"><meta name="referrer" content="strict-origin-when-cross-origin"><link rel="canonical" href="https://a-samadi.com/writing/why-full-storage-slows-computer.html"><link rel="alternate" type="application/rss+xml" title="Ahmadreza Samadi: English writing" href="https://a-samadi.com/writing/feed.xml">
 <link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/why-full-storage-slows-computer.html">
 <link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/why-full-storage-slows-computer.html">
 <link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/why-full-storage-slows-computer.html">
@@ -8,8 +8,8 @@
 <link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg"><link rel="stylesheet" href="/css/site.css?v=20261009-lagoon4">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Ahmadreza Samadi">
-<meta property="og:title" content="Why full storage slows a computer | Ahmadreza Samadi">
-<meta property="og:description" content="Storage is working room too. A ten-slide explainer on temporary files, RAM overflow and SSD housekeeping, with practical cleanup advice.">
+<meta property="og:title" content="Does full storage slow down a computer with free RAM?">
+<meta property="og:description" content="See why a nearly full drive leaves less room for temporary files, memory overflow and SSD housekeeping. These examples explain when freeing space can help.">
 <meta property="og:url" content="https://a-samadi.com/writing/why-full-storage-slows-computer.html">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://a-samadi.com/assets/share/almost-full-storage-og-1200x630.png">
@@ -19,19 +19,18 @@
 <meta property="og:locale:alternate" content="fa_IR">
 <meta property="og:locale:alternate" content="ar_AE">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Why full storage slows a computer | Ahmadreza Samadi">
-<meta name="twitter:description" content="Storage is working room too. A ten-slide explainer on temporary files, RAM overflow and SSD housekeeping, with practical cleanup advice.">
+<meta name="twitter:title" content="Does full storage slow down a computer with free RAM?">
+<meta name="twitter:description" content="See why a nearly full drive leaves less room for temporary files, memory overflow and SSD housekeeping. These examples explain when freeing space can help.">
 <meta name="twitter:image" content="https://a-samadi.com/assets/share/almost-full-storage-og-1200x630.png">
 <meta name="twitter:image:alt" content="Pastel coral opening card asks, &quot;Storage almost full. Why so slow?&quot; An illustrated laptop shows an almost-full storage bar and a saving message. The image introduces the idea that a computer needs room to work as well as to store files.">
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Article",
       "@id": "https://a-samadi.com/writing/why-full-storage-slows-computer.html#article",
       "headline": "Why does your computer slow down when storage is almost full?",
-      "description": "Storage is working room too. A ten-slide explainer on temporary files, RAM overflow and SSD housekeeping, with practical cleanup advice.",
+      "description": "See why a nearly full drive leaves less room for temporary files, memory overflow and SSD housekeeping. These examples explain when freeing space can help.",
       "url": "https://a-samadi.com/writing/why-full-storage-slows-computer.html",
       "mainEntityOfPage": {
         "@type": "WebPage",
@@ -81,7 +80,8 @@
         {
           "@id": "https://a-samadi.com/ar/writing/why-full-storage-slows-computer.html#article"
         }
-      ]
+      ],
+      "name": "Does full storage slow down a computer with free RAM?"
     },
     {
       "@type": "BreadcrumbList",
@@ -106,8 +106,7 @@
       ]
     }
   ]
-}
-</script>
+}</script>
 <style>.storage-opening{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1fr);gap:1.5rem;align-items:center;margin:2rem 0}.storage-cover{margin:0}.storage-cover img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 0 0 1px var(--line)}.storage-cover figcaption,.storage-note{font-size:.85rem!important;color:var(--muted)!important;line-height:1.6}.storage-cover figcaption{padding:.65rem 0}.storage-summary{display:grid;gap:.75rem}.storage-summary div{border:1px solid var(--line);background:var(--surface,#fff);border-radius:18px;padding:1.15rem}.storage-summary h2{font-size:1.1rem!important;margin:0 0 .4rem!important}.storage-summary p{margin:0!important;font-size:1rem!important}.storage-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.25rem 0}.storage-gallery figure{margin:0}.storage-gallery img{display:block;width:100%;height:auto;border-radius:12px}.storage-gallery figcaption{font-size:.85rem;color:var(--muted);padding:.5rem 0}.storage-slides summary{cursor:pointer;padding:1rem;border:1px solid var(--line);border-radius:12px;color:var(--ink);font-weight:600}.storage-slides summary:focus-visible{outline:3px solid var(--accent,#0b6a7a);outline-offset:4px}.storage-settings{border:1px solid var(--line);border-radius:18px;padding:1rem 1.25rem;background:var(--surface,#fff)}.storage-settings p{margin:.5rem 0!important;font-size:1rem!important}@media(max-width:650px){.storage-opening,.storage-gallery{grid-template-columns:1fr}.storage-cover{max-width:440px;margin-inline:auto}}</style>
 <style data-author-box>
 /* A quiet author reference at the end of each article, using the Lagoon tokens. */

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="author" content="Ahmadreza Samadi">
-<title>أمان وكلاء الذكاء الاصطناعي: حدود قبل التنفيذ | أحمدرضا صمدي</title>
-<meta name="description" content="ما الحدود المطلوبة عندما يستطيع مساعد الذكاء الاصطناعي تنفيذ إجراءات؟ يشرح أحمدرضا صمدي الصلاحيات وNVIDIA OpenShell والتصميم المرجعي Sentry.">
+<title>أمن وكلاء الذكاء الاصطناعي وصلاحيات الأدوات وموافقة الإنسان</title>
+<meta name="description" content="حدد الحساب والبيانات والأدوات التي يستطيع وكيل الذكاء الاصطناعي استخدامها. تعرف إلى موضع فرض الصلاحيات ومتى يتطلب الإجراء موافقة شخص وكيف يسحب الوصول.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="https://a-samadi.com/ar/writing/ai-agent-safety-boundaries.html">
@@ -16,20 +16,19 @@
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/vazirmatn-arabic-wght.woff2" crossorigin>
 <link rel="stylesheet" href="../../css/site.css?v=20261009-lagoon4"><link rel="stylesheet" href="../../css/rtl.css?v=20261009-lagoon4">
 <meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
-<meta property="og:title" content="أمان وكلاء الذكاء الاصطناعي: حدود قبل التنفيذ | أحمدرضا صمدي">
-<meta property="og:description" content="نظرة عملية إلى صلاحيات وكلاء الذكاء الاصطناعي وOpenShell والتصميم المرجعي Sentry.">
+<meta property="og:title" content="أمن وكلاء الذكاء الاصطناعي وصلاحيات الأدوات وموافقة الإنسان">
+<meta property="og:description" content="حدد الحساب والبيانات والأدوات التي يستطيع وكيل الذكاء الاصطناعي استخدامها. تعرف إلى موضع فرض الصلاحيات ومتى يتطلب الإجراء موافقة شخص وكيف يسحب الوصول.">
 <meta property="og:url" content="https://a-samadi.com/ar/writing/ai-agent-safety-boundaries.html"><meta property="og:locale" content="ar_AE"><meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="fa_IR">
 <meta property="og:image" content="https://a-samadi.com/assets/share/ai-agent-safety-boundaries.png">
-<meta property="og:image:alt" content="غلاف المقالة الإنجليزية: AI agent safety: boundaries before actions"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="أمان وكلاء الذكاء الاصطناعي: حدود قبل التنفيذ | أحمدرضا صمدي"><meta name="twitter:description" content="نظرة عملية إلى صلاحيات وكلاء الذكاء الاصطناعي وOpenShell والتصميم المرجعي Sentry."><meta name="twitter:image" content="https://a-samadi.com/assets/share/ai-agent-safety-boundaries.png"><meta name="twitter:image:alt" content="غلاف المقالة الإنجليزية: AI agent safety: boundaries before actions">
-<script type="application/ld+json">
-{
+<meta property="og:image:alt" content="غلاف المقالة الإنجليزية: AI agent safety: boundaries before actions"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="أمن وكلاء الذكاء الاصطناعي وصلاحيات الأدوات وموافقة الإنسان"><meta name="twitter:description" content="حدد الحساب والبيانات والأدوات التي يستطيع وكيل الذكاء الاصطناعي استخدامها. تعرف إلى موضع فرض الصلاحيات ومتى يتطلب الإجراء موافقة شخص وكيف يسحب الوصول."><meta name="twitter:image" content="https://a-samadi.com/assets/share/ai-agent-safety-boundaries.png"><meta name="twitter:image:alt" content="غلاف المقالة الإنجليزية: AI agent safety: boundaries before actions">
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Article",
       "@id": "https://a-samadi.com/ar/writing/ai-agent-safety-boundaries.html#article",
       "headline": "أمان وكلاء الذكاء الاصطناعي: حدود قبل التنفيذ",
-      "description": "ما الحدود المطلوبة عندما يستطيع مساعد الذكاء الاصطناعي تنفيذ إجراءات؟ شرح للصلاحيات وNVIDIA OpenShell والتصميم المرجعي Sentry.",
+      "description": "حدد الحساب والبيانات والأدوات التي يستطيع وكيل الذكاء الاصطناعي استخدامها. تعرف إلى موضع فرض الصلاحيات ومتى يتطلب الإجراء موافقة شخص وكيف يسحب الوصول.",
       "url": "https://a-samadi.com/ar/writing/ai-agent-safety-boundaries.html",
       "mainEntityOfPage": {
         "@type": "WebPage",
@@ -73,7 +72,8 @@
       },
       "translationOfWork": {
         "@id": "https://a-samadi.com/writing/ai-agent-safety-boundaries.html#article"
-      }
+      },
+      "name": "أمن وكلاء الذكاء الاصطناعي وصلاحيات الأدوات وموافقة الإنسان"
     },
     {
       "@type": "BreadcrumbList",
@@ -98,8 +98,7 @@
       ]
     }
   ]
-}
-</script>
+}</script>
 
 <style data-author-box>
 /* A quiet author reference at the end of each article, using the Lagoon tokens. */
