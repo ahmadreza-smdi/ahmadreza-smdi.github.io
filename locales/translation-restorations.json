@@ -18,6 +18,11 @@
       "source": "writing/building-leak-alert-response-checklist.html",
       "before": "<section><h2>إطار مقترح</h2><p>في مثالنا الافتراضي يصل التنبيه إلى دور مسؤول، ثم يفحص الموقع والحالة وتسجل النتيجة. أسئلتنا المقترحة: من يستقبل ومن يستجيب وكيف يوثق الفحص؟ لم نقس تسربا حقيقيا أو وفرا.</p></section>",
       "after": "<section><h2>إطار مقترح</h2><p>في مثالنا الافتراضي يصل التنبيه إلى مسؤول مناوب محدد، لا إلى صندوق بريد لا يتابعه أحد. ثم يتحقق المسؤول من الموقع والحالة ويتبع الإجراء المعتمد في المبنى. سجلنا المقترح يوثق استقبال الإشارة، وتعيين المسؤول، وفحص الحالة، وتسجيل النتيجة. أسئلتنا قبل شراء مستشعر: من يستقبل ومن يستجيب وكيف نعرف أن المشكلة قد فُحصت؟ لم نقس تسربًا حقيقيًا أو وفرًا.</p></section>"
+    },
+    {
+      "source": "writing/building-leak-alert-response-checklist.html",
+      "before": "<p class=\"lead\">يتضمن البرنامج الرسمي لمعرض المباني الذكية هذا الأسبوع كشف التسرب اللاسلكي وربطه بإدارة المبنى. هذا ليس تقرير حضور للمعرض.</p>",
+      "after": "<p class=\"lead\">تضمّن البرنامج الرسمي لمعرض المباني الذكية في أكتوبر ٢٠٢٦ كشف التسرب اللاسلكي وربطه بإدارة المبنى. هذا ليس تقرير حضور للمعرض.</p>"
     }
   ],
   "ar/writing/where-wearable-ai-computation-runs.html": [
@@ -67,6 +72,37 @@
       "source": "work/oxfam-novib.html",
       "before": "<!-- case-reading:start -->",
       "after": "<h2>أعمال ذات صلة</h2><p>للاطلاع على الأدوار المهنية الحالية، راجع <a href=\"/ar/work/appraiva.html\">الذكاء الاصطناعي لتحليل المعلومات العقارية في Appraiva</a> و<a href=\"/ar/work/royal-abraj.html\">الاستراتيجية الرقمية والتكنولوجيا في Royal Abraj Group</a>.</p><!-- case-reading:start -->"
+    }
+  ],
+  "fa/writing/building-leak-alert-response-checklist.html": [
+    {
+      "source": "writing/building-leak-alert-response-checklist.html",
+      "before": "<p class=\"lead\">برنامه رسمی نمایشگاه ساختمان هوشمند این هفته به حسگرهای بی‌سیم نشتی و ارتباط با مدیریت ساختمان اشاره دارد. این متن گزارش حضور در نمایشگاه نیست.</p>",
+      "after": "<p class=\"lead\">برنامهٔ رسمی نمایشگاه ساختمان هوشمند در اکتبر ۲۰۲۶ به حسگرهای بی‌سیم نشتی و ارتباط با مدیریت ساختمان اشاره داشت. این متن گزارش حضور در نمایشگاه نیست.</p>"
+    }
+  ],
+  "fa/writing/why-occupancy-sensor-lights-switch-off.html": [
+    {
+      "source": "writing/why-occupancy-sensor-lights-switch-off.html",
+      "before": "<p>برگزارکننده نمایشگاه ساختمان هوشمند لندن،۱۴تا۱۵اکتبر را اعلام کرده و حسگر و کنترل روشنایی را در موضوعات آورده است. حضور یا نتیجه‌ای از رویداد ادعا نمی‌کنیم.</p>",
+      "after": "<p>حسگرها و کنترل روشنایی در برنامهٔ نمایشگاه ساختمان هوشمند لندن در ۱۴ و ۱۵ اکتبر ۲۰۲۶ قرار داشتند. حضور یا نتیجه‌ای از رویداد ادعا نمی‌کنیم.</p>"
+    },
+    {
+      "source": "writing/why-occupancy-sensor-lights-switch-off.html",
+      "before": "<img src=\"/assets/writing/why-occupancy-sensor-lights-switch-off/slide-05.png\" alt=\"نمودار آموزشی خیالی: برگزارکننده نمایشگاه ساختمان هوشمند لندن،۱۴تا۱۵اکتبر را اعلام کرده و حسگر و کنترل روشنایی را در موضوعات آورده است. حضور یا نتیجه‌ای از رویداد ادعا نمی‌کنیم.\" width=\"1080\" height=\"1350\" loading=\"lazy\" decoding=\"async\">",
+      "after": "<img src=\"/assets/writing/why-occupancy-sensor-lights-switch-off/slide-05.png\" alt=\"نمودار آموزشی خیالی: حسگرها و کنترل روشنایی در برنامهٔ نمایشگاه ساختمان هوشمند لندن در ۱۴ و ۱۵ اکتبر ۲۰۲۶ قرار داشتند. حضور یا نتیجه‌ای از رویداد ادعا نمی‌کنیم.\" width=\"1080\" height=\"1350\" loading=\"lazy\" decoding=\"async\">"
+    }
+  ],
+  "ar/writing/why-occupancy-sensor-lights-switch-off.html": [
+    {
+      "source": "writing/why-occupancy-sensor-lights-switch-off.html",
+      "before": "<p>يحدد منظم Smart Buildings Show في لندن14إلى15أكتوبر ويشمل الحساسات والتحكم بالإضاءة ضمن الموضوعات. لا ندعي حضور الحدث أو نتائجه.</p>",
+      "after": "<p>شمل برنامج Smart Buildings Show في لندن يومي ١٤ و١٥ أكتوبر ٢٠٢٦ الحساسات والتحكم بالإضاءة. لا ندعي حضور الحدث أو نتائجه.</p>"
+    },
+    {
+      "source": "writing/why-occupancy-sensor-lights-switch-off.html",
+      "before": "<img src=\"/assets/writing/why-occupancy-sensor-lights-switch-off/slide-05.png\" alt=\"رسم تعليمي خيالي: يحدد منظم Smart Buildings Show في لندن14إلى15أكتوبر ويشمل الحساسات والتحكم بالإضاءة ضمن الموضوعات. لا ندعي حضور الحدث أو نتائجه.\" width=\"1080\" height=\"1350\" loading=\"lazy\" decoding=\"async\">",
+      "after": "<img src=\"/assets/writing/why-occupancy-sensor-lights-switch-off/slide-05.png\" alt=\"رسم تعليمي خيالي: شمل برنامج Smart Buildings Show في لندن يومي ١٤ و١٥ أكتوبر ٢٠٢٦ الحساسات والتحكم بالإضاءة. لا ندعي حضور الحدث أو نتائجه.\" width=\"1080\" height=\"1350\" loading=\"lazy\" decoding=\"async\">"
     }
   ]
 }

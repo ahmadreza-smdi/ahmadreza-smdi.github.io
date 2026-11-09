@@ -142,9 +142,9 @@
     "reason": "Restore source-supported translation detail and qualifications."
   },
   "ar/writing/building-leak-alert-response-checklist.html": {
-    "dateModified": "2026-10-29T14:03:28+03:30",
-    "sourceCommit": "6d99405602c89bca4e01b74ae5b59e41c50de164",
-    "reason": "Restore source-supported translation detail and qualifications."
+    "dateModified": "2026-11-09T23:01:31+03:30",
+    "source": "https://smartbuildingsshow.com/",
+    "reason": "Replace a relative event date with the October 2026 programme date."
   },
   "ar/writing/where-wearable-ai-computation-runs.html": {
     "dateModified": "2026-10-29T14:03:28+03:30",
@@ -185,5 +185,30 @@
     "dateModified": "2026-11-02T19:56:00+03:30",
     "sourceCommit": "d7478ce12e6f57c865730ad97ccca8d44a53589c",
     "reason": "Clarified scope using observed UAE query wording and linked related Dubai calculations; formulas, sources and fee assumptions unchanged."
+  },
+  "writing/building-leak-alert-response-checklist.html": {
+    "dateModified": "2026-11-09T23:01:31+03:30",
+    "source": "https://smartbuildingsshow.com/",
+    "reason": "Replace a relative event date with the October 2026 programme date."
+  },
+  "fa/writing/building-leak-alert-response-checklist.html": {
+    "dateModified": "2026-11-09T23:01:31+03:30",
+    "source": "https://smartbuildingsshow.com/",
+    "reason": "Replace a relative event date with the October 2026 programme date."
+  },
+  "writing/why-occupancy-sensor-lights-switch-off.html": {
+    "dateModified": "2026-11-09T23:01:31+03:30",
+    "source": "https://smartbuildingsshow.com/",
+    "reason": "Replace a relative event date with the October 2026 programme date."
+  },
+  "fa/writing/why-occupancy-sensor-lights-switch-off.html": {
+    "dateModified": "2026-11-09T23:01:31+03:30",
+    "source": "https://smartbuildingsshow.com/",
+    "reason": "Replace a relative event date with the October 2026 programme date."
+  },
+  "ar/writing/why-occupancy-sensor-lights-switch-off.html": {
+    "dateModified": "2026-11-09T23:01:31+03:30",
+    "source": "https://smartbuildingsshow.com/",
+    "reason": "Replace a relative event date with the October 2026 programme date."
   }
 }
