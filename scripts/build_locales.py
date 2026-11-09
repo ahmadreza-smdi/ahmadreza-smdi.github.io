@@ -8,6 +8,12 @@ from follow_blocks import enrich_follow
 from build_profile_facts import person_subjects
 ROOT=Path(__file__).resolve().parent.parent
 SOURCE=(ROOT/'index.html').read_text()
+# The localized name note retains the two original name scripts.
+SOURCE = SOURCE.replace(
+    '<p class="name-scripts">Also known as Ahmad Samadi.</p>',
+    '<p class="name-scripts">My name in Persian and Arabic: '
+    '<bdi lang="fa">احمدرضا صمدی</bdi> · <bdi lang="ar">أحمدرضا صمدي</bdi>.</p>',
+)
 SOURCE=re.sub(r'<!-- follow-subscribe:start -->.*?<!-- follow-subscribe:end -->\n?', '', SOURCE, flags=re.S)
 class Translator(HTMLParser):
     def __init__(self, translations, lang):
@@ -80,6 +86,8 @@ for lang in ('fa','ar'):
         d=json.loads(m[1]);profile=next(x for x in d['@graph'] if x['@type']=='ProfilePage')
         person=next(x for x in d['@graph'] if x.get('@type')=='Person' and x.get('@id')=='https://a-samadi.com/#person')
         person['description']=tr['Person entity sentence']
+        # This English editorial field has no reviewed localized equivalent.
+        person.pop('disambiguatingDescription', None)
         person['knowsAbout']=person_subjects(lang)
         profile.update({'@id':f'https://a-samadi.com/{lang}/#profile','url':f'https://a-samadi.com/{lang}/','name':title,'description':description,'inLanguage':lang,'dateModified':modified})
         # The English homepage is the original; this page is its translation.

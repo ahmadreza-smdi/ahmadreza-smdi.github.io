@@ -99,7 +99,17 @@ for lang in ['fa','ar']:
  assert all(attrs['href']==f'{BASE}{lang}/work/oxfam-novib.html' for attrs in oxfam_links), f'{lang}: every Oxfam link must use the localized case study'
  normalized=[]
  skip_primary=False
+ in_name_note=False
+ name_markup=[]
  for tag,attrs in p.items:
+  if tag=='p' and attrs.get('class')=='name-scripts':
+   in_name_note=True
+  elif in_name_note:
+   if tag=='/p':
+    in_name_note=False
+   else:
+    name_markup.append((tag,attrs))
+    continue
   if tag=='a' and attrs.get('data-locale-primary')=='en':
    skip_primary=True
    continue
@@ -113,6 +123,7 @@ for lang in ['fa','ar']:
     attrs['href']=attrs['href'].replace(f'https://a-samadi.com/{lang}/{local_page}',f'https://a-samadi.com/{local_page}',1)
   normalized.append((tag,attrs))
  assert not skip_primary, f'{lang}: unclosed primary English link'
+ assert name_markup==[('bdi',{'lang':'fa'}),('/bdi',{}),('bdi',{'lang':'ar'}),('/bdi',{})], f'{lang}: missing localized name markup'
  assert normalized==base.items, f'{lang}: element or asset mismatch'
  assert p.ids==base.ids and len(p.ids)==len(set(p.ids)), f'{lang}: missing/duplicate section IDs'
  s=(ROOT/lang/'index.html').read_text()
