@@ -64,8 +64,8 @@ def person_schema(m, lang):
         if THREADS not in n['sameAs']:
             n['sameAs'].append(THREADS)
         n['knowsAbout'] = person_subjects(lang)
+        n['description'] = IDENTITY['entity'][lang]
         if lang == 'en':
-            n['description'] = IDENTITY['entity']['en']
             n['disambiguatingDescription'] = 'Dubai-based technology entrepreneur who builds AI as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO.'
         # Schema.org's Role pattern attaches dates to the association, not to an Occupation.
         n['worksFor']=[{'@type':'OrganizationRole','roleName':title,'startDate':start,'worksFor':{'@id':'https://a-samadi.com/#'+org}} for title,start,org in [('Co-Founder & Technical Lead','2023-10','appraiva'),('Co-Founder & CEO','2022','royal-abraj')]]
