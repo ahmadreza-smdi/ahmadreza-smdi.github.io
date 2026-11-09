@@ -555,7 +555,8 @@
             "Ahmadreza Samadi",
             "Ahmad Samadi",
             "احمدرضا صمدی",
-            "احمد صمدی"
+            "احمد صمدی",
+            "أحمدرضا صمدي"
           ],
           "identity_url": "https://a-samadi.com/about.html"
         },
@@ -709,7 +710,7 @@
             },
             {
               "label": "چرا هم هوش مصنوعی می‌سازم و هم کسب‌وکار اداره می‌کنم",
-              "url": "https://a-samadi.com/writing/build-ai-run-a-business.html"
+              "url": "https://a-samadi.com/fa/writing/build-ai-run-a-business.html"
             }
           ]
         },
@@ -1140,7 +1141,8 @@
             "Ahmadreza Samadi",
             "Ahmad Samadi",
             "احمدرضا صمدی",
-            "احمد صمدی"
+            "احمد صمدی",
+            "أحمدرضا صمدي"
           ],
           "identity_url": "https://a-samadi.com/fa/about.html"
         },
@@ -1294,7 +1296,7 @@
             },
             {
               "label": "لماذا أبني الذكاء الاصطناعي وأدير شركة",
-              "url": "https://a-samadi.com/writing/build-ai-run-a-business.html"
+              "url": "https://a-samadi.com/ar/writing/build-ai-run-a-business.html"
             }
           ]
         },
@@ -1726,7 +1728,8 @@
             "Ahmadreza Samadi",
             "Ahmad Samadi",
             "احمدرضا صمدی",
-            "احمد صمدی"
+            "احمد صمدی",
+            "أحمدرضا صمدي"
           ],
           "identity_url": "https://a-samadi.com/ar/about.html"
         },
@@ -1767,15 +1770,15 @@
       "language": "en",
       "type": "CollectionPage",
       "title": "AI property briefs: A tidy property brief still needs evidence.",
-      "description": "Attach a source trail to each important claim and keep gaps visible.",
+      "description": "Review an AI-generated property brief slide by slide. Trace each important claim to its source, identify missing evidence and decide what still needs checking.",
       "date_published": "2026-11-03T20:52:05+03:30"
     },
     {
       "url": "https://a-samadi.com/carousels/dubai-broker-record-check.html",
       "language": "en",
       "type": "CollectionPage",
-      "title": "Dubai broker verification: A business card is a starting point.",
-      "description": "Check the official broker record, then separately check the property and transaction.",
+      "title": "How to check a Dubai broker record | Ahmadreza Samadi",
+      "description": "Follow a Dubai broker record check through the official listing. See which details identify the broker and which property and transaction facts need separate checks.",
       "date_published": "2026-11-03T20:52:05+03:30"
     },
     {
@@ -1783,23 +1786,23 @@
       "language": "en",
       "type": "CollectionPage",
       "title": "Dubai procedure status: Submitted is a stage, not the finish.",
-      "description": "Report the observed procedure status, not the outcome you expected.",
+      "description": "Read a Dubai procedure status in context. Follow the slides to distinguish what the record currently shows from the outcome someone expects to happen next.",
       "date_published": "2026-11-03T20:52:05+03:30"
     },
     {
       "url": "https://a-samadi.com/carousels/dubai-project-status-check.html",
       "language": "en",
       "type": "CollectionPage",
-      "title": "Dubai project status: Find the project behind the brochure.",
-      "description": "Match the registered project before interpreting the progress reported for that exact project.",
+      "title": "Dubai project status and registration | Ahmadreza Samadi",
+      "description": "Match a Dubai project to its registered record before reading a progress update. Use the slides to check that the evidence describes the same project.",
       "date_published": "2026-11-03T20:52:05+03:30"
     },
     {
       "url": "https://a-samadi.com/carousels/dubai-rental-index-context.html",
       "language": "en",
       "type": "CollectionPage",
-      "title": "Dubai rental index: Same area does not mean same building.",
-      "description": "Keep asking rents, property details and the official index result clearly labelled.",
+      "title": "Dubai rental index and asking rents | Ahmadreza Samadi",
+      "description": "Compare a Dubai asking rent with an official rental index result. Keep the property details, advertised price and index evidence distinct as you read each slide.",
       "date_published": "2026-11-03T20:52:05+03:30"
     },
     {
@@ -1807,7 +1810,7 @@
       "language": "en",
       "type": "CollectionPage",
       "title": "Dubai property valuation: Ask what produced the property number.",
-      "description": "Name the evidence type, source and purpose before comparing property values.",
+      "description": "Compare property valuation evidence in Dubai. Identify the type of value, its source and the purpose of the comparison before relying on a figure for a decision.",
       "date_published": "2026-11-03T20:52:05+03:30"
     },
     {
@@ -1822,7 +1825,7 @@
       "url": "https://a-samadi.com/carousels/tech-trend-ai-usage-not-outcomes.html",
       "language": "en",
       "type": "CollectionPage",
-      "title": "More AI calls do not prove more useful work.",
+      "title": "AI usage and useful business outcomes | Ahmadreza Samadi",
       "description": "GitHub has expanded Copilot usage reporting across tools. That helps show activity. It does not measure business results by itself.",
       "date_published": "2026-10-29T13:44:13+03:30"
     },
@@ -1838,7 +1841,7 @@
       "url": "https://a-samadi.com/carousels/tech-trend-gemini-business-hub.html",
       "language": "en",
       "type": "CollectionPage",
-      "title": "A business hub is not a business autopilot.",
+      "title": "What a Gemini business hub can do | Ahmadreza Samadi",
       "description": "Google announced a Gemini landing page for small businesses, with brand, finance and connected-app tools. Start with the workflow you need.",
       "date_published": "2026-11-03T19:07:36+03:30"
     },
@@ -1854,7 +1857,7 @@
       "url": "https://a-samadi.com/carousels/tech-trend-world-models-real-tests.html",
       "language": "en",
       "type": "CollectionPage",
-      "title": "A simulated world is still a test environment.",
+      "title": "World models and real-world tests | Ahmadreza Samadi",
       "description": "NVIDIA expanded Cosmos with data, training and simulation tools for physical AI. Generated scenarios can broaden what developers test.",
       "date_published": "2026-11-03T19:07:36+03:30"
     },
@@ -1863,7 +1866,7 @@
       "language": "en",
       "type": "VideoObject",
       "title": "More agents. The same queue.",
-      "description": "Watch the English film: In a fictional dispatch library, adding more helpers does not shorten the queue: every independent task waits for the same key. The illustration asks where work must be coordinated and where it can proceed independently.",
+      "description": "Watch what happens when several helpers share a single key. An English film uses a fictional dispatch library to explain bottlenecks in multi-agent workflows.",
       "date_published": "2026-11-03T19:07:36+03:30"
     },
     {
@@ -1895,7 +1898,7 @@
       "language": "en",
       "type": "VideoObject",
       "title": "AI wrote the result. People still need to understand it.",
-      "description": "Watch the English film: Zara, a fictional research coordinator, receives an AI-generated result. A polished answer alone does not explain which assumptions support it, what was checked, or what its limitations mean.",
+      "description": "Watch Zara examine an AI-generated research result. The English film follows her questions about assumptions, supporting evidence and what the result can show.",
       "date_published": "2026-11-02T21:00:00+03:30"
     },
     {
@@ -1911,7 +1914,7 @@
       "language": "en",
       "type": "VideoObject",
       "title": "Before buying a new machine, find where the energy goes",
-      "description": "Watch the English film: Mira, a fictional building manager, sees a high energy bill and wants new equipment. Instead of choosing a machine from one number, she asks for the building assets and operations to be assessed.",
+      "description": "Watch a fictional building manager trace a high energy bill to the questions an audit should answer before anyone decides to buy replacement equipment.",
       "date_published": "2026-11-03T19:07:36+03:30"
     },
     {
@@ -1927,7 +1930,7 @@
       "language": "en",
       "type": "VideoObject",
       "title": "The sale happened. The cash is still on its way.",
-      "description": "Watch the English film: Sales alone do not tell Sami how much cash is available today.",
+      "description": "Watch the cash conversion cycle in a fictional lamp workshop. Follow the time between paying for inventory, making a sale and receiving the customer's cash.",
       "date_published": "2026-11-03T19:07:36+03:30"
     },
     {
@@ -2039,7 +2042,7 @@
       "language": "en",
       "type": "VideoObject",
       "title": "The form was perfect. The answer was wrong.",
-      "description": "Watch the English film: A tidy shape and a true statement are different checks.",
+      "description": "Watch Noor check an AI-generated delivery date against a supplier quote. The English film shows how a correctly formatted response can still contain a false claim.",
       "date_published": "2026-11-03T19:07:36+03:30"
     },
     {
@@ -2055,7 +2058,7 @@
       "language": "en",
       "type": "Article",
       "title": "More agents. The same queue.",
-      "description": "In a fictional dispatch library, adding more helpers does not shorten the queue: every independent task waits for the same key. The illustration asks where work must be coordinated and where it can proceed independently.",
+      "description": "In a fictional dispatch library, every helper needs the same key. Follow the queue to see which tasks an extra agent can take on and which still have to wait.",
       "date_published": "2026-11-03T19:07:36+03:30"
     },
     {
@@ -2071,7 +2074,7 @@
       "language": "en",
       "type": "Article",
       "title": "AI agent safety: boundaries before actions",
-      "description": "What changes when AI assistants can act? A practical guide to agent permissions, NVIDIA OpenShell and the Sentry reference design.",
+      "description": "Define which accounts, data and tools an AI agent can access. See where permissions are enforced, when a person approves an action and how to revoke access.",
       "date_published": "2026-09-29"
     },
     {
@@ -2111,7 +2114,7 @@
       "language": "en",
       "type": "Article",
       "title": "AI property valuation: what an estimate misses",
-      "description": "AI property valuation needs current facts, comparable sales and uncertainty checks. Learn how to review an estimate and resolve conflicting valuations.",
+      "description": "When two AI estimates disagree on a home's value, start with the facts each used. Review the sale dates, comparable homes and uncertainty before relying on a figure.",
       "date_published": "2026-10-03"
     },
     {
@@ -2143,7 +2146,7 @@
       "language": "en",
       "type": "Article",
       "title": "AI wrote the result. People still need to understand it.",
-      "description": "Zara, a fictional research coordinator, receives an AI-generated result. A polished answer alone does not explain which assumptions support it, what was checked, or what its limitations mean.",
+      "description": "Zara reviews an AI-generated research result. Follow her questions about the evidence, assumptions and limitations behind a polished answer in this fictional case.",
       "date_published": "2026-11-02T21:00:00+03:30"
     },
     {
@@ -2151,7 +2154,7 @@
       "language": "en",
       "type": "Article",
       "title": "AVM vs appraisal: which fits your decision?",
-      "description": "Choose the valuation process for the decision: compare AVMs, broker opinions and appraisals, then examine identity, dates, evidence and uncertainty.",
+      "description": "Compare an automated valuation, a broker opinion and an appraisal. See how missing sales, uncertain property condition and the intended use affect the choice.",
       "date_published": "2026-10-20T18:38:29+03:30"
     },
     {
@@ -2183,7 +2186,7 @@
       "language": "en",
       "type": "Article",
       "title": "Before buying a new machine, find where the energy goes",
-      "description": "Mira, a fictional building manager, sees a high energy bill and wants new equipment. Instead of choosing a machine from one number, she asks for the building assets and operations to be assessed.",
+      "description": "A fictional building manager investigates a high energy bill. Follow the audit questions about equipment and daily operation before deciding what to replace.",
       "date_published": "2026-11-03T19:07:36+03:30"
     },
     {
@@ -2215,7 +2218,7 @@
       "language": "en",
       "type": "Article",
       "title": "The sale happened. The cash is still on its way.",
-      "description": "Sales alone do not tell Sami how much cash is available today.",
+      "description": "Follow a fictional lamp workshop from buying inventory to collecting cash. See why a recorded sale and cash available to pay a bill can fall on different days.",
       "date_published": "2026-11-03T19:07:36+03:30"
     },
     {
@@ -2223,7 +2226,7 @@
       "language": "en",
       "type": "Article",
       "title": "How does ChatGPT's Intelligent UI work?",
-      "description": "A simple explanation of ChatGPT's interactive answers, the 7 October announcement and a fictional budget that shows why assumptions still matter.",
+      "description": "Explore ChatGPT's interactive answers using a fictional budget. Changing a number shows what the interface can calculate and which assumptions still need checking.",
       "date_published": "2026-10-12T12:09:26+03:30"
     },
     {
@@ -2239,7 +2242,7 @@
       "language": "en",
       "type": "Article",
       "title": "Connected AI apps: access, scope and approval",
-      "description": "What happens when you connect an app to ChatGPT or Gemini? A practical guide to accounts, permissions, reading versus acting, and approval before you connect.",
+      "description": "What can a connected AI app read or change? Use examples from ChatGPT and Gemini to check the account, the scope of access and the actions that require approval.",
       "date_published": "2026-09-25"
     },
     {
@@ -2279,7 +2282,7 @@
       "language": "en",
       "type": "Article",
       "title": "Two batteries, one foldable phone: how the battery reading works",
-      "description": "Two batteries can power one foldable phone with one charge reading. See why capacity and usable energy matter more than averaging two percentages.",
+      "description": "See how two batteries power a folding phone with one charge indicator. Different cell capacities explain why averaging the two percentages can mislead you.",
       "date_published": "2026-10-03"
     },
     {
@@ -2311,7 +2314,7 @@
       "language": "en",
       "type": "Article",
       "title": "How does a contactless card work without a battery?",
-      "description": "A payment terminal briefly powers the chip in a passive contactless card. Follow the energy and the payment data through a tap.",
+      "description": "Trace a contactless payment from the reader's radio field to the card's chip. See how a tap supplies power and carries payment data back to the terminal.",
       "date_published": "2026-10-10T03:05:36+03:30"
     },
     {
@@ -2319,7 +2322,7 @@
       "language": "en",
       "type": "Article",
       "title": "How many coffees must a cafe sell before it makes any profit?",
-      "description": "A fictional cafe sells 100 coffees for $500 and makes $0 operating profit. Follow its costs to understand contribution and break-even.",
+      "description": "A fictional café sells 100 coffees for $500 and earns no operating profit. Follow the price, variable cost per cup and fixed costs to calculate its break-even point.",
       "date_published": "2026-10-10T18:02:07+03:30"
     },
     {
@@ -2343,7 +2346,7 @@
       "language": "en",
       "type": "Article",
       "title": "How satellite messaging works without cell towers",
-      "description": "Follow a supported phone message from a satellite back to Earth. Check service support, a clear sky view and delivery limits before going off-grid.",
+      "description": "Trace a phone message through a satellite to a ground station. See why delivery can take longer than a regular text and how sky visibility affects the connection.",
       "date_published": "2026-10-04"
     },
     {
@@ -2351,7 +2354,7 @@
       "language": "en",
       "type": "Article",
       "title": "How ZIP files work: compression without losing data",
-      "description": "ZIP bundles files and can use lossless compression. Learn how DEFLATE restores every byte, why JPG and MP4 may barely shrink, and why compression is not encryption.",
+      "description": "See how lossless ZIP compression stores repeating data and rebuilds the original file. Find out why a folder of photos or videos may shrink very little.",
       "date_published": "2026-09-28"
     },
     {
@@ -2367,7 +2370,7 @@
       "language": "en",
       "type": "Article",
       "title": "Humanoid robots at home: demos, shipments and autonomy",
-      "description": "Ahmadreza Samadi explains how to read humanoid robot claims: shipment forecasts, home robot preorders, remote assistance and evidence of useful autonomy.",
+      "description": "What does a humanoid robot shipment tell you about its ability to work at home? Compare deliveries, demonstrations and evidence of autonomous household tasks.",
       "date_published": "2026-10-03"
     },
     {
@@ -2375,7 +2378,7 @@
       "language": "en",
       "type": "Article",
       "title": "Does Incognito actually make you invisible?",
-      "description": "A simple gift-shopping story explains Incognito, cookies, website records, saved files and what private browsing actually hides. By Ahmadreza Samadi.",
+      "description": "When you close an Incognito window, what disappears from your device? Follow a gift purchase through browser history, cookies, saved files and website records.",
       "date_published": "2026-10-05"
     },
     {
@@ -2383,7 +2386,7 @@
       "language": "en",
       "type": "Article",
       "title": "iPhone Duo: what does the extra $800 cost per day?",
-      "description": "A 104-second film turns the $800 US launch-price gap between iPhone Duo and iPhone 18 Pro into a daily comparison, with the assumptions made clear.",
+      "description": "Compare the $800 US launch-price gap by day of ownership. Check the installment example and see how an uncertain resale value affects the cost calculation.",
       "date_published": "2026-10-10T02:10:47+03:30"
     },
     {
@@ -2391,7 +2394,7 @@
       "language": "en",
       "type": "Article",
       "title": "Jev: an AI decision model, not another chatbot",
-      "description": "How TypeSafe describes Jev, how bounded decisions differ from chatbot replies, and what to check before using a model to route a real workflow.",
+      "description": "See how TypeSafe describes Jev, how it picks from a bounded set of outcomes and what you need to check before a model's decision can route a business task.",
       "date_published": "2026-09-25"
     },
     {
@@ -2407,7 +2410,7 @@
       "language": "en",
       "type": "Article",
       "title": "How passkeys work: why Face ID is not your password",
-      "description": "A passkey proves access to a private key; Face ID approves its use locally. Learn what the website receives and what to check for account recovery.",
+      "description": "Face ID unlocks a passkey locally. Follow a sign-in to see how the site checks the cryptographic proof, where your face data stays and how recovery fits in.",
       "date_published": "2026-09-28"
     },
     {
@@ -2487,7 +2490,7 @@
       "language": "en",
       "type": "Article",
       "title": "The form was perfect. The answer was wrong.",
-      "description": "A tidy shape and a true statement are different checks.",
+      "description": "Follow Noor as she checks a delivery date against a supplier quote. A fictional example shows how an AI response can fit its schema and still get a fact wrong.",
       "date_published": "2026-11-03T19:07:36+03:30"
     },
     {
@@ -2503,7 +2506,7 @@
       "language": "en",
       "type": "Article",
       "title": "How to check an image claim, AI-made or not",
-      "description": "A practical checklist for checking an image and its claim: find the source, reverse-search it, inspect provenance signals and seek independent corroboration.",
+      "description": "Trace a photo back to its source, try a reverse image search and compare independent evidence. Learn what provenance can tell you when a photo is called AI-made.",
       "date_published": "2026-10-03"
     },
     {
@@ -2543,7 +2546,7 @@
       "language": "en",
       "type": "Article",
       "title": "Why can AI lose track of something you already said?",
-      "description": "Chat history, working context, summaries, saved memory and training are different things. Understand why a chatbot can miss an earlier detail and how to help.",
+      "description": "Your chat history can contain details the model no longer sees. Compare the context window, summaries and saved memory to understand why a chatbot misses a detail.",
       "date_published": "2026-10-10T12:00:13+03:30"
     },
     {
@@ -2567,7 +2570,7 @@
       "language": "en",
       "type": "Article",
       "title": "Why does your computer slow down when storage is almost full?",
-      "description": "Storage is working room too. A ten-slide explainer on temporary files, RAM overflow and SSD housekeeping, with practical cleanup advice.",
+      "description": "See why a nearly full drive leaves less room for temporary files, memory overflow and SSD housekeeping. These examples explain when freeing space can help.",
       "date_published": "2026-10-09"
     },
     {
@@ -2583,7 +2586,7 @@
       "language": "en",
       "type": "Article",
       "title": "Why does your phone stop charging at 80%?",
-      "description": "A chosen limit, a learned routine and a heat pause can look similar. They have different triggers and different ways to resume charging.",
+      "description": "A phone can pause at 80% because of a charge limit, its learned routine or heat. Check the setting and the conditions around the pause to tell the causes apart.",
       "date_published": "2026-10-05"
     },
     {
@@ -2599,7 +2602,7 @@
       "language": "en",
       "type": "Article",
       "title": "Why do identical-looking USB-C cables behave differently?",
-      "description": "USB-C describes the connector. Power, file-transfer speed and video support are separate capabilities to check in the whole connection.",
+      "description": "Two USB-C cables can look alike and support different charging power, data speeds or video. Check what the cable, charger and device support before choosing one.",
       "date_published": "2026-10-10T03:05:36+03:30"
     },
     {
@@ -2607,7 +2610,7 @@
       "language": "en",
       "type": "Article",
       "title": "Why is Wi-Fi slow even with full bars?",
-      "description": "Full Wi-Fi bars describe your signal to the router, not the speed of the whole internet route. Learn what else can slow it down and how to compare.",
+      "description": "Full Wi-Fi bars measure signal strength between your device and router. Compare local congestion, the internet connection and the service to locate the slowdown.",
       "date_published": "2026-10-10T06:01:29+03:30"
     }
   ]

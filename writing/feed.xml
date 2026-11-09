@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
   <channel>
-    <title>Writing on AI Products and Business Decisions | Ahmadreza Samadi</title>
+    <title>Writing on AI products and business | Ahmadreza Samadi</title>
     <link>https://a-samadi.com/writing/</link>
     <description>Read Ahmadreza Samadi on building AI products, testing them on real tasks and counting review costs. Explore property examples and everyday technology explainers.</description>
     <language>en</language>
@@ -18,15 +18,15 @@
     <item>
       <title>AI property briefs: A tidy property brief still needs evidence.</title>
       <link>https://a-samadi.com/carousels/ai-property-brief-evidence.html</link>
-      <description>Attach a source trail to each important claim and keep gaps visible.</description>
+      <description>Review an AI-generated property brief slide by slide. Trace each important claim to its source, identify missing evidence and decide what still needs checking.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Tue, 03 Nov 2026 17:22:05 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/carousels/ai-property-brief-evidence.html</guid>
     </item>
     <item>
-      <title>Dubai broker verification: A business card is a starting point.</title>
+      <title>How to check a Dubai broker record | Ahmadreza Samadi</title>
       <link>https://a-samadi.com/carousels/dubai-broker-record-check.html</link>
-      <description>Check the official broker record, then separately check the property and transaction.</description>
+      <description>Follow a Dubai broker record check through the official listing. See which details identify the broker and which property and transaction facts need separate checks.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Tue, 03 Nov 2026 17:22:05 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/carousels/dubai-broker-record-check.html</guid>
@@ -34,23 +34,23 @@
     <item>
       <title>Dubai procedure status: Submitted is a stage, not the finish.</title>
       <link>https://a-samadi.com/carousels/dubai-procedure-status-check.html</link>
-      <description>Report the observed procedure status, not the outcome you expected.</description>
+      <description>Read a Dubai procedure status in context. Follow the slides to distinguish what the record currently shows from the outcome someone expects to happen next.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Tue, 03 Nov 2026 17:22:05 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/carousels/dubai-procedure-status-check.html</guid>
     </item>
     <item>
-      <title>Dubai project status: Find the project behind the brochure.</title>
+      <title>Dubai project status and registration | Ahmadreza Samadi</title>
       <link>https://a-samadi.com/carousels/dubai-project-status-check.html</link>
-      <description>Match the registered project before interpreting the progress reported for that exact project.</description>
+      <description>Match a Dubai project to its registered record before reading a progress update. Use the slides to check that the evidence describes the same project.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Tue, 03 Nov 2026 17:22:05 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/carousels/dubai-project-status-check.html</guid>
     </item>
     <item>
-      <title>Dubai rental index: Same area does not mean same building.</title>
+      <title>Dubai rental index and asking rents | Ahmadreza Samadi</title>
       <link>https://a-samadi.com/carousels/dubai-rental-index-context.html</link>
-      <description>Keep asking rents, property details and the official index result clearly labelled.</description>
+      <description>Compare a Dubai asking rent with an official rental index result. Keep the property details, advertised price and index evidence distinct as you read each slide.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Tue, 03 Nov 2026 17:22:05 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/carousels/dubai-rental-index-context.html</guid>
@@ -58,7 +58,7 @@
     <item>
       <title>Dubai property valuation: Ask what produced the property number.</title>
       <link>https://a-samadi.com/carousels/dubai-valuation-evidence.html</link>
-      <description>Name the evidence type, source and purpose before comparing property values.</description>
+      <description>Compare property valuation evidence in Dubai. Identify the type of value, its source and the purpose of the comparison before relying on a figure for a decision.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Tue, 03 Nov 2026 17:22:05 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/carousels/dubai-valuation-evidence.html</guid>
@@ -72,7 +72,7 @@
       <guid isPermaLink="true">https://a-samadi.com/carousels/tech-trend-ai-factory-observability.html</guid>
     </item>
     <item>
-      <title>A business hub is not a business autopilot.</title>
+      <title>What a Gemini business hub can do | Ahmadreza Samadi</title>
       <link>https://a-samadi.com/carousels/tech-trend-gemini-business-hub.html</link>
       <description>Google announced a Gemini landing page for small businesses, with brand, finance and connected-app tools. Start with the workflow you need.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
@@ -88,7 +88,7 @@
       <guid isPermaLink="true">https://a-samadi.com/carousels/tech-trend-notification-to-reviewed-fix.html</guid>
     </item>
     <item>
-      <title>A simulated world is still a test environment.</title>
+      <title>World models and real-world tests | Ahmadreza Samadi</title>
       <link>https://a-samadi.com/carousels/tech-trend-world-models-real-tests.html</link>
       <description>NVIDIA expanded Cosmos with data, training and simulation tools for physical AI. Generated scenarios can broaden what developers test.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
@@ -98,7 +98,7 @@
     <item>
       <title>More agents. The same queue.</title>
       <link>https://a-samadi.com/writing/agent-workflow-shared-bottlenecks.html</link>
-      <description>In a fictional dispatch library, adding more helpers does not shorten the queue: every independent task waits for the same key. The illustration asks where work must be coordinated and where it can proceed independently.</description>
+      <description>In a fictional dispatch library, every helper needs the same key. Follow the queue to see which tasks an extra agent can take on and which still have to wait.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Tue, 03 Nov 2026 15:37:36 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/agent-workflow-shared-bottlenecks.html</guid>
@@ -107,7 +107,7 @@
     <item>
       <title>Before buying a new machine, find where the energy goes</title>
       <link>https://a-samadi.com/writing/building-energy-audit-decisions.html</link>
-      <description>Mira, a fictional building manager, sees a high energy bill and wants new equipment. Instead of choosing a machine from one number, she asks for the building assets and operations to be assessed.</description>
+      <description>A fictional building manager investigates a high energy bill. Follow the audit questions about equipment and daily operation before deciding what to replace.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Tue, 03 Nov 2026 15:37:36 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/building-energy-audit-decisions.html</guid>
@@ -116,7 +116,7 @@
     <item>
       <title>The sale happened. The cash is still on its way.</title>
       <link>https://a-samadi.com/writing/cash-conversion-cycle-clocks.html</link>
-      <description>Sales alone do not tell Sami how much cash is available today.</description>
+      <description>Follow a fictional lamp workshop from buying inventory to collecting cash. See why a recorded sale and cash available to pay a bill can fall on different days.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Tue, 03 Nov 2026 15:37:36 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/cash-conversion-cycle-clocks.html</guid>
@@ -125,7 +125,7 @@
     <item>
       <title>The form was perfect. The answer was wrong.</title>
       <link>https://a-samadi.com/writing/structured-output-source-checks.html</link>
-      <description>A tidy shape and a true statement are different checks.</description>
+      <description>Follow Noor as she checks a delivery date against a supplier quote. A fictional example shows how an AI response can fit its schema and still get a fact wrong.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Tue, 03 Nov 2026 15:37:36 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/structured-output-source-checks.html</guid>
@@ -134,14 +134,14 @@
     <item>
       <title>AI wrote the result. People still need to understand it.</title>
       <link>https://a-samadi.com/writing/ai-research-examination-understanding.html</link>
-      <description>Zara, a fictional research coordinator, receives an AI-generated result. A polished answer alone does not explain which assumptions support it, what was checked, or what its limitations mean.</description>
+      <description>Zara reviews an AI-generated research result. Follow her questions about the evidence, assumptions and limitations behind a polished answer in this fictional case.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Mon, 02 Nov 2026 17:30:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/ai-research-examination-understanding.html</guid>
       <atom:link href="https://a-samadi.com/watch/ai-research-examination-understanding.html" rel="related" type="text/html" />
     </item>
     <item>
-      <title>More AI calls do not prove more useful work.</title>
+      <title>AI usage and useful business outcomes | Ahmadreza Samadi</title>
       <link>https://a-samadi.com/carousels/tech-trend-ai-usage-not-outcomes.html</link>
       <description>GitHub has expanded Copilot usage reporting across tools. That helps show activity. It does not measure business results by itself.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
@@ -249,7 +249,7 @@
     <item>
       <title>AVM vs appraisal: which fits your decision?</title>
       <link>https://a-samadi.com/writing/avm-vs-appraisal.html</link>
-      <description>Choose the valuation process for the decision: compare AVMs, broker opinions and appraisals, then examine identity, dates, evidence and uncertainty.</description>
+      <description>Compare an automated valuation, a broker opinion and an appraisal. See how missing sales, uncertain property condition and the intended use affect the choice.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Tue, 20 Oct 2026 15:08:29 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/avm-vs-appraisal.html</guid>
@@ -436,7 +436,7 @@
     <item>
       <title>How does ChatGPT's Intelligent UI work?</title>
       <link>https://a-samadi.com/writing/chatgpt-intelligent-ui-explained.html</link>
-      <description>A simple explanation of ChatGPT's interactive answers, the 7 October announcement and a fictional budget that shows why assumptions still matter.</description>
+      <description>Explore ChatGPT's interactive answers using a fictional budget. Changing a number shows what the interface can calculate and which assumptions still need checking.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Mon, 12 Oct 2026 08:39:26 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/chatgpt-intelligent-ui-explained.html</guid>
@@ -460,7 +460,7 @@
     <item>
       <title>How many coffees must a cafe sell before it makes any profit?</title>
       <link>https://a-samadi.com/writing/how-many-coffees-to-break-even.html</link>
-      <description>A fictional cafe sells 100 coffees for $500 and makes $0 operating profit. Follow its costs to understand contribution and break-even.</description>
+      <description>A fictional café sells 100 coffees for $500 and earns no operating profit. Follow the price, variable cost per cup and fixed costs to calculate its break-even point.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Sat, 10 Oct 2026 14:32:07 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/how-many-coffees-to-break-even.html</guid>
@@ -468,7 +468,7 @@
     <item>
       <title>Why can AI lose track of something you already said?</title>
       <link>https://a-samadi.com/writing/why-ai-loses-earlier-chat-context.html</link>
-      <description>Chat history, working context, summaries, saved memory and training are different things. Understand why a chatbot can miss an earlier detail and how to help.</description>
+      <description>Your chat history can contain details the model no longer sees. Compare the context window, summaries and saved memory to understand why a chatbot misses a detail.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Sat, 10 Oct 2026 08:30:13 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/why-ai-loses-earlier-chat-context.html</guid>
@@ -476,7 +476,7 @@
     <item>
       <title>Why is Wi-Fi slow even with full bars?</title>
       <link>https://a-samadi.com/writing/why-wifi-is-slow-with-full-bars.html</link>
-      <description>Full Wi-Fi bars describe your signal to the router, not the speed of the whole internet route. Learn what else can slow it down and how to compare.</description>
+      <description>Full Wi-Fi bars measure signal strength between your device and router. Compare local congestion, the internet connection and the service to locate the slowdown.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Sat, 10 Oct 2026 02:31:29 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/why-wifi-is-slow-with-full-bars.html</guid>
@@ -484,7 +484,7 @@
     <item>
       <title>How does a contactless card work without a battery?</title>
       <link>https://a-samadi.com/writing/how-contactless-cards-work.html</link>
-      <description>A payment terminal briefly powers the chip in a passive contactless card. Follow the energy and the payment data through a tap.</description>
+      <description>Trace a contactless payment from the reader's radio field to the card's chip. See how a tap supplies power and carries payment data back to the terminal.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Fri, 09 Oct 2026 23:35:36 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/how-contactless-cards-work.html</guid>
@@ -508,7 +508,7 @@
     <item>
       <title>Why do identical-looking USB-C cables behave differently?</title>
       <link>https://a-samadi.com/writing/why-usb-c-cables-differ.html</link>
-      <description>USB-C describes the connector. Power, file-transfer speed and video support are separate capabilities to check in the whole connection.</description>
+      <description>Two USB-C cables can look alike and support different charging power, data speeds or video. Check what the cable, charger and device support before choosing one.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Fri, 09 Oct 2026 23:35:36 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/why-usb-c-cables-differ.html</guid>
@@ -516,7 +516,7 @@
     <item>
       <title>iPhone Duo: what does the extra $800 cost per day?</title>
       <link>https://a-samadi.com/writing/iphone-duo-price-per-day.html</link>
-      <description>A 104-second film turns the $800 US launch-price gap between iPhone Duo and iPhone 18 Pro into a daily comparison, with the assumptions made clear.</description>
+      <description>Compare the $800 US launch-price gap by day of ownership. Check the installment example and see how an uncertain resale value affects the cost calculation.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Fri, 09 Oct 2026 22:40:47 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/iphone-duo-price-per-day.html</guid>
@@ -534,7 +534,7 @@
     <item>
       <title>Why does your computer slow down when storage is almost full?</title>
       <link>https://a-samadi.com/writing/why-full-storage-slows-computer.html</link>
-      <description>Storage is working room too. A ten-slide explainer on temporary files, RAM overflow and SSD housekeeping, with practical cleanup advice.</description>
+      <description>See why a nearly full drive leaves less room for temporary files, memory overflow and SSD housekeeping. These examples explain when freeing space can help.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/why-full-storage-slows-computer.html</guid>
@@ -551,7 +551,7 @@
     <item>
       <title>Does Incognito actually make you invisible?</title>
       <link>https://a-samadi.com/writing/incognito-private-browsing.html</link>
-      <description>A simple gift-shopping story explains Incognito, cookies, website records, saved files and what private browsing actually hides. By Ahmadreza Samadi.</description>
+      <description>When you close an Incognito window, what disappears from your device? Follow a gift purchase through browser history, cookies, saved files and website records.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/incognito-private-browsing.html</guid>
@@ -577,7 +577,7 @@
     <item>
       <title>Why does your phone stop charging at 80%?</title>
       <link>https://a-samadi.com/writing/why-phone-stops-charging-at-80.html</link>
-      <description>A chosen limit, a learned routine and a heat pause can look similar. They have different triggers and different ways to resume charging.</description>
+      <description>A phone can pause at 80% because of a charge limit, its learned routine or heat. Check the setting and the conditions around the pause to tell the causes apart.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/why-phone-stops-charging-at-80.html</guid>
@@ -586,7 +586,7 @@
     <item>
       <title>How satellite messaging works without cell towers</title>
       <link>https://a-samadi.com/writing/how-satellite-messaging-works.html</link>
-      <description>Follow a supported phone message from a satellite back to Earth. Check service support, a clear sky view and delivery limits before going off-grid.</description>
+      <description>Trace a phone message through a satellite to a ground station. See why delivery can take longer than a regular text and how sky visibility affects the connection.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/how-satellite-messaging-works.html</guid>
@@ -594,7 +594,7 @@
     <item>
       <title>AI property valuation: what an estimate misses</title>
       <link>https://a-samadi.com/writing/ai-home-value-estimates.html</link>
-      <description>AI property valuation needs current facts, comparable sales and uncertainty checks. Learn how to review an estimate and resolve conflicting valuations.</description>
+      <description>When two AI estimates disagree on a home's value, start with the facts each used. Review the sale dates, comparable homes and uncertainty before relying on a figure.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Sat, 03 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/ai-home-value-estimates.html</guid>
@@ -610,7 +610,7 @@
     <item>
       <title>Two batteries, one foldable phone: how the battery reading works</title>
       <link>https://a-samadi.com/writing/foldable-two-batteries.html</link>
-      <description>Two batteries can power one foldable phone with one charge reading. See why capacity and usable energy matter more than averaging two percentages.</description>
+      <description>See how two batteries power a folding phone with one charge indicator. Different cell capacities explain why averaging the two percentages can mislead you.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Sat, 03 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/foldable-two-batteries.html</guid>
@@ -618,7 +618,7 @@
     <item>
       <title>Humanoid robots at home: demos, shipments and autonomy</title>
       <link>https://a-samadi.com/writing/humanoid-robots-at-home.html</link>
-      <description>Ahmadreza Samadi explains how to read humanoid robot claims: shipment forecasts, home robot preorders, remote assistance and evidence of useful autonomy.</description>
+      <description>What does a humanoid robot shipment tell you about its ability to work at home? Compare deliveries, demonstrations and evidence of autonomous household tasks.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Sat, 03 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/humanoid-robots-at-home.html</guid>
@@ -626,7 +626,7 @@
     <item>
       <title>How to check an image claim, AI-made or not</title>
       <link>https://a-samadi.com/writing/verify-ai-image-claims.html</link>
-      <description>A practical checklist for checking an image and its claim: find the source, reverse-search it, inspect provenance signals and seek independent corroboration.</description>
+      <description>Trace a photo back to its source, try a reverse image search and compare independent evidence. Learn what provenance can tell you when a photo is called AI-made.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Sat, 03 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/verify-ai-image-claims.html</guid>
@@ -634,7 +634,7 @@
     <item>
       <title>AI agent safety: boundaries before actions</title>
       <link>https://a-samadi.com/writing/ai-agent-safety-boundaries.html</link>
-      <description>What changes when AI assistants can act? A practical guide to agent permissions, NVIDIA OpenShell and the Sentry reference design.</description>
+      <description>Define which accounts, data and tools an AI agent can access. See where permissions are enforced, when a person approves an action and how to revoke access.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/ai-agent-safety-boundaries.html</guid>
@@ -642,7 +642,7 @@
     <item>
       <title>How ZIP files work: compression without losing data</title>
       <link>https://a-samadi.com/writing/how-zip-files-work.html</link>
-      <description>ZIP bundles files and can use lossless compression. Learn how DEFLATE restores every byte, why JPG and MP4 may barely shrink, and why compression is not encryption.</description>
+      <description>See how lossless ZIP compression stores repeating data and rebuilds the original file. Find out why a folder of photos or videos may shrink very little.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/how-zip-files-work.html</guid>
@@ -650,7 +650,7 @@
     <item>
       <title>How passkeys work: why Face ID is not your password</title>
       <link>https://a-samadi.com/writing/passkeys-face-id.html</link>
-      <description>A passkey proves access to a private key; Face ID approves its use locally. Learn what the website receives and what to check for account recovery.</description>
+      <description>Face ID unlocks a passkey locally. Follow a sign-in to see how the site checks the cryptographic proof, where your face data stays and how recovery fits in.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/passkeys-face-id.html</guid>
@@ -658,7 +658,7 @@
     <item>
       <title>Connected AI apps: access, scope and approval</title>
       <link>https://a-samadi.com/writing/connected-ai-apps.html</link>
-      <description>What happens when you connect an app to ChatGPT or Gemini? A practical guide to accounts, permissions, reading versus acting, and approval before you connect.</description>
+      <description>What can a connected AI app read or change? Use examples from ChatGPT and Gemini to check the account, the scope of access and the actions that require approval.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Fri, 25 Sep 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/connected-ai-apps.html</guid>
@@ -666,7 +666,7 @@
     <item>
       <title>Jev: an AI decision model, not another chatbot</title>
       <link>https://a-samadi.com/writing/jev-ai-decision-model.html</link>
-      <description>How TypeSafe describes Jev, how bounded decisions differ from chatbot replies, and what to check before using a model to route a real workflow.</description>
+      <description>See how TypeSafe describes Jev, how it picks from a bounded set of outcomes and what you need to check before a model's decision can route a business task.</description>
       <dc:creator>Ahmadreza Samadi</dc:creator>
       <pubDate>Fri, 25 Sep 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://a-samadi.com/writing/jev-ai-decision-model.html</guid>
