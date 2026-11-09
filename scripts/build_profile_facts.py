@@ -30,6 +30,24 @@ def person_subjects(lang):
         return IDENTITY['decision_subjects'] + subjects
     return subjects
 
+PERSON_NAMES = {'en': ['Ahmad Samadi'], 'fa': ['Ahmad Samadi', 'احمدرضا صمدی'], 'ar': ['Ahmad Samadi', 'أحمدرضا صمدي']}
+THREADS = 'https://www.threads.com/@ahmadreza.samadi'
+
+def identity_links(text, lang, biography):
+    if biography:
+        official = re.search(r'(<ul class="official-profiles">)(.*?)(</ul>)', text, re.S)
+        if not official:
+            raise ValueError('Missing official profile list')
+        if THREADS not in official[2]:
+            entry = f'<li><a href="{THREADS}" rel="me">{paragraph(DATA[lang]["threads_label"])}</a></li>'
+            text = text[:official.end(2)] + entry + text[official.end(2):]
+    elif f'<link rel="me" href="{THREADS}"' not in text:
+        anchor = '<link rel="me" href="https://www.instagram.com/ahmadreza.samadi/" />'
+        if text.count(anchor) != 1:
+            raise ValueError('Missing Instagram identity link')
+        text = text.replace(anchor, anchor + '\n        ' + f'<link rel="me" href="{THREADS}" />')
+    return text
+
 def person_schema(m, lang):
     d=json.loads(m[1]);nodes=[]
     def collect(value):
@@ -42,6 +60,9 @@ def person_schema(m, lang):
     for n in nodes:
         if n.get('@type')!='Person' or n.get('@id')!='https://a-samadi.com/#person':continue
         n['jobTitle']=['Co-Founder & Technical Lead, Appraiva','Co-Founder & CEO, Royal Abraj Group']
+        n['alternateName'] = PERSON_NAMES[lang]
+        if THREADS not in n['sameAs']:
+            n['sameAs'].append(THREADS)
         n['knowsAbout'] = person_subjects(lang)
         if lang == 'en':
             n['description'] = IDENTITY['entity']['en']
@@ -62,7 +83,7 @@ def about_parity(text,lang):
         if profile is None:return m[0]
         target=profile.get('mainEntity',{})
         if target.get('@type')=='Person':
-            for key in ('givenName','familyName','jobTitle','alumniOf','homeLocation','memberOf'):
+            for key in ('givenName','familyName','jobTitle','alumniOf','homeLocation','memberOf','image'):
                 target[key]=person[key]
             target['mainEntityOfPage']={'@id':profile['@id']}
         profile['isPartOf']={'@id':'https://a-samadi.com/#website'}
@@ -82,7 +103,15 @@ def main():
         prefix='' if lang=='en' else lang+'/'
         for tail in ['about.html','index.html']:
             path=ROOT/(prefix+tail);old=path.read_text();text=old
+            text = identity_links(text, lang, tail == 'about.html')
             if tail=='about.html':
+                if lang == 'en':
+                    text = text.replace('<p class="byline">Ahmadreza Samadi · Ahmad Samadi</p>',
+                                        '<p class="byline">Ahmadreza Samadi · Ahmad Samadi · Technology entrepreneur</p>')
+                for pattern, copy in ((r'(<h1>).*?(</h1>)', d['bio_heading']), (r'(<p class="lead">).*?(</p>)', d['bio_lead'])):
+                    text, n = re.subn(pattern, lambda m: m[1] + paragraph(copy) + m[2], text, count=1, flags=re.S)
+                    if n != 1:
+                        raise ValueError('Missing biography introduction: ' + str(path))
                 text,n=re.subn(r'<section class="profile-resources quick-facts" id="at-a-glance".*?</section>(?:\s*<section class="profile-resources" id="profile-questions".*?</section>)?',lambda _:section(d),text,count=1,flags=re.S)
                 if n!=1:raise ValueError('Missing facts section: '+str(path))
             if tail=='about.html' and lang!='en':text=about_parity(text,lang)

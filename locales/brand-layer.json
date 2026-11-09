@@ -23,6 +23,10 @@
         [
           "/studies/rent-own-2026/",
           "Explore explicit ownership scenarios"
+        ],
+        [
+          "/writing/build-ai-run-a-business.html",
+          "How I decide where AI belongs in a business"
         ]
       ],
       "checklist": [
@@ -562,5 +566,10 @@
   "ideas_page": {
     "heading": "Where AI belongs in a business",
     "description": "Three questions to ask before using AI in a business. Which decision will it improve, who will check the result, and what does each accepted result cost?"
+  },
+  "work_essay_anchor": {
+    "en": "building AI products at Appraiva and running Royal Abraj Group in Dubai",
+    "fa": "ساختن محصولات هوش مصنوعی در Appraiva و اداره Royal Abraj Group در دبی",
+    "ar": "بناء منتجات الذكاء الاصطناعي في Appraiva وإدارة Royal Abraj Group في دبي"
   }
 }

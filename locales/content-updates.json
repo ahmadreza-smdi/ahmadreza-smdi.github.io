@@ -15,19 +15,16 @@
     "reason": "Owner-requested shorter homepage headline and role summary."
   },
   "about.html": {
-    "dateModified": "2026-10-28T23:01:34+03:30",
-    "sourceCommit": "4aa118af1252d0f1a4b5fdd40f7e732ad6182f13",
-    "reason": "Supported biography or responsibility copy changed."
+    "dateModified": "2026-11-09T17:13:23+03:30",
+    "reason": "Revised the biography heading and introduction with the current roles and verified profile links."
   },
   "fa/about.html": {
-    "dateModified": "2026-10-28T23:01:34+03:30",
-    "sourceCommit": "4aa118af1252d0f1a4b5fdd40f7e732ad6182f13",
-    "reason": "Supported biography or responsibility copy changed."
+    "dateModified": "2026-11-09T17:13:23+03:30",
+    "reason": "Revised the biography heading and introduction with the current roles and verified profile links."
   },
   "ar/about.html": {
-    "dateModified": "2026-10-28T23:01:34+03:30",
-    "sourceCommit": "4aa118af1252d0f1a4b5fdd40f7e732ad6182f13",
-    "reason": "Supported biography or responsibility copy changed."
+    "dateModified": "2026-11-09T17:13:23+03:30",
+    "reason": "Revised the biography heading and introduction with the current roles and verified profile links."
   },
   "work/appraiva.html": {
     "dateModified": "2026-10-28T23:01:34+03:30",

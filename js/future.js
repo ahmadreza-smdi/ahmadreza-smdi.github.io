@@ -78,25 +78,8 @@
             .replace(/[\u0300-\u036f\u064b-\u065f\u0670]/g, '')
             .replace(/[\u064a\u0649]/g, '\u06cc').replace(/\u0643/g, '\u06a9').replace(/\u0629/g, '\u0647')
             .replace(/[\u200c\u200d\u0640]/g, ' ');
-        // Exact supported names reveal the existing biography shortcut in every language.
-        // Read identity from this page's published Person data, never from a query or network.
-        const requestedIdentityNames = new Set(['Ahmadreza Samadi', 'Ahmad Samadi', 'احمدرضا صمدی', 'احمد صمدی']);
-        const identityAliases = new Set();
-        const collectIdentityAliases = (node) => {
-            if (Array.isArray(node)) { node.forEach(collectIdentityAliases); return; }
-            if (!node || typeof node !== 'object') return;
-            if (node['@type'] === 'Person' && node['@id'] === 'https://a-samadi.com/#person'
-                    && node.url === 'https://a-samadi.com/about.html') {
-                const alternatives = Array.isArray(node.alternateName) ? node.alternateName : [];
-                [node.name, ...alternatives].forEach((name) => {
-                    if (typeof name === 'string' && requestedIdentityNames.has(name)) identityAliases.add(normalize(name));
-                });
-            }
-            Object.values(node).forEach(collectIdentityAliases);
-        };
-        $$('script[type="application/ld+json"]').forEach((script) => {
-            try { collectIdentityAliases(JSON.parse(script.textContent)); } catch (error) { /* Other shortcuts still work. */ }
-        });
+        // The biography shortcut accepts supported spellings across all three languages.
+        const identityAliases = new Set(['Ahmadreza Samadi', 'Ahmad Samadi', 'احمدرضا صمدی', 'احمد صمدی', 'أحمدرضا صمدي'].map(normalize));
         const biographyShortcut = commands.find((item) => item.getAttribute('href') === 'about.html#profile-resources');
         const identityShortcutHref = (query) => identityAliases.has(query) ? 'about.html' : 'about.html#profile-resources';
         const matchesShortcut = (item, query) => {

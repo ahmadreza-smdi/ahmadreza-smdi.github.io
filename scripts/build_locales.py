@@ -5,7 +5,7 @@ import html
 import json
 import re
 from follow_blocks import enrich_follow
-from build_profile_facts import person_subjects
+from build_profile_facts import PERSON_NAMES, person_subjects
 ROOT=Path(__file__).resolve().parent.parent
 SOURCE=(ROOT/'index.html').read_text()
 # The localized name note retains the two original name scripts.
@@ -31,7 +31,7 @@ class Translator(HTMLParser):
             translated=value
             if self.body and key in ('aria-label','alt') and value:
                 translated=self.translations[value]
-            if key=='href' and value in ('/work/','/press.html','/writing/ai-home-value-estimates.html','/writing/ai-human-review-real-estate.html','/writing/which-dubai-property-source.html','/studies/rent-own-2026/','/work/appraiva.html','/work/royal-abraj.html','/writing/start-with-the-decision.html','/about.html','/writing/','/#work'):
+            if key=='href' and value in ('/writing/build-ai-run-a-business.html','/work/','/press.html','/writing/ai-home-value-estimates.html','/writing/ai-human-review-real-estate.html','/writing/which-dubai-property-source.html','/studies/rent-own-2026/','/work/appraiva.html','/work/royal-abraj.html','/writing/start-with-the-decision.html','/about.html','/writing/','/#work'):
                 translated='/'+self.lang+value
             elif key=='href' and (value.startswith('topics/') or value.startswith('about.html') or value in ('tools/before-you-build-ai.html','work/appraiva.html','work/royal-abraj.html','work/oxfam-novib.html','writing/ai-cost-per-verified-result.html','writing/ai-home-value-estimates.html','writing/ai-human-review-real-estate.html','writing/which-dubai-property-source.html','writing/connected-ai-apps.html','writing/jev-ai-decision-model.html','writing/start-with-the-decision.html','writing/ai-agent-safety-boundaries.html','writing/')):
                 translated=value
@@ -89,6 +89,7 @@ for lang in ('fa','ar'):
         # This English editorial field has no reviewed localized equivalent.
         person.pop('disambiguatingDescription', None)
         person['knowsAbout']=person_subjects(lang)
+        person['alternateName']=PERSON_NAMES[lang]
         profile.update({'@id':f'https://a-samadi.com/{lang}/#profile','url':f'https://a-samadi.com/{lang}/','name':title,'description':description,'inLanguage':lang,'dateModified':modified})
         # The English homepage is the original; this page is its translation.
         profile.pop('workTranslation',None);profile['translationOfWork']={'@id':'https://a-samadi.com/#profile'}

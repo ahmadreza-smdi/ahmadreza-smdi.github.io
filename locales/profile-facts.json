@@ -51,7 +51,10 @@
         "How can I contact him?",
         "Ahmadreza Samadi’s personal email is ahmadreza.smdi@gmail.com. His biography, press resources and selected work are available on his website, a-samadi.com. The biography identifies the Dubai-based technology entrepreneur and links the official profiles associated with his work at Appraiva and Royal Abraj Group."
       ]
-    ]
+    ],
+    "bio_heading": "Ahmadreza Samadi, technology entrepreneur",
+    "bio_lead": "Ahmadreza Samadi, also known as Ahmad Samadi, is a Dubai-based technology entrepreneur. He builds AI products as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO. He writes about how businesses decide what to build, check and measure.",
+    "threads_label": "Ahmadreza Samadi on Threads"
   },
   "fa": {
     "heading": "در یک نگاه — اکتبر ۲۰۲۶",
@@ -105,7 +108,10 @@
         "چگونه می‌توان با او تماس گرفت؟",
         "احمدرضا صمدی از ایمیل شخصی ahmadreza.smdi@gmail.com استفاده می‌کند. زندگی‌نامه، منابع رسانه‌ای و کارهای منتخب او در a-samadi.com موجود است. زندگی‌نامه این کارآفرین فناوری ساکن دبی را معرفی می‌کند و به پروفایل‌های رسمی مرتبط با کار او در Appraiva و Royal Abraj Group پیوند می‌دهد."
       ]
-    ]
+    ],
+    "bio_heading": "زندگی‌نامه احمدرضا صمدی، کارآفرین فناوری",
+    "bio_lead": "احمدرضا صمدی کارآفرین فناوری ساکن دبی است. او در مقام هم‌بنیان‌گذار و راهبر فنی Appraiva محصولات هوش مصنوعی می‌سازد و هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group است. او دربارهٔ تصمیم‌های کسب‌وکارها در ساخت، بررسی و سنجش محصولات می‌نویسد.",
+    "threads_label": "احمدرضا صمدی در Threads"
   },
   "ar": {
     "heading": "لمحة سريعة — أكتوبر ٢٠٢٦",
@@ -159,6 +165,9 @@
         "كيف أتواصل معه؟",
         "أحمدرضا صمدي يستخدم البريد الإلكتروني الشخصي ahmadreza.smdi@gmail.com. تتوفر سيرته المهنية الكاملة وموارده الإعلامية وأعماله المختارة على موقعه الإلكتروني الشخصي a-samadi.com. تعرّف السيرة برائد الأعمال التقنية المقيم في دبي، وتضم روابط حساباته الرسمية المرتبطة بعمله في Appraiva ثم Royal Abraj Group."
       ]
-    ]
+    ],
+    "bio_heading": "السيرة المهنية لأحمدرضا صمدي، رائد أعمال تقنية",
+    "bio_lead": "أحمدرضا صمدي رائد أعمال تقنية مقيم في دبي. يبني منتجات الذكاء الاصطناعي بصفته شريكا مؤسسا وقائدا تقنيا في Appraiva، ويدير Royal Abraj Group بصفته شريكا مؤسسا ورئيسا تنفيذيا. ويكتب عن كيفية اختيار الشركات ما تبنيه وما تتحقق منه وما تقيسه.",
+    "threads_label": "أحمدرضا صمدي على Threads"
   }
 }

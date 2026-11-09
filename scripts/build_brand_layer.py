@@ -197,6 +197,20 @@ def document(path, title, description, body, nodes):
             '<a href="/work/">Selected work</a></footer></main></body></html>\n')
 
 
+def work_essay_links():
+    for lang, anchor in DATA['work_essay_anchor'].items():
+        prefix = '' if lang == 'en' else lang + '/'
+        path = ROOT / prefix / 'work/index.html'
+        text = path.read_text()
+        lead = re.search(r'<p class="lead">(.*?)</p>', text, re.S)
+        if not lead or lead[1].count(anchor) != 1:
+            raise ValueError(f'{path}: expected the reviewed work introduction')
+        target = '/' + prefix + 'writing/build-ai-run-a-business.html'
+        if target not in lead[1]:
+            text = text[:lead.start(1)] + lead[1].replace(anchor, link(target, anchor)) + text[lead.end(1):]
+        store(path, text)
+
+
 def ideas_page():
     sections, terms = [], []
     for idea in DATA['ideas']:
@@ -234,6 +248,7 @@ def studies_page():
 
 
 if __name__ == '__main__':
+    work_essay_links()
     homepage()
     biography()
     ideas_page()

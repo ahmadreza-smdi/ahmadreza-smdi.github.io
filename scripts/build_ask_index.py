@@ -31,7 +31,7 @@ from build_feed import PageMetadata, publication_time
 BASE = "https://a-samadi.com/"
 EMAIL = "ahmadreza.smdi@gmail.com"
 LANGUAGES = ("en", "fa", "ar")
-IDENTITY_NAMES = ('Ahmadreza Samadi', 'Ahmad Samadi', 'احمدرضا صمدی', 'احمد صمدی')
+IDENTITY_NAMES = ('Ahmadreza Samadi', 'Ahmad Samadi', 'احمدرضا صمدی', 'احمد صمدی', 'أحمدرضا صمدي')
 VOID_TAGS = frozenset("area base br col embed hr img input link meta param source track wbr".split())
 # ECMAScript's WhiteSpace and LineTerminator characters, rather than Python's broader \s.
 JS_SPACE = re.compile(r"[\t\n\v\f\r \u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]+")
@@ -44,7 +44,7 @@ EXCLUDED_PARAGRAPH_CLASSES = ("section-label", "card-topline", "topic", "copy-st
 # A deliberate extraction contract with the existing client. Fail on a changed contract
 # instead of publishing a plausible but stale interpretation of Ask's index.
 RUNTIME_CONTRACT = (
-    "const requestedIdentityNames = new Set(['Ahmadreza Samadi', 'Ahmad Samadi', 'احمدرضا صمدی', 'احمد صمدی']);",
+    "const identityAliases = new Set(['Ahmadreza Samadi', 'Ahmad Samadi', 'احمدرضا صمدی', 'احمد صمدی', 'أحمدرضا صمدي'].map(normalize));",
     "if (item === biographyShortcut && identityAliases.has(query)) return true;",
     "const identityShortcutHref = (query) => identityAliases.has(query) ? 'about.html' : 'about.html#profile-resources';",
     "item.hidden = Boolean(query) && !matchesShortcut(item, query);",
@@ -145,7 +145,7 @@ class Document(HTMLParser):
 
 
 def identity_names(document: Document) -> list[str]:
-    """Expose only the four requested names already present on the same Person."""
+    """Verify the biography target and mirror the multilingual shortcuts in the runtime."""
     people = []
 
     def visit(value):
@@ -169,10 +169,9 @@ def identity_names(document: Document) -> list[str]:
     person = people[0]
     alternatives = person.get("alternateName", [])
     require(isinstance(alternatives, list), document.source + ": invalid Person names")
-    supported = [person.get("name"), *alternatives]
-    names = [name for name in IDENTITY_NAMES if name in supported]
-    require(names == list(IDENTITY_NAMES), document.source + ": required identity name is not supported")
-    return names
+    require(person.get("name") == IDENTITY_NAMES[0] and IDENTITY_NAMES[1] in alternatives,
+            document.source + ": required identity name is not supported")
+    return list(IDENTITY_NAMES)
 
 
 class Exporter:

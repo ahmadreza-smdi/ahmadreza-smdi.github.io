@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="author" content="Ahmadreza Samadi">
-<title>Jev: مدل تصمیم‌گیر هوش مصنوعی | احمدرضا صمدی</title>
-<meta name="description" content="Jev از TypeSafe AI چیست؟ تفاوت یک مدل تصمیم‌گیر با GPT و Claude، نتیجه آزمون اولیه Banking77 و روش آزمودن آن به‌عنوان لایه مسیریابی.">
+<title>مدل تصمیم‌گیری Jev در یک فرایند کسب‌وکار چه کاری می‌کند؟</title>
+<meta name="description" content="ببینید TypeSafe مدل Jev را چگونه معرفی می‌کند، انتخاب از چند نتیجه مشخص چه فرقی با پاسخ چت دارد و پیش از سپردن مسیر یک کار به مدل چه چیزی باید بررسی شود.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="https://a-samadi.com/fa/writing/jev-ai-decision-model.html">
@@ -17,20 +17,19 @@
 <link rel="stylesheet" href="../../css/site.css?v=20261009-lagoon4">
 <link rel="stylesheet" href="../../css/rtl.css?v=20261009-lagoon4">
 <meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
-<meta property="og:title" content="Jev: مدل تصمیم‌گیر هوش مصنوعی | احمدرضا صمدی">
-<meta property="og:description" content="Jev برای انتخاب قدم بعدی ساخته شده، نه برای نوشتن پاسخ. معنای این تفاوت، شواهد اولیه و روش آزمودن آن.">
+<meta property="og:title" content="مدل تصمیم‌گیری Jev در یک فرایند کسب‌وکار چه کاری می‌کند؟">
+<meta property="og:description" content="ببینید TypeSafe مدل Jev را چگونه معرفی می‌کند، انتخاب از چند نتیجه مشخص چه فرقی با پاسخ چت دارد و پیش از سپردن مسیر یک کار به مدل چه چیزی باید بررسی شود.">
 <meta property="og:url" content="https://a-samadi.com/fa/writing/jev-ai-decision-model.html"><meta property="og:locale" content="fa_IR"><meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="ar_AE">
 <meta property="og:image" content="https://a-samadi.com/assets/share/jev-ai-decision-model.png">
-<meta property="og:image:alt" content="طرح جلد مقالهٔ انگلیسی: Jev: an AI decision model, not another chatbot"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Jev: مدل تصمیم‌گیر هوش مصنوعی | احمدرضا صمدی"><meta name="twitter:description" content="Jev برای انتخاب قدم بعدی ساخته شده، نه برای نوشتن پاسخ. معنای این تفاوت، شواهد اولیه و روش آزمودن آن."><meta name="twitter:image" content="https://a-samadi.com/assets/share/jev-ai-decision-model.png"><meta name="twitter:image:alt" content="طرح جلد مقالهٔ انگلیسی: Jev: an AI decision model, not another chatbot">
-<script type="application/ld+json">
-{
+<meta property="og:image:alt" content="طرح جلد مقالهٔ انگلیسی: Jev: an AI decision model, not another chatbot"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="مدل تصمیم‌گیری Jev در یک فرایند کسب‌وکار چه کاری می‌کند؟"><meta name="twitter:description" content="ببینید TypeSafe مدل Jev را چگونه معرفی می‌کند، انتخاب از چند نتیجه مشخص چه فرقی با پاسخ چت دارد و پیش از سپردن مسیر یک کار به مدل چه چیزی باید بررسی شود."><meta name="twitter:image" content="https://a-samadi.com/assets/share/jev-ai-decision-model.png"><meta name="twitter:image:alt" content="طرح جلد مقالهٔ انگلیسی: Jev: an AI decision model, not another chatbot">
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Article",
       "@id": "https://a-samadi.com/fa/writing/jev-ai-decision-model.html#article",
       "headline": "Jev: مدل تصمیم‌گیر هوش مصنوعی، نه یک چت‌بات دیگر",
-      "description": "Jev از TypeSafe AI چیست؟ تفاوت یک مدل تصمیم‌گیر با GPT و Claude، نتیجه آزمون اولیه Banking77 و روش آزمودن آن به‌عنوان لایه مسیریابی.",
+      "description": "ببینید TypeSafe مدل Jev را چگونه معرفی می‌کند، انتخاب از چند نتیجه مشخص چه فرقی با پاسخ چت دارد و پیش از سپردن مسیر یک کار به مدل چه چیزی باید بررسی شود.",
       "url": "https://a-samadi.com/fa/writing/jev-ai-decision-model.html",
       "mainEntityOfPage": {
         "@type": "WebPage",
@@ -79,7 +78,8 @@
       },
       "translationOfWork": {
         "@id": "https://a-samadi.com/writing/jev-ai-decision-model.html#article"
-      }
+      },
+      "name": "مدل تصمیم‌گیری Jev در یک فرایند کسب‌وکار چه کاری می‌کند؟"
     },
     {
       "@type": "BreadcrumbList",
@@ -104,8 +104,7 @@
       ]
     }
   ]
-}
-</script>
+}</script>
 
 <style data-author-box>
 /* A quiet author reference at the end of each article, using the Lagoon tokens. */
@@ -230,7 +229,7 @@
 <p>بخشی از: <a href="/fa/topics/ai-real-estate.html" data-hub-primary="ai-real-estate">هوش مصنوعی در املاک: از شواهد تا تصمیم</a></p>
 <h2 id="article-related-title">مطالب مرتبط</h2>
 <ul><li><a href="/fa/writing/ai-cost-per-verified-result.html" data-related-pillar="property-decisions">هزینه هوش مصنوعی به‌ازای هر نتیجه پذیرفته‌شده</a></li>
-<li><a href="/fa/writing/start-with-the-decision.html" data-related-pillar="decision-first-ai">از تصمیم شروع کنید، سپس هوش مصنوعی را بسازید</a></li>
+<li><a href="/fa/writing/build-ai-run-a-business.html" data-related-pillar="decision-first-ai">هوش مصنوعی می‌سازم و کسب‌وکاری را اداره می‌کنم که باید با آن کنار بیاید</a></li>
 <li><a href="/fa/writing/why-ai-sounds-confident.html" data-related-pillar="tech-explained">چرا هوش مصنوعی وقتی اشتباه می‌کند این‌قدر مطمئن به نظر می‌رسد؟</a></li></ul>
 </nav>
 <!-- article-hubs:end -->
