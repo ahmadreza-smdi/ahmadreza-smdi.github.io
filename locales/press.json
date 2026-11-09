@@ -13,7 +13,7 @@
       "h1": "Press & media kit",
       "lead": "Biographies, facts and public resources for professional introductions.",
       "short_heading": "Short biography",
-      "short_bio": "AI product builder in Dubai · Co-Founder & Technical Lead, Appraiva · Co-Founder & CEO, Royal Abraj Group",
+      "short_bio": "Technology entrepreneur in Dubai · Co-Founder & Technical Lead, Appraiva · Co-Founder & CEO, Royal Abraj Group",
       "extended_heading": "Extended biography",
       "extended_bio": [
         "Ahmadreza Samadi builds AI products at Appraiva and runs Royal Abraj Group in Dubai. He writes about how businesses decide what to build, check and measure. As Appraiva’s Co-Founder & Technical Lead, he works remotely from Dubai with the Cleveland, Ohio company, connecting property imagery, records and search. As Co-Founder & CEO of Royal Abraj Group, he leads digital strategy for property brokerage and documents clearing, including websites, CRM workflows and a customer portal. His background includes data engineering at Oxfam Novib and machine learning at MCI. His public guides cover human review and the cost per accepted AI result."
@@ -716,7 +716,7 @@
   "brand": {
     "bios": {
       "en": {
-        "short": "AI product builder in Dubai · Co-Founder & Technical Lead, Appraiva · Co-Founder & CEO, Royal Abraj Group",
+        "short": "Technology entrepreneur in Dubai · Co-Founder & Technical Lead, Appraiva · Co-Founder & CEO, Royal Abraj Group",
         "entity": "Ahmadreza Samadi builds AI products at Appraiva and runs Royal Abraj Group in Dubai. He writes about how businesses decide what to build, check and measure.",
         "100": "Ahmadreza Samadi builds AI products at Appraiva and runs Royal Abraj Group in Dubai. He writes about how businesses decide what to build, check and measure. As Appraiva’s Co-Founder & Technical Lead, he works remotely from Dubai with the Cleveland, Ohio company, connecting property imagery, records and search. As Co-Founder & CEO of Royal Abraj Group, he leads digital strategy for property brokerage and documents clearing, including websites, CRM workflows and a customer portal. His background includes data engineering at Oxfam Novib and machine learning at MCI. His public guides cover human review and the cost per accepted AI result."
       },
@@ -744,7 +744,7 @@
         "idea_link": "Signature ideas",
         "data_link": "Property Decision Data",
         "bio_headings": {
-          "short": "Short biography · 105 characters",
+          "short": "Short biography · 110 characters",
           "entity": "Professional introduction",
           "100": "100-word biography"
         }
