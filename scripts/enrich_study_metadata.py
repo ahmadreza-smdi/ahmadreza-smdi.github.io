@@ -483,24 +483,20 @@ def enrich(relative, text):
     period = ['2024-01-01/2024-12-31', '2026-10-01/2027-09-30'] if study == 'rent-own-2026' else '2024-01-01/2024-12-31'
     node['temporalCoverage'] = period
     source_table = 'B25077' if study == 'rent-own-2026' else 'B25070'
-    node['isBasedOn'] = [{'@type': 'Dataset', 'name': 'ACS 2024 one-year table ' + source_table,
-        'url': 'https://data.census.gov/table/ACSDT1Y2024.' + source_table,
-        'temporalCoverage': '2024-01-01/2024-12-31', 'creator': {'@type': 'Organization', 'name': 'U.S. Census Bureau'}}]
+    census_url = 'https://data.census.gov/table/ACSDT1Y2024.' + source_table
+    hud_url = 'https://www.huduser.gov/portal/datasets/fmr.html'
+    # Source datasets belong to their publishers. Link to them from the derived study.
+    node['isBasedOn'] = [census_url]
     if study == 'rent-own-2026':
-        node['isBasedOn'].append({'@type': 'Dataset', 'name': 'HUD FY2027 Fair Market Rent benchmarks',
-            'url': 'https://www.huduser.gov/portal/datasets/fmr.html', 'temporalCoverage': '2026-10-01/2027-09-30',
-            'description': 'Benchmark applicability period, not a calendar-year observation or guarantee that every area rate is effective; reevaluation exceptions may apply.',
-            'creator': {'@type': 'Organization', 'name': 'U.S. Department of Housing and Urban Development'}})
+        node['isBasedOn'].append(hud_url)
     title = 'Where does rent cover the cost of owning? 2026 metro edition' if study == 'rent-own-2026' else 'Metro rent burden: reproducible ACS 2024 point estimates'
     version = '1.0.0' if study == 'rent-own-2026' else '1.1.1'
     date = '2026-10-15' if study == 'rent-own-2026' else '2026-10-17'
     citation = f'Ahmadreza Samadi ({date}). {title}. Software/method version {version}. {base}'
-    node['citation'] = [{'@type': 'SoftwareSourceCode', 'name': title, 'version': version,
-        'datePublished': date, 'author': {'@id': 'https://a-samadi.com/#person'}, 'url': release},
-        {'@type': 'Dataset', 'name': 'U.S. Census Bureau ACS 2024 one-year table ' + source_table,
-         'url': 'https://data.census.gov/table/ACSDT1Y2024.' + source_table}]
+    node['citation'] = [f'{citation} Release: {release}',
+                        f'U.S. Census Bureau. 2024 ACS one-year table {source_table}. {census_url}']
     if study == 'rent-own-2026':
-        node['citation'].append({'@type': 'Dataset', 'name': 'HUD FY2027 FMR', 'url': 'https://www.huduser.gov/portal/datasets/fmr.html'})
+        node['citation'].append(f'U.S. Department of Housing and Urban Development. FY 2027 Fair Market Rents. {hud_url}')
     dictionary = '<details><summary>CSV column dictionary (' + str(len(columns)) + ' distinct fields)</summary><dl>'
     for key in columns:
         f = FIELD_DEFINITIONS[study][key]

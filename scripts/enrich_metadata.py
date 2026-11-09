@@ -14,7 +14,9 @@ agree across pages showing the same film, and match the video sitemap publicatio
 Run with --check to report missing metadata or invalid article/video dates without changing files.
 """
 from datetime import date, datetime, timedelta, timezone
+from functools import lru_cache
 from pathlib import Path
+from urllib.parse import urljoin
 import html
 import json
 import re
@@ -211,7 +213,7 @@ def schema_nodes(value):
             yield from schema_nodes(child)
 
 
-def complete_schema(path, text):
+def complete_schema(path, text, include_breadcrumb=True):
     """Fill source-supported entity links without changing historical dates."""
     url = canonical(text)
     if not url:
@@ -256,7 +258,7 @@ def complete_schema(path, text):
     # Existing content pages and selected hubs; never invent parents or duplicate the hub.
     section = unlocalized.split('/')[0]
     hub = unlocalized in ('ideas.html', 'studies/index.html', 'work/index.html', 'carousels/index.html')
-    if ((not hub and section not in ('writing', 'watch', 'work', 'studies', 'tools', 'carousels'))
+    if (not include_breadcrumb or (not hub and section not in ('writing', 'watch', 'work', 'studies', 'tools', 'carousels'))
             or (not hub and unlocalized == section + '/index.html')
             or 'noindex' in (value(text, 'robots') or '')
             or any(node.get('@type') == 'BreadcrumbList' for node in nodes)):
@@ -519,6 +521,158 @@ def translation_links(text):
     return text, [key]
 
 
+TRAIL_LABELS = 'Breadcrumb|مسیر صفحه|مسار الصفحة|مسار التنقل'
+TRAIL = re.compile(r'<(nav|span)\b[^>]*aria-label="(?:' + TRAIL_LABELS + r')"[^>]*>(.*?)</\1>', re.S)
+TRAIL_LINK = re.compile(r'<a\b[^>]*\bhref="([^"]+)"[^>]*>(.*?)</a>', re.S)
+
+
+def visible_trail(text, url):
+    match = TRAIL.search(text)
+    if not match or not url:
+        return []
+    def label(markup):
+        return ' '.join(html.unescape(re.sub(r'<[^>]+>', ' ', markup)).split())
+    links = list(TRAIL_LINK.finditer(match[2]))
+    items = [(label(a[2]), urljoin(url, html.unescape(a[1]))) for a in links]
+    if links:
+        current = label(match[2][links[-1].end():]).strip(' /·›»')
+        if current:
+            items.append((current, url))
+    return [{'@type': 'ListItem', 'position': i, 'name': name, 'item': target}
+            for i, (name, target) in enumerate(items, 1)]
+
+
+@lru_cache(maxsize=4)
+def film_metadata(root):
+    """The dedicated watch page describes the English film, including on translated articles."""
+    result = {}
+    namespaces = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9', 'v': 'http://www.google.com/schemas/sitemap-video/1.1'}
+    sitemap_file = root / 'sitemap.xml'
+    thumbnails = {}
+    if sitemap_file.is_file():
+        for entry in ElementTree.parse(sitemap_file).findall('s:url', namespaces):
+            thumb = entry.findtext('v:video/v:thumbnail_loc', namespaces=namespaces)
+            if thumb:
+                thumbnails[entry.findtext('s:loc', namespaces=namespaces)] = thumb
+    for path in sorted((root / 'watch').glob('*.html')):
+        watch_text = path.read_text()
+        watch_url = canonical(watch_text)
+        for block in LD.finditer(watch_text):
+            graph = json.loads(block[2])
+            for node in graph.get('@graph', [graph]):
+                if node.get('@type') == 'VideoObject' and node.get('@id'):
+                    result[node['@id']] = {key: node[key] for key in ('name', 'description', 'thumbnailUrl',
+                        'uploadDate', 'duration', 'inLanguage') if key in node}
+                    record = DESCRIPTION_UPDATES.get(path.relative_to(root).as_posix(), {})
+                    if 'description' in record:
+                        result[node['@id']]['description'] = record['description']
+                    if watch_url in thumbnails:
+                        result[node['@id']]['thumbnailUrl'] = thumbnails[watch_url]
+                    result[node['@id']]['mainEntityOfPage'] = {'@id': watch_url + '#webpage'}
+    return result
+
+
+def align_public_entities(path, text, trail):
+    """Emit consistent public identities and represent only breadcrumbs displayed on this page."""
+    url = canonical(text)
+    if not url:
+        return text
+    person = {'@id': BASE + '#person'}
+    website = {'@id': BASE + '#website'}
+    def update(block):
+        document = json.loads(block[2])
+        original = json.dumps(document, ensure_ascii=False)
+        if not trail:
+            if document.get('@type') == 'BreadcrumbList':
+                return ''
+            if '@graph' in document:
+                document['@graph'] = [node for node in document['@graph'] if node.get('@type') != 'BreadcrumbList']
+        roots = document.get('@graph', [document])
+        for node in schema_nodes(document):
+            kind, identity = node.get('@type'), node.get('@id')
+            if not trail and isinstance(node.get('breadcrumb'), dict):
+                node.pop('breadcrumb')
+            if kind == 'BreadcrumbList' and trail:
+                node['itemListElement'] = trail
+                node.setdefault('@id', url + '#breadcrumbs')
+            elif kind == 'WebSite' and identity == website['@id']:
+                node['publisher'] = person.copy()
+                node['author'] = person.copy()
+            elif kind == 'Person' and (identity == person['@id'] or
+                    node.get('name') == 'Ahmadreza Samadi' and node.get('url') == BASE + 'about.html'):
+                node['@id'] = person['@id']
+                node['name'] = 'Ahmadreza Samadi'
+                node['url'] = BASE + 'about.html'
+                if 'mainEntityOfPage' in node:
+                    node['mainEntityOfPage'] = {'@id': BASE + 'about.html#profile'}
+                if 'worksFor' in node:
+                    node['alternateName'] = ['Ahmad Samadi']
+                    node['email'] = 'ahmadreza.smdi@gmail.com'
+            elif kind == 'ImageObject' and identity == BASE + '#portrait':
+                node['caption'] = 'Ahmadreza Samadi in a dark suit'
+            elif kind == 'VideoObject' and identity in film_metadata(ROOT):
+                node.update(film_metadata(ROOT)[identity])
+                node['isPartOf'] = website.copy()
+            elif kind in ARTICLE_TYPES:
+                node['isPartOf'] = website.copy()
+                node.setdefault('author', person.copy())
+            elif kind in ('ProfilePage', 'CollectionPage', 'WebPage', 'WebApplication') and (
+                    str(identity or '').startswith(BASE) or any(node is item for item in roots)):
+                node['isPartOf'] = website.copy()
+                if kind == 'WebApplication':
+                    node.setdefault('author', person.copy())
+                if kind == 'ProfilePage':
+                    node.setdefault('mainEntity', person.copy())
+                if trail and kind in ('WebPage', 'ProfilePage', 'CollectionPage'):
+                    node['breadcrumb'] = {'@id': url + '#breadcrumbs'}
+                image = node.get('primaryImageOfPage')
+                if isinstance(image, dict) and image.get('url'):
+                    size = local_image_dimensions(image['url'])
+                    if size:
+                        image['width'], image['height'] = size
+            elif kind == 'Dataset' and str(identity or '').startswith(BASE):
+                node['isPartOf'] = website.copy()
+        if original == json.dumps(document, ensure_ascii=False):
+            return block[0]
+        raw = block[2]
+        leading = raw[:len(raw) - len(raw.lstrip())]
+        trailing = raw[len(raw.rstrip()):]
+        return block[1] + leading + json.dumps(document, ensure_ascii=False, indent=2) + trailing + block[3]
+    text = LD.sub(update, text)
+    if path.parent == ROOT / 'watch':
+        documents = [json.loads(block[2]) for block in LD.finditer(text)]
+        films = [node for document in documents for node in document.get('@graph', [document])
+                 if node.get('@type') == 'VideoObject']
+        if films and not any(node.get('@type') == 'WebPage' for document in documents
+                             for node in document.get('@graph', [document])):
+            watch_page = {'@context': 'https://schema.org', '@type': 'WebPage', '@id': url + '#webpage',
+                          'url': url, 'inLanguage': language(text), 'isPartOf': website,
+                          'mainEntity': {'@id': films[0]['@id']}}
+            if trail:
+                watch_page['breadcrumb'] = {'@id': url + '#breadcrumbs'}
+            text = text.replace('</head>', '<script type="application/ld+json">' + json.dumps(watch_page, ensure_ascii=False, indent=2) + '</script>\n</head>', 1)
+    if path == ROOT / 'carousels/index.html':
+        gallery = re.search(r'<!-- galleries:start -->(.*?)</ul>', text, re.S)
+        if not gallery:
+            raise ValueError('Missing published gallery entries')
+        links = TRAIL_LINK.findall(gallery[1])
+        entries = [{'@type': 'ListItem', 'position': i, 'name': html.unescape(title), 'url': urljoin(url, href)}
+                   for i, (href, title) in enumerate(links, 1)]
+        heading = re.search(r'<h1\b[^>]*>(.*?)</h1>', text, re.S)
+        collection = {'@context': 'https://schema.org', '@type': 'CollectionPage', '@id': url + '#page',
+                      'url': url, 'name': html.unescape(heading[1]), 'description': value(text, 'description'),
+                      'inLanguage': 'en', 'isPartOf': website,
+                      'author': person, 'mainEntity': {'@type': 'ItemList', '@id': url + '#list',
+                      'numberOfItems': len(entries), 'itemListElement': entries}}
+        script = '<script type="application/ld+json">' + json.dumps(collection, ensure_ascii=False, indent=2) + '</script>'
+        existing = next((entry for entry in LD.finditer(text) if json.loads(entry[2]).get('@id') == url + '#page'), None)
+        if existing:
+            text = text[:existing.start()] + script + text[existing.end():]
+        else:
+            text = text.replace('</head>', script + '\n</head>', 1)
+    return text
+
+
 PUBLIC_CONTACT = re.compile(
     r'(?<!<!--email_off-->)(<a\b(?=[^>]*\bhref="mailto:ahmadreza\.smdi@gmail\.com")[^>]*>.*?</a>)',
     re.I | re.S,
@@ -615,7 +769,8 @@ def enrich(path, text):
         return head + rest, added
 
     if not find(head, 'og:title'):
-        return text, []
+        linked = align_public_entities(path, head + rest, visible_trail(rest, canonical(head)))
+        return linked, ['public graph or contact'] if linked != text else []
     add_after(['og:title'], 'property', 'og:description', value(head, 'description'))
     add_after(['og:type', 'og:title'], 'property', 'og:site_name', SITE_NAME)
     add_after(['og:site_name', 'og:type', 'og:url'], 'property', 'og:locale', LOCALES.get(lang, 'en_US'))
@@ -699,8 +854,10 @@ def enrich(path, text):
             added.append('font preload')
     text, linked = translation_links(head + rest)
     text, image_added = article_page_image(text)
-    text, schema_added = complete_schema(path, text)
-    return text, added + linked + image_added + schema_added
+    trail = visible_trail(rest, canonical(head))
+    text, schema_added = complete_schema(path, text, include_breadcrumb=bool(trail))
+    aligned = align_public_entities(path, text, trail)
+    return aligned, added + linked + image_added + schema_added + (['public entity links'] if aligned != text else [])
 
 
 def sitemap(check):

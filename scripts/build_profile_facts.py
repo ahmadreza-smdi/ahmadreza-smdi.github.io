@@ -23,14 +23,11 @@ def section(d):
     facts=''.join('<div><dt>'+paragraph(k)+'</dt><dd>'+paragraph(v)+'</dd></div>' for k,v in d['facts'])
     qa=''.join('<h3>'+paragraph(q)+'</h3><p>'+paragraph(a)+'</p>' for q,a in d['qa'])
     return '<section class="profile-resources quick-facts" id="at-a-glance" aria-labelledby="at-a-glance-title"><h2 id="at-a-glance-title">'+paragraph(d['heading'])+'</h2><p>'+paragraph(d['intro'])+'</p><dl class="quick-facts-list">'+facts+'</dl><p>'+paragraph(d['disambiguation'])+'</p></section>\n<section class="profile-resources" id="profile-questions" aria-labelledby="profile-questions-title"><h2 id="profile-questions-title">'+paragraph(d['qa_title'])+'</h2>'+qa+'</section>'
-def person_subjects(lang):
+def person_subjects():
     subjects = [{'@type': 'DefinedTerm', 'name': name, 'sameAs': 'https://www.wikidata.org/wiki/' + qid}
                 for name, qid in SUBJECTS]
-    if lang == 'en':
-        return IDENTITY['decision_subjects'] + subjects
-    return subjects
+    return IDENTITY['decision_subjects'] + subjects
 
-PERSON_NAMES = {'en': ['Ahmad Samadi'], 'fa': ['Ahmad Samadi', 'احمدرضا صمدی'], 'ar': ['Ahmad Samadi', 'أحمدرضا صمدي']}
 THREADS = 'https://www.threads.com/@ahmadreza.samadi'
 
 def identity_links(text, lang, biography):
@@ -60,13 +57,12 @@ def person_schema(m, lang):
     for n in nodes:
         if n.get('@type')!='Person' or n.get('@id')!='https://a-samadi.com/#person':continue
         n['jobTitle']=['Co-Founder & Technical Lead, Appraiva','Co-Founder & CEO, Royal Abraj Group']
-        n['alternateName'] = PERSON_NAMES[lang]
+        n['alternateName'] = ['Ahmad Samadi']
         if THREADS not in n['sameAs']:
             n['sameAs'].append(THREADS)
-        n['knowsAbout'] = person_subjects(lang)
-        n['description'] = IDENTITY['entity'][lang]
-        if lang == 'en':
-            n['disambiguatingDescription'] = 'Dubai-based technology entrepreneur who builds AI as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO.'
+        n['knowsAbout'] = person_subjects()
+        n['description'] = IDENTITY['entity']['en']
+        n['disambiguatingDescription'] = 'Dubai-based technology entrepreneur who builds AI as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO.'
         # Schema.org's Role pattern attaches dates to the association, not to an Occupation.
         n['worksFor']=[{'@type':'OrganizationRole','roleName':title,'startDate':start,'worksFor':{'@id':'https://a-samadi.com/#'+org}} for title,start,org in [('Co-Founder & Technical Lead','2023-10','appraiva'),('Co-Founder & CEO','2022','royal-abraj')]]
         n['hasOccupation']=[{'@type':'Occupation','name':'Co-Founder & Technical Lead at Appraiva','description':'Held since October 2023; remote from Dubai.','responsibilities':'Product architecture, data systems, AI workflows and cloud infrastructure for AI tools that find distressed and off-market properties through imagery analysis and enriched property data.'},{'@type':'Occupation','name':'Co-Founder & CEO at Royal Abraj Group','description':'Held since 2022.','responsibilities':'Digital strategy and technology.'}]
@@ -85,7 +81,7 @@ def about_parity(text,lang):
         if target.get('@type')=='Person':
             for key in ('givenName','familyName','jobTitle','alumniOf','homeLocation','memberOf','image'):
                 target[key]=person[key]
-            target['mainEntityOfPage']={'@id':profile['@id']}
+            target['mainEntityOfPage']={'@id':'https://a-samadi.com/about.html#profile'}
         profile['isPartOf']={'@id':'https://a-samadi.com/#website'}
         ids={n.get('@id') for n in graph}
         for entity in entities:

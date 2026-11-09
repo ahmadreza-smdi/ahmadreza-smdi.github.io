@@ -151,7 +151,7 @@ def biography():
             def update_person(value):
                 if isinstance(value, dict):
                     if value.get('@type') == 'Person' and value.get('@id') == BASE + '/#person':
-                        value['description'] = identity['entity'][lang]
+                        value['description'] = identity['entity']['en']
                     for child in value.values():
                         update_person(child)
                 elif isinstance(value, list):
@@ -164,9 +164,7 @@ def biography():
                         '@type': 'ImageObject', '@id': BASE + '/#portrait',
                         'url': BASE + '/assets/img/ahmadreza-samadi-hero.jpg',
                         'width': 900, 'height': 1200,
-                        'caption': {'en': 'Ahmadreza Samadi in a dark suit',
-                                    'fa': 'احمدرضا صمدی با کت‌وشلوار تیره',
-                                    'ar': 'أحمدرضا صمدي يرتدي بدلة داكنة'}[lang],
+                        'caption': 'Ahmadreza Samadi in a dark suit',
                     }
             return '<script type="application/ld+json">\n' + json.dumps(graph, ensure_ascii=False, indent=2) + '\n</script>'
         text = re.sub(r'<script type="application/ld\+json">\s*(.*?)\s*</script>', portrait_metadata, text, flags=re.S)
@@ -178,7 +176,7 @@ def document(path, title, description, body, nodes):
     page_type = 'CollectionPage' if path == '/studies/' else 'WebPage'
     page = {'@type': page_type, '@id': url + '#page', 'url': url, 'name': title,
             'description': description, 'inLanguage': 'en', 'isPartOf': {'@id': BASE + '/#website'},
-            'author': {'@id': BASE + '/#person'}}
+            'author': {'@id': BASE + '/#person'}, 'mainEntity': {'@id': nodes[0]['@id']}}
     schema = json.dumps({'@context': 'https://schema.org', '@graph': [page, *nodes]}, ensure_ascii=False, indent=2)
     return ('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
             f'<title>{esc(title)} | Ahmadreza Samadi</title><meta name="description" content="{esc(description, quote=True)}">'
@@ -222,7 +220,7 @@ def ideas_page():
         sections.append(section(idea['id'], idea['name'], body))
         terms.append({'@type': 'DefinedTerm', '@id': BASE + '/ideas.html#' + idea['id'], 'name': idea['name'],
                       'description': idea['definition'], 'url': BASE + '/ideas.html#' + idea['id'],
-                      'inDefinedTermSet': {'@id': BASE + '/ideas.html#ideas'}, 'creator': {'@id': BASE + '/#person'}})
+                      'inDefinedTermSet': {'@id': BASE + '/ideas.html#ideas'}})
     term_set = {'@type': 'DefinedTermSet', '@id': BASE + '/ideas.html#ideas', 'name': 'Signature ideas',
                 'creator': {'@id': BASE + '/#person'}, 'hasDefinedTerm': [{'@id': t['@id']} for t in terms]}
     copy = DATA['ideas_page']

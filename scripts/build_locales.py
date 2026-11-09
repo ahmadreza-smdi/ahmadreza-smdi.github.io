@@ -5,7 +5,6 @@ import html
 import json
 import re
 from follow_blocks import enrich_follow
-from build_profile_facts import PERSON_NAMES, person_subjects
 ROOT=Path(__file__).resolve().parent.parent
 SOURCE=(ROOT/'index.html').read_text()
 # The localized name note retains the two original name scripts.
@@ -84,12 +83,7 @@ for lang in ('fa','ar'):
     head=head.replace('content="Ahmadreza Samadi, Dubai-based technology entrepreneur"','content="'+tr['Portrait of Ahmadreza Samadi']+'"')
     def schema(m):
         d=json.loads(m[1]);profile=next(x for x in d['@graph'] if x['@type']=='ProfilePage')
-        person=next(x for x in d['@graph'] if x.get('@type')=='Person' and x.get('@id')=='https://a-samadi.com/#person')
-        person['description']=tr['Person entity sentence']
-        # This English editorial field has no reviewed localized equivalent.
-        person.pop('disambiguatingDescription', None)
-        person['knowsAbout']=person_subjects(lang)
-        person['alternateName']=PERSON_NAMES[lang]
+        # All language versions refer to the same Person. Localize the ProfilePage.
         profile.update({'@id':f'https://a-samadi.com/{lang}/#profile','url':f'https://a-samadi.com/{lang}/','name':title,'description':description,'inLanguage':lang,'dateModified':modified})
         # The English homepage is the original; this page is its translation.
         profile.pop('workTranslation',None);profile['translationOfWork']={'@id':'https://a-samadi.com/#profile'}

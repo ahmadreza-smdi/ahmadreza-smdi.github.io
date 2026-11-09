@@ -346,8 +346,12 @@ for cluster in clusters:
    entity=profile.get('mainEntity',{})
    person=entity if entity.get('@type')=='Person' else next((item for item in graph if item.get('@type')=='Person' and item.get('@id')==entity.get('@id')),None)
    assert person and person.get('@id')==BASE+'#person' and person.get('name')=='Ahmadreza Samadi', f'{name}: inconsistent person identity'
-   aliases = {'en': ['Ahmad Samadi'], 'fa': ['Ahmad Samadi','احمدرضا صمدی'], 'ar': ['Ahmad Samadi','أحمدرضا صمدي']}
-   assert person.get('alternateName') == aliases[language], f'{name}: incorrect localized Person aliases'
+   assert person.get('alternateName') == ['Ahmad Samadi'], f'{name}: incorrect canonical Person alias'
+   for key in ('url','mainEntityOfPage','description','knowsAbout','worksFor','homeLocation','email','sameAs'):
+    assert person.get(key) == approved_person.get(key), f'{name}: inconsistent shared Person field {key}'
+   assert [(r.get('roleName'),r.get('startDate'),r.get('worksFor',{}).get('@id')) for r in person['worksFor']] == [
+       ('Co-Founder & Technical Lead','2023-10',BASE+'#appraiva'),
+       ('Co-Founder & CEO','2022',BASE+'#royal-abraj')], f'{name}: incorrect employment timeline'
    assert {'https://www.instagram.com/ahmadreza.samadi/','https://www.linkedin.com/in/ahmadreza-samadi/'} <= set(person.get('sameAs',[])), f'{name}: missing official social identity link'
    check_profile_links(source,name,profile_person(source,name),approved_person,approved_profile_urls)
    modified=profile.get('dateModified')
@@ -399,8 +403,7 @@ for path in article_pages:
  biography=BASE+(f'{language}/' if language!='en' else '')+'about.html'
  author=articles[0].get('author',{})
  assert author.get('@type')=='Person' and author.get('@id')==BASE+'#person', f'{relative}: inconsistent author entity'
- expected_names={'en':{'Ahmadreza Samadi'},'fa':{'Ahmadreza Samadi','احمدرضا صمدی'},'ar':{'Ahmadreza Samadi','أحمدرضا صمدي'}}
- assert author.get('name') in expected_names[language] and author.get('url')==biography, f'{relative}: inconsistent author biography'
+ assert author.get('name')=='Ahmadreza Samadi' and author.get('url')==BASE+'about.html', f'{relative}: inconsistent canonical author'
  article_url=articles[0].get('url')
  assert article_url in listed, f'{relative}: article URL missing from sitemap'
  if language in ('fa','ar'):
