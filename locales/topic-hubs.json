@@ -656,7 +656,7 @@
       "locales": {
         "en": {
           "title": "AI in real estate: evidence and decisions | Ahmadreza Samadi",
-          "heading": "AI in real estate: evidence and decisions",
+          "heading": "AI in real estate",
           "description": "A reading path through property data, human review, AI workflow costs and rental cash flow, with Ahmadreza Samadi’s work at Appraiva as context.",
           "eyebrow": "Reading path · AI and property research",
           "lead": "Follow a property signal through the questions that make it useful: what supports it, who checks it, and what decision comes next.",
@@ -723,14 +723,14 @@
           },
           "cross_hub": {
             "hub": "business-systems-dubai",
-            "label": "AI and business systems: lessons from Dubai",
+            "label": "AI and business systems",
             "summary": "Continue with the customer journey, permissions and payment timing behind everyday business operations."
           },
           "author_bio": "Ahmadreza Samadi builds AI products at Appraiva and runs Royal Abraj Group in Dubai. He writes about how businesses decide what to build, check and measure."
         },
         "fa": {
           "title": "هوش مصنوعی در املاک: از شواهد تا تصمیم | احمدرضا صمدی",
-          "heading": "هوش مصنوعی در املاک: از شواهد تا تصمیم",
+          "heading": "هوش مصنوعی در املاک",
           "description": "مسیر مطالعه‌ای درباره داده‌های ملک، بازبینی انسانی، هزینه فرایند هوش مصنوعی و جریان نقدی اجاره، با نگاهی به کار احمدرضا صمدی در Appraiva.",
           "eyebrow": "مسیر مطالعه · هوش مصنوعی و بررسی ملک",
           "lead": "یک نشانه درباره ملک را با این پرسش‌ها دنبال کنید: چه شواهدی آن را پشتیبانی می‌کند، چه کسی آن را بررسی می‌کند و تصمیم بعدی چیست؟",
@@ -797,14 +797,14 @@
           },
           "cross_hub": {
             "hub": "business-systems-dubai",
-            "label": "هوش مصنوعی و سیستم‌های کسب‌وکار: درس‌هایی از دبی",
+            "label": "هوش مصنوعی و سامانه‌های کسب‌وکار",
             "summary": "مسیر مشتری، مجوزهای دسترسی و زمان‌بندی پرداخت‌ها در کار روزمره کسب‌وکار را دنبال کنید."
           },
           "author_bio": "احمدرضا صمدی کارآفرین فناوری ساکن دبی، هم‌بنیان‌گذار و راهبر فنی Appraiva، سازندهٔ هوش مصنوعی برای تحلیل اطلاعات املاک، و هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group است."
         },
         "ar": {
           "title": "الذكاء الاصطناعي في العقارات: الأدلة والقرارات | أحمدرضا صمدي",
-          "heading": "الذكاء الاصطناعي في العقارات: الأدلة والقرارات",
+          "heading": "الذكاء الاصطناعي في العقارات",
           "description": "مسار قراءة عن بيانات العقارات والمراجعة البشرية وتكلفة عمل الذكاء الاصطناعي والتدفق النقدي للإيجار، في سياق عمل أحمدرضا صمدي في Appraiva.",
           "eyebrow": "مسار قراءة · الذكاء الاصطناعي والبحث العقاري",
           "lead": "تتبّع مؤشرًا عن عقار من خلال الأسئلة التي تجعله مفيدًا: ما الأدلة التي تدعمه، ومن يتحقق منه، وما القرار التالي؟",
@@ -871,7 +871,7 @@
           },
           "cross_hub": {
             "hub": "business-systems-dubai",
-            "label": "الذكاء الاصطناعي وأنظمة الأعمال: دروس من دبي",
+            "label": "الذكاء الاصطناعي وأنظمة الأعمال",
             "summary": "تابع رحلة العميل والصلاحيات وتوقيت المدفوعات وراء العمليات اليومية للشركة."
           },
           "author_bio": "أحمدرضا صمدي رائد أعمال تقني مقيم في دبي، وشريك مؤسس وقائد تقني في Appraiva التي تطوّر ذكاءً اصطناعيًا لتحليل المعلومات العقارية، وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group."
@@ -980,7 +980,7 @@
       "locales": {
         "en": {
           "title": "AI and business systems: lessons from Dubai | Ahmadreza Samadi",
-          "heading": "AI and business systems: lessons from Dubai",
+          "heading": "AI and business systems",
           "description": "Follow a customer enquiry at Royal Abraj Group in Dubai, then explore how to assess an AI assistant’s access, review steps and cost per accepted result.",
           "eyebrow": "Reading path · AI in business",
           "lead": "Follow a customer enquiry into the work behind it: the next sales action, the active case, the permissions and the payment dates.",
@@ -1037,14 +1037,14 @@
           },
           "cross_hub": {
             "hub": "ai-real-estate",
-            "label": "AI in real estate: evidence and decisions",
+            "label": "AI in real estate",
             "summary": "Continue with the property data and human review that support investment research."
           },
           "author_bio": "Ahmadreza Samadi builds AI products at Appraiva and runs Royal Abraj Group in Dubai. He writes about how businesses decide what to build, check and measure."
         },
         "fa": {
           "title": "هوش مصنوعی و سیستم‌های کسب‌وکار: درس‌هایی از دبی | احمدرضا صمدی",
-          "heading": "هوش مصنوعی و سیستم‌های کسب‌وکار: درس‌هایی از دبی",
+          "heading": "هوش مصنوعی و سامانه‌های کسب‌وکار",
           "description": "مسیر مطالعه‌ای از کار احمدرضا صمدی در رویال ابراج تا فرایند مشتری، طراحی محصول بر پایه تصمیم، مجوز اپ‌های متصل و زمان‌بندی جریان نقدی.",
           "eyebrow": "مسیر مطالعه · هوش مصنوعی در کسب‌وکار",
           "lead": "درخواست مشتری را تا کارهای پس از آن دنبال کنید: اقدام بعدی فروش، پرونده فعال، مجوزهای دسترسی و تاریخ پرداخت‌ها.",
@@ -1101,14 +1101,14 @@
           },
           "cross_hub": {
             "hub": "ai-real-estate",
-            "label": "هوش مصنوعی در املاک: از شواهد تا تصمیم",
+            "label": "هوش مصنوعی در املاک",
             "summary": "داده‌های ملک و بازبینی انسانی را که از بررسی فرصت‌های سرمایه‌گذاری پشتیبانی می‌کنند دنبال کنید."
           },
           "author_bio": "احمدرضا صمدی کارآفرین فناوری ساکن دبی، هم‌بنیان‌گذار و راهبر فنی Appraiva، سازندهٔ هوش مصنوعی برای تحلیل اطلاعات املاک، و هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group است."
         },
         "ar": {
           "title": "الذكاء الاصطناعي وأنظمة الأعمال: دروس من دبي | أحمدرضا صمدي",
-          "heading": "الذكاء الاصطناعي وأنظمة الأعمال: دروس من دبي",
+          "heading": "الذكاء الاصطناعي وأنظمة الأعمال",
           "description": "مسار قراءة من عمل أحمدرضا صمدي في رويال أبراج إلى رحلة العميل وتصميم المنتجات حول القرار وصلاحيات التطبيقات المتصلة وتوقيت النقد.",
           "eyebrow": "مسار قراءة · الذكاء الاصطناعي في الأعمال",
           "lead": "تتبّع استفسار العميل إلى العمل الذي يليه: إجراء المبيعات التالي، والحالة الجارية، والصلاحيات، ومواعيد الدفع.",
@@ -1165,7 +1165,7 @@
           },
           "cross_hub": {
             "hub": "ai-real-estate",
-            "label": "الذكاء الاصطناعي في العقارات: الأدلة والقرارات",
+            "label": "الذكاء الاصطناعي في العقارات",
             "summary": "تابع بيانات العقارات والمراجعة البشرية التي تدعم البحث عن فرص الاستثمار."
           },
           "author_bio": "أحمدرضا صمدي رائد أعمال تقني مقيم في دبي، وشريك مؤسس وقائد تقني في Appraiva التي تطوّر ذكاءً اصطناعيًا لتحليل المعلومات العقارية، وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group."
@@ -1347,7 +1347,7 @@
           },
           "cross_hub": {
             "hub": "ai-real-estate",
-            "label": "AI in real estate: evidence and decisions",
+            "label": "AI in real estate",
             "summary": "Continue with property information, human review and decision-first AI."
           }
         },
@@ -1433,7 +1433,7 @@
           },
           "cross_hub": {
             "hub": "ai-real-estate",
-            "label": "الذكاء الاصطناعي في العقارات: الأدلة والقرارات",
+            "label": "الذكاء الاصطناعي في العقارات",
             "summary": "تابع مع معلومات العقارات والمراجعة البشرية والذكاء الاصطناعي الذي يبدأ بالقرار."
           }
         }
