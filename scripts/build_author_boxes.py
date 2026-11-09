@@ -1,15 +1,17 @@
 """Maintain the supported author reference on article pages in their own language.
 
-The top byline, article text, dates and metadata are left intact. Only the marked author
-box and its dedicated stylesheet link are generated. Run --check before publication.
+Local bylines use the article's recorded dates. Author references and their
+dedicated stylesheet are generated without changing article metadata.
 """
 from pathlib import Path
+from datetime import datetime
 import re
 import json
 from html import escape
 import sys
 
 from enrich_metadata import article_node, language
+from build_status_pages import display_date
 
 ROOT = Path(__file__).resolve().parent.parent
 STYLESHEET = '<style data-author-box>\n' + (ROOT / 'css/author-box.css').read_text().strip() + '\n</style>'
@@ -81,12 +83,43 @@ def author_box(lang, series=None):
             '</aside>\n<!-- author-box:end -->')
 
 
+BYLINE = re.compile(r'<p class="byline"[^>]*>.*?</p>', re.S)
+UPDATED = re.compile(r'((?:Updated|تحديث|حُدّث في|به‌روزرسانی)\s*:?\s*)<time datetime="([^"]+)">[^<]*</time>')
+UPDATED_LABEL = {'en': 'Updated', 'fa': 'به‌روزرسانی', 'ar': 'تحديث'}
+
+
+def sync_byline(text, node, lang):
+    if not node.get('datePublished') or not node.get('dateModified'):
+        return text
+    published, modified = node['datePublished'], node['dateModified']
+    bylines = BYLINE.findall(text)
+    has_update = any(UPDATED.search(line) or modified[:10] in line for line in bylines)
+    def time_element(stamp):
+        return f'<time datetime="{escape(stamp, quote=True)}">{display_date(datetime.fromisoformat(stamp), lang)}</time>'
+
+    def align(match):
+        line = match[0]
+        line = UPDATED.sub(lambda m: m[0] if m[2][:10] == modified[:10] else m[1] + time_element(modified), line)
+        if 'rel="author"' in line:
+            if lang != 'en' and 'rel="author">Ahmadreza Samadi</a>' in line:
+                line = line.replace('rel="author">Ahmadreza Samadi</a>', 'rel="author">' + COPY[lang]['name'] + '</a>')
+                line = re.sub(r'<time datetime="' + re.escape(published) + r'">[^<]*</time>', lambda _: time_element(published), line, count=1)
+            if published[:10] != modified[:10] and not has_update:
+                line = line[:-4] + ' · ' + UPDATED_LABEL[lang] + ' ' + time_element(modified) + '</p>'
+        return line
+
+    return BYLINE.sub(align, text)
+
+
 def enrich_author(path, text):
-    if not article_node(text)[1] and not BOX.search(text):
+    _, node = article_node(text)
+    if not node and not BOX.search(text):
         return text
     lang = language(text)
     if lang not in COPY:
         raise ValueError(f'{path}: no supported author copy for {lang}')
+    if node and node.get('@type') == 'Article':
+        text = sync_byline(text, node, lang)
     if len(BOX.findall(text)) > 1 or len(STYLE_LINK.findall(text)) + len(STYLE_INLINE.findall(text)) > 1:
         raise ValueError(f'{path}: duplicate author boxes or stylesheet links')
     box = author_box(lang, series_for(path))
