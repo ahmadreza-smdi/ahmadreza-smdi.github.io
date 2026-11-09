@@ -4,7 +4,7 @@ The approved English-first taxonomy is separate from editorial body text.
 Template-only navigation changes preserve publication/modification dates.
 """
 import argparse
-from html import escape
+from html import escape, unescape
 import json
 from pathlib import Path
 import re
@@ -35,12 +35,22 @@ def resource(relative):
     title = ' '.join(unescape(re.sub(r'<[^>]+>', ' ', match[1])).split())
     return '/' + relative, title
 
-def render(family, language, hubs):
+def render(family, language, hubs, membership=None, trail=None):
     labels = LABELS[language]
     hub = next(h for h in hubs if h['id'] == family['hub'])
     target = hub['paths'][language]
     href, _ = resource(target)
     title = hub['locales'][language]['heading']
+    primary = f'<a href="{escape(href, quote=True)}" data-hub-primary="{escape(family["hub"], quote=True)}">{escape(title)}</a>'
+    location = f"{escape(labels['part'])}: {primary}"
+    if trail:
+        home, current, breadcrumb = trail
+        location = (f'<span role="navigation" aria-label="{escape(breadcrumb)}"><a href="/{prefix(language)}">{escape(home)}</a> / '
+                    f'{primary} / <span aria-current="page">{escape(current)}</span></span>')
+    for other in membership or ():
+        if other['id'] != hub['id']:
+            location += (f' · <a href="/{escape(other["paths"][language], quote=True)}" data-hub-secondary="{escape(other["id"], quote=True)}">'
+                         f'{escape(other["locales"][language]["heading"])}</a>')
     links = []
     destinations = set()
     pillars = set()
@@ -66,7 +76,7 @@ def render(family, language, hubs):
         watch = f'<p><a href="{escape(watch_href, quote=True)}" hreflang="en">{escape(labels["watch"])}</a></p>\n'
     return f'''{START}
 <nav class="article-reading-path" aria-labelledby="article-related-title">
-<p>{escape(labels['part'])}: <a href="{escape(href, quote=True)}" data-hub-primary="{escape(family['hub'], quote=True)}">{escape(title)}</a></p>
+<p>{location}</p>
 {watch}<h2 id="article-related-title">{escape(labels['related'])}</h2>
 <ul>{chr(10).join(links)}</ul>
 </nav>
@@ -82,6 +92,45 @@ def install(text, block):
     if text.count(marker) != 1:
         raise ValueError('Expected one end-author insertion point')
     return text.replace(marker, block + marker, 1)
+
+
+TOP_TRAIL = re.compile(r'<nav\b[^>]*class="byline"[^>]*>(?:(?!</nav>).)*?aria-current="page"(?:(?!</nav>).)*?</nav>', re.S)
+LIST_ITEMS = re.compile(r'("itemListElement"\s*:\s*)(\[\s*\{[^\[\]]*?\}\s*\])')
+CRUMB_LABELS = {'en': ('Home', 'Breadcrumb'), 'fa': ('خانه', 'مسیر صفحه'), 'ar': ('الرئيسية', 'مسار الصفحة')}
+
+
+def align_trail(text, relative, language, hub):
+    home, label = CRUMB_LABELS[language]
+    hub_title = hub['locales'][language]['heading']
+    hub_path = hub['paths'][language]
+    _, title = resource(relative)
+    top = TOP_TRAIL.search(text)
+    if top:
+        markup = top[0]
+        anchors = list(re.finditer(r'<a href="([^"]+)">([^<]*)</a>', markup))
+        last = re.search(r'<span aria-current="page">(.*?)</span>', markup, re.S)
+        if len(anchors) != 2 or last is None:
+            raise ValueError(f'Unexpected top breadcrumb: {relative}')
+        home = unescape(anchors[0][2])
+        title = unescape(re.sub(r'<[^>]+>', '', last[1]))
+        parent = f'<a href="/{hub_path}">{escape(hub_title)}</a>'
+        text = text[:top.start()] + markup[:anchors[1].start()] + parent + markup[anchors[1].end():] + text[top.end():]
+    items = [(home, BASE + prefix(language)), (hub_title, BASE + hub_path), (title, BASE + relative)]
+    def align_schema(match):
+        value = json.loads(match[2])
+        if len(value) != 3 or value[0].get('item') != items[0][1] or not all(i.get('@type') == 'ListItem' for i in value):
+            return match[0]
+        # Keep the graph's existing whitespace and optional current-page URL.
+        objects = iter(items)
+        def align_item(obj):
+            name, url = next(objects)
+            def field(m):
+                replacement = name if m[1] == 'name' else url
+                return m[0][:m.start(2)-m.start()] + json.dumps(replacement, ensure_ascii=False)
+            return re.sub(r'"(name|item)"\s*:\s*("(?:[^"\\]|\\.)*")', field, obj[0])
+        return match[1] + re.sub(r'\{[^{}]*\}', align_item, match[2])
+    text = LIST_ITEMS.sub(align_schema, text)
+    return text, None if top else (home, title, label)
 
 def all_articles():
     found = set()
@@ -115,7 +164,9 @@ def main():
                 raise ValueError(f'Article is missing from its primary hub: {relative}')
             path = ROOT / relative
             current = path.read_text()
-            expected_text = install(current, render(family, language, topic_data['hubs']))
+            memberships = [h for h in topic_data['hubs'] if any(topic_data['resources'][k]['paths'].get(language) == relative for k in h['ordered_resources'])]
+            text, trail = align_trail(current, relative, language, hub)
+            expected_text = install(text, render(family, language, topic_data['hubs'], memberships, trail))
             snapshots.append((path, current, expected_text))
     stale = [row for row in snapshots if row[1] != row[2]]
     if args.check:
