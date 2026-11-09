@@ -98,7 +98,7 @@ LEGACY_ARTICLE_DATES = {
     'why-full-storage-slows-computer.html': ('2026-10-09', '2026-10-09'),
     'why-phone-stops-charging-at-80.html': ('2026-10-05', '2026-10-05'),
 }
-LEGACY_ENGLISH_DECISION_DATES = ('2026-09-13T10:06:07+00:00', '2026-10-01')
+LEGACY_ENGLISH_DECISION_DATES = ('2026-09-13T13:36:07+03:30', '2026-10-01')
 
 META = r'<meta\s+(?:property|name)="{key}"\s+content="([^"]*)"\s*/?>'
 
@@ -238,6 +238,9 @@ def complete_schema(path, text):
                 node['description'] = description_record['description']
             if kind in ARTICLE_TYPES and 'publisher' not in node:
                 node['publisher'] = {'@id': BASE + '#person'}
+            if (relative == 'writing/start-with-the-decision.html' and kind in ARTICLE_TYPES
+                    and node.get('datePublished') == '2026-09-13T10:06:07+00:00'):
+                node['datePublished'] = datetime.fromisoformat(node['datePublished']).astimezone(PUBLISHING_TIMEZONE).isoformat()
             if kind == 'ProfilePage' and unlocalized == 'index.html':
                 node.setdefault('inLanguage', lang)
             if kind == 'WebApplication' and unlocalized.startswith('studies/rent-own-2026/'):
@@ -613,13 +616,12 @@ def enrich(path, text):
         if others:
             added.append('og:locale:alternate')
     image = value(head, 'og:image')
-    default_card = BASE + 'assets/img/ahmadreza-samadi-og.jpg'
+    default_card = PORTRAIT_CARD
     mapped = SHARE_IMAGES.get(image.removeprefix(BASE)) if image else None
     if (not mapped and local_image_dimensions(image) != (1200, 630)
             and 'noindex' not in (value(head, 'robots') or '')
             and local_image_dimensions(default_card) == (1200, 630)):
-        default_alt = {'en': 'Ahmadreza Samadi, Dubai-based technology entrepreneur',
-                       'fa': 'تصویر احمدرضا صمدی', 'ar': 'صورة أحمدرضا صمدي'}[lang]
+        default_alt = PORTRAIT_ALT[lang]
         replacements = {'og:image': default_card, 'twitter:image': default_card,
                         'og:image:width': '1200', 'og:image:height': '630',
                         'og:image:alt': default_alt, 'twitter:image:alt': default_alt}
