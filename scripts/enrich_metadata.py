@@ -519,13 +519,26 @@ def translation_links(text):
     return text, [key]
 
 
+PUBLIC_CONTACT = re.compile(
+    r'(?<!<!--email_off-->)(<a\b(?=[^>]*\bhref="mailto:ahmadreza\.smdi@gmail\.com")[^>]*>.*?</a>)',
+    re.I | re.S,
+)
+
+
+def preserve_public_contact(text):
+    """Keep the published personal contact usable without client-side JavaScript."""
+    return PUBLIC_CONTACT.sub(r'<!--email_off-->\1<!--/email_off-->', text)
+
+
 def enrich(path, text):
     head_end = text.find('</head>')
     if head_end < 0:
         return text, []
     head, rest = text[:head_end], text[head_end:]
     lang = language(head)
-    added = []
+    contact = preserve_public_contact(rest)
+    added = ['public contact link'] if contact != rest else []
+    rest = contact
     relative = path.relative_to(ROOT).as_posix()
     def decode_content_image(match):
         tag = match[0]
