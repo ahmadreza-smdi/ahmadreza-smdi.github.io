@@ -148,7 +148,7 @@
     {
       "stem": "ai-agent-safety-boundaries",
       "classification": "core",
-      "hub": "ai-real-estate",
+      "hub": "business-systems-dubai",
       "paths": {
         "en": "writing/ai-agent-safety-boundaries.html",
         "fa": "fa/writing/ai-agent-safety-boundaries.html",
@@ -172,7 +172,7 @@
     {
       "stem": "jev-ai-decision-model",
       "classification": "core",
-      "hub": "ai-real-estate",
+      "hub": "business-systems-dubai",
       "paths": {
         "en": "writing/jev-ai-decision-model.html",
         "fa": "fa/writing/jev-ai-decision-model.html",
@@ -196,7 +196,7 @@
     {
       "stem": "connected-ai-apps",
       "classification": "core",
-      "hub": "ai-real-estate",
+      "hub": "business-systems-dubai",
       "paths": {
         "en": "writing/connected-ai-apps.html",
         "fa": "fa/writing/connected-ai-apps.html",
@@ -220,7 +220,7 @@
     {
       "stem": "ai-cost-per-verified-result",
       "classification": "core",
-      "hub": "ai-real-estate",
+      "hub": "business-systems-dubai",
       "paths": {
         "en": "writing/ai-cost-per-verified-result.html",
         "fa": "fa/writing/ai-cost-per-verified-result.html",
@@ -244,7 +244,7 @@
     {
       "stem": "start-with-the-decision",
       "classification": "core",
-      "hub": "ai-real-estate",
+      "hub": "business-systems-dubai",
       "paths": {
         "en": "writing/start-with-the-decision.html",
         "fa": "fa/writing/start-with-the-decision.html",
@@ -268,7 +268,7 @@
     {
       "stem": "why-ai-sounds-confident",
       "classification": "core",
-      "hub": "ai-real-estate",
+      "hub": "tech-explained",
       "paths": {
         "en": "writing/why-ai-sounds-confident.html",
         "fa": "fa/writing/why-ai-sounds-confident.html",
@@ -293,7 +293,7 @@
     {
       "stem": "why-ai-loses-earlier-chat-context",
       "classification": "core",
-      "hub": "ai-real-estate",
+      "hub": "tech-explained",
       "paths": {
         "en": "writing/why-ai-loses-earlier-chat-context.html",
         "fa": "fa/writing/why-ai-loses-earlier-chat-context.html",
@@ -317,7 +317,7 @@
     {
       "stem": "verify-ai-image-claims",
       "classification": "core",
-      "hub": "ai-real-estate",
+      "hub": "tech-explained",
       "paths": {
         "en": "writing/verify-ai-image-claims.html",
         "fa": "fa/writing/verify-ai-image-claims.html",
@@ -727,7 +727,7 @@
     {
       "stem": "chatgpt-intelligent-ui-explained",
       "classification": "core",
-      "hub": "ai-real-estate",
+      "hub": "tech-explained",
       "paths": {
         "en": "writing/chatgpt-intelligent-ui-explained.html",
         "fa": "fa/writing/chatgpt-intelligent-ui-explained.html",
@@ -775,7 +775,7 @@
     {
       "stem": "small-ai-models-task-routing-explained",
       "classification": "explainer",
-      "hub": "tech-explained",
+      "hub": "business-systems-dubai",
       "paths": {
         "en": "writing/small-ai-models-task-routing-explained.html",
         "fa": "fa/writing/small-ai-models-task-routing-explained.html",
@@ -967,7 +967,7 @@
     {
       "stem": "ai-document-review-claim-evidence-checklist",
       "classification": "core",
-      "hub": "tech-explained",
+      "hub": "business-systems-dubai",
       "paths": {
         "en": "writing/ai-document-review-claim-evidence-checklist.html",
         "fa": "fa/writing/ai-document-review-claim-evidence-checklist.html",
@@ -1375,7 +1375,7 @@
     {
       "stem": "rag-check-business-records",
       "classification": "explainer",
-      "hub": "ai-real-estate",
+      "hub": "business-systems-dubai",
       "paths": {
         "en": "writing/rag-check-business-records.html",
         "fa": "fa/writing/rag-check-business-records.html",
@@ -1423,7 +1423,7 @@
     {
       "stem": "computer-agent-check-result",
       "classification": "explainer",
-      "hub": "ai-real-estate",
+      "hub": "business-systems-dubai",
       "paths": {
         "en": "writing/computer-agent-check-result.html",
         "fa": "fa/writing/computer-agent-check-result.html",
@@ -1496,7 +1496,7 @@
     {
       "stem": "prompt-injection-layered-controls",
       "classification": "explainer",
-      "hub": "ai-real-estate",
+      "hub": "business-systems-dubai",
       "paths": {
         "en": "writing/prompt-injection-layered-controls.html",
         "fa": "fa/writing/prompt-injection-layered-controls.html",
@@ -1521,7 +1521,7 @@
     {
       "stem": "business-ai-evaluation-cases",
       "classification": "explainer",
-      "hub": "ai-real-estate",
+      "hub": "business-systems-dubai",
       "paths": {
         "en": "writing/business-ai-evaluation-cases.html",
         "fa": "fa/writing/business-ai-evaluation-cases.html",
@@ -1546,7 +1546,7 @@
     {
       "stem": "ai-research-examination-understanding",
       "classification": "explainer",
-      "hub": "ai-real-estate",
+      "hub": "tech-explained",
       "paths": {
         "en": "writing/ai-research-examination-understanding.html",
         "fa": "fa/writing/ai-research-examination-understanding.html",
@@ -1596,7 +1596,7 @@
     {
       "stem": "structured-output-source-checks",
       "classification": "explainer",
-      "hub": "ai-real-estate",
+      "hub": "business-systems-dubai",
       "paths": {
         "en": "writing/structured-output-source-checks.html",
         "fa": "fa/writing/structured-output-source-checks.html",
@@ -1646,7 +1646,7 @@
     {
       "stem": "agent-workflow-shared-bottlenecks",
       "classification": "explainer",
-      "hub": "ai-real-estate",
+      "hub": "business-systems-dubai",
       "paths": {
         "en": "writing/agent-workflow-shared-bottlenecks.html",
         "fa": "fa/writing/agent-workflow-shared-bottlenecks.html",
