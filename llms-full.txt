@@ -18,7 +18,7 @@ Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احم�
 ## Profile
 
 - [Homepage](https://a-samadi.com/): Ahmadreza Samadi builds AI and runs a business that has to live with it. Explore his work at Appraiva, Royal Abraj Group in Dubai and his decision guides.
-- [Biography](https://a-samadi.com/about.html): Read Ahmadreza Samadi’s biography. Also known as Ahmad Samadi, he builds AI as Appraiva’s technical co-founder and leads Royal Abraj Group as CEO in Dubai.
+- [Biography](https://a-samadi.com/about.html): Biography of Ahmadreza Samadi, also known as Ahmad Samadi. Follow his path from data engineering to building AI products and running a business in Dubai.
 - [Ahmadreza Samadi press kit, biography and founder roles](https://a-samadi.com/press.html): Find Ahmadreza Samadi’s short and long biographies, portrait and official profiles. Check his Dubai base and his current roles at Appraiva and Royal Abraj Group.
 - [Now](https://a-samadi.com/now.html): What Ahmadreza Samadi is working on in November 2026: building AI at Appraiva, running Royal Abraj Group, and a weekly piece on where AI earns its place in business.
 - [Writing topics](https://a-samadi.com/speaking.html): Writing topics from Ahmadreza Samadi's work in AI products, property data and business systems, with related published work and written contact details.
@@ -26,7 +26,7 @@ Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احم�
 
 ## Work
 
-- [Appraiva property imagery and search with Ahmadreza Samadi](https://a-samadi.com/work/appraiva.html): How does Appraiva connect a photo to the right property? Ahmadreza Samadi describes imagery analysis, property matching, enriched records and investor search.
+- [Appraiva case study: property imagery, data and search](https://a-samadi.com/work/appraiva.html): How does Appraiva match a property photo to the right record? Ahmadreza Samadi explains how imagery analysis, matching and data enrichment support investor search.
 - [Oxfam Novib: CRM data and analytics](https://a-samadi.com/work/oxfam-novib.html): Ahmadreza Samadi’s Oxfam Novib work: Azure data infrastructure for CRM migration and analytics as a Data Engineer, September 2022–June 2023.
 - [Royal Abraj Group in Dubai and Ahmadreza Samadi’s role](https://a-samadi.com/work/royal-abraj.html): Follow how Ahmadreza Samadi connects an enquiry to CRM follow-up and a customer portal at Royal Abraj Group, a Dubai brokerage and documents-clearing business.
 - [AI Products and Business Systems](https://a-samadi.com/work/): Explore Ahmadreza Samadi’s work on property imagery and search at Appraiva, customer workflows at Royal Abraj Group, and data engineering at Oxfam Novib.
