@@ -493,6 +493,14 @@ def enrich(relative, text):
     version = '1.0.0' if study == 'rent-own-2026' else '1.1.1'
     date = '2026-10-15' if study == 'rent-own-2026' else '2026-10-17'
     citation = f'Ahmadreza Samadi ({date}). {title}. Software/method version {version}. {base}'
+    node['isBasedOn'].append({
+        '@type': 'SoftwareSourceCode',
+        'name': title,
+        'version': version,
+        'datePublished': date,
+        'author': {'@id': 'https://a-samadi.com/#person'},
+        'url': release,
+    })
     node['citation'] = [f'{citation} Release: {release}',
                         f'U.S. Census Bureau. 2024 ACS one-year table {source_table}. {census_url}']
     if study == 'rent-own-2026':
