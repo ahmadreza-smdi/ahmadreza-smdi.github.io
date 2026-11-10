@@ -24,7 +24,7 @@ def deploy_command(sha):
     return f"""sh -eu <<'PAGES'
 R=repos/ahmadreza-smdi/ahmadreza-smdi.github.io
 expected={sha}
-api() {{ gh api -H 'User-Agent: Website-Review/1.0' "$@"; }}
+api() {{ sleep 1.1; gh api -H 'User-Agent: Website-Review/1.0' "$@"; }}
 restore() {{ api -X PUT "$R/pages" -f build_type=workflow; }}
 finish() {{
   result=$?
