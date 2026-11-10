@@ -20,6 +20,7 @@ class PublishTreeTest(unittest.TestCase):
         subprocess.run(["git", "init", "-q"], cwd=self.root, check=True)
         for path in DISCOVERY:
             self.write(path, "")
+        self.write("sitemap.xml", "<urlset><url><loc>https://a-samadi.com/</loc></url></urlset>")
         self.write("site.webmanifest", '{"icons":[]}')
         self.write("_config.yml", "exclude:\n  - audit.py\n")
         self.write("audit.py", "repository-only")
@@ -102,10 +103,15 @@ class PublishTreeTest(unittest.TestCase):
                     select(self.root)
 
     def test_reject_untracked_page_and_symbolic_link(self):
+        self.write("unlinked.html", "private draft")
+        subprocess.run(["git", "add", "--", "unlinked.html"], cwd=self.root, check=True)
+        self.assertNotIn("unlinked.html", select(self.root))
         self.write("draft.html", "draft")
+        self.write("index.html", '<a href="/draft.html">Untracked</a>')
         with self.assertRaisesRegex(ValueError, "untracked"):
             select(self.root)
         (self.root / "draft.html").unlink()
+        self.write("index.html", '<img src="/image.png">')
         (self.root / "image.png").unlink()
         (self.root / "image.png").symlink_to(self.root / "index.html")
         with self.assertRaisesRegex(ValueError, "missing references"):

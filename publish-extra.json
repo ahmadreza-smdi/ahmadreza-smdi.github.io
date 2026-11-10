@@ -173,10 +173,20 @@
     "scripts/test_rent_study_locales.mjs": "Previously served maintenance source; retained until the owner elects withdrawal.",
     "scripts/test_reviewed_image_bytes.py": "Previously served maintenance source; retained until the owner elects withdrawal.",
     "scripts/test_valuation_range.cjs": "Previously served maintenance source; retained until the owner elects withdrawal.",
+    "studies/rent-own-2026/embed.html": "Reviewed existing embeddable page; keep direct and iframe URLs available outside the indexable sitemap.",
     "studies/rent-own-2026/study-data.json": "Verified pre-existing public file. Preserve direct links when publishing from the reviewed tree.",
+    "tools/embed/dubai-purchase-cost.html": "Reviewed existing embeddable page; keep direct and iframe URLs available outside the indexable sitemap.",
+    "tools/embed/rental-cash-flow.html": "Reviewed existing embeddable page; keep direct and iframe URLs available outside the indexable sitemap.",
+    "tools/embed/valuation-range.html": "Reviewed existing embeddable page; keep direct and iframe URLs available outside the indexable sitemap.",
     "tools/video-date-lint/LICENSE": "Verified pre-existing public file. Preserve direct links when publishing from the reviewed tree.",
     "tools/video-date-lint/README.md": "Verified pre-existing public file. Preserve direct links when publishing from the reviewed tree.",
     "tools/video-date-lint/tests/test_cli.py": "Verified pre-existing public file. Preserve direct links when publishing from the reviewed tree.",
-    "tools/video-date-lint/video_datetime_lint.py": "Verified pre-existing public file. Preserve direct links when publishing from the reviewed tree."
+    "tools/video-date-lint/video_datetime_lint.py": "Verified pre-existing public file. Preserve direct links when publishing from the reviewed tree.",
+    "watch/embed/ai-confidence.html": "Reviewed existing embeddable page; keep direct and iframe URLs available outside the indexable sitemap.",
+    "watch/embed/charging-80.html": "Reviewed existing embeddable page; keep direct and iframe URLs available outside the indexable sitemap.",
+    "watch/embed/cookie-consent.html": "Reviewed existing embeddable page; keep direct and iframe URLs available outside the indexable sitemap.",
+    "watch/embed/iphone-duo.html": "Reviewed existing embeddable page; keep direct and iframe URLs available outside the indexable sitemap.",
+    "watch/embed/profit-cash.html": "Reviewed existing embeddable page; keep direct and iframe URLs available outside the indexable sitemap.",
+    "watch/embed/rental-yield.html": "Reviewed existing embeddable page; keep direct and iframe URLs available outside the indexable sitemap."
   }
 }

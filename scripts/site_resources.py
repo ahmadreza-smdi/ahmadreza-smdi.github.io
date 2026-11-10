@@ -51,9 +51,9 @@ def resolve(origin, ref, allowed_path=None):
     return None if ".." in Path(path).parts or (protected(path) and allowed_path is None) else path
 
 
-def inventory(root, allowed_path=None):
+def inventory(root, allowed_path=None, page_seeds=None):
     root = root.resolve()
-    html = {p.relative_to(root).as_posix() for p in pages(root)}
+    html = {p.relative_to(root).as_posix() for p in pages(root)} if page_seeds is None else set(page_seeds)
     seen = set()
     references = defaultdict(set)
     missing = set()
@@ -88,7 +88,8 @@ def inventory(root, allowed_path=None):
             continue
         raw = p.read_text(encoding="utf-8", errors="replace")
         refs = set()
-        if origin in html:
+        if origin in html or (page_seeds is not None and p.suffix == ".html" and not protected(origin)):
+            html.add(origin)
             d = Document(raw)
             for e in d.elements:
                 for key in (

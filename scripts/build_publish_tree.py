@@ -7,10 +7,13 @@ import re
 import shutil
 import subprocess
 import tempfile
+from urllib.parse import unquote, urlsplit
+from xml.etree import ElementTree
 
 from check_internal_links import VERIFICATION, protected
 from check_site_live import committed_csv, excluded_files
 from site_resources import inventory
+from seo_document import SITE
 
 ROOT = Path(__file__).resolve().parents[1]
 DISCOVERY = {
@@ -51,14 +54,27 @@ def tracked_files(root):
 
 def select(root, withdraw_internal=False):
     tracked = tracked_files(root)
-    html, reached, references, missing = inventory(root, allowed_path=allowed)
-    if not html or missing:
-        examples = "; ".join(f"{p} -> {q}" for p, q in sorted(missing)[:8])
-        raise ValueError(f"Cannot publish: {len(missing)} missing references. {examples}")
     manifest = json.loads((root / MANIFEST).read_text(encoding="utf-8"))
     extra = manifest["extra"]
     if not isinstance(extra, dict) or any(not isinstance(r, str) or not r.strip() for r in extra.values()):
         raise ValueError("Every additional path requires a reviewed reason")
+    # Public pages enter through the sitemap, explicit compatibility entries, or a public link.
+    # An unrelated tracked HTML draft is not itself permission to publish it.
+    page_seeds = {"404.html"} | {p for p in extra if p.endswith(".html")}
+    for entry in ElementTree.parse(root / "sitemap.xml").findall("{*}url/{*}loc"):
+        url = entry.text or ""
+        parts = urlsplit(url)
+        if not url.startswith(SITE) or parts.query or parts.fragment:
+            raise ValueError(f"Invalid sitemap page URL: {url}")
+        rel = unquote(parts.path).lstrip("/")
+        page_seeds.add(rel + "index.html" if not rel or rel.endswith("/") else rel)
+    for path in page_seeds:
+        if not allowed(path) or path not in tracked or not (root / path).is_file() or (root/path).resolve() != root/path:
+            raise ValueError(f"Unsafe, untracked or missing public page: {path}")
+    html, reached, references, missing = inventory(root, allowed_path=allowed, page_seeds=page_seeds)
+    if not html or missing:
+        examples = "; ".join(f"{p} -> {q}" for p, q in sorted(missing)[:8])
+        raise ValueError(f"Cannot publish: {len(missing)} missing references. {examples}")
     discovery = DISCOVERY | {p for p in tracked if "/" not in p and VERIFICATION.fullmatch(p)}
     selected = reached | discovery | extra.keys()
     excluded = set(excluded_files(root))
@@ -111,7 +127,7 @@ def main():
     args = parser.parse_args()
     try:
         files = select(ROOT, args.withdraw_internal) if args.check else build(ROOT, args.output, args.withdraw_internal)
-    except (OSError, ValueError, subprocess.CalledProcessError) as error:
+    except (OSError, ValueError, ElementTree.ParseError, subprocess.CalledProcessError) as error:
         parser.exit(1, f"FAIL: {error}\n")
     print(f"PASS: {len(files)} public files; withdraw internal = {args.withdraw_internal}")
 
