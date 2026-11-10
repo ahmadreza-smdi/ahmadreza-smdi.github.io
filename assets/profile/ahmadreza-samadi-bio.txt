@@ -1,0 +1,48 @@
+Ahmadreza Samadi
+Technology Entrepreneur
+Co-Founder & Technical Lead, Appraiva
+Co-Founder & CEO, Royal Abraj Group
+
+SHORT BIOGRAPHY
+
+Technology entrepreneur in Dubai · Co-Founder & Technical Lead, Appraiva · Co-Founder & CEO, Royal Abraj Group
+
+EXTENDED BIOGRAPHY
+
+Ahmadreza Samadi is a technology entrepreneur based in Dubai. He builds AI products as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO. Appraiva is based in Cleveland, Ohio, in the United States. Samadi works remotely from Dubai, connecting property imagery, records and search. At Royal Abraj Group, he leads digital strategy for property brokerage and documents clearing. His work includes websites, CRM workflows and a customer portal. His background includes data engineering at Oxfam Novib and machine learning at MCI. His public guides cover human review and the cost per accepted AI result.
+
+Website: https://a-samadi.com/
+LinkedIn: https://www.linkedin.com/in/ahmadreza-samadi/
+Contact: ahmadreza.smdi@gmail.com
+Instagram: https://www.instagram.com/ahmadreza.samadi/
+
+BRAND LINE
+
+I build AI, and I run a business that has to live with it. I write about where AI earns its place in a business: the decision it improves, where a person must check it, and what it really costs.
+
+PUBLIC TOOLS AND RESEARCH
+
+Rent and ownership scenarios: illustrative cash budgets, source years, assumptions and limits; not observed investment returns.
+https://a-samadi.com/studies/rent-own-2026/
+
+AI workflow cost ledger: offline cost per caller-accepted result, fictional examples and a companion experiment workbook.
+https://github.com/ahmadreza-smdi/ai-workflow-cost
+
+ACS2024 metro rent-burden code and data release, with methodology and limits.
+https://github.com/ahmadreza-smdi/metro-rent-burden/releases/tag/v1.1.1
+
+Video publication-date linter: offline checks of local metadata without modifying the inputs.
+https://github.com/ahmadreza-smdi/video-date-lint
+
+These educational resources were developed with AI assistance. They do not establish customer adoption, company deployment, commercial results, endorsements or independent citations. Reuse terms are resource-specific.
+
+
+SIGNATURE IDEAS
+
+Start with the decision.
+Where the AI must stop.
+Cost per accepted result.
+https://a-samadi.com/ideas.html
+
+Property Decision Data
+https://a-samadi.com/studies/

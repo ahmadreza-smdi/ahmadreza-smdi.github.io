@@ -1,0 +1,110 @@
+"""Build full RTL homepages from the English source, preserving its layout and behavior."""
+from html.parser import HTMLParser
+from pathlib import Path
+import html
+import json
+import re
+import sys
+from follow_blocks import enrich_follow
+ROOT=Path(__file__).resolve().parent.parent
+SOURCE=(ROOT/'index.html').read_text()
+# The localized name note retains the two original name scripts.
+SOURCE = SOURCE.replace(
+    '<p class="name-scripts">Also known as Ahmad Samadi.</p>',
+    '<p class="name-scripts">My name in Persian and Arabic: '
+    '<bdi lang="fa">احمدرضا صمدی</bdi> · <bdi lang="ar">أحمدرضا صمدي</bdi>.</p>',
+)
+SOURCE=re.sub(r'<!-- follow-subscribe:start -->.*?<!-- follow-subscribe:end -->\n?', '', SOURCE, flags=re.S)
+class Translator(HTMLParser):
+    def __init__(self, translations, lang):
+        super().__init__(convert_charrefs=False)
+        self.translations=translations; self.lang=lang; self.body=False; self.skip=False; self.edits=[]
+        self.lines=SOURCE.splitlines(keepends=True)
+    def source_offset(self):
+        line,col=self.getpos();return sum(map(len,self.lines[:line-1]))+col
+    def handle_starttag(self,tag,attrs):
+        if tag=='body':self.body=True
+        if tag in ('script','style'):self.skip=True
+        raw=self.get_starttag_text();new=raw
+        for key,value in attrs:
+            if value is None:continue
+            translated=value
+            if self.body and key in ('aria-label','alt') and value:
+                translated=self.translations[value]
+            if key=='href' and value in ('/writing/build-ai-run-a-business.html','/work/','/press.html','/writing/ai-home-value-estimates.html','/writing/ai-human-review-real-estate.html','/writing/which-dubai-property-source.html','/studies/rent-own-2026/','/work/appraiva.html','/work/royal-abraj.html','/writing/start-with-the-decision.html','/about.html','/writing/','/#work'):
+                translated='/'+self.lang+value
+            elif key=='href' and (value.startswith('topics/') or value.startswith('about.html') or value in ('tools/before-you-build-ai.html','work/appraiva.html','work/royal-abraj.html','work/oxfam-novib.html','writing/ai-cost-per-verified-result.html','writing/ai-home-value-estimates.html','writing/ai-human-review-real-estate.html','writing/which-dubai-property-source.html','writing/connected-ai-apps.html','writing/jev-ai-decision-model.html','writing/start-with-the-decision.html','writing/ai-agent-safety-boundaries.html','writing/')):
+                translated=value
+            elif key in ('href','src','poster','data-src') and not re.match(r'^(?:[a-z]+:|/|#)',value):translated='../'+value
+            if key in ('srcset','imagesrcset'):
+                translated=', '.join('../'+v.strip() for v in value.split(','))
+            if translated!=value:
+                pattern=r'('+re.escape(key)+r'\s*=\s*")([^"]*)(")'
+                new=re.sub(pattern,lambda m:m[1]+html.escape(translated,quote=True)+m[3],new)
+        if raw!=new:self.edits.append((self.source_offset(),self.source_offset()+len(raw),new))
+    handle_startendtag=handle_starttag
+    def handle_endtag(self,tag):
+        if tag in ('script','style'):self.skip=False
+    def handle_data(self,data):
+        # Text with character references is translated as a whole below.
+        pass
+for lang in ('fa','ar'):
+    tr=json.loads((ROOT/'locales'/f'{lang}.json').read_text())
+    p=Translator(tr,lang);p.feed(SOURCE);out=SOURCE
+    for start,end,value in reversed(p.edits):out=out[:start]+value+out[end:]
+    head,body=out.split('<body>',1)
+    visible,script=body.split('        <script>',1)
+    def translate(m):
+        raw=m[1];key=html.unescape(raw).strip()
+        if not key:return m[0]
+        if key not in tr:raise ValueError(f'Missing {lang} translation: {key}')
+        leading=raw[:len(raw)-len(raw.lstrip())];trailing=raw[len(raw.rstrip()):]
+        return '>'+leading+html.escape(tr[key],quote=False)+trailing+'<'
+    visible=re.sub(r'>([^<>]+)<',translate,'<body>'+visible)
+    english_link=f' <a class="story-link" href="/" hreflang="en" data-locale-primary="en" style="display:block;width:max-content;max-width:100%">{html.escape(tr["Primary English site link"])}</a>'
+    visible,link_count=re.subn(r'(<a class="story-link" href="about.html">[^<]+</a>)(</div>)',lambda m:m[1]+english_link+m[2],visible,count=1)
+    if link_count!=1:raise ValueError(f'Missing {lang} biography link insertion point')
+    script=script.replace("'Resume motion'",json.dumps(tr['Resume motion'],ensure_ascii=False)).replace("'Pause motion'",json.dumps(tr['Pause motion'],ensure_ascii=False))
+    title=tr['Search title']
+    description=tr['Search description']
+    modified=tr['Homepage modified']
+    source_title=re.search(r'<title>([^<]+)</title>',head)
+    if not source_title:raise ValueError('Missing English homepage title')
+    source_title=source_title[1]
+    head=head.replace('<html lang="en">',f'<html lang="{lang}" dir="rtl">')
+    head=head.replace('<title>'+source_title+'</title>','<title>'+title+'</title>')
+    head=head.replace('content="'+source_title+'"','content="'+title+'"')
+    head=re.sub(r'(<meta (?:name="(?:description|twitter:description)"|property="og:description") content=")[^"]*',lambda m:m[1]+description,head)
+    head=re.sub(r'(<meta property="og:updated_time" content=")[^"]*',lambda m:m[1]+modified,head)
+    head=head.replace('<link rel="canonical" href="https://a-samadi.com/"',f'<link rel="canonical" href="https://a-samadi.com/{lang}/"')
+    head=head.replace('property="og:url" content="https://a-samadi.com/"',f'property="og:url" content="https://a-samadi.com/{lang}/"')
+    own='fa_IR' if lang=='fa' else 'ar_AE'
+    head=head.replace('<meta property="og:locale" content="en_US" />',f'<meta property="og:locale" content="{own}" />')
+    head=head.replace(f'<meta property="og:locale:alternate" content="{own}" />','<meta property="og:locale:alternate" content="en_US" />')
+    head=head.replace('content="Ahmadreza Samadi, Dubai-based technology entrepreneur"','content="'+tr['Portrait of Ahmadreza Samadi']+'"')
+    def schema(m):
+        d=json.loads(m[1]);profile=next(x for x in d['@graph'] if x['@type']=='ProfilePage')
+        # All language versions refer to the same Person. Localize the ProfilePage.
+        profile.update({'@id':f'https://a-samadi.com/{lang}/#profile','url':f'https://a-samadi.com/{lang}/','name':title,'description':description,'inLanguage':lang,'dateModified':modified})
+        # The English homepage is the original; this page is its translation.
+        profile.pop('workTranslation',None);profile['translationOfWork']={'@id':'https://a-samadi.com/#profile'}
+        return '<script type="application/ld+json">\n'+json.dumps(d,ensure_ascii=False,indent=2)+'\n</script>'
+    head=re.sub(r'<script type="application/ld\+json">(.*?)</script>',schema,head,flags=re.S)
+    # Persian and Arabic text is set in Vazirmatn (Latin keeps the system font), so preload it with the portrait.
+    head,font_count=re.subn(r'(\n(\s*)<link rel="preload" as="image"[^\n]*\n)',lambda m:m[1]+m[2]+'<link rel="preload" as="font" type="font/woff2" href="../assets/fonts/vazirmatn-arabic-wght.woff2" crossorigin />\n',head,count=1)
+    if font_count!=1:raise ValueError('Missing portrait preload insertion point')
+    # Persian and Arabic names and headings are set in Vazirmatn, so these pages do not preload the Latin display face.
+    head,sora_count=re.subn(r'\n\s*<link rel="preload" as="font" type="font/woff2" href="[^"]*sora-latin-wght\.woff2" crossorigin />',"",head,count=1)
+    if sora_count!=1:raise ValueError('Missing Sora preload in the English homepage')
+    head=head.replace('</head>','    <link rel="stylesheet" href="../css/rtl.css?v=20261009-lagoon4" />\n</head>')
+    # Keep the existing manual analytics tag after the RTL stylesheet.
+    head=re.sub(r'(\n\n<script src="/js/site-analytics\.js[^\"]*" defer></script>)(\n    <link rel="stylesheet" href="../css/rtl.css[^\"]*" />)',r'\2\1',head,count=1)
+    destination = ROOT / lang / 'index.html'
+    rendered = enrich_follow(head+visible+'        <script>'+script)
+    if '--check' in sys.argv:
+        if destination.read_text() != rendered:
+            raise SystemExit(f'STALE localized homepage: {destination.relative_to(ROOT)}')
+        print('PASS localized homepage', lang)
+    else:
+        destination.write_text(rendered)
+        print('Built',lang)

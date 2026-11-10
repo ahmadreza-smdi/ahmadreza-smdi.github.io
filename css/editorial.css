@@ -1,0 +1,186 @@
+/* Reading pages: a calm reading measure on the mist canvas. The top of each page opens on the same
+   land contours and mint-and-sky light as the homepage, then gives way to the text. */
+.hero-context{max-width:38rem}
+.bio-copy{max-width:800px;color:var(--ink-soft)}
+.bio-copy p{margin:0 0 1.3rem}
+.editorial-body{position:relative;isolation:isolate;display:flow-root;padding-top:0}
+.editorial-body::before,.editorial-body::after{content:"";position:absolute;top:0;left:0;right:0;z-index:-1;height:min(80vh,740px);pointer-events:none}
+.editorial-body::before{background:radial-gradient(40% 60% at 80% 8%,rgba(195,220,244,.75),transparent 72%),radial-gradient(38% 56% at 16% 0%,rgba(189,231,210,.68),transparent 72%)}
+.editorial-body::after{background:url("../assets/img/contours.svg") 50% 0/max(1400px,100%) auto no-repeat;opacity:.42;-webkit-mask:linear-gradient(180deg,#000 10%,rgba(0,0,0,.45) 45%,transparent 85%);mask:linear-gradient(180deg,#000 10%,rgba(0,0,0,.45) 45%,transparent 85%)}
+.editorial-header{position:sticky;top:12px;z-index:50;view-transition-name:site-header;display:flex;align-items:center;justify-content:space-between;gap:1rem;width:fit-content;max-width:calc(100% - 32px);min-height:58px;margin:12px auto 0;padding-block:.4rem;padding-inline:.45rem .55rem;border-radius:16px;background:rgba(255,255,255,.74);-webkit-backdrop-filter:saturate(150%) blur(18px);backdrop-filter:saturate(150%) blur(18px);box-shadow:0 0 0 1px var(--line),0 14px 32px -22px rgba(14,42,51,.4)}
+.editorial-header a{position:relative;isolation:isolate;display:inline-flex;align-items:center;gap:.8rem;min-height:44px;padding-inline:4px .7rem;border-radius:12px;color:var(--ink);font-family:var(--display);font-size:.9375rem;font-weight:600;letter-spacing:-.015em;text-decoration:none}
+/* The mark sits on the same mint-to-sky tile as on the homepage */
+.editorial-header a:has(img)::before{content:"";position:absolute;top:50%;inset-inline-start:0;z-index:-1;width:44px;height:44px;margin-top:-22px;border-radius:12px;background:var(--duo);box-shadow:inset 0 0 0 1px rgba(14,42,51,.06)}
+.editorial-header a img{display:block;width:36px;height:24px;object-fit:contain;object-position:-999px 0;background:var(--ink);-webkit-mask:var(--mark) center/26px auto no-repeat;mask:var(--mark) center/26px auto no-repeat}
+.editorial-header a:hover{color:var(--teal);text-decoration:none}
+.editorial-header a:focus-visible{outline-offset:2px;border-radius:12px}
+.editorial{max-width:760px;margin:0 auto;padding:clamp(3rem,7vw,5.5rem) 24px 5rem;overflow-wrap:break-word}
+.editorial h1{font-size:clamp(2.2rem,4.8vw,3.4rem);font-weight:600;line-height:1.08;letter-spacing:-.04em;margin:.4rem 0 1.4rem;color:var(--ink);text-wrap:balance}
+.editorial h2{font-size:clamp(1.45rem,2.5vw,1.8rem);font-weight:600;line-height:1.2;letter-spacing:-.03em;margin:3rem 0 1rem;color:var(--ink);text-wrap:balance}
+.editorial h3{font-size:1.2rem;font-weight:600;letter-spacing:-.022em;line-height:1.3;color:var(--ink);margin:2rem 0 .7rem}
+.editorial p,.editorial li{color:var(--ink-soft);font-size:1.125rem;line-height:1.65}
+.editorial p{margin-block:0 1.3rem}
+.editorial a{color:var(--teal);text-decoration:none}
+/* Larger touch targets for links without changing the line layout */
+.editorial :is(p,li,nav,figcaption,small) > a{padding-block:.32em}
+nav.byline a{padding-block:.6em}
+.editorial a:hover{text-decoration:underline;text-underline-offset:3px}
+.editorial strong{color:var(--ink);font-weight:600}
+.editorial .eyebrow,.editorial p.eyebrow{margin-bottom:.9rem;color:var(--teal);font-size:.9375rem;font-weight:600;line-height:1.4}
+.editorial .lead{color:var(--ink);font-family:var(--display);font-size:clamp(1.2rem,2.1vw,1.4rem);font-weight:400;line-height:1.5;letter-spacing:-.02em;margin-bottom:1.6rem}
+.editorial .byline{display:block;font-size:.9375rem;line-height:1.6;color:var(--muted);margin-bottom:1.6rem}
+.editorial .byline a{font-weight:500}
+.editorial ul,.editorial ol{padding-inline-start:1.35rem;margin-block:1rem 1.8rem}
+.editorial :is(ul,ol):not([class]) li+li{margin-top:.5rem}
+.editorial li::marker{color:var(--muted)}
+.editorial blockquote{position:relative;margin:2.2rem 0;padding:1.4rem 1.6rem;border-radius:16px;background:linear-gradient(120deg,var(--mint-soft),#fff 60%);box-shadow:0 0 0 1px var(--line)}
+.editorial blockquote::before{content:"";position:absolute;inset-block:1.1rem;inset-inline-start:0;width:3px;border-radius:3px;background:linear-gradient(180deg,var(--mint-deep),var(--teal),var(--sky-deep))}
+.editorial blockquote p:last-child{margin-bottom:0}
+.editorial img{max-width:100%;height:auto}
+.editorial figure img,.editorial video{border-radius:16px}
+.editorial table{display:block;max-width:100%;overflow-x:auto;border-collapse:separate;border-spacing:0;margin:2rem 0;border-radius:14px;box-shadow:0 0 0 1px var(--line);background:var(--surface)}
+.editorial th,.editorial td{padding:.85rem 1rem;border-bottom:1px solid var(--line);font-size:.95rem;text-align:start;vertical-align:top}
+.editorial th{color:var(--ink);background:var(--mint-soft);font-weight:600}
+.editorial td{color:var(--ink-soft)}
+.editorial tr:last-child td{border-bottom:0}
+.editorial :is(h1,h2,h3){scroll-margin-top:100px}
+.editorial details summary{cursor:pointer}
+/* Film transcripts open from a quiet row with a turning marker */
+.editorial details.watch-transcript{margin:1.6rem 0 1.8rem;border-radius:16px;background:var(--surface);box-shadow:0 0 0 1px var(--line)}
+.editorial details.watch-transcript>summary{display:flex;align-items:center;gap:.7rem;min-height:52px;padding:.7rem 1.1rem;border-radius:16px;color:var(--ink);font-family:var(--display);font-size:1rem;font-weight:500;letter-spacing:-.01em;list-style:none}
+.editorial details.watch-transcript>summary::-webkit-details-marker{display:none}
+.editorial details.watch-transcript>summary::before{content:"";flex:0 0 auto;width:.8em;height:.8em;background:var(--teal);-webkit-mask:var(--i-chevron) center/contain no-repeat;mask:var(--i-chevron) center/contain no-repeat;transition:transform .3s var(--ease)}
+.editorial details.watch-transcript[open]>summary::before{transform:rotate(90deg)}
+.editorial details.watch-transcript>summary:hover{background:var(--mint-soft)}
+.editorial details.watch-transcript>p{margin-inline:1.1rem}
+.editorial details.watch-transcript>p:last-child{margin-bottom:1.1rem}
+html[dir="rtl"] .editorial details.watch-transcript>summary::before{transform:scaleX(-1)}
+html[dir="rtl"] .editorial details.watch-transcript[open]>summary::before{transform:rotate(90deg)}
+.editorial video{box-shadow:var(--shadow-strong)}
+.editorial-footer{clear:both;margin-top:4rem;padding-top:1.4rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1.5rem;border-top:1px solid var(--line)}
+.editorial-footer p,.editorial-footer a{font-size:.9375rem;line-height:1.6}
+.editorial-footer p{margin:0;color:var(--muted)}
+.editorial-footer>nav{flex-basis:100%;margin-bottom:.25rem}
+.editorial-footer a{display:inline-flex;align-items:center;min-height:44px}
+
+/* The writing directory is a gallery of white tiles; essays keep a reading measure. */
+.editorial:has(> article + article){max-width:1120px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.1rem}
+.editorial:has(> article + article)>:not(article){grid-column:1/-1}
+.editorial:has(> article + article)>h1{margin-bottom:.4rem}
+.editorial:has(> article + article)>.lead{max-width:46rem}
+.editorial:has(> article + article)>nav:not(.byline){margin:.5rem 0 1.4rem;padding:1.5rem 1.8rem;border-radius:20px;background:linear-gradient(120deg,var(--mint-soft),#fff 55%,var(--sky-soft));box-shadow:0 0 0 1px var(--line)}
+.editorial:has(> article + article)>nav:not(.byline) h2{margin:0 0 .8rem;font-size:1.2rem}
+.editorial:has(> article + article)>nav:not(.byline) ul{margin-bottom:0}
+.editorial:has(> article + article)>nav:not(.byline) li{font-size:1rem;line-height:1.6}
+.editorial:has(> article + article)>article{position:relative;isolation:isolate;min-width:0;display:flex;flex-direction:column;padding:1.75rem;border-radius:20px;background:var(--surface);box-shadow:0 0 0 1px var(--line);transition:transform .5s var(--ease),box-shadow .4s var(--ease)}
+.editorial:has(> article + article)>article::before{content:"";position:absolute;inset:-1px;z-index:-1;border-radius:inherit;padding:1.5px;background:linear-gradient(135deg,var(--mint-glow),var(--teal) 50%,var(--sky-glow));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);opacity:0;transition:opacity .4s var(--ease)}
+.editorial:has(> article + article)>article:hover{transform:translateY(-3px);box-shadow:0 0 0 1px transparent,0 24px 50px -30px rgba(14,42,51,.38)}
+.editorial:has(> article + article)>article:hover::before,.editorial:has(> article + article)>article:focus-within::before{opacity:1}
+.editorial:has(> article + article)>article h2{margin:0 0 .7rem;font-size:clamp(1.2rem,1.9vw,1.4rem);line-height:1.25}
+.editorial:has(> article + article)>article h2 a{color:var(--ink);text-decoration:none}
+.editorial:has(> article + article)>article h2 a::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.editorial:has(> article + article)>article h2 a:hover{color:var(--teal)}
+.editorial:has(> article + article)>article p{font-size:1rem;line-height:1.55}
+.editorial:has(> article + article)>article .byline{font-size:.875rem;margin-bottom:.8rem}
+.editorial:has(> article + article)>article .eyebrow{margin-bottom:.6rem;font-size:.9375rem}
+.editorial:has(> article + article)>article p:last-child{margin:auto 0 0;padding-top:.6rem}
+.editorial:has(> article + article)>article p:last-child a{position:relative;z-index:1;display:inline-flex;align-items:center;min-height:44px;font-weight:500}
+
+/* Filter the existing writing cards without changing their crawlable links or order. */
+.writing-filter{margin:.3rem 0 0;padding:1.25rem 1.5rem;border:1px solid var(--line-strong);border-radius:18px;background:var(--surface)}
+.writing-filter label{display:block;margin-bottom:.65rem;color:var(--ink);font-family:var(--display);font-size:1rem;font-weight:500}
+.writing-filter-row{display:flex;gap:.7rem;align-items:stretch}
+.writing-filter input{flex:1;min-width:0;width:100%;min-height:48px;padding:.65rem .85rem;border:1px solid var(--line-strong);border-radius:10px;background:var(--surface);color:var(--ink);font:inherit;font-size:1rem}
+.writing-filter input::placeholder{color:var(--muted);opacity:1}
+.writing-filter button{flex:0 0 auto;min-width:64px;min-height:48px;padding:.6rem .85rem;border:1px solid var(--line-strong);border-radius:10px;background:var(--mint-soft);color:var(--ink);font:inherit;font-size:1rem;cursor:pointer}
+.writing-filter button:hover:not(:disabled){background:var(--mint)}
+.writing-filter button:disabled{color:var(--muted);cursor:default}
+.writing-filter :is(input,button):focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.editorial .writing-filter p{margin:.65rem 0 0;color:var(--muted);font-size:.9375rem}
+.editorial .writing-empty{margin:.5rem 0 1rem;padding:1.5rem;border:1px solid var(--line-strong);border-radius:18px;background:var(--mint-soft)}
+.editorial .writing-filter[hidden],.editorial .writing-empty[hidden],.editorial > article[hidden],.editorial > nav[hidden]{display:none}
+@media(max-width:600px){.writing-filter{padding:1rem}.writing-filter-row{flex-wrap:wrap}.writing-filter input{flex-basis:160px}}
+@media(forced-colors:active){.writing-filter,.writing-filter input,.writing-filter button,.editorial .writing-empty{border-color:CanvasText}.writing-filter :is(input,button):focus-visible{outline-color:Highlight}.writing-filter button:disabled{color:GrayText}}
+@media print{.writing-filter,.editorial .writing-empty{display:none}.editorial > article[hidden]{display:flex!important}.editorial > nav[hidden]{display:block!important}}
+
+.profile-resources{clear:both;margin-top:3rem;padding-top:.5rem}
+/* At a glance: short answers to the questions people ask, one per row */
+.quick-facts-list{margin:1.2rem 0 0;padding:0;border-top:1px solid var(--line)}
+.quick-facts-list>div{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.6fr);gap:.35rem 1.6rem;padding:1.05rem 0;border-bottom:1px solid var(--line)}
+.quick-facts-list dt{color:var(--ink);font-family:var(--display);font-size:1rem;font-weight:600;letter-spacing:-.015em;line-height:1.45}
+.quick-facts-list dd{margin:0;color:var(--ink-soft);font-size:1.0625rem;line-height:1.6}
+:is(.persian-page,.arabic-page) .quick-facts-list dd{line-height:2}
+@media(max-width:600px){.quick-facts-list>div{grid-template-columns:1fr}}
+.profile-downloads{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.25rem}
+.profile-downloads a{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:.65rem 1.2rem;border-radius:12px;background:#fff;box-shadow:inset 0 0 0 1px var(--line-strong);color:var(--ink);font-family:var(--display);font-size:.9375rem;font-weight:500;text-decoration:none;transition:background-color .25s,color .25s}
+.profile-downloads a:first-child{color:#fff;background:var(--ink);box-shadow:none}
+.profile-downloads a:hover{background:var(--mint-soft);text-decoration:none}
+.profile-downloads a:first-child:hover{background:var(--teal)}
+.official-profiles{list-style:none;padding:0!important;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem}
+.official-profiles li,.official-profiles li+li{min-width:0;margin:0;padding:1.15rem 1.25rem;border-radius:16px;background:var(--surface);box-shadow:0 0 0 1px var(--line);font-size:.95rem;line-height:1.6}
+.official-profiles a{display:inline-flex;align-items:center;min-height:44px;font-weight:600}
+.biography-portrait{float:right;width:min(34%,240px);margin:.4rem 0 1.5rem 2rem}
+.biography-portrait img{width:100%;height:auto;padding:7px;border-radius:22px;background:#fff;box-shadow:0 0 0 1px var(--line),var(--shadow-strong)}
+.biography-portrait figcaption{margin-top:.8rem;color:var(--muted);font-size:.85rem;line-height:1.5;text-wrap:pretty}
+.editorial .film-habit{background:var(--surface)}
+
+/* Persian and Arabic pages keep native shaping: no tracking, roomier leading. */
+:is(.persian-page,.arabic-page){font-family:var(--sans)}
+:is(.persian-page,.arabic-page) .editorial{text-align:right}
+:is(.persian-page,.arabic-page) :is(h1,h2,h3,.eyebrow,.editorial-header a){letter-spacing:0}
+:is(.persian-page,.arabic-page) .editorial h1{font-weight:800;line-height:1.45}
+:is(.persian-page,.arabic-page) .editorial :is(h2,h3){font-weight:700;line-height:1.6}
+:is(.persian-page,.arabic-page) .editorial p,:is(.persian-page,.arabic-page) .editorial li{line-height:2}
+:is(.persian-page,.arabic-page) .editorial-header{flex-wrap:wrap}
+:is(.persian-page,.arabic-page) .editorial-header a[lang="en"]{font-family:var(--sans);font-size:.875rem;font-weight:500;color:var(--muted);padding-inline:.85rem}
+.persian-page .biography-portrait,.arabic-page .biography-portrait{float:left;margin:.4rem 2rem 1.5rem 0}
+.localized-main{max-width:1180px;padding:3.5rem 0 3rem;width:calc(100% - 64px)}
+.localized-hero{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:clamp(2rem,5vw,5rem);align-items:center;padding-bottom:3.5rem}
+.localized-intro{min-width:0}
+.localized-main h1{font-size:clamp(2.5rem,5vw,4.2rem);line-height:1.4;margin:.5rem 0 1.2rem;color:var(--ink);text-wrap:balance}
+.localized-main .lead{font-size:clamp(1.15rem,2vw,1.4rem);line-height:1.9;margin:0}
+.localized-main .localized-name{margin:1.5rem 0 0;font-family:var(--sans);font-size:.9375rem;text-align:right;color:var(--muted)}
+.localized-portrait{position:relative;margin:0}
+.localized-portrait::before{content:"";position:absolute;inset:-6%;z-index:-1;border-radius:40px;background:radial-gradient(48% 42% at 30% 28%,rgba(143,214,180,.7),transparent 72%),radial-gradient(48% 42% at 72% 74%,rgba(156,200,239,.75),transparent 72%);filter:blur(30px);opacity:.8}
+.localized-portrait img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;padding:9px;border-radius:28px;background:#fff;box-shadow:0 0 0 1px var(--line),var(--shadow-strong)}
+.localized-portrait figcaption{margin-top:.7rem;color:var(--muted);font-size:.9rem}
+.localized-content{max-width:850px;margin-inline:auto;padding-top:2.5rem}
+.localized-content h2{font-size:1.6rem;margin-top:3rem;line-height:1.6}
+.localized-content p{margin-block:1rem 1.5rem}
+.localized-main .localized-work{list-style:none;padding:0;display:grid;gap:.7rem}
+.localized-work li{min-width:0}
+.localized-main .localized-work li{padding:1.1rem 1.3rem;border-radius:16px;background:var(--surface);box-shadow:0 0 0 1px var(--line)}
+.localized-work small{display:block;color:var(--muted);font-size:.85rem}
+.localized-main .official-profiles a{display:inline-block;padding-block:.25rem}
+.localized-main .editorial-footer{margin-top:4rem}
+.localized-main [dir="ltr"]{unicode-bidi:isolate}
+
+@media(max-width:760px){
+  .editorial-header{top:8px;width:fit-content;max-width:calc(100% - 20px);min-height:52px;margin-top:8px}
+  .editorial-header a{font-size:.875rem;gap:.55rem}
+  .editorial{padding:2.4rem 20px 4rem}
+  .editorial h1{font-size:clamp(2rem,8.4vw,2.6rem)}
+  .editorial p,.editorial li{font-size:1.0625rem}
+  .editorial:has(> article + article){grid-template-columns:1fr;gap:.9rem}
+  .editorial:has(> article + article)>article{padding:1.4rem}
+  .editorial:has(> article + article)>nav:not(.byline){padding:1.3rem}
+  .official-profiles{grid-template-columns:1fr}
+  .localized-main{width:calc(100% - 40px);padding-inline:0;padding-top:2rem}
+  .localized-hero{grid-template-columns:1fr;gap:2rem;padding-bottom:2.5rem}
+  .localized-portrait{width:min(100%,340px);margin-inline:auto}
+  .localized-content{padding-top:1.5rem}
+  .localized-main .lead{font-size:1.15rem}
+  .localized-main .editorial-footer{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:600px){
+  .biography-portrait,.persian-page .biography-portrait,.arabic-page .biography-portrait{float:none;width:min(65%,240px);margin:1.5rem auto 2rem}
+  .profile-downloads{flex-direction:column;align-items:stretch}
+}
+@media(prefers-reduced-motion:reduce){
+  .editorial:has(> article + article)>article:hover{transform:none}
+}
+@media(forced-colors:active){.editorial-body::before,.editorial-body::after{display:none}}
+@media print{
+  .editorial-body::before,.editorial-body::after{display:none}
+  .editorial-header{position:static;box-shadow:none;background:none;-webkit-backdrop-filter:none;backdrop-filter:none}
+}

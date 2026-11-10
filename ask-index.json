@@ -1,0 +1,2617 @@
+{
+  "version": 1,
+  "site_url": "https://a-samadi.com/",
+  "primary_language": "en",
+  "locales": [
+    {
+      "language": "en",
+      "source_url": "https://a-samadi.com/",
+      "passages": [
+        {
+          "position": 1,
+          "section": "",
+          "title": "Ahmadreza Samadi",
+          "text": "Technology Entrepreneur · Dubai, UAE Ahmadreza Samadi I build AI, and I run a business that has to live with it. Co-Founder & Technical Lead at Appraiva. Co-Founder & CEO of Royal Abraj Group. Read my biography, press resources and selected work. Explore my work Get in touch Ask about my work",
+          "paragraphs": [
+            "Technology Entrepreneur · Dubai, UAE",
+            "I build AI, and I run a business that has to live with it.",
+            "Co-Founder & Technical Lead at Appraiva. Co-Founder & CEO of Royal Abraj Group.",
+            "Read my biography, press resources and selected work."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#top",
+          "links": [
+            {
+              "label": "biography",
+              "url": "https://a-samadi.com/about.html"
+            },
+            {
+              "label": "press resources",
+              "url": "https://a-samadi.com/press.html"
+            },
+            {
+              "label": "selected work",
+              "url": "https://a-samadi.com/work/"
+            },
+            {
+              "label": "Explore my work",
+              "url": "https://a-samadi.com/#work"
+            },
+            {
+              "label": "Get in touch",
+              "url": "mailto:ahmadreza.smdi@gmail.com"
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "section": "Current companies and focus",
+          "title": "Appraiva",
+          "text": "United States · Remote Appraiva Co-Founder & Technical Lead",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/",
+          "section_url": null,
+          "links": [
+            {
+              "label": "United States · Remote Appraiva Co-Founder & Technical Lead",
+              "url": "https://a-samadi.com/work/appraiva.html"
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "section": "Current companies and focus",
+          "title": "Royal Abraj Group",
+          "text": "Dubai, UAE Royal Abraj Group Co-Founder & CEO",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/",
+          "section_url": null,
+          "links": [
+            {
+              "label": "Dubai, UAE Royal Abraj Group Co-Founder & CEO",
+              "url": "https://a-samadi.com/work/royal-abraj.html"
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "section": "Current companies and focus",
+          "title": "Start with the decision.",
+          "text": "My focus Start with the decision. Technology × AI × business",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/",
+          "section_url": null,
+          "links": [
+            {
+              "label": "My focus Start with the decision. Technology × AI × business",
+              "url": "https://a-samadi.com/#skills"
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "section": "",
+          "title": "Technology × AI × business",
+          "text": "Technology × AI × businessSee how I build AI at Appraiva, run a business in Dubai and decide what needs a human check.",
+          "paragraphs": [
+            "See how I build AI at Appraiva, run a business in Dubai and decide what needs a human check."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#signature-ideas",
+          "links": []
+        },
+        {
+          "position": 6,
+          "section": "",
+          "title": "What I work on",
+          "text": "What I work onBuilding AI productsRunning a business with technologyStart with the decisionWhy I build AI and run a business",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#signature-ideas",
+          "links": [
+            {
+              "label": "Building AI products",
+              "url": "https://a-samadi.com/work/appraiva.html"
+            },
+            {
+              "label": "Running a business with technology",
+              "url": "https://a-samadi.com/work/royal-abraj.html"
+            },
+            {
+              "label": "Start with the decision",
+              "url": "https://a-samadi.com/writing/start-with-the-decision.html"
+            },
+            {
+              "label": "Why I build AI and run a business",
+              "url": "https://a-samadi.com/writing/build-ai-run-a-business.html"
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "section": "",
+          "title": "Proof",
+          "text": "ProofAppraivaRoyal Abraj GroupPublic studies and tools",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#signature-ideas",
+          "links": [
+            {
+              "label": "Appraiva",
+              "url": "https://a-samadi.com/work/appraiva.html"
+            },
+            {
+              "label": "Royal Abraj Group",
+              "url": "https://a-samadi.com/work/royal-abraj.html"
+            },
+            {
+              "label": "Public studies and tools",
+              "url": "https://a-samadi.com/studies/"
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "section": "",
+          "title": "My topics",
+          "text": "My topicsWhere AI is worth it in a businessCost per accepted resultTesting AI on real tasksWhere AI must stopAI property valuation",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#signature-ideas",
+          "links": [
+            {
+              "label": "Where AI is worth it in a business",
+              "url": "https://a-samadi.com/tools/before-you-build-ai.html"
+            },
+            {
+              "label": "Cost per accepted result",
+              "url": "https://a-samadi.com/writing/ai-cost-per-verified-result.html"
+            },
+            {
+              "label": "Testing AI on real tasks",
+              "url": "https://a-samadi.com/writing/business-ai-evaluation-cases.html"
+            },
+            {
+              "label": "Where AI must stop",
+              "url": "https://a-samadi.com/writing/ai-human-review-real-estate.html"
+            },
+            {
+              "label": "AI property valuation",
+              "url": "https://a-samadi.com/writing/ai-home-value-estimates.html"
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "section": "Selected Work",
+          "title": "From business problems to working products.",
+          "text": "Selected Work From business problems to working products. Selected work across AI products at Appraiva, business systems at Royal Abraj Group, enterprise data and predictive analytics.",
+          "paragraphs": [
+            "Selected work across AI products at Appraiva, business systems at Royal Abraj Group, enterprise data and predictive analytics."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#work",
+          "links": []
+        },
+        {
+          "position": 10,
+          "section": "Selected Work",
+          "title": "Appraiva AI Real Estate Intelligence Platform",
+          "text": "Flagship company appraiva.com Appraiva AI Real Estate Intelligence Platform Building AI tools that help real estate investors and developers find distressed and off-market properties using imagery analysis and enriched property data. Imagery analysis AI tools Property data Enriched property data Appraiva case study Appraiva system layers 01Property discovery 02Data enrichment 03Opportunity analysis 04Search and decision workflows",
+          "paragraphs": [
+            "Building AI tools that help real estate investors and developers find distressed and off-market properties using imagery analysis and enriched property data."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#work",
+          "links": [
+            {
+              "label": "appraiva.com",
+              "url": "https://appraiva.com/"
+            },
+            {
+              "label": "Appraiva case study",
+              "url": "https://a-samadi.com/work/appraiva.html"
+            }
+          ]
+        },
+        {
+          "position": 11,
+          "section": "Selected Work",
+          "title": "Digital strategy & business operations",
+          "text": "My current rolesRoyal Abraj Group Digital strategy & business operations Co-Founder & CEO, Royal Abraj Group, Dubai. The group covers property brokerage and documents-clearing services; he leads its digital strategy and technology. Digital StrategyTechnologyProperty brokerage Royal Abraj Group case study",
+          "paragraphs": [
+            "Co-Founder & CEO, Royal Abraj Group, Dubai. The group covers property brokerage and documents-clearing services; he leads its digital strategy and technology."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#work",
+          "links": [
+            {
+              "label": "Royal Abraj Group case study",
+              "url": "https://a-samadi.com/work/royal-abraj.html"
+            }
+          ]
+        },
+        {
+          "position": 12,
+          "section": "Selected Work",
+          "title": "Enterprise CRM & Analytics Data Platform",
+          "text": "BackgroundOxfam Novib Enterprise CRM & Analytics Data Platform Azure data infrastructure for CRM migration and analytics at Oxfam Novib. Enterprise data engineeringAzureCRM Oxfam Novib case study",
+          "paragraphs": [
+            "Azure data infrastructure for CRM migration and analytics at Oxfam Novib."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#work",
+          "links": [
+            {
+              "label": "Oxfam Novib case study",
+              "url": "https://a-samadi.com/work/oxfam-novib.html"
+            }
+          ]
+        },
+        {
+          "position": 13,
+          "section": "About",
+          "title": "Technical depth, business perspective.",
+          "text": "AboutTechnical depth, business perspective.",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#about",
+          "links": []
+        },
+        {
+          "position": 14,
+          "section": "About",
+          "title": "",
+          "text": "Ahmadreza Samadi builds AI products at Appraiva and runs Royal Abraj Group in Dubai. He writes about how businesses decide what to build, check and measure.",
+          "paragraphs": [
+            "Ahmadreza Samadi builds AI products at Appraiva and runs Royal Abraj Group in Dubai. He writes about how businesses decide what to build, check and measure."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#about",
+          "links": []
+        },
+        {
+          "position": 15,
+          "section": "About",
+          "title": "",
+          "text": "I build AI, and I run a business that has to live with it.",
+          "paragraphs": [
+            "I build AI, and I run a business that has to live with it."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#about",
+          "links": []
+        },
+        {
+          "position": 16,
+          "section": "About",
+          "title": "",
+          "text": "Also known as Ahmad Samadi.",
+          "paragraphs": [
+            "Also known as Ahmad Samadi."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#about",
+          "links": []
+        },
+        {
+          "position": 17,
+          "section": "Selected Experience",
+          "title": "A technical path through product, data, AI, and operations.",
+          "text": "Selected Experience A technical path through product, data, AI, and operations.",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#experience",
+          "links": []
+        },
+        {
+          "position": 18,
+          "section": "Selected Experience",
+          "title": "Co-Founder & Technical Lead",
+          "text": "My current rolesCo-Founder & Technical LeadAppraiva · Cleveland, Ohio, United States · Remote from DubaiCo-Founder & Technical Lead, Appraiva. Appraiva is a US company in Cleveland, Ohio; he works remotely from Dubai. It builds AI tools that help real estate investors and developers find distressed and off-market properties through imagery analysis and enriched property data.",
+          "paragraphs": [
+            "Co-Founder & Technical Lead, Appraiva. Appraiva is a US company in Cleveland, Ohio; he works remotely from Dubai. It builds AI tools that help real estate investors and developers find distressed and off-market properties through imagery analysis and enriched property data."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#experience",
+          "links": []
+        },
+        {
+          "position": 19,
+          "section": "Selected Experience",
+          "title": "Co-Founder & CEO",
+          "text": "My current rolesCo-Founder & CEORoyal Abraj Group · Dubai, UAECo-Founder & CEO, Royal Abraj Group, Dubai. The group covers property brokerage and documents-clearing services; he leads its digital strategy and technology.",
+          "paragraphs": [
+            "Co-Founder & CEO, Royal Abraj Group, Dubai. The group covers property brokerage and documents-clearing services; he leads its digital strategy and technology."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#experience",
+          "links": []
+        },
+        {
+          "position": 20,
+          "section": "Selected Experience",
+          "title": "Enterprise data engineering",
+          "text": "BackgroundEnterprise data engineeringOxfam NovibAzure data infrastructure for CRM migration and analytics at Oxfam Novib.",
+          "paragraphs": [
+            "Azure data infrastructure for CRM migration and analytics at Oxfam Novib."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#experience",
+          "links": []
+        },
+        {
+          "position": 21,
+          "section": "Selected Experience",
+          "title": "Machine learning",
+          "text": "BackgroundMachine learningMCIPredictive customer segmentation at MCI.",
+          "paragraphs": [
+            "Predictive customer segmentation at MCI."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#experience",
+          "links": []
+        },
+        {
+          "position": 22,
+          "section": "Capabilities",
+          "title": "Where strategy and implementation meet.",
+          "text": "Capabilities Where strategy and implementation meet.",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#skills",
+          "links": []
+        },
+        {
+          "position": 23,
+          "section": "Capabilities",
+          "title": "Product and Technical Leadership",
+          "text": "Product and Technical Leadership Technical lead for imagery analysis and enriched property data at Appraiva; digital strategy and technology at Royal Abraj Group.",
+          "paragraphs": [
+            "Technical lead for imagery analysis and enriched property data at Appraiva; digital strategy and technology at Royal Abraj Group."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#skills",
+          "links": []
+        },
+        {
+          "position": 24,
+          "section": "Capabilities",
+          "title": "AI and Data Systems",
+          "text": "AI and Data Systems Enterprise data engineering and machine learning. Predictive customer segmentation at MCI.",
+          "paragraphs": [
+            "Enterprise data engineering and machine learning. Predictive customer segmentation at MCI."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#skills",
+          "links": []
+        },
+        {
+          "position": 25,
+          "section": "Capabilities",
+          "title": "Cloud and Platform Engineering",
+          "text": "Cloud and Platform Engineering Azure data infrastructure for CRM migration and analytics at Oxfam Novib.",
+          "paragraphs": [
+            "Azure data infrastructure for CRM migration and analytics at Oxfam Novib."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#skills",
+          "links": []
+        },
+        {
+          "position": 26,
+          "section": "Writing",
+          "title": "Ideas behind the work.",
+          "text": "WritingIdeas behind the work.Browse all writing",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#writing",
+          "links": [
+            {
+              "label": "Browse all writing",
+              "url": "https://a-samadi.com/writing/"
+            }
+          ]
+        },
+        {
+          "position": 27,
+          "section": "Writing",
+          "title": "",
+          "text": "AI in real estate: evidence and decisions AI and business systems: lessons from Dubai",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#writing",
+          "links": [
+            {
+              "label": "AI in real estate: evidence and decisions",
+              "url": "https://a-samadi.com/topics/ai-real-estate.html"
+            },
+            {
+              "label": "AI and business systems: lessons from Dubai",
+              "url": "https://a-samadi.com/topics/business-systems-dubai.html"
+            }
+          ]
+        },
+        {
+          "position": 28,
+          "section": "Writing",
+          "title": "Before You Build the AI",
+          "text": "Interactive field guide Before You Build the AI Turn an AI idea into one clear decision, an evidence plan and a useful first experiment. Build a decision brief",
+          "paragraphs": [
+            "Turn an AI idea into one clear decision, an evidence plan and a useful first experiment."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#writing",
+          "links": [
+            {
+              "label": "Build a decision brief",
+              "url": "https://a-samadi.com/tools/before-you-build-ai.html"
+            }
+          ]
+        },
+        {
+          "position": 29,
+          "section": "Writing",
+          "title": "AI property valuation",
+          "text": "Property valuationAI property valuationWhat an automated estimate can and cannot tell you about a home.",
+          "paragraphs": [
+            "What an automated estimate can and cannot tell you about a home."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#writing",
+          "links": [
+            {
+              "label": "AI property valuation",
+              "url": "https://a-samadi.com/writing/ai-home-value-estimates.html"
+            }
+          ]
+        },
+        {
+          "position": 30,
+          "section": "Writing",
+          "title": "AI in real estate decisions",
+          "text": "Human reviewAI in real estate decisionsWhere a person checks evidence before a property decision.",
+          "paragraphs": [
+            "Where a person checks evidence before a property decision."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#writing",
+          "links": [
+            {
+              "label": "AI in real estate decisions",
+              "url": "https://a-samadi.com/writing/ai-human-review-real-estate.html"
+            }
+          ]
+        },
+        {
+          "position": 31,
+          "section": "Writing",
+          "title": "Dubai property costs and data",
+          "text": "Dubai property dataDubai property costs and dataMatch the property question to the appropriate Dubai data source.",
+          "paragraphs": [
+            "Match the property question to the appropriate Dubai data source."
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#writing",
+          "links": [
+            {
+              "label": "Dubai property costs and data",
+              "url": "https://a-samadi.com/writing/which-dubai-property-source.html"
+            }
+          ]
+        },
+        {
+          "position": 32,
+          "section": "Contact",
+          "title": "Let’s talk about a product or business workflow.",
+          "text": "Contact Let’s talk about a product or business workflow. I welcome conversations with founders and industry experts working on AI products, property data, or the systems behind business operations. Tell me who the work is for, how it is handled today, and what decision or process you want to improve. A short description and a relevant link are enough to start. Dubai, United Arab Emirates",
+          "paragraphs": [
+            "I welcome conversations with founders and industry experts working on AI products, property data, or the systems behind business operations.",
+            "Tell me who the work is for, how it is handled today, and what decision or process you want to improve. A short description and a relevant link are enough to start.",
+            "Dubai, United Arab Emirates"
+          ],
+          "source_url": "https://a-samadi.com/",
+          "section_url": "https://a-samadi.com/#contact",
+          "links": []
+        }
+      ],
+      "shortcuts": [
+        {
+          "label": "Work",
+          "url": "https://a-samadi.com/#work"
+        },
+        {
+          "label": "About",
+          "url": "https://a-samadi.com/#about"
+        },
+        {
+          "label": "Experience",
+          "url": "https://a-samadi.com/#experience"
+        },
+        {
+          "label": "Capabilities",
+          "url": "https://a-samadi.com/#skills"
+        },
+        {
+          "label": "Writing",
+          "url": "https://a-samadi.com/#writing"
+        },
+        {
+          "label": "Contact",
+          "url": "https://a-samadi.com/#contact"
+        },
+        {
+          "label": "Before You Build the AI",
+          "url": "https://a-samadi.com/tools/before-you-build-ai.html"
+        },
+        {
+          "label": "All writing",
+          "url": "https://a-samadi.com/writing/"
+        },
+        {
+          "label": "Biography and profile kit",
+          "url": "https://a-samadi.com/about.html#profile-resources",
+          "aliases": [
+            "Ahmadreza Samadi",
+            "Ahmad Samadi",
+            "احمدرضا صمدی",
+            "احمد صمدی",
+            "أحمدرضا صمدي"
+          ],
+          "identity_url": "https://a-samadi.com/about.html"
+        },
+        {
+          "label": "Data engineering and CRM pipelines at Oxfam Novib",
+          "url": "https://a-samadi.com/work/oxfam-novib.html"
+        },
+        {
+          "label": "Public tools and data: AI costs, housing studies",
+          "url": "https://a-samadi.com/about.html#public-tools-data-title"
+        },
+        {
+          "label": "Email",
+          "url": "mailto:ahmadreza.smdi@gmail.com"
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/ahmadreza-samadi/"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ahmadreza-smdi"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@ahmadreza-samadi"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/ahmadreza.samadi/"
+        }
+      ]
+    },
+    {
+      "language": "fa",
+      "source_url": "https://a-samadi.com/fa/",
+      "passages": [
+        {
+          "position": 1,
+          "section": "",
+          "title": "احمدرضا صمدی",
+          "text": "کارآفرین فناوری · دبی، امارات احمدرضا صمدی هوش مصنوعی می‌سازم و کسب‌وکاری را اداره می‌کنم که باید با آن کار کند. هم‌بنیان‌گذار و راهبر فنی Appraiva؛ هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group. بخوانید: زندگی‌نامهٔ من، منابع رسانه‌ای و منتخب کارها. کارهایم را ببینید در تماس باشید درباره کارهایم بپرسید",
+          "paragraphs": [
+            "کارآفرین فناوری · دبی، امارات",
+            "هوش مصنوعی می‌سازم و کسب‌وکاری را اداره می‌کنم که باید با آن کار کند.",
+            "هم‌بنیان‌گذار و راهبر فنی Appraiva؛ هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group.",
+            "بخوانید: زندگی‌نامهٔ من، منابع رسانه‌ای و منتخب کارها."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#top",
+          "links": [
+            {
+              "label": "زندگی‌نامهٔ من",
+              "url": "https://a-samadi.com/fa/about.html"
+            },
+            {
+              "label": "منابع رسانه‌ای",
+              "url": "https://a-samadi.com/fa/press.html"
+            },
+            {
+              "label": "منتخب کارها",
+              "url": "https://a-samadi.com/fa/work/"
+            },
+            {
+              "label": "کارهایم را ببینید",
+              "url": "https://a-samadi.com/fa/#work"
+            },
+            {
+              "label": "در تماس باشید",
+              "url": "mailto:ahmadreza.smdi@gmail.com"
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "section": "شرکت‌ها و حوزه تمرکز فعلی",
+          "title": "Appraiva",
+          "text": "ایالات متحده · دورکار Appraiva هم‌بنیان‌گذار و راهبر فنی",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": null,
+          "links": [
+            {
+              "label": "ایالات متحده · دورکار Appraiva هم‌بنیان‌گذار و راهبر فنی",
+              "url": "https://a-samadi.com/fa/work/appraiva.html"
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "section": "شرکت‌ها و حوزه تمرکز فعلی",
+          "title": "گروه رویال ابراج",
+          "text": "دبی، امارات گروه رویال ابراج هم‌بنیان‌گذار و مدیرعامل",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": null,
+          "links": [
+            {
+              "label": "دبی، امارات گروه رویال ابراج هم‌بنیان‌گذار و مدیرعامل",
+              "url": "https://a-samadi.com/fa/work/royal-abraj.html"
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "section": "شرکت‌ها و حوزه تمرکز فعلی",
+          "title": "از تصمیم آغاز کنید.",
+          "text": "حوزه تمرکز من از تصمیم آغاز کنید. فناوری × هوش مصنوعی × کسب‌وکار",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": null,
+          "links": [
+            {
+              "label": "حوزه تمرکز من از تصمیم آغاز کنید. فناوری × هوش مصنوعی × کسب‌وکار",
+              "url": "https://a-samadi.com/fa/#skills"
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "section": "",
+          "title": "فناوری × هوش مصنوعی × کسب‌وکار",
+          "text": "فناوری × هوش مصنوعی × کسب‌وکارببینید چگونه در Appraiva هوش مصنوعی می‌سازم، کسب‌وکاری را در دبی اداره می‌کنم و تصمیم می‌گیرم کجا بررسی انسانی لازم است.",
+          "paragraphs": [
+            "ببینید چگونه در Appraiva هوش مصنوعی می‌سازم، کسب‌وکاری را در دبی اداره می‌کنم و تصمیم می‌گیرم کجا بررسی انسانی لازم است."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#signature-ideas",
+          "links": []
+        },
+        {
+          "position": 6,
+          "section": "",
+          "title": "روی چه چیزی کار می‌کنم",
+          "text": "روی چه چیزی کار می‌کنمساخت محصولات هوش مصنوعیاداره کسب‌وکار با فناوریاز تصمیم آغاز کنیدچرا هم هوش مصنوعی می‌سازم و هم کسب‌وکار اداره می‌کنم",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#signature-ideas",
+          "links": [
+            {
+              "label": "ساخت محصولات هوش مصنوعی",
+              "url": "https://a-samadi.com/fa/work/appraiva.html"
+            },
+            {
+              "label": "اداره کسب‌وکار با فناوری",
+              "url": "https://a-samadi.com/fa/work/royal-abraj.html"
+            },
+            {
+              "label": "از تصمیم آغاز کنید",
+              "url": "https://a-samadi.com/fa/writing/start-with-the-decision.html"
+            },
+            {
+              "label": "چرا هم هوش مصنوعی می‌سازم و هم کسب‌وکار اداره می‌کنم",
+              "url": "https://a-samadi.com/fa/writing/build-ai-run-a-business.html"
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "section": "",
+          "title": "کارهای قابل بررسی",
+          "text": "کارهای قابل بررسیAppraivaگروه رویال ابراجمطالعه‌ها و ابزارهای عمومی",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#signature-ideas",
+          "links": [
+            {
+              "label": "Appraiva",
+              "url": "https://a-samadi.com/fa/work/appraiva.html"
+            },
+            {
+              "label": "گروه رویال ابراج",
+              "url": "https://a-samadi.com/fa/work/royal-abraj.html"
+            },
+            {
+              "label": "مطالعه‌ها و ابزارهای عمومی",
+              "url": "https://a-samadi.com/studies/"
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "section": "",
+          "title": "موضوع‌های من",
+          "text": "موضوع‌های منهوش مصنوعی کجا در کسب‌وکار ارزش داردهزینهٔ هر نتیجهٔ پذیرفته‌شدهآزمودن هوش مصنوعی روی کارهای واقعیهوش مصنوعی کجا باید متوقف شودارزش‌گذاری ملک با هوش مصنوعی",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#signature-ideas",
+          "links": [
+            {
+              "label": "هوش مصنوعی کجا در کسب‌وکار ارزش دارد",
+              "url": "https://a-samadi.com/tools/before-you-build-ai.html"
+            },
+            {
+              "label": "هزینهٔ هر نتیجهٔ پذیرفته‌شده",
+              "url": "https://a-samadi.com/writing/ai-cost-per-verified-result.html"
+            },
+            {
+              "label": "آزمودن هوش مصنوعی روی کارهای واقعی",
+              "url": "https://a-samadi.com/writing/business-ai-evaluation-cases.html"
+            },
+            {
+              "label": "هوش مصنوعی کجا باید متوقف شود",
+              "url": "https://a-samadi.com/fa/writing/ai-human-review-real-estate.html"
+            },
+            {
+              "label": "ارزش‌گذاری ملک با هوش مصنوعی",
+              "url": "https://a-samadi.com/fa/writing/ai-home-value-estimates.html"
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "section": "پروژه‌های منتخب",
+          "title": "از مسائل کسب‌وکار تا محصولاتی که کار می‌کنند.",
+          "text": "پروژه‌های منتخب از مسائل کسب‌وکار تا محصولاتی که کار می‌کنند. کارهای منتخب در زمینهٔ محصولات هوش مصنوعی در Appraiva، سامانه‌های کسب‌وکار در Royal Abraj Group، داده‌های سازمانی و تحلیل پیش‌بین.",
+          "paragraphs": [
+            "کارهای منتخب در زمینهٔ محصولات هوش مصنوعی در Appraiva، سامانه‌های کسب‌وکار در Royal Abraj Group، داده‌های سازمانی و تحلیل پیش‌بین."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#work",
+          "links": []
+        },
+        {
+          "position": 10,
+          "section": "پروژه‌های منتخب",
+          "title": "Appraiva، پلتفرم هوشمند تحلیل املاک",
+          "text": "شرکت محوری appraiva.com Appraiva، پلتفرم هوشمند تحلیل املاک ساخت ابزارهای هوش مصنوعی که به سرمایه‌گذاران و توسعه‌دهندگان املاک کمک می‌کنند با استفاده از تحلیل تصاویر و داده‌های غنی‌شده املاک، املاک دارای مشکلات مالی یا وضعیت فیزیکی نامناسب و املاک بدون آگهی عمومی را پیدا کنند. تحلیل تصاویر ابزارهای هوش مصنوعی داده‌های املاک داده‌های غنی‌شدهٔ املاک مطالعه موردی Appraiva لایه‌های سیستم Appraiva ۰۱کشف املاک ۰۲غنی‌سازی داده ۰۳تحلیل فرصت‌ها ۰۴فرایندهای جست‌وجو و تصمیم‌گیری",
+          "paragraphs": [
+            "ساخت ابزارهای هوش مصنوعی که به سرمایه‌گذاران و توسعه‌دهندگان املاک کمک می‌کنند با استفاده از تحلیل تصاویر و داده‌های غنی‌شده املاک، املاک دارای مشکلات مالی یا وضعیت فیزیکی نامناسب و املاک بدون آگهی عمومی را پیدا کنند."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#work",
+          "links": [
+            {
+              "label": "appraiva.com",
+              "url": "https://appraiva.com/"
+            },
+            {
+              "label": "مطالعه موردی Appraiva",
+              "url": "https://a-samadi.com/fa/work/appraiva.html"
+            }
+          ]
+        },
+        {
+          "position": 11,
+          "section": "پروژه‌های منتخب",
+          "title": "استراتژی دیجیتال و عملیات کسب‌وکار",
+          "text": "نقش‌های فعلی منگروه رویال ابراج استراتژی دیجیتال و عملیات کسب‌وکار هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group در دبی. این گروه در حوزهٔ کارگزاری املاک و خدمات انجام امور اسناد فعالیت می‌کند؛ او راهبرد دیجیتال و فناوری آن را هدایت می‌کند. استراتژی دیجیتالفناوریکارگزاری املاک مطالعه موردی گروه رویال ابراج",
+          "paragraphs": [
+            "هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group در دبی. این گروه در حوزهٔ کارگزاری املاک و خدمات انجام امور اسناد فعالیت می‌کند؛ او راهبرد دیجیتال و فناوری آن را هدایت می‌کند."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#work",
+          "links": [
+            {
+              "label": "مطالعه موردی گروه رویال ابراج",
+              "url": "https://a-samadi.com/fa/work/royal-abraj.html"
+            }
+          ]
+        },
+        {
+          "position": 12,
+          "section": "پروژه‌های منتخب",
+          "title": "پلتفرم داده برای CRM و تحلیل‌های سازمانی",
+          "text": "پیشینهOxfam Novib پلتفرم داده برای CRM و تحلیل‌های سازمانی زیرساخت دادهٔ Azure برای مهاجرت CRM و تحلیل داده در Oxfam Novib. مهندسی دادهٔ سازمانیAzureCRM مطالعه موردی Oxfam Novib",
+          "paragraphs": [
+            "زیرساخت دادهٔ Azure برای مهاجرت CRM و تحلیل داده در Oxfam Novib."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#work",
+          "links": [
+            {
+              "label": "مطالعه موردی Oxfam Novib",
+              "url": "https://a-samadi.com/fa/work/oxfam-novib.html"
+            }
+          ]
+        },
+        {
+          "position": 13,
+          "section": "درباره من",
+          "title": "عمق فنی، نگاه کسب‌وکاری.",
+          "text": "درباره منعمق فنی، نگاه کسب‌وکاری.",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#about",
+          "links": []
+        },
+        {
+          "position": 14,
+          "section": "درباره من",
+          "title": "",
+          "text": "احمدرضا صمدی در Appraiva محصولات هوش مصنوعی می‌سازد و Royal Abraj Group را در دبی اداره می‌کند. او دربارهٔ این می‌نویسد که کسب‌وکارها چگونه تصمیم می‌گیرند چه چیزی بسازند، چه چیزی را بررسی کنند و چه چیزی را بسنجند.",
+          "paragraphs": [
+            "احمدرضا صمدی در Appraiva محصولات هوش مصنوعی می‌سازد و Royal Abraj Group را در دبی اداره می‌کند. او دربارهٔ این می‌نویسد که کسب‌وکارها چگونه تصمیم می‌گیرند چه چیزی بسازند، چه چیزی را بررسی کنند و چه چیزی را بسنجند."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#about",
+          "links": []
+        },
+        {
+          "position": 15,
+          "section": "درباره من",
+          "title": "",
+          "text": "هوش مصنوعی می‌سازم و کسب‌وکاری را اداره می‌کنم که باید با آن کار کند.",
+          "paragraphs": [
+            "هوش مصنوعی می‌سازم و کسب‌وکاری را اداره می‌کنم که باید با آن کار کند."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#about",
+          "links": []
+        },
+        {
+          "position": 16,
+          "section": "درباره من",
+          "title": "",
+          "text": "نام من به فارسی و عربی: احمدرضا صمدی · أحمدرضا صمدي.",
+          "paragraphs": [
+            "نام من به فارسی و عربی: احمدرضا صمدی · أحمدرضا صمدي."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#about",
+          "links": []
+        },
+        {
+          "position": 17,
+          "section": "تجربه‌های منتخب",
+          "title": "مسیری فنی در محصول، داده، هوش مصنوعی و عملیات.",
+          "text": "تجربه‌های منتخب مسیری فنی در محصول، داده، هوش مصنوعی و عملیات.",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#experience",
+          "links": []
+        },
+        {
+          "position": 18,
+          "section": "تجربه‌های منتخب",
+          "title": "هم‌بنیان‌گذار و راهبر فنی",
+          "text": "نقش‌های فعلی منهم‌بنیان‌گذار و راهبر فنیAppraiva · کلیولند، اوهایو، آمریکا · دورکار از دبیهم‌بنیان‌گذار و راهبر فنی Appraiva. اپرایوا شرکتی آمریکایی در کلیولند، اوهایو است؛ او از دبی به‌صورت دورکار فعالیت می‌کند. این شرکت ابزارهای هوش مصنوعی می‌سازد که با تحلیل تصاویر و داده‌های غنی‌شدهٔ املاک، به سرمایه‌گذاران و توسعه‌دهندگان املاک کمک می‌کنند املاک دارای مشکلات یا فرسودگی و املاک خارج از بازار عمومی را پیدا کنند.",
+          "paragraphs": [
+            "هم‌بنیان‌گذار و راهبر فنی Appraiva. اپرایوا شرکتی آمریکایی در کلیولند، اوهایو است؛ او از دبی به‌صورت دورکار فعالیت می‌کند. این شرکت ابزارهای هوش مصنوعی می‌سازد که با تحلیل تصاویر و داده‌های غنی‌شدهٔ املاک، به سرمایه‌گذاران و توسعه‌دهندگان املاک کمک می‌کنند املاک دارای مشکلات یا فرسودگی و املاک خارج از بازار عمومی را پیدا کنند."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#experience",
+          "links": []
+        },
+        {
+          "position": 19,
+          "section": "تجربه‌های منتخب",
+          "title": "هم‌بنیان‌گذار و مدیرعامل",
+          "text": "نقش‌های فعلی منهم‌بنیان‌گذار و مدیرعاملگروه رویال ابراج · دبی، اماراتهم‌بنیان‌گذار و مدیرعامل Royal Abraj Group در دبی. این گروه در حوزهٔ کارگزاری املاک و خدمات انجام امور اسناد فعالیت می‌کند؛ او راهبرد دیجیتال و فناوری آن را هدایت می‌کند.",
+          "paragraphs": [
+            "هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group در دبی. این گروه در حوزهٔ کارگزاری املاک و خدمات انجام امور اسناد فعالیت می‌کند؛ او راهبرد دیجیتال و فناوری آن را هدایت می‌کند."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#experience",
+          "links": []
+        },
+        {
+          "position": 20,
+          "section": "تجربه‌های منتخب",
+          "title": "مهندسی دادهٔ سازمانی",
+          "text": "پیشینهمهندسی دادهٔ سازمانیOxfam Novibزیرساخت دادهٔ Azure برای مهاجرت CRM و تحلیل داده در Oxfam Novib.",
+          "paragraphs": [
+            "زیرساخت دادهٔ Azure برای مهاجرت CRM و تحلیل داده در Oxfam Novib."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#experience",
+          "links": []
+        },
+        {
+          "position": 21,
+          "section": "تجربه‌های منتخب",
+          "title": "یادگیری ماشین",
+          "text": "پیشینهیادگیری ماشینMCIبخش‌بندی پیش‌بینانهٔ مشتریان در MCI.",
+          "paragraphs": [
+            "بخش‌بندی پیش‌بینانهٔ مشتریان در MCI."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#experience",
+          "links": []
+        },
+        {
+          "position": 22,
+          "section": "توانمندی‌ها",
+          "title": "جایی که استراتژی و اجرا به هم می‌رسند.",
+          "text": "توانمندی‌ها جایی که استراتژی و اجرا به هم می‌رسند.",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#skills",
+          "links": []
+        },
+        {
+          "position": 23,
+          "section": "توانمندی‌ها",
+          "title": "رهبری فنی و محصول",
+          "text": "رهبری فنی و محصول راهبری فنی تحلیل تصاویر و داده‌های غنی‌شدهٔ املاک در Appraiva؛ راهبرد دیجیتال و فناوری در Royal Abraj Group.",
+          "paragraphs": [
+            "راهبری فنی تحلیل تصاویر و داده‌های غنی‌شدهٔ املاک در Appraiva؛ راهبرد دیجیتال و فناوری در Royal Abraj Group."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#skills",
+          "links": []
+        },
+        {
+          "position": 24,
+          "section": "توانمندی‌ها",
+          "title": "هوش مصنوعی و سیستم‌های داده",
+          "text": "هوش مصنوعی و سیستم‌های داده مهندسی دادهٔ سازمانی و یادگیری ماشین. بخش‌بندی پیش‌بینانهٔ مشتریان در MCI.",
+          "paragraphs": [
+            "مهندسی دادهٔ سازمانی و یادگیری ماشین. بخش‌بندی پیش‌بینانهٔ مشتریان در MCI."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#skills",
+          "links": []
+        },
+        {
+          "position": 25,
+          "section": "توانمندی‌ها",
+          "title": "مهندسی ابر و پلتفرم",
+          "text": "مهندسی ابر و پلتفرم زیرساخت دادهٔ Azure برای مهاجرت CRM و تحلیل داده در Oxfam Novib.",
+          "paragraphs": [
+            "زیرساخت دادهٔ Azure برای مهاجرت CRM و تحلیل داده در Oxfam Novib."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#skills",
+          "links": []
+        },
+        {
+          "position": 26,
+          "section": "نوشته‌ها",
+          "title": "ایده‌های پشت کار.",
+          "text": "نوشته‌هاایده‌های پشت کار.مشاهده همه نوشته‌ها",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#writing",
+          "links": [
+            {
+              "label": "مشاهده همه نوشته‌ها",
+              "url": "https://a-samadi.com/fa/writing/"
+            }
+          ]
+        },
+        {
+          "position": 27,
+          "section": "نوشته‌ها",
+          "title": "",
+          "text": "هوش مصنوعی در املاک: از شواهد تا تصمیم هوش مصنوعی و سیستم‌های کسب‌وکار: درس‌هایی از دبی",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#writing",
+          "links": [
+            {
+              "label": "هوش مصنوعی در املاک: از شواهد تا تصمیم",
+              "url": "https://a-samadi.com/fa/topics/ai-real-estate.html"
+            },
+            {
+              "label": "هوش مصنوعی و سیستم‌های کسب‌وکار: درس‌هایی از دبی",
+              "url": "https://a-samadi.com/fa/topics/business-systems-dubai.html"
+            }
+          ]
+        },
+        {
+          "position": 28,
+          "section": "نوشته‌ها",
+          "title": "پیش از ساخت محصول هوش مصنوعی",
+          "text": "راهنمای تعاملی پیش از ساخت محصول هوش مصنوعی ایده هوش مصنوعی را به یک تصمیم روشن، برنامه‌ای برای جمع‌آوری شواهد و یک آزمایش اولیه کاربردی تبدیل کنید. خلاصه تصمیم خود را بسازید",
+          "paragraphs": [
+            "ایده هوش مصنوعی را به یک تصمیم روشن، برنامه‌ای برای جمع‌آوری شواهد و یک آزمایش اولیه کاربردی تبدیل کنید."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#writing",
+          "links": [
+            {
+              "label": "خلاصه تصمیم خود را بسازید",
+              "url": "https://a-samadi.com/fa/tools/before-you-build-ai.html"
+            }
+          ]
+        },
+        {
+          "position": 29,
+          "section": "نوشته‌ها",
+          "title": "ارزش‌گذاری ملک با هوش مصنوعی",
+          "text": "ارزش‌گذاری ملکارزش‌گذاری ملک با هوش مصنوعیبرآورد خودکار دربارهٔ یک خانه چه چیزهایی را می‌تواند و چه چیزهایی را نمی‌تواند بگوید.",
+          "paragraphs": [
+            "برآورد خودکار دربارهٔ یک خانه چه چیزهایی را می‌تواند و چه چیزهایی را نمی‌تواند بگوید."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#writing",
+          "links": [
+            {
+              "label": "ارزش‌گذاری ملک با هوش مصنوعی",
+              "url": "https://a-samadi.com/fa/writing/ai-home-value-estimates.html"
+            }
+          ]
+        },
+        {
+          "position": 30,
+          "section": "نوشته‌ها",
+          "title": "هوش مصنوعی در تصمیم‌های ملکی",
+          "text": "بررسی انسانیهوش مصنوعی در تصمیم‌های ملکینقطه‌ای که فرد پیش از تصمیم ملکی، شواهد را بررسی می‌کند.",
+          "paragraphs": [
+            "نقطه‌ای که فرد پیش از تصمیم ملکی، شواهد را بررسی می‌کند."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#writing",
+          "links": [
+            {
+              "label": "هوش مصنوعی در تصمیم‌های ملکی",
+              "url": "https://a-samadi.com/fa/writing/ai-human-review-real-estate.html"
+            }
+          ]
+        },
+        {
+          "position": 31,
+          "section": "نوشته‌ها",
+          "title": "هزینه‌ها و داده‌های املاک دبی",
+          "text": "داده‌های املاک دبیهزینه‌ها و داده‌های املاک دبیپرسش ملکی را با منبع مناسب داده در دبی تطبیق دهید.",
+          "paragraphs": [
+            "پرسش ملکی را با منبع مناسب داده در دبی تطبیق دهید."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#writing",
+          "links": [
+            {
+              "label": "هزینه‌ها و داده‌های املاک دبی",
+              "url": "https://a-samadi.com/fa/writing/which-dubai-property-source.html"
+            }
+          ]
+        },
+        {
+          "position": 32,
+          "section": "تماس",
+          "title": "درباره یک محصول یا فرایند کسب‌وکار گفت‌وگو کنیم.",
+          "text": "تماس درباره یک محصول یا فرایند کسب‌وکار گفت‌وگو کنیم. از گفت‌وگو با بنیان‌گذاران و متخصصان صنعت که روی محصولات هوش مصنوعی، داده‌های املاک یا سیستم‌های پشتیبان عملیات کسب‌وکار کار می‌کنند، استقبال می‌کنم. بگویید این کار برای چه کسانی است، امروز چگونه انجام می‌شود و کدام تصمیم یا فرایند را می‌خواهید بهتر کنید. برای شروع، یک توضیح کوتاه و یک پیوند مرتبط کافی است. دبی، امارات متحده عربی",
+          "paragraphs": [
+            "از گفت‌وگو با بنیان‌گذاران و متخصصان صنعت که روی محصولات هوش مصنوعی، داده‌های املاک یا سیستم‌های پشتیبان عملیات کسب‌وکار کار می‌کنند، استقبال می‌کنم.",
+            "بگویید این کار برای چه کسانی است، امروز چگونه انجام می‌شود و کدام تصمیم یا فرایند را می‌خواهید بهتر کنید. برای شروع، یک توضیح کوتاه و یک پیوند مرتبط کافی است."
+          ],
+          "source_url": "https://a-samadi.com/fa/",
+          "section_url": "https://a-samadi.com/fa/#contact",
+          "links": []
+        }
+      ],
+      "shortcuts": [
+        {
+          "label": "پروژه‌ها",
+          "url": "https://a-samadi.com/fa/#work"
+        },
+        {
+          "label": "درباره من",
+          "url": "https://a-samadi.com/fa/#about"
+        },
+        {
+          "label": "تجربه کاری",
+          "url": "https://a-samadi.com/fa/#experience"
+        },
+        {
+          "label": "توانمندی‌ها",
+          "url": "https://a-samadi.com/fa/#skills"
+        },
+        {
+          "label": "نوشته‌ها",
+          "url": "https://a-samadi.com/fa/#writing"
+        },
+        {
+          "label": "تماس",
+          "url": "https://a-samadi.com/fa/#contact"
+        },
+        {
+          "label": "پیش از ساخت محصول هوش مصنوعی",
+          "url": "https://a-samadi.com/fa/tools/before-you-build-ai.html"
+        },
+        {
+          "label": "همه نوشته‌ها",
+          "url": "https://a-samadi.com/fa/writing/"
+        },
+        {
+          "label": "زندگی‌نامه و بسته معرفی",
+          "url": "https://a-samadi.com/fa/about.html#profile-resources",
+          "aliases": [
+            "Ahmadreza Samadi",
+            "Ahmad Samadi",
+            "احمدرضا صمدی",
+            "احمد صمدی",
+            "أحمدرضا صمدي"
+          ],
+          "identity_url": "https://a-samadi.com/fa/about.html"
+        },
+        {
+          "label": "مهندسی داده و فرایندهای CRM در Oxfam Novib",
+          "url": "https://a-samadi.com/fa/work/oxfam-novib.html"
+        },
+        {
+          "label": "ابزارها و داده‌های عمومی: هزینهٔ هوش مصنوعی، پژوهش‌های مسکن",
+          "url": "https://a-samadi.com/fa/about.html#public-tools-data-title"
+        },
+        {
+          "label": "ایمیل",
+          "url": "mailto:ahmadreza.smdi@gmail.com"
+        },
+        {
+          "label": "لینکدین",
+          "url": "https://www.linkedin.com/in/ahmadreza-samadi/"
+        },
+        {
+          "label": "گیت‌هاب",
+          "url": "https://github.com/ahmadreza-smdi"
+        },
+        {
+          "label": "یوتیوب",
+          "url": "https://www.youtube.com/@ahmadreza-samadi"
+        },
+        {
+          "label": "اینستاگرام",
+          "url": "https://www.instagram.com/ahmadreza.samadi/"
+        }
+      ]
+    },
+    {
+      "language": "ar",
+      "source_url": "https://a-samadi.com/ar/",
+      "passages": [
+        {
+          "position": 1,
+          "section": "",
+          "title": "أحمدرضا صمدي",
+          "text": "رائد أعمال تقني · دبي، الإمارات أحمدرضا صمدي أبني الذكاء الاصطناعي، وأدير شركةً عليها أن تتعايش معه. شريك مؤسس وقائد تقني في Appraiva. وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group. اطّلع على سيرتي، الموارد الإعلامية و أعمال مختارة. استكشف أعمالي تواصل معي اسأل عن أعمالي",
+          "paragraphs": [
+            "رائد أعمال تقني · دبي، الإمارات",
+            "أبني الذكاء الاصطناعي، وأدير شركةً عليها أن تتعايش معه.",
+            "شريك مؤسس وقائد تقني في Appraiva. وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group.",
+            "اطّلع على سيرتي، الموارد الإعلامية و أعمال مختارة."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#top",
+          "links": [
+            {
+              "label": "سيرتي",
+              "url": "https://a-samadi.com/ar/about.html"
+            },
+            {
+              "label": "الموارد الإعلامية",
+              "url": "https://a-samadi.com/ar/press.html"
+            },
+            {
+              "label": "أعمال مختارة",
+              "url": "https://a-samadi.com/ar/work/"
+            },
+            {
+              "label": "استكشف أعمالي",
+              "url": "https://a-samadi.com/ar/#work"
+            },
+            {
+              "label": "تواصل معي",
+              "url": "mailto:ahmadreza.smdi@gmail.com"
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "section": "الشركات الحالية ومجالات التركيز",
+          "title": "Appraiva",
+          "text": "الولايات المتحدة · عن بُعد Appraiva شريك مؤسس وقائد تقني",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": null,
+          "links": [
+            {
+              "label": "الولايات المتحدة · عن بُعد Appraiva شريك مؤسس وقائد تقني",
+              "url": "https://a-samadi.com/ar/work/appraiva.html"
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "section": "الشركات الحالية ومجالات التركيز",
+          "title": "مجموعة رويال أبراج",
+          "text": "دبي، الإمارات مجموعة رويال أبراج شريك مؤسس ورئيس تنفيذي",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": null,
+          "links": [
+            {
+              "label": "دبي، الإمارات مجموعة رويال أبراج شريك مؤسس ورئيس تنفيذي",
+              "url": "https://a-samadi.com/ar/work/royal-abraj.html"
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "section": "الشركات الحالية ومجالات التركيز",
+          "title": "ابدأ بالقرار.",
+          "text": "مجال تركيزي ابدأ بالقرار. التقنية × الذكاء الاصطناعي × الأعمال",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": null,
+          "links": [
+            {
+              "label": "مجال تركيزي ابدأ بالقرار. التقنية × الذكاء الاصطناعي × الأعمال",
+              "url": "https://a-samadi.com/ar/#skills"
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "section": "",
+          "title": "التقنية × الذكاء الاصطناعي × الأعمال",
+          "text": "التقنية × الذكاء الاصطناعي × الأعمالاطّلع على كيف أبني الذكاء الاصطناعي في Appraiva، وأدير شركةً في دبي، وأقرّر ما يحتاج إلى مراجعة بشرية.",
+          "paragraphs": [
+            "اطّلع على كيف أبني الذكاء الاصطناعي في Appraiva، وأدير شركةً في دبي، وأقرّر ما يحتاج إلى مراجعة بشرية."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#signature-ideas",
+          "links": []
+        },
+        {
+          "position": 6,
+          "section": "",
+          "title": "مجالات عملي",
+          "text": "مجالات عمليبناء منتجات الذكاء الاصطناعيإدارة الأعمال بالتقنيةابدأ بالقرارلماذا أبني الذكاء الاصطناعي وأدير شركة",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#signature-ideas",
+          "links": [
+            {
+              "label": "بناء منتجات الذكاء الاصطناعي",
+              "url": "https://a-samadi.com/ar/work/appraiva.html"
+            },
+            {
+              "label": "إدارة الأعمال بالتقنية",
+              "url": "https://a-samadi.com/ar/work/royal-abraj.html"
+            },
+            {
+              "label": "ابدأ بالقرار",
+              "url": "https://a-samadi.com/ar/writing/start-with-the-decision.html"
+            },
+            {
+              "label": "لماذا أبني الذكاء الاصطناعي وأدير شركة",
+              "url": "https://a-samadi.com/ar/writing/build-ai-run-a-business.html"
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "section": "",
+          "title": "أعمال يمكن الاطلاع عليها",
+          "text": "أعمال يمكن الاطلاع عليهاAppraivaمجموعة رويال أبراجدراسات وأدوات عامة",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#signature-ideas",
+          "links": [
+            {
+              "label": "Appraiva",
+              "url": "https://a-samadi.com/ar/work/appraiva.html"
+            },
+            {
+              "label": "مجموعة رويال أبراج",
+              "url": "https://a-samadi.com/ar/work/royal-abraj.html"
+            },
+            {
+              "label": "دراسات وأدوات عامة",
+              "url": "https://a-samadi.com/studies/"
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "section": "",
+          "title": "موضوعاتي",
+          "text": "موضوعاتيأين يستحق الذكاء الاصطناعي مكانه في الأعمالالتكلفة لكل نتيجة مقبولةاختبار الذكاء الاصطناعي على مهام حقيقيةأين يجب أن يتوقف الذكاء الاصطناعيتقييم العقارات بالذكاء الاصطناعي",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#signature-ideas",
+          "links": [
+            {
+              "label": "أين يستحق الذكاء الاصطناعي مكانه في الأعمال",
+              "url": "https://a-samadi.com/tools/before-you-build-ai.html"
+            },
+            {
+              "label": "التكلفة لكل نتيجة مقبولة",
+              "url": "https://a-samadi.com/writing/ai-cost-per-verified-result.html"
+            },
+            {
+              "label": "اختبار الذكاء الاصطناعي على مهام حقيقية",
+              "url": "https://a-samadi.com/writing/business-ai-evaluation-cases.html"
+            },
+            {
+              "label": "أين يجب أن يتوقف الذكاء الاصطناعي",
+              "url": "https://a-samadi.com/ar/writing/ai-human-review-real-estate.html"
+            },
+            {
+              "label": "تقييم العقارات بالذكاء الاصطناعي",
+              "url": "https://a-samadi.com/ar/writing/ai-home-value-estimates.html"
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "section": "مشاريع مختارة",
+          "title": "من تحديات الأعمال إلى منتجات تعمل.",
+          "text": "مشاريع مختارة من تحديات الأعمال إلى منتجات تعمل. أعمال مختارة في منتجات الذكاء الاصطناعي في Appraiva، وأنظمة الأعمال في Royal Abraj Group، وبيانات المؤسسات والتحليلات التنبؤية.",
+          "paragraphs": [
+            "أعمال مختارة في منتجات الذكاء الاصطناعي في Appraiva، وأنظمة الأعمال في Royal Abraj Group، وبيانات المؤسسات والتحليلات التنبؤية."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#work",
+          "links": []
+        },
+        {
+          "position": 10,
+          "section": "مشاريع مختارة",
+          "title": "Appraiva، منصة الذكاء العقاري",
+          "text": "الشركة الرئيسية appraiva.com Appraiva، منصة الذكاء العقاري تطوير أدوات ذكاء اصطناعي تساعد المستثمرين والمطورين العقاريين على العثور على العقارات التي تعاني من مشكلات مالية أو تدهور في حالتها، والعقارات غير المُدرجة للبيع علنًا، باستخدام تحليل الصور والبيانات العقارية المُثرَاة. تحليل الصور أدوات الذكاء الاصطناعي بيانات العقارات بيانات العقارات المُثرَاة دراسة حالة Appraiva طبقات نظام Appraiva ٠١اكتشاف العقارات ٠٢إثراء البيانات ٠٣تحليل الفرص ٠٤سير عمل البحث واتخاذ القرار",
+          "paragraphs": [
+            "تطوير أدوات ذكاء اصطناعي تساعد المستثمرين والمطورين العقاريين على العثور على العقارات التي تعاني من مشكلات مالية أو تدهور في حالتها، والعقارات غير المُدرجة للبيع علنًا، باستخدام تحليل الصور والبيانات العقارية المُثرَاة."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#work",
+          "links": [
+            {
+              "label": "appraiva.com",
+              "url": "https://appraiva.com/"
+            },
+            {
+              "label": "دراسة حالة Appraiva",
+              "url": "https://a-samadi.com/ar/work/appraiva.html"
+            }
+          ]
+        },
+        {
+          "position": 11,
+          "section": "مشاريع مختارة",
+          "title": "الاستراتيجية الرقمية وعمليات الأعمال",
+          "text": "أدواري الحاليةمجموعة رويال أبراج الاستراتيجية الرقمية وعمليات الأعمال شريك مؤسس ورئيس تنفيذي في Royal Abraj Group بدبي. تشمل أعمال المجموعة الوساطة العقارية وخدمات تخليص المستندات؛ ويتولى قيادة استراتيجيتها الرقمية وتقنياتها. الاستراتيجية الرقميةالتكنولوجياالوساطة العقارية دراسة حالة مجموعة رويال أبراج",
+          "paragraphs": [
+            "شريك مؤسس ورئيس تنفيذي في Royal Abraj Group بدبي. تشمل أعمال المجموعة الوساطة العقارية وخدمات تخليص المستندات؛ ويتولى قيادة استراتيجيتها الرقمية وتقنياتها."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#work",
+          "links": [
+            {
+              "label": "دراسة حالة مجموعة رويال أبراج",
+              "url": "https://a-samadi.com/ar/work/royal-abraj.html"
+            }
+          ]
+        },
+        {
+          "position": 12,
+          "section": "مشاريع مختارة",
+          "title": "منصة بيانات لإدارة علاقات العملاء والتحليلات المؤسسية",
+          "text": "الخلفيةOxfam Novib منصة بيانات لإدارة علاقات العملاء والتحليلات المؤسسية بنية بيانات Azure لترحيل CRM والتحليلات لدى Oxfam Novib. هندسة بيانات المؤسساتAzureCRM دراسة حالة Oxfam Novib",
+          "paragraphs": [
+            "بنية بيانات Azure لترحيل CRM والتحليلات لدى Oxfam Novib."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#work",
+          "links": [
+            {
+              "label": "دراسة حالة Oxfam Novib",
+              "url": "https://a-samadi.com/ar/work/oxfam-novib.html"
+            }
+          ]
+        },
+        {
+          "position": 13,
+          "section": "نبذة عني",
+          "title": "عمق تقني، ورؤية للأعمال.",
+          "text": "نبذة عنيعمق تقني، ورؤية للأعمال.",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#about",
+          "links": []
+        },
+        {
+          "position": 14,
+          "section": "نبذة عني",
+          "title": "",
+          "text": "يبني أحمدرضا صمدي منتجات الذكاء الاصطناعي في Appraiva ويدير Royal Abraj Group في دبي. ويكتب عن الطريقة التي تقرّر بها الشركات ما تبنيه وما تتحقق منه وما تقيسه.",
+          "paragraphs": [
+            "يبني أحمدرضا صمدي منتجات الذكاء الاصطناعي في Appraiva ويدير Royal Abraj Group في دبي. ويكتب عن الطريقة التي تقرّر بها الشركات ما تبنيه وما تتحقق منه وما تقيسه."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#about",
+          "links": []
+        },
+        {
+          "position": 15,
+          "section": "نبذة عني",
+          "title": "",
+          "text": "أبني الذكاء الاصطناعي، وأدير شركةً عليها أن تتعايش معه.",
+          "paragraphs": [
+            "أبني الذكاء الاصطناعي، وأدير شركةً عليها أن تتعايش معه."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#about",
+          "links": []
+        },
+        {
+          "position": 16,
+          "section": "نبذة عني",
+          "title": "",
+          "text": "اسمي بالفارسية والعربية: احمدرضا صمدی · أحمدرضا صمدي.",
+          "paragraphs": [
+            "اسمي بالفارسية والعربية: احمدرضا صمدی · أحمدرضا صمدي."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#about",
+          "links": []
+        },
+        {
+          "position": 17,
+          "section": "خبرات مختارة",
+          "title": "مسار تقني يجمع المنتج والبيانات والذكاء الاصطناعي والعمليات.",
+          "text": "خبرات مختارة مسار تقني يجمع المنتج والبيانات والذكاء الاصطناعي والعمليات.",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#experience",
+          "links": []
+        },
+        {
+          "position": 18,
+          "section": "خبرات مختارة",
+          "title": "شريك مؤسس وقائد تقني",
+          "text": "أدواري الحاليةشريك مؤسس وقائد تقنيAppraiva · كليفلاند، أوهايو، الولايات المتحدة · عن بُعد من دبيشريك مؤسس وقائد تقني في Appraiva. أبرايفا شركة أمريكية في كليفلاند، أوهايو؛ ويعمل عن بُعد من دبي. تبني الشركة أدوات ذكاء اصطناعي تساعد المستثمرين والمطورين العقاريين على العثور على عقارات متعثرة أو غير معروضة في السوق، من خلال تحليل الصور وبيانات العقارات المُثرَاة.",
+          "paragraphs": [
+            "شريك مؤسس وقائد تقني في Appraiva. أبرايفا شركة أمريكية في كليفلاند، أوهايو؛ ويعمل عن بُعد من دبي. تبني الشركة أدوات ذكاء اصطناعي تساعد المستثمرين والمطورين العقاريين على العثور على عقارات متعثرة أو غير معروضة في السوق، من خلال تحليل الصور وبيانات العقارات المُثرَاة."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#experience",
+          "links": []
+        },
+        {
+          "position": 19,
+          "section": "خبرات مختارة",
+          "title": "شريك مؤسس ورئيس تنفيذي",
+          "text": "أدواري الحاليةشريك مؤسس ورئيس تنفيذيمجموعة رويال أبراج · دبي، الإماراتشريك مؤسس ورئيس تنفيذي في Royal Abraj Group بدبي. تشمل أعمال المجموعة الوساطة العقارية وخدمات تخليص المستندات؛ ويتولى قيادة استراتيجيتها الرقمية وتقنياتها.",
+          "paragraphs": [
+            "شريك مؤسس ورئيس تنفيذي في Royal Abraj Group بدبي. تشمل أعمال المجموعة الوساطة العقارية وخدمات تخليص المستندات؛ ويتولى قيادة استراتيجيتها الرقمية وتقنياتها."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#experience",
+          "links": []
+        },
+        {
+          "position": 20,
+          "section": "خبرات مختارة",
+          "title": "هندسة بيانات المؤسسات",
+          "text": "الخلفيةهندسة بيانات المؤسساتOxfam Novibبنية بيانات Azure لترحيل CRM والتحليلات لدى Oxfam Novib.",
+          "paragraphs": [
+            "بنية بيانات Azure لترحيل CRM والتحليلات لدى Oxfam Novib."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#experience",
+          "links": []
+        },
+        {
+          "position": 21,
+          "section": "خبرات مختارة",
+          "title": "تعلّم الآلة",
+          "text": "الخلفيةتعلّم الآلةMCIالتقسيم التنبؤي للعملاء لدى MCI.",
+          "paragraphs": [
+            "التقسيم التنبؤي للعملاء لدى MCI."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#experience",
+          "links": []
+        },
+        {
+          "position": 22,
+          "section": "القدرات",
+          "title": "حيث تلتقي الاستراتيجية بالتنفيذ.",
+          "text": "القدرات حيث تلتقي الاستراتيجية بالتنفيذ.",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#skills",
+          "links": []
+        },
+        {
+          "position": 23,
+          "section": "القدرات",
+          "title": "قيادة المنتج والفرق التقنية",
+          "text": "قيادة المنتج والفرق التقنية قيادة تقنية لتحليل الصور والبيانات العقارية المُثرَاة في Appraiva؛ والاستراتيجية الرقمية والتقنية في Royal Abraj Group.",
+          "paragraphs": [
+            "قيادة تقنية لتحليل الصور والبيانات العقارية المُثرَاة في Appraiva؛ والاستراتيجية الرقمية والتقنية في Royal Abraj Group."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#skills",
+          "links": []
+        },
+        {
+          "position": 24,
+          "section": "القدرات",
+          "title": "الذكاء الاصطناعي وأنظمة البيانات",
+          "text": "الذكاء الاصطناعي وأنظمة البيانات هندسة بيانات المؤسسات وتعلّم الآلة. التقسيم التنبؤي للعملاء لدى MCI.",
+          "paragraphs": [
+            "هندسة بيانات المؤسسات وتعلّم الآلة. التقسيم التنبؤي للعملاء لدى MCI."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#skills",
+          "links": []
+        },
+        {
+          "position": 25,
+          "section": "القدرات",
+          "title": "هندسة السحابة والمنصات",
+          "text": "هندسة السحابة والمنصات بنية بيانات Azure لترحيل CRM والتحليلات لدى Oxfam Novib.",
+          "paragraphs": [
+            "بنية بيانات Azure لترحيل CRM والتحليلات لدى Oxfam Novib."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#skills",
+          "links": []
+        },
+        {
+          "position": 26,
+          "section": "المقالات",
+          "title": "الأفكار وراء العمل.",
+          "text": "المقالاتالأفكار وراء العمل.تصفح كل المقالات",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#writing",
+          "links": [
+            {
+              "label": "تصفح كل المقالات",
+              "url": "https://a-samadi.com/ar/writing/"
+            }
+          ]
+        },
+        {
+          "position": 27,
+          "section": "المقالات",
+          "title": "",
+          "text": "الذكاء الاصطناعي في العقارات: الأدلة والقرارات الذكاء الاصطناعي وأنظمة الأعمال: دروس من دبي",
+          "paragraphs": [],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#writing",
+          "links": [
+            {
+              "label": "الذكاء الاصطناعي في العقارات: الأدلة والقرارات",
+              "url": "https://a-samadi.com/ar/topics/ai-real-estate.html"
+            },
+            {
+              "label": "الذكاء الاصطناعي وأنظمة الأعمال: دروس من دبي",
+              "url": "https://a-samadi.com/ar/topics/business-systems-dubai.html"
+            }
+          ]
+        },
+        {
+          "position": 28,
+          "section": "المقالات",
+          "title": "قبل أن تبني منتج الذكاء الاصطناعي",
+          "text": "دليل تفاعلي قبل أن تبني منتج الذكاء الاصطناعي حوّل فكرة الذكاء الاصطناعي إلى قرار واضح وخطة للأدلة وتجربة أولية مفيدة. أنشئ موجز القرار",
+          "paragraphs": [
+            "حوّل فكرة الذكاء الاصطناعي إلى قرار واضح وخطة للأدلة وتجربة أولية مفيدة."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#writing",
+          "links": [
+            {
+              "label": "أنشئ موجز القرار",
+              "url": "https://a-samadi.com/ar/tools/before-you-build-ai.html"
+            }
+          ]
+        },
+        {
+          "position": 29,
+          "section": "المقالات",
+          "title": "تقييم العقارات بالذكاء الاصطناعي",
+          "text": "تقييم العقاراتتقييم العقارات بالذكاء الاصطناعيما الذي يمكن للتقدير الآلي أن يخبرك به عن المنزل، وما حدوده.",
+          "paragraphs": [
+            "ما الذي يمكن للتقدير الآلي أن يخبرك به عن المنزل، وما حدوده."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#writing",
+          "links": [
+            {
+              "label": "تقييم العقارات بالذكاء الاصطناعي",
+              "url": "https://a-samadi.com/ar/writing/ai-home-value-estimates.html"
+            }
+          ]
+        },
+        {
+          "position": 30,
+          "section": "المقالات",
+          "title": "الذكاء الاصطناعي في القرارات العقارية",
+          "text": "المراجعة البشريةالذكاء الاصطناعي في القرارات العقاريةأين يراجع الشخص الأدلة قبل اتخاذ قرار عقاري.",
+          "paragraphs": [
+            "أين يراجع الشخص الأدلة قبل اتخاذ قرار عقاري."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#writing",
+          "links": [
+            {
+              "label": "الذكاء الاصطناعي في القرارات العقارية",
+              "url": "https://a-samadi.com/ar/writing/ai-human-review-real-estate.html"
+            }
+          ]
+        },
+        {
+          "position": 31,
+          "section": "المقالات",
+          "title": "تكاليف وبيانات العقارات في دبي",
+          "text": "بيانات العقارات في دبيتكاليف وبيانات العقارات في دبيطابق السؤال العقاري مع مصدر البيانات المناسب في دبي.",
+          "paragraphs": [
+            "طابق السؤال العقاري مع مصدر البيانات المناسب في دبي."
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#writing",
+          "links": [
+            {
+              "label": "تكاليف وبيانات العقارات في دبي",
+              "url": "https://a-samadi.com/ar/writing/which-dubai-property-source.html"
+            }
+          ]
+        },
+        {
+          "position": 32,
+          "section": "تواصل",
+          "title": "لنتحدث عن منتج أو سير عمل.",
+          "text": "تواصل لنتحدث عن منتج أو سير عمل. أرحب بالحوار مع المؤسسين وخبراء القطاع الذين يعملون على منتجات الذكاء الاصطناعي أو البيانات العقارية أو الأنظمة التي تدعم عمليات الأعمال. أخبرني بمن يستفيد من هذا العمل، وكيف يُنجز اليوم، وما القرار أو العملية التي تريد تحسينها. يكفي وصف موجز ورابط ذو صلة للبدء. دبي، الإمارات العربية المتحدة",
+          "paragraphs": [
+            "أرحب بالحوار مع المؤسسين وخبراء القطاع الذين يعملون على منتجات الذكاء الاصطناعي أو البيانات العقارية أو الأنظمة التي تدعم عمليات الأعمال.",
+            "أخبرني بمن يستفيد من هذا العمل، وكيف يُنجز اليوم، وما القرار أو العملية التي تريد تحسينها. يكفي وصف موجز ورابط ذو صلة للبدء.",
+            "دبي، الإمارات العربية المتحدة"
+          ],
+          "source_url": "https://a-samadi.com/ar/",
+          "section_url": "https://a-samadi.com/ar/#contact",
+          "links": []
+        }
+      ],
+      "shortcuts": [
+        {
+          "label": "المشاريع",
+          "url": "https://a-samadi.com/ar/#work"
+        },
+        {
+          "label": "نبذة عني",
+          "url": "https://a-samadi.com/ar/#about"
+        },
+        {
+          "label": "الخبرة",
+          "url": "https://a-samadi.com/ar/#experience"
+        },
+        {
+          "label": "القدرات",
+          "url": "https://a-samadi.com/ar/#skills"
+        },
+        {
+          "label": "المقالات",
+          "url": "https://a-samadi.com/ar/#writing"
+        },
+        {
+          "label": "تواصل",
+          "url": "https://a-samadi.com/ar/#contact"
+        },
+        {
+          "label": "قبل أن تبني منتج الذكاء الاصطناعي",
+          "url": "https://a-samadi.com/ar/tools/before-you-build-ai.html"
+        },
+        {
+          "label": "كل المقالات",
+          "url": "https://a-samadi.com/ar/writing/"
+        },
+        {
+          "label": "السيرة وملف التعريف",
+          "url": "https://a-samadi.com/ar/about.html#profile-resources",
+          "aliases": [
+            "Ahmadreza Samadi",
+            "Ahmad Samadi",
+            "احمدرضا صمدی",
+            "احمد صمدی",
+            "أحمدرضا صمدي"
+          ],
+          "identity_url": "https://a-samadi.com/ar/about.html"
+        },
+        {
+          "label": "هندسة البيانات ومسارات CRM في Oxfam Novib",
+          "url": "https://a-samadi.com/ar/work/oxfam-novib.html"
+        },
+        {
+          "label": "أدوات وبيانات عامة: تكاليف الذكاء الاصطناعي ودراسات الإسكان",
+          "url": "https://a-samadi.com/ar/about.html#public-tools-data-title"
+        },
+        {
+          "label": "البريد الإلكتروني",
+          "url": "mailto:ahmadreza.smdi@gmail.com"
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/ahmadreza-samadi/"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ahmadreza-smdi"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@ahmadreza-samadi"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/ahmadreza.samadi/"
+        }
+      ]
+    }
+  ],
+  "published_resources": [
+    {
+      "url": "https://a-samadi.com/carousels/ai-property-brief-evidence.html",
+      "language": "en",
+      "type": "CollectionPage",
+      "title": "AI property briefs: A tidy property brief still needs evidence.",
+      "description": "Review an AI-generated property brief slide by slide. Trace each important claim to its source, identify missing evidence and decide what still needs checking.",
+      "date_published": "2026-11-03T20:52:05+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/carousels/dubai-broker-record-check.html",
+      "language": "en",
+      "type": "CollectionPage",
+      "title": "How to check a Dubai broker record | Ahmadreza Samadi",
+      "description": "Follow a Dubai broker record check through the official listing. See which details identify the broker and which property and transaction facts need separate checks.",
+      "date_published": "2026-11-03T20:52:05+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/carousels/dubai-procedure-status-check.html",
+      "language": "en",
+      "type": "CollectionPage",
+      "title": "Dubai procedure status: Submitted is a stage, not the finish.",
+      "description": "Read a Dubai procedure status in context. Follow the slides to distinguish what the record currently shows from the outcome someone expects to happen next.",
+      "date_published": "2026-11-03T20:52:05+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/carousels/dubai-project-status-check.html",
+      "language": "en",
+      "type": "CollectionPage",
+      "title": "Dubai project status and registration | Ahmadreza Samadi",
+      "description": "Match a Dubai project to its registered record before reading a progress update. Use the slides to check that the evidence describes the same project.",
+      "date_published": "2026-11-03T20:52:05+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/carousels/dubai-rental-index-context.html",
+      "language": "en",
+      "type": "CollectionPage",
+      "title": "Dubai rental index and asking rents | Ahmadreza Samadi",
+      "description": "Compare a Dubai asking rent with an official rental index result. Keep the property details, advertised price and index evidence distinct as you read each slide.",
+      "date_published": "2026-11-03T20:52:05+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/carousels/dubai-valuation-evidence.html",
+      "language": "en",
+      "type": "CollectionPage",
+      "title": "Dubai property valuation: Ask what produced the property number.",
+      "description": "Compare property valuation evidence in Dubai. Identify the type of value, its source and the purpose of the comparison before relying on a figure for a decision.",
+      "date_published": "2026-11-03T20:52:05+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/carousels/tech-trend-ai-factory-observability.html",
+      "language": "en",
+      "type": "CollectionPage",
+      "title": "An AI factory needs more than GPUs.",
+      "description": "NVIDIA announced Minerva, an AIOps platform connecting infrastructure and workload signals. The trend is visibility across the whole operation.",
+      "date_published": "2026-11-03T19:07:36+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/carousels/tech-trend-ai-usage-not-outcomes.html",
+      "language": "en",
+      "type": "CollectionPage",
+      "title": "AI usage and useful business outcomes | Ahmadreza Samadi",
+      "description": "GitHub has expanded Copilot usage reporting across tools. That helps show activity. It does not measure business results by itself.",
+      "date_published": "2026-10-29T13:44:13+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/carousels/tech-trend-assisted-permissions.html",
+      "language": "en",
+      "type": "CollectionPage",
+      "title": "AI agents are learning when to ask.",
+      "description": "GitHub has made assisted permissions generally available in Copilot CLI, the Copilot app and VS Code. The useful question is what still needs your approval.",
+      "date_published": "2026-10-28T16:43:04+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/carousels/tech-trend-gemini-business-hub.html",
+      "language": "en",
+      "type": "CollectionPage",
+      "title": "What a Gemini business hub can do | Ahmadreza Samadi",
+      "description": "Google announced a Gemini landing page for small businesses, with brand, finance and connected-app tools. Start with the workflow you need.",
+      "date_published": "2026-11-03T19:07:36+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/carousels/tech-trend-notification-to-reviewed-fix.html",
+      "language": "en",
+      "type": "CollectionPage",
+      "title": "A chat request is not a shipped fix.",
+      "description": "GitHub announced a consolidated Teams app that connects issue notifications with Copilot. The review step still belongs in the workflow.",
+      "date_published": "2026-11-03T19:07:36+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/carousels/tech-trend-world-models-real-tests.html",
+      "language": "en",
+      "type": "CollectionPage",
+      "title": "World models and real-world tests | Ahmadreza Samadi",
+      "description": "NVIDIA expanded Cosmos with data, training and simulation tools for physical AI. Generated scenarios can broaden what developers test.",
+      "date_published": "2026-11-03T19:07:36+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/agent-workflow-shared-bottlenecks.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "More agents. The same queue.",
+      "description": "Watch what happens when several helpers share a single key. An English film uses a fictional dispatch library to explain bottlenecks in multi-agent workflows.",
+      "date_published": "2026-11-03T19:07:36+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/ai-agent-permissions-ability-authority.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "AI agents: ability is not authority",
+      "description": "Watch Ahmadreza Samadi’s English film: a fictional invoice explains the boundaries between reading, drafting and approval in business AI.",
+      "date_published": "2026-10-21T10:06:51+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/ai-agents-shared-notebook.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "AI agents need shared notes, and a way to check them",
+      "description": "Watch Ahmadreza Samadi’s English film: a fictional repair workshop explains shared agent knowledge, context checks and private project information.",
+      "date_published": "2026-10-19T10:13:02+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/ai-confidence.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "Why does AI sound so confident when it is wrong?",
+      "description": "By Ahmadreza Samadi. An animated fictional museum example explains confident AI mistakes and how to check evidence. English narration and captions.",
+      "date_published": "2026-10-05T18:47:15+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/ai-research-examination-understanding.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "AI wrote the result. People still need to understand it.",
+      "description": "Watch Zara examine an AI-generated research result. The English film follows her questions about assumptions, supporting evidence and what the result can show.",
+      "date_published": "2026-11-02T21:00:00+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/building-digital-twin-data-freshness.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "A beautiful building model can still be out of date",
+      "description": "Watch the English film: In a fictional office, Omar sees a polished building model while a room feels wrong. The useful question is not how realistic the model looks. It is which physical asset the data describes and when that data was observed.",
+      "date_published": "2026-10-27T13:10:13+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/building-energy-audit-decisions.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "Before buying a new machine, find where the energy goes",
+      "description": "Watch a fictional building manager trace a high energy bill to the questions an audit should answer before anyone decides to buy replacement equipment.",
+      "date_published": "2026-11-03T19:07:36+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/business-ai-evaluation-cases.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "The AI demo passed. The real work did not.",
+      "description": "Watch Ahmadreza Samadi’s English film about AI evaluation: a polished demo is not proof of task reliability; choose cases that reflect the work.",
+      "date_published": "2026-10-28T21:00:00+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/cash-conversion-cycle-clocks.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "The sale happened. The cash is still on its way.",
+      "description": "Watch the cash conversion cycle in a fictional lamp workshop. Follow the time between paying for inventory, making a sale and receiving the customer's cash.",
+      "date_published": "2026-11-03T19:07:36+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/charging-80.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "Why does your phone stop charging at 80%?",
+      "description": "By Ahmadreza Samadi. An animated explanation of charge limits, learned charging routines and heat pauses. English narration and captions.",
+      "date_published": "2026-10-05T19:41:49+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/computer-agent-check-result.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "The button moved. The AI did not notice.",
+      "description": "Watch the English film: In a fictional parcel studio, Nora asks an AI helper to prepare a label. A panel moves before the click arrives. The cursor moves, but the label is still missing. This illustrates a failure possibility; it is not an observed shipment or product test.",
+      "date_published": "2026-10-25T01:30:44+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/cookie-consent.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "What does Accept cookies actually mean?",
+      "description": "By Ahmadreza Samadi. An animated explanation of cookie banners and what accepting optional purposes may mean. English narration and captions.",
+      "date_published": "2026-10-05T19:35:43+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/dubai-project-escrow-controls.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "The money has a project name",
+      "description": "Watch the English film: Fictional buyer Rami sees a beautiful model of an unfinished building. His useful question is not only what it will look like, but which records support the payment instructions. No real project or account is represented here.",
+      "date_published": "2026-10-25T01:08:08+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/dubai-service-charge-same-rent.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "Same rent, different service-charge bill",
+      "description": "Watch the English film: A fictional Dubai property comparison separates advertised rent from cash remaining after one recurring cost.",
+      "date_published": "2026-10-21T21:20:06+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/heat-pump-moves-heat-explained.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "How cold outdoor air can help warm a home",
+      "description": "Watch Ahmadreza Samadi’s English animated film: a fictional home and an illustrative energy balance explain how a heat pump transfers heat.",
+      "date_published": "2026-10-20T21:00:39+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/iphone-duo.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "iPhone Duo: what does the extra $800 cost per day?",
+      "description": "By Ahmadreza Samadi. Watch the 104-second film comparing the $800 model-price gap over three years. English captions, a transcript and the calculation’s limits are included.",
+      "date_published": "2026-10-10T02:10:47+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/phone-location-across-street.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "Why your phone puts you across the street",
+      "description": "Watch Ahmadreza Samadi’s English film: a fictional pickup explains reflected satellite signals, an uncertain map dot and agreeing where to meet.",
+      "date_published": "2026-10-18T21:00:00+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/profit-cash.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "Profitable. But out of cash: why payment timing matters",
+      "description": "By Ahmadreza Samadi. An animated example of a profitable business short of cash because bills and customer payments fall on different dates. English narration and captions.",
+      "date_published": "2026-10-08T09:44:46+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/prompt-injection-layered-controls.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "The document tried to become the boss",
+      "description": "Watch the English film: A fictional theatre shows why reading a document should not let it take over an AI assistant. A smaller tool set, checks on incoming content and human approval points can limit the damage from a misleading instruction.",
+      "date_published": "2026-10-27T21:00:00+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/property-comparables-evidence.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "Next door is not always comparable",
+      "description": "Watch the English film: fictional buyer Mina compares two neighbouring flats, an asking price and an older agreed sale. Proximity is not identical evidence.",
+      "date_published": "2026-10-25T21:10:29+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/rag-check-business-records.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "The confident answer from the old price list",
+      "description": "Watch the English film: In a fictional hotel, Leila asks an AI assistant for a meeting-room quote. A fluent answer appears. Before sending it, she spots the problem: its supporting sheet is an old version. This is a teaching scenario, not a report of an actual hotel or product test.",
+      "date_published": "2026-10-22T10:01:41+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/rental-yield.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "AI says 8% rental yield. Why is the owner still paying?",
+      "description": "Ahmadreza Samadi’s 99-second film uses a fictional rental budget to show how an 8% gross yield can coexist with a cash shortfall.",
+      "date_published": "2026-10-09T03:57:44+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/structured-output-source-checks.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "The form was perfect. The answer was wrong.",
+      "description": "Watch Noor check an AI-generated delivery date against a supplier quote. The English film shows how a correctly formatted response can still contain a false claim.",
+      "date_published": "2026-11-03T19:07:36+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/watch/tesla-roadster-flight-claim.html",
+      "language": "en",
+      "type": "VideoObject",
+      "title": "Tesla says Roadster can fly: three questions to ask",
+      "description": "Watch the English animated film separating Tesla flight claims, access conditions and intended use, with an illustrated thrust mechanism.",
+      "date_published": "2026-10-19T21:25:38+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/agent-workflow-shared-bottlenecks.html",
+      "language": "en",
+      "type": "Article",
+      "title": "More agents. The same queue.",
+      "description": "In a fictional dispatch library, every helper needs the same key. Follow the queue to see which tasks an extra agent can take on and which still have to wait.",
+      "date_published": "2026-11-03T19:07:36+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/ai-agent-permissions-ability-authority.html",
+      "language": "en",
+      "type": "Article",
+      "title": "AI agents: ability is not authority",
+      "description": "Ahmadreza Samadi uses a fictional invoice to explain business AI permissions: the boundaries between reading, drafting and approving an action.",
+      "date_published": "2026-10-21T10:06:51+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/ai-agent-safety-boundaries.html",
+      "language": "en",
+      "type": "Article",
+      "title": "AI agent safety: boundaries before actions",
+      "description": "Define which accounts, data and tools an AI agent can access. See where permissions are enforced, when a person approves an action and how to revoke access.",
+      "date_published": "2026-09-29"
+    },
+    {
+      "url": "https://a-samadi.com/writing/ai-agents-shared-notebook.html",
+      "language": "en",
+      "type": "Article",
+      "title": "AI agents need shared notes, and a way to check them",
+      "description": "A fictional repair workshop explains reusable agent knowledge, context checks and a boundary for private project information.",
+      "date_published": "2026-10-19T10:13:02+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/ai-cost-per-verified-result.html",
+      "language": "en",
+      "type": "Article",
+      "title": "AI cost per accepted result",
+      "description": "A practical framework for measuring the full cost of accepted AI workflow results.",
+      "date_published": "2026-09-24"
+    },
+    {
+      "url": "https://a-samadi.com/writing/ai-data-center-site-readiness.html",
+      "language": "en",
+      "type": "Article",
+      "title": "What makes a building ready for AI data centers?",
+      "description": "Power, cooling, networks and building fit explained through fictional sites, with current JLL and Meta sources and questions for specialist review.",
+      "date_published": "2026-10-13T18:12:26+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/ai-document-review-claim-evidence-checklist.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Who checks the AI’s homework?",
+      "description": "A document-review checklist by Ahmadreza Samadi: write the claim, locate its supporting evidence, then resolve the gap or keep it visible.",
+      "date_published": "2026-10-16T23:41:04+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/ai-home-value-estimates.html",
+      "language": "en",
+      "type": "Article",
+      "title": "AI property valuation: what an estimate misses",
+      "description": "When two AI estimates disagree on a home's value, start with the facts each used. Review the sale dates, comparable homes and uncertainty before relying on a figure.",
+      "date_published": "2026-10-03"
+    },
+    {
+      "url": "https://a-samadi.com/writing/ai-human-review-real-estate.html",
+      "language": "en",
+      "type": "Article",
+      "title": "AI in real estate decisions: where AI should stop",
+      "description": "AI can prepare real estate information; people must verify material claims and explain uncertainty before a client decides. Use an explicit review handoff.",
+      "date_published": "2026-10-03"
+    },
+    {
+      "url": "https://a-samadi.com/writing/ai-inference-memory-movement-explained.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Why does moving data matter for AI chips?",
+      "description": "Our original framework: identify the workload, locate the bottleneck, then test the complete result. No chip test, measured saving or vendor ranking is claimed.",
+      "date_published": "2026-10-14T12:04:37+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/ai-rental-yield-cash-flow.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Why can 8% rental yield still leave a cash shortfall?",
+      "description": "A correct rental-yield calculation can still leave a cash shortfall. Follow a fictional home from headline yield to money left after costs and the loan.",
+      "date_published": "2026-10-09"
+    },
+    {
+      "url": "https://a-samadi.com/writing/ai-research-examination-understanding.html",
+      "language": "en",
+      "type": "Article",
+      "title": "AI wrote the result. People still need to understand it.",
+      "description": "Zara reviews an AI-generated research result. Follow her questions about the evidence, assumptions and limitations behind a polished answer in this fictional case.",
+      "date_published": "2026-11-02T21:00:00+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/avm-vs-appraisal.html",
+      "language": "en",
+      "type": "Article",
+      "title": "AVM vs appraisal: which fits your decision?",
+      "description": "Compare an automated valuation, a broker opinion and an appraisal. See how missing sales, uncertain property condition and the intended use affect the choice.",
+      "date_published": "2026-10-20T18:38:29+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/bacnet-building-devices-common-language.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Your thermostat speaks. Who listens?",
+      "description": "Ahmadreza Samadi explains BACnet building integration: identify the devices, data and commands, and who verifies that they work together.",
+      "date_published": "2026-10-17T18:00:04+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/build-ai-run-a-business.html",
+      "language": "en",
+      "type": "Article",
+      "title": "I build AI, and I run a business that has to live with it",
+      "description": "Ahmadreza Samadi builds AI at Appraiva and runs Royal Abraj Group in Dubai. Three questions for deciding where AI belongs in a business, and where it must stop.",
+      "date_published": "2026-11-09T02:34:42+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/building-digital-twin-data-freshness.html",
+      "language": "en",
+      "type": "Article",
+      "title": "A beautiful building model can still be out of date",
+      "description": "In a fictional office, Omar sees a polished building model while a room feels wrong. Check which physical asset the data describes and when it was observed.",
+      "date_published": "2026-10-27T13:10:13+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/building-energy-audit-decisions.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Before buying a new machine, find where the energy goes",
+      "description": "A fictional building manager investigates a high energy bill. Follow the audit questions about equipment and daily operation before deciding what to replace.",
+      "date_published": "2026-11-03T19:07:36+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/building-laser-scans-point-clouds-explained.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How does a laser scan become a building record?",
+      "description": "Use a scan as evidence for a defined question. It does not certify structural safety, hidden services or universal accuracy. No real building was scanned.",
+      "date_published": "2026-10-14T18:00:41+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/building-leak-alert-response-checklist.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Your building sent an alert.",
+      "description": "A fictional building leak alert shows why a named responder, a location check and a recorded outcome matter. Three questions to ask before buying a sensor.",
+      "date_published": "2026-10-16T23:41:11+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/business-ai-evaluation-cases.html",
+      "language": "en",
+      "type": "Article",
+      "title": "The AI demo passed. The real work did not.",
+      "description": "Ahmadreza Samadi explains why a polished AI demonstration does not establish reliability for the real task: choose evaluation cases from the work.",
+      "date_published": "2026-10-28T21:00:00+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/cash-conversion-cycle-clocks.html",
+      "language": "en",
+      "type": "Article",
+      "title": "The sale happened. The cash is still on its way.",
+      "description": "Follow a fictional lamp workshop from buying inventory to collecting cash. See why a recorded sale and cash available to pay a bill can fall on different days.",
+      "date_published": "2026-11-03T19:07:36+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/chatgpt-intelligent-ui-explained.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How does ChatGPT's Intelligent UI work?",
+      "description": "Explore ChatGPT's interactive answers using a fictional budget. Changing a number shows what the interface can calculate and which assumptions still need checking.",
+      "date_published": "2026-10-12T12:09:26+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/computer-agent-check-result.html",
+      "language": "en",
+      "type": "Article",
+      "title": "The button moved. The AI did not notice.",
+      "description": "In a fictional parcel studio, Nora asks an AI helper for a label. A panel moves before the click arrives: the cursor moves, but the label is still missing.",
+      "date_published": "2026-10-25T01:30:44+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/connected-ai-apps.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Connected AI apps: access, scope and approval",
+      "description": "What can a connected AI app read or change? Use examples from ChatGPT and Gemini to check the account, the scope of access and the actions that require approval.",
+      "date_published": "2026-09-25"
+    },
+    {
+      "url": "https://a-samadi.com/writing/dubai-project-escrow-controls.html",
+      "language": "en",
+      "type": "Article",
+      "title": "The money has a project name",
+      "description": "Fictional buyer Rami sees a model of an unfinished building and asks which records support its payment instructions. No real project or account is represented.",
+      "date_published": "2026-10-25T01:08:08+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/dubai-property-buying-costs.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Dubai property buying costs, item by item",
+      "description": "Build a dated Dubai purchase budget from official registration fees, mortgage charges and your own quotes. Separate total fees from the buyer’s share.",
+      "date_published": "2026-10-20T18:38:29+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/dubai-property-tokenisation-explained.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How do property tokens work, and can you sell them?",
+      "description": "A simple property-token explainer connects digital ownership, fractional shares and net rent with the separate challenge of finding a buyer.",
+      "date_published": "2026-10-12T19:26:21+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/dubai-service-charge-same-rent.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Dubai service charge: same rent, different bills",
+      "description": "A fictional Dubai comparison by Ahmadreza Samadi separates advertised rent from cash after service charges, with DLD’s definition and limits.",
+      "date_published": "2026-10-21T21:20:06+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/foldable-two-batteries.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Two batteries, one foldable phone: how the battery reading works",
+      "description": "See how two batteries power a folding phone with one charge indicator. Different cell capacities explain why averaging the two percentages can mislead you.",
+      "date_published": "2026-10-03"
+    },
+    {
+      "url": "https://a-samadi.com/writing/geospatial-ai-map-answer-review.html",
+      "language": "en",
+      "type": "Article",
+      "title": "A map answer. The right place?",
+      "description": "Ahmadreza Samadi’s geospatial AI checklist: check the boundary, date, source and assumptions behind a map answer; keep unsupported conclusions open.",
+      "date_published": "2026-10-17T21:00:04+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/heat-pump-moves-heat-explained.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How cold outdoor air can help warm a home",
+      "description": "Ahmadreza Samadi explains how a heat pump moves heat through a fictional home and an illustrative energy balance, with an English animated film.",
+      "date_published": "2026-10-20T21:00:39+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/how-building-digital-twins-work.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How can a building have a live digital copy?",
+      "description": "Sensors connect real rooms and equipment to an updating digital model. See how a building digital twin turns readings into useful context.",
+      "date_published": "2026-10-11T00:08:56+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/how-contactless-cards-work.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How does a contactless card work without a battery?",
+      "description": "Trace a contactless payment from the reader's radio field to the card's chip. See how a tap supplies power and carries payment data back to the terminal.",
+      "date_published": "2026-10-10T03:05:36+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/how-many-coffees-to-break-even.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How many coffees must a cafe sell before it makes any profit?",
+      "description": "A fictional café sells 100 coffees for $500 and earns no operating profit. Follow the price, variable cost per cup and fixed costs to calculate its break-even point.",
+      "date_published": "2026-10-10T18:02:07+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/how-noise-cancellation-works.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How do headphones cancel noise by making more sound?",
+      "description": "Microphones measure outside noise and a speaker adds a carefully timed opposite wave. Why this reduces a hum better than every sudden voice.",
+      "date_published": "2026-10-10T03:05:36+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/how-photo-text-recognition-works.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How does your phone turn text in a photo into copyable words?",
+      "description": "OCR finds text regions and recognises visual patterns as letters and words. The AI feature can save typing, but copied text still needs checking.",
+      "date_published": "2026-10-10T03:05:36+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/how-satellite-messaging-works.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How satellite messaging works without cell towers",
+      "description": "Trace a phone message through a satellite to a ground station. See why delivery can take longer than a regular text and how sky visibility affects the connection.",
+      "date_published": "2026-10-04"
+    },
+    {
+      "url": "https://a-samadi.com/writing/how-zip-files-work.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How ZIP files work: compression without losing data",
+      "description": "See how lossless ZIP compression stores repeating data and rebuilds the original file. Find out why a folder of photos or videos may shrink very little.",
+      "date_published": "2026-09-28"
+    },
+    {
+      "url": "https://a-samadi.com/writing/human-review-property-ai-checklist.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Where the person signs off: property AI review",
+      "description": "A practical human-review checklist for property AI: define the decision, check evidence, preserve uncertainty and record who can approve the next action.",
+      "date_published": "2026-10-20T18:38:29+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/humanoid-robots-at-home.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Humanoid robots at home: demos, shipments and autonomy",
+      "description": "What does a humanoid robot shipment tell you about its ability to work at home? Compare deliveries, demonstrations and evidence of autonomous household tasks.",
+      "date_published": "2026-10-03"
+    },
+    {
+      "url": "https://a-samadi.com/writing/incognito-private-browsing.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Does Incognito actually make you invisible?",
+      "description": "When you close an Incognito window, what disappears from your device? Follow a gift purchase through browser history, cookies, saved files and website records.",
+      "date_published": "2026-10-05"
+    },
+    {
+      "url": "https://a-samadi.com/writing/iphone-duo-price-per-day.html",
+      "language": "en",
+      "type": "Article",
+      "title": "iPhone Duo: what does the extra $800 cost per day?",
+      "description": "Compare the $800 US launch-price gap by day of ownership. Check the installment example and see how an uncertain resale value affects the cost calculation.",
+      "date_published": "2026-10-10T02:10:47+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/jev-ai-decision-model.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Jev: an AI decision model, not another chatbot",
+      "description": "See how TypeSafe describes Jev, how it picks from a bounded set of outcomes and what you need to check before a model's decision can route a business task.",
+      "date_published": "2026-09-25"
+    },
+    {
+      "url": "https://a-samadi.com/writing/on-device-ai-scam-warnings-explained.html",
+      "language": "en",
+      "type": "Article",
+      "title": "The message looks convincing.",
+      "description": "Ahmadreza Samadi explains AI scam warnings: stop a rushed action, verify through a trusted separate contact route and keep uncertainty visible.",
+      "date_published": "2026-10-17T12:00:05+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/passkeys-face-id.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How passkeys work: why Face ID is not your password",
+      "description": "Face ID unlocks a passkey locally. Follow a sign-in to see how the site checks the cryptographic proof, where your face data stays and how recovery fits in.",
+      "date_published": "2026-09-28"
+    },
+    {
+      "url": "https://a-samadi.com/writing/phone-location-across-street.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Why your phone puts you across the street",
+      "description": "A fictional pickup explains reflected satellite signals, an uncertain map dot and a practical way to agree where to meet.",
+      "date_published": "2026-10-18T21:00:00+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/profitable-but-out-of-cash.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How can a profitable business run out of cash?",
+      "description": "A profitable sale can leave a business unable to pay its supplier. Follow one order to see why earned money and available cash are different.",
+      "date_published": "2026-10-08"
+    },
+    {
+      "url": "https://a-samadi.com/writing/prompt-injection-layered-controls.html",
+      "language": "en",
+      "type": "Article",
+      "title": "The document tried to become the boss",
+      "description": "A fictional theatre shows why a document should not control an AI assistant. Fewer tools, content checks and human approval can limit misleading instructions.",
+      "date_published": "2026-10-27T21:00:00+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/property-comparables-evidence.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Next door is not always comparable",
+      "description": "Fictional buyer Mina compares neighbouring flats: one asking price and one older agreed sale. Nearby doors do not make them identical valuation evidence.",
+      "date_published": "2026-10-25T21:10:29+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/property-data-enrichment.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How does property data enrichment connect the right records?",
+      "description": "A fictional image-and-record comparison shows how to check property identity, source dates and unresolved claims before combining property information.",
+      "date_published": "2026-10-10T20:30:06+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/rag-check-business-records.html",
+      "language": "en",
+      "type": "Article",
+      "title": "The confident answer from the old price list",
+      "description": "In a fictional hotel, Leila asks an AI assistant for a meeting-room quote. Before sending its fluent answer, she checks the source and finds an old price list.",
+      "date_published": "2026-10-22T10:01:41+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/rent-or-buy-five-numbers.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Rent or buy: the five numbers that decide it",
+      "description": "Compare rent and ownership using matched housing, running costs, upfront cash, time and net exit proceeds. Keep cash affordability separate from wealth.",
+      "date_published": "2026-10-20T18:38:29+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/small-ai-models-task-routing-explained.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How can a smaller AI model fit a useful task?",
+      "description": "Haiku 5.5 is a current example of narrow AI work. Learn task definition, evaluation, routing and a fictional cost calculation without assuming equal quality.",
+      "date_published": "2026-10-13T13:31:09+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/start-with-the-decision.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Start with the decision, then build the AI",
+      "description": "A practical approach to AI product decisions: start with the customer’s decision, assess the evidence, and evaluate the whole workflow.",
+      "date_published": "2026-09-13T13:36:07+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/structured-output-source-checks.html",
+      "language": "en",
+      "type": "Article",
+      "title": "The form was perfect. The answer was wrong.",
+      "description": "Follow Noor as she checks a delivery date against a supplier quote. A fictional example shows how an AI response can fit its schema and still get a fact wrong.",
+      "date_published": "2026-11-03T19:07:36+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/tesla-roadster-flight-claim.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Tesla says Roadster can fly: three questions to ask",
+      "description": "Ahmadreza Samadi’s fictional hangar explains thrust and separates a manufacturer’s Tesla Roadster claim from availability and public-road approval.",
+      "date_published": "2026-10-19T21:25:38+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/verify-ai-image-claims.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How to check an image claim, AI-made or not",
+      "description": "Trace a photo back to its source, try a reverse image search and compare independent evidence. Learn what provenance can tell you when a photo is called AI-made.",
+      "date_published": "2026-10-03"
+    },
+    {
+      "url": "https://a-samadi.com/writing/virtual-machine-device-sharing-explained.html",
+      "language": "en",
+      "type": "Article",
+      "title": "How a virtual PC can use your real printer",
+      "description": "Our original checklist: Which virtual PC? Which resources? Do I need each one? The film is conceptual, not product footage or a tested setup.",
+      "date_published": "2026-10-16T23:40:54+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/what-accept-cookies-means.html",
+      "language": "en",
+      "type": "Article",
+      "title": "What does Accept cookies actually mean?",
+      "description": "The same small browser note can remember your shopping basket or help a company recognise you across websites. The choice is about what that note does.",
+      "date_published": "2026-10-05"
+    },
+    {
+      "url": "https://a-samadi.com/writing/where-wearable-ai-computation-runs.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Where does your wearable’s AI run?",
+      "description": "Ahmadreza Samadi explains wearable AI computation: which tasks run locally, what data is sent out and what happens without a connection.",
+      "date_published": "2026-10-16T23:41:18+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/which-dubai-property-source.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Dubai property costs and data: choose the right source",
+      "description": "Choose Dubai property sources by purpose: sale and mortgage fees, rental benchmarks, sales-price indices or a specific valuation. Keep dates and limits visible.",
+      "date_published": "2026-10-17T00:57:39+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/why-ai-loses-earlier-chat-context.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Why can AI lose track of something you already said?",
+      "description": "Your chat history can contain details the model no longer sees. Compare the context window, summaries and saved memory to understand why a chatbot misses a detail.",
+      "date_published": "2026-10-10T12:00:13+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/why-ai-sounds-confident.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Why does AI sound so confident when it is wrong?",
+      "description": "Ahmadreza Samadi explains confident AI mistakes with a fictional museum example, an animated film and a simple way to check claims against evidence.",
+      "date_published": "2026-10-05"
+    },
+    {
+      "url": "https://a-samadi.com/writing/why-ai-weather-models-need-local-observations.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Why does AI need weather stations?",
+      "description": "AI weather models need current observations as well as past patterns. Check location, update time and forecast window, and distinguish radar from forecasts.",
+      "date_published": "2026-10-15T12:01:10+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/why-full-storage-slows-computer.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Why does your computer slow down when storage is almost full?",
+      "description": "See why a nearly full drive leaves less room for temporary files, memory overflow and SSD housekeeping. These examples explain when freeing space can help.",
+      "date_published": "2026-10-09"
+    },
+    {
+      "url": "https://a-samadi.com/writing/why-occupancy-sensor-lights-switch-off.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Why did the lights go out while you were there?",
+      "description": "Why occupancy sensors can miss a seated person: check their view, movement detection and timeout before asking the facilities team to investigate.",
+      "date_published": "2026-10-15T18:00:54+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/why-phone-stops-charging-at-80.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Why does your phone stop charging at 80%?",
+      "description": "A phone can pause at 80% because of a charge limit, its learned routine or heat. Check the setting and the conditions around the pause to tell the causes apart.",
+      "date_published": "2026-10-05"
+    },
+    {
+      "url": "https://a-samadi.com/writing/why-rent-to-value-is-not-property-yield.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Why dividing metro rent by home value does not give property yield",
+      "description": "Why a metro rent-to-value ratio is not an observed property yield. A fictional cash budget shows the difference and the next evidence to check.",
+      "date_published": "2026-10-15T12:40:34+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/why-usb-c-cables-differ.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Why do identical-looking USB-C cables behave differently?",
+      "description": "Two USB-C cables can look alike and support different charging power, data speeds or video. Check what the cable, charger and device support before choosing one.",
+      "date_published": "2026-10-10T03:05:36+03:30"
+    },
+    {
+      "url": "https://a-samadi.com/writing/why-wifi-is-slow-with-full-bars.html",
+      "language": "en",
+      "type": "Article",
+      "title": "Why is Wi-Fi slow even with full bars?",
+      "description": "Full Wi-Fi bars measure signal strength between your device and router. Compare local congestion, the internet connection and the service to locate the slowdown.",
+      "date_published": "2026-10-10T06:01:29+03:30"
+    }
+  ]
+}

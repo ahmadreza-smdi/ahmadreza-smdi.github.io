@@ -1,0 +1,10 @@
+{
+  "owner_instruction_date": "2026-10-29",
+  "key": "2026-10-29",
+  "slug": "tech-trend-ai-usage-not-outcomes",
+  "bundle_sha256": "9b171b779e30ac299d65190099a4bb651ebf036d34523f1a2ff7bea5720e3fd9",
+  "destination": "https://a-samadi.com",
+  "action": "publish_missed_carousel_once",
+  "not_before": "2026-10-29T10:30:01+03:30",
+  "expires_at": "2026-10-29T23:30:00+03:30"
+}

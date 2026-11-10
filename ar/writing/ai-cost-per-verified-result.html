@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Ahmadreza Samadi">
+<title>تكلفة الذكاء الاصطناعي لكل نتيجة مقبولة | أحمدرضا صمدي</title>
+<meta name="description" content="إطار عملي لقياس تكلفة سير عمل الذكاء الاصطناعي: اجمع تكاليف النموذج والأدوات والمحاولات المتكررة والمراجعة البشرية، ثم قسّمها على النتائج المقبولة.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://a-samadi.com/ar/writing/ai-cost-per-verified-result.html">
+<link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-cost-per-verified-result.html">
+<link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-cost-per-verified-result.html">
+<link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-cost-per-verified-result.html">
+<link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-cost-per-verified-result.html">
+<link rel="icon" type="image/svg+xml" href="../../assets/brand/favicon.svg">
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/vazirmatn-arabic-wght.woff2" crossorigin>
+<link rel="stylesheet" href="../../css/site.css?v=20261009-lagoon4">
+<link rel="stylesheet" href="../../css/rtl.css?v=20261009-lagoon4">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ahmadreza Samadi"><meta property="og:title" content="تكلفة الذكاء الاصطناعي لكل نتيجة مقبولة | أحمدرضا صمدي">
+<meta property="og:description" content="انخفاض سعر النموذج مفيد، لكن المقياس الأهم هو التكلفة الكاملة للنتائج التي تجتاز المراجعة.">
+<meta property="og:url" content="https://a-samadi.com/ar/writing/ai-cost-per-verified-result.html"><meta property="og:locale" content="ar_AE"><meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="fa_IR">
+<meta property="og:image" content="https://a-samadi.com/assets/share/ai-cost-per-verified-result.png">
+<meta property="og:image:alt" content="غلاف المقالة الإنجليزية: AI cost per verified result"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="تكلفة الذكاء الاصطناعي لكل نتيجة مقبولة | أحمدرضا صمدي"><meta name="twitter:description" content="انخفاض سعر النموذج مفيد، لكن المقياس الأهم هو التكلفة الكاملة للنتائج التي تجتاز المراجعة."><meta name="twitter:image" content="https://a-samadi.com/assets/share/ai-cost-per-verified-result.png"><meta name="twitter:image:alt" content="غلاف المقالة الإنجليزية: AI cost per verified result">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://a-samadi.com/ar/writing/ai-cost-per-verified-result.html#article",
+  "headline": "تكلفة الذكاء الاصطناعي لكل نتيجة مقبولة",
+  "description": "إطار لقياس التكلفة الكاملة للنتائج المقبولة في سير عمل الذكاء الاصطناعي.",
+  "url": "https://a-samadi.com/ar/writing/ai-cost-per-verified-result.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://a-samadi.com/ar/writing/ai-cost-per-verified-result.html",
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://a-samadi.com/assets/share/ai-cost-per-verified-result.png",
+      "width": 1200,
+      "height": 630
+    },
+    "isPartOf": {
+      "@id": "https://a-samadi.com/#website"
+    },
+    "breadcrumb": {
+      "@id": "https://a-samadi.com/ar/writing/ai-cost-per-verified-result.html#breadcrumbs"
+    }
+  },
+  "datePublished": "2026-09-24",
+  "dateModified": "2026-10-21T03:38:06+03:30",
+  "inLanguage": "ar",
+  "translationOfWork": {
+    "@id": "https://a-samadi.com/writing/ai-cost-per-verified-result.html#article"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://a-samadi.com/assets/share/ai-cost-per-verified-result.png",
+    "width": 1200,
+    "height": 630
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://a-samadi.com/#person",
+    "name": "Ahmadreza Samadi",
+    "url": "https://a-samadi.com/about.html"
+  },
+  "isPartOf": {
+    "@id": "https://a-samadi.com/#website"
+  },
+  "publisher": {
+    "@id": "https://a-samadi.com/#person"
+  }
+}</script>
+
+<style data-author-box>
+/* A quiet author reference at the end of each article, using the Lagoon tokens. */
+.editorial .article-author {
+  margin-block: 2.5rem 0;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid var(--line-strong);
+  border-inline-start: 3px solid var(--mint-deep);
+  border-radius: 16px;
+  background: var(--surface);
+  text-align: start;
+  overflow-wrap: anywhere;
+}
+.editorial .article-author h2 {
+  margin: 0 0 .25rem;
+  color: var(--muted);
+  font-size: .875rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.editorial .article-author p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.editorial .article-author .article-author__name {
+  margin-block-end: .35rem;
+  font-family: var(--display);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.editorial .article-author a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 44px;
+  max-inline-size: 100%;
+  padding-block: .25rem;
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+.editorial .article-author a:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+@media (forced-colors: active) {
+  .editorial .article-author { border-color: CanvasText; background: Canvas; }
+  .editorial .article-author h2, .editorial .article-author p { color: CanvasText; }
+  .editorial .article-author a { color: LinkText; }
+  .editorial .article-author a:focus-visible { outline-color: Highlight; }
+}
+@media print {
+  .editorial .article-author {
+    break-inside: avoid;
+    margin-block-start: 1.5rem;
+    border-color: #777;
+    background: transparent;
+  }
+  .editorial .article-author h2, .editorial .article-author p, .editorial .article-author a { color: #000; }
+}
+</style>
+
+<script src="/js/site-analytics.js?v=20261009-analytics1" defer></script>
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="article:modified_time" content="2026-10-20T13:27:41+03:30">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://a-samadi.com/ar/writing/ai-cost-per-verified-result.html#breadcrumbs",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "الرئيسية",
+      "item": "https://a-samadi.com/ar/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "الذكاء الاصطناعي وأنظمة الأعمال",
+      "item": "https://a-samadi.com/ar/topics/business-systems-dubai.html"
+    }
+  ]
+}</script>
+</head>
+<body class="editorial-body arabic-page">
+<a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+<header class="editorial-header"><a href="/ar/"><img src="../../assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">أحمدرضا صمدي / الصفحة الرئيسية</a></header>
+<main id="main" class="editorial">
+<p class="eyebrow">تحليل · اقتصاد منتجات الذكاء الاصطناعي</p>
+<h1>تكلفة الذكاء الاصطناعي لكل نتيجة مقبولة</h1>
+<p class="lead">سعر استدعاء النموذج مهم، لكن تكلفة الوصول إلى نتيجة مفيدة عبر سير العمل الكامل أهم.</p>
+<p class="byline">بقلم <a href="/ar/about.html" rel="author">أحمدرضا صمدي</a> · ٢٤ سبتمبر ٢٠٢٦ · حُدّث في <time datetime="2026-10-21T03:38:06+03:30">٢١ أكتوبر ٢٠٢٦</time> · <a href="/writing/ai-cost-per-verified-result.html" hreflang="en">النسخة الإنجليزية من المقال</a></p>
+<section aria-labelledby="article-at-a-glance">
+<h2 id="article-at-a-glance">في لمحة</h2>
+<p>اقسم التكلفة الكاملة لسير العمل، بما فيها استدعاءات النموذج والأدوات وإعادة المحاولة والمراجعة البشرية، على عدد النتائج التي تستوفي معيار مراجعة محددًا. لا تعني الطلبات الأرخص تلقائيًا نتائج مقبولة أقل تكلفة. مثال البحث العقاري أدناه تجربة مقترحة، وليس نتيجة معلنة لشركة.</p>
+</section>
+<!-- cornerstone:start -->
+<section aria-labelledby="cornerstone-title"><h2 id="cornerstone-title">قِس تكلفة كل نتيجة مقبولة</h2><p><strong>اقسم كل تكاليف سير العمل المسجلة على عدد النتائج المتميزة المقبولة وفق معيار حُدّد قبل الاختبار. تشمل التكلفة المحاولات المكررة والمرفوضة؛ ولا تُعدّ المحاولة المكررة نتيجة مقبولة جديدة.</strong></p><figure style="margin:1.5rem 0"><div class="cornerstone-flow" role="img" aria-label="التكلفة المسجلة الكلية ÷ النتائج المتميزة المقبولة. عند عدم قبول أي نتيجة تكون تكلفة الوحدة غير معرّفة." style="text-align:center;max-width:100%"><div style="background:#BDE7D2;border:1px solid #0B6A7A;border-radius:12px;padding:.75rem;color:#0E2A33">تكلفة كل المحاولات</div><div aria-hidden="true" style="color:#0B6A7A">↓</div><div style="background:#C3DCF4;border:1px solid #0B6A7A;border-radius:12px;padding:.75rem;color:#0E2A33">معيار القبول</div><div aria-hidden="true" style="color:#0B6A7A">↓</div><div style="background:#F2F7F5;border:1px solid #0B6A7A;border-radius:12px;padding:.75rem;color:#0E2A33">تكلفة كل نتيجة مقبولة</div></div><figcaption>التكلفة المسجلة الكلية ÷ النتائج المتميزة المقبولة. عند عدم قبول أي نتيجة تكون تكلفة الوحدة غير معرّفة.</figcaption></figure><p>تستخدم هذه الإرشادات «النتيجة المقبولة» للمخرج الذي يستوفي قاعدة القبول كاملة كما سُجّلت قبل الاختبار. وتشير «النتيجة المتحقق منها» في الرابط والعنوان السابقين إلى المعيار نفسه؛ ولا يعني أي منهما اعتماداً مستقلاً. افصل التكلفة المجهولة عن الصفر الصريح. قارن مجموعة النتائج المقصودة نفسها وبالعملة نفسها، واعرض أعداد النتائج المقبولة بجانب تكلفة الوحدة. انخفاض التكلفة مع معيار قبول أضعف ليس تحسناً قابلاً للمقارنة.</p><h3>قائمة تحقق للتجربة التالية</h3><ol><li>ثبّت المهمة ومعرّفات النتائج المقصودة ومعيار القبول قبل الاختبار.</li><li>سجّل تكاليف النموذج والأدوات والعمل وغيرها باتساق لكل المحاولات.</li><li>أبقِ المحاولات المرفوضة والمكررة في بسط الكسر.</li><li>احسب كل نتيجة مقبولة مرة واحدة، وسجّل التكلفة المجهولة كمجهولة.</li><li>إذا لم تُقبل أي نتيجة، اعرض إجمالي الإنفاق وصفراً من النتائج المقبولة وتكلفة وحدة غير معرّفة.</li></ol><p><a href="https://github.com/ahmadreza-smdi/ai-workflow-cost">استخدم دليل القرار أو الأداة</a> · <a href="/ideas.html">اطّلع على الأفكار الثلاث الأساسية</a></p><h3>المراجع الأصلية</h3><ul><li><a href="https://arxiv.org/abs/2211.09110" lang="en">Holistic Evaluation of Language Models (2022)</a></li><li><a href="https://www.nist.gov/itl/ai-risk-management-framework" lang="en">NIST AI RMF 1.0</a></li><li><a href="https://github.com/ahmadreza-smdi/ai-workflow-cost" lang="en">AI workflow cost ledger: source and measurement limits</a></li></ul><p>تسترشد مبادئ التقييم والتفاعل بهذه المراجع. سير العمل أعلاه خلاصة تحريرية، وليس معياراً معتمداً من هذه الجهات أو نتيجة شركة منشورة.</p></section>
+<!-- cornerstone:end -->
+
+<section aria-labelledby="workflow-ledger-title">
+<h2 id="workflow-ledger-title">كيف أجرّب الطريقة باستخدام سجل تكاليفي؟</h2>
+<p><a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/releases/tag/v0.1.0">سجل تكلفة سير عمل الذكاء الاصطناعي، الإصدار 0.1.0</a> أداة بايثون تعمل محليا مع <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost#try-the-fictional-example">تعليمات بالإنجليزية</a>. تحسب التكاليف المسجلة للنموذج والأدوات والمراجعة والبنود الأخرى، بما فيها إعادة المحاولة والتشغيلات الفاشلة. تحدد أنت المهمة وتسمية العملة ومعيار القبول.</p>
+<p>ابدأ من <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/v0.1.0/examples/fictional-attempts.csv">السجل التجريبي الخيالي</a>: ثلاث محاولات لنتيجتين مقصودتين، ونتيجة واحدة مقبولة، وتكلفة إجمالية قدرها 0.85 بالعملة المختارة. هذه أرقام تعليمية مبتكرة. يرفض البرنامج التكاليف المجهولة، ويحتفظ بالصفر الصريح. إذا لم تُقبل أي نتيجة، تكون تكلفة الوحدة غير معرّفة مع إبقاء الإنفاق الكلي ظاهرا.</p>
+<p>تجمع الأداة التكاليف وتسميات القبول التي سجلتها. ولا تتحقق من صحة المخرجات بشكل مستقل أو تقيس نتائج أداء شركة.</p>
+<p>إذا كنت تفضّل جدول بيانات، يمكنك تنزيل <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/releases/download/v0.1.1/AI-Workflow-Experiment.xlsx">ملف تجربة مقارنة سير العمل اليدوي والذكاء الاصطناعي (XLSX، باللغة الإنجليزية)</a> لتسجيل مجموعة النتائج نفسها، والمحاولات المتكررة، والقبول أو الرفض، والتكاليف، ووقت العمل والوقت المنقضي. يتّسع الملف لعشر نتائج مقترنة وثلاثين محاولة. بيانات المثال التعليمي افتراضية.</p>
+<p id="workbook-start-guide">لإعداد الملف وقراءة النتائج، راجع <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/b26e9759dec443e265df6e4d08f5b411ebb3c635/docs/workbook-start.md">دليل استخدام ملف <bdi dir="ltr">Excel</bdi> (باللغة الإنجليزية)</a>. يحدد الدليل نطاقات الإدخال وخلايا الصيغ ومثال المقارنة الافتراضي، ويوضح اختلاف تنسيق الملف عن <bdi dir="ltr">CSV</bdi> أداة سطر الأوامر.</p>
+<p id="paired-ledger-comparison">هل لديك سجلّا تكاليف لأداة سطر الأوامر بمعرّفات النتائج نفسها؟ يعرض <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/tree/5eb52dc449cda3b3af6a14881a8801b31002fd94#compare-two-ledgers-for-the-same-recorded-results">دليل مقارنة سجلَّي التكاليف (باللغة الإنجليزية)</a> الإجمالي وعدد النتائج المقبولة وتكلفة كل نتيجة لكلا المسارين في تقرير <bdi dir="ltr">JSON</bdi> واحد. يشمل المحاولات الفاشلة والمتكررة، ويرفض معرّفات النتائج غير المتطابقة أو التكاليف المجهولة. لا تعني الفاتورة الإجمالية الأقل وحدها أن تكلفة النتيجة المقبولة أقل. الأمثلة افتراضية؛ وتبقى مسؤولية قبول النتائج واكتمال التكاليف المسجّلة عليك. هل تفضّل دليلًا دون اتصال؟ <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/11d627b9ddb0d1d778373c9bb6537b74c9e1c467/examples/AI-Cost-Paired-Ledgers.zip">نزّل حزمة مقارنة سجلَّي التكاليف (باللغة الإنجليزية)</a>، وفكّ ضغط الملف كاملًا وافتح <bdi dir="ltr"><code>index.html</code></bdi>. يتطلب تشغيل أوامرها <bdi dir="ltr">Python 3.10</bdi> أو إصدارًا أحدث. إذا رُفضت المقارنة بسبب عدم تطابق معرّفات النتائج، راجع <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/050e51d437cc38c7616be1acb63958ea58e32e54/docs/input-errors.md#the-comparison-has-unmatched-result-ids">دليل أخطاء الإدخال (باللغة الإنجليزية)</a>؛ لا تحذف النتائج غير المتطابقة ولا تختلق محاولات بتكلفة صفر.</p>
+<p id="worked-cost-examples">لتشغيل ثلاثة أمثلة تعليمية، نزّل <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/releases/download/v0.1.2/AI-Cost-Worked-Examples.zip">حزمة أمثلة تكاليف الذكاء الاصطناعي (ZIP، باللغة الإنجليزية)</a>. توضّح الأمثلة إجمالي تكاليف المحاولات، وعدم وجود نتائج مقبولة، والتكاليف المعروفة صراحةً بأنها صفر. جميع البيانات افتراضية؛ وليست الأمثلة معياراً لمقارنة أداء النماذج أو سير العمل.</p>
+</section>
+<p>عندما يخفض مزوّد للذكاء الاصطناعي سعر نموذجه، تستطيع الفرق اختبار أفكار أكثر. لكن انخفاض تكلفة الاستدعاء الواحد لا يعني تلقائياً انخفاض تكلفة تشغيل المنتج. فقد يحتاج سير العمل إلى استدعاءات متكررة وأدوات أخرى وشخص يراجع المخرجات.</p>
+<h2>ما الذي تغيّر في سبتمبر ٢٠٢٦؟</h2>
+<p>في ٢٢ سبتمبر، <a href="https://openai.com/index/introducing-gpt-6-sol-and-luna/">أعلنت OpenAI</a> أن أسعار واجهة البرمجة لنموذجي GPT-6 Sol وLuna أقل بنسبة ٥٠٪ من الأسعار الترويجية لنماذج GPT-5.6. <a href="https://www.anthropic.com/claude-opus-5-5">وأعلنت Anthropic</a> خفض أسعار Claude Opus 5.5، وقدّرت انخفاض تكلفة العمل المعتاد المحسوب بالرموز بنحو ٤٠٪ مقارنةً بـOpus 5. تستخدم الشركتان أساسين مختلفين للمقارنة، ولذلك لا تقارن هاتان النسبتان نموذجيهما أحدهما بالآخر.</p>
+<p>بالنسبة إلى شركة، تتيح هذه التغييرات إعادة اختبار مهام كانت مكلفة أكثر من اللازم. ويظل القرار مرهوناً بالجودة وحجم المراجعة المطلوبة وتكلفة العملية بأكملها.</p>
+<h2>كيف تحسب تكلفة كل نتيجة مقبولة؟</h2>
+<p>أبدأ بمقياس بسيط:</p>
+<p><strong>تكلفة كل نتيجة مقبولة = التكلفة الكاملة لسير العمل ÷ عدد النتائج المتميزة التي تستوفي قاعدة القبول المعلنة.</strong></p>
+<p>يشمل البسط رموز الإدخال والإخراج للنموذج، والسياق المخزّن مؤقتاً، واستدعاءات الأدوات، وإعادة المحاولة، والتشغيلات الفاشلة، ووقت المراجعة البشرية. ويحسب المقام المخرجات التي تستوفي معياراً محدداً للمهمة. قد يكون سعر الطلب منخفضاً، بينما تظل النتيجة مكلفة إذا فشلت طلبات كثيرة أو احتاجت إلى تصحيح واسع.</p>
+<p>هذا إطار للقياس، وليس معياراً عاماً يصلح لكل الحالات. على كل فريق أن يحدد معنى «مقبولة» في عمله وأن يسجل الافتراضات وراء أي مقارنة للتكاليف.</p>
+<section id="acceptance-rule-use"><h2>هل اجتياز المراجعة يعني قبول العمل؟</h2><p>حدّد قاعدة القبول كاملة قبل الاختبار. قد يكون اجتياز المراجعة هو القاعدة بأكملها، أو مجرد شرط واحد. إذا كانت القاعدة تتطلب أيضًا الاستخدام في وجهة محددة، فإن تسليم ملف أو اجتياز المراجعة وحده لا يحققها.</p><p>مثال افتراضي: تبلغ التكلفة الإجمالية 15 وحدة نقدية لثلاث نتائج مقصودة. تجتاز نتيجتان المراجعة، لكن واحدة فقط تُستخدم أيضًا في الوجهة المحددة. إذا كان القبول يتطلب الشرطين، فاحسب نتيجة مقبولة واحدة: <bdi dir="ltr">15 / 1 = 15</bdi>. تعطي القسمة على اثنتين <bdi dir="ltr">15 / 2 = 7.50</bdi> لكل نتيجة اجتازت المراجعة؛ هذا مقام مختلف وليس دليلًا على التحسن.</p><p>سجّل من سيستخدم المخرج، وأين يجب استخدامه، وما الفحوص والتعديلات المطلوبة أولًا، ومن يسجّل القبول. يحسب سجل التكاليف التصنيفات التي تقدمها؛ ولا يتحقق بصورة مستقلة من الجودة أو الاستخدام أو نتائج الأعمال.</p><p><a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/df7ed996e3d1520a7a365bc697a276903b1d4386/README.md">اقرأ إرشادات القبول المنشورة (بالإنجليزية)</a></p><p id="experiment-notes-route">قبل تسجيل تجربة، أكمل <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/63bd930f33bf102f4b634f73eb364c181edadb6c/templates/experiment-notes.txt">ملاحظات التجربة الفارغة (بالإنجليزية)</a>، أو اقرأ <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/63bd930f33bf102f4b634f73eb364c181edadb6c/examples/fictional-experiment-notes.txt">المثال الوهمي المكتمل (بالإنجليزية)</a>. حدّد المستخدم المقصود، وموضع استخدام النتيجة، وأدلة قبولها؛ وسجّل الفحص وإعادة العمل وفق قاعدتك المعلنة. يشرح المثال ملف البيانات الوهمي الأصلي فقط؛ ولا يتضمن تقييماً لمخرجات فعلية أو اختباراً في موضع استخدامها.</p></section>
+<section>
+<h2>كيف يرتبط هذا الموضوع بعملي؟</h2>
+<p>أنا شريك مؤسس وقائد تقني في <a href="/ar/work/appraiva.html">Appraiva</a>، وهي شركة أمريكية في كليفلاند، أوهايو، وأعمل عن بُعد من دبي. تبني Appraiva أدوات ذكاء اصطناعي تساعد المستثمرين والمطورين العقاريين على العثور على العقارات المتعثرة وغير المعروضة في السوق من خلال تحليل الصور والبيانات العقارية المُثرَاة. اختبار البحث العقاري في هذا المقال تجربة مقترحة، وليس وصفًا لميزة في Appraiva أو نتيجة معلنة للشركة.</p>
+</section>
+<h2>كيف يمكن اختبار سير عمل للبحث العقاري؟</h2>
+<p>تخيّل اختبار أداة تحدد سجلات عقارات تستحق مزيداً من البحث. ابدأ بمجموعة سجلات وضع بشر تصنيفاتها. اطلب من النظام إبراز الحالات المحتملة مع الأدلة المؤيدة لها. ثم ليقبل المراجع كل اقتراح أو يرفضه، وقِس الدقة والاسترجاع والتكلفة الكاملة والوقت اللازم لاتخاذ قرار.</p>
+<p>هذه تجربة مقترحة، وليست وصفاً لميزة في Appraiva أو نتيجة معلنة للشركة. وهي توضح لماذا قد ترتفع تكلفة كل حالة مقبولة حتى مع نموذج أرخص، إذا أحال إلى المراجع عدداً كبيراً من الحالات غير الصحيحة.</p>
+<h2>ما الذي أختبره أولًا في هذه التجربة المقترحة؟</h2>
+<ul>
+<li>اختر مهمة متكررة واكتب خطوات تنفيذها البشري الحالية.</li>
+<li>حدّد قاعدة واضحة لقبول النتيجة قبل بدء اختبار الذكاء الاصطناعي.</li>
+<li>سجّل تكلفة النموذج والأدوات وإعادة المحاولة والمراجعة لكل محاولة.</li>
+<li>قارن النتائج المقبولة والوقت اللازم لاتخاذ القرار بالمسار الحالي.</li>
+</ul>
+<p>السؤال المفيد هو: هل يساعد سير العمل شخصاً على الوصول إلى قرار موثوق بتكلفة معقولة؟ انخفاض أسعار النماذج يسهّل إجراء هذا الاختبار، لكنه لا يجيب عن السؤال بمفرده.</p>
+<h2>لمتابعة الفكرة</h2>
+<p>جديد: كيف يغيّر <a href="jev-ai-decision-model.html">نموذج قرار مثل Jev</a> تكلفة كل قرار مقبول، وما الذي ينبغي التحقق منه قبل منح المساعد <a href="connected-ai-apps.html">صلاحية الوصول إلى تطبيقاتك</a>.</p>
+<p>تناولت الفكرة نفسها في <a href="https://www.linkedin.com/feed/update/urn:li:activity:7508805808802086912/">مستند من ثماني صفحات على LinkedIn</a> لفرق المنتج والهندسة، وفي <a href="https://www.instagram.com/p/Ddqbo0civsp/">منشور مبسّط متعدد الشرائح على Instagram</a>. وللاطلاع على المنهج الأوسع لتطوير المنتجات، اقرأ <a href="start-with-the-decision.html">مقال «ابدأ بالقرار»</a> أو استخدم <a href="/ar/tools/before-you-build-ai.html">الدليل التفاعلي بالعربية</a>.</p>
+
+<p class="related-reading">للاطلاع على مثال افتراضي لفحوص تناسب المهمة، اقرأ <a href="/ar/writing/business-ai-evaluation-cases.html">حالات تقييم الذكاء الاصطناعي في الأعمال</a> وشاهد <a href="/watch/business-ai-evaluation-cases.html" hreflang="en">الفيلم المرافق (بالإنجليزية)</a>.</p>
+<!-- article-hubs:start -->
+<nav class="article-reading-path" aria-labelledby="article-related-title">
+<p><span role="navigation" aria-label="مسار الصفحة"><a href="/ar/">الرئيسية</a> / <a href="/ar/topics/business-systems-dubai.html" data-hub-primary="business-systems-dubai">الذكاء الاصطناعي وأنظمة الأعمال</a></span> · <a href="/ar/topics/ai-real-estate.html" data-hub-secondary="ai-real-estate">الذكاء الاصطناعي في العقارات</a></p>
+<h2 id="article-related-title">محتوى ذو صلة</h2>
+<ul><li><a href="/ar/writing/property-data-enrichment.html" data-related-pillar="property-decisions">كيف يربط إثراء البيانات العقارية الصورة بالعقار الصحيح؟</a></li>
+<li><a href="/ar/writing/build-ai-run-a-business.html" data-related-pillar="decision-first-ai">أبني الذكاء الاصطناعي، وأدير شركةً عليها أن تتعايش معه</a></li>
+<li><a href="/ar/writing/why-ai-sounds-confident.html" data-related-pillar="tech-explained">لماذا يبدو الذكاء الاصطناعي واثقًا عندما يكون مخطئًا؟</a></li></ul>
+</nav>
+<!-- article-hubs:end -->
+<!-- author-box:start -->
+<aside class="article-author" aria-labelledby="article-author-title">
+<h2 id="article-author-title">عن الكاتب</h2>
+<p>أحمدرضا صمدي رائد أعمال في مجال التقنية مقيم في دبي. يبني منتجات الذكاء الاصطناعي بصفته شريكا مؤسسا وقائدا تقنيا في Appraiva، ويدير Royal Abraj Group بصفته شريكا مؤسسا ورئيسا تنفيذيا.</p>
+<p class="article-author__name"><a href="/ar/about.html" rel="author">أحمدرضا صمدي</a></p>
+<p class="article-author__series">ضمن سلسلة <bdi lang="en">Start with the Decision</bdi></p>
+</aside>
+<!-- author-box:end -->
+<!-- follow-subscribe:start -->
+<aside class="details follow-subscribe" aria-labelledby="follow-subscribe-title">
+<h2 id="follow-subscribe-title">المتابعة</h2>
+<nav aria-label="متابعة أحمدرضا صمدي"><a href="https://www.linkedin.com/in/ahmadreza-samadi/"><bdi>LinkedIn</bdi></a> · <a href="https://www.youtube.com/@ahmadreza-samadi"><bdi>YouTube</bdi></a> · <a href="https://www.instagram.com/ahmadreza.samadi/"><bdi>Instagram</bdi></a></nav>
+</aside>
+<!-- follow-subscribe:end -->
+<footer class="editorial-footer"><nav aria-label="صفحات ذات صلة"><a href="/ar/writing/">كل المقالات</a> · <a href="/ar/about.html">عن أحمدرضا صمدي</a> · <a href="/ar/about.html#official-profiles">الحسابات الرسمية</a> · <a href="/ar/">المقالات والأعمال</a></nav><p>أحمدرضا صمدي · رائد أعمال تقني</p><a href="/ar/#contact">تواصل ←</a></footer>
+</main>
+</body>
+</html>

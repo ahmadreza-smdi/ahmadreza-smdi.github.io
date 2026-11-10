@@ -1,0 +1,575 @@
+{
+  "ideas": [
+    {
+      "id": "start-with-the-decision",
+      "name": "Start with the decision.",
+      "definition": "Name the decision, the person making it and the evidence it needs before choosing a model.",
+      "why": "A model is a component. A useful product also needs a person, evidence, a next action and a way to judge whether the decision improved. Starting there makes the limits visible before an experiment grows.",
+      "steps": [
+        "Name the decision",
+        "Identify the evidence",
+        "Choose the next action",
+        "Then test the AI"
+      ],
+      "apply": [
+        [
+          "/writing/start-with-the-decision.html",
+          "Read the decision-first field guide"
+        ],
+        [
+          "/tools/before-you-build-ai.html",
+          "Write a decision brief"
+        ],
+        [
+          "/studies/rent-own-2026/",
+          "Explore explicit ownership scenarios"
+        ],
+        [
+          "/writing/build-ai-run-a-business.html",
+          "How I decide where AI belongs in a business"
+        ]
+      ],
+      "checklist": [
+        "Write one decision as a question a person needs to answer.",
+        "Name the person responsible for the next action.",
+        "List the evidence and what would make it insufficient.",
+        "Choose an acceptance rule before comparing tools."
+      ]
+    },
+    {
+      "id": "where-the-ai-must-stop",
+      "name": "Where the AI must stop.",
+      "definition": "Make the point for human checking, override or sign-off part of the product.",
+      "why": "An answer and an action carry different consequences. Property identity, missing information, permissions and accountability need explicit checks. A person must be able to see the evidence and stop or override the proposed action.",
+      "steps": [
+        "AI proposes",
+        "Check source and limits",
+        "Person accepts or overrides",
+        "Authorized action"
+      ],
+      "apply": [
+        [
+          "/writing/ai-human-review-real-estate.html",
+          "Read about human review in real estate"
+        ],
+        [
+          "/writing/ai-agent-safety-boundaries.html",
+          "Set an agent’s permissions"
+        ],
+        [
+          "/writing/property-data-enrichment.html",
+          "Check the property identity and source"
+        ]
+      ],
+      "checklist": [
+        "Identify the error that could affect the decision.",
+        "Put the human check before that consequence.",
+        "Show source, date and uncertainty at the check.",
+        "Specify what happens when evidence or approval is missing."
+      ]
+    },
+    {
+      "id": "cost-per-accepted-result",
+      "name": "Cost per accepted result.",
+      "definition": "Include retries, failures and review when counting the cost of a result that meets an explicit acceptance rule.",
+      "why": "A cheaper request may require more retries or review. Count the full workflow cost against distinct results that meet an explicit acceptance rule. The cost ledger records caller acceptance; it does not independently certify the output.",
+      "steps": [
+        "All attempt costs",
+        "Include tools and review",
+        "Count accepted results",
+        "Divide cost by results"
+      ],
+      "apply": [
+        [
+          "/writing/ai-cost-per-verified-result.html",
+          "Read the workflow-cost essay"
+        ],
+        [
+          "https://github.com/ahmadreza-smdi/ai-workflow-cost/releases/tag/v0.1.2",
+          "Use the cost ledger and fictional worked examples"
+        ],
+        [
+          "/tools/before-you-build-ai.html",
+          "Set an acceptance rule"
+        ]
+      ],
+      "checklist": [
+        "Define what counts as one distinct result.",
+        "Write the acceptance rule and who applies it.",
+        "Record failed attempts, retries, tool costs and review time.",
+        "Report no accepted results as undefined cost per result, not zero."
+      ]
+    }
+  ],
+  "labels": {
+    "en": {
+      "ideas": "Signature ideas",
+      "data": "Property Decision Data",
+      "intro": "Three ideas for choosing, building and checking AI.",
+      "studyintro": "Open studies and practical tools, with sources, methods and limits.",
+      "studylink": "Explore the studies",
+      "newsletter": "Read Start with the Decision",
+      "english": "English resources",
+      "beliefs": "What I believe",
+      "public": "Work in public",
+      "known": "Known for",
+      "knownintro": "Three ideas connect my work.",
+      "knownnames": [
+        "Appraiva case study: property imagery and search",
+        "Decision-first guide",
+        "Building in Dubai"
+      ],
+      "knowncopy": [
+        "Connecting property imagery, records and search so an investor can decide what to investigate.",
+        "Turn an AI idea into one clear decision, an evidence plan and a useful first experiment.",
+        "Ahmadreza Samadi is Co-Founder & CEO of Royal Abraj Group in Dubai, a role held since 2022. The group covers property brokerage and documents-clearing services. He leads its digital strategy and technology, including websites, CRM workflows, a customer portal and internal tools."
+      ],
+      "publiclinks": [
+        "Property studies",
+        "Decision guide",
+        "Property calculators",
+        "Public GitHub repositories",
+        "Weekly newsletter"
+      ],
+      "beliefitems": [
+        "Start with the decision, then choose the AI.",
+        "Define where a person checks the work and takes responsibility.",
+        "Count the full cost of an accepted result.",
+        "Keep property identity, source and date together.",
+        "Set permissions before an AI agent can act."
+      ],
+      "navlabels": [
+        "Work",
+        "About",
+        "Studies / Tools",
+        "Writing"
+      ],
+      "identitylabels": {
+        "career": "Career and background",
+        "education": "Ahmadreza Samadi holds a Master of Science in Computer Software Engineering, specialization in Data, from Shahid Beheshti University, 2019–2021.",
+        "topics": "My topics",
+        "selected": "Selected work and writing"
+      }
+    },
+    "fa": {
+      "ideas": "ایده‌های اصلی",
+      "data": "Property Decision Data",
+      "intro": "سه ایده برای انتخاب، ساخت و بررسی هوش مصنوعی.",
+      "studyintro": "مطالعه‌های باز و ابزارهای کاربردی، همراه با منابع، روش‌ها و محدودیت‌ها.",
+      "studylink": "مشاهدهٔ مطالعه‌ها",
+      "newsletter": "مطالعهٔ Start with the Decision",
+      "english": "منابع به زبان انگلیسی",
+      "beliefs": "باورهای من",
+      "public": "کارهای عمومی من",
+      "known": "حوزه‌های اصلی کار",
+      "knownintro": "سه ایده کارهای من را به هم پیوند می‌دهد.",
+      "knownnames": [
+        "هوش مصنوعی برای تصمیم‌های ملکی",
+        "راهنمای تصمیم‌محور",
+        "ساخت کسب‌وکار در دبی"
+      ],
+      "knowncopy": [
+        "هوش مصنوعی کجا به ارزش‌گذاری املاک و تصمیم‌های سرمایه‌گذاری کمک می‌کند و بررسی انسانی کجا باید باقی بماند.",
+        "یک ایدهٔ هوش مصنوعی را به یک تصمیم روشن، برنامهٔ شواهد و آزمایش اولیهٔ مفید تبدیل کنید.",
+        "احمدرضا صمدی هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group در دبی است و از سال ۲۰۲۲ این نقش را دارد. این گروه در حوزهٔ کارگزاری املاک و خدمات انجام امور اسناد فعالیت می‌کند. او راهبرد دیجیتال و فناوری آن، از جمله وب‌سایت‌ها، گردش‌کارهای CRM، پورتال مشتریان و ابزارهای داخلی را هدایت می‌کند."
+      ],
+      "publiclinks": [
+        "مطالعه‌های املاک",
+        "راهنمای تصمیم‌گیری",
+        "ماشین‌حساب‌های املاک",
+        "مخزن‌های عمومی GitHub",
+        "خبرنامهٔ هفتگی"
+      ],
+      "beliefitems": [
+        "از تصمیم آغاز کنید، سپس هوش مصنوعی را انتخاب کنید.",
+        "نقطه‌ای را مشخص کنید که فرد کار را بررسی می‌کند و مسئولیت می‌پذیرد.",
+        "هزینهٔ کامل یک نتیجهٔ پذیرفته‌شده را حساب کنید.",
+        "هویت ملک، منبع و تاریخ را کنار هم نگه دارید.",
+        "پیش از اقدام عامل هوش مصنوعی، مجوزهایش را مشخص کنید."
+      ],
+      "navlabels": [
+        "کارها",
+        "درباره",
+        "مطالعه‌ها / ابزارها",
+        "نوشته‌ها"
+      ],
+      "identitylabels": {
+        "career": "مسیر حرفه‌ای و پیشینه",
+        "education": "احمدرضا صمدی مدرک کارشناسی ارشد مهندسی نرم‌افزار کامپیوتر، گرایش داده، را از دانشگاه شهید بهشتی در دورهٔ ۲۰۱۹ تا ۲۰۲۱ دریافت کرده است.",
+        "topics": "موضوع‌های من",
+        "selected": "کارها و نوشته‌های منتخب"
+      }
+    },
+    "ar": {
+      "ideas": "الأفكار الأساسية",
+      "data": "Property Decision Data",
+      "intro": "ثلاث أفكار لاختيار الذكاء الاصطناعي وبنائه ومراجعة عمله.",
+      "studyintro": "دراسات مفتوحة وأدوات عملية، مع المصادر والمنهجيات والحدود.",
+      "studylink": "استكشف الدراسات",
+      "newsletter": "اقرأ Start with the Decision",
+      "english": "موارد باللغة الإنجليزية",
+      "beliefs": "ما أؤمن به",
+      "public": "أعمالي المتاحة للجمهور",
+      "known": "مجالات عملي الأساسية",
+      "knownintro": "ثلاث أفكار تربط أعمالي.",
+      "knownnames": [
+        "الذكاء الاصطناعي للقرارات العقارية",
+        "دليل يبدأ بالقرار",
+        "بناء الأعمال في دبي"
+      ],
+      "knowncopy": [
+        "أين يساعد الذكاء الاصطناعي في التقييم العقاري وقرارات الاستثمار، وأين يجب أن تبقى المراجعة البشرية.",
+        "حوّل فكرة ذكاء اصطناعي إلى قرار واضح وخطة للأدلة وتجربة أولى مفيدة.",
+        "أحمدرضا صمدي شريك مؤسس ورئيس تنفيذي في Royal Abraj Group بدبي، وهو دور يتولاه منذ عام ٢٠٢٢. تعمل المجموعة في الوساطة العقارية وخدمات تخليص المستندات. ويقود استراتيجيتها الرقمية وتقنيتها، بما يشمل المواقع الإلكترونية وسير عمل CRM وبوابة العملاء والأدوات الداخلية."
+      ],
+      "publiclinks": [
+        "الدراسات العقارية",
+        "دليل اتخاذ القرار",
+        "الحاسبات العقارية",
+        "مستودعات GitHub العامة",
+        "النشرة الأسبوعية"
+      ],
+      "beliefitems": [
+        "ابدأ بالقرار، ثم اختر الذكاء الاصطناعي.",
+        "حدّد النقطة التي يراجع فيها الشخص العمل ويتحمّل المسؤولية.",
+        "احسب التكلفة الكاملة للنتيجة المقبولة.",
+        "أبقِ هوية العقار والمصدر والتاريخ معًا.",
+        "حدّد الصلاحيات قبل أن يتصرف وكيل الذكاء الاصطناعي."
+      ],
+      "navlabels": [
+        "الأعمال",
+        "نبذة",
+        "دراسات / أدوات",
+        "المقالات"
+      ],
+      "identitylabels": {
+        "career": "المسيرة المهنية والخلفية",
+        "education": "أحمدرضا صمدي حاصل على ماجستير العلوم في هندسة برمجيات الحاسوب، تخصص البيانات، من جامعة شهيد بهشتي، خلال الفترة ٢٠١٩–٢٠٢١.",
+        "topics": "موضوعاتي",
+        "selected": "أعمال ومقالات مختارة"
+      }
+    }
+  },
+  "homepage_translations": {
+    "Start with the decision.": [
+      "از تصمیم آغاز کنید.",
+      "ابدأ بالقرار."
+    ],
+    "Where the AI must stop.": [
+      "هوش مصنوعی کجا باید متوقف شود.",
+      "أين يجب أن يتوقف الذكاء الاصطناعي."
+    ],
+    "Cost per accepted result.": [
+      "هزینهٔ هر نتیجهٔ پذیرفته‌شده.",
+      "التكلفة لكل نتيجة مقبولة."
+    ],
+    "Name the decision, the person making it and the evidence it needs before choosing a model.": [
+      "پیش از انتخاب مدل، تصمیم، فرد تصمیم‌گیرنده و شواهد موردنیاز را مشخص کنید.",
+      "حدّد القرار والشخص الذي يتخذه والأدلة المطلوبة قبل اختيار النموذج."
+    ],
+    "Make the point for human checking, override or sign-off part of the product.": [
+      "نقطهٔ بررسی، لغو یا تأیید انسانی را بخشی از محصول قرار دهید.",
+      "اجعل نقطة المراجعة البشرية أو التجاوز أو الموافقة جزءًا من المنتج."
+    ],
+    "Include retries, failures and review when counting the cost of a result that meets an explicit acceptance rule.": [
+      "در محاسبهٔ هزینهٔ نتیجه‌ای که معیار پذیرش مشخصی را برآورده می‌کند، تلاش‌های دوباره، شکست‌ها و بررسی را لحاظ کنید.",
+      "احسب إعادة المحاولة والإخفاق والمراجعة ضمن تكلفة النتيجة التي تستوفي قاعدة قبول واضحة."
+    ],
+    "What I work on": [
+      "روی چه چیزی کار می‌کنم",
+      "مجالات عملي"
+    ],
+    "Proof": [
+      "کارهای قابل بررسی",
+      "أعمال يمكن الاطلاع عليها"
+    ],
+    "My topics": [
+      "موضوع‌های من",
+      "موضوعاتي"
+    ],
+    "AI for property decisions": [
+      "هوش مصنوعی برای تصمیم‌های ملکی",
+      "الذكاء الاصطناعي للقرارات العقارية"
+    ],
+    "Start with the decision": [
+      "از تصمیم آغاز کنید",
+      "ابدأ بالقرار"
+    ],
+    "Building in Dubai": [
+      "ساخت کسب‌وکار در دبی",
+      "بناء الأعمال في دبي"
+    ],
+    "Studies / Tools": [
+      "مطالعه‌ها / ابزارها",
+      "دراسات / أدوات"
+    ],
+    "Studies and tools": [
+      "مطالعه‌ها و ابزارها",
+      "دراسات وأدوات"
+    ],
+    "Property studies": [
+      "مطالعه‌های املاک",
+      "الدراسات العقارية"
+    ],
+    "Practical tools": [
+      "ابزارهای کاربردی",
+      "أدوات عملية"
+    ],
+    "AI × property × business": [
+      "هوش مصنوعی × املاک × کسب‌وکار",
+      "الذكاء الاصطناعي × العقارات × الأعمال"
+    ],
+    "See how I build AI at Appraiva, run a business in Dubai and decide what needs a human check.": [
+      "ببینید چگونه در Appraiva هوش مصنوعی می‌سازم، کسب‌وکاری را در دبی اداره می‌کنم و تصمیم می‌گیرم کجا بررسی انسانی لازم است.",
+      "اطّلع على كيف أبني الذكاء الاصطناعي في Appraiva، وأدير شركةً في دبي، وأقرّر ما يحتاج إلى مراجعة بشرية."
+    ],
+    "My current roles": [
+      "نقش‌های فعلی من",
+      "أدواري الحالية"
+    ],
+    "Background": [
+      "پیشینه",
+      "الخلفية"
+    ],
+    "Enterprise data engineering": [
+      "مهندسی دادهٔ سازمانی",
+      "هندسة بيانات المؤسسات"
+    ],
+    "Machine learning": [
+      "یادگیری ماشین",
+      "تعلّم الآلة"
+    ],
+    "Education: Shahid Beheshti University.": [
+      "تحصیلات: دانشگاه شهید بهشتی.",
+      "التعليم: جامعة شهيد بهشتي."
+    ],
+    "Dubai, UAE · Working remotely with Appraiva in Cleveland, Ohio": [
+      "دبی، امارات · همکاری دورکار با Appraiva در کلیولند، اوهایو",
+      "دبي، الإمارات · العمل عن بُعد مع Appraiva في كليفلاند، أوهايو"
+    ],
+    "Appraiva · Cleveland, Ohio, United States · Remote from Dubai": [
+      "Appraiva · کلیولند، اوهایو، آمریکا · دورکار از دبی",
+      "Appraiva · كليفلاند، أوهايو، الولايات المتحدة · عن بُعد من دبي"
+    ],
+    "Ahmadreza Samadi builds AI products at Appraiva and runs Royal Abraj Group in Dubai. He writes about how businesses decide what to build, check and measure.": [
+      "احمدرضا صمدی در Appraiva محصولات هوش مصنوعی می‌سازد و Royal Abraj Group را در دبی اداره می‌کند. او دربارهٔ این می‌نویسد که کسب‌وکارها چگونه تصمیم می‌گیرند چه چیزی بسازند، چه چیزی را بررسی کنند و چه چیزی را بسنجند.",
+      "يبني أحمدرضا صمدي منتجات الذكاء الاصطناعي في Appraiva ويدير Royal Abraj Group في دبي. ويكتب عن الطريقة التي تقرّر بها الشركات ما تبنيه وما تتحقق منه وما تقيسه."
+    ],
+    "Co-Founder & Technical Lead, Appraiva. Appraiva is a US company in Cleveland, Ohio; he works remotely from Dubai. It builds AI tools that help real estate investors and developers find distressed and off-market properties through imagery analysis and enriched property data.": [
+      "هم‌بنیان‌گذار و راهبر فنی Appraiva. اپرایوا شرکتی آمریکایی در کلیولند، اوهایو است؛ او از دبی به‌صورت دورکار فعالیت می‌کند. این شرکت ابزارهای هوش مصنوعی می‌سازد که با تحلیل تصاویر و داده‌های غنی‌شدهٔ املاک، به سرمایه‌گذاران و توسعه‌دهندگان املاک کمک می‌کنند املاک دارای مشکلات یا فرسودگی و املاک خارج از بازار عمومی را پیدا کنند.",
+      "شريك مؤسس وقائد تقني في Appraiva. أبرايفا شركة أمريكية في كليفلاند، أوهايو؛ ويعمل عن بُعد من دبي. تبني الشركة أدوات ذكاء اصطناعي تساعد المستثمرين والمطورين العقاريين على العثور على عقارات متعثرة أو غير معروضة في السوق، من خلال تحليل الصور وبيانات العقارات المُثرَاة."
+    ],
+    "Co-Founder & CEO, Royal Abraj Group, Dubai. The group covers property brokerage and documents-clearing services; he leads its digital strategy and technology.": [
+      "هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group در دبی. این گروه در حوزهٔ کارگزاری املاک و خدمات انجام امور اسناد فعالیت می‌کند؛ او راهبرد دیجیتال و فناوری آن را هدایت می‌کند.",
+      "شريك مؤسس ورئيس تنفيذي في Royal Abraj Group بدبي. تشمل أعمال المجموعة الوساطة العقارية وخدمات تخليص المستندات؛ ويتولى قيادة استراتيجيتها الرقمية وتقنياتها."
+    ],
+    "Enterprise data engineering and machine learning.": [
+      "مهندسی دادهٔ سازمانی و یادگیری ماشین.",
+      "هندسة بيانات المؤسسات وتعلّم الآلة."
+    ],
+    "Azure data infrastructure for CRM migration and analytics at Oxfam Novib.": [
+      "زیرساخت دادهٔ Azure برای مهاجرت CRM و تحلیل داده در Oxfam Novib.",
+      "بنية بيانات Azure لترحيل CRM والتحليلات لدى Oxfam Novib."
+    ],
+    "Predictive customer segmentation at MCI.": [
+      "بخش‌بندی پیش‌بینانهٔ مشتریان در MCI.",
+      "التقسيم التنبؤي للعملاء لدى MCI."
+    ],
+    "AI property valuation": [
+      "ارزش‌گذاری ملک با هوش مصنوعی",
+      "تقييم العقارات بالذكاء الاصطناعي"
+    ],
+    "Rent vs owning": [
+      "اجاره در برابر مالکیت",
+      "الإيجار مقابل التملّك"
+    ],
+    "AI in real estate decisions": [
+      "هوش مصنوعی در تصمیم‌های ملکی",
+      "الذكاء الاصطناعي في القرارات العقارية"
+    ],
+    "Dubai property costs and data": [
+      "هزینه‌ها و داده‌های املاک دبی",
+      "تكاليف وبيانات العقارات في دبي"
+    ],
+    "Co-Founder & Technical Lead, Appraiva. Co-Founder & CEO, Royal Abraj Group.": [
+      "هم‌بنیان‌گذار و راهبر فنی Appraiva. هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group.",
+      "شريك مؤسس وقائد تقني في Appraiva. شريك مؤسس ورئيس تنفيذي في Royal Abraj Group."
+    ],
+    "Enterprise data engineering and machine learning. Predictive customer segmentation at MCI.": [
+      "مهندسی دادهٔ سازمانی و یادگیری ماشین. بخش‌بندی پیش‌بینانهٔ مشتریان در MCI.",
+      "هندسة بيانات المؤسسات وتعلّم الآلة. التقسيم التنبؤي للعملاء لدى MCI."
+    ],
+    "Azure": [
+      "Azure",
+      "Azure"
+    ],
+    "CRM": [
+      "CRM",
+      "CRM"
+    ],
+    "MCI": [
+      "MCI",
+      "MCI"
+    ],
+    "Oxfam Novib": [
+      "Oxfam Novib",
+      "Oxfam Novib"
+    ],
+    "What an automated estimate can and cannot tell you about a home.": [
+      "برآورد خودکار دربارهٔ یک خانه چه چیزهایی را می‌تواند و چه چیزهایی را نمی‌تواند بگوید.",
+      "ما الذي يمكن للتقدير الآلي أن يخبرك به عن المنزل، وما حدوده."
+    ],
+    "Where a person checks evidence before a property decision.": [
+      "نقطه‌ای که فرد پیش از تصمیم ملکی، شواهد را بررسی می‌کند.",
+      "أين يراجع الشخص الأدلة قبل اتخاذ قرار عقاري."
+    ],
+    "Match the property question to the appropriate Dubai data source.": [
+      "پرسش ملکی را با منبع مناسب داده در دبی تطبیق دهید.",
+      "طابق السؤال العقاري مع مصدر البيانات المناسب في دبي."
+    ],
+    "Technology × AI × business": [
+      "فناوری × هوش مصنوعی × کسب‌وکار",
+      "التقنية × الذكاء الاصطناعي × الأعمال"
+    ],
+    "Building AI products": [
+      "ساخت محصولات هوش مصنوعی",
+      "بناء منتجات الذكاء الاصطناعي"
+    ],
+    "Running a business with technology": [
+      "اداره کسب‌وکار با فناوری",
+      "إدارة الأعمال بالتقنية"
+    ],
+    "Public studies and tools": [
+      "مطالعه‌ها و ابزارهای عمومی",
+      "دراسات وأدوات عامة"
+    ],
+    "Where AI is worth it in a business": [
+      "هوش مصنوعی کجا در کسب‌وکار ارزش دارد",
+      "أين يستحق الذكاء الاصطناعي مكانه في الأعمال"
+    ],
+    "Cost per accepted result": [
+      "هزینهٔ هر نتیجهٔ پذیرفته‌شده",
+      "التكلفة لكل نتيجة مقبولة"
+    ],
+    "Testing AI on real tasks": [
+      "آزمودن هوش مصنوعی روی کارهای واقعی",
+      "اختبار الذكاء الاصطناعي على مهام حقيقية"
+    ],
+    "Where AI must stop": [
+      "هوش مصنوعی کجا باید متوقف شود",
+      "أين يجب أن يتوقف الذكاء الاصطناعي"
+    ],
+    "Why I build AI and run a business": [
+      "چرا هم هوش مصنوعی می‌سازم و هم کسب‌وکار اداره می‌کنم",
+      "لماذا أبني الذكاء الاصطناعي وأدير شركة"
+    ]
+  },
+  "belief_sources": [
+    "/writing/start-with-the-decision.html",
+    "/writing/ai-human-review-real-estate.html",
+    "/writing/ai-cost-per-verified-result.html",
+    "/writing/property-data-enrichment.html",
+    "/writing/ai-agent-safety-boundaries.html"
+  ],
+  "translation_note": "Machine translations checked by back-translation for the same decision/evidence/human boundary/acceptance and factual scope; no human/native certification.",
+  "identity": {
+    "entity": {
+      "en": "Ahmadreza Samadi is a technology entrepreneur based in Dubai. He builds AI products as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO.",
+      "fa": "احمدرضا صمدی کارآفرین فناوری ساکن دبی است. او به‌عنوان هم‌بنیان‌گذار و راهبر فنی Appraiva محصولات هوش مصنوعی می‌سازد و به‌عنوان هم‌بنیان‌گذار و مدیرعامل، Royal Abraj Group را اداره می‌کند.",
+      "ar": "أحمدرضا صمدي رائد أعمال في مجال التقنية مقيم في دبي. يبني منتجات الذكاء الاصطناعي بصفته شريكا مؤسسا وقائدا تقنيا في Appraiva، ويدير Royal Abraj Group بصفته شريكا مؤسسا ورئيسا تنفيذيا."
+    },
+    "roles": {
+      "en": [
+        "Co-Founder & Technical Lead, Appraiva. Appraiva is a US company in Cleveland, Ohio; he works remotely from Dubai. It builds AI tools that help real estate investors and developers find distressed and off-market properties through imagery analysis and enriched property data.",
+        "Co-Founder & CEO, Royal Abraj Group, Dubai. The group covers property brokerage and documents-clearing services; he leads its digital strategy and technology."
+      ],
+      "fa": [
+        "هم‌بنیان‌گذار و راهبر فنی Appraiva. اپرایوا شرکتی آمریکایی در کلیولند، اوهایو است؛ او از دبی به‌صورت دورکار فعالیت می‌کند. این شرکت ابزارهای هوش مصنوعی می‌سازد که با تحلیل تصاویر و داده‌های غنی‌شدهٔ املاک، به سرمایه‌گذاران و توسعه‌دهندگان املاک کمک می‌کنند املاک دارای مشکلات یا فرسودگی و املاک خارج از بازار عمومی را پیدا کنند.",
+        "هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group در دبی. این گروه در حوزهٔ کارگزاری املاک و خدمات انجام امور اسناد فعالیت می‌کند؛ او راهبرد دیجیتال و فناوری آن را هدایت می‌کند."
+      ],
+      "ar": [
+        "شريك مؤسس وقائد تقني في Appraiva. أبرايفا شركة أمريكية في كليفلاند، أوهايو؛ ويعمل عن بُعد من دبي. تبني الشركة أدوات ذكاء اصطناعي تساعد المستثمرين والمطورين العقاريين على العثور على عقارات متعثرة أو غير معروضة في السوق، من خلال تحليل الصور وبيانات العقارات المُثرَاة.",
+        "شريك مؤسس ورئيس تنفيذي في Royal Abraj Group بدبي. تشمل أعمال المجموعة الوساطة العقارية وخدمات تخليص المستندات؛ ويتولى قيادة استراتيجيتها الرقمية وتقنياتها."
+      ]
+    },
+    "background": {
+      "en": [
+        "Enterprise data engineering and machine learning.",
+        "Azure data infrastructure for CRM migration and analytics at Oxfam Novib.",
+        "Predictive customer segmentation at MCI."
+      ],
+      "fa": [
+        "مهندسی دادهٔ سازمانی و یادگیری ماشین.",
+        "زیرساخت دادهٔ Azure برای مهاجرت CRM و تحلیل داده در Oxfam Novib.",
+        "بخش‌بندی پیش‌بینانهٔ مشتریان در MCI."
+      ],
+      "ar": [
+        "هندسة بيانات المؤسسات وتعلّم الآلة.",
+        "بنية بيانات Azure لترحيل CRM والتحليلات لدى Oxfam Novib.",
+        "التقسيم التنبؤي للعملاء لدى MCI."
+      ]
+    },
+    "brand_line": {
+      "en": "I build AI, and I run a business that has to live with it.",
+      "fa": "هوش مصنوعی می‌سازم و کسب‌وکاری را اداره می‌کنم که باید با آن کنار بیاید.",
+      "ar": "أبني الذكاء الاصطناعي، وأدير شركةً عليها أن تتعايش معه."
+    },
+    "topics": [
+      {
+        "path": "/tools/before-you-build-ai.html",
+        "labels": {
+          "en": "Where AI is worth it in a business",
+          "fa": "هوش مصنوعی کجا در کسب‌وکار ارزش دارد",
+          "ar": "أين يستحق الذكاء الاصطناعي مكانه في الأعمال"
+        }
+      },
+      {
+        "path": "/writing/ai-cost-per-verified-result.html",
+        "labels": {
+          "en": "Cost per accepted result",
+          "fa": "هزینهٔ هر نتیجهٔ پذیرفته‌شده",
+          "ar": "التكلفة لكل نتيجة مقبولة"
+        }
+      },
+      {
+        "path": "/writing/business-ai-evaluation-cases.html",
+        "labels": {
+          "en": "Testing AI on real tasks",
+          "fa": "آزمودن هوش مصنوعی روی کارهای واقعی",
+          "ar": "اختبار الذكاء الاصطناعي على مهام حقيقية"
+        }
+      },
+      {
+        "path": "/writing/ai-human-review-real-estate.html",
+        "labels": {
+          "en": "Where AI must stop",
+          "fa": "هوش مصنوعی کجا باید متوقف شود",
+          "ar": "أين يجب أن يتوقف الذكاء الاصطناعي"
+        }
+      },
+      {
+        "path": "/writing/ai-home-value-estimates.html",
+        "labels": {
+          "en": "AI property valuation",
+          "fa": "ارزش‌گذاری ملک با هوش مصنوعی",
+          "ar": "تقييم العقارات بالذكاء الاصطناعي"
+        }
+      }
+    ],
+    "decision_subjects": [
+      "AI product development",
+      "Business AI evaluation",
+      "Human review of AI outputs",
+      "AI cost per accepted result"
+    ]
+  },
+  "ideas_page": {
+    "heading": "Where AI belongs in a business",
+    "description": "Three questions to ask before using AI in a business. Which decision will it improve, who will check the result, and what does each accepted result cost?"
+  },
+  "work_essay_anchor": {
+    "en": "building AI products at Appraiva and running Royal Abraj Group in Dubai",
+    "fa": "ساختن محصولات هوش مصنوعی در Appraiva و اداره Royal Abraj Group در دبی",
+    "ar": "بناء منتجات الذكاء الاصطناعي في Appraiva وإدارة Royal Abraj Group في دبي"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Ahmadreza Samadi",
+  "short_name": "Ahmadreza Samadi",
+  "description": "Ahmadreza Samadi is a technology entrepreneur in Dubai. He builds AI products at Appraiva and runs Royal Abraj Group.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f2f7f5",
+  "theme_color": "#f2f7f5",
+  "icons": [
+    {
+      "src": "assets/brand/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/brand/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

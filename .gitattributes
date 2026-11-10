@@ -1,0 +1,2 @@
+assets/profile/*.vcf -text
+*.pdf binary

@@ -1,0 +1,10 @@
+{
+  "owner_instruction_date": "2026-10-28",
+  "key": "2026-10-28",
+  "slug": "tech-trend-assisted-permissions",
+  "bundle_sha256": "3fc094d761f614c912b9ace9a3a9ce9c16d6152ba73f3f1437f52e082e2aff4b",
+  "destination": "https://a-samadi.com",
+  "action": "publish_missed_carousel_once",
+  "not_before": "2026-10-28T10:30:01+03:30",
+  "expires_at": "2026-10-28T23:30:00+03:30"
+}

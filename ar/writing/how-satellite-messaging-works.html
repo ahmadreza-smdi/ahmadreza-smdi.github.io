@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Ahmadreza Samadi">
+<title>كيف يرسل الهاتف رسالة عبر القمر الصناعي عند غياب الشبكة؟</title>
+<meta name="description" content="تتبع رسالة يرسلها هاتف مدعوم مباشرة إلى قمر صناعي ثم إلى محطة أرضية. تعرف إلى أثر انكشاف السماء في الاتصال وسبب تأخر وصول الرسالة أحيانا مقارنة بالرسائل العادية.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://a-samadi.com/ar/writing/how-satellite-messaging-works.html">
+
+<link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/how-satellite-messaging-works.html">
+<link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/how-satellite-messaging-works.html">
+<link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/how-satellite-messaging-works.html">
+<link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/how-satellite-messaging-works.html">
+<link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg">
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/vazirmatn-arabic-wght.woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css?v=20261009-lagoon4"><link rel="stylesheet" href="/css/rtl.css?v=20261009-lagoon4">
+<meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
+<meta property="og:title" content="كيف يرسل الهاتف رسالة عبر القمر الصناعي عند غياب الشبكة؟"><meta property="og:description" content="تتبع رسالة يرسلها هاتف مدعوم مباشرة إلى قمر صناعي ثم إلى محطة أرضية. تعرف إلى أثر انكشاف السماء في الاتصال وسبب تأخر وصول الرسالة أحيانا مقارنة بالرسائل العادية.">
+<meta property="og:url" content="https://a-samadi.com/ar/writing/how-satellite-messaging-works.html"><meta property="og:locale" content="ar_AE"><meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="fa_IR">
+<meta property="og:image" content="https://a-samadi.com/assets/writing/satellite-messaging/satellite-messaging-og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="هاتف يتصل بقمر صناعي؛ العنوان: كيف تعمل الرسائل عبر الأقمار الصناعية">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="كيف يرسل الهاتف رسالة عبر القمر الصناعي عند غياب الشبكة؟">
+<meta name="twitter:description" content="تتبع رسالة يرسلها هاتف مدعوم مباشرة إلى قمر صناعي ثم إلى محطة أرضية. تعرف إلى أثر انكشاف السماء في الاتصال وسبب تأخر وصول الرسالة أحيانا مقارنة بالرسائل العادية.">
+<meta name="twitter:image" content="https://a-samadi.com/assets/writing/satellite-messaging/satellite-messaging-og.png">
+<meta name="twitter:image:alt" content="هاتف يتصل بقمر صناعي؛ العنوان: كيف تعمل الرسائل عبر الأقمار الصناعية">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://a-samadi.com/ar/writing/how-satellite-messaging-works.html#article",
+      "headline": "كيف تعمل الرسائل عبر الأقمار الصناعية دون أبراج قريبة؟",
+      "description": "تتبع رسالة يرسلها هاتف مدعوم مباشرة إلى قمر صناعي ثم إلى محطة أرضية. تعرف إلى أثر انكشاف السماء في الاتصال وسبب تأخر وصول الرسالة أحيانا مقارنة بالرسائل العادية.",
+      "url": "https://a-samadi.com/ar/writing/how-satellite-messaging-works.html",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://a-samadi.com/ar/writing/how-satellite-messaging-works.html",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://a-samadi.com/assets/writing/satellite-messaging/satellite-messaging-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "isPartOf": {
+          "@id": "https://a-samadi.com/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://a-samadi.com/ar/writing/how-satellite-messaging-works.html#breadcrumbs"
+        }
+      },
+      "datePublished": "2026-10-04",
+      "dateModified": "2026-10-10T13:35:56+03:30",
+      "inLanguage": "ar",
+      "image": "https://a-samadi.com/assets/writing/satellite-messaging/satellite-messaging-og.png",
+      "author": {
+        "@type": "Person",
+        "@id": "https://a-samadi.com/#person",
+        "name": "Ahmadreza Samadi",
+        "url": "https://a-samadi.com/about.html"
+      },
+      "publisher": {
+        "@id": "https://a-samadi.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://a-samadi.com/#website"
+      },
+      "citation": [
+        "https://support.apple.com/en-us/120930",
+        "https://www.globalstar.com/en-us/about/our-technology",
+        "https://starlink.com/public-files/DIRECT_TO_CELL_FIRST_TEXT_UPDATE.pdf",
+        "https://www.t-mobile.com/coverage/satellite-phone-service"
+      ],
+      "translationOfWork": {
+        "@id": "https://a-samadi.com/writing/how-satellite-messaging-works.html#article"
+      },
+      "name": "كيف يرسل الهاتف رسالة عبر القمر الصناعي عند غياب الشبكة؟"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://a-samadi.com/ar/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "التكنولوجيا ببساطة",
+          "item": "https://a-samadi.com/ar/topics/tech-explained.html"
+        }
+      ],
+      "@id": "https://a-samadi.com/ar/writing/how-satellite-messaging-works.html#breadcrumbs"
+    }
+  ]
+}</script>
+<style>
+.satellite-route{list-style:none!important;padding:1.4rem!important;margin:1.75rem 0!important;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8rem;background:#fff;box-shadow:0 0 0 1px var(--line);border-radius:20px;}
+.satellite-route li{color:var(--ink);font-size:1rem;line-height:1.5;padding:.4rem;position:relative}
+.satellite-route .route-number{display:grid;place-items:center;background:var(--ink);color:white;border-radius:50%;width:2rem;height:2rem;margin-bottom:.75rem;font-size:.9rem}
+.satellite-note{font-size:.9rem!important;color:var(--muted)!important}
+.satellite-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.25rem 0}
+.satellite-gallery figure{margin:0}.satellite-gallery img{display:block;width:100%;border-radius:12px}.satellite-gallery figcaption{font-size:.8rem;color:var(--muted);padding:.5rem 0}
+.satellite-details summary{cursor:pointer;padding:1rem;border:1px solid var(--line);border-radius:12px;color:var(--ink)}
+@media(max-width:550px){.satellite-route{grid-template-columns:repeat(2,minmax(0,1fr))}.satellite-gallery{grid-template-columns:1fr}}
+</style>
+
+<style data-author-box>
+/* A quiet author reference at the end of each article, using the Lagoon tokens. */
+.editorial .article-author {
+  margin-block: 2.5rem 0;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid var(--line-strong);
+  border-inline-start: 3px solid var(--mint-deep);
+  border-radius: 16px;
+  background: var(--surface);
+  text-align: start;
+  overflow-wrap: anywhere;
+}
+.editorial .article-author h2 {
+  margin: 0 0 .25rem;
+  color: var(--muted);
+  font-size: .875rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.editorial .article-author p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.editorial .article-author .article-author__name {
+  margin-block-end: .35rem;
+  font-family: var(--display);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.editorial .article-author a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 44px;
+  max-inline-size: 100%;
+  padding-block: .25rem;
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+.editorial .article-author a:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+@media (forced-colors: active) {
+  .editorial .article-author { border-color: CanvasText; background: Canvas; }
+  .editorial .article-author h2, .editorial .article-author p { color: CanvasText; }
+  .editorial .article-author a { color: LinkText; }
+  .editorial .article-author a:focus-visible { outline-color: Highlight; }
+}
+@media print {
+  .editorial .article-author {
+    break-inside: avoid;
+    margin-block-start: 1.5rem;
+    border-color: #777;
+    background: transparent;
+  }
+  .editorial .article-author h2, .editorial .article-author p, .editorial .article-author a { color: #000; }
+}
+</style>
+
+<script src="/js/site-analytics.js?v=20261009-analytics1" defer></script>
+</head>
+<body class="editorial-body arabic-page">
+<a class="skip-link" href="#main">الانتقال إلى المحتوى</a>
+<header class="editorial-header"><a href="/ar/"><img src="/assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">أحمدرضا صمدي / الرئيسية</a></header>
+<main id="main" class="editorial">
+<nav class="byline" aria-label="مسار الصفحة"><a href="/ar/">الرئيسية</a> / <a href="/ar/topics/tech-explained.html">التكنولوجيا ببساطة</a></nav>
+<article>
+<p class="eyebrow">شرح مبسط · التقنية اليومية</p><h1>كيف تعمل الرسائل عبر الأقمار الصناعية دون أبراج قريبة؟</h1><p class="lead">غياب برج قريب لا يعني دائمًا غياب وسيلة لإرسال رسالة. مع خدمة متوافقة، يستطيع هاتفك إجراء الاتصال الأول عبر قمر صناعي.</p>
+<p class="byline">بقلم <a href="/ar/about.html" rel="author">أحمدرضا صمدي</a> · <time datetime="2026-10-04">4 أكتوبر 2026</time> · <a href="/writing/how-satellite-messaging-works.html" hreflang="en">النسخة الإنجليزية</a></p>
+<p class="byline">تحديث <time datetime="2026-10-10T13:35:56+03:30">١٠ أكتوبر ٢٠٢٦</time></p>
+<section aria-labelledby="article-at-a-glance">
+<h2 id="article-at-a-glance">نظرة سريعة</h2>
+<h2>يتغير الجزء الأول من رحلة الرسالة</h2><ol class="satellite-route"><li><span class="route-number" aria-hidden="true">1</span>هاتفك</li><li><span class="route-number" aria-hidden="true">2</span>قمر صناعي</li><li><span class="route-number" aria-hidden="true">3</span>شبكة على الأرض</li><li><span class="route-number" aria-hidden="true">4</span>الشخص الذي تراسله</li></ol><p class="satellite-note">مسار مبسط. تمرر بعض الأنظمة البيانات عبر أقمار أخرى قبل الوصول إلى محطة أرضية.</p>
+</section>
+<h2>كيف تُرسل الرسالة عادة؟</h2>
+<p>يرسل الهاتف إشارة لاسلكية إلى برج قريب. يربطه البرج بشبكة أوسع تنقل الرسالة إلى وجهتها. في الصحراء أو على طريق بعيد، قد تكون هذه الوصلة الأولى غير متاحة.</p>
+<h2>كيف يصل هاتف صغير إلى الفضاء؟</h2>
+<p>يحول الهاتف النص إلى بيانات رقمية ويرسلها بموجات لاسلكية. تتيح خدمة متوافقة وصولها مباشرة إلى قمر صناعي. هوائي الهاتف الصغير وقدرته المحدودة يجعلان هذه الوصلة صعبة.</p><p>يصف <a href="https://starlink.com/public-files/DIRECT_TO_CELL_FIRST_TEXT_UPDATE.pdf" hreflang="en">شرح ستارلينك الهندسي</a> هوائيات كبيرة ومستقبلات حساسة وبرمجيات تتعامل مع ضعف الإشارة وحركة الأقمار السريعة. تختلف التجهيزات والاتصالات اللاسلكية بين الأنظمة.</p>
+<h2>كيف تعود الرسالة إلى الأرض؟</h2>
+<p>القمر جزء من شبكة أكبر. تصف <a href="https://www.globalstar.com/en-us/about/our-technology" hreflang="en">غلوبال ستار</a> نقل الإشارة إلى بوابات أرضية مرتبطة بشبكات محلية. وقد تمرر ستارلينك البيانات عبر أقمار أخرى قبل إيصالها إلى شبكة أرضية ومشغل شريك.</p><p>يمكن للطرف الآخر استلام الرسالة عبر اتصال خلوي عادي أو Wi-Fi، وفق متطلبات خدمة الرسائل. استخدامك للقمر الصناعي لا يفرض عليه اتصالًا فضائيًا لمجرد استلام رسالتك.</p>
+<h2>لماذا قد يستغرق الإرسال وقتًا؟</h2>
+<p>تتحرك الموجات بسرعة كبيرة. يتعلق الانتظار العملي بإنشاء وصلة صالحة وتسليم الرسالة: الإشارة الضعيفة وحركة الأقمار والسعة المشتركة والعوائق قد تؤثر في ذلك.</p><p>تقول <a href="https://support.apple.com/en-us/120930" hreflang="en">آبل</a> إن الرسالة في خدمتها قد تستغرق 30 ثانية في الظروف المثالية، وأكثر من دقيقة تحت أوراق أشجار خفيفة أو متوسطة. هذه أمثلة خاصة بالخدمة وليست ضمانًا عامًا. قد تمنع المباني والجروف والأشجار الكثيفة الاتصال. انتقل إلى مكان مفتوح واتبع إرشادات هاتفك.</p>
+<h2>لماذا النص أسهل من الفيديو؟</h2>
+<p>يحتاج النص القصير بيانات أقل بكثير من الفيديو. تختلف الميزات: خدمة آبل المدمجة لا تدعم الصور والفيديو، بينما تدعم <a href="https://www.t-mobile.com/coverage/satellite-phone-service" hreflang="en">T-Satellite</a> الصور وتطبيقات مختارة على أجهزة متوافقة. تظل السرعات محدودة وقد تحدث فجوات في التغطية.</p>
+<h2>ماذا تتحقق منه قبل السفر؟</h2>
+<ul><li><strong>الهاتف والبرمجيات:</strong> تأكد من دعم الطراز وإصدار النظام للخدمة.</li><li><strong>الوجهة:</strong> تحقق من البلد والتغطية الخارجية.</li><li><strong>المشغل والخطة:</strong> راجع متطلبات الاشتراك والتفعيل.</li><li><strong>الميزة:</strong> الرسائل اليومية وطلب النجدة ميزتان منفصلتان. في الطوارئ، استخدم ميزة الطوارئ المدعومة.</li></ul><p>عند مراجعة المصادر في 4 أكتوبر 2026، تشمل قائمة آبل للرسائل اليومية الولايات المتحدة وكندا والمكسيك واليابان، ولا تشمل الإمارات. للخدمات التابعة للمشغلين قوائم وشروط مستقلة.</p>
+
+<h2>شاهد رحلة الرسالة</h2><p>المجموعة المؤلفة من 12 شريحة باللغة الإنجليزية. الرسوم والأرقام الثنائية وكتل البيانات توضيحية وليست صور واجهات منتجات أو قياسات هندسية دقيقة.</p>
+<details class="satellite-details"><summary>عرض الشرائح الإنجليزية الاثنتي عشرة</summary><div class="satellite-gallery"><figure><img src="/assets/writing/satellite-messaging/slide-01.png" alt="غلاف بلون الليلك الفاتح يسأل كيف يرسل الهاتف رسالة دون أبراج اتصالات. يعرض الهاتف رسالة توضيحية «أنا بأمان» عليها علامة الإرسال، ويربطه خط منقّط بقمر صناعي فوق منظر جبلي." lang="en" width="1080" height="1350" loading="lazy" decoding="async"><figcaption>الشريحة 1 / 12</figcaption></figure><figure><img src="/assets/writing/satellite-messaging/slide-02.png" alt="المسار المعتاد لرسالة الجوال: الهاتف، ثم برج اتصالات قريب، ثم شبكة أوسع، ثم هاتف صديق. تربط الأسهم المراحل الأربع." lang="en" width="1080" height="1350" loading="lazy" decoding="async"><figcaption>الشريحة 2 / 12</figcaption></figure><figure><img src="/assets/writing/satellite-messaging/slide-03.png" alt="يرسل هاتف متوافق أول اتصال لاسلكي له مباشرة إلى قمر صناعي بدلًا من برج قريب." lang="en" width="1080" height="1350" loading="lazy" decoding="async"><figcaption>الشريحة 3 / 12</figcaption></figure><figure><img src="/assets/writing/satellite-messaging/slide-04.png" alt="ثلاث مراحل تشرح الإرسال: تتحول عبارة «أنا بأمان» إلى بيانات رقمية موضحة بأرقام ثنائية، ثم إلى موجة لاسلكية. الأرقام توضيحية وليست ترميزًا دقيقًا." lang="en" width="1080" height="1350" loading="lazy" decoding="async"><figcaption>الشريحة 4 / 12</figcaption></figure><figure><img src="/assets/writing/satellite-messaging/slide-05.png" alt="هاتف صغير يتصل برسم لقمر صناعي أكبر بكثير. تستطيع الهوائيات الكبيرة والمستقبلات الحساسة التقاط إشارة لاسلكية ضعيفة. الأحجام ليست بمقياس حقيقي." lang="en" width="1080" height="1350" loading="lazy" decoding="async"><figcaption>الشريحة 5 / 12</figcaption></figure><figure><img src="/assets/writing/satellite-messaging/slide-06.png" alt="يرسل القمر الصناعي الرسالة عبر شبكته إلى محطة أرضية، ثم إلى الشبكات العادية. تمرر بعض الأنظمة الرسالة عبر أقمار أخرى قبل وصولها إلى الأرض." lang="en" width="1080" height="1350" loading="lazy" decoding="async"><figcaption>الشريحة 6 / 12</figcaption></figure><figure><img src="/assets/writing/satellite-messaging/slide-07.png" alt="لوحتان تقارنان بين مرسل خارج نطاق الشبكات يستخدم اتصالًا بالقمر الصناعي، ومستلم متصل عبر الشبكة الخلوية أو Wi-Fi. يستطيع المستلم تلقي الرسالة بشكل عادي." lang="en" width="1080" height="1350" loading="lazy" decoding="async"><figcaption>الشريحة 7 / 12</figcaption></figure><figure><img src="/assets/writing/satellite-messaging/slide-08.png" alt="ثلاث بطاقات تشرح سبب استغراق الإرسال وقتًا: قدرة الهاتف وهوائيه المحدودان، وبُعد القمر الصناعي، وسعة الشبكة المشتركة. يأتي التأخير من إنشاء الاتصال والتسليم، لا من بطء الموجات اللاسلكية في الفضاء." lang="en" width="1080" height="1350" loading="lazy" decoding="async"><figcaption>الشريحة 8 / 12</figcaption></figure><figure><img src="/assets/writing/satellite-messaging/slide-09.png" alt="ثلاثة مشاهد تُظهر سماءً مفتوحة وأشجارًا كثيفة ومباني. على السماء المفتوحة علامة صح، وعلى المشاهد المحجوبة علامة خطأ. قد تحجب المباني والجروف والأشجار إشارة القمر الصناعي." lang="en" width="1080" height="1350" loading="lazy" decoding="async"><figcaption>الشريحة 9 / 12</figcaption></figure><figure><img src="/assets/writing/satellite-messaging/slide-10.png" alt="يُمثَّل النص القصير ببضع كتل بيانات، بينما يحتاج الفيديو إلى كتل أكثر بكثير. تدعم بعض الخدمات أيضًا الصور أو تطبيقات مختارة بسرعات وميزات مختلفة. الكتل ليست مقارنة دقيقة لحجم البيانات." lang="en" width="1080" height="1350" loading="lazy" decoding="async"><figcaption>الشريحة 10 / 12</figcaption></figure><figure><img src="/assets/writing/satellite-messaging/slide-11.png" alt="قائمة تحقق من ثلاث نقاط: هاتف وبرمجيات متوافقة، ووجهة مدعومة، وخدمة أو خطة مناسبة. طلب النجدة والرسائل اليومية ميزتان منفصلتان." lang="en" width="1080" height="1350" loading="lazy" decoding="async"><figcaption>الشريحة 11 / 12</figcaption></figure><figure><img src="/assets/writing/satellite-messaging/slide-12.png" alt="شريحة ختامية داكنة تسرد الرحلة: هاتفك، ثم قمر صناعي، ثم شبكة على الأرض، ثم الشخص الذي تراسله. توصي بالتحقق من الدعم قبل الابتعاد عن نطاق الشبكات، وتحمل اسم أحمدرضا صمدي." lang="en" width="1080" height="1350" loading="lazy" decoding="async"><figcaption>الشريحة 12 / 12</figcaption></figure></div></details>
+<p><a href="/assets/writing/satellite-messaging/satellite-messaging-carousel.pdf" type="application/pdf">تنزيل المجموعة الإنجليزية بصيغة PDF</a></p>
+<section id="social-publications" aria-labelledby="social-heading"><h2 id="social-heading">النسخ المرئية المنشورة</h2><ul><li><a href="https://www.instagram.com/p/DeEmyr4iquF/" hreflang="en">Instagram</a></li><li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7512484750121623552/" hreflang="en">LinkedIn</a></li><li><a href="https://www.youtube.com/post/UgkxO6Ucdj7TyaDUdg_8Mr6O9QS8jqr72dqi" hreflang="en">YouTube</a></li></ul></section>
+<h2>المصادر</h2><p class="satellite-note">رُوجعت المصادر الأصلية في 4 أكتوبر 2026. وثيقة ستارلينك شرح هندسي من 2024؛ لم نستخدم توقعات الإطلاق فيها باعتبارها توفرًا حاليًا.</p><ul><li><a href="https://support.apple.com/en-us/120930" hreflang="en">Apple: Messages via satellite</a></li><li><a href="https://www.globalstar.com/en-us/about/our-technology" hreflang="en">Globalstar: satellite and ground network technology</a></li><li><a href="https://starlink.com/public-files/DIRECT_TO_CELL_FIRST_TEXT_UPDATE.pdf" hreflang="en">Starlink: Direct to Cell engineering</a></li><li><a href="https://www.t-mobile.com/coverage/satellite-phone-service" hreflang="en">T-Mobile: current T-Satellite features and requirements</a></li></ul>
+
+<!-- article-hubs:start -->
+<nav class="article-reading-path" aria-labelledby="article-related-title">
+<p>ضمن موضوع: <a href="/ar/topics/tech-explained.html" data-hub-primary="tech-explained">التكنولوجيا ببساطة</a></p>
+<h2 id="article-related-title">محتوى ذو صلة</h2>
+<ul><li><a href="/ar/writing/how-building-digital-twins-work.html" data-related-pillar="property-decisions">كيف يمكن أن يكون للمبنى نسخة رقمية حيّة؟</a></li>
+<li><a href="/ar/writing/start-with-the-decision.html" data-related-pillar="decision-first-ai">ابدأ بالقرار، ثم ابنِ الذكاء الاصطناعي</a></li>
+<li><a href="/ar/writing/why-wifi-is-slow-with-full-bars.html" data-related-pillar="tech-explained">لماذا يبقى الإنترنت بطيئًا مع إشارة Wi-Fi كاملة؟</a></li></ul>
+</nav>
+<!-- article-hubs:end -->
+<!-- author-box:start -->
+<aside class="article-author" aria-labelledby="article-author-title">
+<h2 id="article-author-title">عن الكاتب</h2>
+<p>أحمدرضا صمدي رائد أعمال في مجال التقنية مقيم في دبي. يبني منتجات الذكاء الاصطناعي بصفته شريكا مؤسسا وقائدا تقنيا في Appraiva، ويدير Royal Abraj Group بصفته شريكا مؤسسا ورئيسا تنفيذيا.</p>
+<p class="article-author__name"><a href="/ar/about.html" rel="author">أحمدرضا صمدي</a></p>
+<p class="article-author__series">ضمن سلسلة <bdi lang="en">Tech, explained</bdi></p>
+</aside>
+<!-- author-box:end -->
+<!-- follow-subscribe:start -->
+<aside class="details follow-subscribe" aria-labelledby="follow-subscribe-title">
+<h2 id="follow-subscribe-title">المتابعة</h2>
+<nav aria-label="متابعة أحمدرضا صمدي"><a href="https://www.linkedin.com/in/ahmadreza-samadi/"><bdi>LinkedIn</bdi></a> · <a href="https://www.youtube.com/@ahmadreza-samadi"><bdi>YouTube</bdi></a> · <a href="https://www.instagram.com/ahmadreza.samadi/"><bdi>Instagram</bdi></a></nav>
+</aside>
+<!-- follow-subscribe:end -->
+</article>
+<footer class="editorial-footer"><nav aria-label="قراءة ذات صلة"><a href="/ar/writing/how-zip-files-work.html">كيف يعمل ضغط ZIP؟</a> · <a href="/ar/writing/passkeys-face-id.html">كيف تعمل مفاتيح المرور؟</a> · <a href="/ar/writing/">المقالات</a> · <a href="/ar/about.html">عن أحمدرضا صمدي</a></nav><p>أحمدرضا صمدي</p></footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Ahmadreza Samadi">
+<title>ما الفرق بين مفتاح المرور وFace ID وما الذي يستلمه الموقع؟</title>
+<meta name="description" content="يتيح لك Face ID الموافقة على استخدام مفتاح المرور على جهازك. تعرّف إلى ما يتحقق منه الموقع عند تسجيل الدخول، ولماذا لا يحتاج إلى صورة وجهك أو إلى مفتاحك الخاص.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://a-samadi.com/ar/writing/passkeys-face-id.html">
+<link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/passkeys-face-id.html">
+<link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/passkeys-face-id.html">
+<link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/passkeys-face-id.html">
+<link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/passkeys-face-id.html">
+<link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg">
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/vazirmatn-arabic-wght.woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css?v=20261009-lagoon4">
+<link rel="stylesheet" href="/css/rtl.css?v=20261009-lagoon4">
+<meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
+<meta property="og:title" content="ما الفرق بين مفتاح المرور وFace ID وما الذي يستلمه الموقع؟">
+<meta property="og:description" content="يتيح لك Face ID الموافقة على استخدام مفتاح المرور على جهازك. تعرّف إلى ما يتحقق منه الموقع عند تسجيل الدخول، ولماذا لا يحتاج إلى صورة وجهك أو إلى مفتاحك الخاص."><meta property="og:url" content="https://a-samadi.com/ar/writing/passkeys-face-id.html">
+<meta property="og:locale" content="ar_AE">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="fa_IR">
+<meta property="og:image" content="https://a-samadi.com/assets/share/passkeys-face-id.png">
+<meta property="og:image:alt" content="غلاف المقالة الإنجليزية: How passkeys work: why Face ID is not your password"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ما الفرق بين مفتاح المرور وFace ID وما الذي يستلمه الموقع؟"><meta name="twitter:description" content="يتيح لك Face ID الموافقة على استخدام مفتاح المرور على جهازك. تعرّف إلى ما يتحقق منه الموقع عند تسجيل الدخول، ولماذا لا يحتاج إلى صورة وجهك أو إلى مفتاحك الخاص."><meta name="twitter:image" content="https://a-samadi.com/assets/share/passkeys-face-id.png"><meta name="twitter:image:alt" content="غلاف المقالة الإنجليزية: How passkeys work: why Face ID is not your password">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://a-samadi.com/ar/writing/passkeys-face-id.html#article",
+      "headline": "ما هو مفتاح المرور، ولماذا لا يُعد Face ID كلمة مرورك؟",
+      "description": "يتيح لك Face ID الموافقة على استخدام مفتاح المرور على جهازك. تعرّف إلى ما يتحقق منه الموقع عند تسجيل الدخول، ولماذا لا يحتاج إلى صورة وجهك أو إلى مفتاحك الخاص.",
+      "url": "https://a-samadi.com/ar/writing/passkeys-face-id.html",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://a-samadi.com/ar/writing/passkeys-face-id.html",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://a-samadi.com/assets/share/passkeys-face-id.png",
+          "width": 1200,
+          "height": 630
+        },
+        "isPartOf": {
+          "@id": "https://a-samadi.com/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://a-samadi.com/ar/writing/passkeys-face-id.html#breadcrumbs"
+        }
+      },
+      "datePublished": "2026-09-28",
+      "dateModified": "2026-10-19T10:43:53+03:30",
+      "inLanguage": "ar",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://a-samadi.com/assets/share/passkeys-face-id.png",
+        "width": 1200,
+        "height": 630
+      },
+      "author": {
+        "@type": "Person",
+        "@id": "https://a-samadi.com/#person",
+        "name": "Ahmadreza Samadi",
+        "url": "https://a-samadi.com/about.html"
+      },
+      "publisher": {
+        "@id": "https://a-samadi.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://a-samadi.com/#website"
+      },
+      "citation": [
+        "https://fidoalliance.org/passkeys/",
+        "https://support.apple.com/en-us/102195",
+        "https://www.w3.org/TR/webauthn-3/"
+      ],
+      "translationOfWork": {
+        "@id": "https://a-samadi.com/writing/passkeys-face-id.html#article"
+      },
+      "name": "ما الفرق بين مفتاح المرور وFace ID وما الذي يستلمه الموقع؟"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://a-samadi.com/ar/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "التكنولوجيا ببساطة",
+          "item": "https://a-samadi.com/ar/topics/tech-explained.html"
+        }
+      ],
+      "@id": "https://a-samadi.com/ar/writing/passkeys-face-id.html#breadcrumbs"
+    }
+  ]
+}</script>
+
+<style data-author-box>
+/* A quiet author reference at the end of each article, using the Lagoon tokens. */
+.editorial .article-author {
+  margin-block: 2.5rem 0;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid var(--line-strong);
+  border-inline-start: 3px solid var(--mint-deep);
+  border-radius: 16px;
+  background: var(--surface);
+  text-align: start;
+  overflow-wrap: anywhere;
+}
+.editorial .article-author h2 {
+  margin: 0 0 .25rem;
+  color: var(--muted);
+  font-size: .875rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.editorial .article-author p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.editorial .article-author .article-author__name {
+  margin-block-end: .35rem;
+  font-family: var(--display);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.editorial .article-author a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 44px;
+  max-inline-size: 100%;
+  padding-block: .25rem;
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+.editorial .article-author a:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+@media (forced-colors: active) {
+  .editorial .article-author { border-color: CanvasText; background: Canvas; }
+  .editorial .article-author h2, .editorial .article-author p { color: CanvasText; }
+  .editorial .article-author a { color: LinkText; }
+  .editorial .article-author a:focus-visible { outline-color: Highlight; }
+}
+@media print {
+  .editorial .article-author {
+    break-inside: avoid;
+    margin-block-start: 1.5rem;
+    border-color: #777;
+    background: transparent;
+  }
+  .editorial .article-author h2, .editorial .article-author p, .editorial .article-author a { color: #000; }
+}
+</style>
+
+<script src="/js/site-analytics.js?v=20261009-analytics1" defer></script>
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+</head>
+<body class="editorial-body arabic-page">
+<a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+<header class="editorial-header"><a href="/ar/"><img src="/assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">أحمدرضا صمدي / الرئيسية</a></header>
+<main id="main" class="editorial">
+<nav class="byline" aria-label="مسار التنقل"><a href="/ar/">الرئيسية</a> / <a href="/ar/topics/tech-explained.html">التكنولوجيا ببساطة</a></nav>
+<article>
+<p class="eyebrow">Wait, That’s Tech? · التقنية اليومية</p>
+<h1>ما هو مفتاح المرور، ولماذا لا يُعد Face ID كلمة مرورك؟</h1>
+<p class="lead">يتيح مفتاح المرور لجهازك إثبات قدرته على استخدام مفتاح خاص، ويتحقق الموقع من الإثبات بمفتاح عام. يمكن أن يوافق Face ID محليًا على ذلك؛ لا يستقبل الموقع صورة وجهك أو المفتاح الخاص.</p>
+<p class="byline" data-search-reading="v1">اقرأ المزيد: <a href="/ar/topics/tech-explained.html">التقنية ببساطة</a> · <a href="/ideas.html" lang="en" dir="ltr">Signature ideas (English)</a></p>
+<p class="byline">بقلم <a href="/ar/about.html" rel="author">أحمدرضا صمدي</a> · <time datetime="2026-09-28">٢٨ سبتمبر ٢٠٢٦</time> · <a href="/writing/passkeys-face-id.html" hreflang="en">النسخة الإنجليزية من المقال</a></p>
+<p class="byline">تحديث <time datetime="2026-10-19T10:43:53+03:30">١٩ أكتوبر ٢٠٢٦</time></p>
+<section aria-labelledby="article-at-a-glance">
+<h2 id="article-at-a-glance">نظرة سريعة</h2>
+<p>تحمي مفاتيح المرور مسار تسجيل الدخول، لكنها لا تجعل كل رسالة أو عملية استرداد أو جهاز مخترق آمنًا. تُزامَن بعضها عبر مزوّد، وتبقى أخرى على جهاز أو مفتاح أمان؛ لذلك راجع طريقة تخزين مفاتيحك وخيارات استردادها.</p>
+</section>
+
+<h2>ماذا يستقبل الموقع؟</h2>
+<p>عند إنشاء مفتاح مرور، يرتبط مفتاح عام بحسابك. وعند تسجيل الدخول، ترسل الخدمة تحدياً جديداً. يوقّعه جهاز المصادقة بالمفتاح الخاص المقابل، ثم تتحقق الخدمة من التوقيع بالمفتاح العام. لا يتلقى الموقع صورة وجهك أو المفتاح الخاص.</p>
+<h2>ما دور Face ID؟</h2>
+<p>يمكن للتعرف على الوجه أو بصمة الإصبع أو رمز الجهاز أن يسمح باستخدام بيانات الاعتماد محلياً. حركة فتح القفل المألوفة هي خطوة موافقتك، أما تبادل الإثبات المشفّر فهو ما ينجز تسجيل الدخول. تختلف طريقة الموافقة بحسب الجهاز ومزوّد مفاتيح المرور.</p>
+<h2>كيف يساعد ذلك في مقاومة التصيد؟</h2>
+<p>ترتبط بيانات اعتماد WebAuthn بخدمة محددة. يتحقق المتصفح وجهاز المصادقة من هوية الموقع المعني، فلا تستطيع صفحة مقلدة أن تطلب منك ببساطة كتابة السر نفسه القابل لإعادة الاستخدام. يحمي ذلك مسار الدخول، لكنه لا يجعل كل رسالة أو وسيلة استرداد أو جهاز مخترق آمناً.</p>
+<h2>ماذا لو فقدت هاتفي؟</h2>
+<p>تُزامَن بعض مفاتيح المرور عبر مزوّد، بينما تبقى أخرى على جهاز أو مفتاح أمان. لذلك تعتمد الاستعادة على طريقة إنشاء مفتاح المرور وتخزينه. راجع خيارات الاسترداد لدى المزوّد قبل الاعتماد على جهاز واحد.</p>
+<h2>درس في تصميم المنتج</h2>
+<p>ينبغي أن يوضح شرح تسجيل الدخول الفرق بين حركة الموافقة والإثبات التقني. في شرحي المرئي، اللحظة الأساسية هي انتقال توقيع يستطيع الموقع التحقق منه. هذا أوضح من تقديم صورة الوجه كما لو كانت كلمة مرور.</p>
+<h2>شاهد الشرح المرئي الأصلي</h2>
+<p>يرافق هذا المقال شرحي المرئي المنشور. منشورات التواصل الاجتماعي باللغة الإنجليزية.</p>
+<p><a href="https://www.instagram.com/reel/DdwUJcKsG4T/" hreflang="en">شاهد على إنستغرام · <bdi>@ahmadreza.samadi</bdi></a> · <a href="https://www.youtube.com/shorts/ZX-1YGds5YI" hreflang="en">شاهد على يوتيوب</a> · <a href="https://www.linkedin.com/feed/update/urn:li:activity:7509630598253084672/" hreflang="en">اقرأ منشور لينكدإن</a></p>
+<h2>المصادر</h2>
+<ul><li><a href="https://fidoalliance.org/passkeys/" hreflang="en"><bdi>FIDO Alliance: passkeys</bdi></a></li><li><a href="https://support.apple.com/en-us/102195" hreflang="en"><bdi>Apple: security of passkeys</bdi></a></li><li><a href="https://www.w3.org/TR/webauthn-3/" hreflang="en"><bdi>W3C: Web Authentication</bdi></a></li></ul>
+
+<!-- article-hubs:start -->
+<nav class="article-reading-path" aria-labelledby="article-related-title">
+<p>ضمن موضوع: <a href="/ar/topics/tech-explained.html" data-hub-primary="tech-explained">التكنولوجيا ببساطة</a></p>
+<h2 id="article-related-title">محتوى ذو صلة</h2>
+<ul><li><a href="/ar/writing/ai-human-review-real-estate.html" data-related-pillar="property-decisions">الذكاء الاصطناعي في قرارات العقار: متى يتوقف؟</a></li>
+<li><a href="/ar/writing/start-with-the-decision.html" data-related-pillar="decision-first-ai">ابدأ بالقرار، ثم ابنِ الذكاء الاصطناعي</a></li>
+<li><a href="/ar/writing/how-contactless-cards-work.html" data-related-pillar="tech-explained">كيف تعمل البطاقة اللاتلامسية من دون بطارية؟</a></li></ul>
+</nav>
+<!-- article-hubs:end -->
+<!-- author-box:start -->
+<aside class="article-author" aria-labelledby="article-author-title">
+<h2 id="article-author-title">عن الكاتب</h2>
+<p>أحمدرضا صمدي رائد أعمال في مجال التقنية مقيم في دبي. يبني منتجات الذكاء الاصطناعي بصفته شريكا مؤسسا وقائدا تقنيا في Appraiva، ويدير Royal Abraj Group بصفته شريكا مؤسسا ورئيسا تنفيذيا.</p>
+<p class="article-author__name"><a href="/ar/about.html" rel="author">أحمدرضا صمدي</a></p>
+<p class="article-author__series">ضمن سلسلة <bdi lang="en">Tech, explained</bdi></p>
+</aside>
+<!-- author-box:end -->
+<!-- follow-subscribe:start -->
+<aside class="details follow-subscribe" aria-labelledby="follow-subscribe-title">
+<h2 id="follow-subscribe-title">المتابعة</h2>
+<nav aria-label="متابعة أحمدرضا صمدي"><a href="https://www.linkedin.com/in/ahmadreza-samadi/"><bdi>LinkedIn</bdi></a> · <a href="https://www.youtube.com/@ahmadreza-samadi"><bdi>YouTube</bdi></a> · <a href="https://www.instagram.com/ahmadreza.samadi/"><bdi>Instagram</bdi></a></nav>
+</aside>
+<!-- follow-subscribe:end -->
+</article>
+<footer class="editorial-footer"><nav aria-label="اقرأ أيضاً"><a href="/ar/writing/how-zip-files-work.html">كيف تعمل ملفات ZIP؟ ضغط البيانات دون فقدانها</a> · <a href="/ar/writing/">المقالات</a> · <a href="/ar/about.html">عن أحمدرضا صمدي</a></nav><p>أحمدرضا صمدي</p></footer>
+</main>
+</body>
+</html>

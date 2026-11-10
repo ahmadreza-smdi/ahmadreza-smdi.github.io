@@ -1,0 +1,905 @@
+{
+  "work/oxfam-novib.html": {
+    "previous": "Ahmadreza Samadi’s background includes Azure data infrastructure for CRM migration and analytics at Oxfam Novib.",
+    "description": "Ahmadreza Samadi’s Oxfam Novib work: Azure data infrastructure for CRM migration and analytics as a Data Engineer, September 2022–June 2023."
+  },
+  "ar/writing/index.html": {
+    "previous": "مقالات وشروحات أحمدرضا صمدي عن بناء منتجات الذكاء الاصطناعي وتكلفته ونماذج القرار وربط التطبيقات وتقنيات العقارات.",
+    "description": "مقالات وشروحات أحمدرضا صمدي عن بناء منتجات الذكاء الاصطناعي وتكلفته ونماذج القرار وربط التطبيقات وتقنيات العقارات، مع أدلة وأدوات عملية.",
+    "previous_title": "مقالات أحمدرضا صمدي | الذكاء الاصطناعي والمنتجات وتقنيات العقارات",
+    "title": "مقالات أحمدرضا صمدي عن الذكاء الاصطناعي والأعمال والتقنية"
+  },
+  "ar/writing/start-with-the-decision.html": {
+    "previous": "منهج عملي لقرارات منتجات الذكاء الاصطناعي: ابدأ بقرار العميل، وقيّم الأدلة اللازمة، وقِس سير العمل بأكمله.",
+    "description": "منهج أحمدرضا صمدي لقرارات منتجات الذكاء الاصطناعي: ابدأ بقرار العميل، وقيّم الأدلة اللازمة، وقِس سير العمل بأكمله مع تكلفة المراجعة البشرية."
+  },
+  "fa/work/oxfam-novib.html": {
+    "previous": "پیشینهٔ احمدرضا صمدی شامل زیرساخت دادهٔ Azure برای مهاجرت CRM و تحلیل داده در Oxfam Novib است.",
+    "description": "کار احمدرضا صمدی در Oxfam Novib: مهندس داده از سپتامبر ۲۰۲۲ تا ژوئن ۲۰۲۳، با تمرکز بر زیرساخت دادهٔ Azure برای مهاجرت CRM و تحلیل داده."
+  },
+  "ar/work/oxfam-novib.html": {
+    "previous": "تشمل خلفية أحمدرضا صمدي بنية بيانات Azure لترحيل CRM والتحليلات لدى Oxfam Novib.",
+    "description": "عمل أحمدرضا صمدي لدى Oxfam Novib مهندس بيانات من سبتمبر ٢٠٢٢ إلى يونيو ٢٠٢٣، لبناء بنية بيانات Azure لترحيل CRM والتحليلات."
+  },
+  "fa/tools/before-you-build-ai.html": {
+    "previous": "ایده هوش مصنوعی را به یک تصمیم، برنامه شواهد و آزمایشی کوچک تبدیل کنید؛ راهنمای تعاملی رایگان احمدرضا صمدی.",
+    "description": "ایدهٔ هوش مصنوعی را به یک تصمیم روشن، برنامهٔ شواهد و آزمایشی کوچک تبدیل کنید؛ راهنمای تعاملی احمدرضا صمدی با معیار پذیرش و بررسی انسانی."
+  },
+  "ar/tools/before-you-build-ai.html": {
+    "previous": "حوّل فكرة ذكاء اصطناعي إلى قرار وخطة أدلة وتجربة أولى صغيرة. دليل تفاعلي مجاني من أحمدرضا صمدي.",
+    "description": "حوّل فكرة ذكاء اصطناعي إلى قرار وخطة أدلة وتجربة أولى صغيرة. دليل تفاعلي مجاني من أحمدرضا صمدي لتحديد معيار القبول والمراجعة البشرية."
+  },
+  "fa/writing/ai-human-review-real-estate.html": {
+    "previous": "هوش مصنوعی اطلاعات ملک و پیش‌نویس را آماده می‌کند؛ متخصص ادعاها و عدم‌قطعیت را بررسی می‌کند و مشتری تصمیم می‌گیرد.",
+    "description": "احمدرضا صمدی مرز نقش‌ها را توضیح می‌دهد: هوش مصنوعی اطلاعات ملک و پیش‌نویس را آماده می‌کند؛ متخصص ادعاها را بررسی می‌کند و مشتری تصمیم می‌گیرد."
+  },
+  "ar/writing/ai-home-value-estimates.html": {
+    "previous": "يوضح أحمدرضا صمدي كيف تراجع بيانات العقار والمبيعات المقارنة وعدم اليقين قبل استخدام تقييم آلي، وتفحص الأدلة عندما تختلف التقديرات.",
+    "description": "إذا اختلف تقديران آليان لقيمة المنزل، فابدأ بالحقائق التي استخدمها كل منهما. تحقق من تاريخ المبيعات وتشابه العقارات وحدود الدقة قبل الاعتماد على الرقم.",
+    "source_description": "راجع بيانات العقار والمبيعات المقارنة وعدم اليقين قبل استخدام تقييم آلي، وافحص الأدلة عندما تختلف التقديرات.",
+    "previous_title": "تقييم العقار بالذكاء الاصطناعي: حدود التقدير",
+    "title": "كيف تراجع تقدير الذكاء الاصطناعي لقيمة منزل بمبيعات مشابهة؟"
+  },
+  "fa/writing/incognito-private-browsing.html": {
+    "previous": "احمدرضا صمدی با مثال خیالی خرید هدیه، حالت ناشناس، کوکی، سابقهٔ مرور و ردپای بازدید در وب‌سایت را توضیح می‌دهد؛ حریم خصوصی محلی با ناشناس‌بودن فرق دارد.",
+    "description": "بعد از بستن پنجره ناشناس چه چیزی از دستگاه پاک می‌شود؟ با مثال خرید یک هدیه، تفاوت تاریخچه مرورگر، کوکی، فایل دانلودشده و سابقه‌ای را که سایت نگه می‌دارد ببینید.",
+    "source_description": "احمدرضا صمدی با مثال خرید هدیه، حالت ناشناس، کوکی، سابقه مرور و ردپای بازدید در وب‌سایت را به زبان ساده توضیح می‌دهد.",
+    "previous_title": "آیا حالت ناشناس واقعاً شما را نامرئی می‌کند؟ | احمدرضا صمدی",
+    "title": "حالت ناشناس مرورگر چه چیزی را پنهان می‌کند و از دید چه کسی؟"
+  },
+  "ar/writing/why-ai-sounds-confident.html": {
+    "previous": "يشرح أحمدرضا صمدي أخطاء الذكاء الاصطناعي الواثقة بمثال متحف خيالي وفيلم قصير وطريقة بسيطة للتحقق من الأدلة.",
+    "description": "يشرح أحمدرضا صمدي أخطاء الذكاء الاصطناعي الواثقة بمثال متحف خيالي وفيلم قصير: افتح المصدر وتحقق من دعمه للادعاء بدلاً من الاعتماد على نبرة الثقة."
+  },
+  "ar/writing/why-phone-stops-charging-at-80.html": {
+    "previous": "يشرح أحمدرضا صمدي توقف الشحن عند ٨٠٪: الحد الذي اخترته والروتين المتعلم والتوقف بسبب الحرارة قد تتشابه، لكن أسبابها وطريقة استئناف الشحن مختلفة.",
+    "description": "قد يتوقف شحن الهاتف عند 80 بالمئة بسبب حد اخترته أو نمط شحن تعلمه الجهاز أو ارتفاع الحرارة. راجع الإعدادات وظروف التوقف للتمييز بين الأسباب الثلاثة.",
+    "source_description": "قد يبدو الحد الذي اخترته والروتين المتعلم والتوقف بسبب الحرارة متشابهين. لكن أسبابها وطريقة استئناف الشحن مختلفة.",
+    "previous_title": "لماذا يتوقف شحن هاتفك عند ٨٠٪؟ | أحمدرضا صمدي",
+    "title": "لماذا يتوقف شحن الهاتف عند 80 بالمئة وكيف تعرف السبب؟"
+  },
+  "ar/writing/profitable-but-out-of-cash.html": {
+    "previous": "قد تترك صفقة مربحة الشركة عاجزة عن دفع مستحقات المورد. تابع طلبًا واحدًا لتفهم الفرق بين الإيراد المكتسب والنقد المتاح.",
+    "description": "قد تترك صفقة مربحة الشركة عاجزة عن دفع مستحقات المورد. تابع طلبًا خياليًا واحدًا لتفهم الفرق بين الإيراد المكتسب والنقد المتاح وتوقيت الدفع."
+  },
+  "watch/rental-yield.html": {
+    "previous": "By Ahmadreza Samadi. Watch the 99-second film to see why an 8% gross rental yield can coexist with a cash shortfall.",
+    "description": "Ahmadreza Samadi’s 99-second film uses a fictional rental budget to show how an 8% gross yield can coexist with a cash shortfall."
+  },
+  "fa/press.html": {
+    "previous": "زندگی‌نامه، پژوهش و ابزارهای اصلی، تصویر و راه تماس کتبی با احمدرضا صمدی، کارآفرین فناوری ساکن دبی؛ همراه با معرفی Appraiva و Royal Abraj Group.",
+    "description": "برای معرفی احمدرضا صمدی، زندگی‌نامه کوتاه یا بلند، عکس رسمی و پیوند صفحه‌های او را بیابید. سمت‌هایش در Appraiva و Royal Abraj Group در این صفحه آمده‌اند.",
+    "source_description": "زندگی‌نامه، پژوهش و ابزارهای اصلی، تصویر و راه تماس کتبی با احمدرضا صمدی، کارآفرین فناوری ساکن دبی.",
+    "previous_title": "رسانه و معرفی حرفه‌ای | احمدرضا صمدی",
+    "title": "زندگی‌نامه و عکس رسمی احمدرضا صمدی برای رسانه‌ها و معرفی"
+  },
+  "ar/press.html": {
+    "previous": "السيرة والبحوث والأدوات الأصلية والصورة ووسيلة التواصل الكتابي مع أحمدرضا صمدي، رائد أعمال تقني مقيم في دبي، مع سياق أدواره في Appraiva وRoyal Abraj Group.",
+    "description": "حمّل سيرة أحمدرضا صمدي المختصرة أو المطولة وصورته الرسمية. تجد هنا حساباته المهنية ودوره في Appraiva وRoyal Abraj Group ومقر عمله في دبي.",
+    "source_description": "السيرة والبحوث والأدوات الأصلية والصورة ووسيلة التواصل الكتابي مع أحمدرضا صمدي، رائد أعمال تقني مقيم في دبي.",
+    "previous_title": "المواد الإعلامية والتعريف المهني | أحمدرضا صمدي",
+    "title": "السيرة المهنية والصورة الرسمية لأحمدرضا صمدي للصحافة"
+  },
+  "ar/writing/how-contactless-cards-work.html": {
+    "previous": "يشرح أحمدرضا صمدي كيف يشغّل جهاز الدفع شريحة البطاقة اللاتلامسية السلبية للحظة. تتبّع الطاقة وبيانات الدفع خلال تمرير البطاقة في مثال توضيحي.",
+    "description": "تتبّع عملية الدفع من المجال الراديوي لجهاز القراءة إلى شريحة البطاقة. تعرّف إلى الطريقة التي يمد بها الجهاز البطاقة بالطاقة ويستقبل بيانات الدفع عند تقريبها.",
+    "source_description": "يشغّل جهاز الدفع شريحة البطاقة اللاتلامسية السلبية للحظة. تتبّع الطاقة وبيانات الدفع خلال تمرير البطاقة.",
+    "previous_title": "كيف تعمل البطاقة اللاتلامسية من دون بطارية؟ | أحمدرضا صمدي",
+    "title": "كيف تعمل بطاقة الدفع اللاتلامسي من دون بطارية داخلها؟"
+  },
+  "ar/writing/how-noise-cancellation-works.html": {
+    "previous": "تقيس الميكروفونات الضوضاء الخارجية ويضيف المكبر موجة معاكسة بتوقيت دقيق. لماذا تنخفض الهمهمة أفضل من الأصوات المفاجئة؟",
+    "description": "تقيس الميكروفونات الضوضاء الخارجية ويضيف المكبر موجة معاكسة بتوقيت دقيق. يشرح أحمدرضا صمدي لماذا تنخفض الهمهمة أفضل من الأصوات المفاجئة."
+  },
+  "ar/writing/why-usb-c-cables-differ.html": {
+    "previous": "يوضح أحمدرضا صمدي أن USB-C يصف الموصل. القدرة وسرعة نقل الملفات ودعم الفيديو قدرات منفصلة يجب التحقق منها في الكابل والأجهزة والاتصال كله.",
+    "description": "قد يتشابه شكل كابلات USB-C وتختلف قدرتها على الشحن أو نقل البيانات أو عرض الفيديو. راجع ما يدعمه كل من الكابل والشاحن والجهاز قبل اختيار الكابل المناسب.",
+    "source_description": "USB-C يصف الموصل. القدرة وسرعة نقل الملفات ودعم الفيديو قدرات منفصلة يجب التحقق منها في الاتصال كله.",
+    "previous_title": "لماذا تختلف كابلات USB-C رغم تشابه شكلها؟ | أحمدرضا صمدي",
+    "title": "لماذا تختلف سرعة الشحن بين كابلات USB-C لها المقبس نفسه؟"
+  },
+  "ar/writing/why-wifi-is-slow-with-full-bars.html": {
+    "previous": "يوضح أحمدرضا صمدي أن أشرطة Wi-Fi تقيس قوة الإشارة إلى الموجّه، لا سرعة مسار الإنترنت كله. تعرف على أسباب أخرى للبطء وكيف تقارن الاتصال.",
+    "description": "تقيس أشرطة الواي فاي قوة الإشارة بين الجهاز والموجّه. لتحديد سبب البطء افحص ازدحام الشبكة المحلية واتصال الإنترنت والخدمة التي تحاول استخدامها.",
+    "source_description": "توضح أشرطة Wi-Fi قوة الإشارة إلى الموجّه، لا سرعة مسار الإنترنت كله. تعرف على أسباب أخرى للبطء وكيف تقارن.",
+    "previous_title": "لماذا يبقى الإنترنت بطيئًا مع إشارة Wi-Fi كاملة؟ | أحمدرضا صمدي",
+    "title": "لماذا يبقى اتصال الواي فاي بطيئا رغم ظهور الإشارة كاملة؟"
+  },
+  "ar/writing/why-ai-loses-earlier-chat-context.html": {
+    "previous": "سجل المحادثة والسياق الحالي والملخص والذاكرة المحفوظة والتدريب أمور مختلفة. يشرح أحمدرضا صمدي سبب فقدان التفاصيل وكيف تساعد المساعد على الاحتفاظ بالسياق.",
+    "description": "قد تقرأ في سجل المحادثة تفصيلا لم يعد ضمن ما يراه النموذج. قارن نافذة السياق والملخصات والذاكرة المحفوظة لتفهم سبب تجاوز المساعد لمعلومة سابقة.",
+    "source_description": "سجل المحادثة والسياق الحالي والملخص والذاكرة المحفوظة والتدريب أمور مختلفة. افهم سبب فقدان التفاصيل وكيف تساعد المساعد.",
+    "previous_title": "لماذا ينسى الذكاء الاصطناعي تفاصيل سابقة؟ | أحمدرضا صمدي",
+    "title": "لماذا ينسى الذكاء الاصطناعي الرسائل السابقة في محادثة طويلة؟"
+  },
+  "ar/writing/how-many-coffees-to-break-even.html": {
+    "previous": "يبيع مقهى افتراضي ١٠٠ قهوة مقابل ٥٠٠ دولار ولا يحقق ربحًا تشغيليًا. تتبّع التكاليف الثابتة والمتغيرة لفهم هامش المساهمة ونقطة التعادل.",
+    "description": "يبيع مقهى افتراضي مئة كوب قهوة مقابل 500 دولار ويظل ربحه التشغيلي صفرا. تتبع سعر الكوب وتكلفته المتغيرة والتكاليف الثابتة لحساب نقطة التعادل.",
+    "source_description": "يبيع مقهى افتراضي ١٠٠ قهوة مقابل ٥٠٠ دولار ولا يحقق ربحًا تشغيليًا. تتبّع التكاليف لفهم هامش المساهمة ونقطة التعادل.",
+    "previous_title": "كم كوب قهوة يجب أن يبيع المقهى قبل أن يحقق ربحًا؟ | أحمدرضا صمدي",
+    "title": "كم كوب قهوة يحتاج المقهى إلى بيعه حتى يبلغ نقطة التعادل؟"
+  },
+  "ar/topics/tech-explained.html": {
+    "previous": "شروحات مبسطة للتكنولوجيا وأفلام أصلية. افهم الآلية وحدودها، ثم اربطها بالقرار الذي تحتاج إلى اتخاذه.",
+    "description": "شروحات أحمدرضا صمدي المبسطة للتكنولوجيا وأفلامه الأصلية: افهم الآلية وحدودها، ثم اربطها بالقرار الذي تحتاج إلى اتخاذه، مع مصادر وقراءات مرتبطة."
+  },
+  "fa/writing/chatgpt-intelligent-ui-explained.html": {
+    "previous": "احمدرضا صمدی پاسخ‌های تعاملی ChatGPT و معرفی ۷ اکتبر را توضیح می‌دهد؛ یک بودجهٔ فرضی نشان می‌دهد چرا حتی با رابط تعاملی، بررسی فرض‌ها مهم است.",
+    "description": "با یک بودجه فرضی ببینید پاسخ تعاملی ChatGPT چگونه کار می‌کند. تغییر یک عدد نشان می‌دهد رابط چه چیزی را محاسبه می‌کند و کدام فرض‌ها هنوز نیاز به بررسی دارند.",
+    "source_description": "توضیح ساده پاسخ‌های تعاملی ChatGPT، معرفی ۷ اکتبر و یک بودجه فرضی که نشان می‌دهد چرا بررسی فرض‌ها هنوز مهم است.",
+    "previous_title": "رابط تعاملی ChatGPT چگونه کار می‌کند؟ | احمدرضا صمدی",
+    "title": "رابط هوشمند ChatGPT چطور پاسخ را به ابزار تعاملی بدل می‌کند؟"
+  },
+  "ar/writing/chatgpt-intelligent-ui-explained.html": {
+    "previous": "يشرح أحمدرضا صمدي إجابات ChatGPT التفاعلية وإعلان ٧ أكتوبر، مع ميزانية افتراضية توضح لماذا تظل مراجعة الافتراضات مهمة حتى مع واجهة تفاعلية.",
+    "description": "تتبّع إجابة تفاعلية في ChatGPT من خلال ميزانية افتراضية. جرّب أثر تغيير رقم لتمييز ما تحسبه الواجهة عن الافتراضات التي تظل بحاجة إلى مراجعة.",
+    "source_description": "شرح بسيط لإجابات ChatGPT التفاعلية وإعلان ٧ أكتوبر، مع ميزانية افتراضية توضح لماذا تظل مراجعة الافتراضات مهمة.",
+    "previous_title": "كيف تعمل الواجهة التفاعلية في ChatGPT؟ | أحمدرضا صمدي",
+    "title": "كيف تحول واجهة ChatGPT الذكية الإجابات إلى أدوات تفاعلية؟"
+  },
+  "fa/writing/dubai-property-tokenisation-explained.html": {
+    "previous": "توضیحی ساده درباره ارتباط مالکیت دیجیتال، سهم کوچک از ملک و درآمد خالص اجاره با مسئله جداگانه پیدا کردن خریدار.",
+    "description": "احمدرضا صمدی ارتباط ثبت دیجیتال مالکیت، سهم کوچک از ملک و درآمد خالص اجاره را توضیح می‌دهد و آن را از مسئلهٔ جداگانهٔ پیدا کردن خریدار تفکیک می‌کند."
+  },
+  "ar/writing/dubai-property-tokenisation-explained.html": {
+    "previous": "شرح بسيط يربط سجل الملكية الرقمي والحصص العقارية وصافي الإيجار بالتحدي المنفصل المتمثل في إيجاد مشترٍ.",
+    "description": "يشرح أحمدرضا صمدي العلاقة بين سجل الملكية الرقمي والحصص العقارية وصافي الإيجار، ويفصلها عن التحدي المستقل المتمثل في إيجاد مشترٍ للحصة."
+  },
+  "ar/writing/ai-data-center-site-readiness.html": {
+    "previous": "الكهرباء والتبريد والشبكات وملاءمة المبنى عبر موقعين افتراضيين، مع مصادر حديثة من JLL وميتا وأسئلة لتقييم المختصين.",
+    "description": "الكهرباء والتبريد والشبكات وملاءمة المبنى عبر موقعين افتراضيين، مع مصادر من JLL وميتا وأسئلة لتقييم المختصين؛ شرح أحمدرضا صمدي لقرارات الموقع."
+  },
+  "fa/writing/why-ai-weather-models-need-local-observations.html": {
+    "previous": "مدل هوشمند هم به نشانه‌هایی از دنیای واقعی نیاز دارد. موضوع این مطلب نقش داده‌های محلی در پیش‌بینی هواست.",
+    "description": "احمدرضا صمدی نقش رصد محلی را در پیش‌بینی هوا توضیح می‌دهد: مدل هوشمند هم به داده‌ها و نشانه‌هایی از دنیای واقعی نیاز دارد، نه فقط توان محاسباتی."
+  },
+  "ar/writing/why-ai-weather-models-need-local-observations.html": {
+    "previous": "حتى النموذج الذكي يحتاج إلى أدلة من العالم الحقيقي. يشرح هذا المقال دور الرصد المحلي في التنبؤ بالطقس.",
+    "description": "يشرح أحمدرضا صمدي دور الرصد المحلي في التنبؤ بالطقس: حتى النموذج الذكي يحتاج إلى بيانات وأدلة من العالم الحقيقي، وليس إلى القدرة الحاسوبية وحدها."
+  },
+  "fa/writing/why-rent-to-value-is-not-property-yield.html": {
+    "previous": "تفاوت نسبت اجاره به ارزش با بازده واقعی ملک؛ یک بودجه نقدی خیالی، محدودیت داده‌ها و بررسی بعدی را روشن می‌کند.",
+    "description": "احمدرضا صمدی تفاوت نسبت اجاره به ارزش با بازده واقعی ملک را توضیح می‌دهد؛ یک بودجهٔ نقدی خیالی، محدودیت داده‌ها و بررسی بعدی را روشن می‌کند."
+  },
+  "fa/writing/why-occupancy-sensor-lights-switch-off.html": {
+    "previous": "گاهی چراغ خاموش می‌شود در حالی که هنوز در اتاق هستید. ممکن است حسگر، نشانه حضور شما را دریافت نکرده باشد.",
+    "description": "احمدرضا صمدی توضیح می‌دهد چرا گاهی چراغ با حضور شما در اتاق خاموش می‌شود: حسگر ممکن است نشانهٔ حضور را نگیرد؛ تشخیص حرکت با حضور دائمی یکسان نیست."
+  },
+  "ar/writing/why-occupancy-sensor-lights-switch-off.html": {
+    "previous": "قد تنطفئ الإضاءة وأنت ما زلت في الغرفة. ربما لم يلتقط الحساس دليلا على وجودك.",
+    "description": "يشرح أحمدرضا صمدي لماذا قد تنطفئ الإضاءة وأنت في الغرفة: قد لا يلتقط الحساس دليلاً على وجودك، فاستشعار الحركة لا يثبت استمرار وجود الشخص."
+  },
+  "ar/writing/virtual-machine-device-sharing-explained.html": {
+    "previous": "قائمتنا الأصلية: أي حاسوب افتراضي، وأي موارد، وهل أحتاج كل مورد؟ الفيلم مفاهيمي، وليس تصويرا للمنتج أو إعدادا مختبرا.",
+    "description": "قائمة لفحص الحاسوب الافتراضي وموارده والحاجة إلى كل مورد، من أحمدرضا صمدي. الفيلم شرح مفاهيمي لمشاركة الأجهزة، وليس تصويرًا للمنتج أو إعدادًا مختبرًا."
+  },
+  "writing/ai-document-review-claim-evidence-checklist.html": {
+    "previous": "Our checklist: write the claim, locate its support, then resolve the gap or keep it visible.",
+    "description": "A document-review checklist by Ahmadreza Samadi: write the claim, locate its supporting evidence, then resolve the gap or keep it visible."
+  },
+  "writing/where-wearable-ai-computation-runs.html": {
+    "previous": "Which task runs locally? What is sent out? What happens without a connection?",
+    "description": "Ahmadreza Samadi explains wearable AI computation: which tasks run locally, what data is sent out and what happens without a connection."
+  },
+  "writing/on-device-ai-scam-warnings-explained.html": {
+    "previous": "Our framework: stop the rushed action, use a trusted separate contact route, keep uncertainty visible.",
+    "description": "Ahmadreza Samadi explains AI scam warnings: stop a rushed action, verify through a trusted separate contact route and keep uncertainty visible."
+  },
+  "writing/bacnet-building-devices-common-language.html": {
+    "previous": "Our checklist: which devices, which data and commands, and who verifies the integration?",
+    "description": "Ahmadreza Samadi explains BACnet building integration: identify the devices, data and commands, and who verifies that they work together."
+  },
+  "writing/geospatial-ai-map-answer-review.html": {
+    "previous": "Which boundary? Which date? Which source and assumptions? Keep unsupported conclusions open.",
+    "description": "Ahmadreza Samadi’s geospatial AI checklist: check the boundary, date, source and assumptions behind a map answer; keep unsupported conclusions open."
+  },
+  "ar/writing/phone-location-across-street.html": {
+    "previous": "يوضح موعد ركوب خيالي انعكاس إشارات الأقمار وعدم يقين نقطة الخريطة وطريقة عملية للاتفاق على مكان اللقاء.",
+    "description": "يوضح أحمدرضا صمدي، عبر موعد ركوب خيالي، انعكاس إشارات الأقمار وعدم يقين نقطة الخريطة وطريقة عملية للاتفاق على مكان اللقاء بدلاً من الثقة بالنقطة وحدها."
+  },
+  "watch/phone-location-across-street.html": {
+    "previous": "Watch the English animated film about reflected satellite signals, an uncertain map dot and a fictional pickup.",
+    "description": "Watch Ahmadreza Samadi’s English film: a fictional pickup explains reflected satellite signals, an uncertain map dot and agreeing where to meet."
+  },
+  "fa/writing/ai-agents-shared-notebook.html": {
+    "previous": "یک تعمیرگاه خیالی، دانش قابل‌استفادهٔ دوباره برای عامل‌ها، بررسی زمینه و مرز اطلاعات خصوصی پروژه را توضیح می‌دهد.",
+    "description": "احمدرضا صمدی با یک تعمیرگاه خیالی، دانش قابل‌استفادهٔ دوباره برای عامل‌های هوش مصنوعی، بررسی زمینه و مرز اطلاعات خصوصی پروژه را توضیح می‌دهد."
+  },
+  "ar/writing/ai-agents-shared-notebook.html": {
+    "previous": "تشرح ورشة إصلاح خيالية معرفة الوكلاء القابلة لإعادة الاستخدام وفحص السياق وحدود معلومات المشروع الخاصة.",
+    "description": "يشرح أحمدرضا صمدي، عبر ورشة إصلاح خيالية، معرفة وكلاء الذكاء الاصطناعي القابلة لإعادة الاستخدام وفحص السياق وحدود معلومات المشروع الخاصة."
+  },
+  "watch/ai-agents-shared-notebook.html": {
+    "previous": "Watch the English animated film about shared agent knowledge, context checks and a fictional repair workshop.",
+    "description": "Watch Ahmadreza Samadi’s English film: a fictional repair workshop explains shared agent knowledge, context checks and private project information."
+  },
+  "writing/tesla-roadster-flight-claim.html": {
+    "previous": "An illustrated hangar explains thrust and separates a manufacturer claim from availability and public-road approval.",
+    "description": "Ahmadreza Samadi’s fictional hangar explains thrust and separates a manufacturer’s Tesla Roadster claim from availability and public-road approval."
+  },
+  "fa/writing/tesla-roadster-flight-claim.html": {
+    "previous": "یک آشیانهٔ خیالی، رانش را توضیح می‌دهد و ادعای سازنده را از دسترسی و تأیید استفاده در جادهٔ عمومی جدا می‌کند.",
+    "description": "احمدرضا صمدی با یک آشیانهٔ خیالی، رانش را توضیح می‌دهد و ادعای سازنده دربارهٔ Tesla Roadster را از دسترسی به محصول و تأیید استفاده در جادهٔ عمومی جدا می‌کند."
+  },
+  "ar/writing/tesla-roadster-flight-claim.html": {
+    "previous": "تشرح حظيرة خيالية قوة الدفع وتفصل ادعاء الشركة عن الإتاحة والموافقة على استخدام الطرق العامة.",
+    "description": "يشرح أحمدرضا صمدي قوة الدفع عبر حظيرة خيالية، ويفصل ادعاء الشركة بشأن Tesla Roadster عن إتاحة المنتج والموافقة على استخدام الطرق العامة."
+  },
+  "work/index.html": {
+    "previous": "Selected work by Ahmadreza Samadi: building AI at Appraiva and business systems at Royal Abraj, with data engineering, public studies and tools.",
+    "description": "Explore Ahmadreza Samadi’s work on property imagery and search at Appraiva, customer workflows at Royal Abraj Group, and data engineering at Oxfam Novib.",
+    "previous_title": "Selected work | Ahmadreza Samadi",
+    "title": "AI Products and Business Systems | Ahmadreza Samadi"
+  },
+  "fa/work/index.html": {
+    "previous": "کارهای منتخب احمدرضا صمدی: هوش مصنوعی برای تصمیم‌های ملکی، با پشتوانهٔ مهندسی محصول، سامانه‌های داده، مطالعه‌های عمومی و ابزارهای کاربردی.",
+    "description": "کارهای منتخب احمدرضا صمدی: ساختن محصولات هوش مصنوعی در Appraiva و اداره Royal Abraj Group در دبی، با پشتوانهٔ مهندسی محصول، سامانه‌های داده و ابزارهای کاربردی."
+  },
+  "ar/work/index.html": {
+    "previous": "أعمال مختارة لأحمدرضا صمدي: الذكاء الاصطناعي للقرارات العقارية، بدعم من هندسة المنتجات وأنظمة البيانات والدراسات العامة والأدوات العملية.",
+    "description": "أعمال مختارة لأحمدرضا صمدي: بناء منتجات الذكاء الاصطناعي في Appraiva وإدارة Royal Abraj Group في دبي، بدعم من هندسة المنتجات وأنظمة البيانات والأدوات العملية."
+  },
+  "writing/heat-pump-moves-heat-explained.html": {
+    "previous": "A fictional home and an illustrative energy balance explain how a heat pump moves heat.",
+    "description": "Ahmadreza Samadi explains how a heat pump moves heat through a fictional home and an illustrative energy balance, with an English animated film."
+  },
+  "fa/writing/heat-pump-moves-heat-explained.html": {
+    "previous": "یک خانه خیالی و تراز انرژی نمونه، انتقال گرما با پمپ حرارتی را توضیح می‌دهند.",
+    "description": "احمدرضا صمدی با یک خانهٔ خیالی و تراز انرژی نمونه، انتقال گرما با پمپ حرارتی را توضیح می‌دهد؛ همراه با فیلم پویانمایی انگلیسی و منابع توضیح سازوکار."
+  },
+  "watch/heat-pump-moves-heat-explained.html": {
+    "previous": "Watch the English film: A fictional home and an illustrative energy balance explain how a heat pump moves heat.",
+    "description": "Watch Ahmadreza Samadi’s English animated film: a fictional home and an illustrative energy balance explain how a heat pump transfers heat."
+  },
+  "writing/ai-agent-permissions-ability-authority.html": {
+    "previous": "A fictional invoice explains reading, drafting and approval boundaries in business AI.",
+    "description": "Ahmadreza Samadi uses a fictional invoice to explain business AI permissions: the boundaries between reading, drafting and approving an action."
+  },
+  "fa/writing/ai-agent-permissions-ability-authority.html": {
+    "previous": "یک فاکتور فرضی، مرز خواندن، نوشتن پیش‌نویس و تأیید در هوش مصنوعی کسب‌وکار را توضیح می‌دهد.",
+    "description": "احمدرضا صمدی با یک فاکتور فرضی، مجوزهای عامل هوش مصنوعی در کسب‌وکار را توضیح می‌دهد: مرز خواندن، نوشتن پیش‌نویس و تأیید اقدام را جدا نگه دارید."
+  },
+  "ar/writing/ai-agent-permissions-ability-authority.html": {
+    "previous": "فاتورة افتراضية تشرح حدود القراءة وإعداد المسودات والموافقة في ذكاء الأعمال الاصطناعي.",
+    "description": "يشرح أحمدرضا صمدي صلاحيات وكيل الذكاء الاصطناعي في الأعمال عبر فاتورة افتراضية: الفصل بين قراءة المعلومات وإعداد المسودات والموافقة على الإجراء."
+  },
+  "watch/ai-agent-permissions-ability-authority.html": {
+    "previous": "Watch the English film: A fictional invoice explains reading, drafting and approval boundaries in business AI.",
+    "description": "Watch Ahmadreza Samadi’s English film: a fictional invoice explains the boundaries between reading, drafting and approval in business AI."
+  },
+  "writing/dubai-service-charge-same-rent.html": {
+    "previous": "A fictional Dubai property comparison separates advertised rent from cash remaining after one recurring cost.",
+    "description": "A fictional Dubai comparison by Ahmadreza Samadi separates advertised rent from cash after service charges, with DLD’s definition and limits."
+  },
+  "fa/writing/dubai-service-charge-same-rent.html": {
+    "previous": "مقایسه فرضی دو ملک در دبی، اجاره اعلامی را از مبلغ باقی‌مانده پس از یک هزینه دوره‌ای جدا می‌کند.",
+    "description": "مقایسهٔ فرضی دو ملک در دبی از احمدرضا صمدی، اجارهٔ اعلامی را از پول باقی‌مانده پس از هزینهٔ خدمات جدا می‌کند؛ با تعریف ادارهٔ زمین دبی و محدودیت‌ها."
+  },
+  "ar/writing/dubai-service-charge-same-rent.html": {
+    "previous": "مقارنة عقارية افتراضية في دبي تفصل الإيجار المعلن عن المبلغ المتبقي بعد تكلفة دورية واحدة.",
+    "description": "مقارنة عقارية افتراضية لأحمدرضا صمدي في دبي تفصل الإيجار المعلن عن النقد بعد رسوم الخدمات، مع تعريف دائرة الأراضي والأملاك وحدود المقارنة."
+  },
+  "carousels/index.html": {
+    "previous": "Source-dated visual explainers on AI and business technology by Ahmadreza Samadi.",
+    "description": "Source-dated visual explainers by Ahmadreza Samadi on AI and business technology, with the original slides, source links and companion pages."
+  },
+  "writing/business-ai-evaluation-cases.html": {
+    "previous": "A polished demonstration does not establish reliability for the actual task.",
+    "description": "Ahmadreza Samadi explains why a polished AI demonstration does not establish reliability for the real task: choose evaluation cases from the work."
+  },
+  "watch/business-ai-evaluation-cases.html": {
+    "previous": "Watch the English film: A polished demonstration does not establish reliability for the actual task.",
+    "description": "Watch Ahmadreza Samadi’s English film about AI evaluation: a polished demo is not proof of task reliability; choose cases that reflect the work."
+  },
+  "index.html": {
+    "previous": "Ahmadreza Samadi is a Dubai-based technology entrepreneur, Co-Founder & Technical Lead at Appraiva, and Co-Founder & CEO of Royal Abraj Group.",
+    "description": "Ahmadreza Samadi builds AI and runs a business that has to live with it. Explore his work at Appraiva, Royal Abraj Group in Dubai and his decision guides.",
+    "previous_title": "Ahmadreza Samadi | Technology Entrepreneur, Dubai",
+    "title": "Ahmadreza Samadi | AI Products for Business"
+  },
+  "about.html": {
+    "previous": "Ahmadreza Samadi builds AI at Appraiva and runs Royal Abraj Group in Dubai. Read his biography, from data engineering to building products for business decisions.",
+    "description": "Biography of Ahmadreza Samadi, also known as Ahmad Samadi. Follow his path from data engineering to building AI products and running a business in Dubai.",
+    "previous_title": "Ahmadreza Samadi | Appraiva Co-Founder and Dubai Entrepreneur",
+    "title": "Ahmadreza Samadi (Ahmad Samadi) | Biography",
+    "source_description": "Ahmadreza Samadi builds AI at Appraiva and runs Royal Abraj Group in Dubai, and writes about where AI earns its place in a business. Read his biography and work.",
+    "source_title": "Technology Entrepreneur, Dubai | Ahmadreza Samadi",
+    "superseded_description": "Read Ahmadreza Samadi’s biography. Also known as Ahmad Samadi, he builds AI as Appraiva’s technical co-founder and leads Royal Abraj Group as CEO in Dubai.",
+    "superseded_title": "Ahmadreza Samadi, technology entrepreneur based in Dubai"
+  },
+  "work/appraiva.html": {
+    "previous": "See how Ahmadreza Samadi connects property photos, records and search at Appraiva so investors can decide which properties deserve a closer look.",
+    "description": "How does Appraiva match a property photo to the right record? Ahmadreza Samadi explains how imagery analysis, matching and data enrichment support investor search.",
+    "source_description": "Ahmadreza Samadi is Appraiva’s Co-Founder & Technical Lead, working remotely from Dubai on AI real estate intelligence at the Cleveland, Ohio company.",
+    "previous_title": "Ahmadreza Samadi at Appraiva | Co-Founder & Technical Lead",
+    "title": "Appraiva case study: property imagery, data and search",
+    "superseded_title": "Appraiva property imagery and search with Ahmadreza Samadi",
+    "superseded_description": "How does Appraiva connect a photo to the right property? Ahmadreza Samadi describes imagery analysis, property matching, enriched records and investor search."
+  },
+  "work/royal-abraj.html": {
+    "previous": "At Royal Abraj Group in Dubai, Ahmadreza Samadi connects website enquiries, CRM follow-up and a customer portal for property brokerage and documents clearing.",
+    "description": "Follow how Ahmadreza Samadi connects an enquiry to CRM follow-up and a customer portal at Royal Abraj Group, a Dubai brokerage and documents-clearing business.",
+    "source_description": "Ahmadreza Samadi, Co-Founder & CEO of Royal Abraj Group in Dubai, leads digital strategy and technology for property brokerage and documents-clearing services.",
+    "previous_title": "Ahmadreza Samadi at Royal Abraj Group | Co-Founder & CEO",
+    "title": "Royal Abraj Group in Dubai and Ahmadreza Samadi’s role"
+  },
+  "writing/index.html": {
+    "previous": "Articles and explainers by Ahmadreza Samadi on building AI products, AI costs and decision models, connected apps, and real estate technology.",
+    "description": "Read Ahmadreza Samadi on building AI products, testing them on real tasks and counting review costs. Explore property examples and everyday technology explainers.",
+    "previous_title": "Writing on AI Products and Business Decisions | Ahmadreza Samadi",
+    "title": "Writing on AI products and business | Ahmadreza Samadi",
+    "source_title": "Writing on AI Products, Data and PropTech | Ahmadreza Samadi"
+  },
+  "ar/topics/ai-real-estate.html": {
+    "previous": "مسار قراءة عن بيانات العقارات والمراجعة البشرية وتكلفة عمل الذكاء الاصطناعي والتدفق النقدي للإيجار، في سياق عمل أحمدرضا صمدي في Appraiva.",
+    "description": "مسار قراءة عن بيانات العقارات والمراجعة البشرية وتكلفة عمل الذكاء الاصطناعي والتدفق النقدي للإيجار، في سياق عمل أحمدرضا صمدي في Appraiva.",
+    "previous_title": "الذكاء الاصطناعي في العقارات: الأدلة والقرارات | أحمدرضا صمدي",
+    "title": "قرارات الاستثمار العقاري بالذكاء الاصطناعي | أحمدرضا صمدي"
+  },
+  "ar/writing/build-ai-run-a-business.html": {
+    "previous": "يبني أحمدرضا صمدي الذكاء الاصطناعي في Appraiva، ويدير Royal Abraj Group في دبي، ويطرح ثلاثة أسئلة تحدّد أين يستحق الذكاء الاصطناعي مكانه في الشركة.",
+    "description": "يبني أحمدرضا صمدي الذكاء الاصطناعي في Appraiva، ويدير Royal Abraj Group في دبي، ويطرح ثلاثة أسئلة تحدّد أين يستحق الذكاء الاصطناعي مكانه في الشركة.",
+    "previous_title": "أبني الذكاء الاصطناعي، وأدير شركةً عليها أن تتعايش معه | أحمدرضا صمدي",
+    "title": "لماذا أبني الذكاء الاصطناعي وأدير شركة في دبي | أحمدرضا صمدي"
+  },
+  "ar/writing/cash-conversion-cycle-clocks.html": {
+    "previous": "المبيعات وحدها لا تبين النقد المتاح اليوم.",
+    "description": "تتبع دورة تحويل النقد في ورشة مصابيح خيالية، من شراء المخزون إلى تحصيل المبيعات. يوضح المثال لماذا قد يحقق النشاط مبيعات من دون أن يتوفر النقد اليوم."
+  },
+  "ar/writing/humanoid-robots-at-home.html": {
+    "previous": "يوضح أحمدرضا صمدي الفرق بين توقعات شحن الروبوتات البشرية وطلبات الروبوت المنزلي والمساعدة عن بُعد والأدلة على العمل المستقل المفيد.",
+    "description": "يوضح أحمدرضا صمدي الفرق بين توقعات شحن الروبوتات البشرية وطلبات الروبوت المنزلي والمساعدة عن بُعد والأدلة على العمل المستقل المفيد.",
+    "previous_title": "الروبوتات البشرية في المنزل: الشحنات والاستقلالية | أحمدرضا صمدي",
+    "title": "ما الذي تستطيع الروبوتات الشبيهة بالبشر فعله في المنزل؟",
+    "superseded_title": "الروبوتات البشرية في المنزل وحدود استقلاليتها | أحمدرضا صمدي"
+  },
+  "ar/writing/structured-output-source-checks.html": {
+    "previous": "الشكل المرتب وصحة المعلومة فحصان مختلفان.",
+    "description": "قد تستوفي إجابة الذكاء الاصطناعي جميع الحقول المطلوبة وتظل المعلومة خاطئة. تابع كيف تقارن نور تاريخ التسليم بعرض المورّد وتتحقق من المحتوى بعد فحص بنية الإجابة.",
+    "superseded_description": "تبدو إجابة الذكاء الاصطناعي صحيحة عندما تملأ جميع الحقول. تابع كيف تتحقق نور من تاريخ التسليم في عرض المورد وتفصل بين سلامة النموذج وصحة المعلومة."
+  },
+  "carousels/ai-property-brief-evidence.html": {
+    "previous": "Attach a source trail to each important claim and keep gaps visible.",
+    "description": "Review an AI-generated property brief slide by slide. Trace each important claim to its source, identify missing evidence and decide what still needs checking."
+  },
+  "carousels/dubai-broker-record-check.html": {
+    "previous": "Check the official broker record, then separately check the property and transaction.",
+    "description": "Follow a Dubai broker record check through the official listing. See which details identify the broker and which property and transaction facts need separate checks.",
+    "previous_title": "Dubai broker verification: check the record | Ahmadreza Samadi",
+    "title": "How to check a Dubai broker record | Ahmadreza Samadi"
+  },
+  "carousels/dubai-procedure-status-check.html": {
+    "previous": "Report the observed procedure status, not the outcome you expected.",
+    "description": "Read a Dubai procedure status in context. Follow the slides to distinguish what the record currently shows from the outcome someone expects to happen next."
+  },
+  "carousels/dubai-project-status-check.html": {
+    "previous": "Match the registered project before interpreting the progress reported for that exact project.",
+    "description": "Match a Dubai project to its registered record before reading a progress update. Use the slides to check that the evidence describes the same project.",
+    "previous_title": "Dubai project status: check the right project | Ahmadreza Samadi",
+    "title": "Dubai project status and registration | Ahmadreza Samadi"
+  },
+  "carousels/dubai-rental-index-context.html": {
+    "previous": "Keep asking rents, property details and the official index result clearly labelled.",
+    "description": "Compare a Dubai asking rent with an official rental index result. Keep the property details, advertised price and index evidence distinct as you read each slide.",
+    "previous_title": "Dubai rental index: compare the right evidence | Ahmadreza Samadi",
+    "title": "Dubai rental index and asking rents | Ahmadreza Samadi"
+  },
+  "carousels/dubai-valuation-evidence.html": {
+    "previous": "Name the evidence type, source and purpose before comparing property values.",
+    "description": "Compare property valuation evidence in Dubai. Identify the type of value, its source and the purpose of the comparison before relying on a figure for a decision."
+  },
+  "carousels/tech-trend-ai-usage-not-outcomes.html": {
+    "previous": "GitHub has expanded Copilot usage reporting across tools. That helps show activity. It does not measure business results by itself.",
+    "description": "GitHub has expanded Copilot usage reporting across tools. That helps show activity. It does not measure business results by itself.",
+    "previous_title": "More AI calls do not prove more useful work. | Ahmadreza Samadi",
+    "title": "AI usage and useful business outcomes | Ahmadreza Samadi"
+  },
+  "carousels/tech-trend-gemini-business-hub.html": {
+    "previous": "Google announced a Gemini landing page for small businesses, with brand, finance and connected-app tools. Start with the workflow you need.",
+    "description": "Google announced a Gemini landing page for small businesses, with brand, finance and connected-app tools. Start with the workflow you need.",
+    "previous_title": "A business hub is not a business autopilot. | Ahmadreza Samadi",
+    "title": "What a Gemini business hub can do | Ahmadreza Samadi"
+  },
+  "carousels/tech-trend-world-models-real-tests.html": {
+    "previous": "NVIDIA expanded Cosmos with data, training and simulation tools for physical AI. Generated scenarios can broaden what developers test.",
+    "description": "NVIDIA expanded Cosmos with data, training and simulation tools for physical AI. Generated scenarios can broaden what developers test.",
+    "previous_title": "A simulated world is still a test environment. | Ahmadreza Samadi",
+    "title": "World models and real-world tests | Ahmadreza Samadi"
+  },
+  "fa/topics/business-systems-dubai.html": {
+    "previous": "مسیر مطالعه‌ای از کار احمدرضا صمدی در رویال ابراج تا فرایند مشتری، طراحی محصول بر پایه تصمیم، مجوز اپ‌های متصل و زمان‌بندی جریان نقدی.",
+    "description": "مسیر مطالعه‌ای از کار احمدرضا صمدی در رویال ابراج تا فرایند مشتری، طراحی محصول بر پایه تصمیم، مجوز اپ‌های متصل و زمان‌بندی جریان نقدی.",
+    "previous_title": "هوش مصنوعی و سیستم‌های کسب‌وکار: درس‌هایی از دبی | احمدرضا صمدی",
+    "title": "هوش مصنوعی و سیستم‌های کسب‌وکار در دبی | احمدرضا صمدی"
+  },
+  "fa/writing/agent-workflow-shared-bottlenecks.html": {
+    "previous": "در کتابخانهٔ ارسال خیالی، اضافه‌کردن دستیار صف را کوتاه نمی‌کند؛ هر کار مستقل منتظر همان کلید است. این مثال می‌پرسد کجا هماهنگی لازم است و کجا کارها می‌توانند مستقل پیش بروند.",
+    "description": "در یک کتابخانه فرضی، همه کارها منتظر یک کلید می‌مانند. ببینید چرا افزودن دستیار صف را کوتاه نمی‌کند و چه زمانی کارها می‌توانند مستقل پیش بروند."
+  },
+  "fa/writing/ai-research-examination-understanding.html": {
+    "previous": "زارا، هماهنگ‌کنندهٔ پژوهش خیالی، نتیجه‌ای تولیدشده با هوش مصنوعی دریافت می‌کند. پاسخ آراسته به‌تنهایی نمی‌گوید چه فرض‌هایی پشت آن است، چه چیزی بررسی شده یا محدودیت‌ها چه معنایی دارند.",
+    "description": "زارا در یک مثال فرضی نتیجه پژوهش تولیدشده با هوش مصنوعی را بررسی می‌کند. ببینید چه پرسش‌هایی درباره فرض‌ها، شواهد و محدودیت‌های نتیجه باید پرسید."
+  },
+  "fa/writing/build-ai-run-a-business.html": {
+    "previous": "در Appraiva هوش مصنوعی می‌سازم و در دبی Royal Abraj Group را اداره می‌کنم؛ سه پرسش برای اینکه هوش مصنوعی کجای کسب‌وکار جای دارد.",
+    "description": "در Appraiva هوش مصنوعی می‌سازم و در دبی Royal Abraj Group را اداره می‌کنم؛ سه پرسش برای اینکه هوش مصنوعی کجای کسب‌وکار جای دارد.",
+    "previous_title": "هوش مصنوعی می‌سازم و کسب‌وکاری را اداره می‌کنم که باید با آن کنار بیاید | احمدرضا صمدی",
+    "title": "چرا هوش مصنوعی می‌سازم و کسب‌وکار دارم | احمدرضا صمدی"
+  },
+  "fa/writing/building-energy-audit-decisions.html": {
+    "previous": "میرا، مدیر خیالی ساختمان، قبض بالای انرژی را می‌بیند و دستگاه تازه می‌خواهد. به‌جای انتخاب دستگاه از روی یک عدد، درخواست می‌کند دارایی‌های انرژی ساختمان و شیوهٔ بهره‌برداری از آن‌ها بررسی شوند.",
+    "description": "میرا در یک ساختمان فرضی قبض بالای انرژی را بررسی می‌کند. ببینید چرا پیش از خرید تجهیزات تازه باید مصرف دستگاه‌ها و شیوه کار با آن‌ها را شناخت."
+  },
+  "fa/writing/cash-conversion-cycle-clocks.html": {
+    "previous": "فروش به‌تنهایی پول قابل استفادهٔ امروز را نشان نمی‌دهد.",
+    "description": "چرخه تبدیل وجه نقد را در یک کارگاه فرضی چراغ‌سازی دنبال کنید. ببینید فاصله خرید موجودی، فروش و وصول پول چگونه نقدینگی امروز را تغییر می‌دهد."
+  },
+  "fa/writing/how-noise-cancellation-works.html": {
+    "previous": "میکروفون نویز بیرون را می‌سنجد و بلندگو موجی مخالف و دقیق اضافه می‌کند. چرا این روش صدای یکنواخت را بهتر از هر صدای ناگهانی کم می‌کند؟",
+    "description": "میکروفون نویز بیرون را می‌سنجد و بلندگو موجی مخالف و دقیق اضافه می‌کند. چرا این روش صدای یکنواخت را بهتر از هر صدای ناگهانی کم می‌کند؟",
+    "previous_title": "هدفون چطور با ساختن صدای بیشتر، نویز را کم می‌کند؟ | احمدرضا صمدی",
+    "title": "هدفون چگونه با ساختن صدا نویز را کم می‌کند؟ | احمدرضا صمدی"
+  },
+  "fa/writing/profitable-but-out-of-cash.html": {
+    "previous": "یک فروش سودآور هم می‌تواند کسب‌وکار را برای پرداخت به تأمین‌کننده با مشکل روبه‌رو کند. با دنبال کردن یک سفارش، تفاوت درآمد کسب‌شده و پول در دسترس را ببینید.",
+    "description": "یک فروش سودآور هم می‌تواند کسب‌وکار را برای پرداخت به تأمین‌کننده با مشکل روبه‌رو کند. با دنبال کردن یک سفارش، تفاوت درآمد کسب‌شده و پول در دسترس را ببینید.",
+    "previous_title": "سودآور، اما بدون پول نقد: چرا زمان پرداخت مهم است؟ | احمدرضا صمدی",
+    "title": "چرا یک کسب‌وکار سودآور پول نقد کم می‌آورد؟ | احمدرضا صمدی"
+  },
+  "fa/writing/structured-output-source-checks.html": {
+    "previous": "شکل مرتب و جملهٔ درست دو بررسی متفاوت‌اند.",
+    "description": "نور در یک مثال فرضی تاریخ تحویل را با پیشنهاد تأمین‌کننده تطبیق می‌دهد. ببینید چرا حتی پاسخ هوش مصنوعی با ساختار درست هم به بررسی منبع نیاز دارد."
+  },
+  "topics/business-systems-dubai.html": {
+    "previous": "Follow a customer enquiry at Royal Abraj Group in Dubai, then explore how to assess an AI assistant’s access, review steps and cost per accepted result.",
+    "description": "Follow a customer enquiry at Royal Abraj Group in Dubai, then explore how to assess an AI assistant’s access, review steps and cost per accepted result.",
+    "previous_title": "AI and business systems: lessons from Dubai | Ahmadreza Samadi",
+    "title": "Business AI and operations in Dubai | Ahmadreza Samadi"
+  },
+  "watch/agent-workflow-shared-bottlenecks.html": {
+    "previous": "Watch the English film: In a fictional dispatch library, adding more helpers does not shorten the queue: every independent task waits for the same key. The illustration asks where work must be coordinated and where it can proceed independently.",
+    "description": "Watch what happens when several helpers share a single key. An English film uses a fictional dispatch library to explain bottlenecks in multi-agent workflows."
+  },
+  "watch/ai-research-examination-understanding.html": {
+    "previous": "Watch the English film: Zara, a fictional research coordinator, receives an AI-generated result. A polished answer alone does not explain which assumptions support it, what was checked, or what its limitations mean.",
+    "description": "Watch Zara examine an AI-generated research result. The English film follows her questions about assumptions, supporting evidence and what the result can show.",
+    "previous_title": "Watch: AI research output needs examination and understanding",
+    "title": "Watch how to check the evidence behind AI research"
+  },
+  "watch/building-energy-audit-decisions.html": {
+    "previous": "Watch the English film: Mira, a fictional building manager, sees a high energy bill and wants new equipment. Instead of choosing a machine from one number, she asks for the building assets and operations to be assessed.",
+    "description": "Watch a fictional building manager trace a high energy bill to the questions an audit should answer before anyone decides to buy replacement equipment."
+  },
+  "watch/cash-conversion-cycle-clocks.html": {
+    "previous": "Watch the English film: Sales alone do not tell Sami how much cash is available today.",
+    "description": "Watch the cash conversion cycle in a fictional lamp workshop. Follow the time between paying for inventory, making a sale and receiving the customer's cash."
+  },
+  "watch/property-comparables-evidence.html": {
+    "previous": "Watch the English film: fictional buyer Mina compares two neighbouring flats, an asking price and an older agreed sale. Proximity is not identical evidence.",
+    "description": "Watch the English film: fictional buyer Mina compares two neighbouring flats, an asking price and an older agreed sale. Proximity is not identical evidence.",
+    "previous_title": "Watch: Property comparables: evidence beyond the nearby price",
+    "title": "Watch how to compare evidence from nearby property sales"
+  },
+  "watch/structured-output-source-checks.html": {
+    "previous": "Watch the English film: A tidy shape and a true statement are different checks.",
+    "description": "Watch Noor check an AI-generated delivery date against a supplier quote. The English film shows how a correctly formatted response can still contain a false claim."
+  },
+  "writing/agent-workflow-shared-bottlenecks.html": {
+    "previous": "In a fictional dispatch library, adding more helpers does not shorten the queue: every independent task waits for the same key. The illustration asks where work must be coordinated and where it can proceed independently.",
+    "description": "In a fictional dispatch library, every helper needs the same key. Follow the queue to see which tasks an extra agent can take on and which still have to wait."
+  },
+  "writing/ai-research-examination-understanding.html": {
+    "previous": "Zara, a fictional research coordinator, receives an AI-generated result. A polished answer alone does not explain which assumptions support it, what was checked, or what its limitations mean.",
+    "description": "Zara reviews an AI-generated research result. Follow her questions about the evidence, assumptions and limitations behind a polished answer in this fictional case."
+  },
+  "writing/building-energy-audit-decisions.html": {
+    "previous": "Mira, a fictional building manager, sees a high energy bill and wants new equipment. Instead of choosing a machine from one number, she asks for the building assets and operations to be assessed.",
+    "description": "A fictional building manager investigates a high energy bill. Follow the audit questions about equipment and daily operation before deciding what to replace."
+  },
+  "writing/cash-conversion-cycle-clocks.html": {
+    "previous": "Sales alone do not tell Sami how much cash is available today.",
+    "description": "Follow a fictional lamp workshop from buying inventory to collecting cash. See why a recorded sale and cash available to pay a bill can fall on different days."
+  },
+  "writing/how-building-digital-twins-work.html": {
+    "previous": "Sensors connect real rooms and equipment to an updating digital model. See how a building digital twin turns readings into useful context.",
+    "description": "Sensors connect real rooms and equipment to an updating digital model. See how a building digital twin turns readings into useful context.",
+    "previous_title": "How can a building have a live digital copy? | Ahmadreza Samadi",
+    "title": "How a digital twin models a real building | Ahmadreza Samadi"
+  },
+  "writing/structured-output-source-checks.html": {
+    "previous": "A tidy shape and a true statement are different checks.",
+    "description": "Follow Noor as she checks a delivery date against a supplier quote. A fictional example shows how an AI response can fit its schema and still get a fact wrong."
+  },
+  "ar/writing/dubai-property-buying-costs.html": {
+    "previous": "أعدّ ميزانية مؤرخة للشراء في دبي، تشمل رسوم التسجيل الرسمية وتكاليف الرهن العقاري وتقديرات التكلفة. افصل بين إجمالي الرسوم والجزء الذي يتحمله المشتري.",
+    "description": "حدد تكلفة شراء العقار في دبي بندا بندا. راجع تاريخ رسوم التسجيل وتكاليف الرهن، ثم ميز بين إجمالي كل رسم والمبلغ الذي يتحمله المشتري فعليا.",
+    "previous_title": "تكلفة شراء عقار في دبي، بندًا بندًا",
+    "title": "تكلفة شراء عقار في دبي وكيف تحسب حصة المشتري من الرسوم"
+  },
+  "ar/writing/prompt-injection-layered-controls.html": {
+    "previous": "يوضح مسرح خيالي لماذا يجب ألا تمنح قراءة مستند السيطرة على مساعد الذكاء الاصطناعي. قد تحد الأدوات الأقل وفحص المحتوى والموافقة البشرية من توجيه مضلل.",
+    "description": "يوضح مثال مسرحي خيالي كيف يمكن أن يقرأ المساعد تعليمات مضللة في مستند. تعرف إلى دور تقييد الأدوات وفحص المحتوى ومراجعة إنسان قبل تنفيذ أي إجراء.",
+    "previous_title": "حقن التوجيهات: امنح المستندات صلاحيات أقل",
+    "title": "كيف تحدّ من صلاحيات المساعد عند قراءة تعليمات مضللة؟",
+    "superseded_title": "حقن التوجيهات في المستندات وكيف تحد صلاحيات مساعد الذكاء"
+  },
+  "fa/writing/humanoid-robots-at-home.html": {
+    "previous": "احمدرضا صمدی تفاوت پیش‌بینی تحویل ربات‌های انسان‌نما، پیش‌فروش ربات خانگی، کمک از راه دور و شواهد عملکرد خودمختار را توضیح می‌دهد.",
+    "description": "عرضه یک ربات انسان‌نما چه چیزی درباره توانایی آن در خانه نشان می‌دهد؟ تفاوت نمایش، تحویل محصول و انجام مستقل کارهای روزمره را با مثال بررسی کنید.",
+    "previous_title": "ربات‌های خانگی: نمایش، تحویل و خودمختاری | احمدرضا صمدی",
+    "title": "ربات انسان‌نما در خانه چقدر می‌تواند مستقل کار کند؟"
+  },
+  "writing/humanoid-robots-at-home.html": {
+    "previous": "Ahmadreza Samadi explains how to read humanoid robot claims: shipment forecasts, home robot preorders, remote assistance and evidence of useful autonomy.",
+    "description": "What does a humanoid robot shipment tell you about its ability to work at home? Compare deliveries, demonstrations and evidence of autonomous household tasks.",
+    "previous_title": "Home robots: shipments and autonomy | Ahmadreza Samadi",
+    "title": "Humanoid robots at home: what can they do on their own?"
+  },
+  "ar/about.html": {
+    "previous": "السيرة المهنية لأحمدرضا صمدي، رائد أعمال تقني مقيم في دبي، شريك مؤسس وقائد تقني في Appraiva وشريك مؤسس ورئيس تنفيذي لمجموعة رويال أبراج. خبراته وأعماله.",
+    "description": "تعرّف إلى أحمدرضا صمدي، المعروف أيضا باسم أحمد صمدي. يبني منتجات ذكاء اصطناعي بصفته شريكا مؤسسا وقائدا تقنيا في Appraiva، ويدير Royal Abraj Group من دبي.",
+    "previous_title": "عن أحمدرضا صمدي | السيرة المهنية والخبرات",
+    "title": "السيرة المهنية لأحمدرضا صمدي، رائد أعمال في مجال التقنية",
+    "superseded_title": "سيرة أحمدرضا صمدي رائد الأعمال التقنية والمؤسس المشارك",
+    "superseded_description": "تعرف إلى أحمدرضا صمدي، المعروف أيضا باسم أحمد صمدي. يبني منتجات الذكاء الاصطناعي قائدا تقنيا وشريكا مؤسسا في Appraiva، ويدير Royal Abraj Group من دبي."
+  },
+  "ar/work/appraiva.html": {
+    "previous": "أحمدرضا صمدي شريك مؤسس وقائد تقني في Appraiva، ويعمل عن بُعد من دبي في المعلومات العقارية بالذكاء الاصطناعي لدى الشركة الموجودة في كليفلاند، أوهايو.",
+    "description": "كيف تربط Appraiva صورة بالسجل العقاري الصحيح؟ يشرح أحمدرضا صمدي تحليل الصور ومطابقة العقارات وإثراء البيانات التي يستخدمها المستثمر للبحث عن الفرص.",
+    "previous_title": "أحمدرضا صمدي في Appraiva | من صور العقارات إلى دعم القرار",
+    "title": "كيف يربط أحمدرضا صمدي صور العقارات ببياناتها في Appraiva"
+  },
+  "ar/work/royal-abraj.html": {
+    "previous": "أحمدرضا صمدي شريك مؤسس ورئيس تنفيذي في Royal Abraj Group في دبي، ويقود الاستراتيجية الرقمية والتكنولوجيا في الوساطة العقارية وخدمات تخليص المستندات.",
+    "description": "تتبع رحلة استفسار في Royal Abraj Group بدبي. يربط أحمدرضا صمدي طلبات الموقع بنظام متابعة العملاء وبوابة العميل لأعمال الوساطة العقارية وتخليص المستندات.",
+    "previous_title": "أحمدرضا صمدي في مجموعة رويال أبراج | الاستراتيجية الرقمية",
+    "title": "دور أحمدرضا صمدي في رويال أبراج بدبي من الطلب إلى المتابعة"
+  },
+  "ar/writing/ai-agent-safety-boundaries.html": {
+    "previous": "ما الحدود المطلوبة عندما يستطيع مساعد الذكاء الاصطناعي تنفيذ إجراءات؟ يشرح أحمدرضا صمدي الصلاحيات وNVIDIA OpenShell والتصميم المرجعي Sentry.",
+    "description": "حدّد الحساب والبيانات والأدوات المتاحة لوكيل الذكاء الاصطناعي. تعرّف إلى كيفية ضبط الصلاحيات، ومتى يحتاج الوكيل إلى موافقة شخص، وكيف تُلغى صلاحية الوصول.",
+    "previous_title": "أمان وكلاء الذكاء الاصطناعي: حدود قبل التنفيذ | أحمدرضا صمدي",
+    "title": "أمن وكلاء الذكاء الاصطناعي وصلاحيات الأدوات وموافقة الإنسان",
+    "superseded_description": "حدد الحساب والبيانات والأدوات التي يستطيع وكيل الذكاء الاصطناعي استخدامها. تعرف إلى موضع فرض الصلاحيات ومتى يتطلب الإجراء موافقة شخص وكيف يسحب الوصول."
+  },
+  "ar/writing/avm-vs-appraisal.html": {
+    "previous": "اختر عملية التقييم المناسبة لقرارك؛ قارن نماذج التقييم الآلية وآراء الوسطاء والتقييمات المهنية، ثم دقق في هوية العقار والتواريخ والأدلة وعدم اليقين.",
+    "description": "قارن نموذج التقييم الآلي برأي الوسيط وتقييم الخبير. تعرّف إلى أثر قلة المبيعات المشابهة وحالة العقار غير المعروفة والغرض من التقدير في اختيار الطريقة.",
+    "previous_title": "التقييم الآلي أم المهني: أيهما يناسب قرارك؟",
+    "title": "تقدير آلي أم تقييم خبير عند قلة مبيعات العقارات المشابهة؟"
+  },
+  "ar/writing/connected-ai-apps.html": {
+    "previous": "ماذا يحدث عندما تربط تطبيقاً بـ ChatGPT أو Gemini؟ دليل عملي عن الحساب والصلاحيات والفرق بين القراءة والتنفيذ والموافقة قبل الربط.",
+    "description": "عندما تربط تطبيقا بخدمة ChatGPT أو Gemini، راجع الحساب ونطاق الصلاحيات. تعرّف إلى الفرق بين قراءة البيانات وتنفيذ إجراء يحتاج منك إلى موافقة.",
+    "previous_title": "ربط تطبيقات الذكاء الاصطناعي: الأذونات والموافقة | أحمدرضا صمدي",
+    "title": "ماذا يمكن لتطبيق متصل بالذكاء الاصطناعي قراءته أو تغييره؟"
+  },
+  "ar/writing/foldable-two-batteries.html": {
+    "previous": "لماذا يمكن لهاتف قابل للطي أن يضع بطارية في كل نصف ويعرض نسبة شحن واحدة؟ شرح أحمدرضا صمدي بمثال توضيحي لا يفترض تفاصيل توصيلات آبل.",
+    "description": "اكتشف كيف تغذي بطاريتان هاتفا قابلا للطي مع ظهور نسبة شحن واحدة. يوضح اختلاف سعة الخليتين لماذا قد يعطي متوسط النسبتين صورة خاطئة عن الشحن المتبقي.",
+    "previous_title": "بطاريتان وهاتف قابل للطي: كيف تعمل قراءة الشحن؟ | أحمدرضا صمدي",
+    "title": "هل يضم الهاتف القابل للطي بطاريتين وكيف يعرض نسبة الشحن؟"
+  },
+  "ar/writing/how-satellite-messaging-works.html": {
+    "previous": "يشرح أحمدرضا صمدي مسار الرسالة من الهاتف إلى القمر الصناعي ثم الشبكات الأرضية، وما يجب التحقق منه قبل السفر خارج التغطية.",
+    "description": "تتبع رسالة يرسلها هاتف مدعوم مباشرة إلى قمر صناعي ثم إلى محطة أرضية. تعرف إلى أثر انكشاف السماء في الاتصال وسبب تأخر وصول الرسالة أحيانا مقارنة بالرسائل العادية.",
+    "previous_title": "كيف تعمل الرسائل عبر الأقمار الصناعية؟ | أحمدرضا صمدي",
+    "title": "كيف يرسل الهاتف رسالة عبر القمر الصناعي عند غياب الشبكة؟"
+  },
+  "ar/writing/how-zip-files-work.html": {
+    "previous": "يجمع ZIP الملفات ويمكنه ضغطها دون فقدان البايتات الأصلية. تعرّف على DEFLATE وسبب صغر التوفير في JPG وMP4 والفرق بين الضغط والتشفير.",
+    "description": "تعرّف إلى طريقة ضغط ZIP للبيانات المتكررة واستعادة الملف الأصلي كاملا. يوضح المثال لماذا قد لا ينخفض حجم مجلد الصور أو الفيديو كثيرا بعد الضغط.",
+    "previous_title": "كيف يعمل ضغط ZIP ولماذا لا يصغر الفيديو كثيرًا؟ | أحمدرضا صمدي",
+    "title": "كيف يضغط ملف ZIP البيانات ويستعيدها من دون فقد أي بايت؟"
+  },
+  "ar/writing/incognito-private-browsing.html": {
+    "previous": "يحد التصفح المتخفي مما يحفظه Chrome على الجهاز، لكنه لا يخفي زيارتك عن الموقع أو عنوان IP. شرح عملي لما يتغير عند إغلاق جميع النوافذ المتخفية.",
+    "description": "ماذا يختفي من الجهاز بعد إغلاق نافذة التصفح المتخفي؟ تتبع مثالا لشراء هدية يميز بين سجل المتصفح وملفات الارتباط والتنزيلات وما يحتفظ به الموقع.",
+    "previous_title": "ما الذي يخفيه التصفح المتخفي ومن يستطيع رؤيتك؟ | أحمدرضا صمدي",
+    "title": "ماذا يخفي التصفح المتخفي ومن يستطيع رؤية نشاطك على الويب؟"
+  },
+  "ar/writing/iphone-duo-price-per-day.html": {
+    "previous": "فيلم مدته 104 ثوانٍ يحوّل فرق سعر الإطلاق الأمريكي بين iPhone Duo وiPhone 18 Pro، البالغ 800 دولار، إلى مقارنة يومية مع توضيح الافتراضات.",
+    "description": "قسّم فرق سعر الإطلاق في الولايات المتحدة البالغ 800 دولار على أيام الاستخدام. راجع مثال الأقساط وأثر عدم اليقين بشأن سعر إعادة البيع في حساب تكلفة الاقتناء.",
+    "previous_title": "iPhone Duo: فرق السعر لكل يوم | أحمدرضا صمدي",
+    "title": "ما فرق السعر اليومي بين آيفون Duo وآيفون 18 برو عند الشراء؟"
+  },
+  "ar/writing/jev-ai-decision-model.html": {
+    "previous": "ما هو Jev من TypeSafe AI؟ الفرق بين نموذج القرار وبين GPT وClaude، وما يظهره اختبار Banking77 الأولي، وكيفية اختباره كطبقة توجيه.",
+    "description": "اطلع على وصف TypeSafe لنموذج Jev والفرق بين اختيار نتيجة من مجموعة محددة وإجابة المحادثة. ما الذي ينبغي فحصه قبل إسناد توجيه مهمة عمل إلى النموذج؟",
+    "previous_title": "Jev: نموذج قرار بالذكاء الاصطناعي | أحمدرضا صمدي",
+    "title": "ما نموذج Jev لاتخاذ القرارات وكيف يوجّه مهمة في سير العمل؟"
+  },
+  "ar/writing/passkeys-face-id.html": {
+    "previous": "يثبت مفتاح المرور إمكانية استخدام مفتاح خاص، ويوافق Face ID محليًا على استخدامه. ما الذي يستقبله الموقع وما الذي يجب فحصه لاستعادة الحساب؟",
+    "description": "يتيح لك Face ID الموافقة على استخدام مفتاح المرور على جهازك. تعرّف إلى ما يتحقق منه الموقع عند تسجيل الدخول، ولماذا لا يحتاج إلى صورة وجهك أو إلى مفتاحك الخاص.",
+    "previous_title": "مفتاح المرور ودور Face ID في الدخول | أحمدرضا صمدي",
+    "title": "ما الفرق بين مفتاح المرور وFace ID وما الذي يستلمه الموقع؟",
+    "superseded_description": "يوافق Face ID على استخدام مفتاح المرور داخل الجهاز. تتبع تسجيل الدخول لتعرف كيف يتحقق الموقع من الدليل المشفر وأين تبقى بيانات الوجه وكيف تستعيد الحساب."
+  },
+  "ar/writing/verify-ai-image-claims.html": {
+    "previous": "خطوات عملية للتحقق من الصورة والادعاء المصاحب لها: ابحث عن المصدر، وتتبّع استخداماتها السابقة، وافحص إشارات المنشأ، واطلب تأكيداً مستقلاً.",
+    "description": "ابدأ بمصدر الصورة ثم جرّب البحث العكسي وقارن الأدلة المستقلة. تعرّف إلى ما تكشفه إشارات المنشأ عند فحص ادعاء عن صورة أو عن طريقة إنشائها.",
+    "previous_title": "كيف تتحقق من الادعاء المصاحب لصورة؟ | أحمدرضا صمدي",
+    "title": "كيف تتحقق من مصدر صورة ومن ادعاء صنعها بالذكاء الاصطناعي؟"
+  },
+  "ar/writing/why-full-storage-slows-computer.html": {
+    "previous": "التخزين مساحة للعمل أيضًا. شرح بعشر شرائح للملفات المؤقتة وامتداد عمل الذاكرة إلى التخزين وإدارة SSD، مع خطوات عملية لتحرير المساحة.",
+    "description": "يحتاج الحاسوب إلى مساحة خالية للملفات المؤقتة ولنقل بعض البيانات من الذاكرة إلى القرص. تعرّف إلى أثر امتلاء وحدة التخزين في الأداء ومتى يفيد إخلاء مساحة.",
+    "previous_title": "لماذا يبطئ الحاسوب عند امتلاء التخزين؟ | أحمدرضا صمدي",
+    "title": "هل امتلاء وحدة التخزين يبطئ الحاسوب حتى مع وجود ذاكرة متاحة؟",
+    "superseded_description": "تحتاج الملفات المؤقتة وفائض الذاكرة وأعمال صيانة قرص SSD إلى مساحة خالية. تعرف إلى أثر امتلاء القرص في أداء الحاسوب والحالات التي يفيد فيها تحرير مساحة."
+  },
+  "fa/about.html": {
+    "previous": "زندگی‌نامه احمدرضا صمدی، کارآفرین فناوری ساکن دبی؛ هم‌بنیان‌گذار و راهبر فنی Appraiva و هم‌بنیان‌گذار و مدیرعامل گروه رویال ابراج. سوابق و پروژه‌های منتخب.",
+    "description": "با احمدرضا صمدی، معروف به احمد صمدی، آشنا شوید. او از دبی به‌عنوان هم‌بنیان‌گذار و راهبر فنی Appraiva محصولات هوش مصنوعی می‌سازد و مدیرعامل Royal Abraj Group است.",
+    "previous_title": "درباره احمدرضا صمدی | زندگی‌نامه و سوابق حرفه‌ای",
+    "title": "زندگی‌نامه احمدرضا صمدی، کارآفرین فناوری و مدیر کسب‌وکار"
+  },
+  "fa/work/appraiva.html": {
+    "previous": "احمدرضا صمدی، هم‌بنیان‌گذار و راهبر فنی Appraiva، از دبی برای این شرکت مستقر در کلیولندِ اوهایو در حوزهٔ هوش مصنوعی املاک به‌صورت دورکار فعالیت می‌کند.",
+    "description": "در Appraiva چطور معلوم می‌شود عکس به کدام ملک تعلق دارد؟ احمدرضا صمدی توضیح می‌دهد که تحلیل تصویر و تطبیق آن با سوابق ملک چگونه به جست‌وجوی سرمایه‌گذار کمک می‌کند.",
+    "previous_title": "احمدرضا صمدی در Appraiva | از تصویر ملک تا پشتیبانی از تصمیم",
+    "title": "نقش احمدرضا صمدی در Appraiva؛ از تصویر ملک تا جست‌وجو",
+    "superseded_description": "در Appraiva یک عکس چگونه به پرونده ملک درست وصل می‌شود؟ احمدرضا صمدی از تحلیل تصویر، تطبیق ملک و تکمیل داده برای جست‌وجوی فرصت‌های ملکی می‌گوید."
+  },
+  "fa/work/royal-abraj.html": {
+    "previous": "احمدرضا صمدی هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group در دبی است و راهبرد دیجیتال و فناوری را در حوزه‌های کارگزاری املاک و خدمات انجام امور اسناد هدایت می‌کند.",
+    "description": "مسیر یک درخواست را در گروه رویال ابراج دبی دنبال کنید. احمدرضا صمدی توضیح می‌دهد که وب‌سایت، سامانهٔ مدیریت ارتباط با مشتری و درگاه مشتری چگونه به هم وصل می‌شوند.",
+    "previous_title": "احمدرضا صمدی در گروه رویال ابراج | استراتژی دیجیتال",
+    "title": "احمدرضا صمدی در رویال ابراج دبی؛ از درخواست تا پیگیری",
+    "superseded_description": "مسیر یک درخواست در Royal Abraj Group دبی را دنبال کنید. ببینید احمدرضا صمدی چطور سایت، پیگیری در CRM و پورتال مشتری را در کارگزاری و خدمات اسناد به هم وصل می‌کند."
+  },
+  "fa/writing/ai-agent-safety-boundaries.html": {
+    "previous": "وقتی دستیار هوش مصنوعی می‌تواند اقدام کند، چه مرزهایی لازم است؟ توضیح احمدرضا صمدی درباره مجوزها، NVIDIA OpenShell و طرح مرجع Sentry.",
+    "description": "برای عامل هوش مصنوعی مشخص کنید کدام حساب، داده و ابزار را در اختیار دارد. ببینید مجوز کجا اعمال می‌شود، چه اقدامی تأیید انسانی می‌خواهد و دسترسی چگونه لغو می‌شود.",
+    "previous_title": "امنیت عامل‌های هوش مصنوعی: تعیین مرز پیش از اقدام | احمدرضا صمدی",
+    "title": "امنیت عامل هوش مصنوعی؛ تعیین دسترسی ابزارها و تأیید انسانی"
+  },
+  "fa/writing/ai-home-value-estimates.html": {
+    "previous": "در ارزش‌گذاری ملک با هوش مصنوعی، اطلاعات به‌روز، فروش‌های قابل‌مقایسه و عدم‌قطعیت را بررسی کنید و اختلاف برآوردها را با شواهد بسنجید.",
+    "description": "وقتی دو ابزار هوش مصنوعی برای یک خانه قیمت‌های متفاوت می‌دهند، داده‌های هر کدام را بررسی کنید. تاریخ فروش، ملک‌های مشابه و عدم قطعیت چه نقشی دارند؟",
+    "previous_title": "ارزش‌گذاری ملک با هوش مصنوعی: محدودیت‌های برآورد",
+    "title": "چطور برآورد هوش مصنوعی از قیمت خانه را با معاملات بسنجیم؟",
+    "superseded_title": "چطور برآورد هوش مصنوعی از قیمت خانه را با فروش‌ها بسنجیم؟"
+  },
+  "fa/writing/avm-vs-appraisal.html": {
+    "previous": "فرآیند ارزیابی برای تصمیم گیری را انتخاب کنید: AVMها، نظرات کارگزاران و ارزیابی‌ها را مقایسه کنید، سپس هویت، تاریخ‌ها، شواهد و عدم قطعیت را بررسی کنید.",
+    "description": "وقتی فروش مشابه کم است یا وضعیت خانه روشن نیست، چه مدرکی برای ارزش‌گذاری لازم است؟ مدل خودکار، نظر کارگزار و ارزیابی کارشناس را بر اساس کاربردشان مقایسه کنید.",
+    "previous_title": "مدل خودکار یا ارزیابی حرفه‌ای؛ کدام مناسب است؟",
+    "title": "تفاوت مدل ارزش‌گذاری خودکار ملک و ارزیابی کارشناس چیست؟"
+  },
+  "fa/writing/connected-ai-apps.html": {
+    "previous": "وقتی اپی را به ChatGPT یا Gemini وصل می‌کنید چه اتفاقی می‌افتد؟ راهنمایی کاربردی درباره حساب کاربری، مجوزها، تفاوت «خواندن» و «انجام دادن» و تأیید پیش از اتصال.",
+    "description": "اگر برنامه‌ای را به ChatGPT یا Gemini وصل کنید، چه چیزهایی را می‌تواند بخواند یا تغییر دهد؟ حساب، دامنه دسترسی و اقدام‌هایی را که تأیید می‌خواهند بررسی کنید.",
+    "previous_title": "اتصال اپ‌ها به هوش مصنوعی: دسترسی، محدوده و تأیید | احمدرضا صمدی",
+    "title": "اتصال برنامه به هوش مصنوعی چه دسترسی و مجوزی می‌دهد؟"
+  },
+  "fa/writing/foldable-two-batteries.html": {
+    "previous": "چرا گوشی تاشو می‌تواند در هر نیمه یک باتری داشته باشد اما یک درصد شارژ نشان دهد؟ توضیح احمدرضا صمدی با مثالی فرضی، بدون حدس درباره مدار اپل.",
+    "description": "گوشی تاشو چطور شارژ دو باتری را با یک عدد نشان می‌دهد؟ وقتی ظرفیت باتری‌ها متفاوت است، میانگین سادهٔ درصد شارژ آن‌ها لزوماً انرژی باقی‌مانده را نشان نمی‌دهد.",
+    "previous_title": "دو باتری، یک گوشی تاشو و نشانگر شارژ | احمدرضا صمدی",
+    "title": "چرا گوشی تاشو با دو باتری یک عدد برای شارژ نشان می‌دهد؟",
+    "superseded_title": "چرا گوشی تاشو دو باتری دارد اما یک درصد شارژ نشان می‌دهد؟",
+    "superseded_description": "دو باتری یک گوشی تاشو چگونه با هم یک دستگاه را روشن نگه می‌دارند؟ ببینید تفاوت ظرفیت سلول‌ها چرا میانگین ساده دو درصد را به معیار نامناسبی برای شارژ تبدیل می‌کند."
+  },
+  "fa/writing/how-contactless-cards-work.html": {
+    "previous": "پایانه پرداخت برای لحظه‌ای تراشه کارت بدون تماس غیرفعال را روشن می‌کند. مسیر انرژی و داده پرداخت را در یک ضربه دنبال کنید.",
+    "description": "تراشهٔ کارت بانکی برای پرداخت غیرتماسی به باتری نیاز ندارد. ببینید وقتی کارت را نزدیک کارت‌خوان می‌گیرید، دستگاه چطور به تراشه انرژی می‌رساند و پاسخ آن را می‌خواند.",
+    "previous_title": "کارت بدون تماس چطور بدون باتری کار می‌کند؟ | احمدرضا صمدی",
+    "title": "کارت بانکی بدون باتری چطور پرداخت غیرتماسی انجام می‌دهد؟",
+    "superseded_title": "کارت بانکی بدون تماس چطور بدون باتری پرداخت را انجام می‌دهد؟",
+    "superseded_description": "مسیر پرداخت بدون تماس را از میدان رادیویی کارت‌خوان تا تراشه کارت دنبال کنید. ببینید کارت چطور انرژی می‌گیرد و داده پرداخت را در همان تماس کوتاه پس می‌فرستد."
+  },
+  "fa/writing/how-many-coffees-to-break-even.html": {
+    "previous": "کافه‌ای فرضی با فروش ۱۰۰ قهوه، ۵۰۰ دلار درآمد و صفر سود عملیاتی دارد. هزینه‌ها را دنبال کنید تا حاشیه مشارکت و نقطه سربه‌سر را بفهمید.",
+    "description": "کافه‌ای فرضی با فروش ۱۰۰ فنجان قهوه ۵۰۰ دلار درآمد دارد، اما سود عملیاتی‌اش صفر است. قیمت، هزینهٔ هر فنجان و هزینه‌های ثابت چگونه نقطهٔ سربه‌سر را تعیین می‌کنند؟",
+    "previous_title": "یک کافه چند فنجان قهوه باید بفروشد تا به سود برسد؟ | احمدرضا صمدی",
+    "title": "کافه برای رسیدن به نقطه سربه‌سر چند فنجان قهوه باید بفروشد؟",
+    "superseded_description": "یک کافه فرضی با فروش ۱۰۰ قهوه ۵۰۰ دلار درآمد دارد و سود عملیاتی‌اش صفر است. با هزینه هر فنجان، هزینه ثابت و قیمت فروش، نقطه سربه‌سر را حساب کنید."
+  },
+  "fa/writing/how-satellite-messaging-works.html": {
+    "previous": "احمدرضا صمدی توضیح می‌دهد پیام گوشی چگونه از ماهواره به شبکه‌های زمینی می‌رسد و پیش از سفر به مناطق بدون پوشش چه چیزهایی را باید بررسی کرد.",
+    "description": "مسیر یک پیام را از گوشی سازگار تا ماهواره و ایستگاه زمینی دنبال کنید. پیش از سفر ببینید پوشش سرویس، دید آسمان و محدودیت تحویل چه اثری روی ارسال پیام دارند.",
+    "previous_title": "پیام‌رسانی ماهواره‌ای چگونه کار می‌کند؟ | احمدرضا صمدی",
+    "title": "وقتی گوشی آنتن ندارد پیام‌رسانی ماهواره‌ای چگونه کار می‌کند؟"
+  },
+  "fa/writing/how-zip-files-work.html": {
+    "previous": "احمدرضا صمدی ساختار ZIP، فشرده‌سازی DEFLATE، داده‌های تکراری و کدگذاری هافمن را توضیح می‌دهد؛ چرا عکس و ویدئو گاهی کوچک‌تر نمی‌شوند؟",
+    "description": "ببینید فشرده‌سازی بدون اتلاف ZIP چطور از الگوهای تکراری استفاده می‌کند و همه بایت‌ها را برمی‌گرداند. چرا پوشه عکس یا ویدیو گاهی چندان کوچک‌تر نمی‌شود؟",
+    "previous_title": "فایل ZIP چگونه کار می‌کند؟ فشرده‌سازی داده | احمدرضا صمدی",
+    "title": "فایل ZIP چگونه داده را فشرده و دوباره بدون تغییر باز می‌کند؟"
+  },
+  "fa/writing/iphone-duo-price-per-day.html": {
+    "previous": "فیلمی ۱۰۴ ثانیه‌ای اختلاف قیمت اولیه ۸۰۰ دلاری آیفون Duo و آیفون 18 Pro در آمریکا را به مقایسه‌ای روزانه تبدیل می‌کند و فرض‌ها را روشن می‌سازد.",
+    "description": "اختلاف ۸۰۰ دلاری قیمت عرضه دو گوشی در آمریکا را بر روزهای استفاده تقسیم کنید. مثال پرداخت قسطی را ببینید و اثر نامعلوم بودن قیمت فروش دوباره را در هزینه بسنجید.",
+    "previous_title": "آیفون Duo: محاسبه اختلاف قیمت در هر روز | احمدرضا صمدی",
+    "title": "اختلاف قیمت آیفون Duo و آیفون ۱۸ پرو روزی چقدر می‌شود؟"
+  },
+  "fa/writing/jev-ai-decision-model.html": {
+    "previous": "Jev از TypeSafe AI چیست؟ تفاوت یک مدل تصمیم‌گیر با GPT و Claude، نتیجه آزمون اولیه Banking77 و روش آزمودن آن به‌عنوان لایه مسیریابی.",
+    "description": "ببینید TypeSafe مدل Jev را چگونه معرفی می‌کند، انتخاب از چند نتیجه مشخص چه فرقی با پاسخ چت دارد و پیش از سپردن مسیر یک کار به مدل چه چیزی باید بررسی شود.",
+    "previous_title": "Jev: مدل تصمیم‌گیر هوش مصنوعی | احمدرضا صمدی",
+    "title": "مدل تصمیم‌گیری Jev در یک فرایند کسب‌وکار چه کاری می‌کند؟"
+  },
+  "fa/writing/passkeys-face-id.html": {
+    "previous": "احمدرضا صمدی توضیح می‌دهد پاس‌کی چگونه کار می‌کند، Face ID چه نقشی دارد، سایت چه اطلاعاتی می‌گیرد و بازیابی پس از گم‌شدن گوشی به چه چیزهایی بستگی دارد.",
+    "description": "Face ID استفاده از پاسکی یا کلید عبور را روی دستگاه تأیید می‌کند. مسیر ورود را دنبال کنید تا ببینید سایت چه مدرکی می‌گیرد و داده چهره چرا روی دستگاه می‌ماند.",
+    "previous_title": "پاس‌کی چیست و چرا Face ID رمز عبور شما نیست؟ | احمدرضا صمدی",
+    "title": "پاسکی یا کلید عبور چه فرقی با Face ID در ورود به سایت دارد؟"
+  },
+  "fa/writing/verify-ai-image-claims.html": {
+    "previous": "برای بررسی عکس و ادعای همراه آن، منبع اصلی را پیدا کنید، جست‌وجوی معکوس انجام دهید، نشانه‌های منشأ را ببینید و تأیید مستقل بخواهید.",
+    "description": "برای بررسی یک عکس، منبع نخستین آن را پیدا کنید، جست‌وجوی معکوس انجام دهید و شواهد مستقل را بسنجید. نشانه‌های منشأ تصویر درباره ادعای ساخت آن چه می‌گویند؟",
+    "previous_title": "چگونه ادعای همراه یک عکس را بررسی کنیم؟ | احمدرضا صمدی",
+    "title": "چطور منبع عکس و ادعای ساخت آن با هوش مصنوعی را بررسی کنیم؟"
+  },
+  "fa/writing/why-ai-loses-earlier-chat-context.html": {
+    "previous": "تاریخچه چت، زمینه فعال، خلاصه، حافظه ذخیره‌شده و آموزش متفاوت‌اند. علت جا افتادن جزئیات قبلی و راه کمک به چت‌بات را بشناسید.",
+    "description": "ممکن است بخشی از تاریخچه چت را ببینید که دیگر در اختیار مدل نیست. تفاوت پنجره زمینه، خلاصه و حافظه ذخیره‌شده را بررسی کنید تا علت جاافتادن جزئیات روشن شود.",
+    "previous_title": "چرا هوش مصنوعی گفته‌های قبلی را فراموش می‌کند؟ | احمدرضا صمدی",
+    "title": "چرا هوش مصنوعی در گفت‌وگوی طولانی پیام قبلی را گم می‌کند؟"
+  },
+  "fa/writing/why-full-storage-slows-computer.html": {
+    "previous": "فضای ذخیره‌سازی، فضای کار هم هست. توضیحی ده‌اسلایدی درباره فایل‌های موقت، سرریز رم و کارهای داخلی SSD با راهنمای آزاد کردن فضا.",
+    "description": "فایل‌های موقت، سرریز حافظه و کارهای داخلی SSD به فضای خالی نیاز دارند. ببینید پر شدن درایو چه اثری بر سرعت رایانه دارد و چه زمانی آزاد کردن فضا کمک می‌کند.",
+    "previous_title": "چرا فضای ذخیره‌سازی پر، کامپیوتر را کند می‌کند؟ | احمدرضا صمدی",
+    "title": "چرا پر شدن درایو حتی با وجود رم آزاد کامپیوتر را کند می‌کند؟"
+  },
+  "fa/writing/why-phone-stops-charging-at-80.html": {
+    "previous": "محدودیت انتخابی، برنامهٔ یادگرفته‌شده و توقف به‌خاطر گرما شبیه هم دیده می‌شوند. علت و روش ادامهٔ شارژ در هرکدام فرق دارد.",
+    "description": "توقف شارژ گوشی روی ۸۰ درصد می‌تواند از محدودیت تنظیم‌شده، عادت شارژ یا گرما باشد. با بررسی تنظیمات و شرایط لحظه توقف، این سه علت را از هم تشخیص دهید.",
+    "previous_title": "چرا شارژ گوشی روی ۸۰ درصد متوقف می‌شود؟ | احمدرضا صمدی",
+    "title": "چرا شارژ گوشی روی ۸۰ درصد می‌ایستد و چه چیزی را بررسی کنیم؟"
+  },
+  "fa/writing/why-usb-c-cables-differ.html": {
+    "previous": "USB-C شکل کانکتور را مشخص می‌کند. توان، سرعت انتقال فایل و پشتیبانی تصویر قابلیت‌های جداگانه‌اند که باید در کل اتصال بررسی شوند.",
+    "description": "ظاهر یکسان کابل‌های USB-C توان شارژ، سرعت انتقال داده یا پشتیبانی تصویر را مشخص نمی‌کند. پیش از انتخاب کابل، قابلیت‌های شارژر، کابل و دستگاه را بررسی کنید.",
+    "previous_title": "چرا کابل‌های USB-C متفاوت کار می‌کنند؟ | احمدرضا صمدی",
+    "title": "چرا دو کابل USB-C با سر یکسان سرعت شارژ متفاوتی دارند؟"
+  },
+  "fa/writing/why-wifi-is-slow-with-full-bars.html": {
+    "previous": "آنتن کامل وای‌فای قدرت سیگنال تا روتر را نشان می‌دهد، نه سرعت کل مسیر اینترنت. علت‌های دیگر کندی و روش مقایسه را بشناسید.",
+    "description": "خط‌های آنتن وای‌فای قدرت سیگنال تا روتر را نشان می‌دهند. برای پیدا کردن علت کندی، شلوغی شبکه محلی، اتصال اینترنت و سرویسی را که استفاده می‌کنید جداگانه بسنجید.",
+    "previous_title": "چرا با آنتن کامل وای‌فای، اینترنت کند است؟ | احمدرضا صمدی",
+    "title": "چرا با وجود آنتن کامل وای‌فای، سرعت اینترنت همچنان کم است؟"
+  },
+  "press.html": {
+    "previous": "Download biographies and a portrait of Ahmadreza Samadi, who builds AI products at Appraiva and runs Royal Abraj Group in Dubai. Find his roles and public work.",
+    "description": "Find Ahmadreza Samadi’s short and long biographies, portrait and official profiles. Check his Dubai base and his current roles at Appraiva and Royal Abraj Group.",
+    "previous_title": "Press & media kit | Ahmadreza Samadi",
+    "title": "Ahmadreza Samadi press kit, biography and founder roles"
+  },
+  "tools/dubai-purchase-cost.html": {
+    "previous": "Estimate buyer-paid components for a completed residential purchase using dated fee rules, explicit payer shares and your actual quotes.",
+    "description": "Estimate the fees a buyer pays on a completed residential property in Dubai. Enter your quotes and payer shares to see how much each cost adds to the purchase.",
+    "previous_title": "Dubai purchase costs calculator | Ahmadreza Samadi",
+    "title": "Dubai property purchase costs and buyer fee calculator"
+  },
+  "tools/dubai-rental-yield.html": {
+    "previous": "Compare potential gross rent with net operating income after vacancy, service charges and your own costs. No market rates or returns are assumed.",
+    "description": "Calculate gross and net rental yield for a Dubai property using your own rent, vacancy and expenses. See how service charges change the income you keep.",
+    "previous_title": "Dubai rental yield: gross versus net | Ahmadreza Samadi",
+    "title": "Dubai rental yield calculator for gross and net income"
+  },
+  "writing/ai-agent-safety-boundaries.html": {
+    "previous": "Before an AI agent acts, define its account, data, tools and approval rules. A practical guide to permissions enforced outside the model and revoking access.",
+    "description": "Define which accounts, data and tools an AI agent can access. See where permissions are enforced, when a person approves an action and how to revoke access.",
+    "previous_title": "AI Agent Safety: Accounts, Tools and Approval | Ahmadreza Samadi",
+    "title": "AI agent safety policy for accounts, tools and approvals"
+  },
+  "writing/ai-home-value-estimates.html": {
+    "previous": "AI property valuation needs current facts, comparable sales and uncertainty checks. Learn how to review an estimate and resolve conflicting valuations.",
+    "description": "When two AI estimates disagree on a home's value, start with the facts each used. Review the sale dates, comparable homes and uncertainty before relying on a figure.",
+    "previous_title": "AI property valuation: what an estimate misses",
+    "title": "How to check an AI home value estimate against sales"
+  },
+  "writing/avm-vs-appraisal.html": {
+    "previous": "Choose the valuation process for the decision: compare AVMs, broker opinions and appraisals, then examine identity, dates, evidence and uncertainty.",
+    "description": "Compare an automated valuation, a broker opinion and an appraisal. See how missing sales, uncertain property condition and the intended use affect the choice.",
+    "previous_title": "AVM vs appraisal: which fits your decision?",
+    "title": "AVM vs. appraisal when comparable sales are limited"
+  },
+  "writing/chatgpt-intelligent-ui-explained.html": {
+    "previous": "A simple explanation of ChatGPT's interactive answers, the 7 October announcement and a fictional budget that shows why assumptions still matter.",
+    "description": "Explore ChatGPT's interactive answers using a fictional budget. Changing a number shows what the interface can calculate and which assumptions still need checking.",
+    "previous_title": "How does ChatGPT's Intelligent UI work? | Ahmadreza Samadi",
+    "title": "How ChatGPT’s intelligent UI turns answers into tools"
+  },
+  "writing/connected-ai-apps.html": {
+    "previous": "What happens when you connect an app to ChatGPT or Gemini? A practical guide to accounts, permissions, reading versus acting, and approval before you connect.",
+    "description": "What can a connected AI app read or change? Use examples from ChatGPT and Gemini to check the account, the scope of access and the actions that require approval.",
+    "previous_title": "Connected AI Apps: Access, Scope and Approval | Ahmadreza Samadi",
+    "title": "Connecting apps to AI: account access and approvals"
+  },
+  "writing/foldable-two-batteries.html": {
+    "previous": "Two batteries can power one foldable phone with one charge reading. See why capacity and usable energy matter more than averaging two percentages.",
+    "description": "See how two batteries power a folding phone with one charge indicator. Different cell capacities explain why averaging the two percentages can mislead you.",
+    "previous_title": "Why Foldable Phones Have Two Batteries | Ahmadreza Samadi",
+    "title": "Do foldable phones have two batteries and one charge level?"
+  },
+  "writing/how-contactless-cards-work.html": {
+    "previous": "A payment terminal briefly powers the chip in a passive contactless card. Follow the energy and the payment data through a tap.",
+    "description": "Trace a contactless payment from the reader's radio field to the card's chip. See how a tap supplies power and carries payment data back to the terminal.",
+    "previous_title": "Contactless cards without batteries | Ahmadreza Samadi",
+    "title": "How contactless cards work without a battery inside"
+  },
+  "writing/how-many-coffees-to-break-even.html": {
+    "previous": "A fictional cafe sells 100 coffees for $500 and makes $0 operating profit. Follow its costs to understand contribution and break-even.",
+    "description": "A fictional café sells 100 coffees for $500 and earns no operating profit. Follow the price, variable cost per cup and fixed costs to calculate its break-even point.",
+    "previous_title": "How many coffees to break even? | Ahmadreza Samadi",
+    "title": "How many coffees must a café sell to break even each day?"
+  },
+  "writing/how-satellite-messaging-works.html": {
+    "previous": "Follow a supported phone message from a satellite back to Earth. Check service support, a clear sky view and delivery limits before going off-grid.",
+    "description": "Trace a phone message through a satellite to a ground station. See why delivery can take longer than a regular text and how sky visibility affects the connection.",
+    "previous_title": "How Phones Send Satellite Messages | Ahmadreza Samadi",
+    "title": "How satellite messaging works when your phone has no signal"
+  },
+  "writing/how-zip-files-work.html": {
+    "previous": "ZIP bundles files and can use lossless compression. Learn how DEFLATE restores every byte, why JPG and MP4 may barely shrink, and why compression is not encryption.",
+    "description": "See how lossless ZIP compression stores repeating data and rebuilds the original file. Find out why a folder of photos or videos may shrink very little.",
+    "previous_title": "How ZIP compression works | Ahmadreza Samadi",
+    "title": "How ZIP files compress data and restore every byte"
+  },
+  "writing/incognito-private-browsing.html": {
+    "previous": "A simple gift-shopping story explains Incognito, cookies, website records, saved files and what private browsing actually hides. By Ahmadreza Samadi.",
+    "description": "When you close an Incognito window, what disappears from your device? Follow a gift purchase through browser history, cookies, saved files and website records.",
+    "previous_title": "Does Incognito actually make you invisible? | Ahmadreza Samadi",
+    "title": "What Incognito mode hides and who can see your browsing"
+  },
+  "writing/iphone-duo-price-per-day.html": {
+    "previous": "A 104-second film turns the $800 US launch-price gap between iPhone Duo and iPhone 18 Pro into a daily comparison, with the assumptions made clear.",
+    "description": "Compare the $800 US launch-price gap by day of ownership. Check the installment example and see how an uncertain resale value affects the cost calculation.",
+    "previous_title": "iPhone Duo: the $800 gap per day | Ahmadreza Samadi",
+    "title": "iPhone Duo vs. iPhone 18 Pro: the price gap per day"
+  },
+  "writing/jev-ai-decision-model.html": {
+    "previous": "How TypeSafe describes Jev, how bounded decisions differ from chatbot replies, and what to check before using a model to route a real workflow.",
+    "description": "See how TypeSafe describes Jev, how it picks from a bounded set of outcomes and what you need to check before a model's decision can route a business task.",
+    "previous_title": "What is Jev? AI Decision Models Explained | Ahmadreza Samadi",
+    "title": "What the Jev AI decision model does in a business workflow"
+  },
+  "writing/passkeys-face-id.html": {
+    "previous": "A passkey proves access to a private key; Face ID approves its use locally. Learn what the website receives and what to check for account recovery.",
+    "description": "Face ID unlocks a passkey locally. Follow a sign-in to see how the site checks the cryptographic proof, where your face data stays and how recovery fits in.",
+    "previous_title": "Passkeys and Face ID explained | Ahmadreza Samadi",
+    "title": "Passkey vs. Face ID: what a website actually receives"
+  },
+  "writing/verify-ai-image-claims.html": {
+    "previous": "A practical checklist for checking an image and its claim: find the source, reverse-search it, inspect provenance signals and seek independent corroboration.",
+    "description": "Trace a photo back to its source, try a reverse image search and compare independent evidence. Learn what provenance can tell you when a photo is called AI-made.",
+    "previous_title": "How to check an image claim, AI-made or not | Ahmadreza Samadi",
+    "title": "How to verify an image and the claim attached to it"
+  },
+  "writing/why-ai-loses-earlier-chat-context.html": {
+    "previous": "Chat history, working context, summaries, saved memory and training are different things. Understand why a chatbot can miss an earlier detail and how to help.",
+    "description": "Your chat history can contain details the model no longer sees. Compare the context window, summaries and saved memory to understand why a chatbot misses a detail.",
+    "previous_title": "Why AI loses earlier chat context | Ahmadreza Samadi",
+    "title": "Why AI forgets earlier messages in a long conversation"
+  },
+  "writing/why-full-storage-slows-computer.html": {
+    "previous": "Storage is working room too. A ten-slide explainer on temporary files, RAM overflow and SSD housekeeping, with practical cleanup advice.",
+    "description": "See why a nearly full drive leaves less room for temporary files, memory overflow and SSD housekeeping. These examples explain when freeing space can help.",
+    "previous_title": "Why full storage slows a computer | Ahmadreza Samadi",
+    "title": "Does full storage slow down a computer with free RAM?"
+  },
+  "writing/why-phone-stops-charging-at-80.html": {
+    "previous": "A chosen limit, a learned routine and a heat pause can look similar. They have different triggers and different ways to resume charging.",
+    "description": "A phone can pause at 80% because of a charge limit, its learned routine or heat. Check the setting and the conditions around the pause to tell the causes apart.",
+    "previous_title": "Why does your phone stop charging at 80%? | Ahmadreza Samadi",
+    "title": "Why your phone stops charging at 80% and what to check"
+  },
+  "writing/why-usb-c-cables-differ.html": {
+    "previous": "USB-C describes the connector. Power, file-transfer speed and video support are separate capabilities to check in the whole connection.",
+    "description": "Two USB-C cables can look alike and support different charging power, data speeds or video. Check what the cable, charger and device support before choosing one.",
+    "previous_title": "Why USB-C cables work differently | Ahmadreza Samadi",
+    "title": "Why USB-C cables with the same plug charge differently"
+  },
+  "writing/why-wifi-is-slow-with-full-bars.html": {
+    "previous": "Full Wi-Fi bars describe your signal to the router, not the speed of the whole internet route. Learn what else can slow it down and how to compare.",
+    "description": "Full Wi-Fi bars measure signal strength between your device and router. Compare local congestion, the internet connection and the service to locate the slowdown.",
+    "previous_title": "Why is Wi-Fi slow even with full bars? | Ahmadreza Samadi",
+    "title": "Why Wi-Fi can be slow even when you have full bars"
+  }
+}

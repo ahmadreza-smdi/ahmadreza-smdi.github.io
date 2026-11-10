@@ -1,0 +1,40 @@
+{
+  "scheduled_at": "2026-10-28T10:00:00+03:30",
+  "prepared_at": "2026-10-28T16:43:04+03:30",
+  "release_started_at": "2026-10-28T16:43:28+03:30",
+  "content_timestamp": "2026-10-28T16:43:04+03:30",
+  "private_preflight_before_slot": false,
+  "automatic_daily_exception": false,
+  "owner_authorized_catchup": {
+    "owner_instruction_date": "2026-10-28",
+    "key": "2026-10-28",
+    "slug": "tech-trend-assisted-permissions",
+    "bundle_sha256": "3fc094d761f614c912b9ace9a3a9ce9c16d6152ba73f3f1437f52e082e2aff4b",
+    "destination": "https://a-samadi.com",
+    "action": "publish_missed_carousel_once",
+    "not_before": "2026-10-28T10:30:01+03:30",
+    "expires_at": "2026-10-28T23:30:00+03:30"
+  },
+  "format": "carousel_gallery",
+  "human_native_review_claimed": false,
+  "slug": "tech-trend-assisted-permissions",
+  "bundle_sha256": "3fc094d761f614c912b9ace9a3a9ce9c16d6152ba73f3f1437f52e082e2aff4b",
+  "site_checks_passed": 28,
+  "public_paths": [
+    "ar/topics/ai-real-estate.html",
+    "assets/carousels/tech-trend-assisted-permissions/carousel.pdf",
+    "assets/carousels/tech-trend-assisted-permissions/slide-01.png",
+    "assets/carousels/tech-trend-assisted-permissions/slide-02.png",
+    "assets/carousels/tech-trend-assisted-permissions/slide-03.png",
+    "assets/carousels/tech-trend-assisted-permissions/slide-04.png",
+    "assets/carousels/tech-trend-assisted-permissions/slide-05.png",
+    "assets/carousels/tech-trend-assisted-permissions/slide-06.png",
+    "carousels/index.html",
+    "carousels/tech-trend-assisted-permissions.html",
+    "fa/topics/ai-real-estate.html",
+    "llms.txt",
+    "locales/topic-hubs.json",
+    "sitemap.xml",
+    "topics/ai-real-estate.html"
+  ]
+}

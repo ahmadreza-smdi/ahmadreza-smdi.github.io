@@ -1,0 +1,31 @@
+{
+  "scheduled_at": "2026-10-28T21:00:00+03:30",
+  "prepared_at": "2026-10-28T20:30:00+03:30",
+  "release_started_at": "2026-10-28T21:00:14+03:30",
+  "private_preflight_before_slot": true,
+  "content_timestamp": "2026-10-28T21:00:00+03:30",
+  "slug": "business-ai-evaluation-cases",
+  "bundle_sha256": "e59494e77321e3425cd000da0914ba23b7cfb00f41c1cef92506572a0b574cd1",
+  "site_checks_passed": 28,
+  "public_paths": [
+    "ar/topics/ai-real-estate.html",
+    "ar/writing/business-ai-evaluation-cases.html",
+    "ar/writing/index.html",
+    "assets/writing/business-ai-evaluation-cases/captions-en.vtt",
+    "assets/writing/business-ai-evaluation-cases/cover.png",
+    "assets/writing/business-ai-evaluation-cases/film.mp4",
+    "fa/topics/ai-real-estate.html",
+    "fa/writing/business-ai-evaluation-cases.html",
+    "fa/writing/index.html",
+    "llms.txt",
+    "locales/article-hubs.json",
+    "locales/topic-hubs.json",
+    "scripts/check_locale_parity.py",
+    "sitemap.xml",
+    "topics/ai-real-estate.html",
+    "watch/business-ai-evaluation-cases.html",
+    "writing/business-ai-evaluation-cases.html",
+    "writing/feed.xml",
+    "writing/index.html"
+  ]
+}

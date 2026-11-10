@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Cite this analysis and the U.S. Census Bureau ACS 2024 1-year table B25070."
+title: "Metro rent burden: reproducible ACS 2024 point estimates"
+type: software
+authors:
+  - family-names: Samadi
+    given-names: Ahmadreza
+url: "https://a-samadi.com/"
+abstract: "Reproducible descriptive shares at 30% and 50% gross-rent-to-income thresholds. Not-computed units excluded and reported. Published source MOEs retained; derived percentage MOEs not calculated."
+license: MIT
+keywords:
+  - rent burden
+  - ACS
+  - B25070
+  - reproducible analysis
+repository-code: "https://github.com/ahmadreza-smdi/metro-rent-burden"
+version: "1.1.1"
+date-released: "2026-10-17"

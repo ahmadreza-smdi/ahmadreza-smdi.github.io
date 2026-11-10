@@ -1,0 +1,51 @@
+{
+  "scheduled_at": "2026-10-26T21:00:00+03:30",
+  "prepared_at": "2026-10-27T13:10:13+03:30",
+  "content_timestamp": "2026-10-27T13:10:13+03:30",
+  "release_started_at": "2026-10-27T13:12:13+03:30",
+  "slug": "building-digital-twin-data-freshness",
+  "bundle_sha256": "8ffd389d3aa41a27763f6be427b422b3e38852ec69b8393cd4fd24ac7f8b08cb",
+  "public_paths": [
+    "ar/topics/ai-real-estate.html",
+    "ar/writing/building-digital-twin-data-freshness.html",
+    "ar/writing/index.html",
+    "assets/writing/building-digital-twin-data-freshness/captions-en.vtt",
+    "assets/writing/building-digital-twin-data-freshness/cover.png",
+    "assets/writing/building-digital-twin-data-freshness/film.mp4",
+    "fa/topics/ai-real-estate.html",
+    "fa/writing/building-digital-twin-data-freshness.html",
+    "fa/writing/index.html",
+    "llms.txt",
+    "locales/article-hubs.json",
+    "locales/topic-hubs.json",
+    "scripts/check_locale_parity.py",
+    "sitemap.xml",
+    "topics/ai-real-estate.html",
+    "watch/building-digital-twin-data-freshness.html",
+    "writing/building-digital-twin-data-freshness.html",
+    "writing/feed.xml",
+    "writing/index.html"
+  ],
+  "catch_up_authorization": {
+    "owner_direct_request": true,
+    "original_date": "2026-10-26",
+    "owner_request": "Push these to website too and make sure it's live everywhere",
+    "received_on": "2026-10-27",
+    "scope": "One exact missed Monday digital-twin family; preserve existing socials and Tuesday27Oct21 normal release. No future film early release.",
+    "frozen_bundle_sha256": "8ffd389d3aa41a27763f6be427b422b3e38852ec69b8393cd4fd24ac7f8b08cb",
+    "source_contract_sha256": "25567e9239c00c62f55c63bcec7a485409a82f952f78afc076eb722e2d992649",
+    "revalidated_on": "2026-10-27",
+    "primary_url": "https://damassets.autodesk.net/content/dam/autodesk/www/solutions/aec/bim-and-digital-twin-report-executive-summary-en.pdf",
+    "limits": "Fictional teaching scenario; no measured field outcome, universal prediction/control, or human/native review claim.",
+    "primary_snapshot_sha256": "e8e450d819906fea677bbaf8497114fc1083740cd1ec95de5f3cc66c2381e6d9",
+    "claims_verified": [
+      "Reportp6: dynamic replicas and operational/spatial/asset data",
+      "Reportp8: sensors/BMS/CMMS/SCADA inputs and descriptive/informative/predictive/prescriptive/cognitive maturity levels",
+      "No universal predictive/control/continuous-update claim",
+      "Stale-feed and four-check framework explicitly original fictional teaching device"
+    ],
+    "review": "Current root source revalidation; existing separately reviewed exact EN/FA/AR copy and final MP4 unchanged",
+    "evidence_sha256": "e88d2af5bd5c4dc3dca0a36183e8985d84ef7afdfb10a141374616611c8e1e48"
+  },
+  "site_checks_passed": 28
+}

@@ -1,0 +1,554 @@
+{
+  "quality": {
+    "jpeg": 82,
+    "webp": 80
+  },
+  "maximumBytes": 200000,
+  "images": [
+    {
+      "source": "assets/writing/ai-agent-permissions-ability-authority/cover.png",
+      "sourceSha256": "efd01e4e73c3c441b5de2251ef4bf42d2cd9177ab63b5bb092235f4dfcc925a1",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/ai-agent-permissions-ability-authority/cover-poster.jpg",
+        "sha256": "315dc36d193a509b3830a82e71bf40aadb4360ca50a755ea2f1cecdcd90626d2",
+        "bytes": 126835,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/ai-agent-permissions-ability-authority/cover-poster.webp",
+        "sha256": "85cd73074a17bc96d61c400f4ed6e8ed3bfc338bd3966ee74dc84656118d2d00",
+        "bytes": 42790,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/ai-agents-shared-notebook/cover.png",
+      "sourceSha256": "4e3e46c5b4d3ee853a97f4e22cddcf7a68e2738377fcbd1c72b835af3e4508c4",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/ai-agents-shared-notebook/cover-poster.jpg",
+        "sha256": "1937eb0bfe1cc5830fb6f973bcffedbb29999e7f2c75a036dd29d683463fcb50",
+        "bytes": 157897,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/ai-agents-shared-notebook/cover-poster.webp",
+        "sha256": "fb7aad4aee0a0c7069f2178225667e85299d5ab358f6d8559474f9125c28f40a",
+        "bytes": 56412,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/ai-confidence/cover.png",
+      "sourceSha256": "bb3b63337f2e5df530b95ee7ef904367c311dce0af830e37c242e15ac9416623",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/ai-confidence/cover-poster.jpg",
+        "sha256": "dba1412cc5ac010b88a52b7674e834f1dbe22058fd4e6137d60b4a80d31aa82f",
+        "bytes": 93183,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/ai-confidence/cover-poster.webp",
+        "sha256": "e4e5bc3f2121faad50da611f64f80ad0848eafa3313480c1c15143e769d39864",
+        "bytes": 43628,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/building-digital-twin-data-freshness/cover.png",
+      "sourceSha256": "9da2784d25b13fd3ca04325b06326c00ee134560b4d00a8eb8c10e6d6c975859",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/building-digital-twin-data-freshness/cover-poster.jpg",
+        "sha256": "54e1277791c251cfca5e245bbe04b6f1bd718bb599469367c206cee273fa44fa",
+        "bytes": 182478,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/building-digital-twin-data-freshness/cover-poster.webp",
+        "sha256": "c4bdc571c00b7ed389fa12bc6ef3a4f243fbb3459b170c0c4ae71eff6f2c772d",
+        "bytes": 61068,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/business-ai-evaluation-cases/cover.png",
+      "sourceSha256": "5e9388dc8d4ef7f32b3cd84954da1b03ef9f3e4fa290bd0389b4b6424fb1f6e4",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/business-ai-evaluation-cases/cover-poster.jpg",
+        "sha256": "7544fc2474442155a362e471ac17581df3609018a87fedc002e308475e4141ee",
+        "bytes": 162538,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/business-ai-evaluation-cases/cover-poster.webp",
+        "sha256": "ce0e54a63a859a7c0efe6d6e647d818c9250cc610c6b16196ef60d5d3c00ee3c",
+        "bytes": 54642,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/charging-80/cover.png",
+      "sourceSha256": "76dd5186ed891db22fc51a884bc0d0cdd9f260d9bbced4a9dad901cac57a8f85",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/charging-80/cover-poster.jpg",
+        "sha256": "ee57960ac1858204bb4a97ef6c2c022cba17254cf5c4d774858aca62585c11a7",
+        "bytes": 64120,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/charging-80/cover-poster.webp",
+        "sha256": "27e58f01897aa2f991e5ad177cc82a03f2dcdef39927775d2d015d59f4aaca76",
+        "bytes": 24474,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/computer-agent-check-result/cover.png",
+      "sourceSha256": "0930ffc4014d04f1574d3637a0b65e15ec80afee9e7fa97a66c385238051db94",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/computer-agent-check-result/cover-poster.jpg",
+        "sha256": "789f217344b48fcbf56133ed417c26498400c0a45a896e7935a79150da81f8ed",
+        "bytes": 110264,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/computer-agent-check-result/cover-poster.webp",
+        "sha256": "569b767577289d570956113c696667f0043fcb1e929eceece965f8cdd82e2cf4",
+        "bytes": 42936,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/cookie-consent/cover.png",
+      "sourceSha256": "27a5b31181158c563d123b09989cf21dd377f9e374fde6ddce1a7cfc0d835556",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/cookie-consent/cover-poster.jpg",
+        "sha256": "28fe739eb40a968ebc57b1d2a2c8e2cbfbeefa439f07e212534ae4cce5f57e56",
+        "bytes": 86874,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/cookie-consent/cover-poster.webp",
+        "sha256": "8f006b7a485d3b201f97d74554305d3d2f69c24a67a69aaa0c49fcc30fb76f56",
+        "bytes": 38696,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/dubai-project-escrow-controls/cover.png",
+      "sourceSha256": "4976d122d2e3287a55d47dcac4a0050430ff7e8f8988db79b94812e272d5518a",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/dubai-project-escrow-controls/cover-poster.jpg",
+        "sha256": "6f4aa522d3a48c32d0350016d6f9425167fb53c5569afd867b77ca4d9e00ed66",
+        "bytes": 190343,
+        "quality": 80
+      },
+      "webp": {
+        "output": "assets/writing/dubai-project-escrow-controls/cover-poster.webp",
+        "sha256": "f73e336de3bc41b987bcb96b3ab804112bc00d29378dded5d896da87ddfd93d7",
+        "bytes": 83698,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/dubai-service-charge-same-rent/cover.png",
+      "sourceSha256": "c347d92333984984a5ef32a7428c304d06637edc585a77295fe599ab4297efa1",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/dubai-service-charge-same-rent/cover-poster.jpg",
+        "sha256": "7eb3cb65f7ea173bed8b2f019c25cba8942b7c9757f4cd94b71a4985223c2189",
+        "bytes": 170734,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/dubai-service-charge-same-rent/cover-poster.webp",
+        "sha256": "9542fd0b18538773c47047c668b79e3477d5793a7ab0982eff49f09b4969376e",
+        "bytes": 57136,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/geospatial-ai-map-answer-review/slide-01.png",
+      "sourceSha256": "00e171505a8f685b8f39dfcc4e5198a8b589a03cd57f6338aac37f43894e9bac",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "jpeg": {
+        "output": "assets/writing/geospatial-ai-map-answer-review/cover-poster.jpg",
+        "sha256": "b5f009b078a3e460d59f13b1c97f1f3a6aae34eb19c1fb800caa11c51ccf383e",
+        "bytes": 113770,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/geospatial-ai-map-answer-review/cover-poster.webp",
+        "sha256": "56b1a32c4cd38a3df1205e7e7ccaf6f968cf18171d8e9af3461e95e1bb850135",
+        "bytes": 57844,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/heat-pump-moves-heat-explained/cover.png",
+      "sourceSha256": "aed0ba76aa3b4852095e53ff13e6916b9c25eb35457adaa06479b53a356114f0",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/heat-pump-moves-heat-explained/cover-poster.jpg",
+        "sha256": "0644763a211ecc876e364b7c2a4809af118a7c7f489d61208bebece6e4ff74f1",
+        "bytes": 164641,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/heat-pump-moves-heat-explained/cover-poster.webp",
+        "sha256": "95f9fbcc610288b2a4675f1c04e0f53fcb4545203dcfaf21119b328af521bfcf",
+        "bytes": 73120,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/iphone-duo/cover.png",
+      "sourceSha256": "18319b7be0992eb3cfbfe7f9acb64cbfd671e551d9717606e1126fc6e89ef82a",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/iphone-duo/cover-poster.jpg",
+        "sha256": "b6b83ae483fde6df21f3df9ae99a15f79072d3f9e30a02c6fb567ed00e44ffc3",
+        "bytes": 168546,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/iphone-duo/cover-poster.webp",
+        "sha256": "eda7829924e9a7c15ed283adf9d66c5aa68f9439f4e61dabdd7893a744196867",
+        "bytes": 48032,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/phone-location-across-street/cover.png",
+      "sourceSha256": "8819908e4e118aa647ccd83549df8bf2f07db8a8190f699ae37e432af81b9d5b",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/phone-location-across-street/cover-poster.jpg",
+        "sha256": "c6448b7706d422866f0ae03b76acf5caae73e45e5d2b5e0c6ae33a152bf1a72c",
+        "bytes": 145289,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/phone-location-across-street/cover-poster.webp",
+        "sha256": "a9b7572ed1c38485fc3e602f8932a62f8fc7a2bd93b1461a53665beab6dd0432",
+        "bytes": 49766,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/profit-cash/poster.webp",
+      "sourceSha256": "b83385ed380dc2b78ccb1c0734364009dfb1c053898d13edd8acf2df580d6221",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/profit-cash/cover-poster.jpg",
+        "sha256": "81f57a14a4ec8b8a35ac691aee666ccbbb53d3134159d4464e3c21d7cff697f1",
+        "bytes": 192013,
+        "quality": 80
+      },
+      "webp": {
+        "output": "assets/writing/profit-cash/cover-poster.webp",
+        "sha256": "31a02241758cd5ecb219a6d4b48e1b7cbbed564d59fe050b0f2aea706ef62c03",
+        "bytes": 73908,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/prompt-injection-layered-controls/cover.png",
+      "sourceSha256": "3943887afbbedb7b2bfdd6610853efa4799ab1707bdc6ba4c2dcd492adc6c337",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/prompt-injection-layered-controls/cover-poster.jpg",
+        "sha256": "140a5b80f0f2f7bc970483b45d94b7c81fa2d8ab2c4614b7386486a5e7c4d4d2",
+        "bytes": 178011,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/prompt-injection-layered-controls/cover-poster.webp",
+        "sha256": "612510fe99f922545d1685e145a479f3e8e19fe1540a38f5e497d88f28c43a35",
+        "bytes": 69812,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/property-comparables-evidence/cover.png",
+      "sourceSha256": "4295fe53601ce247a75c646f731391d25ed905e4342044f8f39c7e0a469c4e3c",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/property-comparables-evidence/cover-poster.jpg",
+        "sha256": "be85fede907871035ada605fbcb400f25f752807c9446df1c09f1ab45036ddcf",
+        "bytes": 195802,
+        "quality": 78
+      },
+      "webp": {
+        "output": "assets/writing/property-comparables-evidence/cover-poster.webp",
+        "sha256": "141df0caa3d6d94f3b29e7a1cc8cf3357907995eb5f848b1fe53bff70693dfda",
+        "bytes": 78352,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/rag-check-business-records/cover.png",
+      "sourceSha256": "cb8c4006848244ab4f1e62f1292a8c8bd8b7a03b30764947f1255a2f9e532ed7",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/rag-check-business-records/cover-poster.jpg",
+        "sha256": "4384396a0ac468a05d6115c8ac0c2c4d60d37e91de37c4c10a8be1e743c0d2ae",
+        "bytes": 180931,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/rag-check-business-records/cover-poster.webp",
+        "sha256": "f69ffb3f923bbe18b41a8cc5034c7163f75362df9efbe25a9acb8090c2c6f6f7",
+        "bytes": 65590,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/rental-yield/poster.webp",
+      "sourceSha256": "5f2e4ec399cddf26310c34862b42b4cfac5145c8454e358ba762a337d9e49056",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/rental-yield/cover-poster.jpg",
+        "sha256": "31038991a623ccf052cd8966ddbe90b18fc272237a0a0c9729fa565a7ebe48ce",
+        "bytes": 168964,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/rental-yield/cover-poster.webp",
+        "sha256": "d286690331deded018a3be25109bece60d1f016fb90b6c2f540cdbc85799de4c",
+        "bytes": 50380,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/tesla-roadster-flight-claim/cover.png",
+      "sourceSha256": "40d908637b2163968cabb3b4d4365ee56772800a0f4d3ca662aea48ebab07650",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/tesla-roadster-flight-claim/cover-poster.jpg",
+        "sha256": "c4b9fb708c6bbbf6d5d259dfea3fc6f133806fa81b88d380dc8f80af38d9858a",
+        "bytes": 127563,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/tesla-roadster-flight-claim/cover-poster.webp",
+        "sha256": "40b8cdb28a2dd62b91c424366dd12079eeb12d7b4152ef76070cea0f696b3f55",
+        "bytes": 46850,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/virtual-machine-device-sharing-explained/slide-01.png",
+      "sourceSha256": "b2659052ae72cc69e60f2bd79afba997aa79fcf0eafd3d8347826b2d39ab4487",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "jpeg": {
+        "output": "assets/writing/virtual-machine-device-sharing-explained/cover-poster.jpg",
+        "sha256": "d0843911a09cc3818687108082e02c408b4d2a0b181ee0624b015604a78a1b54",
+        "bytes": 77631,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/virtual-machine-device-sharing-explained/cover-poster.webp",
+        "sha256": "7a1e01d818f2647efdeb447f3efaf6aa037ed4e84cdd6ee83a8e747bc263c93c",
+        "bytes": 35732,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/where-wearable-ai-computation-runs/slide-01.png",
+      "sourceSha256": "bb4e77cd3ec0f2c88f2ec716d5252df4fc8d5344de737fb53db0baf6316e8cc3",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "jpeg": {
+        "output": "assets/writing/where-wearable-ai-computation-runs/cover-poster.jpg",
+        "sha256": "718bfc753102c8822a1c968bae4dc9f2cd570cff3e3962652cad0a2fd9662564",
+        "bytes": 69176,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/where-wearable-ai-computation-runs/cover-poster.webp",
+        "sha256": "a6861e582b08e1d27fd39a0db54bb0abac982a9d055a1f8d4326bdf4e24ca01e",
+        "bytes": 34928,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/ai-research-examination-understanding/cover.png",
+      "sourceSha256": "1c1999187d6af1ed21d6e85ab778c2cc773aeeca3f66d45866415716a5495c04",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/ai-research-examination-understanding/cover-poster.jpg",
+        "sha256": "0dcf6b2065679bb86b433f489b739407cb5e332d447aea254c9453914db6b165",
+        "bytes": 192453,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/ai-research-examination-understanding/cover-poster.webp",
+        "sha256": "961ebebd1385ba0d07479c0b85b85bc09454d487efc3dcff3358e0bd924c7d48",
+        "bytes": 61226,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/cash-conversion-cycle-clocks/cover.png",
+      "sourceSha256": "85f27c23bc2118b59e65622b27fc8f506288ec75d0ec9f9ef5fc5d1d258dfcca",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/cash-conversion-cycle-clocks/cover-poster.jpg",
+        "sha256": "1d602ec742bab991fa3ba4ad15cf5a21692e07e3012e3717fe49dcd65ed2cbf5",
+        "bytes": 189043,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/cash-conversion-cycle-clocks/cover-poster.webp",
+        "sha256": "fff9e80554bda6e238506e54b223f33249eff581116227568ce304aa218e0d8b",
+        "bytes": 74042,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/structured-output-source-checks/cover.png",
+      "sourceSha256": "7f5d967d5aa4dbcf468fc975a71313909f9823d337de1219a8cb0e1a9f67037f",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/structured-output-source-checks/cover-poster.jpg",
+        "sha256": "e1a276cbdb98691cbc54ac7ebd44691e8448f657c98205cf7d743fecba25505c",
+        "bytes": 153015,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/structured-output-source-checks/cover-poster.webp",
+        "sha256": "836c4a4805afcb7c89d8105ce766f29a3b643f6d94d83897f6082130f3a2f546",
+        "bytes": 49784,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/building-energy-audit-decisions/cover.png",
+      "sourceSha256": "154c318776d772e192469873f06f2c41fbd07c952de2f34f13fb54f8062fac6a",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/building-energy-audit-decisions/cover-poster.jpg",
+        "sha256": "b8b6f4b3ba6f803769c34f406dd56310a4b92765b86fb32bd76e7090fdfd2727",
+        "bytes": 194810,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/building-energy-audit-decisions/cover-poster.webp",
+        "sha256": "e6923148f29a871096697d376aa5d549ff0bd7d7463aaa3d6d058e03f372007e",
+        "bytes": 80026,
+        "quality": 80
+      }
+    },
+    {
+      "source": "assets/writing/agent-workflow-shared-bottlenecks/cover.png",
+      "sourceSha256": "f57c84ade651f41890547f9c449c634da3006d64a22634835af2e6b5ec68ef03",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "jpeg": {
+        "output": "assets/writing/agent-workflow-shared-bottlenecks/cover-poster.jpg",
+        "sha256": "0170396a6f4700857c241baa08b9ea881bc1ef26b99427fd70ddbe33511ca6d3",
+        "bytes": 193176,
+        "quality": 82
+      },
+      "webp": {
+        "output": "assets/writing/agent-workflow-shared-bottlenecks/cover-poster.webp",
+        "sha256": "43298884f9be25cab44fc7fa42456782d210735fc467a7abffbc77a3be386102",
+        "bytes": 79998,
+        "quality": 80
+      }
+    }
+  ],
+  "preloadPages": {
+    "writing/dubai-service-charge-same-rent.html": "/assets/writing/dubai-service-charge-same-rent/cover-poster.jpg",
+    "writing/property-comparables-evidence.html": "/assets/writing/property-comparables-evidence/cover-poster.jpg",
+    "writing/building-digital-twin-data-freshness.html": "/assets/writing/building-digital-twin-data-freshness/cover-poster.jpg"
+  }
+}

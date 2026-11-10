@@ -1,0 +1,8 @@
+/* Preserve the guide's design while supporting connected RTL scripts. */
+[dir=rtl] .guide-intro h1{letter-spacing:0;line-height:1.3;font-size:clamp(42px,6.5vw,82px)}
+[dir=rtl] .guide-shell{direction:rtl;text-align:right}
+[dir=rtl] .edition,[dir=rtl] .method,[dir=rtl] .brief-section h3,[dir=rtl] .brief-panel h2{letter-spacing:0}
+[dir=rtl] .input-panel legend span{margin-right:0;margin-left:12px}
+[dir=rtl] .brief-section ol{padding-left:0;padding-right:20px}
+[dir=rtl] .input-panel input,[dir=rtl] .input-panel textarea{direction:rtl;text-align:start}
+@media print{[lang=fa] .brief-top:before{content:'پیش از ساخت هوش مصنوعی · احمدرضا صمدی'}[lang=ar] .brief-top:before{content:'قبل بناء الذكاء الاصطناعي · أحمدرضا صمدي'}[lang=fa] .brief-note:after{content:' https://a-samadi.com/fa/tools/before-you-build-ai.html'}[lang=ar] .brief-note:after{content:' https://a-samadi.com/ar/tools/before-you-build-ai.html'}}

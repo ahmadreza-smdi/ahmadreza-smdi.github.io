@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Ahmadreza Samadi">
+<title>Connecting apps to AI: account access and approvals</title>
+<meta name="description" content="What can a connected AI app read or change? Use examples from ChatGPT and Gemini to check the account, the scope of access and the actions that require approval.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://a-samadi.com/writing/connected-ai-apps.html">
+<link rel="alternate" type="application/rss+xml" title="Ahmadreza Samadi — English writing" href="https://a-samadi.com/writing/feed.xml">
+<link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/connected-ai-apps.html">
+<link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/connected-ai-apps.html">
+<link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/connected-ai-apps.html">
+<link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/connected-ai-apps.html">
+<link rel="icon" type="image/svg+xml" href="../assets/brand/favicon.svg">
+<link rel="stylesheet" href="../css/site.css?v=20261009-lagoon4">
+<meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi">
+<meta property="og:title" content="Connecting apps to AI: account access and approvals">
+<meta property="og:description" content="What can a connected AI app read or change? Use examples from ChatGPT and Gemini to check the account, the scope of access and the actions that require approval.">
+<meta property="og:url" content="https://a-samadi.com/writing/connected-ai-apps.html"><meta property="og:locale" content="en_US"><meta property="og:locale:alternate" content="fa_IR"><meta property="og:locale:alternate" content="ar_AE">
+<meta property="og:image" content="https://a-samadi.com/assets/share/connected-ai-apps.png">
+<meta property="og:image:alt" content="English article cover: Connected AI apps: access, scope and approval"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Connecting apps to AI: account access and approvals"><meta name="twitter:description" content="What can a connected AI app read or change? Use examples from ChatGPT and Gemini to check the account, the scope of access and the actions that require approval."><meta name="twitter:image" content="https://a-samadi.com/assets/share/connected-ai-apps.png"><meta name="twitter:image:alt" content="English article cover: Connected AI apps: access, scope and approval">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://a-samadi.com/writing/connected-ai-apps.html#article",
+      "workTranslation": [
+        {
+          "@id": "https://a-samadi.com/fa/writing/connected-ai-apps.html#article"
+        },
+        {
+          "@id": "https://a-samadi.com/ar/writing/connected-ai-apps.html#article"
+        }
+      ],
+      "headline": "Connected AI apps: access, scope and approval",
+      "description": "What can a connected AI app read or change? Use examples from ChatGPT and Gemini to check the account, the scope of access and the actions that require approval.",
+      "url": "https://a-samadi.com/writing/connected-ai-apps.html",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://a-samadi.com/writing/connected-ai-apps.html",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://a-samadi.com/assets/share/connected-ai-apps.png",
+          "width": 1200,
+          "height": 630
+        },
+        "isPartOf": {
+          "@id": "https://a-samadi.com/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://a-samadi.com/writing/connected-ai-apps.html#breadcrumbs"
+        }
+      },
+      "datePublished": "2026-09-25",
+      "dateModified": "2026-10-10T14:19:03+03:30",
+      "inLanguage": "en",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://a-samadi.com/assets/share/connected-ai-apps.png",
+        "width": 1200,
+        "height": 630
+      },
+      "keywords": [
+        "connected apps",
+        "AI assistants",
+        "Gemini Connected Apps",
+        "ChatGPT connected apps",
+        "AI permissions",
+        "OAuth scope",
+        "product architecture"
+      ],
+      "citation": [
+        "https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/",
+        "https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt"
+      ],
+      "author": {
+        "@type": "Person",
+        "@id": "https://a-samadi.com/#person",
+        "name": "Ahmadreza Samadi",
+        "url": "https://a-samadi.com/about.html"
+      },
+      "publisher": {
+        "@id": "https://a-samadi.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://a-samadi.com/#website"
+      },
+      "name": "Connecting apps to AI: account access and approvals"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://a-samadi.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AI and business systems",
+          "item": "https://a-samadi.com/topics/business-systems-dubai.html"
+        }
+      ],
+      "@id": "https://a-samadi.com/writing/connected-ai-apps.html#breadcrumbs"
+    }
+  ]
+}</script>
+
+<style data-author-box>
+/* A quiet author reference at the end of each article, using the Lagoon tokens. */
+.editorial .article-author {
+  margin-block: 2.5rem 0;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid var(--line-strong);
+  border-inline-start: 3px solid var(--mint-deep);
+  border-radius: 16px;
+  background: var(--surface);
+  text-align: start;
+  overflow-wrap: anywhere;
+}
+.editorial .article-author h2 {
+  margin: 0 0 .25rem;
+  color: var(--muted);
+  font-size: .875rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.editorial .article-author p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.editorial .article-author .article-author__name {
+  margin-block-end: .35rem;
+  font-family: var(--display);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.editorial .article-author a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 44px;
+  max-inline-size: 100%;
+  padding-block: .25rem;
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+.editorial .article-author a:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+@media (forced-colors: active) {
+  .editorial .article-author { border-color: CanvasText; background: Canvas; }
+  .editorial .article-author h2, .editorial .article-author p { color: CanvasText; }
+  .editorial .article-author a { color: LinkText; }
+  .editorial .article-author a:focus-visible { outline-color: Highlight; }
+}
+@media print {
+  .editorial .article-author {
+    break-inside: avoid;
+    margin-block-start: 1.5rem;
+    border-color: #777;
+    background: transparent;
+  }
+  .editorial .article-author h2, .editorial .article-author p, .editorial .article-author a { color: #000; }
+}
+</style>
+
+<script src="/js/site-analytics.js?v=20261009-analytics1" defer></script>
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+</head>
+<body class="editorial-body">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="editorial-header"><a href="/"><img src="../assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">Ahmadreza Samadi / Home</a></header>
+<main id="main" class="editorial">
+<nav class="byline" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/topics/business-systems-dubai.html">AI and business systems</a></nav>
+<p class="eyebrow">Explainer · AI assistants and permissions</p>
+<h1>Connected AI apps: access, scope and approval</h1>
+<p class="lead">When an AI assistant asks you to connect an app, you are deciding what it can see and what it can change. That decision deserves a minute of attention.</p>
+<p class="byline">By <a href="/about.html" rel="author">Ahmadreza Samadi</a> · <time datetime="2026-09-25">25 September 2026</time></p>
+<p class="byline">Updated <time datetime="2026-10-10T14:19:03+03:30">10 October 2026</time></p>
+<section aria-labelledby="article-at-a-glance">
+<h2 id="article-at-a-glance">At a glance</h2>
+<p>Connecting an app gives an AI assistant access within a specific account, permission scope and integration. Reading information is different from creating, editing, sending or deleting it; supported actions and confirmation rules vary. Before connecting, check which account is used, what can be read or changed, when approval is required and how to revoke access.</p>
+</section>
+<p>AI assistants are connecting to more of the tools people use every day: calendars, email, files, notes and task lists. On 23 September 2026, <a href="https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/">Google announced a new wave of Connected Apps for Gemini</a>, and <a href="https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt">OpenAI documents a similar capability in ChatGPT</a>. The feature is useful, but the single word “connect” hides several separate decisions.</p>
+<h2>What is a connected app?</h2>
+<p>A connected app is an authorized path between an AI assistant and another service. Instead of copying your meetings into a chat, you let the assistant look them up through the account and access you approve. Ask “what is on my calendar tomorrow?” and a supported calendar connection can answer without you pasting every event.</p>
+<p>Without that connection, the assistant cannot look up that app’s information through the integration. With it, the assistant can use the app within the limits of that particular integration.</p>
+<h2>What is the difference between reading and acting?</h2>
+<p>The most useful distinction is between reading and acting. Finding a meeting is different from creating one. Summarizing a document is different from editing it. Some integrations only read; others can also take supported actions, and many ask for confirmation first.</p>
+<p>A connector’s existence does not mean an assistant can do everything in that app. OpenAI’s documentation says the available data and actions depend on the app, the access granted when you connect, and any workspace controls. No announcement promises that every app can both read and write.</p>
+<h2>Which four boundaries limit what an assistant can do?</h2>
+<ol>
+<li><strong>The account.</strong> Which account did you connect, personal or work? The assistant can only reach what that account can reach.</li>
+<li><strong>The scope.</strong> What access did you grant at connection time? Read-only access and permission to make changes are different grants.</li>
+<li><strong>The integration.</strong> What does this specific connector support? Two apps in the same category can offer very different capabilities.</li>
+<li><strong>The approval rules.</strong> When does the assistant ask before acting? A clear confirmation step matters most for anything that sends, deletes or changes records.</li>
+</ol>
+<h2>How a request moves through a connected app</h2>
+<p>From a product architecture point of view, I think about four checkpoints:</p>
+<ol>
+<li>Understand the user’s request.</li>
+<li>Select the connected tool only if it is needed.</li>
+<li>Check the account, scope and supported capability.</li>
+<li>Return information, or follow the approval rules for a supported action.</li>
+</ol>
+<p>Each checkpoint is a place where a well-designed system can stop, ask or explain. That is what makes an integration trustworthy enough for real work.</p>
+<h2>Three questions to ask before you connect any app</h2>
+<ul>
+<li><strong>Which account?</strong> Make sure it is the one you intend to use for this task.</li>
+<li><strong>What can it read?</strong> Know which records, files or messages become available.</li>
+<li><strong>What can it change?</strong> Find out whether it can create, edit, send or delete, and when it asks first.</li>
+</ul>
+<p>Also check how to revoke access. Connect for a clear purpose, review access from time to time, and confirm before anything changes. These habits keep the benefit without the surprise.</p>
+<h2>What this means for teams building AI products</h2>
+<p>For product and engineering teams, the same boundaries are design decisions. Request the narrowest access the use case needs, make the difference between reading and acting visible to the user, and treat the approval step as part of the product rather than an afterthought. Clear use cases and clear boundaries make integrations more useful, not less.</p>
+<h2>Continue the discussion</h2>
+<p>I covered this topic in a <a href="https://www.linkedin.com/feed/update/urn:li:activity:7509187433587085312/">seven-page technical LinkedIn document</a> for product and engineering readers and a <a href="https://www.instagram.com/p/DdtLTQyiusi/">plain-language Instagram carousel</a>. For a related question about the economics of AI work, read <a href="/writing/ai-cost-per-verified-result.html">AI cost per accepted result</a>, or see how a <a href="/writing/jev-ai-decision-model.html">dedicated AI decision model</a> fits into a workflow.</p>
+<section aria-labelledby="apply-access-decision">
+<h2 id="apply-access-decision">Define the action before the access</h2>
+<p>Use the <a href="/tools/before-you-build-ai.html">decision worksheet</a> to write down the next action and the evidence it needs. For the related questions of identity, permissions and oversight, continue with <a href="/writing/ai-agent-safety-boundaries.html">boundaries for AI agents</a>. These are planning resources, not a certification that a particular connection is safe.</p>
+</section>
+
+<h2>Sources</h2>
+<ul>
+<li>Google, <a href="https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/">“A new wave of Connected Apps is rolling out to Gemini”</a>, 23 September 2026.</li>
+<li>OpenAI Help Center, <a href="https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt">“Connected apps in ChatGPT”</a>, checked 25 September 2026.</li>
+</ul>
+
+<!-- article-hubs:start -->
+<nav class="article-reading-path" aria-labelledby="article-related-title">
+<p>Part of: <a href="/topics/business-systems-dubai.html" data-hub-primary="business-systems-dubai">AI and business systems</a></p>
+<h2 id="article-related-title">Related</h2>
+<ul><li><a href="/writing/ai-human-review-real-estate.html" data-related-pillar="property-decisions">AI in real estate decisions: where AI should stop</a></li>
+<li><a href="/writing/prompt-injection-layered-controls.html" data-related-pillar="decision-first-ai">The document tried to become the boss</a></li>
+<li><a href="/writing/why-ai-sounds-confident.html" data-related-pillar="tech-explained">Why does AI sound so confident when it is wrong?</a></li></ul>
+</nav>
+<!-- article-hubs:end -->
+<!-- author-box:start -->
+<aside class="article-author" aria-labelledby="article-author-title">
+<h2 id="article-author-title">About the author</h2>
+<p>Ahmadreza Samadi is a technology entrepreneur based in Dubai. He builds AI products as Co-Founder &amp; Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder &amp; CEO.</p>
+<p class="article-author__name"><a href="/about.html" rel="author">Ahmadreza Samadi</a></p>
+<p class="article-author__series">Part of <bdi lang="en">Start with the Decision</bdi></p>
+</aside>
+<!-- author-box:end -->
+<!-- follow-subscribe:start -->
+<aside class="details follow-subscribe" aria-labelledby="follow-subscribe-title">
+<h2 id="follow-subscribe-title">Follow</h2>
+<nav aria-label="Follow Ahmadreza Samadi"><a href="https://www.linkedin.com/in/ahmadreza-samadi/"><bdi>LinkedIn</bdi></a> · <a href="https://www.youtube.com/@ahmadreza-samadi"><bdi>YouTube</bdi></a> · <a href="https://www.instagram.com/ahmadreza.samadi/"><bdi>Instagram</bdi></a></nav>
+</aside>
+<!-- follow-subscribe:end -->
+<footer class="editorial-footer"><nav aria-label="Related pages"><a href="/writing/">All writing</a> · <a href="/about.html">About Ahmadreza Samadi</a> · <a href="/about.html#official-profiles">Official profiles</a> · <a href="/#work">Selected work</a></nav><p>Ahmadreza Samadi · Technology Entrepreneur</p><a href="/#contact">Get in touch →</a></footer>
+</main>
+</body>
+</html>

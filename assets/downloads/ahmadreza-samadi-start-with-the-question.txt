@@ -1,0 +1,73 @@
+START WITH THE QUESTION
+A short reading guide to Ahmadreza Samadi's public resources
+
+Choose the question you need to answer. Read the linked resource's source dates,
+method and limits before using its output.
+
+1. What does a caller-accepted AI result cost?
+Open: AI workflow cost ledger, v0.1.0
+https://github.com/ahmadreza-smdi/ai-workflow-cost/releases/tag/v0.1.0
+Use it to include failed attempts and retries in cost per distinct accepted result.
+Limit: the caller supplies acceptance; the tool does not independently verify
+quality, productivity or return on investment.
+
+2. What should count as success before an AI experiment?
+Open: Decision-first AI editable text kit
+https://github.com/ahmadreza-smdi/ahmadreza-smdi/tree/5d2637b75c672c3fe0596c3d79902de0f77fae63/docs/templates/decision-first-ai
+Use the blank planning card and clearly fictional example to make evidence and
+acceptance rules explicit before an experiment.
+Limit: this is a planning aid, not a validated assessment or evidence that an
+experiment was run.
+
+3. How common is rent burden in a US metro?
+Open: ACS 2024 metro rent-burden study, v1.0.0
+https://github.com/ahmadreza-smdi/metro-rent-burden/releases/tag/v1.0.0
+Use its CSV, chart and method to inspect rent-burden shares.
+Limit: the denominator is renter-occupied housing units with a computable ratio;
+not-computed units are excluded. The 50%+ group is included in the 30%+ group.
+These are ACS 2024 statistics, not current asking rents or an investment ranking.
+
+4. Which assumptions drive a rent-and-ownership cash-budget scenario?
+Open: Rent and ownership study, v1.0.0
+https://github.com/ahmadreza-smdi/rent-own-metro-study/releases/tag/v1.0.0
+Use the model and documented source vintages to inspect hypothetical cash budgets.
+Limit: HUD gross two-bedroom rents and ACS owner-stock values describe different
+housing populations. Financing, operating costs and utility allowances are chosen
+assumptions; cash surplus is not accounting profit, property yield or total return.
+
+5. Is FHFA metro data available at both endpoints?
+Open: FHFA paired endpoint coverage companion
+https://github.com/ahmadreza-smdi/ahmadreza-smdi/tree/fc550a76f8fa08c480c8047224973d34d449701f/docs/research/fhfa-coverage
+Use the frozen source snapshots and local runner to reproduce paired availability.
+Limit: availability is not price growth, a selected study window or a match to HUD
+rent geographies. This companion is not the completed price-versus-rent study.
+
+6. Are my local video publication dates internally consistent?
+Open: Video publication-date linter documentation, pinned revision
+https://github.com/ahmadreza-smdi/video-date-lint/blob/9dbd8cc1db1db2199487c9a448a63645a63c58b9/README.md
+Use the offline CLI to inspect local video JSON-LD and optional sitemap dates
+without modifying the input files.
+Limit: its local date policy is not a universal search-engine rule or proof of
+actual publication, crawling or indexing. This pinned documentation is historical;
+read the repository's current documentation before using a newer version.
+
+7. Which Dubai property source answers this question?
+Open: Which Dubai property source answers your question?
+https://a-samadi.com/writing/which-dubai-property-source.html
+Use the guide to distinguish a sales-price index, a rental benchmark and a
+separate property-valuation service before interpreting a number.
+Limit: the guide retains its historical methodology and reference periods. It is
+educational analysis, not a fresh market report, an appraisal or a legal ruling.
+
+ABOUT THIS GUIDE
+By Ahmadreza Samadi, a Dubai-based technology entrepreneur.
+Biography: https://a-samadi.com/about.html
+More on AI and property decisions:
+https://a-samadi.com/topics/ai-real-estate.html
+
+AI-assisted navigation to published work; not a claim of manual implementation,
+company deployment, independent certification or measured audience outcomes.
+Examples labelled fictional are teaching examples. This guide is educational,
+not financial advice. Source data and project materials retain their own notices.
+Version: 18 October 2026. Links identify published resources; tagged or pinned
+versions can differ from later repository changes.

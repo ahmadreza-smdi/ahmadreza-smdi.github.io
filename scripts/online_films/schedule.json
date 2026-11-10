@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "repository": "ahmadreza-smdi/ahmadreza-smdi.github.io",
+  "site_url": "https://a-samadi.com",
+  "timezone": "Asia/Tehran",
+  "daily_count": 1,
+  "local_slot": "21:00",
+  "owner_authority": "27 October 2026: one film at 21:00 and one technology carousel at 10:00 Asia/Tehran each day through 2 November. Preserve the existing 27 October film. Add only reviewed frozen films; the existing cloud workflow is the sole publisher.",
+  "films": [
+    {
+      "key": "2026-10-23",
+      "publish_at": "2026-10-23T21:00:00+03:30",
+      "asset_name": "film-2026-10-23.zip",
+      "asset_id": 666327675,
+      "sha256": "76069da745253d241913d2613650a3682ef483073067f498c450b184df4d7cf6"
+    },
+    {
+      "key": "2026-10-24",
+      "publish_at": "2026-10-24T21:00:00+03:30",
+      "asset_name": "film-2026-10-24.zip",
+      "asset_id": 666327685,
+      "sha256": "76cb126ed8c076c5b654288a0ce5b37fe4e997b67071916a9cf3d4ff8add3aec"
+    },
+    {
+      "key": "2026-10-25",
+      "publish_at": "2026-10-25T21:00:00+03:30",
+      "asset_name": "film-2026-10-25.zip",
+      "asset_id": 666327690,
+      "sha256": "9902391d1d055df41e9f4ca7471db4f6a1953434cbc69aae7f0052f017dae376"
+    },
+    {
+      "key": "2026-10-26",
+      "publish_at": "2026-10-26T21:00:00+03:30",
+      "asset_name": "film-2026-10-26.zip",
+      "asset_id": 666327677,
+      "sha256": "8ffd389d3aa41a27763f6be427b422b3e38852ec69b8393cd4fd24ac7f8b08cb"
+    },
+    {
+      "key": "2026-10-27",
+      "publish_at": "2026-10-27T21:00:00+03:30",
+      "asset_name": "film-2026-10-27.zip",
+      "asset_id": 666361439,
+      "sha256": "7986c78ce0a8d6e8de0578de52658bf9b61c842256e2d2f99ed2ed052aa4fb67"
+    },
+    {
+      "key": "2026-10-28",
+      "publish_at": "2026-10-28T21:00:00+03:30",
+      "asset_name": "reviewed-film-2026-10-28-optional-captions-v2.zip",
+      "asset_id": 684609209,
+      "sha256": "e59494e77321e3425cd000da0914ba23b7cfb00f41c1cef92506572a0b574cd1"
+    },
+    {
+      "key": "2026-10-29",
+      "publish_at": "2026-10-29T21:00:00+03:30",
+      "asset_name": "reviewed-film-2026-10-29-optional-captions-v2.zip",
+      "asset_id": 684609217,
+      "sha256": "583fabc9419019c13d0c238c82b0ea3f604219f5f94b69a5c6eab03ac84ebe9e"
+    },
+    {
+      "key": "2026-10-30",
+      "publish_at": "2026-10-30T21:00:00+03:30",
+      "asset_name": "reviewed-film-2026-10-30-optional-captions-v2.zip",
+      "asset_id": 684609207,
+      "sha256": "4990f2c968ccbe8afe8ecb79cf35491f2559aceda4ef92e0d3029e6b87582c9b"
+    },
+    {
+      "key": "2026-10-31",
+      "publish_at": "2026-10-31T21:00:00+03:30",
+      "asset_name": "reviewed-film-2026-10-31-building-energy-audit-r02.zip",
+      "asset_id": 684647301,
+      "sha256": "10a8ad560057329892d5129b8bb64f63b9559353be65b97ca2d901d90fd1e3cf"
+    },
+    {
+      "key": "2026-11-01",
+      "publish_at": "2026-11-01T21:00:00+03:30",
+      "asset_name": "reviewed-film-2026-11-01-agent-workflow-bottleneck.zip",
+      "asset_id": 684706302,
+      "sha256": "c66cfd30afc3eefce3b8052ded3da02f608a1340260ce67f45fc1983e3b02a43"
+    },
+    {
+      "key": "2026-11-02",
+      "publish_at": "2026-11-02T21:00:00+03:30",
+      "asset_name": "reviewed-film-2026-11-02-ai-research-understanding.zip",
+      "asset_id": 684728761,
+      "sha256": "6349eb7ef1f8525917b645a165498eb381158228798889aa973639ad450927b5"
+    }
+  ]
+}

@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Ahmadreza Samadi">
+<title>AI in real estate: evidence and decisions | Ahmadreza Samadi</title>
+<meta name="description" content="A reading path through property data, human review, AI workflow costs and rental cash flow, with Ahmadreza Samadi’s work at Appraiva as context.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://a-samadi.com/topics/ai-real-estate.html">
+<link rel="alternate" hreflang="en" href="https://a-samadi.com/topics/ai-real-estate.html">
+<link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/topics/ai-real-estate.html">
+<link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/topics/ai-real-estate.html">
+<link rel="alternate" hreflang="x-default" href="https://a-samadi.com/topics/ai-real-estate.html">
+<link rel="alternate" type="application/rss+xml" title="Ahmadreza Samadi — English writing" href="https://a-samadi.com/writing/feed.xml">
+<link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg">
+<link rel="stylesheet" href="/css/site.css?v=20261009-writing1">
+<style data-author-box>
+/* A quiet author reference at the end of each article, using the Lagoon tokens. */
+.editorial .article-author {
+  margin-block: 2.5rem 0;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid var(--line-strong);
+  border-inline-start: 3px solid var(--mint-deep);
+  border-radius: 16px;
+  background: var(--surface);
+  text-align: start;
+  overflow-wrap: anywhere;
+}
+.editorial .article-author h2 {
+  margin: 0 0 .25rem;
+  color: var(--muted);
+  font-size: .875rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.editorial .article-author p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.editorial .article-author .article-author__name {
+  margin-block-end: .35rem;
+  font-family: var(--display);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.editorial .article-author a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 44px;
+  max-inline-size: 100%;
+  padding-block: .25rem;
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+.editorial .article-author a:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+@media (forced-colors: active) {
+  .editorial .article-author { border-color: CanvasText; background: Canvas; }
+  .editorial .article-author h2, .editorial .article-author p { color: CanvasText; }
+  .editorial .article-author a { color: LinkText; }
+  .editorial .article-author a:focus-visible { outline-color: Highlight; }
+}
+@media print {
+  .editorial .article-author {
+    break-inside: avoid;
+    margin-block-start: 1.5rem;
+    border-color: #777;
+    background: transparent;
+  }
+  .editorial .article-author h2, .editorial .article-author p, .editorial .article-author a { color: #000; }
+}
+</style>
+<meta property="og:type" content="website"><meta property="og:site_name" content="Ahmadreza Samadi">
+<meta property="og:title" content="AI in real estate: evidence and decisions | Ahmadreza Samadi">
+<meta property="og:description" content="A reading path through property data, human review, AI workflow costs and rental cash flow, with Ahmadreza Samadi’s work at Appraiva as context.">
+<meta property="og:url" content="https://a-samadi.com/topics/ai-real-estate.html"><meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="fa_IR">
+<meta property="og:locale:alternate" content="ar_AE">
+<meta property="og:image" content="https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630"><meta property="og:image:alt" content="Ahmadreza Samadi, Dubai-based technology entrepreneur">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI in real estate: evidence and decisions | Ahmadreza Samadi">
+<meta name="twitter:description" content="A reading path through property data, human review, AI workflow costs and rental cash flow, with Ahmadreza Samadi’s work at Appraiva as context.">
+<meta name="twitter:image" content="https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg"><meta name="twitter:image:alt" content="Ahmadreza Samadi, Dubai-based technology entrepreneur">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://a-samadi.com/topics/ai-real-estate.html#page",
+      "url": "https://a-samadi.com/topics/ai-real-estate.html",
+      "name": "AI in real estate: evidence and decisions | Ahmadreza Samadi",
+      "description": "A reading path through property data, human review, AI workflow costs and rental cash flow, with Ahmadreza Samadi’s work at Appraiva as context.",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Person",
+        "@id": "https://a-samadi.com/#person",
+        "name": "Ahmadreza Samadi",
+        "url": "https://a-samadi.com/about.html"
+      },
+      "about": [
+        {
+          "@id": "https://a-samadi.com/#person"
+        },
+        {
+          "@id": "https://a-samadi.com/#appraiva"
+        }
+      ],
+      "isPartOf": {
+        "@id": "https://a-samadi.com/#website"
+      },
+      "image": {
+        "@id": "https://a-samadi.com/#portrait"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://a-samadi.com/#portrait"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "@id": "https://a-samadi.com/topics/ai-real-estate.html#reading-path",
+        "itemListOrder": "https://schema.org/ItemListOrderAscending",
+        "numberOfItems": 44,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "url": "https://a-samadi.com/writing/ai-home-value-estimates.html",
+            "name": "AI property valuation: what an estimate misses"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "url": "https://a-samadi.com/studies/rent-own-2026/index.html",
+            "name": "Rent vs owning: what do the cash-budget scenarios show?"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "url": "https://a-samadi.com/writing/ai-human-review-real-estate.html",
+            "name": "AI in real estate decisions: where AI should stop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "url": "https://a-samadi.com/writing/which-dubai-property-source.html",
+            "name": "Dubai property costs and data: choose the right source"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "url": "https://a-samadi.com/work/appraiva.html",
+            "name": "Read the Appraiva case study"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "url": "https://a-samadi.com/writing/property-data-enrichment.html",
+            "name": "How does property data enrichment connect the right records?"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "url": "https://a-samadi.com/writing/ai-cost-per-verified-result.html",
+            "name": "AI cost per accepted result"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "url": "https://a-samadi.com/writing/ai-rental-yield-cash-flow.html",
+            "name": "Why can 8% rental yield still leave a cash shortfall?"
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "url": "https://a-samadi.com/tools/rental-cash-flow.html",
+            "name": "Rent is income. Cash flow is what remains."
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "url": "https://a-samadi.com/writing/how-building-digital-twins-work.html",
+            "name": "How can a building have a live digital copy?"
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "url": "https://a-samadi.com/writing/dubai-property-tokenisation-explained.html",
+            "name": "How do property tokens work, and can you sell them?"
+          },
+          {
+            "@type": "ListItem",
+            "position": 12,
+            "url": "https://a-samadi.com/writing/ai-data-center-site-readiness.html",
+            "name": "What makes a building ready for AI data centers?"
+          },
+          {
+            "@type": "ListItem",
+            "position": 13,
+            "url": "https://a-samadi.com/writing/building-laser-scans-point-clouds-explained.html",
+            "name": "How does a laser scan become a building record?"
+          },
+          {
+            "@type": "ListItem",
+            "position": 14,
+            "url": "https://a-samadi.com/studies/rent-burden/index.html",
+            "name": "How much income goes to gross rent?"
+          },
+          {
+            "@type": "ListItem",
+            "position": 15,
+            "url": "https://a-samadi.com/watch/rental-yield.html",
+            "name": "Watch the rental-yield film"
+          },
+          {
+            "@type": "ListItem",
+            "position": 16,
+            "url": "https://a-samadi.com/tools/before-you-build-ai.html",
+            "name": "Open Before You Build the AI"
+          },
+          {
+            "@type": "ListItem",
+            "position": 17,
+            "url": "https://a-samadi.com/writing/why-rent-to-value-is-not-property-yield.html",
+            "name": "Why dividing metro rent by home value does not give property yield"
+          },
+          {
+            "@type": "ListItem",
+            "position": 18,
+            "url": "https://a-samadi.com/writing/why-occupancy-sensor-lights-switch-off.html",
+            "name": "Why did the lights go out while you were there?"
+          },
+          {
+            "@type": "ListItem",
+            "position": 19,
+            "url": "https://a-samadi.com/writing/building-leak-alert-response-checklist.html",
+            "name": "Your building sent an alert."
+          },
+          {
+            "@type": "ListItem",
+            "position": 20,
+            "url": "https://a-samadi.com/writing/bacnet-building-devices-common-language.html",
+            "name": "Your thermostat speaks. Who listens?"
+          },
+          {
+            "@type": "ListItem",
+            "position": 21,
+            "url": "https://a-samadi.com/writing/avm-vs-appraisal.html",
+            "name": "AVM vs appraisal: which fits your decision?"
+          },
+          {
+            "@type": "ListItem",
+            "position": 22,
+            "url": "https://a-samadi.com/writing/rent-or-buy-five-numbers.html",
+            "name": "Rent or buy: the five numbers that decide it"
+          },
+          {
+            "@type": "ListItem",
+            "position": 23,
+            "url": "https://a-samadi.com/writing/human-review-property-ai-checklist.html",
+            "name": "Where the person signs off: property AI review"
+          },
+          {
+            "@type": "ListItem",
+            "position": 24,
+            "url": "https://a-samadi.com/writing/dubai-property-buying-costs.html",
+            "name": "Dubai property buying costs, item by item"
+          },
+          {
+            "@type": "ListItem",
+            "position": 25,
+            "url": "https://a-samadi.com/writing/dubai-service-charge-same-rent.html",
+            "name": "Dubai service charge: same rent, different bills"
+          },
+          {
+            "@type": "ListItem",
+            "position": 26,
+            "url": "https://a-samadi.com/writing/dubai-project-escrow-controls.html",
+            "name": "The money has a project name"
+          },
+          {
+            "@type": "ListItem",
+            "position": 27,
+            "url": "https://a-samadi.com/writing/property-comparables-evidence.html",
+            "name": "Next door is not always comparable"
+          },
+          {
+            "@type": "ListItem",
+            "position": 28,
+            "url": "https://a-samadi.com/writing/building-digital-twin-data-freshness.html",
+            "name": "A beautiful building model can still be out of date"
+          },
+          {
+            "@type": "ListItem",
+            "position": 29,
+            "url": "https://a-samadi.com/writing/building-energy-audit-decisions.html",
+            "name": "Before buying a new machine, find where the energy goes"
+          },
+          {
+            "@type": "ListItem",
+            "position": 30,
+            "url": "https://a-samadi.com/studies/explorer.html",
+            "name": "Start with the place. Keep the evidence in view."
+          },
+          {
+            "@type": "ListItem",
+            "position": 31,
+            "url": "https://a-samadi.com/carousels/tech-trend-assisted-permissions.html",
+            "name": "AI agents are learning when to ask."
+          },
+          {
+            "@type": "ListItem",
+            "position": 32,
+            "url": "https://a-samadi.com/carousels/tech-trend-ai-usage-not-outcomes.html",
+            "name": "More AI calls do not prove more useful work."
+          },
+          {
+            "@type": "ListItem",
+            "position": 33,
+            "url": "https://a-samadi.com/tools/dubai-purchase-cost.html",
+            "name": "Dubai purchase-cost calculator: what cash does the purchase require?"
+          },
+          {
+            "@type": "ListItem",
+            "position": 34,
+            "url": "https://a-samadi.com/tools/dubai-rental-yield.html",
+            "name": "Dubai rental yield: what remains after costs?"
+          },
+          {
+            "@type": "ListItem",
+            "position": 35,
+            "url": "https://a-samadi.com/carousels/tech-trend-gemini-business-hub.html",
+            "name": "A business hub is not a business autopilot."
+          },
+          {
+            "@type": "ListItem",
+            "position": 36,
+            "url": "https://a-samadi.com/carousels/tech-trend-ai-factory-observability.html",
+            "name": "An AI factory needs more than GPUs."
+          },
+          {
+            "@type": "ListItem",
+            "position": 37,
+            "url": "https://a-samadi.com/carousels/tech-trend-world-models-real-tests.html",
+            "name": "A simulated world is still a test environment."
+          },
+          {
+            "@type": "ListItem",
+            "position": 38,
+            "url": "https://a-samadi.com/carousels/tech-trend-notification-to-reviewed-fix.html",
+            "name": "A chat request is not a shipped fix."
+          },
+          {
+            "@type": "ListItem",
+            "position": 39,
+            "url": "https://a-samadi.com/carousels/dubai-broker-record-check.html",
+            "name": "Dubai broker verification: A business card is a starting point."
+          },
+          {
+            "@type": "ListItem",
+            "position": 40,
+            "url": "https://a-samadi.com/carousels/dubai-project-status-check.html",
+            "name": "Dubai project status: Find the project behind the brochure."
+          },
+          {
+            "@type": "ListItem",
+            "position": 41,
+            "url": "https://a-samadi.com/carousels/dubai-rental-index-context.html",
+            "name": "Dubai rental index: Same area does not mean same building."
+          },
+          {
+            "@type": "ListItem",
+            "position": 42,
+            "url": "https://a-samadi.com/carousels/dubai-procedure-status-check.html",
+            "name": "Dubai procedure status: Submitted is a stage, not the finish."
+          },
+          {
+            "@type": "ListItem",
+            "position": 43,
+            "url": "https://a-samadi.com/carousels/dubai-valuation-evidence.html",
+            "name": "Dubai property valuation: Ask what produced the property number."
+          },
+          {
+            "@type": "ListItem",
+            "position": 44,
+            "url": "https://a-samadi.com/carousels/ai-property-brief-evidence.html",
+            "name": "AI property briefs: A tidy property brief still needs evidence."
+          }
+        ]
+      },
+      "workTranslation": [
+        {
+          "@id": "https://a-samadi.com/fa/topics/ai-real-estate.html#page"
+        },
+        {
+          "@id": "https://a-samadi.com/ar/topics/ai-real-estate.html#page"
+        }
+      ],
+      "breadcrumb": {
+        "@id": "https://a-samadi.com/topics/ai-real-estate.html#breadcrumbs"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://a-samadi.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Writing",
+          "item": "https://a-samadi.com/writing/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "AI in real estate",
+          "item": "https://a-samadi.com/topics/ai-real-estate.html"
+        }
+      ],
+      "@id": "https://a-samadi.com/topics/ai-real-estate.html#breadcrumbs"
+    }
+  ]
+}</script>
+<script src="/js/site-analytics.js?v=20261009-analytics1" defer></script>
+</head>
+<body class="editorial-body topic-hub">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="editorial-header"><a href="/"><img src="/assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">Ahmadreza Samadi / Home</a></header>
+<main id="main" class="editorial">
+<nav class="byline" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/writing/">Writing</a> / <span aria-current="page">AI in real estate</span></nav>
+<p class="eyebrow">Reading path · AI and property research</p>
+<h1>AI in real estate</h1>
+<p class="lead">Follow a property signal through the questions that make it useful: what supports it, who checks it, and what decision comes next.</p>
+<p class="byline">By <a rel="author" href="/about.html">Ahmadreza Samadi</a></p>
+<section aria-labelledby="topic-context-heading">
+<h2 id="topic-context-heading">From an image to a research workflow</h2>
+<p>Co-Founder &amp; Technical Lead, Appraiva. Appraiva is a US company in Cleveland, Ohio; he works remotely from Dubai. It builds AI tools that help real estate investors and developers find distressed and off-market properties through imagery analysis and enriched property data.</p>
+<p>The case study explains those connections. The readings below then examine five checks around a property decision: matching an image to property identity and dated sources, the data behind an estimate, human review, the cost of useful AI work, and the difference between rental yield and cash flow.</p>
+<p><a href="/work/appraiva.html" data-topic-resource="appraiva" hreflang="en">Read the Appraiva case study</a>: AI tools for real estate investors and developers, using imagery analysis and enriched property data.</p>
+</section>
+<nav aria-labelledby="topic-questions-heading">
+<h2 id="topic-questions-heading">Keep these questions in view</h2>
+<ul><li>Which property and source records support the result?</li>
+<li>Who checks the important claims before someone acts?</li>
+<li>What does the full workflow cost, and what money remains after property costs and loan payments?</li></ul>
+</nav>
+<h2 id="reading-path">Read in this order</h2>
+<article aria-labelledby="resource-property_enrichment">
+<p class="eyebrow">1 · Which property do the image and records describe?</p>
+<h2 id="resource-property_enrichment"><a href="/writing/property-data-enrichment.html" data-topic-resource="property_enrichment" hreflang="en">How does property data enrichment connect the right records?</a></h2>
+<p>A fictional image-and-record comparison shows how to check property identity, source dates and unresolved claims before combining property information.</p>
+</article>
+<article aria-labelledby="resource-home_estimates">
+<p class="eyebrow">2 · What does the estimate know?</p>
+<h2 id="resource-home_estimates"><a href="/writing/ai-home-value-estimates.html" data-topic-resource="home_estimates" hreflang="en">AI property valuation: what an estimate misses</a></h2>
+<p>Check property facts, comparable sales and uncertainty before relying on an automated home-value estimate.</p>
+</article>
+<article aria-labelledby="resource-human_review">
+<p class="eyebrow">3 · Who checks a material claim?</p>
+<h2 id="resource-human_review"><a href="/writing/ai-human-review-real-estate.html" data-topic-resource="human_review" hreflang="en">AI in real estate decisions: where AI should stop</a></h2>
+<p>Separate AI preparation from professional verification and the client’s decision.</p>
+</article>
+<article aria-labelledby="resource-verified_cost">
+<p class="eyebrow">4 · What does a useful AI result cost?</p>
+<h2 id="resource-verified_cost"><a href="/writing/ai-cost-per-verified-result.html" data-topic-resource="verified_cost" hreflang="en">AI cost per accepted result</a></h2>
+<p>Count tools, retries and human review as well as model calls. The property-research test is a proposed experiment, not a company result.</p>
+</article>
+<article aria-labelledby="resource-rental_yield">
+<p class="eyebrow">5 · What remains after costs and loan payments?</p>
+<h2 id="resource-rental_yield"><a href="/writing/ai-rental-yield-cash-flow.html" data-topic-resource="rental_yield" hreflang="en">Why can 8% rental yield still leave a cash shortfall?</a></h2>
+<p>Follow a fictional home to see how gross rental yield can coexist with a cash shortfall.</p>
+</article>
+<article aria-labelledby="resource-rental_cash_flow_tool">
+<p class="eyebrow">6 · What happens with your own rent and cost assumptions?</p>
+<h2 id="resource-rental_cash_flow_tool"><a href="/tools/rental-cash-flow.html" data-topic-resource="rental_cash_flow_tool" hreflang="en">Rent is income. Cash flow is what remains.</a></h2>
+<p>Use the rental cash-flow calculator to enter annual rent, vacancy, operating costs and loan payments. Read the assumptions and exclusions beside the result; this educational tool does not supply a property valuation or market rent.</p>
+</article>
+<section aria-labelledby="topic-complete-heading"><h2 id="topic-complete-heading">All articles in this topic</h2><ul><li><a href="/writing/how-building-digital-twins-work.html" data-topic-resource="article_how_building_digital_twins_work" hreflang="en">How can a building have a live digital copy?</a></li>
+<li><a href="/writing/dubai-property-tokenisation-explained.html" data-topic-resource="article_dubai_property_tokenisation_explained" hreflang="en">How do property tokens work, and can you sell them?</a></li>
+<li><a href="/writing/ai-data-center-site-readiness.html" data-topic-resource="article_ai_data_center_site_readiness" hreflang="en">What makes a building ready for AI data centers?</a></li>
+<li><a href="/writing/building-laser-scans-point-clouds-explained.html" data-topic-resource="article_building_laser_scans_point_clouds_explained" hreflang="en">How does a laser scan become a building record?</a></li>
+<li><a href="/studies/rent-own-2026/index.html" data-topic-resource="rent_ownership_study" hreflang="en">Rent vs owning: what do the cash-budget scenarios show?</a></li>
+<li><a href="/studies/rent-burden/index.html" data-topic-resource="rent_burden_study" hreflang="en">How much income goes to gross rent?</a></li>
+<li><a href="/writing/why-rent-to-value-is-not-property-yield.html" data-topic-resource="article_rent_value_methodology" hreflang="en">Why dividing metro rent by home value does not give property yield</a></li>
+<li><a href="/writing/why-occupancy-sensor-lights-switch-off.html" data-topic-resource="article_why_occupancy_sensor_lights_switch_off" hreflang="en">Why did the lights go out while you were there?</a></li>
+<li><a href="/writing/building-leak-alert-response-checklist.html" data-topic-resource="article_building_leak_alert_response_checklist" hreflang="en">Your building sent an alert.</a></li>
+<li><a href="/writing/which-dubai-property-source.html" data-topic-resource="article_dubai_sources" hreflang="en">Dubai property costs and data: choose the right source</a></li>
+<li><a href="/writing/bacnet-building-devices-common-language.html" data-topic-resource="article_bacnet_building_devices_common_language" hreflang="en">Your thermostat speaks. Who listens?</a></li>
+<li><a href="/writing/avm-vs-appraisal.html" data-topic-resource="day2_avm_vs_appraisal" hreflang="en">AVM vs appraisal: which fits your decision?</a></li>
+<li><a href="/writing/rent-or-buy-five-numbers.html" data-topic-resource="day2_rent_or_buy_five_numbers" hreflang="en">Rent or buy: the five numbers that decide it</a></li>
+<li><a href="/writing/human-review-property-ai-checklist.html" data-topic-resource="day2_human_review_property_ai_checklist" hreflang="en">Where the person signs off: property AI review</a></li>
+<li><a href="/writing/dubai-property-buying-costs.html" data-topic-resource="day2_dubai_property_buying_costs" hreflang="en">Dubai property buying costs, item by item</a></li>
+<li><a href="/writing/dubai-service-charge-same-rent.html" data-topic-resource="article_dubai_service_charge_same_rent" hreflang="en">Dubai service charge: same rent, different bills</a></li>
+<li><a href="/writing/dubai-project-escrow-controls.html" data-topic-resource="article_dubai_project_escrow_controls" hreflang="en">The money has a project name</a></li>
+<li><a href="/writing/property-comparables-evidence.html" data-topic-resource="article_property_comparables_evidence" hreflang="en">Next door is not always comparable</a></li>
+<li><a href="/writing/building-digital-twin-data-freshness.html" data-topic-resource="article_building_digital_twin_data_freshness" hreflang="en">A beautiful building model can still be out of date</a></li>
+<li><a href="/studies/explorer.html" data-topic-resource="property_study_explorer" hreflang="en">Start with the place. Keep the evidence in view.</a></li>
+<li><a href="/carousels/tech-trend-assisted-permissions.html" data-topic-resource="carousel_tech_trend_assisted_permissions" hreflang="en">AI agents are learning when to ask.</a></li>
+<li><a href="/carousels/tech-trend-ai-usage-not-outcomes.html" data-topic-resource="carousel_tech_trend_ai_usage_not_outcomes" hreflang="en">More AI calls do not prove more useful work.</a></li>
+<li><a href="/tools/dubai-purchase-cost.html" data-topic-resource="dubai_purchase_cost_calculator" hreflang="en">Dubai purchase-cost calculator: what cash does the purchase require?</a></li>
+<li><a href="/tools/dubai-rental-yield.html" data-topic-resource="dubai_rental_yield_calculator" hreflang="en">Dubai rental yield: what remains after costs?</a></li>
+<li><a href="/carousels/tech-trend-gemini-business-hub.html" data-topic-resource="carousel_tech_trend_gemini_business_hub" hreflang="en">A business hub is not a business autopilot.</a></li>
+<li><a href="/carousels/tech-trend-ai-factory-observability.html" data-topic-resource="carousel_tech_trend_ai_factory_observability" hreflang="en">An AI factory needs more than GPUs.</a></li>
+<li><a href="/writing/building-energy-audit-decisions.html" data-topic-resource="article_building_energy_audit_decisions" hreflang="en">Before buying a new machine, find where the energy goes</a></li>
+<li><a href="/carousels/tech-trend-world-models-real-tests.html" data-topic-resource="carousel_tech_trend_world_models_real_tests" hreflang="en">A simulated world is still a test environment.</a></li>
+<li><a href="/carousels/tech-trend-notification-to-reviewed-fix.html" data-topic-resource="carousel_tech_trend_notification_to_reviewed_fix" hreflang="en">A chat request is not a shipped fix.</a></li>
+<li><a href="/carousels/dubai-broker-record-check.html" data-topic-resource="carousel_dubai_broker_record_check" hreflang="en">Dubai broker verification: A business card is a starting point.</a></li>
+<li><a href="/carousels/dubai-project-status-check.html" data-topic-resource="carousel_dubai_project_status_check" hreflang="en">Dubai project status: Find the project behind the brochure.</a></li>
+<li><a href="/carousels/dubai-rental-index-context.html" data-topic-resource="carousel_dubai_rental_index_context" hreflang="en">Dubai rental index: Same area does not mean same building.</a></li>
+<li><a href="/carousels/dubai-procedure-status-check.html" data-topic-resource="carousel_dubai_procedure_status_check" hreflang="en">Dubai procedure status: Submitted is a stage, not the finish.</a></li>
+<li><a href="/carousels/dubai-valuation-evidence.html" data-topic-resource="carousel_dubai_valuation_evidence" hreflang="en">Dubai property valuation: Ask what produced the property number.</a></li>
+<li><a href="/carousels/ai-property-brief-evidence.html" data-topic-resource="carousel_ai_property_brief_evidence" hreflang="en">AI property briefs: A tidy property brief still needs evidence.</a></li></ul></section>
+<section aria-labelledby="topic-film-heading">
+<h2 id="topic-film-heading">See the rental example in motion</h2>
+<p>A 99-second English film with English captions and a transcript. The property, AI interface and amounts are fictional.</p>
+<p><a href="/watch/rental-yield.html" data-topic-resource="rental_film" hreflang="en">Watch the rental-yield film</a></p>
+<p><a href="https://www.youtube.com/playlist?list=PLVy10T3UbjJ0" hreflang="en"><bdi>AI × Property · YouTube</bdi></a></p>
+</section>
+<section aria-labelledby="topic-apply-heading">
+<h2 id="topic-apply-heading">Apply the questions to one workflow</h2>
+<p>Use the decision worksheet to define the user’s next action, identify the evidence it needs, and plan a first experiment.</p>
+<p><a href="/tools/before-you-build-ai.html" data-topic-resource="decision_guide" hreflang="en">Open Before You Build the AI</a></p>
+</section>
+<section aria-labelledby="topic-next-heading">
+<h2 id="topic-next-heading">Continue reading</h2>
+<p><a data-hub-navigation href="/topics/business-systems-dubai.html">AI and business systems</a>: Continue with the customer journey, permissions and payment timing behind everyday business operations.</p>
+<p><a data-hub-navigation href="/topics/tech-explained.html">Tech, explained</a></p>
+</section>
+<aside class="article-author" aria-labelledby="article-author-title">
+<h2 id="article-author-title">About the author</h2>
+<p>Ahmadreza Samadi builds AI products at Appraiva and runs Royal Abraj Group in Dubai. He writes about how businesses decide what to build, check and measure.</p>
+<p class="article-author__name"><a href="/about.html" rel="author">Ahmadreza Samadi</a></p>
+</aside>
+<!-- follow-subscribe:start -->
+<aside class="details follow-subscribe" aria-labelledby="follow-subscribe-title">
+<h2 id="follow-subscribe-title">Follow</h2>
+<nav aria-label="Follow Ahmadreza Samadi"><a href="https://www.linkedin.com/in/ahmadreza-samadi/"><bdi>LinkedIn</bdi></a> · <a href="https://www.youtube.com/@ahmadreza-samadi"><bdi>YouTube</bdi></a> · <a href="https://www.instagram.com/ahmadreza.samadi/"><bdi>Instagram</bdi></a></nav>
+</aside>
+<!-- follow-subscribe:end -->
+<footer class="editorial-footer"><nav aria-label="Related pages"><a href="/writing/">All writing</a> · <a href="/about.html#official-profiles">Official profiles</a></nav><p data-brand-discovery="v1"><a href="/ideas.html">Signature ideas</a> · <a href="/studies/">Property Decision Data</a></p><p>Ahmadreza Samadi · Technology Entrepreneur</p><a href="/#contact">Get in touch →</a></footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,178 @@
+WEBVTT
+
+1
+00:00:00.740 --> 00:00:04.420
+Leila runs a repair workshop
+at a fictional train station.
+
+2
+00:00:04.420 --> 00:00:06.340
+Two AI assistants help her.
+
+3
+00:00:06.340 --> 00:00:10.756
+This morning, the first one fixes
+a broken timetable display.
+
+4
+00:00:10.756 --> 00:00:12.866
+Before it moves on, it leaves a note:
+
+5
+00:00:12.866 --> 00:00:15.096
+which version of the display it was,
+
+6
+00:00:15.096 --> 00:00:17.872
+what it tried,
+and how it checked the fix.
+
+7
+00:00:18.062 --> 00:00:22.672
+An hour later, the second assistant finds
+a display failing in a similar way.
+
+8
+00:00:22.672 --> 00:00:25.556
+Should it solve the same problem
+from scratch?
+
+9
+00:00:25.846 --> 00:00:28.986
+That’s the idea behind
+Stack Overflow for Agents.
+
+10
+00:00:28.986 --> 00:00:32.376
+In June, Stack Overflow announced it as a beta:
+
+11
+00:00:32.376 --> 00:00:36.134
+a place where AI agents
+can share what they’ve learned.
+
+12
+00:00:36.224 --> 00:00:38.064
+It’s built around an API.
+
+13
+00:00:38.064 --> 00:00:42.551
+That’s a doorway one piece of software
+uses to ask another for something.
+
+14
+00:00:42.641 --> 00:00:45.711
+So an agent can search the shared notes
+before it starts,
+
+15
+00:00:45.711 --> 00:00:48.373
+instead of rediscovering a known fix.
+
+16
+00:00:48.563 --> 00:00:51.703
+Think of it as a shared notebook,
+not a shared brain.
+
+17
+00:00:51.703 --> 00:00:54.413
+Reading a note
+doesn’t retrain the assistant.
+
+18
+00:00:54.413 --> 00:00:56.553
+It just gives it something to check.
+
+19
+00:00:56.743 --> 00:00:58.023
+And checking matters.
+
+20
+00:00:58.023 --> 00:01:00.203
+This display is a different version.
+
+21
+00:01:00.203 --> 00:01:03.643
+A copied recipe might not fit
+different ingredients.
+
+22
+00:01:03.733 --> 00:01:05.823
+So the assistant compares the context,
+
+23
+00:01:05.823 --> 00:01:08.323
+tries the fix, and reviews the result.
+
+24
+00:01:08.323 --> 00:01:10.043
+Then it adds what happened:
+
+25
+00:01:10.043 --> 00:01:11.983
+what worked here, and what didn’t.
+
+26
+00:01:12.173 --> 00:01:16.073
+Stack Overflow says checking answers,
+not just posting them,
+
+27
+00:01:16.073 --> 00:01:18.153
+is what earns reputation there.
+
+28
+00:01:18.153 --> 00:01:22.183
+And an agent can show its draft
+to a person before it’s published.
+
+29
+00:01:22.273 --> 00:01:25.663
+In September, it added playbooks
+for step-by-step know-how,
+
+30
+00:01:25.663 --> 00:01:29.503
+privacy and publishing controls,
+and a read-only mode.
+
+31
+00:01:29.593 --> 00:01:33.543
+It also says it’s still checking
+how valuable this kind of sharing is.
+
+32
+00:01:33.543 --> 00:01:36.423
+A shared answer
+isn’t proof that it’s right.
+
+33
+00:01:36.613 --> 00:01:38.593
+Leila keeps one rule of her own:
+
+34
+00:01:38.593 --> 00:01:41.923
+private project logs
+never go in the shared notebook.
+
+35
+00:01:42.113 --> 00:01:45.583
+When an assistant brings back a shared fix,
+ask three things.
+
+36
+00:01:45.583 --> 00:01:46.683
+What was tried?
+
+37
+00:01:46.683 --> 00:01:47.633
+Where did it work?
+
+38
+00:01:47.633 --> 00:01:49.183
+And how was it checked?
+
+39
+00:01:49.473 --> 00:01:52.323
+A shared note is a starting point,
+not a verdict.

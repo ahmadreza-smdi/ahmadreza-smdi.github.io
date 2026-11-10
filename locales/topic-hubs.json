@@ -1,0 +1,1447 @@
+{
+  "primary_language": "en",
+  "resources": {
+    "appraiva": {
+      "paths": {
+        "en": "work/appraiva.html",
+        "fa": "fa/work/appraiva.html",
+        "ar": "ar/work/appraiva.html"
+      }
+    },
+    "property_enrichment": {
+      "paths": {
+        "en": "writing/property-data-enrichment.html",
+        "fa": "fa/writing/property-data-enrichment.html",
+        "ar": "ar/writing/property-data-enrichment.html"
+      }
+    },
+    "royal_abraj": {
+      "paths": {
+        "en": "work/royal-abraj.html",
+        "fa": "fa/work/royal-abraj.html",
+        "ar": "ar/work/royal-abraj.html"
+      }
+    },
+    "home_estimates": {
+      "paths": {
+        "en": "writing/ai-home-value-estimates.html",
+        "fa": "fa/writing/ai-home-value-estimates.html",
+        "ar": "ar/writing/ai-home-value-estimates.html"
+      }
+    },
+    "human_review": {
+      "paths": {
+        "en": "writing/ai-human-review-real-estate.html",
+        "fa": "fa/writing/ai-human-review-real-estate.html",
+        "ar": "ar/writing/ai-human-review-real-estate.html"
+      }
+    },
+    "verified_cost": {
+      "paths": {
+        "en": "writing/ai-cost-per-verified-result.html",
+        "fa": "fa/writing/ai-cost-per-verified-result.html",
+        "ar": "ar/writing/ai-cost-per-verified-result.html"
+      }
+    },
+    "rental_yield": {
+      "paths": {
+        "en": "writing/ai-rental-yield-cash-flow.html",
+        "fa": "fa/writing/ai-rental-yield-cash-flow.html",
+        "ar": "ar/writing/ai-rental-yield-cash-flow.html"
+      }
+    },
+    "decision_first": {
+      "paths": {
+        "en": "writing/start-with-the-decision.html",
+        "fa": "fa/writing/start-with-the-decision.html",
+        "ar": "ar/writing/start-with-the-decision.html"
+      }
+    },
+    "connected_apps": {
+      "paths": {
+        "en": "writing/connected-ai-apps.html",
+        "fa": "fa/writing/connected-ai-apps.html",
+        "ar": "ar/writing/connected-ai-apps.html"
+      }
+    },
+    "profit_cash": {
+      "paths": {
+        "en": "writing/profitable-but-out-of-cash.html",
+        "fa": "fa/writing/profitable-but-out-of-cash.html",
+        "ar": "ar/writing/profitable-but-out-of-cash.html"
+      }
+    },
+    "decision_guide": {
+      "paths": {
+        "en": "tools/before-you-build-ai.html",
+        "fa": "fa/tools/before-you-build-ai.html",
+        "ar": "ar/tools/before-you-build-ai.html"
+      }
+    },
+    "rental_film": {
+      "paths": {
+        "en": "watch/rental-yield.html"
+      }
+    },
+    "profit_film": {
+      "paths": {
+        "en": "watch/profit-cash.html"
+      }
+    },
+    "article_how_building_digital_twins_work": {
+      "paths": {
+        "en": "writing/how-building-digital-twins-work.html",
+        "fa": "fa/writing/how-building-digital-twins-work.html",
+        "ar": "ar/writing/how-building-digital-twins-work.html"
+      }
+    },
+    "article_ai_agent_safety_boundaries": {
+      "paths": {
+        "en": "writing/ai-agent-safety-boundaries.html",
+        "fa": "fa/writing/ai-agent-safety-boundaries.html",
+        "ar": "ar/writing/ai-agent-safety-boundaries.html"
+      }
+    },
+    "article_jev_ai_decision_model": {
+      "paths": {
+        "en": "writing/jev-ai-decision-model.html",
+        "fa": "fa/writing/jev-ai-decision-model.html",
+        "ar": "ar/writing/jev-ai-decision-model.html"
+      }
+    },
+    "article_why_ai_sounds_confident": {
+      "paths": {
+        "en": "writing/why-ai-sounds-confident.html",
+        "fa": "fa/writing/why-ai-sounds-confident.html",
+        "ar": "ar/writing/why-ai-sounds-confident.html"
+      }
+    },
+    "article_why_ai_loses_earlier_chat_context": {
+      "paths": {
+        "en": "writing/why-ai-loses-earlier-chat-context.html",
+        "fa": "fa/writing/why-ai-loses-earlier-chat-context.html",
+        "ar": "ar/writing/why-ai-loses-earlier-chat-context.html"
+      }
+    },
+    "article_verify_ai_image_claims": {
+      "paths": {
+        "en": "writing/verify-ai-image-claims.html",
+        "fa": "fa/writing/verify-ai-image-claims.html",
+        "ar": "ar/writing/verify-ai-image-claims.html"
+      }
+    },
+    "article_how_many_coffees_to_break_even": {
+      "paths": {
+        "en": "writing/how-many-coffees-to-break-even.html",
+        "fa": "fa/writing/how-many-coffees-to-break-even.html",
+        "ar": "ar/writing/how-many-coffees-to-break-even.html"
+      }
+    },
+    "article_why_wifi_is_slow_with_full_bars": {
+      "paths": {
+        "en": "writing/why-wifi-is-slow-with-full-bars.html",
+        "fa": "fa/writing/why-wifi-is-slow-with-full-bars.html",
+        "ar": "ar/writing/why-wifi-is-slow-with-full-bars.html"
+      }
+    },
+    "article_why_usb_c_cables_differ": {
+      "paths": {
+        "en": "writing/why-usb-c-cables-differ.html",
+        "fa": "fa/writing/why-usb-c-cables-differ.html",
+        "ar": "ar/writing/why-usb-c-cables-differ.html"
+      }
+    },
+    "article_how_photo_text_recognition_works": {
+      "paths": {
+        "en": "writing/how-photo-text-recognition-works.html",
+        "fa": "fa/writing/how-photo-text-recognition-works.html",
+        "ar": "ar/writing/how-photo-text-recognition-works.html"
+      }
+    },
+    "article_how_contactless_cards_work": {
+      "paths": {
+        "en": "writing/how-contactless-cards-work.html",
+        "fa": "fa/writing/how-contactless-cards-work.html",
+        "ar": "ar/writing/how-contactless-cards-work.html"
+      }
+    },
+    "article_how_noise_cancellation_works": {
+      "paths": {
+        "en": "writing/how-noise-cancellation-works.html",
+        "fa": "fa/writing/how-noise-cancellation-works.html",
+        "ar": "ar/writing/how-noise-cancellation-works.html"
+      }
+    },
+    "article_iphone_duo_price_per_day": {
+      "paths": {
+        "en": "writing/iphone-duo-price-per-day.html",
+        "fa": "fa/writing/iphone-duo-price-per-day.html",
+        "ar": "ar/writing/iphone-duo-price-per-day.html"
+      }
+    },
+    "article_why_full_storage_slows_computer": {
+      "paths": {
+        "en": "writing/why-full-storage-slows-computer.html",
+        "fa": "fa/writing/why-full-storage-slows-computer.html",
+        "ar": "ar/writing/why-full-storage-slows-computer.html"
+      }
+    },
+    "article_why_phone_stops_charging_at_80": {
+      "paths": {
+        "en": "writing/why-phone-stops-charging-at-80.html",
+        "fa": "fa/writing/why-phone-stops-charging-at-80.html",
+        "ar": "ar/writing/why-phone-stops-charging-at-80.html"
+      }
+    },
+    "article_what_accept_cookies_means": {
+      "paths": {
+        "en": "writing/what-accept-cookies-means.html",
+        "fa": "fa/writing/what-accept-cookies-means.html",
+        "ar": "ar/writing/what-accept-cookies-means.html"
+      }
+    },
+    "article_incognito_private_browsing": {
+      "paths": {
+        "en": "writing/incognito-private-browsing.html",
+        "fa": "fa/writing/incognito-private-browsing.html",
+        "ar": "ar/writing/incognito-private-browsing.html"
+      }
+    },
+    "article_how_satellite_messaging_works": {
+      "paths": {
+        "en": "writing/how-satellite-messaging-works.html",
+        "fa": "fa/writing/how-satellite-messaging-works.html",
+        "ar": "ar/writing/how-satellite-messaging-works.html"
+      }
+    },
+    "article_humanoid_robots_at_home": {
+      "paths": {
+        "en": "writing/humanoid-robots-at-home.html",
+        "fa": "fa/writing/humanoid-robots-at-home.html",
+        "ar": "ar/writing/humanoid-robots-at-home.html"
+      }
+    },
+    "article_foldable_two_batteries": {
+      "paths": {
+        "en": "writing/foldable-two-batteries.html",
+        "fa": "fa/writing/foldable-two-batteries.html",
+        "ar": "ar/writing/foldable-two-batteries.html"
+      }
+    },
+    "article_passkeys_face_id": {
+      "paths": {
+        "en": "writing/passkeys-face-id.html",
+        "fa": "fa/writing/passkeys-face-id.html",
+        "ar": "ar/writing/passkeys-face-id.html"
+      }
+    },
+    "article_how_zip_files_work": {
+      "paths": {
+        "en": "writing/how-zip-files-work.html",
+        "fa": "fa/writing/how-zip-files-work.html",
+        "ar": "ar/writing/how-zip-files-work.html"
+      }
+    },
+    "tech_film_ai_confidence": {
+      "paths": {
+        "en": "watch/ai-confidence.html"
+      }
+    },
+    "tech_film_cookie_consent": {
+      "paths": {
+        "en": "watch/cookie-consent.html"
+      }
+    },
+    "tech_film_charging_80": {
+      "paths": {
+        "en": "watch/charging-80.html"
+      }
+    },
+    "tech_film_profit_cash": {
+      "paths": {
+        "en": "watch/profit-cash.html"
+      }
+    },
+    "tech_film_rental_yield": {
+      "paths": {
+        "en": "watch/rental-yield.html"
+      }
+    },
+    "tech_film_iphone_duo": {
+      "paths": {
+        "en": "watch/iphone-duo.html"
+      }
+    },
+    "article_chatgpt_intelligent_ui_explained": {
+      "paths": {
+        "en": "writing/chatgpt-intelligent-ui-explained.html",
+        "fa": "fa/writing/chatgpt-intelligent-ui-explained.html",
+        "ar": "ar/writing/chatgpt-intelligent-ui-explained.html"
+      }
+    },
+    "article_dubai_property_tokenisation_explained": {
+      "paths": {
+        "en": "writing/dubai-property-tokenisation-explained.html",
+        "fa": "fa/writing/dubai-property-tokenisation-explained.html",
+        "ar": "ar/writing/dubai-property-tokenisation-explained.html"
+      }
+    },
+    "article_small_ai_models_task_routing_explained": {
+      "paths": {
+        "en": "writing/small-ai-models-task-routing-explained.html",
+        "fa": "fa/writing/small-ai-models-task-routing-explained.html",
+        "ar": "ar/writing/small-ai-models-task-routing-explained.html"
+      }
+    },
+    "article_ai_data_center_site_readiness": {
+      "paths": {
+        "en": "writing/ai-data-center-site-readiness.html",
+        "fa": "fa/writing/ai-data-center-site-readiness.html",
+        "ar": "ar/writing/ai-data-center-site-readiness.html"
+      }
+    },
+    "article_ai_inference_memory_movement_explained": {
+      "paths": {
+        "en": "writing/ai-inference-memory-movement-explained.html",
+        "fa": "fa/writing/ai-inference-memory-movement-explained.html",
+        "ar": "ar/writing/ai-inference-memory-movement-explained.html"
+      }
+    },
+    "article_building_laser_scans_point_clouds_explained": {
+      "paths": {
+        "en": "writing/building-laser-scans-point-clouds-explained.html",
+        "fa": "fa/writing/building-laser-scans-point-clouds-explained.html",
+        "ar": "ar/writing/building-laser-scans-point-clouds-explained.html"
+      }
+    },
+    "rent_ownership_study": {
+      "paths": {
+        "en": "studies/rent-own-2026/index.html",
+        "fa": "fa/studies/rent-own-2026/index.html",
+        "ar": "ar/studies/rent-own-2026/index.html"
+      }
+    },
+    "article_why_ai_weather_models_need_local_observations": {
+      "paths": {
+        "en": "writing/why-ai-weather-models-need-local-observations.html",
+        "fa": "fa/writing/why-ai-weather-models-need-local-observations.html",
+        "ar": "ar/writing/why-ai-weather-models-need-local-observations.html"
+      }
+    },
+    "article_rent_value_methodology": {
+      "paths": {
+        "en": "writing/why-rent-to-value-is-not-property-yield.html",
+        "fa": "fa/writing/why-rent-to-value-is-not-property-yield.html",
+        "ar": "ar/writing/why-rent-to-value-is-not-property-yield.html"
+      }
+    },
+    "article_why_occupancy_sensor_lights_switch_off": {
+      "paths": {
+        "en": "writing/why-occupancy-sensor-lights-switch-off.html",
+        "fa": "fa/writing/why-occupancy-sensor-lights-switch-off.html",
+        "ar": "ar/writing/why-occupancy-sensor-lights-switch-off.html"
+      }
+    },
+    "article_virtual_machine_device_sharing_explained": {
+      "paths": {
+        "en": "writing/virtual-machine-device-sharing-explained.html",
+        "fa": "fa/writing/virtual-machine-device-sharing-explained.html",
+        "ar": "ar/writing/virtual-machine-device-sharing-explained.html"
+      }
+    },
+    "article_ai_document_review_claim_evidence_checklist": {
+      "paths": {
+        "en": "writing/ai-document-review-claim-evidence-checklist.html",
+        "fa": "fa/writing/ai-document-review-claim-evidence-checklist.html",
+        "ar": "ar/writing/ai-document-review-claim-evidence-checklist.html"
+      }
+    },
+    "article_building_leak_alert_response_checklist": {
+      "paths": {
+        "en": "writing/building-leak-alert-response-checklist.html",
+        "fa": "fa/writing/building-leak-alert-response-checklist.html",
+        "ar": "ar/writing/building-leak-alert-response-checklist.html"
+      }
+    },
+    "article_where_wearable_ai_computation_runs": {
+      "paths": {
+        "en": "writing/where-wearable-ai-computation-runs.html",
+        "fa": "fa/writing/where-wearable-ai-computation-runs.html",
+        "ar": "ar/writing/where-wearable-ai-computation-runs.html"
+      }
+    },
+    "article_dubai_sources": {
+      "paths": {
+        "en": "writing/which-dubai-property-source.html",
+        "fa": "fa/writing/which-dubai-property-source.html",
+        "ar": "ar/writing/which-dubai-property-source.html"
+      }
+    },
+    "article_on_device_ai_scam_warnings_explained": {
+      "paths": {
+        "en": "writing/on-device-ai-scam-warnings-explained.html",
+        "fa": "fa/writing/on-device-ai-scam-warnings-explained.html",
+        "ar": "ar/writing/on-device-ai-scam-warnings-explained.html"
+      }
+    },
+    "article_bacnet_building_devices_common_language": {
+      "paths": {
+        "en": "writing/bacnet-building-devices-common-language.html",
+        "fa": "fa/writing/bacnet-building-devices-common-language.html",
+        "ar": "ar/writing/bacnet-building-devices-common-language.html"
+      }
+    },
+    "article_geospatial_ai_map_answer_review": {
+      "paths": {
+        "en": "writing/geospatial-ai-map-answer-review.html",
+        "fa": "fa/writing/geospatial-ai-map-answer-review.html",
+        "ar": "ar/writing/geospatial-ai-map-answer-review.html"
+      }
+    },
+    "rental_cash_flow_tool": {
+      "paths": {
+        "en": "tools/rental-cash-flow.html"
+      }
+    },
+    "article_phone_location_across_street": {
+      "paths": {
+        "en": "writing/phone-location-across-street.html",
+        "fa": "fa/writing/phone-location-across-street.html",
+        "ar": "ar/writing/phone-location-across-street.html"
+      }
+    },
+    "article_ai_agents_shared_notebook": {
+      "paths": {
+        "en": "writing/ai-agents-shared-notebook.html",
+        "fa": "fa/writing/ai-agents-shared-notebook.html",
+        "ar": "ar/writing/ai-agents-shared-notebook.html"
+      }
+    },
+    "rent_burden_study": {
+      "paths": {
+        "en": "studies/rent-burden/index.html"
+      }
+    },
+    "article_tesla_roadster_flight_claim": {
+      "paths": {
+        "en": "writing/tesla-roadster-flight-claim.html",
+        "fa": "fa/writing/tesla-roadster-flight-claim.html",
+        "ar": "ar/writing/tesla-roadster-flight-claim.html"
+      }
+    },
+    "day2_avm_vs_appraisal": {
+      "paths": {
+        "en": "writing/avm-vs-appraisal.html",
+        "fa": "fa/writing/avm-vs-appraisal.html",
+        "ar": "ar/writing/avm-vs-appraisal.html"
+      }
+    },
+    "day2_rent_or_buy_five_numbers": {
+      "paths": {
+        "en": "writing/rent-or-buy-five-numbers.html",
+        "fa": "fa/writing/rent-or-buy-five-numbers.html",
+        "ar": "ar/writing/rent-or-buy-five-numbers.html"
+      }
+    },
+    "day2_human_review_property_ai_checklist": {
+      "paths": {
+        "en": "writing/human-review-property-ai-checklist.html",
+        "fa": "fa/writing/human-review-property-ai-checklist.html",
+        "ar": "ar/writing/human-review-property-ai-checklist.html"
+      }
+    },
+    "day2_dubai_property_buying_costs": {
+      "paths": {
+        "en": "writing/dubai-property-buying-costs.html",
+        "fa": "fa/writing/dubai-property-buying-costs.html",
+        "ar": "ar/writing/dubai-property-buying-costs.html"
+      }
+    },
+    "article_heat_pump_moves_heat_explained": {
+      "paths": {
+        "en": "writing/heat-pump-moves-heat-explained.html",
+        "fa": "fa/writing/heat-pump-moves-heat-explained.html",
+        "ar": "ar/writing/heat-pump-moves-heat-explained.html"
+      }
+    },
+    "article_ai_agent_permissions_ability_authority": {
+      "paths": {
+        "en": "writing/ai-agent-permissions-ability-authority.html",
+        "fa": "fa/writing/ai-agent-permissions-ability-authority.html",
+        "ar": "ar/writing/ai-agent-permissions-ability-authority.html"
+      }
+    },
+    "article_dubai_service_charge_same_rent": {
+      "paths": {
+        "en": "writing/dubai-service-charge-same-rent.html",
+        "fa": "fa/writing/dubai-service-charge-same-rent.html",
+        "ar": "ar/writing/dubai-service-charge-same-rent.html"
+      }
+    },
+    "article_rag_check_business_records": {
+      "paths": {
+        "en": "writing/rag-check-business-records.html",
+        "fa": "fa/writing/rag-check-business-records.html",
+        "ar": "ar/writing/rag-check-business-records.html"
+      }
+    },
+    "article_dubai_project_escrow_controls": {
+      "paths": {
+        "en": "writing/dubai-project-escrow-controls.html",
+        "fa": "fa/writing/dubai-project-escrow-controls.html",
+        "ar": "ar/writing/dubai-project-escrow-controls.html"
+      }
+    },
+    "article_computer_agent_check_result": {
+      "paths": {
+        "en": "writing/computer-agent-check-result.html",
+        "fa": "fa/writing/computer-agent-check-result.html",
+        "ar": "ar/writing/computer-agent-check-result.html"
+      }
+    },
+    "article_property_comparables_evidence": {
+      "paths": {
+        "en": "writing/property-comparables-evidence.html",
+        "fa": "fa/writing/property-comparables-evidence.html",
+        "ar": "ar/writing/property-comparables-evidence.html"
+      }
+    },
+    "article_building_digital_twin_data_freshness": {
+      "paths": {
+        "en": "writing/building-digital-twin-data-freshness.html",
+        "fa": "fa/writing/building-digital-twin-data-freshness.html",
+        "ar": "ar/writing/building-digital-twin-data-freshness.html"
+      }
+    },
+    "property_study_explorer": {
+      "paths": {
+        "en": "studies/explorer.html"
+      }
+    },
+    "article_prompt_injection_layered_controls": {
+      "paths": {
+        "en": "writing/prompt-injection-layered-controls.html",
+        "fa": "fa/writing/prompt-injection-layered-controls.html",
+        "ar": "ar/writing/prompt-injection-layered-controls.html"
+      }
+    },
+    "carousel_tech_trend_assisted_permissions": {
+      "paths": {
+        "en": "carousels/tech-trend-assisted-permissions.html"
+      }
+    },
+    "article_business_ai_evaluation_cases": {
+      "paths": {
+        "en": "writing/business-ai-evaluation-cases.html",
+        "fa": "fa/writing/business-ai-evaluation-cases.html",
+        "ar": "ar/writing/business-ai-evaluation-cases.html"
+      }
+    },
+    "carousel_tech_trend_ai_usage_not_outcomes": {
+      "paths": {
+        "en": "carousels/tech-trend-ai-usage-not-outcomes.html"
+      }
+    },
+    "article_ai_research_examination_understanding": {
+      "paths": {
+        "en": "writing/ai-research-examination-understanding.html",
+        "fa": "fa/writing/ai-research-examination-understanding.html",
+        "ar": "ar/writing/ai-research-examination-understanding.html"
+      }
+    },
+    "dubai_purchase_cost_calculator": {
+      "paths": {
+        "en": "tools/dubai-purchase-cost.html"
+      }
+    },
+    "dubai_rental_yield_calculator": {
+      "paths": {
+        "en": "tools/dubai-rental-yield.html"
+      }
+    },
+    "article_cash_conversion_cycle_clocks": {
+      "paths": {
+        "en": "writing/cash-conversion-cycle-clocks.html",
+        "fa": "fa/writing/cash-conversion-cycle-clocks.html",
+        "ar": "ar/writing/cash-conversion-cycle-clocks.html"
+      }
+    },
+    "carousel_tech_trend_gemini_business_hub": {
+      "paths": {
+        "en": "carousels/tech-trend-gemini-business-hub.html"
+      }
+    },
+    "article_structured_output_source_checks": {
+      "paths": {
+        "en": "writing/structured-output-source-checks.html",
+        "fa": "fa/writing/structured-output-source-checks.html",
+        "ar": "ar/writing/structured-output-source-checks.html"
+      }
+    },
+    "carousel_tech_trend_ai_factory_observability": {
+      "paths": {
+        "en": "carousels/tech-trend-ai-factory-observability.html"
+      }
+    },
+    "article_building_energy_audit_decisions": {
+      "paths": {
+        "en": "writing/building-energy-audit-decisions.html",
+        "fa": "fa/writing/building-energy-audit-decisions.html",
+        "ar": "ar/writing/building-energy-audit-decisions.html"
+      }
+    },
+    "carousel_tech_trend_world_models_real_tests": {
+      "paths": {
+        "en": "carousels/tech-trend-world-models-real-tests.html"
+      }
+    },
+    "article_agent_workflow_shared_bottlenecks": {
+      "paths": {
+        "en": "writing/agent-workflow-shared-bottlenecks.html",
+        "fa": "fa/writing/agent-workflow-shared-bottlenecks.html",
+        "ar": "ar/writing/agent-workflow-shared-bottlenecks.html"
+      }
+    },
+    "carousel_tech_trend_notification_to_reviewed_fix": {
+      "paths": {
+        "en": "carousels/tech-trend-notification-to-reviewed-fix.html"
+      }
+    },
+    "carousel_dubai_broker_record_check": {
+      "paths": {
+        "en": "carousels/dubai-broker-record-check.html"
+      }
+    },
+    "carousel_dubai_project_status_check": {
+      "paths": {
+        "en": "carousels/dubai-project-status-check.html"
+      }
+    },
+    "carousel_dubai_rental_index_context": {
+      "paths": {
+        "en": "carousels/dubai-rental-index-context.html"
+      }
+    },
+    "carousel_dubai_procedure_status_check": {
+      "paths": {
+        "en": "carousels/dubai-procedure-status-check.html"
+      }
+    },
+    "carousel_dubai_valuation_evidence": {
+      "paths": {
+        "en": "carousels/dubai-valuation-evidence.html"
+      }
+    },
+    "carousel_ai_property_brief_evidence": {
+      "paths": {
+        "en": "carousels/ai-property-brief-evidence.html"
+      }
+    },
+    "article_build_ai_run_a_business": {
+      "paths": {
+        "en": "writing/build-ai-run-a-business.html",
+        "fa": "fa/writing/build-ai-run-a-business.html",
+        "ar": "ar/writing/build-ai-run-a-business.html"
+      }
+    }
+  },
+  "hubs": [
+    {
+      "id": "ai-real-estate",
+      "paths": {
+        "en": "topics/ai-real-estate.html",
+        "fa": "fa/topics/ai-real-estate.html",
+        "ar": "ar/topics/ai-real-estate.html"
+      },
+      "locales": {
+        "en": {
+          "title": "AI in real estate: evidence and decisions | Ahmadreza Samadi",
+          "heading": "AI in real estate",
+          "description": "A reading path through property data, human review, AI workflow costs and rental cash flow, with Ahmadreza Samadi’s work at Appraiva as context.",
+          "eyebrow": "Reading path · AI and property research",
+          "lead": "Follow a property signal through the questions that make it useful: what supports it, who checks it, and what decision comes next.",
+          "context_heading": "From an image to a research workflow",
+          "context": [
+            "Co-Founder & Technical Lead, Appraiva. Appraiva is a US company in Cleveland, Ohio; he works remotely from Dubai. It builds AI tools that help real estate investors and developers find distressed and off-market properties through imagery analysis and enriched property data.",
+            "The case study explains those connections. The readings below then examine five checks around a property decision: matching an image to property identity and dated sources, the data behind an estimate, human review, the cost of useful AI work, and the difference between rental yield and cash flow."
+          ],
+          "case_study": {
+            "resource": "appraiva",
+            "label": "Read the Appraiva case study",
+            "summary": "AI tools for real estate investors and developers, using imagery analysis and enriched property data."
+          },
+          "questions_heading": "Keep these questions in view",
+          "questions": [
+            "Which property and source records support the result?",
+            "Who checks the important claims before someone acts?",
+            "What does the full workflow cost, and what money remains after property costs and loan payments?"
+          ],
+          "reading_heading": "Read in this order",
+          "reading_path": [
+            {
+              "resource": "property_enrichment",
+              "question": "Which property do the image and records describe?",
+              "summary": "A fictional image-and-record comparison shows how to check property identity, source dates and unresolved claims before combining property information."
+            },
+            {
+              "resource": "home_estimates",
+              "question": "What does the estimate know?",
+              "summary": "Check property facts, comparable sales and uncertainty before relying on an automated home-value estimate."
+            },
+            {
+              "resource": "human_review",
+              "question": "Who checks a material claim?",
+              "summary": "Separate AI preparation from professional verification and the client’s decision."
+            },
+            {
+              "resource": "verified_cost",
+              "question": "What does a useful AI result cost?",
+              "summary": "Count tools, retries and human review as well as model calls. The property-research test is a proposed experiment, not a company result."
+            },
+            {
+              "resource": "rental_yield",
+              "question": "What remains after costs and loan payments?",
+              "summary": "Follow a fictional home to see how gross rental yield can coexist with a cash shortfall."
+            },
+            {
+              "resource": "rental_cash_flow_tool",
+              "question": "What happens with your own rent and cost assumptions?",
+              "summary": "Use the rental cash-flow calculator to enter annual rent, vacancy, operating costs and loan payments. Read the assumptions and exclusions beside the result; this educational tool does not supply a property valuation or market rent."
+            }
+          ],
+          "film": {
+            "resource": "rental_film",
+            "heading": "See the rental example in motion",
+            "summary": "A 99-second English film with English captions and a transcript. The property, AI interface and amounts are fictional.",
+            "label": "Watch the rental-yield film"
+          },
+          "apply": {
+            "resource": "decision_guide",
+            "heading": "Apply the questions to one workflow",
+            "summary": "Use the decision worksheet to define the user’s next action, identify the evidence it needs, and plan a first experiment.",
+            "label": "Open Before You Build the AI"
+          },
+          "cross_hub": {
+            "hub": "business-systems-dubai",
+            "label": "AI and business systems",
+            "summary": "Continue with the customer journey, permissions and payment timing behind everyday business operations."
+          },
+          "author_bio": "Ahmadreza Samadi builds AI products at Appraiva and runs Royal Abraj Group in Dubai. He writes about how businesses decide what to build, check and measure."
+        },
+        "fa": {
+          "title": "هوش مصنوعی در املاک: از شواهد تا تصمیم | احمدرضا صمدی",
+          "heading": "هوش مصنوعی در املاک",
+          "description": "مسیر مطالعه‌ای درباره داده‌های ملک، بازبینی انسانی، هزینه فرایند هوش مصنوعی و جریان نقدی اجاره، با نگاهی به کار احمدرضا صمدی در Appraiva.",
+          "eyebrow": "مسیر مطالعه · هوش مصنوعی و بررسی ملک",
+          "lead": "یک نشانه درباره ملک را با این پرسش‌ها دنبال کنید: چه شواهدی آن را پشتیبانی می‌کند، چه کسی آن را بررسی می‌کند و تصمیم بعدی چیست؟",
+          "context_heading": "از تصویر تا فرایند بررسی ملک",
+          "context": [
+            "هم‌بنیان‌گذار و راهبر فنی Appraiva. اپرایوا شرکتی آمریکایی در کلیولندِ اوهایو است؛ او از دبی دورکاری می‌کند. این شرکت ابزارهای هوش مصنوعی می‌سازد که با تحلیل تصاویر و داده‌های تکمیل‌شدهٔ املاک، به سرمایه‌گذاران و توسعه‌دهندگان املاک کمک می‌کنند املاک دچار مشکل و خارج از بازار را پیدا کنند.",
+            "مطالعه موردی این ارتباط‌ها را توضیح می‌دهد. سپس نوشته‌های زیر پنج جنبه تصمیم‌گیری درباره ملک را بررسی می‌کنند: پیوند تصویر با هویت ملک و منابع تاریخ‌دار، داده‌های پشت یک برآورد، بازبینی انسانی، هزینه کار مفید با هوش مصنوعی و تفاوت بازده اجاره با جریان نقدی."
+          ],
+          "case_study": {
+            "resource": "appraiva",
+            "label": "مطالعه موردی Appraiva را بخوانید",
+            "summary": "ابزارهای هوش مصنوعی برای سرمایه‌گذاران و توسعه‌دهندگان املاک، با استفاده از تحلیل تصاویر و داده‌های تکمیل‌شدهٔ املاک."
+          },
+          "questions_heading": "این پرسش‌ها را در نظر داشته باشید",
+          "questions": [
+            "نتیجه بر پایه کدام ملک و سوابق منبع است؟",
+            "پیش از اقدام، چه کسی ادعاهای مهم را بررسی می‌کند؟",
+            "کل فرایند چقدر هزینه دارد و پس از هزینه‌های ملک و اقساط وام چه پولی باقی می‌ماند؟"
+          ],
+          "reading_heading": "با این ترتیب بخوانید",
+          "reading_path": [
+            {
+              "resource": "property_enrichment",
+              "question": "تصویر و سوابق به کدام ملک اشاره دارند؟",
+              "summary": "یک مقایسهٔ خیالی میان تصویر و سابقه نشان می‌دهد پیش از ترکیب اطلاعات ملک، چگونه هویت ملک، تاریخ منابع و ادعاهای تأییدنشده را بررسی کنیم."
+            },
+            {
+              "resource": "home_estimates",
+              "question": "برآورد چه اطلاعاتی دارد؟",
+              "summary": "پیش از اتکا به برآورد خودکار ارزش خانه، اطلاعات ملک، معاملات قابل‌مقایسه و عدم‌قطعیت را بررسی کنید."
+            },
+            {
+              "resource": "human_review",
+              "question": "چه کسی یک ادعای مهم را بررسی می‌کند؟",
+              "summary": "آماده‌سازی با هوش مصنوعی، تأیید متخصص و تصمیم مشتری را از هم جدا کنید."
+            },
+            {
+              "resource": "verified_cost",
+              "question": "یک نتیجه مفید از هوش مصنوعی چقدر هزینه دارد؟",
+              "summary": "در کنار فراخوانی مدل، ابزارها، تلاش‌های دوباره و بازبینی انسانی را هم حساب کنید. آزمون بررسی ملک یک آزمایش پیشنهادی است، نه نتیجه یک شرکت."
+            },
+            {
+              "resource": "rental_yield",
+              "question": "پس از هزینه‌ها و اقساط چه می‌ماند؟",
+              "summary": "یک خانه فرضی را دنبال کنید تا ببینید بازده ناخالص اجاره چگونه می‌تواند با کسری نقدی همراه باشد."
+            },
+            {
+              "resource": "rental_cash_flow_tool",
+              "question": "با فرض‌های خودتان دربارهٔ اجاره و هزینه چه نتیجه‌ای می‌گیرید؟",
+              "summary": "در ماشین‌حساب جریان نقدی اجاره، اجارهٔ سالانه، خالی‌ماندن ملک، هزینه‌های عملیاتی و اقساط وام را وارد کنید. فرض‌ها و موارد خارج از محاسبه را کنار نتیجه بخوانید؛ این ابزار آموزشی به زبان انگلیسی است و ارزش ملک یا اجارهٔ بازار را تعیین نمی‌کند."
+            }
+          ],
+          "film": {
+            "resource": "rental_film",
+            "heading": "مثال اجاره را در فیلم ببینید",
+            "summary": "فیلم ۹۹ ثانیه‌ای به زبان انگلیسی، با زیرنویس و متن انگلیسی. ملک، رابط هوش مصنوعی و مبالغ فرضی‌اند.",
+            "label": "فیلم بازده اجاره را تماشا کنید"
+          },
+          "apply": {
+            "resource": "decision_guide",
+            "heading": "پرسش‌ها را روی یک فرایند به کار ببرید",
+            "summary": "با کاربرگ تصمیم، اقدام بعدی کاربر را مشخص کنید، شواهد لازم را بشناسید و نخستین آزمایش را برنامه‌ریزی کنید.",
+            "label": "راهنمای «پیش از ساخت سامانه هوش مصنوعی» را باز کنید"
+          },
+          "cross_hub": {
+            "hub": "business-systems-dubai",
+            "label": "هوش مصنوعی و سامانه‌های کسب‌وکار",
+            "summary": "مسیر مشتری، مجوزهای دسترسی و زمان‌بندی پرداخت‌ها در کار روزمره کسب‌وکار را دنبال کنید."
+          },
+          "author_bio": "احمدرضا صمدی کارآفرین فناوری ساکن دبی، هم‌بنیان‌گذار و راهبر فنی Appraiva، سازندهٔ هوش مصنوعی برای تحلیل اطلاعات املاک، و هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group است."
+        },
+        "ar": {
+          "title": "الذكاء الاصطناعي في العقارات: الأدلة والقرارات | أحمدرضا صمدي",
+          "heading": "الذكاء الاصطناعي في العقارات",
+          "description": "مسار قراءة عن بيانات العقارات والمراجعة البشرية وتكلفة عمل الذكاء الاصطناعي والتدفق النقدي للإيجار، في سياق عمل أحمدرضا صمدي في Appraiva.",
+          "eyebrow": "مسار قراءة · الذكاء الاصطناعي والبحث العقاري",
+          "lead": "تتبّع مؤشرًا عن عقار من خلال الأسئلة التي تجعله مفيدًا: ما الأدلة التي تدعمه، ومن يتحقق منه، وما القرار التالي؟",
+          "context_heading": "من الصورة إلى سير البحث العقاري",
+          "context": [
+            "شريك مؤسس وقائد تقني في Appraiva. أبرايفا شركة أمريكية في كليفلاند بولاية أوهايو؛ ويعمل عن بُعد من دبي. تبني الشركة أدوات ذكاء اصطناعي تساعد المستثمرين والمطورين العقاريين على العثور على العقارات المتعثرة وغير المعروضة في السوق من خلال تحليل الصور والبيانات العقارية المعززة.",
+            "تشرح دراسة الحالة هذه الروابط. ثم تتناول القراءات التالية خمس نقاط حول القرار العقاري: ربط الصورة بهوية العقار ومصادر مؤرخة، والبيانات وراء التقدير، والمراجعة البشرية، وتكلفة العمل المفيد بالذكاء الاصطناعي، والفرق بين عائد الإيجار والتدفق النقدي."
+          ],
+          "case_study": {
+            "resource": "appraiva",
+            "label": "اقرأ دراسة حالة Appraiva",
+            "summary": "أدوات ذكاء اصطناعي للمستثمرين والمطورين العقاريين، تعتمد على تحليل الصور والبيانات العقارية المعززة."
+          },
+          "questions_heading": "ضع هذه الأسئلة في الحسبان",
+          "questions": [
+            "أي عقار وسجلات مصدر تدعم النتيجة؟",
+            "من يتحقق من الادعاءات المهمة قبل اتخاذ إجراء؟",
+            "ما تكلفة سير العمل كاملًا، وما المال المتبقي بعد تكاليف العقار وأقساط القرض؟"
+          ],
+          "reading_heading": "اقرأ بهذا الترتيب",
+          "reading_path": [
+            {
+              "resource": "property_enrichment",
+              "question": "أي عقار تصفه الصورة والسجلات؟",
+              "summary": "يوضح مثال خيالي يقارن صورة بسجل كيفية فحص هوية العقار وتواريخ المصادر والادعاءات التي لم تُحسم قبل جمع المعلومات العقارية."
+            },
+            {
+              "resource": "home_estimates",
+              "question": "ماذا يعرف التقدير؟",
+              "summary": "راجع بيانات العقار والمبيعات القابلة للمقارنة وعدم اليقين قبل الاعتماد على تقدير آلي لقيمة المنزل."
+            },
+            {
+              "resource": "human_review",
+              "question": "من يتحقق من الادعاء المهم؟",
+              "summary": "افصل إعداد الذكاء الاصطناعي عن تحقق المختص وقرار العميل."
+            },
+            {
+              "resource": "verified_cost",
+              "question": "ما تكلفة نتيجة مفيدة من الذكاء الاصطناعي؟",
+              "summary": "احسب الأدوات والمحاولات المتكررة والمراجعة البشرية إلى جانب استدعاءات النموذج. اختبار البحث العقاري تجربة مقترحة، وليس نتيجة لشركة."
+            },
+            {
+              "resource": "rental_yield",
+              "question": "ماذا يتبقى بعد التكاليف وأقساط القرض؟",
+              "summary": "تابع منزلًا افتراضيًا لترى كيف يمكن لعائد الإيجار الإجمالي أن يتزامن مع عجز نقدي."
+            },
+            {
+              "resource": "rental_cash_flow_tool",
+              "question": "ماذا يحدث مع افتراضاتك للإيجار والتكاليف؟",
+              "summary": "أدخل الإيجار السنوي والشغور وتكاليف التشغيل ودفعات القرض في حاسبة التدفق النقدي للإيجار. اقرأ الافتراضات والاستثناءات إلى جانب النتيجة؛ هذه الأداة التعليمية باللغة الإنجليزية ولا تقدم تقييماً للعقار أو إيجار السوق."
+            }
+          ],
+          "film": {
+            "resource": "rental_film",
+            "heading": "شاهد مثال الإيجار في فيلم",
+            "summary": "فيلم مدته ٩٩ ثانية باللغة الإنجليزية، مع ترجمة نصية ونص مكتوب بالإنجليزية. العقار وواجهة الذكاء الاصطناعي والمبالغ افتراضية.",
+            "label": "شاهد فيلم عائد الإيجار"
+          },
+          "apply": {
+            "resource": "decision_guide",
+            "heading": "طبّق الأسئلة على سير عمل واحد",
+            "summary": "استخدم ورقة القرار لتحديد إجراء المستخدم التالي، ومعرفة الأدلة اللازمة، والتخطيط لتجربة أولى.",
+            "label": "افتح دليل «قبل أن تبني نظام الذكاء الاصطناعي»"
+          },
+          "cross_hub": {
+            "hub": "business-systems-dubai",
+            "label": "الذكاء الاصطناعي وأنظمة الأعمال",
+            "summary": "تابع رحلة العميل والصلاحيات وتوقيت المدفوعات وراء العمليات اليومية للشركة."
+          },
+          "author_bio": "أحمدرضا صمدي رائد أعمال تقني مقيم في دبي، وشريك مؤسس وقائد تقني في Appraiva التي تطوّر ذكاءً اصطناعيًا لتحليل المعلومات العقارية، وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group."
+        }
+      },
+      "ordered_resources": [
+        "home_estimates",
+        "rent_ownership_study",
+        "human_review",
+        "article_dubai_sources",
+        "appraiva",
+        "property_enrichment",
+        "verified_cost",
+        "rental_yield",
+        "rental_cash_flow_tool",
+        "article_how_building_digital_twins_work",
+        "article_dubai_property_tokenisation_explained",
+        "article_ai_data_center_site_readiness",
+        "article_building_laser_scans_point_clouds_explained",
+        "rent_burden_study",
+        "rental_film",
+        "decision_guide",
+        "article_rent_value_methodology",
+        "article_why_occupancy_sensor_lights_switch_off",
+        "article_building_leak_alert_response_checklist",
+        "article_bacnet_building_devices_common_language",
+        "day2_avm_vs_appraisal",
+        "day2_rent_or_buy_five_numbers",
+        "day2_human_review_property_ai_checklist",
+        "day2_dubai_property_buying_costs",
+        "article_dubai_service_charge_same_rent",
+        "article_dubai_project_escrow_controls",
+        "article_property_comparables_evidence",
+        "article_building_digital_twin_data_freshness",
+        "article_building_energy_audit_decisions",
+        "property_study_explorer",
+        "carousel_tech_trend_assisted_permissions",
+        "carousel_tech_trend_ai_usage_not_outcomes",
+        "dubai_purchase_cost_calculator",
+        "dubai_rental_yield_calculator",
+        "carousel_tech_trend_gemini_business_hub",
+        "carousel_tech_trend_ai_factory_observability",
+        "carousel_tech_trend_world_models_real_tests",
+        "carousel_tech_trend_notification_to_reviewed_fix",
+        "carousel_dubai_broker_record_check",
+        "carousel_dubai_project_status_check",
+        "carousel_dubai_rental_index_context",
+        "carousel_dubai_procedure_status_check",
+        "carousel_dubai_valuation_evidence",
+        "carousel_ai_property_brief_evidence"
+      ],
+      "all_articles_heading": {
+        "en": "All articles in this topic",
+        "fa": "همه نوشته‌های این موضوع",
+        "ar": "جميع مقالات هذا الموضوع"
+      },
+      "additional_resources": [
+        "article_how_building_digital_twins_work",
+        "article_dubai_property_tokenisation_explained",
+        "article_ai_data_center_site_readiness",
+        "article_building_laser_scans_point_clouds_explained",
+        "rent_ownership_study",
+        "rent_burden_study",
+        "article_rent_value_methodology",
+        "article_why_occupancy_sensor_lights_switch_off",
+        "article_building_leak_alert_response_checklist",
+        "article_dubai_sources",
+        "article_bacnet_building_devices_common_language",
+        "day2_avm_vs_appraisal",
+        "day2_rent_or_buy_five_numbers",
+        "day2_human_review_property_ai_checklist",
+        "day2_dubai_property_buying_costs",
+        "article_dubai_service_charge_same_rent",
+        "article_dubai_project_escrow_controls",
+        "article_property_comparables_evidence",
+        "article_building_digital_twin_data_freshness",
+        "property_study_explorer",
+        "carousel_tech_trend_assisted_permissions",
+        "carousel_tech_trend_ai_usage_not_outcomes",
+        "dubai_purchase_cost_calculator",
+        "dubai_rental_yield_calculator",
+        "carousel_tech_trend_gemini_business_hub",
+        "carousel_tech_trend_ai_factory_observability",
+        "article_building_energy_audit_decisions",
+        "carousel_tech_trend_world_models_real_tests",
+        "carousel_tech_trend_notification_to_reviewed_fix",
+        "carousel_dubai_broker_record_check",
+        "carousel_dubai_project_status_check",
+        "carousel_dubai_rental_index_context",
+        "carousel_dubai_procedure_status_check",
+        "carousel_dubai_valuation_evidence",
+        "carousel_ai_property_brief_evidence"
+      ],
+      "video_playlist": {
+        "title": "AI × Property",
+        "url": "https://www.youtube.com/playlist?list=PLVy10T3UbjJ0"
+      }
+    },
+    {
+      "id": "business-systems-dubai",
+      "paths": {
+        "en": "topics/business-systems-dubai.html",
+        "fa": "fa/topics/business-systems-dubai.html",
+        "ar": "ar/topics/business-systems-dubai.html"
+      },
+      "locales": {
+        "en": {
+          "title": "AI and business systems: lessons from Dubai | Ahmadreza Samadi",
+          "heading": "AI and business systems",
+          "description": "Follow a customer enquiry at Royal Abraj Group in Dubai, then explore how to assess an AI assistant’s access, review steps and cost per accepted result.",
+          "eyebrow": "Reading path · AI in business",
+          "lead": "Follow a customer enquiry into the work behind it: the next sales action, the active case, the permissions and the payment dates.",
+          "context_heading": "Give each system a clear job",
+          "context": [
+            "Co-Founder & CEO, Royal Abraj Group, Dubai. The group covers property brokerage and documents-clearing services; he leads its digital strategy and technology.",
+            "The readings here focus on those everyday product and operating decisions. Start with the actual customer journey, decide where technology helps, define access before connecting an assistant, and keep payment timing visible."
+          ],
+          "case_study": {
+            "resource": "royal_abraj",
+            "label": "Read the Royal Abraj case study",
+            "summary": "Digital strategy and technology for a Dubai group covering property brokerage and documents-clearing services."
+          },
+          "questions_heading": "Keep these questions in view",
+          "questions": [
+            "What happens after an enquiry, and who owns the next step?",
+            "What evidence and permissions does the system need?",
+            "When does cash arrive, what is due first, and what covers the gap?"
+          ],
+          "reading_heading": "Read in this order",
+          "reading_path": [
+            {
+              "resource": "decision_first",
+              "question": "Which decision should the product help?",
+              "summary": "Start with the person, their evidence and their next action before choosing an AI capability."
+            },
+            {
+              "resource": "connected_apps",
+              "question": "What can a connected assistant do?",
+              "summary": "Check the account, access scope, supported actions and approval rules when linking business tools."
+            },
+            {
+              "resource": "verified_cost",
+              "question": "What does an accepted AI result cost?",
+              "summary": "Count recorded costs across retries and failures, then divide by results accepted under an explicit criterion. The article links an offline ledger and a fictional experiment workbook."
+            },
+            {
+              "resource": "profit_cash",
+              "question": "Can a profitable order still leave a cash gap?",
+              "summary": "Follow one fictional order through supplier and customer payment dates. Profit and available cash answer different questions."
+            }
+          ],
+          "film": {
+            "resource": "profit_film",
+            "heading": "Follow the payment dates in a film",
+            "summary": "A 90-second English film with English captions and a transcript. The business and transaction amounts are fictional.",
+            "label": "Watch Profitable. But out of cash"
+          },
+          "apply": {
+            "resource": "decision_guide",
+            "heading": "Turn one operating problem into a test",
+            "summary": "Use the decision worksheet to describe the current process, the evidence a person needs and the smallest useful experiment.",
+            "label": "Open Before You Build the AI"
+          },
+          "cross_hub": {
+            "hub": "ai-real-estate",
+            "label": "AI in real estate",
+            "summary": "Continue with the property data and human review that support investment research."
+          },
+          "author_bio": "Ahmadreza Samadi builds AI products at Appraiva and runs Royal Abraj Group in Dubai. He writes about how businesses decide what to build, check and measure."
+        },
+        "fa": {
+          "title": "هوش مصنوعی و سیستم‌های کسب‌وکار: درس‌هایی از دبی | احمدرضا صمدی",
+          "heading": "هوش مصنوعی و سامانه‌های کسب‌وکار",
+          "description": "مسیر مطالعه‌ای از کار احمدرضا صمدی در رویال ابراج تا فرایند مشتری، طراحی محصول بر پایه تصمیم، مجوز اپ‌های متصل و زمان‌بندی جریان نقدی.",
+          "eyebrow": "مسیر مطالعه · هوش مصنوعی در کسب‌وکار",
+          "lead": "درخواست مشتری را تا کارهای پس از آن دنبال کنید: اقدام بعدی فروش، پرونده فعال، مجوزهای دسترسی و تاریخ پرداخت‌ها.",
+          "context_heading": "برای هر سیستم وظیفه‌ای روشن تعیین کنید",
+          "context": [
+            "هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group در دبی. این گروه در کارگزاری املاک و خدمات انجام امور اسناد فعالیت دارد؛ او راهبرد دیجیتال و فناوری آن را هدایت می‌کند.",
+            "نوشته‌های این صفحه بر همین تصمیم‌های روزمره محصول و عملیات تمرکز دارند. از مسیر واقعی مشتری شروع کنید، مشخص کنید فناوری کجا کمک می‌کند، پیش از اتصال دستیار محدوده دسترسی را تعیین کنید و زمان‌بندی پرداخت‌ها را روشن نگه دارید."
+          ],
+          "case_study": {
+            "resource": "royal_abraj",
+            "label": "مطالعه موردی رویال ابراج را بخوانید",
+            "summary": "راهبرد دیجیتال و فناوری برای گروهی در دبی با فعالیت در کارگزاری املاک و خدمات انجام امور اسناد."
+          },
+          "questions_heading": "این پرسش‌ها را در نظر داشته باشید",
+          "questions": [
+            "پس از درخواست مشتری چه اتفاقی می‌افتد و مسئول گام بعدی کیست؟",
+            "سیستم به چه شواهد و مجوزهایی نیاز دارد؟",
+            "پول چه زمانی می‌رسد، کدام پرداخت زودتر موعد دارد و کسری چگونه پوشش داده می‌شود؟"
+          ],
+          "reading_heading": "با این ترتیب بخوانید",
+          "reading_path": [
+            {
+              "resource": "decision_first",
+              "question": "محصول باید به کدام تصمیم کمک کند؟",
+              "summary": "پیش از انتخاب قابلیت هوش مصنوعی، از فرد تصمیم‌گیرنده، شواهد موردنیاز و اقدام بعدی او شروع کنید."
+            },
+            {
+              "resource": "connected_apps",
+              "question": "دستیار متصل چه کاری می‌تواند انجام دهد؟",
+              "summary": "هنگام اتصال ابزارهای کسب‌وکار، حساب، محدوده دسترسی، اقدام‌های پشتیبانی‌شده و قواعد تأیید را بررسی کنید."
+            },
+            {
+              "resource": "verified_cost",
+              "question": "هزینهٔ یک نتیجهٔ پذیرفته‌شدهٔ هوش مصنوعی چقدر است؟",
+              "summary": "هزینه‌های ثبت‌شدهٔ تلاش‌های مجدد و ناموفق را هم حساب کنید، سپس مجموع را بر تعداد نتایج پذیرفته‌شده طبق معیاری روشن تقسیم کنید. مقاله به دفتر ثبت آفلاین و کاربرگ آزمایشی با مثال‌های فرضی لینک می‌دهد."
+            },
+            {
+              "resource": "profit_cash",
+              "question": "آیا سفارش سودآور هم می‌تواند کسری نقدی ایجاد کند؟",
+              "summary": "یک سفارش فرضی را با تاریخ پرداخت به تأمین‌کننده و دریافت از مشتری دنبال کنید. سود و پول در دسترس به دو پرسش متفاوت پاسخ می‌دهند."
+            }
+          ],
+          "film": {
+            "resource": "profit_film",
+            "heading": "تاریخ‌های پرداخت را در فیلم دنبال کنید",
+            "summary": "فیلم ۹۰ ثانیه‌ای به زبان انگلیسی، با زیرنویس و متن انگلیسی. کسب‌وکار و مبالغ معامله فرضی‌اند.",
+            "label": "فیلم «سودآور، اما بدون پول نقد» را تماشا کنید"
+          },
+          "apply": {
+            "resource": "decision_guide",
+            "heading": "یک مسئله عملیاتی را به آزمایش تبدیل کنید",
+            "summary": "با کاربرگ تصمیم، فرایند فعلی، شواهد موردنیاز فرد و کوچک‌ترین آزمایش مفید را مشخص کنید.",
+            "label": "راهنمای «پیش از ساخت سامانه هوش مصنوعی» را باز کنید"
+          },
+          "cross_hub": {
+            "hub": "ai-real-estate",
+            "label": "هوش مصنوعی در املاک",
+            "summary": "داده‌های ملک و بازبینی انسانی را که از بررسی فرصت‌های سرمایه‌گذاری پشتیبانی می‌کنند دنبال کنید."
+          },
+          "author_bio": "احمدرضا صمدی کارآفرین فناوری ساکن دبی، هم‌بنیان‌گذار و راهبر فنی Appraiva، سازندهٔ هوش مصنوعی برای تحلیل اطلاعات املاک، و هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group است."
+        },
+        "ar": {
+          "title": "الذكاء الاصطناعي وأنظمة الأعمال: دروس من دبي | أحمدرضا صمدي",
+          "heading": "الذكاء الاصطناعي وأنظمة الأعمال",
+          "description": "مسار قراءة من عمل أحمدرضا صمدي في رويال أبراج إلى رحلة العميل وتصميم المنتجات حول القرار وصلاحيات التطبيقات المتصلة وتوقيت النقد.",
+          "eyebrow": "مسار قراءة · الذكاء الاصطناعي في الأعمال",
+          "lead": "تتبّع استفسار العميل إلى العمل الذي يليه: إجراء المبيعات التالي، والحالة الجارية، والصلاحيات، ومواعيد الدفع.",
+          "context_heading": "حدّد وظيفة واضحة لكل نظام",
+          "context": [
+            "شريك مؤسس ورئيس تنفيذي في Royal Abraj Group بدبي. تشمل أعمال المجموعة الوساطة العقارية وخدمات تخليص المعاملات؛ ويقود استراتيجيتها الرقمية وتقنيتها.",
+            "تركّز القراءات هنا على هذه القرارات اليومية للمنتج والعمليات. ابدأ برحلة العميل الفعلية، وحدّد أين تساعد التقنية، وعيّن حدود الوصول قبل ربط المساعد، واجعل توقيت المدفوعات واضحًا."
+          ],
+          "case_study": {
+            "resource": "royal_abraj",
+            "label": "اقرأ دراسة حالة رويال أبراج",
+            "summary": "الاستراتيجية الرقمية والتقنية لمجموعة في دبي تعمل في الوساطة العقارية وخدمات تخليص المعاملات."
+          },
+          "questions_heading": "ضع هذه الأسئلة في الحسبان",
+          "questions": [
+            "ماذا يحدث بعد استفسار العميل، ومن يتولى الخطوة التالية؟",
+            "ما الأدلة والصلاحيات التي يحتاجها النظام؟",
+            "متى يصل النقد، وما المستحق أولًا، وما الذي يغطي الفجوة؟"
+          ],
+          "reading_heading": "اقرأ بهذا الترتيب",
+          "reading_path": [
+            {
+              "resource": "decision_first",
+              "question": "أي قرار ينبغي أن يساعد المنتج؟",
+              "summary": "ابدأ بالشخص والأدلة التي يحتاجها وإجرائه التالي قبل اختيار قدرة للذكاء الاصطناعي."
+            },
+            {
+              "resource": "connected_apps",
+              "question": "ماذا يستطيع المساعد المتصل أن يفعل؟",
+              "summary": "راجع الحساب وحدود الوصول والإجراءات المدعومة وقواعد الموافقة عند ربط أدوات العمل."
+            },
+            {
+              "resource": "verified_cost",
+              "question": "ما تكلفة النتيجة المقبولة من الذكاء الاصطناعي؟",
+              "summary": "احسب التكاليف المسجلة للمحاولات المتكررة والفاشلة أيضاً، ثم اقسم المجموع على عدد النتائج المقبولة وفق معيار صريح. تتضمن المقالة روابط إلى سجل يعمل دون اتصال وورقة تجربة بأمثلة افتراضية."
+            },
+            {
+              "resource": "profit_cash",
+              "question": "هل يمكن لطلب مربح أن يترك فجوة نقدية؟",
+              "summary": "تابع طلبًا افتراضيًا عبر مواعيد الدفع للمورد والتحصيل من العميل. الربح والنقد المتاح يجيبان عن سؤالين مختلفين."
+            }
+          ],
+          "film": {
+            "resource": "profit_film",
+            "heading": "تابع مواعيد الدفع في فيلم",
+            "summary": "فيلم مدته ٩٠ ثانية باللغة الإنجليزية، مع ترجمة نصية ونص مكتوب بالإنجليزية. الشركة ومبالغ المعاملات افتراضية.",
+            "label": "شاهد فيلم «مربح، لكن بلا نقد»"
+          },
+          "apply": {
+            "resource": "decision_guide",
+            "heading": "حوّل مشكلة تشغيلية واحدة إلى تجربة",
+            "summary": "استخدم ورقة القرار لوصف العملية الحالية والأدلة التي يحتاجها الشخص وأصغر تجربة مفيدة.",
+            "label": "افتح دليل «قبل أن تبني نظام الذكاء الاصطناعي»"
+          },
+          "cross_hub": {
+            "hub": "ai-real-estate",
+            "label": "الذكاء الاصطناعي في العقارات",
+            "summary": "تابع بيانات العقارات والمراجعة البشرية التي تدعم البحث عن فرص الاستثمار."
+          },
+          "author_bio": "أحمدرضا صمدي رائد أعمال تقني مقيم في دبي، وشريك مؤسس وقائد تقني في Appraiva التي تطوّر ذكاءً اصطناعيًا لتحليل المعلومات العقارية، وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group."
+        }
+      },
+      "ordered_resources": [
+        "royal_abraj",
+        "decision_first",
+        "connected_apps",
+        "verified_cost",
+        "profit_cash",
+        "article_how_many_coffees_to_break_even",
+        "article_ai_agent_permissions_ability_authority",
+        "article_cash_conversion_cycle_clocks",
+        "article_build_ai_run_a_business",
+        "profit_film",
+        "decision_guide",
+        "article_ai_agent_safety_boundaries",
+        "article_jev_ai_decision_model",
+        "article_small_ai_models_task_routing_explained",
+        "article_ai_document_review_claim_evidence_checklist",
+        "article_rag_check_business_records",
+        "article_computer_agent_check_result",
+        "article_prompt_injection_layered_controls",
+        "article_business_ai_evaluation_cases",
+        "article_structured_output_source_checks",
+        "article_agent_workflow_shared_bottlenecks"
+      ],
+      "all_articles_heading": {
+        "en": "All articles in this topic",
+        "fa": "همه نوشته‌های این موضوع",
+        "ar": "جميع مقالات هذا الموضوع"
+      },
+      "additional_resources": [
+        "article_how_many_coffees_to_break_even",
+        "article_ai_agent_permissions_ability_authority",
+        "article_cash_conversion_cycle_clocks",
+        "article_build_ai_run_a_business",
+        "article_ai_agent_safety_boundaries",
+        "article_jev_ai_decision_model",
+        "article_small_ai_models_task_routing_explained",
+        "article_ai_document_review_claim_evidence_checklist",
+        "article_rag_check_business_records",
+        "article_computer_agent_check_result",
+        "article_prompt_injection_layered_controls",
+        "article_business_ai_evaluation_cases",
+        "article_structured_output_source_checks",
+        "article_agent_workflow_shared_bottlenecks"
+      ]
+    },
+    {
+      "id": "tech-explained",
+      "kind": "explainer",
+      "paths": {
+        "en": "topics/tech-explained.html",
+        "fa": "fa/topics/tech-explained.html",
+        "ar": "ar/topics/tech-explained.html"
+      },
+      "ordered_resources": [
+        "decision_first",
+        "article_why_wifi_is_slow_with_full_bars",
+        "article_why_usb_c_cables_differ",
+        "article_how_photo_text_recognition_works",
+        "article_how_contactless_cards_work",
+        "article_how_noise_cancellation_works",
+        "article_iphone_duo_price_per_day",
+        "article_why_full_storage_slows_computer",
+        "article_why_phone_stops_charging_at_80",
+        "article_what_accept_cookies_means",
+        "article_incognito_private_browsing",
+        "article_how_satellite_messaging_works",
+        "article_humanoid_robots_at_home",
+        "article_foldable_two_batteries",
+        "article_passkeys_face_id",
+        "article_how_zip_files_work",
+        "article_ai_inference_memory_movement_explained",
+        "article_why_ai_weather_models_need_local_observations",
+        "article_virtual_machine_device_sharing_explained",
+        "article_where_wearable_ai_computation_runs",
+        "article_on_device_ai_scam_warnings_explained",
+        "article_geospatial_ai_map_answer_review",
+        "article_phone_location_across_street",
+        "article_ai_agents_shared_notebook",
+        "article_tesla_roadster_flight_claim",
+        "article_heat_pump_moves_heat_explained",
+        "tech_film_ai_confidence",
+        "tech_film_cookie_consent",
+        "tech_film_charging_80",
+        "tech_film_profit_cash",
+        "tech_film_rental_yield",
+        "tech_film_iphone_duo",
+        "decision_guide",
+        "article_why_ai_sounds_confident",
+        "article_why_ai_loses_earlier_chat_context",
+        "article_verify_ai_image_claims",
+        "article_chatgpt_intelligent_ui_explained",
+        "article_ai_research_examination_understanding"
+      ],
+      "additional_resources": [
+        "article_why_wifi_is_slow_with_full_bars",
+        "article_why_usb_c_cables_differ",
+        "article_how_photo_text_recognition_works",
+        "article_how_contactless_cards_work",
+        "article_how_noise_cancellation_works",
+        "article_iphone_duo_price_per_day",
+        "article_why_full_storage_slows_computer",
+        "article_why_phone_stops_charging_at_80",
+        "article_what_accept_cookies_means",
+        "article_incognito_private_browsing",
+        "article_how_satellite_messaging_works",
+        "article_humanoid_robots_at_home",
+        "article_foldable_two_batteries",
+        "article_passkeys_face_id",
+        "article_how_zip_files_work",
+        "tech_film_ai_confidence",
+        "tech_film_cookie_consent",
+        "tech_film_charging_80",
+        "tech_film_profit_cash",
+        "tech_film_rental_yield",
+        "tech_film_iphone_duo",
+        "article_ai_inference_memory_movement_explained",
+        "article_why_ai_weather_models_need_local_observations",
+        "article_virtual_machine_device_sharing_explained",
+        "article_where_wearable_ai_computation_runs",
+        "article_on_device_ai_scam_warnings_explained",
+        "article_geospatial_ai_map_answer_review",
+        "article_phone_location_across_street",
+        "article_ai_agents_shared_notebook",
+        "article_tesla_roadster_flight_claim",
+        "article_heat_pump_moves_heat_explained",
+        "article_why_ai_sounds_confident",
+        "article_why_ai_loses_earlier_chat_context",
+        "article_verify_ai_image_claims",
+        "article_chatgpt_intelligent_ui_explained",
+        "article_ai_research_examination_understanding"
+      ],
+      "all_articles_heading": {
+        "en": "Existing explainers and films",
+        "fa": "توضیح‌ها و فیلم‌های موجود",
+        "ar": "الشروحات والأفلام الحالية"
+      },
+      "locales": {
+        "en": {
+          "heading": "Tech, explained",
+          "title": "Tech, explained | Ahmadreza Samadi",
+          "description": "Plain-language technology explainers and original films. Choose a mechanism, check its limits, and connect it to the decision you need to make.",
+          "lead": "Start with the job you need to do, then understand the mechanism and its limits. These existing explainers use diagrams, films and clearly labeled examples.",
+          "context_heading": "Choose an explanation for the decision",
+          "context": [
+            "For a device problem, compare the parts of the connection before guessing at one cause. For an AI answer, inspect the supporting source before relying on fluent wording.",
+            "For a calculation, check the inputs and what the result leaves out. The films and illustrated examples make those checks visible; they do not report customer outcomes."
+          ],
+          "questions_heading": "Three checks before acting",
+          "questions": [
+            "What job do I need the technology to do?",
+            "Which source, setting or input supports the answer?",
+            "What remains uncertain, and what should a person check?"
+          ],
+          "reading_heading": "Find the mechanism you need",
+          "eyebrow": "Reading path · Plain-language technology",
+          "author_bio": "Ahmadreza Samadi builds AI products at Appraiva and runs Royal Abraj Group in Dubai. He writes about how businesses decide what to build, check and measure.",
+          "case_study": {
+            "resource": "decision_first",
+            "label": "Start with the decision, then build the AI",
+            "summary": "Define one decision, the evidence it needs and a useful first experiment."
+          },
+          "reading_path": [],
+          "film": {
+            "resource": "tech_film_ai_confidence",
+            "heading": "Films with captions and transcripts",
+            "summary": "The watch pages use English audio, English caption tracks and written transcripts. The AI and property films also connect to the core topic hubs.",
+            "label": "Watch the AI-confidence film"
+          },
+          "apply": {
+            "resource": "decision_guide",
+            "heading": "Turn an explanation into a check",
+            "summary": "Use the existing worksheet to name the next action and the evidence required before taking it.",
+            "label": "Open Before You Build the AI"
+          },
+          "cross_hub": {
+            "hub": "ai-real-estate",
+            "label": "AI in real estate",
+            "summary": "Continue with property information, human review and decision-first AI."
+          }
+        },
+        "fa": {
+          "heading": "فناوری به زبان ساده",
+          "title": "فناوری به زبان ساده | احمدرضا صمدی",
+          "description": "توضیح‌های ساده فناوری و فیلم‌های اصلی. سازوکار را بشناسید، محدودیت‌ها را بررسی کنید و آن را به تصمیم موردنیازتان پیوند دهید.",
+          "lead": "از کاری شروع کنید که می‌خواهید انجام دهید؛ سپس سازوکار و محدودیت‌های آن را بشناسید. این نوشته‌های موجود از نمودار، فیلم و مثال‌های مشخص استفاده می‌کنند.",
+          "context_heading": "توضیح مناسب تصمیم را انتخاب کنید",
+          "context": [
+            "برای مشکل یک دستگاه، پیش از حدس‌زدن یک علت، بخش‌های اتصال را مقایسه کنید. برای پاسخ هوش مصنوعی، پیش از اعتماد به بیان روان، منبع پشتیبان را بررسی کنید.",
+            "برای یک محاسبه، ورودی‌ها و موارد خارج از نتیجه را بررسی کنید. فیلم‌ها و مثال‌های تصویری این بررسی‌ها را نشان می‌دهند؛ آن‌ها گزارشی از نتایج مشتریان نیستند."
+          ],
+          "questions_heading": "سه بررسی پیش از اقدام",
+          "questions": [
+            "فناوری باید چه کاری برای من انجام دهد؟",
+            "کدام منبع، تنظیم یا ورودی از پاسخ پشتیبانی می‌کند؟",
+            "چه چیزی نامطمئن است و انسان باید چه چیزی را بررسی کند؟"
+          ],
+          "reading_heading": "سازوکار موردنیازتان را پیدا کنید",
+          "eyebrow": "مسیر مطالعه · فناوری به زبان ساده",
+          "author_bio": "احمدرضا صمدی کارآفرین فناوری ساکن دبی، هم‌بنیان‌گذار و راهبر فنی Appraiva، سازندهٔ هوش مصنوعی برای تحلیل اطلاعات املاک، و هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group است.",
+          "case_study": {
+            "resource": "decision_first",
+            "label": "از تصمیم شروع کنید، سپس هوش مصنوعی را بسازید",
+            "summary": "یک تصمیم، شواهد موردنیاز آن و نخستین آزمایش مفید را مشخص کنید."
+          },
+          "reading_path": [],
+          "film": {
+            "resource": "tech_film_ai_confidence",
+            "heading": "فیلم‌ها با زیرنویس و متن گفتار",
+            "summary": "صفحه‌های تماشای فیلم صوت انگلیسی، زیرنویس انگلیسی و متن گفتار دارند. فیلم‌های هوش مصنوعی و املاک به موضوع‌های اصلی نیز پیوند دارند.",
+            "label": "تماشای فیلم اعتمادبه‌نفس هوش مصنوعی (انگلیسی)"
+          },
+          "apply": {
+            "resource": "decision_guide",
+            "heading": "توضیح را به یک بررسی تبدیل کنید",
+            "summary": "از کاربرگ موجود برای مشخص‌کردن اقدام بعدی و شواهد لازم پیش از آن استفاده کنید.",
+            "label": "بازکردن راهنمای «قبل از ساخت هوش مصنوعی»"
+          },
+          "cross_hub": {
+            "hub": "ai-real-estate",
+            "label": "هوش مصنوعی در املاک: شواهد و تصمیم‌ها",
+            "summary": "با اطلاعات ملک، بررسی انسانی و هوش مصنوعی مبتنی بر تصمیم ادامه دهید."
+          }
+        },
+        "ar": {
+          "heading": "التكنولوجيا ببساطة",
+          "title": "التكنولوجيا ببساطة | أحمدرضا صمدي",
+          "description": "شروحات مبسطة للتكنولوجيا وأفلام أصلية. افهم الآلية وحدودها، ثم اربطها بالقرار الذي تحتاج إلى اتخاذه.",
+          "lead": "ابدأ بالمهمة التي تحتاج إلى إنجازها، ثم افهم الآلية وحدودها. تستخدم هذه الشروحات الحالية الرسوم والأفلام والأمثلة الموضحة بوضوح.",
+          "context_heading": "اختر شرحًا يخدم القرار",
+          "context": [
+            "عند وجود مشكلة في جهاز، قارن أجزاء الاتصال قبل تخمين سبب واحد. ولإجابة الذكاء الاصطناعي، افحص المصدر الداعم قبل الاعتماد على الصياغة السلسة.",
+            "في الحسابات، تحقق من المدخلات وما لا تشملُه النتيجة. تُظهر الأفلام والأمثلة المصورة هذه الفحوص؛ ولا تقدم نتائج للعملاء."
+          ],
+          "questions_heading": "ثلاثة فحوص قبل التصرف",
+          "questions": [
+            "ما المهمة التي أحتاج من التكنولوجيا أن تنجزها؟",
+            "أي مصدر أو إعداد أو مُدخل يدعم الإجابة؟",
+            "ما الذي يبقى غير مؤكد، وما الذي ينبغي أن يتحقق منه شخص؟"
+          ],
+          "reading_heading": "ابحث عن الآلية التي تحتاجها",
+          "eyebrow": "مسار قراءة · التكنولوجيا ببساطة",
+          "author_bio": "أحمدرضا صمدي رائد أعمال تقني مقيم في دبي، وشريك مؤسس وقائد تقني في Appraiva التي تطوّر ذكاءً اصطناعيًا لتحليل المعلومات العقارية، وشريك مؤسس ورئيس تنفيذي في Royal Abraj Group.",
+          "case_study": {
+            "resource": "decision_first",
+            "label": "ابدأ بالقرار، ثم ابنِ الذكاء الاصطناعي",
+            "summary": "حدد قرارًا واحدًا والأدلة التي يحتاجها وأول تجربة مفيدة."
+          },
+          "reading_path": [],
+          "film": {
+            "resource": "tech_film_ai_confidence",
+            "heading": "أفلام مع ترجمة نصية ونص مكتوب",
+            "summary": "تستخدم صفحات المشاهدة صوتًا إنجليزيًا ومسارات ترجمة نصية إنجليزية ونصوصًا مكتوبة. وترتبط أفلام الذكاء الاصطناعي والعقارات بالموضوعات الأساسية أيضًا.",
+            "label": "شاهد فيلم ثقة الذكاء الاصطناعي (بالإنجليزية)"
+          },
+          "apply": {
+            "resource": "decision_guide",
+            "heading": "حوّل الشرح إلى فحص",
+            "summary": "استخدم ورقة العمل الحالية لتحديد الخطوة التالية والأدلة المطلوبة قبل اتخاذها.",
+            "label": "افتح دليل «قبل أن تبني نظام الذكاء الاصطناعي»"
+          },
+          "cross_hub": {
+            "hub": "ai-real-estate",
+            "label": "الذكاء الاصطناعي في العقارات",
+            "summary": "تابع مع معلومات العقارات والمراجعة البشرية والذكاء الاصطناعي الذي يبدأ بالقرار."
+          }
+        }
+      },
+      "video_playlist": {
+        "url": "https://www.youtube.com/playlist?list=PLOY3oVQEP8UQ",
+        "title": "Tech Explained"
+      }
+    }
+  ]
+}

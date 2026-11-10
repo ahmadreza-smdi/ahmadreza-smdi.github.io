@@ -1,0 +1,37 @@
+/* Media resources use the existing Lagoon reading-page system. */
+.press-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  align-items: start;
+  gap: 1.75rem;
+}
+.press-intro > div { min-width: 0; }
+.press-portrait {
+  width: min(100%, 220px);
+  margin: .4rem 0 0;
+}
+.press-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 7px;
+  border-radius: 22px;
+  background: var(--surface);
+  box-shadow: 0 0 0 1px var(--line), var(--shadow-strong);
+}
+.press-portrait figcaption {
+  margin-block-start: .8rem;
+  color: var(--muted);
+  font-size: .85rem;
+  line-height: 1.6;
+}
+.press-page section[id] { scroll-margin-block-start: 100px; }
+@media (max-width: 600px) {
+  .press-intro { grid-template-columns: 1fr; gap: 1.5rem; }
+  .press-portrait { margin-inline: auto; }
+}
+@media print {
+  .press-portrait { break-inside: avoid; }
+  .press-portrait img { box-shadow: none; }
+  .press-page .profile-downloads a { border: 1px solid currentColor; box-shadow: none; }
+}

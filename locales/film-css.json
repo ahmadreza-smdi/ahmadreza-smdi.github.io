@@ -1,0 +1,3106 @@
+{
+  "version": 1,
+  "generator_sha256": "abe1be76d50a9730460376f9c5e6456def06ca4afa29a8b6ae08a56b0bcdf99a",
+  "pages": {
+    "ar/writing/agent-workflow-shared-bottlenecks.html": {
+      "original_sha256": "94a5c83d6e6b777689953e37aaf885f18626d44825b0f9347bde8f810638fa87",
+      "output_sha256": "8ba9a4b3e814b8417e35257f8742e6ae745d29b866c8222c5dc08a151e186380",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "ar/writing/ai-agent-permissions-ability-authority.html": {
+      "original_sha256": "e5e35ad29f382abebc3aad7ee6613301ba87a83baed5b8607c228be2829caa2b",
+      "output_sha256": "8c75cc545e90127a255f1ee98c9f64053542fcc837d4570b42c751610db36a95",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "ar/writing/ai-agents-shared-notebook.html": {
+      "original_sha256": "34d0c3b31d3b8b1efd111f5ef74010ea8e08a19043abcf4ffa57dac221678915",
+      "output_sha256": "71693c3fdc8e9a012f6a91be44d12ef5b7f93390b916aac7b9e343b4a9149b99",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "ar/writing/ai-research-examination-understanding.html": {
+      "original_sha256": "a5024d4ff2ebf7236303d299a1abc0d3ced5c3721a7d4226288259e2b2e2a46a",
+      "output_sha256": "3286933c8e7053e171ec6146a7a6d091fefdd37ce6bf7b2bc524f918f7cdb3c1",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "ar/writing/building-digital-twin-data-freshness.html": {
+      "original_sha256": "758ea7435fdef350449dc3a80478547d1be7ab74e0a5b1da00c2c2ac44c1fca8",
+      "output_sha256": "0c98e05e948edb209e9837df1ca89140f9c534d36f226a8ec316b11ce9e73f9d",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "ar/writing/building-energy-audit-decisions.html": {
+      "original_sha256": "422d484aa9e28b533de338b304aa9b7b71d2c760f6e06060a3500efc2172a946",
+      "output_sha256": "8a2dfae4aeca82191208e348077cde12b923ff5879dc44ee40dda9e3b0400f86",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "ar/writing/business-ai-evaluation-cases.html": {
+      "original_sha256": "912efed6bcd221c7090ab585480ac74e00e16dd5c2e1a34d2b3f69d79a148c71",
+      "output_sha256": "794be0350009fa4b9154cdbcb8f2c7c2d9feb2e048dce47aa4a8ab292388e53b",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "ar/writing/cash-conversion-cycle-clocks.html": {
+      "original_sha256": "061865260bfd62456f6d49291ef8e3d3d9392355ee3ca18fdca160c2e7cdfdaf",
+      "output_sha256": "b087a492771daa9d21310e90d8e73a46b1a8f1260e6dd1609a3ba63005f2000b",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "ar/writing/computer-agent-check-result.html": {
+      "original_sha256": "dcf8e0825b40a7ee7ceae2f9aaec352946fe9922db801522246acaaa0708f5c2",
+      "output_sha256": "043aae7ec0081f2f1c4b5c45ed6dcf935d9fca5b1f7a38d8766eacb4bbe6a1af",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "ar/writing/dubai-project-escrow-controls.html": {
+      "original_sha256": "9c35a5de7be0075c35d5d9d0ca236064fdd7d8b62a8fd59f6da98e95742d0364",
+      "output_sha256": "a29f67c3ff17fe537cf75271954460dffdd47ca113dbf429dd10986890c7835a",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "ar/writing/dubai-service-charge-same-rent.html": {
+      "original_sha256": "02b79ff6fa06c4d9a5ea2bc61fa7a3e838228718d1cf35072bdbe9e43e027b17",
+      "output_sha256": "bddb456bd92736290639aadcbcca274c5ae6bcd8be3fe382c41dc7dbe0b3ac42",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "ar/writing/geospatial-ai-map-answer-review.html": {
+      "original_sha256": "57f2332b5df2c5515addbeb079f590446d8b23e6df4291a84885c2d3bc40c13d",
+      "output_sha256": "d0009823b9a71b05ddd37813d3868597269bfc94a247ad191092ed53bdbe9087",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-lagoon4\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "7b1138e140928bf8477f8b9b1f427cf78ad4286c0c8814cac1217e1918e1a35f",
+          "rules": {
+            "kept": 84,
+            "dropped": 612
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "ar/writing/heat-pump-moves-heat-explained.html": {
+      "original_sha256": "d51d9801bab4e73fd5e4e0db40fff2c3e7e50fff052e5aa5d5f5023ae42bab4b",
+      "output_sha256": "dd09046644130c384d0070cf70ed617e86d7e4496b15ac23cb751955c4de3d30",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "ar/writing/phone-location-across-street.html": {
+      "original_sha256": "53ad327feeac34aa84ae55e75ad8143cc54940a541cb99b81dea302e8375323e",
+      "output_sha256": "ad0fb5ca3421ada22ad299419ac62988fc90ca168ff31cfc8d0a7553a41bb4cf",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "ar/writing/prompt-injection-layered-controls.html": {
+      "original_sha256": "517ac3b719a9141858b680c2ad0db5c3a718e7cedf222c85e4bb2ee930660547",
+      "output_sha256": "36323a2608997e8c2dac449faa3991da8e239f739a95d1d4feedf46a02d10d35",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "ar/writing/property-comparables-evidence.html": {
+      "original_sha256": "62f297282ca1e921c2e23ec24a16649c1fdce3af70a6a6f94c9829579ceb35dd",
+      "output_sha256": "e490ff63b107a9bd89fbfcef386cebdea30ac9f504b72c5e04f418dea45317c0",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "ar/writing/rag-check-business-records.html": {
+      "original_sha256": "f4b8a09d83ce09d528269bf34151df359c30f3d5fc5c9a8e151f3bb74ad321a0",
+      "output_sha256": "2d37973b1745777013c466edcf8162543b9cca6ae63bbc76ce85daa96ac2b9e2",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "ar/writing/structured-output-source-checks.html": {
+      "original_sha256": "04c8dc9cde0279380f1b928beaf305c8ba7717aaaf3932b315c279010d44d326",
+      "output_sha256": "18dff1078553b34d041368a0768e31e3368c5e78d99d5202ef1dc2995f72fa3c",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "ar/writing/tesla-roadster-flight-claim.html": {
+      "original_sha256": "72ca4aa0647b681bd6927db6aa3bd9cd45a60870a94bf8d8ae6ef649e21d0310",
+      "output_sha256": "fb1b3ac498c66992b23c4687c5b67c27ce20c4e87fb9e136f5b31939f2f17894",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "ar/writing/virtual-machine-device-sharing-explained.html": {
+      "original_sha256": "6313a49e920886696502596bb66ca27294d15daf2414421f4795b1e5e35b8e51",
+      "output_sha256": "ea0ecb63c9a2aadb5ef858df75807b015d431ca97452c5548f0a1b3c6cf539d5",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-lagoon4\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "7b1138e140928bf8477f8b9b1f427cf78ad4286c0c8814cac1217e1918e1a35f",
+          "rules": {
+            "kept": 84,
+            "dropped": 612
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "ar/writing/where-wearable-ai-computation-runs.html": {
+      "original_sha256": "5ee611b113d7315de215c731960ea33fe0009f5e678fc4caca435a82bed1c181",
+      "output_sha256": "508b433c2563ce9ed4c59efc1cb16bf2297ec6a1755037da28320d974aa1fd32",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-lagoon4\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "7b1138e140928bf8477f8b9b1f427cf78ad4286c0c8814cac1217e1918e1a35f",
+          "rules": {
+            "kept": 84,
+            "dropped": 612
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "fa/writing/agent-workflow-shared-bottlenecks.html": {
+      "original_sha256": "e01a7ff6b06c11cf070fc30d7979f9eaa76033af6b7cf3b29ce36e03a8edfdbf",
+      "output_sha256": "8706d43b6aeb1ad564adbcf0bcb7c4c7214fce1cca90152792ea81d3a53ffdf4",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "fa/writing/ai-agent-permissions-ability-authority.html": {
+      "original_sha256": "5527237ae4b5c3d35dc1865fd327f8b969e9d6696d4129c9a5d3a2cece0fe6b8",
+      "output_sha256": "356071d55f641ecb9437e8c83261b458b8882c3768f450758d98708fd1d06768",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "fa/writing/ai-agents-shared-notebook.html": {
+      "original_sha256": "05e693db0600d3dec9a78ac01cbea8cb7d2805af765bec9c7eb2f6b115421506",
+      "output_sha256": "471ba40580afd0f1017caef96797a26b8c2befda756cda7286b8f1112c33b9d3",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "fa/writing/ai-research-examination-understanding.html": {
+      "original_sha256": "97a7b71aca8455791874bc8b3a4ecc76610a2e593d64ed8568845f885dd3e1bf",
+      "output_sha256": "d2f6ddd5863b24b19b7926a82fc4beff79b49096abc6711090d4132754aa3fc7",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "fa/writing/building-digital-twin-data-freshness.html": {
+      "original_sha256": "c6c6a1063a8acf1cde6f64a09e2b628c2577a4ccd0bbd4cae81c8baf065f0413",
+      "output_sha256": "41db78c5028c655cebcdf264c5ec0f6b1705fe372a70d299c79368c57951260d",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "fa/writing/building-energy-audit-decisions.html": {
+      "original_sha256": "5646881836a85c98731bbd55eccf630ba45ad7971e239d1398f9de405caf8bde",
+      "output_sha256": "f9588842f6bccbfc6d695e5976f1de77ef41058b1691c2e1b14b8b7dd0ddd85e",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "fa/writing/business-ai-evaluation-cases.html": {
+      "original_sha256": "00f1d259001c1a0098ccb80eb1fcc0f0f01fb43f5ace377e0431d0d3b44266c9",
+      "output_sha256": "e82f6d3e03f773aca6bbf67754c86935c69523cae25fcf2bddb6359e059f5d0f",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "fa/writing/cash-conversion-cycle-clocks.html": {
+      "original_sha256": "5c6ea37cfb1461f5edc16f605be8056fce587572156620f087aa2a171ddb9e54",
+      "output_sha256": "a32f1c4cc9c0321be6d598ee691eb2f3589a66294c9d4a29232e4d92cdcd7205",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "fa/writing/computer-agent-check-result.html": {
+      "original_sha256": "3250838001ebb6eaa272c489f3c4ca10b4a90c4e361e2d54c927f82f04dc0152",
+      "output_sha256": "6bb33e9c84eac5fe55f5471f79af141f3e38df6445363dd21c7dad7c99f383bd",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "fa/writing/dubai-project-escrow-controls.html": {
+      "original_sha256": "880536579f095ceea95127c0efa71a3a84dc7f9e1bde9bcd29e25fef2db12517",
+      "output_sha256": "9686bd130db1d41516d44ff9f0538ed16bba8db9487418d8b9ea1c4b943698ed",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "fa/writing/dubai-service-charge-same-rent.html": {
+      "original_sha256": "9b5dd34092a41b5b71d323a1a54412bb6570c9cd18eaccd50bf66bf9f1756175",
+      "output_sha256": "be69ac8845e81771e1ec3ae3b38a473cd3b33e82ba00edca8be303a1bed9a9b2",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "fa/writing/geospatial-ai-map-answer-review.html": {
+      "original_sha256": "7ff42f16d6dfcb7549efd25ae62dcf0821440bae3601301dc942f11380bae550",
+      "output_sha256": "51ab46affed70c0c55dc3768e97f161d03e42e1db6d3976158daf7d3dba8dd3b",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-lagoon4\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "7b1138e140928bf8477f8b9b1f427cf78ad4286c0c8814cac1217e1918e1a35f",
+          "rules": {
+            "kept": 84,
+            "dropped": 612
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "fa/writing/heat-pump-moves-heat-explained.html": {
+      "original_sha256": "cfdbc3d164c91a20dfb2f272720b6b200cf0eda9bc77750d1e21fe109ff42e2b",
+      "output_sha256": "1a3821de9c396b5bab2fe1a2377fef6613cee5c633271e20aacd806a506b261a",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "fa/writing/phone-location-across-street.html": {
+      "original_sha256": "7adfc10658894e30bd916225f7c208581bdb08e2ef76ba682444661297bf0d1a",
+      "output_sha256": "8048f01a783a9c57db04e0acf47b437e8ca8bafd64658f99eba3ffafefda516f",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "fa/writing/prompt-injection-layered-controls.html": {
+      "original_sha256": "0672c9c979762709ab50e9447ee0236aedd85ab9bf8d8503686b3cefaaf78a83",
+      "output_sha256": "4cebba46e884f97121bf61bd566aa4fe5a3c9c6031167c727b53f703a4f2eb09",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "fa/writing/property-comparables-evidence.html": {
+      "original_sha256": "1b78656806b8027fa47ab9f51ffe18b7109e5b69659a50a24ac6f88579e52f69",
+      "output_sha256": "91fa1cbbde97bcac7458da48a5bd8a61cb2961613cd2ee41f4173e06e5473973",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "fa/writing/rag-check-business-records.html": {
+      "original_sha256": "52c8b2807d3b385366461e899208fc8cd1e4ab64290c8224e669354271d6f7f8",
+      "output_sha256": "42d951b56ec9c9210eafb83d165971c11a36c3982ae68d4f5535131f3a94ceac",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "fa/writing/structured-output-source-checks.html": {
+      "original_sha256": "415954f870737d45b46020f740fc0df42ecd8c6b24d39c472f82a556d44d6172",
+      "output_sha256": "fb6d35f0d5d685a0acd15745dd9de1024fb8d59e3b726a32dd6212d546d78ad6",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "fa/writing/tesla-roadster-flight-claim.html": {
+      "original_sha256": "a6ec79db353f4f2c8b44b576aae70adaa50cf79591034910e70109be23c70a74",
+      "output_sha256": "a738752d499db37a443b695208c83aaa8bce649028e0f7cec44c6798f088973f",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "567bbe9bf5d0d204adbf87219e158dd113a26c91156ffc097434985ef15d1d0e",
+          "rules": {
+            "kept": 75,
+            "dropped": 621
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "fa/writing/virtual-machine-device-sharing-explained.html": {
+      "original_sha256": "33d637a6a60ba81b83f7247f287a381875227b5f3b08f398121040aa862b982a",
+      "output_sha256": "f3ba05217ea391d96c7e27399497bc5225b31a08843a1c71039540eb47970644",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-lagoon4\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "7b1138e140928bf8477f8b9b1f427cf78ad4286c0c8814cac1217e1918e1a35f",
+          "rules": {
+            "kept": 84,
+            "dropped": 612
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "fa/writing/where-wearable-ai-computation-runs.html": {
+      "original_sha256": "f3cfe1445aa22db9256acd0d803b80a721caea104f8e58f8596cf9168dc757b7",
+      "output_sha256": "5d0a8b30f4cfee84f11c144ceea44c3dc3c434f2556298faecb107304f1cb1a5",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-lagoon4\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "7b1138e140928bf8477f8b9b1f427cf78ad4286c0c8814cac1217e1918e1a35f",
+          "rules": {
+            "kept": 84,
+            "dropped": 612
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/rtl.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/rtl.css?v=20261009-lagoon4\">",
+          "source_sha256": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+          "inline_sha256": "70e1425ea8d921200413b431e93202da6a90af9a46d055d5db7f9d866d2c121b",
+          "rules": {
+            "kept": 6,
+            "dropped": 3
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "watch/agent-workflow-shared-bottlenecks.html": {
+      "original_sha256": "179fc7d48fc16d51c414dd7a3df8528559d0d4a1ef10d5b44ab05e8c26b9f56d",
+      "output_sha256": "5f7b4a417c20d81c7c21936a3897ea10ce4a1d4d018f39e09094e37497939421",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "c5b2ab5a018959b5b40fa17a8afe2e98323e05cd69c319429ae895eb6fcf5afa",
+          "rules": {
+            "kept": 73,
+            "dropped": 623
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/author-box.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/author-box.css?v=20261009-author1\">",
+          "source_sha256": "56f2e60f8032a14e836d2fcd63b7865c6415e37e9701f1af1c19ade60cbfc8d2",
+          "inline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rules": {
+            "kept": 0,
+            "dropped": 12
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "watch/ai-agent-permissions-ability-authority.html": {
+      "original_sha256": "0f290826860c530021a0dffc85a5701eabbaa00c60e1460192de22af1b9712ef",
+      "output_sha256": "f3bc607956889c19870884867e1dad367a84ccac2a7796fafe0416de8a1c925b",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "c5b2ab5a018959b5b40fa17a8afe2e98323e05cd69c319429ae895eb6fcf5afa",
+          "rules": {
+            "kept": 73,
+            "dropped": 623
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/author-box.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/author-box.css?v=20261009-author1\">",
+          "source_sha256": "56f2e60f8032a14e836d2fcd63b7865c6415e37e9701f1af1c19ade60cbfc8d2",
+          "inline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rules": {
+            "kept": 0,
+            "dropped": 12
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "watch/ai-agents-shared-notebook.html": {
+      "original_sha256": "610af20b5e34c5bd21b6aaf57e350f2d8c81705ab001c844f0c2412894fe674f",
+      "output_sha256": "a57d6f7eb74e6ba65407e3da9bf382eb036ca2ef2000e23c5ae75537a23a9c76",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "c5b2ab5a018959b5b40fa17a8afe2e98323e05cd69c319429ae895eb6fcf5afa",
+          "rules": {
+            "kept": 73,
+            "dropped": 623
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/author-box.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/author-box.css?v=20261009-author1\">",
+          "source_sha256": "56f2e60f8032a14e836d2fcd63b7865c6415e37e9701f1af1c19ade60cbfc8d2",
+          "inline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rules": {
+            "kept": 0,
+            "dropped": 12
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "watch/ai-confidence.html": {
+      "original_sha256": "03f3f5f2d17c3ee5d15de25fd2aed5e08a0dfc26bc8c9ab7619fc7fac704be58",
+      "output_sha256": "595d4b6d6212d6e66c31f25e31de9c945bc00f6ba2f6a295aaf76ae05a69b1ae",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-lagoon4\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "46a42597cb506899044e66483c3221367b9c6e7bf1009ce7a515a7bda21ec7f8",
+          "rules": {
+            "kept": 80,
+            "dropped": 616
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "watch/ai-research-examination-understanding.html": {
+      "original_sha256": "e936254808eff8446b784ba1236798d9dba8276232bcff168cc23f97ae6bb3d6",
+      "output_sha256": "e2a054b18ffc3b9905c22bff64438a8446c678e5bc14f64d32d6da0b220aa1e3",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "c5b2ab5a018959b5b40fa17a8afe2e98323e05cd69c319429ae895eb6fcf5afa",
+          "rules": {
+            "kept": 73,
+            "dropped": 623
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/author-box.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/author-box.css?v=20261009-author1\">",
+          "source_sha256": "56f2e60f8032a14e836d2fcd63b7865c6415e37e9701f1af1c19ade60cbfc8d2",
+          "inline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rules": {
+            "kept": 0,
+            "dropped": 12
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "watch/building-digital-twin-data-freshness.html": {
+      "original_sha256": "d53602d09c10f15a3343671d8fc8c3dc4639389c47c7e2224a363e838004ced6",
+      "output_sha256": "d990ff63f37a30e74a3fc725d6aced5535b4c1c906bd82efac6051c4b5e54736",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "c5b2ab5a018959b5b40fa17a8afe2e98323e05cd69c319429ae895eb6fcf5afa",
+          "rules": {
+            "kept": 73,
+            "dropped": 623
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/author-box.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/author-box.css?v=20261009-author1\">",
+          "source_sha256": "56f2e60f8032a14e836d2fcd63b7865c6415e37e9701f1af1c19ade60cbfc8d2",
+          "inline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rules": {
+            "kept": 0,
+            "dropped": 12
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "watch/building-energy-audit-decisions.html": {
+      "original_sha256": "32e2996d37090f6b7ce6530aee1a88f4c515d5ae185f4baaf44dfbf294e08569",
+      "output_sha256": "a6bed7fd6e16698fa32e5b80c0208ff19a792b9215ba2fa098d125f96f153c7c",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "c5b2ab5a018959b5b40fa17a8afe2e98323e05cd69c319429ae895eb6fcf5afa",
+          "rules": {
+            "kept": 73,
+            "dropped": 623
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/author-box.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/author-box.css?v=20261009-author1\">",
+          "source_sha256": "56f2e60f8032a14e836d2fcd63b7865c6415e37e9701f1af1c19ade60cbfc8d2",
+          "inline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rules": {
+            "kept": 0,
+            "dropped": 12
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "watch/business-ai-evaluation-cases.html": {
+      "original_sha256": "36c99cf20d9bf93c8a7d1531ff423e8a9d57e89e69141750c43daeeb8c426059",
+      "output_sha256": "ed5d70fa0460b92cf6ef31c7648c2915cd349ce739e3c64e5fb9ba8dc8b80e1d",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "c5b2ab5a018959b5b40fa17a8afe2e98323e05cd69c319429ae895eb6fcf5afa",
+          "rules": {
+            "kept": 73,
+            "dropped": 623
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/author-box.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/author-box.css?v=20261009-author1\">",
+          "source_sha256": "56f2e60f8032a14e836d2fcd63b7865c6415e37e9701f1af1c19ade60cbfc8d2",
+          "inline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rules": {
+            "kept": 0,
+            "dropped": 12
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "watch/cash-conversion-cycle-clocks.html": {
+      "original_sha256": "fc1a56d3ecb6ecaa4fea0363d2fc60c2ab2f412b55420f50a7235b07b3a5a89b",
+      "output_sha256": "238f01a3d722679a6fff3e467432349c37f5d31a3fa211fe4f15b6811073113d",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "c5b2ab5a018959b5b40fa17a8afe2e98323e05cd69c319429ae895eb6fcf5afa",
+          "rules": {
+            "kept": 73,
+            "dropped": 623
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/author-box.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/author-box.css?v=20261009-author1\">",
+          "source_sha256": "56f2e60f8032a14e836d2fcd63b7865c6415e37e9701f1af1c19ade60cbfc8d2",
+          "inline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rules": {
+            "kept": 0,
+            "dropped": 12
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "watch/charging-80.html": {
+      "original_sha256": "dfbbbbf27ee7522dd552811cf9a74aebb6f94d9ff2ea3583fbab6c08e265433c",
+      "output_sha256": "f99341514ecb46537468d4336cf9fd7cf185639828188904d412ef8fd75e6e9c",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-lagoon4\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "1c05d41f89f946b363e830edf171cc26ef0fa06a4bb9e60def9027999e34f356",
+          "rules": {
+            "kept": 83,
+            "dropped": 613
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "watch/computer-agent-check-result.html": {
+      "original_sha256": "62e8ecf718ddc63897669229c4e28274176ce5371b9e035b039ce4388333a1d1",
+      "output_sha256": "a1573107ad1a6a471a1706f78e0363c2eada0fcc881b718aea682fa2573358e0",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "c5b2ab5a018959b5b40fa17a8afe2e98323e05cd69c319429ae895eb6fcf5afa",
+          "rules": {
+            "kept": 73,
+            "dropped": 623
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/author-box.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/author-box.css?v=20261009-author1\">",
+          "source_sha256": "56f2e60f8032a14e836d2fcd63b7865c6415e37e9701f1af1c19ade60cbfc8d2",
+          "inline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rules": {
+            "kept": 0,
+            "dropped": 12
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "watch/cookie-consent.html": {
+      "original_sha256": "2c69936cb7c964845ce351d0f0375a52a1d15227d5e0d4e5ded70790e787c753",
+      "output_sha256": "5143ff7fad2d8e255b9d7ed481f4624cbaf64f20d50a5d9deafb3e7bffe76fa3",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-lagoon4\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "1c05d41f89f946b363e830edf171cc26ef0fa06a4bb9e60def9027999e34f356",
+          "rules": {
+            "kept": 83,
+            "dropped": 613
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "watch/dubai-project-escrow-controls.html": {
+      "original_sha256": "df04b835960ae697719e5bba80da37cb75c1b1ac79c4d0e548fdc057ead31340",
+      "output_sha256": "4ed2e220705676a87cdf919481ab9116d45f052e1ed81f24bf580a2250f4a32e",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "c5b2ab5a018959b5b40fa17a8afe2e98323e05cd69c319429ae895eb6fcf5afa",
+          "rules": {
+            "kept": 73,
+            "dropped": 623
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/author-box.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/author-box.css?v=20261009-author1\">",
+          "source_sha256": "56f2e60f8032a14e836d2fcd63b7865c6415e37e9701f1af1c19ade60cbfc8d2",
+          "inline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rules": {
+            "kept": 0,
+            "dropped": 12
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "watch/dubai-service-charge-same-rent.html": {
+      "original_sha256": "eaacef4a1d2cece3cd718bbe73e18bc0ac239ff5b04dbb5db082708f206ee4b0",
+      "output_sha256": "a9beda47de308638ee449d643dec58defabffe8dc1799c637d5dccaaacfbd588",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "c5b2ab5a018959b5b40fa17a8afe2e98323e05cd69c319429ae895eb6fcf5afa",
+          "rules": {
+            "kept": 73,
+            "dropped": 623
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/author-box.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/author-box.css?v=20261009-author1\">",
+          "source_sha256": "56f2e60f8032a14e836d2fcd63b7865c6415e37e9701f1af1c19ade60cbfc8d2",
+          "inline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rules": {
+            "kept": 0,
+            "dropped": 12
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "watch/heat-pump-moves-heat-explained.html": {
+      "original_sha256": "24e2e040f4e60cda22f61b8a6fec799dd00eb630c04854180e0a901ce2bb2118",
+      "output_sha256": "35ce76c29fb6e67609d9d0ed63b6718d9c575320932b638bc414ad0b6290d549",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "c5b2ab5a018959b5b40fa17a8afe2e98323e05cd69c319429ae895eb6fcf5afa",
+          "rules": {
+            "kept": 73,
+            "dropped": 623
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/author-box.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/author-box.css?v=20261009-author1\">",
+          "source_sha256": "56f2e60f8032a14e836d2fcd63b7865c6415e37e9701f1af1c19ade60cbfc8d2",
+          "inline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rules": {
+            "kept": 0,
+            "dropped": 12
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "watch/iphone-duo.html": {
+      "original_sha256": "0a0a02d1fb293913489cc49d0c7504055de68a2ac106e614d88a79822241e2f6",
+      "output_sha256": "12913613f31f4c9e8cb8b2941cb78831c53158334eb95502033dff9cceb81cb3",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-lagoon4\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "a2c9c29c0371a32e86990867b9fe6a5cd243adebc0689fed741c46ed6a3285f8",
+          "rules": {
+            "kept": 84,
+            "dropped": 612
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "watch/phone-location-across-street.html": {
+      "original_sha256": "a128b4e4e1e6c6008e191166f97f0278e2e03f8b96d06ef87f2bc36042e3d9d1",
+      "output_sha256": "bbc6a253d5edcd4a753f8dacd8e1d7e5d12829f9a4028f291a9cd7ab74b3d4d9",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "c5b2ab5a018959b5b40fa17a8afe2e98323e05cd69c319429ae895eb6fcf5afa",
+          "rules": {
+            "kept": 73,
+            "dropped": 623
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/author-box.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/author-box.css?v=20261009-author1\">",
+          "source_sha256": "56f2e60f8032a14e836d2fcd63b7865c6415e37e9701f1af1c19ade60cbfc8d2",
+          "inline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rules": {
+            "kept": 0,
+            "dropped": 12
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "watch/profit-cash.html": {
+      "original_sha256": "5f54320d8c374539cc3bd672149354db749327505e35bc5b7efd93d49d101250",
+      "output_sha256": "b190fe6e9d7d9ab865ed1fdac170b2a7682abf9503e50755d9fd810a459b9fca",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-lagoon4\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "46a42597cb506899044e66483c3221367b9c6e7bf1009ce7a515a7bda21ec7f8",
+          "rules": {
+            "kept": 80,
+            "dropped": 616
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "watch/prompt-injection-layered-controls.html": {
+      "original_sha256": "145927542ead6e0c60d577c62059261cd31c0b9a4e8f86ae0a541c86d2564ebc",
+      "output_sha256": "38a4daf3bc99689d4702511bcb2fe63ced277a5ac58ca621f6d34b3c483d546d",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "c5b2ab5a018959b5b40fa17a8afe2e98323e05cd69c319429ae895eb6fcf5afa",
+          "rules": {
+            "kept": 73,
+            "dropped": 623
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/author-box.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/author-box.css?v=20261009-author1\">",
+          "source_sha256": "56f2e60f8032a14e836d2fcd63b7865c6415e37e9701f1af1c19ade60cbfc8d2",
+          "inline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rules": {
+            "kept": 0,
+            "dropped": 12
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "watch/property-comparables-evidence.html": {
+      "original_sha256": "7e7e744f6826fc230d97f0264d61ab01e778ce4e5ba04952c31c71f9c0f1fdaf",
+      "output_sha256": "0a39dc11257bfea26177431a88b45eeaf231fd2bd12a3dcf5ff52eccc664b591",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "c5b2ab5a018959b5b40fa17a8afe2e98323e05cd69c319429ae895eb6fcf5afa",
+          "rules": {
+            "kept": 73,
+            "dropped": 623
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/author-box.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/author-box.css?v=20261009-author1\">",
+          "source_sha256": "56f2e60f8032a14e836d2fcd63b7865c6415e37e9701f1af1c19ade60cbfc8d2",
+          "inline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rules": {
+            "kept": 0,
+            "dropped": 12
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "watch/rag-check-business-records.html": {
+      "original_sha256": "0d88ff3c7317c2b26365e34481c2b33c15903a91a2bb0d29fe87f7a5b3b3a84c",
+      "output_sha256": "ada1aa3586efa068050751a6a28525eb5b6002de05aeeb672190711482ca7e2a",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "c5b2ab5a018959b5b40fa17a8afe2e98323e05cd69c319429ae895eb6fcf5afa",
+          "rules": {
+            "kept": 73,
+            "dropped": 623
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/author-box.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/author-box.css?v=20261009-author1\">",
+          "source_sha256": "56f2e60f8032a14e836d2fcd63b7865c6415e37e9701f1af1c19ade60cbfc8d2",
+          "inline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rules": {
+            "kept": 0,
+            "dropped": 12
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "watch/rental-yield.html": {
+      "original_sha256": "3cd7bd2bfb7d2cf1e9d26e4fec110c79b126b899a52a1459d2d74df774e3cf0e",
+      "output_sha256": "123a74a8e75fd6bfe7f4baa8a2495945a902f9a2485fd5f6ede67d84f7677f78",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-lagoon4\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "68e40d20287ab913f40ab079d88efa38171a8f97e46016c803ab2d1780939805",
+          "rules": {
+            "kept": 82,
+            "dropped": 614
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "watch/structured-output-source-checks.html": {
+      "original_sha256": "9a10ef24e9121032a7dbcc89756b030f6400807a4a67e604546ab5b2fbc0d8d2",
+      "output_sha256": "5f8b3dc312b52c5372420ebbf5a9dac896890ab9f270cdf5ff86325c53dca6ac",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "c5b2ab5a018959b5b40fa17a8afe2e98323e05cd69c319429ae895eb6fcf5afa",
+          "rules": {
+            "kept": 73,
+            "dropped": 623
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/author-box.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/author-box.css?v=20261009-author1\">",
+          "source_sha256": "56f2e60f8032a14e836d2fcd63b7865c6415e37e9701f1af1c19ade60cbfc8d2",
+          "inline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rules": {
+            "kept": 0,
+            "dropped": 12
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "watch/tesla-roadster-flight-claim.html": {
+      "original_sha256": "f11d2e2736812d6d13fa6bfc782abd004cddce1506b8e41685d0b4a20fdad7e2",
+      "output_sha256": "7ba2adc01f4b04105123fd966a1ca35200c8f1d79b417e6f2e83173ad3021c11",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "c5b2ab5a018959b5b40fa17a8afe2e98323e05cd69c319429ae895eb6fcf5afa",
+          "rules": {
+            "kept": 73,
+            "dropped": 623
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/author-box.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/author-box.css?v=20261009-author1\">",
+          "source_sha256": "56f2e60f8032a14e836d2fcd63b7865c6415e37e9701f1af1c19ade60cbfc8d2",
+          "inline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rules": {
+            "kept": 0,
+            "dropped": 12
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "writing/agent-workflow-shared-bottlenecks.html": {
+      "original_sha256": "aa8a302c6e25b4658435914f624aac13ae29cd158d96181ae825587359e57dd1",
+      "output_sha256": "58a55424fabcd1d6330aa6570bbf7eccfd3d3b44921b0144e11a14f34b6ef3d1",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "6e9a57a4ef6200d8d4238ecfc41082228a4c01d57458b655db13e438ae3bdc11",
+          "rules": {
+            "kept": 74,
+            "dropped": 622
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "writing/ai-agent-permissions-ability-authority.html": {
+      "original_sha256": "ec0880500946328ba5d1565396576e7252b5522d8faaccac7f4c3a61cbecf6d5",
+      "output_sha256": "a456a466075ce757523492ea231739f06dcdb8405cf48c6540f134e216581e7b",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "6e9a57a4ef6200d8d4238ecfc41082228a4c01d57458b655db13e438ae3bdc11",
+          "rules": {
+            "kept": 74,
+            "dropped": 622
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "writing/ai-agents-shared-notebook.html": {
+      "original_sha256": "05f314789c04a7173b09d89aeebb6e702d08467ffb12a91017952f528721fee4",
+      "output_sha256": "fd23294a58228982e55b9e54c966ad35f1ce28d2baffc0cf88753e66a929cc76",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "6e9a57a4ef6200d8d4238ecfc41082228a4c01d57458b655db13e438ae3bdc11",
+          "rules": {
+            "kept": 74,
+            "dropped": 622
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "writing/ai-rental-yield-cash-flow.html": {
+      "original_sha256": "766b9ae2b7da7de4f4c372ae6261c5edee263d8e34b8cccf135a0423705192c0",
+      "output_sha256": "d9300a6777561170cf3ad9be221706d917a27d3ec5749b7ea238581aeeb90eec",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-lagoon4\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "17bc02fb1d508bbcc32ebee043b162562cb7bc316b21a6e1475d47e71f4a127c",
+          "rules": {
+            "kept": 88,
+            "dropped": 608
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/property-guides.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/property-guides.css?v=20261020-guides1\">",
+          "source_sha256": "4e5b0148b36c0e358b6ba270e8432c819b7c6d37bd4448581be27184b858319d",
+          "inline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rules": {
+            "kept": 0,
+            "dropped": 18
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "writing/ai-research-examination-understanding.html": {
+      "original_sha256": "6d2b816d0c9f3b7cfcd1ef17fbb9eb859dfdf9504be364a7744bf874bedf1007",
+      "output_sha256": "2fa7dacbdae9317607fc5af59e8e6c76f641e50c9f7098fd1f1eb5b7db7ca5b5",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "6e9a57a4ef6200d8d4238ecfc41082228a4c01d57458b655db13e438ae3bdc11",
+          "rules": {
+            "kept": 74,
+            "dropped": 622
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "writing/building-digital-twin-data-freshness.html": {
+      "original_sha256": "475b6fba6aab13d56b86bc715bf2f5bcc8d0d5822b574d2e7f22b5b657d2e472",
+      "output_sha256": "c8b59891e8e855291935fd382d59a285f38e43cc5f4ae1d04f20f605ebd68151",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "6e9a57a4ef6200d8d4238ecfc41082228a4c01d57458b655db13e438ae3bdc11",
+          "rules": {
+            "kept": 74,
+            "dropped": 622
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "writing/building-energy-audit-decisions.html": {
+      "original_sha256": "2946fa954cdad9d86da0859ee20cad43e6ae577ec18aab104ace6e43ae2a3bb0",
+      "output_sha256": "c8caa459ac0a4890365344fd43d5cbbdab28244910abccaaf69e0a1fd7913ba2",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "6e9a57a4ef6200d8d4238ecfc41082228a4c01d57458b655db13e438ae3bdc11",
+          "rules": {
+            "kept": 74,
+            "dropped": 622
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "writing/business-ai-evaluation-cases.html": {
+      "original_sha256": "c1e795d99d7535a2023a62a2f186569e9dcdcd0a116bfd9d8f39445819877454",
+      "output_sha256": "8abc5ee0fef22b476cc3920c2936b62e4e5a37d073e38cc92d710fc3266f68f5",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "6e9a57a4ef6200d8d4238ecfc41082228a4c01d57458b655db13e438ae3bdc11",
+          "rules": {
+            "kept": 74,
+            "dropped": 622
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "writing/cash-conversion-cycle-clocks.html": {
+      "original_sha256": "08f6638b87a26b94cf7ea14f2806e9a3b0181d586939b38137f78da66dee768a",
+      "output_sha256": "ac843a5c13012533677db890dc001a7d5e8465cbcea7c0bd5453d5fb8d68b0e8",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "6e9a57a4ef6200d8d4238ecfc41082228a4c01d57458b655db13e438ae3bdc11",
+          "rules": {
+            "kept": 74,
+            "dropped": 622
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "writing/computer-agent-check-result.html": {
+      "original_sha256": "9341d843fb155ceb44e0eccb50c86499df38db976b73338f693489ff6210d454",
+      "output_sha256": "ae7d61a2fa17f2057441f7e5e62024fddd4eac7dcaa0d0b2577031810a5650fb",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "6e9a57a4ef6200d8d4238ecfc41082228a4c01d57458b655db13e438ae3bdc11",
+          "rules": {
+            "kept": 74,
+            "dropped": 622
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "writing/dubai-project-escrow-controls.html": {
+      "original_sha256": "f116571a3fc257ee1fd5e68aa3c9143ecf7fa7a5cf81bb8ef0f04d0e9e6e5c2f",
+      "output_sha256": "aeca4ef55b118a7723d7b453409262ce39884ba1ef13ada96251f84d793c9143",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "6e9a57a4ef6200d8d4238ecfc41082228a4c01d57458b655db13e438ae3bdc11",
+          "rules": {
+            "kept": 74,
+            "dropped": 622
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "writing/dubai-service-charge-same-rent.html": {
+      "original_sha256": "f64d9848a6417ed54e7dec1b00333ce6ce3139acf382ba8e7f4d0106256b9f02",
+      "output_sha256": "b6a2667fbbb5d263c192265cca5899b6cf68af4844d8c208ef0951187cce811e",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "6e9a57a4ef6200d8d4238ecfc41082228a4c01d57458b655db13e438ae3bdc11",
+          "rules": {
+            "kept": 74,
+            "dropped": 622
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "writing/geospatial-ai-map-answer-review.html": {
+      "original_sha256": "0695bcdfde991c0d0fe08c5dcd548d091b65f7371dd3c5d99421b1e5a19d9565",
+      "output_sha256": "9532d1eb940acc7f74a8537fa801a0cd9907ea3ffd51281592986407f8f112ba",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-lagoon4\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "51fa43d1172d440c6faf99d3b65fa134ab44bc7610982d1e7b6a544cc1b79d5b",
+          "rules": {
+            "kept": 83,
+            "dropped": 613
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "writing/heat-pump-moves-heat-explained.html": {
+      "original_sha256": "bab814e4ae66103521415cdf227d216165e0b14847e68161d79b02010801e0c1",
+      "output_sha256": "f9640426c735796dc918baa041b667e2b5f538601a3a55d1a4b1fcea97d4d699",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "6e9a57a4ef6200d8d4238ecfc41082228a4c01d57458b655db13e438ae3bdc11",
+          "rules": {
+            "kept": 74,
+            "dropped": 622
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "writing/iphone-duo-price-per-day.html": {
+      "original_sha256": "254ac0f347e0b2497286f8d439cb279a3cfbff25f43586789b79ff4595d9e327",
+      "output_sha256": "72c6c21a55517bed98f511e7c14a5b4082cdd68d4148bb1408b15d586d977a25",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-lagoon4\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "5cd6165a64156df50ef97def8a72eb556c4564f1c53c66453493914c9ef21b68",
+          "rules": {
+            "kept": 82,
+            "dropped": 614
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "writing/phone-location-across-street.html": {
+      "original_sha256": "69c2aca14737023ee40cc6de3f3c627cee88fede41d6f1e1fe7aad9678c3d718",
+      "output_sha256": "cb5b8e85f5fc2487aea2a9f228282824c48159689e8d60b9dee03c20e304eab3",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "6e9a57a4ef6200d8d4238ecfc41082228a4c01d57458b655db13e438ae3bdc11",
+          "rules": {
+            "kept": 74,
+            "dropped": 622
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "writing/profitable-but-out-of-cash.html": {
+      "original_sha256": "9853885e129e4d6e0628b3de03da632e833dff569f3a11731d167d09a35620c3",
+      "output_sha256": "f5472696d3f7bd2e26b0926d2685bfb65243c9fecf5fd0daeb8223a8bc087e85",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-lagoon4\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "f489ba06c946eeb431e3d472c4226f7004c1020460f376f6c6c206074d8cf1a1",
+          "rules": {
+            "kept": 86,
+            "dropped": 610
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        },
+        {
+          "source": "css/property-guides.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/property-guides.css?v=20261020-guides1\">",
+          "source_sha256": "4e5b0148b36c0e358b6ba270e8432c819b7c6d37bd4448581be27184b858319d",
+          "inline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rules": {
+            "kept": 0,
+            "dropped": 18
+          },
+          "conservative_selectors": []
+        }
+      ]
+    },
+    "writing/prompt-injection-layered-controls.html": {
+      "original_sha256": "485ee068ebc2ffe84ef4540817879613c7b0e1baa4bcf1b4cd4ff5c7c0946ba8",
+      "output_sha256": "63e05a79340b2ee585d74094d4302329f776e9e708ccaa3f6517edae4c716e0f",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "6e9a57a4ef6200d8d4238ecfc41082228a4c01d57458b655db13e438ae3bdc11",
+          "rules": {
+            "kept": 74,
+            "dropped": 622
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "writing/property-comparables-evidence.html": {
+      "original_sha256": "4b23c3702d83b1b51fdc119e9d6509bfc4f3a9e7ab1378e9ba4f82650a60e854",
+      "output_sha256": "66c21e3ed845f1ab7012707dab4927365b8ba91805c10a37af2c6ea763741baa",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "6e9a57a4ef6200d8d4238ecfc41082228a4c01d57458b655db13e438ae3bdc11",
+          "rules": {
+            "kept": 74,
+            "dropped": 622
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "writing/rag-check-business-records.html": {
+      "original_sha256": "17acf19f8f71ae56de7399e43f93dd16d9fb32ffab762e9e5d49c2ad836f1617",
+      "output_sha256": "799d4d8cd690b8642d5c030f4365d6919d65244ea340ca1f20a5c588b9e32719",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "6e9a57a4ef6200d8d4238ecfc41082228a4c01d57458b655db13e438ae3bdc11",
+          "rules": {
+            "kept": 74,
+            "dropped": 622
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "writing/structured-output-source-checks.html": {
+      "original_sha256": "6afdb9a34564d2c5fc8f3bc95e71907340494c1ae3d42d126ea6aaf885a3ed89",
+      "output_sha256": "47b6cafe753aadd9a1c6359db25d42749981ae6e3d7c9b775c0022caf12a8d4a",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "6e9a57a4ef6200d8d4238ecfc41082228a4c01d57458b655db13e438ae3bdc11",
+          "rules": {
+            "kept": 74,
+            "dropped": 622
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "writing/tesla-roadster-flight-claim.html": {
+      "original_sha256": "402f3b43b26c510b8db96653da1dff59ec0df926b23bf05d9fbae54fc904b22c",
+      "output_sha256": "a85c45004fa7262bf119efb4da28c19a9def7d528f4b74f4404a734fd1235050",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-writing1\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "6e9a57a4ef6200d8d4238ecfc41082228a4c01d57458b655db13e438ae3bdc11",
+          "rules": {
+            "kept": 74,
+            "dropped": 622
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "writing/virtual-machine-device-sharing-explained.html": {
+      "original_sha256": "aeae96c8eb31912dbbf64855d647e2fafa0c92d3e742d7da531c60d0c286f753",
+      "output_sha256": "4b6e08b4fdee766d63ed830838ba47aef17c89eb209b1a84d63d6b7839e30051",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-lagoon4\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "51fa43d1172d440c6faf99d3b65fa134ab44bc7610982d1e7b6a544cc1b79d5b",
+          "rules": {
+            "kept": 83,
+            "dropped": 613
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "writing/what-accept-cookies-means.html": {
+      "original_sha256": "20bc0134647aed213ca1739f6f58821c0ca0b58a357cd9b4c4ec25e36279d994",
+      "output_sha256": "6669b8f19d9e5e30e1dddb99fe7e433c7240373545191584bb76fe0cddeff130",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-lagoon4\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "8c0b60c381bc4f3332957bfa91763cd52d9a44de04901bcee103caba4df4ea1a",
+          "rules": {
+            "kept": 81,
+            "dropped": 615
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "writing/where-wearable-ai-computation-runs.html": {
+      "original_sha256": "f63c3f80dca7056ee4396d2774fa45a40af663b41bb95340ef9c8bd763d48e64",
+      "output_sha256": "b542d116aedaf76746a7928a5e02f3c7ccc21f9999dd86020ea8d3391709e252",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-lagoon4\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "51fa43d1172d440c6faf99d3b65fa134ab44bc7610982d1e7b6a544cc1b79d5b",
+          "rules": {
+            "kept": 83,
+            "dropped": 613
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "writing/why-ai-sounds-confident.html": {
+      "original_sha256": "20118726e3164a21b66ae77861f44baed7aca8278aaa16c607c69f4ad5169a6c",
+      "output_sha256": "bbae5eabff99ad496497ad0934a999d310355c2c98423405e44cae0f9be02b2b",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-lagoon4\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "fb88d73eae836d6b9eaed60edf305dd28a7e8591906a46b95346a91bce0a612d",
+          "rules": {
+            "kept": 82,
+            "dropped": 614
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    },
+    "writing/why-phone-stops-charging-at-80.html": {
+      "original_sha256": "59ffbed68612e091d63304e0b7643278223aab357b634ee802fd1b4511c1513c",
+      "output_sha256": "644a44493318c7ca268ce97509ef7db1847d2e0f5d0f04e9ee79a768758addb4",
+      "sheets": [
+        {
+          "source": "css/site.css",
+          "original_link": "<link rel=\"stylesheet\" href=\"/css/site.css?v=20261009-lagoon4\">",
+          "source_sha256": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+          "inline_sha256": "8c0b60c381bc4f3332957bfa91763cd52d9a44de04901bcee103caba4df4ea1a",
+          "rules": {
+            "kept": 81,
+            "dropped": 615
+          },
+          "conservative_selectors": [
+            ".agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase=\"1\"],[data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-roof,.agent-run:is([data-phase=\"2\"],[data-phase=\"3\"],[data-phase=\"4\"]) .box-window,.agent-run:is([data-phase=\"3\"],[data-phase=\"4\"]) .box-garage",
+            ".command::backdrop",
+            ".editorial details.watch-transcript>summary::-webkit-details-marker",
+            "::view-transition-group(site-header)",
+            "::view-transition-new(root)",
+            "::view-transition-old(root)",
+            ":focus-visible",
+            "[hidden]"
+          ]
+        }
+      ]
+    }
+  }
+}

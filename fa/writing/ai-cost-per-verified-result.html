@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Ahmadreza Samadi">
+<title>هزینه هوش مصنوعی به‌ازای هر نتیجه پذیرفته‌شده | احمدرضا صمدی</title>
+<meta name="description" content="چارچوبی کاربردی برای سنجش هزینه واقعی کار با هوش مصنوعی: هزینه مدل، ابزارها، تلاش‌های دوباره و بازبینی انسانی را بر تعداد نتایج پذیرفته‌شده تقسیم کنید.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://a-samadi.com/fa/writing/ai-cost-per-verified-result.html">
+<link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-cost-per-verified-result.html">
+<link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-cost-per-verified-result.html">
+<link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-cost-per-verified-result.html">
+<link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-cost-per-verified-result.html">
+<link rel="icon" type="image/svg+xml" href="../../assets/brand/favicon.svg">
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/vazirmatn-arabic-wght.woff2" crossorigin>
+<link rel="stylesheet" href="../../css/site.css?v=20261009-lagoon4">
+<link rel="stylesheet" href="../../css/rtl.css?v=20261009-lagoon4">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ahmadreza Samadi"><meta property="og:title" content="هزینه هوش مصنوعی به‌ازای هر نتیجه پذیرفته‌شده | احمدرضا صمدی">
+<meta property="og:description" content="قیمت پایین‌تر مدل مفید است؛ اما معیار تصمیم، هزینه کامل نتایجی است که از بازبینی می‌گذرند.">
+<meta property="og:url" content="https://a-samadi.com/fa/writing/ai-cost-per-verified-result.html"><meta property="og:locale" content="fa_IR"><meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="ar_AE">
+<meta property="og:image" content="https://a-samadi.com/assets/share/ai-cost-per-verified-result.png">
+<meta property="og:image:alt" content="طرح جلد مقالهٔ انگلیسی: AI cost per verified result"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="هزینه هوش مصنوعی به‌ازای هر نتیجه پذیرفته‌شده | احمدرضا صمدی"><meta name="twitter:description" content="قیمت پایین‌تر مدل مفید است؛ اما معیار تصمیم، هزینه کامل نتایجی است که از بازبینی می‌گذرند."><meta name="twitter:image" content="https://a-samadi.com/assets/share/ai-cost-per-verified-result.png"><meta name="twitter:image:alt" content="طرح جلد مقالهٔ انگلیسی: AI cost per verified result">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://a-samadi.com/fa/writing/ai-cost-per-verified-result.html#article",
+  "headline": "هزینه هوش مصنوعی به‌ازای هر نتیجه پذیرفته‌شده",
+  "description": "چارچوبی برای سنجش هزینه کامل نتایج پذیرفته‌شده در فرایندهای کاری هوش مصنوعی.",
+  "url": "https://a-samadi.com/fa/writing/ai-cost-per-verified-result.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://a-samadi.com/fa/writing/ai-cost-per-verified-result.html",
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://a-samadi.com/assets/share/ai-cost-per-verified-result.png",
+      "width": 1200,
+      "height": 630
+    },
+    "isPartOf": {
+      "@id": "https://a-samadi.com/#website"
+    },
+    "breadcrumb": {
+      "@id": "https://a-samadi.com/fa/writing/ai-cost-per-verified-result.html#breadcrumbs"
+    }
+  },
+  "datePublished": "2026-09-24",
+  "dateModified": "2026-10-21T03:38:06+03:30",
+  "inLanguage": "fa",
+  "translationOfWork": {
+    "@id": "https://a-samadi.com/writing/ai-cost-per-verified-result.html#article"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://a-samadi.com/assets/share/ai-cost-per-verified-result.png",
+    "width": 1200,
+    "height": 630
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://a-samadi.com/#person",
+    "name": "Ahmadreza Samadi",
+    "url": "https://a-samadi.com/about.html"
+  },
+  "isPartOf": {
+    "@id": "https://a-samadi.com/#website"
+  },
+  "publisher": {
+    "@id": "https://a-samadi.com/#person"
+  }
+}</script>
+
+<style data-author-box>
+/* A quiet author reference at the end of each article, using the Lagoon tokens. */
+.editorial .article-author {
+  margin-block: 2.5rem 0;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid var(--line-strong);
+  border-inline-start: 3px solid var(--mint-deep);
+  border-radius: 16px;
+  background: var(--surface);
+  text-align: start;
+  overflow-wrap: anywhere;
+}
+.editorial .article-author h2 {
+  margin: 0 0 .25rem;
+  color: var(--muted);
+  font-size: .875rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.editorial .article-author p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.editorial .article-author .article-author__name {
+  margin-block-end: .35rem;
+  font-family: var(--display);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.editorial .article-author a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 44px;
+  max-inline-size: 100%;
+  padding-block: .25rem;
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+.editorial .article-author a:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+@media (forced-colors: active) {
+  .editorial .article-author { border-color: CanvasText; background: Canvas; }
+  .editorial .article-author h2, .editorial .article-author p { color: CanvasText; }
+  .editorial .article-author a { color: LinkText; }
+  .editorial .article-author a:focus-visible { outline-color: Highlight; }
+}
+@media print {
+  .editorial .article-author {
+    break-inside: avoid;
+    margin-block-start: 1.5rem;
+    border-color: #777;
+    background: transparent;
+  }
+  .editorial .article-author h2, .editorial .article-author p, .editorial .article-author a { color: #000; }
+}
+</style>
+
+<script src="/js/site-analytics.js?v=20261009-analytics1" defer></script>
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="article:modified_time" content="2026-10-20T13:27:41+03:30">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://a-samadi.com/fa/writing/ai-cost-per-verified-result.html#breadcrumbs",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "خانه",
+      "item": "https://a-samadi.com/fa/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "هوش مصنوعی و سامانه‌های کسب‌وکار",
+      "item": "https://a-samadi.com/fa/topics/business-systems-dubai.html"
+    }
+  ]
+}</script>
+</head>
+<body class="editorial-body persian-page">
+<a class="skip-link" href="#main">رفتن به محتوا</a>
+<header class="editorial-header"><a href="/fa/"><img src="../../assets/brand/ahmadreza-samadi-mark-azure.svg" alt="" width="44" height="28">احمدرضا صمدی / صفحه اصلی</a></header>
+<main id="main" class="editorial">
+<p class="eyebrow">تحلیل · اقتصاد محصولات هوش مصنوعی</p>
+<h1>هزینه هوش مصنوعی به‌ازای هر نتیجه پذیرفته‌شده</h1>
+<p class="lead">قیمت هر بار استفاده از مدل مهم است؛ اما هزینه رسیدن به نتیجه‌ای مفید در کل فرایند کاری اهمیت بیشتری دارد.</p>
+<p class="byline">نوشته <a href="/fa/about.html" rel="author">احمدرضا صمدی</a> · ۲۴ سپتامبر ۲۰۲۶ · به‌روزرسانی <time datetime="2026-10-21T03:38:06+03:30">۲۱ اکتبر ۲۰۲۶</time> · <a href="/writing/ai-cost-per-verified-result.html" hreflang="en">نسخه انگلیسی مقاله</a></p>
+<section aria-labelledby="article-at-a-glance">
+<h2 id="article-at-a-glance">در یک نگاه</h2>
+<p>هزینه کل فرایند، شامل فراخوانی مدل، ابزارها، تلاش‌های دوباره و بازبینی انسانی، را بر تعداد نتایجی تقسیم کنید که معیار مشخص بازبینی را برآورده می‌کنند. درخواست ارزان‌تر لزوماً به نتیجه پذیرفته‌شده ارزان‌تر نمی‌انجامد. مثال پژوهش درباره ملک در ادامه، آزمایشی پیشنهادی است، نه نتیجه گزارش‌شده یک شرکت.</p>
+</section>
+<!-- cornerstone:start -->
+<section aria-labelledby="cornerstone-title"><h2 id="cornerstone-title">هزینهٔ هر نتیجهٔ پذیرفته‌شده را بسنجید</h2><p><strong>همهٔ هزینه‌های ثبت‌شدهٔ فرایند را بر تعداد نتایج متمایز پذیرفته‌شده طبق معیار تعیین‌شده پیش از آزمایش تقسیم کنید. هزینهٔ تلاش‌های تکراری و ردشده را حساب کنید؛ تلاش تکراری، نتیجهٔ پذیرفته‌شدهٔ جدید نیست.</strong></p><figure style="margin:1.5rem 0"><div class="cornerstone-flow" role="img" aria-label="کل هزینهٔ ثبت‌شده ÷ نتایج متمایز پذیرفته‌شده؛ با پذیرش صفر، هزینهٔ واحد تعریف‌نشده است." style="text-align:center;max-width:100%"><div style="background:#BDE7D2;border:1px solid #0B6A7A;border-radius:12px;padding:.75rem;color:#0E2A33">هزینهٔ همهٔ تلاش‌ها</div><div aria-hidden="true" style="color:#0B6A7A">↓</div><div style="background:#C3DCF4;border:1px solid #0B6A7A;border-radius:12px;padding:.75rem;color:#0E2A33">معیار پذیرش</div><div aria-hidden="true" style="color:#0B6A7A">↓</div><div style="background:#F2F7F5;border:1px solid #0B6A7A;border-radius:12px;padding:.75rem;color:#0E2A33">هزینهٔ هر نتیجهٔ پذیرفته‌شده</div></div><figcaption>کل هزینهٔ ثبت‌شده ÷ نتایج متمایز پذیرفته‌شده؛ با پذیرش صفر، هزینهٔ واحد تعریف‌نشده است.</figcaption></figure><p>در این راهنما «نتیجهٔ پذیرفته‌شده» خروجی‌ای است که همهٔ شرط‌های پذیرشِ ثبت‌شده پیش از آزمایش را برآورده می‌کند. «نتیجهٔ تأییدشده» در نشانی و عنوان پیشین به همان معیار اشاره دارد؛ هیچ‌کدام گواهی مستقل نیست. هزینهٔ نامشخص را از صفر صریح جدا کنید. مجموعهٔ نتایج موردنظر و واحد پول در مقایسه یکسان باشند و تعداد پذیرفته‌شده‌ها کنار هزینهٔ واحد گزارش شود. هزینهٔ کمتر با معیار پذیرش ضعیف‌تر، بهبود قابل‌مقایسه نیست.</p><h3>چک‌لیست آزمایش بعدی</h3><ol><li>کار، شناسهٔ نتایج موردنظر و معیار پذیرش را پیش از آزمون ثابت کنید.</li><li>هزینهٔ مدل، ابزار، نیروی انسانی و سایر هزینه‌ها را برای همهٔ تلاش‌ها یکسان ثبت کنید.</li><li>تلاش‌های ردشده و تکرارها را در صورت کسر نگه دارید.</li><li>هر نتیجهٔ پذیرفته‌شده را یک‌بار بشمارید؛ هزینهٔ نامشخص را نامشخص گزارش کنید.</li><li>با پذیرش صفر، کل هزینه و صفر نتیجهٔ پذیرفته‌شده را گزارش کنید؛ هزینهٔ واحد تعریف‌نشده است.</li></ol><p><a href="https://github.com/ahmadreza-smdi/ai-workflow-cost">استفاده از راهنمای تصمیم یا ابزار</a> · <a href="/ideas.html">سه ایدهٔ اصلی را بخوانید</a></p><h3>منابع اصلی</h3><ul><li><a href="https://arxiv.org/abs/2211.09110" lang="en">Holistic Evaluation of Language Models (2022)</a></li><li><a href="https://www.nist.gov/itl/ai-risk-management-framework" lang="en">NIST AI RMF 1.0</a></li><li><a href="https://github.com/ahmadreza-smdi/ai-workflow-cost" lang="en">AI workflow cost ledger: source and measurement limits</a></li></ul><p>این منابع به اصول ارزیابی و تعامل کمک می‌کنند. فرایند بالا جمع‌بندی تحریریه است، نه استاندارد مورد تأیید این منابع یا نتیجهٔ گزارش‌شدهٔ یک شرکت.</p></section>
+<!-- cornerstone:end -->
+
+<section aria-labelledby="workflow-ledger-title">
+<h2 id="workflow-ledger-title">چطور این روش را با دفتر هزینه خودم امتحان کنم؟</h2>
+<p><a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/releases/tag/v0.1.0">ابزار ثبت هزینه فرایند هوش مصنوعی، نسخه 0.1.0</a> برنامه‌ای محلی با پایتون و <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost#try-the-fictional-example">راهنمای انگلیسی</a> است. هزینه‌های ثبت‌شده مدل، ابزار، بازبینی و سایر موارد را در تلاش‌های دوباره و اجراهای ناموفق هم حساب می‌کند. شما کار، برچسب واحد پول و معیار پذیرش را تعیین می‌کنید.</p>
+<p>از <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/v0.1.0/examples/fictional-attempts.csv">دفتر نمونه خیالی</a> شروع کنید: سه تلاش برای دو نتیجه موردنظر، یک نتیجه پذیرفته‌شده و هزینه کل 0.85 در واحد پول انتخاب‌شده. این اعداد برای آموزش ساخته شده‌اند. هزینه نامشخص پذیرفته نمی‌شود؛ صفر صریح، صفر می‌ماند. اگر هیچ نتیجه‌ای پذیرفته نشود، هزینه هر نتیجه تعریف‌نشده است و هزینه کل همچنان نمایش داده می‌شود.</p>
+<p>ابزار، هزینه‌ها و برچسب‌های پذیرش ثبت‌شده شما را جمع‌بندی می‌کند. خروجی‌ها را مستقلاً تأیید نمی‌کند و نتیجه عملکرد یک شرکت را اندازه نمی‌گیرد.</p>
+<p>اگر صفحه‌گسترده را ترجیح می‌دهید، <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/releases/download/v0.1.1/AI-Workflow-Experiment.xlsx">فایل تمرین مقایسه فرایند دستی و هوش مصنوعی (XLSX، به زبان انگلیسی)</a> را دریافت کنید. می‌توانید یک مجموعه خروجی یکسان، تلاش‌های تکراری، نتیجه پذیرش یا رد، هزینه‌ها، زمان کار و زمان سپری‌شده را ثبت کنید. ظرفیت فایل ۱۰ خروجی جفت‌شده و ۳۰ تلاش است. داده‌های مثال آموزشی آن ساختگی‌اند.</p>
+<p id="workbook-start-guide">برای شروع و خواندن نتیجه‌ها، <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/b26e9759dec443e265df6e4d08f5b411ebb3c635/docs/workbook-start.md">راهنمای کار با فایل <bdi dir="ltr">Excel</bdi> (به زبان انگلیسی)</a> را ببینید. راهنما محدوده‌های قابل‌ویرایش، خانه‌های فرمول و مثال مقایسهٔ فرضی را مشخص می‌کند و تفاوت قالب فایل با <bdi dir="ltr">CSV</bdi> ابزار خط فرمان را توضیح می‌دهد.</p>
+<p id="paired-ledger-comparison">دو دفتر هزینهٔ ابزار خط فرمان با شناسه‌های نتیجهٔ یکسان دارید؟ <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/tree/5eb52dc449cda3b3af6a14881a8801b31002fd94#compare-two-ledgers-for-the-same-recorded-results">راهنمای مقایسهٔ دو دفتر هزینه (به زبان انگلیسی)</a> هزینهٔ کل، تعداد نتیجه‌های پذیرفته‌شده و هزینهٔ هر نتیجه را برای هر دو روش در یک گزارش <bdi dir="ltr">JSON</bdi> نشان می‌دهد. تلاش‌های ناموفق و تکراری هم حساب می‌شوند؛ شناسه‌های نتیجهٔ ناهماهنگ یا هزینه‌های نامشخص پذیرفته نمی‌شوند. صورتحساب کل کمتر به‌تنهایی به معنای نتیجهٔ پذیرفته‌شدهٔ ارزان‌تر نیست. مثال‌ها ساختگی‌اند؛ مسئولیت پذیرش نتیجه و کامل‌بودن هزینه‌های ثبت‌شده با شماست. راهنمای آفلاین می‌خواهید؟ <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/11d627b9ddb0d1d778373c9bb6537b74c9e1c467/examples/AI-Cost-Paired-Ledgers.zip">بستهٔ مقایسهٔ دو دفتر هزینه را دریافت کنید (به زبان انگلیسی)</a>، کل فایل فشرده را استخراج کنید و <bdi dir="ltr"><code>index.html</code></bdi> را باز کنید. برای اجرای دستورهای آن به <bdi dir="ltr">Python 3.10</bdi> یا جدیدتر نیاز دارید. اگر مقایسه به‌دلیل ناهماهنگی شناسه‌های نتیجه رد شد، <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/050e51d437cc38c7616be1acb63958ea58e32e54/docs/input-errors.md#the-comparison-has-unmatched-result-ids">راهنمای رفع خطای ورودی (به زبان انگلیسی)</a> را ببینید؛ نتیجه‌های ناهماهنگ را حذف نکنید و تلاش با هزینهٔ صفر نسازید.</p>
+<p id="worked-cost-examples">برای اجرای سه مثال آموزشی، <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/releases/download/v0.1.2/AI-Cost-Worked-Examples.zip">بستهٔ مثال‌های هزینهٔ هوش مصنوعی (ZIP، به زبان انگلیسی)</a> را دریافت کنید. مثال‌ها هزینهٔ همهٔ تلاش‌ها، حالتِ نبودن نتیجهٔ پذیرفته‌شده و هزینهٔ صفرِ صریحاً معلوم را نشان می‌دهند. همهٔ داده‌ها فرضی‌اند؛ این مثال‌ها معیار مقایسهٔ عملکرد مدل‌ها یا فرایندها نیستند.</p>
+</section>
+<p>وقتی ارائه‌دهنده‌ای قیمت مدل هوش مصنوعی خود را کاهش می‌دهد، تیم‌ها می‌توانند ایده‌های بیشتری را آزمایش کنند. بااین‌حال، ارزان‌تر شدن یک فراخوانی مدل لزوماً هزینه اجرای محصول را پایین نمی‌آورد. ممکن است فرایند به فراخوانی‌های تکراری، ابزارهای دیگر و بازبینی خروجی به دست انسان نیاز داشته باشد.</p>
+<h2>در سپتامبر ۲۰۲۶ چه تغییری رخ داد؟</h2>
+<p>در ۲۲ سپتامبر، <a href="https://openai.com/index/introducing-gpt-6-sol-and-luna/">OpenAI اعلام کرد</a> که قیمت API مدل‌های GPT-6 Sol و Luna نسبت به قیمت‌های تبلیغاتی GPT-5.6 پنجاه درصد کمتر است. <a href="https://www.anthropic.com/claude-opus-5-5">Anthropic نیز اعلام کرد</a> که قیمت Claude Opus 5.5 کاهش یافته و هزینه کارهای معمول مبتنی بر توکن، طبق برآورد این شرکت، حدود چهل درصد کمتر از Opus 5 است. مبنای مقایسه این دو شرکت یکسان نیست؛ پس این درصدها مقایسه مستقیم مدل‌هایشان با یکدیگر نیست.</p>
+<p>برای یک کسب‌وکار، فرصت اصلی این است که کارهایی را که پیش‌تر بیش از حد پرهزینه بودند دوباره آزمایش کند. تصمیم نهایی همچنان به کیفیت، میزان بازبینی لازم و هزینه کل فرایند بستگی دارد.</p>
+<h2>هزینه هر نتیجه پذیرفته‌شده را چگونه محاسبه می‌کنیم؟</h2>
+<p>من با یک معیار ساده شروع می‌کنم:</p>
+<p><strong>هزینه هر نتیجه پذیرفته‌شده = هزینه کل فرایند کاری ÷ تعداد نتایج متمایزی که قاعدهٔ اعلام‌شدهٔ پذیرش را برآورده می‌کنند.</strong></p>
+<p>صورت کسر شامل توکن‌های ورودی و خروجی مدل، زمینه ذخیره‌شده، فراخوانی ابزارها، تلاش‌های دوباره، اجراهای ناموفق و زمان بازبینی انسانی است. مخرج کسر، خروجی‌هایی را می‌شمارد که معیار ازپیش‌تعریف‌شده همان کار را برآورده می‌کنند. حتی با قیمت پایین هر درخواست، اگر درخواست‌های زیادی شکست بخورند یا اصلاح گسترده لازم باشد، نتیجه نهایی می‌تواند پرهزینه باشد.</p>
+<p>این یک چارچوب سنجش است، نه معیاری جهانی. هر تیم باید تعریف کند «پذیرفته‌شده» برای کار خودش چه معنایی دارد و فرض‌های هر مقایسه هزینه را ثبت کند.</p>
+<section id="acceptance-rule-use"><h2>آیا عبور از بازبینی یعنی کار پذیرفته شده است؟</h2><p>پیش از آزمایش، قاعدهٔ کامل پذیرش را مشخص کنید. عبور از بازبینی ممکن است کل قاعده باشد یا فقط یکی از شرط‌ها. اگر قاعده، استفاده در مقصدی مشخص را هم لازم بداند، تحویل فایل یا عبور از بازبینی به‌تنهایی آن را برآورده نمی‌کند.</p><p>مثال فرضی: برای سه نتیجهٔ موردنظر، در مجموع 15 واحد پولی هزینه می‌شود. دو نتیجه از بازبینی عبور می‌کنند، اما فقط یکی در مقصد مشخص‌شده هم استفاده می‌شود. اگر پذیرش هر دو شرط را لازم بداند، یک نتیجهٔ پذیرفته‌شده بشمارید: <bdi dir="ltr">15 / 1 = 15</bdi>. تقسیم بر دو، مقدار <bdi dir="ltr">15 / 2 = 7.50</bdi> را برای هر نتیجهٔ عبورکرده از بازبینی می‌دهد؛ این مخرج متفاوت است و شاهد بهبود نیست.</p><p>ثبت کنید چه کسی از خروجی استفاده می‌کند، محل استفاده کجاست، چه بررسی‌ها و اصلاحاتی پیش از آن لازم است و چه کسی پذیرش را ثبت می‌کند. دفتر هزینه، برچسب‌هایی را که شما وارد می‌کنید محاسبه می‌کند؛ کیفیت، استفاده یا نتایج کسب‌وکار را مستقل تأیید نمی‌کند.</p><p><a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/df7ed996e3d1520a7a365bc697a276903b1d4386/README.md">راهنمای منتشرشدهٔ پذیرش را بخوانید (انگلیسی)</a></p><p id="experiment-notes-route">پیش از ثبت یک اجرا، <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/63bd930f33bf102f4b634f73eb364c181edadb6c/templates/experiment-notes.txt">یادداشت‌های خالی آزمایش (انگلیسی)</a> را تکمیل کنید یا <a href="https://github.com/ahmadreza-smdi/ai-workflow-cost/blob/63bd930f33bf102f4b634f73eb364c181edadb6c/examples/fictional-experiment-notes.txt">نمونهٔ فرضی تکمیل‌شده (انگلیسی)</a> را بخوانید. کاربر مورد نظر، محل استفادهٔ نتیجه و شواهد لازم برای پذیرش را مشخص کنید و بررسی و دوباره‌کاری را طبق قاعدهٔ اعلام‌شدهٔ خود ثبت کنید. نمونه فقط فایل دادهٔ فرضی اولیه را توضیح می‌دهد؛ ارزیابیِ خروجی واقعی یا آزمونِ محل استفاده در آن ارائه نشده است.</p></section>
+<section>
+<h2>این موضوع چه ارتباطی با کار من دارد؟</h2>
+<p>من هم‌بنیان‌گذار و راهبر فنی <a href="/fa/work/appraiva.html">Appraiva</a> هستم؛ شرکتی آمریکایی در کلیولند، اوهایو. از دبی به‌صورت دورکار فعالیت می‌کنم. Appraiva ابزارهای هوش مصنوعی می‌سازد که با تحلیل تصاویر و داده‌های تکمیل‌شدهٔ املاک به سرمایه‌گذاران و توسعه‌دهندگان املاک کمک می‌کنند املاک مسئله‌دار و خارج از بازار را پیدا کنند. آزمایش پژوهش درباره ملک در این مقاله، پیشنهادی است؛ توصیف یکی از قابلیت‌های Appraiva یا نتیجه گزارش‌شده این شرکت نیست.</p>
+</section>
+<h2>یک فرایند پژوهش درباره ملک را چگونه می‌توان آزمایش کرد؟</h2>
+<p>فرض کنید می‌خواهید ابزاری را آزمایش کنید که سوابق املاک را برای بررسی بیشتر مشخص می‌کند. با مجموعه‌ای از سوابق که انسان‌ها برچسب‌گذاری کرده‌اند شروع کنید. از سیستم بخواهید موارد احتمالی را همراه با شواهدشان نشان دهد. سپس بازبین هر پیشنهاد را بپذیرد یا رد کند و دقت، بازیابی، هزینه کل و زمان رسیدن به تصمیم را اندازه بگیرید.</p>
+<p>این یک آزمایش پیشنهادی است، نه توصیف یکی از قابلیت‌های Appraiva یا گزارشی از نتیجه عملکرد آن شرکت. مثال نشان می‌دهد که اگر مدل ارزان‌تر موارد نادرست بیشتری را برای بازبینی بفرستد، هزینه هر مورد پذیرفته‌شده ممکن است بیشتر شود.</p>
+<h2>در این آزمایش پیشنهادی، ابتدا چه چیزی را بررسی می‌کردم؟</h2>
+<ul>
+<li>یک کار تکراری انتخاب کنید و فرایند فعلی انجام آن به دست انسان را بنویسید.</li>
+<li>پیش از آزمایش هوش مصنوعی، معیار روشن پذیرش نتیجه را تعریف کنید.</li>
+<li>هزینه مدل، ابزار، تلاش دوباره و بازبینی را برای هر بار اجرا ثبت کنید.</li>
+<li>نتایج پذیرفته‌شده و زمان رسیدن به تصمیم را با فرایند فعلی مقایسه کنید.</li>
+</ul>
+<p>پرسش مفید این است که آیا این فرایند به فرد کمک می‌کند با هزینه‌ای منطقی به تصمیمی قابل اتکا برسد. قیمت پایین‌تر مدل اجرای آزمایش را آسان‌تر می‌کند، اما به‌تنهایی پاسخ این پرسش نیست.</p>
+<h2>ادامه بحث</h2>
+<p>تازه: اینکه <a href="jev-ai-decision-model.html">مدل تصمیم‌گیری مانند Jev</a> چگونه هزینه هر تصمیم پذیرفته‌شده را تغییر می‌دهد و پیش از دادن <a href="connected-ai-apps.html">دسترسی اپ‌ها به دستیار هوش مصنوعی</a> چه چیزهایی را باید بررسی کرد.</p>
+<p>همین ایده را در یک <a href="https://www.linkedin.com/feed/update/urn:li:activity:7508805808802086912/">سند هشت‌صفحه‌ای در LinkedIn</a> برای تیم‌های محصول و مهندسی و یک <a href="https://www.instagram.com/p/Ddqbo0civsp/">پست چنداسلایدی ساده در Instagram</a> توضیح داده‌ام. برای رویکرد کلی‌تر به طراحی محصول، <a href="start-with-the-decision.html">مقاله «از تصمیم شروع کنید»</a> را بخوانید یا از <a href="/fa/tools/before-you-build-ai.html">راهنمای تعاملی فارسی</a> استفاده کنید.</p>
+
+<p class="related-reading">برای نمونه‌ای فرضی از بررسی‌های متناسب با وظیفه، <a href="/fa/writing/business-ai-evaluation-cases.html">موارد ارزیابی هوش مصنوعی در کسب‌وکار</a> را بخوانید و <a href="/watch/business-ai-evaluation-cases.html" hreflang="en">فیلم همراه (انگلیسی)</a> را تماشا کنید.</p>
+<!-- article-hubs:start -->
+<nav class="article-reading-path" aria-labelledby="article-related-title">
+<p><span role="navigation" aria-label="مسیر صفحه"><a href="/fa/">خانه</a> / <a href="/fa/topics/business-systems-dubai.html" data-hub-primary="business-systems-dubai">هوش مصنوعی و سامانه‌های کسب‌وکار</a></span> · <a href="/fa/topics/ai-real-estate.html" data-hub-secondary="ai-real-estate">هوش مصنوعی در املاک</a></p>
+<h2 id="article-related-title">مطالب مرتبط</h2>
+<ul><li><a href="/fa/writing/property-data-enrichment.html" data-related-pillar="property-decisions">غنی‌سازی داده‌های ملک چگونه یک تصویر را به ملک درست پیوند می‌دهد؟</a></li>
+<li><a href="/fa/writing/build-ai-run-a-business.html" data-related-pillar="decision-first-ai">هوش مصنوعی می‌سازم و کسب‌وکاری را اداره می‌کنم که باید با آن کنار بیاید</a></li>
+<li><a href="/fa/writing/why-ai-sounds-confident.html" data-related-pillar="tech-explained">چرا هوش مصنوعی وقتی اشتباه می‌کند این‌قدر مطمئن به نظر می‌رسد؟</a></li></ul>
+</nav>
+<!-- article-hubs:end -->
+<!-- author-box:start -->
+<aside class="article-author" aria-labelledby="article-author-title">
+<h2 id="article-author-title">درباره نویسنده</h2>
+<p>احمدرضا صمدی کارآفرین فناوری ساکن دبی است. او به‌عنوان هم‌بنیان‌گذار و راهبر فنی Appraiva محصولات هوش مصنوعی می‌سازد و به‌عنوان هم‌بنیان‌گذار و مدیرعامل، Royal Abraj Group را اداره می‌کند.</p>
+<p class="article-author__name"><a href="/fa/about.html" rel="author">احمدرضا صمدی</a></p>
+<p class="article-author__series">از مجموعهٔ <bdi lang="en">Start with the Decision</bdi></p>
+</aside>
+<!-- author-box:end -->
+<!-- follow-subscribe:start -->
+<aside class="details follow-subscribe" aria-labelledby="follow-subscribe-title">
+<h2 id="follow-subscribe-title">دنبال کردن</h2>
+<nav aria-label="دنبال کردن احمدرضا صمدی"><a href="https://www.linkedin.com/in/ahmadreza-samadi/"><bdi>LinkedIn</bdi></a> · <a href="https://www.youtube.com/@ahmadreza-samadi"><bdi>YouTube</bdi></a> · <a href="https://www.instagram.com/ahmadreza.samadi/"><bdi>Instagram</bdi></a></nav>
+</aside>
+<!-- follow-subscribe:end -->
+<footer class="editorial-footer"><nav aria-label="صفحه‌های مرتبط"><a href="/fa/writing/">همه نوشته‌ها</a> · <a href="/fa/about.html">درباره احمدرضا صمدی</a> · <a href="/fa/about.html#official-profiles">صفحه‌های رسمی</a> · <a href="/fa/">نوشته‌ها و پروژه‌ها</a></nav><p>احمدرضا صمدی · کارآفرین فناوری</p><a href="/fa/#contact">تماس ←</a></footer>
+</main>
+</body>
+</html>

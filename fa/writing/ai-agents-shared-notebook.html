@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="fa" translate="no" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>عامل‌های هوش مصنوعی به یادداشت و بررسی نیاز دارند</title><meta name="author" content="Ahmadreza Samadi"><meta name="description" content="احمدرضا صمدی با یک تعمیرگاه خیالی، دانش قابل‌استفادهٔ دوباره برای عامل‌های هوش مصنوعی، بررسی زمینه و مرز اطلاعات خصوصی پروژه را توضیح می‌دهد."><meta name="robots" content="index, follow, max-image-preview:large"><meta name="referrer" content="strict-origin-when-cross-origin"><link rel="canonical" href="https://a-samadi.com/fa/writing/ai-agents-shared-notebook.html"><link rel="preload" as="font" type="font/woff2" href="/assets/fonts/vazirmatn-arabic-wght.woff2" crossorigin><!-- film-css:start:css/site.css -->
+<style data-film-css="css/site.css">
+@font-face{font-family:"Sora";src:url("/assets/fonts/sora-latin-wght.woff2") format("woff2");font-weight:100 800;font-style:normal;font-display:swap;unicode-range:U+0-FF,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+304,U+308,U+329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:"Sora Fallback";src:local("Arial"),local("ArialMT"),local("Helvetica"),local("Liberation Sans"),local("Roboto");font-weight:100 500;size-adjust:113%;ascent-override:85.8%;descent-override:25.7%;line-gap-override:0%}@font-face{font-family:"Sora Fallback";src:local("Arial Bold"),local("Arial-BoldMT"),local("Helvetica Bold"),local("Liberation Sans Bold"),local("Roboto Bold");font-weight:600 800;size-adjust:107%;ascent-override:90.7%;descent-override:27.1%;line-gap-override:0%}@font-face{font-family:"Vazirmatn";src:url("/assets/fonts/vazirmatn-arabic-wght.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+600-6FF,U+750-77F,U+870-88E,U+890-891,U+897-8E1,U+8E3-8FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC}:root{color-scheme:light;--canvas:#f2f7f5;--surface:#fff;--tile:#e9f2ef;--ink:#0e2a33;--ink-soft:#355361;--muted:#4a6570;--line:rgba(14,42,51,.1);--line-strong:rgba(14,42,51,.17);--mint:#bde7d2;--mint-soft:#e3f4eb;--mint-deep:#1c7552;--mint-glow:#8fd6b4;--sky:#c3dcf4;--sky-soft:#e5effa;--sky-deep:#1f5e96;--sky-glow:#9cc8ef;--teal:#0b6a7a;--teal-hover:#09596a;--teal-soft:#d6ecee;--duo:linear-gradient(120deg,var(--mint),var(--sky));--duo-deep:linear-gradient(120deg,var(--mint-deep),var(--teal) 55%,var(--sky-deep));--blue:var(--teal);--blue-hover:var(--teal-hover);--green:var(--mint-deep);--s1:var(--sky-glow);--s2:#7fc9c6;--s3:var(--mint-glow);--s4:var(--sky);--s5:var(--mint);--spectrum:linear-gradient(90deg,var(--mint-glow),#7fc9c6 50%,var(--sky-glow));--spectrum-conic:conic-gradient(from 180deg,var(--mint-glow),#7fc9c6,var(--sky-glow),#7fc9c6,var(--mint-glow));--spectrum-text:linear-gradient(90deg,var(--teal),var(--teal));--pearl:var(--canvas);--champagne:var(--teal);--champagne-soft:var(--teal);--iris:var(--teal);--iris-deep:var(--teal-hover);--azure:var(--teal);--black:var(--ink);--white:#fff;--accent:var(--teal);--glass:rgba(255,255,255,.74);--glass-strong:rgba(255,255,255,.88);--glass-edge:rgba(255,255,255,.9);--radius:20px;--radius-lg:26px;--max:1200px;--sans:"Vazirmatn",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--display:"Sora","Vazirmatn","Sora Fallback",system-ui,sans-serif;--mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;--shadow-soft:0 1px 2px rgba(14,42,51,.05),0 14px 34px -20px rgba(14,42,51,.22);--shadow-strong:0 2px 6px rgba(14,42,51,.06),0 30px 70px -32px rgba(14,42,51,.34);--ease:cubic-bezier(.22,1,.36,1);--ease-spring:cubic-bezier(.32,1.36,.6,1);--i-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m9 5 7 7-7 7'/%3E%3C/svg%3E");--i-arrow:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E");--i-out:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 17 17 7M8.5 7H17v8.5'/%3E%3C/svg%3E");--i-down:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 5v14M6 13l6 6 6-6'/%3E%3C/svg%3E");--i-check:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m5 12.5 4.5 4.5L19 7.5'/%3E%3C/svg%3E");--i-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='6.5'/%3E%3Cpath d='m16 16 4.5 4.5'/%3E%3C/svg%3E");--mark:url("/assets/brand/ahmadreza-samadi-mark-azure.svg");}*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:96px;-webkit-text-size-adjust:100%;text-size-adjust:100%}body{margin:0;min-height:100vh;background:var(--canvas);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;overflow-x:clip}::selection{background:var(--mint);color:var(--ink)}:lang(fa),:lang(ar),[lang="fa"] *,[lang="ar"] *{letter-spacing:0}a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:3px}main :where(p,li,dd,figcaption,blockquote,td) a:not([class]){text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em;text-decoration-color:rgba(11,106,122,.42);text-decoration-color:color-mix(in srgb,currentColor 42%,transparent);transition:text-decoration-color .2s}main :where(p,li,dd,figcaption,blockquote,td) a:not([class]):hover{text-decoration-color:currentColor}button,a{-webkit-tap-highlight-color:transparent}img,svg,video,canvas{max-width:100%}img{display:block}h1,h2,h3,p,figure{margin-top:0}h1,h2,h3{color:var(--ink);font-family:var(--display);font-weight:600;letter-spacing:-.025em;line-height:1.12;text-wrap:balance}h2{font-size:clamp(2rem,3.6vw,2.9rem)}p{color:var(--ink-soft);text-wrap:pretty}:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:8px}[hidden]{display:none!important}.skip-link{position:fixed;top:14px;inset-inline-start:18px;z-index:300;padding:12px 18px;background:#fff;color:var(--ink);font-weight:600;border-radius:12px;box-shadow:var(--shadow-strong);transform:translateY(-180%);transition:transform .3s var(--ease)}.skip-link:focus{transform:none;text-decoration:none}@keyframes spin{to{transform:rotate(1turn)}}@media(prefers-reduced-motion:no-preference){@view-transition{navigation:auto}::view-transition-old(root){animation:page-out .3s var(--ease) both}::view-transition-new(root){animation:page-in .55s var(--ease) both}::view-transition-group(site-header){animation-duration:.5s;animation-timing-function:var(--ease)}}@keyframes page-out{to{opacity:0;transform:translateY(-10px) scale(.995)}}@keyframes page-in{from{opacity:0;transform:translateY(16px)}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;animation-delay:0s!important;transition-duration:.001ms!important;transition-delay:0s!important;scroll-behavior:auto!important}}@media(forced-colors:active){.brand-mark img,.editorial-header a img{forced-color-adjust:none;background:CanvasText}}@media print{body{background:#fff!important}.skip-link{display:none!important}}.editorial-body{position:relative;isolation:isolate;display:flow-root;padding-top:0}.editorial-body::before,.editorial-body::after{content:"";position:absolute;top:0;left:0;right:0;z-index:-1;height:min(80vh,740px);pointer-events:none}.editorial-body::before{background:radial-gradient(40% 60% at 80% 8%,rgba(195,220,244,.75),transparent 72%),radial-gradient(38% 56% at 16% 0%,rgba(189,231,210,.68),transparent 72%)}.editorial-body::after{background:url("/assets/img/contours.svg") 50% 0/max(1400px,100%) auto no-repeat;opacity:.42;-webkit-mask:linear-gradient(180deg,#000 10%,rgba(0,0,0,.45) 45%,transparent 85%);mask:linear-gradient(180deg,#000 10%,rgba(0,0,0,.45) 45%,transparent 85%)}.editorial-header{position:sticky;top:12px;z-index:50;view-transition-name:site-header;display:flex;align-items:center;justify-content:space-between;gap:1rem;width:fit-content;max-width:calc(100% - 32px);min-height:58px;margin:12px auto 0;padding-block:.4rem;padding-inline:.45rem .55rem;border-radius:16px;background:rgba(255,255,255,.74);-webkit-backdrop-filter:saturate(150%) blur(18px);backdrop-filter:saturate(150%) blur(18px);box-shadow:0 0 0 1px var(--line),0 14px 32px -22px rgba(14,42,51,.4)}.editorial-header a{position:relative;isolation:isolate;display:inline-flex;align-items:center;gap:.8rem;min-height:44px;padding-inline:4px .7rem;border-radius:12px;color:var(--ink);font-family:var(--display);font-size:.9375rem;font-weight:600;letter-spacing:-.015em;text-decoration:none}.editorial-header a:has(img)::before{content:"";position:absolute;top:50%;inset-inline-start:0;z-index:-1;width:44px;height:44px;margin-top:-22px;border-radius:12px;background:var(--duo);box-shadow:inset 0 0 0 1px rgba(14,42,51,.06)}.editorial-header a img{display:block;width:36px;height:24px;object-fit:contain;object-position:-999px 0;background:var(--ink);-webkit-mask:var(--mark) center/26px auto no-repeat;mask:var(--mark) center/26px auto no-repeat}.editorial-header a:hover{color:var(--teal);text-decoration:none}.editorial-header a:focus-visible{outline-offset:2px;border-radius:12px}.editorial{max-width:760px;margin:0 auto;padding:clamp(3rem,7vw,5.5rem) 24px 5rem;overflow-wrap:break-word}.editorial h1{font-size:clamp(2.2rem,4.8vw,3.4rem);font-weight:600;line-height:1.08;letter-spacing:-.04em;margin:.4rem 0 1.4rem;color:var(--ink);text-wrap:balance}.editorial h2{font-size:clamp(1.45rem,2.5vw,1.8rem);font-weight:600;line-height:1.2;letter-spacing:-.03em;margin:3rem 0 1rem;color:var(--ink);text-wrap:balance}.editorial p,.editorial li{color:var(--ink-soft);font-size:1.125rem;line-height:1.65}.editorial p{margin-block:0 1.3rem}.editorial a{color:var(--teal);text-decoration:none}.editorial :is(p,li,nav,figcaption,small) > a{padding-block:.32em}.editorial a:hover{text-decoration:underline;text-underline-offset:3px}.editorial .lead{color:var(--ink);font-family:var(--display);font-size:clamp(1.2rem,2.1vw,1.4rem);font-weight:400;line-height:1.5;letter-spacing:-.02em;margin-bottom:1.6rem}.editorial .byline{display:block;font-size:.9375rem;line-height:1.6;color:var(--muted);margin-bottom:1.6rem}.editorial .byline a{font-weight:500}.editorial ul,.editorial ol{padding-inline-start:1.35rem;margin-block:1rem 1.8rem}.editorial :is(ul,ol):not([class]) li+li{margin-top:.5rem}.editorial li::marker{color:var(--muted)}.editorial figure img,.editorial video{border-radius:16px}.editorial :is(h1,h2,h3){scroll-margin-top:100px}.editorial details.watch-transcript>summary::-webkit-details-marker{display:none}.editorial video{box-shadow:var(--shadow-strong)}.editorial-footer{clear:both;margin-top:4rem;padding-top:1.4rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1.5rem;border-top:1px solid var(--line)}.editorial-footer p,.editorial-footer a{font-size:.9375rem;line-height:1.6}.editorial-footer a{display:inline-flex;align-items:center;min-height:44px}.editorial .writing-filter[hidden],.editorial .writing-empty[hidden],.editorial > article[hidden],.editorial > nav[hidden]{display:none}@media print{.editorial > article[hidden]{display:flex!important}}@media(max-width:760px){.editorial-header{top:8px;width:fit-content;max-width:calc(100% - 20px);min-height:52px;margin-top:8px}.editorial-header a{font-size:.875rem;gap:.55rem}.editorial{padding:2.4rem 20px 4rem}.editorial h1{font-size:clamp(2rem,8.4vw,2.6rem)}.editorial p,.editorial li{font-size:1.0625rem}}@media(forced-colors:active){.editorial-body::before,.editorial-body::after{display:none}}@media print{.editorial-body::before,.editorial-body::after{display:none}.editorial-header{position:static;box-shadow:none;background:none;-webkit-backdrop-filter:none;backdrop-filter:none}}main{overflow-x:hidden;overflow-x:clip}.agent-run:not([data-phase]) .scan-box,.agent-run:is([data-phase="1"],[data-phase="2"],[data-phase="3"],[data-phase="4"]) .box-roof,.agent-run:is([data-phase="2"],[data-phase="3"],[data-phase="4"]) .box-window,.agent-run:is([data-phase="3"],[data-phase="4"]) .box-garage{opacity:1}.command::backdrop{background:rgba(14,42,51,.22);-webkit-backdrop-filter:blur(6px) saturate(1.2);backdrop-filter:blur(6px) saturate(1.2)}@keyframes rule-draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes dock-in{from{opacity:0;transform:translate3d(0,-20px,0) scale(.98)}to{opacity:1;transform:none}}@keyframes frame-scan{0%{opacity:0;transform:translateY(-100%)}12%{opacity:1}82%{opacity:1}100%{opacity:0;transform:translateY(334%)}}@keyframes current{to{background-position:0 0,300% 0}}@keyframes live-ping{0%{transform:scale(1);opacity:.6}70%,100%{transform:scale(2.6);opacity:0}}@keyframes pulse{0%,100%{box-shadow:0 0 0 3px rgba(28,117,82,.16)}50%{box-shadow:0 0 0 6px rgba(28,117,82,.06)}}@keyframes orb-orbit{from{transform:rotate(0) translateX(10%) rotate(0)}to{transform:rotate(1turn) translateX(10%) rotate(-1turn)}}@keyframes scroll-dot{0%{transform:translateY(0);opacity:0}25%{opacity:1}70%{transform:translateY(12px);opacity:0}100%{opacity:0}}@keyframes ants{to{stroke-dashoffset:-22}}@keyframes scan-beam{0%{transform:translateY(-60px)}70%,100%{transform:translateY(170px)}}@keyframes step-progress{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes flow-dash{0%{stroke-dashoffset:26}80%,100%{stroke-dashoffset:-74}}@keyframes node-pop{0%,20%,100%{transform:scale(1)}8%{transform:scale(1.1)}}@keyframes layer-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}@keyframes dot-blink{0%,100%{opacity:.25}50%{opacity:1}}@keyframes caret{50%{opacity:0}}@keyframes toast-in{from{transform:translateY(6px) scale(.98)}to{transform:none}}@keyframes cmd-in{from{opacity:0;transform:translateY(-10px) scale(.97)}to{opacity:1;transform:none}}@keyframes breathe{0%,100%{opacity:.3;transform:scale(.9)}50%{opacity:.6;transform:scale(1.1)}}@keyframes found{0%{box-shadow:0 0 0 0 rgba(11,106,122,0)}18%{box-shadow:0 0 0 6px rgba(11,106,122,.24),0 0 40px 6px rgba(143,214,180,.4)}100%{box-shadow:0 0 0 14px rgba(11,106,122,0),0 0 40px 6px rgba(143,214,180,0)}}@media(max-width:760px){html{scroll-padding-top:84px}body{font-size:16px}}
+</style>
+<!-- film-css:end:css/site.css --><style data-author-box>
+/* A quiet author reference at the end of each article, using the Lagoon tokens. */
+.editorial .article-author {
+  margin-block: 2.5rem 0;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid var(--line-strong);
+  border-inline-start: 3px solid var(--mint-deep);
+  border-radius: 16px;
+  background: var(--surface);
+  text-align: start;
+  overflow-wrap: anywhere;
+}
+.editorial .article-author h2 {
+  margin: 0 0 .25rem;
+  color: var(--muted);
+  font-size: .875rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.editorial .article-author p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.editorial .article-author .article-author__name {
+  margin-block-end: .35rem;
+  font-family: var(--display);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.editorial .article-author a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 44px;
+  max-inline-size: 100%;
+  padding-block: .25rem;
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+.editorial .article-author a:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+@media (forced-colors: active) {
+  .editorial .article-author { border-color: CanvasText; background: Canvas; }
+  .editorial .article-author h2, .editorial .article-author p { color: CanvasText; }
+  .editorial .article-author a { color: LinkText; }
+  .editorial .article-author a:focus-visible { outline-color: Highlight; }
+}
+@media print {
+  .editorial .article-author {
+    break-inside: avoid;
+    margin-block-start: 1.5rem;
+    border-color: #777;
+    background: transparent;
+  }
+  .editorial .article-author h2, .editorial .article-author p, .editorial .article-author a { color: #000; }
+}
+</style><!-- film-css:start:css/rtl.css -->
+<style data-film-css="css/rtl.css">
+html[dir="rtl"] body{font-family:"Vazirmatn",var(--sans)}html[dir="rtl"] :is(h1,h2,h3,h4,.hero-name,.venture strong,.section-label,.eyebrow){font-family:"Vazirmatn",var(--display)}html[dir="rtl"] *{letter-spacing:0!important}html[dir="rtl"] .editorial h1{font-weight:800;line-height:1.45}html[dir="rtl"] .editorial :is(h2,h3){font-weight:750;line-height:1.6}html[dir="rtl"] .editorial :is(p,li){line-height:2.05}
+</style>
+<!-- film-css:end:css/rtl.css --><link rel="alternate" hreflang="en" href="https://a-samadi.com/writing/ai-agents-shared-notebook.html"><link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-agents-shared-notebook.html"><link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-agents-shared-notebook.html"><link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-agents-shared-notebook.html"><meta property="og:type" content="article"><meta property="og:site_name" content="Ahmadreza Samadi"><meta property="og:title" content="عامل‌های هوش مصنوعی به یادداشت و بررسی نیاز دارند"><meta property="og:description" content="احمدرضا صمدی با یک تعمیرگاه خیالی، دانش قابل‌استفادهٔ دوباره برای عامل‌های هوش مصنوعی، بررسی زمینه و مرز اطلاعات خصوصی پروژه را توضیح می‌دهد."><meta property="og:url" content="https://a-samadi.com/fa/writing/ai-agents-shared-notebook.html"><meta property="og:image" content="https://a-samadi.com/assets/share/ai-agents-shared-notebook-og-1200x630.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="تعمیرگاه اصیل بنفش و عاجی با لیلا، دو دستیار خیالی هوش مصنوعی و دفتر یادداشت مشترک."><meta property="og:locale" content="fa_IR"><meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="ar_AE"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="عامل‌های هوش مصنوعی به یادداشت و بررسی نیاز دارند"><meta name="twitter:description" content="احمدرضا صمدی با یک تعمیرگاه خیالی، دانش قابل‌استفادهٔ دوباره برای عامل‌های هوش مصنوعی، بررسی زمینه و مرز اطلاعات خصوصی پروژه را توضیح می‌دهد."><meta name="twitter:image" content="https://a-samadi.com/assets/share/ai-agents-shared-notebook-og-1200x630.png"><meta name="twitter:image:alt" content="تعمیرگاه اصیل بنفش و عاجی با لیلا، دو دستیار خیالی هوش مصنوعی و دفتر یادداشت مشترک."><link rel="alternate" type="application/rss+xml" title="Ahmadreza Samadi: English writing" href="https://a-samadi.com/writing/feed.xml"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://a-samadi.com/fa/writing/ai-agents-shared-notebook.html#article",
+      "url": "https://a-samadi.com/fa/writing/ai-agents-shared-notebook.html",
+      "headline": "عامل‌های هوش مصنوعی به یادداشت و بررسی نیاز دارند",
+      "description": "احمدرضا صمدی با یک تعمیرگاه خیالی، دانش قابل‌استفادهٔ دوباره برای عامل‌های هوش مصنوعی، بررسی زمینه و مرز اطلاعات خصوصی پروژه را توضیح می‌دهد.",
+      "inLanguage": "fa",
+      "datePublished": "2026-10-19T10:13:02+03:30",
+      "dateModified": "2026-10-19T10:13:02+03:30",
+      "author": {
+        "@type": "Person",
+        "@id": "https://a-samadi.com/#person",
+        "name": "Ahmadreza Samadi",
+        "url": "https://a-samadi.com/about.html"
+      },
+      "publisher": {
+        "@id": "https://a-samadi.com/#person"
+      },
+      "image": "https://a-samadi.com/assets/writing/ai-agents-shared-notebook/cover.png",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://a-samadi.com/fa/writing/ai-agents-shared-notebook.html",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://a-samadi.com/assets/writing/ai-agents-shared-notebook/cover.png",
+          "width": 1080,
+          "height": 1920
+        },
+        "isPartOf": {
+          "@id": "https://a-samadi.com/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://a-samadi.com/fa/writing/ai-agents-shared-notebook.html#breadcrumbs"
+        }
+      },
+      "citation": [
+        "https://stackoverflow.blog/2026/06/10/announcing-stack-overflow-for-agents/",
+        "https://stackoverflow.blog/2026/09/16/here-s-what-s-new-on-stack-overflow-for-agents/"
+      ],
+      "video": {
+        "@id": "https://a-samadi.com/assets/writing/ai-agents-shared-notebook/film.mp4#video"
+      },
+      "translationOfWork": {
+        "@id": "https://a-samadi.com/writing/ai-agents-shared-notebook.html#article"
+      },
+      "isPartOf": {
+        "@id": "https://a-samadi.com/#website"
+      }
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://a-samadi.com/assets/writing/ai-agents-shared-notebook/film.mp4#video",
+      "name": "AI agents need shared notes, and a way to check them",
+      "description": "Watch Ahmadreza Samadi’s English film: a fictional repair workshop explains shared agent knowledge, context checks and private project information.",
+      "thumbnailUrl": "https://a-samadi.com/assets/writing/ai-agents-shared-notebook/cover.png",
+      "contentUrl": "https://a-samadi.com/assets/writing/ai-agents-shared-notebook/film.mp4",
+      "uploadDate": "2026-10-19T10:13:02+03:30",
+      "duration": "PT116.2S",
+      "inLanguage": "en",
+      "transcript": "Leila runs a repair workshop at a fictional train station. Two AI assistants help her. This morning, the first one fixes a broken timetable display. Before it moves on, it leaves a note: which version of the display it was, what it tried, and how it checked the fix. An hour later, the second assistant finds a display failing in a similar way. Should it solve the same problem from scratch? That’s the idea behind Stack Overflow for Agents. In June, Stack Overflow announced it as a beta: a place where AI agents can share what they’ve learned. It’s built around an API. That’s a doorway one piece of software uses to ask another for something. So an agent can search the shared notes before it starts, instead of rediscovering a known fix. Think of it as a shared notebook, not a shared brain. Reading a note doesn’t retrain the assistant. It just gives it something to check. And checking matters. This display is a different version. A copied recipe might not fit different ingredients. So the assistant compares the context, tries the fix, and reviews the result. Then it adds what happened: what worked here, and what didn’t. Stack Overflow says checking answers, not just posting them, is what earns reputation there. And an agent can show its draft to a person before it’s published. In September, it added playbooks for step-by-step know-how, privacy and publishing controls, and a read-only mode. It also says it’s still checking how valuable this kind of sharing is. A shared answer isn’t proof that it’s right. Leila keeps one rule of her own: private project logs never go in the shared notebook. When an assistant brings back a shared fix, ask three things. What was tried? Where did it work? And how was it checked? A shared note is a starting point, not a verdict.",
+      "isPartOf": {
+        "@id": "https://a-samadi.com/#website"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://a-samadi.com/watch/ai-agents-shared-notebook.html#webpage"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://a-samadi.com/fa/writing/ai-agents-shared-notebook.html#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "خانه",
+          "item": "https://a-samadi.com/fa/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "فناوری به زبان ساده",
+          "item": "https://a-samadi.com/fa/topics/tech-explained.html"
+        }
+      ]
+    }
+  ]
+}</script><style>.film-wrap{max-width:420px;margin:2rem auto}.film-wrap video{width:100%;height:auto;display:block;border-radius:20px;background:var(--ink)}</style>
+<script src="/js/site-analytics.js?v=20261009-analytics1" defer></script>
+
+</head>
+<body class="editorial-body"><a class="skip-link" href="#main">رفتن به محتوا</a><header class="editorial-header"><a href="/fa/"><img src="/assets/brand/ahmadreza-samadi-mark-azure.svg" width="44" height="28" alt="">احمدرضا صمدی</a></header><main id="main" class="editorial"><article><h1>عامل‌های هوش مصنوعی به یادداشت و بررسی نیاز دارند</h1><p class="lead">یک تعمیرگاه خیالی، دانش قابل‌استفادهٔ دوباره برای عامل‌ها، بررسی زمینه و مرز اطلاعات خصوصی پروژه را توضیح می‌دهد.</p><p class="byline"><a href="/fa/about.html" rel="author">احمدرضا صمدی</a> · <time datetime="2026-10-19T10:13:02+03:30">2026-10-19</time></p><div class="film-wrap"><video controls playsinline preload="metadata" poster="/assets/writing/ai-agents-shared-notebook/cover-poster.jpg" width="1080" height="1920"><source src="/assets/writing/ai-agents-shared-notebook/film.mp4" type="video/mp4"><track kind="captions" src="/assets/writing/ai-agents-shared-notebook/captions-en.vtt" srclang="en" label="English" default></video></div><p>فیلم انگلیسی با روایت مصنوعی و زیرنویس انگلیسی. کارگاه، شخصیت‌ها و نتایج تعمیر خیالی هستند.</p><section><h2>در یک نگاه</h2><p>پاسخ مشترک، نقطهٔ شروع است. پیش از کاربرد آن در موقعیتی متفاوت، بپرسید چه چیزی امتحان شد، کجا جواب داد و چگونه بررسی شد.</p></section><section><h2>دستیار دوم با مسئله‌ای آشنا روبه‌رو می‌شود</h2><p>لیلا تعمیرگاه خیالی ما در ایستگاه قطار را اداره می‌کند. یک دستیار نمایشگر برنامهٔ حرکت را تعمیر می‌کند و یادداشت می‌نویسد. بعد، دستیار دیگری خرابی مشابهی را در نسخه‌ای متفاوت از نمایشگر می‌بیند. شروع از یادداشت مفید ممکن است کمک کند؛ کپی کورکورانه ممکن است تفاوت را نادیده بگیرد. تعمیرگاه و نتایج تعمیر، ابزار آموزشی اصیل‌اند، نه آزمون نرم‌افزار.</p></section><section><h2>سرویس واقعی چه می‌کند؟</h2><p>Stack Overflow تبادل دانش عامل‌های خود را در ۱۰ ژوئن ۲۰۲۶ به‌صورت بتا معرفی کرد. این سرویس از API استفاده می‌کند: روشی برای درخواست اطلاعات توسط نرم‌افزار. روند پیشنهادی آن شامل جست‌وجو و بررسی مشارکت‌هاست. این توضیح محصول با تاریخ مشخص است، نه معرفی امروز. <a href="https://stackoverflow.blog/2026/06/10/announcing-stack-overflow-for-agents/" hreflang="en"><bdi>[June]</bdi></a></p></section><section><h2>دفتر یادداشت، مغز مشترک نمی‌شود</h2><p>تشبیه دفتر یادداشت دربارهٔ اطلاعاتی است که دستیار می‌تواند بازیابی و بررسی کند. خواندن یادداشت با آموزش دوبارهٔ مدل فرق دارد. یک دستور ممکن است مفید باشد، اما به مواد، تجهیزات یا نسخه‌ای وابسته باشد که تغییر کرده است. پرسش این است که آیا زمینهٔ آن با کار جدید سازگار است.</p></section><section><h2>سابقهٔ بررسی مفید نگه دارید</h2><p>سابقهٔ پیشنهادی ما سه بخش دارد: چه چیزی امتحان شد، کجا جواب داد و نتیجه با چه شواهدی بررسی شد. در فیلم، یادداشت تعمیر نسخهٔ نمایشگر و یک بررسی خیالی را نام می‌برد. این مشاهدات، قابل‌اعتمادبودن همهٔ نمایشگرها را ثابت نمی‌کند. هر تیم باید بررسی‌های متناسب با کار واقعی خود را انتخاب کند.</p></section><section><h2>کار خصوصی به مرز نیاز دارد</h2><p>به‌روزرسانی سپتامبر از راهنماهای مرحله‌ای، کنترل انتشار و گزینهٔ فقط‌خواندنی می‌گوید؛ ناشر همچنین می‌گوید هنوز ارزش آن را ارزیابی می‌کند. این قابلیت‌ها تضمین درستی یا صرفه‌جویی نیستند. تعمیرگاه خیالی ما گزارش‌های خصوصی پروژه را وارد یادداشت مشترک نمی‌کند. برای فهم این درس به حساب، نصب یا مشارکت نیازی نیست. <a href="https://stackoverflow.blog/2026/09/16/here-s-what-s-new-on-stack-overflow-for-agents/" hreflang="en"><bdi>[September]</bdi></a></p></section><section><h2>از تصمیم شروع کنید</h2><p>پیش از استفادهٔ دوباره از راه‌حل مشترک، تصمیمی را که پشتیبانی می‌کند و پیامد اشتباه را مشخص کنید. زمینه را حفظ کنید، نتیجه را بررسی کنید و محدودیت را بنویسید. دانش وقتی مفیدتر است که نفر بعد دلیل کاربرد احتمالی آن را ببیند.</p></section><h2>منابع</h2><ul><li><a href="https://stackoverflow.blog/2026/06/10/announcing-stack-overflow-for-agents/" hreflang="en"><bdi>June</bdi></a></li><li><a href="https://stackoverflow.blog/2026/09/16/here-s-what-s-new-on-stack-overflow-for-agents/" hreflang="en"><bdi>September</bdi></a></li></ul><p><a href="/watch/ai-agents-shared-notebook.html" hreflang="en">این فیلم انگلیسی را در صفحهٔ اختصاصی آن تماشا کنید</a></p>
+<!-- article-hubs:start -->
+<nav class="article-reading-path" aria-labelledby="article-related-title">
+<p><span role="navigation" aria-label="مسیر صفحه"><a href="/fa/">خانه</a> / <a href="/fa/topics/tech-explained.html" data-hub-primary="tech-explained">فناوری به زبان ساده</a></span></p>
+<h2 id="article-related-title">مطالب مرتبط</h2>
+<ul><li><a href="/fa/writing/how-building-digital-twins-work.html" data-related-pillar="property-decisions">یک ساختمان چطور می‌تواند نسخه دیجیتال زنده داشته باشد؟</a></li>
+<li><a href="/fa/writing/start-with-the-decision.html" data-related-pillar="decision-first-ai">از تصمیم شروع کنید، سپس هوش مصنوعی را بسازید</a></li>
+<li><a href="/fa/writing/why-wifi-is-slow-with-full-bars.html" data-related-pillar="tech-explained">چرا با آنتن کامل وای‌فای، اینترنت کند است؟</a></li></ul>
+</nav>
+<!-- article-hubs:end -->
+<!-- author-box:start -->
+<aside class="article-author" aria-labelledby="article-author-title">
+<h2 id="article-author-title">درباره نویسنده</h2>
+<p>احمدرضا صمدی کارآفرین فناوری ساکن دبی است. او به‌عنوان هم‌بنیان‌گذار و راهبر فنی Appraiva محصولات هوش مصنوعی می‌سازد و به‌عنوان هم‌بنیان‌گذار و مدیرعامل، Royal Abraj Group را اداره می‌کند.</p>
+<p class="article-author__name"><a href="/fa/about.html" rel="author">احمدرضا صمدی</a></p>
+<p class="article-author__series">از مجموعهٔ <bdi lang="en">Tech, explained</bdi></p>
+</aside>
+<!-- author-box:end --><!-- follow-subscribe:start -->
+<aside class="details follow-subscribe" aria-labelledby="follow-subscribe-title">
+<h2 id="follow-subscribe-title">دنبال کردن</h2>
+<nav aria-label="دنبال کردن احمدرضا صمدی"><a href="https://www.linkedin.com/in/ahmadreza-samadi/"><bdi>LinkedIn</bdi></a> · <a href="https://www.youtube.com/@ahmadreza-samadi"><bdi>YouTube</bdi></a> · <a href="https://www.instagram.com/ahmadreza.samadi/"><bdi>Instagram</bdi></a></nav>
+</aside>
+<!-- follow-subscribe:end -->
+</article><p><a href="https://a-samadi.com/writing/ai-agents-shared-notebook.html" hreflang="en">نسخهٔ اصلی انگلیسی</a></p><footer class="editorial-footer"><a href="/fa/writing/">نوشته‌ها</a> · <a href="/fa/topics/tech-explained.html">توضیح فناوری</a></footer></main></body></html>

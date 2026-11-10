@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "repository": "ahmadreza-smdi/ahmadreza-smdi.github.io",
+  "site_url": "https://a-samadi.com",
+  "timezone": "Asia/Tehran",
+  "daily_count": 1,
+  "local_slot": "10:00",
+  "carousels": [
+    {
+      "key": "2026-10-28",
+      "slug": "tech-trend-assisted-permissions",
+      "publish_at": "2026-10-28T10:00:00+03:30",
+      "asset_name": "reviewed-carousel-2026-10-28-assisted-permissions-r02.zip",
+      "sha256": "3fc094d761f614c912b9ace9a3a9ce9c16d6152ba73f3f1437f52e082e2aff4b",
+      "asset_id": 681402758
+    },
+    {
+      "key": "2026-10-29",
+      "slug": "tech-trend-ai-usage-not-outcomes",
+      "publish_at": "2026-10-29T10:00:00+03:30",
+      "asset_name": "reviewed-carousel-2026-10-29-ai-usage-not-outcomes-r02.zip",
+      "sha256": "9b171b779e30ac299d65190099a4bb651ebf036d34523f1a2ff7bea5720e3fd9",
+      "asset_id": 681402755
+    },
+    {
+      "key": "2026-10-30",
+      "slug": "tech-trend-gemini-business-hub",
+      "publish_at": "2026-10-30T10:00:00+03:30",
+      "asset_name": "reviewed-carousel-2026-10-30-gemini-business-hub-r02.zip",
+      "sha256": "1c8e63c1d022de4b2765b21513627b281644717d890943aebb20ddac74ba6c72",
+      "asset_id": 681402763
+    },
+    {
+      "key": "2026-10-31",
+      "slug": "tech-trend-ai-factory-observability",
+      "publish_at": "2026-10-31T10:00:00+03:30",
+      "asset_name": "reviewed-carousel-2026-10-31-ai-factory-observability-r02.zip",
+      "sha256": "4a7b7f997f221ddc79300f6cab95a566b5eb07c941530e073fcd3f4ab41cb32e",
+      "asset_id": 681402760
+    },
+    {
+      "key": "2026-11-01",
+      "slug": "tech-trend-world-models-real-tests",
+      "publish_at": "2026-11-01T10:00:00+03:30",
+      "asset_name": "reviewed-carousel-2026-11-01-world-models-real-tests-r02.zip",
+      "sha256": "a7b71552c0b7c6f68d7a716d0f8b581c0a7ee78613b9be020c6e03ff7f682a0e",
+      "asset_id": 681402759
+    },
+    {
+      "key": "2026-11-02",
+      "slug": "tech-trend-notification-to-reviewed-fix",
+      "publish_at": "2026-11-02T10:00:00+03:30",
+      "asset_name": "reviewed-carousel-2026-11-02-notification-to-reviewed-fix-r02.zip",
+      "sha256": "e0c621a2641ba8a5f921d9aa59b841719d4f1f36efd8ac475f13f12b690b4495",
+      "asset_id": 681403060
+    }
+  ]
+}

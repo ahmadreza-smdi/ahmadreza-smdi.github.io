@@ -1,0 +1,155 @@
+WEBVTT
+
+1
+00:00:00.740 --> 00:00:03.100
+Noor runs a fictional design studio.
+
+2
+00:00:03.100 --> 00:00:08.140
+She asks an AI to turn a supplier
+quote into a neat form: supplier, item,
+
+3
+00:00:08.140 --> 00:00:10.270
+quantity and delivery date.
+
+4
+00:00:10.410 --> 00:00:12.450
+The form comes back perfect.
+
+5
+00:00:12.450 --> 00:00:16.290
+Every field is filled, and every
+value has the right format.
+
+6
+00:00:16.290 --> 00:00:19.179
+But the delivery date
+isn’t in the quote at all.
+
+7
+00:00:19.319 --> 00:00:21.718
+That’s the difference
+between shape and truth.
+
+8
+00:00:21.858 --> 00:00:25.448
+Some AI services offer structured outputs.
+
+9
+00:00:25.448 --> 00:00:29.095
+OpenAI’s documentation
+says the feature ensures
+
+10
+00:00:29.095 --> 00:00:31.920
+responses adhere to the schema you supply.
+
+11
+00:00:32.060 --> 00:00:35.120
+A schema is the shape:
+which fields exist,
+
+12
+00:00:35.120 --> 00:00:37.550
+and what kind of value
+each one holds.
+
+13
+00:00:37.550 --> 00:00:39.300
+The same documentation says
+
+14
+00:00:39.300 --> 00:00:42.267
+structured outputs can
+still contain mistakes.
+
+15
+00:00:42.407 --> 00:00:45.417
+In Noor’s atelier, every
+card fits its slot.
+
+16
+00:00:45.417 --> 00:00:47.917
+But each slot also has a source lamp.
+
+17
+00:00:47.917 --> 00:00:51.757
+The delivery date fits perfectly,
+and its lamp stays red.
+
+18
+00:00:51.897 --> 00:00:53.897
+So run three separate checks.
+
+19
+00:00:53.897 --> 00:00:55.800
+First, is the format valid?
+
+20
+00:00:55.800 --> 00:00:58.387
+Second, does each value match the source?
+
+21
+00:00:58.387 --> 00:01:00.694
+Third, does it follow your business rules?
+
+22
+00:01:00.834 --> 00:01:05.534
+If the information isn’t there, the
+right answer is unknown, not a guess.
+
+23
+00:01:05.534 --> 00:01:09.094
+Leave room in the form for
+unknown, and send it to a person.
+
+24
+00:01:09.234 --> 00:01:13.674
+Also plan for the times an
+AI declines, or stops early.
+
+25
+00:01:13.674 --> 00:01:16.904
+The documentation says
+refusals can be detected.
+
+26
+00:01:16.904 --> 00:01:19.197
+Your system still has to handle them.
+
+27
+00:01:19.337 --> 00:01:22.317
+And features differ between
+models and services,
+
+28
+00:01:22.317 --> 00:01:25.210
+so check what your own
+setup actually supports.
+
+29
+00:01:25.350 --> 00:01:30.225
+Noor checks the date against the quote,
+marks it unknown, and asks the supplier.
+
+30
+00:01:30.365 --> 00:01:32.455
+A tidy form is easier to check.
+
+31
+00:01:32.455 --> 00:01:33.575
+It isn’t proof.
+
+32
+00:01:33.575 --> 00:01:36.195
+Check the shape, the
+source, and the rules.
+
+33
+00:01:36.335 --> 00:01:37.805
+Ahmadreza Samadi.
+
+34
+00:01:37.805 --> 00:01:39.742
+More at a-samadi.com

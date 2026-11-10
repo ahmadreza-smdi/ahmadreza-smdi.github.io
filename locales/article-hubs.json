@@ -1,0 +1,1696 @@
+{
+  "primary_language": "en",
+  "families": [
+    {
+      "stem": "property-data-enrichment",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/property-data-enrichment.html",
+        "fa": "fa/writing/property-data-enrichment.html",
+        "ar": "ar/writing/property-data-enrichment.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-home-value-estimates.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-ai-sounds-confident.html"
+        }
+      ]
+    },
+    {
+      "stem": "ai-rental-yield-cash-flow",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/ai-rental-yield-cash-flow.html",
+        "fa": "fa/writing/ai-rental-yield-cash-flow.html",
+        "ar": "ar/writing/ai-rental-yield-cash-flow.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "studies/rent-own-2026/"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
+    },
+    {
+      "stem": "profitable-but-out-of-cash",
+      "classification": "core",
+      "hub": "business-systems-dubai",
+      "paths": {
+        "en": "writing/profitable-but-out-of-cash.html",
+        "fa": "fa/writing/profitable-but-out-of-cash.html",
+        "ar": "ar/writing/profitable-but-out-of-cash.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-rental-yield-cash-flow.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/iphone-duo-price-per-day.html"
+        }
+      ]
+    },
+    {
+      "stem": "ai-human-review-real-estate",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/ai-human-review-real-estate.html",
+        "fa": "fa/writing/ai-human-review-real-estate.html",
+        "ar": "ar/writing/ai-human-review-real-estate.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-home-value-estimates.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/build-ai-run-a-business.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
+    },
+    {
+      "stem": "ai-home-value-estimates",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/ai-home-value-estimates.html",
+        "fa": "fa/writing/ai-home-value-estimates.html",
+        "ar": "ar/writing/ai-home-value-estimates.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
+    },
+    {
+      "stem": "how-building-digital-twins-work",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/how-building-digital-twins-work.html",
+        "fa": "fa/writing/how-building-digital-twins-work.html",
+        "ar": "ar/writing/how-building-digital-twins-work.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-home-value-estimates.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-ai-sounds-confident.html"
+        }
+      ]
+    },
+    {
+      "stem": "ai-agent-safety-boundaries",
+      "classification": "core",
+      "hub": "business-systems-dubai",
+      "paths": {
+        "en": "writing/ai-agent-safety-boundaries.html",
+        "fa": "fa/writing/ai-agent-safety-boundaries.html",
+        "ar": "ar/writing/ai-agent-safety-boundaries.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-ai-sounds-confident.html"
+        }
+      ]
+    },
+    {
+      "stem": "jev-ai-decision-model",
+      "classification": "core",
+      "hub": "business-systems-dubai",
+      "paths": {
+        "en": "writing/jev-ai-decision-model.html",
+        "fa": "fa/writing/jev-ai-decision-model.html",
+        "ar": "ar/writing/jev-ai-decision-model.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-cost-per-verified-result.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/build-ai-run-a-business.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-ai-sounds-confident.html"
+        }
+      ]
+    },
+    {
+      "stem": "connected-ai-apps",
+      "classification": "core",
+      "hub": "business-systems-dubai",
+      "paths": {
+        "en": "writing/connected-ai-apps.html",
+        "fa": "fa/writing/connected-ai-apps.html",
+        "ar": "ar/writing/connected-ai-apps.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/prompt-injection-layered-controls.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-ai-sounds-confident.html"
+        }
+      ]
+    },
+    {
+      "stem": "ai-cost-per-verified-result",
+      "classification": "core",
+      "hub": "business-systems-dubai",
+      "paths": {
+        "en": "writing/ai-cost-per-verified-result.html",
+        "fa": "fa/writing/ai-cost-per-verified-result.html",
+        "ar": "ar/writing/ai-cost-per-verified-result.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/build-ai-run-a-business.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-ai-sounds-confident.html"
+        }
+      ]
+    },
+    {
+      "stem": "start-with-the-decision",
+      "classification": "core",
+      "hub": "business-systems-dubai",
+      "paths": {
+        "en": "writing/start-with-the-decision.html",
+        "fa": "fa/writing/start-with-the-decision.html",
+        "ar": "ar/writing/start-with-the-decision.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/build-ai-run-a-business.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-ai-sounds-confident.html"
+        }
+      ]
+    },
+    {
+      "stem": "why-ai-sounds-confident",
+      "classification": "core",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/why-ai-sounds-confident.html",
+        "fa": "fa/writing/why-ai-sounds-confident.html",
+        "ar": "ar/writing/why-ai-sounds-confident.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/verify-ai-image-claims.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/how-photo-text-recognition-works.html"
+        }
+      ],
+      "watch": "watch/ai-confidence.html"
+    },
+    {
+      "stem": "why-ai-loses-earlier-chat-context",
+      "classification": "core",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/why-ai-loses-earlier-chat-context.html",
+        "fa": "fa/writing/why-ai-loses-earlier-chat-context.html",
+        "ar": "ar/writing/why-ai-loses-earlier-chat-context.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-ai-sounds-confident.html"
+        }
+      ]
+    },
+    {
+      "stem": "verify-ai-image-claims",
+      "classification": "core",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/verify-ai-image-claims.html",
+        "fa": "fa/writing/verify-ai-image-claims.html",
+        "ar": "ar/writing/verify-ai-image-claims.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-home-value-estimates.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-ai-sounds-confident.html"
+        }
+      ]
+    },
+    {
+      "stem": "how-many-coffees-to-break-even",
+      "classification": "core",
+      "hub": "business-systems-dubai",
+      "paths": {
+        "en": "writing/how-many-coffees-to-break-even.html",
+        "fa": "fa/writing/how-many-coffees-to-break-even.html",
+        "ar": "ar/writing/how-many-coffees-to-break-even.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-rental-yield-cash-flow.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/iphone-duo-price-per-day.html"
+        }
+      ]
+    },
+    {
+      "stem": "why-wifi-is-slow-with-full-bars",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/why-wifi-is-slow-with-full-bars.html",
+        "fa": "fa/writing/why-wifi-is-slow-with-full-bars.html",
+        "ar": "ar/writing/why-wifi-is-slow-with-full-bars.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-usb-c-cables-differ.html"
+        }
+      ]
+    },
+    {
+      "stem": "why-usb-c-cables-differ",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/why-usb-c-cables-differ.html",
+        "fa": "fa/writing/why-usb-c-cables-differ.html",
+        "ar": "ar/writing/why-usb-c-cables-differ.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
+    },
+    {
+      "stem": "how-photo-text-recognition-works",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/how-photo-text-recognition-works.html",
+        "fa": "fa/writing/how-photo-text-recognition-works.html",
+        "ar": "ar/writing/how-photo-text-recognition-works.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/how-zip-files-work.html"
+        }
+      ]
+    },
+    {
+      "stem": "how-contactless-cards-work",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/how-contactless-cards-work.html",
+        "fa": "fa/writing/how-contactless-cards-work.html",
+        "ar": "ar/writing/how-contactless-cards-work.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/passkeys-face-id.html"
+        }
+      ]
+    },
+    {
+      "stem": "how-noise-cancellation-works",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/how-noise-cancellation-works.html",
+        "fa": "fa/writing/how-noise-cancellation-works.html",
+        "ar": "ar/writing/how-noise-cancellation-works.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
+    },
+    {
+      "stem": "iphone-duo-price-per-day",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/iphone-duo-price-per-day.html",
+        "fa": "fa/writing/iphone-duo-price-per-day.html",
+        "ar": "ar/writing/iphone-duo-price-per-day.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/foldable-two-batteries.html"
+        }
+      ]
+    },
+    {
+      "stem": "why-full-storage-slows-computer",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/why-full-storage-slows-computer.html",
+        "fa": "fa/writing/why-full-storage-slows-computer.html",
+        "ar": "ar/writing/why-full-storage-slows-computer.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/how-zip-files-work.html"
+        }
+      ]
+    },
+    {
+      "stem": "why-phone-stops-charging-at-80",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/why-phone-stops-charging-at-80.html",
+        "fa": "fa/writing/why-phone-stops-charging-at-80.html",
+        "ar": "ar/writing/why-phone-stops-charging-at-80.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/foldable-two-batteries.html"
+        }
+      ],
+      "watch": "watch/charging-80.html"
+    },
+    {
+      "stem": "what-accept-cookies-means",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/what-accept-cookies-means.html",
+        "fa": "fa/writing/what-accept-cookies-means.html",
+        "ar": "ar/writing/what-accept-cookies-means.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/incognito-private-browsing.html"
+        }
+      ],
+      "watch": "watch/cookie-consent.html"
+    },
+    {
+      "stem": "incognito-private-browsing",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/incognito-private-browsing.html",
+        "fa": "fa/writing/incognito-private-browsing.html",
+        "ar": "ar/writing/incognito-private-browsing.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/what-accept-cookies-means.html"
+        }
+      ]
+    },
+    {
+      "stem": "how-satellite-messaging-works",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/how-satellite-messaging-works.html",
+        "fa": "fa/writing/how-satellite-messaging-works.html",
+        "ar": "ar/writing/how-satellite-messaging-works.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
+    },
+    {
+      "stem": "humanoid-robots-at-home",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/humanoid-robots-at-home.html",
+        "fa": "fa/writing/humanoid-robots-at-home.html",
+        "ar": "ar/writing/humanoid-robots-at-home.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/how-photo-text-recognition-works.html"
+        }
+      ]
+    },
+    {
+      "stem": "foldable-two-batteries",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/foldable-two-batteries.html",
+        "fa": "fa/writing/foldable-two-batteries.html",
+        "ar": "ar/writing/foldable-two-batteries.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-phone-stops-charging-at-80.html"
+        }
+      ]
+    },
+    {
+      "stem": "passkeys-face-id",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/passkeys-face-id.html",
+        "fa": "fa/writing/passkeys-face-id.html",
+        "ar": "ar/writing/passkeys-face-id.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/how-contactless-cards-work.html"
+        }
+      ]
+    },
+    {
+      "stem": "how-zip-files-work",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/how-zip-files-work.html",
+        "fa": "fa/writing/how-zip-files-work.html",
+        "ar": "ar/writing/how-zip-files-work.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/property-data-enrichment.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-full-storage-slows-computer.html"
+        }
+      ]
+    },
+    {
+      "stem": "chatgpt-intelligent-ui-explained",
+      "classification": "core",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/chatgpt-intelligent-ui-explained.html",
+        "fa": "fa/writing/chatgpt-intelligent-ui-explained.html",
+        "ar": "ar/writing/chatgpt-intelligent-ui-explained.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/how-photo-text-recognition-works.html"
+        }
+      ]
+    },
+    {
+      "stem": "dubai-property-tokenisation-explained",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/dubai-property-tokenisation-explained.html",
+        "fa": "fa/writing/dubai-property-tokenisation-explained.html",
+        "ar": "ar/writing/dubai-property-tokenisation-explained.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/which-dubai-property-source.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-ai-sounds-confident.html"
+        }
+      ]
+    },
+    {
+      "stem": "small-ai-models-task-routing-explained",
+      "classification": "explainer",
+      "hub": "business-systems-dubai",
+      "paths": {
+        "en": "writing/small-ai-models-task-routing-explained.html",
+        "fa": "fa/writing/small-ai-models-task-routing-explained.html",
+        "ar": "ar/writing/small-ai-models-task-routing-explained.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-cost-per-verified-result.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/chatgpt-intelligent-ui-explained.html"
+        }
+      ]
+    },
+    {
+      "stem": "ai-data-center-site-readiness",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/ai-data-center-site-readiness.html",
+        "fa": "fa/writing/ai-data-center-site-readiness.html",
+        "ar": "ar/writing/ai-data-center-site-readiness.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-ai-sounds-confident.html"
+        }
+      ]
+    },
+    {
+      "stem": "ai-inference-memory-movement-explained",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/ai-inference-memory-movement-explained.html",
+        "fa": "fa/writing/ai-inference-memory-movement-explained.html",
+        "ar": "ar/writing/ai-inference-memory-movement-explained.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
+    },
+    {
+      "stem": "building-laser-scans-point-clouds-explained",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/building-laser-scans-point-clouds-explained.html",
+        "fa": "fa/writing/building-laser-scans-point-clouds-explained.html",
+        "ar": "ar/writing/building-laser-scans-point-clouds-explained.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-home-value-estimates.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-ai-sounds-confident.html"
+        }
+      ]
+    },
+    {
+      "stem": "why-ai-weather-models-need-local-observations",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/why-ai-weather-models-need-local-observations.html",
+        "fa": "fa/writing/why-ai-weather-models-need-local-observations.html",
+        "ar": "ar/writing/why-ai-weather-models-need-local-observations.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
+    },
+    {
+      "stem": "why-rent-to-value-is-not-property-yield",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/why-rent-to-value-is-not-property-yield.html",
+        "fa": "fa/writing/why-rent-to-value-is-not-property-yield.html",
+        "ar": "ar/writing/why-rent-to-value-is-not-property-yield.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "studies/rent-own-2026/"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
+    },
+    {
+      "stem": "why-occupancy-sensor-lights-switch-off",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/why-occupancy-sensor-lights-switch-off.html",
+        "fa": "fa/writing/why-occupancy-sensor-lights-switch-off.html",
+        "ar": "ar/writing/why-occupancy-sensor-lights-switch-off.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
+    },
+    {
+      "stem": "virtual-machine-device-sharing-explained",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/virtual-machine-device-sharing-explained.html",
+        "fa": "fa/writing/virtual-machine-device-sharing-explained.html",
+        "ar": "ar/writing/virtual-machine-device-sharing-explained.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
+    },
+    {
+      "stem": "ai-document-review-claim-evidence-checklist",
+      "classification": "core",
+      "hub": "business-systems-dubai",
+      "paths": {
+        "en": "writing/ai-document-review-claim-evidence-checklist.html",
+        "fa": "fa/writing/ai-document-review-claim-evidence-checklist.html",
+        "ar": "ar/writing/ai-document-review-claim-evidence-checklist.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/build-ai-run-a-business.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
+    },
+    {
+      "stem": "building-leak-alert-response-checklist",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/building-leak-alert-response-checklist.html",
+        "fa": "fa/writing/building-leak-alert-response-checklist.html",
+        "ar": "ar/writing/building-leak-alert-response-checklist.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
+    },
+    {
+      "stem": "where-wearable-ai-computation-runs",
+      "classification": "core",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/where-wearable-ai-computation-runs.html",
+        "fa": "fa/writing/where-wearable-ai-computation-runs.html",
+        "ar": "ar/writing/where-wearable-ai-computation-runs.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/humanoid-robots-at-home.html"
+        }
+      ]
+    },
+    {
+      "stem": "which-dubai-property-source",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/which-dubai-property-source.html",
+        "fa": "fa/writing/which-dubai-property-source.html",
+        "ar": "ar/writing/which-dubai-property-source.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-rental-yield-cash-flow.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
+    },
+    {
+      "stem": "on-device-ai-scam-warnings-explained",
+      "classification": "core",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/on-device-ai-scam-warnings-explained.html",
+        "fa": "fa/writing/on-device-ai-scam-warnings-explained.html",
+        "ar": "ar/writing/on-device-ai-scam-warnings-explained.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
+    },
+    {
+      "stem": "bacnet-building-devices-common-language",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/bacnet-building-devices-common-language.html",
+        "fa": "fa/writing/bacnet-building-devices-common-language.html",
+        "ar": "ar/writing/bacnet-building-devices-common-language.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
+    },
+    {
+      "stem": "geospatial-ai-map-answer-review",
+      "classification": "core",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/geospatial-ai-map-answer-review.html",
+        "fa": "fa/writing/geospatial-ai-map-answer-review.html",
+        "ar": "ar/writing/geospatial-ai-map-answer-review.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-home-value-estimates.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-ai-weather-models-need-local-observations.html"
+        }
+      ]
+    },
+    {
+      "stem": "phone-location-across-street",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/phone-location-across-street.html",
+        "fa": "fa/writing/phone-location-across-street.html",
+        "ar": "ar/writing/phone-location-across-street.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
+    },
+    {
+      "stem": "ai-agents-shared-notebook",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/ai-agents-shared-notebook.html",
+        "fa": "fa/writing/ai-agents-shared-notebook.html",
+        "ar": "ar/writing/ai-agents-shared-notebook.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
+    },
+    {
+      "stem": "tesla-roadster-flight-claim",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/tesla-roadster-flight-claim.html",
+        "fa": "fa/writing/tesla-roadster-flight-claim.html",
+        "ar": "ar/writing/tesla-roadster-flight-claim.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/humanoid-robots-at-home.html"
+        }
+      ]
+    },
+    {
+      "stem": "avm-vs-appraisal",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/avm-vs-appraisal.html",
+        "fa": "fa/writing/avm-vs-appraisal.html",
+        "ar": "ar/writing/avm-vs-appraisal.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-home-value-estimates.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
+    },
+    {
+      "stem": "rent-or-buy-five-numbers",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/rent-or-buy-five-numbers.html",
+        "fa": "fa/writing/rent-or-buy-five-numbers.html",
+        "ar": "ar/writing/rent-or-buy-five-numbers.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "studies/rent-own-2026/"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
+    },
+    {
+      "stem": "human-review-property-ai-checklist",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/human-review-property-ai-checklist.html",
+        "fa": "fa/writing/human-review-property-ai-checklist.html",
+        "ar": "ar/writing/human-review-property-ai-checklist.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/build-ai-run-a-business.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
+    },
+    {
+      "stem": "dubai-property-buying-costs",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/dubai-property-buying-costs.html",
+        "fa": "fa/writing/dubai-property-buying-costs.html",
+        "ar": "ar/writing/dubai-property-buying-costs.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/which-dubai-property-source.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
+    },
+    {
+      "stem": "heat-pump-moves-heat-explained",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/heat-pump-moves-heat-explained.html",
+        "fa": "fa/writing/heat-pump-moves-heat-explained.html",
+        "ar": "ar/writing/heat-pump-moves-heat-explained.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/how-building-digital-twins-work.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "tech-explained",
+          "path": "writing/why-wifi-is-slow-with-full-bars.html"
+        }
+      ]
+    },
+    {
+      "stem": "ai-agent-permissions-ability-authority",
+      "classification": "explainer",
+      "hub": "business-systems-dubai",
+      "paths": {
+        "en": "writing/ai-agent-permissions-ability-authority.html",
+        "fa": "fa/writing/ai-agent-permissions-ability-authority.html",
+        "ar": "ar/writing/ai-agent-permissions-ability-authority.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/prompt-injection-layered-controls.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
+    },
+    {
+      "stem": "dubai-service-charge-same-rent",
+      "classification": "explainer",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/dubai-service-charge-same-rent.html",
+        "fa": "fa/writing/dubai-service-charge-same-rent.html",
+        "ar": "ar/writing/dubai-service-charge-same-rent.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/dubai-property-buying-costs.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
+    },
+    {
+      "stem": "rag-check-business-records",
+      "classification": "explainer",
+      "hub": "business-systems-dubai",
+      "paths": {
+        "en": "writing/rag-check-business-records.html",
+        "fa": "fa/writing/rag-check-business-records.html",
+        "ar": "ar/writing/rag-check-business-records.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/build-ai-run-a-business.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
+    },
+    {
+      "stem": "dubai-project-escrow-controls",
+      "classification": "explainer",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/dubai-project-escrow-controls.html",
+        "fa": "fa/writing/dubai-project-escrow-controls.html",
+        "ar": "ar/writing/dubai-project-escrow-controls.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/dubai-property-buying-costs.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
+    },
+    {
+      "stem": "computer-agent-check-result",
+      "classification": "explainer",
+      "hub": "business-systems-dubai",
+      "paths": {
+        "en": "writing/computer-agent-check-result.html",
+        "fa": "fa/writing/computer-agent-check-result.html",
+        "ar": "ar/writing/computer-agent-check-result.html"
+      },
+      "related": [
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/build-ai-run-a-business.html"
+        },
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
+    },
+    {
+      "stem": "property-comparables-evidence",
+      "classification": "core",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/property-comparables-evidence.html",
+        "fa": "fa/writing/property-comparables-evidence.html",
+        "ar": "ar/writing/property-comparables-evidence.html"
+      },
+      "related": [
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-home-value-estimates.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ],
+      "watch": "watch/property-comparables-evidence.html"
+    },
+    {
+      "stem": "building-digital-twin-data-freshness",
+      "classification": "explainer",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/building-digital-twin-data-freshness.html",
+        "fa": "fa/writing/building-digital-twin-data-freshness.html",
+        "ar": "ar/writing/building-digital-twin-data-freshness.html"
+      },
+      "related": [
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-home-value-estimates.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ]
+    },
+    {
+      "stem": "prompt-injection-layered-controls",
+      "classification": "explainer",
+      "hub": "business-systems-dubai",
+      "paths": {
+        "en": "writing/prompt-injection-layered-controls.html",
+        "fa": "fa/writing/prompt-injection-layered-controls.html",
+        "ar": "ar/writing/prompt-injection-layered-controls.html"
+      },
+      "related": [
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ],
+      "watch": "watch/prompt-injection-layered-controls.html"
+    },
+    {
+      "stem": "business-ai-evaluation-cases",
+      "classification": "explainer",
+      "hub": "business-systems-dubai",
+      "paths": {
+        "en": "writing/business-ai-evaluation-cases.html",
+        "fa": "fa/writing/business-ai-evaluation-cases.html",
+        "ar": "ar/writing/business-ai-evaluation-cases.html"
+      },
+      "related": [
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/build-ai-run-a-business.html"
+        },
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ],
+      "watch": "watch/business-ai-evaluation-cases.html"
+    },
+    {
+      "stem": "ai-research-examination-understanding",
+      "classification": "explainer",
+      "hub": "tech-explained",
+      "paths": {
+        "en": "writing/ai-research-examination-understanding.html",
+        "fa": "fa/writing/ai-research-examination-understanding.html",
+        "ar": "ar/writing/ai-research-examination-understanding.html"
+      },
+      "related": [
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ],
+      "watch": "watch/ai-research-examination-understanding.html"
+    },
+    {
+      "stem": "cash-conversion-cycle-clocks",
+      "classification": "explainer",
+      "hub": "business-systems-dubai",
+      "paths": {
+        "en": "writing/cash-conversion-cycle-clocks.html",
+        "fa": "fa/writing/cash-conversion-cycle-clocks.html",
+        "ar": "ar/writing/cash-conversion-cycle-clocks.html"
+      },
+      "related": [
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ],
+      "watch": "watch/cash-conversion-cycle-clocks.html"
+    },
+    {
+      "stem": "structured-output-source-checks",
+      "classification": "explainer",
+      "hub": "business-systems-dubai",
+      "paths": {
+        "en": "writing/structured-output-source-checks.html",
+        "fa": "fa/writing/structured-output-source-checks.html",
+        "ar": "ar/writing/structured-output-source-checks.html"
+      },
+      "related": [
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/build-ai-run-a-business.html"
+        },
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ],
+      "watch": "watch/structured-output-source-checks.html"
+    },
+    {
+      "stem": "building-energy-audit-decisions",
+      "classification": "explainer",
+      "hub": "ai-real-estate",
+      "paths": {
+        "en": "writing/building-energy-audit-decisions.html",
+        "fa": "fa/writing/building-energy-audit-decisions.html",
+        "ar": "ar/writing/building-energy-audit-decisions.html"
+      },
+      "related": [
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ],
+      "watch": "watch/building-energy-audit-decisions.html"
+    },
+    {
+      "stem": "agent-workflow-shared-bottlenecks",
+      "classification": "explainer",
+      "hub": "business-systems-dubai",
+      "paths": {
+        "en": "writing/agent-workflow-shared-bottlenecks.html",
+        "fa": "fa/writing/agent-workflow-shared-bottlenecks.html",
+        "ar": "ar/writing/agent-workflow-shared-bottlenecks.html"
+      },
+      "related": [
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/profitable-but-out-of-cash.html"
+        }
+      ],
+      "watch": "watch/agent-workflow-shared-bottlenecks.html"
+    },
+    {
+      "stem": "build-ai-run-a-business",
+      "classification": "core",
+      "hub": "business-systems-dubai",
+      "paths": {
+        "en": "writing/build-ai-run-a-business.html",
+        "fa": "fa/writing/build-ai-run-a-business.html",
+        "ar": "ar/writing/build-ai-run-a-business.html"
+      },
+      "related": [
+        {
+          "pillar": "property-decisions",
+          "path": "writing/ai-human-review-real-estate.html"
+        },
+        {
+          "pillar": "decision-first-ai",
+          "path": "writing/start-with-the-decision.html"
+        },
+        {
+          "pillar": "building-business",
+          "path": "writing/ai-agent-permissions-ability-authority.html"
+        }
+      ]
+    }
+  ]
+}
