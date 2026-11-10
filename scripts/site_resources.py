@@ -33,7 +33,7 @@ SOURCE = {
 }
 
 
-def resolve(origin, ref):
+def resolve(origin, ref, allowed_path=None):
     if not ref or ref.startswith(
         ("#", "data:", "blob:", "mailto:", "tel:", "javascript:")
     ):
@@ -46,10 +46,13 @@ def resolve(origin, ref):
         return None
     path = unquote(target.path).lstrip("/")
     path = (path + "index.html") if not path or path.endswith("/") else path
-    return None if ".." in Path(path).parts or protected(path) else path
+    if allowed_path is not None and not allowed_path(path):
+        raise ValueError(f"{origin} references a forbidden public path: {path}")
+    return None if ".." in Path(path).parts or (protected(path) and allowed_path is None) else path
 
 
-def inventory(root):
+def inventory(root, allowed_path=None):
+    root = root.resolve()
     html = {p.relative_to(root).as_posix() for p in pages(root)}
     seen = set()
     references = defaultdict(set)
@@ -127,10 +130,13 @@ def inventory(root):
                 (v, True) for v in re.findall(r"^Sitemap:\s*(\S+)", raw, re.M | re.I)
             )
         for ref, explicit in refs:
-            dest = resolve(origin, ref)
+            dest = resolve(origin, ref, allowed_path if explicit else None)
             if not dest:
                 continue
-            if (root / dest).is_file() and not (root / dest).is_symlink():
+            candidate = root / dest
+            if allowed_path and not allowed_path(dest):
+                continue
+            if candidate.is_file() and not candidate.is_symlink() and candidate.resolve() == candidate:
                 references[dest].add(origin)
                 if dest not in seen:
                     queue.append(dest)

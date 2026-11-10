@@ -112,4 +112,13 @@ The tool describes entered estimates; it does not verify a property value. [Open
 
 ## Before you push
 
-From the repository folder, run `python3 scripts/check_all.py`. Read each failure and review any reported changes to search metadata before pushing. This command runs locally and uses Python, Node and a PDF text reader (Poppler or pypdf).
+Run `python3 scripts/check_all.py` before committing and pushing a reviewed change to `main`. The checks use Python, Node and a PDF text reader. Review every failure and every changed search-metadata fingerprint. The manual Pages publisher copies reached pages, their assets, discovery files and the previously served files listed in `publish-extra.json`.
+
+**Current release hold.** The live `/.gitattributes` URL returns the 40-byte file in Git. The publish tree excludes every `.git*` path. The owner must resolve this conflict before switching the Pages source. The manual publisher checks the recorded hold before it can push the site branch.
+
+Once that decision has been implemented and the preservation check passes, publishing a reviewed, pushed `main` commit takes two commands.
+
+1. Run `python3 scripts/publish.py`. It builds the tree and pushes its commit to `site` by fast-forward. The first commit has no parent.
+2. Run the single shell command printed by the publisher. It sets the native Pages source to `site`, requests a build, waits for the exact commit and restores workflow mode on exit. Check the public delivery with `python3 scripts/check_all.py --live`.
+
+For a local preview, run `python3 scripts/build_publish_tree.py --output /path/to/new-preview` with a new directory outside this checkout. Existing public scripts, locales and receipts stay in the tree by default. Withdrawal requires an owner decision.

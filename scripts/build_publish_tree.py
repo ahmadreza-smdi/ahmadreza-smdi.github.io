@@ -29,7 +29,7 @@ def internal(path):
 def allowed(path):
     parts = PurePosixPath(path).parts
     if not parts or path != "/".join(parts) or "\\" in path or any(
-        part == ".." or part.startswith(".git") or "vault" in part.casefold()
+        part == ".." or part.casefold().startswith(".git") or "vault" in part.casefold()
         or part.casefold() in {"cv", "important-docs"} for part in parts
     ):
         return False
@@ -51,7 +51,7 @@ def tracked_files(root):
 
 def select(root, withdraw_internal=False):
     tracked = tracked_files(root)
-    html, reached, references, missing = inventory(root)
+    html, reached, references, missing = inventory(root, allowed_path=allowed)
     if not html or missing:
         examples = "; ".join(f"{p} -> {q}" for p, q in sorted(missing)[:8])
         raise ValueError(f"Cannot publish: {len(missing)} missing references. {examples}")
@@ -118,4 +118,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

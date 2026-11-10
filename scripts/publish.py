@@ -26,7 +26,16 @@ R=repos/ahmadreza-smdi/ahmadreza-smdi.github.io
 expected={sha}
 api() {{ gh api -H 'User-Agent: Website-Review/1.0' "$@"; }}
 restore() {{ api -X PUT "$R/pages" -f build_type=workflow; }}
-trap 'restore' EXIT
+finish() {{
+  result=$?
+  trap - EXIT
+  if ! restore; then
+    echo 'Failed to restore Pages workflow mode' >&2
+    exit 1
+  fi
+  exit "$result"
+}}
+trap finish EXIT
 trap 'exit 1' HUP INT TERM
 api -X PUT "$R/pages" -f build_type=legacy -f 'source[branch]=site' -f 'source[path]=/'
 sleep 2
@@ -100,4 +109,3 @@ if __name__ == "__main__":
         publish()
     except (OSError, ValueError, subprocess.CalledProcessError) as exc:
         raise SystemExit(f"Publish stopped: {exc}")
-
