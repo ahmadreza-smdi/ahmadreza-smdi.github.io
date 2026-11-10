@@ -52,7 +52,26 @@ exit 1
 PAGES"""
 
 
-def publish():
+def entries_at(revision):
+    entries = {}
+    for entry in git("ls-tree", "-rz", revision).split(b"\0"):
+        if entry:
+            meta, name = entry.split(b"\t", 1)
+            entries[os.fsdecode(name)] = meta.split()
+    return entries
+
+
+def live_build_commit():
+    data = json.loads(subprocess.check_output([
+        "gh", "api", "-H", "User-Agent: Website-Review/1.0",
+        "repos/ahmadreza-smdi/ahmadreza-smdi.github.io/pages/builds/latest",
+    ]))
+    if data.get("status") != "built":
+        raise ValueError("Initial migration requires a successful current Pages build")
+    return data["commit"]
+
+
+def publish(initial_live_tree=None):
     clean_main()
     git("pull", "--ff-only")
     revision = clean_main()
@@ -64,6 +83,8 @@ def publish():
         raise ValueError("Push the reviewed main commit before publishing its tree")
     remote = git("ls-remote", "--heads", "origin", "refs/heads/site").split()
     parent = remote[0].decode() if remote else None
+    if initial_live_tree and parent:
+        raise ValueError("An initial migration requires a new site branch")
     if parent:
         git("fetch", "origin", "refs/heads/site")
         if git("rev-parse", "FETCH_HEAD").decode().strip() != parent:
@@ -75,20 +96,26 @@ def publish():
         index_environment = dict(os.environ, GIT_INDEX_FILE=str(directory / "index"))
         git("read-tree", "--empty", env=index_environment)
         # Object IDs must match tracked, reviewed Git bytes, including CSV line endings.
-        entries = {}
-        for entry in git("ls-tree", "-rz", "HEAD").split(b"\0"):
-            if entry:
-                meta, name = entry.split(b"\t", 1)
-                entries[os.fsdecode(name)] = meta.split()
+        entries = entries_at(revision)
+        live_entries = entries_at(live_build_commit()) if initial_live_tree else None
         index = bytearray()
         for path in paths:
             mode, _, oid = entries[path]
             with (output / path).open("rb") as file:
                 if git("hash-object", "--stdin", stdin=file).strip() != oid:
                     raise ValueError(f"Built bytes differ from the reviewed commit: {path}")
+            if live_entries is not None:
+                previous = live_entries.get(path)
+                if not previous or previous[0] not in {b"100644", b"100755"} or previous[1] != b"blob":
+                    raise ValueError(f"Missing or non-regular path in deployed source: {path}")
+                if path == ".gitattributes" and previous[2] != oid:
+                    raise ValueError("Deployed .gitattributes differs from its reviewed public bytes")
+                mode, _, oid = previous
             index.extend(mode + b" " + oid + b"\t" + os.fsencode(path) + b"\0")
         git("update-index", "-z", "--index-info", input=bytes(index), env=index_environment)
         tree = git("write-tree", env=index_environment).strip().decode()
+        if initial_live_tree and tree != initial_live_tree:
+            raise ValueError("Initial tree differs from the independent live inventory proof")
         if parent and git("rev-parse", parent + "^{tree}").decode().strip() == tree:
             commit = parent
         else:
@@ -104,8 +131,11 @@ def publish():
 
 
 if __name__ == "__main__":
-    argparse.ArgumentParser(description=__doc__).parse_args()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--initial-live-tree", metavar="VERIFIED_TREE_ID",
+                        help="First migration only: preserve the deployed blobs for the reviewed paths")
+    args = parser.parse_args()
     try:
-        publish()
+        publish(args.initial_live_tree)
     except (OSError, ValueError, subprocess.CalledProcessError) as exc:
         raise SystemExit(f"Publish stopped: {exc}")

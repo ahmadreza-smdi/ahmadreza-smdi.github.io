@@ -1,5 +1,6 @@
 """Build a reviewed GitHub Pages tree locally. No network access or deployment."""
 import argparse
+from hashlib import sha256
 import json
 import os
 from pathlib import Path, PurePosixPath
@@ -17,10 +18,12 @@ from seo_document import SITE
 
 ROOT = Path(__file__).resolve().parents[1]
 DISCOVERY = {
+    ".gitattributes",
     ".nojekyll", "CNAME", "404.html", "robots.txt", "sitemap.xml", "humans.txt",
     "site.webmanifest", "ask-index.json", "llms.txt", "llms-full.txt", "writing/feed.xml",
 }
 MANIFEST = "publish-extra.json"
+PUBLIC_ATTRIBUTES_SHA256 = "0553e6d4b79349c019057e390500c4bdfae44d3f022a5922eaacac7e72726020"
 
 
 def internal(path):
@@ -30,6 +33,8 @@ def internal(path):
 
 
 def allowed(path):
+    if path == ".gitattributes":
+        return True
     parts = PurePosixPath(path).parts
     if not parts or path != "/".join(parts) or "\\" in path or any(
         part == ".." or part.casefold().startswith(".git") or "vault" in part.casefold()
@@ -92,6 +97,8 @@ def select(root, withdraw_internal=False):
         file = root / p
         if not file.is_file() or file.resolve() != file:
             raise ValueError(f"Missing file or symbolic link: {p}")
+        if p == ".gitattributes" and sha256(file.read_bytes()).hexdigest() != PUBLIC_ATTRIBUTES_SHA256:
+            raise ValueError("The root .gitattributes differs from its reviewed public bytes")
     return sorted(selected)
 
 

@@ -2,6 +2,7 @@
 from pathlib import Path
 import json
 import io
+import os
 from contextlib import redirect_stdout
 from unittest.mock import patch
 import publish
@@ -20,6 +21,7 @@ class PublishTreeTest(unittest.TestCase):
         subprocess.run(["git", "init", "-q"], cwd=self.root, check=True)
         for path in DISCOVERY:
             self.write(path, "")
+        self.write(".gitattributes", "assets/profile/*.vcf -text\n*.pdf binary\n")
         self.write("sitemap.xml", "<urlset><url><loc>https://a-samadi.com/</loc></url></urlset>")
         self.write("site.webmanifest", '{"icons":[]}')
         self.write("_config.yml", "exclude:\n  - audit.py\n")
@@ -58,9 +60,26 @@ class PublishTreeTest(unittest.TestCase):
         git("commit", "-qm", "Initial fixture")
         git("remote", "add", "origin", str(remote))
         git("push", "-qu", "origin", "main")
+        deployed = git("rev-parse", "HEAD")
+        temp_index = dict(os.environ, GIT_INDEX_FILE=str(self.root.parent / "expected-index"))
+        def index(*args):
+            return subprocess.check_output(["git", *args], cwd=self.root, env=temp_index).decode().strip()
+        index("read-tree", deployed)
+        index("update-index", "--force-remove", "--", "_config.yml", "publish-extra.json", "audit.py")
+        verified_tree = index("write-tree")
+        self.write("image.png", "reviewed next version")
+        git("commit", "-qam", "Stage next release")
+        git("push", "-q", "origin", "main")
         with patch.object(publish, "ROOT", self.root), redirect_stdout(io.StringIO()) as output:
-            publish.publish()
+            with patch.object(publish, "live_build_commit", return_value=deployed):
+                with self.assertRaisesRegex(ValueError, "independent live inventory"):
+                    publish.publish("invalid-tree")
+                self.assertFalse(git("ls-remote", "--heads", "origin", "refs/heads/site"))
+                publish.publish(verified_tree)
             first = git("rev-parse", "origin/site")
+            self.assertEqual(git("show", first + ":image.png"), "illustration")
+            with self.assertRaisesRegex(ValueError, "requires a new site branch"):
+                publish.publish(verified_tree)
             self.assertEqual(git("rev-list", "--parents", "-1", first), first)
             self.assertNotIn("audit.py", git("ls-tree", "-r", "--name-only", first).splitlines())
             self.write("image.png", "second")
@@ -90,13 +109,19 @@ class PublishTreeTest(unittest.TestCase):
             build(self.root, target)
         self.assertFalse(target.exists())
 
+    def test_attributes_exception_requires_original_public_bytes(self):
+        self.assertIn(".gitattributes", select(self.root))
+        self.write(".gitattributes", "*.pdf binary\n")
+        with self.assertRaisesRegex(ValueError, "reviewed public bytes"):
+            select(self.root)
+
     def test_explicit_forbidden_reference_is_not_silently_skipped(self):
         self.write("index.html", '<a href="/CV/file.pdf">Private file</a>')
         with self.assertRaisesRegex(ValueError, "forbidden public path"):
             select(self.root)
 
     def test_repository_files_and_private_paths_rejected(self):
-        for invalid in ("audit.py", ".gitignore", ".github/example", "CV/profile", "vault-notes.md", "../secret", "publish-extra.json"):
+        for invalid in ("audit.py", ".gitignore", ".github/example", "nested/.gitattributes", ".gitattributes-old", "CV/profile", "vault-notes.md", "../secret", "publish-extra.json"):
             with self.subTest(invalid=invalid):
                 self.write("publish-extra.json", json.dumps({"extra":{invalid:"test"}, "release_holds":{}}))
                 with self.assertRaises(ValueError):

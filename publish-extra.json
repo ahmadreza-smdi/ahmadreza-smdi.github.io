@@ -1,11 +1,5 @@
 {
-  "release_holds": {
-    ".gitattributes": {
-      "status": 200,
-      "sha256": "0553e6d4b79349c019057e390500c4bdfae44d3f022a5922eaacac7e72726020",
-      "reason": "Public Git attributes file is excluded by the publish-tree policy. The owner must decide whether to retire this URL or allow this exact file before switching sources."
-    }
-  },
+  "release_holds": {},
   "extra": {
     ".well-known/security.txt": "Verified pre-existing public file. Preserve direct links when publishing from the reviewed tree.",
     "LICENSE": "Verified pre-existing public file. Preserve direct links when publishing from the reviewed tree.",
