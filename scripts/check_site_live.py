@@ -14,7 +14,8 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import quote, urlsplit
 from urllib.request import build_opener, Request, HTTPRedirectHandler
 
-from seo_document import SITE
+from seo_document import Document, SITE
+from redirect_stubs import inspect as inspect_stub, locale as stub_locale
 from check_internal_links import protected
 from site_resources import inventory
 
@@ -143,6 +144,7 @@ def compare(root, rel, reader, want_absent=False):
         return dict(
             path=rel, url=url, status=status, mode="excluded", pass_check=status == 404
         )
+    stub_result = {}
     source = "checkout"
     reference = None
     if p.suffix.lower() == ".csv":
@@ -176,6 +178,19 @@ def compare(root, rel, reader, want_absent=False):
             p.suffix == ".html" and normalized_html(reference) == normalized_html(data)
         )
         mode = "complete file"
+        if p.suffix == ".html" and b"redirect-stub" in reference:
+            page = Document(reference.decode("utf-8"))
+            errors = inspect_stub(root, rel, page)
+            if errors is not None:
+                if not errors:
+                    target = page.links("canonical")[0].get("href")
+                    target_status, _, body = reader.get(target + "?v=" + secrets.token_hex(6))
+                    html = Document(body.decode("utf-8", errors="replace")).tags("html")
+                    if target_status != 200 or not html or html[0].get("lang").split("-")[0] != stub_locale(rel):
+                        errors.append("live target did not return HTTP 200 in the expected language")
+                    stub_result["redirect_target_status"] = target_status
+                stub_result["redirect_errors"] = errors
+                compare_ok = compare_ok and not errors
     return dict(
         path=rel,
         url=url,
@@ -188,6 +203,7 @@ def compare(root, rel, reader, want_absent=False):
         reference=source,
         raw_equal=same,
         pass_check=status == 200 and compare_ok,
+        **stub_result,
     )
 
 

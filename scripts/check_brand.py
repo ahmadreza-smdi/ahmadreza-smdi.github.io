@@ -15,6 +15,7 @@ from urllib.parse import urljoin, urlsplit
 from xml.etree import ElementTree
 
 from enrich_metadata import visible_trail
+from redirect_stubs import inspect as inspect_redirect_stub
 from seo_document import Document, SITE, nodes, public_url
 from check_internal_links import site_pages as pages
 
@@ -727,9 +728,13 @@ def audit(root, baseline, with_downloads=True):
     unique = defaultdict(list)
     for p in pages(root):
         path = p.relative_to(root).as_posix()
-        snapshot, index, alts, graph, issues = inspect_page(
-            path, p.read_text(encoding="utf-8"), hubs.get(path)
-        )
+        raw = p.read_text(encoding="utf-8")
+        if "redirect-stub" in raw or "refresh" in raw.lower():
+            stub_errors = inspect_redirect_stub(root, path, Document(raw))
+            if stub_errors is not None:
+                out.extend(finding("SEO-REDIRECT", path, "redirect stub", error, path) for error in stub_errors)
+                continue
+        snapshot, index, alts, graph, issues = inspect_page(path, raw, hubs.get(path))
         out += issues
         url = public_url(path)
         allurls[url] = path
