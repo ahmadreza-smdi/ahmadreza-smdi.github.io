@@ -1,1 +1,14 @@
 theme: jekyll-theme-tactile
+exclude:
+  - scripts/check_all.py
+  - scripts/check_brand.py
+  - scripts/brand_downloads.py
+  - scripts/brand-allowlist.json
+  - scripts/seo_document.py
+  - scripts/site_resources.py
+  - scripts/check_site_live.py
+  - scripts/test_check_all.py
+  - scripts/test_check_brand.py
+  - scripts/test_site_resources.py
+  - scripts/fixtures/brand/
+  - data/seo-baseline.json
