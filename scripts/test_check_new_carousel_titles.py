@@ -4,6 +4,7 @@ import json
 import os
 from pathlib import Path
 import subprocess
+import sys
 import tempfile
 import unittest
 
@@ -38,6 +39,26 @@ class GalleryTitles(unittest.TestCase):
     def save(self):
         self.data['galleryHashes'] = {self.relative: hashlib.sha256(self.page.read_bytes()).hexdigest()}
         self.receipt.write_text(json.dumps(self.data))
+
+    def cli(self, *args):
+        return subprocess.run([sys.executable, str(Path(__file__).with_name('check_new_carousel_titles.py')),
+                               '--root', str(self.root), *args], text=True, capture_output=True)
+
+    def test_skip_only_without_new_gallery_or_receipt(self):
+        self.receipt.unlink()
+        self.assertNotEqual(self.cli().returncode, 0)
+        self.git('add', self.relative)
+        self.assertNotEqual(self.cli().returncode, 0)
+        self.git('commit', '-qm', 'Gallery')
+        result = self.cli()
+        self.assertEqual(result.returncode, 0)
+        self.assertIn('SKIP: no new carousel', result.stdout)
+
+    def test_discovered_and_explicit_receipts_use_strict_check(self):
+        self.assertEqual(self.cli().returncode, 0)
+        self.page.write_text(self.html('Changed'))
+        for args in [(), ('--receipt', str(self.receipt))]:
+            self.assertNotEqual(self.cli(*args).returncode, 0)
 
     def test_valid_bound_gallery_is_read_only(self):
         before = (self.page.read_bytes(), self.receipt.read_bytes(), self.git('status', '--porcelain'))

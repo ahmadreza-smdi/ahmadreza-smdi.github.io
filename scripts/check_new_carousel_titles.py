@@ -79,13 +79,36 @@ def check(root, receipt_path):
     return lengths
 
 
+def pending_galleries(root):
+    pattern = 'carousels/*.html'
+    changed = git(root, 'diff', '--name-only', '--diff-filter=A', 'HEAD', '--', pattern)
+    untracked = git(root, 'ls-files', '--others', '--exclude-standard', '--', pattern)
+    upstream = subprocess.run(['git', 'rev-parse', '--verify', '--quiet', '@{upstream}'],
+                              cwd=root, capture_output=True)
+    committed = b''
+    if upstream.returncode == 0:
+        committed = git(root, 'diff', '--name-only', '--diff-filter=A', '@{upstream}...HEAD', '--', pattern)
+    return {p for group in (changed, untracked, committed) for p in group.splitlines()
+            if p != b'carousels/index.html'}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--receipt', type=Path, required=True)
+    parser.add_argument('--receipt', type=Path, help='Private local gallery preparation receipt')
     parser.add_argument('--root', type=Path, default=ROOT)
     args = parser.parse_args()
     try:
-        lengths = check(args.root, args.receipt)
+        receipt = args.receipt
+        if receipt is None:
+            conventional = args.root / 'Gallery-Prepared.json'
+            if conventional.exists() or conventional.is_symlink():
+                receipt = conventional
+            elif pending_galleries(args.root):
+                raise ValueError('New carousel gallery requires --receipt')
+            else:
+                print('SKIP: no new carousel gallery or preparation receipt')
+                return 0
+        lengths = check(args.root, receipt)
     except (ValueError, OSError, UnicodeError, subprocess.CalledProcessError, AssertionError) as error:
         print('FAIL: carousel title check: ' + str(error), file=sys.stderr)
         return 1
