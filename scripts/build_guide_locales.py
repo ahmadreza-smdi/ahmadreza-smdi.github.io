@@ -31,7 +31,10 @@ for lang in ('fa', 'ar'):
         assert "'" not in target, 'Escape apostrophes before generating JavaScript'
         js = js.replace("'" + source + "'", "'" + target + "'")
     for source, target in sorted(data['extra'].items(), key=lambda pair: -len(pair[0])):
-        assert source in page or source in js, source
+        # The earlier breadcrumb graph supplied these two English labels. Some
+        # source editions already localize navigation before this stage.
+        if source not in ('Home', 'Writing'):
+            assert source in page or source in js, source
         page = page.replace(source, target)
         js = js.replace(source, target)
     page = page.replace('<html lang="en">', f'<html lang="{lang}" dir="rtl">')
@@ -64,7 +67,12 @@ for lang in ('fa', 'ar'):
     for key in ('og:site_name', 'og:locale:alternate', 'og:locale', 'og:image:alt', 'twitter:title', 'twitter:description', 'twitter:image:alt'):
         page = re.sub(r'<meta\s+(?:property|name)="' + re.escape(key) + r'"\s+content="[^"]*"\s*/?>\n?', '', page)
     page, _ = enrich(destination, page)
-    destination.parent.mkdir(parents=True, exist_ok=True)
-    destination.write_text(enrich_follow(page))
-    (ROOT / f'js/decision-guide-{lang}.js').write_text(js)
-    print(f'Generated {lang}: page, examples, every guidance branch and export text')
+    outputs = {destination: enrich_follow(page), ROOT / f'js/decision-guide-{lang}.js': js}
+    for path, rendered in outputs.items():
+        if '--check' in sys.argv:
+            if path.read_text() != rendered:
+                raise SystemExit(f'STALE localized decision guide: {path.relative_to(ROOT)}')
+        else:
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(rendered)
+    print(f'{"PASS" if "--check" in sys.argv else "Generated"} {lang}: guide page and script')

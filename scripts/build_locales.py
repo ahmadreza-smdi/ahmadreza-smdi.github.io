@@ -4,6 +4,7 @@ from pathlib import Path
 import html
 import json
 import re
+import sys
 from follow_blocks import enrich_follow
 ROOT=Path(__file__).resolve().parent.parent
 SOURCE=(ROOT/'index.html').read_text()
@@ -98,5 +99,12 @@ for lang in ('fa','ar'):
     head=head.replace('</head>','    <link rel="stylesheet" href="../css/rtl.css?v=20261009-lagoon4" />\n</head>')
     # Keep the existing manual analytics tag after the RTL stylesheet.
     head=re.sub(r'(\n\n<script src="/js/site-analytics\.js[^\"]*" defer></script>)(\n    <link rel="stylesheet" href="../css/rtl.css[^\"]*" />)',r'\2\1',head,count=1)
-    (ROOT/lang/'index.html').write_text(enrich_follow(head+visible+'        <script>'+script))
-    print('Built',lang)
+    destination = ROOT / lang / 'index.html'
+    rendered = enrich_follow(head+visible+'        <script>'+script)
+    if '--check' in sys.argv:
+        if destination.read_text() != rendered:
+            raise SystemExit(f'STALE localized homepage: {destination.relative_to(ROOT)}')
+        print('PASS localized homepage', lang)
+    else:
+        destination.write_text(rendered)
+        print('Built',lang)

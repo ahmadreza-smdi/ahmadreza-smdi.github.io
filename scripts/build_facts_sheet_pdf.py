@@ -9,14 +9,14 @@ from io import BytesIO
 from pathlib import Path
 import argparse
 
-from pypdf import PdfReader, PdfWriter
-from pypdf.generic import ByteStringObject, NumberObject
-
 TEMPLATE_SHA256 = "ed936749f74ea12790d27fc49dc6bebd1f33f0869af2c55f4a5fb8291fedf58c"
+PUBLISHED_SHA256 = "a9cfd8ffb478b3e0da9c19d1dbd2fb6de1d3b9ec6aeda5e8ad36d522f88dd27b"
 SUMMARY = "I build AI, and I run a business that has to live with it."
 
 
 def build(template):
+    from pypdf import PdfReader, PdfWriter
+    from pypdf.generic import ByteStringObject, NumberObject
     if sha256(template).hexdigest() != TEMPLATE_SHA256:
         raise ValueError("Expected the original one-page October 2026 template")
     writer = PdfWriter(clone_from=PdfReader(BytesIO(template)))
@@ -52,9 +52,21 @@ def build(template):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("template", type=Path)
-    parser.add_argument("output", type=Path)
+    parser.add_argument("--check", action="store_true", help="Verify the reviewed November edition without writing")
+    parser.add_argument("template", type=Path, nargs="?")
+    parser.add_argument("output", type=Path, nargs="?")
     args = parser.parse_args()
+    if args.check:
+        output = args.output or Path(__file__).resolve().parents[1] / "assets/profile/ahmadreza-samadi-facts.pdf"
+        actual = output.read_bytes()
+        if sha256(actual).hexdigest() != PUBLISHED_SHA256:
+            raise SystemExit("STALE published facts PDF differs from the reviewed edition")
+        if args.template and build(args.template.read_bytes()) != actual:
+            raise SystemExit("STALE facts PDF differs from the supplied source template")
+        print("PASS published facts PDF matches the reviewed edition")
+        raise SystemExit(0)
+    if not args.template or not args.output:
+        parser.error("Building requires both a template and an output")
     if args.template.resolve() == args.output.resolve():
         parser.error("Use a separate destination to preserve the template")
     result = build(args.template.read_bytes())
