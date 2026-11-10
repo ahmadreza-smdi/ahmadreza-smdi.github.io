@@ -296,11 +296,18 @@ def complete_schema(path, text, include_breadcrumb=True):
 
 
 def local_image_dimensions(url):
-    """Read PNG/JPEG headers using the standard library available to the publisher."""
+    """Read intrinsic PNG, JPEG and SVG dimensions using the standard library."""
     if not url or not url.startswith(BASE):
         return None
     path = ROOT / url.removeprefix(BASE)
     if not path.is_file():
+        return None
+    if path.suffix.lower() == '.svg':
+        root = ElementTree.parse(path).getroot()
+        if root.tag == '{http://www.w3.org/2000/svg}svg':
+            width, height = root.get('width', ''), root.get('height', '')
+            if width.isdecimal() and height.isdecimal() and min(int(width), int(height)) > 0:
+                return int(width), int(height)
         return None
     with path.open('rb') as handle:
         header = handle.read(24)
@@ -353,10 +360,15 @@ def describe_media(path, text):
     if not url:
         return text
     own_id, article = article_node(text)
+    media_id = own_id
+    if not media_id and path.parent.name == 'rent-burden' and path.name == 'index.html':
+        _, page = main_node(text)
+        if page:
+            media_id = page.get('mainEntity', {}).get('@id')
     images = []
     for image in doc.tags('img'):
         src = urljoin(url, image.get('src'))
-        if not (src.startswith(BASE + 'assets/writing/') and image.get('alt')):
+        if not (src.startswith((BASE + 'assets/writing/', BASE + 'studies/rent-burden/')) and image.get('alt')):
             continue
         size = local_image_dimensions(src)
         if size:
@@ -385,7 +397,7 @@ def describe_media(path, text):
                 if size:
                     node['contentUrl'] = src
                     node['width'], node['height'] = size
-            if own_id and node.get('@id') == own_id and node.get('@type') in ARTICLE_TYPES:
+            if media_id and node.get('@id') == media_id and node.get('@type') in (*ARTICLE_TYPES, 'Dataset'):
                 if images:
                     previous = node.get('associatedMedia', [])
                     previous = previous if isinstance(previous, list) else [previous]

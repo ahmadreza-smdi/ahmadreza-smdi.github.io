@@ -5,7 +5,7 @@ import re
 from urllib.parse import urljoin, urlsplit, unquote
 from xml.etree import ElementTree
 from check_internal_links import protected, site_pages
-from enrich_metadata import video_nodes, video_datetime_issues
+from enrich_metadata import local_image_dimensions, video_nodes, video_datetime_issues
 from seo_document import Document, SITE, public_url, nodes
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -42,6 +42,21 @@ def film_issues(root, film):
     return issues
 
 
+def image_issues(doc, graph, url, dimensions):
+    images = {n.get("contentUrl"): n for n in graph if n.get("@type") == "ImageObject"}
+    errors = []
+    for tag in doc.tags("img"):
+        src = urljoin(url, tag.get("src"))
+        if not tag.get("alt") or not src.startswith((SITE+"assets/writing/", SITE+"assets/carousels/",
+                                                     SITE+"assets/img/", SITE+"studies/rent-burden/")):
+            continue
+        annotation = images.get(src)
+        size = dimensions(src)
+        if not annotation or not size or (annotation.get("width"), annotation.get("height")) != size:
+            errors.append(f"editorial image lacks accurate dimensions or contentUrl: {src}")
+    return errors
+
+
 def inspect(root):
     records = []
     sitemap = ElementTree.parse(root / "sitemap.xml")
@@ -56,15 +71,19 @@ def inspect(root):
         doc = Document(raw)
         players = doc.tags("video")
         films = list(video_nodes(raw))
+        url = public_url(rel)
+        graph = [n for block in doc.blocks() for n in nodes(json.loads(block))]
+        if doc.indexable():
+            image_errors = image_issues(doc, graph, url, local_image_dimensions)
+            if image_errors:
+                records.append((rel, "", image_errors))
         if not (players or films or rel.startswith("watch/")):
             continue
-        url = public_url(rel)
         watch = rel.startswith("watch/") and not rel.startswith("watch/embed/")
         playable = {urljoin(url, e.get("src")) for e in players + doc.tags("source")
                     if e.get("src") and e.within(lambda parent: parent.tag == "video")}
         if (players or watch) and doc.indexable() and not films:
             records.append((rel, "", ["indexable player lacks VideoObject"]))
-        graph = [n for block in doc.blocks() for n in nodes(json.loads(block))]
         for film in films:
             issues = film_issues(root, film)
             content = film.get("contentUrl")

@@ -3,7 +3,7 @@ from tempfile import TemporaryDirectory
 import unittest
 from unittest.mock import Mock
 from check_site_live import compare
-from check_media import film_issues
+from check_media import film_issues, image_issues
 from redirect_stubs import inspect
 from seo_document import Document, SITE
 
@@ -13,6 +13,15 @@ class ReleaseMarkupTest(unittest.TestCase):
         self.space = TemporaryDirectory()
         self.addCleanup(self.space.cleanup)
         self.root = Path(self.space.name).resolve()
+
+    def test_visible_illustration_requires_exact_image_dimensions(self):
+        url = SITE + "assets/writing/topic/diagram.svg"
+        doc = Document(f'<img src="{url}" alt="A chart">')
+        node = {"@type":"ImageObject", "contentUrl":url, "width":1200, "height":770}
+        dimensions = lambda source: (1200, 770)
+        self.assertEqual(image_issues(doc, [node], SITE, dimensions), [])
+        self.assertTrue(image_issues(doc, [], SITE, dimensions))
+        self.assertTrue(image_issues(doc, [dict(node, width=900)], SITE, dimensions))
 
     def test_each_required_video_field(self):
         for name in ("thumbnail.png", "video.mp4"):
