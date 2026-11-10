@@ -165,6 +165,7 @@ def biography():
                         'url': BASE + '/assets/img/ahmadreza-samadi-hero.jpg',
                         'width': 900, 'height': 1200,
                         'caption': 'Ahmadreza Samadi in a dark suit',
+                        'contentUrl': BASE + '/assets/img/ahmadreza-samadi-hero.jpg',
                     }
             return '<script type="application/ld+json">\n' + json.dumps(graph, ensure_ascii=False, indent=2) + '\n</script>'
         text = re.sub(r'<script type="application/ld\+json">\s*(.*?)\s*</script>', portrait_metadata, text, flags=re.S)

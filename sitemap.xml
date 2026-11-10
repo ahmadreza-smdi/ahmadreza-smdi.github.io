@@ -619,6 +619,9 @@
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/profitable-but-out-of-cash.html" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/profitable-but-out-of-cash.html" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/profitable-but-out-of-cash.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/share/profit-cash.png</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/profitable-but-out-of-cash.html</loc>
@@ -687,6 +690,9 @@
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/ai-rental-yield-cash-flow.html" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/ai-rental-yield-cash-flow.html" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/ai-rental-yield-cash-flow.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/share/ai-rental-yield-cash-flow.png</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/ai-rental-yield-cash-flow.html</loc>
@@ -725,6 +731,9 @@
         <image:image>
             <image:loc>https://a-samadi.com/assets/writing/almost-full-storage/slide-01.png</image:loc>
             <image:title>Why does your computer slow down when storage is almost full?</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/share/almost-full-storage.png</image:loc>
         </image:image>
     </url>
     <url>
@@ -834,6 +843,9 @@
             <image:loc>https://a-samadi.com/assets/writing/iphone-duo/cover.png</image:loc>
             <image:title>iPhone Duo: what does the extra $800 cost per day?</image:title>
         </image:image>
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/share/iphone-duo-price-per-day.png</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/iphone-duo-price-per-day.html</loc>
@@ -882,6 +894,9 @@
             <image:loc>https://a-samadi.com/assets/writing/how-contactless-cards-work/slide-01.png</image:loc>
             <image:title>How does a contactless card work without a battery?</image:title>
         </image:image>
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/share/how-contactless-cards-work.png</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/how-contactless-cards-work.html</loc>
@@ -917,6 +932,9 @@
         <image:image>
             <image:loc>https://a-samadi.com/assets/writing/how-noise-cancellation-works/slide-01.png</image:loc>
             <image:title>How do headphones cancel noise by making more sound?</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/share/how-noise-cancellation-works.png</image:loc>
         </image:image>
     </url>
     <url>
@@ -954,6 +972,9 @@
             <image:loc>https://a-samadi.com/assets/writing/why-usb-c-cables-differ/slide-01.png</image:loc>
             <image:title>Why do identical-looking USB-C cables behave differently?</image:title>
         </image:image>
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/share/why-usb-c-cables-differ.png</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/why-usb-c-cables-differ.html</loc>
@@ -989,6 +1010,9 @@
         <image:image>
             <image:loc>https://a-samadi.com/assets/writing/how-photo-text-recognition-works/slide-01.png</image:loc>
             <image:title>How does your phone turn text in a photo into copyable words?</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/share/how-photo-text-recognition-works.png</image:loc>
         </image:image>
     </url>
     <url>
@@ -1074,6 +1098,9 @@
             <image:loc>https://a-samadi.com/assets/writing/why-wifi-is-slow-with-full-bars/slide-01.png</image:loc>
             <image:title>Why is Wi-Fi slow even with full bars?</image:title>
         </image:image>
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/share/why-wifi-is-slow-with-full-bars.png</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/why-wifi-is-slow-with-full-bars.html</loc>
@@ -1110,6 +1137,9 @@
             <image:loc>https://a-samadi.com/assets/writing/why-ai-loses-earlier-chat-context/slide-01.png</image:loc>
             <image:title>Why can AI lose track of something you already said?</image:title>
         </image:image>
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/share/why-ai-loses-earlier-chat-context.png</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/why-ai-loses-earlier-chat-context.html</loc>
@@ -1145,6 +1175,9 @@
         <image:image>
             <image:loc>https://a-samadi.com/assets/writing/how-many-coffees-to-break-even/slide-01.png</image:loc>
             <image:title>How many coffees must a cafe sell before it makes any profit?</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/share/how-many-coffees-to-break-even.png</image:loc>
         </image:image>
     </url>
     <url>
@@ -1218,6 +1251,9 @@
             <image:loc>https://a-samadi.com/assets/writing/how-building-digital-twins-work/slide-01.png</image:loc>
             <image:title>How can a building have a live digital copy?</image:title>
         </image:image>
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/share/how-building-digital-twins-work.png</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/how-building-digital-twins-work.html</loc>
@@ -1286,6 +1322,9 @@
             <image:loc>https://a-samadi.com/assets/writing/chatgpt-intelligent-ui-explained/slide-01.png</image:loc>
             <image:title>How does ChatGPT's Intelligent UI work?</image:title>
         </image:image>
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/share/chatgpt-intelligent-ui-explained.png</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/chatgpt-intelligent-ui-explained.html</loc>
@@ -1321,6 +1360,9 @@
         <image:image>
             <image:loc>https://a-samadi.com/assets/writing/dubai-property-tokenisation-explained/slide-01.png</image:loc>
             <image:title>How do property tokens work, and can you sell them?</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/share/dubai-property-tokenisation-explained.png</image:loc>
         </image:image>
     </url>
     <url>
@@ -1358,6 +1400,9 @@
             <image:loc>https://a-samadi.com/assets/writing/small-ai-models-task-routing-explained/slide-01.png</image:loc>
             <image:title>How can a smaller AI model fit a useful task?</image:title>
         </image:image>
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/share/small-ai-models-task-routing-explained.png</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/small-ai-models-task-routing-explained.html</loc>
@@ -1393,6 +1438,9 @@
         <image:image>
             <image:loc>https://a-samadi.com/assets/writing/ai-data-center-site-readiness/slide-01.png</image:loc>
             <image:title>What makes a building ready for AI data centers?</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/share/ai-data-center-site-readiness.png</image:loc>
         </image:image>
     </url>
     <url>
@@ -1430,6 +1478,9 @@
             <image:loc>https://a-samadi.com/assets/writing/ai-inference-memory-movement-explained/slide-01.png</image:loc>
             <image:title>Why does moving data matter for AI chips?</image:title>
         </image:image>
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/share/ai-inference-memory-movement-explained.png</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/ai-inference-memory-movement-explained.html</loc>
@@ -1465,6 +1516,9 @@
         <image:image>
             <image:loc>https://a-samadi.com/assets/writing/building-laser-scans-point-clouds-explained/slide-01.png</image:loc>
             <image:title>How does a laser scan become a building record?</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/share/building-laser-scans-point-clouds-explained.png</image:loc>
         </image:image>
     </url>
     <url>
@@ -1622,6 +1676,13 @@
             <image:loc>https://a-samadi.com/assets/writing/virtual-machine-device-sharing-explained/slide-01.png</image:loc>
             <image:title>How a virtual PC can use your real printer</image:title>
         </image:image>
+        <video:video>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/virtual-machine-device-sharing-explained/cover-poster.jpg</video:thumbnail_loc>
+            <video:title>How a virtual PC can use your real printer</video:title>
+            <video:description>Our original checklist: Which virtual PC? Which resources? Do I need each one? The film is conceptual, not product footage or a tested setup.</video:description>
+            <video:content_loc>https://a-samadi.com/assets/writing/virtual-machine-device-sharing-explained/explainer.mp4</video:content_loc>
+            <video:publication_date>2026-10-16T23:53:42+03:30</video:publication_date>
+        </video:video>
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/virtual-machine-device-sharing-explained.html</loc>
@@ -1730,6 +1791,13 @@
             <image:loc>https://a-samadi.com/assets/writing/where-wearable-ai-computation-runs/slide-01.png</image:loc>
             <image:title>Where does your wearable’s AI run?</image:title>
         </image:image>
+        <video:video>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/where-wearable-ai-computation-runs/cover-poster.jpg</video:thumbnail_loc>
+            <video:title>Where does your wearable’s AI run?</video:title>
+            <video:description>Ahmadreza Samadi explains wearable AI computation: which tasks run locally, what data is sent out and what happens without a connection.</video:description>
+            <video:content_loc>https://a-samadi.com/assets/writing/where-wearable-ai-computation-runs/explainer.mp4</video:content_loc>
+            <video:publication_date>2026-10-16T23:53:42+03:30</video:publication_date>
+        </video:video>
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/where-wearable-ai-computation-runs.html</loc>
@@ -1862,6 +1930,13 @@
             <image:loc>https://a-samadi.com/assets/writing/geospatial-ai-map-answer-review/slide-01.png</image:loc>
             <image:title>A map answer. The right place?</image:title>
         </image:image>
+        <video:video>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/geospatial-ai-map-answer-review/cover-poster.jpg</video:thumbnail_loc>
+            <video:title>A map answer. The right place?</video:title>
+            <video:description>Ahmadreza Samadi’s geospatial AI checklist: check the boundary, date, source and assumptions behind a map answer; keep unsupported conclusions open.</video:description>
+            <video:content_loc>https://a-samadi.com/assets/writing/geospatial-ai-map-answer-review/explainer.mp4</video:content_loc>
+            <video:publication_date>2026-10-17T21:01:19+03:30</video:publication_date>
+        </video:video>
     </url>
     <url>
         <loc>https://a-samadi.com/fa/writing/geospatial-ai-map-answer-review.html</loc>
@@ -2038,6 +2113,9 @@
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/avm-vs-appraisal.html" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/avm-vs-appraisal.html" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/avm-vs-appraisal.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/share/avm-vs-appraisal.png</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://a-samadi.com/writing/rent-or-buy-five-numbers.html</loc>
@@ -2046,6 +2124,9 @@
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/rent-or-buy-five-numbers.html" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/rent-or-buy-five-numbers.html" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/rent-or-buy-five-numbers.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/share/rent-or-buy-five-numbers.png</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://a-samadi.com/writing/human-review-property-ai-checklist.html</loc>
@@ -2054,6 +2135,9 @@
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/human-review-property-ai-checklist.html" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/human-review-property-ai-checklist.html" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/human-review-property-ai-checklist.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/share/human-review-property-ai-checklist.png</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://a-samadi.com/writing/dubai-property-buying-costs.html</loc>
@@ -2062,6 +2146,9 @@
         <xhtml:link rel="alternate" hreflang="fa" href="https://a-samadi.com/fa/writing/dubai-property-buying-costs.html" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/dubai-property-buying-costs.html" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/dubai-property-buying-costs.html" />
+        <image:image>
+            <image:loc>https://a-samadi.com/assets/share/dubai-property-buying-costs.png</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://a-samadi.com/tools/valuation-range.html</loc>
