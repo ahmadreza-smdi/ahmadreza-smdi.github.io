@@ -109,3 +109,7 @@ See [LICENSE](LICENSE). No blanket licence is assigned to the original website, 
 ![Public valuation-range checker with an explicitly fictional example](docs/valuation-range-preview.png)
 
 The tool describes entered estimates; it does not verify a property value. [Open the valuation range checker](https://a-samadi.com/tools/valuation-range.html).
+
+## Before you push
+
+From the repository folder, run `python3 scripts/check_all.py`. Read each failure and review any reported changes to search metadata before pushing. This command runs locally and uses Python, Node and a PDF text reader (Poppler or pypdf).
