@@ -4,6 +4,7 @@ Local bylines use the article's recorded dates. Author references and their
 dedicated stylesheet are generated without changing article metadata.
 """
 from pathlib import Path
+from check_internal_links import site_pages
 from datetime import datetime
 import re
 import json
@@ -151,7 +152,7 @@ def enrich_author(path, text):
 def main():
     check = '--check' in sys.argv
     count = changed = 0
-    for path in sorted(ROOT.rglob('*.html')):
+    for path in sorted(site_pages(ROOT)):
         if any(part.startswith('.') for part in path.relative_to(ROOT).parts):
             continue
         original = path.read_text()

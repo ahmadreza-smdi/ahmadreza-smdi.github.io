@@ -7,10 +7,36 @@ from pathlib import Path
 from urllib.parse import unquote, urljoin, urlparse
 from xml.etree import ElementTree
 import argparse
+import os
+import re
 
 
 SITE = "https://a-samadi.com/"
 HOSTS = {"a-samadi.com", "www.a-samadi.com"}
+
+
+VERIFICATION = re.compile(r'google[0-9a-f]+\.html|[0-9a-f]{20,}\.txt', re.I)
+PROTECTED = re.compile(r'(?:credential|private[-_ ]?key)|^\.env(?:\.|$)|\.(?:pem|key|p12|pfx|keystore)$|^id_(?:rsa|ed25519)(?:\.pub)?$', re.I)
+
+def protected(path):
+    parts = Path(path).parts
+    if not parts:
+        return False
+    return any(x.lower() in ('cv', 'important-docs', 'vault.md', '.git', '.gitignore') or
+               re.fullmatch(r'(?:resume|résumé|cv|curriculum[-_ ]vitae)\.(?:pdf|docx?|odt|txt|md)',x,re.I) or
+               PROTECTED.search(x) for x in parts) or bool(VERIFICATION.fullmatch(parts[-1]))
+
+def site_pages(root):
+    for directory, folders, files in os.walk(root, followlinks=False):
+        base = Path(directory)
+        folders[:] = sorted(f for f in folders if not f.startswith('.') and f not in
+                            ('node_modules', '__pycache__', 'fixtures', '_site', 'vendor')
+                            and not protected(base.relative_to(root) / f) and not (base/f).is_symlink())
+        for name in sorted(files):
+            path = base / name
+            if name.endswith('.html') and not protected(path.relative_to(root)) and not path.is_symlink():
+                yield path
+
 
 
 class PageLinks(HTMLParser):
@@ -33,7 +59,7 @@ class PageLinks(HTMLParser):
 def audit(root: Path, check_orphans: bool = False) -> tuple[int, int, list[str]]:
     root = root.resolve()
     pages: dict[Path, PageLinks] = {}
-    for path in sorted(root.rglob("*.html")):
+    for path in sorted(site_pages(root)):
         page = PageLinks()
         page.feed(path.read_text(encoding="utf-8"))
         pages[path.resolve()] = page

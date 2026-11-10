@@ -7,6 +7,7 @@ publication; this script does not change Cloudflare account settings or collect 
 """
 from html.parser import HTMLParser
 from pathlib import Path
+from check_internal_links import site_pages
 import re
 import sys
 from urllib.parse import urlsplit
@@ -96,7 +97,7 @@ def main():
                     raise RuntimeError(f'{path}: changed concurrently; preserve the other edit')
                 path.write_text(updated)
     excluded = 0
-    for path in ROOT.rglob('*.html'):
+    for path in site_pages(ROOT):
         if path in pages or any(part in ('.git', 'node_modules') for part in path.relative_to(ROOT).parts):
             continue
         excluded += 1

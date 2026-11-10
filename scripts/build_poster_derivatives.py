@@ -9,6 +9,7 @@ import hashlib
 import io
 import json
 from pathlib import Path
+from check_internal_links import site_pages
 import re
 from html import escape
 
@@ -93,7 +94,7 @@ def main():
         page = (ROOT / relative).resolve()
         if not page.is_relative_to(ROOT) or not page.is_file() or page.suffix != '.html' or poster not in mapping.values():
             raise ValueError('Invalid reviewed poster preload: ' + relative)
-    for page in sorted(ROOT.rglob('*.html')):
+    for page in sorted(site_pages(ROOT)):
         if any(p.startswith('.') for p in page.relative_to(ROOT).parts):
             continue
         old = page.read_bytes()

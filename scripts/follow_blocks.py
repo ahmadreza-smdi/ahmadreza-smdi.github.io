@@ -2,6 +2,7 @@
 """Prepare locale-aware conversion navigation without touching the checkout."""
 import argparse, hashlib, html, json, re, subprocess
 from pathlib import Path
+from check_internal_links import site_pages
 from html.parser import HTMLParser
 
 START = '<!-- follow-subscribe:start -->'
@@ -57,7 +58,7 @@ def main():
     args=parser.parse_args()
     root=Path(__file__).resolve().parent.parent
     changes=[];count=0
-    for path in sorted(root.rglob('*.html')):
+    for path in sorted(site_pages(root)):
         name=path.relative_to(root).as_posix()
         if any(part.startswith('.') for part in path.relative_to(root).parts):continue
         source=path.read_text();page=Page();page.feed(source)

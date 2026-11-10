@@ -16,6 +16,7 @@ Run with --check to report missing metadata or invalid article/video dates witho
 from datetime import date, datetime, timedelta, timezone
 from functools import lru_cache
 from pathlib import Path
+from check_internal_links import site_pages
 from urllib.parse import urljoin
 import html
 import json
@@ -918,7 +919,7 @@ def main():
     changed = 0
     invalid = 0
     video_records = []
-    for path in sorted(ROOT.rglob('*.html')):
+    for path in sorted(site_pages(ROOT)):
         relative = path.relative_to(ROOT)
         if relative.parts[0] in ('.git', 'node_modules') or path.name.startswith('google'):
             continue
