@@ -1,11 +1,13 @@
 """Manual read-only release check. Requires --live; public requests are serialized and anonymous."""
 
 import argparse
+from io import BytesIO
 from hashlib import sha256
 import json
 from pathlib import Path
 import re
 import secrets
+import subprocess
 import sys
 import time
 from urllib.error import HTTPError, URLError
@@ -30,7 +32,7 @@ class Reader:
         self.interval = max(1.0, interval)
         self.opener = build_opener(NoRedirects())
 
-    def get(self, url, byte_range=False):
+    def read(self, url, consume):
         if (
             urlsplit(url).hostname != urlsplit(SITE).hostname
             or urlsplit(url).scheme != "https"
@@ -39,27 +41,33 @@ class Reader:
         time.sleep(max(0, self.next - time.monotonic()))
         self.next = time.monotonic() + self.interval
         headers = {"User-Agent": "Website-Review/1.0", "Accept-Encoding": "identity"}
-        if byte_range:
-            headers["Range"] = "bytes=0-4095"
         req = Request(url, headers=headers)
         try:
-            with self.opener.open(req, timeout=25) as response:
-                data = response.read(4096) if byte_range else response.read()
-                headers = dict(response.headers.items())
-                if (
-                    byte_range
-                    and response.status == 200
-                    and response.headers.get("Content-Length") is None
-                ):
-                    total = len(data)
-                    while chunk := response.read(128 * 1024):
-                        total += len(chunk)
-                    headers["Content-Length"] = str(total)
-                return response.status, headers, data
+            with self.opener.open(req, timeout=30) as response:
+                return (
+                    response.status,
+                    dict(response.headers.items()),
+                    consume(response),
+                )
         except HTTPError as exc:
             code = exc.code
             exc.close()
-            return code, {}, b""
+            return code, {}, consume(BytesIO())
+
+    def get(self, url):
+        return self.read(url, lambda response: response.read())
+
+    def checksum(self, url):
+        return self.read(url, stream_hash)
+
+
+def stream_hash(stream):
+    digest = sha256()
+    total = 0
+    while chunk := stream.read(256 * 1024):
+        total += len(chunk)
+        digest.update(chunk)
+    return total, digest.hexdigest()
 
 
 def excluded_files(root):
@@ -103,47 +111,83 @@ def normalized_html(data):
     return data.replace(b"<!--email_off-->", b"").replace(b"<!--/email_off-->", b"")
 
 
+def committed_csv(root, rel):
+    """Use Git's published bytes only when the working copy differs solely by CRLF."""
+    local = (root / rel).read_bytes()
+    if b"\r\n" not in local:
+        return local, "checkout"
+    blob = subprocess.run(
+        ["git", "cat-file", "blob", "HEAD:" + rel], cwd=root, capture_output=True
+    )
+    if (
+        blob.returncode == 0
+        and local != blob.stdout
+        and local.replace(b"\r\n", b"\n") == blob.stdout
+    ):
+        return blob.stdout, "committed CSV (working copy uses CRLF)"
+    return local, "checkout"
+
+
 def compare(root, rel, reader, want_absent=False):
     p = root / rel
-    if protected(rel) or p.is_symlink():
+    if (
+        protected(rel)
+        or Path(rel).is_absolute()
+        or ".." in Path(rel).parts
+        or p.is_symlink()
+    ):
         raise ValueError("Unapproved public verification path")
     url = SITE + quote(rel, safe="/._-") + "?v=" + secrets.token_hex(6)
-    size = p.stat().st_size if p.is_file() else 0
-    partial = (
-        not want_absent
-        and size > 650000
-        and p.suffix.lower() not in (".html", ".js", ".mjs", ".css", ".json")
-    )
-    status, headers, data = reader.get(url, partial)
     if want_absent:
+        status, _, _ = reader.get(url)
         return dict(
             path=rel, url=url, status=status, mode="excluded", pass_check=status == 404
         )
-    with p.open("rb") as fh:
-        expected = fh.read(4096) if partial else fh.read()
-    same = expected == data
-    compare_ok = same or (
-        p.suffix == ".html" and normalized_html(expected) == normalized_html(data)
-    )
-    head = {k.lower(): v for k, v in headers.items()}
-    size_ok = not partial or (
-        head.get("content-range", "").endswith("/" + str(size))
-        if status == 206
-        else head.get("content-length") == str(size)
-    )
+    source = "checkout"
+    reference = None
+    if p.suffix.lower() == ".csv":
+        reference, source = committed_csv(root, rel)
+    if p.stat().st_size > 650000 and p.suffix.lower() not in (
+        ".html",
+        ".js",
+        ".mjs",
+        ".css",
+        ".json",
+    ):
+        status, _, (size, live_digest) = reader.checksum(url)
+        if reference is None:
+            with p.open("rb") as stream:
+                expected_size, expected_digest = stream_hash(stream)
+        else:
+            expected_size, expected_digest = (
+                len(reference),
+                sha256(reference).hexdigest(),
+            )
+        mode = "complete file (streamed)"
+        same = compare_ok = size == expected_size and live_digest == expected_digest
+    else:
+        status, _, data = reader.get(url)
+        if reference is None:
+            reference = p.read_bytes()
+        size, live_digest = len(data), sha256(data).hexdigest()
+        expected_size, expected_digest = len(reference), sha256(reference).hexdigest()
+        same = data == reference
+        compare_ok = same or (
+            p.suffix == ".html" and normalized_html(reference) == normalized_html(data)
+        )
+        mode = "complete file"
     return dict(
         path=rel,
         url=url,
         status=status,
-        mode="first 4096 bytes and total length" if partial else "complete file",
-        bytes=len(data),
-        expected_bytes=size,
-        sha256=sha256(data).hexdigest(),
-        reference_sha256=sha256(expected).hexdigest(),
+        mode=mode,
+        bytes=size,
+        expected_bytes=expected_size,
+        sha256=live_digest,
+        reference_sha256=expected_digest,
+        reference=source,
         raw_equal=same,
-        pass_check=status in ((200, 206) if partial else (200,))
-        and size_ok
-        and compare_ok,
+        pass_check=status == 200 and compare_ok,
     )
 
 

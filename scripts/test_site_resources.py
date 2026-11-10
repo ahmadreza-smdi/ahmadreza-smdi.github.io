@@ -2,6 +2,8 @@
 
 from pathlib import Path
 import tempfile
+import subprocess
+from hashlib import sha256
 import unittest
 from check_site_live import Reader, compare, excluded_files
 from site_resources import inventory
@@ -13,6 +15,13 @@ class Response:
 
     def get(self, url, partial=False):
         return self.status, self.headers, self.data
+
+    def checksum(self, url):
+        return (
+            self.status,
+            self.headers,
+            (len(self.data), sha256(self.data).hexdigest()),
+        )
 
 
 class Resources(unittest.TestCase):
@@ -41,7 +50,45 @@ class Resources(unittest.TestCase):
             (root / "data.json").unlink()
             self.assertIn(("app.js", "data.json"), inventory(root)[3])
 
-    def test_wrong_status_wrong_content_and_partial_size(self):
+    def test_published_csv_uses_git_line_endings_but_never_masks_new_values(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+
+            def git(*args):
+                subprocess.run(
+                    [
+                        "git",
+                        "-c",
+                        "user.name=Fixture",
+                        "-c",
+                        "user.email=test@example.invalid",
+                        "-c",
+                        "core.hooksPath=/dev/null",
+                        "-c",
+                        "core.autocrlf=false",
+                        *args,
+                    ],
+                    cwd=root,
+                    check=True,
+                    capture_output=True,
+                )
+
+            git("init", "-q")
+            path = root / "data.csv"
+            published = b"label,value\nexample,12\n"
+            path.write_bytes(published)
+            git("add", "--", path.name)
+            git("commit", "-qm", "Test source")
+            path.write_bytes(published.replace(b"\n", b"\r\n"))
+            result = compare(root, path.name, Response(200, published))
+            self.assertTrue(result["pass_check"])
+            self.assertTrue(result["reference"].startswith("committed CSV"))
+            path.write_bytes(path.read_bytes().replace(b"12", b"13"))
+            self.assertFalse(
+                compare(root, path.name, Response(200, published))["pass_check"]
+            )
+
+    def test_wrong_status_wrong_content_and_full_size(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             (root / "index.html").write_bytes(b"before<!--email_off-->after")
@@ -60,10 +107,12 @@ class Resources(unittest.TestCase):
                 compare(root, "index.html", Response(404), True)["pass_check"]
             )
             (root / "large.mp4").write_bytes(b"0" * 700000)
-            for size, expected in [(700000, True), (600000, False)]:
-                resp = Response(
-                    206, b"0" * 4096, {"Content-Range": f"bytes 0-4095/{size}"}
-                )
+            for data, expected in [
+                (b"0" * 700000, True),
+                (b"0" * 600000, False),
+                (b"0" * 699999 + b"9", False),
+            ]:
+                resp = Response(200, data)
                 self.assertEqual(
                     compare(root, "large.mp4", resp)["pass_check"], expected
                 )
