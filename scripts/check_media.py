@@ -45,6 +45,12 @@ def film_issues(root, film):
 def image_issues(doc, graph, url, dimensions):
     images = {n.get("contentUrl"): n for n in graph if n.get("@type") == "ImageObject"}
     errors = []
+    for item in graph:
+        media = item.get("associatedMedia")
+        if isinstance(media, list):
+            urls = [m["contentUrl"] for m in media if isinstance(m, dict) and m.get("contentUrl")]
+            if len(urls) != len(set(urls)):
+                errors.append("the same associated image is listed more than once")
     for tag in doc.tags("img"):
         src = urljoin(url, tag.get("src"))
         if not tag.get("alt") or not src.startswith((SITE+"assets/writing/", SITE+"assets/carousels/",

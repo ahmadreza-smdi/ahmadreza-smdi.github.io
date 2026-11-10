@@ -365,15 +365,17 @@ def describe_media(path, text):
         _, page = main_node(text)
         if page:
             media_id = page.get('mainEntity', {}).get('@id')
-    images = []
+    images_by_url = {}
     for image in doc.tags('img'):
         src = urljoin(url, image.get('src'))
         if not (src.startswith((BASE + 'assets/writing/', BASE + 'studies/rent-burden/')) and image.get('alt')):
             continue
-        size = local_image_dimensions(src)
-        if size:
-            images.append({'@type': 'ImageObject', 'contentUrl': src, 'width': size[0],
-                           'height': size[1], 'caption': image.get('alt')})
+        if src not in images_by_url:
+            size = local_image_dimensions(src)
+            if size:
+                images_by_url[src] = {'@type': 'ImageObject', 'contentUrl': src, 'width': size[0],
+                                      'height': size[1], 'caption': image.get('alt')}
+    images = list(images_by_url.values())
     film = None
     if article and path.stem in ARTICLE_FILMS and path.parent.name == 'writing':
         videos = doc.tags('video')

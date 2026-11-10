@@ -21,6 +21,7 @@ class ReleaseMarkupTest(unittest.TestCase):
         dimensions = lambda source: (1200, 770)
         self.assertEqual(image_issues(doc, [node], SITE, dimensions), [])
         self.assertTrue(image_issues(doc, [], SITE, dimensions))
+        self.assertTrue(image_issues(doc, [node, {"associatedMedia":[node, node]}], SITE, dimensions))
         self.assertTrue(image_issues(doc, [dict(node, width=900)], SITE, dimensions))
 
     def test_each_required_video_field(self):

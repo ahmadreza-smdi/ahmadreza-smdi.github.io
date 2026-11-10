@@ -410,8 +410,8 @@
       ]
     },
     "ar/writing/geospatial-ai-map-answer-review.html": {
-      "original_sha256": "b571568776c201467d84e273cc429e770e56d141390d8c8a943b3c7abc75884e",
-      "output_sha256": "232104aea7e3f2d70730bbbc1ad0ac41054dadc1a5aa6ae98adb176a542ed902",
+      "original_sha256": "2106d7000aa8eff2459493faea6a78a68ee59254fd83595290d6c30918313674",
+      "output_sha256": "c676c311f73455a8cb24244806d8729e82ad5689fb3d80320b9056040005cd2a",
       "sheets": [
         {
           "source": "css/site.css",
@@ -706,8 +706,8 @@
       ]
     },
     "ar/writing/virtual-machine-device-sharing-explained.html": {
-      "original_sha256": "887777794350268443331cbae574aec976bf146d737d8c53ec22db4b7606731b",
-      "output_sha256": "3d6f7ebb02c77eb231dbda7ff2ac40049db6cc61d68e845e470afdf4aa7ae142",
+      "original_sha256": "3f7ef6d2ce8b0775d73721eafd38c188722f25484ef9709027611a9dad1d2cac",
+      "output_sha256": "fcf10ac2950a5a8be46934a76aeb561ed51a99176abbc8218f7da2e359f9f81f",
       "sheets": [
         {
           "source": "css/site.css",
@@ -743,8 +743,8 @@
       ]
     },
     "ar/writing/where-wearable-ai-computation-runs.html": {
-      "original_sha256": "fe982b26f93580fbb5d974d9a934c82b07a83ba094590f25272a4c9df75f013f",
-      "output_sha256": "3ea0540364c67ac928b890cb45fc5220863b0240d91bb591969cbf3b03303be3",
+      "original_sha256": "d596654aed21a8231b4cb39590ef8fe2752abfffec5dc74e07b8f5edef1dc5ad",
+      "output_sha256": "8d29acc2aeb73f856c530f66557732e744181fe20f6ea1daaf3b594093899efa",
       "sheets": [
         {
           "source": "css/site.css",
@@ -1187,8 +1187,8 @@
       ]
     },
     "fa/writing/geospatial-ai-map-answer-review.html": {
-      "original_sha256": "5acac33eceddb9c7651a674d30bb91322d86c77956c008b61071a00d5b99a5a2",
-      "output_sha256": "7fadeaea9c4e8ca59882c88c58b2e3c6e2fb06944cb0574b55e64ae03ef8e77b",
+      "original_sha256": "ab9f89fe9d51efa531633f7e8991f3017c5f51322b3f68ed46b2f8636f525a84",
+      "output_sha256": "8ee8899033cab524482d7ae0a05ad00c886d3a6d545a73f6af8bb54d68317598",
       "sheets": [
         {
           "source": "css/site.css",
@@ -1483,8 +1483,8 @@
       ]
     },
     "fa/writing/virtual-machine-device-sharing-explained.html": {
-      "original_sha256": "aed4b40223f3c40f093c4df230017b93b4d3f657b7952735846285c2d5be53a4",
-      "output_sha256": "5c6de040b4a407cc74f8d33032544a144b2bad79dd7fb57ce1bf27899dc6e027",
+      "original_sha256": "952d15eeed1551eb04d51b9ea9286f62b2f4ec4436c94bfb3802e4e49c883774",
+      "output_sha256": "60fd0222290f6f98a05cf90dc1e5b20f74d477a0bd09a784d07178961c2bbbd4",
       "sheets": [
         {
           "source": "css/site.css",
@@ -1520,8 +1520,8 @@
       ]
     },
     "fa/writing/where-wearable-ai-computation-runs.html": {
-      "original_sha256": "afb06faa39739628d624c8b10ec47e7208c344e633b43426e924e10526ed0f43",
-      "output_sha256": "201c8e1308822a1266a45af6bbda244f920623396a922fb2241a90f07ad010f9",
+      "original_sha256": "2a598ea7e8296ffde81b48feb1d3084f3fc939151fc81faaf9d5e2292ac94525",
+      "output_sha256": "f931d227048f4bac6606c1409d31f49e17de7ae4d75ba5e65e072ad6b87cbfc4",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2702,8 +2702,8 @@
       ]
     },
     "writing/geospatial-ai-map-answer-review.html": {
-      "original_sha256": "246a8621239f0980bde2746a54a090e24df6a95c70dd791e78540e01a7957669",
-      "output_sha256": "dc5c1d2afe293ba6d4d296d0067b071329bdf0a4ccc5f081ef917a4693bf2727",
+      "original_sha256": "49f117734c367801c9b4a551e7811c1b2ae8816f4a457ba1795a8e70dd35b8c8",
+      "output_sha256": "0296164567627617c8425edb6d6e25c9a1eeca144f9cac5488d192226b1db745",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2973,8 +2973,8 @@
       ]
     },
     "writing/virtual-machine-device-sharing-explained.html": {
-      "original_sha256": "24290a38aa8e72f12bf28746fd3a4407ae971fb14f4b8b9077587bd057403d97",
-      "output_sha256": "2145fbf0bed94b9aa165334664f57adeaa59bd1d6872b910e2e164c1b4dfd001",
+      "original_sha256": "bac3d6a473869ae2685644cf16f7a0c534249836e0d4c4fecbea221bd22016b8",
+      "output_sha256": "9d658d18f044a4bc41bd4376d38584bf78c2ebad68db58930708931b97bfca63",
       "sheets": [
         {
           "source": "css/site.css",
@@ -3025,8 +3025,8 @@
       ]
     },
     "writing/where-wearable-ai-computation-runs.html": {
-      "original_sha256": "f679330df64eb21a5c7697d50baf947f5ae1458f33ae98fe3b3a22601bd2b6bf",
-      "output_sha256": "181e9b9073f5689215d3415003f2522fd4bb815a42f7063fdc2b22bfcd8018d5",
+      "original_sha256": "e680b5c290e509e840b574bca0af68650206887bc6ae4ba1024f2837de24cd3d",
+      "output_sha256": "ed84ff0a8fa3d6e7cd310db7143bfc543a3507f0f7cb61d4022cf4e118d07b2c",
       "sheets": [
         {
           "source": "css/site.css",
