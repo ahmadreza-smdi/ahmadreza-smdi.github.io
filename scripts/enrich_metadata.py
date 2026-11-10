@@ -17,6 +17,7 @@ from datetime import date, datetime, timedelta, timezone
 from functools import lru_cache
 from pathlib import Path
 from check_internal_links import site_pages
+from seo_document import Document
 from urllib.parse import urljoin
 import html
 import json
@@ -333,6 +334,75 @@ def local_image_dimensions(url):
                 height, width = struct.unpack('>HH', frame[1:])
                 return width, height
             handle.seek(length - 2, 1)
+
+
+# These three films were released with their articles, without separate watch pages.
+# Timestamps are the first successful native Pages deployments of their media blobs
+# (cbcd50a and 399a508). Durations are measured from the actual MP4 containers.
+ARTICLE_FILMS = {
+    'where-wearable-ai-computation-runs': ('2026-10-16T23:53:42+03:30', 'PT39.958333S'),
+    'virtual-machine-device-sharing-explained': ('2026-10-16T23:53:42+03:30', 'PT44.833008S'),
+    'geospatial-ai-map-answer-review': ('2026-10-17T21:01:19+03:30', 'PT44.041667S'),
+}
+
+
+def describe_media(path, text):
+    """Describe editorial images and known embedded films from the visible page."""
+    doc = Document(text)
+    url = canonical(text)
+    if not url:
+        return text
+    own_id, article = article_node(text)
+    images = []
+    for image in doc.tags('img'):
+        src = urljoin(url, image.get('src'))
+        if not (src.startswith(BASE + 'assets/writing/') and image.get('alt')):
+            continue
+        size = local_image_dimensions(src)
+        if size:
+            images.append({'@type': 'ImageObject', 'contentUrl': src, 'width': size[0],
+                           'height': size[1], 'caption': image.get('alt')})
+    film = None
+    if article and path.stem in ARTICLE_FILMS and path.parent.name == 'writing':
+        videos = doc.tags('video')
+        sources = [e for e in doc.tags('source') if e.get('type') == 'video/mp4']
+        if len(videos) != 1 or len(sources) != 1 or not videos[0].get('poster'):
+            raise ValueError(f'{path}: reviewed article player or poster changed')
+        uploaded, duration = ARTICLE_FILMS[path.stem]
+        film = {'@type': 'VideoObject', '@id': url + '#film', 'name': article['headline'],
+                'description': article['description'], 'inLanguage': language(text),
+                'thumbnailUrl': urljoin(url, videos[0].get('poster')),
+                'contentUrl': urljoin(url, sources[0].get('src')), 'uploadDate': uploaded,
+                'duration': duration, 'isPartOf': {'@id': own_id}}
+
+    def update(block):
+        data = json.loads(block[2])
+        before = json.dumps(data, ensure_ascii=False)
+        for node in list(schema_nodes(data)):
+            if node.get('@type') == 'ImageObject' and image_url(node):
+                src = image_url(node)
+                size = local_image_dimensions(src)
+                if size:
+                    node['contentUrl'] = src
+                    node['width'], node['height'] = size
+            if own_id and node.get('@id') == own_id and node.get('@type') in ARTICLE_TYPES:
+                if images:
+                    previous = node.get('associatedMedia', [])
+                    previous = previous if isinstance(previous, list) else [previous]
+                    covered = {image['contentUrl'] for image in images}
+                    retained = [item for item in previous if image_url(item) not in covered]
+                    node['associatedMedia'] = retained + images
+                if film:
+                    if 'video' in node and node['video'].get('@id') != film['@id']:
+                        raise ValueError(f'{path}: conflicting video annotation')
+                    node['video'] = film
+        if json.dumps(data, ensure_ascii=False) == before:
+            return block[0]
+        raw = block[2]
+        prefix = raw[:len(raw) - len(raw.lstrip())]
+        suffix = raw[len(raw.rstrip()):]
+        return block[1] + prefix + json.dumps(data, ensure_ascii=False, indent=2) + suffix + block[3]
+    return LD.sub(update, text)
 
 
 def article_page_image(text):
@@ -858,7 +928,8 @@ def enrich(path, text):
     trail = visible_trail(rest, canonical(head))
     text, schema_added = complete_schema(path, text, include_breadcrumb=bool(trail))
     aligned = align_public_entities(path, text, trail)
-    return aligned, added + linked + image_added + schema_added + (['public entity links'] if aligned != text else [])
+    detailed = describe_media(path, aligned)
+    return detailed, added + linked + image_added + schema_added + (['public entity links'] if aligned != text else []) + (['editorial media'] if detailed != aligned else [])
 
 
 def sitemap(check):
@@ -870,6 +941,28 @@ def sitemap(check):
     ElementTree.register_namespace('video', 'http://www.google.com/schemas/sitemap-video/1.1')
     ElementTree.register_namespace('xhtml', xhtml)
     tree = ElementTree.parse(path)
+    image_ns = '{http://www.google.com/schemas/sitemap-image/1.1}'
+    listed_images = {n.text for n in tree.iter(image_ns + 'loc')}
+    html_images = set()
+    for entry in tree.getroot().findall(f'{{{namespace}}}url'):
+        entry_url = entry.findtext(f'{{{namespace}}}loc')
+        source_page = page_for(entry_url)
+        if not source_page.is_file():
+            continue
+        doc = Document(source_page.read_text())
+        for tag in doc.elements:
+            refs = []
+            if tag.tag == 'img':
+                refs.append(tag.get('src'))
+            if tag.tag == 'video':
+                refs.append(tag.get('poster'))
+            if tag.tag == 'link' and tag.get('as') == 'image':
+                refs.append(tag.get('href'))
+            if tag.tag == 'meta' and (tag.get('property') == 'og:image' or tag.get('name') == 'twitter:image'):
+                refs.append(tag.get('content'))
+            if tag.tag in ('img', 'source'):
+                refs.extend(item.split()[0] for item in tag.get('srcset').split(',') if item.strip())
+            html_images.update(urljoin(entry_url, ref) for ref in refs if ref)
     order = {'en': 0, 'fa': 1, 'ar': 2, 'x-default': 3}
     added = 0
     for url in tree.getroot().findall(f'{{{namespace}}}url'):
@@ -877,7 +970,34 @@ def sitemap(check):
         relative = loc.replace(BASE, '')
         page = ROOT / (relative + 'index.html' if relative == '' or relative.endswith('/') else relative)
         if page.is_file():
-            _, node = main_node(page.read_text())
+            source = page.read_text()
+            _, node = main_node(source)
+            if relative.startswith('writing/') and node and node.get('@type') in ARTICLE_TYPES:
+                primary = image_url(node.get('image'))
+                if (primary and primary.startswith(BASE + 'assets/share/') and
+                        primary not in html_images and primary not in listed_images and local_image_dimensions(primary)):
+                    image_entry = ElementTree.SubElement(url, image_ns + 'image')
+                    ElementTree.SubElement(image_entry, image_ns + 'loc').text = primary
+                    listed_images.add(primary)
+                    added += 1
+            if relative.startswith('writing/') and page.stem in ARTICLE_FILMS:
+                film = next((f for f in video_nodes(source) if f.get('@id') == loc + '#film'), None)
+                if film:
+                    ns = '{http://www.google.com/schemas/sitemap-video/1.1}'
+                    fields = {'thumbnail_loc': film['thumbnailUrl'], 'title': film['name'],
+                              'description': film['description'], 'content_loc': film['contentUrl'],
+                              'publication_date': film['uploadDate']}
+                    entry = next((v for v in url.findall(ns + 'video')
+                                  if v.findtext(ns + 'content_loc') == film['contentUrl']), None)
+                    if entry is None:
+                        entry = ElementTree.SubElement(url, ns + 'video')
+                    for field, value in fields.items():
+                        item = entry.find(ns + field)
+                        if item is None:
+                            item = ElementTree.SubElement(entry, ns + field)
+                        if item.text != value:
+                            item.text = value
+                            added += 1
             modified = node.get('dateModified') if node else None
             # Reuse the page's recorded precision; never stamp the build time.
             if modified:

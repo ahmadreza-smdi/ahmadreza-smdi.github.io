@@ -214,17 +214,20 @@ for url in listed:
 video_ns='{http://www.google.com/schemas/sitemap-video/1.1}'
 watch_pages={BASE+path.relative_to(ROOT).as_posix() for path in (ROOT/'watch').glob('*.html')}
 assert watch_pages <= set(listed), 'watch page missing from sitemap'
+from enrich_metadata import ARTICLE_FILMS, video_nodes
+article_video_pages = {BASE + 'writing/' + slug + '.html' for slug in ARTICLE_FILMS}
+assert article_video_pages <= set(listed), 'article video page missing from sitemap'
 for entry in sitemap.findall(f'{namespace}url'):
  url=entry.find(f'{namespace}loc').text
  videos=entry.findall(f'{video_ns}video')
- if url not in watch_pages:
-  assert not videos, f'{url}: video entry belongs on a watch page'
+ if url not in watch_pages | article_video_pages:
+  assert not videos, f'{url}: unexpected video entry outside a reviewed player page'
   continue
  assert len(videos)==1, f'{url}: expected one sitemap video'
  source=ROOT/url.removeprefix(BASE)
  html=(source).read_text()
  schemas=[json.loads(raw) for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>',html,re.S)]
- films=[schema for schema in schemas if schema.get('@type')=='VideoObject']
+ films=list(video_nodes(html))
  assert len(films)==1, f'{source}: expected one VideoObject'
  film=films[0]
  fields={'thumbnail_loc':'thumbnailUrl','title':'name','content_loc':'contentUrl'}
