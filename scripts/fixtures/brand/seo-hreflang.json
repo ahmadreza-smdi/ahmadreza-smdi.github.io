@@ -1,0 +1,9 @@
+{
+  "rule": "SEO-HREFLANG",
+  "placement": "head",
+  "cases": {
+    "en": "<link rel=\"alternate\" hreflang=\"en\" href=\"https://a-samadi.com/missing-fixture.html\">",
+    "fa": "<link rel=\"alternate\" hreflang=\"fa\" href=\"https://a-samadi.com/missing-fixture.html\">",
+    "ar": "<link rel=\"alternate\" hreflang=\"ar\" href=\"https://a-samadi.com/missing-fixture.html\">"
+  }
+}

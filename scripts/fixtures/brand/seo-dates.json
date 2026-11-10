@@ -1,0 +1,9 @@
+{
+  "rule": "SEO-DATES",
+  "placement": "head",
+  "cases": {
+    "en": "<script type=\"application/ld+json\">{\"@type\": \"Article\", \"datePublished\": \"2099-01-01T08:30:00+03:30\"}</script>",
+    "fa": "<script type=\"application/ld+json\">{\"@type\": \"Article\", \"datePublished\": \"2025-01-01T09:00:00Z\"}</script>",
+    "ar": "<script type=\"application/ld+json\">{\"@type\": \"Article\", \"datePublished\": \"2025-01-01T09:00:00+03:30\", \"dateModified\": \"2024-01-01T09:00:00+03:30\"}</script>"
+  }
+}

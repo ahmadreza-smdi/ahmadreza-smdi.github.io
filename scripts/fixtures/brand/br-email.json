@@ -1,0 +1,9 @@
+{
+  "rule": "BR-EMAIL",
+  "placement": "body",
+  "cases": {
+    "en": "<p class=\"bio\">contact@example.invalid</p>",
+    "fa": "<a href=\"tel:+12025550100\">تلفن نمونه</a>",
+    "ar": "<p class=\"bio\">عنوان المكتب: شارع اختباري</p>"
+  }
+}

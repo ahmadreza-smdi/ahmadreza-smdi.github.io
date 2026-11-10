@@ -1,0 +1,9 @@
+{
+  "rule": "BR-RA-BLACKBOX",
+  "placement": "body",
+  "cases": {
+    "en": "<p class=\"bio\">RAIA costs USD 99 per month in this invented fixture.</p>",
+    "fa": "<p class=\"bio\">بودجه آزمایشی RAIA مبلغ ۹۹ دلار است.</p>",
+    "ar": "<p class=\"bio\">تستخدم RAIA في المثال مزود Anthropic.</p>"
+  }
+}

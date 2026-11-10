@@ -1,0 +1,9 @@
+{
+  "rule": "SEO-GRAPH",
+  "placement": "head",
+  "cases": {
+    "en": "<script type=\"application/ld+json\">{\"@graph\": [{\"@id\": \"https://a-samadi.com/#fixture\", \"@type\": \"Thing\", \"name\": \"Fixture A\"}, {\"@id\": \"https://a-samadi.com/#fixture\", \"@type\": \"Thing\", \"name\": \"Fixture B\"}]}</script>",
+    "fa": "<script type=\"application/ld+json\">{\"@graph\": [{\"@id\": \"https://a-samadi.com/#fixture\", \"@type\": \"Thing\", \"name\": \"Fixture A\"}, {\"@id\": \"https://a-samadi.com/#fixture\", \"@type\": \"Thing\", \"name\": \"مثال\"}]}</script>",
+    "ar": "<script type=\"application/ld+json\">{\"@graph\": [{\"@id\": \"https://a-samadi.com/#fixture\", \"@type\": \"Thing\", \"name\": \"Fixture A\"}, {\"@id\": \"https://a-samadi.com/#fixture\", \"@type\": \"Thing\", \"name\": \"مثال آخر\"}]}</script>"
+  }
+}

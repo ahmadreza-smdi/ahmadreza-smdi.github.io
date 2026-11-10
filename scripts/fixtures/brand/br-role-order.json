@@ -1,0 +1,9 @@
+{
+  "rule": "BR-ROLE-ORDER",
+  "placement": "body",
+  "cases": {
+    "en": "<p class=\"bio\">Co-Founder & CEO, Royal Abraj Group. Co-Founder & Technical Lead, Appraiva.</p>",
+    "fa": "<p class=\"bio\">هم‌بنیان‌گذار و مدیرعامل Royal Abraj Group، هم‌بنیان‌گذار و راهبر فنی Appraiva.</p>",
+    "ar": "<p class=\"bio\">شريك مؤسس ورئيس تنفيذي في Royal Abraj Group ثم شريك مؤسس وقائد تقني في Appraiva.</p>"
+  }
+}

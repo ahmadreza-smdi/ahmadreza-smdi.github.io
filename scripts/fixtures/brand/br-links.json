@@ -1,0 +1,9 @@
+{
+  "rule": "BR-LINKS",
+  "placement": "body",
+  "cases": {
+    "en": "<a href=\"https://twitter.com/example\">Retired channel</a>",
+    "fa": "<a href=\"https://x.com/example\">پیوند</a>",
+    "ar": "<a href=\"https://www.linkedin.com/newsletters/example/\">النشرة</a>"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "rule": "BR-HYPE",
+  "placement": "body",
+  "cases": {
+    "en": "<p class=\"bio\">A revolutionary enterprise builder</p>",
+    "fa": "<p class=\"bio\">محصول انقلابی</p>",
+    "ar": "<p class=\"bio\">منتجات ثورية</p>"
+  }
+}

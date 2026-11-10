@@ -1,0 +1,9 @@
+{
+  "rule": "BR-NAME",
+  "placement": "body",
+  "cases": {
+    "en": "<p class=\"bio\">Ahmedreza Samadi</p>",
+    "fa": "<p class=\"bio\">احمدرضا سمادی</p>",
+    "ar": "<p class=\"bio\">أحمدرضا سمادي</p>"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "rule": "SEO-BREADCRUMB",
+  "placement": "body",
+  "cases": {
+    "en": "<nav aria-label=\"Breadcrumb\"><a href=\"/\">Home</a></nav>",
+    "fa": "<nav aria-label=\"مسیر صفحه\"><a href=\"/\">خانه</a></nav>",
+    "ar": "<nav aria-label=\"مسار الصفحة\"><a href=\"/\">الرئيسية</a></nav>"
+  }
+}

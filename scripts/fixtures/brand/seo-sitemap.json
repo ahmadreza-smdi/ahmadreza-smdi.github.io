@@ -1,0 +1,9 @@
+{
+  "rule": "SEO-SITEMAP",
+  "placement": "sitemap",
+  "cases": {
+    "en": "<url><loc>https://a-samadi.com/missing-fixture.html</loc></url>",
+    "fa": "<url><loc>https://a-samadi.com/fa/missing-fixture.html</loc></url>",
+    "ar": "<url><loc>https://a-samadi.com/ar/missing-fixture.html</loc></url>"
+  }
+}

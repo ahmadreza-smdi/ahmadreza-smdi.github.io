@@ -1,0 +1,9 @@
+{
+  "rule": "SEO-FREEZE",
+  "placement": "h1",
+  "cases": {
+    "en": "Changed heading",
+    "fa": "عنوان تغییر کرد",
+    "ar": "تغيّر العنوان"
+  }
+}

@@ -1,0 +1,1206 @@
+[
+  {
+    "rule": "BR-HYPE",
+    "path": "writing/passkeys-face-id.html",
+    "field": "JSON-LD description",
+    "fingerprint": "9952c99d369cbcb48d37a21cb99b3c54a7ab040b263f41bd96b41e1d1778e088",
+    "reason": "The passkey explanation uses “unlock” literally for device authentication. It makes no marketing claim."
+  },
+  {
+    "rule": "BR-HYPE",
+    "path": "writing/passkeys-face-id.html",
+    "field": "description",
+    "fingerprint": "9952c99d369cbcb48d37a21cb99b3c54a7ab040b263f41bd96b41e1d1778e088",
+    "reason": "The passkey explanation uses “unlock” literally for device authentication. It makes no marketing claim."
+  },
+  {
+    "rule": "BR-HYPE",
+    "path": "writing/passkeys-face-id.html",
+    "field": "og:description",
+    "fingerprint": "9952c99d369cbcb48d37a21cb99b3c54a7ab040b263f41bd96b41e1d1778e088",
+    "reason": "The passkey explanation uses “unlock” literally for device authentication. It makes no marketing claim."
+  },
+  {
+    "rule": "BR-HYPE",
+    "path": "writing/passkeys-face-id.html",
+    "field": "twitter:description",
+    "fingerprint": "9952c99d369cbcb48d37a21cb99b3c54a7ab040b263f41bd96b41e1d1778e088",
+    "reason": "The passkey explanation uses “unlock” literally for device authentication. It makes no marketing claim."
+  },
+  {
+    "rule": "BR-LINKS",
+    "path": "studies/rent-own-2026/rent-own-study-source.zip!build_preview.py",
+    "field": "download URL",
+    "fingerprint": "c1ac08a0f657384654efe5ffa27e5786486d6a26e08d59012fd2f2a59b70d844",
+    "reason": "This retired newsletter URL occurs in the original archived preview builder. The reproducible study archive is preserved; the published study pages do not link to the newsletter."
+  },
+  {
+    "rule": "BR-ROLE-ORDER",
+    "path": "ar/about.html",
+    "field": "description",
+    "fingerprint": "9bc7c84fe600674bb7e6e868ebde0acb5d647167e30ad59ceea36b4e26b72d10",
+    "reason": "The reviewed short About snippet names Appraiva first and abbreviates the operating role to fit the search field. The visible biography and Person graph give both full titles. Owner review is required to change this localized snippet."
+  },
+  {
+    "rule": "BR-ROLE-ORDER",
+    "path": "ar/about.html",
+    "field": "og:description",
+    "fingerprint": "9bc7c84fe600674bb7e6e868ebde0acb5d647167e30ad59ceea36b4e26b72d10",
+    "reason": "The reviewed short About snippet names Appraiva first and abbreviates the operating role to fit the search field. The visible biography and Person graph give both full titles. Owner review is required to change this localized snippet."
+  },
+  {
+    "rule": "BR-ROLE-ORDER",
+    "path": "ar/about.html",
+    "field": "twitter:description",
+    "fingerprint": "9bc7c84fe600674bb7e6e868ebde0acb5d647167e30ad59ceea36b4e26b72d10",
+    "reason": "The reviewed short About snippet names Appraiva first and abbreviates the operating role to fit the search field. The visible biography and Person graph give both full titles. Owner review is required to change this localized snippet."
+  },
+  {
+    "rule": "BR-ROLE-ORDER",
+    "path": "fa/about.html",
+    "field": "description",
+    "fingerprint": "9a40c3137160efd4626c2b0585841d115bb6ed67310f03c9619684d35c19b81b",
+    "reason": "The reviewed short About snippet names Appraiva first and abbreviates the operating role to fit the search field. The visible biography and Person graph give both full titles. Owner review is required to change this localized snippet."
+  },
+  {
+    "rule": "BR-ROLE-ORDER",
+    "path": "fa/about.html",
+    "field": "og:description",
+    "fingerprint": "9a40c3137160efd4626c2b0585841d115bb6ed67310f03c9619684d35c19b81b",
+    "reason": "The reviewed short About snippet names Appraiva first and abbreviates the operating role to fit the search field. The visible biography and Person graph give both full titles. Owner review is required to change this localized snippet."
+  },
+  {
+    "rule": "BR-ROLE-ORDER",
+    "path": "fa/about.html",
+    "field": "twitter:description",
+    "fingerprint": "9a40c3137160efd4626c2b0585841d115bb6ed67310f03c9619684d35c19b81b",
+    "reason": "The reviewed short About snippet names Appraiva first and abbreviates the operating role to fit the search field. The visible biography and Person graph give both full titles. Owner review is required to change this localized snippet."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "about.html",
+    "field": "datePublished",
+    "fingerprint": "9ddb82ff7ca60ad9586d974e8abed9af472cd1cb114d721af57ed20c1b4ebbd2",
+    "reason": "The CreativeWork source records only 2024-01-12. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/about.html",
+    "field": "datePublished",
+    "fingerprint": "9ddb82ff7ca60ad9586d974e8abed9af472cd1cb114d721af57ed20c1b4ebbd2",
+    "reason": "The CreativeWork source records only 2024-01-12. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/index.html",
+    "field": "datePublished",
+    "fingerprint": "9ddb82ff7ca60ad9586d974e8abed9af472cd1cb114d721af57ed20c1b4ebbd2",
+    "reason": "The CreativeWork source records only 2024-01-12. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/studies/rent-own-2026/index.html",
+    "field": "datePublished",
+    "fingerprint": "e85c5195b5dcc29e439fdf1a5d3f53644ef01abbdb95edc20ddbf20d215c9711",
+    "reason": "The SoftwareSourceCode source records only 2026-10-15. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/studies/rent-own-2026/index.html",
+    "field": "visible datetime",
+    "fingerprint": "f39a418bad47ff70c5dd662225dbf883f5860281922887126e9cd180571da79d",
+    "reason": "The visible date source records only 2026-10-20. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/ai-agent-safety-boundaries.html",
+    "field": "datePublished",
+    "fingerprint": "a0a764f496b11bbb3022c173ff5a4e9c638e30325954dcb66bfd955780d89939",
+    "reason": "The Article source records only 2026-09-29. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/ai-agent-safety-boundaries.html",
+    "field": "visible datetime",
+    "fingerprint": "a0a764f496b11bbb3022c173ff5a4e9c638e30325954dcb66bfd955780d89939",
+    "reason": "The visible date source records only 2026-09-29. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/ai-cost-per-verified-result.html",
+    "field": "datePublished",
+    "fingerprint": "9492b87272963a792fe89cd861045bde495d049a6bf9dc9f760f4dfd05f880c5",
+    "reason": "The Article source records only 2026-09-24. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/ai-home-value-estimates.html",
+    "field": "datePublished",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The Article source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/ai-home-value-estimates.html",
+    "field": "visible datetime",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The visible date source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/ai-human-review-real-estate.html",
+    "field": "datePublished",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The Article source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/ai-human-review-real-estate.html",
+    "field": "visible datetime",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The visible date source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/ai-rental-yield-cash-flow.html",
+    "field": "datePublished",
+    "fingerprint": "c894114fbc6a6bec76419aa2d9ebfdb7d19ddc9212c0d59b25aadf488b032a1c",
+    "reason": "The Article source records only 2026-10-09. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/ai-rental-yield-cash-flow.html",
+    "field": "visible datetime",
+    "fingerprint": "c894114fbc6a6bec76419aa2d9ebfdb7d19ddc9212c0d59b25aadf488b032a1c",
+    "reason": "The visible date source records only 2026-10-09. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/connected-ai-apps.html",
+    "field": "datePublished",
+    "fingerprint": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+    "reason": "The Article source records only 2026-09-25. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/connected-ai-apps.html",
+    "field": "visible datetime",
+    "fingerprint": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+    "reason": "The visible date source records only 2026-09-25. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/foldable-two-batteries.html",
+    "field": "datePublished",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The Article source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/foldable-two-batteries.html",
+    "field": "visible datetime",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The visible date source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/how-satellite-messaging-works.html",
+    "field": "datePublished",
+    "fingerprint": "3549c46a3bbfd1f05533dd68eaf3d366417cc144c7893ef277c02e7312a83909",
+    "reason": "The Article source records only 2026-10-04. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/how-satellite-messaging-works.html",
+    "field": "visible datetime",
+    "fingerprint": "3549c46a3bbfd1f05533dd68eaf3d366417cc144c7893ef277c02e7312a83909",
+    "reason": "The visible date source records only 2026-10-04. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/how-zip-files-work.html",
+    "field": "datePublished",
+    "fingerprint": "9c84d43649eea52e7b2f9f0b36a3a2899d51e07ca565ca631e613958283b12d1",
+    "reason": "The Article source records only 2026-09-28. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/how-zip-files-work.html",
+    "field": "visible datetime",
+    "fingerprint": "9c84d43649eea52e7b2f9f0b36a3a2899d51e07ca565ca631e613958283b12d1",
+    "reason": "The visible date source records only 2026-09-28. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/humanoid-robots-at-home.html",
+    "field": "datePublished",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The Article source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/humanoid-robots-at-home.html",
+    "field": "visible datetime",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The visible date source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/incognito-private-browsing.html",
+    "field": "datePublished",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The Article source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/incognito-private-browsing.html",
+    "field": "visible datetime",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The visible date source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "135a65c2272a6f586108edc6466120a0ef3dc00849ca966bb3a7cdb4219a36c4",
+    "reason": "The visible date source records only 2026-09-16. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "3549c46a3bbfd1f05533dd68eaf3d366417cc144c7893ef277c02e7312a83909",
+    "reason": "The visible date source records only 2026-10-04. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The visible date source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "92135a0bf009ebabf01414e498c31793ade22145e56b3a745976f8a04784c132",
+    "reason": "The visible date source records only 2026-09-13. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "9492b87272963a792fe89cd861045bde495d049a6bf9dc9f760f4dfd05f880c5",
+    "reason": "The visible date source records only 2026-09-24. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "9c84d43649eea52e7b2f9f0b36a3a2899d51e07ca565ca631e613958283b12d1",
+    "reason": "The visible date source records only 2026-09-28. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "a0a764f496b11bbb3022c173ff5a4e9c638e30325954dcb66bfd955780d89939",
+    "reason": "The visible date source records only 2026-09-29. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "c0bec6f048ee7734e6c1eb093122a2b0a0bcd2862a9b8c7dbf95287ee392df1f",
+    "reason": "The visible date source records only 2026-10-08. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "c894114fbc6a6bec76419aa2d9ebfdb7d19ddc9212c0d59b25aadf488b032a1c",
+    "reason": "The visible date source records only 2026-10-09. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The visible date source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+    "reason": "The visible date source records only 2026-09-25. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/jev-ai-decision-model.html",
+    "field": "datePublished",
+    "fingerprint": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+    "reason": "The Article source records only 2026-09-25. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/jev-ai-decision-model.html",
+    "field": "visible datetime",
+    "fingerprint": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+    "reason": "The visible date source records only 2026-09-25. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/passkeys-face-id.html",
+    "field": "datePublished",
+    "fingerprint": "9c84d43649eea52e7b2f9f0b36a3a2899d51e07ca565ca631e613958283b12d1",
+    "reason": "The Article source records only 2026-09-28. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/passkeys-face-id.html",
+    "field": "visible datetime",
+    "fingerprint": "9c84d43649eea52e7b2f9f0b36a3a2899d51e07ca565ca631e613958283b12d1",
+    "reason": "The visible date source records only 2026-09-28. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/profitable-but-out-of-cash.html",
+    "field": "datePublished",
+    "fingerprint": "c0bec6f048ee7734e6c1eb093122a2b0a0bcd2862a9b8c7dbf95287ee392df1f",
+    "reason": "The Article source records only 2026-10-08. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/profitable-but-out-of-cash.html",
+    "field": "visible datetime",
+    "fingerprint": "c0bec6f048ee7734e6c1eb093122a2b0a0bcd2862a9b8c7dbf95287ee392df1f",
+    "reason": "The visible date source records only 2026-10-08. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/start-with-the-decision.html",
+    "field": "datePublished",
+    "fingerprint": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+    "reason": "The Article source records only 2026-09-25. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/start-with-the-decision.html",
+    "field": "visible datetime",
+    "fingerprint": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+    "reason": "The visible date source records only 2026-09-25. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/verify-ai-image-claims.html",
+    "field": "datePublished",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The Article source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/verify-ai-image-claims.html",
+    "field": "visible datetime",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The visible date source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/what-accept-cookies-means.html",
+    "field": "datePublished",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The Article source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/what-accept-cookies-means.html",
+    "field": "visible datetime",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The visible date source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/why-ai-sounds-confident.html",
+    "field": "datePublished",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The Article source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/why-ai-sounds-confident.html",
+    "field": "visible datetime",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The visible date source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/why-full-storage-slows-computer.html",
+    "field": "datePublished",
+    "fingerprint": "c894114fbc6a6bec76419aa2d9ebfdb7d19ddc9212c0d59b25aadf488b032a1c",
+    "reason": "The Article source records only 2026-10-09. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/why-full-storage-slows-computer.html",
+    "field": "visible datetime",
+    "fingerprint": "c894114fbc6a6bec76419aa2d9ebfdb7d19ddc9212c0d59b25aadf488b032a1c",
+    "reason": "The visible date source records only 2026-10-09. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/why-phone-stops-charging-at-80.html",
+    "field": "datePublished",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The Article source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "ar/writing/why-phone-stops-charging-at-80.html",
+    "field": "visible datetime",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The visible date source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/about.html",
+    "field": "datePublished",
+    "fingerprint": "9ddb82ff7ca60ad9586d974e8abed9af472cd1cb114d721af57ed20c1b4ebbd2",
+    "reason": "The CreativeWork source records only 2024-01-12. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/index.html",
+    "field": "datePublished",
+    "fingerprint": "9ddb82ff7ca60ad9586d974e8abed9af472cd1cb114d721af57ed20c1b4ebbd2",
+    "reason": "The CreativeWork source records only 2024-01-12. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/studies/rent-own-2026/index.html",
+    "field": "datePublished",
+    "fingerprint": "e85c5195b5dcc29e439fdf1a5d3f53644ef01abbdb95edc20ddbf20d215c9711",
+    "reason": "The SoftwareSourceCode source records only 2026-10-15. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/studies/rent-own-2026/index.html",
+    "field": "visible datetime",
+    "fingerprint": "f39a418bad47ff70c5dd662225dbf883f5860281922887126e9cd180571da79d",
+    "reason": "The visible date source records only 2026-10-20. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/ai-agent-safety-boundaries.html",
+    "field": "datePublished",
+    "fingerprint": "a0a764f496b11bbb3022c173ff5a4e9c638e30325954dcb66bfd955780d89939",
+    "reason": "The Article source records only 2026-09-29. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/ai-agent-safety-boundaries.html",
+    "field": "visible datetime",
+    "fingerprint": "a0a764f496b11bbb3022c173ff5a4e9c638e30325954dcb66bfd955780d89939",
+    "reason": "The visible date source records only 2026-09-29. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/ai-cost-per-verified-result.html",
+    "field": "datePublished",
+    "fingerprint": "9492b87272963a792fe89cd861045bde495d049a6bf9dc9f760f4dfd05f880c5",
+    "reason": "The Article source records only 2026-09-24. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/ai-home-value-estimates.html",
+    "field": "datePublished",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The Article source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/ai-home-value-estimates.html",
+    "field": "visible datetime",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The visible date source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/ai-human-review-real-estate.html",
+    "field": "datePublished",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The Article source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/ai-human-review-real-estate.html",
+    "field": "visible datetime",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The visible date source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/ai-rental-yield-cash-flow.html",
+    "field": "datePublished",
+    "fingerprint": "c894114fbc6a6bec76419aa2d9ebfdb7d19ddc9212c0d59b25aadf488b032a1c",
+    "reason": "The Article source records only 2026-10-09. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/ai-rental-yield-cash-flow.html",
+    "field": "visible datetime",
+    "fingerprint": "c894114fbc6a6bec76419aa2d9ebfdb7d19ddc9212c0d59b25aadf488b032a1c",
+    "reason": "The visible date source records only 2026-10-09. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/connected-ai-apps.html",
+    "field": "datePublished",
+    "fingerprint": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+    "reason": "The Article source records only 2026-09-25. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/connected-ai-apps.html",
+    "field": "visible datetime",
+    "fingerprint": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+    "reason": "The visible date source records only 2026-09-25. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/foldable-two-batteries.html",
+    "field": "datePublished",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The Article source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/foldable-two-batteries.html",
+    "field": "visible datetime",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The visible date source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/how-satellite-messaging-works.html",
+    "field": "datePublished",
+    "fingerprint": "3549c46a3bbfd1f05533dd68eaf3d366417cc144c7893ef277c02e7312a83909",
+    "reason": "The Article source records only 2026-10-04. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/how-satellite-messaging-works.html",
+    "field": "visible datetime",
+    "fingerprint": "3549c46a3bbfd1f05533dd68eaf3d366417cc144c7893ef277c02e7312a83909",
+    "reason": "The visible date source records only 2026-10-04. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/how-zip-files-work.html",
+    "field": "datePublished",
+    "fingerprint": "9c84d43649eea52e7b2f9f0b36a3a2899d51e07ca565ca631e613958283b12d1",
+    "reason": "The Article source records only 2026-09-28. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/how-zip-files-work.html",
+    "field": "visible datetime",
+    "fingerprint": "9c84d43649eea52e7b2f9f0b36a3a2899d51e07ca565ca631e613958283b12d1",
+    "reason": "The visible date source records only 2026-09-28. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/humanoid-robots-at-home.html",
+    "field": "datePublished",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The Article source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/humanoid-robots-at-home.html",
+    "field": "visible datetime",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The visible date source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/incognito-private-browsing.html",
+    "field": "datePublished",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The Article source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/incognito-private-browsing.html",
+    "field": "visible datetime",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The visible date source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "135a65c2272a6f586108edc6466120a0ef3dc00849ca966bb3a7cdb4219a36c4",
+    "reason": "The visible date source records only 2026-09-16. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "3549c46a3bbfd1f05533dd68eaf3d366417cc144c7893ef277c02e7312a83909",
+    "reason": "The visible date source records only 2026-10-04. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The visible date source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "92135a0bf009ebabf01414e498c31793ade22145e56b3a745976f8a04784c132",
+    "reason": "The visible date source records only 2026-09-13. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "9492b87272963a792fe89cd861045bde495d049a6bf9dc9f760f4dfd05f880c5",
+    "reason": "The visible date source records only 2026-09-24. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "9c84d43649eea52e7b2f9f0b36a3a2899d51e07ca565ca631e613958283b12d1",
+    "reason": "The visible date source records only 2026-09-28. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "a0a764f496b11bbb3022c173ff5a4e9c638e30325954dcb66bfd955780d89939",
+    "reason": "The visible date source records only 2026-09-29. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "c0bec6f048ee7734e6c1eb093122a2b0a0bcd2862a9b8c7dbf95287ee392df1f",
+    "reason": "The visible date source records only 2026-10-08. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "c894114fbc6a6bec76419aa2d9ebfdb7d19ddc9212c0d59b25aadf488b032a1c",
+    "reason": "The visible date source records only 2026-10-09. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The visible date source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+    "reason": "The visible date source records only 2026-09-25. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/jev-ai-decision-model.html",
+    "field": "datePublished",
+    "fingerprint": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+    "reason": "The Article source records only 2026-09-25. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/jev-ai-decision-model.html",
+    "field": "visible datetime",
+    "fingerprint": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+    "reason": "The visible date source records only 2026-09-25. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/passkeys-face-id.html",
+    "field": "datePublished",
+    "fingerprint": "9c84d43649eea52e7b2f9f0b36a3a2899d51e07ca565ca631e613958283b12d1",
+    "reason": "The Article source records only 2026-09-28. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/passkeys-face-id.html",
+    "field": "visible datetime",
+    "fingerprint": "9c84d43649eea52e7b2f9f0b36a3a2899d51e07ca565ca631e613958283b12d1",
+    "reason": "The visible date source records only 2026-09-28. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/profitable-but-out-of-cash.html",
+    "field": "datePublished",
+    "fingerprint": "c0bec6f048ee7734e6c1eb093122a2b0a0bcd2862a9b8c7dbf95287ee392df1f",
+    "reason": "The Article source records only 2026-10-08. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/profitable-but-out-of-cash.html",
+    "field": "visible datetime",
+    "fingerprint": "c0bec6f048ee7734e6c1eb093122a2b0a0bcd2862a9b8c7dbf95287ee392df1f",
+    "reason": "The visible date source records only 2026-10-08. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/start-with-the-decision.html",
+    "field": "datePublished",
+    "fingerprint": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+    "reason": "The Article source records only 2026-09-25. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/start-with-the-decision.html",
+    "field": "visible datetime",
+    "fingerprint": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+    "reason": "The visible date source records only 2026-09-25. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/verify-ai-image-claims.html",
+    "field": "datePublished",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The Article source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/verify-ai-image-claims.html",
+    "field": "visible datetime",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The visible date source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/what-accept-cookies-means.html",
+    "field": "datePublished",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The Article source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/what-accept-cookies-means.html",
+    "field": "visible datetime",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The visible date source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/why-ai-sounds-confident.html",
+    "field": "datePublished",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The Article source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/why-ai-sounds-confident.html",
+    "field": "visible datetime",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The visible date source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/why-full-storage-slows-computer.html",
+    "field": "datePublished",
+    "fingerprint": "c894114fbc6a6bec76419aa2d9ebfdb7d19ddc9212c0d59b25aadf488b032a1c",
+    "reason": "The Article source records only 2026-10-09. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/why-full-storage-slows-computer.html",
+    "field": "visible datetime",
+    "fingerprint": "c894114fbc6a6bec76419aa2d9ebfdb7d19ddc9212c0d59b25aadf488b032a1c",
+    "reason": "The visible date source records only 2026-10-09. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/why-phone-stops-charging-at-80.html",
+    "field": "datePublished",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The Article source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "fa/writing/why-phone-stops-charging-at-80.html",
+    "field": "visible datetime",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The visible date source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "index.html",
+    "field": "datePublished",
+    "fingerprint": "9ddb82ff7ca60ad9586d974e8abed9af472cd1cb114d721af57ed20c1b4ebbd2",
+    "reason": "The CreativeWork source records only 2024-01-12. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "studies/rent-burden/index.html",
+    "field": "datePublished",
+    "fingerprint": "23ab569e4844b1a6b7d4bb04cd5f5f158af9b5ee6ffa010490c0fa7fd7896f10",
+    "reason": "The SoftwareSourceCode source records only 2026-10-17. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "studies/rent-own-2026/index.html",
+    "field": "datePublished",
+    "fingerprint": "e85c5195b5dcc29e439fdf1a5d3f53644ef01abbdb95edc20ddbf20d215c9711",
+    "reason": "The SoftwareSourceCode source records only 2026-10-15. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "studies/rent-own-2026/index.html",
+    "field": "visible datetime",
+    "fingerprint": "f39a418bad47ff70c5dd662225dbf883f5860281922887126e9cd180571da79d",
+    "reason": "The visible date source records only 2026-10-20. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/ai-agent-safety-boundaries.html",
+    "field": "datePublished",
+    "fingerprint": "a0a764f496b11bbb3022c173ff5a4e9c638e30325954dcb66bfd955780d89939",
+    "reason": "The Article source records only 2026-09-29. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/ai-agent-safety-boundaries.html",
+    "field": "visible datetime",
+    "fingerprint": "a0a764f496b11bbb3022c173ff5a4e9c638e30325954dcb66bfd955780d89939",
+    "reason": "The visible date source records only 2026-09-29. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/ai-cost-per-verified-result.html",
+    "field": "datePublished",
+    "fingerprint": "9492b87272963a792fe89cd861045bde495d049a6bf9dc9f760f4dfd05f880c5",
+    "reason": "The Article source records only 2026-09-24. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/ai-home-value-estimates.html",
+    "field": "datePublished",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The Article source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/ai-home-value-estimates.html",
+    "field": "visible datetime",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The visible date source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/ai-human-review-real-estate.html",
+    "field": "datePublished",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The Article source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/ai-human-review-real-estate.html",
+    "field": "visible datetime",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The visible date source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/ai-rental-yield-cash-flow.html",
+    "field": "datePublished",
+    "fingerprint": "c894114fbc6a6bec76419aa2d9ebfdb7d19ddc9212c0d59b25aadf488b032a1c",
+    "reason": "The Article source records only 2026-10-09. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/ai-rental-yield-cash-flow.html",
+    "field": "visible datetime",
+    "fingerprint": "c894114fbc6a6bec76419aa2d9ebfdb7d19ddc9212c0d59b25aadf488b032a1c",
+    "reason": "The visible date source records only 2026-10-09. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/connected-ai-apps.html",
+    "field": "datePublished",
+    "fingerprint": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+    "reason": "The Article source records only 2026-09-25. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/connected-ai-apps.html",
+    "field": "visible datetime",
+    "fingerprint": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+    "reason": "The visible date source records only 2026-09-25. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/foldable-two-batteries.html",
+    "field": "datePublished",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The Article source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/foldable-two-batteries.html",
+    "field": "visible datetime",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The visible date source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/how-satellite-messaging-works.html",
+    "field": "datePublished",
+    "fingerprint": "3549c46a3bbfd1f05533dd68eaf3d366417cc144c7893ef277c02e7312a83909",
+    "reason": "The Article source records only 2026-10-04. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/how-satellite-messaging-works.html",
+    "field": "visible datetime",
+    "fingerprint": "3549c46a3bbfd1f05533dd68eaf3d366417cc144c7893ef277c02e7312a83909",
+    "reason": "The visible date source records only 2026-10-04. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/how-zip-files-work.html",
+    "field": "datePublished",
+    "fingerprint": "9c84d43649eea52e7b2f9f0b36a3a2899d51e07ca565ca631e613958283b12d1",
+    "reason": "The Article source records only 2026-09-28. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/how-zip-files-work.html",
+    "field": "visible datetime",
+    "fingerprint": "9c84d43649eea52e7b2f9f0b36a3a2899d51e07ca565ca631e613958283b12d1",
+    "reason": "The visible date source records only 2026-09-28. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/humanoid-robots-at-home.html",
+    "field": "datePublished",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The Article source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/humanoid-robots-at-home.html",
+    "field": "visible datetime",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The visible date source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/incognito-private-browsing.html",
+    "field": "datePublished",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The Article source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/incognito-private-browsing.html",
+    "field": "visible datetime",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The visible date source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "135a65c2272a6f586108edc6466120a0ef3dc00849ca966bb3a7cdb4219a36c4",
+    "reason": "The visible date source records only 2026-09-16. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "3549c46a3bbfd1f05533dd68eaf3d366417cc144c7893ef277c02e7312a83909",
+    "reason": "The visible date source records only 2026-10-04. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The visible date source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "92135a0bf009ebabf01414e498c31793ade22145e56b3a745976f8a04784c132",
+    "reason": "The visible date source records only 2026-09-13. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "9492b87272963a792fe89cd861045bde495d049a6bf9dc9f760f4dfd05f880c5",
+    "reason": "The visible date source records only 2026-09-24. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "9c84d43649eea52e7b2f9f0b36a3a2899d51e07ca565ca631e613958283b12d1",
+    "reason": "The visible date source records only 2026-09-28. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "a0a764f496b11bbb3022c173ff5a4e9c638e30325954dcb66bfd955780d89939",
+    "reason": "The visible date source records only 2026-09-29. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "c0bec6f048ee7734e6c1eb093122a2b0a0bcd2862a9b8c7dbf95287ee392df1f",
+    "reason": "The visible date source records only 2026-10-08. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "c894114fbc6a6bec76419aa2d9ebfdb7d19ddc9212c0d59b25aadf488b032a1c",
+    "reason": "The visible date source records only 2026-10-09. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The visible date source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/index.html",
+    "field": "visible datetime",
+    "fingerprint": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+    "reason": "The visible date source records only 2026-09-25. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/jev-ai-decision-model.html",
+    "field": "datePublished",
+    "fingerprint": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+    "reason": "The Article source records only 2026-09-25. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/jev-ai-decision-model.html",
+    "field": "visible datetime",
+    "fingerprint": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+    "reason": "The visible date source records only 2026-09-25. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/passkeys-face-id.html",
+    "field": "datePublished",
+    "fingerprint": "9c84d43649eea52e7b2f9f0b36a3a2899d51e07ca565ca631e613958283b12d1",
+    "reason": "The Article source records only 2026-09-28. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/passkeys-face-id.html",
+    "field": "visible datetime",
+    "fingerprint": "9c84d43649eea52e7b2f9f0b36a3a2899d51e07ca565ca631e613958283b12d1",
+    "reason": "The visible date source records only 2026-09-28. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/profitable-but-out-of-cash.html",
+    "field": "datePublished",
+    "fingerprint": "c0bec6f048ee7734e6c1eb093122a2b0a0bcd2862a9b8c7dbf95287ee392df1f",
+    "reason": "The Article source records only 2026-10-08. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/profitable-but-out-of-cash.html",
+    "field": "visible datetime",
+    "fingerprint": "c0bec6f048ee7734e6c1eb093122a2b0a0bcd2862a9b8c7dbf95287ee392df1f",
+    "reason": "The visible date source records only 2026-10-08. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/verify-ai-image-claims.html",
+    "field": "datePublished",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The Article source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/verify-ai-image-claims.html",
+    "field": "visible datetime",
+    "fingerprint": "56c7709c9d5df3f7460a68f540e05ddd14847820df9082de659249e7783f8fbe",
+    "reason": "The visible date source records only 2026-10-03. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/what-accept-cookies-means.html",
+    "field": "datePublished",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The Article source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/what-accept-cookies-means.html",
+    "field": "visible datetime",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The visible date source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/why-ai-sounds-confident.html",
+    "field": "datePublished",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The Article source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/why-ai-sounds-confident.html",
+    "field": "visible datetime",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The visible date source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/why-full-storage-slows-computer.html",
+    "field": "datePublished",
+    "fingerprint": "c894114fbc6a6bec76419aa2d9ebfdb7d19ddc9212c0d59b25aadf488b032a1c",
+    "reason": "The Article source records only 2026-10-09. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/why-full-storage-slows-computer.html",
+    "field": "visible datetime",
+    "fingerprint": "c894114fbc6a6bec76419aa2d9ebfdb7d19ddc9212c0d59b25aadf488b032a1c",
+    "reason": "The visible date source records only 2026-10-09. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/why-phone-stops-charging-at-80.html",
+    "field": "datePublished",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The Article source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  },
+  {
+    "rule": "SEO-DATES",
+    "path": "writing/why-phone-stops-charging-at-80.html",
+    "field": "visible datetime",
+    "fingerprint": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+    "reason": "The visible date source records only 2026-10-05. Keep the published calendar date; no source supplies a local publication time."
+  }
+]

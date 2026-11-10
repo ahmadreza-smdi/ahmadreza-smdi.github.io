@@ -1,0 +1,9 @@
+{
+  "rule": "BR-SCRIPT",
+  "placement": "english_head",
+  "cases": {
+    "en": "<meta property=\"og:title\" content=\"A sample عنوان\">",
+    "fa": "<meta name=\"twitter:title\" content=\"Test درباره\">",
+    "ar": "<script type=\"application/ld+json\">{\"@type\":\"Person\",\"description\":\"Test سيرة\"}</script>"
+  }
+}

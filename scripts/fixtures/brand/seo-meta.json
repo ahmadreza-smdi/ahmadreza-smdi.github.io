@@ -1,0 +1,9 @@
+{
+  "rule": "SEO-META",
+  "placement": "description",
+  "cases": {
+    "en": "Tiny",
+    "fa": "کوتاه",
+    "ar": "قصير"
+  }
+}

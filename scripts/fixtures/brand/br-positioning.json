@@ -1,0 +1,9 @@
+{
+  "rule": "BR-POSITIONING",
+  "placement": "body",
+  "cases": {
+    "en": "<p class=\"bio\">I build AI for property decisions.</p>",
+    "fa": "<p class=\"bio\">هوش مصنوعی برای تصمیم‌گیری ملکی</p>",
+    "ar": "<p class=\"bio\">أبني الذكاء الاصطناعي لقرارات عقارية</p>"
+  }
+}
