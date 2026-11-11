@@ -124,3 +124,11 @@ Publishing a reviewed, pushed `main` commit takes two commands.
 Run `python3 scripts/publish.py --dry-run` to verify the reviewed public tree without pushing. To roll back one release, run `python3 scripts/publish.py --rollback`, then run its printed build command. The rollback adds a fast-forward commit containing the previous public tree. If the deployment machine loses power, restore Pages mode with `gh api -X PUT repos/ahmadreza-smdi/ahmadreza-smdi.github.io/pages -f build_type=workflow` and verify the build status before retrying.
 
 For a local preview, run `python3 scripts/build_publish_tree.py --output /path/to/new-preview` with a new directory outside this checkout. Existing public scripts, locales and receipts stay in the tree by default. Withdrawal requires an owner decision.
+
+### Positioning and page-quality checks
+
+- `scripts/check_brand.py` checks the lead idea in the owner's Person data and machine catalogues. Property studies and company-specific descriptions retain their own subjects.
+- `scripts/check_page_quality.py` checks orphan pages, three-click reachability from each language homepage and links to redirect stubs.
+- The same check verifies alternate targets, language and direction, and Persian yeh and kaf while preserving the quoted Arabic name.
+- It also checks positive image dimensions and a 512 KiB initial first-party budget, with 1,792 KiB for the interactive data explorer.
+- `scripts/test_page_quality.py` exercises failing fixtures for each guardrail. The manual runner discovers both scripts. See [the SEO handbook](docs/SEO-HANDBOOK.md).
