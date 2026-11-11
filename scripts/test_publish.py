@@ -82,6 +82,30 @@ class PublishFailureTests(unittest.TestCase):
         self.assertEqual(self.git("rev-parse", "HEAD"), original)
         self.assertFalse(self.site())
 
+    def test_replaced_poster_keeps_existing_public_url(self):
+        from json import loads, dumps
+        self.write("assets/film/cover.png", "old public cover")
+        self.write("assets/film/poster.png", "player poster")
+        self.write("index.html", '<img src="/assets/film/cover.png">')
+        self.git("add", "--", "assets", "index.html")
+        self.git("commit", "-qm", "initial poster")
+        self.git("push", "-q", "origin", "main")
+        self.run_publish()
+        first = self.site()
+        self.write("index.html", '<img src="/assets/film/poster.png">')
+        self.git("commit", "-qam", "reference player poster")
+        self.git("push", "-q", "origin", "main")
+        with self.assertRaisesRegex(ValueError, "Previously published media"):
+            self.run_publish(dry_run=True)
+        self.assertEqual(self.site(), first)
+        manifest = loads((self.root / "publish-extra.json").read_text())
+        manifest["extra"]["assets/film/cover.png"] = "Preserve the original film cover URL."
+        self.write("publish-extra.json", dumps(manifest))
+        self.git("commit", "-qam", "preserve original direct link")
+        self.git("push", "-q", "origin", "main")
+        self.run_publish()
+        self.assertEqual(self.git("show", self.site()[0]+":assets/film/cover.png"), "old public cover")
+
     def test_broken_reference(self):
         self.write("index.html", '<img src="/missing.png">')
         self.git("commit", "-qam", "missing image fixture")

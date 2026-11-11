@@ -145,6 +145,14 @@ def publish(initial_live_tree=None, dry_run=False, rollback=False):
         git("read-tree", "--empty", env=index_environment)
         # Object IDs must match tracked, reviewed Git bytes, including CSV line endings.
         entries = entries_at(revision)
+        if parent and not rollback:
+            previous_paths = set(entries_at(parent))
+            lost = sorted(path for path in previous_paths - set(paths) if path in entries
+                          and path.startswith("assets/") and Path(path).suffix.lower() in
+                          {".jpg", ".jpeg", ".png", ".webp", ".avif", ".gif", ".svg", ".mp4", ".webm"})
+            if lost:
+                raise ValueError("Previously published media would lose its direct URL. Review publish-extra.json: "
+                                 + ", ".join(lost))
         live_entries = entries_at(live_build_commit()) if initial_live_tree else None
         index = bytearray()
         for path in paths:
