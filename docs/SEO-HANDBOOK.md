@@ -8,7 +8,7 @@ The sitemap lists indexable pages. Each translated family points to its own cano
 
 Run `python3 scripts/check_all.py`. The manual runner discovers each local checker, generator check and fixture. A generator check reports stale output. The brand checks protect names, roles, evidence boundaries, identity order, links and the metadata comparison. The link and locale checks validate destinations, fragments, alternate groups, local click depth, text direction and Persian characters. All regular images need positive width and height. The initial first-party byte budget counts local HTML, CSS and its referenced assets, scripts, fonts, eager images and posters. The data explorer has its own measured allowance. The budget is an offline regression check. Browser timing and accessibility still need a browser measurement.
 
-Film, study, source, date and build checks protect structured data and public evidence. The publish-tree builder combines sitemaps, public links, dependencies and reviewed compatibility paths. Scripts, private measurement exports and this handbook are outside that website tree.
+Film, study, source, date and build checks protect structured data and public evidence. The publish-tree builder combines sitemaps, public links, dependencies and reviewed compatibility paths. The private measurement exports and this handbook stay outside the website tree. Previously published compatibility files remain on the site branch until the owner decides their disposition.
 
 ## Publish or restore
 

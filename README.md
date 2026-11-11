@@ -131,4 +131,4 @@ For a local preview, run `python3 scripts/build_publish_tree.py --output /path/t
 - `scripts/check_page_quality.py` checks orphan pages, three-click reachability from each language homepage and links to redirect stubs.
 - The same check verifies alternate targets, language and direction, and Persian yeh and kaf while preserving the quoted Arabic name.
 - It also checks positive image dimensions and a 512 KiB initial first-party budget, with 1,792 KiB for the interactive data explorer.
-- `scripts/test_page_quality.py` exercises failing fixtures for each guardrail. The manual runner discovers both scripts. See [the SEO handbook](docs/SEO-HANDBOOK.md).
+- `scripts/test_page_quality.py` exercises failing fixtures for each guardrail. The manual runner discovers both scripts. The source repository includes the handbook at `docs/SEO-HANDBOOK.md`.
