@@ -1,9 +1,12 @@
 from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
-from unittest.mock import Mock
+from xml.etree import ElementTree
+from enrich_metadata import repair_article_cover
+from unittest.mock import Mock, patch
 from check_site_live import compare
-from check_media import film_issues, image_issues
+from check_brand import declaration_field
+from check_media import film_issues, image_issues, player_issues
 from redirect_stubs import inspect
 from seo_document import Document, SITE
 
@@ -39,6 +42,34 @@ class ReleaseMarkupTest(unittest.TestCase):
                            ("thumbnailUrl", SITE+"missing.png"), ("contentUrl",SITE+"missing.mp4")):
             with self.subTest(key=key, value=value):
                 self.assertTrue(film_issues(self.root, dict(film, **{key:value})))
+
+    def test_article_time_cannot_replace_an_observed_film_release(self):
+        film = dict(contentUrl=SITE+"clip.mp4", uploadDate="2026-01-02T12:30:00+03:30")
+        with patch("check_media.first_public_time", return_value="2026-01-02T12:35:00+03:30"):
+            self.assertIn("uploadDate differs from the verified first public release", film_issues(self.root, film))
+
+    def test_localized_video_and_actual_player_poster(self):
+        doc = Document('<html lang="fa"><video poster="/poster.jpg"><source src="/clip.mp4" type="video/mp4"></video></html>')
+        film = dict(contentUrl=SITE+"clip.mp4", thumbnailUrl=SITE+"poster.jpg", name="فیلم", description="شرح فیلم")
+        self.assertEqual(list(player_issues(doc, film, SITE)), [])
+        broken = dict(film, thumbnailUrl=SITE+"other.jpg", name="Film", description="Description")
+        self.assertEqual(len(list(player_issues(doc, broken, SITE))), 3)
+
+    def test_localized_film_text_compare_with_same_language_only(self):
+        film = {"@type":"VideoObject", "@context":{"name":{"@language":"fa"}}}
+        self.assertEqual(declaration_field(film, "name", "fa"), "name@fa")
+        self.assertEqual(declaration_field(film, "name", "ar"), "name")
+        self.assertEqual(declaration_field(film, "description", "fa"), "description")
+        self.assertEqual(declaration_field(film, "uploadDate", "fa"), "uploadDate")
+
+    def test_unreferenced_generic_sitemap_image_uses_article_cover(self):
+        generic = SITE+"assets/img/ahmadreza-samadi-og.jpg"
+        root = ElementTree.fromstring(f"<url><image><loc>{generic}</loc></image></url>")
+        cover = SITE+"assets/share/article.png"
+        with patch("enrich_metadata.local_image_dimensions", return_value=(1200, 630)):
+            self.assertEqual(repair_article_cover(root, {"image":cover}, generic, set()), 0)
+            self.assertEqual(repair_article_cover(root, {"image":cover}, "Article with its own cover", set()), 1)
+        self.assertEqual(root.findtext("image/loc"), cover)
 
     def test_valid_and_invalid_redirects(self):
         (self.root / "fa").mkdir()

@@ -715,6 +715,16 @@ def document_findings(path, text):
     return results
 
 
+def declaration_field(node, key, page_language):
+    # A translated JSON-LD string is a distinct language-tagged literal. All media
+    # identifiers, dates and untagged properties still compare across languages.
+    context = node.get("@context")
+    if node.get("@type") == "VideoObject" and key in {"name", "description"} and isinstance(context, dict):
+        if context.get(key) == {"@language": page_language}:
+            return key + "@" + page_language
+    return key
+
+
 def audit(root, baseline, with_downloads=True):
     from brand_downloads import downloads, documents
 
@@ -768,7 +778,8 @@ def audit(root, baseline, with_downloads=True):
             for k, v in n.items():
                 if k in ("@id", "@context", "@graph"):
                     continue
-                declarations[n["@id"]][k].setdefault(repr(graph_value(v)), set()).add(
+                field = declaration_field(n, k, language(path))
+                declarations[n["@id"]][field].setdefault(repr(graph_value(v)), set()).add(
                     path
                 )
     for (field, value), paths in unique.items():

@@ -5,7 +5,7 @@ import re
 from urllib.parse import urljoin, urlsplit, unquote
 from xml.etree import ElementTree
 from check_internal_links import protected, site_pages
-from enrich_metadata import local_image_dimensions, video_nodes, video_datetime_issues
+from enrich_metadata import local_image_dimensions, video_nodes, video_datetime_issues, first_public_time
 from seo_document import Document, SITE, public_url, nodes
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -35,11 +35,32 @@ def film_issues(root, film):
     when = film.get("uploadDate") or ""
     if not isinstance(when, str) or not when.endswith("+03:30") or video_datetime_issues(when):
         issues.append("invalid uploadDate or publishing offset")
+    first = first_public_time(content)
+    if first and when != first:
+        issues.append("uploadDate differs from the verified first public release")
     value = film.get("duration")
     match = DURATION.fullmatch(value) if isinstance(value, str) else None
     if not match or not any(float(v) > 0 for v in match.groups() if v):
         issues.append("missing or invalid duration")
     return issues
+
+
+def player_issues(doc, film, url):
+    for player in doc.tags("video"):
+        sources = [source.get("src") for source in doc.tags("source")
+                   if source.within(lambda parent: parent is player)]
+        sources.append(player.get("src"))
+        if film.get("contentUrl") not in {urljoin(url, src) for src in sources if src}:
+            continue
+        thumb = film.get("thumbnailUrl")
+        thumbs = thumb if isinstance(thumb, list) else [thumb]
+        if player.get("poster") and urljoin(url, player.get("poster")) not in thumbs:
+            yield "film thumbnail differs from the visible player poster"
+        lang = doc.tags("html")[0].get("lang").split("-")[0] if doc.tags("html") else ""
+        if lang in {"fa", "ar"}:
+            for key in ("name", "description"):
+                if not re.search(r"[\u0600-\u06ff]", film.get(key) or ""):
+                    yield f"film {key} lacks the page language"
 
 
 def image_issues(doc, graph, url, dimensions):
@@ -91,7 +112,7 @@ def inspect(root):
         if (players or watch) and doc.indexable() and not films:
             records.append((rel, "", ["indexable player lacks VideoObject"]))
         for film in films:
-            issues = film_issues(root, film)
+            issues = film_issues(root, film) + list(player_issues(doc, film, url))
             content = film.get("contentUrl")
             if players and content and content not in playable:
                 issues.append("structured content differs from visible player")
