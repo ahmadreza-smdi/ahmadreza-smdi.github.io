@@ -1,6 +1,6 @@
 # Ahmadreza Samadi
 
-> Ahmadreza Samadi is a technology entrepreneur based in Dubai. He builds AI products as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO.
+> I build AI, and I run a business that has to live with it.
 
 Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احمد صمدی. Arabic: أحمدرضا صمدي.
 
@@ -24,38 +24,11 @@ Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احم�
 
 ## Work
 
-- [Appraiva case study: property imagery, data and search](https://a-samadi.com/work/appraiva.html): How does Appraiva match a property photo to the right record? Ahmadreza Samadi explains how imagery analysis, matching and data enrichment support investor search.
-- [Oxfam Novib: CRM data and analytics](https://a-samadi.com/work/oxfam-novib.html): Ahmadreza Samadi’s Oxfam Novib work: Azure data infrastructure for CRM migration and analytics as a Data Engineer, September 2022–June 2023.
-- [Royal Abraj Group in Dubai and Ahmadreza Samadi’s role](https://a-samadi.com/work/royal-abraj.html): Follow how Ahmadreza Samadi connects an enquiry to CRM follow-up and a customer portal at Royal Abraj Group, a Dubai brokerage and documents-clearing business.
 - [AI Products and Business Systems](https://a-samadi.com/work/): Explore Ahmadreza Samadi’s work on property imagery and search at Appraiva, customer workflows at Royal Abraj Group, and data engineering at Oxfam Novib.
+- [Appraiva case study: property imagery, data and search](https://a-samadi.com/work/appraiva.html): How does Appraiva match a property photo to the right record? Ahmadreza Samadi explains how imagery analysis, matching and data enrichment support investor search.
+- [Royal Abraj Group in Dubai and Ahmadreza Samadi’s role](https://a-samadi.com/work/royal-abraj.html): Follow how Ahmadreza Samadi connects an enquiry to CRM follow-up and a customer portal at Royal Abraj Group, a Dubai brokerage and documents-clearing business.
+- [Oxfam Novib: CRM data and analytics](https://a-samadi.com/work/oxfam-novib.html): Ahmadreza Samadi’s Oxfam Novib work: Azure data infrastructure for CRM migration and analytics as a Data Engineer, September 2022–June 2023.
 - [Hamrah e Aval (MCI)](https://a-samadi.com/work/mci.html): Ahmadreza Samadi’s MCI work used RFM and behavioral data for customer segmentation, churn-risk analysis and campaign targeting, without uplift claims.
-
-## Studies
-
-- [Rent vs owning: 393 metro cash-budget scenarios](https://a-samadi.com/studies/rent-own-2026/): Rent vs owning through hypothetical landlord cash budgets across 393 metros. Compare HUD rent areas, ACS values, costs and limits; not a personal buy-or-rent answer.
-- [Property Decision Data](https://a-samadi.com/studies/): Open property studies by Ahmadreza Samadi, with source years, geography, assumptions, methods and practical decision tools.
-- [Rent burden in 386 US metros: ACS 2024](https://a-samadi.com/studies/rent-burden/): A reproducible ACS 2024 study of 30% and 50% gross-rent-to-income thresholds, with explicit denominator exclusions and uncertainty limits.
-
-## Topics
-
-- [AI in real estate: evidence and decisions](https://a-samadi.com/topics/ai-real-estate.html): A reading path through property data, human review, AI workflow costs and rental cash flow, with Ahmadreza Samadi’s work at Appraiva as context.
-- [Business AI and operations in Dubai](https://a-samadi.com/topics/business-systems-dubai.html): Follow a customer enquiry at Royal Abraj Group in Dubai, then explore how to assess an AI assistant’s access, review steps and cost per accepted result.
-- [Tech, explained](https://a-samadi.com/topics/tech-explained.html): Plain-language technology explainers and original films. Choose a mechanism, check its limits, and connect it to the decision you need to make.
-
-## Writing
-
-- [Start with the decision, then build the AI](https://a-samadi.com/writing/start-with-the-decision.html): A practical approach to AI product decisions: start with the customer’s decision, assess the evidence, and evaluate the whole workflow.
-- [AI cost per accepted result](https://a-samadi.com/writing/ai-cost-per-verified-result.html) (article + [film](https://a-samadi.com/watch/business-ai-evaluation-cases.html)): A practical framework for measuring AI workflow cost: include tokens, tools, retries and human review, then divide by results that pass verification.
-- [Writing on AI products and business](https://a-samadi.com/writing/): Read Ahmadreza Samadi on building AI products, testing them on real tasks and counting review costs. Explore property examples and everyday technology explainers.
-- [AI agent safety policy for accounts, tools and approvals](https://a-samadi.com/writing/ai-agent-safety-boundaries.html): Define which accounts, data and tools an AI agent can access. See where permissions are enforced, when a person approves an action and how to revoke access.
-- [AI in real estate decisions: where AI should stop](https://a-samadi.com/writing/ai-human-review-real-estate.html): AI can prepare real estate information; people must verify material claims and explain uncertainty before a client decides. Use an explicit review handoff.
-- [How to check an AI home value estimate against sales](https://a-samadi.com/writing/ai-home-value-estimates.html): When two AI estimates disagree on a home's value, start with the facts each used. Review the sale dates, comparable homes and uncertainty before relying on a figure.
-- [How does property data enrichment connect the right records?](https://a-samadi.com/writing/property-data-enrichment.html): A fictional image-and-record comparison shows how to check property identity, source dates and unresolved claims before combining property information.
-- [Dubai property costs and data: choose the right source](https://a-samadi.com/writing/which-dubai-property-source.html): Choose Dubai property sources by purpose: sale and mortgage fees, rental benchmarks, sales-price indices or a specific valuation. Keep dates and limits visible.
-- [AVM vs. appraisal when comparable sales are limited](https://a-samadi.com/writing/avm-vs-appraisal.html): Compare an automated valuation, a broker opinion and an appraisal. See how missing sales, uncertain property condition and the intended use affect the choice.
-- [AI evaluations: test the task, not just the demo](https://a-samadi.com/writing/business-ai-evaluation-cases.html) (article + [film](https://a-samadi.com/watch/business-ai-evaluation-cases.html)): Ahmadreza Samadi explains why a polished AI demonstration does not establish reliability for the real task: choose evaluation cases from the work.
-- [Building energy audits: diagnose before replacing](https://a-samadi.com/writing/building-energy-audit-decisions.html) (article + [film](https://a-samadi.com/watch/building-energy-audit-decisions.html)): A fictional building manager investigates a high energy bill. Follow the audit questions about equipment and daily operation before deciding what to replace.
-- [More AI agents can expose a shared bottleneck](https://a-samadi.com/writing/agent-workflow-shared-bottlenecks.html) (article + [film](https://a-samadi.com/watch/agent-workflow-shared-bottlenecks.html)): In a fictional dispatch library, every helper needs the same key. Follow the queue to see which tasks an extra agent can take on and which still have to wait.
 
 ## Tools
 
@@ -64,6 +37,33 @@ Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احم�
 - [Dubai property purchase costs and buyer fee calculator](https://a-samadi.com/tools/dubai-purchase-cost.html): Estimate the fees a buyer pays on a completed residential property in Dubai. Enter your quotes and payer shares to see how much each cost adds to the purchase.
 - [Valuation range checker](https://a-samadi.com/tools/valuation-range.html): Compare two to five property estimates: median, range, spread and transparent review flags. Your inputs stay in your browser.
 - [Dubai rental yield calculator for gross and net income](https://a-samadi.com/tools/dubai-rental-yield.html): Calculate gross and net rental yield for a Dubai property using your own rent, vacancy and expenses. See how service charges change the income you keep.
+
+## Writing
+
+- [Writing on AI products and business](https://a-samadi.com/writing/): Read Ahmadreza Samadi on building AI products, testing them on real tasks and counting review costs. Explore property examples and everyday technology explainers.
+- [Start with the decision, then build the AI](https://a-samadi.com/writing/start-with-the-decision.html): A practical approach to AI product decisions: start with the customer’s decision, assess the evidence, and evaluate the whole workflow.
+- [AI evaluations: test the task, not just the demo](https://a-samadi.com/writing/business-ai-evaluation-cases.html) (article + [film](https://a-samadi.com/watch/business-ai-evaluation-cases.html)): Ahmadreza Samadi explains why a polished AI demonstration does not establish reliability for the real task: choose evaluation cases from the work.
+- [AI cost per accepted result](https://a-samadi.com/writing/ai-cost-per-verified-result.html) (article + [film](https://a-samadi.com/watch/business-ai-evaluation-cases.html)): A practical framework for measuring AI workflow cost: include tokens, tools, retries and human review, then divide by results that pass verification.
+- [AI in real estate decisions: where AI should stop](https://a-samadi.com/writing/ai-human-review-real-estate.html): AI can prepare real estate information; people must verify material claims and explain uncertainty before a client decides. Use an explicit review handoff.
+- [AI agent safety policy for accounts, tools and approvals](https://a-samadi.com/writing/ai-agent-safety-boundaries.html): Define which accounts, data and tools an AI agent can access. See where permissions are enforced, when a person approves an action and how to revoke access.
+- [How to check an AI home value estimate against sales](https://a-samadi.com/writing/ai-home-value-estimates.html): When two AI estimates disagree on a home's value, start with the facts each used. Review the sale dates, comparable homes and uncertainty before relying on a figure.
+- [Dubai property costs and data: choose the right source](https://a-samadi.com/writing/which-dubai-property-source.html): Choose Dubai property sources by purpose: sale and mortgage fees, rental benchmarks, sales-price indices or a specific valuation. Keep dates and limits visible.
+- [AVM vs. appraisal when comparable sales are limited](https://a-samadi.com/writing/avm-vs-appraisal.html): Compare an automated valuation, a broker opinion and an appraisal. See how missing sales, uncertain property condition and the intended use affect the choice.
+- [How does property data enrichment connect the right records?](https://a-samadi.com/writing/property-data-enrichment.html): A fictional image-and-record comparison shows how to check property identity, source dates and unresolved claims before combining property information.
+- [Building energy audits: diagnose before replacing](https://a-samadi.com/writing/building-energy-audit-decisions.html) (article + [film](https://a-samadi.com/watch/building-energy-audit-decisions.html)): A fictional building manager investigates a high energy bill. Follow the audit questions about equipment and daily operation before deciding what to replace.
+- [More AI agents can expose a shared bottleneck](https://a-samadi.com/writing/agent-workflow-shared-bottlenecks.html) (article + [film](https://a-samadi.com/watch/agent-workflow-shared-bottlenecks.html)): In a fictional dispatch library, every helper needs the same key. Follow the queue to see which tasks an extra agent can take on and which still have to wait.
+
+## Topics
+
+- [Business AI and operations in Dubai](https://a-samadi.com/topics/business-systems-dubai.html): Follow a customer enquiry at Royal Abraj Group in Dubai, then explore how to assess an AI assistant’s access, review steps and cost per accepted result.
+- [AI in real estate: evidence and decisions](https://a-samadi.com/topics/ai-real-estate.html): A reading path through property data, human review, AI workflow costs and rental cash flow, with Ahmadreza Samadi’s work at Appraiva as context.
+- [Tech, explained](https://a-samadi.com/topics/tech-explained.html): Plain-language technology explainers and original films. Choose a mechanism, check its limits, and connect it to the decision you need to make.
+
+## Studies
+
+- [Property Decision Data](https://a-samadi.com/studies/): Open property studies by Ahmadreza Samadi, with source years, geography, assumptions, methods and practical decision tools.
+- [Rent vs owning: 393 metro cash-budget scenarios](https://a-samadi.com/studies/rent-own-2026/): Rent vs owning through hypothetical landlord cash budgets across 393 metros. Compare HUD rent areas, ACS values, costs and limits; not a personal buy-or-rent answer.
+- [Rent burden in 386 US metros: ACS 2024](https://a-samadi.com/studies/rent-burden/): A reproducible ACS 2024 study of 30% and 50% gross-rent-to-income thresholds, with explicit denominator exclusions and uncertainty limits.
 
 ## Explainers
 

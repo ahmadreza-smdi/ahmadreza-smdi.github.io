@@ -17,7 +17,7 @@ from build_feed import PageMetadata, publication_time
 ROOT = Path(__file__).resolve().parent.parent
 BASE = 'https://a-samadi.com/'
 NS = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
-SUMMARY = json.loads((ROOT / 'locales/brand-layer.json').read_text())['identity']['entity']['en']
+SUMMARY = json.loads((ROOT / 'locales/brand-layer.json').read_text())['identity']['brand_line']['en']
 NOTES = 'Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احمد صمدی. Arabic: أحمدرضا صمدي.'
 PROFILES = [
     ('GitHub', 'https://github.com/ahmadreza-smdi', 'Ahmadreza Samadi’s public GitHub profile, connecting his repositories with the personal website.'),
@@ -34,7 +34,7 @@ PROFILES = [
 CORE_PATHS = (
     '', 'about.html', 'press.html', 'ideas.html', 'work/', 'writing/',
     'work/appraiva.html', 'work/royal-abraj.html', 'work/oxfam-novib.html', 'work/mci.html',
-    'topics/ai-real-estate.html', 'topics/business-systems-dubai.html', 'topics/tech-explained.html',
+    'topics/business-systems-dubai.html', 'topics/ai-real-estate.html', 'topics/tech-explained.html',
     'tools/before-you-build-ai.html', 'writing/start-with-the-decision.html',
     'writing/business-ai-evaluation-cases.html', 'writing/ai-cost-per-verified-result.html',
     'writing/ai-human-review-real-estate.html', 'writing/ai-agent-safety-boundaries.html',
@@ -44,7 +44,7 @@ CORE_PATHS = (
     'writing/which-dubai-property-source.html', 'writing/avm-vs-appraisal.html',
     'writing/property-data-enrichment.html',
 )
-GROUPS = ('Profile', 'Work', 'Studies', 'Topics', 'Writing', 'Films', 'Tools', 'Explainers')
+GROUPS = ('Profile', 'Work', 'Tools', 'Writing', 'Topics', 'Studies', 'Films', 'Explainers')
 RESOURCE_DESCRIPTIONS = {
     'AI workflow cost ledger': 'AI workflow cost ledger includes retries, failed attempts and caller-defined acceptance; the workbook and worked examples are fictional.',
     'ACS2024 metro rent burden': 'ACS2024 metro rent-burden data with a CSV, chart, method and limits; not a property-level estimate.',
@@ -234,7 +234,10 @@ def catalogue(pages, curated):
         raise ValueError('Missing curated destinations: ' + ', '.join(sorted(missing)))
     if curated:
         chosen.update(recent_companions(pages))
-    for url, text in pages.items():
+    priority = {BASE + path: index for index, path in enumerate(CORE_PATHS)}
+    ordered = sorted(pages, key=lambda url: priority.get(url, len(priority)))
+    for url in ordered:
+        text = pages[url]
         name = section(url)
         if name and (not curated or url in chosen):
             label = {BASE: 'Homepage', BASE + 'about.html': 'Biography'}.get(url) or title(text)
