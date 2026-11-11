@@ -151,7 +151,7 @@ def biography():
             def update_person(value):
                 if isinstance(value, dict):
                     if value.get('@type') == 'Person' and value.get('@id') == BASE + '/#person':
-                        value['description'] = identity['entity']['en']
+                        value['description'] = identity['machine_description']
                     for child in value.values():
                         update_person(child)
                 elif isinstance(value, list):
