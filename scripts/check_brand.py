@@ -86,6 +86,33 @@ def normalized(s):
     )
 
 
+# Property studies and case studies describe their own subjects. Only the owner
+# Person and the catalogue introduction make site-wide identity claims.
+PROPERTY_LEAD = re.compile(
+    r"real[ -]estate|proptech|propert(?:y|ies)|housing|valuation|املاک|ملکی|عقار|مسکن", re.I
+)
+BUSINESS_AI_LEAD = re.compile(
+    r"technology entrepreneur|entrepreneur|business|operator|AI\b|artificial intelligence|"
+    r"کارآفرین|هوش مصنوعی|کسب[ ‌و-]*کار|رائد أعمال|الذكاء الاصطناعي|الأعمال", re.I
+)
+AI_FOR_PROPERTY = re.compile(
+    r"(?:\bAI|artificial intelligence|هوش مصنوعی|الذكاء الاصطناعي)\s+"
+    r"(?:(?:for|in|برای|في)\s+)?(?:better\s+)?(?:real[ -]estate|property|املاک|العقار)", re.I
+)
+
+
+def property_first(value):
+    if isinstance(value, list):
+        value = " ".join(v for v in value if isinstance(v, str))
+    if not isinstance(value, str):
+        return False
+    prop = PROPERTY_LEAD.search(value)
+    broader = BUSINESS_AI_LEAD.search(value)
+    directed = AI_FOR_PROPERTY.search(value)
+    return bool(prop and (not broader or prop.start() < broader.start()
+                          or (directed and directed.start() == broader.start())))
+
+
 def prohibited_link(u):
     p = urlsplit(urljoin(SITE, u))
     host = (p.hostname or "").lower().rstrip(".")
@@ -523,6 +550,10 @@ def inspect_page(path, raw, expected_hub=None):
                         and prohibited_link(val)
                     ):
                         hit("BR-LINKS", "JSON-LD " + k, "prohibited destination", val)
+        if kind == "Person" and (identifier == SITE + "#person" or n.get("name") == "Ahmadreza Samadi"):
+            for field in ("description", "disambiguatingDescription", "knowsAbout"):
+                if property_first(n.get(field)):
+                    hit("BR-IDENTITY-LEAD", "Person " + field, "property leads the personal identity", n[field])
         if kind == "Person":
             for field in ("name", "givenName", "familyName", "alternateName"):
                 if (
@@ -650,6 +681,10 @@ def document_findings(path, text):
         "-facts.pdf" in path or "-bio.txt" in path or path.endswith(".vcf")
     )
     llms = path.startswith("llms")
+    if llms:
+        summary = next((line[2:] for line in text.splitlines() if line.startswith("> ")), "")
+        if property_first(summary):
+            hit("BR-IDENTITY-LEAD", "catalogue summary", "property leads the personal identity", summary)
     if profile or llms:
         for line in text.splitlines():
             line = line.strip()
