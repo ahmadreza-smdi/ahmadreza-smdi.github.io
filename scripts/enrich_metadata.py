@@ -18,7 +18,7 @@ from functools import lru_cache
 from pathlib import Path
 from check_internal_links import site_pages
 from seo_document import Document
-from urllib.parse import urljoin, urlsplit
+from urllib.parse import urljoin
 import html
 import json
 import re
@@ -346,24 +346,11 @@ def local_image_dimensions(url):
 # These three films were released with their articles, without separate watch pages.
 # Timestamps are the first successful native Pages deployments of their media blobs
 # (cbcd50a and 399a508). Durations are measured from the actual MP4 containers.
-# Durations measured from the three article-only MP4 files.
 ARTICLE_FILMS = {
-    'where-wearable-ai-computation-runs': 'PT39.958333S',
-    'virtual-machine-device-sharing-explained': 'PT44.833008S',
-    'geospatial-ai-map-answer-review': 'PT44.041667S',
+    'where-wearable-ai-computation-runs': ('2026-10-16T23:53:42+03:30', 'PT39.958333S'),
+    'virtual-machine-device-sharing-explained': ('2026-10-16T23:53:42+03:30', 'PT44.833008S'),
+    'geospatial-ai-map-answer-review': ('2026-10-17T21:01:19+03:30', 'PT44.041667S'),
 }
-
-
-@lru_cache(maxsize=1)
-def film_releases():
-    source = Path(__file__).with_name('film-release-evidence.json')
-    return json.loads(source.read_text(encoding='utf-8'))
-
-
-def first_public_time(content_url):
-    if isinstance(content_url, str) and content_url.startswith(BASE):
-        return film_releases().get(urlsplit(content_url).path, {}).get('published')
-    return None
 
 
 def describe_media(path, text):
@@ -378,15 +365,6 @@ def describe_media(path, text):
         _, page = main_node(text)
         if page:
             media_id = page.get('mainEntity', {}).get('@id')
-    posters = {}
-    for player in doc.tags('video'):
-        sources = [source.get('src') for source in doc.tags('source')
-                   if source.get('type') == 'video/mp4' and source.within(lambda parent: parent is player)]
-        if player.get('src'):
-            sources.append(player.get('src'))
-        if player.get('poster'):
-            for src in sources:
-                posters[urljoin(url, src)] = urljoin(url, player.get('poster'))
     images_by_url = {}
     for image in doc.tags('img'):
         src = urljoin(url, image.get('src'))
@@ -404,11 +382,7 @@ def describe_media(path, text):
         sources = [e for e in doc.tags('source') if e.get('type') == 'video/mp4']
         if len(videos) != 1 or len(sources) != 1 or not videos[0].get('poster'):
             raise ValueError(f'{path}: reviewed article player or poster changed')
-        duration = ARTICLE_FILMS[path.stem]
-        content = urljoin(url, sources[0].get('src'))
-        uploaded = first_public_time(content)
-        if not uploaded:
-            raise ValueError(f'{path}: no verified first public release for {content}')
+        uploaded, duration = ARTICLE_FILMS[path.stem]
         film = {'@type': 'VideoObject', '@id': url + '#film', 'name': article['headline'],
                 'description': article['description'], 'inLanguage': language(text),
                 'thumbnailUrl': urljoin(url, videos[0].get('poster')),
@@ -419,14 +393,6 @@ def describe_media(path, text):
         data = json.loads(block[2])
         before = json.dumps(data, ensure_ascii=False)
         for node in list(schema_nodes(data)):
-            if node.get('@type') == 'VideoObject' and node.get('contentUrl') in posters:
-                node['thumbnailUrl'] = posters[node['contentUrl']]
-                published = first_public_time(node['contentUrl'])
-                if published:
-                    node['uploadDate'] = published
-                if article and language(text) in {'fa', 'ar'}:
-                    node['name'], node['description'] = article['headline'], article['description']
-                    node['@context'] = {key: {'@language': language(text)} for key in ('name', 'description')}
             if node.get('@type') == 'ImageObject' and image_url(node):
                 src = image_url(node)
                 size = local_image_dimensions(src)
@@ -665,6 +631,14 @@ def visible_trail(text, url):
 def film_metadata(root):
     """The dedicated watch page describes the English film, including on translated articles."""
     result = {}
+    namespaces = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9', 'v': 'http://www.google.com/schemas/sitemap-video/1.1'}
+    sitemap_file = root / 'sitemap.xml'
+    thumbnails = {}
+    if sitemap_file.is_file():
+        for entry in ElementTree.parse(sitemap_file).findall('s:url', namespaces):
+            thumb = entry.findtext('v:video/v:thumbnail_loc', namespaces=namespaces)
+            if thumb:
+                thumbnails[entry.findtext('s:loc', namespaces=namespaces)] = thumb
     for path in sorted((root / 'watch').glob('*.html')):
         watch_text = path.read_text()
         watch_url = canonical(watch_text)
@@ -677,6 +651,8 @@ def film_metadata(root):
                     record = DESCRIPTION_UPDATES.get(path.relative_to(root).as_posix(), {})
                     if 'description' in record:
                         result[node['@id']]['description'] = record['description']
+                    if watch_url in thumbnails:
+                        result[node['@id']]['thumbnailUrl'] = thumbnails[watch_url]
                     result[node['@id']]['mainEntityOfPage'] = {'@id': watch_url + '#webpage'}
     return result
 
@@ -794,7 +770,6 @@ def preserve_public_contact(text):
 
 
 def enrich(path, text):
-    original = text
     head_end = text.find('</head>')
     if head_end < 0:
         return text, []
@@ -968,21 +943,7 @@ def enrich(path, text):
     text, schema_added = complete_schema(path, text, include_breadcrumb=bool(trail))
     aligned = align_public_entities(path, text, trail)
     detailed = describe_media(path, aligned)
-    if detailed == original:
-        return detailed, []
     return detailed, added + linked + image_added + schema_added + (['public entity links'] if aligned != text else []) + (['editorial media'] if detailed != aligned else [])
-
-
-def repair_article_cover(entry, article, source, listed):
-    fallback = BASE + 'assets/img/ahmadreza-samadi-og.jpg'
-    primary = image_url(article.get('image'))
-    if not primary or primary == fallback or fallback in source or not local_image_dimensions(primary):
-        return 0
-    matches = [loc for loc in entry.findall('{*}image/{*}loc') if loc.text == fallback]
-    for loc in matches:
-        loc.text = primary
-        listed.add(primary)
-    return len(matches)
 
 
 def sitemap(check):
@@ -1025,8 +986,6 @@ def sitemap(check):
         if page.is_file():
             source = page.read_text()
             _, node = main_node(source)
-            if node and node.get('@type') in ARTICLE_TYPES:
-                added += repair_article_cover(url, node, source, listed_images)
             if relative.startswith('writing/') and node and node.get('@type') in ARTICLE_TYPES:
                 primary = image_url(node.get('image'))
                 if (primary and primary.startswith(BASE + 'assets/share/') and
@@ -1035,15 +994,6 @@ def sitemap(check):
                     ElementTree.SubElement(image_entry, image_ns + 'loc').text = primary
                     listed_images.add(primary)
                     added += 1
-            if relative.startswith('watch/'):
-                for video in video_nodes(source):
-                    for entry in url.findall('{*}video'):
-                        if entry.findtext('{*}content_loc') == video.get('contentUrl'):
-                            for field, key in [('thumbnail_loc', 'thumbnailUrl'), ('publication_date', 'uploadDate')]:
-                                item = entry.find('{*}' + field)
-                                if item is not None and item.text != video[key]:
-                                    item.text = video[key]
-                                    added += 1
             if relative.startswith('writing/') and page.stem in ARTICLE_FILMS:
                 film = next((f for f in video_nodes(source) if f.get('@id') == loc + '#film'), None)
                 if film:
@@ -1119,11 +1069,11 @@ def main():
         if issues:
             invalid += 1
             print('INVALID ' + relative.as_posix() + ': ' + '; '.join(issues))
-    links = sitemap(check)
     video_problems = video_collection_issues(video_records, (ROOT / 'sitemap.xml').read_text())
     invalid += len(video_problems)
     for issue in video_problems:
         print('INVALID ' + issue)
+    links = sitemap(check)
     if links:
         print(('MISSING ' if check else 'Updated ') + f'{links} sitemap metadata records')
     if invalid or (check and (changed or links)):

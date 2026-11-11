@@ -121,6 +121,4 @@ Publishing a reviewed, pushed `main` commit takes two commands.
 1. Run `python3 scripts/publish.py`. It builds the tree and pushes its commit to `site` by fast-forward. The first commit has no parent.
 2. Run the single shell command printed by the publisher. It sets the native Pages source to `site`, requests a build, waits for the exact commit and restores workflow mode on exit. Check the public delivery with `python3 scripts/check_all.py --live`.
 
-Run `python3 scripts/publish.py --dry-run` to verify the reviewed public tree without pushing. To roll back one release, run `python3 scripts/publish.py --rollback`, then run its printed build command. The rollback adds a fast-forward commit containing the previous public tree. If the deployment machine loses power, restore Pages mode with `gh api -X PUT repos/ahmadreza-smdi/ahmadreza-smdi.github.io/pages -f build_type=workflow` and verify the build status before retrying.
-
 For a local preview, run `python3 scripts/build_publish_tree.py --output /path/to/new-preview` with a new directory outside this checkout. Existing public scripts, locales and receipts stay in the tree by default. Withdrawal requires an owner decision.

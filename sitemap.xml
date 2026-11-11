@@ -643,7 +643,7 @@
         <loc>https://a-samadi.com/watch/ai-confidence.html</loc>
         <lastmod>2026-10-19T10:43:53+03:30</lastmod>
         <video:video>
-            <video:thumbnail_loc>https://a-samadi.com/assets/writing/ai-confidence/cover-poster.jpg</video:thumbnail_loc>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/ai-confidence/og.png</video:thumbnail_loc>
             <video:title>Why does AI sound so confident when it is wrong?</video:title>
             <video:description>By Ahmadreza Samadi. An animated fictional museum example explains confident AI mistakes and how to check evidence. English narration and captions.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/ai-confidence/ai-confidence.mp4</video:content_loc>
@@ -654,7 +654,7 @@
         <loc>https://a-samadi.com/watch/cookie-consent.html</loc>
         <lastmod>2026-10-19T10:43:53+03:30</lastmod>
         <video:video>
-            <video:thumbnail_loc>https://a-samadi.com/assets/writing/cookie-consent/cover-poster.jpg</video:thumbnail_loc>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/cookie-consent/og.png</video:thumbnail_loc>
             <video:title>What does Accept cookies actually mean?</video:title>
             <video:description>By Ahmadreza Samadi. An animated explanation of cookie banners and what accepting optional purposes may mean. English narration and captions.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/cookie-consent/film.mp4</video:content_loc>
@@ -665,7 +665,7 @@
         <loc>https://a-samadi.com/watch/charging-80.html</loc>
         <lastmod>2026-10-19T10:43:53+03:30</lastmod>
         <video:video>
-            <video:thumbnail_loc>https://a-samadi.com/assets/writing/charging-80/cover-poster.jpg</video:thumbnail_loc>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/charging-80/og.png</video:thumbnail_loc>
             <video:title>Why does your phone stop charging at 80%?</video:title>
             <video:description>By Ahmadreza Samadi. An animated explanation of charge limits, learned charging routines and heat pauses. English narration and captions.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/charging-80/film.mp4</video:content_loc>
@@ -676,7 +676,7 @@
         <loc>https://a-samadi.com/watch/profit-cash.html</loc>
         <lastmod>2026-10-19T10:43:53+03:30</lastmod>
         <video:video>
-            <video:thumbnail_loc>https://a-samadi.com/assets/writing/profit-cash/cover-poster.jpg</video:thumbnail_loc>
+            <video:thumbnail_loc>https://a-samadi.com/assets/share/profit-cash.png</video:thumbnail_loc>
             <video:title>Profitable. But out of cash: why payment timing matters</video:title>
             <video:description>By Ahmadreza Samadi. An animated example of a profitable business short of cash because bills and customer payments fall on different dates. English narration and captions.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/profit-cash/film.mp4</video:content_loc>
@@ -714,7 +714,7 @@
         <loc>https://a-samadi.com/watch/rental-yield.html</loc>
         <lastmod>2026-10-19T10:43:53+03:30</lastmod>
         <video:video>
-            <video:thumbnail_loc>https://a-samadi.com/assets/writing/rental-yield/cover-poster.jpg</video:thumbnail_loc>
+            <video:thumbnail_loc>https://a-samadi.com/assets/share/ai-rental-yield-cash-flow.png</video:thumbnail_loc>
             <video:title>AI says 8% rental yield. Why is the owner still paying?</video:title>
             <video:description>By Ahmadreza Samadi. Watch the 99-second film to see why an 8% gross rental yield can coexist with a cash shortfall.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/rental-yield/film.mp4</video:content_loc>
@@ -875,12 +875,12 @@
         <loc>https://a-samadi.com/watch/iphone-duo.html</loc>
         <lastmod>2026-10-19T10:43:53+03:30</lastmod>
         <video:video>
-            <video:thumbnail_loc>https://a-samadi.com/assets/writing/iphone-duo/cover-poster.jpg</video:thumbnail_loc>
+            <video:thumbnail_loc>https://a-samadi.com/assets/share/iphone-duo-price-per-day.png</video:thumbnail_loc>
             <video:title>iPhone Duo: what does the extra $800 cost per day?</video:title>
             <video:description>By Ahmadreza Samadi. Watch the 104-second film comparing the $800 model-price gap over three years. English captions, a transcript and the calculation’s limits are included.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/iphone-duo/film.mp4</video:content_loc>
             <video:duration>104</video:duration>
-            <video:publication_date>2026-10-10T02:12:51+03:30</video:publication_date>
+            <video:publication_date>2026-10-10T02:10:47+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -1212,7 +1212,7 @@
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/property-data-enrichment.html" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/property-data-enrichment.html" />
         <image:image>
-            <image:loc>https://a-samadi.com/assets/share/property-data-enrichment.png</image:loc>
+            <image:loc>https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg</image:loc>
             <image:title>How does property data enrichment connect an image to the right property?</image:title>
         </image:image>
     </url>
@@ -1224,7 +1224,7 @@
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/property-data-enrichment.html" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/property-data-enrichment.html" />
         <image:image>
-            <image:loc>https://a-samadi.com/assets/share/property-data-enrichment.png</image:loc>
+            <image:loc>https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg</image:loc>
             <image:title>غنی‌سازی داده‌های ملک چگونه یک تصویر را به ملک درست پیوند می‌دهد؟</image:title>
         </image:image>
     </url>
@@ -1236,7 +1236,7 @@
         <xhtml:link rel="alternate" hreflang="ar" href="https://a-samadi.com/ar/writing/property-data-enrichment.html" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://a-samadi.com/writing/property-data-enrichment.html" />
         <image:image>
-            <image:loc>https://a-samadi.com/assets/share/property-data-enrichment.png</image:loc>
+            <image:loc>https://a-samadi.com/assets/img/ahmadreza-samadi-og.jpg</image:loc>
             <image:title>كيف يربط إثراء البيانات العقارية الصورة بالعقار الصحيح؟</image:title>
         </image:image>
     </url>
@@ -1681,7 +1681,7 @@
             <video:title>How a virtual PC can use your real printer</video:title>
             <video:description>Our original checklist: Which virtual PC? Which resources? Do I need each one? The film is conceptual, not product footage or a tested setup.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/virtual-machine-device-sharing-explained/explainer.mp4</video:content_loc>
-            <video:publication_date>2026-10-15T21:00:04+03:30</video:publication_date>
+            <video:publication_date>2026-10-16T23:53:42+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -1796,7 +1796,7 @@
             <video:title>Where does your wearable’s AI run?</video:title>
             <video:description>Ahmadreza Samadi explains wearable AI computation: which tasks run locally, what data is sent out and what happens without a connection.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/where-wearable-ai-computation-runs/explainer.mp4</video:content_loc>
-            <video:publication_date>2026-10-16T21:00:39+03:30</video:publication_date>
+            <video:publication_date>2026-10-16T23:53:42+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -1935,7 +1935,7 @@
             <video:title>A map answer. The right place?</video:title>
             <video:description>Ahmadreza Samadi’s geospatial AI checklist: check the boundary, date, source and assumptions behind a map answer; keep unsupported conclusions open.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/geospatial-ai-map-answer-review/explainer.mp4</video:content_loc>
-            <video:publication_date>2026-10-17T21:00:39+03:30</video:publication_date>
+            <video:publication_date>2026-10-17T21:01:19+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -1999,11 +1999,11 @@
         <loc>https://a-samadi.com/watch/phone-location-across-street.html</loc>
         <lastmod>2026-10-18T21:00:00+03:30</lastmod>
         <video:video>
-            <video:thumbnail_loc>https://a-samadi.com/assets/writing/phone-location-across-street/cover-poster.jpg</video:thumbnail_loc>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/phone-location-across-street/cover.png</video:thumbnail_loc>
             <video:title>Why your phone puts you across the street</video:title>
             <video:description>A fictional pickup explains reflected satellite signals, an uncertain map dot and a practical way to agree where to meet.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/phone-location-across-street/film.mp4</video:content_loc>
-            <video:publication_date>2026-10-18T21:00:02+03:30</video:publication_date>
+            <video:publication_date>2026-10-18T21:00:00+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -2043,11 +2043,11 @@
         <loc>https://a-samadi.com/watch/ai-agents-shared-notebook.html</loc>
         <lastmod>2026-10-19T10:13:02+03:30</lastmod>
         <video:video>
-            <video:thumbnail_loc>https://a-samadi.com/assets/writing/ai-agents-shared-notebook/cover-poster.jpg</video:thumbnail_loc>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/ai-agents-shared-notebook/cover.png</video:thumbnail_loc>
             <video:title>AI agents need shared notes, and a way to check them</video:title>
             <video:description>A fictional repair workshop explains reusable agent knowledge, context checks and a boundary for private project information.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/ai-agents-shared-notebook/film.mp4</video:content_loc>
-            <video:publication_date>2026-10-19T10:00:13+03:30</video:publication_date>
+            <video:publication_date>2026-10-19T10:13:02+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -2099,11 +2099,11 @@
         <loc>https://a-samadi.com/watch/tesla-roadster-flight-claim.html</loc>
         <lastmod>2026-10-19T21:25:38+03:30</lastmod>
         <video:video>
-            <video:thumbnail_loc>https://a-samadi.com/assets/writing/tesla-roadster-flight-claim/cover-poster.jpg</video:thumbnail_loc>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/tesla-roadster-flight-claim/cover.png</video:thumbnail_loc>
             <video:title>Tesla says Roadster can fly: three questions to ask</video:title>
             <video:description>An illustrated hangar explains thrust and separates a manufacturer claim from availability and public-road approval.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/tesla-roadster-flight-claim/film.mp4</video:content_loc>
-            <video:publication_date>2026-10-19T21:00:31+03:30</video:publication_date>
+            <video:publication_date>2026-10-19T21:25:38+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -2303,11 +2303,11 @@
         <loc>https://a-samadi.com/watch/heat-pump-moves-heat-explained.html</loc>
         <lastmod>2026-10-20T21:00:39+03:30</lastmod>
         <video:video>
-            <video:thumbnail_loc>https://a-samadi.com/assets/writing/heat-pump-moves-heat-explained/cover-poster.jpg</video:thumbnail_loc>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/heat-pump-moves-heat-explained/cover.png</video:thumbnail_loc>
             <video:title>How cold outdoor air can help warm a home</video:title>
             <video:description>A fictional home and an illustrative energy balance explain how a heat pump moves heat.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/heat-pump-moves-heat-explained/film.mp4</video:content_loc>
-            <video:publication_date>2026-10-20T21:00:21+03:30</video:publication_date>
+            <video:publication_date>2026-10-20T21:00:39+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -2351,11 +2351,11 @@
         <loc>https://a-samadi.com/watch/ai-agent-permissions-ability-authority.html</loc>
         <lastmod>2026-10-21T10:06:51+03:30</lastmod>
         <video:video>
-            <video:thumbnail_loc>https://a-samadi.com/assets/writing/ai-agent-permissions-ability-authority/cover-poster.jpg</video:thumbnail_loc>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/ai-agent-permissions-ability-authority/cover.png</video:thumbnail_loc>
             <video:title>AI agents: ability is not authority</video:title>
             <video:description>A fictional invoice explains reading, drafting and approval boundaries in business AI.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/ai-agent-permissions-ability-authority/film.mp4</video:content_loc>
-            <video:publication_date>2026-10-21T10:00:31+03:30</video:publication_date>
+            <video:publication_date>2026-10-21T10:06:51+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -2395,11 +2395,11 @@
         <loc>https://a-samadi.com/watch/dubai-service-charge-same-rent.html</loc>
         <lastmod>2026-10-21T21:20:06+03:30</lastmod>
         <video:video>
-            <video:thumbnail_loc>https://a-samadi.com/assets/writing/dubai-service-charge-same-rent/cover-poster.jpg</video:thumbnail_loc>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/dubai-service-charge-same-rent/cover.png</video:thumbnail_loc>
             <video:title>Same rent, different service-charge bill</video:title>
             <video:description>A fictional Dubai property comparison separates advertised rent from cash remaining after one recurring cost.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/dubai-service-charge-same-rent/film.mp4</video:content_loc>
-            <video:publication_date>2026-10-21T21:00:39+03:30</video:publication_date>
+            <video:publication_date>2026-10-21T21:20:06+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -2439,11 +2439,11 @@
         <loc>https://a-samadi.com/watch/rag-check-business-records.html</loc>
         <lastmod>2026-10-22T10:01:41+03:30</lastmod>
         <video:video>
-            <video:thumbnail_loc>https://a-samadi.com/assets/writing/rag-check-business-records/cover-poster.jpg</video:thumbnail_loc>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/rag-check-business-records/cover.png</video:thumbnail_loc>
             <video:title>The confident answer from the old price list</video:title>
             <video:description>In a fictional hotel, Leila asks an AI assistant for a meeting-room quote. A fluent answer appears. Before sending it, she spots the problem: its supporting sheet is an old version. This is a teaching scenario, not a report of an actual hotel or product test.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/rag-check-business-records/film.mp4</video:content_loc>
-            <video:publication_date>2026-10-22T10:00:22+03:30</video:publication_date>
+            <video:publication_date>2026-10-22T10:01:41+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -2483,11 +2483,11 @@
         <loc>https://a-samadi.com/watch/dubai-project-escrow-controls.html</loc>
         <lastmod>2026-10-25T01:08:08+03:30</lastmod>
         <video:video>
-            <video:thumbnail_loc>https://a-samadi.com/assets/writing/dubai-project-escrow-controls/cover-poster.jpg</video:thumbnail_loc>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/dubai-project-escrow-controls/cover.png</video:thumbnail_loc>
             <video:title>The money has a project name</video:title>
             <video:description>Fictional buyer Rami sees a beautiful model of an unfinished building. His useful question is not only what it will look like, but which records support the payment instructions. No real project or account is represented here.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/dubai-project-escrow-controls/film.mp4</video:content_loc>
-            <video:publication_date>2026-10-23T21:00:03+03:30</video:publication_date>
+            <video:publication_date>2026-10-25T01:08:08+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -2527,11 +2527,11 @@
         <loc>https://a-samadi.com/watch/computer-agent-check-result.html</loc>
         <lastmod>2026-10-25T01:30:44+03:30</lastmod>
         <video:video>
-            <video:thumbnail_loc>https://a-samadi.com/assets/writing/computer-agent-check-result/cover-poster.jpg</video:thumbnail_loc>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/computer-agent-check-result/cover.png</video:thumbnail_loc>
             <video:title>The button moved. The AI did not notice.</video:title>
             <video:description>In a fictional parcel studio, Nora asks an AI helper to prepare a label. A panel moves before the click arrives. The cursor moves, but the label is still missing. This illustrates a failure possibility; it is not an observed shipment or product test.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/computer-agent-check-result/film.mp4</video:content_loc>
-            <video:publication_date>2026-10-24T21:00:08+03:30</video:publication_date>
+            <video:publication_date>2026-10-25T01:30:44+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -2571,11 +2571,11 @@
         <loc>https://a-samadi.com/watch/property-comparables-evidence.html</loc>
         <lastmod>2026-10-25T21:10:29+03:30</lastmod>
         <video:video>
-            <video:thumbnail_loc>https://a-samadi.com/assets/writing/property-comparables-evidence/cover-poster.jpg</video:thumbnail_loc>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/property-comparables-evidence/cover.png</video:thumbnail_loc>
             <video:title>Next door is not always comparable</video:title>
             <video:description>Fictional buyer Mina places two neighbouring flats on a comparison rail. One card is an asking price; the other records an older agreed sale. Neither card becomes identical evidence merely because the doors are close. No actual property, price or valuation is represented.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/property-comparables-evidence/film.mp4</video:content_loc>
-            <video:publication_date>2026-10-25T21:00:07+03:30</video:publication_date>
+            <video:publication_date>2026-10-25T21:10:29+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -2615,11 +2615,11 @@
         <loc>https://a-samadi.com/watch/building-digital-twin-data-freshness.html</loc>
         <lastmod>2026-10-27T13:10:13+03:30</lastmod>
         <video:video>
-            <video:thumbnail_loc>https://a-samadi.com/assets/writing/building-digital-twin-data-freshness/cover-poster.jpg</video:thumbnail_loc>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/building-digital-twin-data-freshness/cover.png</video:thumbnail_loc>
             <video:title>A beautiful building model can still be out of date</video:title>
             <video:description>In a fictional office, Omar sees a polished building model while a room feels wrong. The useful question is not how realistic the model looks. It is which physical asset the data describes and when that data was observed.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/building-digital-twin-data-freshness/film.mp4</video:content_loc>
-            <video:publication_date>2026-10-26T21:00:11+03:30</video:publication_date>
+            <video:publication_date>2026-10-27T13:10:13+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -2663,11 +2663,11 @@
         <loc>https://a-samadi.com/watch/prompt-injection-layered-controls.html</loc>
         <lastmod>2026-10-27T21:00:00+03:30</lastmod>
         <video:video>
-            <video:thumbnail_loc>https://a-samadi.com/assets/writing/prompt-injection-layered-controls/cover-poster.jpg</video:thumbnail_loc>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/prompt-injection-layered-controls/cover.png</video:thumbnail_loc>
             <video:title>The document tried to become the boss</video:title>
             <video:description>A fictional theatre shows why reading a document should not let it take over an AI assistant. A smaller tool set, checks on incoming content and human approval points can limit the damage from a misleading instruction.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/prompt-injection-layered-controls/film.mp4</video:content_loc>
-            <video:publication_date>2026-10-27T21:00:39+03:30</video:publication_date>
+            <video:publication_date>2026-10-27T21:00:00+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -2718,11 +2718,11 @@
         <loc>https://a-samadi.com/watch/business-ai-evaluation-cases.html</loc>
         <lastmod>2026-10-28T21:00:00+03:30</lastmod>
         <video:video>
-            <video:thumbnail_loc>https://a-samadi.com/assets/writing/business-ai-evaluation-cases/cover-poster.jpg</video:thumbnail_loc>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/business-ai-evaluation-cases/cover.png</video:thumbnail_loc>
             <video:title>The AI demo passed. The real work did not.</video:title>
             <video:description>A polished demonstration does not establish reliability for the actual task.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/business-ai-evaluation-cases/film.mp4</video:content_loc>
-            <video:publication_date>2026-10-28T21:00:09+03:30</video:publication_date>
+            <video:publication_date>2026-10-28T21:00:00+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -2769,11 +2769,11 @@
         <loc>https://a-samadi.com/watch/ai-research-examination-understanding.html</loc>
         <lastmod>2026-11-02T21:00:00+03:30</lastmod>
         <video:video>
-            <video:thumbnail_loc>https://a-samadi.com/assets/writing/ai-research-examination-understanding/cover-poster.jpg</video:thumbnail_loc>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/ai-research-examination-understanding/cover.png</video:thumbnail_loc>
             <video:title>AI wrote the result. People still need to understand it.</video:title>
             <video:description>Zara, a fictional research coordinator, receives an AI-generated result. A polished answer alone does not explain which assumptions support it, what was checked, or what its limitations mean.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/ai-research-examination-understanding/film.mp4</video:content_loc>
-            <video:publication_date>2026-11-02T21:00:16+03:30</video:publication_date>
+            <video:publication_date>2026-11-02T21:00:00+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -2813,11 +2813,11 @@
         <loc>https://a-samadi.com/watch/cash-conversion-cycle-clocks.html</loc>
         <lastmod>2026-11-03T19:07:36+03:30</lastmod>
         <video:video>
-            <video:thumbnail_loc>https://a-samadi.com/assets/writing/cash-conversion-cycle-clocks/cover-poster.jpg</video:thumbnail_loc>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/cash-conversion-cycle-clocks/cover.png</video:thumbnail_loc>
             <video:title>The sale happened. The cash is still on its way.</video:title>
             <video:description>Sales alone do not tell Sami how much cash is available today.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/cash-conversion-cycle-clocks/film.mp4</video:content_loc>
-            <video:publication_date>2026-10-29T21:00:22+03:30</video:publication_date>
+            <video:publication_date>2026-11-03T19:07:36+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -2864,11 +2864,11 @@
         <loc>https://a-samadi.com/watch/structured-output-source-checks.html</loc>
         <lastmod>2026-11-03T19:07:36+03:30</lastmod>
         <video:video>
-            <video:thumbnail_loc>https://a-samadi.com/assets/writing/structured-output-source-checks/cover-poster.jpg</video:thumbnail_loc>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/structured-output-source-checks/cover.png</video:thumbnail_loc>
             <video:title>The form was perfect. The answer was wrong.</video:title>
             <video:description>A tidy shape and a true statement are different checks.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/structured-output-source-checks/film.mp4</video:content_loc>
-            <video:publication_date>2026-10-30T21:00:23+03:30</video:publication_date>
+            <video:publication_date>2026-11-03T19:07:36+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -2915,11 +2915,11 @@
         <loc>https://a-samadi.com/watch/building-energy-audit-decisions.html</loc>
         <lastmod>2026-11-03T19:07:36+03:30</lastmod>
         <video:video>
-            <video:thumbnail_loc>https://a-samadi.com/assets/writing/building-energy-audit-decisions/cover-poster.jpg</video:thumbnail_loc>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/building-energy-audit-decisions/cover.png</video:thumbnail_loc>
             <video:title>Before buying a new machine, find where the energy goes</video:title>
             <video:description>Mira, a fictional building manager, sees a high energy bill and wants new equipment. Instead of choosing a machine from one number, she asks for the building assets and operations to be assessed.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/building-energy-audit-decisions/film.mp4</video:content_loc>
-            <video:publication_date>2026-10-31T21:00:28+03:30</video:publication_date>
+            <video:publication_date>2026-11-03T19:07:36+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
@@ -2966,11 +2966,11 @@
         <loc>https://a-samadi.com/watch/agent-workflow-shared-bottlenecks.html</loc>
         <lastmod>2026-11-03T19:07:36+03:30</lastmod>
         <video:video>
-            <video:thumbnail_loc>https://a-samadi.com/assets/writing/agent-workflow-shared-bottlenecks/cover-poster.jpg</video:thumbnail_loc>
+            <video:thumbnail_loc>https://a-samadi.com/assets/writing/agent-workflow-shared-bottlenecks/cover.png</video:thumbnail_loc>
             <video:title>More agents. The same queue.</video:title>
             <video:description>In a fictional dispatch library, adding more helpers does not shorten the queue: every independent task waits for the same key. The illustration asks where work must be coordinated and where it can proceed independently.</video:description>
             <video:content_loc>https://a-samadi.com/assets/writing/agent-workflow-shared-bottlenecks/film.mp4</video:content_loc>
-            <video:publication_date>2026-11-01T21:00:17+03:30</video:publication_date>
+            <video:publication_date>2026-11-03T19:07:36+03:30</video:publication_date>
         </video:video>
     </url>
     <url>
