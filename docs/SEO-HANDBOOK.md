@@ -20,3 +20,5 @@ Film, study, source, date and build checks protect structured data and public ev
 ## November measurement
 
 Through 8 December 2026 the search-result text, visible copy, titles, headings, URLs, bios, topic assignments, breadcrumbs, artwork and layout are frozen. Preserve the baseline so the pre/post Search Console comparison remains interpretable. Record visible editorial proposals privately for the owner after the window. The owner repeats the assistant test on 1 February 2027.
+
+**In-app accessibility check (manual, offline).** Use the local `axe.min.js` from axe-core 4.10.3; the checker verifies the pinned file hash. Run `python3 scripts/check_axe_iab.py --serve-local /path/to/axe.min.js`, open its loopback URL in the in-app browser, click **Run the template checks**, and save the receipt outside the repo. Stop the temporary server. Run `WEBSITE_AXE_RECEIPT=/private/axe-iab-receipt.json python3 scripts/check_all.py`. A changed site input or missing sample invalidates the receipt. Without a receipt the check reports SKIP. Review incomplete rules and keyboard behaviour separately.
