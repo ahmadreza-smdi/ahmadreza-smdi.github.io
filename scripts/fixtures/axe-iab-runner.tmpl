@@ -4,6 +4,20 @@
 <script>
 const config=/*AUDIT_CONFIG*/null;
 const summary=rules=>rules.map(x=>({id:x.id,impact:x.impact,nodes:x.nodes.map(n=>n.target)}));
+function checkWidget(doc, name) {
+  if (!name) return null;
+  if (name === 'rent-own-study') {
+    if (!doc.querySelector('#selected-name')?.textContent.trim() ||
+        !doc.querySelector('#result-body tr td') || !doc.querySelector('#area-body tr td')) {
+      throw Error('Study tables did not initialize.');
+    }
+  } else if (name === 'property-calculator') {
+    if (!/\(\d+\)/.test(doc.querySelector('[data-issue-count]')?.textContent || '')) {
+      throw Error('Calculator did not initialize.');
+    }
+  }
+  return name;
+}
 function pageTest(path){
  return new Promise(resolve=>{
   const frame=document.createElement('iframe');frame.title='Test page';frame.style='width:1200px;height:800px;border:0';let done=false;
@@ -13,8 +27,9 @@ function pageTest(path){
     const doc=frame.contentDocument,engine=frame.contentWindow.axe;
     if(doc.location.pathname!=='/'+path||!engine)throw Error('Wrong page or missing engine');
     await doc.fonts.ready;
+    const initializedWidget=checkWidget(doc,config.widgets[path]);
     const r=await engine.run(doc,{runOnly:{type:'tag',values:config.tags}});
-    finish({path,version:r.testEngine.version,violations:summary(r.violations),incomplete:summary(r.incomplete),passes:r.passes.map(rule=>rule.id)});
+    finish({path,initializedWidget,version:r.testEngine.version,violations:summary(r.violations),incomplete:summary(r.incomplete),passes:r.passes.map(rule=>rule.id)});
   }catch(e){finish({path,error:String(e)})}};
   frame.src='/'+path;document.getElementById('stage').append(frame);
  });
@@ -22,7 +37,7 @@ function pageTest(path){
 document.getElementById('start').onclick=async function(){
  this.disabled=true;const results=[];const status=document.getElementById('status');
  for(const p of config.sample){status.textContent='Checking '+p;results.push(await pageTest(p))}
- const doc={format:1,axe:config.version,tags:config.tags,inputs:config.inputs,results};
+ const doc={format:2,axe:config.version,tags:config.tags,inputs:config.inputs,results};
  const text=JSON.stringify(doc);document.getElementById('result').textContent=text;const dl=document.getElementById('download');
  dl.href=URL.createObjectURL(new Blob([text],{type:'application/json'}));dl.hidden=false;
  const failures=results.filter(r=>r.error||r.violations.length).length;

@@ -17,7 +17,7 @@ VERSION = "4.10.3"
 LIBRARY_SHA = "880970c081707360e64f34cea25ff91892f5bc95675b0776925b9709dd8a68bb"
 TAGS = ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22a", "wcag22aa"]
 SAMPLE = ROOT / "scripts/fixtures/axe-template-sample.txt"
-EXT = set(".html .css .js .json .csv .webp .png .jpg .jpeg .avif .gif .svg .ico .woff2 .woff .mp4 .webm .vtt .webmanifest".split())
+EXT = set(".html .css .js .mjs .json .csv .webp .png .jpg .jpeg .avif .gif .svg .ico .woff2 .woff .mp4 .webm .vtt .webmanifest".split())
 
 
 def inputs():
@@ -43,8 +43,19 @@ def inputs():
     return sample,assets,digest.hexdigest()
 
 
+def required_widget(path):
+    if path.endswith(("studies/rent-own-2026/index.html", "studies/rent-own-2026/embed.html")):
+        return "rent-own-study"
+    if path in {
+        "tools/dubai-purchase-cost.html", "tools/embed/dubai-purchase-cost.html",
+        "tools/rental-cash-flow.html", "tools/embed/rental-cash-flow.html",
+    }:
+        return "property-calculator"
+    return None
+
+
 def verify(doc, sample, fingerprint):
-    if not isinstance(doc,dict) or doc.get("format") != 1 or doc.get("axe") != VERSION or doc.get("tags") != TAGS or doc.get("inputs") != fingerprint:
+    if not isinstance(doc,dict) or doc.get("format") != 2 or doc.get("axe") != VERSION or doc.get("tags") != TAGS or doc.get("inputs") != fingerprint:
         raise ValueError("receipt has stale inputs, wrong rule scope or wrong axe version")
     rows = doc.get("results")
     if not isinstance(rows,list) or len(rows)!=len(sample) or any(not isinstance(r,dict) for r in rows):
@@ -54,13 +65,17 @@ def verify(doc, sample, fingerprint):
         if (r.get("error") or not isinstance(r.get("passes"),list) or not r["passes"] or
             not isinstance(r.get("violations"),list) or not isinstance(r.get("incomplete"),list) or r.get("version") != VERSION):
             raise ValueError("incomplete axe result: "+str(r.get("path")))
+        expected = required_widget(r['path'])
+        if expected and r.get('initializedWidget') != expected:
+            raise ValueError(f"{r['path']}: the interactive content did not initialize")
         if r["violations"]: raise ValueError(f"{r['path']}: axe violations: {r['violations']}")
     return sum(len(r['incomplete']) for r in rows)
 
 
 def serve(sample, assets, fingerprint, library):
     if sha256(library).hexdigest() != LIBRARY_SHA: raise ValueError("unexpected axe-core library SHA-256")
-    cfg=json.dumps(dict(sample=sample,inputs=fingerprint,tags=TAGS,version=VERSION))
+    widgets = {path: required_widget(path) for path in sample if required_widget(path)}
+    cfg=json.dumps(dict(sample=sample,inputs=fingerprint,tags=TAGS,version=VERSION,widgets=widgets))
     page=(ROOT/"scripts/fixtures/axe-iab-runner.tmpl").read_text().replace("/*AUDIT_CONFIG*/null",cfg).encode()
     class Handler(BaseHTTPRequestHandler):
         def do_GET(self):
@@ -71,7 +86,8 @@ def serve(sample, assets, fingerprint, library):
             else:
                 if not name or name.endswith('/'):name+='index.html'
                 if name not in assets:return self.send_error(404)
-                data=assets[name].read_bytes();mime=mimetypes.guess_type(name)[0] or 'application/octet-stream'
+                data = assets[name].read_bytes()
+                mime = 'text/javascript' if name.endswith('.mjs') else mimetypes.guess_type(name)[0] or 'application/octet-stream'
                 if name in sample:
                     marker=b'</body>';inject=b'<script src="/__qa/axe.js"></script>'
                     if marker not in data:return self.send_error(422)
