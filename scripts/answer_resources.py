@@ -7,6 +7,8 @@ from seo_document import Document, Element, public_url, nodes
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGES = tuple(json.loads((ROOT / 'locales/markdown-pages.json').read_text()))
+REVISIONS = {path: revision['modified'] for revision in json.loads((ROOT / 'locales/page-revisions.json').read_text())
+             for path in revision['paths']}
 PERSON = 'https://a-samadi.com/#person'
 PORTRAIT = 'https://a-samadi.com/assets/img/ahmadreza-samadi-hero.jpg'
 DESCRIPTION = 'Dubai-based technology entrepreneur who builds AI as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO.'
@@ -24,6 +26,13 @@ def machine_head(text, path):
         graph = json.loads(match[2])
         changed = False
         for node in list(nodes(graph)):
+            page_url = public_url(path)
+            identifier = node.get('@id', '')
+            if (path in REVISIONS and node.get('@type') in ('WebPage','CollectionPage','ProfilePage','ItemPage','AboutPage')
+                    and isinstance(identifier, str) and identifier.partition('#')[0] == page_url
+                    and node.get('dateModified') != REVISIONS[path]):
+                node['dateModified'] = REVISIONS[path]
+                changed = True
             if node.get('@id') != PERSON or node.get('@type') != 'Person':
                 continue
             image = node.get('image', {})

@@ -798,6 +798,8 @@ def enrich(path, text):
     enriched, changes = enrich_page(path, text)
     relative = path.relative_to(ROOT).as_posix()
     result = machine_head(enriched, relative)
+    if result == text:
+        return result, []
     return result, changes + (['machine-readable identity or alternate'] if result != enriched else [])
 
 
@@ -1070,7 +1072,8 @@ def sitemap(check):
                         if item.text != value:
                             item.text = value
                             added += 1
-            modified = node.get('dateModified') if node else None
+            from answer_resources import REVISIONS
+            modified = REVISIONS.get(relative) or (node.get('dateModified') if node else None)
             # Reuse the page's recorded precision; never stamp the build time.
             if modified:
                 lastmod = url.find(f'{{{namespace}}}lastmod')

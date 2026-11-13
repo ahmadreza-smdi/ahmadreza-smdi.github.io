@@ -202,7 +202,9 @@ def check_sitemap(data):
         expected['x-default'] = expected['en']
         for language in LANGUAGES:
             matches = [entry for entry in entries if entry.findtext(namespace + 'loc') == expected[language]]
-            if len(matches) != 1 or matches[0].findtext(namespace + 'lastmod') != page['updated_at']:
+            from answer_resources import REVISIONS
+            modified = REVISIONS.get(route(page['id'], language), page['updated_at'])
+            if len(matches) != 1 or matches[0].findtext(namespace + 'lastmod') != modified:
                 raise ValueError(f'{expected[language]}: sitemap must match the actual page update time')
             alternates = matches[0].findall(xhtml + 'link')
             if len(alternates) != 4 or {item.get('hreflang'): item.get('href') for item in alternates} != expected:
