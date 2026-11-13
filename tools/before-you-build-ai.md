@@ -14,11 +14,29 @@ Start with a worked example
 
 Illustrative scenarios, not customer results. Edit any detail.
 
-01 Define the decisionWho needs to decide? What must they decide? What happens after the answer?
+01 Define the decision
 
-02 Examine the evidenceWhat evidence would support that choice? How ready is that evidence? If the answer is wrong… Who reviews before action?
+Who needs to decide?
 
-03 Set the first testHow is this done today? What would make the test useful?
+What must they decide?
+
+What happens after the answer?
+
+02 Examine the evidence
+
+What evidence would support that choice?
+
+How ready is that evidence?
+
+If the answer is wrong…
+
+Who reviews before action?
+
+03 Set the first test
+
+How is this done today?
+
+What would make the test useful?
 
 Your entries stay in this page. They are not saved or sent to a server. Export your brief before leaving.
 
@@ -85,5 +103,3 @@ The supporting evidence, the next action and the cost of review determine whethe
 For the next step, record costs and acceptance decisions with the [AI workflow cost ledger](https://github.com/ahmadreza-smdi/ai-workflow-cost) or [experiment workbook (Excel, English)](https://github.com/ahmadreza-smdi/ai-workflow-cost/releases/download/v0.1.1/AI-Workflow-Experiment.xlsx). [Three worked examples (ZIP, English)](https://github.com/ahmadreza-smdi/ai-workflow-cost/releases/download/v0.1.2/AI-Cost-Worked-Examples.zip) show retries, no accepted results and explicitly known zero costs. The included teaching data are fictional. You supply the acceptance rule; these resources do not verify answer quality.
 
 [Read “Start with the decision, then build the AI” →](https://a-samadi.com/writing/start-with-the-decision.html)
-
-## Follow

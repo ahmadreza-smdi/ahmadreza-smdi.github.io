@@ -111,13 +111,3 @@
 - [Starlink: Direct to Cell engineering](https://starlink.com/public-files/DIRECT_TO_CELL_FIRST_TEXT_UPDATE.pdf)
 
 - [T-Mobile: current T-Satellite features and requirements](https://www.t-mobile.com/coverage/satellite-phone-service)
-
-## درباره نویسنده
-
-احمدرضا صمدی کارآفرین فناوری ساکن دبی است. او به‌عنوان هم‌بنیان‌گذار و راهبر فنی Appraiva محصولات هوش مصنوعی می‌سازد و به‌عنوان هم‌بنیان‌گذار و مدیرعامل، Royal Abraj Group را اداره می‌کند.
-
-[احمدرضا صمدی](https://a-samadi.com/fa/about.html)
-
-از مجموعهٔ Tech, explained
-
-## دنبال کردن

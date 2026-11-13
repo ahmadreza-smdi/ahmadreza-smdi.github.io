@@ -39,13 +39,3 @@ My [Instagram carousel](https://www.instagram.com/p/DeAhR0PCqaa/) and [LinkedIn 
 - [Texas Instruments: battery fuel gauges and state-of-charge estimation](https://www.ti.com/product-category/battery-management-ics/battery-fuel-gauges/overview.html)
 
 - [Texas Instruments: charge and energy reporting (section 2.7, PDF)](https://www.ti.com/lit/SLUA364)
-
-## About the author
-
-Ahmadreza Samadi is a technology entrepreneur based in Dubai. He builds AI products as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO.
-
-[Ahmadreza Samadi](https://a-samadi.com/about.html)
-
-Part of Tech, explained
-
-## Follow

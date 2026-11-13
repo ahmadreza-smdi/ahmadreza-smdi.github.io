@@ -75,11 +75,11 @@ def render(family, language, hubs, membership=None, trail=None):
         watch_href, _ = resource(family['watch'])
         watch = f'<p><a href="{escape(watch_href, quote=True)}" hreflang="en">{escape(labels["watch"])}</a></p>\n'
     return f'''{START}
-<nav class="article-reading-path" aria-labelledby="article-related-title">
+<aside aria-labelledby="article-related-title"><nav class="article-reading-path" aria-labelledby="article-related-title">
 <p>{location}</p>
 {watch}<h2 id="article-related-title">{escape(labels['related'])}</h2>
 <ul>{chr(10).join(links)}</ul>
-</nav>
+</nav></aside>
 {END}
 '''
 

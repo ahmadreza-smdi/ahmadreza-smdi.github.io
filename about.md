@@ -212,6 +212,4 @@ AI-assisted projects with documented methods and limits. These resources do not 
 
 GitHub resources in English.
 
-## Follow
-
 [Selected work](https://a-samadi.com/work/) — building AI and running business systems, supported by data engineering and public tools.

@@ -49,13 +49,3 @@
 - [Apple: Charge and maintain your iPhone battery](https://support.apple.com/en-us/105105)
 
 - [Apple: If your iPhone will not charge](https://support.apple.com/en-us/108805)
-
-## عن الكاتب
-
-أحمدرضا صمدي رائد أعمال في مجال التقنية مقيم في دبي. يبني منتجات الذكاء الاصطناعي بصفته شريكا مؤسسا وقائدا تقنيا في Appraiva، ويدير Royal Abraj Group بصفته شريكا مؤسسا ورئيسا تنفيذيا.
-
-[أحمدرضا صمدي](https://a-samadi.com/ar/about.html)
-
-ضمن سلسلة Tech, explained
-
-## المتابعة

@@ -67,13 +67,3 @@ OpenRouter همچنین دریافت که امتیاز اطمینان Jev در �
 - TypeSafe AI، [مستندات: مقدمه](https://docs.typesafe.ai/introduction)، بررسی‌شده در ۲۵ سپتامبر ۲۰۲۶.
 
 - OpenRouter، [«Is Jev as Accurate as Frontier Models at Classification?»](https://openrouter.ai/blog/insights/jev-vs-claude-opus-5-classification/)، ۲۲ سپتامبر ۲۰۲۶.
-
-## درباره نویسنده
-
-احمدرضا صمدی کارآفرین فناوری ساکن دبی است. او به‌عنوان هم‌بنیان‌گذار و راهبر فنی Appraiva محصولات هوش مصنوعی می‌سازد و به‌عنوان هم‌بنیان‌گذار و مدیرعامل، Royal Abraj Group را اداره می‌کند.
-
-[احمدرضا صمدی](https://a-samadi.com/fa/about.html)
-
-از مجموعهٔ Tech, explained
-
-## دنبال کردن

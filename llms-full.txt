@@ -223,6 +223,14 @@ Read my biography, press resources and selected work.
 
 Explore my work Get in touch
 
+• Imagery analysis
+
+• AI tools
+
+• Enriched property data
+
+• Property data
+
 Explore my work
 
 United States · Remote Appraiva Co-Founder & Technical Lead Dubai, UAE Royal Abraj Group Co-Founder & CEO My focus Start with the decision. Technology × AI × business
@@ -439,8 +447,6 @@ LinkedIn GitHub YouTube Instagram Crunchbase
 
 Biography and profile kit Save contact details Official profiles
 
-## Follow
-
 Biography
 
 # About Ahmadreza Samadi
@@ -654,8 +660,6 @@ AI-assisted projects with documented methods and limits. These resources do not 
 • ACS2024 metro rent burden — Comparing rent pressure across metros? Start with the ACS2024 CSV, chart, method and limits; this is not a property-level estimate.
 
 GitHub resources in English.
-
-## Follow
 
 Selected work — building AI and running business systems, supported by data engineering and public tools.
 
@@ -1047,16 +1051,6 @@ The examples and proposed methods are editorial teaching work. They are not comp
 
 Prefer a copy you can edit in a text editor? Download the decision-first text kit (in English) for a blank template, a separate fictional example and reading notes. Extract the ZIP and save a private working copy. This is another format for the existing planning aid; no experiment was run.
 
-## About the author
-
-Ahmadreza Samadi is a technology entrepreneur based in Dubai. He builds AI products as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO.
-
-Ahmadreza Samadi
-
-Part of Start with the Decision
-
-## Follow
-
 An interactive tool by Ahmadreza Samadi
 
 # Before you build the AI.
@@ -1073,11 +1067,29 @@ Start with a worked example
 
 Illustrative scenarios, not customer results. Edit any detail.
 
-01 Define the decisionWho needs to decide? What must they decide? What happens after the answer?
+01 Define the decision
 
-02 Examine the evidenceWhat evidence would support that choice? How ready is that evidence? If the answer is wrong… Who reviews before action?
+Who needs to decide?
 
-03 Set the first testHow is this done today? What would make the test useful?
+What must they decide?
+
+What happens after the answer?
+
+02 Examine the evidence
+
+What evidence would support that choice?
+
+How ready is that evidence?
+
+If the answer is wrong…
+
+Who reviews before action?
+
+03 Set the first test
+
+How is this done today?
+
+What would make the test useful?
 
 Your entries stay in this page. They are not saved or sent to a server. Export your brief before leaving.
 
@@ -1144,8 +1156,6 @@ The supporting evidence, the next action and the cost of review determine whethe
 For the next step, record costs and acceptance decisions with the AI workflow cost ledger or experiment workbook (Excel, English). Three worked examples (ZIP, English) show retries, no accepted results and explicitly known zero costs. The included teaching data are fictional. You supply the acceptance rule; these resources do not verify answer quality.
 
 Read “Start with the decision, then build the AI” →
-
-## Follow
 
 Ahmadreza Samadi
 
@@ -1621,16 +1631,6 @@ The examples and proposed methods are editorial teaching work. They are not comp
 
 For a fictional example of task-specific checks, read the business AI evaluation cases and watch the accompanying film.
 
-## About the author
-
-Ahmadreza Samadi is a technology entrepreneur based in Dubai. He builds AI products as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO.
-
-Ahmadreza Samadi
-
-Part of Start with the Decision
-
-## Follow
-
 Reading path · AI in business
 
 # AI and business systems
@@ -1721,14 +1721,6 @@ AI in real estate: Continue with the property data and human review that support
 
 Tech, explained
 
-## About the author
-
-Ahmadreza Samadi builds AI products at Appraiva and runs Royal Abraj Group in Dubai. He writes about how businesses decide what to build, check and measure.
-
-Ahmadreza Samadi
-
-## Follow
-
 Essay · Building and operating
 
 # I build AI, and I run a business that has to live with it
@@ -1776,16 +1768,6 @@ AI is worth it where it shortens the path to a decision that a person still owns
 Most writing about AI comes from people who sell it or people who study it. I write from the place where it is built and then has to work inside a real business, with real customers and a team that answers for it. That is the question I keep returning to at a-samadi.com: where does AI earn its place in a business, and where must it stop?
 
 More: Appraiva case study · Royal Abraj Group case study · AI and business systems: lessons from Dubai
-
-## About the author
-
-Ahmadreza Samadi is a technology entrepreneur based in Dubai. He builds AI products as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO.
-
-Ahmadreza Samadi
-
-Part of Start with the Decision
-
-## Follow
 
 Wait, That’s Tech? · Digital literacy
 
@@ -1845,16 +1827,6 @@ The Instagram carousel and LinkedIn document show the three explicitly AI-genera
 
 • Google Search Help: Search with an image
 
-## About the author
-
-Ahmadreza Samadi is a technology entrepreneur based in Dubai. He builds AI products as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO.
-
-Ahmadreza Samadi
-
-Part of Tech, explained
-
-## Follow
-
 Wait, That’s Tech? · Battery design
 
 # Two batteries, one foldable phone: how the battery reading works
@@ -1896,16 +1868,6 @@ My Instagram carousel and LinkedIn document post show the hinge constraint and t
 • Texas Instruments: battery fuel gauges and state-of-charge estimation
 
 • Texas Instruments: charge and energy reporting (section 2.7, PDF)
-
-## About the author
-
-Ahmadreza Samadi is a technology entrepreneur based in Dubai. He builds AI products as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO.
-
-Ahmadreza Samadi
-
-Part of Tech, explained
-
-## Follow
 
 Professional background
 

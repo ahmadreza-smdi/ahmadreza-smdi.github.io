@@ -73,13 +73,3 @@
 - Google، [«A new wave of Connected Apps is rolling out to Gemini»](https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/)، ۲۳ سپتامبر ۲۰۲۶.
 
 - مرکز راهنمای OpenAI، [«Connected apps in ChatGPT»](https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt)، بررسی‌شده در ۲۵ سپتامبر ۲۰۲۶.
-
-## درباره نویسنده
-
-احمدرضا صمدی کارآفرین فناوری ساکن دبی است. او به‌عنوان هم‌بنیان‌گذار و راهبر فنی Appraiva محصولات هوش مصنوعی می‌سازد و به‌عنوان هم‌بنیان‌گذار و مدیرعامل، Royal Abraj Group را اداره می‌کند.
-
-[احمدرضا صمدی](https://a-samadi.com/fa/about.html)
-
-از مجموعهٔ Start with the Decision
-
-## دنبال کردن

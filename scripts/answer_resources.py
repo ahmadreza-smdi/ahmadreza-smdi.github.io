@@ -4,6 +4,7 @@ import re
 from pathlib import Path
 from urllib.parse import urljoin
 from seo_document import Document, Element, public_url, nodes
+from readiness import MODULES, refine_record, semantics
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGES = tuple(json.loads((ROOT / 'locales/markdown-pages.json').read_text()))
@@ -15,7 +16,7 @@ DESCRIPTION = 'Dubai-based technology entrepreneur who builds AI as Co-Founder &
 NAME = 'Ahmadreza Samadi'
 MARKDOWN_LINK = re.compile(r'<link rel="alternate" type="text/markdown" href="[^"]+"\s*/?>')
 SCHEMA = re.compile(r'(<script\b[^>]*type=["\']application/ld\+json["\'][^>]*>)(.*?)(</script>)', re.S)
-BLOCKS = set('address article aside blockquote dd details div dl dt fieldset figcaption figure form h1 h2 h3 h4 h5 h6 header li main ol p pre section summary table tbody td th thead tr ul'.split())
+BLOCKS = set('address article aside blockquote dd details div dl dt fieldset figcaption figure form legend label h1 h2 h3 h4 h5 h6 header li main ol p pre section summary table tbody td th thead tr ul'.split())
 SKIP = set('script style template noscript nav footer button input select textarea svg canvas video audio iframe'.split())
 def mirror_path(path):
     return Path(path).with_suffix('.md').as_posix()
@@ -26,6 +27,8 @@ def machine_head(text, path):
         graph = json.loads(match[2])
         changed = False
         for node in list(nodes(graph)):
+            if refine_record(node,path):
+                changed = True
             page_url = public_url(path)
             identifier = node.get('@id', '')
             if (path in REVISIONS and node.get('@type') in ('WebPage','CollectionPage','ProfilePage','ItemPage','AboutPage')
@@ -38,7 +41,7 @@ def machine_head(text, path):
             image = node.get('image', {})
             if not isinstance(image, dict) or image.get('url') not in (None, PORTRAIT):
                 raise ValueError(f'{path}: conflicting portrait')
-            # Rich original records keep their existing rights metadata. New records carry none.
+            # Photo identity is independent of ownership or reuse terms.
             fields = {'@type':'ImageObject','@id':'https://a-samadi.com/#portrait','url':PORTRAIT,
                       'contentUrl':PORTRAIT,'name':NAME,'caption':'Ahmadreza Samadi in a dark suit',
                       'width':900,'height':1200}
@@ -62,7 +65,7 @@ def machine_head(text, path):
             head += link+'\n'
     else:
         head = MARKDOWN_LINK.sub('', head) if MARKDOWN_LINK.search(head) else head
-    return head+sep+body
+    return semantics(head+sep+body,path)
 
 def markdown(text, path):
     """Transcribe main-content blocks and inline links. Exclude private-scope operator material."""
@@ -75,7 +78,7 @@ def markdown(text, path):
     def inline(node):
         if isinstance(node,str):
             return node
-        if node.tag in SKIP or 'hidden' in node.attrs or node.get('aria-hidden') == 'true':
+        if node.tag in SKIP or 'hidden' in node.attrs or node.get('aria-hidden') == 'true' or MODULES.intersection(node.get('class').split()):
             return ''
         label = ''.join(inline(ch) for ch in node.children)
         if node.tag == 'a' and label.strip() and node.get('href'):
@@ -90,7 +93,7 @@ def markdown(text, path):
         if value:
             lines.append(prefix+value)
     def visit(node):
-        if node.tag in SKIP or 'hidden' in node.attrs or node.get('aria-hidden') == 'true':
+        if node.tag in SKIP or 'hidden' in node.attrs or node.get('aria-hidden') == 'true' or MODULES.intersection(node.get('class').split()):
             return
         if node.get('aria-labelledby') == 'raia-title':
             return

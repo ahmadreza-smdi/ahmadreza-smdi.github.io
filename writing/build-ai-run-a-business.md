@@ -45,13 +45,3 @@ AI is worth it where it shortens the path to a decision that a person still owns
 Most writing about AI comes from people who sell it or people who study it. I write from the place where it is built and then has to work inside a real business, with real customers and a team that answers for it. That is the question I keep returning to at a-samadi.com: where does AI earn its place in a business, and where must it stop?
 
 More: [Appraiva case study](https://a-samadi.com/work/appraiva.html) · [Royal Abraj Group case study](https://a-samadi.com/work/royal-abraj.html) · [AI and business systems: lessons from Dubai](https://a-samadi.com/topics/business-systems-dubai.html)
-
-## About the author
-
-Ahmadreza Samadi is a technology entrepreneur based in Dubai. He builds AI products as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO.
-
-[Ahmadreza Samadi](https://a-samadi.com/about.html)
-
-Part of Start with the Decision
-
-## Follow

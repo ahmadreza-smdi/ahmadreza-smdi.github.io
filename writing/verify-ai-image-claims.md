@@ -55,13 +55,3 @@ The [Instagram carousel](https://www.instagram.com/p/Dd8rwIEirNj/) and [LinkedIn
 - [OpenAI: Advancing content provenance for a safer, more transparent AI ecosystem](https://openai.com/index/advancing-content-provenance/)
 
 - [Google Search Help: Search with an image](https://support.google.com/websearch/answer/1325808)
-
-## About the author
-
-Ahmadreza Samadi is a technology entrepreneur based in Dubai. He builds AI products as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO.
-
-[Ahmadreza Samadi](https://a-samadi.com/about.html)
-
-Part of Tech, explained
-
-## Follow
