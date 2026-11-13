@@ -35,3 +35,15 @@ Run `python3 scripts/build_answer_resources.py` and `python3 scripts/build_llms.
 - The repository's 19 declared crawler-policy expectations and content signals are checked offline. The served edge policy needs a separate live comparison.
 
 The Markdown companions are outside the sitemap. GitHub Pages serves static files from the site branch with Jekyll disabled. A Markdown body cannot set an HTTP robots header. Treat the HTML URL as canonical in discovery and review any HTTP header policy separately.
+
+
+### Machine readability checks
+
+Run `python3 scripts/check_readiness.py` through the usual offline suite. The six regression fixtures run with `python3 scripts/test_readiness.py`.
+
+- Structured facts and visible supporting passages have per-page review fingerprints. Recheck attribution and linked evidence before changing the corresponding fixture. Revision timestamps also have a dedicated Git check.
+- Hidden and decorative content, CSS, comments and media labels are compared with the reviewed conditional controls and checked for assistant-directed copy.
+- Each visitor page has one main landmark. Editorial articles have an article body, and the author and related navigation belong in complementary landmarks.
+- Interactive tool inputs require accessible names, and updating results require announcements and valid output descriptions.
+- Markdown excerpts exclude repeated author, follow and related modules. The full catalogue check also rebuilds the complete output from its sources.
+- Film transcripts must equal the published watch transcript or subtitle cue text, and caption links must resolve to the corresponding player track.

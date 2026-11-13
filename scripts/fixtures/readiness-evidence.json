@@ -1,0 +1,1590 @@
+{
+ "pages": {
+  "404.html": [
+   "643d5437104296e21d906ecb15b2c96ad278f20cfc4af53b12bb6069bd853726",
+   "9e0dfe06553d37d2be61ad6e78acbbe62330e5be7c93242743aa92dd094e6456",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "about.html": [
+   "419af98833be2d5fd1127fcbf41779895f65408bb7d52d484e5116a4bc5f6a89",
+   "78d616341ffd90c1cbc301c23799e1edc0b80f1822de73cd42e693febb92c9b5",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ideas.html": [
+   "8847bc88d3bb04237d0c11b79aabe05305e12d5cdd7a10dab1edced1be1e0548",
+   "bad81aa4bce30fe9af69b7a4edc63308ee989879cff4d086b8eb7bdda4760969",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "index.html": [
+   "5469a78320ceee5ea4fecf42043028c2f6fd7be6ded6c012aefab8909c2b9e92",
+   "ebce877f6a5451467470a5faee3d4b0b1a16f142ba9caf61ee61c0ace25e36cd",
+   "13f22f590167618a0f562295c36caa69c64dce533396c387b9968789af545d17"
+  ],
+  "now.html": [
+   "f4faff2648912c7f28727cfc1cd8cb0d4e3feb3e11221a7f62befbf057e9c2ab",
+   "e1cc0ef5aa00ec7e7a952ea3f8ae7f7a7d908a170364070f6c776a94f6a46973",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "press.html": [
+   "1f5f622b80c88d2f243dc6668d26b59575bcd09c14eddaf81df6cb772ce5af09",
+   "fb76de21c87d35b8e8455ef2794487a750dcd510bd587eafb06c5203d1d27e3c",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "speaking.html": [
+   "903bd4dac6b9c7977f7e44ff76f357b9dbf33cf4aa0cdbc9a3132d9b4813ef2a",
+   "625595438042ca4edc53e074291715302bb547ffbf3cc098e58405b6d0316fe3",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/about.html": [
+   "538758de4d372ee6bf2fe6290f5c8669c4b024b6b4e617b43a731b1b0f9db964",
+   "0a42b05cce4299343ff5b855771315689d34e14b585ff607c5ff1d22676e3749",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/index.html": [
+   "6016b0ec2c8ffa833e73d7b27a46f392b2f668610c6d38ab4255155b8a0f61f5",
+   "88f463c51b2b0b330d17d72a891bd129c8291740a1c10d9554d1c88bac1def17",
+   "016b04815f3ceaa3aa2377bc8076969ff4e9ea4390bf0b6d0267ef07821d6a87"
+  ],
+  "ar/now.html": [
+   "ddd99e107646f40a01ad92b15973a3057e32d2be3be36ce7d6e3fbac83f5e295",
+   "0d45da4a4d3e9704e0c174fcc4a805818daf6e8a23cf35a47fad95ca23d9699e",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/press.html": [
+   "5c4003d37e9c33d4370adb1be198aadff463314868190bdfd6b4759117781bc0",
+   "11f47e7d0008e352fd8d7641dfb4c59680023d120a65cc75d01eebfb3cd1296d",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/speaking.html": [
+   "f0e2706a8bc6ead94533cd17f29e24e948c01a809c65c1929a77083703b8dc0f",
+   "9ceb8deb25e712a4c4207c52ad427a0721cbceccfaccd602f71bad15f47448ad",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/studies/rent-own-2026/index.html": [
+   "9e00aa544d1f93cc96e2ca0003b919e92519626a4138695a0c8e6f92d439e957",
+   "f71e8e209eb6a8b74309a3d94e2166e105c048aa54cc532c1086160ad7b78b5f",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/tools/before-you-build-ai.html": [
+   "9209fa02d51d3c9c73d893ae47b4645469b38dad9f922d65870c87561ad7734d",
+   "b8b8da0479936b284008d15623e97ac7a4ddcc1074ea71a2bf7984a579efb6ef",
+   "f0f3731f75a2ab30c099c273b20034f8b1d3f1f7ab9339041679c53fc64cf1d9"
+  ],
+  "ar/topics/ai-real-estate.html": [
+   "866aa98debbc0ddb0cd6efce231aa6ef06275c59d8b2ac2a8cc25e5bd44cf569",
+   "3f4796d6381633707a7e59075a0d5202d3341700a3ad736fe96c06e07b931f49",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/topics/business-systems-dubai.html": [
+   "7517fdd590eeb1beccf00fc616bcc17e86afbe2cdd44d4f1953bb89c470b547f",
+   "c5d5acec092a16d47c35717c3f348821fc0a24d579759e2d07bfc0aa639d0474",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/topics/tech-explained.html": [
+   "a6ce0e5d84cbeed60c3adf0a7cc70aac7562d66d498f3f8dfb7a5bc5f8a3d5e4",
+   "ab4dd603e196efa59c4cefd76871a022ba75005f51d2b44e99c6e380fa9c6543",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/work/appraiva.html": [
+   "e5ab4c371867a822bfd9c3679f07b55c21432e4698d019804c423eeb859e5a33",
+   "4fee776481de6c26ff347c4d830500a72d8cd8af8fa22a5e63477523b862b5f0",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/work/index.html": [
+   "f62c57cdaadc1687ff8c6dce9cc8a1b846e7b93a221275cf80cb7f0d05afc5d6",
+   "d77cd151926b40573dcaeecd47d13ca51bb4eaef76af4f048c7053040fa81c86",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/work/mci.html": [
+   "8758e218086f8fd5af1a002665f099a90ace51bc02e558226433aea95e211b43",
+   "9a0c06bf620d00172542ecfae1cd469472a3aee37ce46b657ae0fa986e502fb7",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/work/oxfam-novib.html": [
+   "188d3be5c65cd1c6d86978c25b7d262060e2eb8c402211be6516333b9b3a7857",
+   "49db076bb6cc60f6d5783be135daa78ba971585b5d2788631f80e3772fb89b39",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/work/royal-abraj.html": [
+   "d3902a488acc41a0b6682113dc088531e2f971c10b7dbfbd67064e7a4cb13a17",
+   "52390c00877a1119ac9225edc1666bf562cb7f7cac8a8d4796c19021c83de115",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/agent-workflow-shared-bottlenecks.html": [
+   "a5a97ee9bb05ca05ef8824b882bf0bb17d6921e4f347aa702c174f45c87eca9b",
+   "72741d0cfb96eedf8526b25c5fa23a5d79df9513f9d780080a2994593cef809a",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/ai-agent-permissions-ability-authority.html": [
+   "3e2bee2439f1708a3e6f3073c561f71c6bf9466eb9f15ba65edb9f07b5ab168f",
+   "79a020bb17bca8007d7a2caf8a95b26edcc478627995ef81706bcf5db78ec390",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/ai-agent-safety-boundaries.html": [
+   "b00cad2f60097707bf10fa87e8bbb856af46fab4de6601b4202dc3ecc1b4d6d1",
+   "5d1f2917b5005c9faecf3bd9fd8a26c2c5bd5216ac4dfc06de64d66ec52eb01e",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/ai-agents-shared-notebook.html": [
+   "340b7b94adfa67f61e1f0927ff96036f2473ed5e6914d4b2be2207f75e3e3f09",
+   "0de2e696caf2df82790c5ee3584bce2b67f514b08cb287ffce72a40fef835d3a",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/ai-cost-per-verified-result.html": [
+   "c4ca9e0713fa03f891db89e9d6bbfabb83fa04067f88bf3aafe56fcae8f52ed2",
+   "ec72c7be3ed3068113cd5051973f6da6336395cf5ecbbf254c8eff4b4236751f",
+   "74d895cf3b870a8038fb62dec3098627a6e87317a2b58337cc468f98f371dcae"
+  ],
+  "ar/writing/ai-data-center-site-readiness.html": [
+   "e7878d4bbf3f4aab62c1f15362952396d468f67df2b27f933935e384fa27b339",
+   "23a6bbe029512d5717755a78f1ce45cff8c6fb49b09f6463b1675436800c6d59",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/ai-document-review-claim-evidence-checklist.html": [
+   "1ff52eb941ce9fa8ff98d1facb2fc44c0fc717586b1a6c150e54a2b49bae0eb0",
+   "6de2d740019e92693c39e6d6000c62242393f63ce4a82d53b688881e7ccd6b33",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/ai-home-value-estimates.html": [
+   "2036ba856f3c406a54dba77a6fc3d8e4eab6e315da1b88dc798a2efc205452aa",
+   "e2cd241e63774d2fce91ef756411a6d5fbd8f8bf8876b8d209e591f33c9f362b",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/ai-human-review-real-estate.html": [
+   "e77c7484e5258ebaa82b6acc0163db8745bad4d7e1016b9d2215d0d0caaad6fe",
+   "76627099e9042a71a97b9a1e87f96075208caa77dde6d54c03147469160c37cb",
+   "74d895cf3b870a8038fb62dec3098627a6e87317a2b58337cc468f98f371dcae"
+  ],
+  "ar/writing/ai-inference-memory-movement-explained.html": [
+   "d231b7c6b6a13319a537bcdf3e80f1b8737fcdc49864f6f6b402e63468f584c1",
+   "0b06174a38453b05a380698cffd90f1b6f3101ebe9202f22a29952115326c2e0",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/ai-rental-yield-cash-flow.html": [
+   "2dd3bcc5c3c83df1f062c5d9e82288393a185d16bd8cd331c9418ab8da464937",
+   "581e9c4c36b86413f7396a3fe4620c550463576231c903daab6911791240c479",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/ai-research-examination-understanding.html": [
+   "aaff65712e63935bdac3ab2e40743ee7800f7360077d83ec47a81e9a1d405b85",
+   "e6539dceab3b9bb59899d7e77c062e41fc3a8af6bbe8bb57f61007723d0df2ff",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/avm-vs-appraisal.html": [
+   "c0f50a6a307eee7be3be2ca23d25e27298b4e0b858996a714724610910978654",
+   "5e77cb4ca42cf44e38c4664e29745d9448bbc608b67494d1ace66a931a702d78",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/bacnet-building-devices-common-language.html": [
+   "d00933b3bcd1d387de8adc26ae75500b75f68d192088d63e597dbbdca2f634d9",
+   "ef97bc0799f20930574e33ae98c1dacd553ccf5669ffe90218f9fd325b0c482d",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/build-ai-run-a-business.html": [
+   "0b45f4ed2ee3aa7c815806bcad4631d9551c9f4bc55c89ae5f3603b5d6d01e8b",
+   "a24c6dbe2a98d6c229e5969faa803b4f9e00aae9e294f90836b33f59ee745835",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/building-digital-twin-data-freshness.html": [
+   "b1a8a12fb0df828741805a46c3dfddf989266f9071602bddeea1f2937e535a13",
+   "167f7aff0d8b1148d2d2f2dc3c6d0817f4f4c0b64ec9d5692ea1a4820cdf6f96",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/building-energy-audit-decisions.html": [
+   "8ef99f21023eb667611a659d34eb8e6d5ea6f0a3e50dfcf95220d70d73c94c9a",
+   "04d40417f159d9e339afb056ae911f31d24be7ae5b73525f4852ead9029e78b3",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/building-laser-scans-point-clouds-explained.html": [
+   "044bb5f908c8dcae9202f835a869dfa572bd35dcb7729b18949061126b140d6b",
+   "f348b12bdc166cfbc2da0c35102029909a5550d5bc9bb8b65b355334fe2938b9",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/building-leak-alert-response-checklist.html": [
+   "254d2e4d4f0ac2eacb88621eb287cb6eff9446a6325776a374fbab220b4f2b47",
+   "a2d7e270b332eec88e73bfaf8d3a3be05121e5aa1754364616ae03d2b9e2bcdc",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/business-ai-evaluation-cases.html": [
+   "e24c72925adb8954d0e06eb3b5aeda1a8990443a035b589a35b824a7247cbd7a",
+   "930f19c77e7dca06f69e7de96268f71e68491dabbb1ec2b4142155763c8f8da4",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/cash-conversion-cycle-clocks.html": [
+   "375813a4736b4a293f74e14bd7b182dff0346900632d7889f6dd2336bdeb969d",
+   "506a6f56a13e9246a554544f64b98045c20ef293dd8b4f7249b455fec2856a5a",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/chatgpt-intelligent-ui-explained.html": [
+   "180ef74eb1f812d5e620b3779d923515486607a862b389ddb9faf6c1f1edb547",
+   "264ed370059aa623f85bf7fbab872d5eb1a4887e11268ff1fa056566f59c332f",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/computer-agent-check-result.html": [
+   "6c771225d2abe6cc3bb446d8e6733b75604b00ed41d23b2b983ba5695f9da658",
+   "5382263f830b054356faf5556f36ecf6ecbdabdd819bd548adf756f885a14f7a",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/connected-ai-apps.html": [
+   "fc5463fac921d272db3c3e31685b55eeba3808e8bcd4aaeb32b1cbc031068ad8",
+   "124cdf2ee13df717988b1dc9b10441591a8f6f8a21077032e87a9e2e376cb402",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/dubai-project-escrow-controls.html": [
+   "344599dc4e01b1864c483324b6e4dbbb9318614caab014f63c51bc42101b969c",
+   "9d74d776965835b570796414a856351fa21ec21769c1346e00d547d723ba492d",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/dubai-property-buying-costs.html": [
+   "cfeb9c97da9aeb21a211bbd7a3aa4d49b16a033b3a0399a3b6390af932e0e220",
+   "7ad1da95c31d0d813012a59a8d4c78baa75a47df10052fe36a7a9c58d9bd3caa",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/dubai-property-tokenisation-explained.html": [
+   "d169c31864c6048cdd41f717eaf56e05522b86ff93c80e9694f6bfccf2827801",
+   "4ee7dc3053dc0e4197c6497ef46c19ed64eee110117ff462f5a4468c89d6c01f",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/dubai-service-charge-same-rent.html": [
+   "8a97dc36a96dbb6b4a6dd15dbeedebe80f06072d4ed91f272ad689bc50ae0f9c",
+   "f3115fcfd6404cec0edd1c7e3c8cdcf63c4eb85c6d2a7ffe0e4b773e4875c56d",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/foldable-two-batteries.html": [
+   "76f11212cf766e9622dcf28529bdd3768bdb7c08d8d692dced22c99232501c0c",
+   "548f81000ca34b1e7f0d84d36279ce2584f1da727196bd122995e5f3523dadc7",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/geospatial-ai-map-answer-review.html": [
+   "0a48b3bc74e8837333c87e03e88a797c884de2fa7ae0fbd518c6bc6283158427",
+   "c5c24a0929dd46682d7143e9f442f9c3ba57bde39f12aa958deee546970914b3",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/heat-pump-moves-heat-explained.html": [
+   "db2617c295f54fb3897d336adfa4aab8abd7208db1b46a1c58f93fae40324b71",
+   "c2f63b4489a2b3d9dea07ebb4ad90bfed7e6ed2ce578b16697e222366ac5a99e",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/how-building-digital-twins-work.html": [
+   "cb3a328f869d2714bb35352a126686008471cace6b8e6ed4b3a70b5e75a37e4b",
+   "3ec16b270ee17abec7d3ee4f973839e9c0c3ce5ea42c9963702082eb6647a4a3",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/how-contactless-cards-work.html": [
+   "2d32f84452045456dc4832d9f24fa7452a5ec4f5b54abd6b5f8b686844b03e7a",
+   "b4cddccdedb92f7860ff56b8a942f4221e90b5422f81debab4317c270e0807dd",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/how-many-coffees-to-break-even.html": [
+   "0a6b23b177ca175007a93f003225439af8607dfac055cd19f00278ade82fce36",
+   "a37f9f02f09d42506a4e7f9454ea6a1f0d3980d5d75a9f32e55968ed23251e04",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/how-noise-cancellation-works.html": [
+   "162606351d9cad52dfce772d4b544ad3c4d92b642d539674c08a5d3eb33cfffa",
+   "dc4b2ca4b830f81d5a705acb7291e0a83d91a60fed44be7121a9b78d939f084f",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/how-photo-text-recognition-works.html": [
+   "73e30e3a181f813d17fa097433744d0b99542f7b40bdd099fff7c5f374de5e67",
+   "e1490762264602939a25c259c2f872b284f3c386b7d3e61cdf8ba9dcadeb26c7",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/how-satellite-messaging-works.html": [
+   "c526a2ebed0c979b8bcfaa3bb026e5355666e98c17864cb5268ffe2a962f0e44",
+   "b8c1ab6af46ba8810f544d4b11152ea22172f3fec5a696755d2fb4653bb4b90c",
+   "c125f6428fcc3e2f36a60ca5931ea11188bbf574efa9584b89eb82f46d24d552"
+  ],
+  "ar/writing/how-zip-files-work.html": [
+   "75799671e2181ada22ad4a3971ba60d94c45cb81db259bded42fe465b3826d3a",
+   "a26af2334f32d8500a56fa89f3c62c1d057bfc214419743a1525b5d6e0adbad6",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/human-review-property-ai-checklist.html": [
+   "9dc41174af8a25c7c92d2adf0c08c5c55ebb33d943ba52146f5b9b3327d7af9a",
+   "9c3bd6ae5e1b84cda4c93dc48fdf564d5a4ae44d86852dbdeb5044d34e0d0dc3",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/humanoid-robots-at-home.html": [
+   "ef798ba00c44ba2fde30d2e122f6ff6692ae4f6ff316b8d54850082b407adde3",
+   "e9611614f99bf0f433c84cd32dff4fb2f30f6da9e5f368f12967ec8658066843",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/incognito-private-browsing.html": [
+   "797c235812efca044c78ca10ea5017a05b26185bc611143cb2cd3d455856989b",
+   "620ab7f9e04c7623121fa488e128c521a010261f74cbf8860be192d46dc4ed30",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/index.html": [
+   "fe1e9a3c97bd76dba06ec868d18252dcfc2b7181d8c1bc615ee8b2c000437d1f",
+   "bfa61f2651abb74a11a5ad61d7c27d3ef65dec745f898b46075ac8322bab3f25",
+   "7938df571586270446443f7f5d22aa7b2dc2a698120cd8b24f07fd18196d1298"
+  ],
+  "ar/writing/iphone-duo-price-per-day.html": [
+   "87b81897051bc1ab8cb0a8e51defa888142ea252b1aa319d7dc1cdd1b780ea05",
+   "31ce0f1b2495e9d258e9dff02da0f0f4afb33fbc2cb3693a512d96ee1ad4a53a",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/jev-ai-decision-model.html": [
+   "bcbf63ad024f57bfaf9e874e819f76577aa3bd1a43ddd645749f27306deac7a3",
+   "adf24c43788ef393fef4198331fc7b524a613c2fb0b7e1b72ddc5e07a525564b",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/on-device-ai-scam-warnings-explained.html": [
+   "82a9d1009763011cb47927c0a12d29656369e0f0d753fa447c5602edd38b0c25",
+   "2da221e777b17deaa8151eae5a493aab12fd15e1df412218e89bad15bd915387",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/passkeys-face-id.html": [
+   "3102cc97a9f0a53bf918a4427cb422524706636d5dd89e41c99dc61a493d6232",
+   "615c1464cbcfe07c44656de0fbec4c86f3e4af29ade684040ad68853dc583f25",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/phone-location-across-street.html": [
+   "40d42fb9824d18175857fa244a6d43cd3d9ae8413ca745dde53a17718ff0cfd7",
+   "35b2c3a79683b77abcb00ac0bd218df1540c309a224594e890059c4ca391501e",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/profitable-but-out-of-cash.html": [
+   "f0ae3b5275e9a3c86261916458184297238846215b422e7e5564847dcfae82b8",
+   "f9f2004534d339bb2a9e09a7b05a834d6c8a5e57a55841d7b52ab63ce770f381",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/prompt-injection-layered-controls.html": [
+   "1dc69464fbceec11fcdcbe4f4804795700dedcc5447a9ada3e6cfa93b4addc82",
+   "50a1046fc8fa83b348b449f9e8990da6b9f5535e3def7448600f18241f6ebd4d",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/property-comparables-evidence.html": [
+   "f1fd5b7f5ffbaaefdd8051d76410aa4e6d7ffa22f056c0b44bfb5a619fc126b7",
+   "36723ebecc8e941e705ed05408fbbccad6a0a5674b0b30208f0b33d10854e209",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/property-data-enrichment.html": [
+   "41f48efc1a931a5997d75ad5fdf3d0a08bfd971c7830fbff57a6be4c09f765cc",
+   "fc1b1b00ed19d8c37b105ce47dd6c209549674662b9b00b0218174b1f2e2a42d",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/rag-check-business-records.html": [
+   "c30b194525b3ec250cefe410aadaed55b1e52dad928503444e6431afb9ae852f",
+   "246f7119d764ab632f652fc2b073d5c2c1c161e44da7de43f051bf0ab1735a1f",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/rent-or-buy-five-numbers.html": [
+   "829bea39c15a4044b850075bfaf7e4542f228c74ae6f01fe48c8cd75c0561c50",
+   "89906dfdc944c3d9326e277017aa250fa9f6594c2686b2aaf126c9ff6c5e9365",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/small-ai-models-task-routing-explained.html": [
+   "d7a9540aae02392e6b31c9f3dcc3eae8c77866809393f4f0349d3fd70461b9d5",
+   "7355a170d7ed60eaf3005d5d3cf407917514cd72b16f9142c50a56e95010338d",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/start-with-the-decision.html": [
+   "7bd24d2ac7eedb37232792ddeda91115dcc1017ae7064e6b93b78ca4ee5a43a8",
+   "0d469ce29dca4064eee21b0cc78510bfd34a668e1ae758916092ec423f323e3c",
+   "74d895cf3b870a8038fb62dec3098627a6e87317a2b58337cc468f98f371dcae"
+  ],
+  "ar/writing/structured-output-source-checks.html": [
+   "c28cd3b1f2de1484e17b4c0c6991e8d58a969a6b3e7921751585e702ff8dc7eb",
+   "2fd86fb4346596873b27ec2445d0d3eb898685dc70d85192e16c95f997ad380a",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/tesla-roadster-flight-claim.html": [
+   "d81034970502b2a185305721c0624162b8b5dbeb93a74883ac0ccc7971e98036",
+   "6be3895c2458bb1ba2bf00aeb735e728b302a4276672f52a69d1bcabc8f3ec28",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/verify-ai-image-claims.html": [
+   "b147ed1791e065a655cefcc372e8bb33b224dcf117908da3f9d06c5acff7db61",
+   "1a995058163bca5b6c2662799092525d04371be3992ff87854c2e437b6255bd0",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/virtual-machine-device-sharing-explained.html": [
+   "c60fde2d494b945c6f7c710bc783b1424c44f01dd2ea3fdfc54fb8e1b3825202",
+   "8e5aa032d650a93606202cbf7902f39ba2736d39f44edc676f714fbe7a6d8d3f",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/what-accept-cookies-means.html": [
+   "320b82d8874161b7f785892802016ec0e3c9360e7c9369ce8f2b5985bfa3785a",
+   "88ee08986daf78e906eef254d10bd49b74a0dd8c388b6d01bbd9603c2c40ec97",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/where-wearable-ai-computation-runs.html": [
+   "57a8c92383b7675e4c25eb1bd2582d7903968204f9eb266a26a480eb8eb998cf",
+   "91795c5772bc0eba2d661e0acfaf7627c81857eca1f5a926b23f80f9648a5d8c",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/which-dubai-property-source.html": [
+   "97658a6accb39062a3f303a8742cd5c1bfd9b9cac4dbd375e1d06f49f69e1819",
+   "1c28daf77c038b5430308cbe3ae2ced7cc1e9c6e331b0330bdc85b15467e00f7",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/why-ai-loses-earlier-chat-context.html": [
+   "1c183e4e83926e8b44a026bad0435bb98f43f8db063d451851b0b70d149228f0",
+   "059ac9ce9b8422c999268e6623968c902db2ad22415b8324f3abc5ea469d7e00",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/why-ai-sounds-confident.html": [
+   "6fea37412b64168176007f5807b8b3ed16a3d8a67576ca7c3a848a5fb0713ab2",
+   "5a3e3fefa2db99eb194a56da66ecabb407b2fa5315a6081f660fce45156004fa",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/why-ai-weather-models-need-local-observations.html": [
+   "41fbbe18330c5f57ca499c4842924c7fe150315c63855cb91a5a1adaaf976035",
+   "e8fcb34146b0b1d60dd6b0e44f51a3beecea65633020a9c80201532913e4bdcc",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/why-full-storage-slows-computer.html": [
+   "c352491e110a0ef59a9b1b32558c15fa16d961306da81510b676c7807d4ae5a2",
+   "b7ff73a98fc16ca384562bcce0c9fbfcafa9e2ce9b75f0861c10ce821b52335a",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/why-occupancy-sensor-lights-switch-off.html": [
+   "99d870dda22ff2a172501323cd548aa68469230430b893e4c9e95ebccfce8377",
+   "9af71ed192256d5eabaf9b6b9c2cf05d64df51b2ac7e39f4e80417c7c7b11889",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/why-phone-stops-charging-at-80.html": [
+   "01e1aacf2b229c626909752131df8c51d1819c5ee423d1c6d4dfc91b2a2f2877",
+   "cae445b1acf7970bf311a25af79de09fdcc3996297b6fd5d249165c77e71a08b",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/why-rent-to-value-is-not-property-yield.html": [
+   "7a776d9829e0f3ee9fc9a67f25df3796d48c4ee31998d6920305b1ba1d37317c",
+   "0f3a835722773a2e85635428a799b66eec7dd874ccf7b22cc8ee4ffdfe1f94d0",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/why-usb-c-cables-differ.html": [
+   "0c608c051936d04cc99fe5b902af1fcaa09ad424429cca9fa9d30a2a183e31cf",
+   "eec095f9f4c424623062388c7391bde65cf83818da584bd7e4833cc42ab24316",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "ar/writing/why-wifi-is-slow-with-full-bars.html": [
+   "78e463cc89b07d78c9174ade39c8721be4df8a65770c033d15678a0af2d96a3a",
+   "6d1cb1750389bee6eac3d3484696770e552cc4f9e1d5fae6f9938b70cff573e6",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "carousels/ai-property-brief-evidence.html": [
+   "385f5d2f04e9548c895f1ecffa6f9edcb8c108a6fcfe2965ea46a89010c9e80a",
+   "20d8bc65a3647896306d3d4e7eb805590c2240ca746a5ce9c0e37942f4db2631",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "carousels/dubai-broker-record-check.html": [
+   "2ed58a89f2836e0f5f6367a15bc77a29c826cb2d315daa4b069875b5e7f3cdf4",
+   "12fe022f8185a3ad0dcb8db4330221e9e6d0bd927457080a1b04540de96bf88d",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "carousels/dubai-procedure-status-check.html": [
+   "bb6ebb35ccdd90693c185b9cbc7e6fd58b3887291d6073a269bf4fb52d1d79d4",
+   "523e57445599f6e49c2103da895750d3be7d03c28982c39329b06b297f3d3ab3",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "carousels/dubai-project-status-check.html": [
+   "7effb102eba6a4f3bf6bb272ddde869ef9fe3af44388860aed8abea57d3cdba0",
+   "3dc03ee18ec80c0ae31defd285cac34825be594290878662085a2eaf9a35fec2",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "carousels/dubai-rental-index-context.html": [
+   "9d12fe39efea5b0f01ea423572a80d5330d0c3eb94a376ebd5d8c8e2ae85ab80",
+   "669b37fb69c4b4058ae559174d0f689958249dce4619278f8ef83319bfa41df1",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "carousels/dubai-valuation-evidence.html": [
+   "a9b66dbdf72072c0d49fb0114fbd876c71adef6b290c13e01f1400f82ed3027e",
+   "55964b7d2716d6ad4d72094465a845a8eaea83e625d113038b875fc23748bea9",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "carousels/index.html": [
+   "454c5b4de8906439dff77cdccfa84ced259d028152e16376c42727c4e56f1f13",
+   "ba8f2c149d4cda0896004db5b9a219c064b0eba64404d17e103b7bceb16bb025",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "carousels/tech-trend-ai-factory-observability.html": [
+   "53e8a1b154b06c0b792372b6b09dd293f983f94ad30f9a70afc24fdfc03f32d2",
+   "b59ad408a61340ad02871e081bfb9189ae7bf9ef9f44f29f0ec794d8959a19a0",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "carousels/tech-trend-ai-usage-not-outcomes.html": [
+   "aee949b85544edad9c7b296850bebed195579506066292c90ec5ebca00660ac7",
+   "06692665afb1dde7a1657036424f38fe4d0c5a58d7cb6872e3c6acf689f0b6e1",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "carousels/tech-trend-assisted-permissions.html": [
+   "6fcfb5b87f8a615b13c287f2336d6a509c7126f7fc312ebc6dc63589e0be94eb",
+   "f5f1af8d4b5e56d8288cba2226bfc2aba9e0b8e6633a514310d6ab8b6f402620",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "carousels/tech-trend-gemini-business-hub.html": [
+   "8c4e9c25121dc1f369b340f88f2f7bdc9675dbd63b33e80dc9565624c58c86ea",
+   "6a9da07ba63ab9b57116e861bb2861da5f644b7456fee357d00bed21ae226e63",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "carousels/tech-trend-notification-to-reviewed-fix.html": [
+   "8b5adf287880346312ad196023fd3dd1ad8fdd36754859e697f84faf1106441d",
+   "77ee9ff188716d9722f81d43c7cdfce1982252b7bcc598c8fa542984a9b1254a",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "carousels/tech-trend-world-models-real-tests.html": [
+   "0dc7cc27add5fdbc7395cd905787f12b74e5f91324a635d78f94b2fcf233fa59",
+   "126feda0c2e6c59326d9fa972bf982bef930128cc54e9d16629e7d9e74372480",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/about.html": [
+   "86a3b15846af501dd026edf12f57ff578471223ec7605f4c2929fe0d238f35a7",
+   "ac5a456f9243666c52f7fd283c48098963da713c7041a2eca7d1c6bd1d838706",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/index.html": [
+   "f87283c7af23be9f8d41bf9196537b420f9e3a919dd4c9cfc42d924a4622b387",
+   "3cda7159f5a40d0fc3ed39c3cd4e6cebb44c5194821495cfaa151586fdb12f1a",
+   "2528d4da50335d7754496cfdab35d763ef7abc8bcaa0dc2b7ddbc2541239746b"
+  ],
+  "fa/now.html": [
+   "917f3c99698b37681e9659ef7e9d67f16f5ff47b174e88c10b1e4986027c9904",
+   "cc0f910a53cb051b9e420d1f763f83a1114c97a4529176473c2fe6fe54954c2b",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/press.html": [
+   "abbbabf70d85ac6a7c832c1682cd5de9736b234407495fde8977bdabe784cbff",
+   "5020800a7884c55438d5c99631f292a56a3a88ece793d2ac58d0a16e6708e5b5",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/speaking.html": [
+   "9186f8f6d4c47edc46fa5c9db7b621c247528fc0d530d427d91a67db203eb9d1",
+   "cfcc6264cb54ec080603aa4eb4e3e9e8c7e178a5fbe16aab7de3b57cb611f604",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/studies/rent-own-2026/index.html": [
+   "1addb9aa0fbfdbb9d334460231cdca8004ceb1caff60968e914fff0f9d68f8cc",
+   "8f2f96966f377b755ffac62f7183818d2b763e42efd94a6f80ca57c2993b0207",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/tools/before-you-build-ai.html": [
+   "6764cdd0af1b339523a68cb371e128df9688bdd40739e41b469eb95d1e4d247b",
+   "e484a7c0a2bbe6073aba0071a1d971d51012a481ff274b494fd395cc60c892a9",
+   "f0f3731f75a2ab30c099c273b20034f8b1d3f1f7ab9339041679c53fc64cf1d9"
+  ],
+  "fa/topics/ai-real-estate.html": [
+   "55bd42f57e462f9240a0f7411448ad457952181c0d97bb39031e78dcb2b528fa",
+   "c3d73a328a5f92db05c9c720fe58006986fcfd4a017566eb32febe4a097c8955",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/topics/business-systems-dubai.html": [
+   "7dcc3f617f75ac0ea5f434d88d4d3f048e21b3f297616cb39f693e30a747e8d7",
+   "51b97ba6542ba56f4015b8a941e26fd2c42d658c78b8e10a57ba7ccf8f704903",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/topics/tech-explained.html": [
+   "80491b84c8abb22d928ad0e11ab06811d0b0f0c06ca9ec081f7a5ea8f50b6072",
+   "81f3ecc4002477d0d21e2e5080dff13cd28d8775a10e3ebbb27170f4d765f983",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/work/appraiva.html": [
+   "da795854165adadbc5ebdb97546a84771ae2bb34a7aa2a5729d4c3396b627b6f",
+   "65a557fc4739bd83a07393cd03f4708e9b51464f8654f98addd6034eb0dcfef9",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/work/index.html": [
+   "08f628f7c4d040f18cdba531d4f149eb1e589d8b3d415ec3c83c297de113e1a1",
+   "7b7d5d6a27838097054d5306869343150f79f6eae042eefc6250df2d8179ea65",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/work/mci.html": [
+   "50e8d7836916c622180c2ec84718cec1f33cde3939ec0b122aee7c541fb10431",
+   "7f1364a884cf000428f54daf71943efcef90de0b6104c346401174552127d65e",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/work/oxfam-novib.html": [
+   "8ac487d2f6c1abf1acdfe98edafa0db077a295ffbe0257059d7ffacc1116b2ed",
+   "91da9ae4464bbf5f42bf326459e1aeb6babd99a8b5013d75cc62fdc68a743725",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/work/royal-abraj.html": [
+   "7c12d9c850a1d986db826de946416e87ba36a877e88dc80ef0a80904db3f3194",
+   "cc5942889b78256afe5f5f514030dae4f8039c2e77abe29003b58053fa794cff",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/agent-workflow-shared-bottlenecks.html": [
+   "56179de777006b84bdf1a403782ba7029414ef80dfb8ede281dbdf6c066160a5",
+   "c55ca9d766b9aedb389e343d921f91b4bcea7622f8963604b9ed719ea748e3d8",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/ai-agent-permissions-ability-authority.html": [
+   "076a3ab8c40921632b6f26c43cce839f3bf88b968835a4147d3921eb1e68ecb0",
+   "2b2ef61c8b127323f7d60acf80729020b3b9097cb6732471a218509110b11206",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/ai-agent-safety-boundaries.html": [
+   "e79452cb8bbff6ac95318d62752314cc0e2499857433efc97a0eabdc40fa4ab1",
+   "7ff625c51cd220d8770b0e6cf840cd1697a6c83f38adaaa51a004c0ae8355788",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/ai-agents-shared-notebook.html": [
+   "18d823400bdeb136fff1cae089ff7710500d0a2082cd1734f087d90e8fd173ad",
+   "6f8fbf3ce92c7846125ad21e241235d95c697d45f90c1e70fa346a2bce20122b",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/ai-cost-per-verified-result.html": [
+   "acfa0323a097cf0c393e453aa142b930701669d0071504dfa53e10c0fe3e0f8f",
+   "9e01e313c3f7ae0f9f94e69c5fc4530a437915cb8f4b9cd8dd48ec4c64df3c00",
+   "74d895cf3b870a8038fb62dec3098627a6e87317a2b58337cc468f98f371dcae"
+  ],
+  "fa/writing/ai-data-center-site-readiness.html": [
+   "5494c7b7868a2dab6ae7fd2bd77ca3407e63cc81cd7e7f7e06ddcb84a208deb6",
+   "19ad385e099b3024d2392b501be44e4b4ab70f43dcbb973177a5b428deb22e7c",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/ai-document-review-claim-evidence-checklist.html": [
+   "79c1f665212efcd4bf6c8fa96a1748a186fc481c1a498415e7789a18ffc703ab",
+   "f5aea227e28c755270a11c70c35e15de247b0d7c7fdd5aa0c80b6eda3005ffa8",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/ai-home-value-estimates.html": [
+   "33728fb5cfc8106455292638b296d59b0f9f95a4faca208bd03e9cc8ea4fba77",
+   "502324f35ead38e61325eae96f3d529fde768816934122499ae6a057f9900966",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/ai-human-review-real-estate.html": [
+   "dc736383e8503762c2ba7cb41198de350b438d2d7f376adc4e52103bd232ff98",
+   "767cf11fe2ab440ebda1fac7b275489c20bb34f1a3b452ad4906bc0b54ae1623",
+   "74d895cf3b870a8038fb62dec3098627a6e87317a2b58337cc468f98f371dcae"
+  ],
+  "fa/writing/ai-inference-memory-movement-explained.html": [
+   "9b79da5c1dd21f15196fcd25dd990286c4f8277fa5ee307641da1b062ad2bfdb",
+   "f98b5d37bd069a60c63919763d190c4cd8c2226bebc38592e9eda6f265fba356",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/ai-rental-yield-cash-flow.html": [
+   "1e046086d7ede15d72b0ff6211ae8e8901b1bab690dde874f6f794f0557698c9",
+   "ef7b4381b144d27e9657bf71fc677e27f1dd86d59749335ec0da6e8089a8a5b8",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/ai-research-examination-understanding.html": [
+   "0b3673a6bc76f6b1516e0c1b1679c8358f0a3e4afa567b93c130de67044cf6f2",
+   "3175fe697cf9e6293f563bc6f4d08f527c16632987be551b7d2ce7b76751fb66",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/avm-vs-appraisal.html": [
+   "bbfeecb9a4f8b77dfcc704f9b3ba77acb1c4c8b0bdeb49c426fa883a6bd1127b",
+   "6df7aa3628c2255c491f4b8bcda8ac7d74a34923106ef907e9fc4b04985fb677",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/bacnet-building-devices-common-language.html": [
+   "8c4f396721ac4f860480f85e182a1825f583d37db06363353d333185a3287e71",
+   "6b28425189f2f2b3104a18e22470dc2c6ff887033874c056a89f461d47cce1a9",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/build-ai-run-a-business.html": [
+   "d9574610867518dffd65c04c29e76e2e73c5366b379189cc8b72b938f590b6cf",
+   "378bbf1cf18343cb261c3f61a80d17c3a57130a79df60928817a23e48e03baf1",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/building-digital-twin-data-freshness.html": [
+   "4ec764c15bf43fb7cdfc3c2d28b1868dc70158b9e0364825a54efb3d97a69b2c",
+   "a70ad700b309a5bf53700351aa6dd47bc6101e21eca8ecbfc1cf68b3d14cfb7a",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/building-energy-audit-decisions.html": [
+   "2b36e38f9b0ad62e68d97157a8cc1fb7d6f9731525a08aefbf2e7fced13e8f9c",
+   "e5842885ac379018061596fb483a889a04f31569cfda3a9fab1a715f6e60724b",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/building-laser-scans-point-clouds-explained.html": [
+   "35905330cb005cfb31eee7521236c8902a0e784c3f265ecc5faa0cb9ece8eac8",
+   "8b4e12c47ddecfe329df6dc6a892a5b49ba584554faebb975b509afe9d20448d",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/building-leak-alert-response-checklist.html": [
+   "db248a0dc6d4b63012aab793971d9ebb73d3c2f40629e7ace555b36b4b033dce",
+   "2392f16bd04dbac95a7867b0597483b956ac567365b97cee7fecc2d051372364",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/business-ai-evaluation-cases.html": [
+   "fd132c961233e17513fe6a16da67f9068f46025afc814a3fe881081668fdf49a",
+   "f3e384d70d836d382de8198f65184f31ba0bed98935da05c085b830f4b8013bf",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/cash-conversion-cycle-clocks.html": [
+   "aa5a2aa0b097bba980538e0a7e68028b1b071207961aa5fc65e3ed0e67a41822",
+   "028264d3c56004381d77b1b5a501b930e9506d5665517324077085209a13bd8b",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/chatgpt-intelligent-ui-explained.html": [
+   "4d7e240e5777f42918eb39cd5115653b0cc6b3e78465866dbef66fc761b268c9",
+   "6039f0c72478735607a14cdc913c7539203cd64c269e7bae04fe91db573f7b22",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/computer-agent-check-result.html": [
+   "8b437bb266a867bdb57c2781a3ab99ece225279a6fbbc35d5264a773c9c0ee91",
+   "351f9075afb3ffe32393d1256c005d560ba6b2f223a7b31968779872441f8783",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/connected-ai-apps.html": [
+   "eb4edd2e305c6b37519aebd4c6e2ecfb9b22946aab2f7d0b28a4923f1580a311",
+   "f9a52804eda46db6756e7229379e114815a6c264c97bf61e51e24d47d283449d",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/dubai-project-escrow-controls.html": [
+   "8d1cf71e30ab3996aa11db43409a1577ece4fe37c1cbe2b098f4d2ea297afd0f",
+   "3243fbc549701de251652c6869607b45559973a82fcc527e7ba0c2fd05215b95",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/dubai-property-buying-costs.html": [
+   "61d00d2723c7a17789f865f26cf4f2e4bc666fc8b366b217b7dc6110ce8209e0",
+   "7ca45488813a91339dd878b701ef1b1f6ec93f053a5ebd31a0c37653daf78f31",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/dubai-property-tokenisation-explained.html": [
+   "d85495a255ac109e8afa7209500d2b185937731a94f266e56ce127202a2e1c7b",
+   "8afe19f1675de6f70d27749e2fdd60bfc2adbce8d7e59c35f87964bb7fb632e3",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/dubai-service-charge-same-rent.html": [
+   "c3cad23b5e0c9cb2852613ec399f0ab82c326dda7f4fd9bc6ff056eb48db381a",
+   "6ec99cddf9599946bd69add4dbf6d4fb4ecae9a69b0b0daa1eea3593d0c6d5f0",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/foldable-two-batteries.html": [
+   "9e28ffaeffff81d059f969855c36ac29f5343dcf908d55f51b8dcca9e88c879d",
+   "14498867c40e3b0817cca292d6bd1758644f03075090bd5f193f2a1274567202",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/geospatial-ai-map-answer-review.html": [
+   "72821b45ff7aa0e2a827bca393b7bb5a1a7081ad34fa6209168be25389f39167",
+   "47a6319a9652f57e82f4c0b6d2c583fd3b2c453bc312d3dce68999ba135d452b",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/heat-pump-moves-heat-explained.html": [
+   "00bcad84af090d9a4a1f54120d73232ec083ed559d95a4c91c42e0b97a173a5d",
+   "242f36b802990f704f3ce718ed4cb9b4e246e2d9e785ce1eadf5c715138e8c4f",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/how-building-digital-twins-work.html": [
+   "cedcd369c314ac232567d73c4754de8816883ef3741a26bf39793e9f77e6b027",
+   "3712f7a2a56c33b9a8822eecb4ea3fa4c9b88c074d598d225f405feb02ab57ea",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/how-contactless-cards-work.html": [
+   "72091a38d1d115007b73f1f8af085fa062fb3ea38f19d73188f4141e31c043f0",
+   "308eb26d8d9af56e48d718b17d78806463910b9e9457658b7d34cc5d0c032c70",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/how-many-coffees-to-break-even.html": [
+   "0d0998b41ca267079142bb48d5e6164ff158df30ba40e3063dd6573931d9c6fe",
+   "bd5699c7b542d2fda97ee98471e6c2f37a5241bf331bad68511aca23e78a5f0c",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/how-noise-cancellation-works.html": [
+   "654468e630c273b11163733f4c00a1622391270bebe9717bb6be161d7176a55e",
+   "2523702a3048c905a8bad4ffd8d1653d00b0260f9649a65b4294560b961b0c48",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/how-photo-text-recognition-works.html": [
+   "1bfa751f5cff7626df4bd1570da1e270e90ac123cc5a6b15a961b6c8fc6ac3b4",
+   "f162581c40f5207cd35f5b76a555fca4723327251799d6bca1ddf546f50677d9",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/how-satellite-messaging-works.html": [
+   "c65333df36878caf8db0262e3b447f366d6f30753fe2cc9dda9d919a7f0e6e66",
+   "a1f3e157e95e70632d3349b8f820c42bef40d49dd9d4d474846c5a1eb1203d55",
+   "c125f6428fcc3e2f36a60ca5931ea11188bbf574efa9584b89eb82f46d24d552"
+  ],
+  "fa/writing/how-zip-files-work.html": [
+   "9f22765d10bf487955ffc7b67f80736e30daae3dba589956d26f7209734251fe",
+   "a082f9db05f3d39660d530bbdaca3fbe9c0988dfce51bb4596779d6ed8468fa0",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/human-review-property-ai-checklist.html": [
+   "80d4e563c089b479f762d3ca8372d8119acd21aa7553ae9afe9593721ba74c4c",
+   "00ac452246c938fe658094b83bc12f2aec8205e88ac99f4d9b7053e6a3268600",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/humanoid-robots-at-home.html": [
+   "e9cf1b21f37a1214369a3bda929026020a00575f5b184aaca63c4223b75bea20",
+   "25489b57c4d65ebe0016e50f737fc007122b064d97e03141e870a966af74cffd",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/incognito-private-browsing.html": [
+   "2a6827f35600f84f6bf3d24b23b7c94a4343e87e42d598c66f3284f00dbc6d11",
+   "0e21baf918e88c50e821a084b82e9a0d1a1fd09919a1ab710e5a3f5d8d0d8511",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/index.html": [
+   "39df7f16823ea30af32700b4b60c25f13a3ed8909e3cf614d271a7f71015fa87",
+   "21a55f2ae75855c7a028b6f3634035f821cc16cbccc6e5329e78cf22d3474f1e",
+   "7e167fe5ae29c485203536cc6ec381ad920cd5826e826b44dde700f0c7329e0a"
+  ],
+  "fa/writing/iphone-duo-price-per-day.html": [
+   "5e413c7b98830fc2042eca1653709086d615ee05c6d21f23f825f1c0f37ed5ce",
+   "4e658ac2d8ff30cbe0a8d6e4e264d91056c6b8f29de49fedc14b43803250d70d",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/jev-ai-decision-model.html": [
+   "93db8053d6fdd11cf895493c8799eb8c048b3d346f609c9d0269efab9f0b62e4",
+   "1addba1e95be00cc8cb18e25d82b6c33ff9151b08d68a5592cc083fcb07a5e05",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/on-device-ai-scam-warnings-explained.html": [
+   "ae7e4bacdd6446fc2e126f5c8181e70429a562216fdd2d81154253bfbd792f26",
+   "01ce721b554378e0e129b6e7bfbef5756202bc18c2c227971c588db44c993fd1",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/passkeys-face-id.html": [
+   "a01c67058a77366d0483e17f771932778b2dd86ea930c87daedd301a9d9c957d",
+   "6b5286b3d0ec1365bec0c7bec92ee132c036b2e2ea3a68c7de05fc2ae93c99ee",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/phone-location-across-street.html": [
+   "029a0766f8ed783a61642c70b85d117ffa03a615e6e818058e45264607c7bfd2",
+   "be1cd284b566fc793dd0350c5f45044fbac497dbef1567a55180138ae8fcd933",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/profitable-but-out-of-cash.html": [
+   "02cf556a15eebb2de2006b868bd832c23c6011636fea47303f307b7e1e114a5c",
+   "a644939842d442a9086912a58380f630e4215df4ba488bed1f1be8db7c37185e",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/prompt-injection-layered-controls.html": [
+   "a158f4b759afd2b191a52bb4f57d711ea339f04f63e3e727bdfcf98fb6c8d90b",
+   "adebf8607ba62e699c719f4097ff9fd1d3ff2235fec75b808e32b980365a0994",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/property-comparables-evidence.html": [
+   "35a45bad80584ae3f8b0bbe010c29664aa3a465e7b6a3ecc29ea7e88388ee024",
+   "f9a5cafcd99793edaf92671db8d741225a824fa7761f70fe0de15d4fe153392d",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/property-data-enrichment.html": [
+   "c84a5a2c8d48b8c66ebdcfe5b9ccce711a5ad40f3fc85108234a4bebed528b68",
+   "43c9faf7df40d0c5cad65dc63fcc59edbfa956c9ba8a3916ab856c9db0e0ce32",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/rag-check-business-records.html": [
+   "79e3e1be587385927a8d719924ec555b482c21630b086d339b6823e3ef0d0f18",
+   "ee2a0f5ade719b660fa73f878e20a9f048aee45fc18e7585a378d3cabed5f0af",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/rent-or-buy-five-numbers.html": [
+   "9197b5a8981b939235c08097dc83ede28ccbda27d91f92703a391e33b3f93211",
+   "09ee541ea0371c028aa3bccfb3699cdb22dac78832629ae2b5a21f838ba37187",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/small-ai-models-task-routing-explained.html": [
+   "9ae7f88076b51f57a11d9d77ed807692cc7572fd5bbc24a65de498c1163f0bb9",
+   "4761d6424fe64ee4cd552406c712ead23ffee4d07c241bd55530a36595f20390",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/start-with-the-decision.html": [
+   "f9c3963dd1042a3a71482644836d34708300bd2fcd6d293ba78beb0f189419db",
+   "33df3b85430d6a9818ae461ac07d9301d87fe9a98bf70460532093736f989a5e",
+   "74d895cf3b870a8038fb62dec3098627a6e87317a2b58337cc468f98f371dcae"
+  ],
+  "fa/writing/structured-output-source-checks.html": [
+   "9ef54149b603f45e195da64f067fbcb4edb7c1d15e841d4069e4c20bda86374a",
+   "e73d8898b0247d0b725b26e3d2336f8d4f788dd218abd57d70cc86037f36d5d3",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/tesla-roadster-flight-claim.html": [
+   "8c4459c624dedc34e7633775d9e9d993092ef687ce42400fd4e9a8329b88daa3",
+   "5448b43654ed84652b0cd68384fed69c4dcd308c8b5b69919e773f682b7aa36c",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/verify-ai-image-claims.html": [
+   "f62d8fe2efae9cd3e096f91f0498cefb58fbf8e65c82395e577a63e5a77f2cea",
+   "c83d508171a1fc7f9a180d60b9d7abbe298a69097eb4fff0c91c60d239ed4c4e",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/virtual-machine-device-sharing-explained.html": [
+   "67790a9b577bb9441368fc2ded25923b5109d0bee04f9e1799c5cc67a743b08c",
+   "a2fcd225512553f802b1e3a60876785b025c4be99753e83c806e51b8cb2789c5",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/what-accept-cookies-means.html": [
+   "0f7a46342796be8fca092d99f20bd9b9326baeeb65f30aff89448782941ad883",
+   "55d0ed7e6219b5e69b182e9a60b8fee608afda8ed529c6027fc1184e6792f474",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/where-wearable-ai-computation-runs.html": [
+   "0ba3de82dc2f68ea8dcd8ccf88822407ead1bf99d76049e9b285af1e9f3a550a",
+   "10de695714a5643094ce48330f840169da4ac6a7a51d256257aa0ba9a964f9ca",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/which-dubai-property-source.html": [
+   "43a49b3dc31c4d458fe05d4a8108a8f4f7ab9a0cbb38da24542dfa6c8eab4c53",
+   "97c8330e202c320d5ea2f5d7791289c0d1f50f8558e137867765cc63f8e09f29",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/why-ai-loses-earlier-chat-context.html": [
+   "4c10a71239fccceb5c2609973d15c2c0c19e8822c0678ad57b68bb2b6ab5f784",
+   "4e94782690bc4dd2e402256625cb764910b2917a3899e3d21b1a83c8c495d4a9",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/why-ai-sounds-confident.html": [
+   "53d59ba5b72e5e67810b90ac0904ca45963c4bbec773c82d91d1a4900ffd03b8",
+   "bf604ba7a9c8f23d0fb87d9d02d3c2df89758257df34eaf6b5b37ae845fce555",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/why-ai-weather-models-need-local-observations.html": [
+   "e65375aad1b6bcbf32a2874e5f99fd5a1f23e2ea4bf9949baaa856f1b64ac72e",
+   "413ac9a76b7bff1a099d56b3237e6470c260869c400a65246442a287bfe98458",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/why-full-storage-slows-computer.html": [
+   "7aa3a6bb70c35d44d9cf2f169a45f2583c1ed70b8d2fae1c268ce8bf7866aa03",
+   "560ddc9d2d6db3bf184ffd1af2e0d288e20fbd0036682e90c88f7bc3be41027c",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/why-occupancy-sensor-lights-switch-off.html": [
+   "38c97cc51d8acc99200e0bd25da4ea5d49bfaee4d2a3f7e46edc5c144fe180f1",
+   "f7f03ee7be706b667989a1aed675904d7de1ccb404d6e547509407b6881856c4",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/why-phone-stops-charging-at-80.html": [
+   "f575af0c3d419eaea43bb2bc8fe78dc89be47140565e2b5271fb715c7ab428bd",
+   "30605a6235490ff5677ae2064d9d975c511f5071175c0828733f06c3d2f08c90",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/why-rent-to-value-is-not-property-yield.html": [
+   "0615ba383da6f94452b73b5c5edaf1bb13b21fd112f4aabb3dd1696405e2d29e",
+   "80cc76ca0136237ae2057e266be1652c02eff8755276f1a68f62154cfdea0c57",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/why-usb-c-cables-differ.html": [
+   "6be8fbf258a2ad5fd087971a5605999f7fa6d5cd624db4a259b2fb9f75012e90",
+   "4af2dc9ab269c17123a690681f55641e95ad82f0dcd3cf0f049f973f96a4aa77",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "fa/writing/why-wifi-is-slow-with-full-bars.html": [
+   "54231f2f0468d1cb2491a029db7bf051a03439199530ab0700bdaa6981e474af",
+   "b045cfaa1e269b8fa658df56869772de5c5b5021d74b4cd569b2561e6b204d8b",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "studies/explorer.html": [
+   "412598f20154614e979646864f0b507f6a73dd59d21216186ec334c8e642226c",
+   "d57989e1f6d3aef37bd9ebc3f481ab776a713bb7d89263486e68b69c2b758e0a",
+   "3bfc36b77a4ab4203979090c72cbc9ef8e0f4acfbea88a427359cb5ae940fd5b"
+  ],
+  "studies/index.html": [
+   "02861bda028a72af43f028306e7017915be5da6bbb8c0a904a1c62fdd531cecc",
+   "f252872e3715214cd56f01619a635c8452efbaf7529fa3cd91cb4fdacc6fd0f5",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "studies/rent-burden/index.html": [
+   "e2e710460ee8d62a5522995be07513ee93a8a362c56981bf675a20a42ddd1dfa",
+   "bec2f477ea641cd36c05c34c4e55500bf8062c24272427b9ee935d89db0bbf6b",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "studies/rent-own-2026/embed.html": [
+   "1a90bebd508718350a151c17b54ed37c24ca802c5fe68f6ff863d76aee5f0820",
+   "60b803ad308c19d4fa635c11af33b1e64895abc418e6621236d6634125ed5377",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "studies/rent-own-2026/index.html": [
+   "3a8d93bb3a02297e7ce6758ef782d44e357853f4431f238d51fa65f8a4068e12",
+   "5f80ff2997be9d391f80dd857d13396df2d9bd0b2ae036b24ab4c7a70981b44f",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "tools/before-you-build-ai.html": [
+   "6befb499988619a7cb4e3d501b3413f8fcc7439e1716c18bdb6f14cb81514763",
+   "16b72e3aea7a4d318ac1fd7e8015c1e3bcf3d3243bd5df9ad0e30126340e50c6",
+   "f0f3731f75a2ab30c099c273b20034f8b1d3f1f7ab9339041679c53fc64cf1d9"
+  ],
+  "tools/dubai-purchase-cost.html": [
+   "607f96e993674fa710b4170dad9bbdf35298fa879fe3d62dc4dd7d6e5974b123",
+   "891a27de28f4cb20baf5ab5dd8a8089fe88dcd97541e6c4c09a3316bf68b41b5",
+   "5613be9e3cf03448f285e440d7fe065694cb87c1fbdbbdc95d49ec9324bd5200"
+  ],
+  "tools/dubai-rental-yield.html": [
+   "634afec92117de3cfae7b0212e287d0adf60957e8f8015e657c632871ff70f24",
+   "ba2b3d3877af167b842b840c1cddec9a7a92cddec923050357aaa2ffc4a3cf5b",
+   "221a100a09cc7962e2a13419920d9b1601d0350221f52476e82bdc0492ee1bd2"
+  ],
+  "tools/rental-cash-flow.html": [
+   "95424df6e26d2b32065a5b18fbac8ddf4d911b0544db65f222193433d998a721",
+   "8fb95800231f32aa5fb2e69f4b3d1eb96ce069302dbd480e6d4db6ca07002ff6",
+   "ec7eb81408ba1ad71c46da16d3525049ed161e20f64e83d82b5dbd9653f02675"
+  ],
+  "tools/valuation-range.html": [
+   "ea5ca065aaafeba43142d3dec3823ec0665e1aaa3105e66802911662832aa7b3",
+   "cc9a6e70b193a13a34cb0543dd8dbc3bb769933f9f570f78e983bf163327480a",
+   "f588879939e06a0bc5c82931456c6bca8252c9008e1ccb99f5052081be576356"
+  ],
+  "tools/embed/dubai-purchase-cost.html": [
+   "607f96e993674fa710b4170dad9bbdf35298fa879fe3d62dc4dd7d6e5974b123",
+   "d0a44b6805bd5ecf5e8692454f7a7503701664ac5d8f5ba870af2fc18545f76d",
+   "5613be9e3cf03448f285e440d7fe065694cb87c1fbdbbdc95d49ec9324bd5200"
+  ],
+  "tools/embed/rental-cash-flow.html": [
+   "95424df6e26d2b32065a5b18fbac8ddf4d911b0544db65f222193433d998a721",
+   "5b6bf648cb74d79a593339b408d884e924e92097e11945101dca7af319b1881c",
+   "ec7eb81408ba1ad71c46da16d3525049ed161e20f64e83d82b5dbd9653f02675"
+  ],
+  "tools/embed/valuation-range.html": [
+   "ea5ca065aaafeba43142d3dec3823ec0665e1aaa3105e66802911662832aa7b3",
+   "c6037665319cdf1ced39ca1c206bb46a89fb4c070e4edb7c2c2bbf78e40e0068",
+   "f588879939e06a0bc5c82931456c6bca8252c9008e1ccb99f5052081be576356"
+  ],
+  "topics/ai-real-estate.html": [
+   "7f2945dc2f537e422063df4f64b36e7566c007c3da0290ede272758a34f8c206",
+   "ecb18bdc1c388af4763e2840fb4772ce7a6a5269a2c2c2897be9dbf9e7afae42",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "topics/business-systems-dubai.html": [
+   "c8d2c0a0fd3075c153d9b531f1a52a3b62a588182e646a3bf865b64cb7fd9812",
+   "1afa5c1f472fe2b120bf9a6fba065e8dd706632d020ff3e7981b63de78d10086",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "topics/tech-explained.html": [
+   "f6a06e6721ca5887e47bed9f961420fc5f8edd117617907a7d29ea09134d3173",
+   "229df8679273533f476d818b203ae3b774a91a386170ce169475f9a718cd895f",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/agent-workflow-shared-bottlenecks.html": [
+   "10bcf17d21f33f702ae6f0252d92d6b8ea6cc797c5a7c84d92e0313bf94f5d8e",
+   "ffc9353076eb758e2ffd878eb5948e911aba9fee2da1388eecb95ded1fa826f7",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/ai-agent-permissions-ability-authority.html": [
+   "ac0007c2e3986ea5180417b3765375ffc55ada2dae612ff3abe7d77f123194ab",
+   "65a0aa6f185c12c7c9dd0bdaf312f40d080b4172dc7e6e3996eae1c0b554cbac",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/ai-agents-shared-notebook.html": [
+   "e1d439b7d0eb3e7b4ae362c1e235106f38c9f5f6cad36bd43b49901338c96a1b",
+   "f58c8a18f9f053b001f00fcbf7073768de024e0388801f1386491af6d4939d12",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/ai-confidence.html": [
+   "ff69435c1cd926156508f28f636dad2016b40d76786010a466c638dc27c7815e",
+   "f62d2568c44895fc83db8557f7ea548135a2eba4e0c61a408c79edc84728b488",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/ai-research-examination-understanding.html": [
+   "9762d0fbdeed271c49bb447c53793d04363a3eda743207497e801e874ea84d23",
+   "4508314e48d86cd3c8e595e2501177b32cd58c443c4feabf5023747817c957c6",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/building-digital-twin-data-freshness.html": [
+   "8189bbea9d61a12393c142d5b7797d1f58f829b32084291ab84b294a69470a78",
+   "ae2e1c1a1c0f37a1d17cfed40e7bace6addbc2756b1957bfc46a62c8f8dc1e14",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/building-energy-audit-decisions.html": [
+   "6770dd126e03e009cfc9924da374aa250745f26731d3147fef2b96de5005da7e",
+   "9f034851251f49b80e4201cb675527ada96c0b82cd2781fbc023e6ff5edd090e",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/business-ai-evaluation-cases.html": [
+   "fa33607b0ca262e5413be929693376a721102cb098526017bafa79505d4295ba",
+   "bd6d5d6a0ca82ff309a8ef3857b25f0b5c6564c0e0816afef62ff7031d402484",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/cash-conversion-cycle-clocks.html": [
+   "9b9dee462528baa03155d431653bee0ee7551f4c0ddb15b2dc86b8ddfbd6e598",
+   "2e3caa6e7b66864b6f0167027caad38bfb30567688aaa96ac427b5c87f8c8ee4",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/charging-80.html": [
+   "31a38a73f970585669180c1e4bbc3e5e49e6735a755beb3a5bd3ab69f2476fae",
+   "377061d3f5a47d084319165744ad93a04b994d785bce2d5ff229fb0a50621bec",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/computer-agent-check-result.html": [
+   "355de2232de6152cb3087e69ea4d74bc47386cc878c9bee47206934fe87efe4b",
+   "fcdbababeee266ea55dc08fec390e61f17f1f605bc157b011af4dca5813f5489",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/cookie-consent.html": [
+   "f30c01a2c6a162a5d02e354a52934d5d2746ceb73a74677e17997e054f5f713d",
+   "45e574dd6c235ab0472eb7f8875659f35e38e74d6527a9163723974fe2c5c7c4",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/dubai-project-escrow-controls.html": [
+   "836ab45f28fed1388bc536a9313d5aea82506624f69c7b90e3e9c4f28c049b2e",
+   "93b4504cf1a202379e139d6117797e753e39e7f164149653cc1aab94e7ed8087",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/dubai-service-charge-same-rent.html": [
+   "a653b2fb047342bd8102b9999c544dd76a50fab33051d800c858462c7e7ed1d2",
+   "8fd3caaf82a8e098b9e6ca814754b3ee42938096c1c025d9ae156406ee29f857",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/heat-pump-moves-heat-explained.html": [
+   "89034d061071bd70f0e820e0ceb3e180fbe10792f5bfb89aaf5c3d1d50173c10",
+   "be11655b038b56b6cdf86e6731760d57a3d37f756d5afb7dad5267ed136a172d",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/iphone-duo.html": [
+   "8330ac1d8d918284e0cbc05db39ebd989d57747e1b52d98ca973ae6a40101e99",
+   "46efbde7d1330775b6218d34c8b9f96a18120e4d539f463201b842cf854cd06f",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/phone-location-across-street.html": [
+   "50deefb2a9609ce51a35476e79386193674a1f3cd9cd9558c6d1f405031e2d36",
+   "342c89ed0faa4c96c9655e3ef749128243960d2f8d2fbeb409b503a7026637c8",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/profit-cash.html": [
+   "79e50cc80edde612c429ea2262bab158004f2387be22ce5f5be5fca8b973d123",
+   "199873670295e932b4b346afc801597ba615cabff46069fc5e242426853a5ba2",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/prompt-injection-layered-controls.html": [
+   "f15453ba87f4b303b6578d41ef9e392b8dc8f722f4a124929bead7fd1f65f4e9",
+   "1644d2ce5a9c2d4ed1c5f5aa1fb3359184d23e464599fc64415f629e145213d7",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/property-comparables-evidence.html": [
+   "fa9749910522e9328c431eae4597683cffbbfdb95a74b1c7864a37389a1fe7c2",
+   "df9d5a52b8da59e62b74c495085bbc1eb7fb5c4918860af307746a152bfcf67c",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/rag-check-business-records.html": [
+   "9e7df179b995a0b520a79cd922b2b498bf1efbf184943aa5335c84e7375ef4f2",
+   "96a154264282feb7aaf8838e17640df8762bf0091e97752358fff59263160737",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/rental-yield.html": [
+   "f41dd972adf2675eef0df2dd54ddf4b131ee1b59f84d102cc45c48b6f06a9e7a",
+   "96fbca7288933c88eb44c85c257108107542ccf0bf42ba25ba770a4d707577b3",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/structured-output-source-checks.html": [
+   "8dca282d8528fe40e56461d18dc281c6af9d715959ba96422bacb30ba6611a3c",
+   "90e8a83c0ad95576d69dd9f3e5f9813742c78a21b3f6aee86bf75652a9cb8724",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/tesla-roadster-flight-claim.html": [
+   "849230d903167bb23a25af1ad521cd9bb90af2c9d7edeb6c036151462d7e3e2c",
+   "4a8ee68dbcae790960edad40f14d9c7346eb04b777414326496868aeda416c05",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/embed/ai-confidence.html": [
+   "643d5437104296e21d906ecb15b2c96ad278f20cfc4af53b12bb6069bd853726",
+   "706fbfed96afd539bec6485c8fa1a003991aa1584f8c64b8efdf710e299f40f0",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/embed/charging-80.html": [
+   "643d5437104296e21d906ecb15b2c96ad278f20cfc4af53b12bb6069bd853726",
+   "706fbfed96afd539bec6485c8fa1a003991aa1584f8c64b8efdf710e299f40f0",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/embed/cookie-consent.html": [
+   "643d5437104296e21d906ecb15b2c96ad278f20cfc4af53b12bb6069bd853726",
+   "706fbfed96afd539bec6485c8fa1a003991aa1584f8c64b8efdf710e299f40f0",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/embed/iphone-duo.html": [
+   "643d5437104296e21d906ecb15b2c96ad278f20cfc4af53b12bb6069bd853726",
+   "706fbfed96afd539bec6485c8fa1a003991aa1584f8c64b8efdf710e299f40f0",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/embed/profit-cash.html": [
+   "643d5437104296e21d906ecb15b2c96ad278f20cfc4af53b12bb6069bd853726",
+   "706fbfed96afd539bec6485c8fa1a003991aa1584f8c64b8efdf710e299f40f0",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "watch/embed/rental-yield.html": [
+   "643d5437104296e21d906ecb15b2c96ad278f20cfc4af53b12bb6069bd853726",
+   "706fbfed96afd539bec6485c8fa1a003991aa1584f8c64b8efdf710e299f40f0",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "work/appraiva.html": [
+   "31d77bc5af4abdf6656b63b0bbff860b83caec5fe119841a0a5499c202858265",
+   "866c0a87d9b3a14a43302cae750fd92fac8b058a252f7ac2ce94891a2394d4c2",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "work/index.html": [
+   "6824d2f6f84eea2d31a4edc6776642b16f36f782d23367c0a035ad371cef14ee",
+   "574c1547ddc30f43dbfa87f61dec03065aee42c83ad39f0a1bbb5054c4a6e110",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "work/mci.html": [
+   "c6c087b42f7c89c3c52d94f4b22a419290f11b0d925d60c7bc942f9a87a8b96b",
+   "42cf0f002c696941fd7518fcc7ac68364a99d8e9d5949b262d89ae98f2c04d4d",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "work/oxfam-novib.html": [
+   "d7d4ee6d7667fafd8caf8222073e9b5ca85a628b6d2c9c521d5c89ae65f2c743",
+   "80355bb862fe2ef6867187af870799da77fe91c794f06abd5601b97e396e7728",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "work/royal-abraj.html": [
+   "5392f74761bf28e495832dd0081fb353b2eda0a9dced1c41d4faf92f28f79b63",
+   "c820408a712d2fa20fe0d5de890076761d275ce13aba95cf67171934af25b30a",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/agent-workflow-shared-bottlenecks.html": [
+   "639c2b31fa0c9ff9f881122f675a87caa6567e56ed68ddb6c31561ec0f9f1881",
+   "9e8ebe6240e869b0837a49e18fdc62070ede7072f345d1934451f15f683e0b6a",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/ai-agent-permissions-ability-authority.html": [
+   "25af0718bf3b3ba46ec01a2dc1fee6dc8ca5f804bcdc10386b65aea6f5922d5c",
+   "70e4eb699e9d675263ab6ddbf706f127df29a772c1ce1bf559d62997cbeb4010",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/ai-agent-safety-boundaries.html": [
+   "b1b92f3563b77c94f7b92e5b7bdfde0b527a5e1243abdb92d022454d9ad3d093",
+   "1fd8a285be09f846159e4847cfd1f899a954811fa8811b06c174ca82e4ab1d28",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/ai-agents-shared-notebook.html": [
+   "2a83ea339f9882318e54d7bb295e825cb27135240a63bbc4ab36eb9bca47a0c0",
+   "295349e9c89291e925c64d33cf978560efcb3e2a0d8bb715ae76f781e6e9a1e3",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/ai-cost-per-verified-result.html": [
+   "c4db5fcea525f0f12fbf4bc92cca5c4aa7e6510940847230ba0450a46233c6f5",
+   "d6dd37d8dbbf1b77494abda014635d9ecfd18c0ce3989f9a862326adcc37bd3f",
+   "74d895cf3b870a8038fb62dec3098627a6e87317a2b58337cc468f98f371dcae"
+  ],
+  "writing/ai-data-center-site-readiness.html": [
+   "79663fb60245df8502e3b3eb9930ab27337570e7c60ee6ee657171dd776305c8",
+   "d4b04c906bd05459578680bd5227260a31161900cce9a790ebcb30836f1898c2",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/ai-document-review-claim-evidence-checklist.html": [
+   "e57d29c4415a58e516588b9826ecac4c85afd5821b5965bdadb679d9df33e8e8",
+   "0ca318c556110589f762d852cbf05f56dc07167bd13b41c63b2924b13ebf8ce5",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/ai-home-value-estimates.html": [
+   "d040d976d6e14c1423bf2ca5a9f434d4df187cc04d7bf7e4d40081a7d306b8ee",
+   "2f26d2a791a49a8fdcd0765daa3780b113787c8f1590c9babb020eda61b63a3d",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/ai-human-review-real-estate.html": [
+   "2edf27bfd48082c0f29eb95353827e2b88303bc96d99ea0d8f563b597f9dbd6a",
+   "2b40623f6de80540a93daa0e651fda5fa256745cd408b48876530c7b5258bd8e",
+   "74d895cf3b870a8038fb62dec3098627a6e87317a2b58337cc468f98f371dcae"
+  ],
+  "writing/ai-inference-memory-movement-explained.html": [
+   "d7dc121086907a88e65f93d53a6b356b09d52f075a97fb4024bbeec52678d019",
+   "5791bfc1db82c13782d2fdfbcd60c2ddf10df033a213b8ca0deaa05feed8db4d",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/ai-rental-yield-cash-flow.html": [
+   "83fe375c2a283d711ec9a1617753799950b96be95b21873c17e6a0707ee53885",
+   "5c41ca458574f917aebddf1f2860359f04f66e16a67c9d9c465a11b5c069f0f6",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/ai-research-examination-understanding.html": [
+   "93b52fda73da7a2ffbf4d098c82c5c6527c6957de24dfdb7528a833120c64cee",
+   "1cb73d48f0d29ec83570c07ea1ac37e62cee405dff929ffb4859c00b47f8bd47",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/avm-vs-appraisal.html": [
+   "8ae9ae90aae6e4bafe9cd0b8014621ba9ce19019209d1276384aa76e88bd48f6",
+   "ebc6662f006185c161554ed71d19bf1992257097925b7749bca6fe3630f078f8",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/bacnet-building-devices-common-language.html": [
+   "43b66c576ac32ffb87622f4480c0bc11519aefd7d716aff08069a89e9732e70e",
+   "46a593f3a2be347dee7b51a5cda64574502138ba4c487e8c89fc1ecb6af795a8",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/build-ai-run-a-business.html": [
+   "d79b566a89876e4bef7bceb9f70cb080dd1de24a458d37879e399ad8d045d13a",
+   "11f538e533b88570b8274f4bc1eee986dfb433043ff35948132b766a51c2f508",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/building-digital-twin-data-freshness.html": [
+   "d8bed723359d66837bfd83d143f59408168512c6cb0783a03636dc4e2c8147ff",
+   "d21411d81dc2ba68325df22202f70d2c3452317a74427d6d80de07d5bfa910aa",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/building-energy-audit-decisions.html": [
+   "0ffc946738a36b18dc383529680a14e1f7145aad560b66f7e1eca5dcdf0b8743",
+   "41892169e36777bf4f2b762fa57676887d75d5b4a7abbd5955e9ed68120b66b0",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/building-laser-scans-point-clouds-explained.html": [
+   "428f91c21e8f7d0a586f45f599cab7a2d74968359f4701fa97e5908c097c4ca6",
+   "b17e9559716c0809302bb3c9cdbbe5ba5238db1d9e549a147b59cc395bb5b244",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/building-leak-alert-response-checklist.html": [
+   "2066bee3b615cdc408b39783acd33e6e22e422e4e688822f06288f87d9e043ad",
+   "b95dff3e55937f275d6d428fb1b7ce3a6c67e5e0cea8f056dab7f396e92b7a82",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/business-ai-evaluation-cases.html": [
+   "e82b0c9f696f9bb7d2a812d85d6726ecdddacce3ef74b03bb174633bbfcb953d",
+   "094a8c9b47ab537cba12cee46f1d3dc9c2949a2f30200f0565d030e23a45a5a6",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/cash-conversion-cycle-clocks.html": [
+   "202ea7b1b085b6bbee609316d0516426448b88ef5062040924906249b0f04cff",
+   "9f1277d95226f083fa5201443c86a92e93f493ba707f2c82399d14e527024061",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/chatgpt-intelligent-ui-explained.html": [
+   "4f972ad916183fe42cdca17a151a0a16079dce45999d3a9271baccdaed153277",
+   "b792d5c9c903028a8738f4837979e1ebca5d94202d2cef91b408c66aaaf8e781",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/computer-agent-check-result.html": [
+   "3e50506e962099f0d953cccdcd6c6d57d8b4e320d6fdf4cace6ac800a2542c72",
+   "f64da1176447a13756d0c3d3d10084d5211ee342d369ea6f1e54e7b1d858acf9",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/connected-ai-apps.html": [
+   "5b5c07fe7d92261e11bbaa309aae24f6e7a2ebcd748925d0a67e257388808603",
+   "c23927ca341d8f646544cf45d176c33f9f8ec353f16e9e4ea56023974dfea681",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/dubai-project-escrow-controls.html": [
+   "b39373592f68ec05ff12e3875b2083a109f522c180db45229fff6bad41a8174f",
+   "c127d524a59570fe714ba43dd45174f67a96e5cac904071b7a01964c83f9be45",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/dubai-property-buying-costs.html": [
+   "c0927e27bbbc4524d4dd5516b12f7ef986d172d4381f12121df0277e2efc7937",
+   "6c0ab47a0334dfbb79bb2ac138199a28fab1059616f0b7256ddca7f0144f7eb2",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/dubai-property-tokenisation-explained.html": [
+   "8c4217976f891870e5ad334c0cc165bf1a8915b1a2f4f99c7e660d6a7d1fcd18",
+   "b097a5494fa3a3ef8bbba6ba2d27004ca95c8b47e1e11a923684c98183c4e8e0",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/dubai-service-charge-same-rent.html": [
+   "4212453da5afa39ff4edbf47943788c80da499b0915dbe681ff14d4e689ddd91",
+   "32ee66630b536ddad032bb8fcdca05cb782b204d6437c61ce71b2a3364710909",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/foldable-two-batteries.html": [
+   "8bfda43485a7c5bd5a372b5b659c3d6b64ee94a0a0cddb170b7d41c48014555d",
+   "914501ce2d4ec4b1eeae7fb2b423bacc48d6ddcb55cf6a713597eef5f8ca835a",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/geospatial-ai-map-answer-review.html": [
+   "d73b4942465a84a58be5ada725ce42c90b45faf224c42954747577161b679fc9",
+   "21fa5a6dc7e5aaf07e7a035793a4b2c9767aa46ae1b2d5e0304a8bb5594db3b2",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/heat-pump-moves-heat-explained.html": [
+   "6577a67cbcd973b8b9ff641e59b8f8c32ea00496e3051639950e9527e2e3c9d8",
+   "7cd7e289350e2eaebaad8c681e096eb3c55fbf159203f3a1b6d214feb0aa5121",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/how-building-digital-twins-work.html": [
+   "6593c7002ddeecf0a87ac1fbed9003af42c67e25ba43983b11b81228dc436442",
+   "7b2d7bccf43d412932fefa216702ff8abf7426b1d5605a8ecf26ec1df0ee5b83",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/how-contactless-cards-work.html": [
+   "f843ec652c62d36500f2b5119e2c73c30a6a3173c9a9d9be0521095f0b0bbef1",
+   "70ff6f64afc4c39c612d9fa52d3e5c3d9b6a9ce30aee2776a4542e6a191ab6a1",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/how-many-coffees-to-break-even.html": [
+   "fa1fcc02a2b0bbfb7237ce8236063be1e3dc71f7b5a8f7046d45f1a3c665920b",
+   "c061454db3b717f5b9bfa80e12abfc04064d32653cc22f050123a766b3366961",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/how-noise-cancellation-works.html": [
+   "77a288351463c7fc33f007754b1c614bbd7b914be35866d7e129e46c5002118f",
+   "32618e03e0d0db5fe271c4bd0a11bcb1e19ade9d9203c22bbcafb4c5eb437d52",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/how-photo-text-recognition-works.html": [
+   "05b70b0cee480f6d935a6d38d05c073e9f783ed3ed078ea0c504c39f90b41807",
+   "61a3ef3ee80c1b9b43907f489de3b658d8cab5178d8560f05acd137514d96afc",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/how-satellite-messaging-works.html": [
+   "d46745e36e2ae78fa535a3b7c99252b5e2995ed8068ba889154dca68adf0c5d1",
+   "f97802e7cf80d653a422daeaab6a06817870702bad734ba399f6df24d5fa085f",
+   "c125f6428fcc3e2f36a60ca5931ea11188bbf574efa9584b89eb82f46d24d552"
+  ],
+  "writing/how-zip-files-work.html": [
+   "1c9a3f3d8591a78cb90385ccb3efe30df5e7affa38cbc68d567bbce9fde3fb9d",
+   "3fccd140f50a7df8ff877e46006303c6520f9fecd7411bcaf0d6d5223632c915",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/human-review-property-ai-checklist.html": [
+   "b67838c159c8ea6b5f27e8b4ed03b9ec0979138e6036891c96df7792b52ba6af",
+   "afab6a436f1d286f8e8ed98a64b10dd36685afa8185dd82952295668ff6c1794",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/humanoid-robots-at-home.html": [
+   "79355afc6fb617b813fdec0cd33b9209a5be691d236955f9f9571b6b717a5987",
+   "ab0c5abe99f515221da573dc8d0d7dc031a595feb2c5b2295645170439bf04ec",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/incognito-private-browsing.html": [
+   "4133b6a903c27d58684c145f54f354650da308fe467a8c509fd7effe6ecfb978",
+   "213086cb2e744bb1c1c64bb7ba3fcb013f50bf0cd069b0b5ab07b293fedf1c8e",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/index.html": [
+   "fa6c4dcaf891361d9613ea4bae0a4b9b69b0a066a618e539e666d92add6ddaee",
+   "96e6c309c372da5e17d1dcb4ffe1252d388734bef94b459d6523268f22bbe3c8",
+   "74fd996fb1aaa5bec4d68fc5c181516f3573eb31e2b78647f0444c445e23eab3"
+  ],
+  "writing/iphone-duo-price-per-day.html": [
+   "0074b1b8de2275bc57f50f4e1f3d600bc0fe7a4624ef535a85f3e8cfaaf4b348",
+   "8d92981d7058e9a3978f0f9c0429350c86961c86d2974d9c1f16f010716eab0a",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/jev-ai-decision-model.html": [
+   "756d47304f6a6a8cfb034fa6d8e91a24ce305c17802f4a57a4cb6a1f1f25576f",
+   "2cb6f49f177c34e7c6ac92051055792d5d95957c4a2720389b6f44f19ab77d0f",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/on-device-ai-scam-warnings-explained.html": [
+   "62a5bd7039b0d0f06c96d0a228f75f7a6c044b377858df083422881c3acbb366",
+   "22b86a46d8dafec25285d7ac1e82752b0422125d37d771371309989115749ca4",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/passkeys-face-id.html": [
+   "5872a87359238d28b349c06b0322d5c8705070913d36beb1a0cb9dffeaadf14b",
+   "7d3e80124f7a74feb7c61d226d9f3f6b939cf644b7e0b5ec275fdceaac78dc2c",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/phone-location-across-street.html": [
+   "bb3278a55bbaac7efbe4676205d314382ed3807ee59900816509df617aee574c",
+   "713609d9294ffd9c8adfd4d8e64aa0b7ae13e96f81cf4d98987106f34f1084c0",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/profitable-but-out-of-cash.html": [
+   "6248055556fe131ecdf46aef86490f6626851a9fae66fcd6b35256acd2222c08",
+   "2fdc018d30e3624421d138d624189c72e2c9d435d37120810ea6317947502744",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/prompt-injection-layered-controls.html": [
+   "31f66c14ad55397717bbcdefe59b3da518aace32cb6ec70421181318e59b6d4b",
+   "ded185428ead90eb9d5020e6c4718d4d6d0a39c738f2d20a8309d656506d3d3b",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/property-comparables-evidence.html": [
+   "97b872ce6273402c6c9448985995be8bb74030b7f1276b9aa38dd08f8841e6c0",
+   "240065020086d71485aa5f436c4b738e8b1af8fb816fc35d68f47fcb2d8c80e5",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/property-data-enrichment.html": [
+   "f4161c08fac0e2b4210802dbcd1781d2660052b7419ec9dac8bcd6e7c2955bac",
+   "ca7c032ee8b843c47c594fa72681980bb323c5e93438bd058656ee27d92c775d",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/rag-check-business-records.html": [
+   "cffa8cd9610e1c2e8957f6b3a754787187ffbf786e190095c33d90fb53e5e2fa",
+   "42632debc65d1544cc9792219e260f82f9dcdb34da2a6acf9da6eea67daad177",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/rent-or-buy-five-numbers.html": [
+   "d8e908c5e28994e7ab704034c70507bf5bbf524aa3dfed3456f30e7a494a8db8",
+   "d1638bc02f091fafd0d670522ee42810c8b4c85a0870fdb949630c5a1c9d0aa1",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/small-ai-models-task-routing-explained.html": [
+   "39aabd7f0fa21519caf8b1235eb8356db8f5204c913ca7c48927ec8da54e6134",
+   "508e7c7432cd05a4e09f0dddc20fed41b98ce8dad17e68f991f7476949194b1e",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/start-with-the-decision.html": [
+   "292c0d94af4f828d1e190e54c0f0ce1135ab29fa5955804173ae0fa629975b8a",
+   "d6803a7f777d65183ab087dce6bd94d11b1e3a8db5f52d79cc015852d6280adf",
+   "74d895cf3b870a8038fb62dec3098627a6e87317a2b58337cc468f98f371dcae"
+  ],
+  "writing/structured-output-source-checks.html": [
+   "4d0fc4abf3602e108c2292affd90a59c038abe84555e1461a98aa8e857d63dae",
+   "1aa908484746476a53aff9f0d410371c555cd8fca92c2c75d956599a88c1cd8b",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/tesla-roadster-flight-claim.html": [
+   "1112875085dfab8f17ad0e644b7d640698e0bb253ad8da19ce8388d10ed05f9a",
+   "20fe3b8b0ccc784ba5a6c6a25f74df0bf0c6e97a017c1521d9567fde7ee03d60",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/verify-ai-image-claims.html": [
+   "434da594c9b7b15efb1ab31b6faf63336f715ac2c94ffe964f8708aa72e16ff3",
+   "c947d40be0b0802695b232ce356b4bce0ddc71a37112e2636eba94f83d898cfc",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/virtual-machine-device-sharing-explained.html": [
+   "3a9d6bd894c691087ff23b075c54a7c6920f8d9ebe2ccbd392b4f6b85ec05271",
+   "e377286d4903c289bf48b6d0d4bfbf9333899cfb88f6f3a8a5fcc7c7851a1906",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/what-accept-cookies-means.html": [
+   "5afe926c6b953ca3fbb9986d1306f9ae54e10d0616f704dd6a74f9f6917ca984",
+   "3fdc355316915d598726131b80cee3f5dee946f17a74f57d18e4ff45e24faab9",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/where-wearable-ai-computation-runs.html": [
+   "00938526de8ddf8bacc71e811c40d496f1a9f5ddb1283c059ee4c5244065c229",
+   "b6a719fce4547fe7e150fd7ca87295d46ad488914deb6071c413c872d56194f8",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/which-dubai-property-source.html": [
+   "76e61bbcdfa06f6713842689ec6ec722e44afcd2d8addec94e9af16eb86c7392",
+   "c71b86e55ff81d9b8fef61daa682fc7f5809db15fc709c8d263c0cd5bccf7efb",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/why-ai-loses-earlier-chat-context.html": [
+   "027bb7b28f78f77005eddba79c5b1e464be7f987d5c76b38b26f8d91e67a66e6",
+   "024efa5232b772aee5c3e1fc77c1272461f86e7e6007f18c02cd1b7aa2363bbc",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/why-ai-sounds-confident.html": [
+   "a2e30566c2cb10bd8296c8cf84b048854187723d07106b26ed28e66e69ee3363",
+   "b3443c0728753e08b6212badba609984fa657230b1ac981f4c5b073d9fa22f08",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/why-ai-weather-models-need-local-observations.html": [
+   "ed3da3dd91a0c65cccaf89c7b7a3f8e1f9746f2e2db0faf951387dc720c3607c",
+   "f46f31c3a83d56ef7ef62c7e5ef7b440afece88fbd10d9742304ba17233681c6",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/why-full-storage-slows-computer.html": [
+   "eed451f5620dcb729ab56bfb7b706a6e5dc96ef26688f3c67ce46be288cd824d",
+   "9e47af3acc5fb4a5090f6654a5c3d83a4ee202e00c6038e146271401a26dd133",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/why-occupancy-sensor-lights-switch-off.html": [
+   "ccf19734ea1421eb1ca640cc989468870a610273b7da904c34fb56bdb757ea5d",
+   "a18c6c05d1e55b7e37ff5e5bc5a6673a33974e1518d6728ddfc6da6ea0b53775",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/why-phone-stops-charging-at-80.html": [
+   "d09dcd63360fe494d4107f0509b9416b14f4ee1fe7ebfeeb2d835892376dcf50",
+   "4ed4b03a5df44dde8bd34e5b136b1ea7dd3151de34d2a6472c6d6c190bbb6679",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/why-rent-to-value-is-not-property-yield.html": [
+   "d494791bbaf6bbda50cd2069e84aafe23ee2fa76d4dbc7d1a9e77a6e68a55e44",
+   "a924c8fda75b8c92871351430bac778ff7e5de1e1e21950b848e5c1f38e0ab95",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/why-usb-c-cables-differ.html": [
+   "fe2269168fadd9e4b4d2bd7b34d329e9c687483b36462459c1c3a30b9ebc3672",
+   "2f809261ed8871d945657e7f18981f21de53ee7e0f8d731511fba601d6a3e197",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ],
+  "writing/why-wifi-is-slow-with-full-bars.html": [
+   "fcd698f8b510b9e55dfb164d4b5c181f9320dabf1421aa5b4475366bf3b05c71",
+   "160995995564682198c03341e1a3ac0a3a97a7df5bb4910b33622375f02ad969",
+   "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  ]
+ },
+ "styles": {
+  "css/author-box.css": "56f2e60f8032a14e836d2fcd63b7865c6415e37e9701f1af1c19ade60cbfc8d2",
+  "css/brand-layer.css": "adc65212a442e374f45831c9eb0c128e212f80fbc224552c727ff82c32956be9",
+  "css/decision-guide-rtl.css": "b1ca02ba1a7b39fe925099c181b69e0ad439d5e804bd09418350605f80c04e2c",
+  "css/decision-guide.css": "75c41f487449e32acaed51cab248953f579fa18a6e7165698d1a0a920ef57773",
+  "css/editorial.css": "7a5d162d3f086e8c6443e10e1cf8b46dd4f454f0218867b4f4644451b0ed5985",
+  "css/premium.css": "db9d98be43e868a6dcb9df597d133e3b801620166a12d2924eedc1e2ef01fd83",
+  "css/press.css": "a07a54450b40f01855ef2ac09f81f940e0888492e06cc0aa6a26d6bfb6737f54",
+  "css/property-calculators.css": "6f4156575eed1883a36a1dea6b68fd017ffea043959a587dae85b03c35a86903",
+  "css/property-guides.css": "4e5b0148b36c0e358b6ba270e8432c819b7c6d37bd4448581be27184b858319d",
+  "css/refinement.css": "d79fd6249540885eb2ea71ffe09f1234a197a29d356359c6f8c93951375b4234",
+  "css/rtl.css": "384ea3a1bbb8b26591eedd4be5c52518c71bcdf3c9b99f89d2e0c3d572efbe39",
+  "css/site.css": "dd9d7d4d366fd2154cf034ba2ce8b074a6d632a6777fd86fdcbaf3f11b5b5cf9",
+  "css/styles.css": "e247fbacc01ff4aa220775d5d7b23de71a7ff55965d48dcb9a439d2291b8296d",
+  "css/valuation-range.css": "40950167df9781dd696c1159b26820000e276655cf2ba170386ed9de68b556c4"
+ }
+}
