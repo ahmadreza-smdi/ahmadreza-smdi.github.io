@@ -37,13 +37,3 @@
 - [OpenAI: تطوير تقنيات إثبات منشأ المحتوى](https://openai.com/index/advancing-content-provenance/)
 
 - [مساعدة بحث Google: البحث باستخدام صورة](https://support.google.com/websearch/answer/1325808)
-
-## عن الكاتب
-
-أحمدرضا صمدي رائد أعمال في مجال التقنية مقيم في دبي. يبني منتجات الذكاء الاصطناعي بصفته شريكا مؤسسا وقائدا تقنيا في Appraiva، ويدير Royal Abraj Group بصفته شريكا مؤسسا ورئيسا تنفيذيا.
-
-[أحمدرضا صمدي](https://a-samadi.com/ar/about.html)
-
-ضمن سلسلة Tech, explained
-
-## المتابعة

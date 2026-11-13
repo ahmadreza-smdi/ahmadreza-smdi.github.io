@@ -10,6 +10,14 @@
 
 [کارهایم را ببینید](https://a-samadi.com/fa/#work) [در تماس باشید](mailto:ahmadreza.smdi@gmail.com)
 
+- تحلیل تصاویر
+
+- ابزارهای هوش مصنوعی
+
+- داده‌های غنی‌شدهٔ املاک
+
+- داده‌های املاک
+
 [کارهایم را ببینید](https://a-samadi.com/fa/#work)
 
 [ایالات متحده · دورکار Appraiva هم‌بنیان‌گذار و راهبر فنی](https://a-samadi.com/fa/work/appraiva.html) [دبی، امارات گروه رویال ابراج هم‌بنیان‌گذار و مدیرعامل](https://a-samadi.com/fa/work/royal-abraj.html) [حوزه تمرکز من از تصمیم آغاز کنید. فناوری × هوش مصنوعی × کسب‌وکار](https://a-samadi.com/fa/#skills)
@@ -225,5 +233,3 @@ MCI
 [لینکدین](https://www.linkedin.com/in/ahmadreza-samadi/) [گیت‌هاب](https://github.com/ahmadreza-smdi) [یوتیوب](https://www.youtube.com/@ahmadreza-samadi) [اینستاگرام](https://www.instagram.com/ahmadreza.samadi/) [کرانچ‌بیس](https://www.crunchbase.com/person/ahmadreza-samadi)
 
 [زندگی‌نامه و بسته معرفی](https://a-samadi.com/fa/about.html#profile-resources) [ذخیره اطلاعات تماس](https://a-samadi.com/assets/profile/ahmadreza-samadi.vcf) [صفحه‌های رسمی](https://a-samadi.com/fa/about.html#official-profiles)
-
-## دنبال کردن

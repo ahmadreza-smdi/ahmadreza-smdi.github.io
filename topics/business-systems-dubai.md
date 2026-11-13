@@ -87,11 +87,3 @@ Use the decision worksheet to describe the current process, the evidence a perso
 [AI in real estate](https://a-samadi.com/topics/ai-real-estate.html): Continue with the property data and human review that support investment research.
 
 [Tech, explained](https://a-samadi.com/topics/tech-explained.html)
-
-## About the author
-
-Ahmadreza Samadi builds AI products at Appraiva and runs Royal Abraj Group in Dubai. He writes about how businesses decide what to build, check and measure.
-
-[Ahmadreza Samadi](https://a-samadi.com/about.html)
-
-## Follow

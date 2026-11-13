@@ -69,13 +69,3 @@
 - TypeSafe AI، [الوثائق: مقدمة](https://docs.typesafe.ai/introduction)، تمت المراجعة في ٢٥ سبتمبر ٢٠٢٦.
 
 - OpenRouter، [«Is Jev as Accurate as Frontier Models at Classification?»](https://openrouter.ai/blog/insights/jev-vs-claude-opus-5-classification/)، ٢٢ سبتمبر ٢٠٢٦.
-
-## عن الكاتب
-
-أحمدرضا صمدي رائد أعمال في مجال التقنية مقيم في دبي. يبني منتجات الذكاء الاصطناعي بصفته شريكا مؤسسا وقائدا تقنيا في Appraiva، ويدير Royal Abraj Group بصفته شريكا مؤسسا ورئيسا تنفيذيا.
-
-[أحمدرضا صمدي](https://a-samadi.com/ar/about.html)
-
-ضمن سلسلة Tech, explained
-
-## المتابعة

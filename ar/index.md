@@ -10,6 +10,14 @@
 
 [استكشف أعمالي](https://a-samadi.com/ar/#work) [تواصل معي](mailto:ahmadreza.smdi@gmail.com)
 
+- تحليل الصور
+
+- أدوات الذكاء الاصطناعي
+
+- بيانات العقارات المُثرَاة
+
+- بيانات العقارات
+
 [استكشف أعمالي](https://a-samadi.com/ar/#work)
 
 [الولايات المتحدة · عن بُعد Appraiva شريك مؤسس وقائد تقني](https://a-samadi.com/ar/work/appraiva.html) [دبي، الإمارات مجموعة رويال أبراج شريك مؤسس ورئيس تنفيذي](https://a-samadi.com/ar/work/royal-abraj.html) [مجال تركيزي ابدأ بالقرار. التقنية × الذكاء الاصطناعي × الأعمال](https://a-samadi.com/ar/#skills)
@@ -225,5 +233,3 @@ MCI
 [LinkedIn](https://www.linkedin.com/in/ahmadreza-samadi/) [GitHub](https://github.com/ahmadreza-smdi) [YouTube](https://www.youtube.com/@ahmadreza-samadi) [Instagram](https://www.instagram.com/ahmadreza.samadi/) [Crunchbase](https://www.crunchbase.com/person/ahmadreza-samadi)
 
 [السيرة وملف التعريف](https://a-samadi.com/ar/about.html#profile-resources) [حفظ معلومات الاتصال](https://a-samadi.com/assets/profile/ahmadreza-samadi.vcf) [الملفات الرسمية](https://a-samadi.com/ar/about.html#official-profiles)
-
-## المتابعة

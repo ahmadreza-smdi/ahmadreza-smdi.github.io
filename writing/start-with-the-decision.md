@@ -145,13 +145,3 @@ These three primary sources were opened on 20 October 2026. Access dates do not 
 The examples and proposed methods are editorial teaching work. They are not company results or independently certified findings. Educational, not financial advice.
 
 Prefer a copy you can edit in a text editor? [Download the decision-first text kit (in English)](https://a-samadi.com/assets/downloads/decision-first-ai-text-kit.zip) for a blank template, a separate fictional example and reading notes. Extract the ZIP and save a private working copy. This is another format for the existing planning aid; no experiment was run.
-
-## About the author
-
-Ahmadreza Samadi is a technology entrepreneur based in Dubai. He builds AI products as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO.
-
-[Ahmadreza Samadi](https://a-samadi.com/about.html)
-
-Part of Start with the Decision
-
-## Follow

@@ -151,7 +151,8 @@
       },
       "mainEntityOfPage": {
         "@id": "https://a-samadi.com/watch/agent-workflow-shared-bottlenecks.html#webpage"
-      }
+      },
+      "caption": "https://a-samadi.com/assets/writing/agent-workflow-shared-bottlenecks/captions-en.vtt"
     },
     {
       "@type": "BreadcrumbList",
@@ -177,14 +178,14 @@
 <script src="/js/site-analytics.js?v=20261009-analytics1" defer></script>
 </head>
 <body class="editorial-body"><a class="skip-link" href="#main">Skip to content</a><header class="editorial-header"><a href="/"><img src="/assets/brand/ahmadreza-samadi-mark-azure.svg" width="44" height="28" alt="">Ahmadreza Samadi</a></header><main id="main" class="editorial"><article><h1>More agents. The same queue.</h1><p class="lead">In a fictional dispatch library, adding more helpers does not shorten the queue: every independent task waits for the same key. The illustration asks where work must be coordinated and where it can proceed independently.</p><p class="byline"><a href="/about.html" rel="author">Ahmadreza Samadi</a> · <time datetime="2026-11-03T19:07:36+03:30">2026-11-03</time></p><div class="film-wrap"><video controls playsinline preload="metadata" poster="/assets/writing/agent-workflow-shared-bottlenecks/cover-poster.jpg" width="1080" height="1920"><source src="/assets/writing/agent-workflow-shared-bottlenecks/film.mp4" type="video/mp4"><track kind="captions" src="/assets/writing/agent-workflow-shared-bottlenecks/captions-en.vtt" srclang="en" label="English"></video></div><p>Original fictional animation with synthetic English narration and English captions. The narration is not Ahmadreza Samadi’s recorded voice. The library, people and helpers are an analogy, not GitHub’s interface or a measured performance test.</p><section><h2>The situation</h2><p>In a fictional dispatch library, adding more helpers does not shorten the queue: every independent task waits for the same key. The illustration asks where work must be coordinated and where it can proceed independently.</p></section><section><h2>What the source supports</h2><p>GitHub’s 21 October 2026 engineering article describes adapting its Git infrastructure for agent-scale workloads. It describes changing the scope of write ordering from the whole repository to individual references, so that writes to different references can be in flight at the same time. The post says each write still experiences the cross-region latency. Work on the same reference still requires coordination; independent references need not share every wait. <a href="https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/" hreflang="en"><bdi>[GITREF]</bdi></a></p></section><section><h2>Practical questions</h2><p>Our practical question is: what resource do these tasks share? Map the dependency before adding more agents. Separate independent work where the system supports it, retain ordering where writes can conflict, and measure the actual end-to-end result rather than counting assistants.</p></section><section><h2>Limits and disclosure</h2><p>The library, keys and workers are fictional analogies. GitHub describes its own architecture; this is not a benchmark or a promise that adding agents, parallelism or infrastructure changes will speed up another business. No performance figures or customer outcomes are claimed.</p></section><section><h2>About the author</h2><p>Ahmadreza Samadi — https://a-samadi.com</p></section><h2>Sources</h2><ul><li><a href="https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/" hreflang="en"><bdi>GITREF</bdi></a></li></ul><!-- article-hubs:start -->
-<nav class="article-reading-path" aria-labelledby="article-related-title">
+<aside aria-labelledby="article-related-title"><nav class="article-reading-path" aria-labelledby="article-related-title">
 <p><span role="navigation" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/topics/business-systems-dubai.html" data-hub-primary="business-systems-dubai">AI and business systems</a></span></p>
 <p><a href="/watch/agent-workflow-shared-bottlenecks.html" hreflang="en">Watch the accompanying film (English)</a></p>
 <h2 id="article-related-title">Related</h2>
 <ul><li><a href="/writing/start-with-the-decision.html" data-related-pillar="decision-first-ai">Start with the decision, then build the AI</a></li>
 <li><a href="/writing/ai-human-review-real-estate.html" data-related-pillar="property-decisions">AI in real estate decisions: where AI should stop</a></li>
 <li><a href="/writing/profitable-but-out-of-cash.html" data-related-pillar="building-business">How can a profitable business run out of cash?</a></li></ul>
-</nav>
+</nav></aside>
 <!-- article-hubs:end -->
 <!-- author-box:start -->
 <aside class="article-author" aria-labelledby="article-author-title">

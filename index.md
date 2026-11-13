@@ -10,6 +10,14 @@ Read my [biography](https://a-samadi.com/about.html), [press resources](https://
 
 [Explore my work](https://a-samadi.com/#work) [Get in touch](mailto:ahmadreza.smdi@gmail.com)
 
+- Imagery analysis
+
+- AI tools
+
+- Enriched property data
+
+- Property data
+
 [Explore my work](https://a-samadi.com/#work)
 
 [United States · Remote Appraiva Co-Founder & Technical Lead](https://a-samadi.com/work/appraiva.html) [Dubai, UAE Royal Abraj Group Co-Founder & CEO](https://a-samadi.com/work/royal-abraj.html) [My focus Start with the decision. Technology × AI × business](https://a-samadi.com/#skills)
@@ -225,5 +233,3 @@ Dubai, United Arab Emirates
 [LinkedIn](https://www.linkedin.com/in/ahmadreza-samadi/) [GitHub](https://github.com/ahmadreza-smdi) [YouTube](https://www.youtube.com/@ahmadreza-samadi) [Instagram](https://www.instagram.com/ahmadreza.samadi/) [Crunchbase](https://www.crunchbase.com/person/ahmadreza-samadi)
 
 [Biography and profile kit](https://a-samadi.com/about.html#profile-resources) [Save contact details](https://a-samadi.com/assets/profile/ahmadreza-samadi.vcf) [Official profiles](https://a-samadi.com/about.html#official-profiles)
-
-## Follow

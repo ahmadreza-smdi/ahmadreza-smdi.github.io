@@ -113,13 +113,3 @@ SSD محل ذخیره‌سازی بیشتر لپ‌تاپ‌های امروزی 
 - [Kingston: Garbage collection](https://www.kingston.com/en/blog/servers-and-data-centers/garbage-collection)
 
 - [Kingston: SSD FAQs](https://www.kingston.com/en/ssd/ssd-faq)
-
-## درباره نویسنده
-
-احمدرضا صمدی کارآفرین فناوری ساکن دبی است. او به‌عنوان هم‌بنیان‌گذار و راهبر فنی Appraiva محصولات هوش مصنوعی می‌سازد و به‌عنوان هم‌بنیان‌گذار و مدیرعامل، Royal Abraj Group را اداره می‌کند.
-
-[احمدرضا صمدی](https://a-samadi.com/fa/about.html)
-
-از مجموعهٔ Tech, explained
-
-## دنبال کردن

@@ -177,13 +177,3 @@ These three primary sources were opened on 20 October 2026. Access dates do not 
 The examples and proposed methods are editorial teaching work. They are not company results or independently certified findings. Educational, not financial advice.
 
 For a fictional example of task-specific checks, read the [business AI evaluation cases](https://a-samadi.com/writing/business-ai-evaluation-cases.html) and watch the [accompanying film](https://a-samadi.com/watch/business-ai-evaluation-cases.html).
-
-## About the author
-
-Ahmadreza Samadi is a technology entrepreneur based in Dubai. He builds AI products as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO.
-
-[Ahmadreza Samadi](https://a-samadi.com/about.html)
-
-Part of Start with the Decision
-
-## Follow
