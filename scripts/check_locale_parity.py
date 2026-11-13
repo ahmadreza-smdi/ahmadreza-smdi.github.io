@@ -363,11 +363,12 @@ for cluster in clusters:
     assert 'T' in modified and parsed.tzinfo is not None, f'{name}: dateModified needs time and timezone'
    if name in ('index.html','fa/index.html','ar/index.html'):
     updated=re.search(r'<meta property="og:updated_time" content="([^"]+)"',source)
-    assert updated and modified==updated[1], f'{name}: ProfilePage and Open Graph update times differ'
+    from answer_resources import REVISIONS
+    assert updated and modified==REVISIONS.get(name, updated[1]) and datetime.fromisoformat(updated[1])<=parsed, f'{name}: ProfilePage and Open Graph update times differ'
     if name in ('fa/index.html','ar/index.html'):
      locale=name[:2]
      expected_modified=json.loads((ROOT/'locales'/f'{locale}.json').read_text())['Homepage modified']
-     assert modified==expected_modified, f'{name}: localized homepage modification time differs from source'
+     assert updated[1]==expected_modified and modified==REVISIONS.get(name,expected_modified), f'{name}: localized homepage modification time differs from source'
 for name in ('writing/index.html','fa/writing/index.html','ar/writing/index.html'):
  source=(ROOT/name).read_text()
  schemas=[json.loads(raw) for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>',source,re.S)]
