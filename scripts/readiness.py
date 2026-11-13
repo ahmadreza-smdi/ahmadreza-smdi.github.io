@@ -91,6 +91,15 @@ def refine_record(node, path):
                 del node['keywords']
             changed = True
     if kind=='VideoObject':
+        # All three localized articles embed the identical English on-screen explainer.
+        english_explainers = {
+            BASE+'assets/writing/geospatial-ai-map-answer-review/explainer.mp4',
+            BASE+'assets/writing/virtual-machine-device-sharing-explained/explainer.mp4',
+            BASE+'assets/writing/where-wearable-ai-computation-runs/explainer.mp4',
+        }
+        if node.get('contentUrl') in english_explainers and node.get('inLanguage') != 'en':
+            node['inLanguage'] = 'en'
+            changed = True
         caption=film_sources().get(node.get('contentUrl',''))
         if caption and node.get('caption')!=caption:
             node['caption']=caption
