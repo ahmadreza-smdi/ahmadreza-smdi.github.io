@@ -794,6 +794,14 @@ def preserve_public_contact(text):
 
 
 def enrich(path, text):
+    from answer_resources import machine_head
+    enriched, changes = enrich_page(path, text)
+    relative = path.relative_to(ROOT).as_posix()
+    result = machine_head(enriched, relative)
+    return result, changes + (['machine-readable identity or alternate'] if result != enriched else [])
+
+
+def enrich_page(path, text):
     original = text
     head_end = text.find('</head>')
     if head_end < 0:

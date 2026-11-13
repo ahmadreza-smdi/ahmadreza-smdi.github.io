@@ -2,18 +2,7 @@
 
 > I build AI, and I run a business that has to live with it.
 
-Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احمد صمدی. Arabic: أحمدرضا صمدي.
-
-## Facts — as of October 2026
-
-- Position: “I build AI, and I run a business that has to live with it.” Technology entrepreneur; Co-Founder & Technical Lead of Appraiva and Co-Founder & CEO of Royal Abraj Group.
-- Based in Dubai, United Arab Emirates; also known as Ahmad Samadi.
-- Co-Founder & Technical Lead of Appraiva since October 2023. Appraiva is based in Cleveland, Ohio, United States; he works remotely from Dubai. It builds AI tools for investors and developers to find distressed and off-market properties through imagery analysis and enriched property data.
-- Co-Founder & CEO of Royal Abraj Group since 2022. The Dubai group covers property brokerage and documents-clearing services; he leads digital strategy and technology.
-- Background: enterprise data engineering and machine learning; Azure data infrastructure for CRM migration and analytics at Oxfam Novib; predictive customer segmentation at MCI.
-- Education: Master of Science in Computer Software Engineering, specialization in Data, Shahid Beheshti University, 2019–2021.
-- Contact: ahmadreza.smdi@gmail.com.
-- Other people share the name Ahmad Samadi; this is the official site of the Dubai-based technology entrepreneur.
+Ahmadreza Samadi, also known as Ahmad Samadi, is a Dubai-based technology entrepreneur. As Co-Founder & Technical Lead of Appraiva, Samadi builds AI products. As Co-Founder & CEO, he runs Royal Abraj Group. He writes about how businesses decide what to build, check and measure.
 
 ## Profile
 
@@ -172,27 +161,1790 @@ Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احم�
 
 ## Public code and data
 
-- [AI workflow cost ledger](https://github.com/ahmadreza-smdi/ai-workflow-cost/releases/tag/v0.1.2): AI workflow cost ledger includes retries, failed attempts and caller-defined acceptance; the workbook and worked examples are fictional.
-- [ACS2024 metro rent burden](https://github.com/ahmadreza-smdi/metro-rent-burden/releases/tag/v1.1.1): ACS2024 metro rent-burden data with a CSV, chart, method and limits; not a property-level estimate.
+- [AI workflow cost ledger](https://github.com/ahmadreza-smdi/ai-workflow-cost/releases/tag/v0.1.2): Testing an AI workflow? Start with cost per caller-accepted result; the workbook and worked examples are fictional.
+- [ACS2024 metro rent burden](https://github.com/ahmadreza-smdi/metro-rent-burden/releases/tag/v1.1.1): Comparing rent pressure across metros? Start with the ACS2024 CSV, chart, method and limits; this is not a property-level estimate.
 
 ## Official profiles
 
-- [GitHub](https://github.com/ahmadreza-smdi): Ahmadreza Samadi’s public GitHub profile, connecting his repositories with the personal website.
-- [YouTube](https://www.youtube.com/@ahmadreza-samadi): Ahmadreza Samadi’s YouTube channel, connecting published explainer films with his personal website.
-- [DEV](https://dev.to/ahmadreza_smdi): Ahmadreza Samadi’s DEV profile, connecting published technical writing with his personal website.
-- [LinkedIn](https://www.linkedin.com/in/ahmadreza-samadi): Professional profile listed by Ahmadreza Samadi as an official account on his biography page.
-- [Instagram](https://www.instagram.com/ahmadreza.samadi/): Instagram profile listed by Ahmadreza Samadi as an official account on his biography page.
-- [Crunchbase](https://www.crunchbase.com/person/ahmadreza-samadi): Crunchbase profile listed in the biography; public access and its website backlink remain unverified.
-- [Peerlist](https://peerlist.io/ahmadrezasmdi): Peerlist profile listed by Ahmadreza Samadi as an official account on his biography page.
-- [Product Hunt](https://www.producthunt.com/@ahmadreza_samadi): Product Hunt profile listed by Ahmadreza Samadi as an official account on his biography page.
-- [Wellfound](https://wellfound.com/u/ahmadreza-samadi): Wellfound profile listed by Ahmadreza Samadi as an official account on his biography page.
+* [Ahmadreza Samadi on GitHub (@ahmadreza-smdi)](https://github.com/ahmadreza-smdi)
+* [Ahmadreza Samadi on YouTube](https://www.youtube.com/@ahmadreza-samadi)
+* [Ahmadreza Samadi on DEV Community](https://dev.to/ahmadreza_smdi)
+* [Ahmadreza Samadi on LinkedIn](https://www.linkedin.com/in/ahmadreza-samadi)
+* [Ahmadreza Samadi on Instagram · @ahmadreza.samadi](https://www.instagram.com/ahmadreza.samadi/)
+* [Ahmadreza Samadi on Crunchbase](https://www.crunchbase.com/person/ahmadreza-samadi)
+* [Ahmadreza Samadi on Peerlist](https://peerlist.io/ahmadrezasmdi)
+* [Ahmadreza Samadi on Product Hunt](https://www.producthunt.com/@ahmadreza_samadi)
+* [Ahmadreza Samadi on Wellfound](https://wellfound.com/u/ahmadreza-samadi)
 
-## Optional
+## Markdown
 
-- [Persian homepage](https://a-samadi.com/fa/): Persian translation of the homepage, with the same supported identity, roles and selected work.
-- [Arabic homepage](https://a-samadi.com/ar/): Arabic translation of the homepage, with the same supported identity, roles and selected work.
-- [Persian writing](https://a-samadi.com/fa/writing/): Persian article index with translated titles, summaries and links to the corresponding reading pages.
-- [Arabic writing](https://a-samadi.com/ar/writing/): Arabic article index with translated titles, summaries and links to the corresponding reading pages.
-- [Homepage and resource index (JSON)](https://a-samadi.com/ask-index.json): Existing multilingual homepage passages and published English article, film and carousel metadata, exported from canonical pages.
-- [RSS feed](https://a-samadi.com/writing/feed.xml): English articles and carousels with canonical links, related films and original publication dates, generated from published pages.
-- [Sitemap](https://a-samadi.com/sitemap.xml): Canonical indexable pages and their language alternates; embedded players and calculators are excluded.
+* [Ahmadreza Samadi](https://a-samadi.com/index.md)
+* [About Ahmadreza Samadi](https://a-samadi.com/about.md)
+* [Selected work](https://a-samadi.com/work/index.md)
+* [Appraiva: turning property imagery into decision support](https://a-samadi.com/work/appraiva.md)
+* [Ahmadreza Samadi at Royal Abraj Group](https://a-samadi.com/work/royal-abraj.md)
+* [Start with the decision, then build the AI](https://a-samadi.com/writing/start-with-the-decision.md)
+* [Before youbuild the AI.](https://a-samadi.com/tools/before-you-build-ai.md)
+* [Press & media kit](https://a-samadi.com/press.md)
+* [About Ahmadreza Samadi (Persian)](https://a-samadi.com/fa/about.md)
+* [Ahmadreza Samadi (Persian)](https://a-samadi.com/fa/index.md)
+* [About Ahmadreza Samadi (Arabic)](https://a-samadi.com/ar/about.md)
+* [Ahmadreza Samadi (Arabic)](https://a-samadi.com/ar/index.md)
+* [Where AI belongs in a business](https://a-samadi.com/ideas.md)
+* [AI cost per accepted result](https://a-samadi.com/writing/ai-cost-per-verified-result.md)
+* [AI and business systems](https://a-samadi.com/topics/business-systems-dubai.md)
+* [Appraiva: turning property imagery into decision support (Persian)](https://a-samadi.com/fa/work/appraiva.md)
+* [Appraiva: turning property imagery into decision support (Arabic)](https://a-samadi.com/ar/work/appraiva.md)
+* [Ahmadreza Samadi at Royal Abraj Group (Persian)](https://a-samadi.com/fa/work/royal-abraj.md)
+* [Ahmadreza Samadi at Royal Abraj Group (Arabic)](https://a-samadi.com/ar/work/royal-abraj.md)
+* [I build AI, and I run a business that has to live with it](https://a-samadi.com/writing/build-ai-run-a-business.md)
+* [How to check an image claim, AI-made or not](https://a-samadi.com/writing/verify-ai-image-claims.md)
+* [How satellite messaging works without cell towers (Persian)](https://a-samadi.com/fa/writing/how-satellite-messaging-works.md)
+* [Connected AI apps: access, scope and approval (Persian)](https://a-samadi.com/fa/writing/connected-ai-apps.md)
+* [Why does your phone stop charging at 80%? (Arabic)](https://a-samadi.com/ar/writing/why-phone-stops-charging-at-80.md)
+* [How to check an image claim, AI-made or not (Arabic)](https://a-samadi.com/ar/writing/verify-ai-image-claims.md)
+* [Jev: an AI decision model, not another chatbot (Persian)](https://a-samadi.com/fa/writing/jev-ai-decision-model.md)
+* [Two batteries, one foldable phone: how the battery reading works](https://a-samadi.com/writing/foldable-two-batteries.md)
+* [Jev: an AI decision model, not another chatbot (Arabic)](https://a-samadi.com/ar/writing/jev-ai-decision-model.md)
+* [Oxfam Novib: a data foundation for CRM and analytics](https://a-samadi.com/work/oxfam-novib.md)
+* [Why does your computer slow down when storage is almost full? (Persian)](https://a-samadi.com/fa/writing/why-full-storage-slows-computer.md)
+
+## Published passages
+
+Technology Entrepreneur · Dubai, UAE
+
+# Ahmadreza Samadi
+
+I build AI, and I run a business that has to live with it.
+
+Co-Founder & Technical Lead at Appraiva. Co-Founder & CEO of Royal Abraj Group.
+
+Read my biography, press resources and selected work.
+
+Explore my work Get in touch
+
+Explore my work
+
+United States · Remote Appraiva Co-Founder & Technical Lead Dubai, UAE Royal Abraj Group Co-Founder & CEO My focus Start with the decision. Technology × AI × business
+
+## Technology × AI × business
+
+See how I build AI at Appraiva, run a business in Dubai and decide what needs a human check.
+
+### What I work on
+
+• Building AI products
+
+• Running a business with technology
+
+• Start with the decision
+
+• Why I build AI and run a business
+
+### Proof
+
+• Appraiva
+
+• Royal Abraj Group
+
+• Public studies and tools
+
+### My topics
+
+• Where AI is worth it in a business
+
+• Cost per accepted result
+
+• Testing AI on real tasks
+
+• Where AI must stop
+
+• AI property valuation
+
+Selected Work
+
+## From business problems to working products.
+
+Selected work across AI products at Appraiva, business systems at Royal Abraj Group, enterprise data and predictive analytics.
+
+Flagship company appraiva.com
+
+### Appraiva AI Real Estate Intelligence Platform
+
+Building AI tools that help real estate investors and developers find distressed and off-market properties using imagery analysis and enriched property data.
+
+• Imagery analysis
+
+• AI tools
+
+• Property data
+
+• Enriched property data
+
+Appraiva case study
+
+Appraiva system layers
+
+• 01Property discovery
+
+• 02Data enrichment
+
+• 03Opportunity analysis
+
+• 04Search and decision workflows
+
+My current rolesRoyal Abraj Group
+
+### Digital strategy & business operations
+
+Co-Founder & CEO, Royal Abraj Group, Dubai. The group covers property brokerage and documents-clearing services; he leads its digital strategy and technology.
+
+• Digital Strategy
+
+• Technology
+
+• Property brokerage
+
+Royal Abraj Group case study
+
+BackgroundOxfam Novib
+
+### Enterprise CRM & Analytics Data Platform
+
+Azure data infrastructure for CRM migration and analytics at Oxfam Novib.
+
+• Enterprise data engineering
+
+• Azure
+
+• CRM
+
+Oxfam Novib case study
+
+Explore selected work
+
+About
+
+## Technical depth, business perspective.
+
+Ahmadreza Samadi builds AI products at Appraiva and runs Royal Abraj Group in Dubai. He writes about how businesses decide what to build, check and measure.
+
+I build AI, and I run a business that has to live with it.
+
+Also known as Ahmad Samadi.
+
+More about my background
+
+Selected Experience
+
+## A technical path through product, data, AI, and operations.
+
+My current roles
+
+### Co-Founder & Technical Lead
+
+Appraiva · Cleveland, Ohio, United States · Remote from Dubai
+
+Co-Founder & Technical Lead, Appraiva. Appraiva is a US company in Cleveland, Ohio; he works remotely from Dubai. It builds AI tools that help real estate investors and developers find distressed and off-market properties through imagery analysis and enriched property data.
+
+My current roles
+
+### Co-Founder & CEO
+
+Royal Abraj Group · Dubai, UAE
+
+Co-Founder & CEO, Royal Abraj Group, Dubai. The group covers property brokerage and documents-clearing services; he leads its digital strategy and technology.
+
+Background
+
+### Enterprise data engineering
+
+Oxfam Novib
+
+Azure data infrastructure for CRM migration and analytics at Oxfam Novib.
+
+Background
+
+### Machine learning
+
+MCI
+
+Predictive customer segmentation at MCI.
+
+Capabilities
+
+## Where strategy and implementation meet.
+
+### Product and Technical Leadership
+
+Technical lead for imagery analysis and enriched property data at Appraiva; digital strategy and technology at Royal Abraj Group.
+
+### AI and Data Systems
+
+Enterprise data engineering and machine learning. Predictive customer segmentation at MCI.
+
+### Cloud and Platform Engineering
+
+Azure data infrastructure for CRM migration and analytics at Oxfam Novib.
+
+Writing
+
+## Ideas behind the work.
+
+Browse all writing
+
+Interactive field guide
+
+### Before You Build the AI
+
+Turn an AI idea into one clear decision, an evidence plan and a useful first experiment.
+
+Build a decision brief
+
+Property valuation
+
+### AI property valuation
+
+What an automated estimate can and cannot tell you about a home.
+
+Human review
+
+### AI in real estate decisions
+
+Where a person checks evidence before a property decision.
+
+Dubai property data
+
+### Dubai property costs and data
+
+Match the property question to the appropriate Dubai data source.
+
+Explore public tools and data →
+
+Contact
+
+## Let’s talk about a product or business workflow.
+
+I welcome conversations with founders and industry experts working on AI products, property data, or the systems behind business operations.
+
+Tell me who the work is for, how it is handled today, and what decision or process you want to improve. A short description and a relevant link are enough to start.
+
+Dubai, United Arab Emirates
+
+ahmadreza.smdi@gmail.com
+
+Email
+
+LinkedIn GitHub YouTube Instagram Crunchbase
+
+Biography and profile kit Save contact details Official profiles
+
+## Follow
+
+Biography
+
+# About Ahmadreza Samadi
+
+Ahmadreza Samadi · Ahmad Samadi · Technology entrepreneur
+
+Ahmadreza Samadi, also known as Ahmad Samadi, is a Dubai-based technology entrepreneur. As Co-Founder & Technical Lead of Appraiva, Samadi builds AI products. As Co-Founder & CEO, he runs Royal Abraj Group. He writes about how businesses decide what to build, check and measure.
+
+Continue reading: AI for property decisions · Signature ideas
+
+Ahmadreza Samadi Technology entrepreneur based in Dubai.
+
+Co-Founder & Technical Lead, Appraiva. Appraiva is a US company in Cleveland, Ohio; he works remotely from Dubai. It builds AI tools that help real estate investors and developers find distressed and off-market properties through imagery analysis and enriched property data.
+
+Co-Founder & CEO, Royal Abraj Group, Dubai. The group covers property brokerage and documents-clearing services; he leads its digital strategy and technology.
+
+Enterprise data engineering and machine learning.
+
+Data Engineer at Oxfam Novib, September 2022–June 2023, building Azure data infrastructure for CRM migration and analytics.
+
+Predictive customer segmentation at MCI.
+
+I build AI, and I run a business that has to live with it.
+
+## At a glance — October 2026
+
+As of October 2026, the following facts describe Ahmadreza Samadi’s current roles and approved background.
+
+Appraiva
+
+Co-Founder & Technical Lead since October 2023. Appraiva is based in Cleveland, Ohio, United States. Samadi works remotely from Dubai. Appraiva builds AI tools for investors and developers to find distressed and off-market properties through imagery analysis and enriched property data.
+
+Royal Abraj Group
+
+Co-Founder & CEO since 2022. The Dubai group covers property brokerage and documents-clearing services; he leads its digital strategy and technology.
+
+Based in
+
+Dubai, United Arab Emirates.
+
+Background
+
+Enterprise data engineering and machine learning; Azure data infrastructure for CRM migration and analytics at Oxfam Novib; predictive customer segmentation at MCI.
+
+Education
+
+Master of Science in Computer Software Engineering, specialization in Data, Shahid Beheshti University, 2019–2021.
+
+Other people share the name Ahmad Samadi; this is the official site of the Dubai-based technology entrepreneur.
+
+## Questions about Ahmadreza Samadi
+
+### Who is Ahmadreza Samadi?
+
+Ahmadreza Samadi builds AI products at Appraiva and runs Royal Abraj Group in Dubai. He writes about how businesses decide what to build, check and measure. He holds a Master of Science in Computer Software Engineering, specialization in Data, from Shahid Beheshti University, 2019–2021.
+
+### What does Appraiva do?
+
+Ahmadreza Samadi has been Co-Founder & Technical Lead of Appraiva since October 2023. Appraiva builds AI tools that help real estate investors and developers find distressed and off-market properties through imagery analysis and enriched property data. His responsibilities connect property matching, enrichment, search, AI and cloud architecture.
+
+### What is his role at Royal Abraj Group?
+
+Ahmadreza Samadi has been Co-Founder & CEO of Royal Abraj Group in Dubai since 2022. The group covers property brokerage and documents-clearing services. He leads digital strategy and technology, with system responsibilities spanning websites, CRM workflows, a customer portal and internal tools.
+
+### Where is he based?
+
+Ahmadreza Samadi is based in Dubai, United Arab Emirates. He works remotely as Co-Founder & Technical Lead of Appraiva, a US company based in Cleveland, Ohio. His second role is Co-Founder & CEO of Royal Abraj Group, the Dubai business where he leads digital strategy and technology.
+
+### What does he write about?
+
+Ahmadreza Samadi, who builds AI at Appraiva and runs Royal Abraj Group in Dubai, writes about where AI earns its place in a business: the decision it improves, where a person must check it, and what each accepted result really costs. His signature idea is “Start with the decision.” His public work includes property studies, calculators and a decision-first guide.
+
+### How can I contact him?
+
+Ahmadreza Samadi’s personal email is ahmadreza.smdi@gmail.com. His biography, press resources and selected work are available on his website, a-samadi.com. The biography identifies the Dubai-based technology entrepreneur and links the official profiles associated with his work at Appraiva and Royal Abraj Group.
+
+## Known for
+
+Three ideas connect my work.
+
+### Appraiva case study: property imagery and search
+
+Connecting property imagery, records and search so an investor can decide what to investigate.
+
+### Decision-first guide
+
+Turn an AI idea into one clear decision, an evidence plan and a useful first experiment.
+
+### Building in Dubai
+
+Ahmadreza Samadi is Co-Founder & CEO of Royal Abraj Group in Dubai, a role held since 2022. The group covers property brokerage and documents-clearing services. He leads its digital strategy and technology, including websites, CRM workflows, a customer portal and internal tools.
+
+## What I believe
+
+• Start with the decision, then choose the AI.
+
+• Define where a person checks the work and takes responsibility.
+
+• Count the full cost of an accepted result.
+
+• Keep property identity, source and date together.
+
+• Set permissions before an AI agent can act.
+
+## Signature ideas
+
+• Start with the decision.
+
+• Where the AI must stop.
+
+• Cost per accepted result.
+
+English resources
+
+## Work in public
+
+• Property studies
+
+• Decision guide
+
+• Property calculators
+
+• Public GitHub repositories
+
+## My topics
+
+• Where AI is worth it in a business
+
+• Cost per accepted result
+
+• Testing AI on real tasks
+
+• Where AI must stop
+
+• AI property valuation
+
+## Career and background
+
+Co-Founder & Technical Lead, Appraiva. Appraiva is a US company in Cleveland, Ohio; he works remotely from Dubai. It builds AI tools that help real estate investors and developers find distressed and off-market properties through imagery analysis and enriched property data.
+
+Co-Founder & CEO, Royal Abraj Group, Dubai. The group covers property brokerage and documents-clearing services; he leads its digital strategy and technology.
+
+• Enterprise data engineering and machine learning.
+
+• Azure data infrastructure for CRM migration and analytics at Oxfam Novib.
+
+• Predictive customer segmentation at MCI.
+
+## Education
+
+Ahmadreza Samadi holds a Master of Science in Computer Software Engineering, specialization in Data, from Shahid Beheshti University, 2019–2021.
+
+## For introductions
+
+A biography, portrait and logo for professional introductions, event listings, and partner profiles.
+
+Press & media kitDownload profile kitSave contact detailsDownload biography
+
+## Ahmadreza Samadi online
+
+These are my official public profiles, where you can find my professional background, company roles and technical work.
+
+• Ahmadreza Samadi on LinkedIn Professional experience and selected work.
+
+• Ahmadreza Samadi on Crunchbase Founder background and my roles at Appraiva and Royal Abraj Group.
+
+• Ahmadreza Samadi on GitHub (@ahmadreza-smdi) My technical profile and public repositories, under ahmadreza-smdi.
+
+• Ahmadreza Samadi on Product Hunt My founder profile on Product Hunt.
+
+• Ahmadreza Samadi on Peerlist My professional profile and projects.
+
+• Ahmadreza Samadi on DEV Community My DEV Community profile.
+
+• Ahmadreza Samadi on Wellfound My professional profile on Wellfound; sign in for full details.
+
+• Ahmadreza Samadi on Instagram · @ahmadreza.samadi My public Instagram profile for notes on AI, products and building businesses.
+
+• Ahmadreza Samadi on YouTube Explainer films by Ahmadreza Samadi.
+
+• Ahmadreza Samadi on Threads
+
+Start with my Instagram introduction, or read my LinkedIn post about building AI for property decisions at Appraiva.
+
+## Public role sources
+
+Appraiva’s founder page · Royal Abraj Group’s leadership page describe the company work and roles referenced here.
+
+## Selected work and writing
+
+Ahmadreza Samadi’s selected work covers building AI products at Appraiva, leading digital strategy and technology at Royal Abraj Group in Dubai, and the evidence needed before building an AI workflow.
+
+• Appraiva: turning property imagery into decision support
+
+• My role at Royal Abraj Group: digital strategy and technology
+
+• Oxfam Novib: a data foundation for CRM and analytics
+
+• Start with the decision, then build the AI
+
+• AI agent safety: boundaries before actions
+
+• All articles and technology explainers by Ahmadreza Samadi
+
+### Public tools and data
+
+AI-assisted projects with documented methods and limits. These resources do not establish customer adoption or business results.
+
+• AI workflow cost ledger — Testing an AI workflow? Start with cost per caller-accepted result; the workbook and worked examples are fictional.
+
+• ACS2024 metro rent burden — Comparing rent pressure across metros? Start with the ACS2024 CSV, chart, method and limits; this is not a property-level estimate.
+
+GitHub resources in English.
+
+## Follow
+
+Selected work — building AI and running business systems, supported by data engineering and public tools.
+
+# Selected work
+
+Ahmadreza Samadi’s selected work: building AI products at Appraiva and running Royal Abraj Group in Dubai, supported by product engineering, data systems and public tools.
+
+## Professional work
+
+### Appraiva
+
+Role
+
+Co-Founder & Technical Lead · October 2023–present · Cleveland, Ohio; remote from Dubai
+
+Problem
+
+Connect property discovery and enriched data with useful investor and developer workflows.
+
+Approach
+
+Lead product architecture, data systems, AI workflows and cloud infrastructure; work across customer discovery and product development.
+
+Output
+
+Platform capabilities for property discovery, data enrichment, search and opportunity analysis.
+
+Read the case study
+
+### Royal Abraj Group
+
+Role
+
+Co-Founder & CEO · 2022–present · Dubai
+
+Problem
+
+Align commercial priorities, client experience and operating work across property brokerage and documents-clearing services.
+
+Approach
+
+Lead digital strategy and technology, translating business needs into product priorities, processes and data ownership.
+
+Output
+
+Development of websites, CRM workflows, a customer portal and internal tools for enquiry capture, follow-up, document handling and case tracking.
+
+Read the case study
+
+### Oxfam Novib
+
+Role
+
+Data Engineer · September 2022–June 2023 · The Hague; remote
+
+Problem
+
+Prepare data for CRM migration and analytics.
+
+Approach
+
+Build Azure pipelines using Databricks, SQL, Data Factory, Key Vault and Azure DevOps; integrate SAP and Salesforce data.
+
+Output
+
+Multi-source ETL across Bronze, Silver and Gold layers, anonymization and retention logic, and documented development, production and handoff workflows.
+
+Read the case study
+
+### Hamrah e Aval (MCI)
+
+Role
+
+Machine Learning Engineer · November 2020–April 2022 · Tehran
+
+Problem
+
+Support database marketing with customer segmentation.
+
+Approach
+
+Use RFM (recency, frequency and monetary) analysis and behavioral data; tune segmentation models and memory use.
+
+Output
+
+Customer segmentation models supporting churn-risk analysis and campaign targeting. No campaign uplift is asserted.
+
+Read the case study
+
+## Public studies and tools
+
+These descriptions summarize my supported professional background. Public tools and studies are separate artifacts; their limits remain part of the work.
+
+• Rent and ownership scenarios: 393 metros — ACS/HUD cash-budget scenarios; not matched-property investment returns.
+
+• Metro rent burden: ACS 2024 — Descriptive point estimates for 386 US metros, with reproducible source data.
+
+• Rental cash-flow calculator — Enter costs and financing assumptions; inspect the resulting cash budget.
+
+• Dubai purchase-cost calculator — Separate purchase-price and mortgage bases; check the applicable official route.
+
+• Valuation range checker (English) — Compare 2–5 estimates; agreement does not prove accuracy.
+
+### GitHub
+
+• Evidence Note — Record a claim, its source and the next check; recording does not verify it.
+
+• AI workflow cost ledger — Offline cost per accepted result, including failed attempts and review.
+
+• Video publication-date linter — Offline checks for HTML JSON-LD and video-sitemap dates.
+
+• Rent-burden source — Reproducible ACS 2024 analysis and source data.
+
+• Rent/ownership source — Rebuild the published scenarios and inspect assumptions.
+
+Professional work
+
+# Appraiva: turning property imagery into decision support
+
+At Appraiva I build AI that connects property photos with records, and at Royal Abraj Group I run a business where people decide how to act on an AI answer.
+
+By Ahmadreza Samadi · Co-Founder & Technical Lead
+
+## Decision: connect an image to property research
+
+An image can show the condition of a property. Turning that observation into useful investment research takes more than an AI model.
+
+Ahmadreza Samadi has been Appraiva’s Co-Founder & Technical Lead since October 2023 and works remotely from Dubai for the US company in Cleveland, Ohio. It builds AI tools that help real estate investors and developers find distressed and off-market properties through imagery analysis and enriched property data.
+
+For property research, a condition signal needs context: which property it describes, what other information is available, and how a person can find and use it. Those questions connect model output with product design and engineering.
+
+Samadi describes his approach: “I build AI, and I run a business that has to live with it.”
+
+## Responsibilities: connect imagery, data and search
+
+Ahmadreza Samadi’s responsibilities connect imagery analysis, property matching, data enrichment, search, AI and cloud architecture. The work spans four connected areas:
+
+• Property discovery: connect imagery analysis to the property it describes.
+
+• Data enrichment: bring condition signals together with other property information.
+
+• Search: make that information available within an investor's research workflow.
+
+• Product and infrastructure: connect the interface, data systems, AI workflows and cloud services that support those steps.
+
+The architectural challenge is keeping those connections useful: an image observation needs a property identity, supporting context and a clear next step in the product.
+
+## Current role and scope
+
+Ahmadreza Samadi’s current role at Appraiva is Co-Founder & Technical Lead. The company combines imagery analysis and enriched property data to help real estate investors and developers find distressed and off-market properties.
+
+The research example below is fictional; this page does not report investment returns or current customer-adoption results.
+
+## What does property data enrichment add to an image?
+
+Property data can provide context for an image: which property it describes, when the information was recorded and what still needs to be checked. Appraiva’s founder announcement is an existing public reference for the company.
+
+## How does an observation become useful research?
+
+A reviewer needs to know which property an observation describes and what other information supports it. Linking imagery, records and search is one way to make that context available within a research workflow.
+
+The next step depends on the evidence. An image and a property record may describe different moments. Connecting them is useful only when a person can understand the context and identify what still needs investigation.
+
+## Which questions help decide what to investigate next?
+
+For illustration, consider a fictional research record: an image appears to show wear on a roof, while the property record is incomplete. These suggested questions would help decide what to investigate next:
+
+• Is it the correct property? Check that the image and supporting records refer to the same property before combining their information.
+
+• How current is the evidence? Compare image-capture and record dates; distinguish a past observation from information about present condition.
+
+• What is observed, and what remains unresolved? Separate what appears in the image from claims that still need records or professional verification.
+
+• What information is needed next? Identify the missing fact and appropriate follow-up before turning research into a recommendation.
+
+For checks on property facts and uncertainty, see what AI home-value estimates miss. Where AI should stop in real estate explains preparation, verification and the client’s decision. AI cost per accepted result includes review effort in a proposed workflow evaluation.
+
+## Explore the product approach
+
+Samadi explains this approach in Start with the decision, then build the AI. To apply the questions to your own idea, use the Before You Build the AI field guide.
+
+## Public reference
+
+Appraiva’s founder and launch announcement, 12 January 2024, identifies Ahmadreza Samadi as Co-Founder & Lead Data Architect and describes the platform’s early beta at that time. The historical title and beta reference belong to January 2024; his current title is Co-Founder & Technical Lead.
+
+Continue reading: Signature ideas · Related reading path
+
+Professional work
+
+# Ahmadreza Samadi at Royal Abraj Group
+
+By Ahmadreza Samadi · Co-Founder & CEO · Dubai, UAE
+
+## Decision: give each system a clear purpose
+
+A customer enquiry is the beginning of a workflow. The business still needs to understand the request, follow up, manage the work and keep the customer informed.
+
+Ahmadreza Samadi has been Co-Founder & CEO of Royal Abraj Group in Dubai since 2022. The group covers property brokerage and documents-clearing services. He leads its digital strategy and technology.
+
+Samadi’s system responsibilities cover websites, CRM workflows, a customer portal and internal tools. The work connects enquiry capture and sales follow-up with document handling, case tracking and customer information.
+
+These boundaries matter because a sales record and an active customer case answer different questions. Someone following up on an enquiry needs the next sales action. Someone delivering a service needs the current work, the responsible person and the information required to proceed.
+
+## Responsibilities: separate sales follow-up from service delivery
+
+Samadi’s digital work covers the following system responsibilities:
+
+• Website: explain the service and capture the enquiry.
+
+• CRM: organize lead information and the next sales follow-up.
+
+• Customer portal: support document handling and visibility into customer work.
+
+• Internal tools: connect case information, delivery status and team responsibilities.
+
+A lead’s next sales action and a case’s next delivery action need to remain clear as work passes between people and systems.
+
+For teams considering AI access to these kinds of business systems, Samadi’s article Connected AI apps: access, scope and approval explains how to distinguish reading information from taking action. Use the decision worksheet to map who should check a proposed assistant’s next step.
+
+## Current role and scope
+
+Samadi’s contribution connects the customer-facing website and portal with CRM workflows and internal operations.
+
+This case study describes supported system responsibilities; it does not report a measured sales or efficiency result.
+
+## Professional background and contact
+
+For Samadi’s current roles and broader experience, visit his biography or his LinkedIn profile. The Royal Abraj Group website provides information about the business and its services.
+
+The Royal Abraj Properties leadership page provides public company context.
+
+For a property decision, start with the Dubai property source guide to distinguish an index, a rental benchmark and a valuation service.
+
+## Company update: comparing brokerage quotes
+
+Reviewed 27 October 2026
+
+Royal Abraj Group announced a seven-point brokerage-fee checklist and a free two-quote worksheet in Royal Abraj Properties’ English and Persian buying-cost guide. The worksheet records fee scope, payer, VAT, included services, separate costs and payment terms; it does not set a commission rate or replace an agreement.
+
+Company guide and worksheet · Company announcement
+
+Continue reading: Signature ideas · Related reading path
+
+Essay · Start with the decision
+
+# Start with the decision, then build the AI
+
+An AI product earns its place when it helps someone make a useful decision and act on it. Define the evidence, responsible person and acceptance rule before choosing a model, then test the complete workflow.
+
+## Key points
+
+• Name the decision and the responsible person first.
+
+• Define acceptable evidence, missing-data behavior and human review.
+
+• Test the full workflow against a recorded baseline.
+
+Original editorial comparison — all amounts and cases are fictional
+
+Step
+
+Value or evidence
+
+Interpretation
+
+Decision
+
+Which fictional records need investigation?
+
+A named researcher chooses the shortlist
+
+Evidence
+
+Dated sources with missing fields visible
+
+Unresolved claims remain unresolved
+
+Acceptance
+
+Reviewer checks the proposed research note
+
+Generated text alone is not completion
+
+By Ahmadreza Samadi · 13 September 2026
+
+Updated 21 October 2026
+
+## A decision brief before a model brief
+
+Define the decision, evidence, responsible person and acceptance rule before choosing the AI system. A useful experiment tests the whole path from evidence to action.
+
+Decision
+
+Evidence and review
+
+Action and measurement
+
+Work backward from one decision, then test the complete workflow.
+
+For the hypothetical property shortlist in this essay, write the brief as: “A researcher chooses which records deserve further investigation, using dated evidence with unresolved fields visible.” Compare that process with the current manual approach. A shortlist is a research aid; it is not a purchase recommendation or a verified finding about a property.
+
+### A checklist for the next experiment
+
+• Name one decision and the person responsible for it.
+
+• Record the current process, including its cost and failure cases.
+
+• Define acceptable evidence and what happens when it is missing.
+
+• Set the acceptance rule and the human review point before testing.
+
+• Compare the same task under both workflows; retain rejected cases and review effort.
+
+Use the decision brief or tool · Explore the three signature ideas
+
+### Primary references
+
+• Google: Rules of Machine Learning
+
+• NIST AI RMF 1.0
+
+• Microsoft Research: Guidelines for Human-AI Interaction
+
+These references inform the evaluation and interaction principles. The workflow above is an editorial synthesis, not an endorsed standard or a reported company outcome.
+
+When I assess an AI product idea, I start with a business question: what decision is difficult today, and what would make it easier?
+
+That question provides a practical starting point for both product strategy and engineering. It identifies who needs the result, what information matters, and what the system must do beyond producing an answer.
+
+## Which decision should this AI product help someone make?
+
+Consider a hypothetical property research tool. “Analyze properties with AI” leaves many product choices unresolved. “Help an investor decide which properties deserve further investigation” is more specific. It identifies an action and a point in a workflow where better information could help.
+
+The distinction matters because a useful research tool may need to show supporting evidence, make comparisons easy, and identify missing information. A single score would only cover part of that job.
+
+## What evidence would make the decision responsible?
+
+Once the decision is clear, ask what evidence a person would need to make it responsibly. In this example, that might include imagery, its capture date, relevant property attributes, and the limits of what can be inferred.
+
+Then ask whether the necessary data is available, sufficiently current, and appropriate for the use case. These questions belong early in product development because the answers can change what the product should promise.
+
+## What action follows the answer?
+
+An output becomes useful when it fits the next step. Does the customer shortlist an opportunity, request additional information, or send a case for human review?
+
+That action shapes the interface and the architecture. It determines which information must be retained, which integrations matter, and where a person needs to be able to question or correct the system.
+
+## How would I evaluate the whole workflow?
+
+For this hypothetical tool, I would evaluate several questions together:
+
+• Does it surface information that is relevant to the research decision?
+
+• Can a user understand the evidence and its limitations?
+
+• How much review is needed before taking the next step?
+
+• What happens when information is incomplete or the system is wrong?
+
+• Is the value of that assistance worth the cost of delivering it?
+
+A model metric can inform those questions, but it cannot answer all of them. Product evaluation also needs to examine the experience of the person using the result.
+
+## What is the smallest useful commitment?
+
+I would rather define an initial product around one decision we can support well than make a broad promise that is difficult to evaluate. A focused scope gives the team a clearer way to learn from customers and decide what to build next.
+
+My approach is to connect the customer’s decision, the supporting evidence, the product workflow, and the engineering effort. That connection is where technical capability becomes a business proposition.
+
+## Put the method to work
+
+Before You Build the AI turns these questions into an interactive decision brief. Explore a worked example, adapt it to a product idea, and export a first experiment.
+
+For the professional context behind my interest in property research workflows, see my work on AI real estate intelligence at Appraiva. The example in this essay remains hypothetical.
+
+Continue with the AI property decisions reference and the practical decision tool.
+
+## Primary sources and scope
+
+These three primary sources were opened on 20 October 2026. Access dates do not establish a new source publication date.
+
+• Google: Rules of Machine Learning. Living engineering guide; no new publication date asserted.
+
+• NIST: AI Risk Management Framework. AI RMF 1.0 released January 2023.
+
+• Microsoft Research: Guidelines for Human-AI Interaction. Research guidelines introduced in 2019.
+
+The examples and proposed methods are editorial teaching work. They are not company results or independently certified findings. Educational, not financial advice.
+
+Prefer a copy you can edit in a text editor? Download the decision-first text kit (in English) for a blank template, a separate fictional example and reading notes. Extract the ZIP and save a private working copy. This is another format for the existing planning aid; no experiment was run.
+
+## About the author
+
+Ahmadreza Samadi is a technology entrepreneur based in Dubai. He builds AI products as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO.
+
+Ahmadreza Samadi
+
+Part of Start with the Decision
+
+## Follow
+
+An interactive tool by Ahmadreza Samadi
+
+# Before you build the AI.
+
+Make one decision worth helping with.
+
+Work backward from a real action to the evidence it needs. Leave with a focused brief and a first experiment you can run before committing to a full product.
+
+Start with the decision: read the framework →
+
+01 / Decision02 / Evidence03 / Experiment
+
+Start with a worked example
+
+Illustrative scenarios, not customer results. Edit any detail.
+
+01 Define the decisionWho needs to decide? What must they decide? What happens after the answer?
+
+02 Examine the evidenceWhat evidence would support that choice? How ready is that evidence? If the answer is wrong… Who reviews before action?
+
+03 Set the first testHow is this done today? What would make the test useful?
+
+Your entries stay in this page. They are not saved or sent to a server. Export your brief before leaving.
+
+Your decision brief
+
+01—03
+
+## A smaller promise. A clearer test.
+
+Illustrative example loaded. Change any detail, then rebuild your brief.
+
+### 01 / The decision
+
+A property researcher Which properties deserve a closer investigation before an investor commits more time? How ready is that evidence? Some is available; gaps remain If the answer is wrong… It creates meaningful rework or cost Who reviews before action? A person reviews every result
+
+### The next action
+
+Shortlist candidates and request missing information or a manual inspection.
+
+### 02 / The evidence
+
+Dated property imagery, relevant property attributes and source provenance. Record what the imagery cannot establish.
+
+### Resolve first
+
+Make the gaps visible. Identify missing sources and define when the tool must ask for information or hand the decision back to a person. Keep the reviewer in the test. Record corrections and the time needed to review each result, alongside the model output.
+
+### 03 / The smallest useful experiment
+
+• Choose a small, explicitly scoped set of cases for this decision. Include typical cases, missing evidence and plausible failures. Do not treat a small pilot as proof of broad reliability.
+
+• Establish the baseline: A researcher checks each listing and builds a shortlist manually. Record time, outcomes and correction effort.
+
+• Prepare evidence-backed suggestions for the same cases, manually or with a simple prototype. Keep the reviewer in the test. Record corrections and the time needed to review each result, alongside the model output.
+
+• Compare against your criterion: Reduce research time while retaining useful candidates, with missing evidence visible and review effort included. Set measurable pass and stop conditions before testing; include delivery and review costs.
+
+### Proceed only when
+
+The evidence supports the intended action, failures have a clear fallback, and the combined workflow improves on the baseline. If it does not, narrow the decision or revisit the inputs.
+
+A structured thinking aid, not an AI assessment or a readiness score. Guidance follows your selections; it does not validate the evidence.
+
+Keep a working copy
+
+## A one-page experiment card.
+
+Prefer a fixed worksheet? Download the blank English PDF with 10 editable fields for your decision, evidence, baseline, acceptance criterion, review rules, test and observed result. It complements the full interactive brief above.
+
+Download the fillable experiment card (PDF, English) →
+
+See a completed fictional planning example (PDF, English) and reading notes (plain text, English). The proposed pilot has not run; no results or savings are claimed. Start real work from the blank card.
+
+A thinking aid by Ahmadreza Samadi, not a validated assessment. Complete the form in a PDF reader that supports editable fields and save a local copy; the download is not connected to this page's entries.
+
+The thinking behind the tool
+
+## The output is only part of the product.
+
+For property workflows, read where AI should stop in real estate.
+
+The supporting evidence, the next action and the cost of review determine whether an answer is useful. This worksheet puts those choices on one page.
+
+For the next step, record costs and acceptance decisions with the AI workflow cost ledger or experiment workbook (Excel, English). Three worked examples (ZIP, English) show retries, no accepted results and explicitly known zero costs. The included teaching data are fictional. You supply the acceptance rule; these resources do not verify answer quality.
+
+Read “Start with the decision, then build the AI” →
+
+## Follow
+
+Ahmadreza Samadi
+
+# Press & media kit
+
+Biographies, facts and public resources for professional introductions.
+
+Download English profile kit Written enquiries
+
+Ahmadreza Samadi · Technology Entrepreneur
+
+## Biography set
+
+### Short biography · 110 characters
+
+Technology entrepreneur in Dubai · Co-Founder & Technical Lead, Appraiva · Co-Founder & CEO, Royal Abraj Group
+
+### Professional introduction
+
+Ahmadreza Samadi is a technology entrepreneur based in Dubai. He builds AI products as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO.
+
+### 100-word biography
+
+Ahmadreza Samadi is a technology entrepreneur based in Dubai. He builds AI products as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO. Appraiva is based in Cleveland, Ohio, in the United States. Samadi works remotely from Dubai, connecting property imagery, records and search. At Royal Abraj Group, he leads digital strategy for property brokerage and documents clearing. His work includes websites, CRM workflows and a customer portal. His background includes data engineering at Oxfam Novib and machine learning at MCI. His public guides cover human review and the cost per accepted AI result.
+
+### Background
+
+Ahmadreza Samadi’s background spans enterprise data engineering and machine learning. At Oxfam Novib, he built Azure data infrastructure for CRM migration and analytics, using Databricks, Data Factory, SQL, Key Vault and Azure DevOps. The work included Bronze, Silver and Gold data layers, anonymization and retention logic. At MCI, he developed customer segmentation models using RFM analysis and behavioral data, with work on churn-risk analysis and campaign targeting. Samadi holds a Master of Science in Computer Software Engineering, specialization in Data, from Shahid Beheshti University, 2019–2021. At Appraiva, his responsibilities connect property imagery analysis, property matching, enrichment, search, AI and cloud architecture. At Royal Abraj Group, his system responsibilities cover websites, CRM workflows, a customer portal and internal tools. His public work includes a 393-metro rent and ownership study, a 386-area rent-burden study and calculators for rental cash flow and Dubai purchase costs.
+
+## Portrait and mark usage
+
+Use the supplied selected portraits and AS mark to identify Ahmadreza Samadi. Keep their proportions and colours; do not redraw the mark or imply a third-party endorsement. Use Sora for headings. Existing resource-specific reuse terms still apply.
+
+### Lagoon palette
+
+• Canvas #F2F7F5
+
+• Ink #0E2A33
+
+• Mint #BDE7D2
+
+• Sky #C3DCF4
+
+• Teal #0B6A7A
+
+### The three series
+
+• Start with the Decision
+
+• Property Decision Data
+
+• Tech, explained
+
+## Key figures and source years
+
+393 — Metros in the 2026 rent/ownership scenario edition, including Puerto Rico. Hypothetical budgets, not observed returns.
+
+ACS 2024 · HUD FY2027
+
+386 — Selected metros in the ACS 2024 rent-burden snapshot, 50 states and DC. Puerto Rico is excluded; this differs from the rent/ownership study universe.
+
+ACS 2024
+
+## How to cite
+
+Cite Ahmadreza Samadi, the study title, release or edition, source-data year and exact study URL. Keep geography, assumptions and limitations with any quoted figure. These two study counts cover different populations and are not directly comparable.
+
+Signature ideas · Property Decision Data
+
+## Facts for introductions
+
+Name
+
+Ahmadreza Samadi
+
+Also known as
+
+Ahmad Samadi
+
+Positioning
+
+I build AI, and I run a business that has to live with it.
+
+Personal location
+
+Dubai, United Arab Emirates
+
+Appraiva role
+
+Co-Founder & Technical Lead
+
+Appraiva work arrangement
+
+Remote; company based in Cleveland, Ohio, United States
+
+Royal Abraj Group role
+
+Co-Founder & CEO
+
+## Portrait, monogram and profile kit
+
+The English profile kit includes a biography, portrait, personal monogram and contact card. The portrait and monogram below are existing public resources.
+
+Download English profile kit Download selected public work (English PDF) Download English biography Download portrait (JPG) Download personal monogram (SVG) Save contact details Download one-page facts (English PDF) Choose a resource by question (English TXT)
+
+## Original research and tools
+
+Use the method, source version and reuse notes for the asset you cite. The study and software resources below are in English. The profile-kit download remains separate.
+
+Rent and ownership scenarios, 2026 metro edition
+
+Explore assumptions, downloadable data and embeddable charts. Rent and owner-value inputs describe different housing populations; the scenarios are not observed property yields.
+
+Explore the study · Versioned source · Citation metadata · Data and reuse notes
+
+ACS 2024 rent burden across 386 US metros
+
+AI-assisted, reproducible analysis of renter-occupied housing units with computable rent-to-income ratios. Units without a computable ratio are excluded from the percentage denominator and reported separately. Includes methods, data and citation metadata; not property yield or an investment ranking. Resources are in English.
+
+Versioned release and methods · Download CSV · Citation metadata
+
+Property calculators
+
+Separate rental income, cash flow and purchase costs using stated assumptions. The tools include share, embed and print options.
+
+Rental cash flow · Dubai purchase costs
+
+AI workflow cost ledger and experiment workbook
+
+Record retries, failed attempts, costs and caller-defined accepted results. The workbook pairs manual and AI workflows using fictional teaching data; acceptance labels do not independently verify output quality.
+
+Code and instructions · Download English workbook (XLSX) · Project licence
+
+Video publication-date linter
+
+An offline Python utility for local video JSON-LD and sitemap date checks. Date consistency does not establish actual first publication, indexing or ranking.
+
+Code and instructions · Project licence
+
+Working methods for a price and rent benchmark study
+
+Published methods for an unfinished study, including an author-selected five-year window policy. Exact dates, eligible metros and results remain unresolved.
+
+Read the working methods (English) · Reproduce the coverage table (English)
+
+Evidence before answers: six practice cases
+
+An offline English exercise with six fictional cases and eighteen answer-specific explanations. All examples and numbers are invented; this is not a company result, model benchmark or professional assessment.
+
+Download the English practice lab (ZIP)
+
+Evidence Note: a claim/source note editor
+
+Record one claim, source dates, missing evidence and the next check. Offline English tool with HTML, Markdown and JSON exports and local JSON restore. User-recorded source relationships are not independent verification. The supplied example is fictional.
+
+Versioned source and instructions · Download the English tool (ZIP) · Citation metadata
+
+## Written enquiries
+
+For written questions about published work or factual corrections, email ahmadreza.smdi@gmail.com.
+
+## Biography and work
+
+• Full biography and official profiles
+
+• Appraiva: AI real estate intelligence
+
+• Royal Abraj Group: digital strategy and technology
+
+• What I’m working on now
+
+• Writing topics
+
+• Signature ideas
+
+• Property Decision Data
+
+• Selected work
+
+# Where AI belongs in a business
+
+Three questions to ask before using AI in a business. Which decision will it improve, who will check the result, and what does each accepted result cost?
+
+These are the principles I use to explain and design AI workflows. They are supported by the linked essays and tools, rather than claims of measured company results.
+
+## Start with the decision.
+
+Name the decision, the person making it and the evidence it needs before choosing a model.
+
+### Why it matters
+
+A model is a component. A useful product also needs a person, evidence, a next action and a way to judge whether the decision improved. Starting there makes the limits visible before an experiment grows.
+
+• Name the decision
+
+• Identify the evidence
+
+• Choose the next action
+
+• Then test the AI
+
+A decision workflow for start with the decision.
+
+### Where I apply it
+
+• Read the decision-first field guide
+
+• Write a decision brief
+
+• Explore explicit ownership scenarios
+
+• How I decide where AI belongs in a business
+
+### Use it tomorrow
+
+• Write one decision as a question a person needs to answer.
+
+• Name the person responsible for the next action.
+
+• List the evidence and what would make it insufficient.
+
+• Choose an acceptance rule before comparing tools.
+
+## Where the AI must stop.
+
+Make the point for human checking, override or sign-off part of the product.
+
+### Why it matters
+
+An answer and an action carry different consequences. Property identity, missing information, permissions and accountability need explicit checks. A person must be able to see the evidence and stop or override the proposed action.
+
+• AI proposes
+
+• Check source and limits
+
+• Person accepts or overrides
+
+• Authorized action
+
+A decision workflow for where the ai must stop.
+
+### Where I apply it
+
+• Read about human review in real estate
+
+• Set an agent’s permissions
+
+• Check the property identity and source
+
+### Use it tomorrow
+
+• Identify the error that could affect the decision.
+
+• Put the human check before that consequence.
+
+• Show source, date and uncertainty at the check.
+
+• Specify what happens when evidence or approval is missing.
+
+## Cost per accepted result.
+
+Include retries, failures and review when counting the cost of a result that meets an explicit acceptance rule.
+
+### Why it matters
+
+A cheaper request may require more retries or review. Count the full workflow cost against distinct results that meet an explicit acceptance rule. The cost ledger records caller acceptance; it does not independently certify the output.
+
+• All attempt costs
+
+• Include tools and review
+
+• Count accepted results
+
+• Divide cost by results
+
+A decision workflow for cost per accepted result.
+
+### Where I apply it
+
+• Read the workflow-cost essay
+
+• Use the cost ledger and fictional worked examples
+
+• Set an acceptance rule
+
+### Use it tomorrow
+
+• Define what counts as one distinct result.
+
+• Write the acceptance rule and who applies it.
+
+• Record failed attempts, retries, tool costs and review time.
+
+• Report no accepted results as undefined cost per result, not zero.
+
+Analysis · AI product economics
+
+# AI cost per accepted result
+
+Divide the full recorded workflow cost, including failed attempts, retries, tools and human review, by distinct results accepted under a rule fixed before the test. With no accepted results, unit cost is undefined. This is a measurement method, not independent certification of the outputs.
+
+## Key points
+
+• Include all recorded attempts, retries, tools and review costs.
+
+• Count distinct accepted results under a fixed rule.
+
+• With zero accepted results, unit cost is undefined.
+
+Original editorial comparison — all amounts and cases are fictional
+
+Step
+
+Value or evidence
+
+Interpretation
+
+Attempt 1, result A
+
+0.25
+
+Rejected
+
+Attempt 2, result A
+
+0.40
+
+Accepted
+
+Attempt 3, result B
+
+0.20
+
+Rejected
+
+Total / one accepted result
+
+0.85
+
+Fictional costs, not a measured benchmark
+
+By Ahmadreza Samadi · 24 September 2026 · Updated 21 October 2026
+
+## Measure cost per accepted result
+
+Divide all recorded workflow costs by the number of distinct results accepted under a rule fixed before the test. Include retries and rejected attempts in cost; do not count repeated attempts as new accepted results.
+
+All attempt costs
+
+Acceptance rule
+
+Cost per accepted result
+
+Total recorded cost ÷ distinct accepted results. With none accepted, unit cost is undefined.
+
+This guide uses “accepted result” for an output that meets the complete acceptance rule recorded before the test. “Verified result” in the historical URL and earlier title refers to that same rule; neither term establishes independent certification. Keep unknown costs separate from explicit zero. Compare the same intended result batch and currency, and report acceptance counts alongside unit cost. A lower unit cost with a weaker acceptance rule is not a like-for-like improvement.
+
+### A checklist for the next experiment
+
+• Freeze the task, intended result IDs and acceptance rule.
+
+• Record model, tool, labor and other costs consistently for all attempts.
+
+• Retain rejected attempts and retries in the numerator.
+
+• Count each accepted result once; report unknown cost inputs as unknown.
+
+• If no result is accepted, report total spend and zero accepted results, with unit cost undefined.
+
+Use the decision brief or tool · Explore the three signature ideas
+
+### Primary references
+
+• Holistic Evaluation of Language Models (2022)
+
+• NIST AI RMF 1.0
+
+• AI workflow cost ledger: source and measurement limits
+
+These references inform the evaluation and interaction principles. The workflow above is an editorial synthesis, not an endorsed standard or a reported company outcome.
+
+## How can I try this with my own ledger?
+
+The offline ledger records costs and acceptance labels supplied by the user; it does not independently verify outputs. The teaching fixture has three attempts, two intended results, one accepted result and a total cost of 0.85. All amounts are fictional. Missing costs are rejected; explicit zero remains zero. Use the same task, currency and acceptance rule for both workflows.
+
+Choose an existing resource:
+
+• AI workflow cost ledger v0.1.0
+
+• English instructions
+
+• fictional sample ledger
+
+• AI workflow experiment workbook (XLSX, in English)
+
+• workbook starting guide (in English)
+
+• paired-ledger comparison guide (in English)
+
+• Download the offline paired-ledger kit (in English)
+
+• input-error guide (in English)
+
+• worked AI cost examples (ZIP, in English)
+
+## How do you calculate cost per accepted result?
+
+I would start with a simple measure:
+
+Cost per accepted result = total workflow cost ÷ distinct results meeting the declared acceptance rule.
+
+The numerator includes model input and output, cached context, tool calls, retries, failed runs, and human review time. The denominator counts outputs that meet a defined standard for the task. A low price per request can still produce an expensive result when many requests fail or need extensive correction.
+
+If no output meets the acceptance rule, report the experiment’s total spend and zero accepted outputs separately. Cost per accepted result is undefined for that run; do not report it as zero or infinity.
+
+Compare workflows only for the same defined task and acceptance criterion, and include the relevant cost categories consistently. Read cost per accepted result alongside precision, recall and time to a decision; a lower cost figure alone does not show that the workflow is more useful.
+
+This is a measurement framework, not a universal benchmark. Teams need to define what “accepted” means for their own workflow and record the assumptions behind any cost comparison.
+
+## Does passing review mean the work is accepted?
+
+Define the full acceptance rule before the test. Passing review may be the entire rule, or only one requirement. If the rule also requires use in a stated destination, delivering a file or passing review alone does not fulfill it.
+
+Fictional example: spend 15 currency units across three intended results. Two pass review, but only one is also used in the stated destination. If acceptance requires both checks, count one accepted result: 15 / 1 = 15. Dividing by two gives 15 / 2 = 7.50 per review-passed result, a different denominator rather than evidence of improvement.
+
+Record who will use the output, where it must be used, which checks and rework come first, and who records acceptance. The ledger calculates the labels you supply; it does not independently verify quality, use or business outcomes.
+
+Read the published acceptance guidance (English)
+
+Before recording a run, complete the blank experiment notes (in English), or read the filled fictional notes (in English). Identify the intended user, destination and acceptance evidence, and record checking and rework under your stated rule. The filled notes explain the original fictional fixture only; they supply no actual output evaluation or destination test.
+
+## How does this connect to my work?
+
+I am Co-Founder & Technical Lead of Appraiva, a US company in Cleveland, Ohio, and work remotely from Dubai. Appraiva builds AI tools that help real estate investors and developers find distressed and off-market properties through imagery analysis and enriched property data. The property-research test in this article is a proposed experiment, not a description of an Appraiva feature or a reported company result.
+
+## How would you test a property-research workflow?
+
+Imagine testing a tool that flags property records for further investigation. Start with a human-labeled set of records. Ask the system to surface candidates with supporting evidence. Have a reviewer accept or reject each suggestion, then measure precision, recall, total cost, and time to a decision.
+
+That is a proposed experiment, not a description of an Appraiva feature or a reported company result. It illustrates why a model that is cheaper to call might still cost more per accepted candidate if it sends too many false leads to a reviewer.
+
+### What would I test first?
+
+• Choose one repetitive task and write down the current human process.
+
+• Define a clear acceptance rule before running the AI test.
+
+• Track model, tool, retry and review costs for every attempt.
+
+• Compare accepted results and time to decision against the current process.
+
+The useful question is whether the workflow helps someone reach a reliable decision at a cost that makes sense. Lower model prices make that test easier to run; they do not answer it by themselves.
+
+## Continue the discussion
+
+New: how an AI decision model like Jev changes the cost per accepted decision, and what to check before giving an assistant access to your apps.
+
+I covered the same idea in an eight-page LinkedIn document for product and engineering teams and a plain-language Instagram carousel. For the broader product approach, read Start with the decision, then build the AI or use the interactive decision brief.
+
+Continue with the AI property decisions reference and the practical decision tool.
+
+## Primary sources and scope
+
+These three primary sources were opened on 20 October 2026. Access dates do not establish a new source publication date.
+
+• Stanford researchers: Holistic Evaluation of Language Models. Original preprint 16 November 2022.
+
+• NIST: AI Risk Management Framework. AI RMF 1.0 released January 2023.
+
+• Google: Rules of Machine Learning. Living engineering guide; no new publication date asserted.
+
+The examples and proposed methods are editorial teaching work. They are not company results or independently certified findings. Educational, not financial advice.
+
+For a fictional example of task-specific checks, read the business AI evaluation cases and watch the accompanying film.
+
+## About the author
+
+Ahmadreza Samadi is a technology entrepreneur based in Dubai. He builds AI products as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO.
+
+Ahmadreza Samadi
+
+Part of Start with the Decision
+
+## Follow
+
+Reading path · AI in business
+
+# AI and business systems
+
+Follow a customer enquiry into the work behind it: the next sales action, the active case, the permissions and the payment dates.
+
+By Ahmadreza Samadi
+
+## Give each system a clear job
+
+Co-Founder & CEO, Royal Abraj Group, Dubai. The group covers property brokerage and documents-clearing services; he leads its digital strategy and technology.
+
+The readings here focus on those everyday product and operating decisions. Start with the actual customer journey, decide where technology helps, define access before connecting an assistant, and keep payment timing visible.
+
+Read the Royal Abraj case study: Digital strategy and technology for a Dubai group covering property brokerage and documents-clearing services.
+
+## Read in this order
+
+1 · Which decision should the product help?
+
+## Start with the decision, then build the AI
+
+Start with the person, their evidence and their next action before choosing an AI capability.
+
+2 · What can a connected assistant do?
+
+## Connected AI apps: access, scope and approval
+
+Check the account, access scope, supported actions and approval rules when linking business tools.
+
+3 · What does an accepted AI result cost?
+
+## AI cost per accepted result
+
+Count recorded costs across retries and failures, then divide by results accepted under an explicit criterion. The article links an offline ledger and a fictional experiment workbook.
+
+4 · Can a profitable order still leave a cash gap?
+
+## How can a profitable business run out of cash?
+
+Follow one fictional order through supplier and customer payment dates. Profit and available cash answer different questions.
+
+## All articles in this topic
+
+• How many coffees must a cafe sell before it makes any profit?
+
+• AI agents: ability is not authority
+
+• The sale happened. The cash is still on its way.
+
+• I build AI, and I run a business that has to live with it
+
+• AI agent safety: boundaries before actions
+
+• Jev: an AI decision model, not another chatbot
+
+• How can a smaller AI model fit a useful task?
+
+• Who checks the AI’s homework?
+
+• The confident answer from the old price list
+
+• The button moved. The AI did not notice.
+
+• The document tried to become the boss
+
+• The AI demo passed. The real work did not.
+
+• The form was perfect. The answer was wrong.
+
+• More agents. The same queue.
+
+## Follow the payment dates in a film
+
+A 90-second English film with English captions and a transcript. The business and transaction amounts are fictional.
+
+Watch Profitable. But out of cash
+
+## Turn one operating problem into a test
+
+Use the decision worksheet to describe the current process, the evidence a person needs and the smallest useful experiment.
+
+Open Before You Build the AI
+
+## Continue reading
+
+AI in real estate: Continue with the property data and human review that support investment research.
+
+Tech, explained
+
+## About the author
+
+Ahmadreza Samadi builds AI products at Appraiva and runs Royal Abraj Group in Dubai. He writes about how businesses decide what to build, check and measure.
+
+Ahmadreza Samadi
+
+## Follow
+
+Essay · Building and operating
+
+# I build AI, and I run a business that has to live with it
+
+By Ahmadreza Samadi · 9 November 2026
+
+I do two jobs that look at AI from opposite sides. At Appraiva, I build it. At Royal Abraj Group in Dubai, I run a business that has to live with what it does. Each job keeps the other honest.
+
+## The builder’s side: the model is the smaller part
+
+At Appraiva, a US company in Cleveland, Ohio, I’m Co-Founder & Technical Lead, working remotely from Dubai. We build AI tools that help real estate investors and developers find distressed and off-market properties through imagery analysis and enriched property data.
+
+Building taught me that the model is the smaller part of the product. An image can suggest a worn roof. Before that observation helps anyone, it has to be matched to the right property, set beside dated records and shown where a person can decide what to check next. Most of the engineering lives in those connections, not in the model.
+
+So the builder’s question is practical: what does a person need around the model’s output before they can act on it?
+
+## Where the two sides meet: three questions
+
+Building and operating push me to the same three questions before I choose a model:
+
+• Which decision should this improve? “Use AI for customer service” is not a decision. “Help a customer see their next step on their own request” is.
+
+• Where must a person check? Anything that changes a record, judges eligibility, quotes a price or commits money needs a named person and a visible route to them.
+
+• What does an accepted result really cost? Count the reviews, the retries, the answers people reject and the limits you set, not just the price of a model call. I call this cost per accepted result.
+
+The builder in me wants the model to do more. The operator in me asks who answers for it when it is wrong. The useful product usually sits where both are satisfied. Start with the decision, then build the AI works through the first question in detail.
+
+## What I would tell another business owner
+
+• Start smaller than the demo. One decision, one place, a small group of users who know it is new.
+
+• Let ordinary software answer what has a known answer. It is cheaper, testable and does not improvise.
+
+• Keep the model away from the keys. Reading and suggesting is one risk; changing records is another.
+
+• Decide in advance who checks, and make the route to that person visible to the customer.
+
+• Measure what was accepted, not what was generated.
+
+AI is worth it where it shortens the path to a decision that a person still owns. It must stop where a wrong answer becomes a commitment.
+
+## Why I write about it
+
+Most writing about AI comes from people who sell it or people who study it. I write from the place where it is built and then has to work inside a real business, with real customers and a team that answers for it. That is the question I keep returning to at a-samadi.com: where does AI earn its place in a business, and where must it stop?
+
+More: Appraiva case study · Royal Abraj Group case study · AI and business systems: lessons from Dubai
+
+## About the author
+
+Ahmadreza Samadi is a technology entrepreneur based in Dubai. He builds AI products as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO.
+
+Ahmadreza Samadi
+
+Part of Start with the Decision
+
+## Follow
+
+Wait, That’s Tech? · Digital literacy
+
+# How to check an image claim, AI-made or not
+
+A convincing picture is not proof of its origin—or of the story attached to it. Check the claim around the image before trusting the pixels.
+
+By Ahmadreza Samadi · 3 October 2026
+
+Updated 14 October 2026
+
+## At a glance
+
+Check the image’s original context, date and publisher; search for earlier appearances; inspect provenance when available; and corroborate the caption’s important claim. An authentic file can still carry a false story, and missing provenance does not settle whether an image is AI-made.
+
+## Why can’t appearance alone verify an image claim?
+
+For my recent carousel, I made three realistic example photographs with AI and asked readers which one was generated. The answer was all three. The examples are demonstrations, not documentary images. Small oddities can prompt a closer look, but no visual clue reliably identifies every AI-generated image. The opposite mistake is just as important: a genuine photograph can appear with a false caption.
+
+## Which four steps help check the claim?
+
+• Find the original context. Look for the earliest credible post, its date, the publisher and what it actually claimed. A crop or repost may remove vital context.
+
+• Search with the image. Google's image-search tools can surface related appearances. An older use with a different caption can reveal recycling, although a search with no match proves little.
+
+• Inspect provenance when available. Content Credentials and other origin signals can show how supported media was created or edited. OpenAI notes that metadata can disappear after resizing, screenshots or re-uploads. Missing credentials are not proof that an image is authentic or AI-made; even detection tools have limits.
+
+• Corroborate the important claim. Seek independent reporting, other photographs or video, official records, or a direct source that supports what the caption says. The more consequential the claim, the stronger this check should be.
+
+The goal is not to win a game of spotting imperfect hands or strange shadows. It is to establish whether the event, person, place or statement in the caption is supported by evidence. An authentic file and an accurate story are different questions.
+
+## What does a valid Content Credential establish?
+
+The C2PA explainer separates verification of a file’s signed provenance from verification of its story. A valid credential can help check that the recorded history is associated with that file and has not been tampered with. It does not independently establish that the pictured event or the caption’s claims are true. Provenance may also be incomplete.
+
+## How would I apply this to a property image?
+
+Consider a hypothetical listing photo. Before using it as current property evidence, I would separate three claims:
+
+• Identity: Can the original source and independent property information connect the pictured building to the stated property?
+
+• Timing: Can the capture date be corroborated? A recent repost is not necessarily a recent photograph.
+
+• Condition: Which visible conditions does the image support, and what remains outside its view or may have changed since capture?
+
+If a claim cannot be corroborated, mark it unresolved rather than treating the image as current evidence for it. A provenance record can help trace the file; it does not complete these property checks. This is an illustrative review framework, not a reported Appraiva result or a verification of a real listing.
+
+## See the original demonstration
+
+The Instagram carousel and LinkedIn document show the three explicitly AI-generated example photos and the short verification workflow.
+
+## Sources
+
+• C2PA: Content Credentials, provenance limits and factual accuracy
+
+• OpenAI: Advancing content provenance for a safer, more transparent AI ecosystem
+
+• Google Search Help: Search with an image
+
+## About the author
+
+Ahmadreza Samadi is a technology entrepreneur based in Dubai. He builds AI products as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO.
+
+Ahmadreza Samadi
+
+Part of Tech, explained
+
+## Follow
+
+Wait, That’s Tech? · Battery design
+
+# Two batteries, one foldable phone: how the battery reading works
+
+A foldable phone can use two batteries to fit around its hinge while showing one charge reading. That reading estimates usable energy across the system; averaging the two percentages can mislead.
+
+Continue reading: Tech, explained · Signature ideas
+
+By Ahmadreza Samadi · 3 October 2026
+
+Updated 19 October 2026
+
+## At a glance
+
+A combined battery reading estimates usable energy across the system. Capacity, load, temperature and health can matter, so simply averaging two percentages can mislead. The worked numbers below are illustrative; one icon does not reveal the device’s wiring or balancing algorithm.
+
+## Why split the battery?
+
+A folding hinge interrupts the space that an ordinary flat phone can use. Apple says its announced iPhone Duo places one high-energy battery on each side and uses Apple silicon and “energy rebalancing algorithms” to make them operate seamlessly as one. That confirms the two-battery design and the stated software-level goal. The announcement does not publish a detailed circuit diagram or the exact control algorithm, so the explanation below is about the general principle, not a teardown of iPhone Duo.
+
+## How does one reading combine two stores of energy?
+
+The phone needs to estimate how much usable energy remains in the system. Battery fuel gauges do more than read an instantaneous voltage: they estimate state of charge and health using models that can account for capacity, load, resistance and temperature. The phone can then present a single system-level reading while managing charging and power use behind the scenes. The exact physical connection and balancing strategy depend on the product design.
+
+Why not just average the two displayed percentages? Suppose an illustrative battery A can store 12 watt-hours and is half full, while battery B can store 8 watt-hours and is full. In this example, 50% means half the energy stored when the battery is fully charged; a real phone’s displayed charge percentage may be calculated differently. They hold about 6 + 8 = 14 watt-hours out of 20, or 70% of their combined nominal energy. Averaging 50% and 100% would say 75% and overstate the total. These are made-up numbers, not iPhone Duo specifications. Real remaining-runtime estimates also depend on load, battery health and what part of the stored energy is usable.
+
+## What can’t one battery icon tell you?
+
+One icon makes the device easier to use, but it does not reveal each pack’s capacity, charge level or health. Nor does it prove the two packs are wired in series, in parallel or through a particular converter. Those details require product-specific documentation or a reliable teardown. The clear distinction is this: Apple confirms two batteries and energy rebalancing; the capacity-weighted example explains why a combined reading needs more thought than averaging two percentages.
+
+## See the original explanation
+
+My Instagram carousel and LinkedIn document post show the hinge constraint and the illustrative percentage example as short visual walkthroughs.
+
+## Sources
+
+• Apple: iPhone Duo announcement, 9 September 2026
+
+• Texas Instruments: battery fuel gauges and state-of-charge estimation
+
+• Texas Instruments: charge and energy reporting (section 2.7, PDF)
+
+## About the author
+
+Ahmadreza Samadi is a technology entrepreneur based in Dubai. He builds AI products as Co-Founder & Technical Lead of Appraiva and runs Royal Abraj Group as Co-Founder & CEO.
+
+Ahmadreza Samadi
+
+Part of Tech, explained
+
+## Follow
+
+Professional background
+
+# Oxfam Novib: a data foundation for CRM and analytics
+
+Azure data infrastructure for CRM migration and analytics.
+
+Data Engineer at Oxfam Novib, September 2022–June 2023, building Azure data infrastructure for CRM migration and analytics.
+
+By Ahmadreza Samadi
+
+## Background: CRM migration and analytics
+
+Ahmadreza Samadi builds AI products at Appraiva and runs Royal Abraj Group in Dubai. He writes about how businesses decide what to build, check and measure. My background includes Azure data infrastructure for CRM migration and analytics at Oxfam Novib.
+
+## Professional context
+
+My professional background includes enterprise data engineering and machine learning. The workflow notes below explain general data concepts.
+
+## General workflow concepts
+
+A data workflow can distinguish data arrival, transformation and downstream use. These stages provide a way to discuss preparation and analytical needs.
+
+## Separating the stages of data preparation
+
+Bronze, Silver and Gold are labels for stages of data preparation. As a general illustration, they can separate ingestion, transformation and downstream use; this is not a description of the Oxfam Novib implementation.
+
+Questions about sensitive data, retention and operating documentation belong in planning a data workflow. Any specific implementation needs its own requirements and review.
+
+## Scope of the professional background
+
+My background includes Azure data infrastructure for CRM migration and analytics at Oxfam Novib.
+
+## Related work
+
+For current professional roles, see AI real estate intelligence at Appraiva and digital strategy and technology at Royal Abraj Group.
+
+Continue reading: Signature ideas · Related reading path
+
+## A proposed handoff checklist
+
+A useful result has to survive the handoff (English PDF) and its supporting text notes (English) connect a decision or task with evidence, transformations and unresolved checks. The checklist is a current editorial proposal; the work history on this page provides professional context.

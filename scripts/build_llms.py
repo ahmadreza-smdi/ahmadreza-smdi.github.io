@@ -5,7 +5,8 @@ under Optional. Titles and descriptions are read from the pages themselves, so t
 step with the site. Run with --check to validate both outputs and description lengths.
 """
 from pathlib import Path
-from build_profile_facts import FACTS
+from answer_resources import PAGES, markdown, mirror_path
+from seo_document import Document, public_url
 from html.parser import HTMLParser
 import html
 import json
@@ -18,7 +19,7 @@ ROOT = Path(__file__).resolve().parent.parent
 BASE = 'https://a-samadi.com/'
 NS = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
 SUMMARY = json.loads((ROOT / 'locales/brand-layer.json').read_text())['identity']['brand_line']['en']
-NOTES = 'Also known as Ahmad Samadi. Persian: احمدرضا صمدی; short form احمد صمدی. Arabic: أحمدرضا صمدي.'
+NOTES = ''
 PROFILES = [
     ('GitHub', 'https://github.com/ahmadreza-smdi', 'Ahmadreza Samadi’s public GitHub profile, connecting his repositories with the personal website.'),
     ('YouTube', 'https://www.youtube.com/@ahmadreza-samadi', 'Ahmadreza Samadi’s YouTube channel, connecting published explainer films with his personal website.'),
@@ -199,11 +200,6 @@ def entry(label, url, copy, film=None):
     return f'- [{label}]({url}){suffix}: {description(copy, url)}'
 
 
-def facts():
-    return '\n'.join(line.replace(' The start month is not stated.', '')
-                     for line in FACTS.splitlines() if not line.startswith('- Spoken languages'))
-
-
 def recent_companions(pages, limit=12):
     """Keep the latest published film articles and carousel galleries discoverable.
 
@@ -246,30 +242,43 @@ def catalogue(pages, curated):
                 links = re.findall(r'<a\b[^>]*href="(/watch/[^"#?]+\.html)"', text)
                 film = next((BASE.rstrip('/') + path for path in links if BASE.rstrip('/') + path in pages), None)
             groups[name].append(entry(label, url, meta(text, 'description'), film))
-    lines = ['# Ahmadreza Samadi', '', f'> {SUMMARY}', '', NOTES, '', facts(), '']
+    bio = Document(pages[BASE+'about.html'])
+    identity = next(e.text() for e in bio.tags('p') if e.get('class') == 'lead')
+    lines = ['# Ahmadreza Samadi', '', f'> {SUMMARY}', '', identity, '']
     for name, items in groups.items():
         if items:
             lines += [f'## {name}', '', *items, '']
     if not curated:
-        resources = public_resources((ROOT / 'about.html').read_text())
+        resources = public_resources(pages[BASE+'about.html'])
         if resources:
-            lines += ['## Public code and data', '', *[
-                entry(label, url, RESOURCE_DESCRIPTIONS.get(label, copy)) for label, url, copy in resources], '']
-    lines += ['## Official profiles', '', *[entry(*profile) for profile in PROFILES], '']
+            lines += ['## Public code and data', '', *[entry(label, url, copy) for label, url, copy in resources], '']
+    lines += ['## Official profiles', '']
+    profile_nodes = [a for a in bio.tags('a') if 'me' in a.get('rel').split() and a.get('href').startswith('https://')]
+    for label, url, _ in PROFILES:
+        anchor = next((a for a in profile_nodes if a.get('href').rstrip('/') == url.rstrip('/')), None)
+        if anchor:
+            lines += [f'* [{anchor.text()}]({url})']
+    lines += ['', '## Markdown', '']
+    for path in PAGES:
+        doc = Document(pages[public_url(path)])
+        original = path[3:] if path.startswith(('fa/','ar/')) else path
+        original_doc = Document(pages[public_url(original)]) if public_url(original) in pages else doc
+        label = original_doc.tags('h1')[0].text() or original_doc.tags('title')[0].text()
+        if path.startswith(('fa/', 'ar/')):
+            label += ' ('+('Persian' if path.startswith('fa/') else 'Arabic')+')'
+        lines += [f'* [{label}]({BASE}{mirror_path(path)})']
     if curated:
-        lines += ['## Complete catalogue', '', entry('Full site catalogue', BASE + 'llms-full.txt',
-                  'All English pages, films, public code resources, translated entry points and machine-readable discovery files.'), '']
+        lines += ['', '## Optional', '', f'* [Full site catalogue]({BASE}llms-full.txt)', '']
     else:
-        optional = [
-            ('Persian homepage', 'fa/', 'Persian translation of the homepage, with the same supported identity, roles and selected work.'),
-            ('Arabic homepage', 'ar/', 'Arabic translation of the homepage, with the same supported identity, roles and selected work.'),
-            ('Persian writing', 'fa/writing/', 'Persian article index with translated titles, summaries and links to the corresponding reading pages.'),
-            ('Arabic writing', 'ar/writing/', 'Arabic article index with translated titles, summaries and links to the corresponding reading pages.'),
-            ('Homepage and resource index (JSON)', 'ask-index.json', 'Existing multilingual homepage passages and published English article, film and carousel metadata, exported from canonical pages.'),
-            ('RSS feed', 'writing/feed.xml', 'English articles and carousels with canonical links, related films and original publication dates, generated from published pages.'),
-            ('Sitemap', 'sitemap.xml', 'Canonical indexable pages and their language alternates; embedded players and calculators are excluded.'),
-        ]
-        lines += ['## Optional', '', *[entry(label, BASE + path, copy) for label, path, copy in optional], '']
+        lines += ['', '## Published passages', '']
+        for path in PAGES:
+            if path.startswith(('fa/','ar/')):
+                continue
+            # Keep the English catalogue English. Locale mirrors are linked above.
+            excerpt = markdown(pages[public_url(path)], path)
+            # Inline links already have an entry in the catalogue. Preserve their visible wording.
+            excerpt = re.sub(r'\[([^\]]+)\]\((?:[^()]+|\([^()]*\))*\)', r'\1', excerpt)
+            lines += [excerpt.replace('\n- ', '\n• ').strip(), '']
     return '\n'.join(lines)
 
 

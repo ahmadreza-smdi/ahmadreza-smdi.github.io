@@ -101,6 +101,13 @@ for lang in ('fa','ar'):
     head=re.sub(r'(\n\n<script src="/js/site-analytics\.js[^\"]*" defer></script>)(\n    <link rel="stylesheet" href="../css/rtl.css[^\"]*" />)',r'\2\1',head,count=1)
     destination = ROOT / lang / 'index.html'
     rendered = enrich_follow(head+visible+'        <script>'+script)
+    from answer_resources import machine_head, MARKDOWN_LINK
+    rendered = machine_head(rendered, destination.relative_to(ROOT).as_posix())
+    # The locale stylesheet is inserted by this generator, before the discovery link.
+    alternate = MARKDOWN_LINK.search(rendered)
+    if alternate:
+        link = alternate[0]
+        rendered = rendered.replace(link+'\n', '', 1).replace('</head>', link+'\n</head>', 1)
     if '--check' in sys.argv:
         if destination.read_text() != rendered:
             raise SystemExit(f'STALE localized homepage: {destination.relative_to(ROOT)}')
