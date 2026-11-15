@@ -1,0 +1,18 @@
+[
+  {
+    "rule": "own-profile-missing-rel-me",
+    "html": "<html lang=\"en\"><a href=\"https://github.com/ahmadreza-smdi\">GitHub</a></html>"
+  },
+  {
+    "rule": "sameAs-differs-from-reviewed-profiles",
+    "html": "<script type=\"application/ld+json\">{\"@type\": \"Person\", \"@id\": \"https://a-samadi.com/#person\", \"sameAs\": [\"https://example.com/not-the-owner\"]}</script>"
+  },
+  {
+    "rule": "native-name-outside-localized-content",
+    "html": "<script type=\"application/ld+json\">{\"@type\": \"Person\", \"name\": \"احمدرضا صمدی\"}</script>"
+  },
+  {
+    "rule": "incorrect-name-form",
+    "html": "<script type=\"application/ld+json\">{\"name\":\"Ahmed Samadi\"}</script>"
+  }
+]

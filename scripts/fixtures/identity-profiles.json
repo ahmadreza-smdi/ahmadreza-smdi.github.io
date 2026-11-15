@@ -1,0 +1,56 @@
+{
+  "reviewed": "2026-11-15",
+  "basis": "Identity ownership and backlink visibility are separate. Retain the ten owner-declared profiles corroborated by the owner-reviewed 9 November profile record. A restricted public read is not evidence that ownership changed.",
+  "profiles": [
+    {
+      "url": "https://dev.to/ahmadreza_smdi",
+      "ownership_source": "https://a-samadi.com/about.html#official-profiles",
+      "corroboration": "Owner-reviewed profile consistency record, 9 November 2026; public read attempted 15 November 2026."
+    },
+    {
+      "url": "https://github.com/ahmadreza-smdi",
+      "ownership_source": "https://a-samadi.com/about.html#official-profiles",
+      "corroboration": "Owner-reviewed profile consistency record, 9 November 2026; public read attempted 15 November 2026."
+    },
+    {
+      "url": "https://peerlist.io/ahmadrezasmdi",
+      "ownership_source": "https://a-samadi.com/about.html#official-profiles",
+      "corroboration": "Owner-reviewed profile consistency record, 9 November 2026; public read attempted 15 November 2026."
+    },
+    {
+      "url": "https://wellfound.com/u/ahmadreza-samadi",
+      "ownership_source": "https://a-samadi.com/about.html#official-profiles",
+      "corroboration": "Owner-reviewed profile consistency record, 9 November 2026; public read attempted 15 November 2026."
+    },
+    {
+      "url": "https://www.crunchbase.com/person/ahmadreza-samadi",
+      "ownership_source": "https://a-samadi.com/about.html#official-profiles",
+      "corroboration": "Owner-reviewed profile consistency record, 9 November 2026; public read attempted 15 November 2026."
+    },
+    {
+      "url": "https://www.instagram.com/ahmadreza.samadi/",
+      "ownership_source": "https://a-samadi.com/about.html#official-profiles",
+      "corroboration": "Owner-reviewed profile consistency record, 9 November 2026; public read attempted 15 November 2026."
+    },
+    {
+      "url": "https://www.linkedin.com/in/ahmadreza-samadi/",
+      "ownership_source": "https://a-samadi.com/about.html#official-profiles",
+      "corroboration": "Owner-reviewed profile consistency record, 9 November 2026; public read attempted 15 November 2026."
+    },
+    {
+      "url": "https://www.producthunt.com/@ahmadreza_samadi",
+      "ownership_source": "https://a-samadi.com/about.html#official-profiles",
+      "corroboration": "Owner-reviewed profile consistency record, 9 November 2026; public read attempted 15 November 2026."
+    },
+    {
+      "url": "https://www.threads.com/@ahmadreza.samadi",
+      "ownership_source": "https://a-samadi.com/about.html#official-profiles",
+      "corroboration": "Owner-reviewed profile consistency record, 9 November 2026; public read attempted 15 November 2026."
+    },
+    {
+      "url": "https://www.youtube.com/@ahmadreza-samadi",
+      "ownership_source": "https://a-samadi.com/about.html#official-profiles",
+      "corroboration": "Owner-reviewed profile consistency record, 9 November 2026; public read attempted 15 November 2026."
+    }
+  ]
+}

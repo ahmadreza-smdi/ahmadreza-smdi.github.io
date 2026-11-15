@@ -12,7 +12,10 @@ def outbound_links(text):
         tag=re.sub(r'\s+target="[^"]*"','',tag)
         rel=re.search(r'\s+rel="([^"]*)"',tag)
         tokens=html.unescape(rel[1]).split() if rel else []
+        identity='me' in tokens
+        tokens=[token for token in tokens if token!='me']
         if 'noopener' not in tokens:tokens.append('noopener')
+        if identity:tokens.append('me')
         if rel:tag=tag[:rel.start()]+tag[rel.end():]
         return tag[:-1]+' target="_blank" rel="'+html.escape(' '.join(tokens),quote=True)+'">'
     return re.sub(r'<a\b[^>]*>',replace,text)

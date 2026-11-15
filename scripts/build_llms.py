@@ -253,7 +253,9 @@ def catalogue(pages, curated):
         if resources:
             lines += ['## Public code and data', '', *[entry(label, url, copy) for label, url, copy in resources], '']
     lines += ['## Official profiles', '']
-    profile_nodes = [a for a in bio.tags('a') if 'me' in a.get('rel').split() and a.get('href').startswith('https://')]
+    profile_nodes = [a for a in bio.tags('a') if 'me' in a.get('rel').split()
+                     and a.get('href').startswith('https://')
+                     and a.within(lambda e: e.get('id') == 'official-profiles')]
     for label, url, _ in PROFILES:
         anchor = next((a for a in profile_nodes if a.get('href').rstrip('/') == url.rstrip('/')), None)
         if anchor:

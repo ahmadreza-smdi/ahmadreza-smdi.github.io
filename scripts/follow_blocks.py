@@ -4,6 +4,7 @@ import argparse, hashlib, html, json, re, subprocess
 from pathlib import Path
 from check_internal_links import site_pages
 from html.parser import HTMLParser
+from identity_links import add_identity_rel
 
 START = '<!-- follow-subscribe:start -->'
 END = '<!-- follow-subscribe:end -->'
@@ -29,7 +30,7 @@ def render(language, config):
     links=[(name, config[name]) for name in ('LinkedIn','YouTube','Instagram') if config.get(name)]
     if config.get('newsletter'):
         links.insert(0, (brief, config['newsletter']))
-    anchors=' · '.join(f'<a href="{html.escape(url, quote=True)}"><bdi>{html.escape(name)}</bdi></a>' for name,url in links)
+    anchors=add_identity_rel(' · '.join(f'<a href="{html.escape(url, quote=True)}"><bdi>{html.escape(name)}</bdi></a>' for name,url in links))
     return f'{START}\n<aside class="details follow-subscribe" aria-labelledby="follow-subscribe-title">\n<h2 id="follow-subscribe-title">{title}</h2>\n<nav aria-label="{label}">{anchors}</nav>\n</aside>\n{END}\n'
 
 def transform(source, config):

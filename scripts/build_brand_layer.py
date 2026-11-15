@@ -20,7 +20,8 @@ CHANGES = []
 
 
 def link(url, label):
-    return f'<a href="{esc(url, quote=True)}">{esc(label)}</a>'
+    from identity_links import add_identity_rel
+    return add_identity_rel(f'<a href="{esc(url, quote=True)}">{esc(label)}</a>')
 
 
 def store(path, text):

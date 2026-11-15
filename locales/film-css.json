@@ -3,8 +3,8 @@
   "generator_sha256": "abe1be76d50a9730460376f9c5e6456def06ca4afa29a8b6ae08a56b0bcdf99a",
   "pages": {
     "ar/writing/agent-workflow-shared-bottlenecks.html": {
-      "original_sha256": "adbaa7d32733254884f930983ab9a9637825096b812309fb7e198f47da5df4cb",
-      "output_sha256": "07ece6a3158c428292031b2034ada911586154232ca02670277c166e9a94bea7",
+      "original_sha256": "73b5666b8800ca959c80a9a951b4fea2f1a6aedf5daf538d3de7dc17b069c270",
+      "output_sha256": "086caf7af3600927829e239e62dd76420ac1d1854d27466fa24e3d5a5bebac01",
       "sheets": [
         {
           "source": "css/site.css",
@@ -40,8 +40,8 @@
       ]
     },
     "ar/writing/ai-agent-permissions-ability-authority.html": {
-      "original_sha256": "d1b56c1c65714f6b0d15b7120a4a25f336aa1651553be698bbf4a7d0fe4916fe",
-      "output_sha256": "ea37b4631706ea8183e77b4d596999ff8cfc56dbd1fb289d372ad15c849657b2",
+      "original_sha256": "49fd85c6a35fce081aa4f645a7eaf9f5584110e7aa3f049a3aa6909104c4a2a1",
+      "output_sha256": "76422432b7e3b1dcbcf033bc1c5b809461173d82bea1b32d128c210eb0ba828b",
       "sheets": [
         {
           "source": "css/site.css",
@@ -77,8 +77,8 @@
       ]
     },
     "ar/writing/ai-agents-shared-notebook.html": {
-      "original_sha256": "f71eb1a5f9785d4f31137fd28fc95ccab2274f8feb90da05886cbad22aa11f8a",
-      "output_sha256": "684e748ee3a23b2211578933797cd6e9528aaf97f9fc594b4c242e676570f485",
+      "original_sha256": "a75f3eaea089307bf9a3d3c24aa702935c53342119d5fc86b600994d0c99612e",
+      "output_sha256": "8cfce127bfe642c4efbd9847b959f202fdf87d51a6f2fb4bd5f9f866fcc52e96",
       "sheets": [
         {
           "source": "css/site.css",
@@ -114,8 +114,8 @@
       ]
     },
     "ar/writing/ai-research-examination-understanding.html": {
-      "original_sha256": "bbef7c66fe434e67372dca415b5b88fa6f596a89709fb461d0718f0427f20ee5",
-      "output_sha256": "b0af8419485a33efab6f1667c86631bd7b5547bdc895646b5e1a6e0ebb2cac72",
+      "original_sha256": "3a836c03a747388f4b70997e2951512a8614309adc6ba2b8ae9598788e0e73bd",
+      "output_sha256": "9364b5896d432e1c4782cd170acc9dc90accf5123c33abe540dd430479cff581",
       "sheets": [
         {
           "source": "css/site.css",
@@ -151,8 +151,8 @@
       ]
     },
     "ar/writing/building-digital-twin-data-freshness.html": {
-      "original_sha256": "c672ad9c0f805b9589210ce6803a61dd21acd5a5a5303c01cf2f63dfab708310",
-      "output_sha256": "867cee7ee0ae59c42b67949e490bedf285fa7c0f41fdac222d914e71620d1cb6",
+      "original_sha256": "e848e08eb5882be654bb24c39a304fa603a816eba383b7d26a499889a55b0a77",
+      "output_sha256": "457ad35e9c78a4c8b995e63dd5538b3a18a4f1d9f05eb32060ca93938342266c",
       "sheets": [
         {
           "source": "css/site.css",
@@ -188,8 +188,8 @@
       ]
     },
     "ar/writing/building-energy-audit-decisions.html": {
-      "original_sha256": "b8994bb2b8fe6667496a3f33fd31fde5d40720770c4f12205a711e3fa6ac2c2a",
-      "output_sha256": "6e5ec6398dff99f4e99610d56a75f3d748fbae28947b4153be7116b1709a311e",
+      "original_sha256": "6e4bbde1967ee14a7b1eb437ac6ed30964a61b41213eaf5994bcc228bcd078a8",
+      "output_sha256": "cd6918bf5a191b03a6b0c5ff9ce4fe059d8f969e30517320fb3d602805a94dd0",
       "sheets": [
         {
           "source": "css/site.css",
@@ -225,8 +225,8 @@
       ]
     },
     "ar/writing/business-ai-evaluation-cases.html": {
-      "original_sha256": "39764b245acd86a13b27b02c0174fbe44f165b8318c3a68d432d9c23b6e1ffbe",
-      "output_sha256": "123398058676565a278fbb101d2f62e734c29712453034858b49f24d746e228e",
+      "original_sha256": "a12b39047a9e721b067732dff92167a5b771acc5e819d836675b3f8d52eca9e1",
+      "output_sha256": "637d80417c0c17ad5e005eeacae79d95154117f668000079168921a3df1299b6",
       "sheets": [
         {
           "source": "css/site.css",
@@ -262,8 +262,8 @@
       ]
     },
     "ar/writing/cash-conversion-cycle-clocks.html": {
-      "original_sha256": "e0902bbd0b5fc8ae8ef46f95adcb3823e7a7e0517085ce81031a1d5f0a6bda21",
-      "output_sha256": "64c3f5c02124f9629bf8cc966b7921f5bd723301cfcad46b302fc27cab498938",
+      "original_sha256": "462dcb34d9488fda328c009bd479ffea161c03ebc85f7d0a533122e2a7a414dc",
+      "output_sha256": "bf1df4a879e29d6e496b8588b52dbcabd323cf07abdb4cf57ea4f2fdf8b6805e",
       "sheets": [
         {
           "source": "css/site.css",
@@ -299,8 +299,8 @@
       ]
     },
     "ar/writing/computer-agent-check-result.html": {
-      "original_sha256": "1ed4cc5776361ee24d6417659be898780eb607ca369120c96f54e5b72329aed4",
-      "output_sha256": "6e3cde38cf2843542c5516c7e6326f25e032453675f5aa27b304d35daa203b06",
+      "original_sha256": "e324686714b04fe7dfdd5cb16d9714f84afdf9dc8602e0556ef315661a59af3f",
+      "output_sha256": "27171739c9b6f2d8bbb9afc5d5c5fe76a884e523ad5618ef181bb5fe7698324f",
       "sheets": [
         {
           "source": "css/site.css",
@@ -336,8 +336,8 @@
       ]
     },
     "ar/writing/dubai-project-escrow-controls.html": {
-      "original_sha256": "c9298f2cedf495ebd9cf0874ee11646fc53e8e53307e378dfddcab5561760b69",
-      "output_sha256": "dbe6c4e1902a0bb6719131355f2226dcd27e6a2ae43773e66c6185dd316f6df0",
+      "original_sha256": "91f11231fe1fc32119a1c633b59ed95c966a12410ac428686f8f4370798dd0f1",
+      "output_sha256": "23ca791b061f7dc743f1f095966f721bec7b335614988301c3d780a9e589e3b5",
       "sheets": [
         {
           "source": "css/site.css",
@@ -373,8 +373,8 @@
       ]
     },
     "ar/writing/dubai-service-charge-same-rent.html": {
-      "original_sha256": "dfce0ab2c441b24ed522529a1d52173c034260a3ea1438a312b7e8cb033d6bc3",
-      "output_sha256": "ac19e7c8ecf59307e3db7385710eb839c8b5b7d5f381030ce7e7cb0c970fa604",
+      "original_sha256": "89b8341cfe0cbb45292fe0445ff2ac6562547c295d36c3b72c9ee46783f0432e",
+      "output_sha256": "dcb4247b38b45d72859654b36602e4928c5a64d55ef07deeccd0377e0dd83455",
       "sheets": [
         {
           "source": "css/site.css",
@@ -410,8 +410,8 @@
       ]
     },
     "ar/writing/geospatial-ai-map-answer-review.html": {
-      "original_sha256": "2a863f9e6e5e45aad4a88aaa04fbcb74ffd6b82fb8dad37acafb4e22f96ace9a",
-      "output_sha256": "e0116c5c814c656b56d488e3a38cbf8c6412dc8d18c3349c983ca95c4ff1c9e7",
+      "original_sha256": "1d587615d6bc2120c1c140d4d288188d59050e9d60d14f04c8f0631b579a1264",
+      "output_sha256": "761297f4908fe9e1bbf78a87d2c8eb964e3b1ae293d9830aa264d071e86c8a9b",
       "sheets": [
         {
           "source": "css/site.css",
@@ -447,8 +447,8 @@
       ]
     },
     "ar/writing/heat-pump-moves-heat-explained.html": {
-      "original_sha256": "80018b27c29e9145d43c42d3b4c238418c93777408e04dac6a72abe5bb4bcc25",
-      "output_sha256": "fb01ae90120f312eb4435b56627c376076b32ffdfccdab084430d61f5d4a58f9",
+      "original_sha256": "d47d660dc1690cbb728ac541871b58dd520cb1a253705a1178247d2e7c61da3d",
+      "output_sha256": "bf394dea2cc8ba6081b429df0a616a49566f9c8a0a4f70647ada83d097863f3a",
       "sheets": [
         {
           "source": "css/site.css",
@@ -484,8 +484,8 @@
       ]
     },
     "ar/writing/phone-location-across-street.html": {
-      "original_sha256": "58c8151ad692c3b750cd9e1b5384bb2aa4b15e239dc818d2d693e54f3a59d31b",
-      "output_sha256": "f639bb98c2a2b7e6761ccf05ced4029090bc7aa7cd70d8cacac9f6246e188318",
+      "original_sha256": "dc1695e7537ed79644f40a235ccbbed6f86929afd101c235fab9080a979e33b2",
+      "output_sha256": "f14f797e8b44418583d9064f63149ceed11c949ec86a2416664f86da0b42b244",
       "sheets": [
         {
           "source": "css/site.css",
@@ -521,8 +521,8 @@
       ]
     },
     "ar/writing/prompt-injection-layered-controls.html": {
-      "original_sha256": "5806577401b0c42a95788fb84337381216ebc14d6a5c599ed5f826eed4fa6d97",
-      "output_sha256": "7ba5c1e71615aaf042c08dfe25ead1888255e850ee6073d8fc78c2f2d5c5bd8c",
+      "original_sha256": "72df3a916bca983acb2405524c5ec9da74c1e559835ec1b9a34d6ffd13094ce1",
+      "output_sha256": "04e8ac9b4a17e7aa37786055adf5dadd6362060df02b2e93fc8dc00744b5decf",
       "sheets": [
         {
           "source": "css/site.css",
@@ -558,8 +558,8 @@
       ]
     },
     "ar/writing/property-comparables-evidence.html": {
-      "original_sha256": "6b7b3af3953c699cd0c1a7f6891f840ac7fe50083773e21c4842a1c644a6d255",
-      "output_sha256": "3096593ec1b9a3f0c091b78e973944d901f73431e5be1c4ae51168f5f31592b0",
+      "original_sha256": "84e4bbac144eb25afd85a9f7de5fa32b82a7c7ac5ef85a519c95d8298b8bbb34",
+      "output_sha256": "b90655f8d83e45a26b2c5511a3a7ee87f9092c3bb310dbdd9f4b4493c205b707",
       "sheets": [
         {
           "source": "css/site.css",
@@ -595,8 +595,8 @@
       ]
     },
     "ar/writing/rag-check-business-records.html": {
-      "original_sha256": "88457c9f8afebb762320e3d244d2f9015604dd69ef943f5190f0dcd5d274c5a0",
-      "output_sha256": "30372ca1ad21c68636b39ea316c13aa3b03633662526a664658189f90fb9fc26",
+      "original_sha256": "c9755b1767d66acfbd01644a3e8604953540eafc2e7dd2090aa809fcbe2504a2",
+      "output_sha256": "8eeb0f1a9be9d6bd94fb0772b2ce3eb8de448c289b0789cf0af61a30e80de6a2",
       "sheets": [
         {
           "source": "css/site.css",
@@ -632,8 +632,8 @@
       ]
     },
     "ar/writing/structured-output-source-checks.html": {
-      "original_sha256": "290646642986d244debec376c7116955386691b2344b73e9b48e4f087bca2c77",
-      "output_sha256": "6200606f4f1c0e317f883986ba03e8e4628f5243f2e0d397bc06b92bc4a1daa0",
+      "original_sha256": "359b9e0bf31b0816c71c0dbaeb9b8484a4ae85dbcab37fd36ac9e3466709ed16",
+      "output_sha256": "8f1a84046c48714fc995810a0666bbded7a9b892b1cc6cd870936f3f978b53c6",
       "sheets": [
         {
           "source": "css/site.css",
@@ -669,8 +669,8 @@
       ]
     },
     "ar/writing/tesla-roadster-flight-claim.html": {
-      "original_sha256": "18fe162da371f5e5ec808d17cf8c1919b25ed6c200a2e070b464a54b3e0abbe9",
-      "output_sha256": "d94924152ec40e7dabdc3ef833da702b018c919ccf197d44419cb74a2aff583e",
+      "original_sha256": "d89fe7e7c56d30399ee62eeb1bf403acdd6ffd55d8373a7d874c49951122422d",
+      "output_sha256": "1e7d9064881fc960bd0d490e042e086c53946ce72b31ad05255ff0ffb122e4e9",
       "sheets": [
         {
           "source": "css/site.css",
@@ -706,8 +706,8 @@
       ]
     },
     "ar/writing/virtual-machine-device-sharing-explained.html": {
-      "original_sha256": "66d25515e4e0dfff83c18d96c3e726738ec4d719f12171b894eb33b97daf2653",
-      "output_sha256": "05108445b6cdad820a17b62e4779d1b11992a1704d53a1fbd1ef70b186199eb5",
+      "original_sha256": "290712f0d5cb3d9bff82f6e0c67a1e945978bd34e99407290ad824cc8fd1b8eb",
+      "output_sha256": "c1d91dd6d8fbb293237bb7d84ccb388b877cf37bddb12eadf4c7ffe71a8cf89e",
       "sheets": [
         {
           "source": "css/site.css",
@@ -743,8 +743,8 @@
       ]
     },
     "ar/writing/where-wearable-ai-computation-runs.html": {
-      "original_sha256": "e1e714d84961f7502922881878f7a78f8fafd4e715f784ac2a7ea7a3bb54a137",
-      "output_sha256": "a1b1abde1f5d2f12566c80b48f3a408e65dd33d512179d5fc684f6fbda2bac3c",
+      "original_sha256": "2cb8be9ad2717a313a3cf4e95881ad0965b965c727db06ffda48f08df4a0c51f",
+      "output_sha256": "74cf453608611b9e8864c5dfed082cfcd5c4b4f0858a0c9cb31a88fbe622898d",
       "sheets": [
         {
           "source": "css/site.css",
@@ -780,8 +780,8 @@
       ]
     },
     "fa/writing/agent-workflow-shared-bottlenecks.html": {
-      "original_sha256": "3af5bd6f315d6269d55ec03c1bb9791858632509ad0a4b312c604d472284513d",
-      "output_sha256": "858180f6e6b0dfb6563ba0ecc86fc5889878c3d95cf14ce5e60419325bb22dee",
+      "original_sha256": "e09c7733175d3d50f44ed5a977a9193249226eaea218de6339ef4d395fe258ff",
+      "output_sha256": "14559f350b667ca03c5868e0a498c92efe34f81ebb60c63419097bb8cd26412e",
       "sheets": [
         {
           "source": "css/site.css",
@@ -817,8 +817,8 @@
       ]
     },
     "fa/writing/ai-agent-permissions-ability-authority.html": {
-      "original_sha256": "5224ca34c6b2fa1fdd90bd00b6a35b36b4f857c5abab2f38d86816bf43eedb46",
-      "output_sha256": "485ba7fc26b53cc7e0f3d8ac3d69b66fac245dde9a9dec5683025f09bbbe60fb",
+      "original_sha256": "822c40974e709dfe57a678aede2db957d45737407cd8830e7148c08d6139a527",
+      "output_sha256": "3326fcd3bd6483f227dc42aae4be3b4c54329e2a6c6e622dc0c2e8db2393c4a3",
       "sheets": [
         {
           "source": "css/site.css",
@@ -854,8 +854,8 @@
       ]
     },
     "fa/writing/ai-agents-shared-notebook.html": {
-      "original_sha256": "2980e7b1a90776a02c8dcea2c142daba7afca2b897be71b9812c174bc2f237fd",
-      "output_sha256": "e63d003a8a1e262be7ea2d298b930ca8985ee19b7af67984570768d1b9e523ad",
+      "original_sha256": "a13ce3e68b3a1a59f0dd1b27b93b04e726b1a97a70bdba1b7228965140e51e27",
+      "output_sha256": "7e873b0a0c82f823b2d5b499a3fcb9f31ee27f7ccd13b338533e536fb28a1742",
       "sheets": [
         {
           "source": "css/site.css",
@@ -891,8 +891,8 @@
       ]
     },
     "fa/writing/ai-research-examination-understanding.html": {
-      "original_sha256": "d94c89dc938cb1483c577063fb8279136016db4a8624b3576577677164bca197",
-      "output_sha256": "e2a93e8393a0f2df8391c15fc76acf81c0b3b6bf1fd14355cd27ba70fc96258b",
+      "original_sha256": "397ae5e7b6c9d9d9206058f37c705fa60cb289ebaf3cf47bd86cb7a9a9461a83",
+      "output_sha256": "1cf7a9ecca9af48d39fd20d0f30be4a2f6a4af817c4c6508164a7a68a8de15cb",
       "sheets": [
         {
           "source": "css/site.css",
@@ -928,8 +928,8 @@
       ]
     },
     "fa/writing/building-digital-twin-data-freshness.html": {
-      "original_sha256": "c50cd7f6674274385f50c1fe143af779ca9eb6186647b9ec153b9e9b6db92e29",
-      "output_sha256": "e99e445f940bcc266ecf1511b5ade8b501e80ecc308faf6a3652b0cbbf3831f7",
+      "original_sha256": "11c66465b1df9afed7f53e2e58c44352ea6860ccb776ad4dd061d463105f927e",
+      "output_sha256": "3984465cde73fdb0bd91cf3034b9f750bc115aa8c5e86dd7f74452e273a3f6ed",
       "sheets": [
         {
           "source": "css/site.css",
@@ -965,8 +965,8 @@
       ]
     },
     "fa/writing/building-energy-audit-decisions.html": {
-      "original_sha256": "85e4fa05fd02909ac1e3c538171d8ff447d690e14f2f874d13e1e82dbff06d44",
-      "output_sha256": "10bd90a8d266f4e31f5c8b6f6e2f47ccc57b9f9783aa9beac2c2f86724e5d8d2",
+      "original_sha256": "b212abad7acb94b76f07faaa1cbca3f639cda8be59c6e778201413c17c618388",
+      "output_sha256": "e5802b4e776e4375efd2ed92b497f2241d143ebbf09a64ddcb48e3ed11a0173f",
       "sheets": [
         {
           "source": "css/site.css",
@@ -1002,8 +1002,8 @@
       ]
     },
     "fa/writing/business-ai-evaluation-cases.html": {
-      "original_sha256": "334348bf89d1b4e532c29de2024dee2235b843b482f2ecbbd91a1a9c16e13efb",
-      "output_sha256": "c4bab3d2ed75c79b33ea4c232a4ddbcd44fe63475fa9431c7986f91a51edcbb0",
+      "original_sha256": "1f91a91fb101104aabac5103bbc74c0a63dd160a0f09309f4593902c3dda2547",
+      "output_sha256": "79dcc899b3cadb423fc13d9fa25110cd74e37e7289d647b550963e362790fa82",
       "sheets": [
         {
           "source": "css/site.css",
@@ -1039,8 +1039,8 @@
       ]
     },
     "fa/writing/cash-conversion-cycle-clocks.html": {
-      "original_sha256": "9ae4fa1c032b9279df5349d6b7c9eb01e16b101d4b740eece3ed092c1cd1f777",
-      "output_sha256": "25b68858688a32e7bf658ee948898bad55f4069841e82f0097c34aa4ad90201e",
+      "original_sha256": "fba4e80651eae186632c188a62e54d83907fd73840d38a64151829a6f1ab1e44",
+      "output_sha256": "09fe826dd8d189ef92146f8f4fd765481088d815c65c32b77e9d0a77fc1a21eb",
       "sheets": [
         {
           "source": "css/site.css",
@@ -1076,8 +1076,8 @@
       ]
     },
     "fa/writing/computer-agent-check-result.html": {
-      "original_sha256": "a7934d99b1cf22c4e5f765910a14d67aba9fde3199f5224f63067ef0f2906bc3",
-      "output_sha256": "29e14821413532aafae1167acc68f2f9d1dd8b13ecf151da00b60c70c11eec6b",
+      "original_sha256": "cb5b8094338a6c67b1ac089ef846ce61300d15e571029623aa13e0548de4c721",
+      "output_sha256": "614bb38604086ba0355516c3eae78f3f526abb4d648cd5889b5cc95d1dec0fd0",
       "sheets": [
         {
           "source": "css/site.css",
@@ -1113,8 +1113,8 @@
       ]
     },
     "fa/writing/dubai-project-escrow-controls.html": {
-      "original_sha256": "bd39e8f25c1c2fd647cdea4e0a55c6748c48d8ea2765fe441a58977418e16fb9",
-      "output_sha256": "ad554ed9e4ded987d10333eb78b1a04dc3c3efa31f6f6a066d604698e1747726",
+      "original_sha256": "ad7f612a037d275bf0c634865775a743474062800a48fd64f8343d6dd878acf3",
+      "output_sha256": "6bc0849a8fd32656a1ff23bcc640560947164e9d1c39862d2ec3c040daf809dc",
       "sheets": [
         {
           "source": "css/site.css",
@@ -1150,8 +1150,8 @@
       ]
     },
     "fa/writing/dubai-service-charge-same-rent.html": {
-      "original_sha256": "31f437c632676dd3284032454a96b1cc5ea72e5ae353dd0cbcfe8286762c432c",
-      "output_sha256": "17682d4f59d637723e8b32781daa474a331cff4f0eb128dda144beb765bae8e6",
+      "original_sha256": "b876f0d79fb480ed73d05866371f28b81d2408075e3543f756b62c1d4bbd59d7",
+      "output_sha256": "ab87cbc85e634793d0032ceb6399b3bb2c82e9844984e17eb83d068ec1cd9197",
       "sheets": [
         {
           "source": "css/site.css",
@@ -1187,8 +1187,8 @@
       ]
     },
     "fa/writing/geospatial-ai-map-answer-review.html": {
-      "original_sha256": "606c3659ab7baeb867345140f1c06a69c191365e3d5551430fb8600ff93026bb",
-      "output_sha256": "e42f34a1abaf94af20b34b0032ce6289c0a228872d8c3f3b7ae17b62d7c402d3",
+      "original_sha256": "a17784bec9ad05e104da2b233bdbc1e77bd46a6fe1854a7f8347523455fb0c2c",
+      "output_sha256": "502db4fbb1d034574bf35639dca9ebd85ac3acf73e18236d180f44d2b0037fd4",
       "sheets": [
         {
           "source": "css/site.css",
@@ -1224,8 +1224,8 @@
       ]
     },
     "fa/writing/heat-pump-moves-heat-explained.html": {
-      "original_sha256": "0cac2a41259fe249500b2d50eb6481b760c565b4e15bdbcc4a1ee5a2fbd07944",
-      "output_sha256": "df6d1168913c45caa7d3fc846c794b266be5c636629fbe8bc596abeae982d947",
+      "original_sha256": "dfda9ed89db4b1d9f3a85ded2a3b7b4a04671f1bec98b4a1379563e04dd5de41",
+      "output_sha256": "9e891c299e21317ccad80d1b7e79fd32d974c497ac9bfb9777782aa4d3ac5789",
       "sheets": [
         {
           "source": "css/site.css",
@@ -1261,8 +1261,8 @@
       ]
     },
     "fa/writing/phone-location-across-street.html": {
-      "original_sha256": "342e3b8bf3fd3171190a481250bd2965b801c39fdbc53e0c80f630f9a6275bb7",
-      "output_sha256": "0fc598abc1fb5eac19b1bd2e3049d022d81cb28980a5ed4e83fdd5d62e972532",
+      "original_sha256": "8cdee57788675825192102c6ec267a80fbb5fff747c723ea0b45a71b5a976729",
+      "output_sha256": "2701d1bcdefb7de0b5cf4666c5d7135d5ffe555a8f9966c9181fe1c61868b9ee",
       "sheets": [
         {
           "source": "css/site.css",
@@ -1298,8 +1298,8 @@
       ]
     },
     "fa/writing/prompt-injection-layered-controls.html": {
-      "original_sha256": "d2280720b0dd55868a98919318ff48c788dc99d1844cdf3e31550a369da87f69",
-      "output_sha256": "f08380ef5b30373d177df0d40f4e7d83e1736ee65d1912936700743c2c163214",
+      "original_sha256": "80c42ee3edb055f7f2e603eeb74fb0d368a7c3f13ab1751c0fdf27e741a49cff",
+      "output_sha256": "93a964b3f8f3a0a9cd6494850f36d961ce06f121f836e9c62c7fce8337566e14",
       "sheets": [
         {
           "source": "css/site.css",
@@ -1335,8 +1335,8 @@
       ]
     },
     "fa/writing/property-comparables-evidence.html": {
-      "original_sha256": "df98a170ed9433775d91e35e7a1b6fec0b9d78b8675676628cef27bd4bed66d2",
-      "output_sha256": "671450bea6017a7c86622b5ae133a0a2321a6f107d2ef39e98db4e2885801fb4",
+      "original_sha256": "0c0f3a61d0177073f41cbd6cdab005518bba84023c4c3c8cb741a4ce76c759a2",
+      "output_sha256": "03141f3bcc388b18c744ef85ee0564594f74b3427f4238c282b235a4af5cf282",
       "sheets": [
         {
           "source": "css/site.css",
@@ -1372,8 +1372,8 @@
       ]
     },
     "fa/writing/rag-check-business-records.html": {
-      "original_sha256": "0bab9501dfb05ba5a7fce0e705ad3416ad3ade4a7a37779713fd3a789f8d69d3",
-      "output_sha256": "920d11d2fb7649968982d8b52ee2326ef91cd708eab25107b056acd4e3f85918",
+      "original_sha256": "5f168f7f453a3e68021e82049b1315e75fb09dea3daa9735142f82db91cd40f3",
+      "output_sha256": "7a6cbe1c70e5fb6cd194c0c942adcaa80a29d75bc1bf0dfe39a0251059322740",
       "sheets": [
         {
           "source": "css/site.css",
@@ -1409,8 +1409,8 @@
       ]
     },
     "fa/writing/structured-output-source-checks.html": {
-      "original_sha256": "cf899718d1e543af5b728999b84335df7e8cf83d5ded42bacb83ad58fd1bac7a",
-      "output_sha256": "286cc9832161122ebc146e40761f3143510e6286fc93100b8fdc386efd8c8584",
+      "original_sha256": "45f36bc8d728ac68c2e16fc8fcd41befbcf9e7a78da6e2c01013c107f504de98",
+      "output_sha256": "f846c05e11adf29a5436bfaa618177f61b89c4b61d87984f2b9e79c26cb8974e",
       "sheets": [
         {
           "source": "css/site.css",
@@ -1446,8 +1446,8 @@
       ]
     },
     "fa/writing/tesla-roadster-flight-claim.html": {
-      "original_sha256": "5e75a922c90b7c6993beea45d13465db5d57d9a9735dd92757671c2a646bf399",
-      "output_sha256": "a20e2cf320c9e7aac0834517b6b195358952767034f712b74d979d21ee300ce5",
+      "original_sha256": "74731841b0b741ff4961a446cfea26ef68c9a08560dbf77258dccccbe22cfaee",
+      "output_sha256": "4ba317778e33fcfaa98f22de51ee65531e45fbf100ba6e1d64b9159a3adfcb9b",
       "sheets": [
         {
           "source": "css/site.css",
@@ -1483,8 +1483,8 @@
       ]
     },
     "fa/writing/virtual-machine-device-sharing-explained.html": {
-      "original_sha256": "eb3848f8ecaf5529e381e5db3ca120c5e762eb7de80dea18fd5e5146236732ab",
-      "output_sha256": "477246600254a1a4970c56930fd45ebbbc5f553cb9f187a557a05887e6595339",
+      "original_sha256": "8889ade11f89c414029b94a6e8b67da90a44ebbe00d0437d5cbc2f4fbd843ee2",
+      "output_sha256": "8b8bff905cce6fb51454b7d5b387975cd6a7c156147ca46ed40cb271086c5b9e",
       "sheets": [
         {
           "source": "css/site.css",
@@ -1520,8 +1520,8 @@
       ]
     },
     "fa/writing/where-wearable-ai-computation-runs.html": {
-      "original_sha256": "5e0e0411514bf7e0a8425d7c00c041af54f0f5852066b7a77cd9f6e8809e9827",
-      "output_sha256": "fe37788d25a27442822bf4cb16364c0cc8fd0df144a2b69bf1bc5176962818bf",
+      "original_sha256": "68811f7d1d0e0405f07110b2b5c181bb706f812de23706819d42cbc9a1fd7186",
+      "output_sha256": "5a13ef9dcf1bd358f89223611b2ee30a604308ea4a3deffd72948e122d42802a",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2379,8 +2379,8 @@
       ]
     },
     "writing/agent-workflow-shared-bottlenecks.html": {
-      "original_sha256": "26de40159db0684669ded1655d3c4372e25b2300df4dacc07e1245036fc7c7db",
-      "output_sha256": "257bbf32941860d73e13a0bac905f7fc66b5cd9695ed22c7c7f678a46d08397b",
+      "original_sha256": "8b2d643f5ea8ea12a3e2f8e3b878fe5ffba838e3eb471ed9956a27b382556703",
+      "output_sha256": "0133ef020c2ef67bcda7e6078ac0ae700ee33ba0c2245ad0b7050ae2658d6220",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2405,8 +2405,8 @@
       ]
     },
     "writing/ai-agent-permissions-ability-authority.html": {
-      "original_sha256": "1d6332cee115e07cd490b5a7775edd4a00b33b761afb2a5f8d06c98a5f08d9bb",
-      "output_sha256": "6c9b6bde7a0506b27a6d9bd889e5212546286c567578cbf7d70c888c0517fb2f",
+      "original_sha256": "040898b4af324851a7d05f136e2fbffa9deb8bd3fb2c7fc67ac99135fce03f3d",
+      "output_sha256": "9474bda555af6cf9000ae620009ba66b25261be225ee3fa2b288b2c9737e3a75",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2431,8 +2431,8 @@
       ]
     },
     "writing/ai-agents-shared-notebook.html": {
-      "original_sha256": "37900dfd16a2cb32fa01088ba0ee3a97a7e94a89d9708f950096a6ab924687c6",
-      "output_sha256": "2d8a86e8376151fa0d5cf20ea02c0e467c8ff066b2ede189640fb44c9cbaa1c9",
+      "original_sha256": "311afb2b5d52d9b6d75226f205fd8c4ea7a4ca0dfe2db372d538cda83d4ea07a",
+      "output_sha256": "f35870930b1e9b2b9309d550f4053b1d7be8e4364ff3ce72953e67a211b3d8cc",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2457,8 +2457,8 @@
       ]
     },
     "writing/ai-rental-yield-cash-flow.html": {
-      "original_sha256": "037b28c7fe325b2f1ed693592e16e65860d66b65f61fefbd781f18c042ced82b",
-      "output_sha256": "50916b834335ddf5f381051bc9907bf089b78fe8788811e96ec6421544dfe521",
+      "original_sha256": "9d536bc936c0a1b84bafea68e2b487a4fe6118c8846131c17058e967d1a29fec",
+      "output_sha256": "54ea79f551445c6cc815c3bb1d269f45ae1ad03214d3f5fc8ce264a85d84b04c",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2494,8 +2494,8 @@
       ]
     },
     "writing/ai-research-examination-understanding.html": {
-      "original_sha256": "9f2b4ab9c7f877503e2bf82de4bddfe9504c373df533719c54fff134c06e3037",
-      "output_sha256": "68d5d4fe30b730a0e348e509a0a2bc6a2c056cdfb4533aa7d0befc976d80e865",
+      "original_sha256": "eb60fa3cb9c82418e85e51cd60d9f3fa1dc146461dde885ea9332dcf9f01e25d",
+      "output_sha256": "534c134b2965e363801ef134687a324ef389a714d58d7dcfac20370495c08305",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2520,8 +2520,8 @@
       ]
     },
     "writing/building-digital-twin-data-freshness.html": {
-      "original_sha256": "45765d36557ef28050eb331f4d4ea6385325df895da00c5ebbd2d837baa9e977",
-      "output_sha256": "2a7766d90ccba1f7c60249296b5a0e1c362e0f57171beedcfe454254c6b2d73f",
+      "original_sha256": "b0f0d46afe39c56b6b9be245b8b454ac03486561e90333cb97ce909bb6c1a4ae",
+      "output_sha256": "6f0cf0d21224ebbd7c7f5e899d369a34faec44333e399026ed6f4359f6c0c5b4",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2546,8 +2546,8 @@
       ]
     },
     "writing/building-energy-audit-decisions.html": {
-      "original_sha256": "5ba88665ff8b9cd3b16e48b1c7fd8440150010338b5d096056e718ae7b2ff84a",
-      "output_sha256": "d8fc321d7f2d3aafb3a7043ea48e999c4eedac07259415e36642f2ec8b626833",
+      "original_sha256": "e04db5d4971c80ce73a532a9696ea87c0016b6cc59dcaaf188e668f22d13bba4",
+      "output_sha256": "8aacf23761dec9348d0a814d6da6c8d2ab73f1b42cdd9e4abb8c3eef2497d01e",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2572,8 +2572,8 @@
       ]
     },
     "writing/business-ai-evaluation-cases.html": {
-      "original_sha256": "951539fa8b407966e0b2d4d96e01f6a52e7d6b84e4bea86b3639701c4e7f3cd6",
-      "output_sha256": "1bf6474786229be18917ccf59ac70e53da98641fbd1581274bb5e13b79de00eb",
+      "original_sha256": "58f9b49a170e6a476dac36c09b62a94eb51ff3d356bb3db12f1aae87e11b4551",
+      "output_sha256": "f2d8db187e74fdc760e6803347d50d539cf776eb2cbad74976ec2d641f2db5f4",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2598,8 +2598,8 @@
       ]
     },
     "writing/cash-conversion-cycle-clocks.html": {
-      "original_sha256": "d6a11e353fb01e24a24410f0472b9dba84e385d35f1c7ec077266add52dfa75a",
-      "output_sha256": "43296f87c2ffc4a7e92c13d55b7c1675399cd5a5358cc12833a5a252f69a45d7",
+      "original_sha256": "1ce4f8f309b71b59249ae53f24d97549837d1331baed67e176af2385040e37f7",
+      "output_sha256": "ee5c6d81cbc7da6e78b5b6e0b30cb98ca58ec9bdff8ba7d49a89a6560d92ad30",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2624,8 +2624,8 @@
       ]
     },
     "writing/computer-agent-check-result.html": {
-      "original_sha256": "57b2d8e81c51ac51900906b5b405e7cdaab904d76c179e8567f6676cccf731bf",
-      "output_sha256": "c5821a73d9a644b4dcefe8c3ef412365d40a7e15acee7d6e2e1e34223854df07",
+      "original_sha256": "82a609c3cc58ce9787d244e34da1a81590e00f6602aa1e4e9ac47d99849b8458",
+      "output_sha256": "8e2ccb813e90ab8caadd85a01dc15915ca628091091eb1fbc7e95dd3315345f9",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2650,8 +2650,8 @@
       ]
     },
     "writing/dubai-project-escrow-controls.html": {
-      "original_sha256": "edd863576831ecde3ff8fb72a5068d4a77d401740f01c0bd094be623d6e484ad",
-      "output_sha256": "0c59aa5132e3e97a5da52b68914cd51a6eacc36bd897cfa43cfaeb16f7297621",
+      "original_sha256": "586379e89920eb698ddedf6eecdadce80b36db2d75d44dfb7954a16da7f50f91",
+      "output_sha256": "f6f930dd974dbe15e83fc246967530ac2041ce8c7a17d2221cc8369b7ba23cec",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2676,8 +2676,8 @@
       ]
     },
     "writing/dubai-service-charge-same-rent.html": {
-      "original_sha256": "dc3038740698217a836be6272098b7263258224f2e4a5bdfb7caa05900556c2f",
-      "output_sha256": "838ae425a3c46a822c8d03bd18d2e4fe03a90a15407958308c3ea473892695ee",
+      "original_sha256": "17515ee5e005e82a574fbd1fbf72b0abb2529abd35e2e8a6ab86e33d30620548",
+      "output_sha256": "c001185c711513e04b1b61f1388ecff0a3b4cf3bf8298460fac7527d74b93768",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2702,8 +2702,8 @@
       ]
     },
     "writing/geospatial-ai-map-answer-review.html": {
-      "original_sha256": "632971ee8c211d25f8b2140e6fc07e73653a72bb5727375211b1f38489ecd46f",
-      "output_sha256": "a693a37b381fab440ae1e0f8f7c0bf5c050fd736a0a54043fec923c799e33ecc",
+      "original_sha256": "d33d841448bdd763123b55a5ea3525aa87921d889d30a7d15bfca831ebee5143",
+      "output_sha256": "a5346a40b4be8f4e4409d2148b4724ca7384d1c42a50c3bbef13932c9078adb9",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2728,8 +2728,8 @@
       ]
     },
     "writing/heat-pump-moves-heat-explained.html": {
-      "original_sha256": "bfe085225e87bc687c44d1361845092f635e407ebbac16a9b6e6f48077ef5c4e",
-      "output_sha256": "7df6167bd6a1ff12b4498919f3f329c917d1985b9ef08ef9dc43615e2d479ead",
+      "original_sha256": "4bdca7b5df993cb99da78134bd409d518439bbf0d3fa67a4c280b95479eccf17",
+      "output_sha256": "e2e502594a90a8d1c21d8c1eef7ca10dd1a319199aa07b827aa9e503a99c7934",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2754,8 +2754,8 @@
       ]
     },
     "writing/iphone-duo-price-per-day.html": {
-      "original_sha256": "1b0312e3613918b0bb4ee8cec835b8bbac047b4763ac9941b8e8b3364154c055",
-      "output_sha256": "ff757225fdbe374599872412f61efa494fa2aa15c00f03060be997f378d1d459",
+      "original_sha256": "cb32a6f93f5eacf5b066c0dfe2dc43eabc5158ce774aa8afb67c05ffdc879cfa",
+      "output_sha256": "947c4c7fc9471ca533d6b28d592d4fc96870e2f555da20577b7698ef4176ccbb",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2780,8 +2780,8 @@
       ]
     },
     "writing/phone-location-across-street.html": {
-      "original_sha256": "a2a60f4468262c9e8bbe6529892d72e7b2a6c2fc02f3e0e8d882306c5c126c63",
-      "output_sha256": "f9471b449cf41aeb4b3c3f0db293acbdaabaf5b4a4573ad1d496099aa9fef29c",
+      "original_sha256": "cd9a05c7a61ae1e0165f85114495f70f4864ebb35870d2db355c626e7647379a",
+      "output_sha256": "f4f36f2e1cb6db547c75e54ec9590b50940b66bbc642b98b9e6d9763a157ff07",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2806,8 +2806,8 @@
       ]
     },
     "writing/profitable-but-out-of-cash.html": {
-      "original_sha256": "9d5f08ef70e43eb7d5177f0d82e365a0c29404c512c61dd51fac50abcd14bdd3",
-      "output_sha256": "d524cabc763f1db0f45539ac2afc13dde3535d71a87208074f9ec48b30dcbf55",
+      "original_sha256": "1cf7698bed38b650bcd5f85dc106356af196d17babab3a7a94281bfa3ff67577",
+      "output_sha256": "a66811cad9c5e010469fa50d936c91a45f66680be72d33656d724b7c43deb9e8",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2843,8 +2843,8 @@
       ]
     },
     "writing/prompt-injection-layered-controls.html": {
-      "original_sha256": "fff4ba815b7ce64e54c3e7a356099aa90f321674f612ea96a88df18c136ead11",
-      "output_sha256": "8f74be21ed27feaf26d8441f12cdae0a4c1871318021163bb8cae5815635e52b",
+      "original_sha256": "8b12b641c04cca79b88de4a0f7405b1495f1fbb9e63f7f400ee88ec5a7b3926c",
+      "output_sha256": "e63525c1bbe5270f5e63287eb1e438efad94a3720d29b8517e981a001eda46c4",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2869,8 +2869,8 @@
       ]
     },
     "writing/property-comparables-evidence.html": {
-      "original_sha256": "90d462ec3ae4bf846a81de1e0335723ac736dba522e62ce34ee525dc1c9b0e89",
-      "output_sha256": "2045791384f24559cf315bb556d4a59aa671171956efbdf05ac108f8dbd4bf19",
+      "original_sha256": "7543529bb597f5646b7e49914a13ea98fd73c487971fad17836a12ee6c4ee167",
+      "output_sha256": "b0d0150672f64d876655c907ef344d19de351a3a448bffd868f78dc14971ce79",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2895,8 +2895,8 @@
       ]
     },
     "writing/rag-check-business-records.html": {
-      "original_sha256": "c955947ced9a68d0ff44bbc813224e8761fa0e452be124998f9b5ad719705801",
-      "output_sha256": "09961378faa7669864210ec8c2b53bbb82c2682a41b8a61fb203bbb1fa2115b2",
+      "original_sha256": "77c663958ee25d476d910382b351187ec4fd31d3943c0828526dc899453ebfeb",
+      "output_sha256": "abd1ac55f768940aa6886d1fd7a3ba8ef8877ef6d243dc353dd043ecd2f31db8",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2921,8 +2921,8 @@
       ]
     },
     "writing/structured-output-source-checks.html": {
-      "original_sha256": "85ca1c30f006813b8e1146f3443f6452863f353ea530ff9f86abea1a1ef5ebcb",
-      "output_sha256": "c407438ac8ed1bf2aae03c739e601e9c8409edfe7db6693abcb569fcfa440758",
+      "original_sha256": "bf77279cec21b84db0475247c2a4237522bfe83467c5873edd72c0fd22ac4145",
+      "output_sha256": "f1c01472bbd6825f9f13a1f0267eb3d431757622d8824dc95f172905ae652636",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2947,8 +2947,8 @@
       ]
     },
     "writing/tesla-roadster-flight-claim.html": {
-      "original_sha256": "4ffaf7180e2721d86f77e6a30738f8858ab8a43f741ea8414d4829253280d0cf",
-      "output_sha256": "b90dc4ecc5cd9f090c6ac1a136ac807ced543810e11114e01f2436146f697c27",
+      "original_sha256": "2362adc988c69e42388934a86063e35fd5d447938b1cf77407e517ecf37f428c",
+      "output_sha256": "3a043fff0b85ef4a8af9e898bd5762365c794a133ea3a92f86bd886f023aa542",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2973,8 +2973,8 @@
       ]
     },
     "writing/virtual-machine-device-sharing-explained.html": {
-      "original_sha256": "d9146540a5a077f5eaad0452826903c181e5230e0e982918de16295a2fe60628",
-      "output_sha256": "1d7e06d45cfa73e8e6b127e2194d3113b934c251191178ee40e052359ca2fd24",
+      "original_sha256": "56ffaee28865a8853deb1d04a75f4326cc6184db8537d9c850a8325d9c8ad1e1",
+      "output_sha256": "24984a7f303e0fdb9aa03ab9dcfd6c299e1703c0fb8c149a4b739afc1b894cd9",
       "sheets": [
         {
           "source": "css/site.css",
@@ -2999,8 +2999,8 @@
       ]
     },
     "writing/what-accept-cookies-means.html": {
-      "original_sha256": "8983fb7fe2d513778f1aa907df2ef093cba7388fc01c0fa0b5384d43616ec033",
-      "output_sha256": "216215c65654f77794f65c45701e1a98d90cb2a2da8954036f4e7545ecdf2cc8",
+      "original_sha256": "7e89f7577a705d46702e18cd93c93661ff9fdaec0a21d762929879b4c71fe01c",
+      "output_sha256": "83863fceee190f15d31bd607b79778a7e381f22e8f916ce66f54462d1042bfa7",
       "sheets": [
         {
           "source": "css/site.css",
@@ -3025,8 +3025,8 @@
       ]
     },
     "writing/where-wearable-ai-computation-runs.html": {
-      "original_sha256": "f92876679d95074e56832c2fbb24900a88f0560a1b0108515d1ad61571a4e167",
-      "output_sha256": "9eec9219fbcc9c756227ea3f9f20b18b45606f8e241883e37538a8bc0902d90b",
+      "original_sha256": "5144db4737c1b90b4f01f9d204c3242e0315c5164f89c2ca454063bb8794bbad",
+      "output_sha256": "cae912a3ece35ef15daf67e37dd94ae7064693100a4ed0c3051474ba4daa15dd",
       "sheets": [
         {
           "source": "css/site.css",
@@ -3051,8 +3051,8 @@
       ]
     },
     "writing/why-ai-sounds-confident.html": {
-      "original_sha256": "e15ae5def669f283d3df9d04b30b6e0b32ea710049238970c94338d130a5bbe6",
-      "output_sha256": "e7989199eddf0f7f83d8f5da458ab6b9aa2105ea27a4098c72526c24368d6c57",
+      "original_sha256": "8d7a014c8923adea6a494b2590c7120f0004c25e93a68f56ac7b89dcc9c4f741",
+      "output_sha256": "1d21ee5bf213fa51e6181d50797c7da35024c8925a39b0cccae15e7d09d81866",
       "sheets": [
         {
           "source": "css/site.css",
@@ -3077,8 +3077,8 @@
       ]
     },
     "writing/why-phone-stops-charging-at-80.html": {
-      "original_sha256": "47e1ae039f13641fc5cd04a95ada88e63ea8e89a0b18cab4b67f1d3d9f8a455d",
-      "output_sha256": "c2000be3df5bb50b2005722b8de01b018f52c70a2734420c545bdd226d2e0de5",
+      "original_sha256": "91c1be5eb607a12f20fa81aa64873110cefb874489a92f4413a834875d43be1c",
+      "output_sha256": "7f69e6083d2cf57338b1491403e1a504dd8cf5031fd21b1139bffc75ae31b6b4",
       "sheets": [
         {
           "source": "css/site.css",
