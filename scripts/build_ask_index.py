@@ -144,8 +144,12 @@ class Document(HTMLParser):
         self.stack[-1].children.append(value)
 
 
-def identity_names(document: Document) -> list[str]:
-    """Verify the biography target and mirror the multilingual shortcuts in the runtime."""
+def identity_names(document: Document, language: str) -> list[str]:
+    """Verify the biography target and keep exported names in the locale's script.
+
+    The unchanged browser shortcut still recognizes all approved input spellings.
+    This machine-readable locale record carries English and its own native names.
+    """
     people = []
 
     def visit(value):
@@ -171,7 +175,9 @@ def identity_names(document: Document) -> list[str]:
     require(isinstance(alternatives, list), document.source + ": invalid Person names")
     require(person.get("name") == IDENTITY_NAMES[0] and IDENTITY_NAMES[1] in alternatives,
             document.source + ": required identity name is not supported")
-    return list(IDENTITY_NAMES)
+    native = {'en': (), 'fa': IDENTITY_NAMES[2:4], 'ar': IDENTITY_NAMES[4:]}
+    require(language in native, document.source + ': unsupported identity locale')
+    return list(IDENTITY_NAMES[:2] + native[language])
 
 
 class Exporter:
@@ -313,7 +319,7 @@ class Exporter:
             require(bool(passage["text"]), f"{relative}: empty indexed passage")
             passages.append(passage)
         shortcuts = []
-        aliases = identity_names(document)
+        aliases = identity_names(document, language)
         biography_url = urljoin(source_url, "about.html#profile-resources")
         for node in dialogs[0].descendants():
             if node.tag == "a" and node.has_class("command-item") and "data-answer-go" not in node.attrs:
